@@ -1,8 +1,8 @@
 # Site settings
-title: Jekyll-Uno
+title: muzza2026.github.io
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno' 
-baseurl: '/jekyll-uno/'
+url: 'http://muzza2026.github.io' 
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:

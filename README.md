@@ -12,6 +12,8 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 * Pagination
 * Syntax highlight
 * Social links
+* Tags listing page
+* Categories listing page
 
 ---
 

@@ -11,6 +11,7 @@ author:
   twitter_username: joshgerdes
   github_username:  joshgerdes
   linkedin_username:  joshgerdes
+  #gravatar: 55502f40dc8b7c769880b10874abc9d0  # E-mail md5
 
 # Build settings
 destination: _site

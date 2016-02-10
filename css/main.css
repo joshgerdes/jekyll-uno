@@ -8,6 +8,7 @@ pre.highlight,
   padding: 10px;
 }
 
+pre.highlight code,
 .highlight pre code {
   white-space: pre-wrap;
 }

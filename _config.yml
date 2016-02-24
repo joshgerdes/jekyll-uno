@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: Alex Graham
+description: 'Just another nerd in the valley...'
+url: 'http://alexmgraham.github.io'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Alex Graham'
+  email: alex@alexmgraham.com
+  twitter_username: alexmgraham14
+  facebook_username: alexmgraham
+  github_username:  alexmgraham
+  linkedin_username:  alexmgraham
 
 defaults:
   -

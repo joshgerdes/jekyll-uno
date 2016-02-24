@@ -16,6 +16,10 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+Or maybe I will use a gist.
+
+{% gist 5555251 %}
+
 I also have this other old website called [Mywoot.net][mywoot] that I still run for some reason...
 
 [mywoot]:      http://mywoot.net

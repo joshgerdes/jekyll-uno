@@ -6,10 +6,6 @@ tags: [blog]
 ---
 Welcome to my blog! I am going to write come code here or something...
 
-```
-echo :hey"
-```
-
 Like this code: 
 
 ``` ruby

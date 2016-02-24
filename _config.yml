@@ -2,8 +2,8 @@
 title: Alex Graham
 description: 'Just another nerd in the valley...'
 url: 'http://alexmgraham.github.io'
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+baseurl: ''
+google_analytics: 'UA-74237854-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:

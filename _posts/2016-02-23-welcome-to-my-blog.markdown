@@ -16,7 +16,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-Or maybe I will use a gist.
+Or maybe I will use a gist. :+1:
 
 {% gist 5555251 %}
 

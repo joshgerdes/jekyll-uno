@@ -18,7 +18,7 @@ print_hi('Tom')
 
 Or maybe I will use a gist. :+1:
 
-{% gist 5555251 %}
+{% gist 4d6638fdff8751d6e313 %}
 
 I also have this other old website called [Mywoot.net][mywoot] that I still run for some reason...
 

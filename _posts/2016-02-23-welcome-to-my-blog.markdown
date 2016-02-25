@@ -4,7 +4,7 @@ date:   2016-02-23 22:08:00
 categories: [blog]
 tags: [blog]
 ---
-Welcome to my blog! I am going to write come code here or something...
+Welcome to my blog! I am going to write some code here or something...
 
 Like this code: 
 

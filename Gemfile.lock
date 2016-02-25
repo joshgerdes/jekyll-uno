@@ -64,6 +64,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
+    jekyll-email-protect (1.0.3)
     jekyll-feed (0.4.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
@@ -125,6 +126,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-email-protect
+  jekyll-gist
+  jekyll-paginate
+  jemoji
 
 BUNDLED WITH
    1.11.2

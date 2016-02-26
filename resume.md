@@ -6,9 +6,6 @@ permalink: /resume
 Alex Graham
 -----------
 
-San Mateo CA 94404 
-Email: alex@alexmgraham.com
-
 ## Qualifications
 
 * Experience with puppet and automation.

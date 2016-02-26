@@ -16,7 +16,7 @@ Cloudfront is setup to respect all cache headers from Github (Currently 600s) so
 
 ### Github Pages and Jekyll
 * The source for this website is [hosted on Github][alexmgraham_repo].
-* The beautifuly simplistic theme is [jekyll-uno by Josh Gerdes.][jekyll-uno]
+* The beautifully simplistic theme is [jekyll-uno by Josh Gerdes.][jekyll-uno]
 * [Github pages][github-pages] automatically compiles and serves the static HTML pages whenever a change is uploaded.
 
 

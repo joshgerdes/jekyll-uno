@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-permalink: /resume.html
+permalink: /resume
 ---
 Alex Graham
 -----------
@@ -24,7 +24,7 @@ Email: alex@alexmgraham.com
 * Knowledgeable with configuration of various Cisco devices.
 * Experience setting up and securing pfSense and Vyatta firewalls.
 
-## Experiance
+## Experience
 
 #### 02/14 – Present    Technical Operations at Box                                        Los Altos, CA
 

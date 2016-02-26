@@ -2,7 +2,8 @@
 title:  "How this site is hosted"
 date:   2016-02-25 22:00:00
 categories: [blog]
-tags: [blog]
+tags: [infrastructure]
+description: "A brief overview on the small amount of infrastructure powering this site."
 ---
 A brief overview on the small amount of infrastructure powering this site.
 

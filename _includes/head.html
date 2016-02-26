@@ -13,15 +13,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title - site.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title - site.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:article:author" content="{{ site.author.name }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property=”og:image" content="{% if page.image %}{{ page.image}}{% else %}{{ "images/profile.jpg" | prepend: site.baseurl }}{% endif %}">
+  <meta property=”og:image" content="{% if page.image %}{{ page.image}}{% else %}{{ "images/profile.jpg" | prepend: site.url }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
 
 

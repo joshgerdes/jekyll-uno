@@ -23,14 +23,12 @@ Alex Graham
 ## Experience
 
 #### 11/14 – Present    Technical Operations at Slack   San Francisco, CA
-
-Senior Operations Engineer
+**Senior Operations Engineer**
 
 * I help make Slack a little less broken every day...
 
 #### 02/14 – 11/14    Technical Operations at Box   Los Altos, CA
-
-Systems Engineer II
+**Systems Engineer II**
 
 * Deploy puppet changes to production and development servers.
 * Perform preventative maintenance on the infrastructure.
@@ -40,8 +38,7 @@ Systems Engineer II
 * Worked to clean up and eliminate technical debt in many areas of our infrastructure.
 
 #### 04/13 – 02/14  Technical Operations at Box   Los Altos, CA
-
-Operations Technician
+**Operations Technician**
 
 * Monitor and diagnose potential problems with the infrastructure.
 * Work as a team to solve issues with the infrastructure and site.
@@ -53,7 +50,7 @@ Operations Technician
 * Worked to reduce MTTR for alerts and issues.
 
 #### 05/08 - Present    Owner/Admin of mywoot.net   LeRoy, NY
-System Administrator/Owner
+**System Administrator/Owner**
 
 * International collaboration with French graduate student to design and maintain mywoot.net.
 * Set up and managed multiple Linux dedicated servers.
@@ -61,7 +58,7 @@ System Administrator/Owner
 * Configured load balancing across multiple servers.
 
 #### 09/10 - 03/13     NSSA Computer Labs   Rochester, NY
-Lab Technician/ Teaching Assistant
+**Lab Technician/ Teaching Assistant**
 
 * Troubleshoot various hardware and software issues on computers.
 * Worked as team lead for imaging team and trained new employees.

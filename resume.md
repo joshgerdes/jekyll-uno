@@ -25,7 +25,7 @@ Alex Graham
 #### 11/14 – Present    Technical Operations at Slack   San Francisco, CA
 **Senior Operations Engineer**
 
-* I help make Slack a little less broken every day...
+* I help make Slack a little less [terrible][stewart] every day...
 
 #### 02/14 – 11/14    Technical Operations at Box   Los Altos, CA
 **Systems Engineer II**
@@ -73,4 +73,7 @@ Alex Graham
 ## Education 
 
 * June 2013   Rochester Institute of Technology        BS Applied Networking and Systems Administration
-* June 2009   LeRoy Jr/Sr High School     Advanced Regents Diploma 
+* June 2009   LeRoy Jr/Sr High School     Advanced Regents Diploma
+
+
+[stewart]: http://www.businessinsider.com/stewart-butterfield-calls-slack-terrible-2014-11

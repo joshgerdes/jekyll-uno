@@ -22,10 +22,11 @@ Alex Graham
 
 ## Experience
 
-#### 02/14 – 11/14    Senior Operations Engineer at Slack   San Francisco, CA
-* I help make Slack a little less broken every day...
+#### 02/14 – 11/14    Technical Operations at Slack   San Francisco, CA
 
-Systems Engineer II
+Senior Operations Engineer
+
+* I help make Slack a little less broken every day...
 
 #### 02/14 – 11/14    Technical Operations at Box   Los Altos, CA
 

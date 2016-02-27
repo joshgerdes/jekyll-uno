@@ -22,7 +22,7 @@ Alex Graham
 
 ## Experience
 
-#### 02/14 – 11/14    Technical Operations at Slack   San Francisco, CA
+#### 11/14 – Present    Technical Operations at Slack   San Francisco, CA
 
 Senior Operations Engineer
 

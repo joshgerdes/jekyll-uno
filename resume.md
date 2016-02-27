@@ -25,7 +25,7 @@ Alex Graham
 #### 11/14 – Present    Technical Operations at Slack   San Francisco, CA
 **Senior Operations Engineer**
 
-* I help make Slack a little less [terrible][stewart] every day...
+* I help make Slack a little less [terrible][stewart] every day. :smile:
 
 #### 02/14 – 11/14    Technical Operations at Box   Los Altos, CA
 **Systems Engineer II**

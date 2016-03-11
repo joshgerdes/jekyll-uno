@@ -1,6 +1,6 @@
 ---
 title:  "From California to California by way of Tokyo"
-date:   2016-03-12 00:00:00
+date:   2016-03-11 01:00:00
 categories: [Tech]
 tags: [infrastructure]
 description: "The story of a confused request who made it's way from California to Tokyo only to be sent right back to California."

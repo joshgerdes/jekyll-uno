@@ -6,25 +6,25 @@ tags: [infrastructure]
 description: "The story of a confused request who made it's way from California to Tokyo only to be sent right back to California."
 published: true
 ---
-
-From California to California by way of Tokyo
---------------------------------------------------
 The story of a confused request who made it's way from California to Tokyo only to be sent right back to California.
 
-##Here's the problem...
+## Here's the problem...
+
 When using one of the Level3 Public DNS resolvers in San Francisco, CA Cloudfront routes the request to an edge node in Tokyo. This means that the request is traveling across the ocean only to come back to the origin server in Northern California (us-west-2 region). This is obviously not an ideal situation and it must be a problem with Cloudfront right!? Wrong... The cause of this issue is actually even more complex than it seems.
 
-##Lets dig in...
+## Lets dig in...
 We start by configuring a Cloudfront distribution with all Edge locations enabled.
 
 Now lets spin up an EC2 instance in Northern California (us-west-2). We can also just use any ISP in the bay area.
-```
+
+```bash
 ubuntu@ip-172-31-14-87:~$ curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone
 us-west-1c
 ```
 
 Let's see which edge location our new distribution resolves to using a few well known public dns resolvers...
-```
+
+```bash
 ubuntu@ip-172-31-14-87:~$ host -t A alexmgraham.com 8.8.8.8
 Using domain server:
 Name: 8.8.8.8
@@ -74,8 +74,10 @@ alexmgraham.com has address 54.192.234.169
 Now lets check the location of each of those IPs...
 
 **Google DNS:**
+
 All of the cloudfront edge nodes are located in SFO, this is good!
-```
+
+```bash
 ubuntu@ip-172-31-14-87:~$ host 54.192.145.46
 46.145.192.54.in-addr.arpa domain name pointer server-54-192-145-46.sfo4.r.cloudfront.net.
 ubuntu@ip-172-31-14-87:~$ host 54.192.145.116
@@ -95,8 +97,10 @@ ubuntu@ip-172-31-14-87:~$ host 54.192.145.88
 ```
 
 **OpenDNS:**
+
 We resolve to the same edge nodes as Google DNS... These are of course all still located in San Francisco.
-```
+
+```bash
 ubuntu@ip-172-31-14-87:~$ host 54.192.145.88
 88.145.192.54.in-addr.arpa domain name pointer server-54-192-145-88.sfo4.r.cloudfront.net.
 ubuntu@ip-172-31-14-87:~$ host 54.192.145.4
@@ -116,9 +120,10 @@ ubuntu@ip-172-31-14-87:~$ host 54.192.145.39
 ```
 
 **Level3:**
+
 Now this is strange... All of the edge nodes are located in Tokyo. This does not seem right at all, but why is Level3 the only resolver affected by this? The answer will probably surprise you!
 
-```
+```bash
 ubuntu@ip-172-31-14-87:~$ host 54.192.234.126
 126.234.192.54.in-addr.arpa domain name pointer server-54-192-234-126.nrt12.r.cloudfront.net.
 ubuntu@ip-172-31-14-87:~$ host 54.192.234.27
@@ -139,7 +144,8 @@ ubuntu@ip-172-31-14-87:~$ host 54.192.234.169
 
 Believe it or not there is actually a good reason for this! 
 
-###How Amazon routes Cloudfront Requests
+### How Amazon routes Cloudfront Requests
+
 To the best of my understanding, here's what happens when you attempt to resolve the IP of a Cloudfront distribution.
 1. The request is made, and it travels to the DNS Resolver configured on the client node.
 2. The resolver responds with a cached request or ends up asking the Authoritative DNS servers for the domain. We could go into detail here but that is a blog post on it's own. The important bit is that we end up asking the authoritative DNS server at some point.
@@ -159,6 +165,7 @@ This is where edns-client-subnet comes in to help out. Most public resolvers sup
 Wrong. The level3 resolver that we are hitting is actually located in San Jose, CA
 
 Here's the proof:
+
 ```
 ubuntu@ip-172-31-14-87:~$ mtr -r 4.2.2.2
 Start: Fri Mar 11 06:00:02 2016
@@ -175,6 +182,7 @@ HOST: ip-172-31-14-87             Loss%   Snt   Last   Avg  Best  Wrst StDev
 ```
 
 Lets obtain the IP of the server behind the Anycast address just to be safe... Amazon has some handy troubleshooting utilities for Cloudfront. If we resolve `resolver-identity.cloudfront.net` it will give us back the IP address of the server that Amazon sees making the request. This means that we are able to see the real IP of the server hidden behind the Anycast address.
+
 ```
 ubuntu@ip-172-31-14-87:~$ host identity.cloudfront.net 4.2.2.2
 Using domain server:
@@ -222,7 +230,8 @@ Surely Level3 has a resolver in Japan or somewhere nearby... They are Anycasted 
 At the time of this blog post Level3 does not appear to have any DNS servers in japan. I fired up a EC2 instance in Japan to verify this.
 
 From an EC2 instance in Tokyo:
-```
+
+```bash
 ubuntu@ip-172-31-23-29:~$ curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone
 ap-northeast-1b
 

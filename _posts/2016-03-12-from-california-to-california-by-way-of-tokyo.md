@@ -3,19 +3,19 @@ title:  "From California to California by way of Tokyo"
 date:   2016-03-12 00:00:00
 categories: [Tech]
 tags: [infrastructure]
-description: "The story of a confused packet who made it's way to Tokyo only to be sent right back to the US."
+description: "The story of a confused request who made it's way from California to Tokyo only to be sent right back to California."
 published: false
 ---
 
 From California to California by way of Tokyo
 --------------------------------------------------
-The story of a confused packet who made it's way to Tokyo only to be sent right back to the US.
+The story of a confused request who made it's way from California to Tokyo only to be sent right back to California.
 
 ##Here's the problem...
-When using one of the Level3 Public DNS resolvers in San Francisco, CA Cloudfront routes the request to an edge node in Tokyo. This means that the request is traveling across the ocean only to come back to the origin server in Northren California (us-west-2 region). This is obviously not an ideal situation and it must be a problem with cloudfront right!? Wrong... The cause of this issue is actually even more complex than it seems.
+When using one of the Level3 Public DNS resolvers in San Francisco, CA Cloudfront routes the request to an edge node in Tokyo. This means that the request is traveling across the ocean only to come back to the origin server in Northern California (us-west-2 region). This is obviously not an ideal situation and it must be a problem with Cloudfront right!? Wrong... The cause of this issue is actually even more complex than it seems.
 
 ##Lets dig in...
-We start by configuring a cloudfront distribution with all Edge locations enabled.
+We start by configuring a Cloudfront distribution with all Edge locations enabled.
 
 Now lets spin up an EC2 instance in Northern California (us-west-2). We can also just use any ISP in the bay area.
 ```
@@ -140,10 +140,10 @@ ubuntu@ip-172-31-14-87:~$ host 54.192.234.169
 Believe it or not there is actually a good reason for this! 
 
 ###How Amazon routes Cloudfront Requests
-To the best of my knowlege, here's what happens when you attempt to resolve the IP of a Cloudfront distribution.
+To the best of my understanding, here's what happens when you attempt to resolve the IP of a Cloudfront distribution.
 1. The request is made, and it travels to the DNS Resolver configured on the client node.
-2. The resolver responds with a cached request or ends up asking the Authoritive DNS servers for the domain. The important bit here is that we end up asking the authoritive DNS server at some point.
-3. Amazon's DNS server makes a best attempt to determine the location of the client and responds with the IPs of the PoP (Point of Presense) with the lowest latency to the client.
+2. The resolver responds with a cached request or ends up asking the Authoritative DNS servers for the domain. We could go into detail here but that is a blog post on it's own. The important bit is that we end up asking the authoritative DNS server at some point.
+3. Amazon's DNS server makes a best attempt to determine the location of the client and responds with the IPs of the PoP (Point of Presence) with the lowest latency to the client.
 
 This all sounds really simple, but it is actually not simple at all!
 - The resolver is the server that makes the request to Amazon, similar to the behavior of a caching proxy.
@@ -152,8 +152,8 @@ This all sounds really simple, but it is actually not simple at all!
 - If the resolver does not support edns-client-subnet the only choice is to fail back to the resolver IP as the cloest location.
 
 ### What is edns-client-subnet and why is it important for public resolvers?
-Traditionally, for performance and security reasons, DNS resolvers are typically located in very close geographical proximity to the client making the request. This means that when Amazon is attempting to determine the closest PoP they can pretty safely use the IP of the resolver itself. A new class of resolvers have popped up and they make this assumption less true. Public DNS resolvers are accessible on the internet and are using anycast IP addresses to route the client to the server with the lowest latency. This means that the client might actually be 1000s of miles away from the resolver. Using the IP address of the resolver is not really a good indication of the nearest edge node for the client but it still should be ok in most cases.
-This is where edns-client-subnet comes in to help out. Most public resolvers support edns-client-subnet, which means they pass along the real IP of the client when asking the authoritive DNS server for a response. The authoritive server is able to make it's decision based on the real IP address of the client, this should result in the best possible outcome for the client as they should be served the IPs of a PoP with the lowest latency to them. With a little bit of research we are able to determine that the Level3 public resolvers do not support edns-client-subnet, which is probably why we are seeing interesting results.
+Traditionally, for performance and security reasons, DNS resolvers are typically located in very close geographical proximity to the client making the request. This means that when Amazon is attempting to determine the closest PoP they can pretty safely use the IP of the resolver itself. A new class of resolvers have popped up and they make this assumption less true. Public DNS resolvers are accessible on the Internet and are using anycast IP addresses to route the client to the server with the lowest latency. This means that the client might actually be 1000s of miles away from the resolver. Using the IP address of the resolver is not really a good indication of the nearest edge node for the client but it still should be OK in most cases.
+This is where edns-client-subnet comes in to help out. Most public resolvers support edns-client-subnet, which means they pass along the real IP of the client when asking the authoritative DNS server for a response. The authoritative server is able to make it's decision based on the real IP address of the client, this should result in the best possible outcome for the client as they should be served the IPs of a PoP with the lowest latency to them. With a little bit of research we are able to determine that the Level3 public resolvers do not support edns-client-subnet, which is probably why we are seeing interesting results.
 
 ### Ok then where is the level3 resolver located... It must be Tokyo right?
 Wrong. The level3 resolver that we are hitting is actually located in San Jose, CA
@@ -174,7 +174,7 @@ HOST: ip-172-31-14-87             Loss%   Snt   Last   Avg  Best  Wrst StDev
   9.|-- b.resolvers.Level3.net     0.0%    10    2.2   2.3   2.2   2.3   0.0
 ```
 
-Lets obtain the IP of the server behind the anycast address just to be safe... Amazon has some handy troubleshooting utilities for Cloudfront. If we resolve `resolver-identity.cloudfront.net` it will give us back the IP address of the server that Amazon sees making the request. This means that we are able to see the real IP of the server hidden behind the anycast address.
+Lets obtain the IP of the server behind the Anycast address just to be safe... Amazon has some handy troubleshooting utilities for Cloudfront. If we resolve `resolver-identity.cloudfront.net` it will give us back the IP address of the server that Amazon sees making the request. This means that we are able to see the real IP of the server hidden behind the Anycast address.
 ```
 ubuntu@ip-172-31-14-87:~$ host identity.cloudfront.net 4.2.2.2
 Using domain server:
@@ -209,16 +209,16 @@ HOST: ip-172-31-14-87             Loss%   Snt   Last   Avg  Best  Wrst StDev
   9.|-- ae-1-60.edge2.SanJose1.Le  0.0%    10    4.0   3.2   2.9   4.0   0.3
  10.|-- DNS-192-221-162-8.SanJose  0.0%    10    2.8   2.9   2.7   4.0   0.0
 ```
-This Server is definitely not located in Tokyo, it is just a few hops away from me in San Jose, California. My first thought was that Amazon must be making a mistake here, surely you would not want to route traffic from a resolver in California across the ocean and then back again. At this point I decided to open a support ticket with AWS to report this issue.
+This resolver is definitely not located in Tokyo, it is just a few hops away from me in San Jose, California. My first thought was that Amazon must be making a mistake here, surely you would not want to route traffic from a resolver in California across the ocean and then back again. At this point I decided to open a support ticket with AWS to report this issue.
 
 ### Why does Level3 behave like this?
 At this point I am still convinced that this is a just a Cloudfront bug. Even without edns support they can see that the resolver is located in San Jose, CA. The solution is simple, they should be routing my traffic to the POP with the lowest latency to the resolver in San Jose, CA. This is where I was wrong!
 
-Amazon support tells me that this is actually the correct bahavior because most clients from this resolver are located in Toyko. This makes no sense at all and don't buy it, is AWS lying to me!? A kind Cloudfront engineer hopped on the phone with me after I inquired for a technical explation for this crazy behavior.
+Amazon support tells me that this is actually the correct behavior because most clients from this resolver are located in Toyko. This makes no sense at all and don't buy it, is AWS lying to me!? A kind Cloudfront engineer hopped on the phone with me after I inquired for a technical explanation for this crazy behavior.
 
 This is where I learned that Amazon also keeps track of the resolver a client is using along with their geographical location whenever they visit an Amazon owned website. This data is then used to make an even better decision about where to route the traffic. Using this data they found that a large majority of users who were using the Level3 resolver in San Jose, CA were actually located in Japan. In fact, there were more people connecting to this resolver from Japan than California. This means that it would actually make more sense for Amazon to respond with the IPs of the POP in Tokyo because a larger percentage of users of this DNS resolver are probably located there. 
 
-Surely Level3 has a resolver in Japan or somewhere nearby... They are anycasted from eveywhere right!?
+Surely Level3 has a resolver in Japan or somewhere nearby... They are Anycasted from everywhere right!?
 At the time of this blog post Level3 does not appear to have any DNS servers in japan. I fired up a EC2 instance in Japan to verify this.
 
 From an EC2 instance in Tokyo:
@@ -257,16 +257,16 @@ HOST: ip-172-31-23-29             Loss%   Snt   Last   Avg  Best  Wrst StDev
  15.|-- cns1.LosAngeles1.Level3.n 10.0%    10  140.6 139.8 139.5 140.6   0.0
 ```
 
-This is intresting! There really is not a Level3 resolver in Japan, it's either that or something has gone wrong in network land. Regardless, we are routed to a resolver 140ms away in California which is certainly not ideal.
+This is interesting! There really is not a Level3 resolver in Japan, it's either that or something has gone wrong in network land. Regardless, we are routed to a resolver 140ms away in California which is certainly not ideal.
 
 ### How Do we Fix this?
 1. The simple solution is to use a public resolver that supports edns-client-subnet or run your own resolver configured to hit the root servers.
-2. CDNs who are using Anycast instead of DNS would not be affected by this particular issue because the anycast IPs are always routed based on latency.
+2. CDNs who are using Anycast instead of DNS would not be affected by this particular issue because the Anycast IPs are always routed based on latency.
 3. Amazon could make this a little more accurate by using real user metrics from my website instead of amazon.com. This would be overly complicated to configure and would still not solve the issue, so I think this would be a waste of time.
-4. This is actually a feature and is not a bug. Think about it this way; this is actually improving the performance for a greater number of users in most cases. Users in Japan who are using the Level3 resolver will actually have a better experiance. You can argue that this is not true since their DNS server is all the way across the ocean, and you are probably right about that. Their browsing experiance would be much better without high latency to the resolver. There are a select few unlucky individuals in California but they can easily fix this by changing their DNS server.
-5. Level3 could put some anycasted resolvers in Japan. If they did this then the clients from Japan would end up hitting the resolvers in Japan and would never be routed to the US. This would give Level3 users in Japan a much better experiance and Amazon would recalculate the stats to find that most users who hit the San Jose, CA Resolver were actually located near California.
+4. This is actually a feature and is not a bug. Think about it this way; this is actually improving the performance for a greater number of users in most cases. Users in Japan who are using the Level3 resolver will actually have a better experience. You can argue that this is not true since their DNS server is all the way across the ocean, and you are probably right about that. Their browsing experience would be much better without high latency to the resolver. There are a select few unlucky individuals in California but they can easily fix this by changing their DNS server.
+5. Level3 could put some Anycasted resolvers in Japan. If they did this then the clients from Japan would end up hitting the resolvers in Japan and would never be routed to the US. This would give Level3 users in Japan a much better experience and Amazon would recalculate the stats to find that most users who hit the San Jose, CA Resolver were actually located near California.
 
 ### What Did I learn from this?
 1. Holy crap, doing latency routed DNS is complicated... There are so many things to think about when attempting to route by latency using DNS.
 2. If you have concerns about Data leakage due to the edns-client-subnet providing your real IP then don't use a public resolver. Run your own caching DNS server without forwarding and go straight to the root resolvers.
-3. If you are using a public DNS server, make sure it supports edns-client-subnet. This is the best way to ensure your internet browsing performance is optimal.
+3. If you are using a public DNS server, make sure it supports edns-client-subnet. This is the best way to ensure your Internet browsing performance is optimal.

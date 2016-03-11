@@ -147,11 +147,13 @@ Believe it or not there is actually a good reason for this!
 ### How Amazon routes Cloudfront Requests
 
 To the best of my understanding, here's what happens when you attempt to resolve the IP of a Cloudfront distribution.
+
 1. The request is made, and it travels to the DNS Resolver configured on the client node.
 2. The resolver responds with a cached request or ends up asking the Authoritative DNS servers for the domain. We could go into detail here but that is a blog post on it's own. The important bit is that we end up asking the authoritative DNS server at some point.
 3. Amazon's DNS server makes a best attempt to determine the location of the client and responds with the IPs of the PoP (Point of Presence) with the lowest latency to the client.
 
 This all sounds really simple, but it is actually not simple at all!
+
 - The resolver is the server that makes the request to Amazon, similar to the behavior of a caching proxy.
 - Resolvers located all over the world using anycast so you cannot determine the geographical location by simply using the IP address.
 - You can determine the real IP of the client if the resolver supports edns-client-subnet.
@@ -161,7 +163,10 @@ This all sounds really simple, but it is actually not simple at all!
 Traditionally, for performance and security reasons, DNS resolvers are typically located in very close geographical proximity to the client making the request. This means that when Amazon is attempting to determine the closest PoP they can pretty safely use the IP of the resolver itself. A new class of resolvers have popped up and they make this assumption less true. Public DNS resolvers are accessible on the Internet and are using anycast IP addresses to route the client to the server with the lowest latency. This means that the client might actually be 1000s of miles away from the resolver. Using the IP address of the resolver is not really a good indication of the nearest edge node for the client but it still should be OK in most cases.
 This is where edns-client-subnet comes in to help out. Most public resolvers support edns-client-subnet, which means they pass along the real IP of the client when asking the authoritative DNS server for a response. The authoritative server is able to make it's decision based on the real IP address of the client, this should result in the best possible outcome for the client as they should be served the IPs of a PoP with the lowest latency to them. With a little bit of research we are able to determine that the Level3 public resolvers do not support edns-client-subnet, which is probably why we are seeing interesting results.
 
-### Ok then where is the level3 resolver located... It must be Tokyo right?
+If you are up for some light reading or want to learn more you can check out the RFC here:
+<http://www.afasterinternet.com/ietfdraft.htm>
+
+### Ok then where is the Level3 resolver located... It must be Tokyo right?
 Wrong. The level3 resolver that we are hitting is actually located in San Jose, CA
 
 Here's the proof:
@@ -220,7 +225,7 @@ HOST: ip-172-31-14-87             Loss%   Snt   Last   Avg  Best  Wrst StDev
 This resolver is definitely not located in Tokyo, it is just a few hops away from me in San Jose, California. My first thought was that Amazon must be making a mistake here, surely you would not want to route traffic from a resolver in California across the ocean and then back again. At this point I decided to open a support ticket with AWS to report this issue.
 
 ### Why does Level3 behave like this?
-At this point I am still convinced that this is a just a Cloudfront bug. Even without edns support they can see that the resolver is located in San Jose, CA. The solution is simple, they should be routing my traffic to the POP with the lowest latency to the resolver in San Jose, CA. This is where I was wrong!
+At this point I am still convinced that this is a just a Cloudfront bug. Even without edns support Amazon can see that the resolver is located in San Jose, CA. The solution is simple, they should be routing my traffic to the POP with the lowest latency to the resolver in San Jose, CA. This is where I was wrong!
 
 Amazon support tells me that this is actually the correct behavior because most clients from this resolver are located in Toyko. This makes no sense at all and don't buy it, is AWS lying to me!? A kind Cloudfront engineer hopped on the phone with me after I inquired for a technical explanation for this crazy behavior.
 

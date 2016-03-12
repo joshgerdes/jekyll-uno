@@ -27,9 +27,7 @@ I patched together a few commands to accomplish the following:
 2. For each of those A records check the PTR record associated with each IP.
 3. Cloudfront uses an airport code in the naming scheme for the edge node hostnames. This will allow us to easily determine the location.
 
-**Google DNS:**
-
-All of the cloudfront edge nodes are located in SFO, this is good!
+#### Google DNS:
 
 ```
 ubuntu@ip-172-31-14-87:~$ dig +short @8.8.8.8 alexmgraham.com | xargs -L1 host | cut -d" " -f5
@@ -42,10 +40,9 @@ server-54-192-145-36.sfo4.r.cloudfront.net.
 server-54-192-145-88.sfo4.r.cloudfront.net.
 server-54-192-145-4.sfo4.r.cloudfront.net.
 ```
+All of the Cloudfront edge nodes are located in SFO, this is good!
 
-**OpenDNS:**
-
-We resolve to the same edge nodes as Google DNS... These are of course all still located in San Francisco.
+#### OpenDNS:
 
 ```
 ubuntu@ip-172-31-14-87:~$ dig +short @208.67.222.222 alexmgraham.com | xargs -L1 host | cut -d" " -f5
@@ -58,10 +55,10 @@ server-54-192-145-36.sfo4.r.cloudfront.net.
 server-54-192-145-25.sfo4.r.cloudfront.net.
 server-54-192-145-46.sfo4.r.cloudfront.net.
 ```
+We resolve to the same edge nodes as Google DNS... These are of course all still located in San Francisco.
 
-**Level3:**
 
-Now this is strange... All of the edge nodes are located in Tokyo. This does not seem right at all, but why is Level3 the only resolver affected by this? The answer will probably surprise you!
+#### Level3:
 
 ```
 ubuntu@ip-172-31-14-87:~$ dig +short @4.2.2.2 alexmgraham.com | xargs -L1 host | cut -d" " -f5
@@ -74,6 +71,7 @@ server-54-192-234-23.nrt12.r.cloudfront.net.
 server-54-192-234-27.nrt12.r.cloudfront.net.
 server-54-192-234-169.nrt12.r.cloudfront.net.
 ```
+Now this is strange... All of the edge nodes are located in Tokyo. This does not seem right at all, but why is Level3 the only resolver affected by this? The answer will probably surprise you!
 
 Believe it or not there is actually a good reason for this! 
 
@@ -123,14 +121,6 @@ HOST: ip-172-31-14-87             Loss%   Snt   Last   Avg  Best  Wrst StDev
 Lets obtain the IP of the server behind the Anycast address just to be safe... Amazon has some handy troubleshooting utilities for Cloudfront. If we resolve `resolver-identity.cloudfront.net` it will give us back the IP address of the server that Amazon sees making the request. This means that we are able to see the real IP of the server hidden behind the Anycast address.
 
 ```
-ubuntu@ip-172-31-14-87:~$ host identity.cloudfront.net 4.2.2.2
-Using domain server:
-Name: 4.2.2.2
-Address: 4.2.2.2#53
-Aliases:
-
-identity.cloudfront.net has address 216.137.42.23
-
 ubuntu@ip-172-31-14-87:~$ host resolver-identity.cloudfront.net 4.2.2.2
 Using domain server:
 Name: 4.2.2.2

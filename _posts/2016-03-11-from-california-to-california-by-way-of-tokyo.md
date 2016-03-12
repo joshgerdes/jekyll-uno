@@ -22,124 +22,57 @@ ubuntu@ip-172-31-14-87:~$ curl -s http://169.254.169.254/latest/meta-data/placem
 us-west-1c
 ```
 
-Let's see which edge location our new distribution resolves to using a few well known public dns resolvers...
-
-```bash
-ubuntu@ip-172-31-14-87:~$ host -t A alexmgraham.com 8.8.8.8
-Using domain server:
-Name: 8.8.8.8
-Address: 8.8.8.8#53
-Aliases:
-
-alexmgraham.com has address 54.192.145.46
-alexmgraham.com has address 54.192.145.116
-alexmgraham.com has address 54.192.145.39
-alexmgraham.com has address 54.192.145.25
-alexmgraham.com has address 54.192.145.106
-alexmgraham.com has address 54.192.145.36
-alexmgraham.com has address 54.192.145.4
-alexmgraham.com has address 54.192.145.88
-
-ubuntu@ip-172-31-14-87:~$ host -t A alexmgraham.com 208.67.222.222
-Using domain server:
-Name: 208.67.222.222
-Address: 208.67.222.222#53
-Aliases:
-
-alexmgraham.com has address 54.192.145.88
-alexmgraham.com has address 54.192.145.4
-alexmgraham.com has address 54.192.145.106
-alexmgraham.com has address 54.192.145.46
-alexmgraham.com has address 54.192.145.36
-alexmgraham.com has address 54.192.145.25
-alexmgraham.com has address 54.192.145.116
-alexmgraham.com has address 54.192.145.39
-
-ubuntu@ip-172-31-14-87:~$ host -t A alexmgraham.com 4.2.2.2
-Using domain server:
-Name: 4.2.2.2
-Address: 4.2.2.2#53
-Aliases:
-
-alexmgraham.com has address 54.192.234.126
-alexmgraham.com has address 54.192.234.27
-alexmgraham.com has address 54.192.234.188
-alexmgraham.com has address 54.192.234.83
-alexmgraham.com has address 54.192.234.226
-alexmgraham.com has address 54.192.234.253
-alexmgraham.com has address 54.192.234.23
-alexmgraham.com has address 54.192.234.169
-```
-
-Now lets check the location of each of those IPs...
+I patched toghether a few commands to accomplish the following:
+1. Check the A records associated with our cloudfront distribution.
+2. For each of those A records check the PTR record assoicated with each IP.
+3. Cloudfront uses an airport code in the naming scheme for the edge node hostnames. This will allow us to easily determine the location.
 
 **Google DNS:**
 
 All of the cloudfront edge nodes are located in SFO, this is good!
 
-```bash
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.46
-46.145.192.54.in-addr.arpa domain name pointer server-54-192-145-46.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.116
-116.145.192.54.in-addr.arpa domain name pointer server-54-192-145-116.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.39
-39.145.192.54.in-addr.arpa domain name pointer server-54-192-145-39.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.25
-25.145.192.54.in-addr.arpa domain name pointer server-54-192-145-25.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.106
-106.145.192.54.in-addr.arpa domain name pointer server-54-192-145-106.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.36
-36.145.192.54.in-addr.arpa domain name pointer server-54-192-145-36.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.4
-4.145.192.54.in-addr.arpa domain name pointer server-54-192-145-4.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.88
-88.145.192.54.in-addr.arpa domain name pointer server-54-192-145-88.sfo4.r.cloudfront.net.
+```
+ubuntu@ip-172-31-14-87:~$ dig +short @8.8.8.8 alexmgraham.com | xargs -L1 host | cut -d" " -f5
+server-54-192-145-25.sfo4.r.cloudfront.net.
+server-54-192-145-106.sfo4.r.cloudfront.net.
+server-54-192-145-116.sfo4.r.cloudfront.net.
+server-54-192-145-39.sfo4.r.cloudfront.net.
+server-54-192-145-46.sfo4.r.cloudfront.net.
+server-54-192-145-36.sfo4.r.cloudfront.net.
+server-54-192-145-88.sfo4.r.cloudfront.net.
+server-54-192-145-4.sfo4.r.cloudfront.net.
 ```
 
 **OpenDNS:**
 
 We resolve to the same edge nodes as Google DNS... These are of course all still located in San Francisco.
 
-```bash
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.88
-88.145.192.54.in-addr.arpa domain name pointer server-54-192-145-88.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.4
-4.145.192.54.in-addr.arpa domain name pointer server-54-192-145-4.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.106
-106.145.192.54.in-addr.arpa domain name pointer server-54-192-145-106.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.46
-46.145.192.54.in-addr.arpa domain name pointer server-54-192-145-46.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.36
-36.145.192.54.in-addr.arpa domain name pointer server-54-192-145-36.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.25
-25.145.192.54.in-addr.arpa domain name pointer server-54-192-145-25.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.116
-116.145.192.54.in-addr.arpa domain name pointer server-54-192-145-116.sfo4.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.145.39
-39.145.192.54.in-addr.arpa domain name pointer server-54-192-145-39.sfo4.r.cloudfront.net.
+```
+ubuntu@ip-172-31-14-87:~$ dig +short @208.67.222.222 alexmgraham.com | xargs -L1 host | cut -d" " -f5
+server-54-192-145-106.sfo4.r.cloudfront.net.
+server-54-192-145-116.sfo4.r.cloudfront.net.
+server-54-192-145-39.sfo4.r.cloudfront.net.
+server-54-192-145-88.sfo4.r.cloudfront.net.
+server-54-192-145-4.sfo4.r.cloudfront.net.
+server-54-192-145-36.sfo4.r.cloudfront.net.
+server-54-192-145-25.sfo4.r.cloudfront.net.
+server-54-192-145-46.sfo4.r.cloudfront.net.
 ```
 
 **Level3:**
 
 Now this is strange... All of the edge nodes are located in Tokyo. This does not seem right at all, but why is Level3 the only resolver affected by this? The answer will probably surprise you!
 
-```bash
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.126
-126.234.192.54.in-addr.arpa domain name pointer server-54-192-234-126.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.27
-27.234.192.54.in-addr.arpa domain name pointer server-54-192-234-27.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.188
-188.234.192.54.in-addr.arpa domain name pointer server-54-192-234-188.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.83
-83.234.192.54.in-addr.arpa domain name pointer server-54-192-234-83.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.226
-226.234.192.54.in-addr.arpa domain name pointer server-54-192-234-226.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.253
-253.234.192.54.in-addr.arpa domain name pointer server-54-192-234-253.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.23
-23.234.192.54.in-addr.arpa domain name pointer server-54-192-234-23.nrt12.r.cloudfront.net.
-ubuntu@ip-172-31-14-87:~$ host 54.192.234.169
-169.234.192.54.in-addr.arpa domain name pointer server-54-192-234-169.nrt12.r.cloudfront.net.
+```
+ubuntu@ip-172-31-14-87:~$ dig +short @4.2.2.2 alexmgraham.com | xargs -L1 host | cut -d" " -f5
+server-54-192-234-226.nrt12.r.cloudfront.net.
+server-54-192-234-188.nrt12.r.cloudfront.net.
+server-54-192-234-253.nrt12.r.cloudfront.net.
+server-54-192-234-126.nrt12.r.cloudfront.net.
+server-54-192-234-83.nrt12.r.cloudfront.net.
+server-54-192-234-23.nrt12.r.cloudfront.net.
+server-54-192-234-27.nrt12.r.cloudfront.net.
+server-54-192-234-169.nrt12.r.cloudfront.net.
 ```
 
 Believe it or not there is actually a good reason for this! 

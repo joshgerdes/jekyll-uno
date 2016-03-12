@@ -75,7 +75,7 @@ Now this is strange... All of the edge nodes are located in Tokyo. This does not
 
 Believe it or not there is actually a good reason for this! 
 
-### How Amazon routes Cloudfront Requests
+### How Amazon routes Cloudfront requests
 
 To the best of my understanding, here's what happens when you attempt to resolve the IP of a Cloudfront distribution.
 
@@ -88,7 +88,7 @@ This all sounds really simple, but it is actually not simple at all!
 - The resolver is the server that makes the request to Amazon, similar to the behavior of a caching proxy.
 - Resolvers located all over the world using anycast so you cannot determine the geographical location by simply using the IP address.
 - You can determine the real IP of the client if the resolver supports edns-client-subnet.
-- If the resolver does not support edns-client-subnet the only choice is to fail back to the resolver IP as the cloest location.
+- If the resolver does not support edns-client-subnet the only choice is to fail back to the resolver IP as the closet location.
 
 ### What is edns-client-subnet and why is it important for public resolvers?
 Traditionally, for performance and security reasons, DNS resolvers are typically located in very close geographical proximity to the client making the request. This means that when Amazon is attempting to determine the closest PoP they can pretty safely use the IP of the resolver itself. A new class of resolvers have popped up and they make this assumption less true. Public DNS resolvers are accessible on the Internet and are using anycast IP addresses to route the client to the server with the lowest latency. This means that the client might actually be 1000s of miles away from the resolver. Using the IP address of the resolver is not really a good indication of the nearest edge node for the client but it still should be OK in most cases.

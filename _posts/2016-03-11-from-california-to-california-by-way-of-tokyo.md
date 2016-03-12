@@ -22,9 +22,9 @@ ubuntu@ip-172-31-14-87:~$ curl -s http://169.254.169.254/latest/meta-data/placem
 us-west-1c
 ```
 
-I patched toghether a few commands to accomplish the following:
-1. Check the A records associated with our cloudfront distribution.
-2. For each of those A records check the PTR record assoicated with each IP.
+I patched together a few commands to accomplish the following:
+1. Check the A records associated with our Cloudfront distribution.
+2. For each of those A records check the PTR record associated with each IP.
 3. Cloudfront uses an airport code in the naming scheme for the edge node hostnames. This will allow us to easily determine the location.
 
 **Google DNS:**

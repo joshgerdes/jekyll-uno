@@ -151,7 +151,7 @@ This resolver is definitely not located in Tokyo, it is just a few hops away fro
 ### Why does Level3 behave like this?
 At this point I am still convinced that this is a just a Cloudfront bug. Even without edns support Amazon can see that the resolver is located in San Jose, CA. The solution is simple, they should be routing my traffic to the POP with the lowest latency to the resolver in San Jose, CA. This is where I was wrong!
 
-Amazon support tells me that this is actually the correct behavior because most clients from this resolver are located in Toyko. This makes no sense at all and don't buy it, is AWS lying to me!? A kind Cloudfront engineer hopped on the phone with me after I inquired for a technical explanation for this crazy behavior.
+Amazon support tells me that this is actually the correct behavior because most clients from this resolver are located in Toyko. This makes no sense at all and I don't buy it, is AWS lying to me!? A kind Cloudfront engineer hopped on the phone with me after I inquired for a technical explanation for this crazy behavior.
 
 This is where I learned that Amazon also keeps track of the resolver a client is using along with their geographical location whenever they visit an Amazon owned website. This data is then used to make an even better decision about where to route the traffic. Using this data they found that a large majority of users who were using the Level3 resolver in San Jose, CA were actually located in Japan. In fact, there were more people connecting to this resolver from Japan than California. This means that it would actually make more sense for Amazon to respond with the IPs of the POP in Tokyo because a larger percentage of users of this DNS resolver are probably located there. 
 

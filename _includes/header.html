@@ -3,13 +3,13 @@
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
   
-<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
+<header class="panel-cover" style="background-image: url({{ site.cover_image | prepend: site.baseurl }})">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+          <img src="{{ site.profile_image | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -18,11 +18,13 @@
 
         <div class="navigation-wrapper">
 
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
-            </ul>
-          </nav>
+          {% if site.author.show_blog %}
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              </ul>
+            </nav>
+          {% endif %}
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
@@ -30,9 +32,19 @@
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                <a href="https://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
                   <i class="icon icon-social-twitter"></i>
                   <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
                 </a>
               </li>
             {% endif %}
@@ -50,9 +62,29 @@
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                <a href="https://github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
                   <i class="icon icon-social-github"></i>
                   <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.instagram_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on Instagram" target="_blank">
+                  <i class="icon icon-social-instagram"></i>
+                  <span class="label">Instagram</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.medium_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://medium.com/@{{ site.author.medium_username }}" title="{{ site.author.medium_username }} on Medium" target="_blank">
+                  <i class="icon icon-social-medium"></i>
+                  <span class="label">Medium</span>
                 </a>
               </li>
             {% endif %}
@@ -68,12 +100,14 @@
             {% endif %}
 
             <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
+            {% if site.author.show_rss %}
+              <li class="navigation__item">
+                <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
+                  <i class="icon icon-rss"></i>
+                  <span class="label">RSS</span>
+                </a>
+              </li>
+            {% endif %}
           
             </ul>
           </nav>

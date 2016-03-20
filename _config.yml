@@ -1,6 +1,6 @@
 # Site settings
 title: Vince Tse
-description: 'Software enginerd.  Engineering mentor, cheerleader & coach. #WhatProblemAreYouTryingToSolve'
+description: 'Software enginerd.  Technology mentor, cheerleader & coach. #WhatProblemAreYouTryingToSolve'
 url: 'https://{github_username}.github.io'
 baseurl: '/'
 google_analytics: 'UA-75285770-1'

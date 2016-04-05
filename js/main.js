@@ -13,8 +13,8 @@ $(document).ready(function () {
       $('.panel-cover').removeClass('panel-cover--collapsed')
     } else {
       currentWidth = $('.panel-cover').width()
+      $('.content-wrapper').addClass('animated slideInRight')
       if (currentWidth < 960) {
-        $('.content-wrapper').addClass('animated slideInRight')
         $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeOut')
       } else {
         $('.panel-cover').css('max-width', currentWidth)

@@ -4,7 +4,7 @@ layout: default
 <h2>Categories:</h2>
 <div class="categories"> 
 {% for catitem in site.categories  %} 
-  <a href="#{{  catitem[0] }}">{{  catitem[0] }}</a>
+  <a href="#{{ catitem[0] }}">{{  catitem[0] }}</a>
 {% endfor %}
 </div>
 
@@ -20,7 +20,7 @@ layout: default
         <!-- list only those which contain the current tag --> 
         {% if post.categories contains catitem[0] %} 
             <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
         {% endif %}
       {% endfor %}

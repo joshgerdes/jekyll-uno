@@ -5,12 +5,12 @@ url: 'https://{github_username}.github.io'
 baseurl: '/'
 google_analytics: 'UA-75285770-1'
 # disqus_shortname: 'your-disqus-name'
-profile_image: 'images/profile.jpg'
+profile_image: 'images/vincetse-2016-05-29.jpg'
 cover_image: 'images/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.2545x1200.jpg'
 
 author:
   name: 'Vince Tse'
-  show_blog: true
+  show_blog: false
   twitter_username: vincetse
   github_username:  vincetse
   linkedin_username:  vincetse

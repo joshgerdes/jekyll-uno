@@ -1,4 +1,4 @@
-# jekyll-uno
+# Wanderers
 
 Wanderers - responsive theme for Jekyll based on the [Uno](https://github.com/joshgerdes/jekyll-uno) theme and inspired by the [Wanderers - a short film by Erik Wernquist](https://vimeo.com/108650530).
 

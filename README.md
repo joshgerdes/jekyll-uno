@@ -1,6 +1,6 @@
 # jekyll-uno
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Wanderers - responsive theme for Jekyll based on the [Uno](https://github.com/joshgerdes/jekyll-uno) theme and inspired by the [Wanderers - a short film by Erik Wernquist](https://vimeo.com/108650530).
 
 > :warning:
   This theme requires ruby and rubygems installed
@@ -21,22 +21,22 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 ### Install and Test
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
+1. Download or clone repo `git clone git@github.com:yuriyvolkov/wanderers.git`
+2. Enter the folder: `cd wanderers/`
 3. If you don't have bundler installed: `gem install bundler`
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/)
 
 ---
 
 ### Demo and Download
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+[Demo](http://)
+[Download](https://github.com/yuriyvolkov/wanderers/archive/master.zip)
 
-![jekyll-uno - free Jekyll theme](/screenshot.png)
+![Wanderers - free Jekyll theme](/screenshot.png)
 
 ---
 

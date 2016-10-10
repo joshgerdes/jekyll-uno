@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
+@import 'https://fonts.googleapis.com/css?family=Exo+2:800';
 /* http://meyerweb.com/eric/tools/css/reset/
 	 v2.0 | 20110126
 	 License: none (public domain)
@@ -46,6 +47,12 @@ body {
 	body:after {
 		clear: both; }
 
+div#particles-js {
+  position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;}
 /*
  * Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
@@ -1190,6 +1197,7 @@ hr {
 	vertical-align: middle; }
 
 .panel-title {
+        font-family: 'Exo 2', sans-serif;
 	margin: 0 0 5px 0;
 	font-size: 2.5em;
 	letter-spacing: 4px;
@@ -1680,3 +1688,6 @@ input[type="tel"] {
 	.btn, .navigation__item a {
 		display: block;
 		margin-bottom: .4em; } }
+
+
+

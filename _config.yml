@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: Wanderers
+description: 'responsive theme for Jekyll based on Uno and inspired by Wanderers short film by Erik Wernquist'
+url: 'https://github.com/yuriyvolkov/wanderers'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Yuri Volkov'
+  email: mail@example.com
+  twitter_username: example.user
+  facebook_username: example.user
+  github_username:  example.user
+  linkedin_username:  example.user
 
 defaults:
   -

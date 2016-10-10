@@ -27,13 +27,12 @@ Wanderers - responsive theme for Jekyll based on the [Jekyll-Uno](https://github
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/)
+Access via: [http://localhost:4000/](http://localhost:4000/)
 
 ---
 
 ### Demo and Download
 
-[Demo](http://)
 [Download](https://github.com/yuriyvolkov/wanderers/archive/master.zip)
 
 ![Wanderers - free Jekyll theme](/screenshot.png)

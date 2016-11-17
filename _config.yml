@@ -1,18 +1,16 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: Martin Pszczola
+description: 'Data Insights and Random Thoughts'
+url: 'https://martinpsz.github.io'
+baseurl: '/portfolio/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Martin Pszczola'
+  email: martinpsz@protonmail.com
+  github_username:  martinpsz
+  linkedin_username:  martinpszczola
 
 defaults:
   -

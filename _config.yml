@@ -9,8 +9,8 @@ baseurl: '/'
 author:
   name: 'Gabriel Balbuena'
   email: gabrielbalbuena@gmail.com
-  twitter_username: gabrielbalbuena
-  facebook_username: gabrielbalbuena
+  # twitter_username: gabrielbalbuena
+  # facebook_username: gabrielbalbuena
   github_username:  gbalbuena
   linkedin_username:  gabrielbalbuenaborba
 

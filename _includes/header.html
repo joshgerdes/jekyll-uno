@@ -9,7 +9,11 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+          {% if site.author.gravatar %}
+          <img src="{{ site.author.gravatar | prepend: '//www.gravatar.com/avatar/' }}?s=100" class="user-image" alt="My Profile Photo">
+          {% else %}
           <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+          {% endif %}
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">

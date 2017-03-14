@@ -13,7 +13,7 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
-.btn, 
+.btn,
 .navigation__item a {
   margin: 5px 0;
   white-space: nowrap;
@@ -38,6 +38,11 @@ pre.highlight code,
 }
 
 .post-meta__tags {
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.post-meta__categories {
   font-size: 12px;
   padding: 0 5px;
 }

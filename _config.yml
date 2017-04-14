@@ -35,6 +35,5 @@ kramdown:
 gems:
     - jekyll-paginate
     - jekyll-redirect-from
-    - jekyll-less
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']

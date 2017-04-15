@@ -1,6 +1,6 @@
 ---
 title:  "Making better tool choices"
-date:   2015-05-28
+date:   2015-03-24
 canonical: http://blog.staticvoid.co.nz/2015/3/24/making_good_tool_choices
 redirect_from:
   - 2015/3/24/making_good_tool_choices

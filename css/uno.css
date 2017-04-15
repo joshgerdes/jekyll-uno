@@ -2061,3 +2061,8 @@ input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-place
         margin-bottom: .4em;
     }
 }
+
+.post-container > .post p img{
+  margin:0 auto;
+  display: block;
+}

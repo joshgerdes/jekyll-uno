@@ -148,12 +148,12 @@ public void RedirectToLatestPostWithOnePublishedPostsTest()
         new List<Post> {
             new Post {
                 Status = PostStatus.Published,
-                Path =&quot;2013/04/14/some-post&quot;,
+                Path ="2013/04/14/some-post",
                 Posted = new DateTime(2013,4,14) }
         }));
     PostController sut = new PostController(postRepo);
     var result = sut.Index();
-    Assert.AreEqual(&quot;/2013/04/14/some-post&quot;, ((RedirectResult)result).Url);
+    Assert.AreEqual("/2013/04/14/some-post", ((RedirectResult)result).Url);
 }
 
 [TestMethod]
@@ -163,31 +163,20 @@ public void RedirectToLatestPostWithMultiplePublishedPostsTest()
         new List<Post> {
             new Post {
                 Status = PostStatus.Published,
-                Path =&quot;2013/04/10/some-other-post&quot;,
+                Path ="2013/04/10/some-other-post",
                 Posted = new DateTime(2013,4,10) },
             new Post {
                 Status = PostStatus.Published,
-                Path =&quot;2013/04/14/some-post&quot;,
+                Path ="2013/04/14/some-post",
                 Posted = new DateTime(2013,4,14) }
         }));
     PostController sut = new PostController(postRepo);
     var result = sut.Index();
-    Assert.AreEqual(&quot;/2013/04/14/some-post&quot;, ((RedirectResult)result).Url);
+    Assert.AreEqual("/2013/04/14/some-post", ((RedirectResult)result).Url);
 }
 ```
 
 What is great about this is that you can test right to the edges of our system and ensure that you are producing the intended result for this controller, eg that its going to redirect us to the URL of the latest post without the fragility of testing with a database in the mix.
-
-### So what about Young's concerns
-
-#### What if you don't want all CRUD operations?
-
-Read only repository
-
-#### Persistence logic in the domain
-Persistence is an important part of our applications.
-
-#### Specific contracts
 
 ### Summing up
 I find generic repositories to be a very useful pattern which allows you to write more change agile code. They provide a key touch point for being able to work with data in different scenarios. While they are not the right abstraction in all scenarios they provide a useful abstraction for a wide range of applications, especially when combined with a dependency injection framework.

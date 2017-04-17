@@ -22,7 +22,7 @@ These concerns should be separated and dealt with at the appropriate scope.
 ## The Authentication Proxy
 The authentication proxy pattern separates the global concern of Authentication from the local concern of authorisation by intercepting all requests to APIs and replacing the specific by reference authentication with a standardised by value claims based token. This means that individual APIs need only validate and check authorisation on one token type.
 
-![Authentication proxy](http://i.imgur.com/QGDfNGC.png)
+![Authentication proxy]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/authentication-proxy.png)
 
 The authentication proxy has the following behavior/pseudocode
 
@@ -49,7 +49,7 @@ More importantly that user lookup component (which previously had to be in every
 
 Routing is an important component when multiple APIs are at play, how does the authentication proxy know where to send the request. There are many ways to approach this problem but I like the following the best.
 
-Get your API proxy to receive requests for api.example.con, reserve all subdomains for your actual APIs (it's important that you control the DNS lookup of *.api.example.con from your proxy machine for security reasons). Then use the first segment of the url to select the API subdomain to use. eg a request for https://api.example.con/posts/v1/edit might get routed to the API https://posts.api.example.con/v1/edit. This kind of URL routing is readable and presents a contiguous api front to consumers. In this example there is no need to publish the posts.api.example.con API publically, only the proxy needs to be able to access it directly. However in some cases it may be desirable to allow APIs to call each other internally as well as the authentication proxy.
+Get your API proxy to receive requests for api.example.con, reserve all subdomains for your actual APIs (it's important that you control the DNS lookup of `*.api.example.con` from your proxy machine for security reasons). Then use the first segment of the url to select the API subdomain to use. eg a request for [https://api.example.con/posts/v1/edit](#) might get routed to the API [https://posts.api.example.con/v1/edit](#). This kind of URL routing is readable and presents a contiguous api front to consumers. In this example there is no need to publish the posts.api.example.con API publically, only the proxy needs to be able to access it directly. However in some cases it may be desirable to allow APIs to call each other internally as well as the authentication proxy.
 
 ###Costs
 As with any proxy system the Authentication proxy introduces synchronous latency into your applications, [Latency is not zero](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) so it is important to understand, measure and minimise the impact of this on your application. While the request overhead may not be controllable in this pattern there are several techniques you can use to minimise latency.

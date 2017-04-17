@@ -4,6 +4,7 @@ date:   2015-09-08
 canonical: http://blog.staticvoid.co.nz/2015/9/8/composable_repositories
 redirect_from:
   - 2015/9/8/composable_repositories
+excerpt: "I have used the repository pattern extensively as a way to achieve reuse and cluster my query logic into a single place. This is great as it means my queries can be reused and I know where to go to fix a database problem. However over the years I have encountered a number of problems with repositories."
 ---
 #### I love simple reusable code.
 
@@ -16,21 +17,22 @@ I have used the repository pattern extensively as a way to achieve reuse and clu
 In order to gain reuse on a repository method it takes a whole heap of parameters so that it fits all the places and specific scenarios which might use this repository.
 
 eg:
-<pre class="prettyprint">
-<code class="language-csharp">public IEnumerable&lt;Person&gt; FindPeople(
+``` csharp
+public IEnumerable<Person> FindPeople(
 	string name = null,
 	int? olderThan = null,
 	bool includeAddress = false,
 	int? page = null,
 	int? pageSize = null)
-</code></pre>
+```
+
 This kind of method is usable in a lot of places which is great, but it lends itself to increasingly complex implementations which are hard to test.
 
 #### The illusion of reuse
 
 Visual studio 2015 has an awesome improvement, it lists out the number of places each method is used. But do all your repository methods look like this with only one consumer?
 
-![Imgur](http://i.imgur.com/2Ft6Tud.png?1)
+![Only one reference]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/only-one-reference.png)
 
 Sadly while we have built this method to be reusable in reality there is only one place in our application where we need a paged list of people. In fact almost all of our repository methods are specific enough that we only use them in one place.
 
@@ -49,13 +51,14 @@ Say you have a repository which will give you a list of people. People have addr
 We have two repository methods, one which gets a list of people and another which gets an address for a person. To get reuse in our code we call two repository methods
 
 eg:
-
-<pre class="prettyprint"><code class="language-csharp">foreach(var person in personRepository.GetPeoplePaged(1, 100))
+``` csharp
+foreach(var person in personRepository.GetPeoplePaged(1, 100))
 {
 	var address = addressRepository.GetAddressForPerson(person.Id);
 	//other things...
 }
-</code></pre>
+```
+
 As you can see this will create a performance issue (101 queries where one could have done), but sometimes its less visible than this.
 
 ### Extension methods to the rescue
@@ -66,11 +69,13 @@ This provides an interesting avenue for writing repositories using smaller much 
 
 Consider the following repository call to generate an MVC view:
 
-<pre class="prettyprint"><code class="language-csharp">var people = personRepository.FindPeople(includeAddress: true, inRegion: "The Shire", page:10, pageSize: 20);
-return View(people.Select(p =&gt; new PersonViewModel {
+``` csharp
+var people = personRepository.FindPeople(includeAddress: true, inRegion: "The Shire", page:10, pageSize: 20);
+return View(people.Select(p => new PersonViewModel {
 	Name = p.Name,
 	Address = p.Address?.PostalAddress
-});</code></pre>
+});
+```
 
 As you can see we are calling our Super generic method and then converting this to a view model. However there's a couple of issues with this.
 
@@ -80,55 +85,60 @@ As you can see we are calling our Super generic method and then converting this 
 
  What if we could write it like this:
 
-<pre class="prettyprint"><code class="language-csharp">return View(
+``` csharp
+return View(
 	Context.People
 		.InRegion("Shire")
 		.OrderByName()
 		.Page(1)
 		.ToViewModels()
-		.ToArray());</code></pre>
+		.ToArray());
+```
 
-Looks much simpler right? Its less code and the intent is clearer. What if I told you the generated SQL for this also only selects Person.Id, Person.Name and Address.PostalAddress?
+Looks much simpler right? Its less code and the intent is clearer. What if I told you the generated SQL for this also only selects `Person.Id`, `Person.Name` and `Address.PostalAddress`?
 
 So how do we make this kind of code a reality? How does it work?
 
 To do this we have 4 extension methods. Each performs one simple manipulation and supports chaining.
-
-<pre class="prettyprint"><code class="language-csharp">public static IQueryable&lt;Person&gt; InRegion(this IQueryable&lt;Person&gt; people, string region)
+``` csharp
+public static IQueryable<Person> InRegion(this IQueryable<Person> people, string region)
 {
-	return people.Where(p =&gt; p.Addresses.Any(a =&gt; a.Region == region));
+	return people.Where(p => p.Addresses.Any(a => a.Region == region));
 }
 
-public static IOrderedQueryable&lt;Person&gt; OrderByName(this IQueryable&lt;Person&gt; people)
+public static IOrderedQueryable<Person> OrderByName(this IQueryable<Person> people)
 {
-	return people.OrderBy(x=&gt;x.Name);
+	return people.OrderBy(x=>x.Name);
 }
 
-public static IQueryable&lt;T&gt; Page&lt;T&gt;(this IOrderedQueryable&lt;T&gt; entities, int page, int pageSize = 3)
+public static IQueryable<T> Page<T>(this IOrderedQueryable<T> entities, int page, int pageSize = 3)
 {
 	int skip = Math.Max(0, page - 1) * pageSize;
 	return entities.Skip(skip).Take(pageSize);
 }
 
-public static IQueryable&lt;PersonModel&gt; ToViewModels(this IQueryable&lt;Person&gt; people)
+public static IQueryable<PersonModel> ToViewModels(this IQueryable<Person> people)
 {
-	return people.Select(person =&gt; new PersonModel
+	return people.Select(person => new PersonModel
 	{
 		Name = person.Name,
-		Addresses = person.Addresses.Select(a =&gt; a.PostalAddress)
+		Addresses = person.Addresses.Select(a => a.PostalAddress)
 	});
-}</code></pre>
+}
+```
 
 #### So that's nice but what about our reuse?
 
 Say we want to use the same view model but only find a single entity.
 
-<pre class="prettyprint"><code class="language-csharp">return View(
+``` csharp
+return View(
 	Context.People
 		.InRegion(region)
 		.WithName(name)
 		.ToViewModels()
-		.FirstOrDefault());</code></pre>
+		.FirstOrDefault());
+```
 
 As you can see we still get to reuse the bits we already coded.
 
@@ -146,5 +156,5 @@ What this pattern gives you is what I would term a composable repository. Its a 
 
 I have put an [example application on GitHub](https://github.com/lukemcgregor/ComposableRepositories) that you can check out. The two example methods mentioned in this post can be called with:
 
- - /api/people?region=Shire&page=1
- - /api/person?region=Mordor&name=Sauron
+ - [/api/people?region=Shire&page=1](#)
+ - [/api/person?region=Mordor&name=Sauron](#)

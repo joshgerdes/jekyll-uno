@@ -12,7 +12,7 @@ redirect_from:
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nb, s);
     })();
 </script>
-I recently published a <a href="http://nuget.org/List/Packages/StaticVoid.Core.Repository">NuGet package</a> which contains my version of the repository pattern for EF4.1 so i thought it would be good to write a bit of an explanation of how i use it and what impact this has on the way i access databases within my own applications. My goal is to allow people to use this pattern to reduce the code required to perform the common database tasks while reducing the coupling to the actual underlying database/ERM framework and making the flow of data throughout applications more seamless and hence more elegant.<br />
+I recently published a <a href="http://nuget.org/List/Packages/StaticVoid.Core.Repository">NuGet package</a> which contains my version of the repository pattern for EF4.1 so I thought it would be good to write a bit of an explanation of how I use it and what impact this has on the way I access databases within my own applications. My goal is to allow people to use this pattern to reduce the code required to perform the common database tasks while reducing the coupling to the actual underlying database/ORM framework and making the flow of data throughout applications more seamless and hence more elegant.<br />
 <pre class="nuget-button" style="width: 100px;">Install-Package StaticVoid.Core.Repository</pre>I would also like to outline a few places this method falls down and what the pitfalls are around these specific circumstances.<br />
 <br />
 To use the StaticVoid Repository pattern several things need to be set up.<br />

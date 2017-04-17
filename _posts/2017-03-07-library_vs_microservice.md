@@ -12,7 +12,7 @@ Each method has particular advantages and scenarios which it suits best.
 
 ### TL;DR
 
-![Library or Microservice](http://i.imgur.com/iaycTc7.png)
+![Library or Microservice]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/library-or-microservice.png)
 
 ### Opt in vs automatic updates
 

@@ -9,7 +9,7 @@ Many of our modern software development methodologies focus on short iteration l
 
 Many organisations adopt some form of continuous delivery whereby as code is checked in, it is tested and packaged for deployment. It may then go through various test and pre-production environments for further manual or automated testing. Deployment is done by someone (normally a developer) pushing that package into production. We are the masters of the system so we know that this deploy will work, we got this, it's all good, Ship it.
 
-![enter image description here](http://i.memecaptain.com/gend_images/zyCwXg.jpg)
+![Ship it](http://i.memecaptain.com/gend_images/zyCwXg.jpg)
 
 The problem is that we often aren't the masters we think we are. I have often found (and I'm sure you have too) situations where the decision to deploy was wrong because we did not take into account some obscure failure condition. These often seem to originate from system interop not necessarily the lines of code we are so sure are ok. This really sucks.
 

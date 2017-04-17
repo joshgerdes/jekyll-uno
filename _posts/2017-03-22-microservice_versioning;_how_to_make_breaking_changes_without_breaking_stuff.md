@@ -9,7 +9,7 @@ Versioning is a tool which allows microservices to gain independence from each o
 
 [Semver](http://semver.org/) is a great way to think about versioning, as a refresher semver uses the following versioning:
 
-[![Breaking.Feature.Fix](http://i.imgur.com/CaVLddN.png)](http://www.jontejada.com/blog/galvanize/talk/2016/01/18/semver/)
+[![Breaking.Feature.Fix]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/semver.png)](http://www.jontejada.com/blog/galvanize/talk/2016/01/18/semver/)
 
 When we are thinking about microservices we need to be concerned about the versioning strategy from both the point of view of provider and consumer. However as we have a live system we actually only need to worry about making breaking changes to our services (ie the first semver number). If we make any non-breaking (feature/fix) change our consumers don't need to take any action. If we want to be able to make a breaking change to a service we must provide a way of making that change while still supporting the old version of the contract.
 
@@ -72,7 +72,7 @@ There are many different ways of versioning, different communication types will 
 
 #### HTTP URL versioning
 
-This is the most common way of versioning for HTTP based services. In URL versioning you would put a breaking change version number in the URL, for example https://api.staticvoid.co.nz/v1/do-stuff and then when you make a breaking change provide a second URL with the new change https://api.staticvoid.co.nz/v2/do-better-stuff. This means that if someone calls the v1 URL they will still have their request serviced but new consumers will be able to use the new API.
+This is the most common way of versioning for HTTP based services. In URL versioning you would put a breaking change version number in the URL, for example [https://api.staticvoid.co.nz/v1/do-stuff](#) and then when you make a breaking change provide a second URL with the new change [https://api.staticvoid.co.nz/v2/do-better-stuff](#). This means that if someone calls the v1 URL they will still have their request serviced but new consumers will be able to use the new API.
 
 #### HTTP content type versioning
 

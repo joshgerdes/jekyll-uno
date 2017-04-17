@@ -11,14 +11,16 @@ For [DotDev](https://dotdev.io) I have a set of UI tests that cover many common 
 
 As I do not provide any local login to the site I had to create dummy social accounts. This doesn't seem too bad but all of the social providers I used have measures in place to prevent bot logins. This made my tests unstable and frustrating to manage.
 
-The alternatives aren't great
-------------------------------
+### The alternatives aren't great
+
 At this point I had two options to try and resolve the issues with UI Test logins.
 
 **To build a new way of logging in users for my tests which bypassed OAuth.**
+
 This would have been a bit of work, but more to the point it would have been work which had no relevance outside of testing. It also would obscure several critical login systems which I specifically want to test.
 
 **Find a provider which did not do all of the bot prevention stuff**
+
 This seemed like a better option however It was very hard to find a provider fitting this description. It's not the kind of thing that a provider would list about themselves and it would have been trial and error to find one. To spite this I tried a few, all of which I eventually discovered had some annoying countermeasure.
 
 

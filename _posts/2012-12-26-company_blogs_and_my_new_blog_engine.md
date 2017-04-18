@@ -19,7 +19,7 @@ Replicating content across multiple sites is referred to as syndication and up u
 ### Markdown
 Markdown is great, as a developer I really like writing in markdown as a web editor. I especially like that if the formatting I need isn't built in I can just use HTML inline to get what I'm after, and of course some great sites which I use regularly (StackOverflow and Github) are also heavily markdown based. For this reason it was important to me that when writing articles I'm still able to use this great edit tool. Below is a little of how this editor works in my blog engine. The engine also has an instant preview window so I can get a good idea of how stuff looks.
 
-![Markdown Editor]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/markdown-editor.PNG)
+![Markdown Editor]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/markdown-editor.png)
 
 ### Redirects and URL manipulation
 A key requirement for me was that all of the links from my old blog still worked when I changed over to the new software. This means that I either needed to use the same URL structure or build in a redirect engine. I chose the latter as it gives me more options in terms of URL structure and allows me to be able to customise URLs after posting an article.

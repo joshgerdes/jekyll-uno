@@ -1,5 +1,7 @@
-@import url(uno.css);
-@import url(monokai.css);
+---
+---
+@import "uno";
+@import "monokai";
 
 /* Modifications */
 
@@ -13,7 +15,7 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
-.btn, 
+.btn,
 .navigation__item a {
   margin: 5px 0;
   white-space: nowrap;

@@ -29,6 +29,10 @@ permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
 
+sass:
+    sass_dir: _sass
+    style: compressed
+
 kramdown:
   # use Github Flavored Markdown
   input: GFM

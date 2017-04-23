@@ -34,8 +34,21 @@ q:before, q:after {
 	content: none; }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0; }
+  border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th {
+	color: white;
+  background-color: #999;
+  border-color: #999;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
 
 body {
 	width: 100%;

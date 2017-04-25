@@ -84,7 +84,7 @@ public class HomeController : Controller
 
 Note that the underlying data technology and type of repository are irrelevant to the controller accessing the repository.
 
-<b>Unit testing with repositories.</b>
+### Unit testing with repositories
 
 Because the individual technology and data source behind the repository is not implied in the usage of the repository it is really easy to test only the components which are important to the usage.
 

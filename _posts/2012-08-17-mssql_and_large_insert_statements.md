@@ -19,8 +19,7 @@ The more latency on our network the longer the green blocks become. So if these 
 
 ![SQL Query Execution - multiples]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/sql-query-execution-multiples.png)
 
-<div class="separator" style="clear: both; text-align: left;">
-As you can see we spend a lot of time doing all of the wrapping around the statement and not a lot of time actually inserting rows in SQL. </div>
+As you can see we spend a lot of time doing all of the wrapping around the statement and not a lot of time actually inserting rows in SQL.
 
 By appending all of the statements into a single command text what we are essentially doing is bundling all of the separate actions we need to perform in out insert together. This give us something like the following:
 

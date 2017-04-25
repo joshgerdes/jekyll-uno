@@ -56,7 +56,7 @@ private void RegisterRoutes()
 }
 ```
 
-This looks pretty simple but what’s important is that you use a derivative of WebServiceHostFactory, if you use a derivative of the older ServiceHostFactory, you won’t get a nice error you will just get a <b>blank page</b> via the browser.
+This looks pretty simple but what’s important is that you use a derivative of WebServiceHostFactory, if you use a derivative of the older ServiceHostFactory, you won’t get a nice error you will just get a **blank page** via the browser.
 
 This is all you really need for the host component of the service
 

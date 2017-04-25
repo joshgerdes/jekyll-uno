@@ -13,7 +13,7 @@ I think its really important to be able to just hack something together quickly 
 
 So last weekend I decided to just spend one day writing an app from start to finish. I didn't focus on testing, reuse or maintainability, I just coded until it was working and had a lot of fun. Its a bit like a [hack day](http://en.wikipedia.org/wiki/Hackathon) but just for me.
 
-<span style="font-size: large;">The Concept</span>
+### The Concept
 I spend quite a bit of time on [StackOverflow](http://stackoverflow.com/) because I think its a great way to contribute to the development community and plenty of the questions have helped me out personally. One of the things I find hard is to find questions which I'm interested in responding to on StackOverflow. I would also really like to get some kind of notification when there is a question which I care about. So I decided to write a twitter bot which looks at all of the new questions from StackOverflow and tweets any which are in the tags I care about. This also let me play with two APIs I've never interfaced with before (StackOverflow and Twitter).
 
 Because I'm a bit of an EF guy I made my bot tweet all of the questions tagged with EF relevant tags.

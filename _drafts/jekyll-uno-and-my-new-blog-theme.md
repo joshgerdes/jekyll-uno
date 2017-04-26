@@ -1,7 +1,63 @@
-Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but the world has moved on a bit.
+Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but I'm no designer and I would really like it to have a better style and typography. I also wanted to put the content in GitHub so that if people find mistakes they can fix them with a pull request.
 
-## Github pages
+This makes [GitHub pages](https://pages.github.com/) (free static site hosting) and [Jekyll](https://jekyllrb.com/) (a static site generator GitHub runs) a great solution for running my blog.
 
-## Jekyll
+In this article I'm going to talk about my experience with moving to Jekyll and what I liked/disliked about the process.
 
-## Forking and fixing
+## Before
+![Before]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/old-blog.png)
+
+## And after
+![After]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/new-blog.png)
+
+
+## The Theme
+One of the nice things about Jekyll is the number of themes available for blogs. It looks like a lot of people use Jekyll for tech blogs so there are many themes available. In terms of themes you can either use a [bundled theme](https://pages.github.com/themes/), or get a [theme someone else has made](http://jekyllthemes.org) from GitHub and fork it to run your blog.
+
+Bundled themes are pretty nice in that you can set them up very easily, eg in your `_config.yaml`:
+
+``` yaml
+theme: jekyll-theme-architect
+```
+
+But there is far less selection available. It also doesn't offer a great experience if you want to fix or change things about the theme to suit your use case which I ended up needing to do.
+
+There are thousands of Jekyll themes available on GitHub but I picked [jekyll-uno](https://github.com/joshgerdes/jekyll-uno) by [@joshgerdes](http://joshgerdes.com/2016/jekyll-uno-a-minimal-responsive-theme-for-jekyll/) as I liked the way it looked.
+
+### Customisations
+I made several modifications to the theme itself to suit what I was wanting for a blog.
+
+The default theme had a very narrow max content width. This means on a large screen the content band is (IMO) too narrow. I upped this from 640px to 800px, which I felt looks a lot nicer especially with the default font size of 16px (which does make it nice to read).
+
+I got rid of the full screen landing page and went directly to the post list. While the landing page looked really nice I didn't think it was terribly functional and as a reader I would just want to see an index. It was also implemented in javascript so if you go to any of the index pages without javascript enabled you see the landing page and cant get access to the actual index. This probably wouldn't have stopped search bots but I don't think it would be great for SEO to have your actual content not visible.
+
+I added support for setting the canonical link for the page, this allowed me to run my blog on github pages before I migrated the URL without having a duplicate content problem. By default the theme does set the canonical link but in my case I wanted this to point back to my old blog.
+
+I renamed the 'Blog' button to 'Archive' as without the landing page it makes more sense that you are going to the index of old posts rather than the blog section of a larger site.
+
+Images are by default left aligned, I didn't really like this so I centred everything by default.
+
+There was no default tab width set for code blocks so it used the default 8 wide tabs, this made all my code samples look super indented, so I set a default tab width of 4 on code blocks (which is now settable in CSS3).
+
+``` css
+pre
+{
+    -moz-tab-size: 4;
+    -o-tab-size:   4;
+    tab-size:      4;
+}
+```
+
+I customised the look to bring some of my old blog through (like the logo and favicon) and also added a different background image. For anyone who is interested this image was taken at [Lake Louise](https://www.google.co.nz/maps/place/Lake+Louise,+AB,+Canada/@51.4139042,-116.2406884,15.25z/data=!4m5!3m4!1s0x53775d28a0e1ce11:0x3c373c7b6365bce6!8m2!3d51.4253705!4d-116.1772552) in Alberta. I love the snow (which we don't get much of in New Zealand) and this brings back good memories of our trip there a few years ago.
+
+![Lake Louise]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/cover.jpg)
+
+
+I also did a bunch of minor fixes as pull requests back to the original theme:
+
+ - [Markdown table style](https://github.com/joshgerdes/jekyll-uno/pull/64)
+ - [Cache busters](https://github.com/joshgerdes/jekyll-uno/pull/62)
+ - [No tags render](https://github.com/joshgerdes/jekyll-uno/pull/61)
+ - [Corrected baseurl conventions](https://github.com/joshgerdes/jekyll-uno/pull/60)
+
+It was great to be able to make these fixes back into the original repository.

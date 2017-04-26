@@ -2,7 +2,6 @@
 title:  "SharePoint Managed Paths"
 date:   2011-05-24
 canonical: http://blog.staticvoid.co.nz/2011/5/24/sharepoint_managed_paths
-qq: 'aaaa'
 redirect_from:
   - 2011/5/24/sharepoint_managed_paths
 ---

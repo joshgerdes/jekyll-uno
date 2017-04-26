@@ -1,6 +1,9 @@
+---
+title:  "Migrating my blog to Jekyll"
+---
 Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but I'm no designer and I would really like it to have a better style and typography. I also wanted to put the content in GitHub so that if people find mistakes they can fix them with a pull request.
 
-This makes [GitHub pages](https://pages.github.com/) (free static site hosting) and [Jekyll](https://jekyllrb.com/) (a static site generator GitHub runs) a great solution for running my blog.
+This makes [GitHub pages] (free static site hosting) and [Jekyll](https://jekyllrb.com/) (a static site generator GitHub runs) a great solution for running my blog.
 
 In this article I'm going to talk about my experience with moving to Jekyll and what I liked/disliked about the process.
 
@@ -61,3 +64,26 @@ I also did a bunch of minor fixes as pull requests back to the original theme:
  - [Corrected baseurl conventions](https://github.com/joshgerdes/jekyll-uno/pull/60)
 
 It was great to be able to make these fixes back into the original repository.
+
+## The upgrade process
+
+Setting up Jekyll and migrating my content was reasonably easy.
+
+Once I had decided on a theme the next step was to set it up on [GitHub pages]. To do this I forked the Jekyll-Uno repository. By default this creates a repository named `<username>/jekyll-uno`.
+
+GitHub pages requires a repository with a name `<username>/<username>.github.io` in order to create a site at the root of a domain like my blog, so I renamed the repository as above. To do this go to the settings on the forked repository.
+
+**NOTE** After the rename it took a checkin to get GitHub pages to create the site.
+
+From here I imported all of my posts (and removed the default one). This meant creating a markdown file for each post in the `_posts` directory. Each post needs to be named `yyyy-mm-dd-name_of_the_article.md`, By default with Jekyll-uno this creates a post hosted at `/jekyll-uno/yyyy/name_of_the_article`. As my old blog was already using markdown this wasn't too bad but some of my older articles were still in HTML so I fixed them up at the same time.
+
+Next I corrected the URL structure by setting a baseurl of `''` in the `_config.yaml` file.
+
+**NOTE** jekyll-uno had some bugs around setting an empty baseurl, you will need [this pull request](https://github.com/joshgerdes/jekyll-uno/pull/60) to make it all work properly
+
+The URL structure was slightly different from my old blog which uses /yyyy/m/d/title as the format. I quite like just having the year in the URL so instead of reimplementing my old url scheme I decided to add in redirects from the origional URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) 
+
+I then updated the theme to personalise it. Mostly this was done in the `_config.yaml`.
+
+
+[GitHub pages]: https://pages.github.com

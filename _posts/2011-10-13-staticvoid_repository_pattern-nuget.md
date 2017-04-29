@@ -4,6 +4,8 @@ date:   2011-10-13
 canonical: http://blog.staticvoid.co.nz/2011/10/13/staticvoid_repository_pattern-nuget
 redirect_from:
   - 2011/10/13/staticvoid_repository_pattern-nuget
+  - 2011/10/staticvoid-repository-pattern-nuget.html
+  - 2010/11/my-take-on-repository-pattern.html
 ---
 
 I recently published a <a href="http://nuget.org/List/Packages/StaticVoid.Core.Repository">NuGet package</a> which contains my version of the repository pattern for EF4.1 so I thought it would be good to write a bit of an explanation of how I use it and what impact this has on the way I access databases within my own applications. My goal is to allow people to use this pattern to reduce the code required to perform the common database tasks while reducing the coupling to the actual underlying database/ORM framework and making the flow of data throughout applications more seamless and hence more elegant.

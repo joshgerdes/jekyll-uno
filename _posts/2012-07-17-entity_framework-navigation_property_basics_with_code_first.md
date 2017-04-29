@@ -4,6 +4,7 @@ date:   2012-08-01
 canonical: http://blog.staticvoid.co.nz/2012/7/17/entity_framework-navigation_property_basics_with_code_first
 redirect_from:
   - 2012/7/17/entity_framework-navigation_property_basics_with_code_first
+  - 2012/07/entity-framework-navigation-property.html
 ---
 ### What is a navigation property?
 

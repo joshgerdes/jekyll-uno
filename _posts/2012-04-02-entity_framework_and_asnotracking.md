@@ -4,6 +4,7 @@ date:   2012-04-26
 canonical: http://blog.staticvoid.co.nz/2012/4/2/entity_framework_and_asnotracking
 redirect_from:
   - 2012/4/2/entity_framework_and_asnotracking
+  - 2012/04/entity-framework-and-asnotracking.html
 ---
 #### TLDR
 In a nutshell you should use `.AsNoTracking()` in any Entity Framework query which you intend to use only for reading data. This will ensure minimal memory usage and optimal performance in these cases.

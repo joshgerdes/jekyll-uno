@@ -4,6 +4,7 @@ date:   2012-08-17
 canonical: http://blog.staticvoid.co.nz/2012/8/17/mssql_and_large_insert_statements
 redirect_from:
   - 2012/8/17/mssql_and_large_insert_statements
+  - 2012/08/mssql-and-large-insert-statements.html
 ---
 When Entity Framework was made open source (which by the way I think is awesome) I posted a possible improvement to the framework which could improve performance especially in scenarios where a set of rows are inserted into a table. There are several different methods of inserting large amounts of data into SQL.
 

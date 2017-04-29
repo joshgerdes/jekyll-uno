@@ -4,6 +4,7 @@ date:   2012-03-24
 canonical: http://blog.staticvoid.co.nz/2012/3/24/entity_framework_comparative_performance
 redirect_from:
   - 2012/3/24/entity_framework_comparative_performance
+  - 2012/03/entity-framework-comparative.html
 ---
 There are heaps of opinions floating round about which ORM is fastest. I've recently been working on improving the performance of a long running sync of a large data set back ended into SQL. During this process there has been a lot of talk about whether Entity Framework was the correct tool for the job and many sites on the net would imply perhaps it isn't the best tool for batch processing. So I decided to do some tests of my own to find out how much slower Entity Framework actually is.
 

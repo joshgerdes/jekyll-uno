@@ -4,6 +4,7 @@ date:   2012-04-26
 canonical: http://blog.staticvoid.co.nz/2012/4/26/making_dapper_faster_with_transactions
 redirect_from:
   - 2012/4/26/making_dapper_faster_with_transactions
+  - 2012/04/making-dapper-faster-with-transactions.html
 ---
 After posting on the performance of several different ORMs I had a chat to [Sam Saffron] one of the authors of the Dapper framework around how I could make my Dapper test cases faster. My original test results showed Dapper as being around 55% slower for inserts and 23% slower for updates than Entity Framework.
 

@@ -4,6 +4,7 @@ date:   2012-08-01
 canonical: http://blog.staticvoid.co.nz/2012/8/1/entity_framework_performance_cheat_sheet
 redirect_from:
   - 2012/8/1/entity_framework_performance_cheat_sheet
+  - 2012/08/entity-framework-performance-cheat-sheet.html
 ---
 I recently gave a presentation on Entity Framework performance for the guys at work and one of my colleagues suggested I turned it a cheat sheet, so here goes:
 

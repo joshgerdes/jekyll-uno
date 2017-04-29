@@ -4,6 +4,7 @@ date:   2012-09-30
 canonical: http://blog.staticvoid.co.nz/2012/9/30/one_day_projects-stacktweeter
 redirect_from:
   - 2012/9/30/one_day_projects-stacktweeter
+  - 2012/09/one-day-projects-stacktweeter.html
 ---
 As professional developers we are encouraged to follow a bunch of patterns and practices for getting the best lifespan out of our applications, stuff like coding for reuse modularity and understandability for those who will perhaps be maintaining our codebases. We follow patterns such as [Inversion of Control](http://en.wikipedia.org/wiki/Inversion_of_control), [Single Responsibility](http://en.wikipedia.org/wiki/Single_responsibility_principle) and [DRY](http://en.wikipedia.org/wiki/DRY). All of these patterns help us write and maintain large code bases which can allow our apps to last longer and cause less pain as they change. These principals are great and I am a solid believer in applying them to our applications.
 

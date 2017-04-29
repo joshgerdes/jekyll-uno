@@ -4,6 +4,7 @@ date:   2012-02-15
 canonical: http://blog.staticvoid.co.nz/2012/2/15/using_a_rest_wcf_service
 redirect_from:
   - 2012/2/15/using_a_rest_wcf_service
+  - 2012/02/using-rest-wcf-service.html
 ---
 I've been having a bit of a play with REST and WCF lately, in the past I've done this with WebAPI, however given this is still BETA software I wasn't able to use it in my current project. When I went back to basic WCF with REST I had a few issues creating a working sample, it’s quite fiddly so I thought I would post the example.
 

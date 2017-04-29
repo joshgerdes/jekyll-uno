@@ -4,6 +4,7 @@ date:   2011-06-14
 canonical: http://blog.staticvoid.co.nz/2011/6/14/custom_errors_and_sharepoint_2010
 redirect_from:
   - 2011/6/14/custom_errors_and_sharepoint_2010
+  - 2011/06/custom-errors-and-sharepoint-2010.html
 ---
 We recently had a client who wanted to replace all SharePoint error pages with their own custom ones. This lead me to find a whole bunch of nasty gotchas inside of SharePoint in regards to the way it generates and handles errors.
 

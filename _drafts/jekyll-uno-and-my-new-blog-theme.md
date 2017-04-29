@@ -38,7 +38,7 @@ I added support for setting the canonical link for the page, this allowed me to 
 
 I renamed the 'Blog' button to 'Archive' as without the landing page it makes more sense that you are going to the index of old posts rather than the blog section of a larger site.
 
-Images are by default left aligned, I didn't really like this so I centred everything by default.
+Images are by default left aligned, I didn't really like this so I centered everything by default.
 
 There was no default tab width set for code blocks so it used the default 8 wide tabs, this made all my code samples look super indented, so I set a default tab width of 4 on code blocks (which is now settable in CSS3).
 
@@ -73,7 +73,9 @@ Once I had decided on a theme the next step was to set it up on [GitHub pages]. 
 
 GitHub pages requires a repository with a name `<username>/<username>.github.io` in order to create a site at the root of a domain like my blog, so I renamed the repository as above. To do this go to the settings on the forked repository.
 
-**NOTE** After the rename it took a checkin to get GitHub pages to create the site.
+![Rename github repo]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/github-rename.png)
+
+**NOTE** After the rename it took a check-in to get GitHub pages to create the site.
 
 From here I imported all of my posts (and removed the default one). This meant creating a markdown file for each post in the `_posts` directory. Each post needs to be named `yyyy-mm-dd-name_of_the_article.md`, By default with Jekyll-uno this creates a post hosted at `/jekyll-uno/yyyy/name_of_the_article`. As my old blog was already using markdown this wasn't too bad but some of my older articles were still in HTML so I fixed them up at the same time.
 
@@ -81,7 +83,7 @@ Next I corrected the URL structure by setting a baseurl of `''` in the `_config.
 
 **NOTE** jekyll-uno had some bugs around setting an empty baseurl, you will need [this pull request](https://github.com/joshgerdes/jekyll-uno/pull/60) to make it all work properly
 
-The URL structure was slightly different from my old blog which uses /yyyy/m/d/title as the format. I quite like just having the year in the URL so instead of reimplementing my old url scheme I decided to add in redirects from the origional URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) 
+The URL structure was slightly different from my old blog which uses /yyyy/m/d/title as the format. I quite like just having the year in the URL so instead of re-implementing my old URL scheme I decided to add in redirects from the original URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from)
 
 I then updated the theme to personalise it. Mostly this was done in the `_config.yaml`.
 

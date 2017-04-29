@@ -4,6 +4,7 @@ date:   2012-09-29
 canonical: http://blog.staticvoid.co.nz/2012/9/29/building_a_latency_router_for_testing
 redirect_from:
   - 2012/9/29/building_a_latency_router_for_testing
+  - 2012/09/building-latency-router-for-testing.html
 ---
 I recently needed to test SQL insert performance under latency scenarios. As part of this I needed a good way of introducing latency between my test harness and database server. I also wanted to control the latency and if possible have a way to run several different levels of latency at the same time. To do this I built a latency emulating router with Ubuntu server and IPTables.
 

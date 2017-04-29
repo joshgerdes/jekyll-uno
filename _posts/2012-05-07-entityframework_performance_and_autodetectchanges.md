@@ -4,6 +4,7 @@ date:   2012-05-07
 canonical: http://blog.staticvoid.co.nz/2012/5/7/entityframework_performance_and_autodetectchanges
 redirect_from:
   - 2012/5/7/entityframework_performance_and_autodetectchanges
+  - 2012/05/entityframework-performance-and.html
 ---
 
 ### What is Auto Detect Changes?

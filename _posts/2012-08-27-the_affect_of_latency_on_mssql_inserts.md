@@ -4,6 +4,7 @@ date:   2012-08-27
 canonical: http://blog.staticvoid.co.nz/2012/8/27/the_affect_of_latency_on_mssql_inserts
 redirect_from:
   - 2012/8/27/the_affect_of_latency_on_mssql_inserts
+  - 2012/08/the-affect-of-latency-on-mssql-inserts.html
 ---
 When dealing with any networked system a number of factors become important which do not apply when writing applications which run on a single machine. As a developers its very easy to overlook some of the aspects of developing for networked systems. The [Fallacies of Distributed Computing](http://en.wikipedia.org/wiki/Fallacies_of_Distributed_Computing) remind us not to make assumptions about networks.
 

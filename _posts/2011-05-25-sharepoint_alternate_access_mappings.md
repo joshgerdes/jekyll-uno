@@ -4,6 +4,7 @@ date:   2011-05-25
 canonical: http://blog.staticvoid.co.nz/2011/5/25/sharepoint_alternate_access_mappings
 redirect_from:
   - 2011/5/25/sharepoint_alternate_access_mappings
+  - 2011/05/sharepoint-alternate-access-mappings.html
 ---
 As a SharePoint developer alternate access mappings (AAM) are one of the things I see done most poorly. This is largely due to server administrators (and for that matter SharePoint administrators) being more familiar with IIS than Central Admin. Having said that the damage you can do by incorrectly configuring a farms AAM's is substantial and not immediately obvious.
 

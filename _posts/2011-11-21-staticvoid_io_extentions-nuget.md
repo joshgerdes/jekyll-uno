@@ -4,6 +4,7 @@ date:   2011-11-21
 canonical: http://blog.staticvoid.co.nz/2011/11/21/staticvoid_io_extentions-nuget
 redirect_from:
   - 2011/11/21/staticvoid_io_extentions-nuget
+  - 2011/11/staticvoid-io-extentions-nuget.html
 ---
 
 

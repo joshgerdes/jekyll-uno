@@ -1,5 +1,5 @@
 @import "nuget";
-$theme-color: saturate(steelblue, 40%);
+$theme-color: steelblue;
 $theme-color-light: lighten($theme-color, 20%);
 
 pre {

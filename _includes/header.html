@@ -4,94 +4,91 @@
 </span>
 
 <header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
-  <div class="panel-main">
+	<div class="panel-main">
 
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="https://www.gravatar.com/avatar/46e93e55b8f4f652201516c2f7bf3323?s=256" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title"><img src="{{site.baseurl }}/images/static-void-blog-logo.png" alt="StaticVoid"></h1>
-        </a>
-        <hr class="panel-cover__divider">
+		<div class="panel-main__inner panel-inverted">
+			<div class="panel-main__content">
+				<a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+					<img src="https://www.gravatar.com/avatar/46e93e55b8f4f652201516c2f7bf3323?s=256" class="user-image" alt="My Profile Photo">
+					<div class="staticvoid-logo">
+						<div class="wrapper">
+							<div class="code">static void;</div>
+							<div class="comment">//Blog</div>
+						</div>
+					</div>
+				</a>
+				<hr class="panel-cover__divider">
 
-        <div class="navigation-wrapper">
+				<div class="navigation-wrapper">
 
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/" title="Archive">Archive</a></li>
-            </ul>
-          </nav>
+					<nav class="cover-navigation cover-navigation--primary">
+						<ul class="navigation">
+							<li class="navigation__item"><a href="{{ site.baseurl }}/" title="Archive">Archive</a></li>
+						</ul>
+					</nav>
 
-          <nav class="cover-navigation navigation--social">
-            <ul class="navigation">
+					<nav class="cover-navigation navigation--social">
+						<ul class="navigation">
 
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
+							{% if site.author.twitter_username %}
+							<!-- Twitter -->
+							<li class="navigation__item">
+								<a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+									<i class="icon icon-social-twitter"></i>
+									<span class="label">Twitter</span>
+								</a>
+							</li>
+							{% endif %} {% if site.author.facebook_username %}
+							<!-- Facebook -->
+							<li class="navigation__item">
+								<a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+									<i class="icon icon-social-facebook"></i>
+									<span class="label">Facebook</span>
+								</a>
+							</li>
+							{% endif %} {% if site.author.linkedin_username %}
+							<!-- LinkedIn -->
+							<li class="navigation__item">
+								<a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+									<i class="icon icon-social-linkedin"></i>
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+							{% endif %} {% if site.author.github_username %}
+							<!-- GitHub -->
+							<li class="navigation__item">
+								<a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+									<i class="icon icon-social-github"></i>
+									<span class="label">GitHub</span>
+								</a>
+							</li>
+							{% endif %} {% if site.author.email %}
+							<!-- Email -->
+							<li class="navigation__item">
+								<a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+									<i class="icon icon-mail"></i>
+									<span class="label">Email</span>
+								</a>
+							</li>
+							{% endif %}
 
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
+							<!-- RSS -->
+							<li class="navigation__item">
+								<a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
+									<i class="icon icon-rss"></i>
+									<span class="label">RSS</span>
+								</a>
+							</li>
 
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
+						</ul>
+					</nav>
 
-            {% if site.author.github_username %}
-              <!-- GitHub -->
-              <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-            {% endif %}
+				</div>
 
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
+			</div>
 
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
+		</div>
 
-            </ul>
-          </nav>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
+		<div class="panel-cover--overlay"></div>
+	</div>
 </header>

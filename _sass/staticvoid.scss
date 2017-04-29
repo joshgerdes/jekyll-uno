@@ -1,8 +1,93 @@
 @import "nuget";
+$theme-color: saturate(steelblue, 40%);
+$theme-color-light: lighten($theme-color, 20%);
 
-pre
-{
-    -moz-tab-size: 4;
-    -o-tab-size:   4;
-    tab-size:      4;
+pre {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+
+body {
+	min-width: 300px;
+}
+
+.author a,
+.btn,
+.date a,
+.footer__copyright a,
+.label,
+.tags a,
+.time a,
+a {
+	color: $theme-color;
+}
+
+.author a:hover,
+.btn:hover,
+.date a:hover,
+.footer__copyright a:hover,
+.post-list__post-title a:hover,
+.post-title a:hover,
+.tags a:hover,
+.time a:hover,
+a:hover {
+	color: $theme-color-light;
+}
+
+.btn,
+.tags a {
+	border-color: $theme-color;
+}
+
+.btn:hover,
+.tags:hover {
+	border-color: $theme-color-light;
+}
+
+::selection {
+	background: rgba(red($theme-color), green($theme-color), blue($theme-color), 0.05);
+}
+
+.staticvoid-logo {
+	font-family: consalas, monospace;
+	text-align: right;
+
+	.wrapper {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.code {
+		color: white;
+		font-size: 45px;
+	}
+
+	.comment {
+		color: darkseagreen;
+		font-size: 18px;
+		margin-right: 27px;
+	}
+}
+@media all and (max-width: 1100px) {
+	.staticvoid-logo {
+		.code {
+			font-size: 38px;
+		}
+
+		.comment {
+			margin-right: 23px;
+		}
+	}
+}
+@media all and (max-width: 960px) {
+	.staticvoid-logo {
+		.code {
+			font-size: 45px;
+		}
+
+		.comment {
+			margin-right: 27px;
+		}
+	}
 }

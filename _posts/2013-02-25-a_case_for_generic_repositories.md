@@ -1,7 +1,7 @@
 ---
 title:  "Generic Repositories"
 date:   2013-02-25
-extract: "I have always liked the abstraction provided by a repository pattern. This article aims to articulate why I use generic repositories and what benefits I feel are most important from this approach. I also examine exactly how I use generic repositories in my applications with some practical examples."
+excerpt: "I have always liked the abstraction provided by a repository pattern. This article aims to articulate why I use generic repositories and what benefits I feel are most important from this approach. I also examine exactly how I use generic repositories in my applications with some practical examples."
 canonical: http://blog.staticvoid.co.nz/2013/2/25/a_case_for_generic_repositories
 redirect_from:
   - 2013/2/25/a_case_for_generic_repositories

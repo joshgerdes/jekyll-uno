@@ -1,7 +1,7 @@
 ---
 title:  "Company blogs and my new blog engine"
 date:   2012-12-26
-extract: "Blogs are an important way we as developers can contribute to the development of our industry and grow our own personal skill sets. For this reason I believe development companies should invest in blogging as a way of developing their employees. This software is about doing this in a way that promotes writing for personal blogs as well as a company blog."
+excerpt: "Blogs are an important way we as developers can contribute to the development of our industry and grow our own personal skill sets. For this reason I believe development companies should invest in blogging as a way of developing their employees. This software is about doing this in a way that promotes writing for personal blogs as well as a company blog."
 canonical: http://blog.staticvoid.co.nz/2012/12/26/company_blogs_and_my_new_blog_engine
 redirect_from:
   - 2012/12/26/company_blogs_and_my_new_blog_engine

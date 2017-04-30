@@ -1,7 +1,7 @@
 ---
 title:  "How NServiceBus uses MSMQ to provide durable messaging"
 date:   2014-06-02
-extract: "NServiceBus is a great messaging technology, in this post we look at how the message handshaking interacts with MSMQ under the the scenes to provide durable messaging."
+excerpt: "NServiceBus is a great messaging technology, in this post we look at how the message handshaking interacts with MSMQ under the the scenes to provide durable messaging."
 canonical: http://blog.staticvoid.co.nz/2014/6/2/how_nservicebus_uses_msmq_to_provide_durable_messaging
 redirect_from:
   - 2014/6/2/how_nservicebus_uses_msmq_to_provide_durable_messaging

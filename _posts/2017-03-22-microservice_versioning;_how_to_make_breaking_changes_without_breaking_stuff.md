@@ -1,7 +1,7 @@
 ---
 title:  "Microservice versioning; How to make breaking changes without breaking stuff"
 date:   2017-03-22 15:51:13 +1200
-extract: "Versioning is a tool which allows microservices to gain independence from each other while being able to grow and change. Its critical that when we make changes to a microservice we can do so in a way that we are confident will not break our consumers."
+excerpt: "Versioning is a tool which allows microservices to gain independence from each other while being able to grow and change. Its critical that when we make changes to a microservice we can do so in a way that we are confident will not break our consumers."
 canonical: http://blog.staticvoid.co.nz/2017/3/22/microservice_versioning;_how_to_make_breaking_changes_without_breaking_stuff
 redirect_from:
   - 2017/3/22/microservice_versioning;_how_to_make_breaking_changes_without_breaking_stuff

@@ -1,7 +1,7 @@
 ---
 title:  "EntityFramework Performance and AutoDetectChanges"
 date:   2012-05-07
-extract: "Entity Framework change tracking performs well when using small sets of data however as the number of changes grows it becomes inefficient. In this post we look at what causes this degradation and how we can tune EF to perform better with large data sets."
+excerpt: "Entity Framework change tracking performs well when using small sets of data however as the number of changes grows it becomes inefficient. In this post we look at what causes this degradation and how we can tune EF to perform better with large data sets."
 canonical: http://blog.staticvoid.co.nz/2012/5/7/entityframework_performance_and_autodetectchanges
 redirect_from:
   - 2012/5/7/entityframework_performance_and_autodetectchanges

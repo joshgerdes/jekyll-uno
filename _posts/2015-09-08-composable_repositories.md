@@ -1,7 +1,7 @@
 ---
 title:  "Composable repositories"
 date:   2015-09-08
-extract: "This post discusses some issues I have with traditional repository pattern implementations and how I use extension methods to get around them."
+excerpt: "This post discusses some issues I have with traditional repository pattern implementations and how I use extension methods to get around them."
 canonical: http://blog.staticvoid.co.nz/2015/9/8/composable_repositories
 redirect_from:
   - 2015/9/8/composable_repositories

@@ -1,7 +1,7 @@
 ---
 title:  "How to Microservice"
 date:   2017-03-07
-extract: "Microservices are a SOA architecture which focuses on breaking a system down into smaller independent systems. I have been working with them for a while and in this series I will look at some of the things I have learnt about how to microservice."
+excerpt: "Microservices are a SOA architecture which focuses on breaking a system down into smaller independent systems. I have been working with them for a while and in this series I will look at some of the things I have learnt about how to microservice." 
 canonical: http://blog.staticvoid.co.nz/2017/3/4/my_guide_to_microservices
 redirect_from:
   - 2017/3/4/my_guide_to_microservices

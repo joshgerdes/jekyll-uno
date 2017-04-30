@@ -1,7 +1,7 @@
 ---
 title:  "Using a REST WCF Service"
 date:   2012-02-15
-extract: "WCF WebAPI allows REST support within WCF. This post discusses some of the gotchas of building REST services with WCF and provides a simple tutorial for creating a basic WCF REST service."
+excerpt: "WCF WebAPI allows REST support within WCF. This post discusses some of the gotchas of building REST services with WCF and provides a simple tutorial for creating a basic WCF REST service."
 canonical: http://blog.staticvoid.co.nz/2012/2/15/using_a_rest_wcf_service
 redirect_from:
   - 2012/2/15/using_a_rest_wcf_service

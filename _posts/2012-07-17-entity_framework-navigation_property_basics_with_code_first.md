@@ -1,6 +1,7 @@
 ---
 title:  "Entity Framework - Navigation Property Basics with Code First"
 date:   2012-08-01
+extract: "Navigation properties are Entity Frameworks way of representing Foreign Key relationships in databases as C# object references. In this post I explore the basics of how to use Navigation Properties with C# and how they work."
 canonical: http://blog.staticvoid.co.nz/2012/7/17/entity_framework-navigation_property_basics_with_code_first
 redirect_from:
   - 2012/7/17/entity_framework-navigation_property_basics_with_code_first

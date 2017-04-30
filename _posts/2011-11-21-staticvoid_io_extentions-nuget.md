@@ -1,6 +1,7 @@
 ---
 title:  "StaticVoid IO Extentions - Nuget"
 date:   2011-11-21
+extract: "I was recently doing some file and folder manipulation using System.IO and wished I had some kind of fluent interface for traversing files and folders. So I wrote a basic one."
 canonical: http://blog.staticvoid.co.nz/2011/11/21/staticvoid_io_extentions-nuget
 redirect_from:
   - 2011/11/21/staticvoid_io_extentions-nuget

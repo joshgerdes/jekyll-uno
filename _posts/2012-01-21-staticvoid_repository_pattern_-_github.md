@@ -1,6 +1,7 @@
 ---
 title:  "StaticVoid Repository Pattern - GitHub"
 date:   2012-01-21
+extract: "I've been wanting to have a play with GitHub for a while now given so many open source projects seem to be using it. So i finally gave it a go and pushed my Repository Pattern stuff to a public GitHub repository."
 canonical: http://blog.staticvoid.co.nz/2012/1/21/staticvoid_repository_pattern_-_github
 redirect_from:
   - 2012/1/21/staticvoid_repository_pattern_-_github

@@ -1,6 +1,7 @@
 ---
 title:  "The Authentication Proxy"
 date:   2016-11-16
+extract: "SOA and Microservices promote API centric applications where we can build complex sophisticated systems out of smaller simpler ones. When we break down systems duplication and boiler plate drastically increases complexity. Authentication is one area where complexity can be introduced across all of our services at once. In this post I look at a pattern to decouple authentication from your system and allow a richer authentication experience without introducing complexity to every API in the system."
 canonical: http://blog.staticvoid.co.nz/2016/11/16/the_authentication_proxy
 redirect_from:
   - 2016/11/16/the_authentication_proxy

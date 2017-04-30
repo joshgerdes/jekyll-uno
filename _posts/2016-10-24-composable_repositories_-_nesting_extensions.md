@@ -1,6 +1,7 @@
 ---
 title:  "Composable Repositories - Nesting Extensions"
 date:   2016-10-24
+extract: "A look at several problems with nesting extension methods in LINQ and how to get around these issues with and expression visitor."
 canonical: http://blog.staticvoid.co.nz/2016/10/24/composable_repositories_-_nesting_extensions
 redirect_from:
   - 2016/10/24/composable_repositories_-_nesting_extensions

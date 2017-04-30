@@ -1,6 +1,7 @@
 ---
 title:  "StaticVoid Repository Pattern - NuGet"
 date:   2011-10-13
+extract: "Repositories are all about decoupling our application from our chosen storage mechanism. This is my take on a Generic Repository with Entity Framework."
 canonical: http://blog.staticvoid.co.nz/2011/10/13/staticvoid_repository_pattern-nuget
 redirect_from:
   - 2011/10/13/staticvoid_repository_pattern-nuget

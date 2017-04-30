@@ -1,6 +1,7 @@
 ---
 title:  "Entity Framework Comparative Performance"
 date:   2012-03-24
+extract: "I have heard many claims that specific ORMs far outperform others, so I built my own ORM performance testing framework to test some of these results for myself. What I found is there is less difference in performance between ORMs than I expected."
 canonical: http://blog.staticvoid.co.nz/2012/3/24/entity_framework_comparative_performance
 redirect_from:
   - 2012/3/24/entity_framework_comparative_performance

@@ -1,6 +1,7 @@
 ---
 title:  "The affect of latency on MSSQL INSERTs"
 date:   2012-08-27
+extract: "SQL is a network application and according to The Fallacies of Distributed Computing tells us that in any network application latency is non-zero. In this article we will explore the effect of latency on SQL insert performance from the scenarios in my last post."
 canonical: http://blog.staticvoid.co.nz/2012/8/27/the_affect_of_latency_on_mssql_inserts
 redirect_from:
   - 2012/8/27/the_affect_of_latency_on_mssql_inserts

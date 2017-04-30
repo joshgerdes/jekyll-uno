@@ -117,6 +117,6 @@ Given I had changed the URLs for all my posts I also needed to update the paths 
 ### Testing things out
 
 
-http://jsonld.com/blog-post/
+
 
 [GitHub pages]: https://pages.github.com

@@ -27,14 +27,51 @@ But there is far less selection available. It also doesn't offer a great experie
 
 There are thousands of Jekyll themes available on GitHub but I picked [jekyll-uno](https://github.com/joshgerdes/jekyll-uno) by [@joshgerdes](http://joshgerdes.com/2016/jekyll-uno-a-minimal-responsive-theme-for-jekyll/) as I liked the way it looked.
 
-### Customisations
+## The upgrade process
+
+Setting up Jekyll and migrating my content was reasonably easy. I spent most of my time refactoring old posts into markdown as many of theme dated back to when I used blogspot.
+
+### Creating a test site
+
+Once I had decided on a theme the next step was to set it up on [GitHub pages]. To do this I forked the Jekyll-Uno repository. By default this creates a repository named `<username>/jekyll-uno`.
+
+GitHub pages requires a repository with a name `<username>/<username>.github.io` in order to create a site at the root of a domain like my blog, so I renamed the repository as above. To do this go to the settings on the forked repository.
+
+![Rename github repo]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/github-rename.png)
+
+**NOTE** After the rename it took a check-in to get GitHub pages to create the site.
+
+### Migrating the content
+
+From here I imported all of my posts (and removed the default one). This meant creating a markdown file for each post in the `_posts` directory. Each post needs to be named `yyyy-mm-dd-name_of_the_article.md`, By default with Jekyll-uno this creates a post hosted at `/jekyll-uno/yyyy/name_of_the_article`. As my old blog was already using markdown this wasn't too bad but some of my older articles were still in HTML so I fixed them up at the same time.
+
+
+I added support for setting the canonical link for the page, this allowed me to run my blog on github pages before I migrated the URL without having a duplicate content problem. By default the theme does set the canonical link but in my case I wanted this to point back to my old blog. While I imported each post I took care to add a canonical header to ensure if the new site was crawled at `username.github.io` it wouldn't affect the existing content hosted on my blog.
+
+```yaml
+canonical: http://blog.staticvoid.co.nz/2012/3/24/entity_framework_comparative_performance
+```
+
+Next I corrected the URL structure by setting a baseurl of `''` in the `_config.yaml` file.
+
+**NOTE** jekyll-uno had some bugs around setting an empty baseurl, you will need [this pull request](https://github.com/joshgerdes/jekyll-uno/pull/60) to make it all work properly
+
+The URL structure was slightly different from my old blog which uses `/yyyy/m/d/title` as the format. I quite like just having the year in the URL so instead of re-implementing my old URL scheme I decided to add in redirects from the original URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from). This allows the addition of front matter to list all of the URLs this page is known by. For some of my older pages this also includes redirects from when I used blogspot.
+
+``` yaml
+redirect_from:
+  - 2012/3/24/entity_framework_comparative_performance
+  - 2012/03/entity-framework-comparative.html
+```
+
+### Personalising
+
 I made several modifications to the theme itself to suit what I was wanting for a blog.
 
 The default theme had a very narrow max content width. This means on a large screen the content band is (IMO) too narrow. I upped this from 640px to 800px, which I felt looks a lot nicer especially with the default font size of 16px (which does make it nice to read).
 
 I got rid of the full screen landing page and went directly to the post list. While the landing page looked really nice I didn't think it was terribly functional and as a reader I would just want to see an index. It was also implemented in javascript so if you go to any of the index pages without javascript enabled you see the landing page and cant get access to the actual index. This probably wouldn't have stopped search bots but I don't think it would be great for SEO to have your actual content not visible.
 
-I added support for setting the canonical link for the page, this allowed me to run my blog on github pages before I migrated the URL without having a duplicate content problem. By default the theme does set the canonical link but in my case I wanted this to point back to my old blog.
 
 I renamed the 'Blog' button to 'Archive' as without the landing page it makes more sense that you are going to the index of old posts rather than the blog section of a larger site.
 
@@ -65,27 +102,21 @@ I also did a bunch of minor fixes as pull requests back to the original theme:
 
 It was great to be able to make these fixes back into the original repository.
 
-## The upgrade process
+### Making it live
 
-Setting up Jekyll and migrating my content was reasonably easy.
+The next step was to make the new blog live on my real URL. The first step of this was to go to the repository settings in github and set a custom domain.
 
-Once I had decided on a theme the next step was to set it up on [GitHub pages]. To do this I forked the Jekyll-Uno repository. By default this creates a repository named `<username>/jekyll-uno`.
+![Github custom domain]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/github-custom-domain.png)
 
-GitHub pages requires a repository with a name `<username>/<username>.github.io` in order to create a site at the root of a domain like my blog, so I renamed the repository as above. To do this go to the settings on the forked repository.
+This makes the github site respond to requests with my blogs URL. The final step was to create a CNAME from my `blog.staticvoid.co.nz` to `lukemcgregor.github.io`. This sends traffic to github instead of my old instance. Once the DNS propagated my blog was now live.
 
-![Rename github repo]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/github-rename.png)
+### Moving the comments
 
-**NOTE** After the rename it took a check-in to get GitHub pages to create the site.
+Given I had changed the URLs for all my posts I also needed to update the paths for Disqus to point old comments to the correct pages. This can be done with the [Diqus migration tool](https://disqus.com/admin/discussions/migrate/).
 
-From here I imported all of my posts (and removed the default one). This meant creating a markdown file for each post in the `_posts` directory. Each post needs to be named `yyyy-mm-dd-name_of_the_article.md`, By default with Jekyll-uno this creates a post hosted at `/jekyll-uno/yyyy/name_of_the_article`. As my old blog was already using markdown this wasn't too bad but some of my older articles were still in HTML so I fixed them up at the same time.
+### Testing things out
 
-Next I corrected the URL structure by setting a baseurl of `''` in the `_config.yaml` file.
 
-**NOTE** jekyll-uno had some bugs around setting an empty baseurl, you will need [this pull request](https://github.com/joshgerdes/jekyll-uno/pull/60) to make it all work properly
-
-The URL structure was slightly different from my old blog which uses /yyyy/m/d/title as the format. I quite like just having the year in the URL so instead of re-implementing my old URL scheme I decided to add in redirects from the original URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from)
-
-I then updated the theme to personalise it. Mostly this was done in the `_config.yaml`.
-
+http://jsonld.com/blog-post/
 
 [GitHub pages]: https://pages.github.com

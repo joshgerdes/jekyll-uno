@@ -1,7 +1,7 @@
 # Site settings
 title: StaticVoid
 description: 'A coding blog'
-url: 'https://blog.staticvoid.co.nz'
+url: 'http://blog.staticvoid.co.nz'
 baseurl: ''
 google_analytics: 'UA-28637942-1'
 disqus_shortname: 'staticvoidblog'

@@ -2,7 +2,6 @@
 title:  "Making Dapper Faster with Transactions"
 date:   2012-04-26
 excerpt: "Transactions are an often neglected component of how we access databases. They are important when we are writing to databases as they affect how and how often tables are locked. In this post we will examine what kind of difference transactions make in practice."
-canonical: http://blog.staticvoid.co.nz/2012/4/26/making_dapper_faster_with_transactions
 redirect_from:
   - 2012/4/26/making_dapper_faster_with_transactions
   - 2012/04/making-dapper-faster-with-transactions.html

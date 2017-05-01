@@ -2,7 +2,6 @@
 title:  "Server-side rendering a single page app with ReactJS.NET"
 date:   2015-02-12
 excerpt: "In the last few years web applications have been increasingly built in JavaScript.This provides rich interactive UI's but introduces problems with non-js search crawlers and initial page load performance. In this post I will look at server-side rendering of a JS application to mitigate these problems."
-canonical: http://blog.staticvoid.co.nz/2015/2/12/server-side_rendering_with_reactjs.net
 redirect_from:
   - 2015/2/12/server-side_rendering_with_reactjs.net
 ---

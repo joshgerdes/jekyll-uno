@@ -1,7 +1,6 @@
 ---
 title:  "Adding a custom verb to all web parts in SharePoint"
 date:   2010-08-16
-canonical: http://blog.staticvoid.co.nz/2010/8/16/adding_a_custom_verb_to_all_web_parts_in_sharepoint
 redirect_from:
   - 2010/8/16/adding_a_custom_verb_to_all_web_parts_in_sharepoint
   - 2010/08/adding-custom-verb-to-all-web-parts-in.html

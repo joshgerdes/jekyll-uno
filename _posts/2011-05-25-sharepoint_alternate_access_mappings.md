@@ -1,7 +1,6 @@
 ---
 title:  "SharePoint Alternate Access Mappings"
 date:   2011-05-25
-canonical: http://blog.staticvoid.co.nz/2011/5/25/sharepoint_alternate_access_mappings
 redirect_from:
   - 2011/5/25/sharepoint_alternate_access_mappings
   - 2011/05/sharepoint-alternate-access-mappings.html

@@ -2,7 +2,6 @@
 title:  "Manual decisions are the the enemy of consistency"
 date:   2016-10-11
 excerpt: "On why continuous deployment is better than continuous delivery"
-canonical: http://blog.staticvoid.co.nz/2015/10/8/when-deploying-decisions-are-liabilities
 redirect_from:
   - 2015/10/8/when-deploying-decisions-are-liabilities
 ---

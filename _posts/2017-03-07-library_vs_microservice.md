@@ -2,7 +2,6 @@
 title:  "Library vs microservice"
 date:   2017-03-07
 excerpt: "Microservices and libraries both have benefits in terms of providing reusable components. This article looks at the differences between microservices and libraries and looks at why you might choose one over another."
-canonical: http://blog.staticvoid.co.nz/2017/3/7/library_vs_microservice
 redirect_from:
   - 2017/3/7/library_vs_microservice
 ---

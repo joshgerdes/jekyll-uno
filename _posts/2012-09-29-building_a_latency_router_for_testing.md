@@ -2,7 +2,6 @@
 title:  "Building a latency router for testing"
 date:   2012-09-29
 excerpt: "In my previous post I tested the effect of latency on MSSQL insert performance. This post discusses how I built my test harness which allows me to test with multiple levels of latency from the same application."
-canonical: http://blog.staticvoid.co.nz/2012/9/29/building_a_latency_router_for_testing
 redirect_from:
   - 2012/9/29/building_a_latency_router_for_testing
   - 2012/09/building-latency-router-for-testing.html

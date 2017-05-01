@@ -2,7 +2,6 @@
 title:  "Entity Framework and AsNoTracking"
 date:   2012-04-26
 excerpt: "Entity Framework change tracking allows the framework to persist only changed data to the database, however this comes at a performance cost. This post discusses the performance impacts of change tracking and when its appropriate to switch it off."
-canonical: http://blog.staticvoid.co.nz/2012/4/2/entity_framework_and_asnotracking
 redirect_from:
   - 2012/4/2/entity_framework_and_asnotracking
   - 2012/04/entity-framework-and-asnotracking.html

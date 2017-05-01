@@ -2,7 +2,6 @@
 title:  "Multiple Repository Data Contexts with my Repository Pattern"
 date:   2012-01-09
 excerpt: "I recently needed to have links to multiple different database contexts within an application I was developing using StaticVoid.Core.Repository. I use ninject for all of my dependency injection and I though it might be useful to share how I managed to get the repository binding correctly to different versions of DbContext depending on the type requested."
-canonical: http://blog.staticvoid.co.nz/2012/1/9/multiple_repository_data_contexts_with_my_repository_pattern
 redirect_from:
   - 2012/1/9/multiple_repository_data_contexts_with_my_repository_pattern
   - 2012/01/multiple-repository-data-contexts-with.html

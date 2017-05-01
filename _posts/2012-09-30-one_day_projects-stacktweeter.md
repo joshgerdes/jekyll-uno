@@ -2,7 +2,6 @@
 title:  "One Day Projects - StackTweeter"
 date:   2012-09-30
 excerpt: "While patterns and practices are an important part of producing quality software, its important that as developers we don't just blindly follow such patterns. Having a hack day and breaking some rules is a great way of having some fun and learning to work outside some of our regular practice. This is my hack day making a twitter bot to tweet Entity Framework questions from Stack Overflow."
-canonical: http://blog.staticvoid.co.nz/2012/9/30/one_day_projects-stacktweeter
 redirect_from:
   - 2012/9/30/one_day_projects-stacktweeter
   - 2012/09/one-day-projects-stacktweeter.html

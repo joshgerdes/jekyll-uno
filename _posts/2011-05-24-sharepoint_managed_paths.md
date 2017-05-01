@@ -2,7 +2,6 @@
 title:  "SharePoint Managed Paths"
 date:   2011-05-24
 excerpt: "Managed paths in SharePoint are a confusing beast, so here's my explanation of how and when to use them."
-canonical: http://blog.staticvoid.co.nz/2011/5/24/sharepoint_managed_paths
 redirect_from:
   - 2011/5/24/sharepoint_managed_paths
   - 2011/05/sharepoint-managed-paths.html

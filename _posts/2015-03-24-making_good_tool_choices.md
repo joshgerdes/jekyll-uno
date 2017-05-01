@@ -2,7 +2,6 @@
 title:  "Making better tool choices"
 date:   2015-03-24
 excerpt: "DotDev is a site which aims to help developers make better tool choices through asking your peers about the best tool to use in a given scenario."
-canonical: http://blog.staticvoid.co.nz/2015/3/24/making_good_tool_choices
 redirect_from:
   - 2015/3/24/making_good_tool_choices
 ---

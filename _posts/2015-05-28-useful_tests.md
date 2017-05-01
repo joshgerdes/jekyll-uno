@@ -2,7 +2,6 @@
 title:  "Writing valuable automated tests"
 date:   2015-05-28
 excerpt: "When I started working for myself on dotdev I spent quite a bit of time thinking about testing, and test automation as it's likely the only barrier between me missing something (which humans do) and that bug going live and annoying people. So I designed my test strategy around taking me missing things out of the picture (ie automation). Below are some of my thoughts around good and bad tests and how to get the best bang for your time when building automated tests."
-canonical: http://blog.staticvoid.co.nz/2015/5/28/useful_tests
 redirect_from:
   - 2015/5/28/useful_tests
 ---

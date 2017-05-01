@@ -2,7 +2,6 @@
 title:  "UI tests for OAuth applications are hard"
 date:   2016-10-17
 excerpt: "A look at the issues I faced writing UI tests for dotdev and why I built NoAuth to make testing easier"
-canonical: http://blog.staticvoid.co.nz/2016/10/17/ui_tests_for_oauth_applications_are_hard
 redirect_from:
   - 2016/10/17/ui_tests_for_oauth_applications_are_hard
 ---

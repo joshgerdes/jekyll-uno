@@ -1,7 +1,6 @@
 ---
 title:  "Custom Errors and SharePoint 2010"
 date:   2011-06-14
-canonical: http://blog.staticvoid.co.nz/2011/6/14/custom_errors_and_sharepoint_2010
 redirect_from:
   - 2011/6/14/custom_errors_and_sharepoint_2010
   - 2011/06/custom-errors-and-sharepoint-2010.html

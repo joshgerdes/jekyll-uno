@@ -2,10 +2,8 @@
 title:  "Composable repositories"
 date:   2015-09-08
 excerpt: "This post discusses some issues I have with traditional repository pattern implementations and how I use extension methods to get around them."
-canonical: http://blog.staticvoid.co.nz/2015/9/8/composable_repositories
 redirect_from:
   - 2015/9/8/composable_repositories
-excerpt: "I have used the repository pattern extensively as a way to achieve reuse and cluster my query logic into a single place. This is great as it means my queries can be reused and I know where to go to fix a database problem. However over the years I have encountered a number of problems with repositories."
 ---
 #### I love simple reusable code.
 

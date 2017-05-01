@@ -2,7 +2,6 @@
 title:  "Entity Framework Performance Cheat Sheet"
 date:   2012-08-01
 excerpt: "Performance is important in our applications, this cheat sheet gives tips to improve the Big O performance of your Entity Framework applications and suggestions for when and what to optimise."
-canonical: http://blog.staticvoid.co.nz/2012/8/1/entity_framework_performance_cheat_sheet
 redirect_from:
   - 2012/8/1/entity_framework_performance_cheat_sheet
   - 2012/08/entity-framework-performance-cheat-sheet.html

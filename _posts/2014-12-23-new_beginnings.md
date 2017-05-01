@@ -2,7 +2,6 @@
 title:  "New beginnings"
 date:   2014-12-23
 excerpt: "Today I started a new job and a new project. I'm going to be blogging much more about this over the coming months."
-canonical: http://blog.staticvoid.co.nz/2014/12/23/new_beginnings
 redirect_from:
   - 2014/12/23/new_beginnings
 ---

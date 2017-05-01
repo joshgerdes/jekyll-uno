@@ -2,7 +2,6 @@
 title:  "MSSQL and large INSERT statements"
 date:   2012-08-17
 excerpt: "There are several different ways of inserting data in MSSQL. In this post I explore several ways of inserting data and examine how they perform."
-canonical: http://blog.staticvoid.co.nz/2012/8/17/mssql_and_large_insert_statements
 redirect_from:
   - 2012/8/17/mssql_and_large_insert_statements
   - 2012/08/mssql-and-large-insert-statements.html

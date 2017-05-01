@@ -1,7 +1,7 @@
 # Site settings
 title: StaticVoid
 description: 'A coding blog'
-url: 'http://lukemcgregor.github.io'
+url: 'https://blog.staticvoid.io'
 baseurl: ''
 google_analytics: 'UA-28637942-1'
 disqus_shortname: 'staticvoidblog'

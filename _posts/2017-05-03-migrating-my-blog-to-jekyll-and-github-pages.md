@@ -1,7 +1,9 @@
 ---
-title:  "Migrating my blog to Jekyll"
+title:  "Migrating my blog to Jekyll and GitHub Pages"
+date:   2017-05-03
+excerpt: "Versioning is a tool which allows microservices to gain independence from each other while being able to grow and change. Its critical that when we make changes to a microservice we can do so in a way that we are confident will not break our consumers."
 ---
-Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but I'm no designer and I would really like it to have a better style and typography. I also wanted to put the content in GitHub so that if people find mistakes they can fix them with a pull request.
+Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but I'm no designer and I would really like it to have a better style and typography. I also wanted to put the content in GitHub so that if people find mistakes they can [fix them with a pull request](https://github.com/lukemcgregor/lukemcgregor.github.io).
 
 This makes [GitHub pages] (free static site hosting) and [Jekyll](https://jekyllrb.com/) (a static site generator GitHub runs) a great solution for running my blog.
 
@@ -56,7 +58,7 @@ Next I corrected the URL structure by setting a baseurl of `''` in the `_config.
 
 **NOTE** jekyll-uno had some bugs around setting an empty baseurl, you will need [this pull request](https://github.com/joshgerdes/jekyll-uno/pull/60) to make it all work properly
 
-The URL structure was slightly different from my old blog which uses `/yyyy/m/d/title` as the format. I quite like just having the year in the URL so instead of re-implementing my old URL scheme I decided to add in redirects from the original URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from). This allows the addition of front matter to list all of the URLs this page is known by. For some of my older pages this also includes redirects from when I used blogspot.
+The URL structure was slightly different from my old blog which uses `/yyyy/m/d/title` as the format. I quite like just having the year in the URL so instead of re-implementing my old URL scheme I decided to add in redirects from the original URLs to the new ones. To do this I installed a redirection plugin [jekyll-redirect-from]. This allows the addition of front matter to list all of the URLs this page is known by. For some of my older pages this also includes redirects from when I used blogspot.
 
 ``` yaml
 redirect_from:
@@ -110,13 +112,37 @@ The next step was to make the new blog live on my real URL. The first step of th
 
 This makes the github site respond to requests with my blogs URL. The final step was to create a CNAME from my `blog.staticvoid.co.nz` to `lukemcgregor.github.io`. This sends traffic to github instead of my old instance. Once the DNS propagated my blog was now live.
 
+I then made the canonical links point to the new URL scheme (by removing the manual canonical setting on each post). This allows search engines to update their index to point to the new URL scheme avoiding the need for a redirect when someone browses from search results.
+
 ### Moving the comments
 
-Given I had changed the URLs for all my posts I also needed to update the paths for Disqus to point old comments to the correct pages. This can be done with the [Diqus migration tool](https://disqus.com/admin/discussions/migrate/).
+Given I had changed the URLs for all my posts I also needed to update the paths for Disqus to point old comments to the correct pages. This can be done with the [Diqus migration tool](https://disqus.com/admin/discussions/migrate/). This process was a bit fiddly as the automated mapping tool only respects 30* redirects. As this is a static site when [jekyll-redirect-from] performs a redirect it uses a flat file method (aka meta `HTTP-REFRESH`). This means you need to use a csv mapping old to new URLs which was easiest to compile manually.
 
 ### Testing things out
+As soon as the blog was live I did a manual test (including some of the redirected links) and checked analytics. This let me know that everything was up and running and I was still getting people visit the blog.
 
+I also have live monitoring on the site with [Uptime Robot](https://uptimerobot.com) which emails me when it goes down. It also tracks some basic performance stats for the blog. It was really nice to see a significant performance boost from moving to a static generated site.
 
+![Uptime and performance]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/uptime-and-performance.png)
 
+Once the new blog had been live for a few days I took a look at [Google webmaster tools](https://www.google.com/webmasters/tools/) to make sure the site was getting correctly indexed. Organic search accounts for 2/3 of my traffic so I like to do all I can to ensure that my search results in Google are the best they can be.
 
+![Acquisition]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/acquisition.png)
+
+What I saw in webmaster tools was a big jump in the number of pages indexed.
+
+![Indexed pages]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/indexed-pages.png)
+
+This number should ideally equal the number of unique content pages in the static site (eg the number of posts). Unfortunately it was also indexing the redirect pages and navigational pages (index, tags, categories). This is something I will need to correct, as google thinks your site is most awesome when your content is unique and each page adds unique value.
+
+### What's next
+
+There are still a few things I would like to do around my blog itself.
+
+ - Exclude non-post pages from google index
+ - Look at what happens if I use [cloudflare](https://www.cloudflare.com) (and perhaps enable https)
+ - Take a look at [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) for [blog posts](http://jsonld.com/blog-post/)
+ - Add a link to correct issues via a pull request
+
+[jekyll-redirect-from]: https://github.com/jekyll/jekyll-redirect-from
 [GitHub pages]: https://pages.github.com

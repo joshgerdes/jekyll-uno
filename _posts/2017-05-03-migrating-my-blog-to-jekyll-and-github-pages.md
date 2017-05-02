@@ -1,7 +1,7 @@
 ---
 title:  "Migrating my blog to Jekyll and GitHub Pages"
 date:   2017-05-03
-excerpt: "Versioning is a tool which allows microservices to gain independence from each other while being able to grow and change. Its critical that when we make changes to a microservice we can do so in a way that we are confident will not break our consumers."
+excerpt: "How I moved my blog to Jekyll and Github pages and the lessons I learnt along the way."
 ---
 Over the last 5 years I have been using a blog engine I wrote myself. Its not bad but I'm no designer and I would really like it to have a better style and typography. I also wanted to put the content in GitHub so that if people find mistakes they can [fix them with a pull request](https://github.com/lukemcgregor/lukemcgregor.github.io).
 

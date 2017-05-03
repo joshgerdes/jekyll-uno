@@ -18,3 +18,23 @@ layout: default
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
+
+<script type="application/ld+json">
+{ "@context": "http://schema.org",
+ "@type": "BlogPosting",
+ "headline": "{{ page.title }}",
+ "image": "{{ site.url }}{{ site.baseurl }}/images/favicons/favicon-194x194.png",
+ {% if post.categories %}"genre": "{{ post.categories | join: ' ' }}",
+ {% endif %}{% if post.tags %}"keywords": "{{ post.tags | join: ' ' }}",
+ {% endif %}{% if post.content %}"wordcount": "{{ post.content | number_of_words }}",
+ {% endif %}"publisher": "{{site.title}}",
+ "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
+ "datePublished": "{{ page.date }}",
+ "description": "{{post.excerpt}}",
+   "author": {
+    "@type": "Person",
+    "name": "{{site.author.name}}"{% if site.author.image %}
+	,"image": "{{site.author.image}}"{% endif %}
+  }
+ }
+</script>

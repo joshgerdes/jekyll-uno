@@ -23,14 +23,21 @@ layout: default
 { "@context": "http://schema.org",
  "@type": "BlogPosting",
  "headline": "{{ page.title }}",
- "image": "{{ site.url }}{{ site.baseurl }}/images/favicons/favicon-194x194.png",
- {% if post.categories %}"genre": "{{ post.categories | join: ' ' }}",
- {% endif %}{% if post.tags %}"keywords": "{{ post.tags | join: ' ' }}",
- {% endif %}{% if post.content %}"wordcount": "{{ post.content | number_of_words }}",
+ {% if categories %}"genre": "{{ categories | join: ' ' }}",
+ {% endif %}{% if tags %}"keywords": "{{ tags | join: ' ' }}",
+ {% endif %}{% if content %}"wordcount": "{{ content | number_of_words }}",
  {% endif %}"publisher": "{{site.title}}",
- "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
+ "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+ "publisher": {
+   "@type": "Organization",
+   "name": "{{site.title}}",
+  "logo":{
+    "@type":"ImageObject",
+    "url": "{{ site.url }}{{ site.baseurl }}/images/favicons/favicon-194x194.png"
+  }
+ },
  "datePublished": "{{ page.date }}",
- "description": "{{post.excerpt}}",
+ "description": "{{ page.excerpt }}",
    "author": {
     "@type": "Person",
     "name": "{{site.author.name}}"{% if site.author.image %}

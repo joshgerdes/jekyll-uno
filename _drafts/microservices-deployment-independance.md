@@ -1,0 +1,1 @@
+One of the key principals of microservice architectures is deployment independence. This that a decision to deploy can be made only taking this one services concerns into account. This is incredibly important for scaling complexity as it allows the microservice to make deployment decisions without needing to consult with all of its consumers.

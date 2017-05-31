@@ -22,5 +22,5 @@ Microservices and libraries both have benefits in terms of providing reusable co
 ### [Versioning; How to make breaking changes without breaking stuff]({{site.baseurl}}/2017/microservice_versioning;_how_to_make_breaking_changes_without_breaking_stuff/)
 Versioning is a tool which allows microservices to gain independence from each other while being able to grow and change. Its critical that when we make changes to a microservice we can do so in a way that we are confident will not break our consumers.
 
-### [Microservice communication]({{site.baseurl}}/2017/microservice-communication-methods/)
+### [Microservice communication]({{site.baseurl}}/2017/microservices-communication-methods/)
 Communication between microservices allows us to build complex behaviours out of simple components. Most people tend to think of webservices when thinking of microservices however there are a number of other communication methods which are applicable in different situations.

@@ -23,6 +23,8 @@ Asynchronous communication methods are generally event based. Asynchronous metho
 ### HTTP Requests
 The most common method of microservice communication is via HTTP webservices. This is probably because its familiar for developers using web stacks, and can be used both for services in you network as well as **untrusted** external access. HTTP is by nature **synchronous** (request-response).
 
+![HTTP Microservice Communication]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/microservice-http-communication.png)
+
 An HTTP communication method is implemented by the providing service creating an HTTP endpoint at a specific URL. Under this URL resources and methods exist which may be called by another service. The HTTP endpoint itself normally allows untrusted connections however security may be introduced by the service to enforce specific authorisations that may be relevant.
 
 Ideally authentication should not be performed directly by the service, rather a signed token should be passed with the request which allows the service to perform any required authorisation checks.
@@ -30,8 +32,12 @@ Ideally authentication should not be performed directly by the service, rather a
 ### Message passing
 Message passing is a common technique for **asynchronous** communication with microservices and generally occurs over a **trusted** medium (eg the messaging system). This involves publishing a message which another microservice can subscribe to, or sending a command to a microservice requesting an eventually consistent action.
 
+![Messaging Microservice Communication]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/microservice-messaging-communication.png)
+
 ### Webhook subscriptions
 Webhooks are an HTTP version of pub/sub message passing and are **asynchronous** by nature. While most messaging systems require all direct users of the system to be trusted, webhooks work well for pub/sub between endpoints which don't implicitly trust each other (eg **untrusted**), for example between services maintained by different organisations.
+
+![Webhook Microservice Communication]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/microservice-webhook-communication.png)
 
 Versioning for webhooks is done in a similar way to that used for other HTTP based services however instead of the version being associated with the request URL it is associated with the subscription itself.
 

@@ -2,14 +2,14 @@
   <i class="icon icon-list btn-mobile-menu__icon"></i>
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
-  
-<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
+
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -20,13 +20,13 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-          
+
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
@@ -79,12 +79,12 @@
 
             <!-- RSS -->
             <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
+              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
                 <i class="icon icon-rss"></i>
                 <span class="label">RSS</span>
               </a>
             </li>
-          
+
             </ul>
           </nav>
 

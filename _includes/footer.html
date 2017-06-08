@@ -1,9 +1,9 @@
 <footer class="footer">
   <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</span>
-</footer> 
+</footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
 {% if site.google_analytics and jekyll.environment != "development" %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

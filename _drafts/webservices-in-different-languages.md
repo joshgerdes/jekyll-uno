@@ -1,4 +1,4 @@
-APIs are an important part of modern web applications. They provide a gateaway for communication between a backend server and a frontend application. APIs also provide an integration point for other applications. I come from a dotnet background but I am really interested in seeing how APIs work in other languages, so for fun I wrote basic APIs in dotnet core, go and node. 
+APIs are an important part of modern web applications. They provide a gateway for communication between a back end server and a frontend application. APIs also provide an integration point for other applications. I come from a dotnet background but I am really interested in seeing how APIs work in other languages, so for fun I wrote basic APIs in dotnet core, go and node. 
 
 I built the APIs to cover two different methods
 
@@ -9,7 +9,7 @@ This gives an idea on how serialisation, routing, verbs and body processing work
 
 ## dotnet core
 
-Dotnet core scafolds a webapi for you with the `dotnet new webapi` command.
+Dotnet core scaffolds a WebApi for you with the `dotnet new webapi` command.
 
 ![Project structure]({{site.baseurl}}/images/posts/{{page.date | date: '%Y' }}/dotnet-core-scaffold.png)
 
@@ -42,10 +42,10 @@ public class AddController : Controller
 }
 ```
 
-In addition I also needed to add `.AddXmlSerializerFormatters()` to the ConfiureServices method in `Startup.cs` to enable XML support
+In addition I also needed to add `.AddXmlSerializerFormatters()` to the ConfigureServices method in `Startup.cs` to enable XML support
 
 
-I find this code reasoably simple and easy to read. I like that the route information is inline however I dont find the `IActionResult` return type particularly intuitive. The Serialisation is automatically handled by content type negotiation 
+I find this code reasonably simple and easy to read. I like that the route information is inline however I dont find the `IActionResult` return type particularly intuitive. The Serialisation is automatically handled by content type negotiation 
 
 ## nodejs
 
@@ -151,10 +151,20 @@ func main() {
 
 ```
 
-I was the least happy with how this code turned out. The serialisation stuff was difficult to do, especially in comparison to node. I also find the code to be much less succinct than either of the other languages. I expect this could be alleviated if I knew a few more libraries to help with these things. Its also important to note that this was my very first go program, whereas I have quite a bit of experience with both c# and clientside javascript.
+I was the least happy with how this code turned out. The serialisation stuff was difficult to do, especially in comparison to node. I also find the code to be much less succinct than either of the other languages. I expect this could be alleviated if I knew a few more libraries to help with these things. Its also important to note that this was my very first go program, whereas I have quite a bit of experience with both c# and client-side javascript.
 
 
 ## Performance
+
+To get a better idea of the differences between the languages I wrote a load tester which hits each API with a million requests. Just for fun I wrote this in Go which gave me a bit of a chance to play with the concurrency features such as channels.
+
+||Median| Mean| Max |Total time|
+|::|:-:|:-:|:-:|:-:|
+|**go**|0|0.14ms|8.51ms|17.2s|
+|**nodejs**|1ms|0.86ms|57.58ms|107.5s|
+|**dotnet**|0|0.22ms|548.29ms|29.0s|
+
+
 
 ## What do you think?
 

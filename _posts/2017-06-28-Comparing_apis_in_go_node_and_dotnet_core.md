@@ -1,3 +1,9 @@
+---
+title:  "Comparing APIs in go, oode and dotnet core"
+date:   2017-06-28
+excerpt: "Comparing how a basic API in node, go and dotnet might look, and what the experience and performance is like in each."
+---
+
 APIs are an important part of modern web applications. They provide a gateway for communication between a back end server and a frontend application. APIs also provide an integration point for other applications. I come from a dotnet background but I am really interested in seeing how APIs work in other languages, so for fun I wrote basic APIs in dotnet core, go and node. 
 
 I built the APIs to cover two different methods
@@ -7,7 +13,7 @@ I built the APIs to cover two different methods
 
 This gives an idea on how serialisation, routing, verbs and body processing work in each language.
 
-## dotnet core
+## dotnet
 
 Dotnet core scaffolds a WebApi for you with the `dotnet new webapi` command.
 
@@ -156,7 +162,7 @@ I was the least happy with how this code turned out. The serialisation stuff was
 
 ## Performance
 
-To get a better idea of the differences between the languages I wrote a load tester which hits each API with a million requests. Just for fun I wrote this in Go which gave me a bit of a chance to play with the concurrency features such as channels.
+To get a better idea of the differences between the languages I wrote a load tester which hits each APIs `/add/x/to/y` method with a million requests. Just for fun I wrote this in Go which gave me a bit of a chance to play with the concurrency features such as channels.
 
 ||Median| Mean| Max |Total time|
 |::|:-:|:-:|:-:|:-:|
@@ -186,7 +192,7 @@ I ran this test on both my Windows box (i7) and my macbook (i5) both gave simila
 
 I thought I would try something a bit new and do a survey of which language sample people prefer. Have a vote and let me know which you like best :D
 
-<a href='https://www.survey-maker.com' poll='1099972xa6B4c554-46' style='width:100%; display:block; text-align:right;'>survey</a>
+<a href='lines' poll='1099972xa6B4c554-46' style='width:100%; display:block; text-align:right;'>survey</a>
 
 ## Make this better
 

@@ -55,41 +55,31 @@ I find this code reasonably simple and easy to read. I like that the route infor
 
 ## nodejs
 
-For the node example I started with a blank file and looked at a few tutorials to work out what I needed. The node example is a total of 42 lines over two files (including the `package.json`). I also added content type negotiation to the POST method (`res.format()`) for another 6 lines. This is not strictly necessary for the scenario but I thought it might be nice to compare.
+For the node example I started with a blank file and looked at a few tutorials to work out what I needed. The node example is a total of ~~42~~ 21 lines ([thanks tcoats](https://github.com/lukemcgregor/basic-api/pull/1)) over two files (including the `package.json`). I also added content type negotiation to the POST method (`res.format()`) for another 6 lines. This is not strictly necessary for the scenario but I thought it might be nice to compare.
 
 ### The code
 ``` javascript
-var express     = require('express');
-var app         = express();
-var bodyParser  = require('body-parser');
-var xml         = require('xml');
+var app = require('express')()
+var xml = require('xml')
 
-require('body-parser-xml')(bodyParser);
+var bodyParser = require('body-parser')
+require('body-parser-xml')(bodyParser)
+app.use(bodyParser.json())
+app.use(bodyParser.xml())
 
-app.use(bodyParser.json());
-app.use(bodyParser.xml());
+app.get('/add/:x/to/:y', (req, res) => {
+    res.json({ sum: parseInt(req.params.x) + parseInt(req.params.y) })
+})
 
-var port = process.env.PORT || 8080;
-var router = express.Router();
-
-router.get('/add/:x/to/:y', function(req, res) {
-    res.json({ sum: parseInt(req.params.x) + parseInt(req.params.y) });
-});
-
-router.post('/add', function(req, res) {
-    var sum = req.body.numbers.value.reduce((a, b) => parseInt(a) + parseInt(b), 0);
+app.post('/add', (req, res) => {
+    var sum = req.body.numbers.value.map(parseInt).reduce((a, b) => a + b)
     res.format({
-        xml: () => {
-            res.send(xml({sum:sum}));
-        },
-        json: () => {
-            res.json({sum:sum});
-        }
+        xml: () => res.send(xml({sum:sum})),
+        json: () => res.json({sum:sum})
     })
-});
+})
 
-app.use('/', router);
-app.listen(port);
+app.listen(8080)
 ```
 
 I really liked the experience of writing an API in node, it was super simple and all of the serialisation was very easy. The thing I disliked the most was having to parse the int values out of strings (in both the XML and the querystring). This was annoying, if anyone knows a way to get typed stuff out on first go that would be really interesting.

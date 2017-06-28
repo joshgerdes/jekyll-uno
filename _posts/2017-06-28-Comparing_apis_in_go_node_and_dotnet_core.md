@@ -1,5 +1,5 @@
 ---
-title:  "Comparing APIs in go, oode and dotnet core"
+title:  "Comparing APIs in go, node and dotnet core"
 date:   2017-06-28
 excerpt: "Comparing how a basic API in node, go and dotnet might look, and what the experience and performance is like in each."
 ---

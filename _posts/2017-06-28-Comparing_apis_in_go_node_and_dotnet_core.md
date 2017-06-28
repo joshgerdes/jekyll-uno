@@ -55,7 +55,7 @@ I find this code reasonably simple and easy to read. I like that the route infor
 
 ## nodejs
 
-For the node example I started with a blank file and looked at a few tutorials to work out what I needed. The node example is a total of 42 lines over two files (including the `package.json`). I also added content type negotiation to the POST method (`res.format()`) for another 6 lines. This is not strictly nessacary for the scenario but I thought it might be nice to compare.
+For the node example I started with a blank file and looked at a few tutorials to work out what I needed. The node example is a total of 42 lines over two files (including the `package.json`). I also added content type negotiation to the POST method (`res.format()`) for another 6 lines. This is not strictly necessary for the scenario but I thought it might be nice to compare.
 
 ### The code
 ``` javascript

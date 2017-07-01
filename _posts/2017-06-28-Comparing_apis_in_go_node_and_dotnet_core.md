@@ -1,5 +1,5 @@
 ---
-title:  "Comparing APIs in go, node and dotnet core"
+title:  "Comparing APIs in go, rust, node and dotnet core"
 date:   2017-06-28
 excerpt: "Comparing how a basic API in node, go and dotnet might look, and what the experience and performance is like in each."
 ---
@@ -86,7 +86,7 @@ I really liked the experience of writing an API in node, it was super simple and
 
 ## Go
 
-I was really excited about doing the Go example as I like quite a lot of the language features. Go came to a total of  48 lines with another 5 if i wanted content type negotiation. I couldnt manage to get the request body to automatically negotiate de-serialisation which was a bit of a shame but I would love to here how to do that if someone knows.
+I was really excited about doing the Go example as I like quite a lot of the language features. Go came to a total of 48 lines with another 5 if i wanted content type negotiation. I couldnt manage to get the request body to automatically negotiate de-serialisation which was a bit of a shame but I would love to here how to do that if someone knows.
 
 ### The code
 
@@ -149,6 +149,48 @@ func main() {
 
 I was the least happy with how this code turned out. The serialisation stuff was difficult to do, especially in comparison to node. I also find the code to be much less succinct than either of the other languages. I expect this could be alleviated if I knew a few more libraries to help with these things. Its also important to note that this was my very first go program, whereas I have quite a bit of experience with both c# and client-side javascript.
 
+## Rust (thanks[@Kazetsukai](https://github.com/lukemcgregor/basic-api/pull/2))
+
+I know absolutely nothing about rust (before today), so fun times.
+
+> Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. 
+
+The rust example is 42 lines without content type negotiation (including the config files required). 
+
+``` rust
+#![feature(plugin)]
+#![plugin(rocket_codegen)]
+
+extern crate rocket;
+extern crate elementtree;
+#[macro_use] extern crate rocket_contrib;
+
+use rocket::data::Data;
+use rocket_contrib::{JSON, Value};
+use elementtree::Element;
+
+#[get("/add/<x>/to/<y>")]
+fn add_json(x: i32, y: i32) -> JSON<Value> {
+    JSON(json!({ "sum": (x+y) }))
+}
+
+#[post("/add", data = "<numbers>")]
+fn add_xml(numbers: Data) -> String {
+	let root = Element::from_reader(numbers.open()).unwrap();
+	let sum : i32 = root.find_all("value").map(|e| e.text().parse::<i32>().unwrap()).sum();
+
+	let mut result = Element::new("sum");
+	result.set_text(sum.to_string());
+
+	return result.to_string().unwrap();
+}
+
+fn main() {
+    rocket::ignite().mount("/", routes![add_json, add_xml]).launch();
+}
+```
+
+I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super succinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. Rocket recommends putting the API behind NGINX which would prevent this issue. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasn't launchable from VS Code. 
 
 ## Performance
 
@@ -156,9 +198,10 @@ To get a better idea of the differences between the languages I wrote a load tes
 
 ||Median| Mean| Max |Total time|
 |::|:-:|:-:|:-:|:-:|
-|**go**|0.31ms|0.36ms|151.4ms|49.2s|
-|**nodejs**|1.67ms|1.91ms|60.93ms|254.4s|
-|**dotnet**|0.64ms|0.71ms|1080.91ms|91.5s|
+|**go**|0.21ms|0.22ms|151.7ms|28.1s|
+|**nodejs**|0.80ms|0.97ms|34.34ms|123.3s|
+|**dotnet**|0.39ms|0.43ms|1045.2ms|54.5s|
+|**rust**|0.20ms|0.21|8.73ms|27.9s|
 
 There are a couple of points of interest in this data
 
@@ -172,20 +215,8 @@ Node is inherently single threaded, I was hitting the api with concurrent load w
 
 ### dotnet max time
 
-Dotnet processes perform a process called JIT (Just In Time compilation) which lazy loads code components as they are required, theres a great article about how this works [here](http://www.telerik.com/blogs/understanding-net-just-in-time-compilation). This means that on first request the process is loading modules into memory and performing compilation. This affects the first request on dotnet processes. There are ways of getting around this such as heating the process on deploy or using ngen to produce a native binary that doesn't require JIT.
+Dotnet processes perform a process called JIT (Just In Time compilation) which lazy loads code components as they are required, theres a great article about how this works [here](http://www.telerik.com/blogs/understanding-net-just-in-time-compilation). This means that on first request the process is loading modules into memory and performing compilation. This affects the first request on dotnet processes. There are ways of getting around this such as heating the process on deploy or using NGen to produce a native binary that doesn't require JIT.
 
 ### Conclusions
 
-I ran this test on both my Windows box (i7) and my macbook (i5) both gave similar proportional results, however the timer resolution for go on windows is very low (0.5ms) which didn't give as useful figures. As expected Go is the fastest followed by dotnet and nodejs. 
-
-## What do you think?
-
-I thought I would try something a bit new and do a survey of which language sample people prefer. Have a vote and let me know which you like best :D
-
-<a href='https://www.survey-maker.com' poll='1099972xa6B4c554-46' style='width:100%; disp' poll='1099972xa6B4c554-46' style='width:100%; display:block; text-align:right;'>survey</a>
-
-## Make this better
-
-I would love to have a few more samples, or improve on those that are there. If you have improvements or other languages to compare send me a pull request. All code used for this article is available on [GitHub](https://github.com/lukemcgregor/basic-api).
-
-<script>(function(i,s,o,g,r,a,m){i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//scripts.poll-maker.com/3012/pollembed.js','qp');</script>
+I ran this test on both my Windows box (i7) and my macbook (i5) both gave similar proportional results, however the timer resolution for go on windows is very low (0.5ms) which didn't give as useful figures. As expected Go and rust were the fastest followed by dotnet and nodejs. 

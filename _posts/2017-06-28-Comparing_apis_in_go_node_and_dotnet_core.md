@@ -220,15 +220,3 @@ Dotnet processes perform a process called JIT (Just In Time compilation) which l
 ### Conclusions
 
 I ran this test on both my Windows box (i7) and my macbook (i5) both gave similar proportional results, however the timer resolution for go on windows is very low (0.5ms) which didn't give as useful figures. As expected Go is the fastest followed by dotnet and nodejs. 
-
-## What do you think?
-
-I thought I would try something a bit new and do a survey of which language sample people prefer. Have a vote and let me know which you like best :D
-
-<a href='https://www.survey-maker.com' poll='1099972xa6B4c554-46' style='width:100%; disp' poll='1099972xa6B4c554-46' style='width:100%; display:block; text-align:right;'>survey</a>
-
-## Make this better
-
-I would love to have a few more samples, or improve on those that are there. If you have improvements or other languages to compare send me a pull request. All code used for this article is available on [GitHub](https://github.com/lukemcgregor/basic-api).
-
-<script>(function(i,s,o,g,r,a,m){i['QP']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//scripts.poll-maker.com/3012/pollembed.js','qp');</script>

@@ -151,7 +151,7 @@ I was the least happy with how this code turned out. The serialisation stuff was
 
 ## Rust (thanks[@Kazetsukai](https://github.com/lukemcgregor/basic-api/pull/2))
 
-I know absolutally nothing about rust (before today), so fun times. Rust is a functional language designed for performance.
+I know absolutely nothing about rust (before today), so fun times. Rust is a functional language designed for performance.
 
 > Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. 
 
@@ -190,7 +190,7 @@ fn main() {
 }
 ```
 
-I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super sicinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasnt launchable from VS Code. 
+I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super succinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasn't launchable from VS Code. 
 
 ## Performance
 
@@ -215,8 +215,8 @@ Node is inherently single threaded, I was hitting the api with concurrent load w
 
 ### dotnet max time
 
-Dotnet processes perform a process called JIT (Just In Time compilation) which lazy loads code components as they are required, theres a great article about how this works [here](http://www.telerik.com/blogs/understanding-net-just-in-time-compilation). This means that on first request the process is loading modules into memory and performing compilation. This affects the first request on dotnet processes. There are ways of getting around this such as heating the process on deploy or using ngen to produce a native binary that doesn't require JIT.
+Dotnet processes perform a process called JIT (Just In Time compilation) which lazy loads code components as they are required, theres a great article about how this works [here](http://www.telerik.com/blogs/understanding-net-just-in-time-compilation). This means that on first request the process is loading modules into memory and performing compilation. This affects the first request on dotnet processes. There are ways of getting around this such as heating the process on deploy or using NGen to produce a native binary that doesn't require JIT.
 
 ### Conclusions
 
-I ran this test on both my Windows box (i7) and my macbook (i5) both gave similar proportional results, however the timer resolution for go on windows is very low (0.5ms) which didn't give as useful figures. As expected Go is the fastest followed by dotnet and nodejs. 
+I ran this test on both my Windows box (i7) and my macbook (i5) both gave similar proportional results, however the timer resolution for go on windows is very low (0.5ms) which didn't give as useful figures. As expected Go and rust were the fastest followed by dotnet and nodejs. 

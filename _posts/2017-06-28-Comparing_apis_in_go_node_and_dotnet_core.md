@@ -151,7 +151,7 @@ I was the least happy with how this code turned out. The serialisation stuff was
 
 ## Rust (thanks[@Kazetsukai](https://github.com/lukemcgregor/basic-api/pull/2))
 
-I know absolutely nothing about rust (before today), so fun times. Rust is a functional language designed for performance.
+I know absolutely nothing about rust (before today), so fun times.
 
 > Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. 
 

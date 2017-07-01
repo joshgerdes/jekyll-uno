@@ -190,7 +190,7 @@ fn main() {
 }
 ```
 
-I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super succinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasn't launchable from VS Code. 
+I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super succinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. Rocket recommends putting the API behind NGINX which would prevent this issue. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasn't launchable from VS Code. 
 
 ## Performance
 

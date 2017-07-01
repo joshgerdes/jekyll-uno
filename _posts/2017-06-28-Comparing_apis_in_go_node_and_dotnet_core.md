@@ -156,9 +156,10 @@ To get a better idea of the differences between the languages I wrote a load tes
 
 ||Median| Mean| Max |Total time|
 |::|:-:|:-:|:-:|:-:|
-|**go**|0.31ms|0.36ms|151.4ms|49.2s|
-|**nodejs**|1.67ms|1.91ms|60.93ms|254.4s|
-|**dotnet**|0.64ms|0.71ms|1080.91ms|91.5s|
+|**go**|0.21ms|0.22ms|151.7ms|28.1s|
+|**nodejs**|0.80ms|0.97ms|34.34ms|123.3s|
+|**dotnet**|0.39ms|0.43ms|1045.2ms|54.5s|
+|**rust**|0.20ms|0.21|8.73ms|27.9s|
 
 There are a couple of points of interest in this data
 

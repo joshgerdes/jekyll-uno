@@ -86,7 +86,7 @@ I really liked the experience of writing an API in node, it was super simple and
 
 ## Go
 
-I was really excited about doing the Go example as I like quite a lot of the language features. Go came to a total of  48 lines with another 5 if i wanted content type negotiation. I couldnt manage to get the request body to automatically negotiate de-serialisation which was a bit of a shame but I would love to here how to do that if someone knows.
+I was really excited about doing the Go example as I like quite a lot of the language features. Go came to a total of 48 lines with another 5 if i wanted content type negotiation. I couldnt manage to get the request body to automatically negotiate de-serialisation which was a bit of a shame but I would love to here how to do that if someone knows.
 
 ### The code
 
@@ -149,6 +149,48 @@ func main() {
 
 I was the least happy with how this code turned out. The serialisation stuff was difficult to do, especially in comparison to node. I also find the code to be much less succinct than either of the other languages. I expect this could be alleviated if I knew a few more libraries to help with these things. Its also important to note that this was my very first go program, whereas I have quite a bit of experience with both c# and client-side javascript.
 
+## Rust (thanks[@Kazetsukai](https://github.com/lukemcgregor/basic-api/pull/2))
+
+I know absolutally nothing about rust (before today), so fun times. Rust is a functional language designed for performance.
+
+> Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. 
+
+The rust example is 42 lines without content type negotiation (including the config files required). 
+
+``` rust
+#![feature(plugin)]
+#![plugin(rocket_codegen)]
+
+extern crate rocket;
+extern crate elementtree;
+#[macro_use] extern crate rocket_contrib;
+
+use rocket::data::Data;
+use rocket_contrib::{JSON, Value};
+use elementtree::Element;
+
+#[get("/add/<x>/to/<y>")]
+fn add_json(x: i32, y: i32) -> JSON<Value> {
+    JSON(json!({ "sum": (x+y) }))
+}
+
+#[post("/add", data = "<numbers>")]
+fn add_xml(numbers: Data) -> String {
+	let root = Element::from_reader(numbers.open()).unwrap();
+	let sum : i32 = root.find_all("value").map(|e| e.text().parse::<i32>().unwrap()).sum();
+
+	let mut result = Element::new("sum");
+	result.set_text(sum.to_string());
+
+	return result.to_string().unwrap();
+}
+
+fn main() {
+    rocket::ignite().mount("/", routes![add_json, add_xml]).launch();
+}
+```
+
+I find looking a the code the JSON GET example is very elegant and simple, less so the XML POST example. The routing is also super cool, you decorate a function with its route information and then just pass a list of functions to the server. That is super sicinct. The performance of the rust service was also amazing being the fastest code example. However the service was not very stable, if I made more concurrent requests than there were cores on the machine the service went into some kind of deadlock, which is pretty poor. The tooling support was also much lower than for the other languages. I couldnt get a debugger to work at all, though there are some that are available. This means it wasnt launchable from VS Code. 
 
 ## Performance
 

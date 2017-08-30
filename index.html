@@ -9,7 +9,7 @@ robots: noindex
     {% for post in paginator.posts %}
       <li>
         <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
         <div class="post-list__meta">
             <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
             {% if post.tags.size > 0 %}

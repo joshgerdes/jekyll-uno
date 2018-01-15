@@ -11,7 +11,7 @@ robots: noindex
         <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
         <div class="post-list__meta">
-            <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+            <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
             {% if post.tags.size > 0 %}
             &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
             {% endif %}

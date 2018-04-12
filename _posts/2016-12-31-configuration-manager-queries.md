@@ -1,22 +1,6 @@
 ---
-id: 3969
 title: Configuration Manager Queries
-date: 2016-12-31T20:01:36+00:00
-author: Luke
-layout:
-  - ""
-guid: https://luke.geek.nz/?p=3969
 permalink: /win/configuration-manager-queries/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-mfn-post-love:
-  - "0"
 categories:
   - Windows
 ---

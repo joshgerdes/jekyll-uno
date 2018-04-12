@@ -13,7 +13,6 @@ author:
   linkedin_username:  ljmurray
 
 pages_list:
-  About: '/about/'
   Archives: '/archives/'
 
 defaults:

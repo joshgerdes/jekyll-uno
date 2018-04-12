@@ -1,43 +1,7 @@
 ---
-id: 2622
 title: c000021a Fatal System Error
-date: 2012-03-05T18:05:30+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=891
 permalink: /win/c000021a-fatal-system-error/
-dsq_thread_id:
-  - "4795847633"
-  - "4795847633"
-  - "4795847633"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
 categories:
   - Windows
 ---

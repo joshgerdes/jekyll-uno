@@ -13,6 +13,10 @@ author:
   github_username:  lukemurraynz
   linkedin_username:  ljmurray
 
+  pages_list:
+  About: '/about/'
+  Archives: '/archives/'
+
 defaults:
   -
     scope:
@@ -39,3 +43,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-seo-tag
+
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

@@ -1,18 +1,17 @@
 # Site settings
-title: Jekyll-Uno
+title: luke.geek.nz
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
+url: 'lukemurraynz.github.io'
 baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Luke Murray'
+  email: email@luke.geek.nz
+  twitter_username: lukemurraynz
+  github_username:  lukemurraynz
+  linkedin_username:  ljmurray
 
 defaults:
   -
@@ -24,14 +23,10 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 10
-permalink: /:year/:title/
+paginate: 5
+permalink: /:title
 markdown: kramdown
 highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed
 
 kramdown:
   # use Github Flavored Markdown
@@ -39,5 +34,8 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-seo-tag

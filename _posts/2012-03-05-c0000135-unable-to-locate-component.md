@@ -1,43 +1,7 @@
 ---
-id: 894
 title: 'c0000135 {Unable to Locate Component}'
-date: 2012-03-05T18:05:27+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=894
 permalink: /win/c0000135-unable-to-locate-component/
-dsq_thread_id:
-  - "4883262808"
-  - "4883262808"
-  - "4883262808"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "58"
 categories:
   - Windows
 ---

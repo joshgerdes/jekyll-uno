@@ -46,7 +46,7 @@ If you don&#8217;t know how to use these – check the bottom of the post for li
     <li>
       <a href="#Query_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">2</span> Query Based Dynamic Rules:</a><ul>
         <li>
-          <ul>
+
             <li>
               <a href="#Devices_which_are_Bitlocker_encrypted-2"><span class="toc_number toc_depth_3">2.0.1</span> Devices which are Bitlocker encrypted:</a>
             </li>
@@ -69,7 +69,7 @@ If you don&#8217;t know how to use these – check the bottom of the post for li
     <li>
       <a href="#Resources"><span class="toc_number toc_depth_1">3</span> Resources:</a>
     </li>
-  </ul>
+
 </div>
 
 ### <span id="Collection_Based_Dynamic_Rules">Collection Based Dynamic Rules:</span>

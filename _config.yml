@@ -14,6 +14,7 @@ author:
 
 pages_list:
   Archives: '/archives/'
+  Categories: '/categories/'
 
 defaults:
   -

@@ -1,36 +1,8 @@
 ---
-id: 809
 title: 56k Modem Strings
-date: 2012-03-05T18:09:56+00:00
-author: Luke
+
 layout: post
-guid: http://techdrive.co.nz/?p=809
 permalink: /win/56k-modem-strings/
-dsq_thread_id:
-  - "865032338"
-  - "865032338"
-omc_review_enable:
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Windows
 ---

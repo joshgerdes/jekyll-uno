@@ -1,0 +1,384 @@
+body, div, td {
+  font-size: 12px; 
+}
+
+/*-------------------------------------------
+    Primary: Color
+-------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+a:hover,
+.bbp-body li.bbp-forum-info > a,
+.bbp-body li.bbp-topic-title > a,
+.bbp-body .bbp-meta a:hover,
+.bbp-pagination .bbp-pagination-links span,
+.bbp-pagination .bbp-pagination-links a,
+#buddypress div.activity-meta a:hover,
+#members-list-options .selected,
+#friends-list-options .selected,
+#groups-list-options .selected,
+.status-header > a,
+#page-404 form:before,
+#wp-calendar tbody a,
+.dark #wp-calendar tbody a:hover,
+.tagcloud a span,
+.widget_custom_menu > li > ul > li.current-menu-item > a,
+.nav-next a,
+.nav-previous a,
+#but-prev-next a,
+#wp-pagenavibox .wp-pagenavi *,
+#buddypress div.pagination div.pagination-links *,
+.accordion .toggle-opened .toggle-title,
+.separator-or span,
+.accordion .toggle-opened .toggle-title,
+.separator-or span,
+body.dark #content-parent #article a:hover,
+body.dark #but-prev-next a:hover,
+body.dark #wp-pagenavibox .wp-pagenavi a:hover,
+body.dark #page-404 form input,
+.woocommerce ul.products li.product .price,
+.woocommerce-page ul.products li.product .price,
+.woocommerce .st-woo a.added_to_cart,
+.woocommerce-page .st-woo a.added_to_cart,
+.widget_products ins,
+.widget_product_search #s,
+.widget_recently_viewed_products ins,
+.widget_top_rated_products ins,
+.woocommerce .cart-collaterals .cart_totals table th,
+.woocommerce-page .cart-collaterals .cart_totals table th,
+.woocommerce .cart-collaterals .cart_totals table td,
+.woocommerce-page .cart-collaterals .cart_totals table td,
+.woocommerce .woocommerce-pagination ul.page-numbers li *,
+.woocommerce-page .woocommerce-pagination ul.page-numbers li *,
+.woocommerce .woocommerce-pagination ul.page-numbers li a:hover,
+.woocommerce-page .woocommerce-pagination ul.page-numbers li a:hover,
+.dark.woocommerce #content-parent .woocommerce-pagination ul.page-numbers li a:hover,
+.dark.woocommerce-page #content-parent .woocommerce-pagination ul.page-numbers li a:hover {
+  color: #333333;
+}
+
+
+/*-------------------------------------------
+    Primary: Background Color
+-------------------------------------------*/
+
+body.dark,
+caption,
+th,
+#footer,
+.more-link:hover,
+#layout .mejs-controls,
+#buddypress div.item-list-tabs ul li.selected a span,
+#buddypress div.item-list-tabs ul li.current a span,
+#buddypress div.item-list-tabs ul li a span,
+#buddypress div.item-list-tabs ul li a:hover span,
+#buddypress .activity-list li.loading a,
+#buddypress div.activity-meta a:hover span,
+#buddypress #reply-title small a a:hover span,
+#menu,
+ul.menu-2 ul li,
+input[type="button"]:hover,
+.single-author-info-links span:before,
+.st-format-quote-holder > div,
+.status-header-upic,
+.status-content,
+.tagcloud a,
+.sidebar .widget_nav_menu,
+#sidebar .widget-posts,
+#sidebar-secondary .widget-posts-icon,
+.toggle-opened .toggle-title span,
+.accordion .toggle-opened .toggle-title span,
+.pricing-table-gray .pricing-table-title,
+.pricing-table-gray .pricing-table-price,
+.pricing-table-gray .button,
+.pricing-table-dark .pricing-table-title,
+.pricing-table-dark .pricing-table-price,
+.pricing-table-dark .button,
+.notice,
+#post-excerpt,
+body.dark input,
+body.dark select,
+body.dark textarea,
+body.dark .avatar-box,
+body.dark .tagcloud a:hover,
+body.dark .single-author-upic,
+body.dark .post-t4,
+body.dark #posts-t4 .post-t4-no-thumb h3,
+body.dark .posts-highlighted,
+body.dark .posts-related-wrapper div.posts-related-post-wrapper,
+.dark.woocommerce ul.products li.product,
+.dark .st-woo-hover,
+.dark .woocommerce .cart-collaterals .cross-sells ul.products li,
+.dark .woocommerce-page .cart-collaterals .cross-sells ul.products li,
+.woocommerce .widget_layered_nav_filters ul li a,
+.woocommerce-page .widget_layered_nav_filters ul li a {
+  background-color: #333333;
+}
+
+
+/*-------------------------------------------
+    Primary: Border Top Color
+-------------------------------------------*/
+
+ul.menu-2 ul li:first-child {
+  border-top-color: #333333;
+}
+
+
+/*-------------------------------------------
+    Primary: Border Right Color
+-------------------------------------------*/
+
+#buddypress div.item-list-tabs ul li a span:after,
+#buddypress a.bp-primary-action:hover span:before,
+#buddypress #reply-title small a:hover span:before {
+  border-right-color: #333333;
+}
+
+
+/*-------------------------------------------
+    Primary: Border Bottom Color
+-------------------------------------------*/
+
+ul.menu-2 ul,
+ul.menu-2 > li > ul > li:first-child > a:before,
+body.dark #posts-t4 .post-t4-no-thumb h3,
+.dark .st-woo-hover {
+  border-bottom-color: #333333;
+}
+
+
+/*-------------------------------------------
+    Primary: Free
+-------------------------------------------*/
+
+@media only screen and ( max-width: 479px ) { body.dark .post-t4 a.post-thumb:after { background: #333333; } }
+
+
+/*-------------------------------------------
+    Secondary: Color
+-------------------------------------------*/
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.title-sub,
+a,
+blockquote:before,
+#search-form-header.search-form-header span:before,
+#search-form-header input,
+.bbp-body li.bbp-forum-info > a:hover,
+.bbp-body li.bbp-topic-title > a:hover,
+#subscription-toggle a:before,
+#favorite-toggle a:before,
+.widget_display_stats dd,
+#bbp-search-form > div:before,
+ul.menu li.hasUl > a:before,
+#menu-responsive > li > ul > li > a:before,
+ul.menu-2 > li > a:hover,
+ul.menu-2 > li.hover-has-ul > a,
+ul.menu-2 > li > a:hover:before,
+ul.menu-2 > li.hover-has-ul > a:before,
+ul.menu-2 ul li.hasUl > a:before,
+ul.menu-2 ul li:hover > a,
+.term-title h1:before,
+.meta .ico16:hover:before,
+.widget_search form > div:before,
+#prev a:hover:before,
+#next a:hover:after,
+.widget_custom_menu > li > span:before,
+.widget_custom_menu > li > ul > li > a:before,
+.widget_custom_menu ul ul li a:hover,
+.widget-info p.widget-info-address:before,
+.widget-info p.widget-info-phone:before,
+.widget-info p.widget-info-email:before,
+.widget-info p.widget-info-name:before,
+.sidebar-footer .widget-info p a.mailto,
+#sidebar .widget-posts-most-viewed .widget-posts-icon:hover:before,
+.sidebar-footer .widget-posts-most-viewed .widget-posts-icon:hover:before,
+.widget-subscribe form > div:before,
+.icons-social a:hover,
+.st-ul li.st-current,
+.st-ul li.st-current:hover,
+.st_icon_box:before,
+.woocommerce a.add_to_cart_button:before,
+.woocommerce a.product_type_external:before,
+.woocommerce .star-rating span:before,
+.woocommerce-page .star-rating span:before,
+.widget_product_search label:before,
+.woocommerce .woocommerce-error:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-message:before,
+.woocommerce-page .woocommerce-error:before,
+.woocommerce-page .woocommerce-info:before,
+.woocommerce-page .woocommerce-message:before,
+body.dark #content-parent h1 a:hover,
+body.dark #content-parent h2 a:hover,
+body.dark #content-parent h3 a:hover,
+body.dark #content-parent h4 a:hover,
+body.dark #content-parent h5 a:hover,
+body.dark #content-parent h6 a:hover,
+body.dark .posts-related-details-wrapper > div h5 a:hover,
+body.dark #page-404 form:before,
+#content-parent .widget_custom_menu > li > ul > li > a:hover,
+.widget_custom_menu > li > ul > li.current-menu-item > a,
+.woocommerce ul.products li.product h3 mark,
+.woocommerce-page ul.products li.product h3 mark,
+#search-form-header input::-webkit-input-placeholder {
+  color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Background Color
+-------------------------------------------*/
+
+#header-holder-2,
+#copyrights-holder,
+.more-link,
+#layout .mejs-time-loaded,
+.sidebar .widget.widget_display_search,
+.bbp-topic-pagination a,
+#buddypress input[type="submit"],
+#buddypress input[type="button"],
+#buddypress input[type="reset"],
+#buddypress button.submit,
+#buddypress input[type="submit"]:hover,
+#buddypress input[type="button"]:hover,
+#buddypress input[type="reset"]:hover,
+#buddypress button.submit:hover,
+#buddypress div.item-list-tabs ul li.selected a,
+#buddypress div.item-list-tabs ul li.current a,
+#buddypress div#subnav.item-list-tabs ul li.selected a,
+#buddypress div#subnav.item-list-tabs ul li.current a,
+#buddypress .activity-list li.load-more a,
+#menu-select.resp-menu-opened,
+#menu-responsive li a:focus,
+input[type="button"],
+input[type="submit"],
+button,
+body.dark input[type="submit"],
+body.dark button,
+.single-author-info-links span:hover:before,
+.st-format-link,
+.posts-featured-wrapper a.post-thumb:before,
+#sidebar .widget_search,
+.tagcloud a:hover,
+#sidebar .widget-posts-most-viewed,
+#sidebar .widget-posts-icon:hover,
+.sidebar-footer .widget-posts-icon:hover,
+#sidebar-secondary .widget-posts-icon:hover,
+.button-st,
+.dropcap,
+.pricing-table-featured .pricing-table-title,
+.pricing-table-featured .pricing-table-price,
+.pricing-table-featured .button,
+.skill-bar,
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce-page #content input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce #content input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce-page #content input.button:hover,
+.woocommerce-page #respond input#submit:hover,
+.woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce #content input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce-page #content input.button.alt,
+.woocommerce-page #respond input#submit.alt,
+.woocommerce-page a.button.alt,
+.woocommerce-page button.button.alt,
+.woocommerce-page input.button.alt,
+.woocommerce #content input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce-page #content input.button.alt:hover,
+.woocommerce-page #respond input#submit.alt:hover,
+.woocommerce-page a.button.alt:hover,
+.woocommerce-page button.button.alt:hover,
+.woocommerce-page input.button.alt:hover,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,
+.sidebar .widget_product_search,
+body.dark .tagcloud a {
+  background-color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Border Top Color
+-------------------------------------------*/
+
+ul.menu > li > a:hover,
+ul.menu > li.hover-has-ul > a,
+#menu-select.resp-menu-opened,
+.st-ul li.st-current,
+.st-ul li.st-current:hover,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  border-top-color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Border Right Color
+-------------------------------------------*/
+
+#menu-select.resp-menu-opened,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  border-right-color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Border Bottom Color
+-------------------------------------------*/
+
+#buddypress div#subnav,
+#menu-select.resp-menu-opened,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  border-bottom-color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Border Left Color
+-------------------------------------------*/
+
+blockquote,
+#menu-select.resp-menu-opened,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  border-left-color: #0179d5;
+}
+
+
+/*-------------------------------------------
+    Secondary: Free
+-------------------------------------------*/
+
+@media only screen and ( min-width: 960px ) and ( max-width: 1319px ) { .sidebar-secondary-available .post-t4 a.post-thumb:hover:after { background: #0179d5; } }
+.widget_custom_menu > li > a { box-shadow: 0 0 0 #0179d5 inset, 0 0 0 rgba(0,0,0,0.05) inset; }
+.widget_custom_menu > li > a:hover, .widget_custom_menu > li.wHover { box-shadow: 7px 0 0 #0179d5 inset, 320px 0 0 rgba(0,0,0,0.05) inset; }
+.widget_custom_menu > li.current-menu-item > a { box-shadow: 7px 0 0 #0179d5 inset; }
+.woocommerce a.add_to_cart_button, .woocommerce a.product_type_external { background: none; }
+
+

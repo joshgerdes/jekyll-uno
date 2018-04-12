@@ -43,11 +43,6 @@ If you don&#8217;t know how to use these – check the bottom of the post for li
             <li>
               <a href="#Devices_that_are_a_member_of_a_specific_Active_Directory_group"><span class="toc_number toc_depth_3">1.0.7</span> Devices that are a member of a specific Active Directory group:</a>
             </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    
     <li>
       <a href="#Query_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">2</span> Query Based Dynamic Rules:</a><ul>
         <li>
@@ -70,11 +65,7 @@ If you don&#8217;t know how to use these – check the bottom of the post for li
             <li>
               <a href="#Get_a_list_of_Webcam_models"><span class="toc_number toc_depth_3">2.0.6</span> Get a list of Webcam models:</a>
             </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    
+   
     <li>
       <a href="#Resources"><span class="toc_number toc_depth_1">3</span> Resources:</a>
     </li>

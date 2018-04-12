@@ -1,22 +1,6 @@
 ---
-id: 3931
 title: Database error when making changes to DHCP reservations
-date: 2016-12-28T18:30:52+00:00
-author: Luke
-layout:
-  - ""
-guid: https://luke.geek.nz/?p=3931
 permalink: /win/database-error-making-changes-dhcp-reservations/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-post_views_count:
-  - "2"
 categories:
   - Windows
 ---

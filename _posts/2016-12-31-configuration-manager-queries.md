@@ -1,7 +1,8 @@
-
 ---
 title: Configuration Manager Queries
+
 permalink: /win/configuration-manager-queries/
+
 categories:
   - Windows
 ---
@@ -13,7 +14,74 @@ Feel free to use them, change them to suit your needs and share your own!
 
 If you don&#8217;t know how to use these – check the bottom of the post for links to TechNet.
 
-
+<div id="toc_container" class="no_bullets">
+  <p class="toc_title">
+    Table of Contents
+  </p>
+  
+  <ul class="toc_list">
+    <li>
+      <a href="#Collection_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">1</span> Collection Based Dynamic Rules:</a><ul>
+        <li>
+          <ul>
+            <li>
+              <a href="#Get_Windows_7_Enterprise_x64_Devices_matching_a_specific_naming_convention"><span class="toc_number toc_depth_3">1.0.1</span> Get Windows 7 Enterprise x64 Devices matching a specific naming convention:</a>
+            </li>
+            <li>
+              <a href="#Devices_in_a_specific_OU"><span class="toc_number toc_depth_3">1.0.2</span> Devices in a specific OU:</a>
+            </li>
+            <li>
+              <a href="#Devices_that_have_a_specific_Hotfix_installed"><span class="toc_number toc_depth_3">1.0.3</span> Devices that have a specific Hotfix installed:</a>
+            </li>
+            <li>
+              <a href="#Devices_which_are_Bitlocker_encrypted"><span class="toc_number toc_depth_3">1.0.4</span> Devices which are Bitlocker encrypted:</a>
+            </li>
+            <li>
+              <a href="#Devices_which_have_ran_a_Software_Metering_Rule_in_the_last_x60_days"><span class="toc_number toc_depth_3">1.0.5</span> Devices which have ran a Software Metering Rule in the last x60 days:</a>
+            </li>
+            <li>
+              <a href="#Devices_that_have_Visual_Studio_Premium_2013_installed"><span class="toc_number toc_depth_3">1.0.6</span> Devices that have Visual Studio Premium 2013 installed:</a>
+            </li>
+            <li>
+              <a href="#Devices_that_are_a_member_of_a_specific_Active_Directory_group"><span class="toc_number toc_depth_3">1.0.7</span> Devices that are a member of a specific Active Directory group:</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    
+    <li>
+      <a href="#Query_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">2</span> Query Based Dynamic Rules:</a><ul>
+        <li>
+          <ul>
+            <li>
+              <a href="#Devices_which_are_Bitlocker_encrypted-2"><span class="toc_number toc_depth_3">2.0.1</span> Devices which are Bitlocker encrypted:</a>
+            </li>
+            <li>
+              <a href="#Get_users_Primary_devices_from_User_based_group"><span class="toc_number toc_depth_3">2.0.2</span> Get users Primary devices from User based group:</a>
+            </li>
+            <li>
+              <a href="#Show_Devices_and_Users_of_a_limited_Collection"><span class="toc_number toc_depth_3">2.0.3</span> Show Devices and Users of a limited Collection:</a>
+            </li>
+            <li>
+              <a href="#Get_Identical_MAC_addresses"><span class="toc_number toc_depth_3">2.0.4</span> Get Identical MAC addresses:</a>
+            </li>
+            <li>
+              <a href="#Get_a_list_of_hardware_Models_that_exist"><span class="toc_number toc_depth_3">2.0.5</span> Get a list of hardware Models that exist:</a>
+            </li>
+            <li>
+              <a href="#Get_a_list_of_Webcam_models"><span class="toc_number toc_depth_3">2.0.6</span> Get a list of Webcam models:</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    
+    <li>
+      <a href="#Resources"><span class="toc_number toc_depth_1">3</span> Resources:</a>
+    </li>
+  </ul>
+</div>
 
 ### <span id="Collection_Based_Dynamic_Rules">Collection Based Dynamic Rules:</span>
 
@@ -74,7 +142,7 @@ Where SMS_R_User.UniqueUserName in (select UniqueUserName from SMS_R_User where 
 
 ##### <span id="Get_a_list_of_Webcam_models">Get a list of Webcam models:</span>
 
-<pre class="nums:false nums-toggle:false wrap:true lang:default decode:true ">select SMS_R_System.Name, SMS_G_System_USB_DEVICE.Caption from  SMS_R_System inner join SMS_G_System_USB_DEVICE on SMS_G_System_USB_DEVICE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_USB_DEVICE.Caption liken bm "%CAM%" order by SMS_R_System.Name</pre>
+<pre class="nums:false nums-toggle:false wrap:true lang:default decode:true ">select SMS_R_System.Name, SMS_G_System_USB_DEVICE.Caption from  SMS_R_System inner join SMS_G_System_USB_DEVICE on SMS_G_System_USB_DEVICE.ResourceID = SMS_R_System.ResourceId where SMS_G_System_USB_DEVICE.Caption like "%CAM%" order by SMS_R_System.Name</pre>
 
 ### <span id="Resources">Resources:</span>
 

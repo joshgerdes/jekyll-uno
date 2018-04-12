@@ -15,39 +15,6 @@ Feel free to use them, change them to suit your needs and share your own!
 If you don&#8217;t know how to use these – check the bottom of the post for links to TechNet.
 
    
-    <li>
-      <a href="#Query_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">2</span> Query Based Dynamic Rules:</a><ul>
-        <li>
-          <ul>
-            <li>
-              <a href="#Devices_which_are_Bitlocker_encrypted-2"><span class="toc_number toc_depth_3">2.0.1</span> Devices which are Bitlocker encrypted:</a>
-            </li>
-            <li>
-              <a href="#Get_users_Primary_devices_from_User_based_group"><span class="toc_number toc_depth_3">2.0.2</span> Get users Primary devices from User based group:</a>
-            </li>
-            <li>
-              <a href="#Show_Devices_and_Users_of_a_limited_Collection"><span class="toc_number toc_depth_3">2.0.3</span> Show Devices and Users of a limited Collection:</a>
-            </li>
-            <li>
-              <a href="#Get_Identical_MAC_addresses"><span class="toc_number toc_depth_3">2.0.4</span> Get Identical MAC addresses:</a>
-            </li>
-            <li>
-              <a href="#Get_a_list_of_hardware_Models_that_exist"><span class="toc_number toc_depth_3">2.0.5</span> Get a list of hardware Models that exist:</a>
-            </li>
-            <li>
-              <a href="#Get_a_list_of_Webcam_models"><span class="toc_number toc_depth_3">2.0.6</span> Get a list of Webcam models:</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#Resources"><span class="toc_number toc_depth_1">3</span> Resources:</a>
-    </li>
-  </ul>
-</div>
-
 ### <span id="Collection_Based_Dynamic_Rules">Collection Based Dynamic Rules:</span>
 
 ##### <span id="Get_Windows_7_Enterprise_x64_Devices_matching_a_specific_naming_convention">Get Windows 7 Enterprise x64 Devices matching a specific naming convention:</span>

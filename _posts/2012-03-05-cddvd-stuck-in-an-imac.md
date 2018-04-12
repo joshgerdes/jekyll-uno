@@ -1,43 +1,7 @@
 ---
-id: 904
 title: Ejecting CD/DVD stuck in an iMac
-date: 2012-03-05T18:05:17+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=904
 permalink: /osx/cddvd-stuck-in-an-imac/
-dsq_thread_id:
-  - "870144433"
-  - "870144433"
-  - "870144433"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "5"
 categories:
   - Mac OSX
 ---

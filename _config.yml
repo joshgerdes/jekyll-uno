@@ -2,7 +2,7 @@
 title: luke.geek.nz
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
 url: 'lukemurraynz.github.io'
-baseurl: '/jekyll-uno'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 

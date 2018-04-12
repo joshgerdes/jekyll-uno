@@ -1,22 +1,7 @@
 ---
-id: 3989
 title: Stuck at a Black Screen and Connecting on a vCloud console
 date: 2017-01-01T02:54:20+00:00
-author: Luke
-layout:
-  - ""
-guid: https://luke.geek.nz/?p=3989
 permalink: /win/stuck-black-screen-connecting-vcloud-console/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-mfn-post-love:
-  - "0"
 image: /wp-content/uploads/2016/12/123116_0852_StuckataBla1.jpg
 categories:
   - Windows

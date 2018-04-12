@@ -1,24 +1,6 @@
 ---
-id: 3946
 title: Capturing Windows boot performance with the Windows Performance Toolkit
-date: 2016-12-28T19:59:37+00:00
-author: Luke
-layout:
-  - ""
-guid: https://luke.geek.nz/?p=3946
 permalink: /win/capturing-windows-boot-performance-windows-performance-toolkit/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-post_views_count:
-  - "0"
-mfn-post-love:
-  - "0"
 image: /wp-content/uploads/2016/12/122816_0751_Howtocaptur5.png
 categories:
   - Windows

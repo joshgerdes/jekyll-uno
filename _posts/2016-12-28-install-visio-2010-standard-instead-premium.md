@@ -1,24 +1,7 @@
 ---
-id: 3957
 title: Install Visio 2010 Standard instead of Premium
-date: 2016-12-28T20:31:10+00:00
 author: Luke
-layout:
-  - ""
-guid: https://luke.geek.nz/?p=3957
-permalink: /win/install-visio-2010-standard-instead-premium/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-post_views_count:
-  - "4"
-mfn-post-love:
-  - "0"
+lpermalink: /win/install-visio-2010-standard-instead-premium/
 categories:
   - Windows
 ---

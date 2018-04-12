@@ -14,42 +14,7 @@ Feel free to use them, change them to suit your needs and share your own!
 
 If you don&#8217;t know how to use these – check the bottom of the post for links to TechNet.
 
-<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Table of Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#Collection_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">1</span> Collection Based Dynamic Rules:</a><ul>
-        <li>
-          <ul>
-            <li>
-              <a href="#Get_Windows_7_Enterprise_x64_Devices_matching_a_specific_naming_convention"><span class="toc_number toc_depth_3">1.0.1</span> Get Windows 7 Enterprise x64 Devices matching a specific naming convention:</a>
-            </li>
-            <li>
-              <a href="#Devices_in_a_specific_OU"><span class="toc_number toc_depth_3">1.0.2</span> Devices in a specific OU:</a>
-            </li>
-            <li>
-              <a href="#Devices_that_have_a_specific_Hotfix_installed"><span class="toc_number toc_depth_3">1.0.3</span> Devices that have a specific Hotfix installed:</a>
-            </li>
-            <li>
-              <a href="#Devices_which_are_Bitlocker_encrypted"><span class="toc_number toc_depth_3">1.0.4</span> Devices which are Bitlocker encrypted:</a>
-            </li>
-            <li>
-              <a href="#Devices_which_have_ran_a_Software_Metering_Rule_in_the_last_x60_days"><span class="toc_number toc_depth_3">1.0.5</span> Devices which have ran a Software Metering Rule in the last x60 days:</a>
-            </li>
-            <li>
-              <a href="#Devices_that_have_Visual_Studio_Premium_2013_installed"><span class="toc_number toc_depth_3">1.0.6</span> Devices that have Visual Studio Premium 2013 installed:</a>
-            </li>
-            <li>
-              <a href="#Devices_that_are_a_member_of_a_specific_Active_Directory_group"><span class="toc_number toc_depth_3">1.0.7</span> Devices that are a member of a specific Active Directory group:</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    
+   
     <li>
       <a href="#Query_Based_Dynamic_Rules"><span class="toc_number toc_depth_1">2</span> Query Based Dynamic Rules:</a><ul>
         <li>

@@ -1,29 +1,13 @@
 ---
-id: 3338
 title: 'Wildstar &#8211; Client version does not match the game server version'
-date: 2014-06-03T19:28:53+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3338
 permalink: /win/wildstar-client-version-match-game-server-version/
-dsq_thread_id:
-  - "4816822395"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "162"
+
 categories:
   - Windows
 ---
 This error seems to be happening mostly to us New Zealand players.. looks like a DNS issue. The fix is to use a VPN tunnel for when you first open a launcher or edit the host file.
 
 To edit the Host file do the following:
-
-
 
   1. Click Start
   2. All Programs

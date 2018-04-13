@@ -1,29 +1,7 @@
 ---
-id: 1533
 title: How to stop SysPrep from starting
-date: 2012-09-30T02:24:30+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1533
 permalink: /win/stop-sysprep-starting/
-dsq_thread_id:
-  - "4823069105"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "25"
 categories:
   - Windows
 ---

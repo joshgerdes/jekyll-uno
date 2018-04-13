@@ -1,23 +1,6 @@
 ---
-id: 3297
 title: How to enable numlock on startup in Windows 8
-date: 2014-04-28T17:21:13+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3297
 permalink: /win/enable-numlock-windows8/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2691240464"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "9"
 categories:
   - Windows
 ---
@@ -48,7 +31,6 @@ If you are like me – you rely heavily on the Num Lock key and having it disabl
   6. Enter 2 into the box.
   7. Click OK to save the changes.
 
-&nbsp;
 
 #### <span id="How_to_disable_Numlock_on_Startup">How to disable Numlock on Startup</span>
 

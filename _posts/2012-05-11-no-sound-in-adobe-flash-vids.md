@@ -1,29 +1,6 @@
 ---
-id: 2630
 title: No Sound in Adobe Flash Videos
-date: 2012-05-11T10:12:23+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1277
 permalink: /win/no-sound-in-adobe-flash-vids/
-dsq_thread_id:
-  - "866342714"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "11"
 categories:
   - Windows
 ---
@@ -42,7 +19,7 @@ If the above did not work, try the following below:
 
 _Windows Registry Editor Version 5.00_
 
-_[HKEY\_LOCAL\_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionDrivers32]_
+_[HKEY\LOCAL\MACHINE\SOFTWARE\Microsof\tWindows NT\CurrentVersion\Drivers32]_
 
 _&#8220;midimapper&#8221;=&#8221;midimap.dll&#8221;_
 
@@ -165,14 +142,9 @@ _&#8220;mixer4&#8243;=&#8221;wdmaud.drv&#8221;_
 _&#8220;aux3&#8243;=&#8221;wdmaud.drv&#8221;_
 
 Click File and Save As
-
 3. Save as: registry.reg
-
 4. Save it as missing.reg
-
 5. Run: missing.reg
-
-&nbsp;
 
 If the above did not work, try the following below:
 
@@ -182,8 +154,6 @@ Another issue is due to some Wavemapper windows registry files. You need to open
   2. Click Run
   3. Type: regedit
   4. Press Enter
-  5. Navigate to:  HKEY\_LOCAL\_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionDrivers32
+  5. Navigate to:  HKEY\LOCAL\MACHINE\SOFTWAR\EMicrosof\tWindows NT\CurrentVersion\Drivers32
   6. Click on My Computer and on the right hand side click New/String Value and type: wavemapper then press Enter and type: msacm32.drv
   7. Click Ok and restart machine.
-
-&nbsp;

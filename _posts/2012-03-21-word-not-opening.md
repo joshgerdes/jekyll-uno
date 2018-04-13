@@ -1,36 +1,6 @@
 ---
-id: 1129
 title: Howto Fix Word not opening
-date: 2012-03-21T14:05:46+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1129
 permalink: /win/word-not-opening/
-dsq_thread_id:
-  - "2562856231"
-  - "2562856231"
-omc_review_enable:
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "14"
 categories:
   - Windows
 ---
@@ -51,8 +21,6 @@ Having problems opening Word? This usually occurs when the template that it uses
 
 The file might also be located in the folders below, and is also safe to delete.
 
-_C:Documents and Settings%user%Application DataMicrosoftTemplates_
+_C:/Documents and Settings/%user%/Application Data/Microsoft/Templates_
 
-_C:Program FilesMicrosoft OfficeTemplates_
-
-&nbsp;
+_C:Program Files/Microsoft Office/Templates_

@@ -1,57 +1,6 @@
 ---
-id: 933
 title: 'Export &#038; Import Windows XP Theme'
-date: 2012-03-05T18:04:50+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=933
 permalink: /win/export-import-windows-xp-theme/
-dsq_thread_id:
-  - "4902061194"
-  - "4902061194"
-  - "4902061194"
-  - "4902061194"
-  - "4902061194"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "17"
 categories:
   - Windows
 ---
@@ -73,5 +22,3 @@ categories:
   2. On the Themes tab, click the Theme drop-down list and select Browse.
   3. In the Open Theme dialog box, access the My Documents folder, locate your theme file, and double-click it.
   4. Click OK to load the new theme and close the Display Properties dialog box.
-
-&nbsp;

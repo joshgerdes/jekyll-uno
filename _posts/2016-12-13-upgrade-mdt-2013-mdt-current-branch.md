@@ -1,24 +1,6 @@
 ---
-id: 3846
 title: Upgrade MDT 2013 to MDT Current Branch
-date: 2016-12-13T18:06:01+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3846
 permalink: /win/upgrade-mdt-2013-mdt-current-branch/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-dsq_thread_id:
-  - "5376271774"
-post_views_count:
-  - "1"
 categories:
   - Windows
 ---

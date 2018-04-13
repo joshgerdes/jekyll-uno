@@ -1,23 +1,6 @@
 ---
-id: 3280
 title: Adjusting java security settings
-date: 2014-04-27T20:52:50+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3280
 permalink: /win/java-security-settings/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2691047639"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Windows
 ---

@@ -1,23 +1,6 @@
 ---
-id: 3293
 title: Windows 8 Hotkeys
-date: 2014-04-28T17:16:16+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3293
 permalink: /win/windows-8-hotkeys/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2703460703"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "11"
 categories:
   - Windows
 ---

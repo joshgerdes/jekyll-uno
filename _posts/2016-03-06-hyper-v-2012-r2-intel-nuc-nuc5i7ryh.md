@@ -1,19 +1,6 @@
 ---
-id: 3672
 title: Hyper-V 2012 R2 on an Intel NUC (NUC5i7RYH)
-date: 2016-03-06T12:05:00+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3672
 permalink: /misc/hyper-v-2012-r2-intel-nuc-nuc5i7ryh/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "1123"
-dsq_thread_id:
-  - "4791684490"
 categories:
   - Misc
   - Windows
@@ -154,152 +141,79 @@ _The Network driver&#8217;s configurations had to be tweaked to allow installati
 _ 
 
 _Intel(R) Network Drivers 20.7 (January 21, 2016)
-  
-_ 
 
-_Intel® 82599EB 10 Gigabit Ethernet Controller
-  
-_ 
-
+ _Intel® 82599EB 10 Gigabit Ethernet Controller
+ 
 _Intel® 82580EB Gigabit Ethernet Controller
-  
-_ 
 
 _Intel® Ethernet Server Adapter I340-F4
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-SR1
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-DA2
-  
-_ 
 
 _Intel® Ethernet Controller I350-BT2
-  
-_ 
 
 _Intel® Ethernet Controller I350-AM2
-  
-_ 
 
 _Intel® Ethernet Controller I350-AM4
-  
-_ 
 
 _Intel® Ethernet Controller I210-IT
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X540-T2
-  
-_ 
 
 _Intel® Ethernet Server Adapter I350-F2
-  
-_ 
 
 _Intel® Ethernet Server Adapter I350-F4
-  
-_ 
 
 _Intel® Ethernet Controller X540-AT2
-  
-_ 
 
 _Intel® Ethernet Connection I217-V
-  
-_ 
 
 _Intel® Ethernet Connection I218-V
-  
-_ 
 
 _Intel® Ethernet Connection I218-LM
-  
-_ 
 
 _Intel® Ethernet Controller I210-AT
-  
-_ 
 
 _Intel® Ethernet Controller I210-IS
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-DA4
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-QDA1
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-LR1
-  
-_ 
 
 _Intel® 82599ES 10 Gigabit Ethernet Controller
-  
-_ 
 
 _Intel® 82579LM Gigabit Ethernet PHY
-  
-_ 
 
 _Intel® Ethernet Server Adapter I340-T4
-  
-_ 
 
 _Intel® Ethernet Server Adapter I350-T2
-  
-_ 
 
 _Intel® Ethernet Server Adapter I350-T4
-  
-_ 
 
 _Intel® Ethernet Connection I217-LM
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-T2
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-SR2
-  
-_ 
 
 _Intel® 82579V Gigabit Ethernet PHY
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X540-T1
-  
-_ 
 
 _Intel® Ethernet Controller I211-AT
-  
-_ 
 
 _Intel® 82599EN 10 Gigabit Ethernet Controller
-  
-_ 
 
 _Intel® Ethernet Converged Network Adapter X520-DA1
-  
-_ 
 
 _Intel® Ethernet Controller I210-AS
-  
-_ 
 
 _Intel® Ethernet Controller I210-CS
-  
-_ 
+
 
 _Note: I take no liability for loss or damage following these guides or using my driver pack or ISO. This is merely intended to help people
   

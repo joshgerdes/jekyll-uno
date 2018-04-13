@@ -1,29 +1,6 @@
 ---
-id: 1273
 title: Windows 3.1 Nokia n95 Controls
-date: 2012-05-10T21:01:46+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1273
 permalink: /mob/win-3-1-nokia-n95-controls/
-dsq_thread_id:
-  - "866161109"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "18"
 categories:
   - Mobile
 ---

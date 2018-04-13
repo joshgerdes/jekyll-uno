@@ -4,10 +4,9 @@ permalink: /win/user-accounts-from-win7-registry-after-being-incorrectly-removed
 categories:
   - Windows
 ---
-_Note: This usually needs to be done when the Windows 7 profile has been manually deleted and not properly removed – as Windows 7 uses a security identifier attached to the user account in the registry and this needs to be cleared as well_
+Note: This usually needs to be done when the Windows 7 profile has been manually deleted and not properly removed – as Windows 7 uses a security identifier attached to the user account in the registry and this needs to be cleared as well_
 
-_Note: It is also recommend making a backup of the registry before this change – and you may need to restart the PC for the registry entry to be able to be removed.
-_ _
+Note: It is also recommend making a backup of the registry before this change – and you may need to restart the PC for the registry entry to be able to be removed.
 
   1. Press Windows Key + R to open the **Run** dialog window.
   2. Type in: **regedit** and press Enter or click Ok

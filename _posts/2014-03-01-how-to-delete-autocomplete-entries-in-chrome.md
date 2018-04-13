@@ -1,17 +1,6 @@
 ---
-id: 3167
 title: How to delete Autocomplete entries in Chrome
-date: 2014-03-01T17:19:07+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=3167
 permalink: /osx/how-to-delete-autocomplete-entries-in-chrome/
-dsq_thread_id:
-  - "4988878059"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "17"
 categories:
   - Mac OSX
   - Windows

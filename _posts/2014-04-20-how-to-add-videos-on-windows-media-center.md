@@ -1,21 +1,6 @@
 ---
-id: 3220
 title: How to add videos on Windows Media Center
-date: 2014-04-20T17:11:37+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3220
 permalink: /win/how-to-add-videos-on-windows-media-center/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "4"
 categories:
   - Windows
 ---

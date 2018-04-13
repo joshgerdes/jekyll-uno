@@ -1,40 +1,10 @@
 ---
-id: 1132
 title: How to Install and Switch Winamp Player skins
-date: 2012-03-22T11:28:35+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1132
 permalink: /win/install-and-switch-winamp/
-dsq_thread_id:
-  - "5230829482"
-  - "5230829482"
-omc_review_enable:
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "21"
 categories:
   - Windows
 ---
-_Ever found a great Winamp Skin, But you did not know how to install it? This tutorial will explain how._
+Ever found a great Winamp Skin, But you did not know how to install it? This tutorial will explain how._
 
 **To install Winamp Skins:**
 
@@ -43,7 +13,7 @@ _Ever found a great Winamp Skin, But you did not know how to install it? This tu
   3. When it prompts, whether you want to install skin or not, select Yes.
   4. It will then install the skin and switch to it.
 
-_If it wont open in Winamp; Right click the skin and click Open With.. if Winamp is not in the list; then Browse for it; Winamp is usually located in: C:Program FilesWinamp. Select winamp.exe and click Open; it will then install the skin._
+If it wont open in Winamp; Right click the skin and click Open With.. if Winamp is not in the list; then Browse for it; Winamp is usually located in: C:Program FilesWinamp. Select winamp.exe and click Open; it will then install the skin._
 
 **Switch to another skin**
 

@@ -1,29 +1,6 @@
 ---
-id: 1244
 title: Windows XP to format USB Flash drives as NTFS
-date: 2012-05-10T12:56:16+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1244
 permalink: /win/t-win-xp-format-usbdrive-ntfs/
-dsq_thread_id:
-  - "1068974098"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "15"
 categories:
   - Windows
 ---

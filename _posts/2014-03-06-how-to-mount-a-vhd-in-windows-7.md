@@ -1,17 +1,6 @@
 ---
-id: 3170
 title: How to mount a VHD in Windows 7
-date: 2014-03-06T19:37:32+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=3170
 permalink: /win/how-to-mount-a-vhd-in-windows-7/
-dsq_thread_id:
-  - "2422701246"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "10"
 categories:
   - Windows
 ---

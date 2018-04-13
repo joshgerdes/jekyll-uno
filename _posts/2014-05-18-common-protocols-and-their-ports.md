@@ -1,21 +1,6 @@
 ---
-id: 3319
 title: Common Protocols and their ports
-date: 2014-05-18T16:33:47+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3319
 permalink: /misc/common-protocols-and-their-ports/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2693709652"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Misc
 ---

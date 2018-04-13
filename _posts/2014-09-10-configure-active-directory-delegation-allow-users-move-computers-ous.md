@@ -1,23 +1,6 @@
 ---
-id: 3459
 title: How to configure Active Directory delegation to allow users to move computers between OUs
-date: 2014-09-10T14:39:57+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3459
 permalink: /win/configure-active-directory-delegation-allow-users-move-computers-ous/
-mfn-post-love:
-  - "0"
-mfn-post-hide-content:
-  - "0"
-mfn-post-slider:
-  - "0"
-mfn-post-slider-layer:
-  - "0"
-dsq_thread_id:
-  - "4862617682"
-post_views_count:
-  - "65"
 categories:
   - Windows
 ---

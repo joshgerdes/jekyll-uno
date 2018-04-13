@@ -23,4 +23,4 @@ The file might also be located in the folders below, and is also safe to delete.
 
 _C:/Documents and Settings/%user%/Application Data/Microsoft/Templates_
 
-_C:Program Files/Microsoft Office/Templates_
+_C:/Program Files/Microsoft Office/Templates_

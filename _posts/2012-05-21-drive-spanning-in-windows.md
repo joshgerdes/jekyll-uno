@@ -1,29 +1,7 @@
 ---
-id: 1337
 title: Setup Drive Spanning in Windows
-date: 2012-05-21T14:19:26+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1337
 permalink: /win/drive-spanning-in-windows/
-dsq_thread_id:
-  - "2523251964"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Windows
 ---

@@ -1,29 +1,7 @@
 ---
-id: 1339
 title: How to import Sketchup Model into ZBrush using 3DS Max
-date: 2012-05-21T16:24:17+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1339
 permalink: /misc/how-to-import-sketchup-model-into-zbrush-using-3ds-max/
-dsq_thread_id:
-  - "4829299651"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "78"
 categories:
   - Misc
   - Windows

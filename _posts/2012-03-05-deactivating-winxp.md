@@ -1,67 +1,6 @@
 ---
-id: 3063
 title: Deactivating Windows XP
-date: 2012-03-05T15:30:20+00:00
-author: Luke
-layout:
-  - ""
-guid: http://techdrive.co.nz/?p=956
 permalink: /win/deactivating-winxp/
-dsq_thread_id:
-  - "2563286709"
-  - "2563286709"
-  - "2563286709"
-  - "2563286709"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-  - wp
-sidebar:
-  - ""
-header:
-  - 'yes'
-footer:
-  - ""
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "5"
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
 categories:
   - Windows
 ---
@@ -91,8 +30,6 @@ Follow the simple guide below to make the necessary Registry change to deactivat
     <strong>Double</strong>&#8211;<strong>click <em>OOBETimer</em></strong>, when the box comes up, <strong>change</strong> the <strong>LAST</strong> <strong>TWO</strong> HEX <strong>VALUES</strong> to nulls(<strong><em>00 00</em></strong>)
   </li>
 </ol>
-
-&nbsp;
 
 **Reactivating Windows XP**
 

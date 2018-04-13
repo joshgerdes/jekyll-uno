@@ -1,29 +1,6 @@
 ---
-id: 1287
 title: Black Screen of Death Windows Vista/7 NETIO.SYS
-date: 2012-05-14T09:11:19+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1287
 permalink: /win/bsod-win-vista7-netio-sys/
-dsq_thread_id:
-  - "5026411338"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "17"
 categories:
   - Windows
 ---
@@ -41,13 +18,10 @@ You can “repair” this by using System Restore to go back to a previous drive
   8. Select Next and Ok
   9. Wait for the restore to finish and restart your computer. It should now be going (If it does not work, you might have to go to a System Restore point more previous then the one you used).
 
-&nbsp;
 
 <div>
   If System Restore cannot find the Windows operating system, you need to run a file system check called a CHKDSK.  Follow the same prompts as above till Step 5, but instead of pressing System Restore, press Command Prompt. Type in: chkdsk /r /f c: and press Enter.
 </div>
-
-&nbsp;
 
 <div>
   This is also caused by the Quality of Service network protocol in Windows.

@@ -1,29 +1,7 @@
 ---
-id: 1098
 title: Using Pastebin Services
-date: 2012-06-13T09:30:01+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1098
 permalink: /misc/using-pastebin-services/
-dsq_thread_id:
-  - "866288155"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Misc
 ---

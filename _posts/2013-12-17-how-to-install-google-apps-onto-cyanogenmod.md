@@ -1,21 +1,7 @@
 ---
-id: 3084
 title: How to install Google Apps onto CyanogenMod
-date: 2013-12-17T16:23:05+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2854
 permalink: /mob/how-to-install-google-apps-onto-cyanogenmod/
-mfn-post-love:
-  - "0"
-dsq_thread_id:
-  - "5035998076"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "13"
 categories:
   - Android
   - Mobile
@@ -24,8 +10,6 @@ Note: This is usually – for the nightly builds. The stable builds seem to have
 
 _Note: Please backup your phone beforehand – I take no responsibility if your phone fails to boot.
   
-_ 
-
   1. First thing is first – download Gapps (goo.im/gapps/)
   2. Plug your Android phone into your computer
   3. Open My Computer/Computer & navigate to the Download folder

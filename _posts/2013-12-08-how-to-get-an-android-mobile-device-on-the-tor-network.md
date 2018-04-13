@@ -1,17 +1,7 @@
 ---
-id: 2829
 title: How to get an Android mobile device on the Tor network
-date: 2013-12-08T15:05:08+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2829
 permalink: /mob/how-to-get-an-android-mobile-device-on-the-tor-network/
-mfn-post-love:
-  - "0"
-dsq_thread_id:
-  - "5142307804"
-post_views_count:
-  - "11"
 categories:
   - Android
   - Mobile
@@ -19,8 +9,6 @@ categories:
 Thankfully over the last few years – connecting securely & joining your workstations to the Tor network have become a lot easier – for both Linux & Windows clients. Now with a nifty little application called – [Orbit](https://play.google.com/store/apps/details?id=org.torproject.android&hl=en) you can easily traffic HTTP (port 80) traffic & other random Android application traffic through the Tor network. Follow the guide below to get your android device & applications running through the Tor network. 
 
 _Note: This application needs root access for full functionality and is recommend.
-  
-_ 
 
   1. Open Play Store/Google Play on your android device. 
   2. Search for: Orbot. 

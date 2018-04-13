@@ -1,29 +1,7 @@
 ---
-id: 1361
 title: HP Pavilion Slimline Ram/HDD Replacement
-date: 2012-05-28T10:04:56+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1361
 permalink: /misc/hp-pavilion-slimline-ramhdd-replacement/
-dsq_thread_id:
-  - "866118625"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "9"
 categories:
   - Misc
 ---

@@ -5,10 +5,10 @@ permalink: /win/reset-windows-78-firewall-to-its-default-state/
 categories:
   - Windows
 ---
-_Note: You need the rights to be able to run an elevated Command Prompt.
+Note: You need the rights to be able to run an elevated Command Prompt.
 
 
-**Windows 7
+**Windows 7**
 
   1. Click Start 
   2. Click All Programs 
@@ -18,7 +18,7 @@ _Note: You need the rights to be able to run an elevated Command Prompt.
   6. In the command prompt type: **netsh advfirewall reset** 
   7. Press Enter to reset your firewall rules to their default state 
 
-**Windows 8
+**Windows 8**
 
   1. Press the Windows key to open the charm interface 
   2. Type in: command 

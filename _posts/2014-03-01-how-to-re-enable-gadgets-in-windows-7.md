@@ -1,17 +1,6 @@
 ---
-id: 3163
 title: How to re enable gadgets in Windows 7
-date: 2014-03-01T16:50:46+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=3163
 permalink: /win/how-to-re-enable-gadgets-in-windows-7/
-dsq_thread_id:
-  - "2434671404"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "27"
 categories:
   - Windows
 ---

@@ -1,6 +1,7 @@
 # Site settings
 title: luke.geek.nz
 url: 'lukemurraynz.github.io'
+description: '.'
 baseurl: ''
 google_analytics: 'UA-67246563-1'
 disqus_shortname: 'lukegeeknz'

@@ -1,29 +1,7 @@
 ---
-id: 1315
 title: Windows Media Player burning Audio as MP3 instead of Audio CD
-date: 2012-05-17T09:38:47+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1315
 permalink: /win/win-media-player-mp3-audio-cd/
-dsq_thread_id:
-  - "4808035312"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "11"
 categories:
   - Windows
 ---

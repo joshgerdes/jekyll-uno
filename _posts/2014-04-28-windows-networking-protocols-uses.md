@@ -1,23 +1,6 @@
 ---
-id: 3301
 title: Windows Networking Protocols and their uses
-date: 2014-04-28T18:30:45+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3301
 permalink: /win/windows-networking-protocols-uses/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4962278752"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "30"
 categories:
   - Windows
 ---

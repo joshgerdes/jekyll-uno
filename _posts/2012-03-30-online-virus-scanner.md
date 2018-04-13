@@ -1,29 +1,6 @@
 ---
-id: 3071
 title: Online Virus Scanner services
-date: 2012-03-30T09:52:35+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1165
 permalink: /misc/online-virus-scanner/
-dsq_thread_id:
-  - "4849869579"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "10"
 categories:
   - Misc
 ---

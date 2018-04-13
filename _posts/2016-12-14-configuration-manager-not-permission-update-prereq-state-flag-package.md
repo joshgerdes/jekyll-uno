@@ -1,24 +1,7 @@
 ---
-id: 3859
+
 title: Configuration Manager – Does not have permission to update the prereq or state flag of the package
-date: 2016-12-14T02:00:11+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3859
 permalink: /win/configuration-manager-not-permission-update-prereq-state-flag-package/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-dsq_thread_id:
-  - "5376481373"
-post_views_count:
-  - "0"
 categories:
   - Windows
 ---

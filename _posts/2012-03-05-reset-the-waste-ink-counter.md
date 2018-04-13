@@ -9,7 +9,7 @@ categories:
   3. **Release** the the **Power** button
   4. **Press** the **Power** button again
 
-If the above method does not work, try the following:_
+If the above method does not work, try the following:
 
   1. **Press** the **resume** button and then **press** **power** button
   2. **Release** the **resume** **button** and **press** **2** more times then **release** **both**

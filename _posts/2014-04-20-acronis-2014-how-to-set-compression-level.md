@@ -1,5 +1,5 @@
 ---
-title: 'Acronis 2014 &#8211; How to set compression level'
+title: 'Acronis 2014 - How to set compression level'
 permalink: /win/acronis-2014-how-to-set-compression-level/
 categories:
   - Windows

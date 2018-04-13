@@ -1,5 +1,5 @@
 ---
-title: 'Star Wars &#8211; The Old Republic Login Service Not Available'
+title: 'Star Wars : The Old Republic Login Service Not Available'
 permalink: /misc/star-wars-the-old-republic-login-service/
 categories:
   - Misc

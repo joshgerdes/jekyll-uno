@@ -1,23 +1,6 @@
 ---
-id: 3214
 title: 'Acronis 2014 &#8211; How to setup email notifications'
-date: 2014-04-20T17:02:36+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3214
 permalink: /win/acronis-2014-how-to-setup-email-notifications/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4837074027"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "89"
 categories:
   - Windows
 ---

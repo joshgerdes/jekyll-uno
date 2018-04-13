@@ -1,29 +1,6 @@
 ---
-id: 1279
 title: How to create a mapped Network drive in Windows 7
-date: 2012-05-11T22:04:15+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1279
 permalink: /win/create-a-mapped-network-drive-in-win-7/
-dsq_thread_id:
-  - "929370149"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "15"
 categories:
   - Windows
 ---

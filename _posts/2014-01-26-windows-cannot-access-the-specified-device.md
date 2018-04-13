@@ -1,17 +1,6 @@
 ---
-id: 3102
 title: Windows cannot access the specified device
-date: 2014-01-26T17:56:05+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=3063
 permalink: /win/windows-cannot-access-the-specified-device/
-dsq_thread_id:
-  - "2576756134"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "20"
 categories:
   - Windows
 ---

@@ -1,23 +1,6 @@
 ---
-id: 3299
 title: How to show Administrative Tools in Windows 8
-date: 2014-04-28T17:24:13+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3299
 permalink: /win/administrative-tools-windows-8/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2691383607"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "6"
 categories:
   - Windows
 ---

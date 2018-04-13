@@ -1,23 +1,6 @@
 ---
-id: 3273
 title: Remote assist Xenapp users
-date: 2014-04-27T20:44:45+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3273
 permalink: /win/remote-assist-xenapp-users/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "5375170188"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
 categories:
   - Windows
 ---
@@ -46,15 +29,12 @@ A way around this is to – publish Remote Assistance for Helpdesk and System ad
 
 #### <span id="Configure_Remote_Assistance_in_XenApp">Configure Remote Assistance in XenApp</span>
 
-&nbsp;
 
   1. Lal Mohan (<a title="Configure-windows-remote-assistance-in-citrix-xenapp-6-5" href="http://lalmohan.co.nz/2013/07/02/configure-windows-remote-assistance-in-citrix-xenapp-6-5-for-multi-monitor-shadowing/" target="_blank">http://lalmohan.co.nz/2013/07/02/configure-windows-remote-assistance-in-citrix-xenapp-6-5-for-multi-monitor-shadowing/</a> ) has written a great blog post on setting this up – just follow the guide to configure Remote Assistance in the XenApp environment.
 
-&nbsp;
 
 #### <span id="Using_Remote_Assistance_Citrix_AppCenter_to_Remote_Assist_users">Using Remote Assistance & Citrix AppCenter to Remote Assist users</span>
 
-&nbsp;
 
   1. Log into the Citrix Application Portal
   2. Launch Citrix **AppCenter**

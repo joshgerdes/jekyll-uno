@@ -1,29 +1,6 @@
 ---
-id: 1250
 title: How to install a Wifi Max Wifi dongle in Windows Vista
-date: 2012-05-10T14:02:39+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1250
 permalink: /win/wifimax-vista/
-dsq_thread_id:
-  - "4927611185"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "20"
 categories:
   - Windows
 ---
@@ -45,10 +22,6 @@ _If you have already plugged the WifiMax dongle in before running the driver sof
   8. _Now go down to Other Devices (still in Device Manager)_
   9. _Right click the USB 2.0 WLA device_
  10. _Select Update Driver and choose Browse My Computer For Driver_
- 11. _Browse to the path that the drivers from the previous step were installed on, usually: C:Program FilesZyDAS_
+ 11. _Browse to the path that the drivers from the previous step were installed on, usually: C:\Program Files\ZyDAS_
 
  _It should then find the correct driver and install it._
-
-&nbsp;
-
-&nbsp;

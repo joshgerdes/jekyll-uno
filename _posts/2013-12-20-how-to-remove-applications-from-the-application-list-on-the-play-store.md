@@ -1,17 +1,7 @@
 ---
-id: 3089
 title: How to remove Applications from the application list on the Play Store
-date: 2013-12-20T18:04:24+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2903
 permalink: /mob/how-to-remove-applications-from-the-application-list-on-the-play-store/
-mfn-post-love:
-  - "0"
-dsq_thread_id:
-  - "2438573850"
-post_views_count:
-  - "6"
 categories:
   - Android
   - Mobile

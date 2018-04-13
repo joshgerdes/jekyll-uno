@@ -1,26 +1,6 @@
 ---
-id: 2886
 title: How to add users to remote computers local Administrators groups
-date: 2013-12-18T15:56:41+00:00
-author: Luke
-layout:
-  - ""
-guid: http://www.techremedy.co.nz/?p=2886
 permalink: /win/how-to-add-users-to-remote-computers-local-administrators-groups/
-dsq_thread_id:
-  - "4987905950"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
 categories:
   - Windows
 ---

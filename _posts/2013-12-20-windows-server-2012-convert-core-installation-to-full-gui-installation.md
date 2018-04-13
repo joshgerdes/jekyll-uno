@@ -1,17 +1,7 @@
 ---
-id: 2909
 title: Windows Server 2012 – Convert Core installation to full GUI installation
-date: 2013-12-20T21:28:04+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2909
 permalink: /win/windows-server-2012-convert-core-installation-to-full-gui-installation/
-dsq_thread_id:
-  - "4830530527"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "23"
 categories:
   - Windows
 ---

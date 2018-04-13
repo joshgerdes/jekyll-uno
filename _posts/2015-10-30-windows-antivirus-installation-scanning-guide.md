@@ -1,19 +1,6 @@
 ---
-id: 3604
 title: 'Windows Antivirus – Installation &amp; Scanning Guide'
-date: 2015-10-30T18:05:50+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3604
 permalink: /win/windows-antivirus-installation-scanning-guide/
-post_views_count:
-  - "73"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4987887730"
 categories:
   - Windows
 ---

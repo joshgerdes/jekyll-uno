@@ -1,19 +1,6 @@
 ---
-id: 3686
 title: Enabling Disk Cleanup in Windows Server 2008 R2
-date: 2016-04-30T14:28:08+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3686
 permalink: /win/enabling-disk-cleanup-windows-server-2008-r2/
-post_views_count:
-  - "35"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4790228615"
 categories:
   - Windows
 ---

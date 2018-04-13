@@ -1,19 +1,6 @@
 ---
-id: 3639
 title: Importing drivers into System Center Configuration Manager 2012 R2
-date: 2015-11-03T16:04:17+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3639
 permalink: /win/importing-drivers-into-system-center-configuration-manager-2012-r2/
-post_views_count:
-  - "1667"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4790528426"
 categories:
   - Windows
 ---
@@ -23,40 +10,6 @@ In this guide I am going to guide you through a step by step method of exporting
 
 <!--more-->
 
-<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Table of Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#How_can_I_extract_the_drivers_from_an_already_existing_Operating_System"><span class="toc_number toc_depth_1">1</span> How can I extract the drivers from an already existing Operating System?</a>
-    </li>
-    <li>
-      <a href="#Where_can_I_find_driver_packages_for_new_builds_for_System_Center_Configuration_Manager"><span class="toc_number toc_depth_1">2</span> Where can I find driver packages for new builds for System Center Configuration Manager?</a><ul>
-        <li>
-          <a href="#Hewlett_Packard"><span class="toc_number toc_depth_2">2.1</span> Hewlett Packard</a>
-        </li>
-        <li>
-          <a href="#Lenovo"><span class="toc_number toc_depth_2">2.2</span> Lenovo</a>
-        </li>
-        <li>
-          <a href="#Microsoft"><span class="toc_number toc_depth_2">2.3</span> Microsoft</a>
-        </li>
-        <li>
-          <a href="#Dell"><span class="toc_number toc_depth_2">2.4</span> Dell</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#How_can_I_import_drivers_into_System_Center_Configuration_Manager"><span class="toc_number toc_depth_1">3</span> How can I import drivers into System Center Configuration Manager?</a>
-    </li>
-    <li>
-      <a href="#How_can_I_add_a_driver_pack_into_the_task_sequence_for_Operating_System_Deployment"><span class="toc_number toc_depth_1">4</span> How can I add a driver pack into the task sequence for Operating System Deployment?</a>
-    </li>
-  </ul>
-</div>
 
 # <span id="How_can_I_extract_the_drivers_from_an_already_existing_Operating_System">How can I extract the drivers from an already existing Operating System?</span>
 

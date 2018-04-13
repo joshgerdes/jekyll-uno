@@ -1,50 +1,6 @@
 ---
-id: 2625
 title: Common Antivirus Removal Tools
-date: 2012-03-05T18:09:32+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=847
 permalink: /win/common-antivirus-removal-tools/
-dsq_thread_id:
-  - "865899833"
-  - "865899833"
-  - "865899833"
-  - "865899833"
-omc_review_enable:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Windows
 ---
@@ -63,7 +19,3 @@ Ever had problems trying to get rid of Antivirus applications and some little pa
 <a href="http://esupport.trendmicro.com/solution/en-us/1036064.aspx" target="_blank">TrendMicro</a>
 
 <a href="http://www.avg.com/ww-en/utilities" target="_blank">AVG Antivirus</a>
-
-&nbsp;
-
-&nbsp;

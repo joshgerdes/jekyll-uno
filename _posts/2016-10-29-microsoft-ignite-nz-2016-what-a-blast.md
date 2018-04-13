@@ -1,19 +1,6 @@
 ---
-id: 3724
 title: Microsoft Ignite NZ 2016! What a blast!
-date: 2016-10-29T08:04:14+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3724
 permalink: /misc/microsoft-ignite-nz-2016-what-a-blast/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "77"
-dsq_thread_id:
-  - "5261260276"
 categories:
   - Misc
   - Windows

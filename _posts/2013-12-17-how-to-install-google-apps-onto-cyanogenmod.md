@@ -8,7 +8,7 @@ categories:
 ---
 Note: This is usually – for the nightly builds. The stable builds seem to have Google integration.
 
-_Note: Please backup your phone beforehand – I take no responsibility if your phone fails to boot.
+Note: Please backup your phone beforehand – I take no responsibility if your phone fails to boot.
   
   1. First thing is first – download Gapps (goo.im/gapps/)
   2. Plug your Android phone into your computer

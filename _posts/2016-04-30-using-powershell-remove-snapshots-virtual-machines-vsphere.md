@@ -1,28 +1,6 @@
 ---
-id: 3703
 title: Using PowerShell to remove Snapshots from Virtual Machines in vSphere
-date: 2016-04-30T16:46:37+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3703
 permalink: /win/using-powershell-remove-snapshots-virtual-machines-vsphere/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "58"
-dsq_thread_id:
-  - "4790226402"
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
 categories:
   - Windows
 ---

@@ -1,29 +1,6 @@
 ---
-id: 1281
 title: 'Microsoft Security Essentials won&#8217;t install'
-date: 2012-05-11T22:25:38+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1281
 permalink: /win/mse-wont-install/
-dsq_thread_id:
-  - "865062683"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "9"
 categories:
   - Windows
 ---

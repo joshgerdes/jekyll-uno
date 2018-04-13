@@ -1,21 +1,6 @@
 ---
-id: 3366
 title: How to schedule Windows Memory Diagnostic to Start
-date: 2014-08-06T13:00:42+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3366
 permalink: /win/schedule-windows-memory-diagnostic-to-start/
-mfn-post-love:
-  - "0"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2903815743"
-post_views_count:
-  - "9"
 categories:
   - Windows
 ---

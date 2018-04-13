@@ -1,23 +1,6 @@
 ---
-id: 3282
 title: Unable to Remote Desktop into Computer
-date: 2014-04-27T20:56:00+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3282
 permalink: /win/unable-to-remote-desktop-into-computer/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2696290642"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "6"
 categories:
   - Windows
 ---

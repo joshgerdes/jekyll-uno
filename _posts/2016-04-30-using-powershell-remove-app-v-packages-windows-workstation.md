@@ -1,28 +1,6 @@
 ---
-id: 3700
 title: Using PowerShell to remove App-V packages from a Windows workstation
-date: 2016-04-30T16:39:10+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3700
 permalink: /win/using-powershell-remove-app-v-packages-windows-workstation/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "65"
-dsq_thread_id:
-  - "4794061611"
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
 categories:
   - Windows
 ---

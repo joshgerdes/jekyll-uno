@@ -1,29 +1,6 @@
 ---
-id: 1275
 title: iTunes could not connect to the iPod Because It is locked with a Passcode.
-date: 2012-05-10T21:29:15+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1275
 permalink: /osx/itunes-could-not-connect-to-the-ipod-passcode/
-dsq_thread_id:
-  - "5294876534"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Mac OSX
   - Windows

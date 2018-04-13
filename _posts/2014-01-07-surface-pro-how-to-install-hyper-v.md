@@ -1,23 +1,6 @@
 ---
-id: 2940
 title: Surface Pro – How to install Hyper-V
-date: 2014-01-07T16:57:04+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=2940
 permalink: /win/surface-pro-how-to-install-hyper-v/
-dsq_thread_id:
-  - "2438227931"
-mfn-post-love:
-  - "0"
-mfn-post-hide-content:
-  - "0"
-mfn-post-slider:
-  - "0"
-mfn-post-slider-layer:
-  - "0"
-post_views_count:
-  - "11"
 categories:
   - Windows
 ---

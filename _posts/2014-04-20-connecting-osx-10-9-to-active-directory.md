@@ -1,23 +1,6 @@
 ---
-id: 3223
 title: Connecting OSX 10.9 to Active Directory
-date: 2014-04-20T17:25:15+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3223
 permalink: /osx/connecting-osx-10-9-to-active-directory/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2720837841"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "10"
 categories:
   - Mac OSX
 ---

@@ -1,29 +1,11 @@
 ---
-id: 3233
 title: Common ITIL Abbreviations
-date: 2014-04-20T17:58:38+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3233
 permalink: /misc/common-itil-abbreviations/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4987897700"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "15"
 categories:
   - Misc
 ---
 ITIL _(Information Technology Infrastructure Library)_ and IT _(Information Technology)_ in general is filled with lots of abbreviations which sometimes get ahead of you &#8211; I have combined a useful list of ITIL abbreviations for quickly determining what something means. Use CTRL+F to quickly open the Find dialog of your internet browser and type in the abbreviation to display the meaning.
 
-&nbsp;
 
 **ACD** automatic call distribution
   

@@ -1,29 +1,7 @@
 ---
-id: 1331
 title: Alureon.E removal
-date: 2012-05-21T09:46:30+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1331
 permalink: /win/alureon-e-removal/
-dsq_thread_id:
-  - "4969115028"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "11"
 categories:
   - Windows
 ---

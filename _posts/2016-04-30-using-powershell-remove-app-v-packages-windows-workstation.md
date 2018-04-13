@@ -10,12 +10,6 @@ One of the solutions that can be ran is to clear the App-V package store of a wo
 
 This script is pretty simple and something I made a year ago for some colleagues experiencing App-V application cache issues so decided to share it here. This requires the App-VClient PowerShell module &#8211; usually installed by default as part of the App-V client.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/lukemurraynz/9fe9be2c307615c773fe3648f7ca3f9c">Gist</a>.
-  </noscript>
-</div>
-
-&nbsp;
+{% gist 9fe9be2c307615c773fe3648f7ca3f9c %}
 
 Feel free to let me know your thoughts in the comments below

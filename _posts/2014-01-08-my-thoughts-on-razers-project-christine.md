@@ -1,21 +1,6 @@
 ---
-id: 3094
 title: My thoughts on Razers Project Christine
-date: 2014-01-08T17:42:59+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=2946
 permalink: /misc/my-thoughts-on-razers-project-christine/
-dsq_thread_id:
-  - "2703461001"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "7"
 categories:
   - Misc
 ---
@@ -27,26 +12,6 @@ Now &#8211; out of nowhere the company has released concepts for two products �
 
 Computer components themselves are of a modular design – as soon as they are compatible with each other you can swap and upgrade most parts – Project Christine takes this modular design further in a fashion that reminds me of lego.
 
-<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Table of Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#Simplicity"><span class="toc_number toc_depth_1">1</span> Simplicity</a>
-    </li>
-    <li>
-      <a href="#Future_proofish"><span class="toc_number toc_depth_1">2</span> Future proof(ish) </a>
-    </li>
-    <li>
-      <a href="#Silent_Cool"><span class="toc_number toc_depth_1">3</span> Silent & Cool</a>
-    </li>
-    <li>
-      <a href="#The_Downside"><span class="toc_number toc_depth_1">4</span> The Downside</a>
-    </li>
-  </ul>
-</div>
 
 ## <span id="Simplicity">Simplicity</span>
 
@@ -71,7 +36,3 @@ Computer components themselves are of a modular design – as soon as they are c
   * No pricing has been released yet.
 
 All in all – I quite enjoy the look of Project Christine and may well see it in my office space next year.
-
-&nbsp;
-
-#

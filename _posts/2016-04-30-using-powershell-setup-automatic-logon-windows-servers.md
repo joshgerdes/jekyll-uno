@@ -1,19 +1,6 @@
 ---
-id: 3690
 title: Using PowerShell to setup Automatic Logon on Windows Servers
-date: 2016-04-30T15:17:36+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3690
 permalink: /win/using-powershell-setup-automatic-logon-windows-servers/
-post_views_count:
-  - "107"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4790377508"
 categories:
   - Windows
 ---

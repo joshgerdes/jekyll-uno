@@ -1,29 +1,6 @@
 ---
-id: 1218
 title: How to Normalize Audio in VLC Media Player
-date: 2012-04-26T14:14:17+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1218
 permalink: /win/normalize-audio-vlc/
-dsq_thread_id:
-  - "4802250566"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "60"
 categories:
   - Windows
 ---

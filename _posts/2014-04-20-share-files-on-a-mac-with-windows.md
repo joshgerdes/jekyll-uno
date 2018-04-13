@@ -1,23 +1,6 @@
 ---
-id: 3225
 title: Share files on a Mac with Windows
-date: 2014-04-20T17:28:25+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3225
 permalink: /osx/share-files-on-a-mac-with-windows/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2761800089"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "5"
 categories:
   - Mac OSX
 ---

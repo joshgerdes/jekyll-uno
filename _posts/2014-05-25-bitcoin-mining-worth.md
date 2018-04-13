@@ -1,21 +1,6 @@
 ---
-id: 3331
 title: 'Bitcoin mining &#8211; is it worth it?'
-date: 2014-05-25T11:47:24+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3331
 permalink: /misc/bitcoin-mining-worth/
-dsq_thread_id:
-  - "5117847879"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "26"
 categories:
   - Misc
 ---

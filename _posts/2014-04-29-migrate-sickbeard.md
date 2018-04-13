@@ -13,7 +13,6 @@ Due to the nature of the Sickbeard application – migrating Sickbeard data from
 
   1. On the Sickbeard install you want to use as your source – open the folder where Sickbeard is installed and **copy** the following **files** **to** the same location on your **destination** **Sickbeard** **install** **and** **overwrite** the ones that are there.
 
-&nbsp;
 
   * **sickbeard.db**
   * **config.ini**

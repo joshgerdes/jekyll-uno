@@ -1,19 +1,6 @@
 ---
-id: 3613
 title: A couple of useful DISM commands for WIM management for the IT Pro
-date: 2015-10-31T20:00:54+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3613
 permalink: /win/a-couple-of-useful-dism-commands-for-wim-management-for-the-it-pro-2/
-post_views_count:
-  - "1233"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4794849089"
 categories:
   - Windows
 ---
@@ -23,49 +10,6 @@ Here are a few useful DISM commands I have gathered and use on a monthly basis w
 
 <!--more-->
 
-<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Table of Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#Using_DISM_to_mount_a_WIM"><span class="toc_number toc_depth_1">1</span> Using DISM to mount a WIM</a>
-    </li>
-    <li>
-      <a href="#Using_DISM_to_un-mount_a_WIM"><span class="toc_number toc_depth_1">2</span> Using DISM to un-mount a WIM</a><ul>
-        <li>
-          <a href="#To_commit_your_changes"><span class="toc_number toc_depth_2">2.1</span> To commit your changes:</a>
-        </li>
-        <li>
-          <a href="#To_discard_your_changes"><span class="toc_number toc_depth_2">2.2</span> To discard your changes:</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#Using_DISM_to_add_drivers_recursively_to_a_WIM"><span class="toc_number toc_depth_1">3</span> Using DISM to add drivers recursively to a WIM</a>
-    </li>
-    <li>
-      <a href="#Using_DISM_to_add_packages_to_a_WIM"><span class="toc_number toc_depth_1">4</span> Using DISM to add packages to a WIM</a>
-    </li>
-    <li>
-      <a href="#Using_DISM_to_remove_superseded_Windows_Updates_and_unused_system_files_from_Windows_online_for_Windows_8_and_Windows_Server_2012"><span class="toc_number toc_depth_1">5</span> Using DISM to remove superseded Windows Updates and unused system files from Windows online for Windows 8 and Windows Server 2012</a>
-    </li>
-    <li>
-      <a href="#Using_DISM_to_remove_superseded_Windows_Updates_and_unused_system_files_from_a_Windows_WIM_offline"><span class="toc_number toc_depth_1">6</span> Using DISM to remove superseded Windows Updates and unused system files from a Windows WIM offline</a>
-    </li>
-    <li>
-      <a href="#Using_DISM_to_install_NET_Framework_35_on_Windows_Server_20122012_R2"><span class="toc_number toc_depth_1">7</span> Using DISM to install .NET Framework 3.5 on Windows Server 2012/2012 R2</a>
-    </li>
-    <li>
-      <a href="#Managing_DISM_from_a_GUI_frontend"><span class="toc_number toc_depth_1">8</span> Managing DISM from a GUI frontend</a>
-    </li>
-    <li>
-      <a href="#MoreDISMresources"><span class="toc_number toc_depth_1">9</span> More DISM resources</a>
-    </li>
-  </ul>
-</div>
 
 # <span id="Using_DISM_to_mount_a_WIM">Using DISM to mount a WIM</span>
 

@@ -1,36 +1,6 @@
 ---
-id: 1146
 title: How to install OSX from a USB Drive (PowerPC)
-date: 2012-03-28T10:17:34+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1146
 permalink: /osx/how-to-install-osx-from-a-usb-drive-powerpc/
-dsq_thread_id:
-  - "2717851723"
-  - "2717851723"
-omc_review_enable:
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "16"
 categories:
   - Mac OSX
 ---
@@ -54,7 +24,3 @@ categories:
  16. Now is time to boot from the USB HDD type:
  17. boot ud:0,SystemLibraryCoreServicesBootX ((again the “0” is your partition number)
  18. Press Enter
-
-&nbsp;
-
-&nbsp;

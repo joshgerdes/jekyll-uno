@@ -1,29 +1,6 @@
 ---
-id: 1196
 title: How to Insert Image into Gmail Post
-date: 2012-04-10T12:17:40+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1196
 permalink: /misc/insert-image-into-gmail-post/
-dsq_thread_id:
-  - "2560664826"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "6"
 categories:
   - Misc
 ---

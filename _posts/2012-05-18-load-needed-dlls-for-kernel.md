@@ -1,29 +1,6 @@
 ---
-id: 1325
 title: Load needed DLLs for Kernel
-date: 2012-05-18T12:00:24+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1325
-permalink: /win/load-needed-dlls-for-kernel/
-dsq_thread_id:
-  - "866276773"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "24"
 categories:
   - Windows
 ---

@@ -1,17 +1,6 @@
 ---
-id: 3105
 title: Samsung TV – Blinking Red Lights
-date: 2014-01-26T18:32:59+00:00
-author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=3070
 permalink: /misc/samsung-tv-blinking-red-lights/
-dsq_thread_id:
-  - "4868290879"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "21"
 categories:
   - Misc
 ---

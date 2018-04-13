@@ -1,36 +1,12 @@
 ---
-id: 1482
 title: RAS Entry Creation/Modification Error
-date: 2012-07-24T14:29:30+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1482
 permalink: /mob/ras-entry-creationmodification-error/
-dsq_thread_id:
-  - "4828677833"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "17"
 categories:
   - Mobile
   - Windows
 ---
 _This usually occurs when you are attempting to connecting to the Internet using a cell phone._
-
-&nbsp;
 
 <ol start="1">
   <li>

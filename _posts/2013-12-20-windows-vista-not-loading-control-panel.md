@@ -1,17 +1,7 @@
 ---
-id: 3090
 title: Windows Vista – Not loading Control Panel
-date: 2013-12-20T18:07:11+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2905
 permalink: /win/windows-vista-not-loading-control-panel/
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "16"
-dsq_thread_id:
-  - "5050617859"
 categories:
   - Windows
 ---
@@ -19,7 +9,6 @@ Having problems when you try opening the Vista Control panel and all you see is 
 
 Follow the instructions below to repair it. 
 
- 
 
 1. Left Click the Vista &#8220;Orb&#8221; 
 
@@ -32,7 +21,6 @@ Follow the instructions below to repair it.
 6. Copy & paste the following into Notepad (To copy, select the text below and click Copy. To paste, right click on where you would like to paste it and select Paste) 
 
  
-
 net stop readyboost 
 
 net stop slsvc 
@@ -43,8 +31,6 @@ net start readyboost
 
 @cls 
 
- 
-
 7. Click File 
 
 8. click Save 
@@ -53,6 +39,4 @@ net start readyboost
 
 10. Run the ControlPanelFix.bat file. 
 
- 
-
-Note: You can also try accessing parts of Control Panel by going to Computer, and in the left hand pane, select Control Panel
+ Note: You can also try accessing parts of Control Panel by going to Computer, and in the left hand pane, select Control Panel

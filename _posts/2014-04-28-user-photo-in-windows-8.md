@@ -1,23 +1,6 @@
 ---
-id: 3295
 title: Changing your user photo in Windows 8
-date: 2014-04-28T17:18:16+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3295
 permalink: /win/user-photo-in-windows-8/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "2715702345"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Windows
 ---

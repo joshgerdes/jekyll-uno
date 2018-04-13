@@ -1,17 +1,7 @@
 ---
-id: 2822
 title: Dishonored – Black screen during game start-up
-date: 2013-12-05T20:37:41+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2822
 permalink: /win/dishonored-black-screen-during-game-start-up/
-dsq_thread_id:
-  - "4796306815"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "61"
 categories:
   - Windows
 ---

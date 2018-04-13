@@ -1,96 +1,17 @@
 ---
-id: 3142
 title: Guide to using Hyper-V
-date: 2014-02-23T20:04:42+00:00
-author: Luke
-layout:
-  - ""
-guid: http://www.techremedy.co.nz/?p=3142
 permalink: /win/guide-to-using-hyper-v/
-sidebar:
-  - ""
-header:
-  - 'yes'
-footer:
-  - ""
-dsq_thread_id:
-  - "4971651478"
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-post_views_count:
-  - "61"
 image: /wp-content/uploads/2014/02/Hyper-V-logo.png
 categories:
   - Windows
 ---
-<div id="toc_container" class="no_bullets">
-  <p class="toc_title">
-    Table of Contents
-  </p>
-  
-  <ul class="toc_list">
-    <li>
-      <a href="#Introduction_to_Hyper-V"><span class="toc_number toc_depth_1">1</span> Introduction to Hyper-V</a>
-    </li>
-    <li>
-      <a href="#Hyper-V_Specifications"><span class="toc_number toc_depth_1">2</span> Hyper-V Specifications</a>
-    </li>
-    <li>
-      <a href="#Guest_operating_systems"><span class="toc_number toc_depth_1">3</span> Guest operating systems </a><ul>
-        <li>
-          <a href="#Improvements_of_Hyper-V_in_Windows_Server_2012"><span class="toc_number toc_depth_2">3.1</span> Improvements of Hyper-V in Windows Server 2012</a>
-        </li>
-        <li>
-          <a href="#Installing_Hyper-V_in_Windows_8_Windows_81"><span class="toc_number toc_depth_2">3.2</span> Installing Hyper-V in Windows 8 & Windows 8.1</a>
-        </li>
-        <li>
-          <a href="#Installing_Hyper-V_for_Windows_Server_2012"><span class="toc_number toc_depth_2">3.3</span> Installing Hyper-V for Windows Server 2012</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li>
-      <a href="#Hyper-V_Tips_and_Tricks"><span class="toc_number toc_depth_1">4</span> Hyper-V Tips and Tricks</a><ul>
-        <li>
-          <a href="#How_to_stop_and_restart_the_Hyper-V_service"><span class="toc_number toc_depth_2">4.1</span> How to stop and restart the Hyper-V service</a>
-        </li>
-        <li>
-          <a href="#How_to_create_a_new_Virtual_Machine_in_Hyper-V"><span class="toc_number toc_depth_2">4.2</span> How to create a new Virtual Machine in Hyper-V</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
 ### <span id="Introduction_to_Hyper-V">Introduction to Hyper-V</span>
 
 &nbsp;
 
 Hyper-V is an emulation/hyper-visor Microsoft developed technology – similar to VMWare Workstation or ESXI that allows you to run Virtual Machines and different workloads simultaneously. Hyper-V is currently available in Windows 8, Windows Server 2008, Windows Server 2008 R2, Windows 8.1 & Windows Server 2012, Windows Server 2012 R2. The Hyper-V hypervisor allows multiple workloads to run on the same physical hardware that in the past would have otherwise only been suitable for one workload – allowing for power and resource efficiency.
 
-&nbsp;
-
 ### <span id="Hyper-V_Specifications">Hyper-V Specifications</span>
-
-&nbsp;
 
 **Host operating system:** 
 
@@ -126,11 +47,9 @@ Hyper-V in Windows Server 2012 supports up to 1024 active virtual machines per s
 
 Hyper-V supports both 32-bit (x86) and 64-bit (x64) guest VMs.
 
-&nbsp;
 
 #### <span id="Improvements_of_Hyper-V_in_Windows_Server_2012">Improvements of Hyper-V in Windows Server 2012</span>
 
-&nbsp;
 
 Hyper-V Extensible Virtual Switch
 
@@ -152,22 +71,17 @@ Cross-premise connectivity
 
 Cloud backup
 
-&nbsp;
-
 #### <span id="Installing_Hyper-V_in_Windows_8_Windows_81">Installing Hyper-V in Windows 8 & Windows 8.1</span>
 
-&nbsp;
 
   1. Navigate to **Control Panel** & select **Uninstall a Program** underneath programs
   2. Select **Turn Windows Features On or Off**
   3. Check **Hyper-V & Hyper-V Platform** and select additional relevant features – I would HIGHLY recommend Hyper-V GUI Management Tools.
   4. Windows will go through and install the Hyper-V modules onto the Windows 8 workstation. Once completed the workstation will need a restart and you will be able to now fully utilise Hyper-V!
 
-&nbsp;
 
 #### <span id="Installing_Hyper-V_for_Windows_Server_2012">Installing Hyper-V for Windows Server 2012</span>
 
-&nbsp;
 
   1. Open **Server Manager**
   2. Click **Add Roles and Features** and click **Next**
@@ -176,11 +90,9 @@ Cloud backup
   5. Select the default locations for your VHD (virtual hard disks) and VM (virtual machine) configuration files to be held and select **Next**
   6. Once the Hyper-V role has been fully installed – restart the Windows Server 2012 machine. You should now have access to the Hyper-V Manager.
 
-&nbsp;
 
 ### <span id="Hyper-V_Tips_and_Tricks">Hyper-V Tips and Tricks</span>
 
-&nbsp;
 
 #### <span id="How_to_stop_and_restart_the_Hyper-V_service">How to stop and restart the Hyper-V service</span>
 
@@ -190,11 +102,7 @@ Cloud backup
   2. Select the relevant Hyper-V server
   3. Select Stop Service
 
-&nbsp;
-
 #### <span id="How_to_create_a_new_Virtual_Machine_in_Hyper-V">How to create a new Virtual Machine in Hyper-V</span>
-
-&nbsp;
 
   1. Open **Hyper-V Manager**
   2. Select **New** and **Virtual Machine**

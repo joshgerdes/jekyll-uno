@@ -1,29 +1,6 @@
 ---
-id: 1464
 title: Google Calendar Sync Error 1011
-date: 2012-09-30T16:02:45+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1464
 permalink: /misc/google-cal-sync-error-1011/
-dsq_thread_id:
-  - "2429584567"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Misc
   - Windows

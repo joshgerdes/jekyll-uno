@@ -1,29 +1,7 @@
 ---
-id: 1107
 title: Power Calibration Error when attempting to burn CD/DVD
-date: 2012-06-15T08:33:42+00:00
-author: Luke
 layout: post
-guid: http://techdrive.co.nz/?p=1107
 permalink: /misc/power-calibration-burn/
-dsq_thread_id:
-  - "891476269"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "9"
 categories:
   - Misc
   - Windows

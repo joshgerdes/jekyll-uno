@@ -9,10 +9,9 @@ In VMWare Service Manager you can add a &#8220;Watched Call&#8221; state to an I
 Note: Putting this watched call state on will not add any history or adjust any of the lifecycle management of the call. 
 
   * First open an Incident – in the top banner click Watched Call
-  * A dialog box will open saying: <span style="color:black">A watch has been placed on the following call(s): (call number)<br /> </span>
-  * <span style="color:black"><br /> </span>
-  * <span style="color:black">Once you receive that dialog box – you have successfully setup a Watched Call and will be notified via email of any call changes.</span> 
+  * A dialog box will open saying: A watch has been placed on the following call(s): (call number)
+  * Once you receive that dialog box – you have successfully setup a Watched Call and will be notified via email of any call changes.
 
-<span style="color:black">Note: In Outlook I have setup a rule that will forward any emails containing the following subject line:</span>
+Note: In Outlook I have setup a rule that will forward any emails containing the following subject line:
 			  
-<span style="color:black">Forum Notification &#8211; VMware Service Manager Call into a folder called – Call_Watchlist – I recommend doing this.</span>
+Forum Notification &#8211; VMware Service Manager Call into a folder called – Call_Watchlist – I recommend doing this.

@@ -1,33 +1,10 @@
 ---
-id: 1172
 title: iATKOS v2.0i Installation
-date: 2012-03-31T20:04:59+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1172
 permalink: /osx/iatkos-v2-0i-installation/
-dsq_thread_id:
-  - "4856287622"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "27"
 categories:
   - Mac OSX
 ---
-_ Credits goes to Apple and OSX86 community. This is just the instructions for the install._
+Credits goes to Apple and OSX86 community. This is just the instructions for the install.
   
 Attention:
 

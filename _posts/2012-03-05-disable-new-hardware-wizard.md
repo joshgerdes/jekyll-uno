@@ -1,36 +1,6 @@
 ---
-id: 2626
 title: Disable New Hardware Wizard in Windows XP to Enable Automatic Device Driver Installation
-date: 2012-03-05T18:17:55+00:00
-author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1016
 permalink: /win/disable-new-hardware-wizard/
-dsq_thread_id:
-  - "4915608189"
-  - "4915608189"
-omc_review_enable:
-  - "0"
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-  - "0"
-omc_review_type:
-  - stars
-  - stars
-omc_criteria_display:
-  - 'n'
-  - 'n'
-omc_featured_post:
-  - "0"
-  - "0"
-omc_comment_type:
-  - wp
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "21"
 categories:
   - Windows
 ---

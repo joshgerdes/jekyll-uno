@@ -1,28 +1,6 @@
 ---
-id: 3650
 title: Windows Update Task Sequence (Patching) – SCCM 2012 R2
-date: 2016-01-01T09:53:00+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3650
 permalink: /win/windows-update-task-sequence-patching-sccm-2012-r2/
-post_views_count:
-  - "2108"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "4791340715"
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
 image: /wp-content/uploads/2016/01/123115_2137_WindowsUpda1.png
 categories:
   - Windows

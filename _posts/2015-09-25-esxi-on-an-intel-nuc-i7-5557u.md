@@ -1,19 +1,6 @@
 ---
-id: 3518
 title: ESXi on an Intel NUC NUC5i7RYH
-date: 2015-09-25T10:14:17+00:00
-author: Luke
-layout: post
-guid: http://luke.geek.nz/?p=3518
 permalink: /misc/esxi-on-an-intel-nuc-i7-5557u/
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-post_views_count:
-  - "190"
-dsq_thread_id:
-  - "4792972106"
 categories:
   - Misc
 ---

@@ -1,21 +1,6 @@
 ---
-id: 3312
 title: ASUS thunderbolt driver working in Windows 8
-date: 2014-05-17T13:30:10+00:00
-author: Luke
-layout: post
-guid: http://techremedy.co.nz/?p=3312
 permalink: /win/thunderbolt-driver-win8/
-dsq_thread_id:
-  - "4822974866"
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "22"
 categories:
   - Windows
 ---

@@ -8,7 +8,7 @@ categories:
 ---
 Thankfully over the last few years – connecting securely & joining your workstations to the Tor network have become a lot easier – for both Linux & Windows clients. Now with a nifty little application called – [Orbit](https://play.google.com/store/apps/details?id=org.torproject.android&hl=en) you can easily traffic HTTP (port 80) traffic & other random Android application traffic through the Tor network. Follow the guide below to get your android device & applications running through the Tor network. 
 
-_Note: This application needs root access for full functionality and is recommend.
+Note: This application needs root access for full functionality and is recommend.
 
   1. Open Play Store/Google Play on your android device. 
   2. Search for: Orbot. 

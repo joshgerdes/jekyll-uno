@@ -1,22 +1,6 @@
 ---
-id: 3865
 title: DFS Namespace service not starting after a reboot
-date: 2016-12-15T08:00:07+00:00
-author: Luke
-layout:
-  - ""
-guid: http://luke.geek.nz/?p=3865
 permalink: /win/dfs-namespace-service-not-starting-reboot/
-sidebar:
-  - ""
-footer:
-  - ""
-header_title_bar:
-  - ""
-header_transparency:
-  - ""
-dsq_thread_id:
-  - "5376529515"
 categories:
   - Windows
 ---

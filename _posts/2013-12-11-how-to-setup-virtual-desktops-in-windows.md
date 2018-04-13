@@ -1,17 +1,7 @@
 ---
-id: 2839
 title: How to setup Virtual Desktops in Windows
-date: 2013-12-11T17:37:09+00:00
-author: Luke
 layout: post
-guid: http://www.techremedy.co.nz/?p=2839
 permalink: /win/how-to-setup-virtual-desktops-in-windows/
-dsq_thread_id:
-  - "4980128684"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "10"
 categories:
   - Windows
 ---
@@ -29,10 +19,7 @@ First you need a third party utility called – Dexpot. This utility is free for
 
 ### Dexpot Configuration
   
-
-
   1. In the notification tray – right click the Dexpot logo. 
-  2. 
-  3. Select Settings 
-  4. From here – you can adjust the number of concurrent Virtual Desktops running on your workstation from 2 to 20. 
-  5. You can also make it start during Windows start-up, configure applications to open in certain Virtual Desktops & set different Desktop icons for different Desktops.
+  2. Select Settings 
+  3. From here – you can adjust the number of concurrent Virtual Desktops running on your workstation from 2 to 20. 
+  4. You can also make it start during Windows start-up, configure applications to open in certain Virtual Desktops & set different Desktop icons for different Desktops.

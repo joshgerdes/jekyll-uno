@@ -1,23 +1,6 @@
 ---
-id: 3285
 title: Optimal Taleo Settings
-date: 2014-04-27T21:01:46+00:00
-author: Luke
-layout: post
-guid: http://localhost/techremedy/?p=3285
 permalink: /misc/optimal-taleo-settings/
-slide_template:
-  - default
-sidebar_value:
-  - Default Sidebar
-sidebar_position_value:
-  - right
-dsq_thread_id:
-  - "5220390676"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
 categories:
   - Misc
   - Windows

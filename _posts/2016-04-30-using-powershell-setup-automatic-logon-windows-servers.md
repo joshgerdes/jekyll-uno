@@ -12,24 +12,23 @@ I have created a PowerShell script for editing the registry to set this manually
 
 {% highlight PowerShell %}
 
-Author: Luke Murray (Luke.Geek.NZ)
-Version: 0.1
-Purpose:
+#Author: Luke Murray (Luke.Geek.NZ)
+#Version: 0.1
+#Purpose:
 
-The purpose of this PowerShell script is to set the AutoLogon and WinLogon registry strings using PowerShell, to setup a Windows Server or Workstation for Automatic Logon.
-The $UserName and $Password variables need to be configuration for your environment. Please make sure the $UserName variables follows DOMAINNAME\SAMACCOUNTNAME format.
-
-This needs to be ran using an Elevated PowerShell ISE or PowerShell window (with Admin access on the computer you are running this on).
-
-#&gt;
+#The purpose of this PowerShell script is to set the AutoLogon and WinLogon registry strings using PowerShell, to setup a Windows Server #or Workstation for Automatic Logon.
+#The $UserName and $Password variables need to be configuration for your environment. Please make sure the $UserName variables follows #DOMAINNAME\SAMACCOUNTNAME format.
+#This needs to be ran using an Elevated PowerShell ISE or PowerShell window (with Admin access on the computer you are running this on).
 
 $usrname = 'DOMAINNAME\SAMACCOUNTNAME'
 $password = 'PASSWORD'
 $RegistryLocation = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon'
 Set-ItemProperty $RegistryLocation -Name 'AutoAdminLogon' -Value '1'
 Set-ItemProperty $RegistryLocation -Name 'DefaultUsername' -Value "$usrname"
-Set-ItemProperty $RegistryLocation -Name 'DefaultPassword' -Value "$password"</pre>
+Set-ItemProperty $RegistryLocation -Name 'DefaultPassword' -Value "$password"
+
 {% endhighlight %}
+
 <p style="background: white">
   Feel free to let me know your thoughts in the comments below, this could easily be modified to run in a PowerShell window and prompt for username/password without editing the file manually using Read-Host.
 </p>

@@ -10,11 +10,7 @@ There are many ways to setup Automatic Logon, using _&#8220;control userpassword
 
 I have created a PowerShell script for editing the registry to set this manually in a standardized way and could be ran remotely. It is pretty simple and only requires version 1 of PowerShell.
 
-&nbsp;
-
-<!--more-->
-
-<pre class="lang:ps decode:true ">&lt;#
+{% highlight PowerShell %}
 
 Author: Luke Murray (Luke.Geek.NZ)
 Version: 0.1
@@ -33,7 +29,7 @@ $RegistryLocation = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 Set-ItemProperty $RegistryLocation -Name 'AutoAdminLogon' -Value '1'
 Set-ItemProperty $RegistryLocation -Name 'DefaultUsername' -Value "$usrname"
 Set-ItemProperty $RegistryLocation -Name 'DefaultPassword' -Value "$password"</pre>
-
+{% endhighlight %}
 <p style="background: white">
   Feel free to let me know your thoughts in the comments below, this could easily be modified to run in a PowerShell window and prompt for username/password without editing the file manually using Read-Host.
 </p>

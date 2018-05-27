@@ -96,17 +96,7 @@ categories:
     Now we need to do the same for Remediation Script which will be the script that will be doing the clean-up, click on Add Script&#8230; And change the Script Language to Windows PowerShell, then copy the Remediation Script from below into it.<strong><br /> </strong>
   </p>
   
-  <div class="oembed-gist">
-    <noscript>
-      View the code on <a href="https://gist.github.com/lukemurraynz/4bb2b67bae79372bb785850106945ef6">Gist</a>.
-    </noscript>
-  </div>
-  
-  <div class="oembed-gist">
-    <noscript>
-      View the code on <a href="https://gist.github.com/lukemurraynz/4bb2b67bae79372bb785850106945ef6">Gist</a>.
-    </noscript>
-  </div>
+  {% gist 4bb2b67bae79372bb785850106945ef6 %}
   
   <p>
     Once, completed click Ok and then select the Compliance Rules tab

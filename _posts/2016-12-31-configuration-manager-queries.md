@@ -1,8 +1,7 @@
 ---
 title: Configuration Manager Queries
-
+layout: post
 permalink: /win/configuration-manager-queries/
-
 categories:
   - Windows
 ---
@@ -12,14 +11,18 @@ This is just a quick post with a few Configuration Manager WQL queries I have cr
 
 Feel free to use them, change them to suit your needs and share your own!
 
-If you don&#8217;t know how to use these – check the bottom of the post for links to TechNet.
+If you don't know how to use these – check the bottom of the post for links to TechNet.
 
    
 ### <span id="Collection_Based_Dynamic_Rules">Collection Based Dynamic Rules:</span>
 
 ##### <span id="Get_Windows_7_Enterprise_x64_Devices_matching_a_specific_naming_convention">Get Windows 7 Enterprise x64 Devices matching a specific naming convention:</span>
 
-<pre class="height-set:true height:1024 width-set:true width:800 nums:false nums-toggle:false wrap:true lang:default decode:true">select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_SYSTEM on SMS_G_System_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Caption = "Microsoft Windows 7 Enterprise" and SMS_G_System_COMPUTER_SYSTEM.SystemType = "x64-based PC" and SMS_G_System_SYSTEM.Name like "HOSTNAME%"</pre>
+{% highlight sql %}
+
+select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_SYSTEM on SMS_G_System_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Caption = "Microsoft Windows 7 Enterprise" and SMS_G_System_COMPUTER_SYSTEM.SystemType = "x64-based PC" and SMS_G_System_SYSTEM.Name like "HOSTNAME%"
+
+{% endhighlight %}
 
 ##### <span id="Devices_in_a_specific_OU">Devices in a specific OU:</span>
 

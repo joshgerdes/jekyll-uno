@@ -3,6 +3,7 @@ title: Remove unused App-V packages automatically using PowerShell and Configura
 permalink: /win/rm-unused-app-v-packages-powershell-sccm/
 categories:
   - Windows
+  - PowerShell
 ---
 <section class="av\_textblock\_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" >
 

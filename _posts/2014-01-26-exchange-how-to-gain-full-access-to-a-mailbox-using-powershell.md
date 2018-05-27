@@ -1,6 +1,6 @@
 ﻿---
 title: Exchange – How to gain full access to a mailbox using PowerShell
--permalink: /misc/exchange-how-to-gain-full-access-to-a-mailbox-using-powershell/
+permalink: /misc/exchange-how-to-gain-full-access-to-a-mailbox-using-powershell/
 
 author: Luke 
 categories:

@@ -1,7 +1,7 @@
 # Site settings
 title: luke.geek.nz
 url: 'lukemurraynz.github.io'
-description: 'An IT Engineer with a love for all things IT including (but not limited to), Microsoft Azure , Automation and ITSM!'
+description: 'An IT Engineer with a love for all things IT including (but not limited to), Microsoft Azure, Automation and ITSM!'
 baseurl: ''
 google_analytics: 'UA-67246563-1'
 disqus_shortname: 'lukegeeknz'

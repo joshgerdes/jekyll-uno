@@ -16,9 +16,9 @@ on what really matters – your applications and users.
 More information on what Azure is and the services that offer *(which is ever
 increasing)* can be found on the following official Microsoft webpages:
 
--   [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/)
+-   [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 
--   [Azure Products/Services](https://azure.microsoft.com/en-us/services/)
+-   [Azure Products/Services](https://azure.microsoft.com/en-us/services/){:target="_blank"}
 
 This mammoth of a Public Cloud offering often causes confusion around knowing
 what Azure is capable of and the hardest part is knowing where to start! To

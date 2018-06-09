@@ -24,9 +24,9 @@ This mammoth of a Public Cloud offering often causes confusion around knowing
 what Azure is capable of and the hardest part is knowing where to start! To
 quote a famous Hobbit.
 
-*“It’s a dangerous business, Frodo, going out your door. You step onto the road,
-and if you don’t keep your feet, there’s no knowing where you might be swept off
-to.”* – Bilbo Baggins
+> “It’s a dangerous business, Frodo, going out your door. You step onto the road,
+> and if you don’t keep your feet, there’s no knowing where you might be swept off
+> to.” – Bilbo Baggins
 
 This blog post is intended to help point you in the right direction whether it
 is your first step on the road or you have already started your journey.

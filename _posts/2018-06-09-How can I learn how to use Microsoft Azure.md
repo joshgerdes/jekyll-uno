@@ -40,39 +40,39 @@ you have to pay for (usually subscription based that I have used).*
 Beginner: So, what is this outside world of Azure that you speak of?
 --------------------------------------------------------------------
 
--   [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/)
+-   [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 
 -   [Wikipedia - More about Azure and some acronyms
-    (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure)
+    (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
 Intermediate: I am excited! Now to eat supper
 ---------------------------------------------
 
 -   [Create a 3-Tier Application Using Azure Virtual
-    Machines](https://www.udemy.com/free-azure/)
+    Machines](https://www.udemy.com/free-azure/){:target="_blank"}
 
 -   [Microsoft Azure
-    Essentials](https://www.microsoft.com/en-us/azureessentials)
+    Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
 
--   [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year)
+-   [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
 
 Advanced: Up for a Challenge! Let’s throw that ring in the lava
 ---------------------------------------------------------------
 
--   [Azure Learning Pathways](https://www.microsoft.com/en-au/azurelearningpathways/)
+-   [Azure Learning Pathways](https://www.microsoft.com/en-au/azurelearningpathways/){:target="_blank"}
 
--   [Azure Citadel](https://azurecitadel.github.io/)
+-   [Azure Citadel](https://azurecitadel.github.io/){:target="_blank"}
 
 -   [Microsoft Azure Training
-    Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos)
+    Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos){:target="_blank"}
 
 Bonus Material: I have a dragon’s hoard of gold to spend
 --------------------------------------------------------
 
--   [Pluralsight](https://www.pluralsight.com/)
+-   [Pluralsight](https://www.pluralsight.com/){:target="_blank"}
 
--   [SkillMeUp](https://www.skillmeup.com/)
+-   [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
 
--   [Safari Books](https://www.safaribooksonline.com/home/)
+-   [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"}
 
--   [Udemy](https://www.udemy.com/)
+-   [Udemy](https://www.udemy.com/){:target="_blank"}

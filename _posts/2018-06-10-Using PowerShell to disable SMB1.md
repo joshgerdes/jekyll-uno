@@ -36,7 +36,7 @@ To run it, save the script below as PS1 and open it PowerShell as Administrator
 Windows PowerShell should appear on the top. Right-click on it and select Run as
 Administrator and navigate to where the PS1 has been saved and run it)*
 
-![Disable SMB1](https://github.com/lukemurraynz/lukemurraynz.github.io/blob/master/images/posts/DisableSMB1.gif)
+![Disable SMB1](/images/posts/DisableSMB1.gif)
 
 {% highlight PowerShell %}
 
@@ -120,4 +120,4 @@ catch [System.Runtime.InteropServices.COMException]
 
 {% endhighlight %}
 
-Note: Script is also hosted on my Github repository. Feel free to clone/recommend improvements or fork.
+*Note: Script is also hosted on my Github repository. Feel free to clone/recommend improvements or fork.*

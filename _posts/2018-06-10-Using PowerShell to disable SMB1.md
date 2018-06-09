@@ -38,6 +38,9 @@ Administrator and navigate to where the PS1 has been saved and run it)*
 
 ![Disable SMB1](/images/posts/DisableSMB1.gif)
 
+{% gist d0a4c7d06fe3b0120798535fb6c7eb53 %}
+
+
 {% highlight PowerShell %}
 
 #requires -Version 3.0 -Modules Dism

@@ -15,7 +15,7 @@ Before you can use PowerShell to connect to Microsoft Azure, you need to install
 the Azure Resource Manager modules first – follow the guide below:
 
 -   [Install and configure Azure
-    PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
+    PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps){:target="_blank"}
 
 ![Disable SMB1](/images/posts/InstallAzureRMModule.gif)
 

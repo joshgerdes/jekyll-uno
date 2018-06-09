@@ -35,7 +35,7 @@ is your first step on the road or you have already started your journey.
 have tried to categorise the resources in terms of skill level as much as I can
 and kept to training resources which are free, and I plan on keeping it up to
 date and add more as I come across them. Bonus material training services that
-you have to pay for (usually subscription based).*
+you have to pay for (usually subscription based that I have used).*
 
 Beginner: So, what is this outside world of Azure that you speak of?
 --------------------------------------------------------------------
@@ -59,7 +59,7 @@ Intermediate: I am excited! Now to eat supper
 Advanced: Up for a Challenge! Let’s throw that ring in the lava
 ---------------------------------------------------------------
 
--   Azure Learning Pathways
+-   [Azure Learning Pathways](https://www.microsoft.com/en-au/azurelearningpathways/)
 
 -   [Azure Citadel](https://azurecitadel.github.io/)
 
@@ -69,10 +69,10 @@ Advanced: Up for a Challenge! Let’s throw that ring in the lava
 Bonus Material: I have a dragon’s hoard of gold to spend
 --------------------------------------------------------
 
--   Pluralsight
+-   [Pluralsight](https://www.pluralsight.com/)
 
--   SkillMeUp
+-   [SkillMeUp](https://www.skillmeup.com/)
 
--   Safari Books Online
+-   [Safari Books](https://www.safaribooksonline.com/home/)
 
--   Udemy
+-   [Udemy](https://www.udemy.com/)

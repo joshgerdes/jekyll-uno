@@ -3,6 +3,7 @@ title: Stuck at a Black Screen and Connecting on a vCloud console
 date: 2017-01-01T02:54:20+00:00
 permalink: /win/stuck-black-screen-connecting-vcloud-console/
 image: /wp-content/uploads/2016/12/123116_0852_StuckataBla1.jpg
+layout: post
 categories:
   - Windows
 ---

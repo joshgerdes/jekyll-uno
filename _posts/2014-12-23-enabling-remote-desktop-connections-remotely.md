@@ -1,6 +1,7 @@
 ---
 title: Enabling Remote Desktop connections remotely
 permalink: /win/enabling-remote-desktop-connections-remotely/
+layout: post
 categories:
   - Windows
 ---

@@ -1,6 +1,7 @@
 ---
 title: Hyper-V 2012 R2 on an Intel NUC (NUC5i7RYH)
 permalink: /misc/hyper-v-2012-r2-intel-nuc-nuc5i7ryh/
+layout: post
 categories:
   - Misc
   - Windows

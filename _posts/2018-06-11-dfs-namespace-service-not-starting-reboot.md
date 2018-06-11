@@ -1,4 +1,5 @@
 ---
+date: "2018-06-11"
 title: Using PowerShell to start the DFS Namespace service
 permalink: /win/dfs-namespace-service-not-starting-reboot/
 categories:

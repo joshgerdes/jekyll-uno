@@ -1,5 +1,5 @@
 ---
-title: DFS Namespace service not starting after a reboot
+title: Using PowerShell to start the DFS Namespace service
 permalink: /win/dfs-namespace-service-not-starting-reboot/
 categories:
   - Windows
@@ -22,7 +22,7 @@ In my experience, this had been caused by antivirus software changing the Remote
 
 Remote Registry does not start so if you have issues with the DFS-N service not starting – check the Remote Registry Start-up type is configured to Automatic and click Start to confirm there are no errors and try starting the DFS-N service again.
 
-Note: RemoteRegistry – although it is Automatic, will only Start when it is being used so don't be alarmed if it is in a 'Stopped' state.
+*Note: RemoteRegistry – although it is Automatic, will only Start when it is being used so don't be alarmed if it is in a 'Stopped' state.*
   
 <img class="alignnone" src="https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121316_0835_DFSNamespac2.png?resize=377%2C267" alt="Remote Registry" width="377" height="267" data-recalc-dims="1" />
 

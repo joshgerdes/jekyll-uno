@@ -21,7 +21,7 @@ In my experience &#8211; this has been caused by antivirus software changing the
 
 Remote Registry does not start so if you have issues with the DFS-N service not starting – check the Remote Registry Start-up type is configured to Automatic and click Start to confirm there are no errors and try starting the DFS-N service again.
 
-_Note: RemoteRegistry – although it is Automatic, it will only Start when it is being used so don&#8217;t be alarmed if it is in a Stopped state.
+Note: RemoteRegistry – although it is Automatic, it will only Start when it is being used so don&#8217;t be alarmed if it is in a Stopped state.
   
 _ 
 
@@ -29,8 +29,7 @@ _
 
 I have also created a quick PowerShell script to do some general checking for the DFS namespace service – sets the Remote Registry service to Automatic startup, Gets the other DFS service dependancy services and changes the startup type to Automatic and starts them and finally tries to start the DFS Namespace service.
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/lukemurraynz/d2d5123967c4fbb76b1912a09dc7f9cd">Gist</a>.
-  </noscript>
-</div>
+{% gist d2d5123967c4fbb76b1912a09dc7f9cd %}
+
+*Note: Script is also hosted on my Github repository. Feel free to
+clone/recommend improvements or fork.*

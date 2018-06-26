@@ -43,8 +43,8 @@ The rough guide of the process to replicate this is as follows:
     Policies](https://iase.disa.mil/stigs/gpo/Pages/index.aspx){:target="_blank"} and
     [ADMXtoDSC](https://github.com/gpoguy/ADMXToDSC){:target="_blank"} script
 
-2.  On Windows Server 2012 R2 Server *(part of an AD Domain)* with Group Policy
-    Management console installed to create a new GPO called ‘WindowsServer2016’
+2.  On a Windows Server 2012 R2 Server *(part of an AD Domain)* with Group Policy
+    Management console installed, create a new GPO called ‘WindowsServer2016’
 
 3.  Right-click the GPO and select Import Settings
 

@@ -7,7 +7,7 @@ categories:
 ---
 
 I am not a DSC *(Desired State Configuration)* expert, however, the technology
-has always interested me and as such, something I like to dabble in.
+has always interested me and as such, something I like to dabble in it.
 
 There are many reasons for using PowerShell DSC and hopefully today, I can help
 enlighten you towards some of its use. DSC can be used for things such as:

@@ -56,6 +56,8 @@ Intermediate: I am excited! Now to eat supper
 
 -   [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
 
+-   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"}
+
 Advanced: Up for a Challenge! Let’s throw that ring in the lava
 ---------------------------------------------------------------
 

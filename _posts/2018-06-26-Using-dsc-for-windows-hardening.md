@@ -28,7 +28,7 @@ Enough about what is PowerShell DSC, one of the benefits of DSC is that you can
 use them to set and maintain a certain configuration – one of the good use of
 this is hardening.
 
-Using the Windows Server 2016 and Windows 10 DISA STIGS ADMX templates hosted on
+Using the Windows Server 2016 and Windows 10 ADMX templates hosted on
 the [IASE (Information Assurance Support
 Environment)](https://iase.disa.mil/stigs/gpo/Pages/index.aspx){:target="_blank"} webpage and the
 gpoguy [ADMXToDSC script](https://github.com/gpoguy/ADMXToDSC){:target="_blank"} I was able to
@@ -39,7 +39,7 @@ Note: I take no responsibility for any damage incurred and definitely recommend 
 
 The rough guide of the process to replicate this is as follows:
 
-1.  Download the [IASE/DISA Group
+1.  Download the [IASE Group
     Policies](https://iase.disa.mil/stigs/gpo/Pages/index.aspx){:target="_blank"} and
     [ADMXtoDSC](https://github.com/gpoguy/ADMXToDSC){:target="_blank"} script
 

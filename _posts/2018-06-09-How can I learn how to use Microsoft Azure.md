@@ -68,6 +68,8 @@ Advanced: Up for a Challenge! Let’s throw that ring in the lava
 -   [Microsoft Azure Training
     Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos){:target="_blank"}
 
+-   [70-532 Azure Exam links](https://github.com/gsuttie/gsuttie-gsuttie.github.io){:target="_blank"}
+
 Bonus Material: I have a dragon’s hoard of gold to spend
 --------------------------------------------------------
 

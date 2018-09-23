@@ -1,13 +1,13 @@
 # Site settings
-title: Gabriel Balbuena
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: My Untitled Blog
+description: 'Yet another lazy and grumpy developer blog'
 url: 'http://gbalbuena.github.io'
 baseurl: '/'
 google_analytics: 'UA-93047835-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Gabriel Balbuena'
+  name: 'Juan Gabriel Balbuena Balbuena'
   email: gabrielbalbuena@gmail.com
   # twitter_username: gabrielbalbuena
   # facebook_username: gabrielbalbuena

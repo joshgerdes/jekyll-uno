@@ -58,6 +58,8 @@ Intermediate: I am excited! Now to eat supper
 
 -   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"}
 
+-   [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
+
 Advanced: Up for a Challenge! Let’s throw that ring in the lava
 ---------------------------------------------------------------
 

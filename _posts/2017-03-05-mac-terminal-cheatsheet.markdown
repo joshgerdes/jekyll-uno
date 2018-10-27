@@ -26,25 +26,31 @@ My very handy list of commands to make my work/life more productive using my Mac
 
 ## CORE COMMANDS
 
-| Key/Command | Description                                                                  |
-|-------------|------------------------------------------------------------------------------|
-| cd          | Home directory                                                               |
-| cd [folder] | Change directory                                                             |
-| cd ~        | Home directory, e.g. 'cd ~/folder/'                                          |
-| cd /        | Root of drive                                                                |
-| ls          | Short listing                                                                |
-| ls -l       | Long listing                                                                 |
-| ls -a       | Listing incl. hidden files                                                   |
-| ls -lh      | Long listing with Human readable file sizes                                  |
-| ls -R       | Entire content of folder recursively                                         |
+| Key/Command    | Description                                                                  |
+|----------------|------------------------------------------------------------------------------|
+| cd             | Home directory                                                               |
+| cd [folder]    | Change directory                                                             |
+| cd ~           | Home directory, e.g. 'cd ~/folder/'                                          |
+| cd /           | Root of drive                                                                |
+| ls             | Short listing                                                                |
+| ls -l          | Long listing                                                                 |
+| ls -a          | Listing incl. hidden files                                                   |
+| ls -lh         | Long listing with Human readable file sizes                                  |
+| ls -R          | Entire content of folder recursively                                         |
 | sudo [command] | Run command with the security privileges of the superuser (Super User DO) |
-| open [file] | Opens a file                                                                 |
-| open .      | Opens the directory                                                          |
-| top         | Displays active processes. Press q to quit                                   |
-| nano [file] | Opens the Terminal it's editor                                               |
-| pico [file] | Opens the Terminal it's editor                                               |
-| q           | Exit                                                                         |
-| clear       | Clear screen                                                                 |
+| open [file]    | Opens a file                                                                 |
+| open .         | Opens the directory                                                          |
+| top            | Displays active processes. Press q to quit                                   |
+| nano [file]    | Opens the Terminal it's editor                                               |
+| pico [file]    | Opens the Terminal it's editor                                               |
+| q              | Exit                                                                         |
+| clear          | Clear screen                                                                 |
+
+## Environment
+
+| Key/Command | Description                 | Example                            |
+|-------------|-----------------------------|------------------------------------|
+| printenv    | Print environment variables | printenv [OPTION]... [VARIABLE]... |
 
 ## COMMAND HISTORY
 

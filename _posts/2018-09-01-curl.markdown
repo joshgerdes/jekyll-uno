@@ -5,11 +5,11 @@ categories: [ supreme-skills ]
 tags: [curl, bash]
 ---
 
-cURL should be the `ultimate tool` to make requests in a consise manner using terminal, this is a guide to get it started and not feel scared if we don't feel confortable with the command line as well getting a little bit of bash scripting skills while we learn the cURL basics.
+cURL should be the `ultimate tool` to make requests in a consise manner using terminal, this is a guide to get it started and getting a little bit of bash scripting skills while we learn the cURL basics as well.
 
 ## Quick start
 
-Let's get it started with a simple get
+Let's get it started with a simple `GET`
 
 ```bash
 bash$ curl https://dog.ceo/api/breeds/image/random

@@ -5,7 +5,9 @@ categories: [ osx ]
 tags: [ commands ]
 ---
 
-My very handy list of commands to make my work/life more productive using my Mac.
+Handy list of commands to make my work/life more productive using my Mac.
+
+![crushing-it](/images/memes/crushing-it.jpg "crushing-it")
 
 ## SHORTCUTS
 
@@ -143,9 +145,17 @@ Better compression than both tar.gz and zip.
 | tar -jcvf archive_name.tar.bz2 folder_to_compress | To compress |
 | tar -jxvf archive_name.tar.bz2                    | To extract  |
 
-### Process
+## cURL
 
-#### List all Linux/OSX processes
+```bash
+bash: curl [options...] <url>
+```
+
+see: [cURL guide](/curl)
+
+## Processes
+
+### List all Linux/OSX processes
 
 ```bash
 bash$ ps -ef -A

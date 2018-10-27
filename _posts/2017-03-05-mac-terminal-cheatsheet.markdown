@@ -142,3 +142,23 @@ Better compression than both tar.gz and zip.
 |---------------------------------------------------|-------------|
 | tar -jcvf archive_name.tar.bz2 folder_to_compress | To compress |
 | tar -jxvf archive_name.tar.bz2                    | To extract  |
+
+### Process
+
+#### List all Linux/OSX processes
+
+```bash
+bash$ ps -ef -A
+
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+    0     1     0   0 31Jul18 ??        50:13.64 /sbin/launchd
+...
+```
+
+```bash
+bash$ ps -ef | grep node
+```
+
+```bash
+bash$ kill 1111
+```

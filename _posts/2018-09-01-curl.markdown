@@ -1,17 +1,13 @@
 ---
 title:  "cURL guide"
 date:   2018-09-01 00:00:00
-categories: [ terminal ]
+categories: [ supreme-skills ]
 tags: [curl, bash]
 ---
 
-cURL should be the `ultimate tool` to make requests in a consise manner using terminal, this is a guide to get it started and not feel scared if we don't feel confortable with the command line.
-
-`Postman` and other tools are quite handy given they provide a more intuitive interface
+cURL should be the `ultimate tool` to make requests in a consise manner using terminal, this is a guide to get it started and not feel scared if we don't feel confortable with the command line as well getting a little bit of bash scripting skills while we learn the cURL basics.
 
 ## Quick start
-
-We could do exactly the same things and they will be way more simpler to maintain in a repository, even using auth and scripting.
 
 Let's get it started with a simple get
 
@@ -48,7 +44,7 @@ bash$ curl --request POST \
 
 ## Getting values
 
-### from body jq
+### from request.body jq
 
 Using `jq -r` to get the raw value.
 

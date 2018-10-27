@@ -1,10 +1,10 @@
 # Site settings
 title: My Untitled Blog
-description: 'Yet another lazy and grumpy developer blog'
+description: 'The grumpy developer'
 url: 'http://gbalbuena.github.io'
-baseurl: '/'
+baseurl: ''
 google_analytics: 'UA-93047835-1'
-# disqus_shortname: 'your-disqus-name'
+disqus_shortname: 'gbalbuena'
 
 author:
   name: 'Juan Gabriel Balbuena Balbuena'
@@ -13,6 +13,8 @@ author:
   # facebook_username: gabrielbalbuena
   # github_username:  gbalbuena
   linkedin_username:  gabrielbalbuena
+  spotify: 12164436337
+  instagram: gabbzbal
 
 defaults:
   -

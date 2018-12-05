@@ -2,6 +2,7 @@
 layout: null
 sitemap:
 exclude: 'yes'
+permalink: /humans.txt
 ---
 
 /* TEAM */

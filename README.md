@@ -21,6 +21,10 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 ### Install and Test
 
+This theme is available via `git-remote-theme` as shown in the [demo repository](https://github.com/matthiaslischka/jekyll-uno-remote-theme-demo).
+
+If you do not want to use `git-remote-theme` (recommended) follow this steps:
+
 1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
 2. Enter the folder: `cd jekyll-uno/`
 3. If you don't have bundler installed: `gem install bundler`

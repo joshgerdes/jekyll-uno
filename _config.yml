@@ -1,7 +1,7 @@
 # Site settings
 title: Jonathan Johnson
 description: 'Jonathan Johnson - Another security guy trying not to get Fork Bombed'
-url: 'https://jsecurity101.com/'
+url: 'https://jsecurity101.com'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'

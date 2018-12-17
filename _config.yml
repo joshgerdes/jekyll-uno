@@ -1,6 +1,6 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: Jonathan Johnson
+description: 'Jonathan Johnson - Another security guy trying not to get Fork Bombed'
 url: 'https://jsecurity101.github.io'
 baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
@@ -9,10 +9,9 @@ baseurl: '/jekyll-uno'
 author:
   name: 'Josh Gerdes'
   email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  twitter_username: jonnyjmannn
+  github_username:  jsecurity101
+  linkedin_username:  jonathan-johnson-7aa937135
 
 defaults:
   -

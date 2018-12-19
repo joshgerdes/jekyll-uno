@@ -4,6 +4,7 @@ title: How to manage cost in Microsoft Azure
 author: Luke
 categories:
   - Azure
+toc: true
 ---
 
 Microsoft have built up the Microsoft Azure ecosystem, to offer scale and

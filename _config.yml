@@ -43,6 +43,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-seo-tag
+  - jekyll-toc
 
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

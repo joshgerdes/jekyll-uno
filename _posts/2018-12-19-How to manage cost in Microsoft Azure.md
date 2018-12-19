@@ -93,7 +93,7 @@ Tags.
 On the Overview Blade of an Azure Subscription you can see the highest costs by
 Resource type and estimated forecast of cost based on current consumption.
 
-![Azure Subscription Forecast](/images/posts/subscription_costs_forecast.png.png)
+![Azure Subscription Forecast](/images/posts/subscription_costs_forecast.png)
 
 Invoices & Consumption Insights
 -------------------------------
@@ -128,8 +128,7 @@ Hybrid Use Benefit
 
 If you already own on-premises Windows Server/SQL server licenses – you may be
 eligible for [HUB (Hybrid Use
-Benefit)](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/)
-{:target="_blank"} which allows you to run certain machines, based on licensed
+Benefit)](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/){:target="_blank"} which allows you to run certain machines, based on licensed
 cores in Azure under the same Windows Server licensing for no additional cost,
 this can be enabled in the Azure Portal on a Virtual Machine with no downtime.
 

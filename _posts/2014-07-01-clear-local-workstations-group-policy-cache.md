@@ -14,6 +14,18 @@ categories:
 
 Note: You can also run: gpupdate /force on the machine to force the policy to reapply.
 
+You can also run the little PowerShell oneliner as Administrator to remove the Group Policy folder and all files below:
+
+{% highlight powershell %}
+
+#requires -Version 1.0
+#Requires -RunAsAdministrator
+
+Remove-Item "$env:windir\system32\GroupPolicy" -Force -Recurse
+
+
+{% endhighlight %}
+
 ## <span id="Option_2">Option 2</span>
 
   1. Delete the &#8220;HKLM\Software\Policies\Microsoft&#8221; Key (looks like a folder).

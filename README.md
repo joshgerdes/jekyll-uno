@@ -4,6 +4,10 @@
 
 :bulb: This project is used as sample project for building Jekyll projects on [bitrise.io](https://bitrise.io/) and is originally based on [jekyll-uno](https://github.com/joshgerdes/jekyll-uno).
 
+**Prerequisites**
+- `ruby v2.3.3+` & `rubygems`
+- [bundler](https://bundler.io/) `v1.1+`
+
 ---
 
 Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.

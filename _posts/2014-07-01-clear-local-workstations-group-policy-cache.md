@@ -3,6 +3,7 @@ title: How to clear the local workstations Group Policy cache
 permalink: /win/clear-local-workstations-group-policy-cache/
 categories:
   - Windows
+  - PowerShell
 ---
 
 ## <span id="Option_1">Option 1</span>

@@ -87,3 +87,5 @@ Bonus Material: You have built the citadel, now its time to defend the wall
 --------------------------------------------------------
 
 -   [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
+
+-   [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}

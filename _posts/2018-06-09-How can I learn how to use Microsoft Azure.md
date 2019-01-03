@@ -56,7 +56,7 @@ Intermediate: I am excited! Now to eat supper
 
 -   [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
 
--   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"}
+-   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"} - This is getting phased out, in preference of Microsoft Learn - below:
 
 -   [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
 
@@ -82,3 +82,8 @@ Bonus Material: I have a dragon’s hoard of gold to spend
 -   [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"}
 
 -   [Udemy](https://www.udemy.com/){:target="_blank"}
+
+Bonus Material: You have built the citadel, now its time to defend the wall
+--------------------------------------------------------
+
+-   [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}

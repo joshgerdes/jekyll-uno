@@ -56,7 +56,7 @@ Intermediate: I am excited! Now to eat supper
 
 -   [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
 
--   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"} - This is getting phased out, in preference of Microsoft Learn - below:
+-   [Microsoft Virtual Academy](https://mva.microsoft.com/){:target="_blank"} *(This is getting phased out, in preference of Microsoft Learn - below:)*
 
 -   [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
 

@@ -8,12 +8,12 @@ baseurl: 'goksubk.github.io'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Göksu Bektaş'
+  email: aybikebektass@gmail.com
+  twitter_username: goksubektass
+  facebook_username: goksu.bektas.771
+  github_username:  goksubk
+  linkedin_username:  göksu-bektaş-63b55517b
 
 defaults:
   -

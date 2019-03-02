@@ -2,7 +2,7 @@
 title: Ekyll - Uno
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
 url: 'http://goksubk.github.io'
-baseurl: ''
+baseurl: 'goksubk.github.io'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 

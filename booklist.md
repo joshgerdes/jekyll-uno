@@ -14,7 +14,10 @@ __Clean Code__
 by Robert Cecil Martin
 
 __Refactoring__
+Improving the Design of Existing Code
+
 by Kent Beck and Martin Fowler
+
 
 __Working Effectively with Legacy Code__
 by Michael C. Feathers

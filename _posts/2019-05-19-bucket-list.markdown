@@ -14,8 +14,12 @@ tags: [bushwalking, camping]
 ### Blue Mountains, Central Tablelands
 
 - Three Sisters
+- Ruined castle
+- Mount Solitary
 - ~~Glenbrook creek~~
-- Blackheat, ~~Blue gum forest~~
+- ~~Blackheat, Blue gum forest~~
+- Jenolan Caves
+
 
 ### Snowy Mountains
 
@@ -30,3 +34,13 @@ tags: [bushwalking, camping]
 ### Mid North Coast
 
 - Lorde Howe Island
+- South West Rocks
+- Gap Beach walking track, Hat Head National Park
+
+## North Coast
+
+- ~~Whites Beach, Byron Bay~~
+
+
+
+

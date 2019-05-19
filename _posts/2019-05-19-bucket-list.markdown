@@ -14,7 +14,7 @@ tags: [bushwalking, camping]
 ### Blue Mountains, Central Tablelands
 
 - Three Sisters
-- Ruined castle
+- ~~Ruined castle~~
 - Mount Solitary
 - ~~Glenbrook creek~~
 - ~~Blackheat, Blue gum forest~~

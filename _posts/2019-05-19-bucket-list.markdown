@@ -33,7 +33,7 @@ tags: [bushwalking, camping]
 
 ### Mid North Coast
 
-- Lorde Howe Island
+- [Lorde Howe Island](https://www.lordhoweisland.info/)
 - South West Rocks
 - Gap Beach walking track, Hat Head National Park
 

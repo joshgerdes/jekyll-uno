@@ -1,17 +1,15 @@
 ---
-title:  "Bucket list of places to go and things to do!"
+title:  "Places to go"
 date:   2019-05-19 12:00:00
 categories: [bucket-list]
 tags: [bushwalking, camping]
 ---
 
-## NSW
-
-### Oxley Wild Rivers National Park, Northern Tablelands
+## Oxley Wild Rivers National Park, Northern Tablelands
 
 - Wollomombi Falls
 
-### Blue Mountains, Central Tablelands
+## Blue Mountains, Central Tablelands
 
 - Three Sisters
 - ~~Ruined castle~~
@@ -20,18 +18,16 @@ tags: [bushwalking, camping]
 - ~~Blackheat, Blue gum forest~~
 - Jenolan Caves
 
-
-### Snowy Mountains
+## Snowy Mountains
 
 - Mount Kosciuszko
 
-### South Coast
+## South Coast
 
 - Lake Conjola
-
 - ~~Jervis Bay~~
 
-### Mid North Coast
+## Mid North Coast
 
 - [Lorde Howe Island](https://www.lordhoweisland.info/)
 - South West Rocks
@@ -40,7 +36,3 @@ tags: [bushwalking, camping]
 ## North Coast
 
 - ~~Whites Beach, Byron Bay~~
-
-
-
-

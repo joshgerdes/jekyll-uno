@@ -1,8 +1,8 @@
 ---
-title:  "Places to go"
+title:  "Bucket list of places to go"
 date:   2019-05-19 12:00:00
 categories: [bucket-list]
-tags: [bushwalking, camping]
+tags: [bushwalking, camping, exploring]
 ---
 
 ## Oxley Wild Rivers National Park, Northern Tablelands

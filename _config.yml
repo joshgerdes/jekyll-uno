@@ -1,18 +1,17 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+title: "Meine GitHub Seite"
+description: "Hier sind meine Projekte und die News zu finden"
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Jürgen Mülbert'
+  email: juergen.muelbert@gmail.com
+  twitter_username: jmuelbert
+  facebook_username: jmuelbert
+  github_username:  jmuelbert
+  linkedin_username:  jmuelbert
 
 defaults:
   -
@@ -29,15 +28,11 @@ permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
 
-sass:
-    sass_dir: _sass
-    style: compressed
-
 kramdown:
   # use Github Flavored Markdown
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
 
-plugins: ['jekyll-paginate']
+gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

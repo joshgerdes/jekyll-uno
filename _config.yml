@@ -4,7 +4,7 @@ description: 'A papa mono, con bananas verdes no'
 url: 'http://gbalbuena.github.io'
 baseurl: ''
 google_analytics: 'UA-93047835-1'
-disqus_shortname: 'gbalbuena'
+# disqus_shortname: 'gbalbuena'
 
 author:
   name: 'Juan Gabriel Balbuena Balbuena'

@@ -5,6 +5,8 @@ categories: [bucket-list]
 tags: [bushwalking, camping, exploring]
 ---
 
+More planning and ideation around hikes
+
 ## Oxley Wild Rivers National Park, Northern Tablelands
 
 - Wollomombi Falls

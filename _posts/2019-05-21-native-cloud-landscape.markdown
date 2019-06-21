@@ -1,7 +1,7 @@
 ---
 title:  "Cloud Native Interactive Landscape"
 date:   2019-05-21 12:00:00
-categories: [status]
+categories: [just-saying]
 tags: [cloud]
 ---
 

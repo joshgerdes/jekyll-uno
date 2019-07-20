@@ -35,4 +35,15 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
+  function updateDichos() {
+    $.getJSON("/data/dichos_uruguayos.json", function(data) {
+      var data = data[Math.floor(Math.random()*data.length)];
+      $('.panel-cover__description').text(data.dicho);
+      $('.panel-cover__description').attr('title', data.descripcion);
+    });
+  }
+  $("p.panel-cover__description").click(function() {
+    updateDichos();
+  });
+  updateDichos();
 })

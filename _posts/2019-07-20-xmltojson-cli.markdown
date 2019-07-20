@@ -11,7 +11,7 @@ version v0.0.1 is already solving my problem, no need for future releases in the
 
 Example:
 
-```
+```bash
 echo '<doc p="test"><a>HelloWorld</a></doc>' | xmltojson
 {
   "doc": {
@@ -27,7 +27,7 @@ echo '<doc p="test"><a>HelloWorld</a></doc>' | xmltojson
 
 We could combine with `jq .` and get a clean approach to extract data from xml:
 
-```
+```bash
 echo '<doc p="test"><a>HelloWorld</a></doc>' | xmltojson | jq .doc.a._text
 "HelloWorld"
 ```

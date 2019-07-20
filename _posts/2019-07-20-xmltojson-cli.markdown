@@ -32,6 +32,6 @@ echo '<doc p="test"><a>HelloWorld</a></doc>' | xmltojson | jq .doc.a._text
 "HelloWorld"
 ```
 
-Personal note: Duncker's candle problem applied to build tools to get one thing done, no more, no less.
+Personal note: Duncker's candle problem applied to build tools focus in getting one thing done, no more, no less.
 
 [xmltojson-cli]: https://www.npmjs.com/package/@gbalbuena/xmltojson-cli

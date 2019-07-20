@@ -1,6 +1,6 @@
 ---
 title: "xmltojson-cli"
-date:   2019-05-21 12:00:00
+date:   2019-07-20 12:00:00
 categories: [javascript]
 tags: [xmltojson-cli]
 ---

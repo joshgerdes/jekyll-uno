@@ -25,6 +25,8 @@
             </ul>
           </nav>
 
+          <br/>
+
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
@@ -52,7 +54,7 @@
               <!-- spotify -->
               <li class="navigation__item">
                 <a href="spotify:user:{{ site.author.spotify }}" title="{{ site.author.spotify }} on Spotify" target="_blank">
-                  <i class="icon icon-social-spotify"></i>
+                  <i class="fab fa-spotify"></i>
                   <span class="label">Spotify</span>
                 </a>
               </li>
@@ -62,7 +64,7 @@
               <!-- instagram -->
               <li class="navigation__item">
                 <a href="https://www.instagram.com/{{ site.author.instagram }}" title="{{ site.author.instagram }} on Instagram" target="_blank">
-                  <i class="icon icon-social-instagram"></i>
+                  <i class="fab fa-instagram"></i>
                   <span class="label">Instagram</span>
                 </a>
               </li>
@@ -72,7 +74,7 @@
               <!-- LinkedIn -->
               <li class="navigation__item">
                 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
+                  <i class="fab fa-linkedin"></i>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
@@ -82,17 +84,24 @@
               <!-- GitHub -->
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                  <i class="fab fa-github"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
             {% endif %}
 
+            <li class="navigation__item">
+              <a href="https://www.npmjs.com/~gbalbuena" title="{{ site.author.github_username }} on npm" target="_blank">
+                <i class="fab fa-npm"></i>
+                <span class="label">Npm</span>
+              </a>
+            </li>
+
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
+                  <i class="far fa-envelope"></i>
                   <span class="label">Email</span>
                 </a>
               </li>
@@ -101,7 +110,7 @@
             <!-- RSS -->
             <li class="navigation__item">
               <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
+                <i class="fas fa-rss-square"></i>
                 <span class="label">RSS</span>
               </a>
             </li>

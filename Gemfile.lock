@@ -242,7 +242,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-avatar
+  jemoji
 
 BUNDLED WITH
    2.0.2

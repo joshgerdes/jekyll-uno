@@ -70,7 +70,6 @@
 
       $('a.about-button').click(function (e) {
         // Case where the panel is already opened
-        console.log('ok');
         if ($('.panel-cover').hasClass('panel-cover--collapsed')) {
           // Case where the about section is opened
           if (! $('.panel-cover').hasClass('right')) {

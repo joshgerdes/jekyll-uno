@@ -4,3 +4,10 @@ _site
 *.sublime-project
 *.sublime-workspace
 .DS_Store
+
+# Intelij idea
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf

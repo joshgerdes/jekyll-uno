@@ -5,9 +5,16 @@
   <body>
     {% include header.html %}
 
-    <div class="content-wrapper">
+    <div class="content-wrapper blog hidden">
       <div class="content-wrapper__inner">
         {{ content }}
+      </div>
+
+      {% include footer.html %}
+    </div>
+    <div class="content-wrapper about hidden">
+      <div class="content-wrapper__inner">
+        {% include about.html %}
       </div>
 
       {% include footer.html %}

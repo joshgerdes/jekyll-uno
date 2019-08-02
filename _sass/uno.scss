@@ -1099,7 +1099,7 @@ pre {
 .content-wrapper {
 	z-index: 800;
 	width: 60%;
-	max-width: 800px;
+	text-align: justify;
 	margin-left: 40%; }
 
 .content-wrapper__inner {
@@ -1210,12 +1210,17 @@ hr {
 	width: 100%;
 	max-width: none;
 	height: 100%;
-	background: url(../images/background-cover.jpg) top left no-repeat #666666;
+	background: url($baseurl + "/images/cover.jpg") top left no-repeat #666666;
 	background-size: cover; }
 
 .panel-cover--collapsed {
 	width: 40%;
-	max-width: 530px; }
+	max-width: 530px;
+	&.right {
+		right: 0;
+	}
+}
+
 
 .panel-cover--overlay {
 	display: block;
@@ -1559,7 +1564,14 @@ input[type="tel"] {
 
 @media all and (min-width: 1300px) {
 	.content-wrapper {
-		margin-left: 530px; } }
+		margin-left: 530px; 	}
+}
+@media all and (min-width: 960px) {
+	.content-wrapper.about {
+		margin-right: 530px;
+		margin-left: auto;
+	}
+}
 @media all and (max-width: 1100px) {
 	.panel-cover__logo {
 		width: 70px; }

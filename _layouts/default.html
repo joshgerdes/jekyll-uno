@@ -14,7 +14,8 @@
     </div>
     <div class="content-wrapper about hidden">
       <div class="content-wrapper__inner">
-        {% include about.html %}
+        {% capture about %}{% include about.md %}{% endcapture %}
+        {{ about | markdownify }}
       </div>
 
       {% include footer.html %}

@@ -5,6 +5,8 @@ categories: [technology]
 tags: [serverless]
 ---
 
+Not even simplest things in IT can be simple and efficient, everybody wants their own way to define a computing function.
+
 ![wtf](https://media.giphy.com/media/G6sJqVpD1U4jC/giphy-downsized.gif "wtf")
 
 ## AWS Lambda

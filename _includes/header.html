@@ -28,6 +28,16 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
+            {% if site.author.stackshare %}
+              <!-- Stackshare -->
+              <li class="navigation__item">
+                <a href="https://stackshare.io/gbalbuena/my-stack" title="My Stack" target="_blank">
+                  <i class="icon icon-cloud"></i>
+                  <span class="label">Stackshare</span>
+                </a>
+              </li>
+            {% endif %} 
+
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">

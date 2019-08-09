@@ -1,7 +1,7 @@
 ---
 title:  "We can't even make function signatures consistent"
 date:   2019-05-21 12:00:00
-categories: [just-saying]
+categories: [technology]
 tags: [serverless]
 ---
 

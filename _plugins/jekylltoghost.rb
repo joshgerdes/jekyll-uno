@@ -92,7 +92,7 @@ module Jekyll
 			export_object = {
 				"meta" => {
 					"exported_on" => Time.now.to_i * 1000,
-					"version" => "000"
+					"version" => "2.29.1"
 				},
 				"data" => {
 					"posts" => ex_posts,

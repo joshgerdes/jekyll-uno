@@ -36,17 +36,11 @@ Prerequisites:
 Once you have the Azure Service Principal and Az Module installed, you need to
 edit the following variables to suit your environment:
 
-[string]\$ResourceGroup = 'RESOURCE GROUP OF LOCAL NETWORK GATEWAY'
-
-[string]\$LocalNetworkGateway = ‘NAME OF AZURE LOCAL NETWORK GATEWAY’
-
-\# Use the application ID as the username and the secret as password
-
-\$azureAplicationId =’AZURE AD APPLICATION ID’
-
-\$azureTenantId= ‘AZURE AD TENANCY/DIRECTORY ID’
-
-\$azureAPI = ‘AZURE AD APPLICATION API/CLIENT SECRET’
+1.  $ResourceGroup = 'RESOURCE GROUP OF LOCAL NETWORK GATEWAY'
+2.  $LocalNetworkGateway = ‘NAME OF AZURE LOCAL NETWORK GATEWAY’
+3.  $azureAplicationId =’AZURE AD APPLICATION ID’
+4.  $azureTenantId= ‘AZURE AD TENANCY/DIRECTORY ID’
+5.  $azureAPI = ‘AZURE AD APPLICATION API/CLIENT SECRET’
 
 {% gist 1b73335e1d0eadcfe4064f8221077ca1 %}
 

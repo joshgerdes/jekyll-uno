@@ -6,9 +6,11 @@ permalink: /booklist/
 
 ## Software Engineering / Ingeniería de software
 
-__Clean Architecture__
+```txt
+Clean Architecture
 A Craftsman's Guide to Software Structure and Design
 by Robert Cecil Martin
+```
 
 __Clean Code__
 by Robert Cecil Martin
@@ -18,6 +20,10 @@ Improving the Design of Existing Code
 
 by Kent Beck and Martin Fowler
 
+```txt
+Software Architecture in Practice Hardcover – 21 Nov 2012
+by Len Bass (Contributor), Paul Clements (Contributor), Rick Kazman (Contributor)
+```
 
 __Working Effectively with Legacy Code__
 by Michael C. Feathers

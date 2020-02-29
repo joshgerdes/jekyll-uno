@@ -192,11 +192,11 @@ core function of the toolset.
 
 3. On the right-hand side blade next to Edit, click on the ellipsis (i.e.…)
 
-![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule1.png)
+  ![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule1.png)
 
 4. Select Schedule
 
-![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule2.png)
+  ![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule2.png)
 
 5. Specify the schedule you want and click Ok
 

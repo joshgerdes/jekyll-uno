@@ -66,18 +66,18 @@ automatically – any scripts that you add will automatically be added to it:
 
 %LOCALAPPDATA%\\UniversalAutomation\\Repository
 
-1.  On the Scripts pane select Add Scripts
+1. On the Scripts pane select Add Scripts
 
 ![UniversalAutomationScriptsPane](/images/posts/Universal_Automation_ScriptsPane.png)
 
-2.  Select the script you want to upload – in my example; I am using
+2. Select the script you want to upload – in my example; I am using
     ‘New-AzureResourceGroup.ps1’ the script I created for quickly testing some
     of the functionality.
 
 >   Gist of script found below, but its also in my GitHub Repository under
 >   Azure (GitHub link on the site menu).
 
-3.  Once added you should see the script appear and you should be able to see it
+3. Once added you should see the script appear and you should be able to see it
     in the Repository folder now:
 
 ![UniversalAutomationScriptsPanePopulated](/images/posts/Universal_Automation_ScriptsPanePopulated.png)
@@ -87,16 +87,14 @@ Add variables
 
 Universal Automation Desktop supports variables.
 
-1.  Click on the Variables menu item
-
-2.  Select Add Variable
-
-3.  In my example, I am adding the location that the Resource Group will be
+1. Click on the Variables menu item
+2. Select Add Variable
+3. In my example, I am adding the location that the Resource Group will be
     created, so it is going to be the following Key = Value pair:
 
 Location = Australia East
 
-4.  Click Ok to save
+4. Click Ok to save
 
 Note: Location is a variable in my script, I also tested manually setting the
 name of the Resource Group as well with the Name value as well and worked well.
@@ -126,19 +124,19 @@ Desktop to continue (if you get an error message – navigate to your notificati
 tray by the time and Quit any open Universal Automation Desktop applications you
 have open and then relaunch).
 
-1.  Click Settings
+1. Click Settings
 
-2.  Navigate down to PowerShell versions
+2. Navigate down to PowerShell versions
 
-3.  Click Add New Version
+3. Click Add New Version
 
-4.  A new Table row will appear (Version\\Path)
+4. A new Table row will appear (Version\\Path)
 
-5.  In Version we are going to type in: PowerShell 7-preview (x64)
+5. In Version we are going to type in: PowerShell 7-preview (x64)
 
-6.  In path type in: C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe
+6. In path type in: C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe
 
-7.  Press Enter
+7. Press Enter
 
 ![UniversalAutomationPowerShellVersions](/images/posts/Universal_Automation_PowerShellVersions.png)
 

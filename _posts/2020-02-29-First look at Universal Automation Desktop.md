@@ -189,19 +189,19 @@ Scheduling scripts
 Although at this stage, I am not scheduling any of my scripts to run – it is a
 core function of the toolset.
 
-1.  Click on Scripts
+1. Click on Scripts
 
-2.  Select the script you want to schedule and select View
+2. Select the script you want to schedule and select View
 
-3.  On the right-hand side blade next to Edit, click on the ellipsis (i.e.…)
+3. On the right-hand side blade next to Edit, click on the ellipsis (i.e.…)
 
 ![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule1.png)
 
-4.  Select Schedule
+4. Select Schedule
 
 ![Universal_Automation_Schedule](/images/posts/Universal_Automation_Schedule2.png)
 
-5.  Specify the schedule you want and click Ok
+5. Specify the schedule you want and click Ok
 
 You should now see the Schedule under Schedules and view the Job history under
 Jobs.

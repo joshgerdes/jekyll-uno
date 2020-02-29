@@ -8,7 +8,7 @@ categories:
 ---
 
 There are many ways to do automation scheduling – whether its Jenkins or even
-Windows Scheduled Task Scheduler. Each toolset has its place or specialization
+Windows Task Scheduler. Each toolset has its place or specialization
 today we are looking at the son of Ironman Software’s PowerShell [Universal
 Automation](https://universalautomation.io/){:target="_blank"} platform – the Desktop Edition!
 

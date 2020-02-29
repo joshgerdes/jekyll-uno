@@ -33,8 +33,10 @@ and what you want to consume, one thing to remember is that if something is
 scaled up, it can always be scaled down again with little (or none in some
 cases) downtime or risk.
 
-Roles & Responsibilities & Azure Governance
--------------------------------------------
+* TOC
+{:toc}
+
+## Roles & Responsibilities & Azure Governance
 
 Before I start through some of the Products that can help you on your manging
 cost journey – I need to cover off the People aspect first, what I mean by this
@@ -59,8 +61,7 @@ how you manage the costs – whether it’s per subscription based or Resource
 Groups, the use of Tags to tag Azure resources based on cost centre or
 department etc is invaluable.
 
-Pricing Calculator
-------------------
+## Pricing Calculator
 
 The first place to start in the journey of managing technical costs in Azure, is
 the Pricing Calculator
@@ -76,8 +77,7 @@ spending some time to look through the Pricing Calculator and various services
 that Microsoft Azure offers to get a feel of cost – if you are in NZ (make sure
 to select ‘New Zealand Dollar’), the default is US.
 
-Cost Visibility across Subscriptions & Resource Groups
-------------------------------------------------------
+## Cost Visibility across Subscriptions & Resource Groups
 
 The Microsoft Azure Portal offers a lot of visibility into the cost of running
 resources in Azure, whether you want to look at the costs per subscription or in
@@ -96,8 +96,7 @@ Resource type and estimated forecast of cost based on current consumption.
 
 ![Azure Subscription Forecast](/images/posts/subscription_costs_forecast.png)
 
-Invoices & Consumption Insights
--------------------------------
+## Invoices & Consumption Insights
 
 For those of you who pay by Credit Card or want to know the Pre-tax costs of
 your Azure resources, you can go to your subscription and click on the Invoices
@@ -111,8 +110,7 @@ Insights](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consum
 PowerBI pack to help give visibility of Azure costs through the use of the API
 key from your enrolment portal.
 
-Azure Policies
---------------
+## Azure Policies
 
 Along with your Cloud Scaffold or Governance framework, you need to be able to
 force or guide your environment, [Azure
@@ -124,8 +122,7 @@ them from being created. Azure Policy samples can be at the
 [azure-policy](https://github.com/Azure/azure-policy/tree/master/samples){:target="_blank"}
 git repository.
 
-Hybrid Use Benefit 
--------------------
+## Hybrid Use Benefit 
 
 If you already own on-premises Windows Server/SQL server licenses – you may be
 eligible for [HUB (Hybrid Use
@@ -133,8 +130,7 @@ Benefit)](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/){:target="_b
 cores in Azure under the same Windows Server licensing for no additional cost,
 this can be enabled in the Azure Portal on a Virtual Machine with no downtime.
 
-Azure Advisor & Reserved Instances
-----------------------------------
+## Azure Advisor & Reserved Instances
 
 Microsoft has built an Advisor into Azure, this Advisor not only gives Security
 & Performance recommendations, it also includes Cost Recommendations
@@ -156,8 +152,7 @@ some cases you can get 72% savings and if you have machines you know will be on
 24/7 and won’t need resizing – think Infrastructure servers, such as Domain
 Controllers then Reserved Instances are a good idea.
 
-Last Considerations
--------------------
+## Last Considerations
 
 You need to be aware that pricing in the Azure Portal or Pricing Calculator, may
 not show all costs. These price indications are only based on the service or

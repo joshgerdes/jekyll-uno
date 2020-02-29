@@ -37,16 +37,18 @@ and kept to training resources which are free, and I plan on keeping it up to
 date and add more as I come across them. Bonus material training services that
 you have to pay for (usually subscription based that I have used).*
 
-Beginner: So, what is this outside world of Azure that you speak of?
---------------------------------------------------------------------
+* TOC
+{:toc}
+
+
+## Beginner: So, what is this outside world of Azure that you speak of?
 
 -   [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 
 -   [Wikipedia - More about Azure and some acronyms
     (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
-Intermediate: I am excited! Now to eat supper
----------------------------------------------
+## Intermediate: I am excited! Now to eat supper
 
 -   [Create a 3-Tier Application Using Azure Virtual
     Machines](https://www.udemy.com/free-azure/){:target="_blank"}
@@ -60,8 +62,7 @@ Intermediate: I am excited! Now to eat supper
 
 -   [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
 
-Advanced: Up for a Challenge! Let’s throw that ring in the lava
----------------------------------------------------------------
+## Advanced: Up for a Challenge! Let’s throw that ring in the lava
 
 -   [Azure Learning Pathways](https://www.microsoft.com/en-au/azurelearningpathways/){:target="_blank"}
 
@@ -72,8 +73,7 @@ Advanced: Up for a Challenge! Let’s throw that ring in the lava
 
 -   [70-532 Azure Exam links](https://github.com/gsuttie/gsuttie-gsuttie.github.io){:target="_blank"}
 
-Bonus Material: I have a dragon’s hoard of gold to spend
---------------------------------------------------------
+## Bonus Material: I have a dragon’s hoard of gold to spend
 
 -   [Pluralsight](https://www.pluralsight.com/){:target="_blank"}
 
@@ -83,8 +83,7 @@ Bonus Material: I have a dragon’s hoard of gold to spend
 
 -   [Udemy](https://www.udemy.com/){:target="_blank"}
 
-Bonus Material: You have built the citadel, now its time to defend the wall
---------------------------------------------------------
+## Bonus Material: You have built the citadel, now its time to defend the wall
 
 -   [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
 

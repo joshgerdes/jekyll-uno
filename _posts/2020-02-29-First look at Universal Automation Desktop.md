@@ -122,7 +122,7 @@ have open and then relaunch).
 7. Press Enter
 ![UniversalAutomationPowerShellVersions](/images/posts/Universal_Automation_PowerShellVersions.png)
 
-Now when you run your scripts, you can specify what Version of PowerShell to
+Now when you run your scripts, you can now specify what Version of PowerShell to
 use!
 
 ## Run the script

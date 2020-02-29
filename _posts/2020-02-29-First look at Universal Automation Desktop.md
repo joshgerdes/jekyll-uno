@@ -149,35 +149,35 @@ Run the script
 Now that the variables have been set up and the script has been added, we can
 then Run it.
 
-1.  On the scripts pane select ‘New-AzureResourceGroup.ps1’ and select Run
+1. On the scripts pane select ‘New-AzureResourceGroup.ps1’ and select Run
 
 ![Universal_Automation_ScriptsRun](/images/posts/Universal_Automation_ScriptsRun.png)
 
 
-2.  Specify the PowerShell version – I believe automating this selection is
+2. Specify the PowerShell version – I believe automating this selection is
     currently in the backlog: - and click Run
 
 ![Universal_Automation_ScriptsRunVersion](/images/posts/Universal_Automation_ScriptsRunVer.png)
 
 
-3.  The script will now go to the Jobs screen:
+3. The script will now go to the Jobs screen:
 
 ![Universal_Automation_ScriptsRunJob](/images/posts/Universal_Automation_ScriptsRunJob.png)
 
-4.  Usually, the script would just run – but in my case, I have a parameter in
+4. Usually, the script would just run – but in my case, I have a parameter in
     my PowerShell script to request the name of the Resource Group we are going
     to create, click on Response to Feedback icon
 
-5.  Type in the name of the Resource Group we are going to create – in my
+5. Type in the name of the Resource Group we are going to create – in my
     example I am going with: UAutomationRGTest and click Ok
 
 ![Universal_Automation_VariablesFeedback](/images/posts/Universal_Automation_VariablesFeedback.png)
 
-6.  It will now run the script:
+6. It will now run the script:
 
 ![Universal_Automation_Script Runs](/images/posts/Universal_Automation_ScriptsRunJob2.png)
 
-7.  My new Resource Group has been created in Azure, using the name specified in
+7. My new Resource Group has been created in Azure, using the name specified in
     the Parameter (UAutomationRGTest) and the Location (Australia East) that was
     set in the Variables!
 

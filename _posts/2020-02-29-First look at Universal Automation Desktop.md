@@ -167,19 +167,19 @@ core function of the toolset.
 You should now see the Schedule under Schedules and view the Job history under
 Jobs.
 
-Word of warning – and it should go without saying :
-
-**DO NOT RUN UNIVERSAL AUTOMATION DESKTOP ON YOUR DOMAIN COMPUTER FOR PRODUCTION
-OR SHARED SCRIPTS! PLEASE LOOK AT UNIVERSAL AUTOMATION FOR THAT! YOU DON’T WANT
-TO GO HOME OR SHUTOFF YOUR PC OR LEAVE FOR BETTER AND BRIGHTER THINGS AND GET
-CALLED UP BECAUSE SOME VERY IMPORTANT PROCESS DIDN’T RUN!** 
-
 ## Overall opinion
 Long story short - Universal Automation has a place and is a toolset I will be looking at more closely and using!
 
 I see myself using it to utilize PowerShell and automation a bit more in completion of general day to day activities (both personal and professional) and service requests - without having to worry around moving to the next step.
 
 If I use a script often enough – then there will be a definite need to move to another team based toolset with RBAC tools such as the Universal Automation offering by Adam Driscoll of Ironman Software.
+
+Word of warning – and it should go without saying :
+
+**DO NOT RUN UNIVERSAL AUTOMATION DESKTOP ON YOUR DOMAIN COMPUTER FOR PRODUCTION
+OR SHARED SCRIPTS! PLEASE LOOK AT UNIVERSAL AUTOMATION FOR THAT! YOU DON’T WANT
+TO GO HOME OR SHUTOFF YOUR PC OR LEAVE FOR BETTER AND BRIGHTER THINGS AND GET
+CALLED UP BECAUSE SOME VERY IMPORTANT PROCESS DIDN’T RUN!** 
 
 ## My Test Script - New-AzureResourceGroup
 

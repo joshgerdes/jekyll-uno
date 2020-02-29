@@ -42,7 +42,6 @@ create a Resource Group in Azure.
 
 
 ## Install Universal Automation Desktop:
-=====================================
 
 Unlike Universal Automation & Universal Dashboard, installation of the Universal
 Automation Desktop is packaged into an executable.
@@ -57,7 +56,6 @@ Automation Desktop is packaged into an executable.
 3.  Once complete, Universal Automation Desktop will load.
 
 ## Use & Configure Universal Automation Desktop:
-=============================================
 
 Add Scripts
 -----------
@@ -79,7 +77,6 @@ automatically – any scripts that you add will automatically be added to it:
 ![UniversalAutomationScriptsPanePopulated](/images/posts/Universal_Automation_ScriptsPanePopulated.png)
 
 ## Add variables
--------------
 
 Universal Automation Desktop supports variables.
 
@@ -105,7 +102,6 @@ picked up by Universal Automation as well.
 ![UniversalAutomationVariablesVSCode](/images/posts/Universal_Automation_VariablesVSCode.png)
 
 ## Change PowerShell version
--------------------------
 
 This is an interesting feature, that allows you to specify what Version of
 PowerShell you can have the scripts run under (in this example I will be adding
@@ -130,7 +126,6 @@ Now when you run your scripts, you can specify what Version of PowerShell to
 use!
 
 ## Run the script
---------------
 
 Now that the variables have been set up and the script has been added, we can
 then Run it.
@@ -157,7 +152,6 @@ then Run it.
 ![Universal_Automation_Azure Resource Group created](/images/posts/Universal_Automation_AzureResourceGroupCreated.png)
 
 ## Scheduling scripts
-------------------
 
 Although at this stage, I am not scheduling any of my scripts to run – it is a
 core function of the toolset.
@@ -181,7 +175,6 @@ TO GO HOME OR SHUTOFF YOUR PC OR LEAVE FOR BETTER AND BRIGHTER THINGS AND GET
 CALLED UP BECAUSE SOME VERY IMPORTANT PROCESS DIDN’T RUN!** 
 
 ## New-AzureResourceGroup
-------------------
 
 I created this function to quickly test 2 things:
 

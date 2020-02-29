@@ -90,10 +90,7 @@ Universal Automation Desktop supports variables.
 1. Click on the Variables menu item
 2. Select Add Variable
 3. In my example, I am adding the location that the Resource Group will be
-    created, so it is going to be the following Key = Value pair:
-
-Location = Australia East
-
+    created, so it is going to be the following Key = Value pair: Location = Australia East
 4. Click Ok to save
 
 Note: Location is a variable in my script, I also tested manually setting the

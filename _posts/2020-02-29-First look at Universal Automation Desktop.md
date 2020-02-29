@@ -53,7 +53,7 @@ Automation Desktop is packaged into an executable.
 
 ![UniversalAutomationInstall](/images/posts/Universal_Automation_Installer.png)
 
-3.  Once complete, Universal Automation Desktop will load.
+    Once complete, Universal Automation Desktop will load.
 
 Use & Configure Universal Automation Desktop:
 =============================================

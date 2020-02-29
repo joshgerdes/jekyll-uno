@@ -33,7 +33,7 @@ We are going to be using the Trial here – however, per-user pricing can be fou
 at the following link:  [Universal Automation](https://ironmansoftware.com/universal-automation/){:target="_blank"}
 
 The toolset is quite intuitive a lot of below isn’t worth going into how do use
-it as it seems to be easy to pick up but always pleasant to have it documented
+it - as it seems to be easy to pick up but its always pleasant to have it documented
 and referable! In my examples below, we are going to
 create a Resource Group in Azure.
 

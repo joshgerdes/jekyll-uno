@@ -37,7 +37,11 @@ it as it seems to be easy to pick up but always pleasant to have it documented
 and referable for reference somewhere! In my examples below, we are going to
 create a Resource Group in Azure.
 
-Install Universal Automation Desktop:
+* TOC
+{:toc}
+
+
+## Install Universal Automation Desktop:
 =====================================
 
 Unlike Universal Automation & Universal Dashboard, installation of the Universal
@@ -52,7 +56,7 @@ Automation Desktop is packaged into an executable.
 ![UniversalAutomationInstall](/images/posts/Universal_Automation_Installer.png)
 3.  Once complete, Universal Automation Desktop will load.
 
-Use & Configure Universal Automation Desktop:
+## Use & Configure Universal Automation Desktop:
 =============================================
 
 Add Scripts
@@ -74,7 +78,7 @@ automatically – any scripts that you add will automatically be added to it:
     in the Repository folder now:
 ![UniversalAutomationScriptsPanePopulated](/images/posts/Universal_Automation_ScriptsPanePopulated.png)
 
-Add variables
+## Add variables
 -------------
 
 Universal Automation Desktop supports variables.
@@ -100,7 +104,7 @@ picked up by Universal Automation as well.
 
 ![UniversalAutomationVariablesVSCode](/images/posts/Universal_Automation_VariablesVSCode.png)
 
-Change PowerShell version
+## Change PowerShell version
 -------------------------
 
 This is an interesting feature, that allows you to specify what Version of
@@ -125,7 +129,7 @@ have open and then relaunch).
 Now when you run your scripts, you can specify what Version of PowerShell to
 use!
 
-Run the script
+## Run the script
 --------------
 
 Now that the variables have been set up and the script has been added, we can
@@ -152,7 +156,7 @@ then Run it.
 
 ![Universal_Automation_Azure Resource Group created](/images/posts/Universal_Automation_AzureResourceGroupCreated.png)
 
-Scheduling scripts
+## Scheduling scripts
 ------------------
 
 Although at this stage, I am not scheduling any of my scripts to run – it is a
@@ -176,7 +180,7 @@ OR SHARED SCRIPTS! PLEASE LOOK AT UNIVERSAL AUTOMATION FOR THAT! YOU DON’T WAN
 TO GO HOME OR SHUTOFF YOUR PC OR LEAVE FOR BETTER AND BRIGHTER THINGS AND GET
 CALLED UP BECAUSE SOME VERY IMPORTANT PROCESS DIDN’T RUN!** 
 
-New-AzureResourceGroup
+## New-AzureResourceGroup
 ------------------
 
 I created this function to quickly test 2 things:

@@ -32,7 +32,7 @@ You can use Universal Automation Desktop for free as a trial:
 We are going to be using the Trial here – however, per-user pricing can be found
 at the following link:  [Universal Automation](https://ironmansoftware.com/universal-automation/){:target="_blank"}
 
-The toolset is quite initiative a lot of below isn’t worth going into how do use
+The toolset is quite intuitive a lot of below isn’t worth going into how do use
 it as it seems to be easy to pick up but always pleasant to have it documented
 and referable for reference somewhere! In my examples below, we are going to
 create a Resource Group in Azure.

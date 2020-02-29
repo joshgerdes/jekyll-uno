@@ -47,12 +47,9 @@ Automation Desktop is packaged into an executable.
     Desktop](https://ironmansoftware.com/downloads/){:target="_blank"} installer (bottom of the
     download pages – at time of writing the installer is 120MB and version
     1.0.0)
-
 2.  Installation of Universal Automation Desktop is pretty straight forward,
     just run the downloaded installer:
-
 ![UniversalAutomationInstall](/images/posts/Universal_Automation_Installer.png)
-
 3.  Once complete, Universal Automation Desktop will load.
 
 Use & Configure Universal Automation Desktop:
@@ -67,19 +64,14 @@ automatically – any scripts that you add will automatically be added to it:
 %LOCALAPPDATA%\\UniversalAutomation\\Repository
 
 1. On the Scripts pane select Add Scripts
-
 ![UniversalAutomationScriptsPane](/images/posts/Universal_Automation_ScriptsPane.png)
-
 2. Select the script you want to upload – in my example; I am using
     ‘New-AzureResourceGroup.ps1’ the script I created for quickly testing some
     of the functionality.
-
 >   Gist of script found below, but its also in my GitHub Repository under
 >   Azure (GitHub link on the site menu).
-
 3. Once added you should see the script appear and you should be able to see it
     in the Repository folder now:
-
 ![UniversalAutomationScriptsPanePopulated](/images/posts/Universal_Automation_ScriptsPanePopulated.png)
 
 Add variables
@@ -122,19 +114,12 @@ tray by the time and Quit any open Universal Automation Desktop applications you
 have open and then relaunch).
 
 1. Click Settings
-
 2. Navigate down to PowerShell versions
-
 3. Click Add New Version
-
 4. A new Table row will appear (Version\\Path)
-
 5. In Version we are going to type in: PowerShell 7-preview (x64)
-
 6. In path type in: C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe
-
 7. Press Enter
-
 ![UniversalAutomationPowerShellVersions](/images/posts/Universal_Automation_PowerShellVersions.png)
 
 Now when you run your scripts, you can specify what Version of PowerShell to
@@ -147,33 +132,20 @@ Now that the variables have been set up and the script has been added, we can
 then Run it.
 
 1. On the scripts pane select ‘New-AzureResourceGroup.ps1’ and select Run
-
 ![Universal_Automation_ScriptsRun](/images/posts/Universal_Automation_ScriptsRun.png)
-
-
 2. Specify the PowerShell version – I believe automating this selection is
     currently in the backlog: - and click Run
-
 ![Universal_Automation_ScriptsRunVersion](/images/posts/Universal_Automation_ScriptsRunVer.png)
-
-
 3. The script will now go to the Jobs screen:
-
 ![Universal_Automation_ScriptsRunJob](/images/posts/Universal_Automation_ScriptsRunJob.png)
-
 4. Usually, the script would just run – but in my case, I have a parameter in
     my PowerShell script to request the name of the Resource Group we are going
     to create, click on Response to Feedback icon
-
 5. Type in the name of the Resource Group we are going to create – in my
     example I am going with: UAutomationRGTest and click Ok
-
 ![Universal_Automation_VariablesFeedback](/images/posts/Universal_Automation_VariablesFeedback.png)
-
 6. It will now run the script:
-
 ![Universal_Automation_Script Runs](/images/posts/Universal_Automation_ScriptsRunJob2.png)
-
 7. My new Resource Group has been created in Azure, using the name specified in
     the Parameter (UAutomationRGTest) and the Location (Australia East) that was
     set in the Variables!

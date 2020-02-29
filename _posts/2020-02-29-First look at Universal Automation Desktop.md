@@ -10,7 +10,7 @@ categories:
 There are many ways to do automation scheduling – whether its Jenkins or even
 Windows Scheduled Task Scheduler. Each toolset has its place or specialization
 today we are looking at the son of Ironman Software’s PowerShell [Universal
-Automation](https://universalautomation.io/) platform – the Desktop Edition!
+Automation](https://universalautomation.io/){:target="_blank"} platform – the Desktop Edition!
 
 The Desktop edition replicates some of the same functionality as the Universal
 Automation platform, however, aimed more at being able to drive automation
@@ -30,7 +30,7 @@ You can use Universal Automation Desktop for free as a trial:
 -   Up to 2 concurrent jobs
 
 We are going to be using the Trial here – however, per-user pricing can be found
-at the following link: <https://ironmansoftware.com/universal-automation/>
+at the following link:  [Universal Automation](https://ironmansoftware.com/universal-automation/){:target="_blank"}
 
 The toolset is quite initiative a lot of below isn’t worth going into how do use
 it as it seems to be easy to pick up but always pleasant to have it documented
@@ -44,7 +44,7 @@ Unlike Universal Automation & Universal Dashboard, installation of the Universal
 Automation Desktop is packaged into an executable.
 
 1.  Download the latest [Universal Automation
-    Desktop](https://ironmansoftware.com/downloads/) installer (bottom of the
+    Desktop](https://ironmansoftware.com/downloads/){:target="_blank"} installer (bottom of the
     download pages – at time of writing the installer is 120MB and version
     1.0.0)
 

@@ -170,7 +170,7 @@ Jobs.
 ## Overall opinion
 Long story short - Universal Automation has a place and is a toolset I will be looking at more closely and using!
 
-I see myself using it to utilize PowerShell and automation a bit more in completion of general day to day activities (both personal and professional) and service requests - without having to worry around moving to the next step.
+I see myself using it to utilize PowerShell and automation a bit more in completion of general day to day activities (both personal and professional) and service requests - without having to worry about moving to the next step with a bigger toolset.
 
 If I use a script often enough – then there will be a definite need to move to another team based toolset with RBAC tools such as the Universal Automation offering by Adam Driscoll of Ironman Software.
 

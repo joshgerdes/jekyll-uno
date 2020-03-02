@@ -1,0 +1,10 @@
+---
+layout: default
+robots: noindex
+---
+
+<ul>
+  {% for page in site.pages %}
+  <li>{{ page.title }}<!--  - {{ page.date }} --></li>
+  {% endfor %}
+</ul>

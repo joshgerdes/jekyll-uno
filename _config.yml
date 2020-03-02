@@ -7,7 +7,7 @@ google_analytics: 'UA-93047835-1'
 # disqus_shortname: 'gbalbuena'
 
 author:
-  name: 'Juan Gabriel Balbuena Balbuena'
+  name: 'Gabriel'
   email: gabrielbalbuena@gmail.com
   # twitter_username: gabrielbalbuena
   # facebook_username: gabrielbalbuena
@@ -16,6 +16,15 @@ author:
   spotify: 12164436337
   instagram: gabbzbal
   stackshare: gbalbuena
+
+# include: ['_pages']
+# permalink: pretty
+
+# More information: https://jekyllrb.com/docs/collections/
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
   -

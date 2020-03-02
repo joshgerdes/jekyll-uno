@@ -1,7 +1,10 @@
 ---
+title: "Books list"
+date: 2016-01-08 15:04:23
+categories: [books]
+tags: [learning]
+
 layout: page
-title: Booklist
-permalink: /booklist/
 ---
 
 ## Software Engineering / Ingeniería de software

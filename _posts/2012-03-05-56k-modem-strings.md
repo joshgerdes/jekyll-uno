@@ -1,6 +1,7 @@
 ---
 title: 56k Modem Strings
-
+post_title: '56k Modem Strings'
+published: true
 layout: post
 permalink: /win/56k-modem-strings/
 categories:

@@ -7,9 +7,6 @@ tags: [practices]
 layout: page
 ---
 
-## Tools
-
-
 ## Deck examples
 
 ### D&D Monsters size
@@ -26,3 +23,7 @@ layout: page
 ### Fibonacci number
 
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+## Tools and Apps
+
+[Planning Poker: Sprints made simple. Estimates made easy.](https://www.planningpoker.com/)

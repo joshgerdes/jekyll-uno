@@ -6,3 +6,7 @@ tags: [practices]
 
 layout: page
 ---
+
+## References
+
+[Think Relevance: Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)

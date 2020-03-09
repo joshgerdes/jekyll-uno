@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="516" height="360" viewBox="0, 0, 516, 360">
+  <g id="Layer_1">
+    <path d="M12,156 L504,156 L504,348 L12,348 L12,156 z" fill="#A6A6A6"/>
+    <path d="M12,84 L504,84 L504,144 L12,144 L12,84 z" fill="#A6A6A6"/>
+    <path d="M12,12 L504,12 L504,72 L12,72 L12,12 z" fill="#A6A6A6"/>
+    <path d="M60,348 L264,12 L480,348 L60,348" fill="#383838"/>
+    <text transform="matrix(1, 0, 0, 1, 78.113, 177)">
+      <tspan x="-66.113" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">Static</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 468, 177)">
+      <tspan x="-35.904" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">70%</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 468, 105)">
+      <tspan x="-35.904" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">20%</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 468, 33)">
+      <tspan x="-35.904" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">10%</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 138, 33)">
+      <tspan x="-126" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">Regression</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 138, 105)">
+      <tspan x="-126" y="12" font-family="HelveticaNeue-Medium" font-size="34" fill="#FFFFFF">Functional</tspan>
+    </text>
+  </g>
+</svg>

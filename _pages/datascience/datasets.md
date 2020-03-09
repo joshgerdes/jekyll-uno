@@ -1,6 +1,15 @@
+---
+title: "Datasets"
+date: 2016-01-08 15:04:23
+categories: [datascience]
+tags: [dataset]
 
+layout: page
+---
 
+A data set (or dataset) is a collection of data. In the case of tabular data, a data set corresponds to one or more database tables, where every column of a table represents a particular variable, and each row corresponds to a given record of the data set in question.
 
-2020/01/23
+## References
 
-https://blog.google/products/search/discovering-millions-datasets-web/
+[Google Blog](https://blog.google/products/search/discovering-millions-datasets-web/)
+[Wikipedia: Data set](https://en.wikipedia.org/wiki/Data_set)

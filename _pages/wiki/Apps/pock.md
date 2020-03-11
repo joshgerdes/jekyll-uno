@@ -7,7 +7,7 @@ tags: []
 layout: page
 ---
 
-![](pock_preview.png)
+![](../pock_widgets.png)
 
 Display macOS Dock in Touch Bar.
 

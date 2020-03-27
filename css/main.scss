@@ -3,6 +3,7 @@
 @import "uno";
 @import "tables";
 @import "monokai";
+@import "custom";
 
 /* Modifications */
 
@@ -56,4 +57,10 @@ pre.highlight code,
   height: 250px;
   border: 3px solid #fff;
   border-radius:100%;
+}
+
+
+// rouge
+pre.highlight {
+  color: #bbb
 }

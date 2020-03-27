@@ -1,24 +1,26 @@
 # Site settings
-title: Gabriel
-description: 'A papa mono, con bananas verdes no'
+title: Gabriel Balbuena
+description: Tech notes and resources
+
 url: 'http://gbalbuena.github.io'
-baseurl: ''
-google_analytics: 'UA-93047835-1'
-# disqus_shortname: 'gbalbuena'
+
+# baseurl: ''
 
 author:
   name: 'Gabriel'
   email: gabrielbalbuena@gmail.com
-  # twitter_username: gabrielbalbuena
-  # facebook_username: gabrielbalbuena
-  github_username: gbalbuena
   linkedin_username: gabrielbalbuena
-  spotify: 12164436337
-  instagram: gabbzbal
-  stackshare: gbalbuena
+  github_username: gbalbuena
+  # npm_username:
+  # twitter_username:
+  # facebook_username:
+  # spotify:
+  # instagram:
+  # stackshare:
 
-# include: ['_pages']
-# permalink: pretty
+#features:
+  # google_analytics: 'UA-93047835-1'
+  # disqus_shortname:
 
 # More information: https://jekyllrb.com/docs/collections/
 collections:

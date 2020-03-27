@@ -41,6 +41,14 @@ Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno
 
 ---
 
+## Setup
+
+`docker-compose up`
+
+Visit: http://0.0.0.0:4000
+
+---
+
 ### Copyright and license
 
 It is under [the MIT license](/LICENSE).

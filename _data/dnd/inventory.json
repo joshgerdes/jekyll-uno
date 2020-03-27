@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Musket",
+    "description": "It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use.",
+    "cost": "500 gp",
+    "weight": "10 lbs",
+    "type": "Firearms Ranged Weapon",
+    "damage": "1d12 piercing",
+    "properties": [
+      "Ammunition (Firearms)",
+      "(Range 40/120)",
+      "Loading",
+      "Two-Handed"
+    ],
+    "quantity": 2
+  }
+]

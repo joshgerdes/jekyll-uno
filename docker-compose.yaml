@@ -10,4 +10,6 @@ services:
     ports:
       - 4000:4000
     command: >
-      sh -c "bundle exec jekyll serve --watch --host=0.0.0.0 --incremental"
+      jekyll serve --watch --host=0.0.0.0
+
+# sh -c "bundle exec jekyll serve --watch --host=0.0.0.0 --incremental"

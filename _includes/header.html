@@ -8,7 +8,7 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image bw" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
@@ -17,11 +17,10 @@
         <div class="navigation-wrapper">
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Articles</a></li>
-              <li class="navigation__item"><a href="https://gbalbuena.gitbook.io/notes/" title="link to mac setup docs" class="blog-button">Notes</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
-          <br/>
+
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
             {% if site.author.stackshare %}
@@ -32,7 +31,7 @@
                   <span class="label">Stackshare</span>
                 </a>
               </li>
-            {% endif %} 
+            {% endif %}
 
             {% if site.author.twitter_username %}
               <!-- Twitter -->
@@ -94,12 +93,14 @@
               </li>
             {% endif %}
 
+            {% if site.author.npm_username %}
               <li class="navigation__item">
-                <a href="https://www.npmjs.com/~gbalbuena" title="{{ site.author.github_username }} on npm" target="_blank">
+                <a href="https://www.npmjs.com/{{ site.author.npm_username }}" title="{{ site.author.npm_username }} on npm" target="_blank">
                   <i class="fab fa-npm"></i>
                   <span class="label">Npm</span>
                 </a>
               </li>
+            {% endif %}
 
             {% if site.author.email %}
               <!-- Email -->

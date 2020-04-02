@@ -1,7 +1,7 @@
 ---
 title: Request id tracing
 date: 2016-01-08 15:04:23
-categories: [monitoring]
+category: monitoring
 tags: [tracing logger security monitoring]
 
 layout: page

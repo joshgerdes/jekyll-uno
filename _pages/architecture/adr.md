@@ -1,11 +1,15 @@
 ---
 title: "ADR"
 date: 2016-01-08 15:04:23
-categories: [architecture]
+category: architecture
 tags: [agile practices]
 
 layout: page
 ---
+
+Document that captures an important architectural decision made along with its context and consequences.
+
+An architecture decision (AD) is a software design choice that addresses a significant requirement.
 
 ## References
 

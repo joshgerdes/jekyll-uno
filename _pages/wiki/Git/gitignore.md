@@ -1,4 +1,11 @@
-# Git Ignore (global)
+---
+title: Git Ignore (global)
+date: 2016-01-08 15:04:23
+category: git
+tags: []
+
+layout: page
+---
 
 Create the file `~/.gitignore` as shown below
 

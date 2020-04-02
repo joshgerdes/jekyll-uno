@@ -1,7 +1,7 @@
 ---
 title: "Test Piramid"
 date: 2016-01-08 15:04:23
-categories: [testing]
+category: testing
 tags: [test-piramid]
 
 layout: page

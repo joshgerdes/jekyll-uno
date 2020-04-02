@@ -1,7 +1,7 @@
 ---
 title: Dichos criollos
 date: 2016-01-08 15:04:23
-categories: [uruguayeces]
+category: uruguayeces
 tags: [dichos]
 
 layout: page

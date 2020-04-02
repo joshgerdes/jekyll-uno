@@ -1,7 +1,7 @@
 ---
 title: "Social Contract"
 date: 2016-01-08 15:04:23
-categories: [agile]
+category: agile
 tags: [practices]
 
 layout: page

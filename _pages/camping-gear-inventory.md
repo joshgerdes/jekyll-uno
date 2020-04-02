@@ -1,7 +1,7 @@
 ---
 title: Camping Gear Inventory
 date: 2016-01-08 15:04:23
-categories: [camping]
+category: camping
 tags: [gear]
 
 layout: page
@@ -66,3 +66,4 @@ layout: page
 
 - [ ] Panel solar
 - [ ] Cámara de fotos
+- [ ] parlante bluetooth portátil

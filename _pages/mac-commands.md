@@ -1,4 +1,11 @@
-# Mac Commands
+---
+title: Mac Commands
+date: 2016-01-08 15:04:23
+category: macosx
+tags: [tracing logger security monitoring]
+
+layout: page
+---
 
 Curated list of commands to make my work/life more productive using my Mac.
 

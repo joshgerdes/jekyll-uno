@@ -26,7 +26,7 @@ author:
 collections:
   pages:
     output: true
-    permalink: /:collection/:name
+    permalink: /:categories/:name
 
 defaults:
   -

@@ -1,4 +1,11 @@
-# Git and GitHub
+---
+title: Git and GitHub
+date: 2016-01-08 15:04:23
+category: git
+tags: []
+
+layout: page
+---
 
 What's a developer without [Git](http://git-scm.com/)? To install, run:
 

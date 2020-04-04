@@ -1,4 +1,11 @@
-# Go
+---
+title: go
+date: 2016-01-08 15:04:23
+category: go
+tags: []
+
+layout: page
+---
 
 [Go](https://golang.org) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 

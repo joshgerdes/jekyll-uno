@@ -1,4 +1,11 @@
-# Docker Tips and Tricks
+---
+title: Docker Tips and Tricks
+date: 2016-01-08 15:04:23
+category: docker
+tags: []
+
+layout: page
+---
 
 A collection of useful tips and tricks for Docker.
 

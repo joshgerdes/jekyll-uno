@@ -1,5 +1,6 @@
 ---
 title: Unit test performance
+category: testing
 ---
 
 How to fit a unit test result into a performance metric entry

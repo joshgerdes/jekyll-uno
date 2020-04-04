@@ -8,3 +8,13 @@
 //   font-smooth: never;
 //   -webkit-font-smoothing : none;
 // }
+
+ul.task-list {
+  margin: 0px;
+}
+li.task-list-item {
+  list-style-type: none;
+}
+input.task-list-item-checkbox {
+  margin: 10px;
+}

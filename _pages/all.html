@@ -3,8 +3,11 @@ layout: default
 robots: noindex
 ---
 
-<ul>
-  {% for page in site.pages %}
-  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+{% assign groups = site.pages | group_by: "category" | sort: "name" %}
+{% for group in groups %}
+    <h1># {{ group.name }}</h1>
+    {% assign pages = group.items | sort: "title" %}
+    {% for page in pages %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {%endfor%}
+{%endfor%}

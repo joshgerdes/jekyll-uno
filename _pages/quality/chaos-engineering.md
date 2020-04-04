@@ -1,7 +1,7 @@
 ---
 title: Chaos Engineering
 date: 2016-01-08 15:04:23
-categories: [quality]
+category: practices
 tags: [chaos practices]
 layout: page
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Case styles"
 date: 2012-12-18 01:01:01
-categories: [code]
+category: code
 tags: [practice code-style]
 layout: page
 ---

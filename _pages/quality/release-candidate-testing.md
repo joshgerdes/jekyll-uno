@@ -1,7 +1,7 @@
 ---
 title: Release candidate testing
 date: 2016-01-08 15:04:23
-categories: [quality]
+category: testing
 tags: [release candidate regression practices]
 
 layout: page

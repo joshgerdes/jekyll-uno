@@ -1,4 +1,11 @@
-# CPlusPlus
+---
+title: CPlusPlus
+date: 2016-01-08 15:04:23
+category: dev-tools
+tags: []
+
+layout: page
+---
 
 Make sure you have installed [Xcode command line tools](http://sourabhbajaj.com/mac-setup/Xcode/). Check the C++ version to make sure it is Clang 4.0+.
 

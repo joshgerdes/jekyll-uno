@@ -1,4 +1,11 @@
-# Various App Settings
+---
+title: Various App Settings
+date: 2016-01-08 15:04:23
+category: apps
+tags: []
+
+layout: page
+---
 
 These settings are optional. Some of them are highly subjective and should not be considered as the best settings. To each is own.
 

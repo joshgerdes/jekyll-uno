@@ -1,4 +1,11 @@
-# Xcode
+---
+title: Xcode
+date: 2016-01-08 15:04:23
+category: macosx
+tags: [ide]
+
+layout: page
+---
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.
 

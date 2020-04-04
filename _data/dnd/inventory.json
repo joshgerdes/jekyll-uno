@@ -13,5 +13,9 @@
       "Two-Handed"
     ],
     "quantity": 2
+  },
+  {
+    "name": "Key",
+    "quantity": 1
   }
 ]

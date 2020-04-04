@@ -1,4 +1,7 @@
-# Bash Completion
+---
+title: Bash Completion
+layout: page
+---
 
 Bash completion is a bash function that allows you to auto complete commands or
 arguments by typing partially commands or arguments, then pressing the [Tab]

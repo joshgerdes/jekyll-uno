@@ -2,7 +2,7 @@
 title: "Factory pattern"
 date: 2016-01-08 15:04:23
 categories: [code]
-tags: [patterns]
+tags: [design-pattern]
 
 layout: page
 ---

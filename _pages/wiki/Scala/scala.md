@@ -1,4 +1,11 @@
-# Scala
+---
+title: Scala
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: []
+
+layout: page
+---
 
 Make sure you have Java installed, the instructions are provided [here](/mac-setup/Java/README.html).
 

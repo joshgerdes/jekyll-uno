@@ -1,9 +1,7 @@
 ---
-title: "Emacs"
-date: 2016-01-08 15:04:23
+title: Emacs
 category: code-editor
 tags: []
-
 layout: page
 ---
 

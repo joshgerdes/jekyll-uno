@@ -1,4 +1,9 @@
-# Using Homebrew
+---
+title: Using Homebrew
+category: macosx
+tags: []
+layout: page
+---
 
 To install a package (or **Formula** in Homebrew vocabulary) simply type:
 

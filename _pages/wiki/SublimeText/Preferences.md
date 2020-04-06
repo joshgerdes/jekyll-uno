@@ -1,4 +1,11 @@
-# Preferences
+---
+title: Sublime - Preferences
+date: 2016-01-08 15:04:23
+category: code-editor
+tags: []
+
+layout: page
+---
 
 This is an example of User Settings for a basic development but please feel free to modify or update as per your choice.
 

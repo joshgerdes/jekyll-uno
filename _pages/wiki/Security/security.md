@@ -1,4 +1,11 @@
-# Security and Safety
+---
+title: Security and Safety
+date: 2016-01-08 15:04:23
+category: macosx
+tags: []
+
+layout: page
+---
 
 A development machine should be secured against threads as well as any other machine \(or even _especially_ a development machine\). Therefore we will setup
 

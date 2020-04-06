@@ -1,4 +1,9 @@
-# `tree`
+---
+title: tree
+category: command-line
+tags: []
+layout: page
+---
 
 `tree` is a recursive directory listing command that produces a depth indented listing of files.
 

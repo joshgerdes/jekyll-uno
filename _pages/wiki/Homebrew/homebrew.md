@@ -1,4 +1,9 @@
-# Homebrew
+---
+title: Homebrew-Cask
+category: macosx
+tags: []
+layout: page
+---
 
 [Homebrew](https://brew.sh/) calls itself _The missing package manager for
 macOS_ and is an essential tool for any developer.

@@ -1,4 +1,11 @@
-# Vagrant
+---
+title: Vagrant
+date: 2016-01-08 15:04:23
+category: virtual-machine
+tags: []
+
+layout: page
+---
 
 Create and configure lightweight, reproducible, and portable development environments. [Vagrant](http://www.vagrantup.com/) is a tool for managing virtual machines via a simple to use command line interface.
 

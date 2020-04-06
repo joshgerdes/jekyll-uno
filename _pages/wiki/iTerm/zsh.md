@@ -1,4 +1,9 @@
-# zsh
+---
+title: zsh
+category: command-line
+tags: []
+layout: page
+---
 
 The Z shell (also known as `zsh`) is a Unix shell that is built on top of `bash`
 (the default shell for macOS) with additional features. It's recommended to use

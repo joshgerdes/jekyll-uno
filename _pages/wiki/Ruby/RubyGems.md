@@ -1,4 +1,11 @@
-# RubyGems
+---
+title: Ruby RubyGems
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: []
+
+layout: page
+---
 
 [RubyGems](http://rubygems.org/), the Ruby package manager, should be installed on your machine if you previously have installed Ruby. Verify this by running:
 

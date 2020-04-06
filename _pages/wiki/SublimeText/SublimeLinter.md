@@ -1,4 +1,11 @@
-# SublimeLinter Settings
+---
+title: Sublime - SublimeLinter Settings
+date: 2016-01-08 15:04:23
+category: code-editor
+tags: []
+
+layout: page
+---
 
 ~~~json
 {

@@ -1,4 +1,9 @@
-# `ack`
+---
+title: ACK
+category: command-line
+tags: []
+layout: page
+---
 
 `ack` is a search tool designed for code. It's built to be a replacement for
 `grep` with higher speed and more options.

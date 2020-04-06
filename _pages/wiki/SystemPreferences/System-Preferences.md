@@ -1,4 +1,11 @@
-# System Preferences
+---
+title: System Preferences
+date: 2016-01-08 15:04:23
+category: macosx
+tags: []
+
+layout: page
+---
 
 ## First Time Setup
 

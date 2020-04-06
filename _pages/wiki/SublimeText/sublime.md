@@ -1,4 +1,11 @@
-# Sublime Text
+---
+title: Sublime Editor
+date: 2016-01-08 15:04:23
+category: code-editor
+tags: []
+
+layout: page
+---
 
 [Sublime Text](http://www.sublimetext.com/) is a widely used editor that describes it self as _a sophisticated text editor for code, markup and prose_.
 

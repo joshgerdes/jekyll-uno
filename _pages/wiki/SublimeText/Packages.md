@@ -1,4 +1,11 @@
-# Packages
+---
+title: Sublime - Packages
+date: 2016-01-08 15:04:23
+category: code-editor
+tags: []
+
+layout: page
+---
 
 ## Install Package Control
 

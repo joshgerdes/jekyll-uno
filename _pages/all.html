@@ -9,5 +9,6 @@ robots: noindex
     {% assign pages = group.items | sort: "title" %}
     {% for page in pages %}
         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+       <br/>
     {%endfor%}
 {%endfor%}

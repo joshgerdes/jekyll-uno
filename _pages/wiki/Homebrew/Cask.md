@@ -1,4 +1,9 @@
-# Homebrew-Cask
+---
+title: Homebrew-Cask
+category: macosx
+tags: []
+layout: page
+---
 
 [Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to
 install large binary files via a command-line tool. You can for example install

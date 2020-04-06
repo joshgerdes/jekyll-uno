@@ -1,4 +1,11 @@
-# Recommended Plugins
+---
+title: Sublime - Recommended Plugins
+date: 2016-01-08 15:04:23
+category: code-editor
+tags: []
+
+layout: page
+---
 
 - [Alignment](https://github.com/wbond/sublime_alignment/issues): Easy alignment of multiple selections and multi-line selections
 - [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete): Extend Sublime Text 2 auto-completion to find matches in all open files of the current window

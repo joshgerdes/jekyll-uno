@@ -1,4 +1,11 @@
-# Rust
+---
+title: Rust
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: []
+
+layout: page
+---
 
 [Rust](https://www.rust-lang.org) is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
 

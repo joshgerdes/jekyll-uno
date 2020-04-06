@@ -1,4 +1,9 @@
-# `fzf`
+---
+title: fzf
+category: command-line
+tags: []
+layout: page
+---
 
 [`fzf`](https://github.com/junegunn/fzf) is a general-purpose command-line
 fuzzy finder. On it's own it's not very useful but when combined with other

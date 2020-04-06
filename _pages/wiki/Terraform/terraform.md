@@ -23,7 +23,7 @@ Create a `.env` file with your desired environment variables, that could include
 
 Example:
 
-```.env
+```
 AWS_ACCESS_KEY_ID=********************
 AWS_SECRET_ACCESS_KEY=****************************************
 AWS_DEFAULT_REGION=ap-southeast-2
@@ -35,7 +35,7 @@ TF_VAR_app_env=development
 
 ### Create Makefile
 
-```Makefile
+```
 init:
 	docker run --rm --env-file=$(shell pwd)/.env --volume=$(shell pwd)/:/src --workdir=/src hashicorp/terraform:light init -force-copy
 .PHONY: init

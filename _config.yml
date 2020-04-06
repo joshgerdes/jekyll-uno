@@ -17,10 +17,9 @@ author:
   # spotify:
   # instagram:
   # stackshare:
-
-#features:
-  # google_analytics: 'UA-93047835-1'
   # disqus_shortname:
+
+google_analytics: 'UA-162789623-1'
 
 # More information: https://jekyllrb.com/docs/collections/
 collections:

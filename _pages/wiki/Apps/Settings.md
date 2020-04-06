@@ -1,5 +1,5 @@
 ---
-title: Various App Settings
+title: Apps Settings
 date: 2016-01-08 15:04:23
 category: apps
 tags: []

@@ -10,4 +10,17 @@
       {% include footer.html %}
     </div>
   </body>
+
+  <script>
+    let config = {
+      startOnLoad:true,
+      theme: 'neutral'
+      // flowchart:{
+      //   useMaxWidth: false,
+      //   htmlLabels: true
+      // }
+    };
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  </script>
 </html>

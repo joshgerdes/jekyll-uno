@@ -61,3 +61,16 @@ destroy:
 .PHONY: destroy
 
 ```
+
+## Resources
+
+### Terraform boilerplate
+
+Basic setup using Makefile and docker
+
+[gbalbuena/terraform-boilerplate](https://github.com/gbalbuena/terraform-boilerplate)
+
+### Terragrunt
+
+[gruntwork-io/terragrunt](https://terragrunt.gruntwork.io/)
+Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.

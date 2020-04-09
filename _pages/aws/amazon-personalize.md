@@ -13,5 +13,3 @@ Amazon Personalize is a machine learning service that allows you to build and sc
 ## Resources
 
 * [PersonalizePOC](https://github.com/gbalbuena/PersonalizePOC): This repository assumes a base familiarity with the service and if you have not already done so it is recommended that you use the getting-started material below.
-
-

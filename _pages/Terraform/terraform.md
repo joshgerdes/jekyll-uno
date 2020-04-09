@@ -11,20 +11,20 @@ HashiCorp Terraform enables you to safely and predictably create, change, and im
 
 ## Installation
 
+### macOS
+
 ```bash
 brew install terraform
 ```
 
-## Usage
+## Resources
 
-```bash
-terraform init
-```
+### Terraform boilerplate
 
-```bash
-terraform plan
-```
+Basic setup using Makefile and docker
 
-```bash
-terraform apply
-```
+[gbalbuena/terraform-boilerplate](https://github.com/gbalbuena/terraform-boilerplate)
+
+### Terragrunt
+
+[gruntwork-io/terragrunt](https://terragrunt.gruntwork.io/) is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.

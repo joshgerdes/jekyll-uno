@@ -1,5 +1,5 @@
 ---
-title: Ruby RubyGems
+title: Ruby - RubyGems
 date: 2016-01-08 15:04:23
 category: programming-languages
 tags: []

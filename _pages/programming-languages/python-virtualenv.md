@@ -1,4 +1,11 @@
-# Virtualenv
+---
+title: Python - Virtualenv
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: [python]
+
+layout: page
+---
 
 [Virtualenv](http://www.virtualenv.org/) is a tool that lets you create an
 isolated Python environment for your project. It creates an environment that

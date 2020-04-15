@@ -1,7 +1,7 @@
 ---
 title: List of diagrams
 date: 2016-01-08 15:04:23
-categories: [diagrams]
+category: diagrams
 tags: [agile]
 layout: page
 ---

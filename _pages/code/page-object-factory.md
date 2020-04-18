@@ -1,5 +1,8 @@
 ---
 title: Page Object Factory
+date: 2016-01-08 15:04:23
+category: code
+tags: [design-pattern]
 layout: page
 ---
 

@@ -7,7 +7,7 @@ tags: [gear]
 layout: page
 ---
 
-## Emergency
+## <i class="fas fa-first-aid fa-1x" aria-hidden="true"></i> Emergency
 
 - [ ] Botiquín de Primeros Auxilios.
 - [ ] Manta térmica de emergencia
@@ -15,7 +15,7 @@ layout: page
 - [ ] Personal Beacon Device
 - [ ] Kit de mordedura de serpientes
 
-## Essentials
+## <i class="fas fa-exclamation-circle fa-1x" aria-hidden="true"></i> Essentials
 
 - [ ] Teléfono móvil
 - [ ] Lámparas, Linternas y Pilas
@@ -28,7 +28,7 @@ layout: page
 - [ ] Repelente de insectos
 - [ ] Powerbank
 
-## Agua y comida
+## <i class="fas fa-utensils fa-1x" aria-hidden="true"></i> Agua y comida
 
 - [ ] Filtro de agua, contenedores
 - [ ] Utensilios
@@ -45,7 +45,7 @@ layout: page
 - [ ] Café o té
 - [ ] Chocolate
 
-## Shelter and sleep
+## <i class="fas fa-campground fa-1x" aria-hidden="true"></i> Shelter and sleep
 
 - [ ] Carpa
 - [ ] Sobre de dormir (El que tengo es una poronga)
@@ -54,7 +54,7 @@ layout: page
 - [ ] hacha
 - [ ] Serrucho
 
-## Higiene personal
+## <i class="fas fa-shower fa-1x" aria-hidden="true"></i> Higiene personal
 
 - [ ] Jabón
 - [ ] Cepillo de dientes, pasta y hilo dental
@@ -62,7 +62,7 @@ layout: page
 - [ ] Toalla
 - [ ] Papel higiénico y pala chica
 
-## Otros
+## <i class="fas fa-hat-wizard fa-1x" aria-hidden="true"></i> Otros
 
 - [ ] Panel solar
 - [ ] Cámara de fotos

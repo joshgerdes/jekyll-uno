@@ -1,9 +1,8 @@
 ---
 title: "Factory pattern"
 date: 2016-01-08 15:04:23
-categories: [code]
+category: code
 tags: [design-pattern]
-
 layout: page
 ---
 

@@ -1,3 +1,5 @@
+@import "variables";
+
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
 /* http://meyerweb.com/eric/tools/css/reset/
 	 v2.0 | 20110126
@@ -950,9 +952,9 @@ body {
 
 a {
 	text-decoration: none;
-	color: #e25440; }
+	color: $color-secondary; }
 	a:hover {
-		color: #b9301c;
+		color: $color-secondary-dark;
 		-o-transition: .5s;
 		-ms-transition: .5s;
 		-moz-transition: .5s;
@@ -968,7 +970,7 @@ h5 {
 	margin-bottom: .4em;
 	font-family: "Roboto Slab", serif;
 	font-weight: lighter;
-	color: #333333;
+  // color: #333333;
 	-webkit-font-smoothing: antialiased; }
 
 h1 {
@@ -1032,7 +1034,7 @@ ul {
 
 code {
 	padding: .1em .4em;
-	background: #e8f2fb;
+	// background: #e8f2fb;
 	border: 1px solid #c9e1f6;
 	border-radius: 3px;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -1121,8 +1123,7 @@ pre {
 
 .footer {
 	display: block;
-	padding: 2em 0 0 0;
-	border-top: 2px solid #dddddd;
+	border-top: 1px solid #dddddd;
 	font-size: .7em;
 	color: #b3b3b3; }
 

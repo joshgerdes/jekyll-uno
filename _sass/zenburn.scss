@@ -1,0 +1,174 @@
+.highlight {
+  code, pre {
+    color: #fdce93;
+    background-color: #3f3f3f;
+  }
+
+  .hll {
+    background-color: #222;
+  }
+
+  .err {
+    color: #e37170;
+    background-color: #3d3535;
+  }
+
+  .k {
+    color: #f0dfaf;
+  }
+
+  .p {
+    color: #41706f;
+  }
+
+  .cs {
+    color: #cd0000;
+    font-weight: 700;
+  }
+
+  .gd {
+    color: #cd0000;
+  }
+
+  .ge {
+    color: #ccc;
+    font-style: italic;
+  }
+
+  .gr {
+    color: red;
+  }
+
+  .go {
+    color: gray;
+  }
+
+  .gs {
+    color: #ccc;
+    font-weight: 700;
+  }
+
+  .gu {
+    color: purple;
+    font-weight: 700;
+  }
+
+  .gt {
+    color: #0040D0;
+  }
+
+  .kc {
+    color: #dca3a3;
+  }
+
+  .kd {
+    color: #ffff86;
+  }
+
+  .kn {
+    color: #dfaf8f;
+    font-weight: 700;
+  }
+
+  .kp {
+    color: #cdcf99;
+  }
+
+  .kr {
+    color: #cdcd00;
+  }
+
+  .ni {
+    color: #c28182;
+  }
+
+  .ne {
+    color: #c3bf9f;
+    font-weight: 700;
+  }
+
+  .nn {
+    color: #8fbede;
+  }
+
+  .vi {
+    color: #ffffc7;
+  }
+
+  .c {
+    color: #7f9f7f;
+  }
+}
+
+.preview-zenburn .highlight {
+  .g, .cm, .cp, .c1 {
+    color: #7f9f7f;
+  }
+}
+
+.highlight .l {
+  color: #ccc;
+}
+
+.preview-zenburn .highlight {
+  .x, .no, .nd, .nl, .nx, .py, .w {
+    color: #ccc;
+  }
+}
+
+.highlight .n {
+  color: #dcdccc;
+}
+
+.preview-zenburn .highlight {
+  .nv, .vg {
+    color: #dcdccc;
+  }
+}
+
+.highlight .o, .preview-zenburn .highlight .ow {
+  color: #f0efd0;
+}
+
+.highlight .gh, .preview-zenburn .highlight .gp {
+  color: #dcdccc;
+  font-weight: 700;
+}
+
+.highlight .gi, .preview-zenburn .highlight .kt {
+  color: #00cd00;
+}
+
+.highlight .ld {
+  color: #cc9393;
+}
+
+.preview-zenburn .highlight {
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss {
+    color: #cc9393;
+  }
+}
+
+.highlight .m {
+  color: #8cd0d3;
+}
+
+.preview-zenburn .highlight {
+  .mf, .mh, .mi, .mo, .il {
+    color: #8cd0d3;
+  }
+}
+
+.highlight .na, .preview-zenburn .highlight .nt {
+  color: #9ac39f;
+}
+
+.highlight .nb {
+  color: #efef8f;
+}
+
+.preview-zenburn .highlight {
+  .nc, .nf, .bp, .vc {
+    color: #efef8f;
+  }
+}

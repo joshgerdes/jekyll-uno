@@ -3,7 +3,7 @@
 @import "uno";
 @import "tables";
 @import "monokai";
-@import "custom";
+@import "override";
 
 /* Modifications */
 
@@ -47,7 +47,7 @@ pre.highlight code,
 }
 
 .footer__copyright {
-    margin: 0 20px 10px;
+    margin: 5px;
 }
 
 .user-image {

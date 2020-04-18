@@ -14,7 +14,8 @@ table {
 
 	tr {
 		&:nth-child(even) td {
-			background: #eee;
+      background: #888;
+      color: #eee;
 		}
 
 		td {

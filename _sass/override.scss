@@ -1,11 +1,33 @@
 @import "variables";
 
-body {
-  background-color: $color-background;
-  color: $color-primary;
+
+// dak theme
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+    background: #fff;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  body {
+    background-color: $color-background;
+    color: $color-primary;
+  }
+
+  h1, h2, h3, h4, h5, h5 { color: $color-primary }
+
+  code {
+    background: inherit;
+  }
+
 }
 
-h1, h2, h3, h4, h5, h5 { color: $color-primary }
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(100,100,100, 0.2), 0 6px 20px 0 rgba(100,100,100, 0.2);
+}
 
 .bw {
   filter: brightness(1.5) grayscale(100%);

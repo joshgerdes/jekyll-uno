@@ -1,4 +1,11 @@
-# Python
+---
+title: Python
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: [python]
+
+layout: page
+---
 
 macOS, like Linux, ships with [Python](https://python.org/) already installed.
 But you don't want to mess with the system Python (some system tools rely on

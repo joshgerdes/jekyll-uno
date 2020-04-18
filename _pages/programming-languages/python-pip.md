@@ -1,4 +1,11 @@
-# pip
+---
+title: Python - pip
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: [python]
+
+layout: page
+---
 
 macOS comes with Python so there's a chance `pip` is already installed on your machine.
 

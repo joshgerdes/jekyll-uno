@@ -1,4 +1,11 @@
-# Numpy, Scipy and Matplotlib
+---
+title: Python - Numpy, Scipy and Matplotlib
+date: 2016-01-08 15:04:23
+category: programming-languages
+tags: [python]
+
+layout: page
+---
 
 The [Numpy](http://numpy.scipy.org/), [Scipy](https://www.scipy.org/scipylib/index.html) and [Matplotlib](http://matplotlib.org/) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly. Luckily for us, [Samuel John](http://www.samueljohn.de/) has put together some [Homebrew formulae](https://github.com/samueljohn/homebrew-python) to make it easier to install these Python libraries.
 

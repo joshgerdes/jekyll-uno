@@ -1,5 +1,5 @@
 ---
-title: Homebrew-Cask
+title: Homebrew
 category: macosx
 tags: []
 layout: page

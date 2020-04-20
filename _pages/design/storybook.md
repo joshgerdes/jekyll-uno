@@ -1,5 +1,5 @@
 ---
-title: Design System
+title: Storybook
 date: 2016-01-08 15:04:23
 category: design
 tags: [open-source]

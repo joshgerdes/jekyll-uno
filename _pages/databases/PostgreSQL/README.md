@@ -40,4 +40,24 @@ $ brew cask install pgadmin4
 ```
 
 
+## Handy queries
 
+### Show tuples per table
+
+```sql
+  SELECT schemaname AS schema,
+         relname    AS table,
+        n_live_tup  AS tuples
+    FROM pg_stat_user_tables
+ORDER BY schemaname, n_live_tup DESC;
+```
+
+### Stats per table
+
+Returns stats of the table, like most common vals, etc
+
+```sql
+ANALYZE hazard.footprint;
+
+select * from pg_stats where tablename like 'footprint';
+```

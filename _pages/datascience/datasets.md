@@ -14,6 +14,10 @@ A data set (or dataset) is a collection of data. In the case of tabular data, a 
 | our world in data | https://ourworldindata.org                |
 | dataset search    | https://datasetsearch.research.google.com |
 
+## Australian Government - public datasets
+
+https://data.gov.au/data/dataset
+
 ## References
 
 [Google Blog](https://blog.google/products/search/discovering-millions-datasets-web/)

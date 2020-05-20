@@ -1,4 +1,10 @@
 ---
+title: pyenv
+date: 2016-01-08 15:04:23
+category: raspberry-pi
+tags: [python]
+
+layout: page
 ---
 
 Have multiple python versions never been so easy using `pyenv`.

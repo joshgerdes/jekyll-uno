@@ -1,8 +1,16 @@
 ---
+title: PICO-8
+date: 2016-01-08 15:04:23
+category: game-development
+tags: [lua gaming]
+layout: page
 ---
 
+The Pico-8 is a virtual machine and game engine created by Lexaloffle Games. It is designed to mimic a "fantasy video game console," by emulating the harsh hardware limitations of the video game consoles around the 1980s.
 
 ## PICO-8 Cheatsheet
+
+Link: https://ztiromoritz.github.io/pico-8-spick/index_en.html
 
 ### Commandline
 HELP
@@ -25,7 +33,11 @@ T={name="Joe", age="32"}
 < > <= >= ~= ==
 #list  "A".."B"
 and or not
-Functions
+```
+
+### Functions
+
+```lua
 FUNCTION ADD(a,b)
  RETURN A+B
 END

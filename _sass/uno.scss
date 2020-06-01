@@ -1034,7 +1034,11 @@ pre {
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: .9em;
 	font-weight: normal;
-	line-height: 1.3em; }
+	line-height: 1.3em; 
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word; }
 	pre code {
 		padding: 0;
 		background: none;

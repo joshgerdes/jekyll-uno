@@ -29,6 +29,15 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
 
+If you would like to run without using the `github-pages` gem, update your Gemfile to the following:
+
+```
+source 'https://rubygems.org'
+gem 'jekyll-paginate'
+gem 'jekyll-watch'
+gem 'kramdown'
+gem 'kramdown-parser-gfm'
+```
 ---
 
 ### Demo and Download

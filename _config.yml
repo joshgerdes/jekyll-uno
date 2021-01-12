@@ -1,19 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
-# disable_landing_page: true
+title: Marco Fabbian
+description: 'Free time and Projects'
+url: 'https://marcofabbian.com'
+baseurl: ''
+google_analytics: 'UA-177756824-1'
+disqus_shortname: 'marcofabbian-com'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Marco Fabbian'
+  email: marco.fabbian@gmail.com
+  twitter_username: marcofabbian
+  facebook_username: fabbian.marco
+  github_username:  marcofabbian
+  linkedin_username: marcofabbian
 
 defaults:
   -
@@ -40,5 +39,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+plugins: ['jekyll-paginate' , 'jekyll-email-protect']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'docker-compose.yml', 'humans.txt', 'execute_server.cmd', 'LICENSE']

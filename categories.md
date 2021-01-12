@@ -4,3 +4,4 @@ title: Categories
 permalink: /categories/
 robots: noindex
 ---
+generic

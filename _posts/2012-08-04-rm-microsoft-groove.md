@@ -1,32 +1,33 @@
 ---
-id: 1521
 title: How to completely remove Microsoft Groove
-date: 2012-08-04T22:58:44+00:00
+date: 2012-08-05 10:58:44 +12:00
+permalink: "/win/rm-microsoft-groove/"
+categories:
+- Windows
+id: 1521
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1521
-permalink: /win/rm-microsoft-groove/
 dsq_thread_id:
-  - "4934288735"
+- '4934288735'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "15"
-categories:
-  - Windows
+- '15'
 ---
+
 Follow the guide below to remove Microsoft Groove from your PC.
 
 <ol start="1">

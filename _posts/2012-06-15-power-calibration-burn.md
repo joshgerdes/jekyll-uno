@@ -1,11 +1,13 @@
 ---
 title: Power Calibration Error when attempting to burn CD/DVD
-layout: post
-permalink: /misc/power-calibration-burn/
+date: 2012-06-15 00:00:00 +12:00
+permalink: "/misc/power-calibration-burn/"
 categories:
-  - Misc
-  - Windows
+- Misc
+- Windows
+layout: post
 ---
+
   1. Click **Start**
   2. Click **Control Panel**
   3. Click **Administrative Tools**

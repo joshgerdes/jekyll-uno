@@ -1,10 +1,12 @@
 ---
 title: Changing the Aion English Client to Korean
-permalink: /misc/changing-the-aion-english-client-to-korean/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/misc/changing-the-aion-english-client-to-korean/"
 categories:
-  - Misc
-  - Windows
+- Misc
+- Windows
 ---
+
 Short fix:
 
   1.  Right-click on Aion in your Launcher game list

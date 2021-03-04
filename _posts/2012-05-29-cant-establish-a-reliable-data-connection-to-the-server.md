@@ -1,10 +1,12 @@
 ---
 title: Can’t establish a reliable data connection to the server
-layout: post
-permalink: /mob/cant-establish-a-reliable-data-connection-to-the-server/
+date: 2012-05-29 00:00:00 +12:00
+permalink: "/mob/cant-establish-a-reliable-data-connection-to-the-server/"
 categories:
-  - Mobile
+- Mobile
+layout: post
 ---
+
 Trying to add your Google Account to your Android phone and it&#8217;s coming up with the error &#8220;Can’t establish a reliable data connection to the server&#8221; try the tips below:
 
   1. Go into Applications and select the Youtube Application

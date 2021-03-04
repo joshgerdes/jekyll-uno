@@ -1,39 +1,40 @@
 ---
-id: 2633
 title: My view on what Retail IT infrastructure may look like in 5 years
-date: 2012-10-01T21:22:51+00:00
+date: 2012-10-02 10:22:51 +13:00
+permalink: "/misc/my-view-on-what-retail-it-infrastructure-may-look-like-in-5-years/"
+categories:
+- Misc
+id: 2633
 author: Luke
 layout:
-  - ""
+- ''
 guid: http://localhost/incinerate/?p=2339
-permalink: /misc/my-view-on-what-retail-it-infrastructure-may-look-like-in-5-years/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2520930402"
+- '2520930402'
 sidebar:
-  - ""
+- ''
 header:
-  - 'yes'
+- 'yes'
 footer:
-  - ""
+- ''
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Misc
+- '5'
 ---
+
 _&#8220;I believe the Information Technology infrastructure in five years will look bright with the promise of tomorrow.&#8221;  _
 
 &nbsp;

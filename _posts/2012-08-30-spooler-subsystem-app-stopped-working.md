@@ -1,32 +1,33 @@
 ---
-id: 1590
 title: Spooler SubSystem App Stopped Working
-date: 2012-08-30T11:57:54+00:00
+date: 2012-08-30 23:57:54 +12:00
+permalink: "/win/spooler-subsystem-app-stopped-working/"
+categories:
+- Windows
+id: 1590
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1590
-permalink: /win/spooler-subsystem-app-stopped-working/
 dsq_thread_id:
-  - "4997260510"
+- '4997260510'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "14"
-categories:
-  - Windows
+- '14'
 ---
+
 Follow the guides below to fix the spooler issues:
 
 <ol start="1">

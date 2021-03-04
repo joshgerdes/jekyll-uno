@@ -1,10 +1,12 @@
 ---
 title: Ejecting CD/DVD stuck in an iMac
-layout: post
-permalink: /osx/cddvd-stuck-in-an-imac/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/osx/cddvd-stuck-in-an-imac/"
 categories:
-  - Mac OSX
+- Mac OSX
+layout: post
 ---
+
 CD/DVD stuck in your iMac? Try the options below to force it to eject.
 
   1. Press **Mouse** **Button** at **boot** to force the CD/DVD to eject

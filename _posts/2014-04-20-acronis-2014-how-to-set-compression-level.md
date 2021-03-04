@@ -1,9 +1,11 @@
 ---
-title: 'Acronis 2014 - How to set compression level'
-permalink: /win/acronis-2014-how-to-set-compression-level/
+title: Acronis 2014 - How to set compression level
+date: 2014-04-20 00:00:00 +12:00
+permalink: "/win/acronis-2014-how-to-set-compression-level/"
 categories:
-  - Windows
+- Windows
 ---
+
 On the Performance tab you can configure the following settings:
   
 Compression level

@@ -1,32 +1,33 @@
 ---
-id: 1421
 title: Blank webpage with Windows Genuine Advantage
-date: 2012-09-30T11:13:05+00:00
+date: 2012-10-01 00:13:05 +13:00
+permalink: "/win/blank-webpage-with-win-gen-advantage/"
+categories:
+- Windows
+id: 1421
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1421
-permalink: /win/blank-webpage-with-win-gen-advantage/
 dsq_thread_id:
-  - "864852058"
+- '864852058'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Windows
+- '5'
 ---
+
 _Trying to install Microsoft Security Essentials and it is complaining about not having genuine Windows? Attempting to run the Windows Genuine Advantage validation and you are ending up with a blank screen? This is usually caused when your Time/Date is out._
 
 <ol start="1">

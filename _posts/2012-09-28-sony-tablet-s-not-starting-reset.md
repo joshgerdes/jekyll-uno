@@ -1,33 +1,34 @@
 ---
-id: 1292
 title: Sony Tablet S Not Starting Reset
-date: 2012-09-28T09:25:50+00:00
+date: 2012-09-28 21:25:50 +12:00
+permalink: "/mob/sony-tablet-s-not-starting-reset/"
+categories:
+- Android
+- Mobile
+id: 1292
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1292
-permalink: /mob/sony-tablet-s-not-starting-reset/
 dsq_thread_id:
-  - "865061377"
+- '865061377'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "9"
-categories:
-  - Android
-  - Mobile
+- '9'
 ---
+
 _Having problems where your Sony S Tablet is getting power from the adapter but actually not turning on? I had this issue and this is how I got it running again._
 
   1. On the side panel of your Tablet you will see small letters, stating Reset.

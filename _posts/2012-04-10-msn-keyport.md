@@ -1,9 +1,11 @@
 ---
 title: MSN Keyport
-permalink: /win/msn-keyport/
+date: 2012-04-10 00:00:00 +12:00
+permalink: "/win/msn-keyport/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Click Start
   2. Click Run
   3. Type in:  **regsvr32 softpub.dll**

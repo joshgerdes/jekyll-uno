@@ -1,10 +1,12 @@
 ---
 title: How to Convert AVI/MKV/MP4 to DVD
-layout: post
-permalink: /win/convert-avimkvmp4-to-dvd/
+date: 2012-05-28 00:00:00 +12:00
+permalink: "/win/convert-avimkvmp4-to-dvd/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
  I have had the best option with VSO&#8217;s <a title="ConvertXDVD" href="http://www.vso-software.fr/products/convert_x_to_dvd/" target="_blank">ConvertX DVD</a> follow the instructions below to create a DVD out of one or more Video files.
 </div>
 

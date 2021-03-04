@@ -1,32 +1,33 @@
 ---
-id: 1154
 title: How to reset Ventrillo settings back to default
-date: 2012-09-28T10:41:34+00:00
+date: 2012-09-28 22:41:34 +12:00
+permalink: "/win/how-to-reset-ventrillo-settings-back-to-default/"
+categories:
+- Windows
+id: 1154
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1154
-permalink: /win/how-to-reset-ventrillo-settings-back-to-default/
 dsq_thread_id:
-  - "2543084587"
+- '2543084587'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "13"
-categories:
-  - Windows
+- '13'
 ---
+
   1. Click Start
   2. Click Run
   3. Type in: **_%appdata%ventrilo_**

@@ -1,10 +1,12 @@
 ---
 title: Reset Nokia Windows phone to factory settings
-permalink: /mob/reset-nokia-windows-phone/
+date: 2014-04-25 00:00:00 +12:00
+permalink: "/mob/reset-nokia-windows-phone/"
 categories:
-  - Mobile
-  - Windows Phone
+- Mobile
+- Windows Phone
 ---
+
 As part of my role at work – we continuously swap the company’s mobile phone – a Nokia windows phone so being able to reset Nokia windows phone to factory settings is quite useful as we store our contacts on the SIM card so restoring the phone back to factory settings before handing them on is a useful occurrence.
 
 **Warning:** This erases all personal content on your phone and restores the factory settings._

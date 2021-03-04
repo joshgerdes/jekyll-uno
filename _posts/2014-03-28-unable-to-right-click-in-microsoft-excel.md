@@ -1,9 +1,11 @@
 ---
 title: Unable to right click in Microsoft Excel
-permalink: /win/unable-to-right-click-in-microsoft-excel/
+date: 2014-03-28 00:00:00 +13:00
+permalink: "/win/unable-to-right-click-in-microsoft-excel/"
 categories:
-  - Windows
+- Windows
 ---
+
 This is fixed by removing the Excel11.xlb excel template file located in the following locations:
 
 

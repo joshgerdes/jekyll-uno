@@ -1,34 +1,35 @@
 ---
-id: 3077
 title: How to link your Guild Wars 1 account to Guild Wars 2
-date: 2012-08-30T19:11:28+00:00
+date: 2012-08-31 07:11:28 +12:00
+permalink: "/osx/link-your-gw1-account-to-gw2/"
+categories:
+- Mac OSX
+- Misc
+- Windows
+id: 3077
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1601
-permalink: /osx/link-your-gw1-account-to-gw2/
 omc_review_enable:
-  - "0"
+- '0'
 dsq_thread_id:
-  - "5318708462"
+- '5318708462'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "10"
-categories:
-  - Mac OSX
-  - Misc
-  - Windows
+- '10'
 ---
+
 Follow the instructions below to link your Guild Wars 1 account to Guild Wars 2
 
 &nbsp;

@@ -1,32 +1,33 @@
 ---
-id: 2545
 title: How to do a colour adjustment on a Sharp MX-4101N
-date: 2012-11-26T08:11:39+00:00
+date: 2012-11-26 21:11:39 +13:00
+permalink: "/misc/colour-adjust-sharp-mx-4101n/"
+categories:
+- Misc
+id: 2545
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2545
-permalink: /misc/colour-adjust-sharp-mx-4101n/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2457106458"
+- '2457106458'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "7"
-categories:
-  - Misc
+- '7'
 ---
+
 _How to do a colour adjustment on a Sharp MX-4101N_
 
 &nbsp;

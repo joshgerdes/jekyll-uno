@@ -1,21 +1,22 @@
 ---
-id: 2642
 title: Shutdown Batch Script
-date: 2013-01-17T15:38:04+00:00
+date: 2013-01-18 04:38:04 +13:00
+permalink: "/misc/shutdown-batch-script/"
+categories:
+- Misc
+- Windows
+id: 2642
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2642
-permalink: /misc/shutdown-batch-script/
 dsq_thread_id:
-  - "2527421407"
+- '2527421407'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "8"
-categories:
-  - Misc
-  - Windows
+- '8'
 ---
+
 Save the following into a notepad document and name it with .bat at the end &#8211; for example shutdown.BAT. You can then either set it to the desktop or add it to a scheduled task to turn your computer off at a certain time.
 
 `<br />

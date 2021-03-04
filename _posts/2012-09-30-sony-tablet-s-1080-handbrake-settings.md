@@ -1,34 +1,35 @@
 ---
-id: 1544
 title: Sony Tablet S 1080 Handbrake Settings
-date: 2012-09-30T14:35:20+00:00
+date: 2012-10-01 03:35:20 +13:00
+permalink: "/mob/sony-tablet-s-1080-handbrake-settings/"
+categories:
+- Android
+- Mobile
+- Windows
+id: 1544
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1544
-permalink: /mob/sony-tablet-s-1080-handbrake-settings/
 dsq_thread_id:
-  - "5274091906"
+- '5274091906'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "14"
-categories:
-  - Android
-  - Mobile
-  - Windows
+- '14'
 ---
+
 <ol start="1">
   <li>
     Open <strong>Handbrake</strong>

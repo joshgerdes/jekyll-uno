@@ -1,32 +1,33 @@
 ---
-id: 2632
 title: Dial-up Error Codes
-date: 2012-09-30T15:27:44+00:00
+date: 2012-10-01 04:27:44 +13:00
+permalink: "/misc/dial-up-error-codes/"
+categories:
+- Misc
+id: 2632
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=965
-permalink: /misc/dial-up-error-codes/
 dsq_thread_id:
-  - "4829777555"
+- '4829777555'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "27"
-categories:
-  - Misc
+- '27'
 ---
+
 _These dial error codes can be used for diagnosing issues._ 
 
 &nbsp;

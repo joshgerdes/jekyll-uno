@@ -1,33 +1,34 @@
 ---
-id: 2550
 title: 'Metro 2033: This program can&#8217;t continue because PhysXloader.dll'
-date: 2012-12-13T10:31:37+00:00
+date: 2012-12-13 23:31:37 +13:00
+permalink: "/misc/metro-2033-this-program-cant-continue-because-physxloader-dll/"
+categories:
+- Misc
+- Windows
+id: 2550
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2550
-permalink: /misc/metro-2033-this-program-cant-continue-because-physxloader-dll/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2452929535"
+- '2452929535'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "13"
-categories:
-  - Misc
-  - Windows
+- '13'
 ---
+
   1. Click **Start**.
   2. Click **Computer/My Computer.**
   3. Navigate to:  **_C:Program Files (x86)Steamsteamappscommonmetro 2033install_**  (_the path might be different dependant on your machine._

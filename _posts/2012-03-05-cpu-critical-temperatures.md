@@ -1,9 +1,11 @@
 ---
 title: CPU Critical Temperatures
-permalink: /misc/cpu-critical-temperatures/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/misc/cpu-critical-temperatures/"
 categories:
-  - Misc
+- Misc
 ---
+
 **AMD**
 
 _**AMD Athlon Series**_ 

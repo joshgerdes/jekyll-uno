@@ -1,10 +1,12 @@
 ---
 title: Reset nVidia Graphics Settings
-layout: post
-permalink: /win/reset-nvidias-gfx-setting/
+date: 2012-05-18 00:00:00 +12:00
+permalink: "/win/reset-nvidias-gfx-setting/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
   1. Click **Start**
   2. Click **Programs**/All Programs
   3. Click **NVidia**

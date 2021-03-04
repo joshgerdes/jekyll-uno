@@ -1,12 +1,14 @@
 ---
 title: How to setup your web browser to run through a proxy
-layout: post
-permalink: /osx/web-browser-to-run-proxy/
+date: 2012-05-22 00:00:00 +12:00
+permalink: "/osx/web-browser-to-run-proxy/"
 categories:
-  - Mac OSX
-  - Misc
-  - Windows
+- Mac OSX
+- Misc
+- Windows
+layout: post
 ---
+
 **Internet Explorer**
 
   1. Click Tools

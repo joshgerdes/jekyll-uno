@@ -1,10 +1,12 @@
 ---
 title: Using Pastebin Services
-layout: post
-permalink: /misc/using-pastebin-services/
+date: 2012-06-13 00:00:00 +12:00
+permalink: "/misc/using-pastebin-services/"
 categories:
-  - Misc
+- Misc
+layout: post
 ---
+
 _Pastebin service allows people to upload text, code for public viewing. Very handy when you want someone&#8217;s opinion on something you have written or having problems with certain code and require help._
 
 _Below are several recommended Pastebin services_

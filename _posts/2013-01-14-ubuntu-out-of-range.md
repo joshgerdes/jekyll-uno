@@ -1,20 +1,21 @@
 ---
-id: 2636
 title: Ubuntu – Out of range
-date: 2013-01-14T08:40:11+00:00
+date: 2013-01-14 21:40:11 +13:00
+permalink: "/linux/ubuntu-out-of-range/"
+categories:
+- Linux
+id: 2636
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2627
-permalink: /linux/ubuntu-out-of-range/
 mfn-post-love:
-  - "0"
+- '0'
 dsq_thread_id:
-  - "5305302982"
+- '5305302982'
 post_views_count:
-  - "28"
-categories:
-  - Linux
+- '28'
 ---
+
 &nbsp;
 
 This issue is commonly caused by the screen resolution settings in Ubuntu becoming too high for the actual monitor. This guide is written with the Ubuntu Live CD and version 12.10 in mind.

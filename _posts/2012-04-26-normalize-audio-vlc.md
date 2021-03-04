@@ -1,9 +1,11 @@
 ---
 title: How to Normalize Audio in VLC Media Player
-permalink: /win/normalize-audio-vlc/
+date: 2012-04-26 00:00:00 +12:00
+permalink: "/win/normalize-audio-vlc/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Open  VLC Media Player
   2. Click **Tools**
   3. **Preferences**

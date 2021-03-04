@@ -1,10 +1,12 @@
 ---
 title: Windows Vista Modem Connecting
-layout: post
-permalink: /win/windows-vista-modem-connecting/
+date: 2012-05-21 00:00:00 +12:00
+permalink: "/win/windows-vista-modem-connecting/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
 _This usually occurs Operator Assisted Dialing is enabled for the Dialup connection, to disable follow the instructions below:_
 
   1. Click **Start**

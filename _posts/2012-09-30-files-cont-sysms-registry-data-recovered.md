@@ -1,32 +1,33 @@
 ---
-id: 1502
 title: One of the files containing the systems registry data had to be recovered
-date: 2012-09-30T15:40:36+00:00
+date: 2012-10-01 04:40:36 +13:00
+permalink: "/win/files-cont-sysms-registry-data-recovered/"
+categories:
+- Windows
+id: 1502
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1502
-permalink: /win/files-cont-sysms-registry-data-recovered/
 dsq_thread_id:
-  - "5300395979"
+- '5300395979'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "11"
-categories:
-  - Windows
+- '11'
 ---
+
 _This can someone be the result of bad RAM or Video RAM. Try to change the video memory in the BIOs from the lower number (usually 32MB/64MB) to the higher number (64/128MB) if this does not work try the following below to repair the “NTUser.DAT” file that has become corrupted/damaged on the User Account._
 
 _First we have to reveal Hidden files & folders:_

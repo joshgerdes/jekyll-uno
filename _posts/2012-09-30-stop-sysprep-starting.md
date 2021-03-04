@@ -1,10 +1,12 @@
 ---
 title: How to stop SysPrep from starting
-layout: post
-permalink: /win/stop-sysprep-starting/
+date: 2012-09-30 00:00:00 +12:00
+permalink: "/win/stop-sysprep-starting/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
 _Having issues with sysprep popping up all the time? Follow the instructions below to stop that annoyance from happening._
 
 <ol start="1">

@@ -1,9 +1,11 @@
 ---
 title: How to add videos on Windows Media Center
-permalink: /win/how-to-add-videos-on-windows-media-center/
+date: 2014-04-20 00:00:00 +12:00
+permalink: "/win/how-to-add-videos-on-windows-media-center/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. From the Media Center Start menu, select My Videos.
   2. Select Find Videos.
   3. Select Add folders, and then select Next.

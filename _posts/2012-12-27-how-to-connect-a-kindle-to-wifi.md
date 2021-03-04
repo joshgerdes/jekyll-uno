@@ -1,32 +1,33 @@
 ---
-id: 2569
 title: How to connect a Kindle to Wifi
-date: 2012-12-27T08:38:03+00:00
+date: 2012-12-27 21:38:03 +13:00
+permalink: "/misc/how-to-connect-a-kindle-to-wifi/"
+categories:
+- Misc
+id: 2569
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2569
-permalink: /misc/how-to-connect-a-kindle-to-wifi/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "1088494227"
+- '1088494227'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "4"
-categories:
-  - Misc
+- '4'
 ---
+
   1. Press the **Home** Button
   2. Press the **Menu** Button
   3. Select **Experiment**

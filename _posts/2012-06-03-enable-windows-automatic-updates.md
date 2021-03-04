@@ -1,10 +1,12 @@
 ---
 title: Enable Windows Automatic Updates
-layout: post
-permalink: /win/enable-windows-automatic-updates/
+date: 2012-06-03 00:00:00 +12:00
+permalink: "/win/enable-windows-automatic-updates/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
   1. Click **Start**
   2. Click **Control Panel**
   3. Click **Security**

@@ -1,32 +1,33 @@
 ---
-id: 1466
 title: x800703F0 installing Vista SP1
-date: 2012-10-02T13:06:32+00:00
+date: 2012-10-03 02:06:32 +13:00
+permalink: "/win/x800703f0-installing-vista-sp1/"
+categories:
+- Windows
+id: 1466
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1466
-permalink: /win/x800703f0-installing-vista-sp1/
 dsq_thread_id:
-  - "864796831"
+- '864796831'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "18"
-categories:
-  - Windows
+- '18'
 ---
+
 _Trying to install Service Pack 1 for Windows Vista and getting “x800703F0” error? Follow the guides below to fix it._
 
 _Enable the Windows Module Installer Service_

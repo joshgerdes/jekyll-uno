@@ -1,9 +1,11 @@
 ---
 title: How to create a mapped Network drive in Windows 7
-permalink: /win/create-a-mapped-network-drive-in-win-7/
+date: 2012-05-11 00:00:00 +12:00
+permalink: "/win/create-a-mapped-network-drive-in-win-7/"
 categories:
-  - Windows
+- Windows
 ---
+
 Follow the instructions to create a mapped network drive in Windows 7 without windows indexing like a local folder?
 
   1. Create a new folder for your network shares (ie c:Shared)

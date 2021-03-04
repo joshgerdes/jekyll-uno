@@ -1,10 +1,12 @@
 ---
 title: Unblock Programs/Services in Windows Firewall
-layout: post
-permalink: /win/unblock_apps_winfirewall/
+date: 2012-03-06 00:00:00 +13:00
+permalink: "/win/unblock_apps_winfirewall/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
   1. Click **Start**
   2. Click **Control Panel**
   3. Click **Network and Internet Connections**

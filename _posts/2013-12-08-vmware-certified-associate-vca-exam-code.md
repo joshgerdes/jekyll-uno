@@ -1,9 +1,11 @@
 ---
 title: VMWare Certified Associate (VCA) Exam Code
-permalink: /misc/vmware-certified-associate-vca-exam-code/
+date: 2013-12-08 00:00:00 +13:00
+permalink: "/misc/vmware-certified-associate-vca-exam-code/"
 categories:
-  - Misc
+- Misc
 ---
+
 VMWare have launched a campaign to show off their new 3 [VMWare Certified Associate](http://mylearn.vmware.com/portals/certification/) exams.
 
   * VMWare Certified Associate – Workforce Mobility

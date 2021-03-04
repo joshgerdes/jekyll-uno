@@ -1,9 +1,11 @@
 ---
 title: Using MKVMerge to add subtitles
-permalink: /win/using-mkvmerge/
+date: 2012-03-31 00:00:00 +13:00
+permalink: "/win/using-mkvmerge/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Open MKVMerge
   2. Add the movie you will like to have the subtitles added too.
   3. Add the SRT (Subtitle) file for the movie that you would like to add.

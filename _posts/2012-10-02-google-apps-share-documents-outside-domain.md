@@ -1,32 +1,33 @@
 ---
-id: 2429
 title: Google Apps – Share documents outside domain
-date: 2012-10-02T12:49:32+00:00
+date: 2012-10-03 01:49:32 +13:00
+permalink: "/misc/google-apps-share-documents-outside-domain/"
+categories:
+- Misc
+id: 2429
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2429
-permalink: /misc/google-apps-share-documents-outside-domain/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2561279566"
+- '2561279566'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "7"
-categories:
-  - Misc
+- '7'
 ---
+
   1. Login to your Google Apps admin
   2. Click on Manage This Domain
   3. Click Service Settings

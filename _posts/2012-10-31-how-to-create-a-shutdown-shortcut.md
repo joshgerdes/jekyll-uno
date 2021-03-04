@@ -1,32 +1,33 @@
 ---
-id: 3081
 title: How to create a shutdown shortcut
-date: 2012-10-31T08:50:55+00:00
+date: 2012-10-31 21:50:55 +13:00
+permalink: "/win/how-to-create-a-shutdown-shortcut/"
+categories:
+- Windows
+id: 3081
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2496
-permalink: /win/how-to-create-a-shutdown-shortcut/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "4825394597"
+- '4825394597'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "11"
-categories:
-  - Windows
+- '11'
 ---
+
 This tip is useful if you don’t want to go through the hassle of clicking Start, Shutdown.
 
 &nbsp;

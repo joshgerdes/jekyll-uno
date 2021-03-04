@@ -1,32 +1,33 @@
 ---
-id: 1579
 title: Blank Device Manager in Windows XP
-date: 2012-08-24T13:41:18+00:00
+date: 2012-08-25 01:41:18 +12:00
+permalink: "/win/blank-device-manager-in-windows-xp/"
+categories:
+- Windows
+id: 1579
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1579
-permalink: /win/blank-device-manager-in-windows-xp/
 dsq_thread_id:
-  - "865042194"
+- '865042194'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "14"
-categories:
-  - Windows
+- '14'
 ---
+
 The issue is caused by security permissions in the registry. This is how you fix it.
 
 _You must be logged on as a local administrator to perform this task:_

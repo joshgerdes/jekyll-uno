@@ -1,9 +1,11 @@
 ---
 title: Epson Aculaser C1100 Printing Darker on Left
-permalink: /misc/epson-aculaser-c1100/
+date: 2012-03-06 00:00:00 +13:00
+permalink: "/misc/epson-aculaser-c1100/"
 categories:
-  - Misc
+- Misc
 ---
+
 Clean The Print-head
 
   1. Blue lever on right side of printer _(move in and out completely several times.)_

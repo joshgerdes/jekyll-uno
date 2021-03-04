@@ -1,9 +1,11 @@
 ---
 title: Brother Drum Light Flashing
-permalink: /misc/brother-drum-light-flashing/
+date: 2012-05-14 00:00:00 +12:00
+permalink: "/misc/brother-drum-light-flashing/"
 categories:
-  - Misc
+- Misc
 ---
+
 To repair this follow the guide below:
 
   1. Open the Brother tray door(where you insert the Toner)

@@ -1,10 +1,12 @@
 ---
 title: Alureon.E removal
-layout: post
-permalink: /win/alureon-e-removal/
+date: 2012-05-21 00:00:00 +12:00
+permalink: "/win/alureon-e-removal/"
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
   1. First update and scan your computer doing a Full scan with your Antivirus to remove all traces of all infections.
   2. Now we need to remove a partition created by the rootkit to keep itself safe from removal.
   3. Click on Start

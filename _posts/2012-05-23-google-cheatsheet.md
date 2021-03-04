@@ -1,10 +1,12 @@
 ---
 title: Google Cheatsheet
-layout: post
-permalink: /misc/google-cheatsheet/
+date: 2012-05-23 00:00:00 +12:00
+permalink: "/misc/google-cheatsheet/"
 categories:
-  - Misc
+- Misc
+layout: post
 ---
+
 **Google Search queries**
 
 **define:<span style="text-decoration: underline;">phrase</span>**

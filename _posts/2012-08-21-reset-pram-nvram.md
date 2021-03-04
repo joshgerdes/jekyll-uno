@@ -1,32 +1,33 @@
 ---
-id: 1569
 title: Reset PRAM/NVRAM
-date: 2012-08-21T11:30:28+00:00
+date: 2012-08-21 23:30:28 +12:00
+permalink: "/osx/reset-pram-nvram/"
+categories:
+- Mac OSX
+id: 1569
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1569
-permalink: /osx/reset-pram-nvram/
 dsq_thread_id:
-  - "912358091"
+- '912358091'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Mac OSX
+- '5'
 ---
+
 _Warning: Resetting the PRAM/NVRAM will cause the Mac to lose operating system settings such as Time and Volume settings._
 
 _Note: Used successfully to fix Touchpad not “clicking” issue on a Macbook Pro_

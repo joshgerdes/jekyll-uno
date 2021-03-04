@@ -1,9 +1,11 @@
 ---
 title: hal.dll Corrupted/Missing Fix
-permalink: /win/hal-dll-corruptedmissing-fix/
+date: 2012-03-09 00:00:00 +13:00
+permalink: "/win/hal-dll-corruptedmissing-fix/"
 categories:
-  - Windows
+- Windows
 ---
+
 Windows could not start because the following file is missing or corrupt:
   
 Windows/system32/hal.dll

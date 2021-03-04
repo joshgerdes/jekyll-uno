@@ -1,32 +1,33 @@
 ---
-id: 1072
 title: How to add Album Art to iTunes
-date: 2012-09-30T00:57:23+00:00
+date: 2012-09-30 13:57:23 +13:00
+permalink: "/win/how-to-add-album-art-to-itunes/"
+categories:
+- Windows
+id: 1072
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1072
-permalink: /win/how-to-add-album-art-to-itunes/
 dsq_thread_id:
-  - "865041233"
+- '865041233'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_enable:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "6"
-categories:
-  - Windows
+- '6'
 ---
+
 _Sometimes Album art may not be avaliable or you would like to add your own here is how you do it._
 
   1. **Open** iTunes and go to your Music Library. **View** it in **Grid** View so that all of your albums are displayed.

@@ -1,32 +1,33 @@
 ---
-id: 1434
 title: Navigation to the webpage has been cancelled
-date: 2012-09-30T17:33:17+00:00
+date: 2012-10-01 06:33:17 +13:00
+permalink: "/win/nav-to-the-webpage-has-been-cancelled/"
+categories:
+- Windows
+id: 1434
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1434
-permalink: /win/nav-to-the-webpage-has-been-cancelled/
 dsq_thread_id:
-  - "2547319336"
+- '2547319336'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "12"
-categories:
-  - Windows
+- '12'
 ---
+
 <ol start="1">
   <li>
     Click <strong>Start</strong>

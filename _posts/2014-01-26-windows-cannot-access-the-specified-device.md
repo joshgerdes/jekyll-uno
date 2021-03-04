@@ -1,9 +1,11 @@
 ---
 title: Windows cannot access the specified device
-permalink: /win/windows-cannot-access-the-specified-device/
+date: 2014-01-26 00:00:00 +13:00
+permalink: "/win/windows-cannot-access-the-specified-device/"
 categories:
-  - Windows
+- Windows
 ---
+
 Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item. 
 
 There are several different fixes to try for this – I have listed them below. 

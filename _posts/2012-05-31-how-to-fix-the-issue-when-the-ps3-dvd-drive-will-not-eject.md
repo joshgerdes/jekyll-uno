@@ -1,10 +1,12 @@
 ---
 title: How to fix the issue when the PS3 DVD Drive will not eject
-layout: post
-permalink: /misc/how-to-fix-the-issue-when-the-ps3-dvd-drive-will-not-eject/
+date: 2012-05-31 00:00:00 +12:00
+permalink: "/misc/how-to-fix-the-issue-when-the-ps3-dvd-drive-will-not-eject/"
 categories:
-  - Misc
+- Misc
+layout: post
 ---
+
   1. At the back of the PS3, **turn** the **Power** switch **OFF**
   2. **Hold** down the **Eject** Power and **Power** button at the same time.
   3. While **holding** down both the eject and power buttons, **switch** the PS3 **on** (Switch at the back)

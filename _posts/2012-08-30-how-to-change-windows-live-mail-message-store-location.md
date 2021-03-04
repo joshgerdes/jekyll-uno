@@ -1,32 +1,33 @@
 ---
-id: 1593
 title: How to change Windows Live Mail Message Store Location
-date: 2012-08-30T14:20:37+00:00
+date: 2012-08-31 02:20:37 +12:00
+permalink: "/win/how-to-change-windows-live-mail-message-store-location/"
+categories:
+- Windows
+id: 1593
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1593
-permalink: /win/how-to-change-windows-live-mail-message-store-location/
 dsq_thread_id:
-  - "1021371064"
+- '1021371064'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "11"
-categories:
-  - Windows
+- '11'
 ---
+
 Follow the instructions below to change the Windows Live Mail message store.
 
 &nbsp;

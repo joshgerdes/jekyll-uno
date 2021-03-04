@@ -1,9 +1,11 @@
 ---
 title: NZ Cellphone Carrier APN Settings
-permalink: /misc/nz-cellphone-carrier-apn-settings/
+date: 2012-03-30 00:00:00 +13:00
+permalink: "/misc/nz-cellphone-carrier-apn-settings/"
 categories:
-  - Misc
+- Misc
 ---
+
 **Telecom XT**
   
 Mobile Data – Telecom XT APN

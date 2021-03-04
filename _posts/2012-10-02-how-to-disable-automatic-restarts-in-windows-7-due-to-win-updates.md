@@ -1,32 +1,33 @@
 ---
-id: 1470
 title: How to disable automatic restarts in Windows 7 due to Windows Updates
-date: 2012-10-02T03:47:38+00:00
+date: 2012-10-02 16:47:38 +13:00
+permalink: "/win/how-to-disable-automatic-restarts-in-windows-7-due-to-win-updates/"
+categories:
+- Windows
+id: 1470
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1470
-permalink: /win/how-to-disable-automatic-restarts-in-windows-7-due-to-win-updates/
 dsq_thread_id:
-  - "912387543"
+- '912387543'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Windows
+- '5'
 ---
+
 &nbsp;
 
 <ol start="1">

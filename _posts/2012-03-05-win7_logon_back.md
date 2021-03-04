@@ -1,9 +1,11 @@
 ---
 title: Change the Windows 7 Logon Background
-permalink: /win/win7_logon_back/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/win7_logon_back/"
 categories:
-  - Windows
+- Windows
 ---
+
 Want to know how to change your Windows 7 Logon background to something a bit more modern/fancy? Follow the options below.
 
   1. Launch **Regedit**, and browse to &#8216;**HKEY\_LOCAL\_MACHINESoftwareMicrosoftWindowsCurrentVersionAuthenticationLogonUIBackground**&#8216;.

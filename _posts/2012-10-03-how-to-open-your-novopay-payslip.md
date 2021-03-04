@@ -1,38 +1,39 @@
 ---
-id: 2437
 title: How to open your Novopay Payslip
-date: 2012-10-03T11:29:08+00:00
+date: 2012-10-04 00:29:08 +13:00
+permalink: "/misc/how-to-open-your-novopay-payslip/"
+categories:
+- Misc
+id: 2437
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2437
-permalink: /misc/how-to-open-your-novopay-payslip/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "4871009394"
+- '4871009394'
 slide_template:
-  - default
+- default
 sidebar_value:
-  - Default Sidebar
+- Default Sidebar
 sidebar_position_value:
-  - right
+- right
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "81"
-categories:
-  - Misc
+- '81'
 ---
+
 The Novopay payslip is a PDF _(portable document format)_ and requires <a title="Acrobat Reader" href="http://get.adobe.com/uk/reader/" target="_blank">Acrobat Reader to ru</a>n.
 
   1. When you open your email payslip and click on the attachment (which is your payslip) you will be prompted with having to type in a password.

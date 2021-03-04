@@ -1,10 +1,12 @@
 ---
 title: How to set Gmail to be your default Mail client in Firefox
-permalink: /misc/gmail-default-mail-client-in-firefox/
+date: 2012-04-13 00:00:00 +12:00
+permalink: "/misc/gmail-default-mail-client-in-firefox/"
 categories:
-  - Misc
-  - Windows
+- Misc
+- Windows
 ---
+
 If you have Gmail and use the Firefox web browser, having gmail as your default email client for typing out emails will be handy and save alot of time. Here is how you do it.
 
   1. Open Firefox

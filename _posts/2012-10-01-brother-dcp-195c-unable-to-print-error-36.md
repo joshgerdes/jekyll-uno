@@ -1,32 +1,33 @@
 ---
-id: 1474
 title: Brother DCP 195C Unable to Print Error 36
-date: 2012-10-01T10:05:01+00:00
+date: 2012-10-01 23:05:01 +13:00
+permalink: "/misc/brother-dcp-195c-unable-to-print-error-36/"
+categories:
+- Misc
+id: 1474
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1474
-permalink: /misc/brother-dcp-195c-unable-to-print-error-36/
 dsq_thread_id:
-  - "4791006192"
+- '4791006192'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "268"
-categories:
-  - Misc
+- '268'
 ---
+
 _In order to fix this issue you need to reset the Ink Waste counter, which is an ink counter that monitors how many prints that it has available on that one Ink Cartridge. Follow the methods below to repair this:_
 
 <ol start="1">

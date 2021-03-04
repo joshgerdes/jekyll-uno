@@ -1,32 +1,33 @@
 ---
-id: 2501
 title: How to replace the LCD on a Compaq CQ57
-date: 2012-11-05T08:33:11+00:00
+date: 2012-11-05 21:33:11 +13:00
+permalink: "/misc/cq57_lcd_replacement/"
+categories:
+- Misc
+id: 2501
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2501
-permalink: /misc/cq57_lcd_replacement/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "4927489491"
+- '4927489491'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "8"
-categories:
-  - Misc
+- '8'
 ---
+
 What you need
 
   *  Flat Head Screw-Driver

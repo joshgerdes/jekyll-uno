@@ -1,9 +1,11 @@
 ---
 title: Skryim crashes when making new game Fix
-permalink: /win/skryim-crashes-when-making-new-game-fix/
+date: 2012-04-26 00:00:00 +12:00
+permalink: "/win/skryim-crashes-when-making-new-game-fix/"
 categories:
-  - Windows
+- Windows
 ---
+
 Having issues with Skyrim, when you attempt to make a new game and it crashes? This is how I fixed it.
 
   1. Click Start

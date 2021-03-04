@@ -1,33 +1,34 @@
 ---
-id: 2454
 title: Error 921 Installing Android Apps
-date: 2012-10-15T08:51:37+00:00
+date: 2012-10-15 21:51:37 +13:00
+permalink: "/mob/error-921-installing-android-apps/"
+categories:
+- Android
+- Mobile
+id: 2454
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2454
-permalink: /mob/error-921-installing-android-apps/
 mfn-post-love:
-  - "0"
+- '0'
 dsq_thread_id:
-  - "2469810441"
+- '2469810441'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 post_views_count:
-  - "11"
-categories:
-  - Android
-  - Mobile
+- '11'
 ---
+
 &nbsp;
 
 &nbsp;

@@ -1,9 +1,11 @@
 ---
-title: 'Virtual Box   &#8216;Failed, trying without DKMS&#8221;'
-permalink: /linux/virtual-box-failed-trying-without-dkms/
+title: Virtual Box   &#8216;Failed, trying without DKMS&#8221;
+date: 2012-03-08 00:00:00 +13:00
+permalink: "/linux/virtual-box-failed-trying-without-dkms/"
 categories:
-  - Linux
+- Linux
 ---
+
 This means simply, you are missing the <a title="Dynamic Kernel Module Support" href="http://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support" target="_blank">dkms </a>package.
 
 **Ubuntu**

@@ -1,9 +1,11 @@
 ---
 title: Remote assist Xenapp users
-permalink: /win/remote-assist-xenapp-users/
+date: 2014-04-27 00:00:00 +12:00
+permalink: "/win/remote-assist-xenapp-users/"
 categories:
-  - Windows
+- Windows
 ---
+
 Due to inconsistencies in Microsoft’s remote assistance and dual monitor technologies – there is an incompatibility between Server 2008 R2 and some Windows client operating systems – not allowing you to use Citrix tools to shadow and control XenApp sessions &#8211; follow the quick guide below to remote assist Xenapp users.
 
 &nbsp;

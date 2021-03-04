@@ -1,32 +1,33 @@
 ---
-id: 1038
 title: Enable Javascript in Internet Explorer
-date: 2012-09-06T08:42:19+00:00
+date: 2012-09-06 20:42:19 +12:00
+permalink: "/win/enable-javascript-ie/"
+categories:
+- Windows
+id: 1038
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1038
-permalink: /win/enable-javascript-ie/
 dsq_thread_id:
-  - "4815420127"
+- '4815420127'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "90"
-categories:
-  - Windows
+- '90'
 ---
+
 <div>
   Problems running Javascript and want to enable it? This is how you do it.
 </div>

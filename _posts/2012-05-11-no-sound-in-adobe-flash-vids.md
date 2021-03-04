@@ -1,9 +1,11 @@
 ---
 title: No Sound in Adobe Flash Videos
-permalink: /win/no-sound-in-adobe-flash-vids/
+date: 2012-05-11 00:00:00 +12:00
+permalink: "/win/no-sound-in-adobe-flash-vids/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Click Start
   2. Click Run
   3. Type in:  cmd.exe

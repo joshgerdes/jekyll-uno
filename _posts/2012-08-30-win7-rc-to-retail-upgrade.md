@@ -1,32 +1,33 @@
 ---
-id: 3075
 title: Windows 7 RC to Retail Upgrade
-date: 2012-08-30T14:59:55+00:00
+date: 2012-08-31 02:59:55 +12:00
+permalink: "/win/win7-rc-to-retail-upgrade/"
+categories:
+- Windows
+id: 3075
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1597
-permalink: /win/win7-rc-to-retail-upgrade/
 dsq_thread_id:
-  - "1027963182"
+- '1027963182'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "9"
-categories:
-  - Windows
+- '9'
 ---
+
 &nbsp;
 
 <ol start="1">

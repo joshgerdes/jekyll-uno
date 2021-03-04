@@ -1,73 +1,74 @@
 ---
-id: 2564
 title: iPhone/iPod – App Store is in Chinese
-date: 2012-12-17T08:38:52+00:00
+date: 2012-12-17 21:38:52 +13:00
+permalink: "/mob/iphoneipod-app-store-is-in-chinese/"
+categories:
+- iOS
+- Mobile
+id: 2564
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2564
-permalink: /mob/iphoneipod-app-store-is-in-chinese/
 mfn-post-love:
-  - "0"
+- '0'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2581581263"
+- '2581581263'
 textfalse:
-  - ""
+- ''
 background_selector_orientation:
-  - full_width_layout
+- full_width_layout
 boxed_layout_shadow_size:
-  - "0"
+- '0'
 boxed_layout_shadow_intensity:
-  - "0"
+- '0'
 body_color_rgba:
-  - "1"
+- '1'
 body_source:
-  - no-image
+- no-image
 body_parallax:
-  - 'false'
+- 'false'
 page_color_rgba:
-  - "1"
+- '1'
 page_source:
-  - no-image
+- no-image
 page_parallax:
-  - 'false'
+- 'false'
 header_color_rgba:
-  - "1"
+- '1'
 header_source:
-  - no-image
+- no-image
 header_parallax:
-  - 'false'
+- 'false'
 banner_color_rgba:
-  - "1"
+- '1'
 banner_source:
-  - no-image
+- no-image
 banner_parallax:
-  - 'false'
+- 'false'
 footer_color_rgba:
-  - "1"
+- '1'
 footer_source:
-  - no-image
+- no-image
 footer_parallax:
-  - 'false'
+- 'false'
 enable_noti_bar:
-  - "-1"
+- "-1"
 post_views_count:
-  - "10"
-categories:
-  - iOS
-  - Mobile
+- '10'
 ---
+
   1. Launch **App Store**
   2. Select **Featured** _(left most option – down bottom)_
   3. Scroll to the bottom and select your **account** _(the button is centered and long)_

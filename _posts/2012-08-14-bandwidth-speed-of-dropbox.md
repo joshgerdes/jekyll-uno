@@ -1,38 +1,39 @@
 ---
-id: 1550
 title: Limit the bandwidth speed of Dropbox
-date: 2012-08-14T11:47:20+00:00
+date: 2012-08-14 23:47:20 +12:00
+permalink: "/win/bandwidth-speed-of-dropbox/"
+categories:
+- Windows
+id: 1550
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1550
-permalink: /win/bandwidth-speed-of-dropbox/
 dsq_thread_id:
-  - "4936396469"
+- '4936396469'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 slide_template:
-  - default
+- default
 sidebar_value:
-  - Default Sidebar
+- Default Sidebar
 sidebar_position_value:
-  - right
+- right
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "13"
-categories:
-  - Windows
+- '13'
 ---
+
 _This is how to limit the bandwidth speed of both your Uploads & Downloads for Dropbox_
 
 <ol start="1">

@@ -1,9 +1,11 @@
 ---
 title: Automatically accept Meeting Requests in Outlook
-permalink: /win/meeting-requests-in-outlook/
+date: 2014-04-27 00:00:00 +12:00
+permalink: "/win/meeting-requests-in-outlook/"
 categories:
-  - Windows
+- Windows
 ---
+
 Have more emails in your inbox than you can read? Sometimes those all important Meeting requests can be missed – still waiting to be accepted or declined. Outlook includes Resource Scheduling options to automatically accept meeting requests in Outlook or to wait for the request to be accepted or declined manually.
 
   1. Open **Outlook**

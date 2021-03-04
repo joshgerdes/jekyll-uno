@@ -1,9 +1,11 @@
 ---
-title: 'Export &#038; Import Windows XP Theme'
-permalink: /win/export-import-windows-xp-theme/
+title: Export &#038; Import Windows XP Theme
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/export-import-windows-xp-theme/"
 categories:
-  - Windows
+- Windows
 ---
+
 **Export**
 
   1. Right-click the desktop

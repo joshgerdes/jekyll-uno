@@ -1,11 +1,13 @@
 ---
 title: How to install Google Apps onto CyanogenMod
-layout: post
-permalink: /mob/how-to-install-google-apps-onto-cyanogenmod/
+date: 2013-12-17 00:00:00 +13:00
+permalink: "/mob/how-to-install-google-apps-onto-cyanogenmod/"
 categories:
-  - Android
-  - Mobile
+- Android
+- Mobile
+layout: post
 ---
+
 Note: This is usually – for the nightly builds. The stable builds seem to have Google integration.
 
 Note: Please backup your phone beforehand – I take no responsibility if your phone fails to boot.

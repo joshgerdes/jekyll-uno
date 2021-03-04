@@ -1,32 +1,33 @@
 ---
-id: 2456
 title: AppHangXPro Internet Explorer 9
-date: 2012-10-15T08:55:11+00:00
+date: 2012-10-15 21:55:11 +13:00
+permalink: "/win/apphangxpro-internet-explorer-9/"
+categories:
+- Windows
+id: 2456
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2456
-permalink: /win/apphangxpro-internet-explorer-9/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "4885373550"
+- '4885373550'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "32"
-categories:
-  - Windows
+- '32'
 ---
+
 _This issue commonly occurs on websites such as Facebook and Internet Explorer 9_
 
   1. Open Internet Explorer 9

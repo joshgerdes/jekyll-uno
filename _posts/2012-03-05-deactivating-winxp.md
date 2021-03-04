@@ -1,9 +1,11 @@
 ---
 title: Deactivating Windows XP
-permalink: /win/deactivating-winxp/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/deactivating-winxp/"
 categories:
-  - Windows
+- Windows
 ---
+
 Deactivating Windows XP can be useful especially when moving the Windows XP install from one computer to another as it makes Windows activation easier and more automated.
 
 Follow the simple guide below to make the necessary Registry change to deactivate your Windows XP version.

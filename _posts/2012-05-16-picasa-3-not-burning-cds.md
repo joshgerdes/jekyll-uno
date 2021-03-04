@@ -1,9 +1,11 @@
 ---
 title: Picasa 3 Not Burning CDs
-permalink: /win/picasa-3-not-burning-cds/
+date: 2012-05-16 00:00:00 +12:00
+permalink: "/win/picasa-3-not-burning-cds/"
 categories:
-  - Windows
+- Windows
 ---
+
 First  you need to uninstall Picasa, follow the guide below to do this:
 
   1. Click Start

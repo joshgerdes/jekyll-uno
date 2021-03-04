@@ -1,32 +1,33 @@
 ---
+title: Google Apps &#8211; How to add pages to headings
+date: 2012-10-08 22:47:05 +13:00
+permalink: "/misc/google-apps-how-to-add-pages-to-top-site-header/"
+categories:
+- Misc
 id: 2448
-title: 'Google Apps &#8211; How to add pages to headings'
-date: 2012-10-08T09:47:05+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2448
-permalink: /misc/google-apps-how-to-add-pages-to-top-site-header/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "1072398112"
+- '1072398112'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Misc
+- '5'
 ---
+
 To add a page to the top navigation (tabs) following the instructions below:
 
 First you must have already created the page you want to add.

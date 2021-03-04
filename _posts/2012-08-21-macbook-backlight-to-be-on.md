@@ -1,32 +1,33 @@
 ---
-id: 1571
 title: Set the Macbook Keyboard Back-light to be on permanently
-date: 2012-08-21T11:56:34+00:00
+date: 2012-08-21 23:56:34 +12:00
+permalink: "/osx/macbook-backlight-to-be-on/"
+categories:
+- Mac OSX
+id: 1571
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1571
-permalink: /osx/macbook-backlight-to-be-on/
 dsq_thread_id:
-  - "945625980"
+- '945625980'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "4"
-categories:
-  - Mac OSX
+- '4'
 ---
+
 <ol start="1">
   <li>
     <strong>Open</strong> <strong>Finder</strong>

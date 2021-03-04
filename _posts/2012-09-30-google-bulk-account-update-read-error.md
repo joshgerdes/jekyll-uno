@@ -1,32 +1,33 @@
 ---
+title: Google Bulk Account Update &#8220;read error&#8221;
+date: 2012-10-01 03:01:08 +13:00
+permalink: "/misc/google-bulk-account-update-read-error/"
+categories:
+- Misc
 id: 1446
-title: 'Google Bulk Account Update &#8220;read error&#8221;'
-date: 2012-09-30T14:01:08+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1446
-permalink: /misc/google-bulk-account-update-read-error/
 dsq_thread_id:
-  - "864818655"
+- '864818655'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "6"
-categories:
-  - Misc
+- '6'
 ---
+
 Trying to upload a CSV file to get Google to create multiple users with the email address, first name, and last name & password fields and getting the &#8220;read error&#8221; trying to upload. This is how I fixed it:
 
 <ol start="1">

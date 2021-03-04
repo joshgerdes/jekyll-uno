@@ -1,10 +1,12 @@
 ---
 title: How to install Vinyl Laptop Skins
-layout: post
-permalink: /misc/vinyl-laptop-skins/
+date: 2012-03-06 00:00:00 +13:00
+permalink: "/misc/vinyl-laptop-skins/"
 categories:
-  - Misc
+- Misc
+layout: post
 ---
+
 Start with a clean laptop and a clean, flat working surface. To clean your laptop&#8217;s external surface, we recommend a damp lint-free cloth. Basically, you want to make sure your laptop is dry and free from any oil, dirt, or residue before beginning the skin installation.
 
   1. Carefully remove the laptop skin from its backing, with each person holding 2 corners. Hold the skin taut (but don&#8217;t pull!) and line it up over the top of the laptop, aligning the corners.

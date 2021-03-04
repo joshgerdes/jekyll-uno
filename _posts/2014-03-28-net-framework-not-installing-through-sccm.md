@@ -1,9 +1,11 @@
 ---
-title: .NET Framework not installing through SCCM
-permalink: /win/net-framework-not-installing-through-sccm/
+title: ".NET Framework not installing through SCCM"
+date: 2014-03-28 00:00:00 +13:00
+permalink: "/win/net-framework-not-installing-through-sccm/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Click Start
   2. Click Run and type in: services.msc
   3. Stop the Automatic Update service

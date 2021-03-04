@@ -1,11 +1,13 @@
 ---
 title: How to import Sketchup Model into ZBrush using 3DS Max
-layout: post
-permalink: /misc/how-to-import-sketchup-model-into-zbrush-using-3ds-max/
+date: 2012-05-21 00:00:00 +12:00
+permalink: "/misc/how-to-import-sketchup-model-into-zbrush-using-3ds-max/"
 categories:
-  - Misc
-  - Windows
+- Misc
+- Windows
+layout: post
 ---
+
   1. Open Sketchup
   2. Click File
   3. Click Export

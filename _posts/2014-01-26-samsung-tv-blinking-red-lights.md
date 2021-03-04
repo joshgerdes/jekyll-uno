@@ -1,9 +1,11 @@
 ---
 title: Samsung TV – Blinking Red Lights
-permalink: /misc/samsung-tv-blinking-red-lights/
+date: 2014-01-26 00:00:00 +13:00
+permalink: "/misc/samsung-tv-blinking-red-lights/"
 categories:
-  - Misc
+- Misc
 ---
+
   1. Unplug your TV from the power for 5 minutes to allow for power capacitors to clear charge. 
   2. Plug TV back into power and press the on button. 
 

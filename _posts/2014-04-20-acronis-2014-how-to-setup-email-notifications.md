@@ -1,9 +1,11 @@
 ---
-title: 'Acronis 2014 &#8211; How to setup email notifications'
-permalink: /win/acronis-2014-how-to-setup-email-notifications/
+title: Acronis 2014 &#8211; How to setup email notifications
+date: 2014-04-20 00:00:00 +12:00
+permalink: "/win/acronis-2014-how-to-setup-email-notifications/"
 categories:
-  - Windows
+- Windows
 ---
+
 To configure the email notifications in Acronis:
 
 1. Select the Send e-mail notifications about the operation state check box.

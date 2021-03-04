@@ -1,32 +1,33 @@
 ---
-id: 1409
 title: Remove Sidebar ads on Handycafe Client
-date: 2012-09-13T10:39:52+00:00
+date: 2012-09-13 22:39:52 +12:00
+permalink: "/win/rm-sidebar-ads-on-handycafe-client/"
+categories:
+- Windows
+id: 1409
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1409
-permalink: /win/rm-sidebar-ads-on-handycafe-client/
 dsq_thread_id:
-  - "4790308722"
+- '4790308722'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "989"
-categories:
-  - Windows
+- '989'
 ---
+
 In order to remove the Ads on the sidebar, we need to block them using an inbuilt list called the HOST file.
 
 &nbsp;

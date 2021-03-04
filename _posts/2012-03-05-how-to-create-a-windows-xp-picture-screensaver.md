@@ -1,9 +1,11 @@
 ---
 title: How to create a Windows XP Picture Screensaver
-permalink: /win/how-to-create-a-windows-xp-picture-screensaver/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/how-to-create-a-windows-xp-picture-screensaver/"
 categories:
-  - Windows
+- Windows
 ---
+
 How to create a Windows XP Picture Screensaver
 
   1. Right-click an empty spot on your desktop and then click **Properties**.

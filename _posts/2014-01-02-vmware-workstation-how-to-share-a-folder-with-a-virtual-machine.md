@@ -1,9 +1,11 @@
 ---
 title: VMWare Workstation – How to share a folder with a virtual machine
-permalink: /win/vmware-workstation-how-to-share-a-folder-with-a-virtual-machine/
+date: 2014-01-02 00:00:00 +13:00
+permalink: "/win/vmware-workstation-how-to-share-a-folder-with-a-virtual-machine/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. First up – you need to create a folder on the host machine. For this example we are using a folder on the Desktop. 
   2. Right click a blank space on the Desktop and select – New, Folder. 
   3. Name it: vmshared and press Enter 

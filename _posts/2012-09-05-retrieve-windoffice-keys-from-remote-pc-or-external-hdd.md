@@ -1,32 +1,33 @@
 ---
-id: 1613
 title: Retrieve Windows/Office Keys from Remote PC or External HDD
-date: 2012-09-05T11:00:38+00:00
+date: 2012-09-05 23:00:38 +12:00
+permalink: "/win/retrieve-windoffice-keys-from-remote-pc-or-external-hdd/"
+categories:
+- Windows
+id: 1613
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1613
-permalink: /win/retrieve-windoffice-keys-from-remote-pc-or-external-hdd/
 dsq_thread_id:
-  - "5090972682"
+- '5090972682'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "21"
-categories:
-  - Windows
+- '21'
 ---
+
 Using a Windows utility called ProduKey you can retrieve the product keys for Microsoft Windows and Office.
 
 <ol start="1">

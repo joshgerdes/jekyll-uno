@@ -1,32 +1,33 @@
 ---
-id: 2480
 title: Google Chrome – Your Profile Could Not Be Opened Correctly
-date: 2012-10-24T11:46:32+00:00
+date: 2012-10-25 00:46:32 +13:00
+permalink: "/win/google-chrome-your-profile-could-not-be-opened-correctly/"
+categories:
+- Windows
+id: 2480
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2480
-permalink: /win/google-chrome-your-profile-could-not-be-opened-correctly/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "2444747972"
+- '2444747972'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "9"
-categories:
-  - Windows
+- '9'
 ---
+
 Every time you open Google Chrome you’re getting the “Your profile could not be opened correctly” error? This is how I fixed it.
 
   1. Open **My Computer/Computer**

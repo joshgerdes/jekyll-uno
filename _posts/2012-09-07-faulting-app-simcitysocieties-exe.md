@@ -1,32 +1,33 @@
 ---
-id: 1051
 title: 'Faulting application name: SimCitySocieties.exe'
-date: 2012-09-07T06:26:44+00:00
+date: 2012-09-07 18:26:44 +12:00
+permalink: "/win/faulting-app-simcitysocieties-exe/"
+categories:
+- Windows
+id: 1051
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1051
-permalink: /win/faulting-app-simcitysocieties-exe/
 dsq_thread_id:
-  - "2431745456"
+- '2431745456'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "17"
-categories:
-  - Windows
+- '17'
 ---
+
 Getting the &#8220;Faulting application name: SimCitySocieties.exe, version: 1.0.4.243&#8221; and cannot play your game? Try the fix below.
 
 _Usually caused by the Tradmark characters in a folder name &#8220;™&#8221; which Windows does not support._

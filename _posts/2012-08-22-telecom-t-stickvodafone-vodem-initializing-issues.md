@@ -1,32 +1,33 @@
 ---
-id: 1576
 title: How to fix Telecom T-Stick/Vodafone Vodem Initializing issues
-date: 2012-08-22T10:29:18+00:00
+date: 2012-08-22 22:29:18 +12:00
+permalink: "/win/telecom-t-stickvodafone-vodem-initializing-issues/"
+categories:
+- Windows
+id: 1576
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1576
-permalink: /win/telecom-t-stickvodafone-vodem-initializing-issues/
 dsq_thread_id:
-  - "4917194398"
+- '4917194398'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "46"
-categories:
-  - Windows
+- '46'
 ---
+
 _Make sure you have credit on your Vodem/T-Stick. This is the common cause of why the modems will not load webpages._
 
 <ol start="1">

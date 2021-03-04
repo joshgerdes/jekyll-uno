@@ -1,9 +1,11 @@
 ---
 title: How to access Gateways recovery partition.
-permalink: /misc/gateways-recovery-partition/
+date: 2012-03-08 00:00:00 +13:00
+permalink: "/misc/gateways-recovery-partition/"
 categories:
-  - Misc
+- Misc
 ---
+
 Want to restore a Gateway computer back to factory settings? This is how you access the Gateway recovery partition.
 
   1. Turn **computer** **on**

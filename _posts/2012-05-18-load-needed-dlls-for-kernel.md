@@ -1,9 +1,11 @@
 ---
 title: Load needed DLLs for Kernel
-layout: post
+date: 2012-05-18 00:00:00 +12:00
 categories:
-  - Windows
+- Windows
+layout: post
 ---
+
   1. First thing you need to have a Windows XP CD
   2. Put CD in drive and **boot** from it, you may have to press ESC or F8 to open Boot Prompt to select CD Drive.
   3. Once it has loaded choose Recovery Console

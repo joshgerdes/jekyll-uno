@@ -1,9 +1,11 @@
 ---
 title: How to forcefully clear the Trash in Linux
-permalink: /linux/clear-trash-linux/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/linux/clear-trash-linux/"
 categories:
-  - Linux
+- Linux
 ---
+
 <p class="Style1">
   The Trash stores your recently deleted files and folders which you can usually Right click and clear to clear the Trash in Linux  – however I have ran into problems where even though you clear the Trash the files and folders you want deleted remain. Good news is that you can force the Trash to be cleared by using the Linux terminal.
 </p>

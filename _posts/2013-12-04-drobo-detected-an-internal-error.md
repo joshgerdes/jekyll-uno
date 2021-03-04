@@ -1,9 +1,11 @@
 ---
 title: Drobo Detected an Internal Error
-permalink: /misc/drobo-detected-an-internal-error/
+date: 2013-12-04 00:00:00 +13:00
+permalink: "/misc/drobo-detected-an-internal-error/"
 categories:
-  - Misc
+- Misc
 ---
+
 If you just had this error and are GASPING like I was at 10PM at night – never fear there is still hope!
 
 Note: Tested with the Drobo 5N.

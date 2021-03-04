@@ -1,9 +1,11 @@
 ---
-title: 'Default Modem &#038; Router Passwords'
-permalink: /misc/routermodem-passwords/
+title: Default Modem &#038; Router Passwords
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/misc/routermodem-passwords/"
 categories:
-  - Misc
+- Misc
 ---
+
 #### Below is a list of default ADSL Router and Modem passwords. {.Style1}
 
 <p class="Style1">

@@ -1,24 +1,25 @@
 ---
-id: 2795
 title: Excel 2010 – Adjusting Trusted Publisher’s and Macro/Visual Basic Scripting
-date: 2013-12-01T21:05:33+00:00
+date: 2013-12-02 10:05:33 +13:00
+permalink: "/win/excel-2010-adjusting-trusted-publishers-and-macrovisual-basic-scripting/"
+categories:
+- Windows
+id: 2795
 author: Luke
 layout: post
 guid: http://www.techremedy.co.nz/?p=2795
-permalink: /win/excel-2010-adjusting-trusted-publishers-and-macrovisual-basic-scripting/
 slide_template:
-  - default
+- default
 sidebar_value:
-  - Default Sidebar
+- Default Sidebar
 sidebar_position_value:
-  - right
+- right
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "11"
-categories:
-  - Windows
+- '11'
 ---
+
 <ol style="margin-left: 39pt">
   <li>
     <span style="font-family: Trebuchet MS;font-size: 10pt">Open <strong>Excel 2010</strong><br /> </span>

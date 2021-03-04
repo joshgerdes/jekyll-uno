@@ -1,9 +1,11 @@
 ---
 title: How to disable the Windows XP Boot Disk
-permalink: /win/how-to-disable-the-windows-xp-boot-disk/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/how-to-disable-the-windows-xp-boot-disk/"
 categories:
-  - Windows
+- Windows
 ---
+
 Disable the Windows XP Boot Disk
 
   1. Click **Start** and then click **Run**; **type** in: **msconfig**

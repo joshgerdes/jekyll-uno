@@ -1,32 +1,33 @@
 ---
+title: "“Out of Memory” Fix when Upgrading to Windows 2000 from Windows 98SE"
+date: 2012-10-01 06:19:54 +13:00
+permalink: "/win/out-of-memory-fix-when-upgrading-to-win2000-from-win98se/"
+categories:
+- Windows
 id: 1423
-title: “Out of Memory” Fix when Upgrading to Windows 2000 from Windows 98SE
-date: 2012-09-30T17:19:54+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1423
-permalink: /win/out-of-memory-fix-when-upgrading-to-win2000-from-win98se/
 dsq_thread_id:
-  - "2433287676"
+- '2433287676'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "11"
-categories:
-  - Windows
+- '11'
 ---
+
 <div>
   <ol start="1">
     <li>

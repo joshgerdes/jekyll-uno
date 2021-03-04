@@ -1,32 +1,33 @@
 ---
-id: 3082
 title: How to access the HDD on a HP Mini
-date: 2012-12-14T13:21:01+00:00
+date: 2012-12-15 02:21:01 +13:00
+permalink: "/misc/how-to-access-the-hdd-on-a-hp-mini/"
+categories:
+- Misc
+id: 3082
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2560
-permalink: /misc/how-to-access-the-hdd-on-a-hp-mini/
 dsq_thread_id:
-  - "4923464356"
+- '4923464356'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "12"
-categories:
-  - Misc
+- '12'
 ---
+
   1. Turn the laptop upside down  (_make sure it is resting against a soft surface, such as a towel.)_
   2. **Remove** the **battery**
   3. Behind the battery is an **orange** **slider**.

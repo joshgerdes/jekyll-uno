@@ -1,9 +1,11 @@
 ---
 title: You have exceeded your profile space in Windows XP
-permalink: /win/exceeded-your-profile-space-in-win-xp/
+date: 2012-05-11 00:00:00 +12:00
+permalink: "/win/exceeded-your-profile-space-in-win-xp/"
 categories:
-  - Windows
+- Windows
 ---
+
 You need to make a registry file and load it to fix the issues causing this problem, follow the instructions below:
 
   1. Click Start

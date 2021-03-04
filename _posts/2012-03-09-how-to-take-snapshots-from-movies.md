@@ -1,9 +1,11 @@
 ---
 title: How to take Snapshots from Movies
-permalink: /win/how-to-take-snapshots-from-movies/
+date: 2012-03-09 00:00:00 +13:00
+permalink: "/win/how-to-take-snapshots-from-movies/"
 categories:
-  - Windows
+- Windows
 ---
+
 Ever wanted to capture that perfect scene from a movie or video clip? Heres how to do it.
 
 **Using Windows Media Player**

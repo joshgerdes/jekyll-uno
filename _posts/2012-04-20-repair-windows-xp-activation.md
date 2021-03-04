@@ -1,9 +1,11 @@
 ---
 title: Repair Windows XP Activation
-permalink: /win/repair-windows-xp-activation/
+date: 2012-04-20 00:00:00 +12:00
+permalink: "/win/repair-windows-xp-activation/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Click Start
   2. Click Run
   3. Type in: **_regsvr32.exe regwizc.dll_**

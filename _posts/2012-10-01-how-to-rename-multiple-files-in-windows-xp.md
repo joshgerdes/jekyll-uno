@@ -1,32 +1,33 @@
 ---
-id: 1390
 title: How to rename multiple files in Windows XP
-date: 2012-10-01T09:44:02+00:00
+date: 2012-10-01 22:44:02 +13:00
+permalink: "/win/how-to-rename-multiple-files-in-windows-xp/"
+categories:
+- Windows
+id: 1390
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1390
-permalink: /win/how-to-rename-multiple-files-in-windows-xp/
 dsq_thread_id:
-  - "4842385502"
+- '4842385502'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "17"
-categories:
-  - Windows
+- '17'
 ---
+
 <ol start="1">
   <li>
     First <strong>make</strong> <strong>sure</strong> all the <strong>files</strong> are in the <strong>same</strong> <strong>folder</strong>

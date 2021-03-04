@@ -1,32 +1,33 @@
 ---
-id: 1604
 title: Scrivener Crashing
-date: 2012-08-31T10:58:32+00:00
+date: 2012-08-31 22:58:32 +12:00
+permalink: "/osx/scrivener-crashing/"
+categories:
+- Mac OSX
+id: 1604
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1604
-permalink: /osx/scrivener-crashing/
 dsq_thread_id:
-  - "2547277125"
+- '2547277125'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "10"
-categories:
-  - Mac OSX
+- '10'
 ---
+
 Attempting to open Scrivener and having the application closing on you, the common way to fix this is adjust the file permissions follow the instructions below to repair.
 
 <ol start="1">

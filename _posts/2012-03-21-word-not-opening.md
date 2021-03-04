@@ -1,9 +1,11 @@
 ---
 title: Howto Fix Word not opening
-permalink: /win/word-not-opening/
+date: 2012-03-21 00:00:00 +13:00
+permalink: "/win/word-not-opening/"
 categories:
-  - Windows
+- Windows
 ---
+
 Having problems opening Word? This usually occurs when the template that it uses to generate a new fresh page is corrupted. Follow the instructions below to fix:
 
   1. Open My Documents

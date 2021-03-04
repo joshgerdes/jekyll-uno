@@ -1,32 +1,33 @@
 ---
-id: 2676
 title: How to increase posts displayed in WordPress All Post page
-date: 2013-02-17T09:30:54+00:00
+date: 2013-02-17 22:30:54 +13:00
+permalink: "/misc/how-to-increase-posts-displayed-in-wordpress-all-post-page/"
+categories:
+- Misc
+id: 2676
 author: Luke
 layout: post
 guid: http://incinerate.co.nz/?p=2676
-permalink: /misc/how-to-increase-posts-displayed-in-wordpress-all-post-page/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "1087675400"
+- '1087675400'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "5"
-categories:
-  - Misc
+- '5'
 ---
+
 Do you want to display more then 20 posts in the All Posts list within WordPress? Follow the guide below to reveal the rest.
 
   1. Make sure you are logged into your WordPress account

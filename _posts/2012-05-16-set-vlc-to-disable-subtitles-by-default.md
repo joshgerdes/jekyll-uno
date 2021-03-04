@@ -1,10 +1,12 @@
 ---
 title: Set VLC to disable Subtitles by default
-permalink: /misc/set-vlc-to-disable-subtitles-by-default/
+date: 2012-05-16 00:00:00 +12:00
+permalink: "/misc/set-vlc-to-disable-subtitles-by-default/"
 categories:
-  - Misc
-  - Windows
+- Misc
+- Windows
 ---
+
   1. Open VideoLAN (VLC)
   2. Click **Tools**
   3. Click **Preferences**

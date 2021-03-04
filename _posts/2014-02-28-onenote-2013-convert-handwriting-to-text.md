@@ -1,9 +1,11 @@
 ---
 title: OneNote 2013 – Convert Handwriting to Text
-permalink: /win/onenote-2013-convert-handwriting-to-text/
+date: 2014-02-28 00:00:00 +13:00
+permalink: "/win/onenote-2013-convert-handwriting-to-text/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Click on Draw 
   2. Click on Type 
   3. Drag over your handwritten notes and click Ink to Text _(you can also right your click your selection and choose Ink to Text)_ 

@@ -1,32 +1,33 @@
 ---
+title: Cannot delete Slingshot Webmail &#8220;Quota filled&#8221;
+date: 2012-10-01 05:54:44 +13:00
+permalink: "/misc/cannot-delete-slingshot-webmail-quota-filled/"
+categories:
+- Misc
 id: 1456
-title: 'Cannot delete Slingshot Webmail &#8220;Quota filled&#8221;'
-date: 2012-09-30T16:54:44+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1456
-permalink: /misc/cannot-delete-slingshot-webmail-quota-filled/
 dsq_thread_id:
-  - "4816508755"
+- '4816508755'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "71"
-categories:
-  - Misc
+- '71'
 ---
+
 <ol start="1">
   <li>
     <strong>Log</strong> <strong>into</strong> Slingshots <a title="Slingshot Webmail" href="http://webmail.slingshot.co.nz/" target="_blank">webmail</a>

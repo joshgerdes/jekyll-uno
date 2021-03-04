@@ -1,32 +1,33 @@
 ---
-id: 1588
 title: SmartSound Quicktracks Plugin Issues
-date: 2012-08-28T12:06:34+00:00
+date: 2012-08-29 00:06:34 +12:00
+permalink: "/win/smartsound-quicktracks-plugin/"
+categories:
+- Windows
+id: 1588
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1588
-permalink: /win/smartsound-quicktracks-plugin/
 dsq_thread_id:
-  - "4849733981"
+- '4849733981'
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "24"
-categories:
-  - Windows
+- '24'
 ---
+
 This issue commonly occurs on DVD Flick installations but also known for other problems that deal with video codecs. Follow the steps below to repair:
 
 <ol start="1">

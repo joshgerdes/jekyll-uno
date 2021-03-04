@@ -1,32 +1,33 @@
 ---
-id: 2468
 title: Aspire One Keyboard Removal
-date: 2012-10-23T08:10:01+00:00
+date: 2012-10-23 21:10:01 +13:00
+permalink: "/misc/aspire-one-keyboard-removal/"
+categories:
+- Misc
+id: 2468
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2468
-permalink: /misc/aspire-one-keyboard-removal/
 omc_review_enable:
-  - "0"
+- '0'
 omc_user_ratings_visibility:
-  - "0"
+- '0'
 omc_review_type:
-  - stars
+- stars
 omc_criteria_display:
-  - 'n'
+- n
 omc_featured_post:
-  - "0"
+- '0'
 omc_comment_type:
-  - wp
+- wp
 dsq_thread_id:
-  - "1075863881"
+- '1075863881'
 mfn-post-love:
-  - "0"
+- '0'
 post_views_count:
-  - "6"
-categories:
-  - Misc
+- '6'
 ---
+
 Things you will need.
 
   * Small Razor Blade

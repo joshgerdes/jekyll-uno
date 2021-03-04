@@ -1,9 +1,11 @@
 ---
 title: How to Guide to using Nero Startsmart to burn CDs and DVDs
-permalink: /win/howto-guide-to-using-nero-startsmart-to-burn-cds-and-dvds/
+date: 2012-03-05 00:00:00 +13:00
+permalink: "/win/howto-guide-to-using-nero-startsmart-to-burn-cds-and-dvds/"
 categories:
-  - Windows
+- Windows
 ---
+
 **To Open Nero**
 
   1. Click **Start**

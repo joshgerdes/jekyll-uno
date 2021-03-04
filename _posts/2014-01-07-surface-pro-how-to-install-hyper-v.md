@@ -1,9 +1,11 @@
 ---
 title: Surface Pro – How to install Hyper-V
-permalink: /win/surface-pro-how-to-install-hyper-v/
+date: 2014-01-07 00:00:00 +13:00
+permalink: "/win/surface-pro-how-to-install-hyper-v/"
 categories:
-  - Windows
+- Windows
 ---
+
   1. Bring up the Metro Windows 8 interface <span style="font-size: 12pt;"><br /> </span>
   2. Type in: Programs & Features
   3. Select Turn Windows Features on or off on the left hand side menu

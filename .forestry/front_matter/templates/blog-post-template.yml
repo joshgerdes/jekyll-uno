@@ -14,5 +14,3 @@ fields:
 - type: list
   name: categories
   label: categories
-pages:
-- _posts/2021-03-27-test.md

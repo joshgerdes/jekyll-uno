@@ -11,6 +11,7 @@ fields:
 - type: text
   name: author
   label: author
+  default: Luke
 - type: list
   name: categories
   label: categories

@@ -5,6 +5,8 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    date_format: DD/MM/YYY
 - type: text
   name: title
   label: title

@@ -1,11 +1,9 @@
 ---
 title: Logon Process has failed to create the security options dialog
-date: 2012-03-25 00:00:00 +13:00
-permalink: "/win/logon-process-failed/"
+permalink: /win/logon-process-failed/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Click Start
   2. Click Run
   3. Type: msconfig

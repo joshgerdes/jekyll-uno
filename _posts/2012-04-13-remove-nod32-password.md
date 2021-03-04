@@ -1,11 +1,9 @@
 ---
 title: Remove NOD32 Password
-date: 2012-04-13 00:00:00 +12:00
-permalink: "/win/remove-nod32-password/"
+permalink: /win/remove-nod32-password/
 categories:
-- Windows
+  - Windows
 ---
-
 Follow the steps below to remove your Nod32 password, useful when trying to uninstall and cannot remember what it is.
 
   1. Click Start

@@ -1,34 +1,32 @@
 ---
-title: A program on your computer has corrupted IE8 default search provider settings
-  fix
-date: 2012-09-06 06:09:37 +12:00
-permalink: "/win/search-provider-settings-fix/"
-categories:
-- Windows
 id: 838
+title: A program on your computer has corrupted IE8 default search provider settings fix
+date: 2012-09-05T18:09:37+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=838
+permalink: /win/search-provider-settings-fix/
 dsq_thread_id:
-- '2432265137'
+  - "2432265137"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Windows
 ---
-
 Nothing causes more frustration, then when your favorite Internet Explorer search engine keeps resetting. This is how you fix it.
 
 &#8221; IE8 will reset the search provider setting to default setting of xxx search. IE8 will open the search provider dialog where you can change your search provider&#8221;.

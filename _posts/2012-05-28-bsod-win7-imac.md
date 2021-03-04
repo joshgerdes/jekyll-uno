@@ -1,12 +1,10 @@
 ---
 title: Black Screen on Windows 7 on an iMac
-date: 2012-05-28 00:00:00 +12:00
-permalink: "/osx/bsod-win7-imac/"
-categories:
-- Mac OSX
 layout: post
+permalink: /osx/bsod-win7-imac/
+categories:
+  - Mac OSX
 ---
-
 _This usually occurs due to problems with the nVidia drivers. Follow the prompts below to repair this._
 
   1. Put the Windows 7 DVD into your drive and restart and boot from the DVD

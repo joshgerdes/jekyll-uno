@@ -1,13 +1,11 @@
 ---
 title: How to install Appsync on a Jailbroken iOS Device
-date: 2012-05-28 00:00:00 +12:00
-permalink: "/mob/appsync-on-a-jailbroken-ios-device/"
-categories:
-- iOS
-- Mobile
 layout: post
+permalink: /mob/appsync-on-a-jailbroken-ios-device/
+categories:
+  - iOS
+  - Mobile
 ---
-
   1. Open **Cydia**
   2. Select **Manage**
   3. Select **Sources**

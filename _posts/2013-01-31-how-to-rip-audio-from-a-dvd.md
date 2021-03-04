@@ -1,33 +1,32 @@
 ---
-title: How to rip Audio from a DVD
-date: 2013-01-31 20:24:30 +13:00
-permalink: "/win/how-to-rip-audio-from-a-dvd/"
-categories:
-- Windows
 id: 2659
+title: How to rip Audio from a DVD
+date: 2013-01-31T07:24:30+00:00
 author: Luke
 layout: post
 guid: http://incinerate.co.nz/?p=2659
+permalink: /win/how-to-rip-audio-from-a-dvd/
 dsq_thread_id:
-- '2522389790'
+  - "2522389790"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Windows
 ---
-
 &nbsp;
 
 &nbsp;

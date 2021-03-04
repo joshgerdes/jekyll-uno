@@ -1,12 +1,10 @@
 ---
 title: How to setup delegation in VMWare Service Manager
-date: 2013-12-18 00:00:00 +13:00
-permalink: "/win/how-to-setup-delegation-in-vmware-service-manager/"
-categories:
-- Windows
 layout: post
+permalink: /win/how-to-setup-delegation-in-vmware-service-manager/
+categories:
+  - Windows
 ---
-
   1. Open VMWare Service Manager 
   2. Open the managers People record 
   3. On the left hand menu select Delegation 

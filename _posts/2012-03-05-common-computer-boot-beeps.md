@@ -1,11 +1,9 @@
 ---
 title: Common Computer Boot Beeps
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/misc/common-computer-boot-beeps/"
+permalink: /misc/common-computer-boot-beeps/
 categories:
-- Misc
+  - Misc
 ---
-
 Beep Code: Description of Problem:
 
 **No Beeps Short** &#8211; No power, Bad CPU/MB, Loose Peripherals

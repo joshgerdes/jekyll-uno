@@ -1,33 +1,32 @@
 ---
-title: Kaspersky Rescue Disk &#8211; Change Update Server Location
-date: 2012-10-18 01:07:25 +13:00
-permalink: "/misc/kaspersky-rescue-disk-change-update-server-location/"
-categories:
-- Misc
 id: 2461
+title: 'Kaspersky Rescue Disk &#8211; Change Update Server Location'
+date: 2012-10-17T12:07:25+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2461
+permalink: /misc/kaspersky-rescue-disk-change-update-server-location/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '2425036714'
+  - "2425036714"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '12'
+  - "12"
+categories:
+  - Misc
 ---
-
   1. Click **Settings**
   2. Click **My Update Centre**
   3. Click **Settings**

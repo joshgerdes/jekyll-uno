@@ -1,33 +1,32 @@
 ---
-title: Reset Windows 7 Security Permissions
-date: 2012-10-01 04:12:42 +13:00
-permalink: "/win/reset-windows-7-security-permissions/"
-categories:
-- Windows
 id: 1472
+title: Reset Windows 7 Security Permissions
+date: 2012-09-30T15:12:42+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1472
+permalink: /win/reset-windows-7-security-permissions/
 dsq_thread_id:
-- '2487885282'
+  - "2487885282"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Windows
 ---
-
 <ol start="1">
   <li>
     Click <strong>Start</strong>

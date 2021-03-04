@@ -1,11 +1,9 @@
 ---
 title: Windows 3.1 Nokia n95 Controls
-date: 2012-05-10 00:00:00 +12:00
-permalink: "/mob/win-3-1-nokia-n95-controls/"
+permalink: /mob/win-3-1-nokia-n95-controls/
 categories:
-- Mobile
+  - Mobile
 ---
-
 Running Windows 3.1 on your Nokia phone in DOSBox and forgot how to control it? The guide is below:
 
 Using the T9 Keypad

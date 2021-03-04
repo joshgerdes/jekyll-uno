@@ -1,11 +1,9 @@
 ---
 title: OSX Freezing when accessing Network Preferences
-date: 2012-03-21 00:00:00 +13:00
-permalink: "/osx/osx-freezing-accessing-network/"
+permalink: /osx/osx-freezing-accessing-network/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 This usually happens, when some of the OSX settings become corrupted. OSX can regenerate new settings, which should resolve your problem. Follow the settings below:
 
   1. Open **Finder**

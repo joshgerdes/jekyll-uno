@@ -1,33 +1,32 @@
 ---
-title: Raspberry Pi Media Centre
-date: 2012-08-21 03:48:34 +12:00
-permalink: "/misc/raspberry-pi-media-centre/"
-categories:
-- Misc
 id: 1562
+title: Raspberry Pi Media Centre
+date: 2012-08-20T15:48:34+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1562
+permalink: /misc/raspberry-pi-media-centre/
 dsq_thread_id:
-- '895974761'
+  - "895974761"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Misc
 ---
-
 _First off, you need a Raspberry Pi and an SD Card/Reader_
 
 <ol start="1">

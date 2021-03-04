@@ -1,11 +1,9 @@
 ---
 title: Online Virus Scanner services
-date: 2012-03-30 00:00:00 +13:00
-permalink: "/misc/online-virus-scanner/"
+permalink: /misc/online-virus-scanner/
 categories:
-- Misc
+  - Misc
 ---
-
   * <span>Online Virus Scanners ESET Online Scanner &#8211; <a class="smarterwiki-linkify" href="http://www.eset.com/onlinescan/index.php">http://www.eset.com/onlinescan/index.php</a> </span>
   * <span>McAfee Freescan &#8211; <a class="smarterwiki-linkify" href="http://us.mcafee.com/root/mfs/default.asp">http://us.mcafee.com/root/mfs/default.asp</a> </span>
   * <span>Panda Activescan &#8211; <a class="smarterwiki-linkify" href="http://www.pandasecurity.com/activescan/">http://www.pandasecurity.com/activescan/</a> </span>

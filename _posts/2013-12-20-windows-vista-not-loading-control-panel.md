@@ -1,12 +1,10 @@
 ---
 title: Windows Vista – Not loading Control Panel
-date: 2013-12-20 00:00:00 +13:00
-permalink: "/win/windows-vista-not-loading-control-panel/"
-categories:
-- Windows
 layout: post
+permalink: /win/windows-vista-not-loading-control-panel/
+categories:
+  - Windows
 ---
-
 Having problems when you try opening the Vista Control panel and all you see is the outline of the window? 
 
 Follow the instructions below to repair it. 

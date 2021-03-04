@@ -1,12 +1,10 @@
 ---
 title: Guide to using Hyper-V
-date: 2014-02-23 00:00:00 +13:00
-permalink: "/win/guide-to-using-hyper-v/"
+permalink: /win/guide-to-using-hyper-v/
+image: /wp-content/uploads/2014/02/Hyper-V-logo.png
 categories:
-- Windows
-image: "/wp-content/uploads/2014/02/Hyper-V-logo.png"
+  - Windows
 ---
-
 ### <span id="Introduction_to_Hyper-V">Introduction to Hyper-V</span>
 
 &nbsp;

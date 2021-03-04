@@ -1,33 +1,32 @@
 ---
-title: How to run Diablo 2 in Windows 7
-date: 2012-08-22 21:54:48 +12:00
-permalink: "/win/how-to-run-diablo-2-in-windows-7/"
-categories:
-- Windows
 id: 1574
+title: How to run Diablo 2 in Windows 7
+date: 2012-08-22T09:54:48+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1574
+permalink: /win/how-to-run-diablo-2-in-windows-7/
 dsq_thread_id:
-- '865035352'
+  - "865035352"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '14'
+  - "14"
+categories:
+  - Windows
 ---
-
 &nbsp;
 
 &nbsp;

@@ -1,12 +1,10 @@
 ---
 title: Clear Print Queue from Printer Installer
-date: 2014-03-27 00:00:00 +13:00
-permalink: "/misc/clear-print-queue-from-printer-installer/"
+permalink: /misc/clear-print-queue-from-printer-installer/
 categories:
-- Misc
-- Windows
+  - Misc
+  - Windows
 ---
-
   1. <b style="line-height: 1.5em">Open</b> <span style="line-height: 1.5em">the </span><b style="line-height: 1.5em">Printer Installer </b>admin interface
   2. **Login** with your Printer Installer details.
   3. You are now logged into the Printer Installer Admin panel

@@ -1,39 +1,38 @@
 ---
-title: Change your hostname in Ubuntu
-date: 2012-12-13 23:43:13 +13:00
-permalink: "/linux/change-your-hostname-in-ubuntu/"
-categories:
-- Linux
 id: 2553
+title: Change your hostname in Ubuntu
+date: 2012-12-13T10:43:13+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2553
+permalink: /linux/change-your-hostname-in-ubuntu/
 mfn-post-love:
-- '0'
+  - "0"
 dsq_thread_id:
-- '1059882284'
+  - "1059882284"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 slide_template:
-- default
+  - default
 sidebar_value:
-- Default Sidebar
+  - Default Sidebar
 sidebar_position_value:
-- right
+  - right
 post_views_count:
-- '8'
+  - "8"
+categories:
+  - Linux
 ---
-
 _Note: These instructions are for Ubuntu 12.10. Changing your host name in Ubuntu guide._
 
   1. Go to **System Settings**

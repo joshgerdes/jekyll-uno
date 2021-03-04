@@ -1,11 +1,9 @@
 ---
 title: How to mount a VHD in Windows 7
-date: 2014-03-06 00:00:00 +13:00
-permalink: "/win/how-to-mount-a-vhd-in-windows-7/"
+permalink: /win/how-to-mount-a-vhd-in-windows-7/
 categories:
-- Windows
+  - Windows
 ---
-
 Mounting a VHD _(Virtual Hard Disk)_ in Windows 7 is extremely useful and this technique can be used to recover files from a Windows system image. 
 
   1. Click Start 

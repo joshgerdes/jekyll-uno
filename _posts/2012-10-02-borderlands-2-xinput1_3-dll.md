@@ -1,34 +1,33 @@
 ---
-title: Borderlands 2 XINPUT1_3.dll
-date: 2012-10-03 00:24:24 +13:00
-permalink: "/misc/borderlands-2-xinput1_3-dll/"
-categories:
-- Misc
-- Windows
 id: 2424
+title: Borderlands 2 XINPUT1_3.dll
+date: 2012-10-02T11:24:24+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2424
+permalink: /misc/borderlands-2-xinput1_3-dll/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '2422786959'
+  - "2422786959"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '27'
+  - "27"
+categories:
+  - Misc
+  - Windows
 ---
-
 _“Missing file XINPUT1_3.dll” error while trying to load Borderlands 2 on PC?_
 
 &nbsp;

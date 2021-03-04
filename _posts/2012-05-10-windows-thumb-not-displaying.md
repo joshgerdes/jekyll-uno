@@ -1,11 +1,9 @@
 ---
 title: Windows Thumbnails not Displaying
-date: 2012-05-10 00:00:00 +12:00
-permalink: "/win/windows-thumb-not-displaying/"
+permalink: /win/windows-thumb-not-displaying/
 categories:
-- Windows
+  - Windows
 ---
-
 Click Start
   
 Click Run

@@ -1,11 +1,9 @@
 ---
 title: Unable to Remote Desktop into Computer
-date: 2014-04-27 00:00:00 +12:00
-permalink: "/win/unable-to-remote-desktop-into-computer/"
+permalink: /win/unable-to-remote-desktop-into-computer/
 categories:
-- Windows
+  - Windows
 ---
-
 There can be various reasons why people are unable to Remote Desktop into a Computer – one of the reasons could be they are not in the Remote Desktop users group on the local machine or the necessary services – for Remote Desktop connectivity aren’t enabled. Follow the guide below to make sure the services are fully enabled and up and running you can test one at a time.
 
   1. Open **Run**

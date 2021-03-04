@@ -1,11 +1,9 @@
 ---
 title: Share files on a Mac with Windows
-date: 2014-04-20 00:00:00 +12:00
-permalink: "/osx/share-files-on-a-mac-with-windows/"
+permalink: /osx/share-files-on-a-mac-with-windows/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 Share files on a Mac with Windows can be extremely useful and luckily for us extremely easy to setup and manage.
 
   1. Choose **Apple** menu

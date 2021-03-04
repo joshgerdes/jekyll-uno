@@ -1,36 +1,35 @@
 ---
-title: Restore your iPhone/iPad/iPod Touch Firmware
-date: 2013-02-26 22:12:38 +13:00
-permalink: "/osx/restore-your-iphoneipadipod-touch-firmware/"
-categories:
-- iOS
-- Mac OSX
-- Mobile
-- Windows
 id: 2697
+title: Restore your iPhone/iPad/iPod Touch Firmware
+date: 2013-02-26T09:12:38+00:00
 author: Luke
 layout: post
 guid: http://incinerate.co.nz/?p=2697
+permalink: /osx/restore-your-iphoneipadipod-touch-firmware/
 mfn-post-love:
-- '0'
+  - "0"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '2581574314'
+  - "2581574314"
 post_views_count:
-- '22'
+  - "22"
+categories:
+  - iOS
+  - Mac OSX
+  - Mobile
+  - Windows
 ---
-
 Warning: Following this method will erase all your data &#8211; including Contacts & Photos
 
 &nbsp;

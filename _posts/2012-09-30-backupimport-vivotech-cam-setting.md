@@ -1,33 +1,32 @@
 ---
-title: How to Backup/Import Vivotech Camera Settings
-date: 2012-10-01 03:27:43 +13:00
-permalink: "/win/backupimport-vivotech-cam-setting/"
-categories:
-- Windows
 id: 1546
+title: How to Backup/Import Vivotech Camera Settings
+date: 2012-09-30T14:27:43+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1546
+permalink: /win/backupimport-vivotech-cam-setting/
 dsq_thread_id:
-- '4860962472'
+  - "4860962472"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '22'
+  - "22"
+categories:
+  - Windows
 ---
-
 _Wishing to backup or import your configuration settings for your Vivotech cameras, follow the instructions below:_
 
 ** **

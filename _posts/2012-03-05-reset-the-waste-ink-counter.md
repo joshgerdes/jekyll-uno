@@ -1,11 +1,9 @@
 ---
 title: Reset the Waste Ink Counter on the Canon Pixma 1200
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/misc/reset-the-waste-ink-counter/"
+permalink: /misc/reset-the-waste-ink-counter/
 categories:
-- Misc
+  - Misc
 ---
-
   1. **Disconnect** printer from AC **power**
   2. Press and **HOLD** the **Power** button, and **connect** **printer** to AC **power**
   3. **Release** the the **Power** button

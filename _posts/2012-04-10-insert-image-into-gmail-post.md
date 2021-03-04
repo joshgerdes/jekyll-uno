@@ -1,11 +1,9 @@
 ---
 title: How to Insert Image into Gmail Post
-date: 2012-04-10 00:00:00 +12:00
-permalink: "/misc/insert-image-into-gmail-post/"
+permalink: /misc/insert-image-into-gmail-post/
 categories:
-- Misc
+  - Misc
 ---
-
   1. Login to <a title="Gmail" href="http://www.gmail.com" target="_blank">Gmail</a>
   2. Click on the Gear (Underneath your profile picture to the right)
   3. Click Settings

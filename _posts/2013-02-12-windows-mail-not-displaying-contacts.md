@@ -1,34 +1,33 @@
 ---
-title: Windows Mail not displaying contacts
-date: 2013-02-12 21:39:17 +13:00
-permalink: "/misc/windows-mail-not-displaying-contacts/"
-categories:
-- Misc
-- Windows
 id: 2674
+title: Windows Mail not displaying contacts
+date: 2013-02-12T08:39:17+00:00
 author: Luke
 layout: post
 guid: http://incinerate.co.nz/?p=2674
+permalink: /misc/windows-mail-not-displaying-contacts/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '1077667116'
+  - "1077667116"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Misc
+  - Windows
 ---
-
 This happens when Windows Mail is using a different contacts list to the Windows Contacts – such as a newsgroup.
 
   1. Open Windows Mail

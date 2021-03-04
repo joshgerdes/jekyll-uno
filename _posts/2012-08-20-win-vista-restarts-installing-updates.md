@@ -1,33 +1,32 @@
 ---
-title: Windows Vista continuous restarts installing updates
-date: 2012-08-21 03:27:36 +12:00
-permalink: "/win/win-vista-restarts-installing-updates/"
-categories:
-- Windows
 id: 1560
+title: Windows Vista continuous restarts installing updates
+date: 2012-08-20T15:27:36+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1560
+permalink: /win/win-vista-restarts-installing-updates/
 dsq_thread_id:
-- '920762219'
+  - "920762219"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Windows
 ---
-
 _One of the common causes of Windows Vista problems is due to Windows Updates; especially when it forces the computer to continuously restart follow the prompts below to repair._
 
 <ol start="1">

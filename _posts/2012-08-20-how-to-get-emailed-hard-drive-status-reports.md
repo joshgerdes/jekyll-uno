@@ -1,33 +1,32 @@
 ---
-title: How to get emailed hard drive status reports
-date: 2012-08-21 04:16:36 +12:00
-permalink: "/win/how-to-get-emailed-hard-drive-status-reports/"
-categories:
-- Windows
 id: 1564
+title: How to get emailed hard drive status reports
+date: 2012-08-20T16:16:36+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1564
+permalink: /win/how-to-get-emailed-hard-drive-status-reports/
 dsq_thread_id:
-- '987613691'
+  - "987613691"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '13'
+  - "13"
+categories:
+  - Windows
 ---
-
 _Want to get emailed disk status reports of your drives/hard drives and you are using a Windows PC? Using a great tool developed by Acronis you can. Acronis Drive Monitor runs down in the notification tray (by the time) and monitors your hard drive(s) temperature/spin time and sector failure rate giving you a good indication of when/if they are going to fail before they do. If you are away from the computer or simply would rather get status reports emailed to you, this is how you do it._
 
 <ol start="1">

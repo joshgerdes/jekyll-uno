@@ -1,35 +1,34 @@
 ---
-title: Openoffice – There is nothing to print.
-date: 2012-08-14 23:39:48 +12:00
-permalink: "/osx/openoffice-there-is-nothing-to-print/"
-categories:
-- Mac OSX
-- Misc
-- Windows
 id: 1548
+title: Openoffice – There is nothing to print.
+date: 2012-08-14T11:39:48+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1548
+permalink: /osx/openoffice-there-is-nothing-to-print/
 dsq_thread_id:
-- '930396077'
+  - "930396077"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '16'
+  - "16"
+categories:
+  - Mac OSX
+  - Misc
+  - Windows
 ---
-
 This issue occurs when the print range for the document has inadvertently changed. Follow the guides below to fix:
 
 <ol start="1">

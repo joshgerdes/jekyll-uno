@@ -1,33 +1,32 @@
 ---
-title: Howto repair Windows Boot Loader
-date: 2012-09-29 21:03:55 +12:00
-permalink: "/win/repair-win-boot-loader/"
-categories:
-- Windows
 id: 1416
+title: Howto repair Windows Boot Loader
+date: 2012-09-29T09:03:55+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1416
+permalink: /win/repair-win-boot-loader/
 dsq_thread_id:
-- '5061530904'
+  - "5061530904"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '22'
+  - "22"
+categories:
+  - Windows
 ---
-
 First things first! In order to repair the Windows boot loaders you need the appropriate Windows CD/DVD for example: _Windows XP Home/Professional CD for the Windows XP installation & Windows 7 DVD for Windows 7 install._
 
 **Windows XP**

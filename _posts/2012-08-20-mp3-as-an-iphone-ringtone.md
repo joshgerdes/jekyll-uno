@@ -1,33 +1,32 @@
 ---
-title: Set an MP3 as an iPhone ringtone
-date: 2012-08-20 22:48:35 +12:00
-permalink: "/win/mp3-as-an-iphone-ringtone/"
-categories:
-- Windows
 id: 1555
+title: Set an MP3 as an iPhone ringtone
+date: 2012-08-20T10:48:35+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1555
+permalink: /win/mp3-as-an-iphone-ringtone/
 dsq_thread_id:
-- '5249590123'
+  - "5249590123"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '8'
+  - "8"
+categories:
+  - Windows
 ---
-
 <ol start="1">
   <li>
     <strong>Open</strong> <strong>iTunes</strong>

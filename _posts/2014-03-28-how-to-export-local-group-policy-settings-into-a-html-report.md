@@ -1,11 +1,9 @@
 ---
 title: How to export local group policy settings into a HTML report
-date: 2014-03-28 00:00:00 +13:00
-permalink: "/win/how-to-export-local-group-policy-settings-into-a-html-report/"
+permalink: /win/how-to-export-local-group-policy-settings-into-a-html-report/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Press the Windows Key + R to open the Run dialog box
   2. Type in: cmd and press Enter
   3. This will load the Windows Command Prompt

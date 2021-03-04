@@ -1,11 +1,9 @@
 ---
 title: Howto change the Bit Torrent Upload Speed in Opera
-date: 2012-03-13 00:00:00 +13:00
-permalink: "/win/opera_btupload/"
+permalink: /win/opera_btupload/
 categories:
-- Windows
+  - Windows
 ---
-
 Here is how you edit the Bit Torrent upload speed in Opera 9
 
   1. Open **Opera**

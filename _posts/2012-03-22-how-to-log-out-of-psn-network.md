@@ -1,11 +1,9 @@
 ---
 title: How to Logout of PSN Network
-date: 2012-03-22 00:00:00 +13:00
-permalink: "/misc/how-to-log-out-of-psn-network/"
+permalink: /misc/how-to-log-out-of-psn-network/
 categories:
-- Misc
+  - Misc
 ---
-
   1. Go to Playstation **Network**
   2. Go to **Account** **Management**
   3. Press **TRIANGLE**

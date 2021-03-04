@@ -1,12 +1,10 @@
 ---
 title: How to create an SSH tunnel with PuTTY
-date: 2013-12-11 00:00:00 +13:00
-permalink: "/win/how-to-create-an-ssh-tunnel-with-putty/"
-categories:
-- Windows
 layout: post
+permalink: /win/how-to-create-an-ssh-tunnel-with-putty/
+categories:
+  - Windows
 ---
-
 Open PuTTY
 
 Create a new PuTTY session to the remote server

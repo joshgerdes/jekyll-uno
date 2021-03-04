@@ -1,33 +1,32 @@
 ---
-title: Public Alternative DNS Resolvers
-date: 2012-10-02 08:30:29 +13:00
-permalink: "/misc/dns_resolver/"
-categories:
-- Misc
 id: 1028
+title: Public Alternative DNS Resolvers
+date: 2012-10-01T19:30:29+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1028
+permalink: /misc/dns_resolver/
 dsq_thread_id:
-- '4966461719'
+  - "4966461719"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '16'
+  - "16"
+categories:
+  - Misc
 ---
-
 _Public Alternative DNS Resolvers_
 
 **Google**:  8.8.8.8 8.8.4.4

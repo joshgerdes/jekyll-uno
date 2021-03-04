@@ -1,33 +1,32 @@
 ---
-title: How to import your account settings into Windows Live Mail
-date: 2012-11-06 03:16:22 +13:00
-permalink: "/win/how-to-import-your-account-settings-into-windows-live-mail/"
-categories:
-- Windows
 id: 2510
+title: How to import your account settings into Windows Live Mail
+date: 2012-11-05T14:16:22+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2510
+permalink: /win/how-to-import-your-account-settings-into-windows-live-mail/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '2566189487'
+  - "2566189487"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '8'
+  - "8"
+categories:
+  - Windows
 ---
-
   1. Open Windows Live Mail
   2. Open Windows Live Mail Options tab _(top left)_
   3. Click Options

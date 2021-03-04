@@ -1,11 +1,9 @@
 ---
 title: Godaddy Email Settings
-date: 2012-03-09 00:00:00 +13:00
-permalink: "/misc/godaddy-email-settings/"
+permalink: /misc/godaddy-email-settings/
 categories:
-- Misc
+  - Misc
 ---
-
 **Godaddy Email Settings**
 
 Godaddy and there resellers (Wild West Domains resellers) use the following servers for incomming and outgoing email, Depending on what datacenter you are in

@@ -1,13 +1,11 @@
 ---
 title: RAS Entry Creation/Modification Error
-date: 2012-07-24 00:00:00 +12:00
-permalink: "/mob/ras-entry-creationmodification-error/"
-categories:
-- Mobile
-- Windows
 layout: post
+permalink: /mob/ras-entry-creationmodification-error/
+categories:
+  - Mobile
+  - Windows
 ---
-
 _This usually occurs when you are attempting to connecting to the Internet using a cell phone._
 
 <ol start="1">

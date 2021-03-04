@@ -1,11 +1,9 @@
 ---
 title: Deleting protected files in Windows
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/del-protected-winfiles/"
+permalink: /win/del-protected-winfiles/
 categories:
-- Windows
+  - Windows
 ---
-
 The Windows operating system is known for many things – including its ability to protect system and user protected files.
 
 Using the TakeOwn _(built into Windows)_ command you can easily use the utility to take ownership of files which would otherwise be system or user protected.

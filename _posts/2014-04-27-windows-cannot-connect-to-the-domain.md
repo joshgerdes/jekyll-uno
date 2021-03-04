@@ -1,11 +1,9 @@
 ---
 title: Windows cannot connect to the domain
-date: 2014-04-27 00:00:00 +12:00
-permalink: "/win/windows-cannot-connect-to-the-domain/"
+permalink: /win/windows-cannot-connect-to-the-domain/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Open **Active Directory Users & Computers**
   2. Right click **Computers**
   3. **Search** for the **computer** **name** you would like to remove and **right** **click** and select **Reset**

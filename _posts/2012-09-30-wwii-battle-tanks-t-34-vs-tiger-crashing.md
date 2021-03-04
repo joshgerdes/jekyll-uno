@@ -1,12 +1,11 @@
 ---
 title: WWII Battle Tanks T-34 Vs Tiger Crashing
-date: 2012-10-01 02:17:00 +13:00
-permalink: "/win/wwii-battle-tanks-t-34-vs-tiger-crashing/"
-categories:
-- Windows
+date: 2012-09-30T13:17:00+00:00
 author: Luke
+permalink: /win/wwii-battle-tanks-t-34-vs-tiger-crashing/
+categories:
+  - Windows
 ---
-
 _You need to download 3 DLLs click the links below to download and save them in a place you will remember and have easy access to for example your Desktop or Documents folder._
 
 <a title="MSVCI70.DLL" href="http://www.dll-files.com/dllindex/dll-files.shtml?msvci70" target="_blank">MSVCI70.dll</a>

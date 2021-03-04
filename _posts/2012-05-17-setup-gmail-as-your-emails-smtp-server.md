@@ -1,12 +1,10 @@
 ---
 title: Setup Gmail as your emails SMTP Server
-date: 2012-05-17 00:00:00 +12:00
-permalink: "/misc/setup-gmail-as-your-emails-smtp-server/"
+permalink: /misc/setup-gmail-as-your-emails-smtp-server/
 categories:
-- Misc
-- Windows
+  - Misc
+  - Windows
 ---
-
 Having problems sending mail when using a different internet connection then the email address you have? Perhaps you are running on a T-Stick or Vodem and not able to send mail, some ISPs offer this service for an additional charge _(Telstra do for about $5.00 a month)_one of the ways you can get around this is by using Gmail as an SMTP server.
 
 First things first, you need a Gmail account so click on “<a title="Gmail" href="https://mail.google.com" target="_blank">here</a>” to go to the Gmail webpage and create an account (Remember to jot down your Username & Password.

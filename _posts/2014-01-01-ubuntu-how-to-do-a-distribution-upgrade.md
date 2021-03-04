@@ -1,11 +1,9 @@
 ---
 title: Ubuntu – How to do a Distribution Upgrade
-date: 2014-01-01 00:00:00 +13:00
-permalink: "/linux/ubuntu-how-to-do-a-distribution-upgrade/"
+permalink: /linux/ubuntu-how-to-do-a-distribution-upgrade/
 categories:
-- Linux
+  - Linux
 ---
-
   1. Launch a Terminal 
   2. Type in: **_sudo apt-get update_**  
    (this will ping all the upgrade mirrors to determine if they are live and what upgrade packages are available)

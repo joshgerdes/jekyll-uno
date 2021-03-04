@@ -1,13 +1,11 @@
 ---
 title: How to remove Applications from the application list on the Play Store
-date: 2013-12-20 00:00:00 +13:00
-permalink: "/mob/how-to-remove-applications-from-the-application-list-on-the-play-store/"
-categories:
-- Android
-- Mobile
 layout: post
+permalink: /mob/how-to-remove-applications-from-the-application-list-on-the-play-store/
+categories:
+  - Android
+  - Mobile
 ---
-
   1. On your Android – open the Play Store. 
   2. Click Menu 
   3. Click My Apps 

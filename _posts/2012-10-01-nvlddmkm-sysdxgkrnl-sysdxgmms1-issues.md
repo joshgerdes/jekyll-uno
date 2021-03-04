@@ -1,33 +1,32 @@
 ---
-title: Nvlddmkm.sys/dxgkrnl.sys/dxgmms1.sys Issues
-date: 2012-10-01 22:35:59 +13:00
-permalink: "/win/nvlddmkm-sysdxgkrnl-sysdxgmms1-issues/"
-categories:
-- Windows
 id: 1500
+title: Nvlddmkm.sys/dxgkrnl.sys/dxgmms1.sys Issues
+date: 2012-10-01T09:35:59+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1500
+permalink: /win/nvlddmkm-sysdxgkrnl-sysdxgmms1-issues/
 dsq_thread_id:
-- '2441232911'
+  - "2441232911"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '28'
+  - "28"
+categories:
+  - Windows
 ---
-
 _These issues are usually caused by damage and/or faulty nVidia drivers and DirectX components within Windows. Follow the instructions below to repair:_
 
 &nbsp;

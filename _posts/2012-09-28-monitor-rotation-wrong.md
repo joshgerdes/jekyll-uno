@@ -1,33 +1,32 @@
 ---
-title: Monitor rotation wrong
-date: 2012-09-28 21:49:26 +12:00
-permalink: "/win/monitor-rotation-wrong/"
-categories:
-- Windows
 id: 1382
+title: Monitor rotation wrong
+date: 2012-09-28T09:49:26+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1382
+permalink: /win/monitor-rotation-wrong/
 dsq_thread_id:
-- '865014700'
+  - "865014700"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Windows
 ---
-
 _Having problems where your monitor rotation is wrong, such as the start menu ending up upside down at the top of the screen? Follow the instructions below to repair._
 
 Common fix for those using an Intel graphics driver, try the following Key combination:

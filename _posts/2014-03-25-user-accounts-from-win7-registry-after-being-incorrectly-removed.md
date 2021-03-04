@@ -1,12 +1,9 @@
 ---
-title: How to remove user accounts from Windows 7 registry after being incorrectly
-  removed
-date: 2014-03-25 00:00:00 +13:00
-permalink: "/win/user-accounts-from-win7-registry-after-being-incorrectly-removed/"
+title: How to remove user accounts from Windows 7 registry after being incorrectly removed
+permalink: /win/user-accounts-from-win7-registry-after-being-incorrectly-removed/
 categories:
-- Windows
+  - Windows
 ---
-
 Note: This usually needs to be done when the Windows 7 profile has been manually deleted and not properly removed – as Windows 7 uses a security identifier attached to the user account in the registry and this needs to be cleared as well_
 
 Note: It is also recommend making a backup of the registry before this change – and you may need to restart the PC for the registry entry to be able to be removed.

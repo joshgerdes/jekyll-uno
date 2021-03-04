@@ -1,0 +1,24 @@
+table {
+	margin-bottom: 1.3em;
+	thead {
+		font-weight: bold;
+
+		th {
+			text-align: left;
+			border-bottom: 4px solid #888;
+			font-weight: bold;
+			padding: 12px;
+			vertical-align: middle;
+		}
+	}
+
+	tr {
+		&:nth-child(even) td {
+			background: #eee;
+		}
+
+		td {
+			padding: 12px;
+		}
+	}
+}

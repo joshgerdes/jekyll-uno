@@ -1,33 +1,32 @@
 ---
-title: Sims Social &#8211; Practice Hammering 7 Times
-date: 2012-10-01 11:07:39 +13:00
-permalink: "/misc/sims-social-hammering7/"
-categories:
-- Misc
 id: 1396
+title: 'Sims Social &#8211; Practice Hammering 7 Times'
+date: 2012-09-30T22:07:39+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1396
+permalink: /misc/sims-social-hammering7/
 dsq_thread_id:
-- '2529167688'
+  - "2529167688"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '26'
+  - "26"
+categories:
+  - Misc
 ---
-
 _Having problems with the Canvas Stretcher promotion and needing to Practice Hammering 7 Times? The fix for this is simple._
 
 <ol start="1">

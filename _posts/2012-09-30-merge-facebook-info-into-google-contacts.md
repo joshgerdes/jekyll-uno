@@ -1,33 +1,32 @@
 ---
-title: How to Merge Facebook Info into Google Contacts
-date: 2012-10-01 04:16:50 +13:00
-permalink: "/misc/merge-facebook-info-into-google-contacts/"
-categories:
-- Misc
 id: 1461
+title: How to Merge Facebook Info into Google Contacts
+date: 2012-09-30T15:16:50+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1461
+permalink: /misc/merge-facebook-info-into-google-contacts/
 dsq_thread_id:
-- '864804001'
+  - "864804001"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '15'
+  - "15"
+categories:
+  - Misc
 ---
-
 First we use a web-based tool called “Friends To Gmail” which collates the data from your Facebook friends such as Name, Birthday and Biography information (currently this does not support Phone Numbers).
 
 <ol start="1">

@@ -1,12 +1,10 @@
 ---
 title: Google Calendar Sync Error 1011
-date: 2012-09-30 00:00:00 +12:00
-permalink: "/misc/google-cal-sync-error-1011/"
+permalink: /misc/google-cal-sync-error-1011/
 categories:
-- Misc
-- Windows
+  - Misc
+  - Windows
 ---
-
 <ol start="1">
   <li>
     Open <strong>Outlook</strong>

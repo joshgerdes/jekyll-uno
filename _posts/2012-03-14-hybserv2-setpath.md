@@ -1,12 +1,10 @@
 ---
-title: Hybserv2 &#8220;Unable to open SET PATH&#8221;
-date: 2012-03-14 00:00:00 +13:00
-permalink: "/linux/hybserv2-setpath/"
+title: 'Hybserv2 &#8220;Unable to open SET PATH&#8221;'
+permalink: /linux/hybserv2-setpath/
 categories:
-- Linux
-- Windows
+  - Linux
+  - Windows
 ---
-
 Getting the Hybserv2 &#8220;Unable to open SETPATH&#8221; error? Follow the instructions below to repair.
 
 **Windows**

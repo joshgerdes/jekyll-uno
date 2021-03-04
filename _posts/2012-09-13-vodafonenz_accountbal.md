@@ -1,33 +1,32 @@
 ---
-title: How to check Vodafone NZ Account Balance
-date: 2012-09-13 20:27:21 +12:00
-permalink: "/misc/vodafonenz_accountbal/"
-categories:
-- Misc
 id: 1083
+title: How to check Vodafone NZ Account Balance
+date: 2012-09-13T08:27:21+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1083
+permalink: /misc/vodafonenz_accountbal/
 dsq_thread_id:
-- '4844844575'
+  - "4844844575"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '152'
+  - "152"
+categories:
+  - Misc
 ---
-
 **Mobile Phone**
 
 _These instructions differ slightly depending on your phones make/model. Please adjust accordingly._

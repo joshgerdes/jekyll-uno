@@ -1,11 +1,9 @@
 ---
 title: An error occurred while using SSL configuration for socket address Error
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/sslsocket/"
+permalink: /win/sslsocket/
 categories:
-- Windows
+  - Windows
 ---
-
 &#8220;An error occurred while using SSL configuration for socket address %2. The error status code is contained within the returned data.&#8221;
 
 This error occurs when the SSL certificates that allow you to access secure content, such as Emails & Internet Banking becomes damaged or corrupted. Follow the instructions below to fix.

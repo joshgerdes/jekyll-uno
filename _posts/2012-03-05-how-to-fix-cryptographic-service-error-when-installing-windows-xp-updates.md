@@ -1,12 +1,9 @@
 ---
-title: 'How To: Fix &#8216;Cryptographic Service&#8217; error when installing Windows
-  XP Updates'
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/how-to-fix-cryptographic-service-error-when-installing-windows-xp-updates/"
+title: 'How To: Fix &#8216;Cryptographic Service&#8217; error when installing Windows XP Updates'
+permalink: /win/how-to-fix-cryptographic-service-error-when-installing-windows-xp-updates/
 categories:
-- Windows
+  - Windows
 ---
-
 Open a command prompt window _(click Start, Run, type cmd and hit Enter)_ and then type the following commands:
 
 _**regsvr32 softpub.dll**_

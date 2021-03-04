@@ -1,33 +1,32 @@
 ---
-title: How to disable Slingshots Proxy
-date: 2012-10-01 00:34:48 +13:00
-permalink: "/misc/how-to-disable-slingshots-proxy/"
-categories:
-- Misc
 id: 1378
+title: How to disable Slingshots Proxy
+date: 2012-09-30T11:34:48+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1378
+permalink: /misc/how-to-disable-slingshots-proxy/
 dsq_thread_id:
-- '4870402992'
+  - "4870402992"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '14'
+  - "14"
+categories:
+  - Misc
 ---
-
   1. First you need to head to &#8220;<a title="Slingshot ISP NZ" href="http://slingshot.co.nz/" target="_blank">Slingshot</a>&#8220;
   2. On the right hand side, **Login** to Your **Account**.
   3. Click **My Internet**

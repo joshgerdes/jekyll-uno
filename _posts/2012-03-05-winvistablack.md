@@ -1,9 +1,8 @@
 ---
-title: Windows Vista Black Screen &#038; Slow to Boot Repair
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/winvistablack/"
+title: 'Windows Vista Black Screen &#038; Slow to Boot Repair'
+permalink: /win/winvistablack/
 categories:
-- Windows
+  - Windows
 ---
 
 Ever had the problem where Windows Vista has a Black screen, while trying to boot? I have. This is how I fixed it (For Advanced users only).

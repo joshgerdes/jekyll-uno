@@ -1,11 +1,9 @@
 ---
 title: How to install OSX from a USB Drive (PowerPC)
-date: 2012-03-28 00:00:00 +13:00
-permalink: "/osx/how-to-install-osx-from-a-usb-drive-powerpc/"
+permalink: /osx/how-to-install-osx-from-a-usb-drive-powerpc/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
   1. First you need the DMG of OSX, which you can either create using the Retail DVD you have (Using Disk Utility) or acquire through other means. Place the DMG somewhere you can get too easily, for example the Desktop.
   2. Connect your USB HDD to the computer & open the Disk Utility (Applications/Utilities/).
   3. On the left hand side of the Disk Utility, click Restore.

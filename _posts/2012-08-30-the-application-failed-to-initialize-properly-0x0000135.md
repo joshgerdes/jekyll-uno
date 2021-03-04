@@ -1,33 +1,32 @@
 ---
-title: The application failed to initialize properly (0x0000135)
-date: 2012-08-31 02:45:11 +12:00
-permalink: "/win/the-application-failed-to-initialize-properly-0x0000135/"
-categories:
-- Windows
 id: 3074
+title: The application failed to initialize properly (0x0000135)
+date: 2012-08-30T14:45:11+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1595
+permalink: /win/the-application-failed-to-initialize-properly-0x0000135/
 dsq_thread_id:
-- '5303962139'
+  - "5303962139"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '21'
+  - "21"
+categories:
+  - Windows
 ---
-
 &nbsp;
 
 Having issues opening an application and getting “_0x0000135_” error?

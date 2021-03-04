@@ -1,13 +1,11 @@
 ---
 title: Skyrim Oculory Focusing Lens Bug
-date: 2012-05-21 00:00:00 +12:00
-permalink: "/misc/skyrim-oculory-focusing-lens-bug/"
-categories:
-- Misc
-- Windows
 layout: post
+permalink: /misc/skyrim-oculory-focusing-lens-bug/
+categories:
+  - Misc
+  - Windows
 ---
-
 _People have reported that using close range Fire and Ice spells while standing in the middle of the Oculory._
 
   1.  First you need to **open** up the **game** console press: **\`**

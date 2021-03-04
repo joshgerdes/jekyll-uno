@@ -1,34 +1,33 @@
 ---
-title: Deposit all Collectibles in Guild Wars 2 at the same time
-date: 2012-09-03 20:30:34 +12:00
-permalink: "/osx/deposit_gw2_collect/"
-categories:
-- Mac OSX
-- Windows
 id: 3079
+title: Deposit all Collectibles in Guild Wars 2 at the same time
+date: 2012-09-03T08:30:34+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1610
+permalink: /osx/deposit_gw2_collect/
 dsq_thread_id:
-- '884093862'
+  - "884093862"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '2'
+  - "2"
+categories:
+  - Mac OSX
+  - Windows
 ---
-
 _Your inventory full of crafting materials & sick of right clicking sending to collection? There is an easy way of doing this._
 
 <ol start="1">

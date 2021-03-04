@@ -1,33 +1,32 @@
 ---
-title: ntdll.dll Windows Explorer
-date: 2012-10-01 02:42:29 +13:00
-permalink: "/win/ntdll-dll-windows-explorer/"
-categories:
-- Windows
 id: 1438
+title: ntdll.dll Windows Explorer
+date: 2012-09-30T13:42:29+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1438
+permalink: /win/ntdll-dll-windows-explorer/
 dsq_thread_id:
-- '2756255649'
+  - "2756255649"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '15'
+  - "15"
+categories:
+  - Windows
 ---
-
 Having problems with Windows Explorer with the “ntdll.dll” error? This usually occurs when you are running an AMD system.
 
 &nbsp;

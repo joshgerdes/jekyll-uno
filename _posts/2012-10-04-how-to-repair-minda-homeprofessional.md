@@ -1,33 +1,32 @@
 ---
-title: How to repair Minda Home/Professional
-date: 2012-10-04 22:08:56 +13:00
-permalink: "/misc/how-to-repair-minda-homeprofessional/"
-categories:
-- Misc
 id: 2441
+title: How to repair Minda Home/Professional
+date: 2012-10-04T09:08:56+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2441
+permalink: /misc/how-to-repair-minda-homeprofessional/
 dsq_thread_id:
-- '5193806749'
+  - "5193806749"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '16'
+  - "16"
+categories:
+  - Misc
 ---
-
 Basically you need to download the latest version of Minda from <a title="LIC" href="http://www.lic.co.nz" target="_blank">LIC </a>(lic.co.nz) and in order to do this you need your PART _(participant)_ code and your Minda PIN to login.
 
   1. Once you have logged in to the LIC website and greeted with “Welcome <insertnamehere>” click “Get MINDA Software” – on the left hand side.

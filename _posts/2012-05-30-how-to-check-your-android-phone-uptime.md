@@ -1,13 +1,11 @@
 ---
 title: How to check your android phone uptime
-date: 2012-05-30 00:00:00 +12:00
-permalink: "/mob/how-to-check-your-android-phone-uptime/"
-categories:
-- Android
-- Mobile
 layout: post
+permalink: /mob/how-to-check-your-android-phone-uptime/
+categories:
+  - Android
+  - Mobile
 ---
-
 Want to check how long your phone has been on for? Follow the instructions below.
 
   1. Go into **Settings**

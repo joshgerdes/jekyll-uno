@@ -1,11 +1,9 @@
 ---
 title: Port error numbers
-date: 2012-03-22 00:00:00 +13:00
-permalink: "/misc/port-error-numbers/"
+permalink: /misc/port-error-numbers/
 categories:
-- Misc
+  - Misc
 ---
-
 Error   Messages
 
 600     An operation is pending.

@@ -1,33 +1,32 @@
 ---
-title: Booting into Recovery Partition instead of Operating System
-date: 2013-02-24 10:10:43 +13:00
-permalink: "/win/booting-into-recovery-partition-instead-of-operating-system/"
-categories:
-- Windows
 id: 2682
+title: Booting into Recovery Partition instead of Operating System
+date: 2013-02-23T21:10:43+00:00
 author: Luke
 layout: post
 guid: http://incinerate.co.nz/?p=2682
+permalink: /win/booting-into-recovery-partition-instead-of-operating-system/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '1100258346'
+  - "1100258346"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '13'
+  - "13"
+categories:
+  - Windows
 ---
-
 &nbsp;
 
 Having issues with your computer booting into the Recovery Partition instead of the Windows operating system? Try the guide below to repair.

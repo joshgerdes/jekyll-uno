@@ -1,11 +1,9 @@
 ---
 title: Windows 7 – Authentication prompt for cached credentials in a domain environment
-date: 2013-12-23 00:00:00 +13:00
-permalink: "/win/windows-7-authentication-prompt-for-cached-credentials-in-a-domain-environment/"
+permalink: /win/windows-7-authentication-prompt-for-cached-credentials-in-a-domain-environment/
 categories:
-- Windows
+  - Windows
 ---
-
   1. In order to fix this – you need to close all Internet Explorer windows.
   2. Open Credential Manager (start type in: Credential Manager)
   3. Under Windows Credentials – select & remove all associated Username & Passwords

@@ -1,33 +1,32 @@
 ---
-title: NTLDR Windows XP
-date: 2012-09-26 06:47:01 +12:00
-permalink: "/win/ntldr-windows-xp/"
-categories:
-- Windows
 id: 1442
+title: NTLDR Windows XP
+date: 2012-09-25T18:47:01+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1442
+permalink: /win/ntldr-windows-xp/
 dsq_thread_id:
-- '864822535'
+  - "864822535"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '17'
+  - "17"
+categories:
+  - Windows
 ---
-
 To repair this issue you need to have a Windows XP CD.
 
 <ol start="1">

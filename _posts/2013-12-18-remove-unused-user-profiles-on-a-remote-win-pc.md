@@ -1,11 +1,9 @@
 ---
 title: Remove unused user profiles on a remote Windows workstation
-date: 2013-12-18 00:00:00 +13:00
-permalink: "/win/remove-unused-user-profiles-on-a-remote-win-pc/"
+permalink: /win/remove-unused-user-profiles-on-a-remote-win-pc/
 categories:
-- Windows
+  - Windows
 ---
-
 Note: The intended guide for this audience is a Help Desk or Service Desk – this is intended for a domain setup with the user having local administration rights on the workstation.
 
   1. First, you need to download tool called: <a href="http://helgeklein.com/free-tools/delprof2-user-profile-deletion-tool/" target="_blank" rel="noopener">Delprof2</a>

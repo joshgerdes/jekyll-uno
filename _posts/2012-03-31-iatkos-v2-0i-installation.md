@@ -1,11 +1,9 @@
 ---
 title: iATKOS v2.0i Installation
-date: 2012-03-31 00:00:00 +13:00
-permalink: "/osx/iatkos-v2-0i-installation/"
+permalink: /osx/iatkos-v2-0i-installation/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 Credits goes to Apple and OSX86 community. This is just the instructions for the install.
   
 Attention:

@@ -1,12 +1,10 @@
 ---
 title: Dishonored – Black screen during game start-up
-date: 2013-12-05 00:00:00 +13:00
-permalink: "/win/dishonored-black-screen-during-game-start-up/"
-categories:
-- Windows
 layout: post
+permalink: /win/dishonored-black-screen-during-game-start-up/
+categories:
+  - Windows
 ---
-
 It runs correctly if you put &#8220;-windowed&#8221; in the launch options! 
 
   1. Right click the Dishonored shortcut 

@@ -1,33 +1,32 @@
 ---
-title: How to Remove VirtualBox Guest Additions
-date: 2012-08-12 20:38:12 +12:00
-permalink: "/linux/rm-virtualbox-guest-additions/"
-categories:
-- Linux
 id: 1407
+title: How to Remove VirtualBox Guest Additions
+date: 2012-08-12T08:38:12+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1407
+permalink: /linux/rm-virtualbox-guest-additions/
 mfn-post-love:
-- '0'
+  - "0"
 dsq_thread_id:
-- '4881414104'
+  - "4881414104"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Linux
 ---
-
 <ol start="1">
   <li>
     First thing is first <strong>close</strong> all instances of <strong>VirtualBox</strong>

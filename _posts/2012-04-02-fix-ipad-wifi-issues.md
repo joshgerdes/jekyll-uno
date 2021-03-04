@@ -1,11 +1,9 @@
 ---
 title: Fix iPad Wifi Issues
-date: 2012-04-02 00:00:00 +12:00
-permalink: "/osx/fix-ipad-wifi-issues/"
+permalink: /osx/fix-ipad-wifi-issues/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 Issues with your iPad&#8217;s wireless? Try the following tips below, these can also be used for just normal Wireless issues.
 
 **Turning it on or off again**

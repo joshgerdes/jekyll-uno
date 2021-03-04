@@ -1,33 +1,32 @@
 ---
-title: Service Pack did not install. Reverting changes
-date: 2012-10-01 03:55:20 +13:00
-permalink: "/win/srv-pack-not-install-revrt-changes/"
-categories:
-- Windows
 id: 1542
+title: Service Pack did not install. Reverting changes
+date: 2012-09-30T14:55:20+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1542
+permalink: /win/srv-pack-not-install-revrt-changes/
 dsq_thread_id:
-- '4884485677'
+  - "4884485677"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '9'
+  - "9"
+categories:
+  - Windows
 ---
-
 _This usually happens when a service that is required, the Trusted Installer is not running. Follow the instructions below to repair this._
 
 <ol start="1">

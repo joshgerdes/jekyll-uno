@@ -1,11 +1,9 @@
 ---
 title: How to Mass Delete Text Messages on Nokia n95
-date: 2012-03-19 00:00:00 +13:00
-permalink: "/mob/massdel-nokia-n95/"
+permalink: /mob/massdel-nokia-n95/
 categories:
-- Mobile
+  - Mobile
 ---
-
   1. Go to your phones **Inbox**
   2. Go into **Options**
   3. Choose **Mark**/**Unmark**

@@ -1,33 +1,32 @@
 ---
-title: How to remove a Toshiba Tecra M3 Keyboard
-date: 2012-10-25 22:04:45 +13:00
-permalink: "/misc/remove-a-toshiba-tecra-m3-keyboard/"
-categories:
-- Misc
 id: 2485
+title: How to remove a Toshiba Tecra M3 Keyboard
+date: 2012-10-25T09:04:45+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2485
+permalink: /misc/remove-a-toshiba-tecra-m3-keyboard/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '1064079117'
+  - "1064079117"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '13'
+  - "13"
+categories:
+  - Misc
 ---
-
 What you need
 
   * Philips Screwdriver

@@ -1,21 +1,20 @@
 ---
-title: Windows Update Error 0x800f081f
-date: 2013-01-17 20:25:50 +13:00
-permalink: "/win/windows-update-error-0x800f081f/"
-categories:
-- Windows
 id: 2638
+title: Windows Update Error 0x800f081f
+date: 2013-01-17T07:25:50+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2634
+permalink: /win/windows-update-error-0x800f081f/
 dsq_thread_id:
-- '2547030444'
+  - "2547030444"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '21'
+  - "21"
+categories:
+  - Windows
 ---
-
 &nbsp;
 
 This problem is generally caused by corrupted/damaged DNS Cache. Follow the instructions below to repair.

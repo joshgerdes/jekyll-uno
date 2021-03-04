@@ -1,11 +1,9 @@
 ---
 title: Skyrim – Data files greyed out on Launcher
-date: 2013-12-26 00:00:00 +13:00
-permalink: "/win/skyrim-data-files-greyed-out-on-launcher/"
+permalink: /win/skyrim-data-files-greyed-out-on-launcher/
 dcategories:
-- Windows
+  - Windows
 ---
-
   1. Open My Computer/Computer 
   2. Navigate to: C:Users{your user name}DocumentsMy GamesSkyrim 
   3. Right click SkyrimPrefs.ini and Open with – Notepad 

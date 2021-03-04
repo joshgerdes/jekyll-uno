@@ -1,41 +1,40 @@
 ---
-title: How to convert DMG to IMG in Windows
-date: 2013-01-18 21:00:16 +13:00
-permalink: "/osx/how-to-convert-dmg-to-img-in-windows/"
-categories:
-- Mac OSX
-- Windows
 id: 2645
+title: How to convert DMG to IMG in Windows
+date: 2013-01-18T08:00:16+00:00
 author: Luke
 layout:
-- ''
+  - ""
 guid: http://localhost/incinerate/?p=2645
+permalink: /osx/how-to-convert-dmg-to-img-in-windows/
 dsq_thread_id:
-- '4810402629'
+  - "4810402629"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 sidebar:
-- ''
+  - ""
 header:
-- 'yes'
+  - 'yes'
 footer:
-- ''
+  - ""
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '107'
+  - "107"
+categories:
+  - Mac OSX
+  - Windows
 ---
-
 Downloaded that DMG and want to burn it to a CD/DVD but you’re in a Windows based system? Not a problem! Thanks to the guys at vu1tur for making a cool little utility for doing the conversion.
 
 &nbsp;

@@ -1,12 +1,10 @@
 ---
 title: Failed to install catalog files
-date: 2012-03-07 00:00:00 +13:00
-permalink: "/win/failed-to-install-catalog-files/"
-categories:
-- Windows
 layout: post
+permalink: /win/failed-to-install-catalog-files/
+categories:
+  - Windows
 ---
-
 Getting the Failed to install catalog files error? This is how you fix it. The issue is related to registry key security settings.
 
   1. Click **Start**

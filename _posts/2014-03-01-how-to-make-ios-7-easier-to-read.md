@@ -1,11 +1,9 @@
 ---
 title: How to make iOS 7 easier to read
-date: 2014-03-01 00:00:00 +13:00
-permalink: "/osx/how-to-make-ios-7-easier-to-read/"
+permalink: /osx/how-to-make-ios-7-easier-to-read/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 1. Open **Settings** 
 2. Select **General** 
 3. Select **Accessibility

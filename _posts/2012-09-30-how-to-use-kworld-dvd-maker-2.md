@@ -1,33 +1,32 @@
 ---
-title: How to use the KWorld DVD Maker 2
-date: 2012-10-01 03:53:44 +13:00
-permalink: "/misc/how-to-use-kworld-dvd-maker-2/"
-categories:
-- Misc
 id: 1427
+title: How to use the KWorld DVD Maker 2
+date: 2012-09-30T14:53:44+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1427
+permalink: /misc/how-to-use-kworld-dvd-maker-2/
 dsq_thread_id:
-- '4870533340'
+  - "4870533340"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '24'
+  - "24"
+categories:
+  - Misc
 ---
-
 _To operate this device, you need to have to have installed Cyberlink DVD Producer that came on a CD with your device._
 
 <ol start="1">

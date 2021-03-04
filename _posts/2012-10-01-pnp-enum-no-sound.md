@@ -1,33 +1,32 @@
 ---
-title: Plug &#038; Play Software Enumerator No Sound Win XP
-date: 2012-10-01 14:52:56 +13:00
-permalink: "/win/pnp-enum-no-sound/"
-categories:
-- Windows
 id: 1504
+title: 'Plug &#038; Play Software Enumerator No Sound Win XP'
+date: 2012-10-01T01:52:56+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1504
+permalink: /win/pnp-enum-no-sound/
 dsq_thread_id:
-- '4967548225'
+  - "4967548225"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '21'
+  - "21"
+categories:
+  - Windows
 ---
-
 <ol start="1">
   <li>
     Click <strong>Start</strong>

@@ -1,40 +1,39 @@
 ---
-title: Guidelines to take in consideration when talking to an IT Tech
-date: 2012-10-01 15:46:11 +13:00
-permalink: "/misc/guidelines-talking-it-tech/"
-categories:
-- Misc
 id: 3080
+title: Guidelines to take in consideration when talking to an IT Tech
+date: 2012-10-01T02:46:11+00:00
 author: Luke
 layout:
-- ''
+  - ""
 guid: http://techdrive.co.nz/?p=1069
+permalink: /misc/guidelines-talking-it-tech/
 dsq_thread_id:
-- '2692025925'
+  - "2692025925"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 sidebar:
-- ''
+  - ""
 header:
-- 'yes'
+  - 'yes'
 footer:
-- ''
+  - ""
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '33'
+  - "33"
+categories:
+  - Misc
 ---
-
 1. They will not do computer work outside of work hours, so don&#8217;t ask.
   
 2. They do not fix coffee machines or vacuum cleaners

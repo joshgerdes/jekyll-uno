@@ -1,11 +1,9 @@
 ---
 title: Black Screen of Death Windows Vista/7 NETIO.SYS
-date: 2012-05-14 00:00:00 +12:00
-permalink: "/win/bsod-win-vista7-netio-sys/"
+permalink: /win/bsod-win-vista7-netio-sys/
 categories:
-- Windows
+  - Windows
 ---
-
 Caused when your network driver has become corrupted or changed for NetBIOs with an incompatible version from either Windows Updates or a filter from your Firewall (most commonly Zone Alarm).
 
 You can “repair” this by using System Restore to go back to a previous driver, follow the guide below to do this:

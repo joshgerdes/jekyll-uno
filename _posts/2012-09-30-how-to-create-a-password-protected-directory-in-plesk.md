@@ -1,33 +1,32 @@
 ---
-title: How to create a password protected directory in Plesk
-date: 2012-09-30 21:37:23 +13:00
-permalink: "/misc/how-to-create-a-password-protected-directory-in-plesk/"
-categories:
-- Misc
 id: 1448
+title: How to create a password protected directory in Plesk
+date: 2012-09-30T08:37:23+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1448
+permalink: /misc/how-to-create-a-password-protected-directory-in-plesk/
 dsq_thread_id:
-- '864817522'
+  - "864817522"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '5'
+  - "5"
+categories:
+  - Misc
 ---
-
 <ol start="1">
   <li>
     First off <strong>log</strong> <strong>in</strong>to Plesk

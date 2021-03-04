@@ -1,12 +1,10 @@
 ---
 title: 'Star Wars : The Old Republic Login Service Not Available'
-date: 2012-03-15 00:00:00 +13:00
-permalink: "/misc/star-wars-the-old-republic-login-service/"
+permalink: /misc/star-wars-the-old-republic-login-service/
 categories:
-- Misc
-- Windows
+  - Misc
+  - Windows
 ---
-
 Getting the login service not available? Follow the instructions below:
 
 You need to change your Date/Time on the computer so that it is correct, or the login servers will not be able to communicate with your computer.

@@ -1,34 +1,32 @@
 ---
-title: The network password needs to be 128 bits or 256 bits depending on your network
-  configuration
-date: 2012-10-29 22:36:43 +13:00
-permalink: "/win/the-network-password-needs-to-be-128-bits-or-256-bits-depending-on-your-network-configuration/"
-categories:
-- Windows
 id: 2493
+title: The network password needs to be 128 bits or 256 bits depending on your network configuration
+date: 2012-10-29T09:36:43+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2493
+permalink: /win/the-network-password-needs-to-be-128-bits-or-256-bits-depending-on-your-network-configuration/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '4818550060'
+  - "4818550060"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '91'
+  - "91"
+categories:
+  - Windows
 ---
-
 Attempting to enter in your wireless passkey and getting “The network password needs to be 128bits or 256bits depending on your network configuration “error? This usually occurs when the networking stack has been damaged/corrupted. Follow the instructions below to repair:
 
   1. Click **Start**

@@ -1,33 +1,32 @@
 ---
-title: Using Clonezilla &#8211; Clone to Image
-date: 2012-10-05 04:19:09 +13:00
-permalink: "/misc/using-clonezilla-clone-to-image/"
-categories:
-- Misc
 id: 2445
+title: 'Using Clonezilla &#8211; Clone to Image'
+date: 2012-10-04T15:19:09+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2445
+permalink: /misc/using-clonezilla-clone-to-image/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '4887771759'
+  - "4887771759"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '10'
+  - "10"
+categories:
+  - Misc
 ---
-
   1. Download <a title="Clonezilla" href="http://clonezilla.org/downloads.php" target="_blank">Clonezilla</a>
   2. Burn to CD
   3. Boot from CD

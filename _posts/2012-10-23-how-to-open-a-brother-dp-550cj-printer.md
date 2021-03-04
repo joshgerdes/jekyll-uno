@@ -1,33 +1,32 @@
 ---
-title: How to open a Brother DP-550CJ Printer
-date: 2012-10-23 21:28:52 +13:00
-permalink: "/misc/how-to-open-a-brother-dp-550cj-printer/"
-categories:
-- Misc
 id: 2475
+title: How to open a Brother DP-550CJ Printer
+date: 2012-10-23T08:28:52+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2475
+permalink: /misc/how-to-open-a-brother-dp-550cj-printer/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '1081881362'
+  - "1081881362"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Misc
 ---
-
 _What you will need_
 
   * Small Flat-Head Screwdriver

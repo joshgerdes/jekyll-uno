@@ -1,33 +1,32 @@
 ---
-title: Install Ubuntu netbook edition
-date: 2012-10-03 01:29:14 +13:00
-permalink: "/linux/ubuntu-netbook/"
-categories:
-- Linux
 id: 2427
+title: Install Ubuntu netbook edition
+date: 2012-10-02T12:29:14+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2427
+permalink: /linux/ubuntu-netbook/
 mfn-post-love:
-- '0'
+  - "0"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '1060295769'
+  - "1060295769"
 post_views_count:
-- '4'
+  - "4"
+categories:
+  - Linux
 ---
-
 _Note: Be best to be plugged into the Internet (through Ethernet) to make sure latest updates are installed and downloaded while running the install._
 
 _Note: Early 2011/As of 11.04 Ubuntu &#8220;folded&#8221; the Netbook Edition into the normal installation instead of having it separate. _

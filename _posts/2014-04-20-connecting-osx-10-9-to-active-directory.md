@@ -1,11 +1,9 @@
 ---
 title: Connecting OSX 10.9 to Active Directory
-date: 2014-04-20 00:00:00 +12:00
-permalink: "/osx/connecting-osx-10-9-to-active-directory/"
+permalink: /osx/connecting-osx-10-9-to-active-directory/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 Connecting OSX 10.9 to Active Directory domain is very easy. Follow the quick guide below:
 
   1. Click on the **Apple** **Menu**

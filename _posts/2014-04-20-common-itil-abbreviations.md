@@ -1,11 +1,9 @@
 ---
 title: Common ITIL Abbreviations
-date: 2014-04-20 00:00:00 +12:00
-permalink: "/misc/common-itil-abbreviations/"
+permalink: /misc/common-itil-abbreviations/
 categories:
-- Misc
+  - Misc
 ---
-
 ITIL _(Information Technology Infrastructure Library)_ and IT _(Information Technology)_ in general is filled with lots of abbreviations which sometimes get ahead of you &#8211; I have combined a useful list of ITIL abbreviations for quickly determining what something means. Use CTRL+F to quickly open the Find dialog of your internet browser and type in the abbreviation to display the meaning.
 
 

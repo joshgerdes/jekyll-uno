@@ -1,11 +1,9 @@
 ---
 title: How to remove Windows Live Family Safety
-date: 2012-03-31 00:00:00 +13:00
-permalink: "/win/how-to-remove-windows-live-family-safety/"
+permalink: /win/how-to-remove-windows-live-family-safety/
 categories:
-- Windows
+  - Windows
 ---
-
 Having problems getting rid of Windows Live Family Safety? Follow the steps below!
 
 <ol start="1">

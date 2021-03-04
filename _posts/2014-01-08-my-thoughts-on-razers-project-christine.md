@@ -1,11 +1,9 @@
 ---
 title: My thoughts on Razers Project Christine
-date: 2014-01-08 00:00:00 +13:00
-permalink: "/misc/my-thoughts-on-razers-project-christine/"
+permalink: /misc/my-thoughts-on-razers-project-christine/
 categories:
-- Misc
+  - Misc
 ---
-
 Razer – a company well known for its PC gaming peripherals.
 
 With its sleep black and green designs Razer has captivated many a gamer – including myself as I type this using my Razer Blackwidow keyboard.

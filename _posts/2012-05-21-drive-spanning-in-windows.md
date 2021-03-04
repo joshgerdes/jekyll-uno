@@ -1,12 +1,10 @@
 ---
 title: Setup Drive Spanning in Windows
-date: 2012-05-21 00:00:00 +12:00
-permalink: "/win/drive-spanning-in-windows/"
-categories:
-- Windows
 layout: post
+permalink: /win/drive-spanning-in-windows/
+categories:
+  - Windows
 ---
-
   1. (Make sure you have no data available on the partitions, as this will erase everything)
   2. First you need to open Disk Management
   3. Right click on unallocated space

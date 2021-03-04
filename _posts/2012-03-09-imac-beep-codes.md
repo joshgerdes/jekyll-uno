@@ -1,11 +1,9 @@
 ---
 title: iMac Beep Codes
-date: 2012-03-09 00:00:00 +13:00
-permalink: "/osx/imac-beep-codes/"
+permalink: /osx/imac-beep-codes/
 categories:
-- Mac OSX
+  - Mac OSX
 ---
-
 **1 beep** = No RAM installed/detected
   
 **2 beeps** = Incompatible RAM type installed (for example, EDO)

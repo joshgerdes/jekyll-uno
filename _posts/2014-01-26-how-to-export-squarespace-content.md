@@ -1,9 +1,8 @@
 ---
 title: How to export Squarespace content
-date: 2014-01-26 00:00:00 +13:00
-permalink: "/misc/how-to-export-squarespace-content/"
+permalink: /misc/how-to-export-squarespace-content/
 categories:
-- Misc
+  - Misc
 ---
 
 ## <span id="Export_content_from_Squarespace">Export content from Squarespace<br /> </span>

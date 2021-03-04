@@ -1,11 +1,9 @@
 ---
 title: Settings for New Zealand Internet Service Providers
-date: 2012-03-25 00:00:00 +13:00
-permalink: "/misc/settings-for-new-zealand-internet-service-providers/"
+permalink: /misc/settings-for-new-zealand-internet-service-providers/
 categories:
-- Misc
+  - Misc
 ---
-
 Ignite Communications (formerly Data Solutions NZ)
 
 * Domain name server 1 : 123.255.15.131

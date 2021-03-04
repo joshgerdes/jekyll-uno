@@ -1,34 +1,33 @@
 ---
-title: Vodafone New Zealand Phone Settings
-date: 2012-10-02 23:52:04 +13:00
-permalink: "/misc/vodafone-new-zealand-phone-settings-2/"
-categories:
-- Misc
-- Mobile
 id: 2422
+title: Vodafone New Zealand Phone Settings
+date: 2012-10-02T10:52:04+00:00
 author: Luke
 layout: post
 guid: http://localhost/incinerate/?p=2422
+permalink: /misc/vodafone-new-zealand-phone-settings-2/
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 dsq_thread_id:
-- '4802101875'
+  - "4802101875"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '55'
+  - "55"
+categories:
+  - Misc
+  - Mobile
 ---
-
 These settings are used for setting up Chinese/foreign phones onto the Vodafone NZ network.
 
 APN (Access Point Name)

@@ -1,34 +1,33 @@
 ---
-title: No Sound in Chrome
-date: 2012-10-01 03:25:00 +13:00
-permalink: "/misc/no-sound-in-chrome/"
-categories:
-- Misc
-- Windows
 id: 1536
+title: No Sound in Chrome
+date: 2012-09-30T14:25:00+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1536
+permalink: /misc/no-sound-in-chrome/
 dsq_thread_id:
-- '864817620'
+  - "864817620"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '5'
+  - "5"
+categories:
+  - Misc
+  - Windows
 ---
-
   1. **Open ****Chrome**
   2. In the address bar (the area you put a website address in) **type** in: **chrome://plugins/**
   3. **Under** the **Plug-Ins**, underneath Flash click Disable

@@ -1,11 +1,9 @@
 ---
 title: Create a background for USB Devices
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/create-a-background-for-usb-devices/"
+permalink: /win/create-a-background-for-usb-devices/
 categories:
-- Windows
+  - Windows
 ---
-
 Follow the instructions below to assign a picture to a folders background, commonly used to personalise USB flash drives.
 
   1. First, open notepad. _(Start, Run, type in: notepad, press Enter_

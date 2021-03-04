@@ -1,11 +1,9 @@
 ---
 title: Icons missing in Windows 7
-date: 2012-04-04 00:00:00 +12:00
-permalink: "/win/icons-missing-in-windows-7/"
+permalink: /win/icons-missing-in-windows-7/
 categories:
-- Windows
+  - Windows
 ---
-
 Try the following fixes below:
 
   1. Open **Task** **Manager** (Ctrl+Shift+Esc)

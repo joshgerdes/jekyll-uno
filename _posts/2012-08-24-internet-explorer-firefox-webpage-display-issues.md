@@ -1,33 +1,32 @@
 ---
-title: Internet Explorer &#038; Firefox Webpage display issues
-date: 2012-08-25 01:59:53 +12:00
-permalink: "/win/internet-explorer-firefox-webpage-display-issues/"
-categories:
-- Windows
 id: 1581
+title: 'Internet Explorer &#038; Firefox Webpage display issues'
+date: 2012-08-24T13:59:53+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1581
+permalink: /win/internet-explorer-firefox-webpage-display-issues/
 dsq_thread_id:
-- '900140659'
+  - "900140659"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '7'
+  - "7"
+categories:
+  - Windows
 ---
-
 Missing buttons and getting weird colours in both Internet Explorer & Firefox? Try the following:
 
 <ol start="1">

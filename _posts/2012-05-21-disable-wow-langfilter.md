@@ -1,12 +1,10 @@
 ---
 title: How to disable World of Warcrafts Mature Language Filter
-date: 2012-05-21 00:00:00 +12:00
-permalink: "/misc/disable-wow-langfilter/"
-categories:
-- Misc
 layout: post
+permalink: /misc/disable-wow-langfilter/
+categories:
+  - Misc
 ---
-
   1. Press **Esc**
   2. Click **Interface**
   3. Click **Social**

@@ -1,12 +1,10 @@
 ---
 title: HP Pavilion Slimline Ram/HDD Replacement
-date: 2012-05-28 00:00:00 +12:00
-permalink: "/misc/hp-pavilion-slimline-ramhdd-replacement/"
-categories:
-- Misc
 layout: post
+permalink: /misc/hp-pavilion-slimline-ramhdd-replacement/
+categories:
+  - Misc
 ---
-
   1. **Remove** the **casing** by **removing** **3** screws, then **slide** off the **side** **panel**.
   2. Go to the HP Expand Bay and pull the **tab** **up** and **slide** the **bay** **left** at the same time.
   3. Now **remove** the **CD-Rom** by **unscrewing** the Black **Screw** on the **lower** **part** of the drive.

@@ -1,11 +1,9 @@
 ---
-title: Flex+ &#8211; Using Self-Support to restore user’s preferences
-date: 2013-12-23 00:00:00 +13:00
-permalink: "/win/flex-using-self-support-to-restore-users-preferences/"
+title: 'Flex+ &#8211; Using Self-Support to restore user’s preferences'
+permalink: /win/flex-using-self-support-to-restore-users-preferences/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Click Start
   2. Select All Programs
   3. Select Immidio Flex+

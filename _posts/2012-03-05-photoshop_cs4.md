@@ -1,11 +1,9 @@
 ---
 title: Adobe Photoshop CS4 148:3
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/photoshop_cs4/"
+permalink: /win/photoshop_cs4/
 categories:
-- Windows
+  - Windows
 ---
-
 This error is caused by the Flexnet Licensing service being disabled. This is how you fix it
 
   1. Click Start

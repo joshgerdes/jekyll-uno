@@ -1,39 +1,38 @@
 ---
-title: Getting “ Instead of @ When Typing
-date: 2012-08-05 12:44:21 +12:00
-permalink: "/win/getting-instead-of-when-typing/"
-categories:
-- Windows
 id: 3072
+title: Getting “ Instead of @ When Typing
+date: 2012-08-05T00:44:21+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1525
+permalink: /win/getting-instead-of-when-typing/
 dsq_thread_id:
-- '864767989'
+  - "864767989"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 slide_template:
-- default
+  - default
 sidebar_value:
-- Default Sidebar
+  - Default Sidebar
 sidebar_position_value:
-- right
+  - right
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Windows
 ---
-
 _This happens when the keyboard region has changed to UK instead of the usual standard US layout._
 
 <ol start="1">

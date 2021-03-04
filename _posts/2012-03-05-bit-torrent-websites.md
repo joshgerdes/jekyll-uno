@@ -1,11 +1,9 @@
 ---
 title: Bit-Torrent Websites
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/misc/bit-torrent-websites/"
+permalink: /misc/bit-torrent-websites/
 categories:
-- Misc
+  - Misc
 ---
-
 **Torrent Indexers**
   
 Torrent indexers are sites that have a searchable directory of torrent files, but don’t host a (public) tracker of their own. Mininova has a tracker, but they only allow ‘featured’ torrents uploaded through their content distribution service. The most used torrent indexers are:

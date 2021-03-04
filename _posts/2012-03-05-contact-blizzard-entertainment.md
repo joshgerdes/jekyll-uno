@@ -1,11 +1,9 @@
 ---
 title: How to Contact Blizzard Entertainment
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/misc/contact-blizzard-entertainment/"
+permalink: /misc/contact-blizzard-entertainment/
 categories:
-- Misc
+  - Misc
 ---
-
 **Billing and Account Services**
 
 * Email: billing@blizzard.com

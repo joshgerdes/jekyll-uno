@@ -1,11 +1,9 @@
 ---
 title: Outlook 2010 – How to find your Exchange address
-date: 2014-01-02 00:00:00 +13:00
-permalink: "/win/outlook-2010-how-to-find-your-exchange-address/"
+permalink: /win/outlook-2010-how-to-find-your-exchange-address/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Open **Outlook** 
   2. Click on **File** 
   3. Click on **Account Settings** 

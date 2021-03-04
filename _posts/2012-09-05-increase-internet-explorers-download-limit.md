@@ -1,33 +1,32 @@
 ---
-title: Increase Internet Explorers Download Limit
-date: 2012-09-06 09:39:27 +12:00
-permalink: "/win/increase-internet-explorers-download-limit/"
-categories:
-- Windows
 id: 1031
+title: Increase Internet Explorers Download Limit
+date: 2012-09-05T21:39:27+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1031
+permalink: /win/increase-internet-explorers-download-limit/
 dsq_thread_id:
-- '4896453715'
+  - "4896453715"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '6'
+  - "6"
+categories:
+  - Windows
 ---
-
 Internet Explorer limits the amount of concurrent downloads. This is how you increase it
 
   1.  Click **Start**

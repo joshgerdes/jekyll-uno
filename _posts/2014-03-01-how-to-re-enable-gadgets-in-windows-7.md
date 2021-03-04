@@ -1,11 +1,9 @@
 ---
 title: How to re enable gadgets in Windows 7
-date: 2014-03-01 00:00:00 +13:00
-permalink: "/win/how-to-re-enable-gadgets-in-windows-7/"
+permalink: /win/how-to-re-enable-gadgets-in-windows-7/
 categories:
-- Windows
+  - Windows
 ---
-
   1. Click Start 
   2. Click Control Panel 
   3. Click Program and Features 

@@ -1,12 +1,10 @@
 ---
 title: Windows was unable to find a certificate to log you on to the network
-date: 2012-05-31 00:00:00 +12:00
-permalink: "/win/win-unable-to-find-cert-to-log-you-on-to-the-network/"
-categories:
-- Windows
 layout: post
+permalink: /win/win-unable-to-find-cert-to-log-you-on-to-the-network/
+categories:
+  - Windows
 ---
-
   1. Click **Start**
   2. Click **Run**
   3. Type: **_ncpa.cpl_** and press Enter

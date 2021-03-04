@@ -1,50 +1,49 @@
----
+# Site settings
 title: luke.geek.nz
-timezone: Pacific/Auckland
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-url: https://luke.geek.nz
-description: An IT Engineer with a love for all things IT including (but not limited
-  to), Microsoft Azure, Automation and Service Management!
-baseurl: 
-google_analytics: UA-67246563-1
-disqus_shortname: lukegeeknz
+url: 'https://luke.geek.nz'
+description: 'An IT Engineer with a love for all things IT including (but not limited to), Microsoft Azure, Automation and Service Management!'
+baseurl: ''
+google_analytics: 'UA-67246563-1'
+disqus_shortname: 'lukegeeknz'
+
 author:
-  name: Luke Murray
+  name: 'Luke Murray'
   email: email@luke.geek.nz
   twitter_username: lukemurraynz
-  github_username: lukemurraynz
-  linkedin_username: ljmurray
+  github_username:  lukemurraynz
+  linkedin_username:  ljmurray
+
 pages_list:
-  Archives: "/archives/"
-  Categories: "/categories/"
+  Archives: '/archives/'
+  Categories: '/categories/'
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
 destination: _site
 paginate: 5
-permalink: "/:title"
+permalink: /:title
 markdown: kramdown
 highlighter: rouge
+
 kramdown:
+  # use Github Flavored Markdown
   input: GFM
+  # do not replace newlines by <br>s
   hard_wrap: false
+
 plugins:
-- jemoji
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-seo-tag
-- jekyll-toc
-exclude:
-- README.md
-- Gemfile
-- Gemfile.lock
-- screenshot.png
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-toc
+
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

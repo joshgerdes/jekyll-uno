@@ -1,11 +1,9 @@
 ---
 title: Diablo 3 Corrupted Update
-date: 2012-05-16 00:00:00 +12:00
-permalink: "/misc/diablo-3-corrupted-update/"
+permalink: /misc/diablo-3-corrupted-update/
 categories:
-- Misc
+  - Misc
 ---
-
 Trying to either install Diablo 3 or update it and you are getting an error &#8220;appears to be corrupt&#8221; that is preventing the game from installing or updating?  This issue is usually caused by a speed decrease in the download speed of the file (usually occurred by either Blizzards servers or your own internet connection)_ try the following below to fix it.
 
   1. First thing, **delete** the **corrupted** **update** file and resume your Diablo install/update (C:Program Files (x86)Diablo IIIUpdates)

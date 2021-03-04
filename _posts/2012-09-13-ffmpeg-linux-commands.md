@@ -1,33 +1,32 @@
 ---
-title: ffmpeg Linux commands
-date: 2012-09-13 20:17:24 +12:00
-permalink: "/linux/ffmpeg-linux-commands/"
-categories:
-- Linux
 id: 1081
+title: ffmpeg Linux commands
+date: 2012-09-13T08:17:24+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1081
+permalink: /linux/ffmpeg-linux-commands/
 dsq_thread_id:
-- '4987899926'
+  - "4987899926"
 omc_review_enable:
-- '0'
+  - "0"
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_type:
-- stars
+  - stars
 omc_criteria_display:
-- n
+  - 'n'
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '9'
+  - "9"
+categories:
+  - Linux
 ---
-
 **Getting infos from a video file**
 
 ffmpeg -i video.avi

@@ -1,33 +1,32 @@
 ---
-title: Disable Windows 7 Password 30 Timeout
-date: 2012-09-06 06:25:05 +12:00
-permalink: "/win/disable-win7/"
-categories:
-- Windows
 id: 1022
+title: Disable Windows 7 Password 30 Timeout
+date: 2012-09-05T18:25:05+00:00
 author: Luke
 layout: post
 guid: http://techdrive.co.nz/?p=1022
+permalink: /win/disable-win7/
 dsq_thread_id:
-- '5340262964'
+  - "5340262964"
 omc_featured_post:
-- '0'
+  - "0"
 omc_comment_type:
-- wp
+  - wp
 omc_criteria_display:
-- n
+  - 'n'
 omc_review_type:
-- stars
+  - stars
 omc_user_ratings_visibility:
-- '0'
+  - "0"
 omc_review_enable:
-- '0'
+  - "0"
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '11'
+  - "11"
+categories:
+  - Windows
 ---
-
   1. Click **Start**
   2. Click **Programs**
   3. Click **Accessories**

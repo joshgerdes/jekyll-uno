@@ -1,21 +1,20 @@
 ---
-title: How to adjust line spacing in Word 2010
-date: 2013-12-02 09:25:08 +13:00
-permalink: "/win/how-to-adjust-line-spacing-in-word-2010/"
-categories:
-- Windows
 id: 2782
+title: How to adjust line spacing in Word 2010
+date: 2013-12-01T20:25:08+00:00
 author: Luke
 layout: post
 guid: http://www.techremedy.co.nz/?p=2782
+permalink: /win/how-to-adjust-line-spacing-in-word-2010/
 mfn-post-love:
-- '0'
+  - "0"
 post_views_count:
-- '18'
+  - "18"
 dsq_thread_id:
-- '4809943196'
+  - "4809943196"
+categories:
+  - Windows
 ---
-
  
   
  

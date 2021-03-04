@@ -1,12 +1,10 @@
 ---
 title: Reset Windows 7/8 Firewall to its default state
-date: 2013-12-17 00:00:00 +13:00
-permalink: "/win/reset-windows-78-firewall-to-its-default-state/"
-categories:
-- Windows
 layout: post
+permalink: /win/reset-windows-78-firewall-to-its-default-state/
+categories:
+  - Windows
 ---
-
 Note: You need the rights to be able to run an elevated Command Prompt.
 
 

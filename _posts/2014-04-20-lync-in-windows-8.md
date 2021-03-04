@@ -1,11 +1,9 @@
 ---
 title: How to use Lync in Windows 8
-date: 2014-04-20 00:00:00 +12:00
-permalink: "/win/lync-in-windows-8/"
+permalink: /win/lync-in-windows-8/
 categories:
-- Windows
+  - Windows
 ---
-
 Microsoft have released a Lync Metro App &#8211; available free through the <a title="Microsoft Store - Lync" href="http://apps.microsoft.com/windows/en-nz/app/lync/ba4b9485-8712-41ff-a9ea-6243a3e07682" target="_blank">Windows Store</a> &#8211; Lync in Windows 8.
 
 On first run &#8211; select if you want to run Lync in the background &#8211; this means that Lync will run regardless of whether you have opened it up first.

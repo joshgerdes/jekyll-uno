@@ -1,12 +1,10 @@
 ---
 title: Advpack.dll Not Found
-date: 2012-03-05 00:00:00 +13:00
-permalink: "/win/advpack-not-found/"
-categories:
-- Windows
 layout: post
+permalink: /win/advpack-not-found/
+categories:
+  - Windows
 ---
-
 Advpack.dll Not Found is only one version of the error messages that Advpack.dll can create – “&#8221;This application failed to start because advpack.dll was not found. Re-installing the application may fix this problem” is another known error.
 
 Although mainly occurring in the older versions of Windows I have seen this error occur from Windows XP through to Windows 7 and is mainly caused by installing the wrong .Net Framework for your computers architecture – for example attempting to install .Net Framework x86 on a 64 bit version of Windows.

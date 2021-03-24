@@ -10,7 +10,7 @@ toc: true
 ![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
 * TOC
-{:toc}
+  {:toc}
 
 ## Issue Description
 
@@ -22,7 +22,7 @@ VM Agent is unable to communicate with the Azure Backup service.
 
 This may occur if Windows Communication Framework (WCF) profiling is enabled. WCF profiling should only be enabled while debugging a WCF issue. It should not be left enabled while running a production workload.
 
-## Resolution
+## Resolution #1
 
 * Disable WCF profiling:
 
@@ -57,3 +57,30 @@ Also remove this text, being careful not to also remove any additional text that
     net start Rdagent
 
 6\. In some cases the VM may need to be restarted for the WCF disablement to take effect.
+
+## Resolution #2
+
+From time to time the Azure backup agent may fail. Sometimes this will self-resolve but on the odd occasion, additional steps may be needed.
+
+1\. Uninstall the agent via the Control Panel.  
+   
+2\. Open CMD as Admin.  
+   
+3\. Stop the following services:
+
+    net stop rdagent
+
+    net stop WindowsAzureGuestAgent
+
+    net stop WindowsAzureTelemetryService 
+
+4\. Delete all the services of the agent:
+
+    sc delete rdagent
+
+    sc delete WindowsAzureGuestAgent
+
+    sc delete WindowsAzureTelemetryService 5. Create a folder called OLD in “C:\ WindowsAzure\” and move the old version of the agent to it and the folders that say Packages. 
+
+6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
+ 7. Restart the server.

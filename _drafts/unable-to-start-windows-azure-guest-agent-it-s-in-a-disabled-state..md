@@ -7,6 +7,8 @@ categories:
 toc: true
 
 ---
+![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
+
 ## Issue Description
 
 Unable to start Windows Azure Guest Agent (it's in a disabled state). When trying and set the service to auto the following error occurs 'The specified service has been marked for deletion.

@@ -1,0 +1,19 @@
+---
+label: Create Post - Azure
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: list
+  name: categories
+  label: categories
+- type: boolean
+  name: toc
+  label: toc

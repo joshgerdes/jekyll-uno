@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: jekyll-posts
   label: Posts
+  create: all
+- type: jekyll-pages
+  label: Pages
   create: all
 upload_dir: uploads
 public_path: "/uploads"

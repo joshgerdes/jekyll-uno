@@ -2,7 +2,8 @@
 date: 2021-03-25 00:00:00 +1300
 title: 'Unable to start Windows Azure Guest Agent (it''s in a disabled state). '
 author: Luke
-categories: []
+categories:
+- Azure
 toc: true
 
 ---

@@ -22,3 +22,4 @@ pages:
 - _posts/2021-03-25-unable-to-start-windows-azure-guest-agent-it-s-in-a-disabled-state..md
 - _posts/2021-03-26-the-cloud-frame-of-mind.md
 - _posts/allow-azure-devops-microsoft-hosted-agent-to-communicate-with-azure-keyvault.md
+- _posts/failed-to-delete-the-private-endpoint.error-call-to-microsoft.storage-storageaccounts-failed.md

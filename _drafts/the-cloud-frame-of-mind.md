@@ -65,7 +65,7 @@ Long story short so, what does this all mean? In a few bullet points – this is
 * Empower others while making sure that everything is auditable, standardized.
 * Develop and promote an ‘everything as code’, ‘everything is automated’ mindset.
 * Test and develop roadmaps to get the most out of upcoming Cloud capabilities.
-* Educate employees on Security and use of technology to get the most out of it – remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.
+* Educate employees on Security and the use of technology to get the most out of it – remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.
 * Automate what is trivial, boring, mundane, and belittling.
 * Champion improvements in People/Process and ways of working
 * Concentrate on Operational Improvements, such as Incident and Problem Management

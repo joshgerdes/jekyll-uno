@@ -73,6 +73,8 @@ In a few bullet points – this is some of what comes to mind when I think of ha
 * Champion improvements in People/Process and ways of working
 * Concentrate on Operational Improvements, such as Incident and Problem Management
 
-And finally, Revisit, Improve and Reinvest and enjoy the challenge and opportunities that being in the 4th industrial revolution has to offer! It is surely an exciting time.
+And finally, Revisit, Improve and Reinvest... and enjoy the challenge and opportunities that being in the 4th industrial revolution has to offer! 
+
+It is surely an exciting time and is only just the beginning...
 
 ![](/uploads/map.png "Word Cloud")

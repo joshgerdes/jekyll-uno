@@ -13,7 +13,8 @@ Microsoft has built (and continuously improving) some great tools to help custom
 
 Microsoft Azure and other Cloud/Software as a Service product operate in the Opex (or Operational Expenditure) model, meaning that you are essentially paying for subscription-based services and resources on a Monthly or as consumed basis – versus the traditional Capex (or Capital Expenditure) model where you may pay for something up-front whether you use it or not and usually leads to waste in the capital due to oversizing machines or purchasing more than is needed, using Opex gives greater flexibility in terms of what you are currently (and not) consuming and what you want to consume, one thing to remember is that if something is scaled up, it can always be scaled down again with little (or none in some cases) downtime or risk.
 
-* TOC {:toc}
+* TOC 
+{:toc}
 
 ## Roles & Responsibilities & Azure Governance
 

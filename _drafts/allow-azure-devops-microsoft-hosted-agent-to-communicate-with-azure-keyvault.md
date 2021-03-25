@@ -1,6 +1,6 @@
 ---
 date: 2021-03-26 00:00:00 +1300
-title: Allow Azure DevOps Microsoft Hosted Agent to communicate with Azure Keyvault
+title: Allow Azure DevOps Microsoft Hosted Agent to communicate with Azure KeyVault
 author: Luke
 categories:
 - Azure

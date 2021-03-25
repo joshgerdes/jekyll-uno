@@ -16,7 +16,7 @@ In an effort to continue to make things better, stronger, and faster we have dev
 
 Although there are many technologies in play around the world, artificial intelligence, machine learning, virtual and augmented reality, biotechnology, robotics, and the internet of things to name a few – faster computer processing capability and datacenters all connected to each other and built into the fabric of connectivity across the backbone of the internet, is what I am here to talk about today.
 
-Companies such as Microsoft, in just over 11 years have revolutionized the world of Information Technology. The Microsoft Azure ecosystem is not just ‘someone else computer’, it is so much more than that.
+Companies such as Microsoft, in just over 11 years have revolutionized the world of Information Technology. The Microsoft Azure ecosystem is not just ‘_someone else computer’_, it is so much more than that.
 
 Traditional data centers or on-premises equipment use to require specialized knowledge around areas such as Networking and Hardware, every business function needed to have a physical server, taking up space in a specialized air-conditioned room or just sitting under someone’s desk, running critical functions needed by businesses. I am not saying, this is still not the case and that there are no excuses for such implementations (other than running under someone’s desk), what I am saying is that ‘Information Technology was about Information **Technology**’ – the ‘Information’ portion of that was a bit harder to access than it is today and was a lot more hands-on to drive value.
 
@@ -24,7 +24,7 @@ Cloud is disrupting traditional IT faster than we think. Today, with 80% of busi
 
 > “A ship is safe in harbor, but that's not what ships are for.” - William Shedd
 
-Using and treating the Microsoft Azure ecosystem, like a normal on-premises datacenter in a world where ‘a kid working in a garage anywhere in the world, can put you out of business will slowly but surely limit your potential, with the global scale of the Azure platform, its now possible for businesses, charities and similarly minded individuals to have a global and multi-regional presence.
+Using and treating the Microsoft Azure ecosystem, like a normal on-premises datacenter in a world where "_a kid working in a garage anywhere in the world, can put you out of business"_ will slowly but surely limit your potential, with the global scale of the Azure platform, its now possible for businesses, charities and similarly minded individuals to have a global and multi-regional presence.
 
 In the world of digital transformation, technology has become the source of competitive differentiation – If you haven’t realized that your company is a technology company, you have already lost.
 

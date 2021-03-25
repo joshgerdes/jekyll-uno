@@ -60,7 +60,7 @@ Long story short so, what does this all mean? In a few bullet points – this is
 * Remember that employee Utilisation does not equal maximum throughput.
 * Build what you cannot buy. Buy what you can't live without
 * Log what is useful, monitor what matters, alert on what's actionable.
-* Empower others while making sure that everything is auditable, standardized.
+* Empower others (ie Shift Left) while making sure that everything is auditable, standardized.
 * Develop and promote an ‘everything as code’, ‘everything is automated’ mindset.
 * Test and develop roadmaps to get the most out of upcoming Cloud capabilities.
 * Educate employees on Security and the use of technology to get the most out of it – remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.

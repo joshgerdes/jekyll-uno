@@ -54,6 +54,7 @@ In a few bullet points – this is some of what comes to mind when I think of ha
 * Try, Try, Fail and Try again – Experiment!
 * Think outside of the traditional box, into using technology across Cloud ecosystems such as Azure to drive outcomes.
 * Partnerships with Microsoft and other businesses globally are important to learn, adapt and avoid reinventing the wheel.
+* Shift from Captial to Operational expenses, subscription-based modelling and pay for what you use and consume.
 * Enable, Trust and empower employees.
 * Do not aim for perfection before moving forward or you will never get there.
 * Use Analytics, Integration, and Machine Learning engines to help drive data-driven business decisions.

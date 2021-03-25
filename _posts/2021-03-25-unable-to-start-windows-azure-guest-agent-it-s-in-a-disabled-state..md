@@ -14,7 +14,7 @@ toc: true
 
 ## Issue Description
 
-Unable to start Windows Azure Guest Agent (it's in a disabled state). When trying and set the service to auto the following error occurs 'The specified service has been marked for deletion.
+Unable to start Windows Azure Guest Agent (it's in a disabled state). When trying and set the service to auto the following error occurs 'The specified service has been marked for deletion.'
 
 VM Agent is unable to communicate with the Azure Backup service.
 
@@ -30,9 +30,9 @@ This may occur if Windows Communication Framework (WCF) profiling is enabled. WC
 
 * Run the following commands to back up the existing: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\machine.config file:
 
-  cd C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config
+    cd C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config
 
-  copy machine.config machine.config.bak
+    copy machine.config machine.config.bak
 
 1. Run notepad machine.config to edit the file in Notepad.
 

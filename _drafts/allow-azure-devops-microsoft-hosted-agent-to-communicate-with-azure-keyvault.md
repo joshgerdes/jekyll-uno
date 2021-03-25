@@ -13,7 +13,7 @@ When using Microsoft Hosted Agents in Azure DevOps, you need to make sure that t
 
 In my case, I was in the: AustraliaEast region and needed to identify and add the following 'AzureCloud' Address Ranges to the KeyVault firewall:
 
-* "name": "AzureCloud.australiaeast",
+* "name": "**_AzureCloud.australiaeast_**",
 * "id": "AzureCloud.australiaeast",
 * "properties": {
 * "changeNumber": 13,
@@ -128,4 +128,4 @@ You can retrieve the list of Azure IP Ranges and Service Tags from the following
 
 * [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 
-_Note: These IPs can change and update, depending on Microsoft removing and adding new datacenter capability, it is always worth rechecking the list if you find you start having problems with intermittent connectivity to check whether new ranges have been added that haven't been whitelisted._
+_Note: These IP ranges can change and update, depending on Microsoft removing and adding new datacenter capability, it is always worth rechecking the list if you find you start having problems with intermittent connectivity to check whether new ranges have been added that haven't been whitelisted._

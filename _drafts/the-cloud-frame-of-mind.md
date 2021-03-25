@@ -70,4 +70,6 @@ Long story short so, what does this all mean? In a few bullet points – this is
 * Champion improvements in People/Process and ways of working
 * Concentrate on Operational Improvements, such as Incident and Problem Management
 
-And finally, Revisit, Improve and reinvest.
+And finally, revisit, Improve and reinvest.
+
+![](/uploads/migrate.png)

@@ -3,7 +3,8 @@ date: 2021-03-25 00:00:00 +1300
 title: Installing the RSAT (Remote Server Administration Tools for Windows 10) tools
   using PowerShell
 author: Luke
-categories: []
+categories:
+- PowerShell
 toc: false
 
 ---

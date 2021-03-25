@@ -7,7 +7,7 @@ categories: []
 toc: false
 
 ---
-Installing the RSAT (Remote Server Administration Tools for Windows 10) tools using PowerShell. This is just a quick 
+Installing the RSAT (Remote Server Administration Tools for Windows 10) tools using PowerShell. This is just a quick article, written purely as an easy reference.
 
 In the age of the cloud and work from anywhere, Windows 10 allows you easily, install the Remote Server Administration Tools using PowerShell, sometimes (like me) you need these tools not to actually use them - but for the PowerShell modules that come with them to work on scripts locally.
 
@@ -56,7 +56,7 @@ To install ALL the RSAT Tools run the following:
 To only install ONLY the Active Directory Users & Computers Remote Administration tool run the following command:
 
     Get-WindowsCapability -Name RSAT.ActiveDirectory* -Online | Add-WindowsCapability -Online
-    
+
 To only install ONLY the Group Policy Management Remote Administration tool run the following command:
 
     Get-WindowsCapability -Name RSAT.GroupPolicy* -Online | Add-WindowsCapability -Online

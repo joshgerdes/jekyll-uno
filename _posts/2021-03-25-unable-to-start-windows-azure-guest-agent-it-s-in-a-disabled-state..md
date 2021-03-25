@@ -10,7 +10,7 @@ toc: true
 ![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
 * TOC
-  {:toc}
+{:toc}
 
 ## Issue Description
 

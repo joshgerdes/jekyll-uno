@@ -32,7 +32,11 @@ In the world of digital transformation, technology has become the source of comp
 
 Information Technology functional requirements have changed from thinking of performance in terms of the central processing unit (CPU), and Random-access memory (RAM), to thinking about user experience (useability), portability, and scalability.
 
+![](/uploads/devops.png "Azure DevOps")
+
 Cloud-based thinking is migrating workloads from IaaS (Infrastructure as a Service) to PaaS (Platform as a Service), or from PaaS to SaaS (Software as a Service), instead of you working for the technology, the technology works for you. Those previous Information Technology professionals that once worked till the early hours of the morning replacing hardware, keeping systems up and running, are now free to automate, simplify and understand how the technology can work for the consumer.
+
+![](/uploads/azurebuiltincontrols.png)
 
 The perimeter for security is no longer some black box, running in a dark room blinking into the night – it is your identity, your phone, your password (or password less). Security is everyone’s concern and education of security and how to use technologies is just not the ‘IT guys’ responsibility.
 

@@ -23,7 +23,7 @@ In my case, the Storage account I was attempting to remove the Private Endpoint 
 * Found and removed the lock on the storage account
 * Then successfully delete the private endpoint
 
-## More info:
+## More info
 
 Generally, it is recommended that keep the lock taken on the storage account by Azure Backup. If you delete the lock, your storage account will be prone to accidental deletion and if it's deleted, you'll lose your snapshots or backups.
 

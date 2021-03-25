@@ -1,5 +1,5 @@
 ---
-date: 2021-03-25 00:00:00 +1300
+date: 2021-03-25T00:00:00.000+13:00
 title: Unable to start Windows Azure Guest Agent (it's in a disabled state)
 author: Luke
 categories:
@@ -10,7 +10,7 @@ toc: true
 ![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
 * TOC
-{:toc}
+  {:toc}
 
 ## Issue Description
 
@@ -24,17 +24,15 @@ This may occur if Windows Communication Framework (WCF) profiling is enabled. WC
 
 ## Resolution #1
 
-* Disable WCF profiling:
+Disable WCF profiling:
 
 1. Launch an elevated CMD prompt.
+2. Run the following commands to back up the existing: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\machine.config file:
 
-* Run the following commands to back up the existing: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\machine.config file:
+       cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config
 
-    cd C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config
-
-    copy machine.config machine.config.bak
-
-1. Run notepad machine.config to edit the file in Notepad.
+       copy machine.config machine.config.bak
+3. Run notepad machine.config to edit the file in Notepad.
 
 Remove this text, being careful not to also remove any additional text that may be on the same line:
 
@@ -62,24 +60,24 @@ Also remove this text, being careful not to also remove any additional text that
 
 From time to time the Azure backup agent may fail. Sometimes this will self-resolve but on the odd occasion, additional steps may be needed.
 
-1\. Uninstall the agent via the Control Panel.  
-   
-2\. Open CMD as Admin.  
-   
+1\. Uninstall the agent via the Control Panel.
+
+2\. Open CMD as Admin.
+
 3\. Stop the following services:
 
     net stop rdagent
-
+    
     net stop WindowsAzureGuestAgent
-
+    
     net stop WindowsAzureTelemetryService 
 
 4\. Delete all the services of the agent:
 
     sc delete rdagent
-
+    
     sc delete WindowsAzureGuestAgent
-
+    
     sc delete WindowsAzureTelemetryService 5. Create a folder called OLD in “C:\ WindowsAzure\” and move the old version of the agent to it and the folders that say Packages. 
 
 6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  

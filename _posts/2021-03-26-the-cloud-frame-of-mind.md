@@ -32,7 +32,7 @@ Information Technology functional requirements have changed from thinking of per
 
 ![](/uploads/devops.png "Azure DevOps")
 
-Cloud-based thinking is migrating workloads from IaaS (Infrastructure as a Service) to PaaS (Platform as a Service), or from PaaS to SaaS (Software as a Service), instead of you working for the technology, the technology works for you. Those previous Information Technology professionals that once worked till the early hours of the morning replacing hardware, keeping systems up and running, are now free to automate, simplify and understand how the technology can work for the consumer.
+Cloud-based thinking is migrating workloads from IaaS (Infrastructure as a Service) to PaaS (Platform as a Service), or from PaaS to SaaS (Software as a Service), instead of you working for the technology, the technology works for you. Those previous Information Technology professionals that once worked till the early hours of the morning replacing hardware, keeping systems up and running, are now free to automate, simplify and understand how the technology can work for the consumer. They can now finally concentrate on helping you to deliver and concentrate on the **Information** that is now at your disposal.
 
 ![](/uploads/azurebuiltincontrols.png)
 

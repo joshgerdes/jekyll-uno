@@ -46,7 +46,9 @@ What can and cannot be achieved has now been limited by people’s imaginations 
 
 With companies now operating at a global stage and remote working, retaining talent has never become so important, the importance of a company mission statement, strategic priorities, and their ‘Why’ - to use the words of Simon Sinek _‘People don't buy what you do, they buy why you do it._’ Has become a lot more important and visible as employees follow vision, leadership, and technology.
 
-Long story short so, what does this all mean? In a few bullet points – this is some of what comes to mind when I think of having a Cloud frame of mind means:
+Long story short so, what does this all mean? 
+
+In a few bullet points – this is some of what comes to mind when I think of having a Cloud frame of mind means:
 
 * Collaboration across Information Technology professionals (as the enablers) and Business needs have never been so important.
 * Try, Try, Fail and Try again – Experiment!

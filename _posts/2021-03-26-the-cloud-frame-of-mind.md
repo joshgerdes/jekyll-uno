@@ -64,10 +64,12 @@ Long story short so, what does this all mean? In a few bullet points – this is
 * Develop and promote an ‘everything as code’, ‘everything is automated’ mindset.
 * Test and develop roadmaps to get the most out of upcoming Cloud capabilities.
 * Educate employees on Security and the use of technology to get the most out of it – remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.
+* Take advantage of the variable cost model of the Cloud
+* Design efficient use of resources via such activities as rightsizing (the process of resizing cloud resources to better match the workload requirements), allocating container costs, finding unused storage and compute, and identifying whether spending anomalies are expected.
 * Automate what is trivial, boring, mundane, and belittling.
 * Champion improvements in People/Process and ways of working
 * Concentrate on Operational Improvements, such as Incident and Problem Management
 
-And finally, revisit, Improve and reinvest.
+And finally, Revisit, Improve and Reinvest.
 
 ![](/uploads/map.png "Word Cloud")

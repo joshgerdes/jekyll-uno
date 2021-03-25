@@ -19,7 +19,7 @@ Further investigation using Azure Application Insights, reveals the Azure WebApp
 
 In my case, the service that was running on the Azure WebApp was using .NET Core 2.0, the fix was to upgrade to the latest version.
 
-. .NET Core 2.0 is an unsupported version and we highly recommend upgrading to the latest version (3.1). Please take a look at this information of the .NET Core official support policy: [https://dotnet.microsoft.com/platform/support/policy/dotnet-core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core "https://dotnet.microsoft.com/platform/support/policy/dotnet-core")
+. NET Core 2.0 is an unsupported version and we highly recommend upgrading to the latest version (3.1). Please take a look at this information of the .NET Core official support policy: [https://dotnet.microsoft.com/platform/support/policy/dotnet-core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core "https://dotnet.microsoft.com/platform/support/policy/dotnet-core")
 
 For .NET Core applications I suggest enabling the stdout logs, as those will capture some important errors: [https://docs.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis?view=aspnetcore-2.2#aspnet-core-module-stdout-log-azure-app-service-1](https://docs.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis?view=aspnetcore-2.2#aspnet-core-module-stdout-log-azure-app-service-1 "https://docs.microsoft.com/en-us/aspnet/core/test/troubleshoot-azure-iis?view=aspnetcore-2.2#aspnet-core-module-stdout-log-azure-app-service-1")
 

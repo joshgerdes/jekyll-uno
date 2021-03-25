@@ -70,4 +70,4 @@ Long story short so, what does this all mean? In a few bullet points – this is
 
 And finally, revisit, Improve and reinvest.
 
-![](/uploads/migrate.png)
+![](/uploads/map.png "Word Cloud")

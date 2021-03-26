@@ -63,10 +63,11 @@ In a few bullet points – this is some of what comes to mind when I think of ha
 * Remember that employee Utilisation does not equal maximum throughput.
 * Build what you cannot buy. Buy what you can't live without
 * Log what is useful, monitor what matters, alert on what's actionable.
-* Empower others (ie Shift Left) while making sure that everything is auditable, standardized.
+* Empower others (ie shift left) while making sure that everything is auditable, standardized.
 * Develop and promote an ‘everything as code’, ‘everything is automated’ mindset.
 * Test and develop roadmaps to get the most out of upcoming Cloud capabilities.
-* Educate employees on Security and the use of technology to get the most out of it – remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.
+* Educate employees on Security and the use of technology to get the most out of it.
+* Remember that some of your clients’ employees are not ‘bogged’ down by what they deem as not possible in IT.
 * Take advantage of the variable cost model of the Cloud
 * Design efficient use of resources via such activities as rightsizing (the process of resizing cloud resources to better match the workload requirements), allocating container costs, finding unused storage and compute, and identifying whether spending anomalies are expected.
 * Automate what is trivial, boring, mundane, and belittling.

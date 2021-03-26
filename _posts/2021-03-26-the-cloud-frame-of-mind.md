@@ -22,7 +22,7 @@ Traditional data centers or on-premises equipment use to require specialized kno
 
 Cloud is disrupting traditional IT faster than we think. Today, with 80% of businesses deploying or fully embracing the cloud, we have ‘crossed the chasm’ and are in the ‘early majority stage of the adoption curve.
 
-> “A ship is safe in harbor, but that's not what ships are for.” - John A. Shedd
+> “A ship is safe in harbor, but that's not what ships are for.” - William Shedd
 
 Using and treating the Microsoft Azure ecosystem, like a normal on-premises datacenter in a world where "_a kid working in a garage anywhere in the world, can put you out of business"_ will slowly but surely limit your potential, with the global scale of the Azure platform, its now possible for businesses, charities and similarly minded individuals to have a global and multi-regional presence.
 

@@ -23,5 +23,5 @@ pages:
 - _posts/2021-03-26-allow-azure-devops-microsoft-hosted-agent-to-communicate-with-azure-keyvault.md
 - _posts/2021-03-26-failed-to-delete-the-private-endpoint.error-call-to-microsoft.storage-storageaccounts-failed.md
 - _posts/2021-03-26-the-cloud-frame-of-mind.md
-- _posts/azure-webapp-500-errors-reporting-from-aspnetcoremodule.md
+- _posts/2021-03-27-azure-webapp-500-errors-reporting-from-aspnetcoremodule.md
 - _posts/how-to-restrict-users-to-specific-boards-in-azure-devops.md

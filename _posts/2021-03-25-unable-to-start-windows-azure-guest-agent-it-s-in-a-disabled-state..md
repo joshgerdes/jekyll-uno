@@ -26,13 +26,13 @@ This may occur if Windows Communication Framework (WCF) profiling is enabled. WC
 
 Disable WCF profiling:
 
-1. Launch an elevated CMD prompt.
-2. Run the following commands to back up the existing: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\machine.config file:
+1\. Launch an elevated CMD prompt.
+2\. Run the following commands to back up the existing: C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\machine.config file:
 
        cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config
 
        copy machine.config machine.config.bak
-3. Run notepad machine.config to edit the file in Notepad.
+3\. Run notepad machine.config to edit the file in Notepad.
 
 Remove this text, being careful not to also remove any additional text that may be on the same line:
 

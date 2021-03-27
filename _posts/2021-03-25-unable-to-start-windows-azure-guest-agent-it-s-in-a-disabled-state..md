@@ -80,5 +80,5 @@ From time to time the Azure backup agent may fail. Sometimes this will self-reso
     
     sc delete WindowsAzureTelemetryService 5. Create a folder called OLD in “C:\ WindowsAzure\” and move the old version of the agent to it and the folders that say Packages. 
 
-6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
-7\. Restart the server.
+5\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
+6\. Restart the server.

@@ -12,7 +12,7 @@ toc: false
 
 We are at a turning point in history, where technology is enabling us to do more with less and faster, human life expectancy is longer than what it has ever been, and the world has never been as connected - We are in the 4th industrial revolution.
 
-In an effort to continue to make things better, stronger, and faster we have developed technological aids to assist to drive us forward, in areas such as (but not only) Health, space exploration, travel, and business transformation, one could almost call it the evolution of the first hammer or ax as a tool to help us survive and thrive.
+In an effort to continue to make things better, stronger, and faster we have developed technological aids to assist to drive us forward, in areas such as (but not only) Health, space exploration, travel, and business transformation, one could almost call it the evolution of the first hammer or axe as a tool to help us survive and thrive.
 
 Although there are many technologies in play around the world, artificial intelligence, machine learning, virtual and augmented reality, biotechnology, robotics, and the internet of things to name a few – faster computer processing capability and datacenters all connected to each other and built into the fabric of connectivity across the backbone of the internet, is what I am here to talk about today.
 
@@ -32,7 +32,9 @@ Information Technology functional requirements have changed from thinking of per
 
 ![](/uploads/devops.png "Azure DevOps")
 
-Cloud-based thinking is migrating workloads from IaaS (Infrastructure as a Service) to PaaS (Platform as a Service), or from PaaS to SaaS (Software as a Service), instead of you working for the technology, the technology works for you. Those previous Information Technology professionals that once worked till the early hours of the morning replacing hardware, keeping systems up and running, are now free to automate, simplify and understand how the technology can work for the consumer. They can now finally concentrate on helping you to deliver and concentrate on the **Information** that is now at your disposal.
+Cloud-based thinking is migrating workloads from IaaS (Infrastructure as a Service) to PaaS (Platform as a Service), or from PaaS to SaaS (Software as a Service), instead of you working for the technology, the technology works for you. 
+
+Those previous Information Technology professionals that once worked till the early hours of the morning replacing hardware, keeping systems up and running, are now free to automate, simplify and understand how the technology can work for the consumer. They can now finally concentrate on helping you to deliver and concentrate on the **Information** that is now at your disposal.
 
 ![](/uploads/azurebuiltincontrols.png)
 

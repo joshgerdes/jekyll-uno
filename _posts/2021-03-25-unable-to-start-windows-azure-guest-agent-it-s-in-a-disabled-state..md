@@ -24,6 +24,10 @@ This may occur if Windows Communication Framework (WCF) profiling is enabled. WC
 
 ## Resolution #1
 
+1\. Restart your workload, I would recommend to Stop (deallocate first) to make sure that the workload starts correctly on a new hypervisor, the Azure Backup agent starts and checks for agent updates during the boot process.
+
+## Resolution #2
+
 Disable WCF profiling:
 
 1\. Launch an elevated CMD prompt.
@@ -56,7 +60,7 @@ Also remove this text, being careful not to also remove any additional text that
 
 6\. In some cases the VM may need to be restarted for the WCF disablement to take effect.
 
-## Resolution #2
+## Resolution #3
 
 From time to time the Azure backup agent may fail. Sometimes this will self-resolve but on the odd occasion, additional steps may be needed.
 

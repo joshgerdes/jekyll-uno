@@ -1,6 +1,6 @@
 ---
 date: 2021-03-31 00:00:00 +1300
-title: Transfer Ownership of Azure Subscription
+title: Transfer Ownership of an Azure Subscription
 author: Luke
 categories:
 - Azure

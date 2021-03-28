@@ -5,6 +5,7 @@ description: 'An IT Engineer with a love for all things IT including (but not li
 baseurl: ''
 google_analytics: 'UA-67246563-1'
 disqus_shortname: 'lukegeeknz'
+languages: [en", "en-us"]
 
 author:
   name: 'Luke Murray'

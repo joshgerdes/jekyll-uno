@@ -15,7 +15,7 @@ It may be best to create a new Azure subscription, and then transfer _(using the
 
 Just a heads up IF you are selling services you have created in Microsoft Azure, whether freelance or professionally make sure you have spent time working on Azure governance to make sure you have a proper Azure Landing Zone stood up for standardization and naming conventions in place if you are a transferring a resource that has a Global Scope (ie these are usually Public-facing, the last thing you want is to transfer the resources to someone else and find out that you can't reuse the same unique name.
 
-**_Please read this carefully,_** there are certain limitations when transferring Subscription Ownership - especially across to another tenancy that you need to be aware of, these limitations are the Type of Subscription it is and the type of resources, encryption status, etc.[ Transfer an Azure subscription to a different Azure AD directory!](https://docs.microsoft.com/en-gb/azure/role-based-access-control/transfer-subscription?WT.mc_id=Portal-Microsoft_Azure_SubscriptionManagement#understand-the-impact-of-transferring-a-subscription) In some cases, you may need to look at alternative ways, such as redeploying or recreating the resources in the other subscription/tenancy manually - via redirecting an Azure DevOps deployment or manual backup export and import.
+**_Please read this carefully,_** there are certain limitations when transferring Subscription Ownership - especially across to another tenancy that you need to be aware of, these limitations are the Type of Subscription it is and the type of resources, encryption status, etc.[ Transfer an Azure subscription to a different Azure AD directory](https://docs.microsoft.com/en-gb/azure/role-based-access-control/transfer-subscription?WT.mc_id=Portal-Microsoft_Azure_SubscriptionManagement#understand-the-impact-of-transferring-a-subscription) In some cases, you may need to look at alternative ways, such as redeploying or recreating the resources in the other subscription/tenancy manually - via redirecting an Azure DevOps deployment or manual backup export and import.
 
 ## Transfer a Subscription
 
@@ -31,7 +31,7 @@ Once you are ready to transfer a subscription, you can do the rest, simply throu
 7. This will send an email to the recipient with a link to transfer the Azure subscription and all the resources.
    ![](/uploads/transferrequest.png)
 
-Note: The Transfer Request is not permanent, the recipient has only a few weeks to accept the transfer before you will need to it again, you can see the expires date in the screenshot above. 
+Note: The Transfer Request is not permanent, the recipient has only a few weeks to accept the transfer before you will need to it again, you can see the expires date in the screenshot above.
 
 Note: Something to be aware of, only the user in the new account who accepted the transfer request will have access to manage the resources, they will need to add the necessary groups and rights on their end.
 

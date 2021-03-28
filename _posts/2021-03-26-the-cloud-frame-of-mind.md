@@ -73,6 +73,7 @@ In a few bullet points – this is some of what comes to mind when I think of ha
 * Take advantage of the variable cost model of the Cloud
 * Design efficient use of resources via such activities as rightsizing (the process of resizing cloud resources to better match the workload requirements), allocating container costs, finding unused storage and compute, and identifying whether spending anomalies are expected.
 * Automate what is trivial, boring, mundane, and belittling.
+* The Cloud can offer cost savings with resiliency, high-availability, and security automation strategies
 * Champion improvements in People/Process and ways of working
 * Using the Cloud, does not always equal cost savings, however the real value is decreased time-to-deployment, increased agility to adapt to changes and opportunies for innovation, security and modernisation.
 * Concentrate and continue on operational improvements, such as Incident and Problem Management

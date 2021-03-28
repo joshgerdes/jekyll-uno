@@ -14,7 +14,7 @@ In the words of Microsoft:
 > Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
 >
 > * External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
-> * Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization. For more information about creating a tenant for your organization, see [Quickstart: Create a new tenant in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> * Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization. 
 
 Azure Active Directory (AAD) is simply not set and forget, especially given the fact that AAD  services are constantly evolving in terms of features and improved security.
 

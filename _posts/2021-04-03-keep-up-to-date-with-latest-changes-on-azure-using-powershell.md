@@ -18,7 +18,7 @@ So you can browse the website each week, or... monitor the RSS feeds. Sometimes 
 * Not have to go to the website to keep up-to-date with what is happening, maybe your happy with it popping up in your PowerShell session each time you open it.
 * Publish the information to Microsoft Teams channels to keep people informed.
 
-I have created a PowerShell function, that will retrieve the latest updates from the Microsoft Azure Updates RSS Feed and turn it into a PowerShell object you can actually use to keep informed.
+I have created a basic PowerShell function, that will retrieve the latest updates from the Microsoft Azure Updates RSS Feed and turn it into a PowerShell object you can actually use to keep informed.
 
 * TOC
 {:toc}

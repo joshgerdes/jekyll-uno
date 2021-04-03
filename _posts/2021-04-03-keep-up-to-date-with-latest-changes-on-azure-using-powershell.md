@@ -25,7 +25,7 @@ I have created a basic PowerShell function, that will retrieve the latest update
 
 ## The Script - Get-AzureBlogUpdates
 
-The script is hosted on my Github repository. Feel free to clone/recommend improvements or fork:
+The script is hosted on my Github repository. Feel free to clone/recommend improvements or fork, I can add parameter sets instead of relying on the PowerShell methods if you find this script useful:
 
 {% gist 7bf30a1f0f5f12e622e2bbe11ff7033d %}
 

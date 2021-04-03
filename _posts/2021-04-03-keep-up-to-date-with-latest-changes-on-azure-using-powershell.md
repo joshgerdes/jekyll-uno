@@ -5,7 +5,7 @@ author: Luke
 categories:
 - PowerShell
 - Azure
-toc: false
+toc: true
 
 ---
 Keeping up with what is happening with changes and previews in Microsoft Azure is difficult, change happens all the time - and being able to stay informed on what is happening with the Azure ecosystem is half the battle, whether it is a new feature or security fix.
@@ -21,7 +21,7 @@ So you can browse the website each week, or... monitor the RSS feeds. Sometimes 
 I have created a PowerShell function, that will retrieve the latest updates from the Microsoft Azure Updates RSS Feed and turn it into a PowerShell object you can actually use to keep informed.
 
 * TOC
-  {:toc}
+{:toc}
 
 ## The Script - Get-AzureBlogUpdates
 

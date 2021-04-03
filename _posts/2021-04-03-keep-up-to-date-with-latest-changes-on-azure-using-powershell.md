@@ -1,6 +1,6 @@
 ---
 date: 2021-04-03 00:00:00 +1300
-title: Keep up to date with latest changes on Azure using PowerShell
+title: Keep up to date with the latest changes on Azure using PowerShell
 author: Luke
 categories:
 - PowerShell

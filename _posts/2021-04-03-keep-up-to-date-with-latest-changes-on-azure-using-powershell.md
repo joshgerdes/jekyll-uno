@@ -42,7 +42,6 @@ The script is hosted on my Github repository. Feel free to clone/recommend impro
 
 ![](/uploads/windowsterminal_duphvuiqpz.png)
 
-    
     #EXAMPLE - Gets all Azure Blog Updates, and displays it as a Table, organised by Category
     Get-AzureBlogUpdates | Sort-Object Category -Descending | Format-Table
 

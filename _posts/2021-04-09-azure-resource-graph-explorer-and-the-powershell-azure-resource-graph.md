@@ -26,7 +26,7 @@ or by logging into the [Azure Portal](https://portal.azure.com){:target="_blank"
 
 ![](/uploads/azureresourcegraphsearch.png)
 
-The Azure Resource Graph Explorer, allows you to explore the Microsoft Azure Resource Graph, using inbuilt Sample Queries and the Kusto Query language. The Powershell queries mentioned in the section below, started by implying click on the 'microsoft.advisor/recommendations' field and selecting Run Query.
+The Azure Resource Graph Explorer, allows you to explore the Microsoft Azure Resource Graph, using inbuilt Sample Queries and the Kusto Query language. The Powershell queries mentioned in the section below, started by clicking on the 'microsoft.advisor/recommendations' field and selecting Run Query.
 
     advisorresources
     | where type == "microsoft.advisor/recommendations"

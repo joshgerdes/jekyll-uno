@@ -14,8 +14,9 @@ The idea was to create an export of Azure Recommendations, directly from the Azu
 
 * Azure Resource Graph Explorer
 * The Az.ResourceGraph PowerShell module
+
 * TOC
-  {:toc}
+{:toc}
 
 ### Azure Graph Resource Explorer
 

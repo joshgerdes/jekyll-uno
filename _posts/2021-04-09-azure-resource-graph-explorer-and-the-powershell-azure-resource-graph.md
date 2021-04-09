@@ -1,5 +1,5 @@
 ---
-date: 2021-04-09 00:00:00 +1200
+date: 2021-04-09T00:00:00.000+12:00
 title: Azure Resource Graph Explorer and the PowerShell Azure Resource Graph
 author: Luke
 categories:
@@ -14,9 +14,8 @@ The idea was to create an export of Azure Recommendations, directly from the Azu
 
 * Azure Resource Graph Explorer
 * The Az.ResourceGraph PowerShell module
-
 * TOC
-{:toc}
+  {:toc}
 
 ### Azure Graph Resource Explorer
 
@@ -85,7 +84,7 @@ This will now only select the 'Security' category. However as you can see below,
 
 ![Azure Resource Graph - Category 'Security'](/uploads/azureresourcegraph_category.png "Azure Resource Graph - Category 'Security'")
 
-The next step is to look into making it a bit more readable because we know this is a Kusto Language, its time to hit the Microsoft Docs page and read up about the 'Project Operator' - [https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator "https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator"). Project = "Select the columns to include, rename or drop, and insert new computed columns." That sounds like what we want. 
+The next step is to look into making it a bit more readable because we know this is a Kusto Language, its time to hit the Microsoft Docs page and read up about the 'Project Operator' - [https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator "https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator"). Project = "Select the columns to include, rename or drop, and insert new computed columns." That sounds like what we want.
 
 If we take a gander back at the 'Full Details' (or Example above) there are 3 fields I am looking at that would add the most value to a report or digest for the security posture of my Azure ecosystem:
 
@@ -122,9 +121,11 @@ and the Azure Resource Graph Explorer should display something like this:
 
 Using the Azure Resource Graph Explorer is a good way to create the Kusto queries you want, which you can then run the queries in PowerShell and turn them into PowerShell objects, which opens up a few possibilities for things like:
 
-* Automated Reporting on Cost, Security etc 
+* Automated Reporting on Cost, Security etc
 * Proactive remediation actions.
 
 First things first you need to install the Az.ResourceGraph module, then you can use the Search-AzGraph to run the queries that you created above. I am going to rely on the gist below to give you a few examples.
+
+![](/uploads/azuregraphpowershell.png)
 
 {% gist b350b5c73ef7fb0ad63f5797e4055f56 %}

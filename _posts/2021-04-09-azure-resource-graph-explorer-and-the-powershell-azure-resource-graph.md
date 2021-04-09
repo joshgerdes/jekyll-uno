@@ -134,4 +134,3 @@ First things first you need to install the Az.ResourceGraph module, then you can
 ![](/uploads/azuregraphpowershell.png)
 
 {% gist b350b5c73ef7fb0ad63f5797e4055f56 %}
-

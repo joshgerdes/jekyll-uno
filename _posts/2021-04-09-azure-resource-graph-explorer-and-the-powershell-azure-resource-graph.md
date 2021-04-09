@@ -63,7 +63,7 @@ I then clicked on the 'See Details' on the right-hand side to see all the detail
 
 And no, that isn't my real Subscription ID etc, I've replaced the field with randomly generated GUIDs.
 
-We can see that there is a good amount of actionable data here:
+We can see that there is a good amount of actionable data here such as:
 
 * This is a Security Category, recommendation.
 * It is Low Impact

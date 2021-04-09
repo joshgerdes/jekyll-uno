@@ -123,3 +123,5 @@ Using the Azure Resource Graph Explorer is a good way to create the Kusto querie
 * Proactive remediation actions.
 
 First things first you need to install the Az.ResourceGraph module, then you can use the Search-AzGraph to run the queries that you created above. I am going to rely on the gist below to give you a few examples.
+
+{% gist b350b5c73ef7fb0ad63f5797e4055f56 %}

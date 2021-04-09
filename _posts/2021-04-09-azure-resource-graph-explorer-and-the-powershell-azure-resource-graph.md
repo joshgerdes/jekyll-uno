@@ -118,7 +118,7 @@ and the Azure Resource Graph Explorer should display something like this:
 
 ![](/uploads/azuregraphexplorerfinalquery.png)
 
-Protip, on the Azure Resource Graph Explorer page, click on 'Get Started', underneath the Query window to view Example Queries, such as Listing all Public IP addresses or even getting the Security Center Recommendations. They are really good to use as a base and see how they work.
+#Protip, on the Azure Resource Graph Explorer page, click on 'Get Started', underneath the Query window to view Example Queries, such as Listing all Public IP addresses or even getting the Security Center Recommendations. They are really good to use as a base and see how they work.
 
 ### Azure Graph PowerShell
 

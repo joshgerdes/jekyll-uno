@@ -65,7 +65,7 @@ And no, that isn't my real Subscription ID etc, I've replaced the field with ran
 
 We can see that there is a good amount of actionable data here such as:
 
-* This is a Security Category, recommendation.
+* This is a Security Category recommendation
 * It is Low Impact
 * The problem is that the Azure subscription should have a contact email address to be used for Security alerts and it does not have one set up (Oops!)
 

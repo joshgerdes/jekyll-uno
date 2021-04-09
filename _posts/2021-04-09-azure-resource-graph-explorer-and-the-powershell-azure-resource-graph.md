@@ -5,7 +5,7 @@ author: Luke
 categories:
 - PowerShell
 - Azure
-toc: false
+toc: true
 
 ---
 Every now and again you come across something that you pay little attention to until you actually spend the time to sit down, work through and try to break stuff! The Azure Resource Graph was that for me!
@@ -14,6 +14,9 @@ The idea was to create an export of Azure Recommendations, directly from the Azu
 
 * Azure Resource Graph Explorer
 * The Az.ResourceGraph PowerShell module
+
+* TOC
+{:toc}
 
 ### Azure Graph Resource Explorer
 

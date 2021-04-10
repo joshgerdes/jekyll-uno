@@ -6,8 +6,6 @@ categories:
 author: Luke
 
 ---
-## Introduction
-
 BgInfo is beneficial for Endpoint device support by displaying the Asset number, IP address and logged on username overlaid on top of the wallpaper, it is OS independent and can be used across other Windows Desktop and Windows Server environments.
 
 BGInfo is a free Windows Sysinternals utility created by Microsoft engineer, Mark Russinovich.

@@ -102,9 +102,9 @@ author:
   location         : "Waikato, New Zealand"
   email            :
   links:
-    - label: "Email"
+##    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "<a href="mailto:email@luke.geek.nz?subject=Mail from luke.geek.nz">Email</a>  "
+      url: "[Email](mailto:email@luke.geek.nz?subject=[Website Request:]%20Source%20Han%20Sans)"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lukemurraynz"

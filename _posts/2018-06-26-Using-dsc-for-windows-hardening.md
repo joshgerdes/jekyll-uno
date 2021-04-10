@@ -4,6 +4,7 @@ title: Using PowerShell DSC for Windows Hardening
 author: Luke
 categories:
   - PowerShell
+permalink: /Using-dsc-for-windows-hardening
 ---
 
 I am not a DSC *(Desired State Configuration)* expert, however, the technology

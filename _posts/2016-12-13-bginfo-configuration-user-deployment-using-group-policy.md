@@ -144,12 +144,12 @@ Go back to Windows Explorer; we now need to get the Group Policy location/path. 
 
 Enter in the following detail (the <a href="///\\DOMAIN">\\DOMAIN</a> till the Logon path is the location of your Group Policy, copied from Step 13) and click Save:
 
-@echo off
+    @echo off
 
 
-\\DOMAIN\SysVol\luke.geek.nz\Policies\{8BBCd98E-4907-4D45-B662-8034A55B0352}\User\Scripts\Logon\Bginfo.exe \\DOMAIN\SysVol\luke.geek.nz\Policies\{8BBCd98E-4907-4D45-B662-8034A55B0352}\User\Scripts\Logon\config.bgi /accepteula /silent /timer 0
+    \\DOMAIN\SysVol\luke.geek.nz\Policies\{8BBCd98E-4907-4D45-B662-8034A55B0352}\User\Scripts\Logon\Bginfo.exe \\DOMAIN\SysVol\luke.geek.nz\Policies\{8BBCd98E-4907-4D45-B662-8034A55B0352}\User\Scripts\Logon\config.bgi /accepteula /silent /timer 0
 
-Exit
+    Exit
 
 Double click the Run_BGInfo.bat to confirm it works, and if not modify the batch script to work – it needs to point towards the exact BGInfo and configuration file and to avoid extra spaces it may be best to run it on the same line with a space between BgInfo.exe and the path to the configuration file only.
 

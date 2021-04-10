@@ -17,9 +17,6 @@ fields:
 - type: boolean
   name: toc
   label: toc
-- type: text
-  name: permalink
-  label: permalink
 - type: field_group
   name: header
   label: header

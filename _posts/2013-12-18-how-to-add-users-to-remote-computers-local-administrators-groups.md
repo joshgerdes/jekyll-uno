@@ -1,5 +1,5 @@
 ---
-title: How to add users to remote computers local Administrators groups
+title: How to add users to the Remote Computers local Administrators groups
 permalink: /win/how-to-add-users-to-remote-computers-local-administrators-groups/
 categories:
   - Windows
@@ -10,7 +10,10 @@ categories:
   4. Navigate to your Documents or Desktop and create a new txt file called: computernames.txt
   5. In the computernames.txt document – add (one in each new line) the computer names that you will like to add the user to the Administrators group of.
   6. Once they have been added – save the time with the computer names.
-  7. Now we need to create a batch script – open a new Notepad document and in the first line type: PSEXEC.EXE @computernames.txt NET LOCALGROUP Administrators **DOMAIN\****USERID** /ADD
+  7. Now we need to create a batch script – open a new Notepad document and in the first line type: 
+  
+      PSEXEC.EXE @computernames.txt NET LOCALGROUP Administrators **DOMAIN\****USERID** /ADD
+
   8. Replace – DOMAIN & USERID with the user you would like to add.
   9. Press File and click Save As and type in: &#8220;addusers_multiple.bat&#8221;
  10. This will save the file as a batch script

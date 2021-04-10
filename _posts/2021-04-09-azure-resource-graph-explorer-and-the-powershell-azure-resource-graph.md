@@ -21,7 +21,6 @@ The idea was to create an export of Azure Recommendations, directly from the Azu
 ### Azure Graph Resource Explorer
 
 The Azure Graph Resource Explorer is built into the Azure Portal, it can be found by going to [https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade](https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade "https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade"){:target="_blank"}
-
 or by logging into the [Azure Portal](https://portal.azure.com){:target="_blank"} and typing in 'Resource Graph' and select Explorer.
 
 ![](/uploads/azureresourcegraphsearch.png)

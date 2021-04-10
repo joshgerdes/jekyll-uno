@@ -15,9 +15,6 @@ The idea was to create an export of Azure Recommendations, directly from the Azu
 * Azure Resource Graph Explorer
 * The Az.ResourceGraph PowerShell module
 
-* TOC
-{:toc}
-
 ### Azure Graph Resource Explorer
 
 The Azure Graph Resource Explorer is built into the Azure Portal, it can be found by going to [https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade](https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade "https://portal.azure.com/#blade/HubsExtension/ArgQueryBlade"){:target="_blank"}

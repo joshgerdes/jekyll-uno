@@ -45,6 +45,7 @@ plugins:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-toc
+  - jekyll-include-cache
 
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

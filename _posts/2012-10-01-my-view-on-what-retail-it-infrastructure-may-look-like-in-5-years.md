@@ -34,8 +34,6 @@ I believe the Information Technology infrastructure in five years will look brig
   <li>
     Servers will become more virtualized allowing for faster processing and stability.
   </li>
-</ol>
 
-&nbsp;
 
 _The above is my opinion and ideas on what IT infrastructure may look like in five years._

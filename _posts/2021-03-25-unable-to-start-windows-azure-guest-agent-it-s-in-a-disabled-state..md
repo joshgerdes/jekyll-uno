@@ -5,7 +5,8 @@ author: Luke
 categories:
 - Azure
 toc: true
-
+header: 
+  teaser: "images/iazure-marketplace-banner.png"
 ---
 ![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 

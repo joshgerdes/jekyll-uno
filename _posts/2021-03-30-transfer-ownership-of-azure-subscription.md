@@ -6,6 +6,8 @@ categories:
 - Azure
 toc: true
 permalink: /transfer-ownership-of-azure-subscription
+header: 
+  teaser: "images/iazure-marketplace-banner.png"
 
 ---
 Imagine you want to transfer Azure resources to another person or company? This could be because something may have been created in an external third-party subscription, to begin with, or you have created a product using Azure resources that you have just sold to the highest bidder!

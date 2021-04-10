@@ -7,6 +7,8 @@ categories:
 - Azure
 toc: false
 permalink: /the-cloud-frame-of-mind
+header: 
+  teaser: "images/iazure-marketplace-banner.png"
 
 ---
 > Note: Warning buzzwords to follow. Yes, it's that type of article. The views expressed are purely my own.

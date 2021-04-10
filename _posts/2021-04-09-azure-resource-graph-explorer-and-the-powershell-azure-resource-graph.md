@@ -6,6 +6,7 @@ categories:
 - PowerShell
 - Azure
 layout: single
+toc: true
 permalink: /azure-resource-graph-explorer-and-the-powershell-azure-resource-graph
 
 ---

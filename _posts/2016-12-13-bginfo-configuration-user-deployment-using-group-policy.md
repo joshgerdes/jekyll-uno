@@ -3,6 +3,7 @@ title: 'BgInfo Configuration &amp; User Deployment using Group Policy'
 permalink: /win/bginfo-configuration-user-deployment-using-group-policy/
 categories:
   - Windows
+author: Luke
 ---
 <div id="toc_container" class="no_bullets">
   <p class="toc_title">

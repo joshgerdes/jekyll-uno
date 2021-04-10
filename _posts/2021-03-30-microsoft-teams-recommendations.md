@@ -6,6 +6,8 @@ categories:
 - M365
 toc: false
 permalink: /microsoft-teams-recommendations
+header: 
+  teaser: "images/Office-365-Banner2.png"
 
 ---
 In the age of remote working and collaboration, Microsoft Teams is one of the most popular tools being used to increase communication and productivity. 

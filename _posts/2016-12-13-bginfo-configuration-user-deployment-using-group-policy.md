@@ -14,7 +14,7 @@ BGInfo is a free Windows Sysinternals utility created by Microsoft engineer, Mar
 
 This utility runs under the user’s context. This does not need admin rights. As such this, we will create this as a User-Based group policy that runs upon logon.
 
-## How_do_I_create_a_BGInfo_package
+## How do I create a BGInfo Package?
 
 Use the following guide to create the BG Info package…
 

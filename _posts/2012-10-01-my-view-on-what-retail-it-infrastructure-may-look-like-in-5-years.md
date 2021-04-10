@@ -9,6 +9,8 @@ categories:
 ---
 I believe the Information Technology infrastructure in five years will look bright with the promise of tomorrow.
 
+Note: Written: October 2, 2012
+
 
   <li>
     With the latest shiny gadgets accessible with a low price range and top of the line features the ability to look up the latest product trends, product information and customer information will be as simple as breathing.

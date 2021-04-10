@@ -1,36 +1,8 @@
 ---
-id: 2645
 title: How to convert DMG to IMG in Windows
-date: 2013-01-18T08:00:16+00:00
+date: 2013-01-18 T08:00:16 +00:00
 author: Luke
-layout:
-  - ""
-guid: http://localhost/incinerate/?p=2645
 permalink: /osx/how-to-convert-dmg-to-img-in-windows/
-dsq_thread_id:
-  - "4810402629"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-sidebar:
-  - ""
-header:
-  - 'yes'
-footer:
-  - ""
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "107"
 categories:
   - Mac OSX
   - Windows

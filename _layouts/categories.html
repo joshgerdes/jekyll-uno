@@ -1,29 +1,43 @@
 ---
-layout: default
+layout: archive
 ---
-<h2>Categories:</h2>
-<div class="categories"> 
-{% for catitem in site.categories  %} 
-  <a href="#{{ catitem[0] }}">{{  catitem[0] }}</a>
+
+{{ content }}
+
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
 {% endfor %}
-</div>
 
-<!-- iterate through all categories on the site --> 
-{% for catitem in site.categories %} 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="{{ catitem[0] }}">  
-    <h3> {{ catitem[0] }} </h3>  <!-- for create a heading --> 
+<ul class="taxonomy__index">
+  {% for i in (1..categories_max) reversed %}
+    {% for category in site.categories %}
+      {% if category[1].size == i %}
+        <li>
+          <a href="#{{ category[0] | slugify }}">
+            <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-      {% for post in site.posts %} 
-        <!-- list only those which contain the current tag --> 
-        {% if post.categories contains catitem[0] %} 
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% for i in (1..categories_max) reversed %}
+  {% for category in site.categories %}
+    {% if category[1].size == i %}
+      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ category[0] }}</h2>
+        <div class="entries-{{ entries_layout }}">
+          {% for post in category.last %}
+            {% include archive-single.html type=entries_layout %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+  {% endfor %}
 {% endfor %}

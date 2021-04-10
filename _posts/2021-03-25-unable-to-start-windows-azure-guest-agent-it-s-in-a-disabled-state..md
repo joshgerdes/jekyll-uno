@@ -48,7 +48,6 @@ Also remove this text, being careful not to also remove any additional text that
     <commonBehaviors><endpointBehaviors><Microsoft.VisualStudio.Diagnostics.ServiceModelSink.Behavior/></endpointBehaviors><serviceBehaviors><Microsoft.VisualStudio.Diagnostics.ServiceModelSink.Behavior/></serviceBehaviors></commonBehaviors>
 
 4\. Save and close the file.
-
 5\. Restart the guest agent services:
 
     net stop Rdagent
@@ -66,9 +65,7 @@ Also remove this text, being careful not to also remove any additional text that
 From time to time the Azure backup agent may fail. Sometimes this will self-resolve but on the odd occasion, additional steps may be needed.
 
 1\. Uninstall the agent via the Control Panel.
-
 2\. Open CMD as Admin.
-
 3\. Stop the following services:
 
     net stop rdagent
@@ -84,8 +81,7 @@ From time to time the Azure backup agent may fail. Sometimes this will self-reso
     sc delete WindowsAzureGuestAgent
     
     sc delete WindowsAzureTelemetryService 
-    
+   
 5\. Create a folder called OLD in "C:\ WindowsAzure" and move the old version of the agent to it and the folders that say Packages. 
-
 6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
 7\. Restart the server.

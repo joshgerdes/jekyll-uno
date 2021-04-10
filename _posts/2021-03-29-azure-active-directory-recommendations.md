@@ -10,6 +10,8 @@ permalink: /azure-active-directory-recommendations
 
 header: 
   teaser: "images/Office-365-Banner2.png"
+  classes: wide
+
 
 ---
 Azure Active Directory is the foundation, which Microsoft 365 is built-on.

@@ -102,10 +102,7 @@ author:
   location         : "Waikato, New Zealand"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "[Email](mailto:email@luke.geek.nz?subject=[Website Request:]%20Source%20Han%20Sans)"
-    - label: "Twitter"
+     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lukemurraynz"
     - label: "LinkedIn"

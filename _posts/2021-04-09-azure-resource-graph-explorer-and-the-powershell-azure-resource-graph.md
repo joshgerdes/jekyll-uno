@@ -5,6 +5,7 @@ author: Luke
 categories:
 - PowerShell
 - Azure
+layout: single
 permalink: /azure-resource-graph-explorer-and-the-powershell-azure-resource-graph
 
 ---

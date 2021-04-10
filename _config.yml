@@ -101,7 +101,7 @@ author:
   bio              : "Senior Systems Engineer, Azure Solutions Architect Expert, Technologist and a drinker of coffee."
   location         : "Waikato, New Zealand"
   links:
-     - label: "Twitter"
+    - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lukemurraynz"
     - label: "LinkedIn"

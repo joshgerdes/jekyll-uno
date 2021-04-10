@@ -275,3 +275,5 @@ defaults:
       related: true
       toc: true
       toc_icon: 'file-alt'
+      classes: wide
+

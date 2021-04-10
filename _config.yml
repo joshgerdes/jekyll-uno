@@ -281,4 +281,4 @@ defaults:
       share: true
       related: true
       toc: true
-      toc_icon: file-alt 
+      toc_icon: 'file-alt'

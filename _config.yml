@@ -27,7 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : #"images/iazure-marketplace-banner.png"
 logo                     : #"/images/cover.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true
 words_per_minute         : 100 
 comments:
   provider               : "disqus" #, "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"

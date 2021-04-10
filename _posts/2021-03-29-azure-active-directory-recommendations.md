@@ -4,7 +4,9 @@ title: Azure Active Directory Recommendations
 author: Luke
 categories:
 - Azure
+- M365
 toc: false
+permalink: /azure-active-directory-recommendations
 
 ---
 Azure Active Directory is the foundation, which Microsoft 365 is built-on.

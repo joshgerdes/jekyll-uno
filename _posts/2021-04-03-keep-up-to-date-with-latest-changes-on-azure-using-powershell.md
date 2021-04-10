@@ -5,6 +5,7 @@ author: Luke
 categories:
 - PowerShell
 - Azure
+permalink: /keep-up-to-date-with-latest-changes-on-azure-using-powershell
 toc: true
 
 ---
@@ -20,8 +21,6 @@ So you can browse the website each week, or... monitor the RSS feeds. Sometimes 
 
 I have created a basic PowerShell function, that will retrieve the latest updates from the Microsoft Azure Updates RSS Feed and turn it into a PowerShell object you can actually use to keep informed.
 
-* TOC
-{:toc}
 
 ## The Script - Get-AzureBlogUpdates
 

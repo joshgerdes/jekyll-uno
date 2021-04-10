@@ -3,9 +3,9 @@ date: 2021-03-30 00:00:00 +1300
 title: Microsoft Teams Recommendations
 author: Luke
 categories:
-- Windows
-- Azure
+- M365
 toc: false
+permalink: /microsoft-teams-recommendations
 
 ---
 In the age of remote working and collaboration, Microsoft Teams is one of the most popular tools being used to increase communication and productivity. 

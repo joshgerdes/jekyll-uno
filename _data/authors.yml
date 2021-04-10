@@ -19,7 +19,7 @@ Luke:
       url: "https://github.com/lukemurraynz"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "email@luke.geek.nz"
+  url: "<a href="mailto:email@luke.geek.nz?subject=Mail from luke.geek.nz">Email</a>  "
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://luke.geek.nz"

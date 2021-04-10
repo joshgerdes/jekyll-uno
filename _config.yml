@@ -47,5 +47,7 @@ plugins:
   - jekyll-toc
   - jekyll-include-cache
 
+  #theme
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

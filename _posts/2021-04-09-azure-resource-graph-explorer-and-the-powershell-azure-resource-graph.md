@@ -5,7 +5,7 @@ author: Luke
 categories:
 - PowerShell
 - Azure
-toc: true
+permalink: title
 
 ---
 Every now and again you come across something that you pay little attention to until you actually spend the time to sit down, work through and try to break stuff! The Azure Resource Graph was that for me!

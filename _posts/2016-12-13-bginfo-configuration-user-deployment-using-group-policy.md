@@ -18,51 +18,29 @@ This utility runs under the user’s context. This does not need admin rights. A
 
 Use the following guide to create the BG Info package…
 
-Download BGInfo – <a href="https://technet.microsoft.com/en-us/sysinternals/bginfo.aspx" target="_blank">https://technet.microsoft.com/en-us/sysinternals/bginfo.aspx</a>
-
+ 1. Download BGInfo – <a href="https://technet.microsoft.com/en-us/sysinternals/bginfo.aspx" target="_blank">https://technet.microsoft.com/en-us/sysinternals/bginfo.aspx</a>
 <img src="https://i1.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi2.png?w=1500" alt="" data-recalc-dims="1" />
-
-Run and extract it to a folder – for example c:\\temp\\bginfo
-
+ 2. Run and extract it to a folder – for example c:\\temp\\bginfo
 <img src="https://i0.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi3.png?w=1500" alt="" data-recalc-dims="1" />
-
-Run BGInfo, you will be prompted with the default configuration
-
-<img src="https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi4.png?w=1500" alt="" data-recalc-dims="1" />
-
-You can delete the Fields from the Black window, as applicable in this example we are just going to use x3 fields:
-
-Host Name:    <Host Name>
-
-IP Address:    <IP Address>
-
-User Name:    <User Name>
-
-To add more you can select Fields, and Add. If there is a field that you may need, that isn’t selectable from the defaults you can also query Environment Variables, Registry and WMI by clicking on the Custom button. We are sticking with the defaults so click Apply to review changes.
-
-We want to also replace the Background so it isn’t the default – Black colour – so click on Background…
-
+ 3. Run BGInfo, you will be prompted with the default configuration
+ <img src="https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi4.png?w=1500" alt="" data-recalc-dims="1" />
+ 4. You can delete the Fields from the Black window, as applicable in this example we are just going to use x3 fields:
+ 5. Host Name:    <Host Name>
+ 6. IP Address:    <IP Address>
+7. User Name:    <User Name>
+8. To add more you can select Fields, and Add. If there is a field that you may need, that isn’t selectable from the defaults you can also query Environment Variables, Registry and WMI by clicking on the Custom button. We are sticking with the defaults so click Apply to review changes.
+9. We want to also replace the Background so it isn’t the default – Black colour – so click on Background…
 <img src="https://i0.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi5.png?w=1500" alt="" data-recalc-dims="1" />
-
-Because this will be rolled out to multiple users, we either need to have a BMP or JPG that will be on every single computer in the same location or accessible to all authenticated users on the network. We will be going with option 2 – using the domains namespace, and net logon folder to store BGInfo and the wallpaper. Copy the Wallpaper you want to an easily accessible share that authenticated users have Read access too. I am using a Wallpaper folder, under the Net Logon folder.
-
-Select navigate to: \\DOMAIN\\netlogon\\Wallpaper\\Desktop.jpg and select Stretch as the Wallpaper position and click Ok.
-
-<img src="https://i1.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi6.png?w=1500" alt="" data-recalc-dims="1" />
-
-For future wallpaper changes. This will need to be modified again to point towards the newest wallpaper. Click Apply
-
-Verify that the settings are correct and it looks ok. If so now we need to save the configuration so it can be reused – click on File and select Save As.
-
-Name it: config.bgi
-
+10. Because this will be rolled out to multiple users, we either need to have a BMP or JPG that will be on every single computer in the same location or accessible to all authenticated users on the network. We will be going with option 2 – using the domains namespace, and net logon folder to store BGInfo and the wallpaper. Copy the Wallpaper you want to an easily accessible share that authenticated users have Read access too. I am using a Wallpaper folder, under the Net Logon folder.
+11. Select navigate to: \\DOMAIN\\netlogon\\Wallpaper\\Desktop.jpg and select Stretch as the Wallpaper position and click Ok.
+12. <img src="https://i1.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi6.png?w=1500" alt="" data-recalc-dims="1" />
+13. For future wallpaper changes. This will need to be modified again to point towards the newest wallpaper. Click Apply
+14. Verify that the settings are correct and it looks ok. If so now we need to save the configuration so it can be reused – click on File and select Save As.
+15. Name it: config.bgi
 <img src="https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi7.png?w=1500" alt="" data-recalc-dims="1" />
-
-Restart your computer to lose the changes and you can now test the configuration file from the Command Line, open PowerShell or Command Prompt <em>(as a normal user)</em> and navigate to the place where the BGInfo executable and you have saved the configuration file too and type:
-
-bginfo.exe config.bgi /accepteula /silent /timer 0
-
-Press Enter and that should force BGInfo to load with your changes without any user prompt.
+16. Restart your computer to lose the changes and you can now test the configuration file from the Command Line, open PowerShell or Command Prompt <em>(as a normal user)</em> and navigate to the place where the BGInfo executable and you have saved the configuration file too and type:
+17. bginfo.exe config.bgi /accepteula /silent /timer 0
+18. Press Enter and that should force BGInfo to load with your changes without any user prompt.
 
 ## <span id="How_do_I_deploy_BGInfo_package">How do I deploy BGInfo package?</span>
 

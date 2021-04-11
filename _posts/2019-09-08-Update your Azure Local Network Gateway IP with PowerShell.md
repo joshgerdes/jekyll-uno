@@ -16,9 +16,7 @@ This setup is fine when used in environments that have Static IPs (and yes if
 setting this up for a Business or Production, it is highly recommended to have a
 static IP!).
 
-However, when used in environments like my home network or lab environments -
-which has a Dynamic IP which could change at any time it will cause connectivity
-issues if your IP changes and the Local Network Gateway is not updated.
+However, when used in environments like my home network or lab environments - which has a Dynamic IP that could change at any time it will cause connectivity issues if your IP changes and the Local Network Gateway is not updated.
 
 The script below – intended to be run on as a Daily scheduled task, will find
 your Public IP and connect to Azure and if needed – will update the IP of your
@@ -35,11 +33,11 @@ Prerequisites:
 Once you have the Azure Service Principal and Az Module installed, you need to
 edit the following variables to suit your environment:
 
-1. $ResourceGroup = 'RESOURCE GROUP OF LOCAL NETWORK GATEWAY'
-2. $LocalNetworkGateway = ‘NAME OF AZURE LOCAL NETWORK GATEWAY’
-3. $azureAplicationId =’AZURE AD APPLICATION ID’
-4. $azureTenantId= ‘AZURE AD TENANCY/DIRECTORY ID’
-5. $azureAPI = ‘AZURE AD APPLICATION API/CLIENT SECRET’
+* $ResourceGroup = 'RESOURCE GROUP OF LOCAL NETWORK GATEWAY'
+* $LocalNetworkGateway = ‘NAME OF AZURE LOCAL NETWORK GATEWAY’
+* $azureAplicationId =’AZURE AD APPLICATION ID’
+* $azureTenantId= ‘AZURE AD TENANCY/DIRECTORY ID’
+* $azureAPI = ‘AZURE AD APPLICATION API/CLIENT SECRET’
 
 {% gist 1b73335e1d0eadcfe4064f8221077ca1 %}
 

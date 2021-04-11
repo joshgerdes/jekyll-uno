@@ -16,7 +16,7 @@ Every now and again you come across something that you pay little attention to u
 The idea was to create an export of Azure Recommendations, directly from the Azure Advisor into PowerShell, Microsoft Azure has this functionality out of the box with a few tools:
 
 * Azure Resource Graph Explorer
-* The Az.ResourceGraph PowerShell module
+* The [Az.ResourceGraph](https://docs.microsoft.com/en-us/azure/governance/resource-graph/first-query-powershell){:target="_blank"} PowerShell module
 
 ### Azure Graph Resource Explorer
 

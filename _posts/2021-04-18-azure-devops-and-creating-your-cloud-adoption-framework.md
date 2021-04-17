@@ -17,7 +17,7 @@ Azure DevOps is not only a continuous integration and deployment tool, along wit
 
 The Azure DevOps Board’s come with your MSDN license or free under the Basic plan for the first 5 users.
 
-The Azure DevOps Demo Generator can create projects in your Azure DevOps organization, already prepopulated with the Epics, Features and Tasks that can help you on your cloud journey!
+The Azure DevOps Demo Generator can create projects in your Azure DevOps organization, already prepopulated with relevant Epics, Features and Tasks that can help you on your cloud journey!
 
 ![Azure DevOps Demo Generator](/uploads/AzureDevOpsGeneratorPage.png "Azure DevOps Demo Generator")
 

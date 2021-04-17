@@ -27,8 +27,6 @@ The ones we are going to concentrate on is the: Cloud Adoption Framework project
 
 The following projects are available under the Cloud Adoption Framework heading to help you on your journey (as of the date this article was published):
 
-![Azure DevOps Generator - Choose a template](/uploads/AzureDevOpsCloudAdoptionTemplates.png "Azure DevOps Generator - Choose a template")
-
 | Project | Description |
 | --- | --- |
 | Cloud Adoption Plan | The Cloud Adoption Plan template creates a backlog for managing cloud adoption efforts based on the guidance in the Microsoft Cloud Adoption Framework. |
@@ -42,6 +40,8 @@ The following projects are available under the Cloud Adoption Framework heading 
 | Modern Data Warehouse | Build your modern data warehouse using this ADO checklist of items, in this checklist we have links to assets, code and learning material. |
 | Retail Recommender with Azure Synapse | This Solution Accelerator is an end-to-end example on how to enable personalized customer experiences for retail scenarios by leveraging Azure Synapse Analytics, Azure Machine Learning Services, and other Azure Big Data services. T |
 | Modern IOT | Connected sensors, devices, and intelligent operations can transform businesses and enable new growth opportunities. In this project you will get the work items needed to plan and implement your IOT solution using the Azure IoT Platform. |
+
+![Azure DevOps Generator - Choose a template](/uploads/AzureDevOpsCloudAdoptionTemplates.png "Azure DevOps Generator - Choose a template")
 
 Once the project has been created, you can go into Azure Board and click on: Work Items.
 

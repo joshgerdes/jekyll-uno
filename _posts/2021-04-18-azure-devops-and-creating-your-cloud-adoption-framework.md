@@ -47,15 +47,15 @@ Once the project has been created, you can go into Azure Board and click on: Wor
 
 If we create look at the CAF Strategy-Plan-Ready-Gov Team one, we can see the Epics, Features and Tasks associated with Cloud Adoption:
 
-![Azure DevOps - Cloud Adoption Strategy](/uploads/firefox_fyhz65stda.png "Azure DevOps - Cloud Adoption Strategy")
+![Azure DevOps - Cloud Adoption Strategy](/uploads/AzureDevOps_CloudAdoptionWorkItems.png "Azure DevOps - Cloud Adoption Strategy")
 
 If we click Boards, we can see the Kanban board, the state of the Epics, features etc. and where they are.
 
-![Azure DevOps - Kanban](/uploads/z5qe4cvwat.png "Azure DevOps - Kanban")
+![Azure DevOps - Kanban](/uploads/AzureDevOps_CloudAdoptionKanban.png "Azure DevOps - Kanban")
 
 Depending on the Tasks, it may have a description of the task with links to the relevant documentation, such as this SQL Deployment and Migration testing:
 
-![](/uploads/pespproujq.png)
+![](/uploads/AzureDevOps_Task.png)
 
 As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your Cloud journey, and these projects work well with the Microsoft Cloud Adoption and Well architected framework!
 

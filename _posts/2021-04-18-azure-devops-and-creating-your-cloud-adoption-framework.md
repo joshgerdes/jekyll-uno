@@ -19,7 +19,7 @@ The Azure DevOps Board’s come with your MSDN license or free under the Basic p
 
 The Azure DevOps Demo Generator can create projects in your Azure DevOps organization, already prepopulated with the Epics, Features and Tasks that can help you on your cloud journey!
 
-![Azure DevOps Demo Generator](/uploads/firefox_adwnrgavwx.png "Azure DevOps Demo Generator")
+![Azure DevOps Demo Generator](/uploads/AzureDevOpsGeneratorPage.png "Azure DevOps Demo Generator")
 
 There are many prepopulated projects in the Demo Generator, from Security to Learning; you can even import prepopulated templates from other people.
 
@@ -27,7 +27,7 @@ The ones we are going to concentrate on is the: Cloud Adoption Framework project
 
 The following projects are available under the Cloud Adoption Framework heading to help you on your journey (as of the date this article was published):
 
-![Azure DevOps Generator - Choose a template](/uploads/firefox_eigbdfho7a.png "Azure DevOps Generator - Choose a template")
+![Azure DevOps Generator - Choose a template](/uploads/AzureDevOpsCloudAdoptionTemplates.png "Azure DevOps Generator - Choose a template")
 
 | Project | Description |
 | --- | --- |

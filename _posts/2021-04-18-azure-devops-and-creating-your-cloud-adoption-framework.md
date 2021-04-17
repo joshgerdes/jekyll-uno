@@ -27,7 +27,7 @@ The ones we are going to concentrate on is the: Cloud Adoption Framework project
 
 ![Azure DevOps Generator - Choose a template](/uploads/AzureDevOpsCloudAdoptionTemplates.png "Azure DevOps Generator - Choose a template")
 
-The following projects are available under the Cloud Adoption Framework heading to help you on your journey (as of the date this article was published):
+The following projects are available under the Cloud Adoption Framework heading to help you on your journey *(as of the date this article was published)*:
 
 | Project | Description |
 | --- | --- |

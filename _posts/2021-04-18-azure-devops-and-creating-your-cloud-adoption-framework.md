@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "images/iazure-marketplace-banner.png"
 
 ---
 ### Do you want to make a start on Azure Adoption and Governance, Server Migration or Windows Virtual Desktop and do not know where to start, or whether you are asking the right questions?

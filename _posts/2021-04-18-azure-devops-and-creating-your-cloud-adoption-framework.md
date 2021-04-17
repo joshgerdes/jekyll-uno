@@ -1,5 +1,5 @@
 ---
-date: 2021-04-18 00:00:00 +1200
+date: 2021-04-17 00:00:00 +1200
 title: Azure DevOps and creating your Cloud Adoption Framework
 author: Luke
 categories:

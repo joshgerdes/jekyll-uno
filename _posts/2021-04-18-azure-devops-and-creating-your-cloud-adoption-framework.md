@@ -61,7 +61,7 @@ As you can see, the Azure DevOps Generator offers not only a place to track your
 
 These are guidelines, and they do not need to be followed to the letter; however, in my opinion, they offer an excellent base to build your cloud adoption and implementations upon.
 
-I have extracted the following work items from the projects as CSV, in case you prefer to start with excel or want to take a look at the Epics, Features and Tasks that come with these projects:
+I have extracted the following work items from the projects as CSV, in case you prefer to start with excel or want to take a look at the epics, features and tasks that come with these projects:
 * [CAF Strategy-Plan-Ready-Gov Team - Epics](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/CAF Strategy-Plan-Ready-Gov Team - Epics.csv "CAF Strategy-Plan-Ready-Gov Team - Epics"){:target="_blank"}
 * [Windows Virtual Desktop Guidance](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/WVD_Guidance.csv "Windows Virtual Desktop Guidance"){:target="_blank"}
 * [Cloud Adoption](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/CloudAdoption.csv "Cloud Adoption"){:target="_blank"}

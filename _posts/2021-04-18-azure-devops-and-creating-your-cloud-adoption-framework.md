@@ -45,7 +45,7 @@ The following projects are available under the Cloud Adoption Framework heading 
 
 Once the project has been created, you can go into Azure Board and click on: Work Items.
 
-If we create look at the CAF Strategy-Plan-Ready-Gov Team one, we can see the Epics, Features and Tasks associated with Cloud Adoption:
+If we take a look at the CAF Strategy-Plan-Ready-Gov Team one, we can see the Epics, Features and Tasks associated with Cloud Adoption:
 
 ![Azure DevOps - Cloud Adoption Strategy](/uploads/AzureDevOps_CloudAdoptionWorkItems.png "Azure DevOps - Cloud Adoption Strategy")
 

@@ -60,3 +60,6 @@ Depending on the Tasks, it may have a description of the task with links to the 
 As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your Cloud journey, and these projects work well with the Microsoft Cloud Adoption and Well architected framework!
 
 These are guidelines, and they do not need to be followed to the letter; however, in my opinion, they offer an excellent base to build your cloud adoption and implementations upon.
+
+I have extracted the following files, in case you prefer to start with Excel or want to take a look at the Epics, Features and Tasks that come with these projects:
+[CAF Strategy-Plan-Ready-Gov Team - Epics](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/CAF Strategy-Plan-Ready-Gov Team - Epics.csv "CAF Strategy-Plan-Ready-Gov Team - Epics"){:target="_blank"}

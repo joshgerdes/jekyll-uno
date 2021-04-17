@@ -38,7 +38,7 @@ The following projects are available under the Cloud Adoption Framework heading 
 | Knowledge Mining | Knowledge project simplifies the process of accessing the latent insights contained within structured and unstructured data. Use this project to help you address all the steps. |
 | Azure Governance Readiness | The standalone Azure governance project provides guidance and tools on how to ensure that your Azure environment is governed in the correct way. |
 | Modern Data Warehouse | Build your modern data warehouse using this ADO checklist of items, in this checklist we have links to assets, code and learning material. |
-| Retail Recommender with Azure Synapse | This Solution Accelerator is an end-to-end example on how to enable personalized customer experiences for retail scenarios by leveraging Azure Synapse Analytics, Azure Machine Learning Services, and other Azure Big Data services. T |
+| Retail Recommender with Azure Synapse | This Solution Accelerator is an end-to-end example on how to enable personalized customer experiences for retail scenarios by leveraging Azure Synapse Analytics, Azure Machine Learning Services, and other Azure Big Data services. |
 | Modern IOT | Connected sensors, devices, and intelligent operations can transform businesses and enable new growth opportunities. In this project you will get the work items needed to plan and implement your IOT solution using the Azure IoT Platform. |
 
 ![Azure DevOps Generator - Choose a template](/uploads/AzureDevOpsCloudAdoptionTemplates.png "Azure DevOps Generator - Choose a template")

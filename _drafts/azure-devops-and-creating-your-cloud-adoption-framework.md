@@ -11,21 +11,21 @@ header:
 ---
 ### Do you want to make a start on Azure Adoption and Governance, Server Migration or Windows Virtual Desktop and do not know where to start, or whether you are asking the right questions?
 
-If you want to look at creating a framework for your Cloud Adoption or migration plans you can look at... using Azure DevOps Demo Generator…
+If you want to create a framework for your Cloud Adoption or migration plans, you can look at... using Azure DevOps Demo Generator…
 
-Azure DevOps is not only a continuous integration and deployment tool, along with the Repos, Pipelines, Test plans and Artifacts – there is Azure Boards, with Boards you can plan and track your work items and use the Kanban board functionality to easy update or track your work in progress items and add to the backlog, although Azure Boards is primarily used by Agile squads and sprint planning organizations – it does not have to be and can be used to track particular items of work etc.
+Azure DevOps is not only a continuous integration and deployment tool, along with the Repos, Pipelines, Test plans and Artifacts – there are Azure Boards, with Boards you can plan and track your work items and use the Kanban board functionality to easy update or track your work in progress items and add to the backlog, although Agile squads and sprint planning organizations primarily use Azure Boards – it does not have to be. 
 
-The Azure DevOps Board’s come with your MSDN license, or free under the Basic plan for the first 5 users.
+The Azure DevOps Board’s come with your MSDN license or free under the Basic plan for the first 5 users.
 
 The Azure DevOps Demo Generator can create projects in your Azure DevOps organization, already prepopulated with the Epics, Features and Tasks that can help you on your cloud journey!
 
 ![Azure DevOps Demo Generator](/uploads/firefox_adwnrgavwx.png "Azure DevOps Demo Generator")
 
-There are many prepopulated projects in the Demo Generator, from Security to Learning, you can even import prepopulated templates from other people.
+There are many prepopulated projects in the Demo Generator, from Security to Learning; you can even import prepopulated templates from other people.
 
 The ones we are going to concentrate on is the: Cloud Adoption Framework projects.
 
-The following projects are available, under the Cloud Adoption Framework heading to help you on your journey (this was up to date at the time this article was written):
+The following projects are available under the Cloud Adoption Framework heading to help you on your journey (as of the date this article was published):
 
 ![Azure DevOps Generator - Choose a template](/uploads/firefox_eigbdfho7a.png "Azure DevOps Generator - Choose a template")
 
@@ -57,4 +57,6 @@ Depending on the Tasks, it may have a description of the task with links to the 
 
 ![](/uploads/pespproujq.png)
 
-As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your Cloud journey and these projects work well with the Microsoft Cloud Adoption and Well architected framework!
+As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your Cloud journey, and these projects work well with the Microsoft Cloud Adoption and Well architected framework!
+
+These are guidelines, and they do not need to be followed to the letter; however, in my opinion, they offer an excellent base to build your cloud adoption and implementations upon.

@@ -65,3 +65,4 @@ These are guidelines, and they do not need to be followed to the letter; however
 * [CAF Strategy-Plan-Ready-Gov Team - Epics](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/CAF Strategy-Plan-Ready-Gov Team - Epics.csv "CAF Strategy-Plan-Ready-Gov Team - Epics"){:target="_blank"}
 * [Windows Virtual Desktop Guidance](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/WVD_Guidance.csv "Windows Virtual Desktop Guidance"){:target="_blank"}
 * [Cloud Adoption](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/CloudAdoption.csv "Cloud Adoption"){:target="_blank"}
+* [SQL Migration](https://luke.geek.nz/uploads/files/AzureDevOpsDemoGenerator/SQLMigration.csv "SQL Migration"){:target="_blank"}

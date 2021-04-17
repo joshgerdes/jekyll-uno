@@ -57,7 +57,7 @@ Depending on the Tasks, it may have a description of the task with links to the 
 
 ![](/uploads/AzureDevOps_Task.png)
 
-As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your Cloud journey, and these projects work well with the Microsoft Cloud Adoption and Azure Well Architected Framework!
+As you can see, the Azure DevOps Generator offers not only a place to track your progress but relevant data to help you put a framework around your cloud journey, and these projects work well with the Microsoft Cloud Adoption and Azure Well Architected Framework!
 
 These are guidelines, and they do not need to be followed to the letter; however, in my opinion, they offer an excellent base to build your cloud adoption and implementations upon.
 

@@ -15,6 +15,8 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 
 Note: The storage account must be a member of an Azure Virtual Network and so does your Virtual Machine, either directly or via a connected expressroute or site to site VPN.
 
+NFS 3.0 protocol is supported for standard general-purpose v2 storage accounts and for premium block blob storage accounts as of the time this article was written: April 2021.
+
 # Register AllowNFSV3 Provider
 
 Connect to Azure using PowerShell and register the `AllowNFSV3 provider by running the following:`

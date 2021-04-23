@@ -1,5 +1,5 @@
 ---
-date: 2021-04-23 00:00:00 +1200
+date: 2021-04-23T00:00:00.000+12:00
 title: How to mount an Azure Blob Container on your Windows 10 endpoint device
 author: Luke
 categories:
@@ -12,6 +12,8 @@ header:
 As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to mount a container in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
 
 With the NFS client feature, these can be mapped on Windows as well, but there are some pre-requisites you need to do first.
+
+Note: The storage account must be a member of an Azure Virtual Network and so does your Virtual Machine.
 
 ## Disable Secure Transfer on your Storage Account
 
@@ -30,6 +32,14 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 ![](/uploads/azstorageaccountnewcontainer.png)
 
 1. Select **Create**.
+
+## Register AllowNFSV3 Provider
+
+Connect to Azure using PowerShell and register the `AllowNFSV3 provider by running the following:`
+
+    Register-AzProviderFeature -FeatureName AllowNFSV3 -ProviderNamespace Microsoft.Storage 
+
+    Register-AzResourceProvider -ProviderNamespace Microsoft.Storage
 
 ## Install NFS Client Tools
 

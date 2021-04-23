@@ -15,7 +15,6 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 
 Note: The storage account must be a member of an Azure Virtual Network and so does your Virtual Machine, either directly or via a connected expressroute or site to site VPN.
 
-NFS 3.0 protocol is supported for standard general-purpose v2 storage accounts and for premium block blob storage accounts as of the time this article was written: April 2021.
 
 # Register AllowNFSV3 Provider
 
@@ -24,9 +23,16 @@ Connect to Azure using PowerShell and register the `AllowNFSV3 provider by runni
     Register-AzProviderFeature -FeatureName AllowNFSV3 -ProviderNamespace Microsoft.Storage 
 
     Register-AzResourceProvider -ProviderNamespace Microsoft.Storage
-    Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
 
 To mount a container by using NFS 3.0, You must create a storage account after you register the feature with your subscription. You can't enable accounts that existed before you registered the feature.
+
+## Verify Provider has been registered
+
+    Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
+    
+## Create your storage account
+
+Create your Storage Account. NFS 3.0 protocol is supported for standard general-purpose v2 storage accounts and for premium block blob storage accounts as of the time this article was written: April 2021.
 
 ## Disable Secure Transfer on your Storage Account
 
@@ -51,6 +57,6 @@ To mount a container by using NFS 3.0, You must create a storage account after y
 
 1. Open PowerShell as Administrator on your Windows 10 endpoint and run the following command to install the NFS Client features:
 
-       Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
+        Install-WindowsFeature NFS-Client
 
 ## Enable write permissions for the anonymous user when mounting a UNIX share using the anonymous user.

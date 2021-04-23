@@ -67,7 +67,7 @@ Depending on which tier your data is in, depends on the costs, Azure Blob Storag
 
 More information here: [https://azure.microsoft.com/en-us/pricing/details/storage/blobs/](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/ "Azure Blobs")
 
-## What is data lifecycle management?
+# What is data lifecycle management?
 
 There are many versions of it, but at its core, there are 5 stages to simple data lifecycle management:
 

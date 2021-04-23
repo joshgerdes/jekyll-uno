@@ -15,7 +15,7 @@ As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 
 
 # First up what is a Blob?
 
-Blobs - _“Highly scalable, REST based cloud object store”_
+Blobs - _“Highly scalable, REST-based cloud object store”_
 
 * Data sharing, Big Data, Backups
 * Block Blobs: Read and write data in blocks. Optimized for sequential IO. Most cost-effective Storage. Ideal for files, documents & media.

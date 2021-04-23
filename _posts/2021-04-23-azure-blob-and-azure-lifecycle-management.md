@@ -45,7 +45,7 @@ The cool access tier has lower storage costs and higher access costs compared to
 * Older data not used frequently but expected to be available immediately when accessed.
 * Large data sets need to be stored cost-effectively, while more data is being gathered for future processing.
 
-These options are set Globally for your Azure Storage account blobs, however, there is a third tier, the Archive Access Tier:
+These options are set globally for your Azure Storage account blobs, however, there is a third tier, the Archive Access Tier:
 
 ### Archive access tier
 

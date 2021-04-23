@@ -105,8 +105,8 @@ Microsoft Azure and Lifecycle Management for Blob Storage automate the entire li
 
 _Note: Make sure Append Blobs is unselected, this is un-supported for moving access tiers (however supports being deleted after x amount of days)._
 
-1. Click Next
-2. This is where the magic happens, we are going to go with the following:
+6. Click Next
+7. This is where the magic happens, we are going to go with the following:
 
    ![](/uploads/azurebaseblobrules.png "Azure Base Blob Policies")
 3. Base Blobs that were last modified 90 days ago will be moved to Cool storage.

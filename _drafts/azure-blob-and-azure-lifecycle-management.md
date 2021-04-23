@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/AzureBlobBanner.png"
 
 ---
-Azure Blob storage (Platform-as-a-service (PaaS) is used for streaming and storing documents, videos, pictures, backups, and other unstructured text or binary data… however the functionality extends beyond just a place to “store stuff”, it can save you money and time by automating the lifecycle of your data using Azure Blob Lifecycle Management.
+Azure Blob storage (Platform-as-a-service (PaaS) is used for streaming and storing documents, videos, pictures, backups, and other unstructured text or binary data… however the functionality extends beyond just a place to “store stuff”, it can save you money and time by automating the lifecycle of your data using Azure Blob Lifecycle Management and access tiers.
 
 As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to mount a container in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
 
@@ -23,8 +23,8 @@ _“Highly scalable, REST based cloud object store”_
 
 • Block Blobs: Read and write data in blocks. Optimized for sequential IO. Most cost-effective Storage. Ideal for files, documents & media.
 
-• Page Blobs: Optimized for random access and can be up to 8 TB in size. IaaS VM OS & data disks   
- are of this type.
+• Page Blobs: Optimized for random access and can be up to 8 TB in size. IaaS VM OS & data disks  
+are of this type.
 
 • Append Blobs: Like block blobs and optimized for append operations. Ideal for logging scenarios and total size can be up to 195 GB.
 

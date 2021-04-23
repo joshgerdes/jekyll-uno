@@ -30,3 +30,11 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 ![](/uploads/azstorageaccountnewcontainer.png)
 
 5. Select **Create**.
+
+## Install NFS Client Tools
+
+1. Open PowerShell as Administrator on your Windows 10 endpoint and run the following command to install the NFS Client features:
+
+    Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
+    
+ df

@@ -49,9 +49,9 @@ These options are set Globally for your Azure Storage account blobs, however the
 
 ### Archive access tier
 
-The archive access tier has the lowest storage cost, but higher data retrieval costs compared to hot and cool tiers. 
+The archive access tier has the lowest storage cost, but higher data retrieval costs compared to hot and cool tiers.
 
-Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. Data in the archive tier can take several hours to retrieve depending on the specified rehydration priority. 
+Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. Data in the archive tier can take several hours to retrieve depending on the specified rehydration priority.
 
 While a blob is in archive storage, the blob data is offline and cannot be read or modified. To read or download a blob in archive, you must first rehydrate it to an online tier.
 
@@ -95,24 +95,30 @@ Microsoft Azure and Lifecycle Management for Blob Storage automates this entire 
 
 # How do I enable or configure Azure Blob Lifecycle Management?
 
- 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
- 2. Find the Azure storage account you want to configure Lifecycle Management on
- 3. On the Storage account left hand side Blade, under Blob Service click on Lifecycle Management
- 4. Click on Add a rule
- 5. Enter in a Rule name any name that suits your naming standards, for example, AzureBlobLifecyclePolicy.
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Find the Azure storage account you want to configure Lifecycle Management on
+3. On the Storage account left-hand side Blade, under Blob Service click on Lifecycle Management
+4. Click on Add a rule
+5. Enter in a Rule name any name that suits your naming standards, for example, AzureBlobLifecyclePolicy.
 
-    _Note: Make sure Append Blobs is unselected, this is un-supported for moving access tiers (however supports being deleted after x amount of days)._
- 6. 
- 7. Click Next
- 8. This is where the magic happens, we are going to go with the following:
- 9. Base Blobs that were last modified 90 days ago will be moved to Cool storage.
-10. Click on + Add if-then block, now we will select the Archive Storage, example we will now archive data that has been in Cool storage for 90 days, so we enter in: 180 days.
+![Azure Blob Lifecycle Policy](/uploads/azurebaseblobrules1.png "Azure Blob Lifecycle Policy")
 
-    _Note: Migrating the data between Access Tiers, does not change the last modified date of the file, so its 90 days for migrating to Cool, then another 90 days to move to archive._
-11. Click on + Add if-then block, now we will select the Delete the blob, data that has been in Archive storage for 90 days will now be deleted, so we enter in: 270 days.
-12. Click Next and do the same for Snapshots and versions and click Save.
+_Note: Make sure Append Blobs is unselected, this is un-supported for moving access tiers (however supports being deleted after x amount of days)._
+
+1. Click Next
+2. This is where the magic happens, we are going to go with the following:
+
+   ![](/uploads/azurebaseblobrules.png "Azure Base Blob Policies")
+3. Base Blobs that were last modified 90 days ago will be moved to Cool storage.
+4. Click on + Add if-then block, now we will select the Archive Storage, the example we will now archive data that has been in Cool storage for 90 days, so we enter in: 180 days.
+
+   _Note: Migrating the data between Access Tiers, does not change the last modified date of the file, so it's 90 days for migrating to Cool, then another 90 days to move to archive._
+5. Click on + Add if-then block, now we will select the Delete the blob, data that has been in Archive storage for 90 days will now be deleted, so we enter in: 270 days.
+6. Click Next and do the same for Snapshots and versions and click Save.
 
 Once the Policy has been saved, it is Enabled by default. You can disable it by selecting the Policy and select Disable on the top banner.
+
+![](/uploads/lifecyclepolicydisable.png "Azure Blob Lifecycle Management")
 
 \#ProTip - You can also view the policy as Code in Code View, which is a simple and quick way of documenting and modifying your lifecycle policy.
 

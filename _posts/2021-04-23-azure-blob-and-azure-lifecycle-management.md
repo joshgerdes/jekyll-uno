@@ -19,8 +19,7 @@ Blobs - _“Highly scalable, REST-based cloud object store”_
 
 * Data sharing, Big Data, Backups
 * Block Blobs: Read and write data in blocks. Optimized for sequential IO. Most cost-effective Storage. Ideal for files, documents & media.
-* Page Blobs: Optimized for random access and can be up to 8 TB in size. IaaS VM OS & data disks  
-  are of this type.
+* Page Blobs: Optimized for random access and can be up to 8 TB in size. IaaS VM OS & data disks and backups are of this type.
 * Append Blobs: Like block blobs and optimized for append operations. Ideal for logging scenarios and total size can be up to 195 GB.
 
 # Aren’t there only 2 access tiers?

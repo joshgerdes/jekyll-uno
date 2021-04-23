@@ -4,7 +4,7 @@ title: Azure Blob and Azure Lifecycle Management
 author: Luke
 categories:
 - Azure
-toc: true
+toc: false
 header:
   teaser: "/uploads/AzureBlobBanner.png"
 

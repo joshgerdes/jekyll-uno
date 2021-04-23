@@ -15,7 +15,18 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 
 ## Disable Secure Transfer on your Storage Account
 
-1. Sign in to the Azure portal and access the storage account containing the NFS share you created.
+1. Sign in to the [Azure portal](https://portal.azure.com/#home) and access the storage account containing the NFS share you created.
 2. Select **Configuration**.
 3. Select **Disabled** for **Secure transfer required**.
 4. Select **Save**.
+
+## Create a Container on your Storage Account
+
+1. Sign in to the [Azure portal](https://portal.azure.com/#home) and access the storage account containing the NFS share you created.
+2. Under Blob Service, select **Containers**
+3. Click **+Container**
+4. Name the container, something that is relevant to the share, in my example I am going with: Mount _- all lowercase._
+
+![](/uploads/azstorageaccountnewcontainer.png)
+
+5. Select **Create**.

@@ -126,3 +126,5 @@ Once the Policy has been saved, it is Enabled by default. You can disable it by 
 \#ProTip - You can have multiple Lifecycle Policies on a single storage account.
 
 \#ProTip - You can learn more about Lifecycle policies by going to the Microsoft documentation here: [Optimize costs by automating Azure Blob Storage access tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal).
+
+\#ProTip - If you are looking for integration with Azure AD or Active Directory NTFS permissions, replicating data from fileservers, you are better off looking at Azure File Shares and not blob storage.

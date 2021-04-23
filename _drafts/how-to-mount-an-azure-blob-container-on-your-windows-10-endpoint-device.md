@@ -15,6 +15,17 @@ With the NFS client feature, these can be mapped on Windows as well, but there a
 
 Note: The storage account must be a member of an Azure Virtual Network and so does your Virtual Machine, either directly or via a connected expressroute or site to site VPN.
 
+# Register AllowNFSV3 Provider
+
+Connect to Azure using PowerShell and register the `AllowNFSV3 provider by running the following:`
+
+    Register-AzProviderFeature -FeatureName AllowNFSV3 -ProviderNamespace Microsoft.Storage 
+
+    Register-AzResourceProvider -ProviderNamespace Microsoft.Storage
+    Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
+
+To mount a container by using NFS 3.0, You must create a storage account after you register the feature with your subscription. You can't enable accounts that existed before you registered the feature.
+
 ## Disable Secure Transfer on your Storage Account
 
 1. Sign in to the [Azure portal](https://portal.azure.com/#home) and access the storage account containing the NFS share you created.
@@ -33,15 +44,7 @@ Note: The storage account must be a member of an Azure Virtual Network and so do
 
 1. Select **Create**.
 
-## Register AllowNFSV3 Provider
-
-Connect to Azure using PowerShell and register the `AllowNFSV3 provider by running the following:`
-
-    Register-AzProviderFeature -FeatureName AllowNFSV3 -ProviderNamespace Microsoft.Storage 
-
-    Register-AzResourceProvider -ProviderNamespace Microsoft.Storage
-    Get-AzProviderFeature -ProviderNamespace Microsoft.Storage -FeatureName AllowNFSV3
-
+#
 ## Install NFS Client Tools
 
 1. Open PowerShell as Administrator on your Windows 10 endpoint and run the following command to install the NFS Client features:

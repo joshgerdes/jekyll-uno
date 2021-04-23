@@ -105,17 +105,17 @@ Microsoft Azure and Lifecycle Management for Blob Storage automate the entire li
 
 _Note: Make sure Append Blobs is unselected, this is un-supported for moving access tiers (however supports being deleted after x amount of days)._
 
-1. Click Next
-2. This is where the magic happens, we are going to go with the following:
+6. Click Next
+7. This is where the magic happens, we are going to go with the following:
 
    ![](/uploads/azurebaseblobrules.png "Azure Base Blob Policies")
-3. Base Blobs that were last modified 90 days ago will be moved to Cool storage.
-4. Click on + Add if-then block, now we will select the Archive Storage, the example we will now archive data that has been in Cool storage for 90 days, so we enter in: 180 days.
+8. Base Blobs that were last modified 90 days ago will be moved to Cool storage.
+9. Click on + Add if-then block, now we will select the Archive Storage, the example we will now archive data that has been in Cool storage for 90 days, so we enter in: 180 days.
 
    _Note: Migrating the data between Access Tiers, does not change the last modified date of the file, so it's 90 days for migrating to Cool, then another 90 days to move to archive._
-5. Click on + Add if-then block, now we will select the Delete the blob, data that has been in Archive storage for 90 days will now be deleted, so we enter in: 270 days.
-6. Click Next and do the same for Snapshots and versions and click Save.
-7. Congratulations, you have now created an Azure Blob Lifecycle policy!
+10. Click on + Add if-then block, now we will select the Delete the blob, data that has been in Archive storage for 90 days will now be deleted, so we enter in: 270 days.
+11. Click Next and do the same for Snapshots and versions and click Save.
+12. Congratulations, you have now created an Azure Blob Lifecycle policy!
 
 Once the Policy has been saved, it is Enabled by default. You can disable it by selecting the Policy and select Disable on the top banner.
 

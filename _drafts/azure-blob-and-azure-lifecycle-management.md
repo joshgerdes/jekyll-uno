@@ -93,9 +93,9 @@ A year later, you are onto acquiring another company and the data from the compa
 
 Microsoft Azure and Lifecycle Management for Blob Storage automates this entire lifecycle for you.
 
-How do I enable or configure Azure Blob Lifecycle Management?
+# How do I enable or configure Azure Blob Lifecycle Management?
 
-1\. Log into the Azure Portal
+1\. Log in to the Azure Portal
 
 2\. Find the Azure storage account you want to configure Lifecycle Management on
 

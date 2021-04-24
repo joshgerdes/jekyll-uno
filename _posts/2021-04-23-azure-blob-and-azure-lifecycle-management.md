@@ -29,14 +29,14 @@ When you create an Azure Storage account, you get presented with 2 options for t
 * Hot
 * Cool
 
-### Hot access tier
+ Hot access tier
 
 The hot access tier has higher storage costs than cool and archive tiers, but the lowest access costs. Example usage scenarios for the hot access tier include:
 
 * Data that is in active use or is expected to be read from and written to frequently.
 * Data that is staged for processing and eventual migration to the cool access tier
 
-### Cool access tier
+Cool access tier
 
 The cool access tier has lower storage costs and higher access costs compared to hot storage. This tier is intended for data that will remain in the cool tier for at least 30 days. Example usage scenarios for the cool access tier include:
 
@@ -46,7 +46,7 @@ The cool access tier has lower storage costs and higher access costs compared to
 
 These options are set globally for your Azure Storage account blobs, however, there is a third tier, the Archive Access Tier:
 
-### Archive access tier
+Archive access tier
 
 The Archive access tier has the lowest storage cost, but higher data retrieval costs compared to hot and cool tiers.
 

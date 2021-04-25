@@ -47,6 +47,7 @@ _Note: Updated: 25/04/21_
 * [Microsoft Azure Training
   Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos){:target="_blank"}
 * [70-532 Azure Exam links](https://github.com/gsuttie/gsuttie-gsuttie.github.io){:target="_blank"}
+* [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/){:target="_blank"}
 
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 

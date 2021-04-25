@@ -11,7 +11,7 @@ header:
 ---
 Azure Blob storage (Platform-as-a-service (PaaS)) is used for streaming and storing documents, videos, pictures, backups, and other unstructured text or binary data… however the functionality extends beyond just a place to “store stuff”, it can save you money and time by automating the lifecycle of your data using Azure Blob Lifecycle Management and access tiers.
 
-As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to [mount a container](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support "Network File System (NFS) 3.0 protocol support in Azure Blob storage (preview)") in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
+As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to [mount a container](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support "Network File System (NFS) 3.0 protocol support in Azure Blob storage (preview)"){:target="_blank"} in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
 
 # First up what is a Blob?
 
@@ -64,7 +64,7 @@ Depending on which tier your data is in, depends on the costs, Azure Blob Storag
 * Quantity and types of operations performed, along with any data transfer costs.
 * Data redundancy option selected.
 
-More information here: [https://azure.microsoft.com/en-us/pricing/details/storage/blobs/](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/ "Azure Blobs")
+More information here: [https://azure.microsoft.com/en-us/pricing/details/storage/blobs/](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/ "Azure Blobs"){:target="_blank"}
 
 # What is data lifecycle management?
 
@@ -90,7 +90,7 @@ Microsoft Azure and Lifecycle Management for Blob Storage automate the entire li
 
 # How do I enable or configure Azure Blob Lifecycle Management?
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}
 2. Find the Azure storage account you want to configure Lifecycle Management on
 3. On the Storage account left-hand side Blade, under Blob Service click on Lifecycle Management
 4. Click on Add a rule
@@ -120,6 +120,6 @@ Once the Policy has been saved, it is Enabled by default. You can disable it by 
 
 \#ProTip - You can have multiple Lifecycle Policies on a single storage account.
 
-\#ProTip - You can learn more about Lifecycle policies by going to the Microsoft documentation here: [Optimize costs by automating Azure Blob Storage access tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal).
+\#ProTip - You can learn more about Lifecycle policies by going to the Microsoft documentation here: [Optimize costs by automating Azure Blob Storage access tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal){:target="_blank"}.
 
 \#ProTip - If you are looking for integration with Azure AD or Active Directory NTFS permissions, replicating data from fileservers, you are better off looking at Azure File Shares and not blob storage.

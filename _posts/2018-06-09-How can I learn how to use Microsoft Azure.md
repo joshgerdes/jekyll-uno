@@ -20,7 +20,7 @@ This mammoth of a Public Cloud offering often causes confusion around knowing wh
 
 This blog post is intended to help point you in the right direction whether it is your first step on the road or you have already started your journey.
 
-_The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Bonus material training services that you have to pay for (usually subscription-based that I have used). Feel free to recommend others in the comments below._
+_The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
 _Note: Updated: 25/04/21_
 

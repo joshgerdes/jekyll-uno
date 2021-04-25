@@ -50,7 +50,7 @@ _Note: Updated: 25/04/21_
 * [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA){:target="_blank"}
 * [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=BA-MVP-5003797){:target="_blank"}
 
-## Bonus Material: I have a dragon’s hoard of gold to spend
+## Other: I have a dragon’s hoard of gold to spend
 
 * [Azure Solutions Architect Training](https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect?aid=7010a000001xDURAA2){:target="_blank"}
 * [Cloud Skills](https://cloudskills.io/){:target="_blank"}

@@ -1,5 +1,5 @@
 ---
-date: 2018-06-09
+date: 2021-04-25
 title: How can I learn how to use Microsoft Azure?
 author: Luke
 categories:

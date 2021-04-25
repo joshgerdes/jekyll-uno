@@ -4,8 +4,9 @@ title: How can I learn how to use Microsoft Azure?
 author: Luke
 categories:
 - Azure
-header: 
-  teaser: "images/iazure-marketplace-banner.png"
+header:
+  teaser: images/iazure-marketplace-banner.png
+
 ---
 Microsoft Azure is an ever-evolving public cloud offering. In layman’s terms essentially, the servers or virtual hosts you would usually host in your own datacentre are hosted in secure regions all over the world. Normal capacity concerns that you would have needed to manage in the past such as storage and memory is managed by Microsoft directly – giving you the ability to concentrate on what really matters – your applications and users.
 
@@ -50,32 +51,31 @@ _Note: Updated: 25/04/21_
 * [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ){:target="_blank"}
 * [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA){:target="_blank"}
 
-
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 
-* [Azure Solutions Architect Training](http://azure.microsoft.com/training/learning-paths/azure-solution-architect "Azure Solutions Architect Training"){:target="_blank"}
-* [Cloud Skills](https://cloudskills.io/){:target="_blank"}
-* [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2 "Microsoft Azure Administrator Training"){:target="_blank"}
-* [Pluralsight](https://www.pluralsight.com/){:target="_blank"}
-* [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"}
-* [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
-* [Udemy](https://www.udemy.com/){:target="_blank"}
+* [Azure Solutions Architect Training](http://azure.microsoft.com/training/learning-paths/azure-solution-architect%C2%A0%22Azure%C2%A0Solutions%C2%A0Architect%C2%A0Training%22){:target="_blank"}
+* [Cloud Skills](https://cloudskills.io/){:target="_blank"}
+* [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2%C2%A0%22Microsoft%C2%A0Azure%C2%A0Administrator%C2%A0Training%22){:target="_blank"} 
+* [Pluralsight](https://www.pluralsight.com/){:target="_blank"} 
+* [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"} 
+* [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
+* [Udemy](https://www.udemy.com/){:target="_blank"}
 
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 
-* [Azure Architecture Center](http://docs.microsoft.com/azure/architecture "Azure Architecture Center"){:target="_blank"}
-* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
-* [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
-* [Azure Products](){:target="_blank"}
-* [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
-* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
-* [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter "Azure Virtual Datacenter Guidance"){:target="_blank"}
-* [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/ "Azure Whitepapers"){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
-* [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
-* [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
-* [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
-* [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
-* [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
-* [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/ "Windows Server on Azure"){:target="_blank"}
+* * [Azure Architecture Center](http://docs.microsoft.com/azure/architecture%C2%A0%22Azure%C2%A0Architecture%C2%A0Center%22){:target="_blank"}
+* * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
+* * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
+* * [Azure Products](){:target="_blank"}
+* * [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
+* * [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
+* * [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter%C2%A0%22Azure%C2%A0Virtual%C2%A0Datacenter%C2%A0Guidance%22){:target="_blank"}
+* * [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
+* * [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/%C2%A0%22Azure%C2%A0Whitepapers%22){:target="_blank"}
+* * [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
+* * [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
+* * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
+* * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
+* * [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
+* * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
+* * [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/%C2%A0%22Windows%C2%A0Server%C2%A0on%C2%A0Azure%22){:target="_blank"}

@@ -46,6 +46,7 @@ _Note: Updated: 25/04/21_
 * [Azure Citadel](https://azurecitadel.github.io/){:target="_blank"}
 * [70-532 Azure Exam links](https://github.com/gsuttie/gsuttie-gsuttie.github.io){:target="_blank"}
 * [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/){:target="_blank"}
+* [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ){:target="_blank"}
 
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 

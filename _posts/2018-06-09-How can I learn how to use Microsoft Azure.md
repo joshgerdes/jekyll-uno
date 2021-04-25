@@ -70,6 +70,7 @@ _Note: Updated: 25/04/21_
 * [Azure Virtual Datacenter Guidance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/vdc){:target="_blank"}
 * [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
 * [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
+* [Cloud Migration Resources](https://azure.microsoft.com/en-us/migration/resources/){:target="_blank"}
 * [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
 * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
 * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}

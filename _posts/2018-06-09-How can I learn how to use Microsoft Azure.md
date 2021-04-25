@@ -47,6 +47,7 @@ _Note: Updated: 25/04/21_
 * [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/){:target="_blank"}
 * [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ){:target="_blank"}
 * [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA){:target="_blank"}
+* [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=BA-MVP-5003797){:target="_blank"}
 
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 

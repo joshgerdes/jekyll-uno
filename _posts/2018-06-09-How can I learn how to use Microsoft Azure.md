@@ -57,6 +57,7 @@ _Note: Updated: 25/04/21_
 * [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
 * [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"}
 * [Udemy](https://www.udemy.com/){:target="_blank"}
+* [Cloud Skills](https://cloudskills.io/){:target="_blank"}
 
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 

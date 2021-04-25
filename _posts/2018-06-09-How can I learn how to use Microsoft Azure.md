@@ -30,15 +30,12 @@ _Note: Updated: 25/04/21_
 * [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 * [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/ "Get started with Azure"){:target="_blank"}
 * [Get your Azure free account](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}
-* [Wikipedia - More about Azure and some acronyms
-  (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
+* [Wikipedia - More about Azure and some acronyms (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
 ## Intermediate: I am excited! Now to eat supper
 
-* [Create a 3-Tier Application Using Azure Virtual
-  Machines](https://www.udemy.com/free-azure/){:target="_blank"}
-* [Microsoft Azure
-  Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
+* [Create a 3-Tier Application Using Azure Virtual Machines](https://www.udemy.com/free-azure/){:target="_blank"}
+* [Microsoft Azure Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
 * [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
 * [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
 

@@ -8,14 +8,15 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-Microsoft Azure is an ever-evolving public cloud offering. In layman’s terms essentially, the servers or virtual hosts you would usually host in your own datacentre are hosted in secure regions all over the world. Normal capacity concerns that you would have needed to manage in the past such as storage and memory is managed by Microsoft directly – giving you the ability to concentrate on what really matters – your applications and users.
+Microsoft Azure is an ever-evolving public cloud offering. 
+In layman’s terms essentially, the servers or virtual hosts you would usually host in your own datacentre are hosted in secure regions all over the world. Normal capacity concerns that you would have needed to manage in the past such as storage and memory is managed by Microsoft directly – giving you the ability to concentrate on what really matters – your applications and users.
 
 More information on what Azure is and the services that offer _(which is ever-increasing)_ can be found on the following official Microsoft web pages:
 
 * [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 * [What Azure Products & Services does Azure have?](https://azure.microsoft.com/en-us/services/){:target="_blank"}
 
-This mammoth of a Public Cloud offering often causes confusion around knowing what Azure is capable of and the hardest part is knowing where to start! To quote a famous Hobbit.
+This mammoth of a public cloud offering often causes confusion around knowing what Azure is capable of and the hardest part is knowing where to start! To quote a famous Hobbit.
 
 > “It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.” – Bilbo Baggins
 

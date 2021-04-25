@@ -73,3 +73,4 @@ _Note: Updated: 25/04/21_
 * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
 * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
 * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
+* [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}

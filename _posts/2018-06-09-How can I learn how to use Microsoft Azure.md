@@ -26,8 +26,8 @@ _Note: Updated: 25/04/21_
 ## Beginner: So, what is this outside world of Azure that you speak of?
 
 * [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
-* [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/ "Get started with Azure")
-* [Get your Azure free account](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today")
+* [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/ "Get started with Azure"){:target="_blank"}
+* [Get your Azure free account](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}
 * [Wikipedia - More about Azure and some acronyms
   (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
@@ -51,8 +51,8 @@ _Note: Updated: 25/04/21_
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 
 * [Pluralsight](https://www.pluralsight.com/){:target="_blank"}
-* [Azure Solutions Architect Training](http://azure.microsoft.com/training/learning-paths/azure-solution-architect "Azure Solutions Architect Training")
-* [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2 "Microsoft Azure Administrator Training")
+* [Azure Solutions Architect Training](http://azure.microsoft.com/training/learning-paths/azure-solution-architect "Azure Solutions Architect Training"){:target="_blank"}
+* [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2 "Microsoft Azure Administrator Training"){:target="_blank"}
 * [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
 * [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"}
 * [Udemy](https://www.udemy.com/){:target="_blank"}

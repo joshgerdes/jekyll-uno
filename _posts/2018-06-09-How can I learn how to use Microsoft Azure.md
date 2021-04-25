@@ -66,8 +66,8 @@ _Note: Updated: 25/04/21_
 * [Azure Architecture Center](http://docs.microsoft.com/azure/architecture "Azure Architecture Center"){:target="_blank"}
 * [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/ "Windows Server on Azure"){:target="_blank"}
 * [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/ "Azure Whitepapers"){:target="_blank"}
-* [Azure Videos](){:target="_blank"}
+* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
 * [Azure Products](){:target="_blank"}
-* [Azure Code Samples](){:target="_blank"}
+* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
 * [Azure Pricing Calculator](){:target="_blank"}
 * [Find an Azure Partner](){:target="_blank"}

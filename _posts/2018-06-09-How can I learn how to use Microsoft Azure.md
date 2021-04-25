@@ -11,7 +11,7 @@ Microsoft Azure is an ever-evolving public cloud offering. In layman’s terms e
 More information on what Azure is and the services that offer _(which is ever-increasing)_ can be found on the following official Microsoft web pages:
 
 * [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
-* [Azure Products/Services](https://azure.microsoft.com/en-us/services/){:target="_blank"}
+* [Azure Products & Services](https://azure.microsoft.com/en-us/services/){:target="_blank"}
 
 This mammoth of a Public Cloud offering often causes confusion around knowing what Azure is capable of and the hardest part is knowing where to start! To quote a famous Hobbit.
 

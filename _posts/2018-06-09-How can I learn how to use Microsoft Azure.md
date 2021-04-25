@@ -44,8 +44,6 @@ _Note: Updated: 25/04/21_
 
 * [Microsoft Cloud Training Events](https://www.microsoft.com/en-au/cloud-training-events/){:target="_blank"}
 * [Azure Citadel](https://azurecitadel.github.io/){:target="_blank"}
-* [Microsoft Azure Training
-  Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos){:target="_blank"}
 * [70-532 Azure Exam links](https://github.com/gsuttie/gsuttie-gsuttie.github.io){:target="_blank"}
 * [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/){:target="_blank"}
 

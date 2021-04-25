@@ -63,19 +63,19 @@ _Note: Updated: 25/04/21_
 
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 
-* [Azure Architecture Center](http://docs.microsoft.com/azure/architecture "Azure Architecture Center"){:target="_blank"}
-* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
-* [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
-* [Azure Products](){:target="_blank"}
-* [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
-* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
-* [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter "Azure Virtual Datacenter Guidance"){:target="_blank"}
-* [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/ "Azure Whitepapers"){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
-* [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
-* [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
-* [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
-* [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
-* [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
-* [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/ "Windows Server on Azure"){:target="_blank"}
+* [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
+* [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
+* [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
+* [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
+* [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter "Azure Virtual Datacenter Guidance"){:target="_blank"}
+* [Azure Architecture Center](http://docs.microsoft.com/azure/architecture "Azure Architecture Center"){:target="_blank"}
+* [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/ "Windows Server on Azure"){:target="_blank"}
+* [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/ "Azure Whitepapers"){:target="_blank"}
+* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
+* [Azure Products](){:target="_blank"}
+* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
+* [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
+* [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
+* [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
+* [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
+* [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}

@@ -78,4 +78,4 @@ _Note: Updated: 25/04/21_
 * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
 * [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
-* [Windows Server on Azure](https://azure.microsoft.com/en-gb/campaigns/windows-server/%C2%A0%22Windows%C2%A0Server%C2%A0on%C2%A0Azure%22){:target="_blank"}
+* [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}

@@ -63,15 +63,14 @@ _Note: Updated: 25/04/21_
 
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 
-* [Azure Architecture Center](http://docs.microsoft.com/azure/architecture%C2%A0%22Azure%C2%A0Architecture%C2%A0Center%22){:target="_blank"}
+* [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/){:target="_blank"}
 * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
 * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
 * [Azure Products](){:target="_blank"}
 * [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
 * [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
-* [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter%C2%A0%22Azure%C2%A0Virtual%C2%A0Datacenter%C2%A0Guidance%22){:target="_blank"}
+* [Azure Virtual Datacenter Guidance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/vdc){:target="_blank"}
 * [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-gb/resources/whitepapers/%C2%A0%22Azure%C2%A0Whitepapers%22){:target="_blank"}
 * [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
 * [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
 * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}

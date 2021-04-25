@@ -64,6 +64,7 @@ _Note: Updated: 25/04/21_
 
 * [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/){:target="_blank"}
 * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
+* [Azure Quick Start Templates](https://github.com/Azure/azure-quickstart-templates){:target="_blank"}
 * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
 * [Azure Products](){:target="_blank"}
 * [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}

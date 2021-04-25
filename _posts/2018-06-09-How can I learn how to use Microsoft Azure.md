@@ -4,6 +4,8 @@ title: How can I learn how to use Microsoft Azure?
 author: Luke
 categories:
 - Azure
+header:
+  teaser: "/uploads/AzureBlobBanner.png"
 
 ---
 Microsoft Azure is an ever-evolving public cloud offering. In layman’s terms essentially, the servers or virtual hosts you would usually host in your own datacentre are hosted in secure regions all over the world. Normal capacity concerns that you would have needed to manage in the past such as storage and memory is managed by Microsoft directly – giving you the ability to concentrate on what really matters – your applications and users.

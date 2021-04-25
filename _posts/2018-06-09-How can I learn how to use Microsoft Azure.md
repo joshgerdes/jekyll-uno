@@ -76,5 +76,6 @@ _Note: Updated: 25/04/21_
 * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
 * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
 * [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
+* [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/){:target="_blank"}
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
 * [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}

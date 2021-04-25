@@ -37,7 +37,7 @@ _Note: Updated: 25/04/21_
 
 * [Create a 3-Tier Application Using Azure Virtual Machines](https://www.udemy.com/free-azure/){:target="_blank"}
 * [Microsoft Azure Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
-* [Channel9](https://channel9.msdn.com/Search?term=Azure#ch9Search&lang-en=en&pubDate=year){:target="_blank"}
+* [Channel9](https://channel9.msdn.com/Search?term=Azure&sortBy=recent&lang-en=true){:target="_blank"}
 * [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
 
 ## Advanced: Up for a Challenge! Let’s throw that ring in the lava

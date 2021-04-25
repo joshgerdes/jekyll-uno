@@ -62,6 +62,7 @@ _Note: Updated: 25/04/21_
 
 * [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
 * [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
+* [Azure Well Architectued Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
 * [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
 * [Azure Virtual Datacenter Guidance](http://www.azure.microsoft.com/en-us/blog/azure-virtual-datacenter "Azure Virtual Datacenter Guidance"){:target="_blank"}
 * [Azure Architecture Center](http://docs.microsoft.com/azure/architecture "Azure Architecture Center"){:target="_blank"}

@@ -80,15 +80,11 @@ There are many versions of it, but at its core, there are 5 stages to simple dat
 
 Azure Blob Storage has a lifecycle management feature built-in. Azure Blob Storage lifecycle management offers a rich, rule-based policy for General Purpose v2 and blob (and Premium Block blob) storage accounts.
 
-Imagine you working on a project, such as purchasing a new company you not only want somewhere to store that data, but you want to make sure it is accessible quickly, so you put it in an Azure Blob Storage account under the Hot Tier.
-
-You’ve then spent some time working on new documents using the data you acquired when you purchased the ‘new’ company, but don’t touch them anymore, you don’t want them sitting on fast storage costing you additional money, so they get migrated to a ‘Cool’ access tier.
-
-A few months later, you realized that you needed some of the original data from the company acquisition, you find the files and use them, it took a bit longer to open as the data needed to be migrated to the ‘hot tier’ but you are happy because the data that you want was there.
-
-A year later, you are onto acquiring another company and the data from the company acquisition which seemed a lifetime ago is forgotten about, however, you know you might need it for legal or finance auditing purposes, the data goes into the Archive tier, costing you less than the cool tier, but could be reacquired at a later date if needed (for an extra charge).
-
-7 years down the track, you’re now a multi-million-dollar firm, and have completely forgotten or no longer need the data from your original acquisition, the data then gets deleted, saving you money and data management costs.
+* Imagine you working on a project, such as purchasing a new company you not only want somewhere to store that data, but you want to make sure it is accessible quickly, so you put it in an Azure Blob Storage account under the Hot Tier.
+* You’ve then spent some time working on new documents using the data you acquired when you purchased the ‘new’ company, but don’t touch them anymore, you don’t want them sitting on fast storage costing you additional money, so they get migrated to a ‘Cool’ access tier.
+* A few months later, you realized that you needed some of the original data from the company acquisition, you find the files and use them, it took a bit longer to open as the data needed to be migrated to the ‘hot tier’ but you are happy because the data that you want was there.
+* A year later, you are onto acquiring another company and the data from the company acquisition which seemed a lifetime ago is forgotten about, however, you know you might need it for legal or finance auditing purposes, the data goes into the Archive tier, costing you less than the cool tier, but could be reacquired at a later date if needed (for an extra charge).
+* 7 years down the track, you’re now a multi-million-dollar firm, and have completely forgotten or no longer need the data from your original acquisition, the data then gets deleted, saving you money and data management costs.
 
 Microsoft Azure and Lifecycle Management for Blob Storage automate the entire lifecycle for you.
 

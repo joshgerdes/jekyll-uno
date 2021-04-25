@@ -42,7 +42,7 @@ _Note: Updated: 25/04/21_
 
 ## Advanced: Up for a Challenge! Let’s throw that ring in the lava
 
-* [Azure Learning Pathways](https://www.microsoft.com/en-au/azurelearningpathways/){:target="_blank"}
+* [Microsoft Cloud Training Events](https://www.microsoft.com/en-au/cloud-training-events/){:target="_blank"}
 * [Azure Citadel](https://azurecitadel.github.io/){:target="_blank"}
 * [Microsoft Azure Training
   Kit](https://github.com/Azure-Readiness/MicrosoftAzureTrainingKit/tree/master/Demos){:target="_blank"}

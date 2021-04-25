@@ -74,3 +74,4 @@ _Note: Updated: 25/04/21_
 * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
 * [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
 * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
+* [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}

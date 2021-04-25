@@ -53,7 +53,7 @@ _Note: Updated: 25/04/21_
 
 ## Bonus Material: I have a dragon’s hoard of gold to spend
 
-* [Azure Solutions Architect Training](http://azure.microsoft.com/training/learning-paths/azure-solution-architect%C2%A0%22Azure%C2%A0Solutions%C2%A0Architect%C2%A0Training%22){:target="_blank"}
+* [Azure Solutions Architect Training](https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect?aid=7010a000001xDURAA2){:target="_blank"}
 * [Cloud Skills](https://cloudskills.io/){:target="_blank"}
 * [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2%C2%A0%22Microsoft%C2%A0Azure%C2%A0Administrator%C2%A0Training%22){:target="_blank"} 
 * [Pluralsight](https://www.pluralsight.com/){:target="_blank"} 

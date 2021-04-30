@@ -49,6 +49,8 @@ _Note: Updated: 25/04/21_
 * [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ){:target="_blank"}
 * [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA){:target="_blank"}
 * [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=BA-MVP-5003797){:target="_blank"}
+* [Learn Azure in a Month of Lunches - Audiobook](https://azure.microsoft.com/en-gb/resources/learn-azure-in-a-month-of-lunches/){:target="_blank"}
+
 
 ## Other: I have a dragon’s hoard of gold to spend
 

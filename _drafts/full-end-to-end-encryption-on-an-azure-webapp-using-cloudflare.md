@@ -66,9 +66,9 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 16. Now that Domain verification has been completed, navigate back to Cloudflare and enable the Cloudflare proxy, for your root domain and www record.
     ![](/uploads/badassclouddns_postazureverification.png)
 17. Navigate and test your website, now that the domain has been added to the Azure WebApp and Cloudflare proxy has been enabled your website will now have a certificate, supplied by Cloudflare, you have now setup Flexible SSL traffic to your website, so traffic between users’ browsers to Cloudflare is now encrypted.
-![](/uploads/badasscloud_Azure_Cloudflarefront.png)
+    ![](/uploads/badasscloud_Azure_Cloudflarefront.png)
 
-**Update your WebApp to support ‘Full’ end-to-end using Cloudflare origin certificate.**
+**Update your WebApp to support ‘Full’ end-to-end using Cloudflare origin certificate**
 
 Adding your domain to Cloudflare, was only the first part of the puzzle, although traffic between the browser and Cloudflare is now encrypted, traffic between Cloudflare and your WebApp is not, to encrypt this traffic we are going to use the Cloudflare origin certificate.
 
@@ -78,32 +78,39 @@ Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare fo
  2. Click on SSL/TLS
  3. Click on Origin Server
  4. Click on Create Certificate
- 5. Verify that the Private Key Type is RSA (2048)
- 6. Make sure that the Hostnames you want to be covered under the origin cert is covered.
- 7. Verify certificate validity, in my example, I am going with 15 years, just remember to keep this certificate validated and updated.
- 8. Click Create
- 9. Cloudflare will now generate your Origin certificate and Private key (save these somewhere secure, the private key will not be shown again).
-10. Now we need to create a certificate PFX file to upload to the Azure WebApp, run PfxCreator.exe (see Prerequisites for download link)
-11. Paste the Origin Certificate into the: Certificate (PEM)
-12. Paste the Private Key into the Private Key (PEM)
-13. Type in a password for the certificate
-14. Click Save PFX… and save your certificate.
-15. Login into the Azure Portal
-16. Navigate to your App Service.
-17. Underneath Settings on the left-hand side blade of the App Settings, look for Custom Domains and select it.
-18. You should see the SSL state of your domain as ‘Not Secure’ and under SSL Binding you will have an option to Add Binding, click on Add Binding.
-19. Select your Custom Domain and click Upload PFX Certificate
-20. Click File and browse for your certificate.
-21. Type in the password, you entered PFXCreator earlier.
-22. Click on Upload.
-23. Once uploaded, select your Custom Domain
-24. Select the Cloudflare Origin Certificate
-25. Make sure the TLS/SSL type is: SNI SSL and click Add Binding.
-26. The SSL State of your Custom Domain should now be changed to Secure.
-27. Click on HTTPS Only
-28. Note: You may see constant redirect issues with your website until the following Cloudflare changes have been made:
-29. Login to Cloudflare
-30. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected.
-31. Give it 30 seconds to a minute to take effect and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
+ 5. ![](/uploads/Cloudflare_OriginCert1.png)
+ 6. Verify that the Private Key Type is RSA (2048)
+ 7. Make sure that the Hostnames you want to be covered under the origin cert is covered.
+ 8. Verify certificate validity, in my example, I am going with 15 years, just remember to keep this certificate validated and updated.
+ 9. ![](/uploads/Cloudflare_OriginCert2.png)
+10. Click Create
+11. Cloudflare will now generate your Origin certificate and Private key (save these somewhere secure, the private key will not be shown again).
+12. Now we need to create a certificate PFX file to upload to the Azure WebApp, run PfxCreator.exe (see Prerequisites for download link)
+13. Paste the Origin Certificate into the: Certificate (PEM)
+14. Paste the Private Key into the Private Key (PEM)
+15. ![](/uploads/PfxCreator.png)
+16. Type in a password for the certificate
+17. Click Save PFX… and save your certificate.
+18. Login into the Azure Portal
+19. Navigate to your App Service.
+20. Underneath Settings on the left-hand side blade of the App Settings, look for Custom Domains and select it.
+21. You should see the SSL state of your domain as ‘Not Secure’ and under SSL Binding you will have an option to Add Binding, click on Add Binding.
+22. Select your Custom Domain and click Upload PFX Certificate
+23. Click File and browse for your certificate.
+24. Type in the password, you entered PFXCreator earlier.
+25. ![](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding1.png.png)
+26. Click on Upload.
+27. Once uploaded, select your Custom Domain
+28. Select the Cloudflare Origin Certificate
+29. Make sure the TLS/SSL type is: SNI SSL and click Add Binding.
+30. ![](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding3.png.png)
+31. The SSL State of your Custom Domain should now be changed to Secure.
+32. Click on HTTPS Only
+
+    _Note: You may see constant redirect issues with your website until the following Cloudflare changes have been made._
+33. ![](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding4.png)
+34. Login to Cloudflare
+35. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected.
+36. Give it 30 seconds to a minute to take effect and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
 
 \#ProTip - If you want to be more secure, then you can look into blocking access to your website from Cloudflare and a few select IPs for testing only, to avoid traffic from bypassing Cloudflare and going to the azure websites URL.

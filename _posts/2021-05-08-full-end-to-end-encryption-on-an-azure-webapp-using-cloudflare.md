@@ -58,7 +58,7 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 13. Navigate back to the Azure Portal.
 14. Click on Validate again and select CNAME.
 15. Hostname availability and Domain ownership should be both green.
-16. Add Custom Domain. 
+16. Add Custom Domain.
 ![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain")
 17. If they are still Red, wait a few minutes for Cloudflare to replicate the changes across its Networks and Azure to clear any server-side caching, verification can fail if you try to verify straight away.
 18. Now that Domain verification has been completed navigate Cloudflare and enable the Cloudflare proxy for your root domain and www record. ![](/uploads/badassclouddns_postazureverification.png)

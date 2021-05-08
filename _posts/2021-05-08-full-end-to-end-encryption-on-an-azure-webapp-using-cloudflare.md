@@ -15,7 +15,7 @@ When setting up an Azure Web App using default settings, it is set up using HTTP
 
 We will go through both setups, with the result being full end-to-end encryption and security of your Azure WebApp using Cloudflare.
 
-**Using Cloudflare without a backend Certificate** ![Using Cloudflare without a backend Certificate](/uploads/cloudflare_azure_brokensslchain.png "Using Cloudflare without a backend Certificate") 
+**Using Cloudflare without a backend Certificate** ![Using Cloudflare without a backend Certificate](/uploads/cloudflare_azure_brokensslchain.png "Using Cloudflare without a backend Certificate")
 
 **Using Cloudflare with a backend Certificate** ![Using Cloudflare with a backend Certificate](/uploads/cloudflare_azure_e2e_cert.png "Using Cloudflare with a backend Certificate")
 
@@ -28,7 +28,7 @@ By default, Azure WebApps have a wildcard cert for the following domains:
 * *.scm.azure-mobile.net
 * *.sso.azurewebsites.net
 
-![*.azurewebsites.net certificate](/uploads/azurewebsitescertificates.png "*.azurewebsites.net certificate")
+![*](/uploads/azurewebsitescertificates.png "*.azurewebsites.net certificate")
 
 This certificate allows you to use HTTPS using the default azurewebsites URL, which gets created when you create your Azure WebApp and is completely managed by Microsoft and the Azure ecosystem. Still, if you want to use your own Custom Domain, then these certificates won't work.
 
@@ -56,12 +56,12 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 13. Navigate back to the Azure Portal.
 14. Click on Validate again and select CNAME.
 15. Verify that Hostname availability and Domain ownership is both Green, then press Add Custom Domain.
-![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain") 
+    ![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain")
     _Note: If they are still Red, wait a few minutes for Cloudflare to replicate the changes across its Networks and Azure to clear any server-side caching, verification can fail if you try to verify straight away._
 16. Now that Domain verification has been completed navigate Cloudflare and enable the Cloudflare proxy for your root domain and www record. ![](/uploads/badassclouddns_postazureverification.png)
 17. Navigate and test your website. Now that the domain has been added to the Azure WebApp and Cloudflare proxy has been enabled, your website will now have a certificate supplied by Cloudflare. You have now set up Flexible SSL traffic to your website, so traffic between users’ browsers to Cloudflare is now encrypted. ![badasscloud.com - Cloudflare Certificate](/uploads/badasscloud_Azure_Cloudflarefront.png "badasscloud.com - Cloudflare Certificate")
 
-**Update your WebApp to support ‘Full’ end-to-end using Cloudflare origin certificate**
+## **Update your WebApp to support ‘Full’ end-to-end using Cloudflare origin certificate**
 
 Adding your domain to Cloudflare was only the first part of the puzzle; although traffic between the browser and Cloudflare is now encrypted, traffic between Cloudflare and your WebApp is not; to encrypt this traffic, we are going to use the Cloudflare origin certificate.
 
@@ -94,9 +94,9 @@ Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare fo
 25. Make sure the TLS/SSL type is: SNI SSL and click Add Binding. ![Azure Portal - Add Private Certificate](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding3.png.png "Azure Portal - Add Private Certificate")
 26. The SSL State of your Custom Domain should now have been changed to Secure.
 27. Click on HTTPS Only
-_Note: You may see constant redirect issues with your website until the following Cloudflare changes have been made._ ![Azure Portal - Enable HTTPS](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding4.png "Azure Portal - Enable HTTPS")
+    _Note: You may see constant redirect issues with your website until the following Cloudflare changes have been made._ ![Azure Portal - Enable HTTPS](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding4.png "Azure Portal - Enable HTTPS")
 28. Login to Cloudflare
-29. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected. 
+29. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected.
 30. Give it 30 seconds to a minute to take effect, and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
 
 \#ProTip - If you want to be more secure, you can look into blocking access to your website from Cloudflare and a few select IPs for testing only to avoid traffic from bypassing Cloudflare and going to the azure websites URL.

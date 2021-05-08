@@ -11,9 +11,15 @@ header:
 ---
 Cloudflare offers many capabilities, one of the capabilities it offers is SSL offloading.
 
-When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to your custom domain, then use Cloudflare to protect traffic from your user's browsers to Cloudflare, then encrypt traffic from Cloudflare to your website for full end-to-end encryption and security.
+When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to your custom domain, then use Cloudflare to protect traffic from your user's browsers to Cloudflare, then encrypt traffic from Cloudflare to your website.
 
-![](/uploads/cloudflare_azure_brokensslchain.png)![](/uploads/cloudflare_azure_e2e_cert.png)
+We will go through both setups, with the end result being full end-to-end encryption and security of your Azure WebApp using Cloudflare.
+
+**Using Cloudflare without a backend Certificate**
+![Using Cloudflare without a backend Certificate](/uploads/cloudflare_azure_brokensslchain.png "Using Cloudflare without a backend Certificate") 
+
+**Using Cloudflare with a backend Certificate**
+![Using Cloudflare with a backend Certificate](/uploads/cloudflare_azure_e2e_cert.png "Using Cloudflare with a backend Certificate")
 
 By default, Azure WebApps have a wildcard cert for the following domains:
 
@@ -24,7 +30,7 @@ By default, Azure WebApps have a wildcard cert for the following domains:
 * *.scm.azure-mobile.net
 * *.sso.azurewebsites.net
 
-This certificate allows you to use HTTPS using the default azurewebsites URL, which gets created when you create your Azure WebApp.
+This certificate allows you to use HTTPS using the default azurewebsites URL, which gets created when you create your Azure WebApp, but if you want to use your own Custom Domain, then these certificates are invalid.
 
 ## Prerequisites
 
@@ -93,3 +99,5 @@ Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare fo
 29. Login to Cloudflare
 30. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected.
 31. Give it 30 seconds to a minute to take effect and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
+
+\#ProTip - If you want to be more secure, then you can look into blocking access to your website from Cloudflare and a few select IPs for testing only, to avoid traffic from bypassing Cloudflare and going to the azure websites URL.

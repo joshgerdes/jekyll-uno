@@ -11,7 +11,9 @@ header:
 ---
 Cloudflare offers many capabilities, one of the capabilities it offers is SSL offloading.
 
-When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to HTTPS and add the certificate for your custom domain.
+When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to your custom domain, then use Cloudflare to protect traffic from your user's browsers to Cloudflare, then encrypt traffic from Cloudflare to your website for full end-to-end encryption and security.
+
+![](/uploads/cloudflare_azure_brokensslchain.png)![](/uploads/cloudflare_azure_e2e_cert.png)
 
 By default, Azure WebApps have a wildcard cert for the following domains:
 
@@ -38,7 +40,7 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
  3. Underneath Settings on the left-hand side blade of the App Settings, look for Custom Domains and select it.
  4. Click on ‘Add Custom Domain’.
  5. type in your custom domain (in my example, I am using a domain I own called: badasscloud.com)
- 6.  Select Validate, you will have a similar seen to me below, select CNAME.
+ 6. Select Validate, you will have a similar seen to me below, select CNAME.
  7. Now we need to validate that you are the one who owns the domains and can use it for your WebApp, so we will need to create some records to verify that you own the domain and redirect the website to the Azure Websites.
  8. Login to Cloudflare
  9. Select SSL/TLS and make sure that ‘Flexible’ SSL has been selected.

@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/cloudflare_azure_e2e_cert.png"
 
 ---
-Cloudflare offers many capabilities; one of the capabilities it offers is SSL offloading.
+Cloudflare offers many capabilities; one of the capabilities it offers is SSL offloading and CNAME flattening.
 
 When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to your custom domain, then use Cloudflare to protect traffic from your user's browsers to Cloudflare, then encrypt traffic from Cloudflare to your website.
 

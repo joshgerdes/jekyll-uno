@@ -35,9 +35,9 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 ## Prerequisites
 
 * Azure WebApp (supports Custom Domain SSL support, Custom Domains/SSL support are available from ‘B1’ plans and upwards.)
-* [Cloudflare](https://www.cloudflare.com/en-gb/ "Cloudflare") account (can be free)
+* [Cloudflare](https://www.cloudflare.com/en-gb/ "Cloudflare"){:target="_blank"} account (can be free)
 * Domain (an actual custom domain to use for your website that is already setup to use Cloudflare nameservers)
-* [PfxCreator](https://github.com/georg-jung/PfxCreator "PFXCreator GitHub Repository")
+* [PfxCreator](https://github.com/georg-jung/PfxCreator "PFXCreator GitHub Repository"){:target="_blank"}
 
 ## Add a Custom Domain to your Azure WebApp using Cloudflare.
 
@@ -68,7 +68,7 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 
 Adding your domain to Cloudflare was only the first part of the puzzle; although traffic between the browser and Cloudflare is now encrypted, traffic between Cloudflare and your WebApp is not; to encrypt this traffic, we are going to use the Cloudflare origin certificate.
 
-Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare for installation on your origin server to facilitate end-to-end encryption for your visitors using HTTPS. Once deployed, they are [compatible with the Strict SSL mode](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes#strict). By default, newly generated certificates are valid for 15 years, but you can change this to 7 days.
+Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare for installation on your origin server to facilitate end-to-end encryption for your visitors using HTTPS. Once deployed, they are [compatible with the Strict SSL mode](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes#strict){:target="_blank"}. By default, newly generated certificates are valid for 15 years, but you can change this to 7 days.
 
  1. Log in to Cloudflare
  2. Click on SSL/TLS

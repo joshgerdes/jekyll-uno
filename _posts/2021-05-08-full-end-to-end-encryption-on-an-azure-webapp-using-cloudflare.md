@@ -55,8 +55,8 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 12. Add in the records to Cloudflare (please note that verification will fail if Cloudflare proxy is turned on, so make sure that the proxy status is set to DNS only) ![](/uploads/badassclouddns_azureverification.png)
 13. Navigate back to the Azure Portal.
 14. Click on Validate again and select CNAME.
-15. Verify that Hostname availability and Domain ownership is both Green, then press Add Custom Domain.![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain") 
-
+15. Verify that Hostname availability and Domain ownership is both Green, then press Add Custom Domain.
+![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain") 
     _Note: If they are still Red, wait a few minutes for Cloudflare to replicate the changes across its Networks and Azure to clear any server-side caching, verification can fail if you try to verify straight away._
 16. Now that Domain verification has been completed navigate Cloudflare and enable the Cloudflare proxy for your root domain and www record. ![](/uploads/badassclouddns_postazureverification.png)
 17. Navigate and test your website. Now that the domain has been added to the Azure WebApp and Cloudflare proxy has been enabled, your website will now have a certificate supplied by Cloudflare. You have now set up Flexible SSL traffic to your website, so traffic between users’ browsers to Cloudflare is now encrypted. ![badasscloud.com - Cloudflare Certificate](/uploads/badasscloud_Azure_Cloudflarefront.png "badasscloud.com - Cloudflare Certificate")

@@ -43,7 +43,7 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 * Domain _(an actual custom domain to use for your website that is already setup to use Cloudflare nameservers)_
 * [PfxCreator](https://github.com/georg-jung/PfxCreator "PFXCreator GitHub Repository"){:target="_blank"}
 
-## Add a Custom Domain to your Azure WebApp using Cloudflare.
+## Add a Custom Domain to your Azure WebApp using Cloudflare
 
  1. Login into the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services"){:target="_blank"}
  2. Navigate to your App Service.

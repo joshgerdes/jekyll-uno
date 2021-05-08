@@ -94,13 +94,9 @@ Cloudflare Origin Certificates are free SSL certificates issued by Cloudflare fo
 25. Make sure the TLS/SSL type is: SNI SSL and click Add Binding. ![Azure Portal - Add Private Certificate](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding3.png.png "Azure Portal - Add Private Certificate")
 26. The SSL State of your Custom Domain should now have been changed to Secure.
 27. Click on HTTPS Only
-
 _Note: You may see constant redirect issues with your website until the following Cloudflare changes have been made._ ![Azure Portal - Enable HTTPS](/uploads/AzureWebApp-Cloudflare_OriginCert_AddBinding4.png "Azure Portal - Enable HTTPS")
-
-Login to Cloudflare
-
-Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected. 
-
-Give it 30 seconds to a minute to take effect, and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
+28. Login to Cloudflare
+29. Select SSL/TLS and make sure that ‘Full (Strict)’ has been selected. 
+30. Give it 30 seconds to a minute to take effect, and you have now successfully encrypted traffic end-to-end on your website, from the browser to Cloudflare and from Cloudflare to your Azure WebApp.
 
 \#ProTip - If you want to be more secure, you can look into blocking access to your website from Cloudflare and a few select IPs for testing only to avoid traffic from bypassing Cloudflare and going to the azure websites URL.

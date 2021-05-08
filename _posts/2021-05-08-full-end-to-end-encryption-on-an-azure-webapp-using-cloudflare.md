@@ -41,25 +41,28 @@ This certificate allows you to use HTTPS using the default azurewebsites URL, wh
 
 ## Add a Custom Domain to your Azure WebApp using Cloudflare.
 
- 1. Login into the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services")
+ 1. Login into the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services"){:target="_blank"}
  2. Navigate to your App Service.
  3. Underneath Settings on the left-hand side blade of the App Settings, look for Custom Domains and select it.
  4. Click on ‘Add Custom Domain’.
  5. type in your custom domain (in my example, I am using a domain I own called: badasscloud.com)
- 6. Select Validate; you will have a similar seen to me below; select CNAME. ![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain.png "Azure - Add Custom Domain")
+ 6. Select Validate; you will have a similar seen to me below; select CNAME. 
+ ![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain.png "Azure - Add Custom Domain"){:target="_blank"}
  7. Now we need to validate that you are the one who owns the domains and can use it for your WebApp, so we will need to create some records to verify that you own the domain and redirect the website to the Azure Websites.
  8. Login to Cloudflare
  9. Select SSL/TLS and make sure that ‘Flexible’ SSL has been selected.
 10. Select DNS _Note: You may need to remove any A records for ‘www’ or the root domain ‘@’ you have set; please make sure you have a reference to them in case you need to roll back any changes because we will be redirecting the main URL to an Azure DNS alias, we will be using Cloudflare CNAME flattening at the root level, so anyone going to ‘badasscloud.com’ will be redirected to the Azure WebApp._
 11. You can also use the txt record to validate the domain and do some reconfiguration without changing the domain and redirecting traffic ahead of your change to avoid downtime.
-12. Add in the records to Cloudflare (please note that verification will fail if Cloudflare proxy is turned on, so make sure that the proxy status is set to DNS only) ![](/uploads/badassclouddns_azureverification.png)
+12. Add in the records to Cloudflare (please note that verification will fail if Cloudflare proxy is turned on, so make sure that the proxy status is set to DNS only) 
+![](/uploads/badassclouddns_azureverification.png)
 13. Navigate back to the Azure Portal.
 14. Click on Validate again and select CNAME.
-15. Verify that Hostname availability and Domain ownership is both Green, then press Add Custom Domain.
-    ![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain")
-16. If they are still Red, wait a few minutes for Cloudflare to replicate the changes across its Networks and Azure to clear any server-side caching, verification can fail if you try to verify straight away.
-17. Now that Domain verification has been completed navigate Cloudflare and enable the Cloudflare proxy for your root domain and www record. ![](/uploads/badassclouddns_postazureverification.png)
-18. Navigate and test your website. Now that the domain has been added to the Azure WebApp and Cloudflare proxy has been enabled, your website will now have a certificate supplied by Cloudflare. You have now set up Flexible SSL traffic to your website, so traffic between users’ browsers to Cloudflare is now encrypted. ![badasscloud.com - Cloudflare Certificate](/uploads/badasscloud_Azure_Cloudflarefront.png "badasscloud.com - Cloudflare Certificate")
+15. Hostname availability and Domain ownership should be both green.
+16. Add Custom Domain. 
+![Azure - Add Custom Domain](/uploads/AzureAppService_AddCustomDomain_VerificationComplete.png "Azure - Add Custom Domain")
+17. If they are still Red, wait a few minutes for Cloudflare to replicate the changes across its Networks and Azure to clear any server-side caching, verification can fail if you try to verify straight away.
+18. Now that Domain verification has been completed navigate Cloudflare and enable the Cloudflare proxy for your root domain and www record. ![](/uploads/badassclouddns_postazureverification.png)
+19. Navigate and test your website. Now that the domain has been added to the Azure WebApp and Cloudflare proxy has been enabled, your website will now have a certificate supplied by Cloudflare. You have now set up Flexible SSL traffic to your website, so traffic between users’ browsers to Cloudflare is now encrypted. ![badasscloud.com - Cloudflare Certificate](/uploads/badasscloud_Azure_Cloudflarefront.png "badasscloud.com - Cloudflare Certificate")
 
 ## **Update your WebApp to support ‘Full’ end-to-end using Cloudflare origin certificate**
 

@@ -30,7 +30,7 @@ By default, Azure WebApps have a wildcard cert for the following domains:
 * *.scm.azure-mobile.net
 * *.sso.azurewebsites.net
 
-This certificate allows you to use HTTPS using the default azurewebsites URL, which gets created when you create your Azure WebApp, but if you want to use your own Custom Domain, then these certificates are invalid.
+This certificate allows you to use HTTPS using the default azurewebsites URL, which gets created when you create your Azure WebApp and is completely managed by Microsoft and the Azure ecosystem, but if you want to use your own Custom Domain, then these certificates won't work.
 
 ## Prerequisites
 

@@ -15,9 +15,11 @@ When setting up an Azure Web App using default settings, it is set up using HTTP
 
 We will go through both setups, with the result being full end-to-end encryption and security of your Azure WebApp using Cloudflare.
 
-**Using Cloudflare without a backend Certificate** ![Using Cloudflare without a backend Certificate](/uploads/cloudflare_azure_brokensslchain.png "Using Cloudflare without a backend Certificate")
+**Using Cloudflare without a backend Certificate** 
+![Using Cloudflare without a backend Certificate](/uploads/cloudflare_azure_brokensslchain.png "Using Cloudflare without a backend Certificate")
 
-**Using Cloudflare with a backend Certificate** ![Using Cloudflare with a backend Certificate](/uploads/cloudflare_azure_e2e_cert.png "Using Cloudflare with a backend Certificate")
+**Using Cloudflare with a backend Certificate** 
+![Using Cloudflare with a backend Certificate](/uploads/cloudflare_azure_e2e_cert.png "Using Cloudflare with a backend Certificate")
 
 By default, Azure WebApps have a wildcard cert for the following domains:
 

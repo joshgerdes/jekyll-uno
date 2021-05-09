@@ -32,7 +32,7 @@ For future reference, I have exported the list of compatible timezones into a CS
 
 ## Set the Timezone
 
-Making a change to the Application Settings, which includes setting the Timezone will restart the WebApp, so make sure this is scheduled at a time it is acceptable for an intermittent outage.
+Making a change to the Application Settings, which includes setting the Timezone will restart the WebApp app pool, so make sure this is scheduled at a time it is acceptable for an intermittent outage.
 
 1. Log in to the [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services"){:target="_blank"}
 2. Find your Azure WebApp and open it up

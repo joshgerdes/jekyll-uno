@@ -30,3 +30,4 @@ pages:
 - _posts/2021-05-08-full-end-to-end-encryption-on-an-azure-webapp-using-cloudflare.md
 - _posts/2021-05-09-run-powershell-app-deployment-toolkit-in-datto-rmm.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
+- _posts/update-your-azure-webapp-to-use-your-timezone.md

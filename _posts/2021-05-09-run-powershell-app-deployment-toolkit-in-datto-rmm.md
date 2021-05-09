@@ -1,5 +1,5 @@
 ---
-date: 2021-05-09 00:00:00 +1200
+date: 2021-05-09T00:00:00.000+12:00
 title: Run PowerShell App Deployment Toolkit in Datto RMM
 author: Luke
 categories:
@@ -9,11 +9,11 @@ header:
   teaser: "/uploads/powershell-blog-feature-banner.png"
 
 ---
-The PowerShell App Deployment Toolkit provides a set of functions to perform common application deployment tasks and to interact with the user during deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates.
+The [PowerShell App Deployment Toolkit](https://psappdeploytoolkit.com/ "PowerShell App Deployment Toolkit") provides a set of functions to perform common application deployment tasks and to interact with the user during deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates.
 
 ![PowerShell App Deployment Toolkit](/uploads/powershell_app_deploymenttoolkit.png "PowerShell App Deployment Toolkit")
 
-Although the PowerShell App Deployment Toolkit, makes application installation a lot more visible and gives your users more control over how and when the Application is installed,  due to some technical limitations, you can't run the PowerShell App Deployment Toolkit, directly from the Datto RMM package store. 
+Although the PowerShell App Deployment Toolkit, makes application installation a lot more visible and gives your users more control over how and when the Application is installed,  due to some technical limitations, you can't run the PowerShell App Deployment Toolkit, directly from the Datto RMM package store.
 
 This is a brief blog article, intended to help other people who may be using the App Deployment Toolkit with Datto RMM.
 

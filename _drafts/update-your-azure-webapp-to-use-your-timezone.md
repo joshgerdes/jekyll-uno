@@ -39,6 +39,8 @@ Making a change to the Application Settings, including setting the Timezone will
 6. Click Ok
 7. Click Save to confirm and save the change.
 
+![Azure WebApp - Timezone](/uploads/azurewebapp_appsettingstimezone.png "Azure WebApp - Timezone")
+
 ## Test the Timezone
 
 1. Log in to the Azure Portal
@@ -50,3 +52,5 @@ Making a change to the Application Settings, including setting the Timezone will
 * Date
 
 Into the console to confirm that the Date and Time match your Timezone, the Azure WebApp logs etc will now be updated to use your timezone.
+
+![Azure App Service - Console](/uploads/azurewebapp_console_date.png "Azure App Service - Console")

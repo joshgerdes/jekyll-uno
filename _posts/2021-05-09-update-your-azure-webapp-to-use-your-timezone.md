@@ -4,9 +4,9 @@ title: Update your Azure WebApp to use your timezone
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
-  teaser: ''
+  teaser: "images/iazure-marketplace-banner.png"
 
 ---
 By default, the Timezone in Microsoft Azure defaults to UTC (Universal Coordinated Time) as a standard, as a universal and consistent timezone, this makes sense - however when troubleshooting issues or attempting to schedule jobs, having the time in UTC may add additional confusion. An Azure WebApp is no exception to UTC as a standard, and this can be changed.

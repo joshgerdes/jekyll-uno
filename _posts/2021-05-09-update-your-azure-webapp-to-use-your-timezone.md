@@ -27,7 +27,7 @@ The Azure App Service uses the same naming standard as Windows.
 
 This will list all the compatible Timezone names, because I am in New Zealand, I now know that: 'New Zealand Standard Time' is the correct syntax. 
 
-For your reference, I have exported the list of compatible timezones into a CSV file below:
+For future reference, I have exported the list of compatible timezones into a CSV file below:
 * [Export of Timezones](https://luke.geek.nz/uploads/files/Timezones.csv "Export of Timezones"){:target="_blank"}
 
 ## Set the Timezone

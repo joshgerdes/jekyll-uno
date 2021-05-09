@@ -45,7 +45,7 @@ WEBSITE_TIME_ZONE | New Zealand Standard Time
 ## Test the Timezone
 
 1. Log in to the Azure Portal
-2. Find your [Azure WebApp]() and open it up
+2. Find your [Azure WebApp](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services"){:target="_blank"} and open it up
 3. On the left-hand side Blade, underneath Development Tools, click on Console
 4. Type in:
 

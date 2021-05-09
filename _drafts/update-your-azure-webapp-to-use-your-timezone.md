@@ -36,8 +36,8 @@ Making a change to the Application Settings, including setting the Timezone will
 3. On the left-hand side Blade, underneath Settings, click on Configuration
 4. Click on + New Application Setting
 5. Type in the following Key/Value pair:
-   **WEBSITE_TIME_ZONE**|**New Zealand Standard Time**
-   :-----:|:-----:
+WEBSITE\_TIME\_ZONE|New Zealand Standard Time
+-----|-----
 6. Click Ok
 7. Click Save to confirm and save the change.
 

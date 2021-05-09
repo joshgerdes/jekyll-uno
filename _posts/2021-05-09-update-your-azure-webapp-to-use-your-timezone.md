@@ -50,11 +50,11 @@ WEBSITE_TIME_ZONE | New Zealand Standard Time
 1. Log in to the Azure Portal
 2. Find your [Azure WebApp](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Services"){:target="_blank"} and open it up
 3. On the left-hand side Blade, underneath Development Tools, click on Console
-4. Type in:
+4. Type the following into the console:
 
 * Time
 * Date
 
-Into the console to confirm that the Date and Time match your Timezone, the Azure WebApp logs etc will now be updated to use your timezone.
+These commands can help you confirm, that the Date and Time now your Timezone, the Azure WebApp logs etc will now be updated to use your timezone.
 
 ![Azure App Service - Console](/uploads/azurewebapp_console_date.png "Azure App Service - Console")

@@ -21,7 +21,7 @@ The Azure App Service uses the same naming standard as Windows.
 
 1. To find the correct name, run the following PowerShell snippet on a Windows PC:
 
-   Get-ChildItem -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Time Zones' | Select-Object PSChildName
+       Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones' | Select-Object PSChildName
 
 ![](/uploads/windowsterminal_timezone.png)
 

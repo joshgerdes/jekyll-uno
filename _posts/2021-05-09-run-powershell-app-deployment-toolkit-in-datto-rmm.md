@@ -17,7 +17,7 @@ Although the PowerShell App Deployment Toolkit, makes application installation a
 
 {% gist 93ac9f29ddf7db2327e356480f1c7478 %}
 
-Note: You may also need to navigate to: AppDeployToolkitConfig.xml, and change the: <Toolkit_RequireAdmin> attribute to false, to avoid issues with UAC.
+Note: You may also need to navigate to: AppDeployToolkitConfig.xml, and change the: <Toolkit_RequireAdmin> attribute to False, to avoid issues with UAC (User Access Control).
 
 I also ran my component as:
 

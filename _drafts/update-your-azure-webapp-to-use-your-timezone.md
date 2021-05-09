@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-By default, the Timezone in Azure defaults to UTC (Universal Coordinated Time) as a standard, as a standard and consistent timezone, this makes sense - however when troubleshooting issues or attempting to schedule jobs, having the time in UTC may add additional confusion. An Azure WebApp is no exception to UTC as a standard, and this can be changed.
+By default, the Timezone in Microsoft Azure defaults to UTC (Universal Coordinated Time) as a standard, as a standard and consistent timezone, this makes sense - however when troubleshooting issues or attempting to schedule jobs, having the time in UTC may add additional confusion. An Azure WebApp is no exception to UTC as a standard, and this can be changed.
 
 As I am in 'New Zealand', I will be setting my WebApp (which is hosted in Australia East) to NZ time from UTC.
 
@@ -21,7 +21,7 @@ The Azure App Service uses the same naming standard as Windows.
 
 1. To find the correct name, run the following PowerShell snippet on a Windows PC:
 
-    Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones' | Select-Object PSChildName
+   Get-ChildItem -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Time Zones' | Select-Object PSChildName
 
 ![](/uploads/windowsterminal_timezone.png)
 
@@ -36,8 +36,8 @@ Making a change to the Application Settings, including setting the Timezone will
 3. On the left-hand side Blade, underneath Settings, click on Configuration
 4. Click on + New Application Setting
 5. Type in the following Key/Value pair:
-**WEBSITE\_TIME\_ZONE**|**New Zealand Standard Time**
-:-----:|:-----:
+   **WEBSITE_TIME_ZONE**|**New Zealand Standard Time**
+   :-----:|:-----:
 6. Click Ok
 7. Click Save to confirm and save the change.
 

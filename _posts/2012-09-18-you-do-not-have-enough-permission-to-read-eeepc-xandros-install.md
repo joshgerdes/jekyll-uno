@@ -5,7 +5,6 @@ author: Luke
 permalink: /linux/you-do-not-have-enough-permission-to-read-eeepc-xandros-install/
 categories:
   - Linux
-  - Misc
 ---
 
 You do not have enough permission - eeePC Xandros

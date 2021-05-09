@@ -19,7 +19,7 @@ I will be using a Windows-based App Service, for this article.
 
 The Azure App Service uses the same naming standard as Windows.
 
-To find the correct name, run the following PowerShell snippet on a Windows PC:
+1. To find the correct name, run the following PowerShell snippet on a Windows PC:
 
     Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones' | Select-Object PSChildName
 
@@ -36,8 +36,8 @@ Making a change to the Application Settings, including setting the Timezone will
 3. On the left-hand side Blade, underneath Settings, click on Configuration
 4. Click on + New Application Setting
 5. Type in the following Key/Value pair:
-**WEBSITE\_TIME\_ZONE**|**New Zealand Standard Time**
-:-----:|:-----:
+   **WEBSITE_TIME_ZONE**|**New Zealand Standard Time**
+   :-----:|:-----:
 6. Click Ok
 7. Click Save to confirm and save the change.
 

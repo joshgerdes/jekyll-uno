@@ -1,8 +1,7 @@
 ---
 title: You do not have enough permission to read eeepc Xandros Install
-date: 2012-09-18T 20:20:21 +00:00
+date: 2012-09-28T09:49:26+00:00
 author: Luke
-permalink: /linux/you-do-not-have-enough-permission-to-read-eeepc-xandros-install/
 categories:
   - Linux
 ---

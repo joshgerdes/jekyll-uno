@@ -27,6 +27,8 @@ The Azure App Service uses the same naming standard as Windows.
 
 This will list all the compatible Timezone names because I am in New Zealand, I now know that: 'New Zealand Standard Time' is the correct syntax.
 
+* [Export of Timezones](https://luke.geek.nz/uploads/files/Timezones.csv "Export of Timezones"){:target="_blank"}
+
 ## Set the Timezone
 
 Making a change to the Application Settings, including setting the Timezone will restart the WebApp, so make sure this is scheduled at a time it is acceptable for an intermittent outage.

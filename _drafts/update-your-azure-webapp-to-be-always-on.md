@@ -23,6 +23,10 @@ Enabling "Always On" keeps your Apps always loaded, even when there is no traffi
 
 Disabling "Always On" makes your Apps unloaded if they are idle for a set period of time. This way, the system can conserve resources. This is the reason “Always On” is set as disabled by default.
 
+You need a minimum of Basic and Standard App Service Tiers to enable "Always On"
+
+Having "Always On" off or on does not affect your billing or pricing, the Azure App Service billing is done at the App Service Plan level, which is charged per hour that the App Service Plan exists and is running, this is charged whether you have a WebApp or its set to "Always On" or not.
+
 ## Configure Always On
 
 Note: Any changes to applications settings and connection strings could restart your application, so make sure that you schedule this during a period you can have an intermittent outage.

@@ -8,7 +8,7 @@ header:
   teaser: ''
 
 ---
-By default, Azure Web Apps are unloaded if they are idle for a set period of time (20 minutes). This way, the system can conserve resources. 
+By default, Azure Web Apps are unloaded if they are idle for a set period of time (20 minutes). This way, the system can conserve resources.
 
 The downside is that the response to the first request after the web app is unloaded is longer, as the WebApp has to load into memory and present itself, which could lead to a bad user experience.
 
@@ -29,9 +29,9 @@ Note: Any changes to applications settings and connection strings could restart 
 1. Log in to the **Azure Portal**
 2. **Find** your [**App Service**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites "Azure Portal - App Service") and open it
 3. In the left hand Blade, under **Configuration**, select **General Settings**
-4. ![](/uploads/app-service_configurationsettings.png)
+![App Service - General Settings](/uploads/app-service_configurationsettings.png "App Service - General Settings")
 5. Navigate down to **Platform Settings** and click '**On**' to **Always On**
-6. ![](/uploads/app-service_alwayson.png)
+![App Service - Always On](/uploads/app-service_alwayson.png "App Service - Always On")
 7. Click **Save**
 
 ## References

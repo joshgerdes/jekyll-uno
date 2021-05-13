@@ -17,9 +17,9 @@ To ensure that the Azure App Service Web App is running and always available to 
 
 ## Overview
 
-By setting the "Always On" feature of the App Service Web App to “On”, will ensure that Azure will always keep an instance of the Web App running at all times. This way when a user/client hits the Azure Front Door endpoint, the backend Web App will always be ready to respond to that request without timing out. This will ensure the application is always available even during times of low usage or inactivity. Azure will continuously ping the website to keep the website alive.
+By setting the "Always On" feature of the App Service Web App to “On”, will ensure that Azure will always keep an instance of the Web App running at all times. This way when a user/client hits the Azure Front Door endpoint, the back-end Web App will always be ready to respond to that request without timing out. This will ensure the application is always available even during times of low usage or inactivity. Azure will continuously ping the website to keep the website alive.
 
-Enabling "Always On" keeps your Apps always loaded, even when there is no traffic. It’s required for example when using continuous Web Jobs or for Web Jobs that are triggered using a CRON expression, this feature is similar to the IIS idle time-out property.
+Enabling "Always On" keeps your Apps always loaded, even when there is no traffic. It’s required for example when using continuous Web Jobs or for Web Jobs that are triggered using a CRON expression, this feature is similar to the Internet Information Services (IIS) idle time-out property.
 
 Disabling "Always On" makes your Apps unloaded if they are idle for a set period of time. This way, the system can conserve resources. This is the reason “Always On” is set as disabled by default.
 

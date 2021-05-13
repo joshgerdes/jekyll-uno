@@ -1,5 +1,5 @@
 ---
-date: 2021-05-14 00:00:00 +1200
+date: 2021-05-14T00:00:00.000+12:00
 title: Update your Azure WebApp to be Always On
 author: Luke
 categories:
@@ -43,5 +43,5 @@ Note: Any changes to applications settings and connection strings could restart 
 
 For more information about the "Always On" feature please see the documentation below:
 
-* [Azure Web Sites adds Always On | Azure updates | Microsoft Azure]("https://azure.microsoft.com/en-us/updates/azure-web-sites-adds-always-on/")
-* [Application performance FAQs - Azure App Service | Microsoft Docs]("https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues")
+* [Azure Web Sites adds Always On](https://azure.microsoft.com/en-us/updates/azure-web-sites-adds-always-on/ "https://azure.microsoft.com/en-us/updates/azure-web-sites-adds-always-on/")
+* [Application performance FAQs for Web Apps in Azure](https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues "https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues")

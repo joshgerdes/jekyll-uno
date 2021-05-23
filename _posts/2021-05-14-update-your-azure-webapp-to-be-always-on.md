@@ -39,6 +39,12 @@ Note: Any changes to applications settings and connection strings could restart 
    ![App Service - Always On](/uploads/app-service_alwayson.png "App Service - Always On")
 5. Click **Save**
 
+## Configure Always On through Azure Policy
+
+The Azure policy below, contains a set of 3 policies which used in combination should ensure that your web app is always on. Since the alwaysOn property is optional in the ARM deployment, a combination of 3 policies are required to ensure true compliance in the environment.
+
+* [Web App Always On Policy](https://github.com/Azure/Community-Policy/tree/master/Policies/WebApps/web-app-always-on "https://github.com/Azure/Community-Policy/tree/master/Policies/WebApps/web-app-always-on"){:target="_blank"}
+
 ## References
 
 For more information about the "Always On" feature please see the documentation below:

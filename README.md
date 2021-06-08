@@ -1,11 +1,10 @@
-# jekyll-uno
+# Jekyll-Uno
+> A minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+[![Made with Ruby](https://img.shields.io/badge/Ruby->=2.6-blue?logo=ruby&logoColor=white)](https://ruby-lang.org)
+[![Made for Jekyll](https://img.shields.io/badge/Jekyll-3.9-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
 
-> :warning:
-  This theme requires ruby and rubygems installed
-
-### Features
+## Features
 
 * Clean layout
 * Resposive layout
@@ -17,38 +16,55 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 * Google Analytics integration
 * Disqus integration
 
----
+## Install system dependencies
 
-### Install and Test
+1. Install Ruby - using your system's package manager or download from [Ruby Downloads](https://www.ruby-lang.org/en/downloads/).
+2. Install Bundler if not installed already.
+    ```sh
+    gem install bundler
+    ```
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+## Set up and run
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+1. Clone the repo, or [Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip) code from `master`.
+    ```sh
+    git clone git@github.com:joshgerdes/jekyll-uno.git
+    cd jekyll-uno/
+    ```
+2. Install Ruby gems:
+    ```sh
+    bundle config set --local path vendor/bundle
+    bundle install
+    ```
+3. Start the Jekyll dev server:
+    ```sh
+    bundle exec jekyll serve --trace
+    ```
 
-If you would like to run without using the `github-pages` gem, update your Gemfile to the following:
+Open the browser at:
 
-```
+- [localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+
+If you would like to run without using the `github-pages` gem, update your `Gemfile` to the following:
+
+```ruby
 source 'https://rubygems.org'
-gem 'jekyll-paginate'
-gem 'jekyll-watch'
+
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
+
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+  gem 'jekyll-watch'
+end
 ```
----
 
-### Demo and Download
+## Demo
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+View demo at [joshgerdes.com/jekyll-uno/](https://joshgerdes.com/jekyll-uno/).
 
 ![jekyll-uno - free Jekyll theme](/screenshot.png)
 
----
+## Copyright and license
 
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
+Licensed under [MIT](/LICENSE) by [@joshgerdes](https://github.com/joshgerdes/jekyll-uno).

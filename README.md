@@ -50,6 +50,7 @@ If you would like to run without using the `github-pages` gem, update your `Gemf
 ```ruby
 source 'https://rubygems.org'
 
+gem 'jekyll', '~> 3.9'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 

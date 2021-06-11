@@ -68,7 +68,7 @@ _Note: Updated: 17/06/21_
 * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
 * [Azure Quick Start Templates](https://github.com/Azure/azure-quickstart-templates){:target="_blank"}
 * [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
-* [Azure Products](){:target="_blank"}
+* [Azure Products by region](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all){:target="_blank"}
 * [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
 * [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
 * [Azure Virtual Datacenter Guidance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/vdc){:target="_blank"}

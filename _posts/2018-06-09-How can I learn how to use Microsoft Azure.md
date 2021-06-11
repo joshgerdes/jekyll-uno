@@ -20,11 +20,11 @@ This mammoth of a public cloud offering often causes confusion around knowing wh
 
 > “It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.” – Bilbo Baggins
 
-This blog post is intended to help point you in the right direction whether it is your first step on the road or you have already started your journey.
+This blog post is intended to help point you in the right direction whether it is your first step on the road or you have already started your journey. Some practical ways to learn Microsoft Azure!
 
 _The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
-_Note: Updated: 25/04/21_
+_Note: Updated: 17/06/21_
 
 ## Beginner: So, what is this outside world of Azure that you speak of?
 

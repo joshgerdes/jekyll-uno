@@ -82,3 +82,4 @@ _Note: Updated: 25/04/21_
 * [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/){:target="_blank"}
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
 * [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}
+* [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}

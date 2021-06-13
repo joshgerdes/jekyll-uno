@@ -6,7 +6,7 @@ categories:
 - PowerShell
 toc: false
 header:
-  teaser: "/uploads/powershell-blog-feature-banner.png"
+  teaser: "images/powershell-blog-feature-banner.png"
 
 ---
 The [PowerShell App Deployment Toolkit](https://psappdeploytoolkit.com/ "PowerShell App Deployment Toolkit"){:target="_blank"} provides a set of functions to perform common application deployment tasks and to interact with the user during deployment. It simplifies the complex scripting challenges of deploying applications in the enterprise, provides a consistent deployment experience and improves installation success rates.

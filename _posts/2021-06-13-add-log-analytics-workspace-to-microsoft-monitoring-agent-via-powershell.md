@@ -6,7 +6,7 @@ categories:
 - PowerShell
 toc: false
 header:
-  teaser: "/uploads/powershell-blog-feature-banner.png"
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Have you ever wanted to add a Log Analytics workspace to multiple Microsoft Monitoring Agent (MMA)'s before? 
 

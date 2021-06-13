@@ -4,6 +4,8 @@ permalink: /win/using-powershell-setup-automatic-logon-windows-servers/
 categories:
   - Windows
   - PowerShell
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Some server based applications require to be logged into a service account to allow an Application or service to run, These applications usually require manual intervention by systems administrators to login to the account manually after a server restart.
 

@@ -5,8 +5,8 @@ author: Luke
 categories:
   - Azure
   - PowerShell
-header: 
-  teaser: "images/iazure-marketplace-banner.png"
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 
 Microsoft Azure has a good user portal where you can do most things, however

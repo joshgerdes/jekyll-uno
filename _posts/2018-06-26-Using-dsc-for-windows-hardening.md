@@ -5,8 +5,9 @@ author: Luke
 categories:
   - PowerShell
 permalink: /Using-dsc-for-windows-hardening
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
-
 I am not a DSC *(Desired State Configuration)* expert, however, the technology
 has always interested me and as such, something I like to dabble in it.
 

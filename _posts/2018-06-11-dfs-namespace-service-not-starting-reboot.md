@@ -5,6 +5,8 @@ permalink: /win/dfs-namespace-service-not-starting-reboot/
 categories:
   - Windows
   - PowerShell
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Distributed File System (DFS) has some service dependencies - so if those don't start the DFS Namespace service will also not start.
 

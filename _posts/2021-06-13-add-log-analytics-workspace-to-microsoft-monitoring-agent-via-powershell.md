@@ -16,3 +16,5 @@ Maybe you are setting up Windows Defender or wanting to redirect to collect even
 This little quick script will help get you started on automating adding a Log Analytics workspace to the MMA agent, even through a proxy.
 
 _Note:  It is recommended to have the latest MMA Agent installed, this is not compatible with SCOM 2012 R2 agents, but the latest agent is supported by SCOM._
+
+{% gist 3f0fa72c545aaa4caef54e66934a7f83 %}

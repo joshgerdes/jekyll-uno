@@ -5,7 +5,8 @@ author: Luke
 categories:
 - Azure
 - PowerShell
-
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 One of the issues you face with setting up an Azure [Site to Site
 VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal){:target="_blank"}

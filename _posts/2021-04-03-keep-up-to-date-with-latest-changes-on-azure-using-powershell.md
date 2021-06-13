@@ -7,9 +7,8 @@ categories:
 - Azure
 permalink: /keep-up-to-date-with-latest-changes-on-azure-using-powershell
 toc: true
-header: 
-  teaser: "images/iazure-marketplace-banner.png"
-
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Keeping up with what is happening with changes and previews in Microsoft Azure is difficult, change happens all the time - and being able to stay informed on what is happening with the Azure ecosystem is half the battle, whether it is a new feature or security fix.
 

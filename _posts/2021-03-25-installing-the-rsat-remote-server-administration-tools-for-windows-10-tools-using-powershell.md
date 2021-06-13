@@ -6,7 +6,8 @@ author: Luke
 categories:
 - PowerShell
 toc: false
-
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Installing the RSAT (Remote Server Administration Tools for Windows 10) tools using PowerShell. This is just a quick article, written purely as an easy reference.
 

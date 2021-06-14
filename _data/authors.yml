@@ -19,7 +19,7 @@ Luke:
       icon: "fas fa-fw fa-link"
       url: "https://luke.geek.nz"
     - label: "Buy me a coffee"
-      icon: "fab coffee"
+      icon: "fa-coffee"
       url: "https://www.buymeacoffee.com/lukemurray"
 
       

@@ -83,3 +83,4 @@ _Note: Updated: 17/06/21_
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
 * [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}
 * [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}
+* [Azure Customer Co-creation](https://customercocreation.microsoft.com/Home/Index){:target="_blank"}

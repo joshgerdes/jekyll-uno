@@ -83,3 +83,5 @@ _Note: Updated: 17/06/21_
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
 * [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}
 * [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}
+* [Microsoft Customer Co-creation](https://customercocreation.microsoft.com/){:target="_blank"}
+* [Security Community Webinars](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/security-community-webinars/ba-p/927888){:target="_blank"}

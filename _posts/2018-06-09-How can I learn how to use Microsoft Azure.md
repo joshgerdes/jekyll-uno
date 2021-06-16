@@ -31,7 +31,7 @@ _Note: Updated: 17/06/21_
 * [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
 * [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/ "Get started with Azure"){:target="_blank"}
 * [Get your Azure free account](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}
-* [Wikipedia - More about Azure and some acronyms (IaaS/Pass)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
+* [Wikipedia - More about Azure and some acronyms (IaaS/PaaS)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
 ## Intermediate: I am excited! Now to eat supper
 

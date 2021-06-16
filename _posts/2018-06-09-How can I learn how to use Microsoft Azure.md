@@ -58,7 +58,7 @@ _Note: Updated: 17/06/21_
 * [Cloud Skills](https://cloudskills.io/){:target="_blank"}
 * [Microsoft Azure Administrator Training](https://www.pluralsight.com/role-iq/microsoft-azure-administrator?aid=7010a000001xDURAA2%C2%A0%22Microsoft%C2%A0Azure%C2%A0Administrator%C2%A0Training%22){:target="_blank"} 
 * [Pluralsight](https://www.pluralsight.com/){:target="_blank"} 
-* [Safari Books](https://www.safaribooksonline.com/home/){:target="_blank"} 
+* [O'Reilly Media](https://www.oreilly.com/){:target="_blank"} 
 * [SkillMeUp](https://www.skillmeup.com/){:target="_blank"}
 * [Udemy](https://www.udemy.com/){:target="_blank"}
 

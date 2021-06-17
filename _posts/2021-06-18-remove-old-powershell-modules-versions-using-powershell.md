@@ -1,6 +1,6 @@
 ---
 date: 2021-06-18 00:00:00 +1200
-title: Remove old powershell modules versions using powershell
+title: Remove old PowerShell modules versions using PowerShell
 author: Luke
 categories:
 - PowerShell

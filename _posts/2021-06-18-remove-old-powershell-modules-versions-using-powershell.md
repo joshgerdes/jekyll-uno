@@ -11,7 +11,7 @@ header:
 ---
 Did you know, that if you update PowerShell modules, the old versions can sometimes get left behind?
 
-This little snippet with remove any old PowerShell modules (that are not the latest version), which are installed.
+This little snippet with remove any old PowerShell modules _(that are not the latest version)_, which are installed.
 
     #requires -Version 2.0 -Modules PowerShellGet
     function Remove-OldModules

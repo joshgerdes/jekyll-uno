@@ -6,8 +6,7 @@ categories:
 - PowerShell
 toc: false
 header:
-  teaser: ''
-
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Did you know, that if you update PowerShell modules, the old versions can sometimes get left behind?
 

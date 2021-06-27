@@ -309,3 +309,15 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 38. Using an assigned account, you can now navigate to: [https://rdweb.wvd.microsoft.com/arm/webclient/index.html](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
 
 ![](/uploads/avdremotewebapp.png)
+
+39. You can now launch your Desktop
+40. Congratulations you have now created and connected to Azure Virtual Desktop!
+
+![](/uploads/avddesktopfull.png)
+
+## Additional Configuration
+
+* For additional configuration, you can Navigate to your Host Pool, under Settings, you can restrict or allow RDP settings, Device redirections and configure Display sessions
+* If you click Properties, you can configure: Start VM on Connect, if you are shutting down your session hosts to save money of a night then the first person to connect each day will start them up.
+* If you click on Session hosts, you can add additional hosts to your pool, or Drain them to prevent logins
+* If you click Application Groups, you can add RemoteApp groups, to allow users to connect directly to an Application versus a Full Desktop.

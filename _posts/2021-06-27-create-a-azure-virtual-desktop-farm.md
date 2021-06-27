@@ -8,15 +8,15 @@ toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
 ---
-Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://docs.microsoft.com/en-us/azure/virtual-desktop/overview "What is Azure Virtual Desktop?") is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10 _(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
+Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://docs.microsoft.com/en-us/azure/virtual-desktop/overview "What is Azure Virtual Desktop?"){:target="_blank"} is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10 _(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
 
 In this guide, I will run you through creating Azure Virtual Desktop from scratch, along with some prerequisites that will help you manage AVD after you create it.
 
-Before I begin, I recommend reading the Azure Virtual Desktop Azure product page "[here](https://azure.microsoft.com/en-us/services/virtual-desktop/ " Azure Virtual Desktop -   Enable a secure remote desktop experience from virtually anywhere.")" to understand the pricing model, features and additional resources that could help you in your journey.
+Before I begin, I recommend reading the Azure Virtual Desktop Azure product page "[here](https://azure.microsoft.com/en-us/services/virtual-desktop/ " Azure Virtual Desktop -   Enable a secure remote desktop experience from virtually anywhere."){:target="_blank"}" to understand the pricing model, features and additional resources that could help you in your journey.
 
 When selecting a region for your Session Hosts _(Virtual Machines)_, I recommend you have a look at the: [Azure Virtual Desktop Experience Estimator](https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/ " Azure Virtual Desktop Experience Estimator") to help validate the proper region for your Session Hosts and the round trip time _(I am in New Zealand, so my recommended region is: Australia East, which is what I will be using for this guide)_.
 
-_If you don't already have a Microsoft Azure subscription, you can sign up for a Free subscription "_[_here_](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today")_"._
+_If you don't already have a Microsoft Azure subscription, you can sign up for a Free subscription "_[_here_](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}_"._
 
 Assuming you already have an Azure subscription and the appropriate access to create resources in that subscription, gets begin!
 

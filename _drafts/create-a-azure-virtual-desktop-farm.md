@@ -48,3 +48,27 @@ _Note: You can change the Publisher Type to Microsoft, so it doesn't display any
 
     _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance?WT.mc_id=Portal-Microsoft_AAD_DomainServices)
 11. In my case, I am starting from scratch so will let it create a Virtual Network and its Subnet (/24), click Next
+
+![](/uploads/adds_networking.png)
+
+12. Azure AD Domain Services, will create a new Azure AD Group called: AAD DC Administrators - this group will be used for Administrator level permissions on the Azure AD Domain Services domain (it automatically adds the account you are using to create Azure AD Domain Services into this group). You can configure Membership of this group now and configure who gets alerted if there are issues with Azure AD Domain Services, when you are ready select Next
+
+![](/uploads/adds_admin.png)
+
+13. Depending on the amount of Azure Active Directory users you have in your organisation and whether they will need Azure AD Domain Services, you can choose to synchronise ALL Azure AD Groups and Users, or specific groups of users (this can be changed later), because my Azure AD Organisation is fairly low, I am going to Sync everything, click Next.
+
+_One thing to note here is the recommendation on the number of Objects (Users, Groups) that will get synced to Azure AD Domain Services, for the Standard SKU the suggested Object Count is 0 to 25,000 - for the Enterprise SKU, it is 25,000 to 100,000. Although there is no hard limit, if fit in the Enterprise space, it might be worth upgrading the SKU you are running for the additional backups and authentication._
+
+![](/uploads/adds_sync.png)
+
+14. We can now configure the Security Settings, the only setting I am going to change here is TLS 1.2 Only Mode to Enable
+
+![](/uploads/adds_securitysettings.png)
+
+15. Enter any applicable Tags and click Review & Create to validate your configuration
+16. Review your configuration and if you are happy with it: Select Create.
+17. Confirm that you are happy with the following and click Ok
+
+![](/uploads/adds_youshouldknow.png)
+
+Note: Azure AD Domain Services can take up to an hour to provision.

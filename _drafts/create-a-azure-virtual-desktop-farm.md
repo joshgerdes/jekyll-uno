@@ -75,6 +75,16 @@ _One thing to note here is the recommendation on the number of Objects (Users, G
 
 Note: Azure AD Domain Services can take up to an hour to provision.
 
+18. Once your Azure AD Domain Services has been configured we need to make some final configuration changes, one of them is to point the Virtual Network DNS to use the Azure AD Domain Services. Open your newly created Azure AD Domain Services.
+19. Click on Overview and: Configuration issues for your managed domain were detected. Run configuration Diagnostics
+
+![](/uploads/adds_configissues.png)
+
+20. Click on Run
+21. It should find a DNS record issue, click Fix to set the DNS settings of the Virtual Network to use the Azure AD Domain Services
+
+Please be careful here, especially if you have already existing DNS settings, you might have to manually add it in.
+
 ## Create a Utility server to help Administer Azure Virtual Desktop
 
 Now we need to create a Virtual Machine to help manage the AAD Domain and deploy Group Policies to help manage and configure the Azure Virtual Desktop farm.
@@ -110,6 +120,37 @@ Now we need to create a Virtual Machine to help manage the AAD Domain and deploy
 17. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups so you don't forget it later, select Review & Create
 18. Verify the configuration is correct and select Create
 
-## Create Bastion to connect to the Utility server
+## Create Azure Bastion to connect to the Utility server
 
-Once the VM has been created we now need to connect to it, securely so we are going to create a Bastion instance, which will allow us to connect to it without publishing RDP over the internet.
+Once the VM has been created we now need to connect to it, securely so we are going to create a Bastion instance, which will allow us to connect to it without publishing the RDP (Remote Desktop Protocol) over the internet.
+
+1. Log in to the Azure Portal
+2. Click on Create a resource
+3. Search for: Bastion
+
+![](/uploads/bastionmarketplace.png)
+
+ 4. Click Create
+ 5. This is a Networking resource, so I am going to place it in the same Resource Group as my Virtual Network
+ 6. Type in a Name for the Bastion instance, I will call mine: Bastion
+ 7. Select the Region that matches the Virtual Network region
+ 8. Select the Virtual Network
+ 9. It now warns you about creating an: AzureBastionSubnet with a prefix of at least /27, so we need to create one, click on Manage Subnet Configuration
+10. Click + Subnet
+11. For the Name type in: AzureBastionSubnet
+12. For the Subnet address range: 10.0.1.0/27
+
+_If you get an error that indicates the address is overlapping with the aadds-subnet, it may be because the Address space is only a /24, click Cancel and click on Address Space in the Virtual Network and change the /24 to/16, to increase the address range._
+
+13. Click Save to create the subnet
+
+![](/uploads/az_subnet.png)
+
+14. Up the Top, click Create a Bastion, to go back to the Bastion setup, your Subnet should be selected automatically.
+15. You do need a Public IP for Bastion, so confirm the name is appropriate then click Review + Create
+
+![](/uploads/bastionsetup.png)
+
+16. Click on Create to create your Bastion instance!
+
+Note: Bastion may take 10-20 minutes to provision.

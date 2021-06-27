@@ -281,3 +281,31 @@ Now we are ready to finally deploy Azure Virtual Desktop!
 29. Click Ok
 
 ![](/uploads/avdworkspacesetup.png)
+
+30. Click on Review + Create
+31. Confirm everything looks ok and click Create
+
+Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources:
+
+* Host Pool
+* Workspace
+* Session hosts
+
+32. Once the resources have been created, you should now have an Application group for the Session Desktop
+33. Open the Application Group and click Applications, you should be able to confirm the SessionDesktop application is listed
+
+![](/uploads/avdapplications.png)
+
+34. Click on the SessionDesktop to change the Display name (this is the name of the resource that people will see when they go to your Azure Virtual Desktop), I changed mine to AVD Desktop
+
+![](/uploads/avddesktop.png)
+
+35. Click on Assignments
+36. These are the Users & Groups that are allowed to access your Azure Virtual Desktop
+37. My recommendation would be to add a Group, that contains your users, but in my demo, I am going to add in my: 'avdjoin' account.
+
+![](/uploads/avddesktopassignment.png)
+
+38. Using an assigned account, you can now navigate to: [https://rdweb.wvd.microsoft.com/arm/webclient/index.html](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
+
+![](/uploads/avdremotewebapp.png)

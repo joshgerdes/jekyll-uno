@@ -6,8 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
-
+  teaser: images/iazure-marketplace-banner.png
 ---
 ## Overview
 

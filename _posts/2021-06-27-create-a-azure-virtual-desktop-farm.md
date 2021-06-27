@@ -296,7 +296,7 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 
 ![Azure Virtual Desktop - Application Group](/uploads/avdapplications.png "Azure Virtual Desktop - Application Group")
 
-1. Click on the SessionDesktop to change the Display name (this is the resource that people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
+1. Click on the SessionDesktop to change the Display name (this is the resource people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
 
 ![Azure Virtual Desktop - Application Group](/uploads/avddesktop.png "Azure Virtual Desktop - Application Group")
 

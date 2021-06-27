@@ -44,7 +44,7 @@ _Note: You can change the Publisher Type to Microsoft, so it doesn't display any
 ![Azure AD Domain Services - Basic Config](/uploads/adds_basics.png "Azure AD Domain Services - Basic Config")
 
 1. Click Next
-2. Now we will set up the Networking; if you have an already existing Virtual Network, select it.
+2. We will set up the Networking; if you have an already existing Virtual Network, select it.
 
    _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance?WT.mc_id=Portal-Microsoft_AAD_DomainServices)
 3. In my case, I am starting from scratch, so I will let it create a Virtual Network and its Subnet (/24); click Next.
@@ -75,7 +75,7 @@ _One thing to note here is the recommendation on the number of Objects (Users, G
 
 Note: Azure AD Domain Services can take up to an hour to provision.
 
-1. Once your Azure AD Domain Services has been configured, we need to make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, open your newly created Azure AD Domain Services.
+1. Once your Azure AD Domain Services has been configured, we must make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, open your newly created Azure AD Domain Services.
 2. Click on Overview and: Configuration issues for your managed domain were detected. Run configuration Diagnostics
 
 ![Azure AD Domain Services](/uploads/adds_configissues.png "Azure AD Domain Services")
@@ -96,13 +96,13 @@ We need to create a Virtual Machine to help manage the AAD Domain and deploy Gro
 5. Specify a name for the Virtual Machine (I am going to use: UTILITY-P01)
 6. Select a Region (use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)
 7. For the Image, you can select either Windows Server 2019 Datacenter -Gen 1 or Gen 2; in my case, I am going with Gen2.
-8. For the size, I am a firm believer in selecting the smallest size possible, then scaling up when/where needed; I am going to go with a Standard_B2ms
+8. I am a firm believer in selecting the smallest size possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
 
 ![Azure - Create VM](/uploads/createvm1.png "Azure - Create VM")
 
-1. Now we need to enter in the Administrator (local account) Username and Password
+1. Now we need to enter in the Administrator (local account) Username and Password.
 2. Select 'None' for Public inbound ports
-3. If you have existing Windows Server licenses, then you can select Hybrid Use Benefit; if not, select Next: Disks
+3. If you have existing Windows Server licenses, you can select Hybrid Use Benefit; if not, select Next: Disks.
 
 ![Azure - Create VM](/uploads/createvm2.png "Azure - Create VM")
 
@@ -164,7 +164,7 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
 3. Click on Users
 4. Click on + New User
 5. Type in the username of a user, I am going to use: 'avdjoin'
-6. Type in a name that’s easily identifiable
+6. Type in an easily identifiable name
 7. Generate or put in a secure password
 8. Add to the AAD DC Administrators group
 9. Click Ok to create the user
@@ -256,7 +256,7 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 
 1. Now we can add your Session hosts to the Pool.
 2. By default, it has defaulted the Resource Group to the same Resource Group as the Host pool; however, you can separate them.
-3. Please select a Name prefix for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts I will put: avdhost
+3. Please select a Name prefix for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts. I will put: and host.
 4. As I am based in New Zealand, I will be using the Australia East region.
 5. We are going to use a Gallery Image of Windows 10 Enterprise multi-session, Version 20H2 + M365 Apps (select the newest image at the time of your deployment)
 6. Select your Virtual machine size
@@ -296,7 +296,7 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 
 ![Azure Virtual Desktop - Application Group](/uploads/avdapplications.png "Azure Virtual Desktop - Application Group")
 
-1. Click on the SessionDesktop to change the Display name (this is the name of the resource that people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
+1. Click on the SessionDesktop to change the Display name (this is the resource that people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
 
 ![Azure Virtual Desktop - Application Group](/uploads/avddesktop.png "Azure Virtual Desktop - Application Group")
 
@@ -318,6 +318,6 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 ## Additional Configuration
 
 * You can Navigate to your Host Pool; under Settings, you can restrict or allow RDP settings, Device redirections and configure Display sessions.
-* If you click Properties, you can configure: Start VM on Connect; if you are shutting down your session hosts to save money of a night then the first person to connect each day will start them up.
+* If you click Properties, you can configure: Start VM on Connect; if you are shutting down your session hosts to save money of a night, then the first person to connect each day will start them up.
 * If you click on Session hosts, you can add additional hosts to your pool or Drain them to prevent logins.
 * If you click Application Groups, you can add RemoteApp groups to allow users to connect directly to an Application versus a Full Desktop.

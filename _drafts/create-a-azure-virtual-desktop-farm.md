@@ -154,3 +154,82 @@ _If you get an error that indicates the address is overlapping with the aadds-su
 16. Click on Create to create your Bastion instance!
 
 Note: Bastion may take 10-20 minutes to provision.
+
+## Configure the Utility server
+
+Now that we have a Bastion instance, it is now time to connect and configure the Utility server and create a new Azure AD user for Azure Virtual Desktop configuration.
+
+1. First thing, I am going to create a separate Azure AD account to manage the Utility server and join the Azure Virtual Desktop session hosts to the domain, this is to separate my own account and Azure AD Domain Services relies on password hash, you won't be able to login using Azure AD Domain Services unless you and the people using it have reset their passwords AFTER Azure AD Domain Services has been created..
+2. Navigate to the Azure Portal and open Azure Active Directory
+3. Click on Users
+4. Click on + New User
+5. Type in the username of a user, I am going to use: 'avdjoin'
+6. Type in the name, that’s easily identifiable
+7. Generate or put in a secure password
+8. Add to the AAD DC Administrators group
+9. Click Ok to create the user
+
+![](/uploads/avdjoin.png)
+
+10. Once the account has been created, make sure to login with it to the Azure Portal or Office portal, to force a final password reset, or you won't be able to use it in the next steps as it will be waiting for a password reset.
+11. Once that account has been created its time to join your utility server to the Azure Active Directory Domain, navigate to your Utility server and click Connect
+12. Select Bastion
+13. Select Use Bastion
+14. Type in the username and password of the LOCAL account, created when the Virtual Machine was created and click Connect
+
+_Note: If you are running a popup blocker, you need to allow it to open, as Bastion opens up the connection in a new window._
+
+![](/uploads/azurebastionconnect.png)
+
+15. You should now be logged in to the server successfully.
+16. Now it's time to join the server to the domain (make sure that DNS is configured for AD Domain Services on the Virtual Network, see the last step in the AD Domain Services section, or you won't be able to domain join anything).
+17. In Server Managed click on Local Server
+18. Select WORKGROUP
+19. Click Change…
+20. Select Domain
+21. Type in the DNS name of your domain, in my demo it is: luke.geek.nz
+22. Type in the username and password of the account we created earlier and click Ok
+
+![](/uploads/jointodomain.png)
+
+23. Once you see, Welcome to the domain, click Ok a few times to restart the server.
+24. Once the server has been restarted, you can now close your bastion window and reconnect using your Azure AD credentials (in my case avdjoin) that is a member of the ADDC Administrators group.
+
+![](/uploads/azurebastionconnect2.png)
+
+25. You have now successfully connected using an Azure AD account to the AD Services domain.
+26. Now it's time to install some base Active Directory tools
+27. Open Windows PowerShell as Administrator
+28. Type in the following PowerShell commands:
+
+    Add-WindowsFeature RSAT-Role-Tools
+
+    Install-WindowsFeature –Name GPMC
+
+Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection.
+
+29. This will now install the base Active Directory remote management tools, including Group Policy Management, so you can now create and manage the Group Policy objects for your Azure Virtual Desktop hosts.
+
+![](/uploads/utility_servertools.png)
+
+30. We will now set up some base configurations, to create a custom OU for the Azure Virtual Desktops hosts to go into:
+
+* Open Active Directory Users & Computers
+* Expand out the Domain and right-click (at the Top Level)
+* Select New, Organisational Unit
+
+![](/uploads/utility_newou.png)
+
+* Type in: AVD
+* In the AVD OU, create a new OU called: Hosts
+* Now that we have an OU for the hosts, we will need to tell Azure, what OU the hosts go into, so while we have Active Directory Users and Computers open, click on View
+* Select Advanced Features
+* Right-click the Hosts OU
+* Select Properties
+* Click on Attribute Editor
+* Find the distinguishedName attribute
+
+![](/uploads/utility_serverdn.png)
+
+* Open and Copy the Value for future (in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz) for future reference.
+* Now that we have the AVD Hosts OU, you can also open Group Policy Management and create your Computer policies.

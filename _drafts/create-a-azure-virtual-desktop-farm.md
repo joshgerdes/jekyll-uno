@@ -105,5 +105,11 @@ Now we need to create a Virtual Machine to help manage the AAD Domain and deploy
 
 ![](/uploads/createvmnetworkinterface.png)
 
-15. Feel free to leave this all as Default, just be wary of the Auto-shutdown settings, which will automatically shut down the VM daily (I am going to keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups so you don't forget it later, select Review & Create
-16. Verify the configuration is correct and select Create
+15. Feel free to leave this all as Default
+16. Just be wary of the Auto-shutdown settings, which will automatically shut down the VM daily (I am going to keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7. 
+17. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups so you don't forget it later, select Review & Create
+18. Verify the configuration is correct and select Create
+
+## Create Bastion to connect to the Utility server
+
+Once the VM has been created we now need to connect to it, securely so we are going to create a Bastion instance, which will allow us to connect to it without publishing RDP over the internet.

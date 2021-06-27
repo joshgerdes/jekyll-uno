@@ -51,7 +51,9 @@ _Note: You can change the Publisher Type to Microsoft, so it doesn't display any
 
 ![](/uploads/adds_networking.png)
 
-12. Azure AD Domain Services, will create a new Azure AD Group called: AAD DC Administrators - this group will be used for Administrator level permissions on the Azure AD Domain Services domain (it automatically adds the account you are using to create Azure AD Domain Services into this group). You can configure Membership of this group now and configure who gets alerted if there are issues with Azure AD Domain Services, when you are ready select Next
+12. Azure AD Domain Services, will create a new Azure AD Group called: AAD DC Administrators - this group will be used for Administrator level permissions on the Azure AD Domain Services domain (it automatically adds the account you are using to create Azure AD Domain Services into this group).
+13. You can configure Membership of this group now and configure who gets alerted if there are issues with Azure AD Domain Services.
+14. When you are ready select Next
 
 ![](/uploads/adds_admin.png)
 
@@ -72,3 +74,36 @@ _One thing to note here is the recommendation on the number of Objects (Users, G
 ![](/uploads/adds_youshouldknow.png)
 
 Note: Azure AD Domain Services can take up to an hour to provision.
+
+## Create a Utility server to help Administer Azure Virtual Desktop
+
+Now we need to create a Virtual Machine to help manage the AAD Domain and deploy Group Policies to help manage and configure the Azure Virtual Desktop farm.
+
+1. Log in to the Azure Portal
+2. Click on Create a resource
+3. Search for: Windows Server 2019 Datacenter and select Create
+4. If you already have a Resource Group, select it - in this Demo, we are going to create one: aad_infra
+5. Specify a name for the Virtual Machine (I am going to use: UTILITY-P01)
+6. Select a Region (use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)
+7. For the Image, you can select either Windows Server 2019 Datacenter -Gen 1 or Gen 2, in my case, I am going with Gen2.
+8. For the size, I am a firm believer in selecting the lowest size possible, then scaling up when/where needed, I am going to go with a Standard_B2ms
+
+![](/uploads/createvm1.png)
+
+ 9. Now we need to enter in the Administrator (local account) Username and Password
+10. Select 'None' for Public inbound ports
+11. If you have existing Windows Server licenses, then you can select Hybrid Use Benefit, if not select Next: Disks
+
+![](/uploads/createvm2.png)
+
+12. For the disks, I only need the OS disk, so don't need to add a Data Disk (although you could use this to store your Application install files etc), however, to reduce cost I am going to change the Disk type to Standard SSD (locally-redundant storage) and select Next: Networking
+
+![](/uploads/createvmdisks.png)
+
+13. For the Virtual Network, make sure you select the same Virtual Network that the Azure AD Domain Services has been installed to, I am going to select the: aadds-subnet created earlier for my Utility server.
+14. Set 'None' for the Public IP and select Next: Management
+
+![](/uploads/createvmnetworkinterface.png)
+
+15. Feel free to leave this all as Default, just be wary of the Auto-shutdown settings, which will automatically shut down the VM daily (I am going to keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups so you don't forget it later, select Review & Create
+16. Verify the configuration is correct and select Create

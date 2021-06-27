@@ -231,5 +231,15 @@ Note: You can use the little arrows on the left-hand side of your Remote Desktop
 
 ![](/uploads/utility_serverdn.png)
 
-* Open and Copy the Value for future (in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz) for future reference.
+* Open and Copy the Value for future _(in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz)_ for future reference.
 * Now that we have the AVD Hosts OU, you can also open Group Policy Management and create your Computer policies.
+
+## Deploy Azure Virtual Desktop
+
+Now we are ready to finally deploy Azure Virtual Desktop!
+
+1. Log in to the Azure Portal
+2. Click on Create a resource
+3. Find and select Host pool
+
+![](/uploads/avdhostpoolmarketplace.png)

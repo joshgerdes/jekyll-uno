@@ -25,13 +25,9 @@ Assuming you already have an Azure subscription and the appropriate access to cr
 1. Log in to the Azure Portal
 2. Click on Create a resource
 3. Search for: Azure AD Domain Services
-
 _Note: You can change the Publisher Type to Microsoft, so it doesn't display any other marketplace offerings._
-
 ![Azure AD Domain - Marketplace](/uploads/azureaddssearch.png "Azure AD Domain - Marketplace")
-
 ![Azure AD Domain - Marketplace](/uploads/azureaddsmarketplace.png "Azure AD Domain - Marketplace")
-
 4. Click Create
 5. If you already have a Resource Group, select it - in this Demo, we are going to create one: aad_prod
 6. Type in the DNS domain name - this is the FQDN of your domain; in my demo, I will choose internal.luke.geek.nz.

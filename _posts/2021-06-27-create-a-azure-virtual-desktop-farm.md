@@ -156,11 +156,8 @@ _Note: If you are running a popup blocker, you need to allow it to open, as Bast
        Install-WindowsFeature –Name GPMC
 
 Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection.
-
 1. This will now install the base Active Directory remote management tools, including Group Policy Management, so you can now create and manage the Group Policy objects for your Azure Virtual Desktop hosts.
-
 ![](/uploads/utility_servertools.png)
-
 1. We will now set up some base configurations to create a custom OU for the Azure Virtual Desktops hosts to go into:
 
 * Open Active Directory Users & Computers
@@ -190,9 +187,7 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 1. Log in to the Azure Portal
 2. Click on Create a resource
 3. Find and select Host pool
-
 ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolmarketplace.png "Azure Virtual Desktop - Host Pool")
-
 1. Click Create
 2. Please create a new Resource Group to help resources separately, and I am going to name mine: avd_prod
 3. Type in a Host Pool Name, I will call mine: avd-pooled
@@ -200,9 +195,7 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 5. For Host Pool Type, if you want everyone to have a Virtual Machine each, you can select Personal; however, I want people to be shared across my servers.
 6. For the Load balancing algorithm, we can choose to spread people over available hosts or fill up one host before moving connections to the next; we are going with Breadth-first.
 7. Click Next: Virtual Machines
-
 ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup1.png "Azure Virtual Desktop - Host Pool")
-
 1. Now we can add your Session hosts to the Pool.
 2. By default, it has defaulted the Resource Group to the same Resource Group as the Host pool; however, you can separate them.
 3. Please select a Name prefix for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts. I will put: and host.
@@ -211,57 +204,39 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 6. Select your Virtual machine size
 7. Select the number of Virtual Machines you need
 8. Select the OS disk type
-
 ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup2.png "Azure Virtual Desktop - Host Pool")
-
 1. Select your Virtual Machine and subnet
 2. Select Yes to specify your domain or unit
 3. Type in your AD Domain Services domain name
 4. If you don't specify an OU, it will create it in the: AADDC Computers OU. I had previously created a separate OU for my hosts so that I will enter the OU information.
 5. For the Domain Administrator account, I will use the AVDJoin account I created earlier.
 6. When the Virtual Machines get created, a local Administrator account will be created for each machine, and you can specify the username and password of what you want this account to be.
-
 ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup3.png "Azure Virtual Desktop - Host Pool")
-
 1. Click Next: WorkSpace
 2. Select Yes to Register Desktop App Group
 3. We haven’t created an Azure Virtual Desktop Workspace yet, so select Create New.
 4. Create a name for your Workspace; my example is: avd_workspace
 5. Click Ok
-
 ![Azure Virtual Desktop - Workspace](/uploads/avdworkspacesetup.png "Azure Virtual Desktop - Workspace")
-
 1. Click on Review + Create
 2. Confirm everything looks ok and click Create
-
 Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources:
-
 * Host Pool
 * Workspace
 * Session hosts
-
 1. Once the resources have been created, you should now have an Application group for the Session Desktop.
 2. Open the Application Group and click Applications; you should confirm the SessionDesktop application is listed.
-
 ![Azure Virtual Desktop - Application Group](/uploads/avdapplications.png "Azure Virtual Desktop - Application Group")
-
 1. Click on the SessionDesktop to change the Display name (this is the resource people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
-
 ![Azure Virtual Desktop - Application Group](/uploads/avddesktop.png "Azure Virtual Desktop - Application Group")
-
 1. Click on Assignments
 2. These are the Users & Groups that are allowed to access your Azure Virtual Desktop.
 3. My recommendation would be to add a Group that contains your users, but in my demo, I will add in my: 'avdjoin' account.
-
 ![Azure Virtual Desktop - Application Group](/uploads/avddesktopassignment.png "Azure Virtual Desktop - Application Group")
-
 1. Using an assigned account, you can now navigate to: [https://rdweb.wvd.microsoft.com/arm/webclient/index.html](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
-
 ![Azure Virtual Desktop - RD Web](/uploads/avdremotewebapp.png "Azure Virtual Desktop - RD Web")
-
 1. You can now launch your Desktop.
 2. Congratulations, you have now created and connected to Azure Virtual Desktop!
-
 ![Azure Virtual Desktop](/uploads/avddesktopfull.png "Azure Virtual Desktop")
 
 ## Additional Configuration

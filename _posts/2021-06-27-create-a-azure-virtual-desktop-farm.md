@@ -42,33 +42,21 @@ Assuming you already have an Azure subscription and the appropriate access to cr
 13. You can configure Membership of this group now and configure who gets alerted if there are issues with Azure AD Domain Services.
 14. When you are ready, select Next.
 ![Azure AD Domain Services - Administration Config](/uploads/adds_admin.png "Azure AD Domain Services - Administration Config")
-
 15. Depending on the amount of Azure Active Directory users you have in your organisation, and whether they will need Azure AD Domain Services, you can choose to synchronise ALL Azure AD Groups and Users, or specific groups of users (this can be changed later), because my Azure AD Organisation is fairly low, I am going to Sync everything, click Next.
-
 _One thing to note here is the recommendation on the number of Objects (Users, Groups) that will get synced to Azure AD Domain Services; for the Standard SKU, the suggested Object Count is 0 to 25,000 - for the Enterprise SKU, it is 25,000 to 100,000. So although there is no hard limit, it might be worth upgrading the SKU you are running for the additional backups and authentication if fit in the Enterprise space._
-
 ![Azure AD Domain Services - Syncronisation Config](/uploads/adds_sync.png "Azure AD Domain Services - Syncronisation Config")
-
 1. We can now configure the Security Settings, the only setting I am going to change here is TLS 1.2 Only Mode to Enable
-
 ![Azure AD Domain Services - Security Config](/uploads/adds_securitysettings.png "Azure AD Domain Services - Security Config")
-
 1. Enter any applicable Tags and click Review & Create to validate your configuration.
 2. Review your configuration, and if you are happy with it: Select Create.
 3. Confirm that you are happy with the following and click Ok
-
 ![Azure AD Domain Services](/uploads/adds_youshouldknow.png "Azure AD Domain Services")
-
 Note: Azure AD Domain Services can take up to an hour to provision.
-
 1. Once your Azure AD Domain Services has been configured, we must make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, open your newly created Azure AD Domain Services.
 2. Click on Overview and: Configuration issues for your managed domain were detected. Run configuration Diagnostics
-
 ![Azure AD Domain Services](/uploads/adds_configissues.png "Azure AD Domain Services")
-
 1. Click on Run
 2. It should find a DNS record issue; click Fix to set the DNS settings of the Virtual Network to use the Azure AD Domain Services.
-
 Please be careful here, especially if you have already existing DNS settings; you might have to add it manually.
 
 ## Create a Utility server to help Administer Azure Virtual Desktop
@@ -83,24 +71,16 @@ We need to create a Virtual Machine to help manage the AAD Domain and deploy Gro
 6. Select a Region (use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)
 7. For the Image, you can select either Windows Server 2019 Datacenter -Gen 1 or Gen 2; in my case, I am going with Gen2.
 8. I am a firm believer in selecting the smallest size possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
-
 ![Azure - Create VM](/uploads/createvm1.png "Azure - Create VM")
-
 1. Now we need to enter in the Administrator (local account) Username and Password.
 2. Select 'None' for Public inbound ports
 3. If you have existing Windows Server licenses, you can select Hybrid Use Benefit; if not, select Next: Disks.
-
 ![Azure - Create VM](/uploads/createvm2.png "Azure - Create VM")
-
 1. For the disks, I only need the OS disk, so I don't need to add a Data Disk (although you could use this to store your Application install files etc.); however, to reduce cost, I am going to change the Disk type to Standard SSD (locally-redundant storage) and select Next: Networking.
-
 ![Azure - Create VM](/uploads/createvmdisks.png "Azure - Create VM")
-
 1. For the Virtual Network, make sure you select the same Virtual Network that the Azure AD Domain Services has been installed to; I will select the: aadds-subnet created earlier for my Utility server.
 2. Set 'None' for the Public IP and select Next: Management
-
 ![Azure - Create VM](/uploads/createvmnetworkinterface.png "Azure - Create VM")
-
 1. Feel free to leave this all as Default
 2. Just be wary of the Auto-shutdown settings, which will automatically shut down the VM daily (I will keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7.
 3. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups, so you don't forget it later, select Review & Create
@@ -113,9 +93,7 @@ Once the VM has been created, we now need to connect to it securely, so we will 
 1. Log in to the Azure Portal
 2. Click on Create a resource
 3. Search for: Bastion
-
 ![Azure - Bastion](/uploads/bastionmarketplace.png "Azure - Bastion")
-
 1. Click Create
 2. This is a Networking resource to place it in the same Resource Group as my Virtual Network.
 3. Please type in a Name for the Bastion instance; I will call mine: Bastion
@@ -125,18 +103,12 @@ Once the VM has been created, we now need to connect to it securely, so we will 
 7. Click + Subnet
 8. For the Name type in: AzureBastionSubnet
 9. For the Subnet address range: 10.0.1.0/27
-
 _If you get an error that indicates the address is overlapping with the aadds-subnet, it may be because the Address space is only a /24; click Cancel and click on Address Space in the Virtual Network and change the /24 to/16 to increase the address range._
-
 1. Click Save to create the subnet
-
 ![Azure - Bastion](/uploads/az_subnet.png "Azure - Bastion")
-
 1. Up the Top, click Create a Bastion. To go back to the Bastion setup, your Subnet should be selected automatically.
 2. You do need a Public IP for Bastion, so confirm the name is appropriate, then click Review + Create
-
 ![Azure - Bastion](/uploads/bastionsetup.png "Azure - Bastion")
-
 1. Click on Create to create your Bastion instance!
 
 Note: Bastion may take 10-20 minutes to provision.
@@ -154,19 +126,14 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
 7. Generate or put in a secure password
 8. Add to the AAD DC Administrators group
 9. Click Ok to create the user
-
 ![Azure AD - Users](/uploads/avdjoin.png "Azure AD - Users")
-
 1. Once the account has been created, make sure to login with it to the Azure Portal or Office portal to force a final password reset, or you won't be able to use it in the next steps as it will be waiting for a password reset.
 2. Once that account has been created, it's time to join your utility server to the Azure Active Directory Domain, navigate to your Utility server and click Connect.
 3. Select Bastion
 4. Select Use Bastion
 5. Type in the username and password of the LOCAL account created when the Virtual Machine was created and click Connect
-
 _Note: If you are running a popup blocker, you need to allow it to open, as Bastion opens up the connection in a new window._
-
 ![Azure Bastion](/uploads/azurebastionconnect.png "Azure Bastion")
-
 1. You should now be logged in to the server successfully.
 2. Now it's time to join the server to the domain (make sure that DNS is configured for AD Domain Services on the Virtual Network, see the last step in the AD Domain Services section, or you won't be able to domain join anything).
 3. In Server Managed, click on Local Server
@@ -175,14 +142,10 @@ _Note: If you are running a popup blocker, you need to allow it to open, as Bast
 6. Select Domain
 7. Please type in the DNS name of your domain; in my demo, it is: luke.geek.nz
 8. Type in the username and password of the account we created earlier and clicked Ok
-
 ![Azure - Domain Join](/uploads/jointodomain.png "Azure - Domain Join")
-
 1. Once you see, Welcome to the domain, click Ok a few times to restart the server.
 2. Once the server has been restarted, you can now close your bastion window and reconnect using your Azure AD credentials (in my case, avdjoin), a member of the ADDC Administrators group.
-
 ![Azure - Connect to Bastion](/uploads/azurebastionconnect2.png "Azure - Connect to Bastion")
-
 1. You have now successfully connected using an Azure AD account to the AD Services domain.
 2. Now it's time to install some base Active Directory tools
 3. Open Windows PowerShell as Administrator

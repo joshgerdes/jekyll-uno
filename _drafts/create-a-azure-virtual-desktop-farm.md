@@ -273,3 +273,11 @@ Now we are ready to finally deploy Azure Virtual Desktop!
 24. When the Virtual Machines get created a local Administrator account will be created for each machine, you can specify the username and password of what you want this account to be.
 
 ![](/uploads/avdhostpoolsetup3.png)
+
+25. Click Next: WorkSpace
+26. Select Yes to Register Desktop App Group
+27. We haven’t created an Azure Virtual Desktop Workspace yet, so select Create New
+28. Create a name for your Workspace, my example is: avd_workspace
+29. Click Ok
+
+![](/uploads/avdworkspacesetup.png)

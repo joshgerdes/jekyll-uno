@@ -243,3 +243,33 @@ Now we are ready to finally deploy Azure Virtual Desktop!
 3. Find and select Host pool
 
 ![](/uploads/avdhostpoolmarketplace.png)
+
+ 4. Click Create
+ 5. Create a new Resource Group to help resources separately, I am going to name mine: avd_prod
+ 6. Type in a Host Pool Name, I will call mine: avd-pooled
+ 7. Select the location of the Metadata (this is NOT the location of your session hosts, it’s the gateway, select the Region closet to you as possible)
+ 8. For Host Pool Type, if you want everyone to have a Virtual Machine each, you can select Personal, however, I want people to be shared across my servers.
+ 9. For the Load balancing algorithm, we can choose to spread people over available hosts, or fill up one host before moving connections to the next, we are going with Breadth-first
+10. Click Next: Virtual Machines
+
+![](/uploads/avdhostpoolsetup1.png)
+
+11. Now we can add your Session hosts to the Pool.
+12. By default it has defaulted the Resource Group to the same Resource Group as the Host pool, however, you can separate them.
+13. Select a Name prefix for your session hosts, it must be unique, Azure will automatically add a number to it as you build out more sessions hosts I will put: avdhost
+14. As I am based in New Zealand, I will be using the Australia East region.
+15. We are going to use a Gallery Image of Windows 10 Enterprise multi-session, Version 20H2 + M365 Apps (just select the newest image at the time of your deployment)
+16. Select your Virtual machine size
+17. Select the number of Virtual Machines you need
+18. Select the OS disk type
+
+![](/uploads/avdhostpoolsetup2.png)
+
+19. Select your Virtual Machine and subnet
+20. Select Yes to specify your domain or unit
+21. Type in your AD Domain Services domain name
+22. If you don't specify an OU, it will create it in the: AADDC Computers OU, I had previously created a separate OU for my hosts, so will enter in the OU information.
+23. For the Domain Administrator account, I will use the AVDJoin account, I created earlier.
+24. When the Virtual Machines get created a local Administrator account will be created for each machine, you can specify the username and password of what you want this account to be.
+
+![](/uploads/avdhostpoolsetup3.png)

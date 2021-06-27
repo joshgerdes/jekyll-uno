@@ -203,7 +203,7 @@ _Note: If you are running a popup blocker, you need to allow it to open, as Bast
 4. Type in the following PowerShell commands:
 
        Add-WindowsFeature RSAT-Role-Tools
-
+       
        Install-WindowsFeature –Name GPMC
 
 Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection.

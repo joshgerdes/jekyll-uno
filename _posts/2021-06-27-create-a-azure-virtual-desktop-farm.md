@@ -245,3 +245,4 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 * If you click Properties, you can configure: Start VM on Connect; if you are shutting down your session hosts to save money of a night, then the first person to connect each day will start them up.
 * If you click on Session hosts, you can add additional hosts to your pool or Drain them to prevent logins.
 * If you click Application Groups, you can add RemoteApp groups to allow users to connect directly to an Application versus a Full Desktop.
+* Configure [FSLogix](https://docs.microsoft.com/en-us/azure/virtual-desktop/create-profile-container-adds "Create a profile container with Azure Files and Azure AD DS"){:target="_blank"} profiles for user persistance.

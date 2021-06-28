@@ -246,3 +246,4 @@ Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources
 * If you click on Session hosts, you can add additional hosts to your pool or Drain them to prevent logins.
 * If you click Application Groups, you can add RemoteApp groups to allow users to connect directly to an Application versus a Full Desktop.
 * Configure [FSLogix](https://docs.microsoft.com/en-us/azure/virtual-desktop/create-profile-container-adds "Create a profile container with Azure Files and Azure AD DS"){:target="_blank"} profiles for user persistance.
+* Set Disconnected Session Time limits in Group Policy, to automatically logoff Disconnected sessions after 'x' period of time.

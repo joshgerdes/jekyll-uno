@@ -125,3 +125,10 @@ Now that you have successfully created a Storage Account and granted it the prop
 13. Name it according to your naming standards (this is a Computer based policy) - in my example I am using: AVD_ComputerPolicy
 14. Click Ok
 15. ![](/uploads/gpo_management_createpolicy.png)
+16. Right click the GPO you have just created and select Edit…
+17. Because this is a Computer based policy, to speed up processing, right click the Policy heading and select Properties
+18. Tick: Disable User Configuration Settings
+19. Confirm that you want to do it and select Yes
+20. Click Apply
+21. While you have the screen open, click on: Comment, and add in some details about the GPO for future reference then click Apply and Ok
+22. ![](/uploads/gpo_avd_computerpolicy.png)

@@ -39,7 +39,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 18. **Verify** that your **Location** is **correct** and **type** in a **Name for** your **Private Endpoint**
 
     service, in my case: fslogixprofileslgnzPE
-19. **Select** the drop down for **Storage sub-resource** and select **file**
+19. **Select** the drop-down for **Storage sub-resource** and select **file**
 20. **Select** your **Virtual Network** and **subnet** _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
 21. Click **Ok**
 22. ![FSLogix - Azure Storage Account](/uploads/storageaccount_privateendpoint.png "FSLogix - Azure Storage Account")
@@ -115,11 +115,11 @@ Now that you have successfully created a Storage Account and granted it the prop
  4. Now we will **create** a **Central Store** to manage the Group Policy from consistantly
  5. On your Utility server, browse to: C:\\Windows _(If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from a Azure Virtual Desktop sessionhost to make sure you can edit all the latest Windows 10 policies)_
  6. **Copy** the **PolicyDefinitions** folder
- 7. Copy **the PolicyDefinitions** folder to your **Policies** folder on your **domain**: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
+ 7. Copy **the PolicyDefinitions** folder to your **Policies** folder on your **domain**: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
  8. ![FSLogix - Group Policy](/uploads/sysvolpolicies.png "FSLogix - Group Policy")
  9. **Go to** your **extracted** FSLogix **folder** and **copy**:
-    * fslogix.admx to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
-    * fslogix.adml to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
+    * fslogix.admx to: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
+    * fslogix.adml to: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
 10. This will allow us to use Group Policy to manage FSLogix using Group Policy, **Open Group Policy Management**
 11. **Navigate** to your **Hosts OU**
 12. Right click the OU and select: **Create a GPO in this domain, and Link it here…**
@@ -136,7 +136,7 @@ Now that you have successfully created a Storage Account and granted it the prop
 23. Now its time to actually configure the FSLogix Group Policy settings.
 24. **Navigate** to: Computer Configuration\\Policies\\Administrative Templates\\FSLogix\\**Profile Containers**
 25. Open up **Enabled** and select: **Enabled** and **Apply**
-26. Open: **VHD Location** and **copy** in your Profiles **UNC share** _(for example, mine is:_ [_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles_](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)_)_ click **Ok**
+26. Open: **VHD Location** and **copy** in your Profiles **UNC share** _(for example, mine is:_ \[_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles_\](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)_)_ click **Ok**
 27. Select: **Delete local profile when FSLofix profile should apply**, click **Enabled** and check **Delete local profile when FSLogix Profile should apply** _(don't blindly follow this, I am making the assumption this is a new farm, with no user based profile stored on it. You may need to create a separate GPO to test this setting on, or you could lose valuable data)_.
 28. Open: **Set Outlook cached mode on successful container attach** to **Enabled**.
 29. Now in Group Policy Management console, click on: **Container and Directory Naming** and select **Virtual Disk type**

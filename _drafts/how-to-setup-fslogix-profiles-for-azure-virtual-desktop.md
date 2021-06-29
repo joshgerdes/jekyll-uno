@@ -86,3 +86,16 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
 10. ![](/uploads/computermappeddrive.png)
 11. Select a drive letter that isn't in use and paste in the fileshare UNC path created earlier.
 12. ![](/uploads/computermappingdrive.png)
+13. Hopefully you should successfully have mapped a drive!
+14. Once the drive is mapped, open up a Command Prompt
+
+    _Note: Don't run the Command Prompt as Administrator, as this runs in a separate context and doesn't have permissions to the mapped drive._
+15. Run the following command to set the necessary NTFS permissions (change the Drive mapping and AVD Users group to your own group):
+
+        icacls z: /grant "AVD Users":(M)
+
+        icacls z: /grant "Creator Owner":(OI)(CI)(IO)(M)
+
+        icacls z: /remove "Authenticated Users"
+
+        icacls z: /remove "Builtin\Users"

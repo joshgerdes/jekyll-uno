@@ -138,14 +138,14 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
 15. You should now be logged in to the server successfully.
 16. Now it's time to join the server to the domain _(make sure that DNS is configured for AD Domain Services on the Virtual Network, see the last step in the AD Domain Services section, or you won't be able to domain join anything)_.
 17. In **Server Management**, click on **Local Server**
-18. Select WORKGROUP
-19. Click Change…
-20. Select Domain
-21. Please type in the DNS name of your domain; in my demo, it is: luke.geek.nz
-22. Type in the username and password of the account we created earlier and clicked Ok
+18. Select **WORKGROUP**
+19. Click **Change…**
+20. Select **Domain**
+21. Please **type** in the DNS name of your **domain**; in my demo, it is: luke.geek.nz
+22. **Type** in the **username** and **password** of the account we created earlier and clicked **Ok**
     ![Azure - Domain Join](/uploads/jointodomain.png "Azure - Domain Join")
-23. Once you see, Welcome to the domain, click Ok a few times to restart the server.
-24. Once the server has been restarted, you can now close your bastion window and reconnect using your Azure AD credentials (in my case, avdjoin), a member of the ADDC Administrators group.
+23. Once you see, Welcome to the domain, click **Ok** a few times to **restart** the **server**.
+24. Once the server has been restarted, you can now close your **bastion** window and **reconnect** using your **Azure AD** credentials (in my case, avdjoin), a **member** of the **ADDC Administrators group**.
     ![Azure - Connect to Bastion](/uploads/azurebastionconnect2.png "Azure - Connect to Bastion")
 25. You have now successfully connected using an Azure AD account to the AD Services domain.
 26. Now it's time to install some base Active Directory tools

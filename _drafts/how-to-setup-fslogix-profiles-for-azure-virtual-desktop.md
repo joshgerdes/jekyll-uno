@@ -91,7 +91,7 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
 14. Once the drive is mapped, **open** up a **Command Prompt**
 
     _Note: Don't run the Command Prompt as Administrator, as this runs in a separate context and doesn't have permissions to the mapped drive._
-15. Run the following command to set the necessary NTFS permissions (change the Drive mapping and AVD Users group to your own group):
+15. **Run** the **following command** to **set** the necessary **NTFS permissions** _(change the Drive mapping and AVD Users group to your own group)_:
 
         icacls z: /grant "AVD Users":(M)
         
@@ -108,39 +108,39 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
 
 Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy to for FSLogix.
 
- 1. Connect to your Azure Active Directory Utility server, that has Group Policy management installed using an account in the: AAD DC Administrators group
- 2. Download the latest FSLogix Agent - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download") onto the Utility server
- 3. Extract the FSLogix agent zip file to a folder
- 4. Now we will create a Central Store to manage the Group Policy from consistantly
- 5. On your Utility server, browse to: C:\\Windows (If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from a Azure Virtual Desktop sessionhost to make sure you can edit all the latest Windows 10 policies)
- 6. Copy the PolicyDefinitions folder
- 7. Copy the PolicyDefinitions folder to your Policies folder on your domain: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
+ 1. **Connect to** your Azure Active Directory **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
+ 2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download") onto the Utility server
+ 3. **Extract** the FSLogix agent **zip** file to a folder
+ 4. Now we will **create** a **Central Store** to manage the Group Policy from consistantly
+ 5. On your Utility server, browse to: C:\\Windows _(If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from a Azure Virtual Desktop sessionhost to make sure you can edit all the latest Windows 10 policies)_
+ 6. **Copy** the **PolicyDefinitions** folder
+ 7. Copy **the PolicyDefinitions** folder to your **Policies** folder on your **domain**: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
  8. ![FSLogix - Group Policy](/uploads/sysvolpolicies.png "FSLogix - Group Policy")
- 9. Go to your extracted FSLogix folder and copy:
+ 9. **Go to** your **extracted** FSLogix **folder** and **copy**:
     * fslogix.admx to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
     * fslogix.adml to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
-10. This will allow us to use Group Policy to manage FSLogix using Group Policy, Open Group Policy Management
-11. Navigate to your Hosts OU
-12. Right click the OU and select: Create a GPO in this domain, and Link it here…
+10. This will allow us to use Group Policy to manage FSLogix using Group Policy, **Open Group Policy Management**
+11. **Navigate** to your **Hosts OU**
+12. Right click the OU and select: **Create a GPO in this domain, and Link it here…**
 13. Name it according to your naming standards (this is a Computer based policy) - in my example I am using: AVD_ComputerPolicy
-14. Click Ok
+14. Click **Ok**
 15. ![FSLogix - Group Policy](/uploads/gpo_management_createpolicy.png "FSLogix - Group Policy")
-16. Right click the GPO you have just created and select Edit…
-17. Because this is a Computer based policy, to speed up processing, right click the Policy heading and select Properties
-18. Tick: Disable User Configuration Settings
-19. Confirm that you want to do it and select Yes
-20. Click Apply
-21. While you have the screen open, click on: Comment, and add in some details about the GPO for future reference then click Apply and Ok
+16. Right click the GPO you have just created and select **Edit…**
+17. Because this is a Computer based policy, to speed up processing, **right click** the **Policy heading** and select **Properties**
+18. Tick: **Disable User Configuration Settings**
+19. Confirm that you want to do it and select **Yes**
+20. Click **Apply**
+21. While you have the screen open, **click on**: **Comment**, and **add** in some **details** about the GPO for future reference then click **Apply** and **Ok**
 22. ![FSLogix - Group Policy](/uploads/gpo_avd_computerpolicy.png "FSLogix - Group Policy")
 23. Now its time to actually configure the FSLogix Group Policy settings.
-24. Navigate to: Computer Configuration\\Policies\\Administrative Templates\\FSLogix\\Profile Containers
-25. Open up Enabled and select: Enabled and Apply
-26. Open: VHD Location and copy in your Profiles UNC share _(for example, mine is:_ [_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles_](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)_)_ click Ok
-27. Select: Delete local profile when FSLofix profile should apply, click Enabled and check Delete local profile when FSLogix Profile should apply (don't blindly follow this, I am making the assumption this is a new farm, with no user based profile stored on it. You may need to create a separate GPO to test this setting on, or you could lose valuable data).
-28. Open: Set Outlook cached mode on successful container attach to Enabled.
-29. Now in Group Policy Management console, click on: Container and Directory Naming and select Virtual Disk type
-30. Click Enabled and change the Option to VHDX, click Ok
-31. Click on: Swap directory name components setting and click Enabled, check the swap directory name components and click Apply
-32. Restart the Azure Virtual Desktop session hosts to pickup the new policies.
+24. **Navigate** to: Computer Configuration\\Policies\\Administrative Templates\\FSLogix\\**Profile Containers**
+25. Open up **Enabled** and select: **Enabled** and **Apply**
+26. Open: **VHD Location** and **copy** in your Profiles **UNC share** _(for example, mine is:_ [_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles_](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)_)_ click **Ok**
+27. Select: **Delete local profile when FSLofix profile should apply**, click **Enabled** and check **Delete local profile when FSLogix Profile should apply** _(don't blindly follow this, I am making the assumption this is a new farm, with no user based profile stored on it. You may need to create a separate GPO to test this setting on, or you could lose valuable data)_.
+28. Open: **Set Outlook cached mode on successful container attach** to **Enabled**.
+29. Now in Group Policy Management console, click on: **Container and Directory Naming** and select **Virtual Disk type**
+30. Click **Enabled** and change the Option to **VHDX**, click **Ok**
+31. Click on: S**wap directory name components setting** and click **Enabled**, **check** the s**wap directory name components** and click **Apply**
+32. **Restart** the Azure Virtual Desktop **session hosts** to pickup the new policies.
 33. **You have now setup FSLogix profiles! If you map the drive you should see your user profile folders!**
 34. ![FSLogix - Mapped Profiles](/uploads/computermappingdrivelast.png "FSLogix - Mapped Profiles")

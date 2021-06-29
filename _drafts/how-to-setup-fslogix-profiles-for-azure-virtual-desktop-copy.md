@@ -136,7 +136,13 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 
 ### Configure Microsoft Teams Optimisations
 
-The tool-set is created to automatically apply settings to optimize the performance of Windows 10 VDI/Multisession machines.
+You can run Microsoft Teams in Azure Virtual Desktop, to do so you need to install as a Machine installer and set the WVD environment variable.
+
+**Install as Machine:**
+
+    msiexec /i Teams_windows_x64 /l*v teams_install.log ALLUSER=1
+
+**Set IsWVDEnvironment key**:
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -149,14 +155,7 @@ The tool-set is created to automatically apply settings to optimize the performa
  9. For the Value name type: **IsWVDEnvironment**
 10. Change the Value type to **REG_DWORD**
 11. Put: '**1**' to enable the option and click **Apply**
-12. Right-click in the window and select **New**, **Registry Item**
-13. Select **Update** as the Action
-14. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
-15. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations**
-16. For the Value name type: **UdpPortNumber**
-17. Change the Value type to **REG_DWORD**
-18. Put: '**3390**' as the UDP report and click **Apply**
-19. **Close** the **Group Policy Management console**. Restart the session hosts.
+12. **Close** the **Group Policy Management console**. Restart the session hosts.
 
 ### Hide the Shutdown button
 

@@ -244,5 +244,5 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 * If you click Properties, you can configure: Start VM on Connect; if you are shutting down your session hosts to save money of a night, then the first person to connect each day will start them up.
 * If you click on Session hosts, you can add additional hosts to your pool or Drain them to prevent logins.
 * If you click Application Groups, you can add RemoteApp groups to allow users to connect directly to an Application versus a Full Desktop.
-* Configure [FSLogix](https://docs.microsoft.com/en-us/azure/virtual-desktop/create-profile-container-adds "Create a profile container with Azure Files and Azure AD DS"){:target="_blank"} profiles for user persistance.
+* Configure [FSLogix](https://luke.geek.nz/azure/how-to-setup-fslogix-profiles-for-azure-virtual-desktop/ "How to setup FSLogix profiles for Azure Virtual Desktop "){:target="_blank"} profiles for user persistance.
 * Set Disconnected Session Time limits in Group Policy, to automatically log off Disconnected sessions after 'x' period of time.

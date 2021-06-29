@@ -112,3 +112,7 @@ It is recommended to implement exclusions to reduce storing user profile data th
 5. **Enable** the setting **Provide RedirXML file to customize directions**.
 6. Point the path to a **UNC path**, that is **accessible** to all session hosts that **contains** are '**redirections.xml**' file. This just needs the folder, it will automatically pick up the redirections.xml file.
 7. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+
+An example redirections.xml can be found here: [https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2](https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2 "https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2")
+
+_Note: Make sure you test and adjust this for your own environment, the Desktop/Documents have been excluded as the assumption is these are redirected or covered by OneDrive._

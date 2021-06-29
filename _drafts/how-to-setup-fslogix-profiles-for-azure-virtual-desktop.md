@@ -22,7 +22,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
  2. Click on Create a resource
  3. Type in Storage Account and press Enter to search
  4. Select Storage account
- 5. ![](/uploads/storageaccount.png)
+ 5. ![FSLogix - Azure Storage Account](/uploads/storageaccount.png "FSLogix - Azure Storage Account")
  6. Click Create
  7. If you already have a Resource Group, then select it, if not you can create a new resource group. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
  8. Type in a Storage Account Name _(the name needs to be globally unique across all of Azure, the field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.)_, in my case I have gone with: fslogixprofileslgnz.
@@ -30,7 +30,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 10. Select Standard performance _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile")_)_
 11. For Redundancy, I am going to select LRS storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
 12. _Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!_
-13. ![](/uploads/storageaccount_projectdetails.png)
+13. ![FSLogix - Azure Storage Account](/uploads/storageaccount_projectdetails.png "FSLogix - Azure Storage Account")
 14. Click Next: Advanced
 15. Leave everything as default and select Next: Networking
 16. Now we need to configure a Private Endpoint for the Azure storage account to add onto the Virtual Network directly.
@@ -41,11 +41,11 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 19. Select the drop down for Storage sub-resource and select file
 20. Select your Virtual Network and subnet _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
 21. Click Ok
-22. ![](/uploads/storageaccount_privateendpoint.png)
+22. ![FSLogix - Azure Storage Account](/uploads/storageaccount_privateendpoint.png "FSLogix - Azure Storage Account")
 23. Select Next: Data Protection
 24. Untick the Enable soft delete for Blogs and Container's _(we will only be using Azure Files in this storage account)_
 25. Soft delete allows you to quickly recover a deleted fileshare, even though we can backup the Azure Fileshare, my recommendation would be to leave this on for additional protection and '7' days is enough for me.
-26. ![](/uploads/storageaccount_softdelete.png)
+26. ![FSLogix - Azure Storage Account](/uploads/storageaccount_softdelete.png "FSLogix - Azure Storage Account")
 27. Select Review + Create
 28. Validate your configuration and select Create
 
@@ -55,20 +55,20 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
  2. Navigate down the left hand side Blade and select: Networking
 
     Make sure: Selected networks is selected and the Private Endpoint connection is displaying.
- 3. ![](/uploads/storageaccount_firewalls.png)
- 4. ![](/uploads/storageaccount_peapproved.png)
+ 3. ![FSLogix - Azure Storage Account](/uploads/storageaccount_firewalls.png "FSLogix - Azure Storage Account")
+ 4. ![FSLogix - Azure Storage Account](/uploads/storageaccount_peapproved.png "FSLogix - Azure Storage Account")
  5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left hand side Blade, click on Configuration _(under Settings)_
  6. Navigate to: Identity-based access for file shares
  7. Select Enabled
  8. Click Save
- 9. ![](/uploads/storageaccount_adds_identity.png)
+ 9. ![FSLogix - Azure Storage Account](/uploads/storageaccount_adds_identity.png "FSLogix - Azure Storage Account")
 10. Now its time to create the File Share, On the left hand side Blade, navigate to: File Shares (under Data Storage)
 11. Select + File Share
 12. Give this File share a name: fslogixprofiles
 13. Even though you don't need to have a Quota (the Fileshare will grow), I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
 14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") )
 15. Click Create
-16. ![](/uploads/storageaccount_newfileshare.png)
+16. ![FSLogix - File Share](/uploads/storageaccount_newfileshare.png "FSLogix - File Share")
 17. One last thing we can do on the Storage Account, is enable backups for your Azure File Share - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs")
 
 ### Configure File Share

@@ -144,7 +144,7 @@ You can find the latest Optimization scripts at:
 
 ### Hide the Shutdown button
 
-By default, FSLogix will capture a lot of user profile data, including Teams Cache, Chrome cache and save it to the profile VHD/VHDX, this causes profile size bloat and can decrease the performance of your applications.
+This is one of my favourite group policy configurations, usually, something I implement in server base policies, it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown the server.
 
 It is recommended to implement exclusions to reduce storing user profile data that you don't need.
 

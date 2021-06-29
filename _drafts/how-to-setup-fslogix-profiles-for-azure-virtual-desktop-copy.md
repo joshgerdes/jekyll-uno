@@ -153,4 +153,4 @@ It is recommended to implement exclusions to reduce storing user profile data th
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to User Configuration** > **Policies** > **Administrative Templates** > **Start Menu and Taskbar**
 5. **Enable** the setting **Remove and prevent access to Shut Down, Restart, Sleep, and Hibernate commands.**
-6. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+6. **Close** the **Group Policy Management console**, as this is a User-based policy it should take effect on the next user login.

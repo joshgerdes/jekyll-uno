@@ -79,14 +79,14 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
  2. Click on your fileshare
  3. Click on Properties
  4. Copy the URL
- 5. ![](/uploads/storageaccount_fslogixprofiles.png)
+ 5. ![FSLogix - File Share](/uploads/storageaccount_fslogixprofiles.png "FSLogix - File Share")
  6. Remove http and replace the forward slashes with backslashes so it looks like this: \[\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles\](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)
  7. Using a user that is a member of the 'AVD Admins' group and can log into the Azure Virtual Desktop farm _(it’s a good chance to test connectivity to the Storage account through the private endpoint from your Azure Virtual Desktop session host)_
  8. Open Computer
  9. Select the Computer Tab and select Map network drive
-10. ![](/uploads/computermappeddrive.png)
+10. ![FSLogix - Mapped Drive](/uploads/computermappeddrive.png "FSLogix - Mapped Drive")
 11. Select a drive letter that isn't in use and paste in the fileshare UNC path created earlier.
-12. ![](/uploads/computermappingdrive.png)
+12. ![FSLogix - Mapped Drive](/uploads/computermappingdrive.png "FSLogix - Mapped Drive")
 13. Hopefully you should successfully have mapped a drive!
 14. Once the drive is mapped, open up a Command Prompt
 

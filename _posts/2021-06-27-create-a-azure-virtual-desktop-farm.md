@@ -70,7 +70,7 @@ We need to create a Virtual Machine to help manage the AAD Domain and deploy Gro
  4. If you already have a **Resource Group**, select it - in this Demo, we are going to create one: aad_infra
  5. **Specify** a **name** for the **Virtual Machine** _(I am going to use: UTILITY-P01)_
  6. **Select** a **Region** _(use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)_
- 7. For the Image, you can select either Windows Server 2019 Datacenter -Gen 1 or Gen 2; in my case, I am going with Gen2.
+ 7. For the **Image**, you can select either Windows Server 2019 Datacenter -Gen 1 or **Gen 2**; in my case, I am going with Gen2 _(although it doesn't matter)_.
  8. I am a firm believer in selecting the smallest size possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
     ![Azure - Create VM](/uploads/createvm1.png "Azure - Create VM")
  9. Now we need to enter in the Administrator (local account) Username and Password.

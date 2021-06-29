@@ -28,7 +28,7 @@ Timezone redirection will allow you to pass through the time from the local devi
 
 You can use this policy to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session. This means that sessions users sessions may remain open for an extended period of time, taking up usable resources.
 
-When configuring these, take into consideration a users normal work time, the time they have for Lunch etc, the sweet spot to disconnect their session is not during their lunch break, but after they have finished for the day, usually 8-12 hours is the recommended.
+When configuring these, take into consideration a users normal work time, the time they have for lunch etc, the sweet spot to disconnect their session is not during their lunch break, but after they have finished for the day, usually 8-12 hours is recommended.
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.

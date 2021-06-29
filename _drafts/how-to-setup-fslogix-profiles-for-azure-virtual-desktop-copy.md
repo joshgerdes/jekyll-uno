@@ -134,13 +134,29 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 
 ![Storage Sense - Group Policy](/uploads/storagesense_gpo.png "Storage Sense - Group Policy")
 
-### Implement Virtual-Desktop-Optimization-Tool
+### Configure Microsoft Teams Optimisations
 
 The tool-set is created to automatically apply settings to optimize the performance of Windows 10 VDI/Multisession machines.
 
-You can find the latest Optimization scripts at:
-
-* [https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool")
+ 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+ 2. **Expand** your **domain** and **Group Policy Objects**.
+ 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
+ 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Preferences**> **Windows Settings** > **Registry**.
+ 5. Right-click in the window and select **New**, **Registry Item**
+ 6. Select **Update** as the Action
+ 7. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
+ 8. Enter in the following for the Key Path: **SOFTWARE\\Microsoft\\Teams**
+ 9. For the Value name type: **IsWVDEnvironment**
+10. Change the Value type to **REG_DWORD**
+11. Put: '**1**' to enable the option and click **Apply**
+12. Right-click in the window and select **New**, **Registry Item**
+13. Select **Update** as the Action
+14. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
+15. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations**
+16. For the Value name type: **UdpPortNumber**
+17. Change the Value type to **REG_DWORD**
+18. Put: '**3390**' as the UDP report and click **Apply**
+19. **Close** the **Group Policy Management console**. Restart the session hosts.
 
 ### Hide the Shutdown button
 

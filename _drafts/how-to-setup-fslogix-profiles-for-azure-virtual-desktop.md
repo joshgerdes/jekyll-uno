@@ -41,3 +41,10 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 19. Select the drop down for Storage sub-resource and select file
 20. Select your Virtual Network and subnet _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
 21. Click Ok
+22. ![](/uploads/storageaccount_privateendpoint.png)
+23. Select Next: Data Protection
+24. Untick the Enable soft delete for Blogs and Container's _(we will only be using Azure Files in this storage account)_
+25. Soft delete allows you to quickly recover a deleted fileshare, even though we can backup the Azure Fileshare, my recommendation would be to leave this on for additional protection and '7' days is enough for me.
+26. ![](/uploads/storageaccount_softdelete.png)
+27. Select Review + Create
+28. Validate your configuration and select Create

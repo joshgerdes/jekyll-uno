@@ -31,3 +31,13 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 11. For Redundancy, I am going to select LRS storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
 12. _Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!_
 13. ![](/uploads/storageaccount_projectdetails.png)
+14. Click Next: Advanced
+15. Leave everything as default and select Next: Networking
+16. Now we need to configure a Private Endpoint for the Azure storage account to add onto the Virtual Network directly.
+17. Select Private endpoint and click + Add Private endpoint
+18. Verify that your Location is correct and type in a Name for your Private Endpoint
+
+    service, in my case: fslogixprofileslgnzPE
+19. Select the drop down for Storage sub-resource and select file
+20. Select your Virtual Network and subnet _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
+21. Click Ok

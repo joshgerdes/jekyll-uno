@@ -48,3 +48,17 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 26. ![](/uploads/storageaccount_softdelete.png)
 27. Select Review + Create
 28. Validate your configuration and select Create
+
+### Configure Storage Account
+
+1. Once your storage account has been created, go to it.
+2. Navigate down the left hand side Blade and select: Networking
+
+   Make sure: Selected networks is selected and the Private Endpoint connection is displaying.
+3. ![](/uploads/storageaccount_firewalls.png)
+4. ![](/uploads/storageaccount_peapproved.png)
+5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left hand side Blade, click on Configuration _(under Settings)_
+6. Navigate to: Identity-based access for file shares
+7. Select Enabled
+8. Click Save
+9. ![](/uploads/storageaccount_adds_identity.png)

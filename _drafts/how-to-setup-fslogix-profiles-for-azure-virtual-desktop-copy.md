@@ -15,7 +15,7 @@ These are a few recommended policies and optimisations to apply to your Azure Vi
 
 ### Configure Timezone Redirection
 
-Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep consistent time between the device you are connecting from and by default the timezone in Azure is UTC.
+Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep the consistent time between the device you are connecting from and the session host and by default the timezone in Azure is UTC.
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.

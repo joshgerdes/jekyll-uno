@@ -133,3 +133,13 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 8. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 ![Storage Sense - Group Policy](/uploads/storagesense_gpo.png "Storage Sense - Group Policy")
+
+### Implement Virtual-Desktop-Optimization-Tool
+
+The tool-set in this repository was created to automatically apply settings referenced in the white paper: "Optimizing Windows 10, version 2004 for a Virtual Desktop Infrastructure (VDI) role"
+
+Reference: [https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004 "https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004")
+
+You can find the latest Optimization scripts at:
+
+* [https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool")

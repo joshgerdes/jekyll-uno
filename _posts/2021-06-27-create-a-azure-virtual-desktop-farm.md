@@ -160,26 +160,26 @@ _Note: You can use the little arrows on the left-hand side of your Remote Deskto
 
 1. This will now install the base Active Directory remote management tools, including Group Policy Management, so you can now create and manage the Group Policy objects for your Azure Virtual Desktop hosts.
    ![](/uploads/utility_servertools.png)
-2. We will now set up some base configurations to create a custom OU for the Azure Virtual Desktops hosts to go into:
+2. We will now set up some base configurations to **create** a custom **OU** for the Azure Virtual Desktops **hosts** to go into:
 
-* Open Active Directory Users & Computers
-* Expand out the Domain and right-click (at the Top Level)
-* Select New, Organisational Unit
+* Open **Active Directory Users & Computers**
+* **Expand** out the **Domain** and right-click (at the Top Level)
+* Select **New, Organisational Unit**
 
 ![](/uploads/utility_newou.png)
 
 * Type in: AVD
-* In the AVD OU, create a new OU called: Hosts
+* In the AVD OU, **create** a new **OU** called: Hosts
 * Now that we have an OU for the hosts, we will need to tell Azure what OU the hosts go into, so while we have Active Directory Users and Computers open, click on View.
-* Select Advanced Features
-* Right-click the Hosts OU
-* Select Properties
-* Click on Attribute Editor
-* Find the distinguishedName attribute
+* Select **Advanced Features**
+* **Right-click** the Hosts **OU**
+* Select **Properties**
+* Click on **Attribute Editor**
+* Find the **distinguishedName attribute**
 
 ![](/uploads/utility_serverdn.png)
 
-* Open and Copy the Value for future _(in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz)_ for future reference.
+* Open and **Copy** the **Value** for future _(in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz)_ for future reference.
 * Now that we have the AVD Hosts OU, you can also open Group Policy Management and create your Computer policies.
 
 ## Deploy Azure Virtual Desktop

@@ -12,6 +12,21 @@ If you have a few Azure Virtual Desktop machines, you need some way to keep user
 
 We are going to implement FSLogix using an Azure File Share, to store the profiles.
 
-I am going to assume you already have an Azure Virtual Desktop farm (and Azure ADDS), if not you can check out my guide here.
+I am going to assume you already have an Azure Virtual Desktop farm (and Azure ADDS), if not you can check out my guide [here](https://luke.geek.nz/azure/create-a-azure-virtual-desktop-farm/ "How to create a Azure Virtual Desktop farm ").
 
-This article will be based on the Azure Virtual Desktop farm created in a previous article, however, you can just follow along and replace the Resource Names and Groups with your own.
+This article will be based on the Azure Virtual Desktop farm created in a previous article, however, you can just still along and replace the resource names and groups with your own.
+
+### Setup Storage Account
+
+ 1. Log in to the Azure Portal
+ 2. Click on Create a resource
+ 3. Type in Storage Account and press Enter to search
+ 4. Select Storage account
+ 5. ![](/uploads/storageaccount.png)
+ 6. Click Create
+ 7. If you already have a Resource Group, then select it, if not you can create a new resource group. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
+ 8. Type in a Storage Account Name (the name needs to be globally unique across all of Azure tThe field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.), in my case I have gone with: fslogixprofileslgnz
+ 9. Select your Region (the same region you have your Azure Virtual Desktop session hosts and Virtual Network)
+10. Select Standard performance (Microsoft have recommendations, based on users on what Tier to select - [https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile"))
+11. For Redundancy, I am going to select LRS storage. I haven't built have any redundancy in my Azure Virtual Desktop farm.
+12. Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!

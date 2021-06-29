@@ -66,3 +66,4 @@ Back in March 2019, there were issues with slow server performance, caused by nu
 10. Change the Value type to: **REG_DWORD**
 11. Put: '**1**' to enable the option and click **Apply**
 12. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+13. 

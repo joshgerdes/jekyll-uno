@@ -129,4 +129,7 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **System** > **Storage Sense**.
 5. **Enable** the setting **Allow Storage Sense**.
 6. **Enable** the setting **Configure Storage Sense Cloud Content dehydration threshold**
-7. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+7. Now we can provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it back to Files on Demand, for example, **30** days since it was last accessed.
+8. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+
+![](/uploads/storagesense_gpo.png)

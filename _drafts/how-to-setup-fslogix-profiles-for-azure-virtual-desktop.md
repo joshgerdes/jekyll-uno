@@ -85,10 +85,10 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
  8. Open **Computer**
  9. Select the Computer Tab and select **Map network drive**
 10. ![FSLogix - Mapped Drive](/uploads/computermappeddrive.png "FSLogix - Mapped Drive")
-11. Select a drive letter that isn't in use and paste in the UNC path created earlier (step 6).
+11. **Select a drive letter** that isn't in use and paste in the **UNC path** created earlier _(step 6)_.
 12. ![FSLogix - Mapped Drive](/uploads/computermappingdrive.png "FSLogix - Mapped Drive")
 13. Hopefully you should successfully have mapped a drive!
-14. Once the drive is mapped, open up a Command Prompt
+14. Once the drive is mapped, **open** up a **Command Prompt**
 
     _Note: Don't run the Command Prompt as Administrator, as this runs in a separate context and doesn't have permissions to the mapped drive._
 15. Run the following command to set the necessary NTFS permissions (change the Drive mapping and AVD Users group to your own group):

@@ -69,3 +69,5 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") ) 
 15. Click Create
 16. ![](/uploads/storageaccount_newfileshare.png)
+
+Configure File Share

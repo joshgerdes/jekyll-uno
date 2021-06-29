@@ -37,7 +37,7 @@ When configuring these, take into consideration a users normal work time, the ti
 5. Configure the below settings, in accordance with your organisation policies:
 
 * **Set time limit for active but idle Remote Desktop Services sessions**
-* _This policy allows you to specify the maximum amount of time that an active emote Desktop Services sessions can be idle (without user input) before it is automatically disconnected._
+* _This policy allows you to specify the maximum amount of time that an active Remote Desktop Services sessions can be idle (without user input) before it is automatically disconnected._
 * **Set time limit for active Remote Desktop Services sessions**
 * _This policy allows you to specify the maximum amount of time that a Remote Desktop Services session can be active before it is automatically disconnected._
 * **Set time limit for disconnected sessions**
@@ -47,3 +47,7 @@ When configuring these, take into consideration a users normal work time, the ti
 * **Set a time limit for log off of RemoteApp sessions**
 * _This policy allows you to specify how long a user's RemoteApp session will remain in a disconnected state after closing all RemoteApp programs before the session is logged off from the RD Session Host server._
 * **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+
+_Note: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.com/en/123638 "https://kb.parallels.com/en/123638")
+
+### DeleteUserAppContainersOnLogoff

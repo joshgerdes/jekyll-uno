@@ -11,11 +11,11 @@ header:
 ---
 If you are running Azure Virtual Desktop, you want to get the most performance and stability out of them as possible, to reduce cost and increase user experience.
 
-These are a few recommended policies to apply to your Azure Virtual Desktop setup.
+These are a few recommended policies and optimisations to apply to your Azure Virtual Desktop setup.
 
 ### Configure Timezone Redirection
 
-Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy to for FSLogix.
+Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep consistent time between the device you are connecting from and by default the timezone in Azure is UTC.
 
  1. **Connect to** your Azure Active Directory **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
  2. **Open Group Policy Management**

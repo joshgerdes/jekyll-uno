@@ -157,6 +157,10 @@ You can run Microsoft Teams in Azure Virtual Desktop, to do so you need to insta
 11. Put: '**1**' to enable the option and click **Apply**
 12. **Close** the **Group Policy Management console**. Restart the session hosts.
 
+**Install the Remote Desktop WebRTC Redirector**
+
+1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service")
+
 ### Hide the Shutdown button
 
 This is not so much of an optimization, but it is one of my favourite group policy configurations, something I implement in server base policies, it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown and restart the server from the Start Menu.

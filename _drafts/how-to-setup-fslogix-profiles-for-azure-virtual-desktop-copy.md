@@ -92,3 +92,9 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 17. Change the Value type to **REG_DWORD**
 18. Put: '**3390**' as the UDP report and click **Apply**
 19. **Close** the **Group Policy Management console**. Restart the session hosts.
+
+### Implement Windows Defender FSLogix exclusions
+
+Make sure to configure antivirus exclusions for FSLogix Profiles.
+
+For a list of exclusions, along with a PowerShell script to implement them please refer to the following Microsoft documentation: [FSLogix for the enterprise](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix "FSLogix for the enterprise")

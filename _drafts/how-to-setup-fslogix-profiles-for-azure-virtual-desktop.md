@@ -63,21 +63,21 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
  7. Select **Enabled**
  8. Click **Save**
  9. ![FSLogix - Azure Storage Account](/uploads/storageaccount_adds_identity.png "FSLogix - Azure Storage Account")
-10. Now its time to create the File Share, On the left hand side Blade, navigate to: **File Shares** (under Data Storage)
+10. Now its time to create the File Share, On the left-hand side Blade, navigate to **File Shares** (under Data Storage)
 11. Select **+ File Share**
 12. Give this **File share** a **name**: fslogixprofiles
 13. Even though you don't need to have a Quota _(the Fileshare will grow)_, I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
 14. Because user profiles are generally a lot of read/write activity, select **Transaction Optimized** _(take a look at the_ [_https://azure.microsoft.com/en-us/pricing/details/storage/files/_](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") _)_
 15. Click **Create**
 16. ![FSLogix - File Share](/uploads/storageaccount_newfileshare.png "FSLogix - File Share")
-17. One last thing we can do on the Storage Account, is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs")
+17. One last thing we can do on the Storage Account is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs")
 
 ### Configure File Share
 
-Now that the Azure Active Directory rights has been assigned and the File Share has been created, we now need to setup the NTFS permissions on the FSLogix share.
+Now that the Azure Active Directory rights have been assigned and the File Share has been created, we now need to set up the NTFS permissions on the FSLogix share.
 
  1. Navigate to **File Shares** _(under Data Storage)_
- 2. Click on your fileshare
+ 2. Click on your file-share
  3. Click on **Properties**
  4. **Copy** the **URL**
  5. ![FSLogix - File Share](/uploads/storageaccount_fslogixprofiles.png "FSLogix - File Share")

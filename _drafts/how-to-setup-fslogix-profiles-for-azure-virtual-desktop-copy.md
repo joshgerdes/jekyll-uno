@@ -68,3 +68,27 @@ Back in March 2019, there were issues with slow server performance, caused by nu
 12. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 ![](/uploads/deleteuserapp.png)
+
+### Configure RDP Shortpath
+
+RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between Remote Desktop Client and Session host. RDP uses this transport to deliver Remote Desktop and RemoteApp while offering better reliability and consistent latency. RDP Shortpath establishes the direct connectivity between Remote Desktop client and Session Host. Direct connectivity reduces the dependency on the Azure Virtual Desktop gateways, improves the connection's reliability, and increases the bandwidth available for each user session. You can read more about it here: [Azure Virtual Desktop RDP Shortpath](https://docs.microsoft.com/en-us/azure/virtual-desktop/shortpath "Azure Virtual Desktop RDP Shortpath").
+
+ 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+ 2. **Expand** your **domain** and **Group Policy Objects**.
+ 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
+ 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Preferences**> **Windows Settings** > **Registry**.
+ 5. Right-click in the window and select **New**, **Registry Item**
+ 6. Select **Update** as the Action
+ 7. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
+ 8. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations**
+ 9. For the Value name type: **fUseUdpPortRedirector**
+10. Change the Value type to **REG_DWORD**
+11. Put: '**1**' to enable the option and click **Apply**
+12. Right-click in the window and select **New**, **Registry Item**
+13. Select **Update** as the Action
+14. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
+15. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations**
+16. For the Value name type: **UdpPortNumber**
+17. Change the Value type to **REG_DWORD**
+18. Put: **3390**' to enable the option and click **Apply**
+19. **Close** the **Group Policy Management console**. Restart the session hosts.

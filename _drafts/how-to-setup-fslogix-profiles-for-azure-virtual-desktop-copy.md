@@ -142,7 +142,7 @@ You can find the latest Optimization scripts at:
 
 * [https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool")
 
-### Implement FSLogix Profile Exclusions
+### Hide the Shutdown button
 
 By default, FSLogix will capture a lot of user profile data, including Teams Cache, Chrome cache and save it to the profile VHD/VHDX, this causes profile size bloat and can decrease the performance of your applications.
 

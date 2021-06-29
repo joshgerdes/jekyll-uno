@@ -1,5 +1,5 @@
 ---
-date: 2021-06-29 00:00:00 +1200
+date: 2021-06-29T00:00:00.000+12:00
 title: No Available Resources Error when attempting to connect to Azure Virtual Desktop
 author: Luke
 categories:

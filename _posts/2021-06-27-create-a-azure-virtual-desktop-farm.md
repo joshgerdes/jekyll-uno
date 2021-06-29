@@ -58,18 +58,18 @@ Assuming you already have an Azure subscription and the appropriate access to cr
     ![Azure AD Domain Services](/uploads/adds_configissues.png "Azure AD Domain Services")
 23. Click on **Run**
 24. It should find a DNS record issue; click **Fix** to **set** the **DNS settings** of the Virtual Network to use the Azure AD Domain Services.
-    Please be careful here, especially if you have already existing DNS settings; you might have to add it manually.
+    Please **be careful here**, especially if you have already existing DNS settings; you might have to add it manually.
 
 ## Create a Utility server to help Administer Azure Virtual Desktop
 
 We need to create a Virtual Machine to help manage the AAD Domain and deploy Group Policies to help manage and configure the Azure Virtual Desktop farm.
 
- 1. Log in to the Azure Portal
- 2. Click on Create a resource.
- 3. Search for: Windows Server 2019 Datacenter and select Create
- 4. If you already have a Resource Group, select it - in this Demo, we are going to create one: aad_infra
- 5. Specify a name for the Virtual Machine (I am going to use: UTILITY-P01)
- 6. Select a Region (use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)
+ 1. Log in to the **Azure Portal**
+ 2. Click on **Create a resource.**
+ 3. Search for: **Windows Server 2019 Datacenter** and select **Create**
+ 4. If you already have a **Resource Group**, select it - in this Demo, we are going to create one: aad_infra
+ 5. **Specify** a **name** for the **Virtual Machine** _(I am going to use: UTILITY-P01)_
+ 6. **Select** a **Region** _(use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)_
  7. For the Image, you can select either Windows Server 2019 Datacenter -Gen 1 or Gen 2; in my case, I am going with Gen2.
  8. I am a firm believer in selecting the smallest size possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
     ![Azure - Create VM](/uploads/createvm1.png "Azure - Create VM")

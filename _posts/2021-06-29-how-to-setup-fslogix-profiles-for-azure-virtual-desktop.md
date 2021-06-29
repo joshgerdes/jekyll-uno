@@ -139,7 +139,7 @@ Now that you have successfully created a Storage Account and granted it the prop
 28. Open: **Set Outlook cached mode on successful container attach** to **Enabled**.
 29. Now in Group Policy Management console, click on **Container and Directory Naming** and select **Virtual Disk type**
 30. Click **Enabled** and change the Option to **VHDX**, click **Ok**
-31. Click on: S**wap directory name components setting** and click **Enabled**, **check** the s**wap directory name components** and click **Apply**
+31. Click on: **Swap directory name components setting** and click **Enabled**, **check** the s**wap directory name components** and click **Apply**
 32. **Restart** the Azure Virtual Desktop **session hosts** to pick up the new policies.
 33. **You have now set up FSLogix profiles! If you map the drive you should see your user profile folders!**
 34. ![FSLogix - Mapped Profiles](/uploads/computermappingdrivelast.png "FSLogix - Mapped Profiles")

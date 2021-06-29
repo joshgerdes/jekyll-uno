@@ -128,15 +128,15 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
  8. **Add** to the **AAD DC Administrators** group
  9. Click **Ok** to create the user
     ![Azure AD - Users](/uploads/avdjoin.png "Azure AD - Users")
-10. Once the account has been created, make sure to login with it to the Azure Portal or Office portal to force a final password reset, or you won't be able to use it in the next steps as it will be waiting for a password reset.
-11. Once that account has been created, it's time to join your utility server to the Azure Active Directory Domain, navigate to your Utility server and click Connect.
-12. Select Bastion
-13. Select Use Bastion
-14. Type in the username and password of the LOCAL account created when the Virtual Machine was created and click Connect
+10. Once the account has been created, make sure to **login** with it **to** the **Azure Portal** or Office portal to **force** a final **password reset**, or you won't be able to use it in the next steps as it will be waiting for a password reset.
+11. Once that account has been created, it's time to **join** your utility **server** to the Azure Active Directory **Domain**, navigate to your Utility **server** and click **Connect**.
+12. Select **Bastion**
+13. Select **Use Bastion**
+14. **Type** in the **username** and **password** of the **LOCAL account** created when the Virtual Machine was created and click **Connect**
     _Note: If you are running a popup blocker, you need to allow it to open, as Bastion opens up the connection in a new window._
     ![Azure Bastion](/uploads/azurebastionconnect.png "Azure Bastion")
 15. You should now be logged in to the server successfully.
-16. Now it's time to join the server to the domain (make sure that DNS is configured for AD Domain Services on the Virtual Network, see the last step in the AD Domain Services section, or you won't be able to domain join anything).
+16. Now it's time to join the server to the domain _(make sure that DNS is configured for AD Domain Services on the Virtual Network, see the last step in the AD Domain Services section, or you won't be able to domain join anything)_.
 17. In Server Managed, click on Local Server
 18. Select WORKGROUP
 19. Click Change…

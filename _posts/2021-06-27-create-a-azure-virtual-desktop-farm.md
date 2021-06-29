@@ -194,7 +194,7 @@ Now we are ready to deploy Azure Virtual Desktop finally!
  5. Please **create** a new **Resource Group** to help resources separately, and I am going to name mine: avd_prod
  6. **Type** in a **Host Pool Name**, I will call mine: avd-pooled
  7. Please select the **location** of the **Metadata** _(this is NOT the location of your session hosts, it’s the gateway, select the Region closet to you as possible)_
- 8. For Host Pool Type, if you want everyone to have a Virtual Machine each, you can select Personal; however, I want people to be shared across my servers.
+ 8. For **Host Pool Type**, if you want everyone to have a Virtual Machine each, you can select Personal; however, I want people to be shared across my servers, so I will select **Pooled**.
  9. For the Load balancing algorithm, we can choose to spread people over available hosts or fill up one host before moving connections to the next; we are going with Breadth-first.
 10. Click Next: Virtual Machines
     ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup1.png "Azure Virtual Desktop - Host Pool")

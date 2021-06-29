@@ -90,5 +90,5 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 15. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations**
 16. For the Value name type: **UdpPortNumber**
 17. Change the Value type to **REG_DWORD**
-18. Put: **3390**' to enable the option and click **Apply**
+18. Put: '**3390**' as the UDP report and click **Apply**
 19. **Close** the **Group Policy Management console**. Restart the session hosts.

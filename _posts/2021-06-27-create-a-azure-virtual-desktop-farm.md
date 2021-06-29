@@ -71,13 +71,13 @@ We need to create a Virtual Machine to help manage the AAD Domain and deploy Gro
  5. **Specify** a **name** for the **Virtual Machine** _(I am going to use: UTILITY-P01)_
  6. **Select** a **Region** _(use the same Region as the Azure AD Domain Services and Azure Virtual Desktop resources)_
  7. For the **Image**, you can select either Windows Server 2019 Datacenter -Gen 1 or **Gen 2**; in my case, I am going with Gen2 _(although it doesn't matter)_.
- 8. I am a firm believer in selecting the smallest size possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
+ 8. I am a firm believer in **selecting** the **smallest size** possible for the size, then scaling up when/where needed; I am going to go with a Standard_B2ms.
     ![Azure - Create VM](/uploads/createvm1.png "Azure - Create VM")
- 9. Now we need to enter in the Administrator (local account) Username and Password.
-10. Select 'None' for Public inbound ports
-11. If you have existing Windows Server licenses, you can select Hybrid Use Benefit; if not, select Next: Disks.
+ 9. Now we need to enter in the **Administrator** (local account) **Username** and **Password**.
+10. Select '**None**' for **Public** inbound **ports**
+11. If you have existing Windows Server licenses, you can select Hybrid Use Benefit; if not, select **Next: Disks**.
     ![Azure - Create VM](/uploads/createvm2.png "Azure - Create VM")
-12. For the disks, I only need the OS disk, so I don't need to add a Data Disk (although you could use this to store your Application install files etc.); however, to reduce cost, I am going to change the Disk type to Standard SSD (locally-redundant storage) and select Next: Networking.
+12. For the disks, I only need the OS disk, so I don't need to add a Data Disk _(although you could use this to store your Application install files etc.)_; however, to reduce cost, I am going to change the Disk type to Standard SSD (locally-redundant storage) and select Next: Networking.
     ![Azure - Create VM](/uploads/createvmdisks.png "Azure - Create VM")
 13. For the Virtual Network, make sure you select the same Virtual Network that the Azure AD Domain Services has been installed to; I will select the: aadds-subnet created earlier for my Utility server.
 14. Set 'None' for the Public IP and select Next: Management

@@ -36,7 +36,6 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 16. Now we need to configure a Private Endpoint for the Azure storage account to add onto the Virtual Network directly.
 17. Select **Private endpoint** and click **+ Add Private endpoint**
 18. **Verify** that your **Location** is **correct** and **type** in a **Name for** your **Private Endpoint**
-
     service, in my case: fslogixprofileslgnzPE
 19. **Select** the drop-down for **Storage sub-resource** and select **file**
 20. **Select** your **Virtual Network** and **subnet** _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
@@ -66,10 +65,10 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 11. Select **+ File Share**
 12. Give this **File share** a **name**: fslogixprofiles
 13. Even though you don't need to have a Quota _(the Fileshare will grow)_, I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
-14. Because user profiles are generally a lot of read/write activity, select **Transaction Optimized** _(take a look at the_ [_https://azure.microsoft.com/en-us/pricing/details/storage/files/_](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") _)_
+14. Because user profiles are generally a lot of read/write activity, select **Transaction Optimized** _(take a look at the_ [_https://azure.microsoft.com/en-us/pricing/details/storage/files/_](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/"){:target="_blank"} _)_
 15. Click **Create**
 16. ![FSLogix - File Share](/uploads/storageaccount_newfileshare.png "FSLogix - File Share")
-17. One last thing we can do on the Storage Account is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs")
+17. One last thing we can do on the Storage Account is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs"){:target="_blank"}
 
 ### Configure File Share
 

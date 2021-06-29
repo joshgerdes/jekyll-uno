@@ -69,6 +69,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") )
 15. Click Create
 16. ![](/uploads/storageaccount_newfileshare.png)
+17. One last thing we can do on the Storage Account, is enable backups for your Azure File Share - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs")
 
 ### Configure File Share
 
@@ -100,3 +101,5 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
         
         icacls z: /remove "Builtin\Users"
 16. ![](/uploads/setfslogixpermissions.png)
+17. The permissions should look similar to:
+18. ![](/uploads/setfslogixpermissions2.png)

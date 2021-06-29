@@ -66,7 +66,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 11. Select + File Share
 12. Give this File share a name: fslogixprofiles
 13. Even though you don't need to have a Quota (the Fileshare will grow), I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
-14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") ) 
+14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") )
 15. Click Create
 16. ![](/uploads/storageaccount_newfileshare.png)
 
@@ -79,7 +79,7 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
  3. Click on Properties
  4. Copy the URL
  5. ![](/uploads/storageaccount_fslogixprofiles.png)
- 6. Remove http and replace the forward slashes with backslashes so it looks like this: [\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)
+ 6. Remove http and replace the forward slashes with backslashes so it looks like this: \[\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles\](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)
  7. Using a user that is a member of the 'AVD Admins' group and can log into the Azure Virtual Desktop farm _(it’s a good chance to test connectivity to the Storage account through the private endpoint from your Azure Virtual Desktop session host)_
  8. Open Computer
  9. Select the Computer Tab and select Map network drive
@@ -93,9 +93,10 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
 15. Run the following command to set the necessary NTFS permissions (change the Drive mapping and AVD Users group to your own group):
 
         icacls z: /grant "AVD Users":(M)
-
+        
         icacls z: /grant "Creator Owner":(OI)(CI)(IO)(M)
-
+        
         icacls z: /remove "Authenticated Users"
-
+        
         icacls z: /remove "Builtin\Users"
+16. ![](/uploads/setfslogixpermissions.png)

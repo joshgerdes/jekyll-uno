@@ -136,9 +136,7 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 
 ### Implement Virtual-Desktop-Optimization-Tool
 
-The tool-set in this repository was created to automatically apply settings referenced in the white paper: "Optimizing Windows 10, version 2004 for a Virtual Desktop Infrastructure (VDI) role"
-
-Reference: [https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004 "https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-vdi-recommendations-2004")
+The tool-set is created to automatically apply settings to optimize the performance of Windows 10 VDI/Multisession machines.
 
 You can find the latest Optimization scripts at:
 

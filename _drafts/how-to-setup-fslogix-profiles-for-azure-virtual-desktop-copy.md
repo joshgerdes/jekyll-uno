@@ -51,3 +51,11 @@ When configuring these, take into consideration a users normal work time, the ti
 _Note: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.com/en/123638 "https://kb.parallels.com/en/123638")
 
 ### DeleteUserAppContainersOnLogoff
+
+Back in March 2019, there were issues with slow server performance, caused by numerous Windows Firewall Rules getting created (see: [https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd](https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd_ "https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd")). A patch was deployed, however, to enable this 'fix' a registry key needs to be set.
+
+1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+2. **Expand** your **domain** and **Group Policy Objects**.
+3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
+4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Session Time Limits**.
+5. Configure the below settings, in accordance with your organisation policies:

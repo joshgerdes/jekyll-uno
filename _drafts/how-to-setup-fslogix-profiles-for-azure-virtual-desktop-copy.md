@@ -22,4 +22,4 @@ Timezone redirection will allow you to pass through the time from the local devi
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Device** and **Resource Redirection**.
 5. **Enable** the setting **Allow time zone redirection**.
-6. Close the Group Policy setting
+6. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.

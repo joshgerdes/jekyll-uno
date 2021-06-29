@@ -54,10 +54,14 @@ _Note: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.
 
 Back in March 2019, there were issues with slow server performance, caused by numerous Windows Firewall Rules getting created on user login _(see:_ [_https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd_](https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd_ "https://support.microsoft.com/en-us/topic/march-26-2019-kb4490481-os-build-17763-402-c323e5c1-d524-dbdb-04a0-c3b5c8c8f2fd")_)_. A patch was deployed, however, to enable this 'fix' a registry key needs to be set. It is recommended to set this to help prevent the issue before it occurs.
 
-1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
-2. **Expand** your **domain** and **Group Policy Objects**.
-3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
-4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Preferences**> **Windows Settings** > **Registry**.
-5. Right-click in the window and select **New**, **Registry Item**
-6. Select **Update** as the Action
-7. Configure the below settings, in accordance with your organisation policies:
+ 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+ 2. **Expand** your **domain** and **Group Policy Objects**.
+ 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
+ 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Preferences**> **Windows Settings** > **Registry**.
+ 5. Right-click in the window and select **New**, **Registry Item**
+ 6. Select **Update** as the Action
+ 7. Make sure **HKEY_LOCAL_MACHINE** is set to **Hive**
+ 8. Enter in the following for the Key Path: **SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy**
+ 9. For the Value name type: DeleteUserAppContainersOnLogoff
+10. Put: '**1**' to enable the option and click **Apply**
+11. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.

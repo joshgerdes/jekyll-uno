@@ -144,9 +144,9 @@ You can find the latest Optimization scripts at:
 
 ### Hide the Shutdown button
 
-This is one of my favourite group policy configurations, usually, something I implement in server base policies, it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown the server.
+This is not so much of an optimization, but it is one of my favourite group policy configurations, something I implement in server base policies, it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown and restart the server from the Start Menu.
 
-It is recommended to implement exclusions to reduce storing user profile data that you don't need.
+_Note: You can still restart and shut down the server from Command Prompt._
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.

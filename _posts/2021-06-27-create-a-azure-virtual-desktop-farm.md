@@ -149,14 +149,14 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
     ![Azure - Connect to Bastion](/uploads/azurebastionconnect2.png "Azure - Connect to Bastion")
 25. You have now successfully connected using an Azure AD account to the AD Services domain.
 26. Now it's time to install some base Active Directory tools
-27. Open Windows PowerShell as Administrator
-28. Type in the following PowerShell commands:
+27. Open Windows **PowerShell** as **Administrator**
+28. **Type** in the following PowerShell **commands**:
 
         Add-WindowsFeature RSAT-Role-Tools
         
         Install-WindowsFeature –Name GPMC
 
-Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection.
+_Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection._
 
 1. This will now install the base Active Directory remote management tools, including Group Policy Management, so you can now create and manage the Group Policy objects for your Azure Virtual Desktop hosts.
    ![](/uploads/utility_servertools.png)

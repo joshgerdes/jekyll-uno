@@ -151,7 +151,6 @@ It is recommended to implement exclusions to reduce storing user profile data th
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
-4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **FSLogix** > **Profile Containers** > **Advanced**
-5. **Enable** the setting **Provide RedirXML file to customize directions**.
-6. Point the path to a **UNC path**, that is **accessible** to all session hosts that **contains** are '**redirections.xml**' file. This just needs the folder, it will automatically pick up the redirections.xml file.
-7. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+4. In the Group Policy Management Editor, **navigate to User Configuration** > **Policies** > **Administrative Templates** > **Start Menu and Taskbar**
+5. **Enable** the setting **Remove and prevent access to Shut Down, Restart, Sleep, and Hibernate commands.**
+6. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.

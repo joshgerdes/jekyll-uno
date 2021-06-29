@@ -1,6 +1,6 @@
 ---
 date: 2021-06-29 00:00:00 +1200
-title: No Available Resources error when connecting to Azure Virtual Desktop
+title: No Available Resources Error when attempting to connect to Azure Virtual Desktop
 author: Luke
 categories:
 - Azure

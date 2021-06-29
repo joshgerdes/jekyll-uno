@@ -9,11 +9,11 @@ header:
   teaser: ''
 
 ---
-If you are running Azure Virtual Desktop, you want to get the most performance and stability out of them as possible, to reduce cost and increase user experiance. 
+If you are running Azure Virtual Desktop, you want to get the most performance and stability out of them as possible, to reduce cost and increase user experience.
 
-This is a few recommended policies to apply to your Azure Virtual Desktop setup.
+These are a few recommended policies to apply to your Azure Virtual Desktop setup.
 
-### Configure FSLogix policies
+### Configure Timezone Redirection
 
 Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy to for FSLogix.
 

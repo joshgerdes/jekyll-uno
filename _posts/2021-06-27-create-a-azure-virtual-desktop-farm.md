@@ -198,9 +198,9 @@ Now we are ready to deploy Azure Virtual Desktop finally!
  9. For the Load balancing algorithm, we can choose to spread people over available hosts or fill up one host before moving connections to the next; we are going with **Breadth-first**.
 10. Click **Next: Virtual Machines**
     ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup1.png "Azure Virtual Desktop - Host Pool")
-11. Now we can add your Session hosts to the Pool.
+11. Now we can **add** your Session **hosts** to the **Pool**.
 12. By default, it has defaulted the Resource Group to the same Resource Group as the Host pool; however, you can separate them.
-13. Please select a Name prefix for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts. I will put: and host.
+13. Please **select** a **Name prefix** for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts. I will put avdhost.
 14. As I am based in New Zealand, I will be using the Australia East region.
 15. We are going to use a Gallery Image of Windows 10 Enterprise multi-session, Version 20H2 + M365 Apps (select the newest image at the time of your deployment)
 16. Select your Virtual machine size

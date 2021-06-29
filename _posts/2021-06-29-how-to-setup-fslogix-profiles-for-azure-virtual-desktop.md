@@ -7,13 +7,12 @@ categories:
 toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
-
 ---
 If you have a few Azure Virtual Desktop machines, you need some way to keep user persistence's and application customisations, which would usually be stored in the user profile locally across multiple machines _(or even the same machine if using Ephemeral OS)_, this is where FSLogix Profile Containers can assist.
 
 We are going to implement FSLogix using an Azure File Share, to store the profiles.
 
-I am going to assume you already have an Azure Virtual Desktop farm _(and Azure ADDS)_, if not you can check out my guide [here](https://luke.geek.nz/azure/create-a-azure-virtual-desktop-farm/ "How to create a Azure Virtual Desktop farm ").
+I am going to assume you already have an Azure Virtual Desktop farm _(and Azure ADDS)_, if not you can check out my guide [here](https://luke.geek.nz/azure/create-a-azure-virtual-desktop-farm/ "How to create a Azure Virtual Desktop farm "){:target="_blank"}.
 
 This article will be based on the Azure Virtual Desktop farm created in a previous article, however, you can just still along and replace the resource names and groups with your own.
 
@@ -28,7 +27,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
  7. If you already have a Resource Group, then **select** it, if not you can create a new **resource group**. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
  8. **Type in** a Storage **Account Name** _(the name needs to be globally unique across all of Azure, the field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.)_, in my case I have gone with: fslogixprofileslgnz.
  9. **Select** your **Region** _(the same region you have your Azure Virtual Desktop session hosts and Virtual Network)_
-10. **Select** Standard **performance** _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile")_)_
+10. **Select** Standard **performance** _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile"){:target="_blank"}_)_
 11. For Redundancy, I am going to **select LRS** storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
 12. _Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!_
 13. ![FSLogix - Azure Storage Account](/uploads/storageaccount_projectdetails.png "FSLogix - Azure Storage Account")

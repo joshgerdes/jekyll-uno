@@ -2,8 +2,9 @@
 date: 2021-06-29 00:00:00 +1200
 title: How to setup FSLogix profiles for Azure Virtual Desktop
 author: Luke
-categories: []
-toc: false
+categories:
+- Azure
+toc: true
 header:
   teaser: ''
 

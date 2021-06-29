@@ -29,10 +29,10 @@ Assuming you already have an Azure subscription and the appropriate access to cr
     ![Azure AD Domain - Marketplace](/uploads/azureaddssearch.png "Azure AD Domain - Marketplace")
     ![Azure AD Domain - Marketplace](/uploads/azureaddsmarketplace.png "Azure AD Domain - Marketplace")
  4. Click **Create**
- 5. If you already have a Resource Group, select it - in this Demo, we are going to create one: aad_prod
- 6. Type in the DNS domain name - this is the FQDN of your domain; in my demo, I will choose internal.luke.geek.nz.
- 7. Because I am in New Zealand, the closest region to me is Australia East, so that’s the region I will select. Make sure you select the appropriate region for where your Azure Virtual Desktop workloads are.
- 8. Select the SKU and Resource Type; you can see the Pricing Calculator and the "Help Me choose.." links to verify your SKU and Forest type _(however, in most cases, such as Azure Virtual Desktop, your Forest Type will be 'User')_.
+ 5. If you already have a **Resource Group**, select it - in this Demo, we are going to create one: aad_prod
+ 6. Type in the **DNS** domain **name** - this is the **FQDN** of your **domain**; in my demo, I will choose internal.luke.geek.nz.
+ 7. Because I am in New Zealand, the closest region to me is Australia East, so that’s the region I will select. Make sure you **select** the **appropriate region** for where your Azure Virtual Desktop workloads are.
+ 8. **Select** the **SKU** and **Resource Type**; you can see the Pricing Calculator and the "Help Me choose.." links to verify your SKU and Forest type _(however, in most cases, such as Azure Virtual Desktop, your Forest Type will be 'User')_.
     ![Azure AD Domain Services - Basic Config](/uploads/adds_basics.png "Azure AD Domain Services - Basic Config")
  9. Click Next
 10. We will set up the Networking; if you have an already existing Virtual Network, select it.

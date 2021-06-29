@@ -141,3 +141,6 @@ Now that you have successfully created a Storage Account and granted it the prop
 29. Now in Group Policy Management console, click on: Container and Directory Naming and select Virtual Disk type
 30. Click Enabled and change the Option to VHDX, click Ok
 31. Click on: Swap directory name components setting and click Enabled, check the swap directory name components and click Apply
+32. Restart the Azure Virtual Desktop session hosts to pickup the new policies.
+33. You have now setup FSLogix profiles! If you map the drive you should see your user profile folders!
+34. ![](/uploads/computermappingdrivelast.png)

@@ -100,9 +100,9 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
         icacls z: /remove "Authenticated Users"
         
         icacls z: /remove "Builtin\Users"
-16. ![](/uploads/setfslogixpermissions.png)
+16. ![FSLogix - Security Permissions](/uploads/setfslogixpermissions.png "FSLogix - Security Permissions")
 17. The permissions should look similar to:
-18. ![](/uploads/setfslogixpermissions2.png)
+18. ![FSLogix - Security Permissions](/uploads/setfslogixpermissions2.png "FSLogix - Security Permissions")
 
 ### Configure FSLogix policies
 
@@ -115,7 +115,7 @@ Now that you have successfully created a Storage Account and granted it the prop
  5. On your Utility server, browse to: C:\\Windows (If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from a Azure Virtual Desktop sessionhost to make sure you can edit all the latest Windows 10 policies)
  6. Copy the PolicyDefinitions folder
  7. Copy the PolicyDefinitions folder to your Policies folder on your domain: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
- 8. ![](/uploads/sysvolpolicies.png)
+ 8. ![FSLogix - Group Policy](/uploads/sysvolpolicies.png "FSLogix - Group Policy")
  9. Go to your extracted FSLogix folder and copy:
     * fslogix.admx to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
     * fslogix.adml to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
@@ -124,14 +124,14 @@ Now that you have successfully created a Storage Account and granted it the prop
 12. Right click the OU and select: Create a GPO in this domain, and Link it here…
 13. Name it according to your naming standards (this is a Computer based policy) - in my example I am using: AVD_ComputerPolicy
 14. Click Ok
-15. ![](/uploads/gpo_management_createpolicy.png)
+15. ![FSLogix - Group Policy](/uploads/gpo_management_createpolicy.png "FSLogix - Group Policy")
 16. Right click the GPO you have just created and select Edit…
 17. Because this is a Computer based policy, to speed up processing, right click the Policy heading and select Properties
 18. Tick: Disable User Configuration Settings
 19. Confirm that you want to do it and select Yes
 20. Click Apply
 21. While you have the screen open, click on: Comment, and add in some details about the GPO for future reference then click Apply and Ok
-22. ![](/uploads/gpo_avd_computerpolicy.png)
+22. ![FSLogix - Group Policy](/uploads/gpo_avd_computerpolicy.png "FSLogix - Group Policy")
 23. Now its time to actually configure the FSLogix Group Policy settings.
 24. Navigate to: Computer Configuration\\Policies\\Administrative Templates\\FSLogix\\Profile Containers
 25. Open up Enabled and select: Enabled and Apply
@@ -142,5 +142,5 @@ Now that you have successfully created a Storage Account and granted it the prop
 30. Click Enabled and change the Option to VHDX, click Ok
 31. Click on: Swap directory name components setting and click Enabled, check the swap directory name components and click Apply
 32. Restart the Azure Virtual Desktop session hosts to pickup the new policies.
-33. You have now setup FSLogix profiles! If you map the drive you should see your user profile folders!
-34. ![](/uploads/computermappingdrivelast.png)
+33. **You have now setup FSLogix profiles! If you map the drive you should see your user profile folders!**
+34. ![FSLogix - Mapped Profiles](/uploads/computermappingdrivelast.png "FSLogix - Mapped Profiles")

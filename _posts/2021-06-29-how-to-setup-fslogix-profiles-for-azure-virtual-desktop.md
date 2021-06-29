@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 If you have a few Azure Virtual Desktop machines, you need some way to keep user persistence's and application customisations, which would usually be stored in the user profile locally across multiple machines _(or even the same machine if using Ephemeral OS)_, this is where FSLogix Profile Containers can assist.

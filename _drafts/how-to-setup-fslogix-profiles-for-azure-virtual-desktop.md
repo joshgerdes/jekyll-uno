@@ -103,3 +103,25 @@ Now that the Azure Active Directory rights has been assigned and the File Share 
 16. ![](/uploads/setfslogixpermissions.png)
 17. The permissions should look similar to:
 18. ![](/uploads/setfslogixpermissions2.png)
+
+### Configure FSLogix policies
+
+Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy to for FSLogix.
+
+ 1. Connect to your Azure Active Directory Utility server, that has Group Policy management installed using an account in the: AAD DC Administrators group
+ 2. Download the latest FSLogix Agent - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download") onto the Utility server
+ 3. Extract the FSLogix agent zip file to a folder
+ 4. Now we will create a Central Store to manage the Group Policy from consistantly
+ 5. On your Utility server, browse to: C:\\Windows (If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from a Azure Virtual Desktop sessionhost to make sure you can edit all the latest Windows 10 policies)
+ 6. Copy the PolicyDefinitions folder
+ 7. Copy the PolicyDefinitions folder to your Policies folder on your domain: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
+ 8. ![](/uploads/sysvolpolicies.png)
+ 9. Go to your extracted FSLogix folder and copy:
+    * fslogix.admx to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
+    * fslogix.adml to: [\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
+10. This will allow us to use Group Policy to manage FSLogix using Group Policy, Open Group Policy Management
+11. Navigate to your Hosts OU
+12. Right click the OU and select: Create a GPO in this domain, and Link it here…
+13. Name it according to your naming standards (this is a Computer based policy) - in my example I am using: AVD_ComputerPolicy
+14. Click Ok
+15. ![](/uploads/gpo_management_createpolicy.png)

@@ -121,9 +121,12 @@ _Note: Make sure you test and adjust this for your own environment, the Desktop/
 
 On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device, and when it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also be used to help dehydrate files that are available locally, and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.
 
+_Note: If you find that Storage Sense is missing, it is because it is mainly a client setting and may be missing from the Windows Server, you can copy the PolicyDefinitions folder from a Azure Virtual Desktop host to your domains Central Store, ie in my case \\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions. Or just look for StorageSense.admx and StorageSense.adml and copy it (the ADML goes in the language directory ie en-US)._
+
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **System** > **Storage Sense**.
-5. **Enable** the setting **Allow time zone redirection**.
-6. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+5. **Enable** the setting **Allow Storage Sense**.
+6. **Enable** the setting **Configure Storage Sense Cloud Content dehydration threshold**
+7. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.

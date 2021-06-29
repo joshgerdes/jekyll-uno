@@ -45,7 +45,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 22. ![FSLogix - Azure Storage Account](/uploads/storageaccount_privateendpoint.png "FSLogix - Azure Storage Account")
 23. Select **Next: Data Protection**
 24. **Untick** the **Enable soft delete for Blogs and Container's** _(we will only be using Azure Files in this storage account)_
-25. Soft delete allows you to quickly recover a deleted fileshare, even though we can backup the Azure Fileshare, my recommendation would be to leave this on for additional protection and '7' days is enough for me.
+25. Soft delete allows you to quickly recover a deleted file-share, even though we can backup the Azure Fileshare, my recommendation would be to leave this on for additional protection and '7' days is enough for me.
 26. ![FSLogix - Azure Storage Account](/uploads/storageaccount_softdelete.png "FSLogix - Azure Storage Account")
 27. Select **Review + Create**
 28. **Validate** your **configuration** and select **Create**
@@ -53,12 +53,12 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 ### Configure Storage Account
 
  1. Once your storage account has been created, go to it.
- 2. Navigate down the left hand side Blade and select: **Networking**
+ 2. Navigate down the left-hand side Blade and select: **Networking**
 
-    Make sure: Selected networks is selected and the Private Endpoint connection is displaying.
+    Make sure: Selected networks are selected and the Private Endpoint connection is displaying.
  3. ![FSLogix - Azure Storage Account](/uploads/storageaccount_firewalls.png "FSLogix - Azure Storage Account")
  4. ![FSLogix - Azure Storage Account](/uploads/storageaccount_peapproved.png "FSLogix - Azure Storage Account")
- 5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left hand side Blade, click on **Configuration** _(under Settings)_
+ 5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left-hand side Blade, click on **Configuration** _(under Settings)_
  6. Navigate to: **Identity-based access for file shares**
  7. Select **Enabled**
  8. Click **Save**

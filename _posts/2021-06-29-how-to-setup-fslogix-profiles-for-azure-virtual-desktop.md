@@ -134,7 +134,7 @@ Now that you have successfully created a Storage Account and granted it the prop
 23. Now it's time to actually configure the FSLogix Group Policy settings.
 24. **Navigate** to: Computer Configuration\\Policies\\Administrative Templates\\FSLogix\\**Profile Containers**
 25. Open up **Enabled** and select: **Enabled** and **Apply**
-26. Open: **VHD Location** and **copy** in your Profiles **UNC share** _(for example, mine is:_ \[_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles_\](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)_)_ click **Ok**
+26. Open: **VHD Location** and **copy** in your Profiles **UNC share** _(for example, mine is:_ \[_\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles)_ click **Ok**
 27. Select: **Delete local profile when FSLofix profile should apply**, click **Enabled** and check to **Delete local profile when FSLogix Profile should apply** _(don't blindly follow this, I am making the assumption this is a new farm, with no user-based profile stored on it. You may need to create a separate GPO to test this setting on, or you could lose valuable data)_.
 28. Open: **Set Outlook cached mode on successful container attach** to **Enabled**.
 29. Now in Group Policy Management console, click on **Container and Directory Naming** and select **Virtual Disk type**

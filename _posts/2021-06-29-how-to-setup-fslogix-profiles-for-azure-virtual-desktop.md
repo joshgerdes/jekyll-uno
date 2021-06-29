@@ -108,7 +108,7 @@ Now that the Azure Active Directory rights have been assigned and the File Share
 Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy for FSLogix.
 
  1. **Connect to** your Azure Active Directory **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
- 2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download") onto the Utility server
+ 2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download"){:target="_blank"} onto the Utility server
  3. **Extract** the FSLogix agent **zip** file to a folder
  4. Now we will **create** a **Central Store** to manage the Group Policy consistently
  5. On your Utility server, browse to **C:\\Windows** _(If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from an Azure Virtual Desktop session host to make sure you can edit all the latest Windows 10 policies)_

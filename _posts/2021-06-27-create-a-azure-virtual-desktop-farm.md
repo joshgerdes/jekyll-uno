@@ -119,14 +119,14 @@ Once the VM has been created, we now need to connect to it securely, so we will 
 Now that we have a Bastion instance, it is time to connect and configure the Utility server and create a new Azure AD user for Azure Virtual Desktop configuration.
 
  1. First thing I am going to create a separate Azure AD account to manage the Utility server and join the Azure Virtual Desktop session hosts to the domain; this is to separate my own account. Azure AD Domain Services relies on password hash. So you won't be able to log in using Azure AD Domain Services unless you and the people using it have reset their passwords AFTER Azure AD Domain Services has been created.
- 2. Navigate to the Azure Portal and open Azure Active Directory
- 3. Click on Users
- 4. Click on + New User
- 5. Type in the username of a user, I am going to use: 'avdjoin'
- 6. Type in an easily identifiable name
- 7. Generate or put in a secure password
- 8. Add to the AAD DC Administrators group
- 9. Click Ok to create the user
+ 2. Navigate to the Azure Portal and open **Azure Active Directory**
+ 3. Click on **Users**
+ 4. Click on **+ New User**
+ 5. **Type** in the **username** of a **user**, I am going to use: 'avdjoin'
+ 6. Type in an **easily identifiable name**
+ 7. Generate or put in a secure **password**
+ 8. **Add** to the **AAD DC Administrators** group
+ 9. Click **Ok** to create the user
     ![Azure AD - Users](/uploads/avdjoin.png "Azure AD - Users")
 10. Once the account has been created, make sure to login with it to the Azure Portal or Office portal to force a final password reset, or you won't be able to use it in the next steps as it will be waiting for a password reset.
 11. Once that account has been created, it's time to join your utility server to the Azure Active Directory Domain, navigate to your Utility server and click Connect.

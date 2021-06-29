@@ -52,7 +52,7 @@ _Note: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.
 
 ### DeleteUserAppContainersOnLogoff
 
-Back in March 2019, there were issues with slow server performance, caused by numerous Windows Firewall Rules getting created on user login. A patch was released, however, to enable this 'fix' a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
+Back in March 2019, there were issues with slow server performance, caused by numerous Windows Firewall Rules getting created on user login. A patch was released, however, to enable this '_fix_' a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.

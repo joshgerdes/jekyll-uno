@@ -202,17 +202,17 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 12. By default, it has defaulted the Resource Group to the same Resource Group as the Host pool; however, you can separate them.
 13. Please **select** a **Name prefix** for your session hosts, and it must be unique. Azure will automatically add a number to it as you build out more sessions hosts. I will put avdhost.
 14. As I am based in New Zealand, I will be using the Australia East region.
-15. We are going to use a Gallery Image of Windows 10 Enterprise multi-session, Version 20H2 + M365 Apps (select the newest image at the time of your deployment)
-16. Select your Virtual machine size
-17. Select the number of Virtual Machines you need
-18. Select the OS disk type
+15. We are going to use a **Gallery Image** of **Windows 10 Enterprise multi-session, Version 20H2 + M365 Apps** _(select the newest image at the time of your deployment)_
+16. Select your **Virtual machine size**
+17. **Select** the **number** of Virtual **Machines** you need
+18. Select the **OS disk type**
     ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup2.png "Azure Virtual Desktop - Host Pool")
-19. Select your Virtual Machine and subnet
-20. Select Yes to specify your domain or unit
-21. Type in your AD Domain Services domain name
-22. If you don't specify an OU, it will create it in the: AADDC Computers OU. I had previously created a separate OU for my hosts so that I will enter the OU information.
-23. For the Domain Administrator account, I will use the AVDJoin account I created earlier.
-24. When the Virtual Machines get created, a local Administrator account will be created for each machine, and you can specify the username and password of what you want this account to be.
+19. Select your **Virtual Machine** and **subnet**
+20. Select **Yes** to specify your **domain** or unit
+21. Type in your A**D Domain Services domain name**
+22. If you don't **specify** an **OU**, it will create it in the: AADDC Computers OU. I had previously created a separate OU for my hosts so that I will enter the OU information.
+23. For the **Domain Administrator** account, I will use the AVDJoin account I created earlier.
+24. When the Virtual Machines get created, a **local Administrator** account will be created for each machine, and you can **specify** the **username** and **password** of what you want this account to be.
     ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup3.png "Azure Virtual Desktop - Host Pool")
 25. Click Next: WorkSpace
 26. Select Yes to Register Desktop App Group

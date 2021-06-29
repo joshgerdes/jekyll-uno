@@ -35,8 +35,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 15. Leave everything as default and **select Next: Networking**
 16. Now we need to configure a Private Endpoint for the Azure storage account to add onto the Virtual Network directly.
 17. Select **Private endpoint** and click **+ Add Private endpoint**
-18. **Verify** that your **Location** is **correct** and **type** in a **Name for** your **Private Endpoint**
-    service, in my case: fslogixprofileslgnzPE
+18. **Verify** that your **Location** is **correct** and **type** in a **Name for** your **Private Endpoint** service, in my case: fslogixprofileslgnzPE
 19. **Select** the drop-down for **Storage sub-resource** and select **file**
 20. **Select** your **Virtual Network** and **subnet** _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
 21. Click **Ok**
@@ -113,11 +112,12 @@ Now that you have successfully created a Storage Account and granted it the prop
  4. Now we will **create** a **Central Store** to manage the Group Policy consistently
  5. On your Utility server, browse to **C:\\Windows** _(If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from an Azure Virtual Desktop session host to make sure you can edit all the latest Windows 10 policies)_
  6. **Copy** the **PolicyDefinitions** folder
- 7. Copy **the PolicyDefinitions** folder to your **Policies** folder on your **domain**: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies) _(replace luke.geek.nz, with your ADDS DNS name)_
+ 7. Copy **the PolicyDefinitions** folder to your **Policies** folder on your **domain**: \\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\
+  _(replace luke.geek.nz, with your ADDS DNS name)_
  8. ![FSLogix - Group Policy](/uploads/sysvolpolicies.png "FSLogix - Group Policy")
  9. **Go to** your **extracted** FSLogix **folder** and **copy**:
-    * fslogix.admx to: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions)
-    * fslogix.adml to: \[\\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US\](file://luke.geek.nz/SYSVOL/luke.geek.nz/Policies/PolicyDefinitions/en-US)
+    * fslogix.admx to: \\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\
+    * fslogix.adml to: \\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions\\en-US\
 10. This will allow us to use Group Policy to manage FSLogix using Group Policy, **Open Group Policy Management**
 11. **Navigate** to your **Hosts OU**
 12. Right-click the OU and select: **Create a GPO in this domain, and Link it here…**

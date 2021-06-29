@@ -51,14 +51,21 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 
 ### Configure Storage Account
 
-1. Once your storage account has been created, go to it.
-2. Navigate down the left hand side Blade and select: Networking
+ 1. Once your storage account has been created, go to it.
+ 2. Navigate down the left hand side Blade and select: Networking
 
-   Make sure: Selected networks is selected and the Private Endpoint connection is displaying.
-3. ![](/uploads/storageaccount_firewalls.png)
-4. ![](/uploads/storageaccount_peapproved.png)
-5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left hand side Blade, click on Configuration _(under Settings)_
-6. Navigate to: Identity-based access for file shares
-7. Select Enabled
-8. Click Save
-9. ![](/uploads/storageaccount_adds_identity.png)
+    Make sure: Selected networks is selected and the Private Endpoint connection is displaying.
+ 3. ![](/uploads/storageaccount_firewalls.png)
+ 4. ![](/uploads/storageaccount_peapproved.png)
+ 5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left hand side Blade, click on Configuration _(under Settings)_
+ 6. Navigate to: Identity-based access for file shares
+ 7. Select Enabled
+ 8. Click Save
+ 9. ![](/uploads/storageaccount_adds_identity.png)
+10. Now its time to create the File Share, On the left hand side Blade, navigate to: File Shares (under Data Storage)
+11. Select + File Share
+12. Give this File share a name: fslogixprofiles
+13. Even though you don't need to have a Quota (the Fileshare will grow), I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
+14. Because user profiles are generally a lot of read/write activity, select Transaction Optimized (take a look at the [https://azure.microsoft.com/en-us/pricing/details/storage/files/](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/") ) 
+15. Click Create
+16. ![](/uploads/storageaccount_newfileshare.png)

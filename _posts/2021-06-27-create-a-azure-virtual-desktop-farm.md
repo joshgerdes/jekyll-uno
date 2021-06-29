@@ -34,23 +34,23 @@ Assuming you already have an Azure subscription and the appropriate access to cr
  7. Because I am in New Zealand, the closest region to me is Australia East, so that’s the region I will select. Make sure you **select** the **appropriate region** for where your Azure Virtual Desktop workloads are.
  8. **Select** the **SKU** and **Resource Type**; you can see the Pricing Calculator and the "Help Me choose.." links to verify your SKU and Forest type _(however, in most cases, such as Azure Virtual Desktop, your Forest Type will be 'User')_.
     ![Azure AD Domain Services - Basic Config](/uploads/adds_basics.png "Azure AD Domain Services - Basic Config")
- 9. Click Next
-10. We will set up the Networking; if you have an already existing Virtual Network, select it.
+ 9. Click **Next**
+10. We will set up the **Networking**; if you have an already existing Virtual Network, select it.
     _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance?WT.mc_id=Portal-Microsoft_AAD_DomainServices){:target="_blank"}
-11. I will let it create a Virtual Network and its Subnet (/24); click Next.
+11. I will let it create a **Virtual Network** and its Subnet (/24); click **Next**.
     ![Azure AD Domain Services - Networking Config](/uploads/adds_networking.png "Azure AD Domain Services - Networking Config")
-12. Azure AD Domain Services will create a new Azure AD Group called: AAD DC Administrators - this group will be used for Administrator level permissions on the Azure AD Domain Services domain (it automatically adds the account you are using to create Azure AD Domain Services into this group).
-13. You can configure Membership of this group now and configure who gets alerted if there are issues with Azure AD Domain Services.
-14. When you are ready, select Next.
+12. **Azure AD Domain Services** will **create** a new Azure AD **Group** called: **AAD DC Administrators** - this group will be used for Administrator level permissions on the Azure AD Domain Services domain _(it automatically adds the account you are using to create Azure AD Domain Services into this group)_.
+13. You can **configure Membership** of this **group** now and configure who gets alerted if there are issues with Azure AD Domain Services.
+14. When you are ready, select **Next**.
     ![Azure AD Domain Services - Administration Config](/uploads/adds_admin.png "Azure AD Domain Services - Administration Config")
-15. Depending on the amount of Azure Active Directory users you have in your organisation, and whether they will need Azure AD Domain Services, you can choose to synchronise ALL Azure AD Groups and Users, or specific groups of users (this can be changed later), because my Azure AD Organisation is fairly low, I am going to Sync everything, click Next.
-16. One thing to note here is the recommendation on the number of Objects (Users, Groups) that will get synced to Azure AD Domain Services; for the Standard SKU, the suggested Object Count is 0 to 25,000 - for the Enterprise SKU, it is 25,000 to 100,000. So although there is no hard limit, it might be worth upgrading the SKU you are running for the additional backups and authentication if fit in the Enterprise space.
+15. Depending on the amount of Azure Active Directory users you have in your organisation, and whether they will need Azure AD Domain Services, you can choose to synchronise **ALL Azure AD Groups and Users**, or specific groups of users _(this can be changed later)_, because my Azure AD Organisation is fairly low, I am going to Sync everything, click **Next**.
+16. One thing to note here is the recommendation on the number of Objects _(Users, Groups)_ that will get synced to Azure AD Domain Services; for the Standard SKU, the suggested Object Count is 0 to 25,000 - for the Enterprise SKU, it is 25,000 to 100,000. So although there is no hard limit, it might be worth upgrading the SKU you are running for the additional backups and authentication if fit in the Enterprise space.
     ![Azure AD Domain Services - Syncronisation Config](/uploads/adds_sync.png "Azure AD Domain Services - Syncronisation Config")
-17. We can now configure the Security Settings, the only setting I am going to change here is TLS 1.2 Only Mode to Enable
+17. We can now **configure** the **Security Setting**s, the only setting I am going to change here is **TLS 1.2 Only Mode** to **Enable**
     ![Azure AD Domain Services - Security Config](/uploads/adds_securitysettings.png "Azure AD Domain Services - Security Config")
-18. Enter any applicable Tags and click Review & Create to validate your configuration.
-19. Review your configuration, and if you are happy with it: Select Create.
-20. Confirm that you are happy with the following and click Ok
+18. Enter any applicable Tags and click **Review & Create** to **validate** your **configuration**.
+19. Review your configuration, and if you are happy with it: Select **Create**.
+20. Confirm that you are happy with the following and click **Ok**
     ![Azure AD Domain Services](/uploads/adds_youshouldknow.png "Azure AD Domain Services")
     Note: Azure AD Domain Services can take up to an hour to provision.
 21. Once your Azure AD Domain Services has been configured, we must make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, open your newly created Azure AD Domain Services.

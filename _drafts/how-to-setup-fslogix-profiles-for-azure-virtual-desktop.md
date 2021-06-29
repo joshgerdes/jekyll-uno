@@ -77,7 +77,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 Now that the Azure Active Directory rights have been assigned and the File Share has been created, we now need to set up the NTFS permissions on the FSLogix share.
 
  1. Navigate to **File Shares** _(under Data Storage)_
- 2. Click on your file-share
+ 2. **Click** on **your** file-**share**
  3. Click on **Properties**
  4. **Copy** the **URL**
  5. ![FSLogix - File Share](/uploads/storageaccount_fslogixprofiles.png "FSLogix - File Share")
@@ -88,7 +88,7 @@ Now that the Azure Active Directory rights have been assigned and the File Share
 10. ![FSLogix - Mapped Drive](/uploads/computermappeddrive.png "FSLogix - Mapped Drive")
 11. **Select a drive letter** that isn't in use and paste in the **UNC path** created earlier _(step 6)_.
 12. ![FSLogix - Mapped Drive](/uploads/computermappingdrive.png "FSLogix - Mapped Drive")
-13. Hopefully you should successfully have mapped a drive!
+13. Hopefully, you should successfully have mapped a drive!
 14. Once the drive is mapped, **open** up a **Command Prompt**
 
     _Note: Don't run the Command Prompt as Administrator, as this runs in a separate context and doesn't have permissions to the mapped drive._

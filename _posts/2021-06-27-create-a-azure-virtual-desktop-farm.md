@@ -79,13 +79,13 @@ We need to create a Virtual Machine to help manage the AAD Domain and deploy Gro
     ![Azure - Create VM](/uploads/createvm2.png "Azure - Create VM")
 12. For the disks, I only need the OS disk, so I don't need to add a Data Disk _(although you could use this to store your Application install files etc.)_; however, to reduce cost, I am going to change the **Disk type** to **Standard SSD** _(locally-redundant storage)_ and select **Next: Networking**.
     ![Azure - Create VM](/uploads/createvmdisks.png "Azure - Create VM")
-13. For the Virtual Network, make sure you select the same Virtual Network that the Azure AD Domain Services has been installed to; I will select the: aadds-subnet created earlier for my Utility server.
-14. Set 'None' for the Public IP and select Next: Management
+13. For the Virtual Network, make sure you **select** the **same** Virtual **Network** that the **Azure AD Domain Services** has been **installed to**; I will select the: aadds-subnet created earlier for my Utility server.
+14. Set '**None**' for the **Public IP** and select **Next: Management**
     ![Azure - Create VM](/uploads/createvmnetworkinterface.png "Azure - Create VM")
-15. Feel free to leave this all as Default
-16. Just be wary of the Auto-shutdown settings, which will automatically shut down the VM daily (I will keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7.
-17. If you have a Recovery Services Vault, now is a good time to add the Utility server to Backups, so you don't forget it later, select Review & Create
-18. Verify the configuration is correct and select Create
+15. Feel free to **leave** this all **as Default**
+16. Just **be wary** of the **Auto-shutdown** settings, which will automatically shut down the VM daily _(I will keep mine selected as this is just a demo, and I only need the UTILITY server for initial configuration, it doesn't need to be running 24.7)_.
+17. If you have a **Recovery Services Vault**, now is a good time to **add** the Utility **server** to **Backups**, so you don't forget it later, select Review & Create
+18. **Verify** the **configuration** is correct and select **Create**
 
 ## Create Azure Bastion to connect to the Utility server
 

@@ -214,11 +214,11 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 23. For the **Domain Administrator** account, I will use the AVDJoin account I created earlier.
 24. When the Virtual Machines get created, a **local Administrator** account will be created for each machine, and you can **specify** the **username** and **password** of what you want this account to be.
     ![Azure Virtual Desktop - Host Pool](/uploads/avdhostpoolsetup3.png "Azure Virtual Desktop - Host Pool")
-25. Click Next: WorkSpace
-26. Select Yes to Register Desktop App Group
-27. We haven’t created an Azure Virtual Desktop Workspace yet, so select Create New.
-28. Create a name for your Workspace; my example is: avd_workspace
-29. Click Ok
+25. Click **Next: WorkSpace**
+26. Select **Yes** to **Register Desktop App Group**
+27. We haven’t created an Azure Virtual Desktop Workspace yet, so select **Create New**.
+28. **Create** a **name** for your **Workspace**; my example is: avd_workspace
+29. Click **Ok**
     ![Azure Virtual Desktop - Workspace](/uploads/avdworkspacesetup.png "Azure Virtual Desktop - Workspace")
 30. Click on Review + Create
 31. Confirm everything looks ok and click Create

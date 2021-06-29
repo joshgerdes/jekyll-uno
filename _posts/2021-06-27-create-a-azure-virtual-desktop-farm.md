@@ -52,12 +52,12 @@ Assuming you already have an Azure subscription and the appropriate access to cr
 19. Review your configuration, and if you are happy with it: Select **Create**.
 20. Confirm that you are happy with the following and click **Ok**
     ![Azure AD Domain Services](/uploads/adds_youshouldknow.png "Azure AD Domain Services")
-    Note: Azure AD Domain Services can take up to an hour to provision.
-21. Once your Azure AD Domain Services has been configured, we must make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, open your newly created Azure AD Domain Services.
-22. Click on Overview and: Configuration issues for your managed domain were detected. Run configuration Diagnostics
+    **Note: Azure AD Domain Services can take up to an hour to provision.**
+21. Once your Azure AD Domain Services has been configured, we must make some final configuration changes to point the Virtual Network DNS to use the Azure AD Domain Services. So first, **open** your newly created **Azure AD Domain Services**.
+22. Click on **Overview** and: **Configuration** issues for your managed domain were detected. **Run configuration Diagnostics**
     ![Azure AD Domain Services](/uploads/adds_configissues.png "Azure AD Domain Services")
-23. Click on Run
-24. It should find a DNS record issue; click Fix to set the DNS settings of the Virtual Network to use the Azure AD Domain Services.
+23. Click on **Run**
+24. It should find a DNS record issue; click **Fix** to **set** the **DNS settings** of the Virtual Network to use the Azure AD Domain Services.
     Please be careful here, especially if you have already existing DNS settings; you might have to add it manually.
 
 ## Create a Utility server to help Administer Azure Virtual Desktop

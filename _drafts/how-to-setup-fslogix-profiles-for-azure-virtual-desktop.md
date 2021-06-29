@@ -18,29 +18,29 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 
 ### Setup Storage Account
 
- 1. Log in to the Azure Portal
- 2. Click on Create a resource
- 3. Type in Storage Account and press Enter to search
+ 1. Log in to the **Azure Portal**
+ 2. Click on **Create a resource**
+ 3. Type in **Storage Account** and press Enter to search
  4. Select Storage account
  5. ![FSLogix - Azure Storage Account](/uploads/storageaccount.png "FSLogix - Azure Storage Account")
- 6. Click Create
- 7. If you already have a Resource Group, then select it, if not you can create a new resource group. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
- 8. Type in a Storage Account Name _(the name needs to be globally unique across all of Azure, the field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.)_, in my case I have gone with: fslogixprofileslgnz.
- 9. Select your Region _(the same region you have your Azure Virtual Desktop session hosts and Virtual Network)_
-10. Select Standard performance _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile")_)_
-11. For Redundancy, I am going to select LRS storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
+ 6. Click **Create**
+ 7. If you already have a Resource Group, then **select** it, if not you can create a new **resource group**. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
+ 8. **Type in** a Storage **Account Name** _(the name needs to be globally unique across all of Azure, the field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.)_, in my case I have gone with: fslogixprofileslgnz.
+ 9. **Select** your **Region** _(the same region you have your Azure Virtual Desktop session hosts and Virtual Network)_
+10. **Select** Standard **performance** _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile")_)_
+11. For Redundancy, I am going to **select LRS** storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
 12. _Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!_
 13. ![FSLogix - Azure Storage Account](/uploads/storageaccount_projectdetails.png "FSLogix - Azure Storage Account")
-14. Click Next: Advanced
-15. Leave everything as default and select Next: Networking
+14. Click **Next: Advanced**
+15. Leave everything as default and **select Next: Networking**
 16. Now we need to configure a Private Endpoint for the Azure storage account to add onto the Virtual Network directly.
-17. Select Private endpoint and click + Add Private endpoint
-18. Verify that your Location is correct and type in a Name for your Private Endpoint
+17. Select **Private endpoint** and click **+ Add Private endpoint**
+18. **Verify** that your **Location** is **correct** and **type** in a **Name for** your **Private Endpoint**
 
     service, in my case: fslogixprofileslgnzPE
-19. Select the drop down for Storage sub-resource and select file
-20. Select your Virtual Network and subnet _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
-21. Click Ok
+19. **Select** the drop down for **Storage sub-resource** and select **file**
+20. **Select** your **Virtual Network** and **subnet** _(I will be selecting my main resource subnet of aadds-subnet, where the Azure Virtual Desktop hosts are)_
+21. Click **Ok**
 22. ![FSLogix - Azure Storage Account](/uploads/storageaccount_privateendpoint.png "FSLogix - Azure Storage Account")
 23. Select Next: Data Protection
 24. Untick the Enable soft delete for Blogs and Container's _(we will only be using Azure Files in this storage account)_

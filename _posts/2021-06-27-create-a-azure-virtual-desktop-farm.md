@@ -220,28 +220,23 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 28. **Create** a **name** for your **Workspace**; my example is: avd_workspace
 29. Click **Ok**
     ![Azure Virtual Desktop - Workspace](/uploads/avdworkspacesetup.png "Azure Virtual Desktop - Workspace")
-30. Click on Review + Create
+30. Click on **Review + Create**
 31. Confirm everything looks ok and click Create
-    Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources:
+    **Note: This may take 10-20 minutes to create your Azure Virtual Desktop resources:**
 
 * Host Pool
 * Workspace
 * Session hosts
 
-1. Once the resources have been created, you should now have an Application group for the Session Desktop.
-2. Open the Application Group and click Applications; you should confirm the SessionDesktop application is listed.
-   ![Azure Virtual Desktop - Application Group](/uploads/avdapplications.png "Azure Virtual Desktop - Application Group")
-3. Click on the SessionDesktop to change the Display name (this is the resource people will see when they go to your Azure Virtual Desktop), and I changed mine to AVD Desktop.
-   ![Azure Virtual Desktop - Application Group](/uploads/avddesktop.png "Azure Virtual Desktop - Application Group")
-4. Click on Assignments
+1. Once the resources have been created, you should now have an **Application group** for the Session Desktop.
+2. **Open** the Application **Group** and click **Applications**; you should confirm the SessionDesktop application is listed. ![Azure Virtual Desktop - Application Group](/uploads/avdapplications.png "Azure Virtual Desktop - Application Group")
+3. Click on the **SessionDesktop** to **change** the **Display name** _(this is the resource people will see when they go to your Azure Virtual Desktop_), and I changed mine to AVD Desktop. ![Azure Virtual Desktop - Application Group](/uploads/avddesktop.png "Azure Virtual Desktop - Application Group")
+4. Click on **Assignments**
 5. These are the Users & Groups that are allowed to access your Azure Virtual Desktop.
-6. My recommendation would be to add a Group that contains your users, but in my demo, I will add in my: 'avdjoin' account.
-   ![Azure Virtual Desktop - Application Group](/uploads/avddesktopassignment.png "Azure Virtual Desktop - Application Group")
-7. Using an assigned account, you can now navigate to: [https://rdweb.wvd.microsoft.com/arm/webclient/index.html](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
-   ![Azure Virtual Desktop - RD Web](/uploads/avdremotewebapp.png "Azure Virtual Desktop - RD Web")
-8. You can now launch your Desktop.
-9. Congratulations, you have now created and connected to Azure Virtual Desktop!
-   ![Azure Virtual Desktop](/uploads/avddesktopfull.png "Azure Virtual Desktop")
+6. My recommendation would be to **add** a **Group** that contains your users, but in my demo, I will add in my: 'avdjoin' account. ![Azure Virtual Desktop - Application Group](/uploads/avddesktopassignment.png "Azure Virtual Desktop - Application Group")
+7. Using an assigned account, you can now **navigate** to**:** [https://rdweb.wvd.microsoft.com/arm/webclient/index.html](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html") ![Azure Virtual Desktop - RD Web](/uploads/avdremotewebapp.png "Azure Virtual Desktop - RD Web")
+8. You can now **launch** your **Desktop**.
+9. **Congratulations**, you have now created and connected to Azure Virtual Desktop! ![Azure Virtual Desktop](/uploads/avddesktopfull.png "Azure Virtual Desktop")
 
 ## Additional Configuration
 
@@ -250,4 +245,4 @@ Now we are ready to deploy Azure Virtual Desktop finally!
 * If you click on Session hosts, you can add additional hosts to your pool or Drain them to prevent logins.
 * If you click Application Groups, you can add RemoteApp groups to allow users to connect directly to an Application versus a Full Desktop.
 * Configure [FSLogix](https://docs.microsoft.com/en-us/azure/virtual-desktop/create-profile-container-adds "Create a profile container with Azure Files and Azure AD DS"){:target="_blank"} profiles for user persistance.
-* Set Disconnected Session Time limits in Group Policy, to automatically logoff Disconnected sessions after 'x' period of time.
+* Set Disconnected Session Time limits in Group Policy, to automatically log off Disconnected sessions after 'x' period of time.

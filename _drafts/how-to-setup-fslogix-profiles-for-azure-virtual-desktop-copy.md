@@ -37,7 +37,7 @@ When configuring these, take into consideration a users normal work time, the ti
 5. Configure the below settings, in accordance with your organisation policies:
 
 * **Set time limit for active but idle Remote Desktop Services sessions**
-* _This policy allows you to specify the maximum amount of time that an active Remote Desktop Services sessions can be idle (without user input) before it is automatically disconnected._
+* _This policy allows you to specify the maximum amount of time that an active Remote Desktop Services session can be idle (without user input) before it is automatically disconnected._
 * **Set time limit for active Remote Desktop Services sessions**
 * _This policy allows you to specify the maximum amount of time that a Remote Desktop Services session can be active before it is automatically disconnected._
 * **Set time limit for disconnected sessions**
@@ -132,4 +132,4 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 7. Now we can provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it back to Files on Demand, for example, **30** days since it was last accessed.
 8. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
-![](/uploads/storagesense_gpo.png)
+![Storage Sense - Group Policy](/uploads/storagesense_gpo.png "Storage Sense - Group Policy")

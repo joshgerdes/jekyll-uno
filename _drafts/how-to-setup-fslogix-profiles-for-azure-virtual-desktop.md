@@ -70,4 +70,19 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 15. Click Create
 16. ![](/uploads/storageaccount_newfileshare.png)
 
-Configure File Share
+### Configure File Share
+
+Now that the Azure Active Directory rights has been assigned and the File Share has been created, we now need to setup the NTFS permissions on the FSLogix share.
+
+ 1. Navigate to File Shares _(under Data Storage)_
+ 2. Click on your fileshare
+ 3. Click on Properties
+ 4. Copy the URL
+ 5. ![](/uploads/storageaccount_fslogixprofiles.png)
+ 6. Remove http and replace the forward slashes with backslashes so it looks like this: [\\\\fslogixprofileslgnz.file.core.windows.net\\fslogixprofiles](file://fslogixprofileslgnz.file.core.windows.net/fslogixprofiles)
+ 7. Using a user that is a member of the 'AVD Admins' group and can log into the Azure Virtual Desktop farm _(it’s a good chance to test connectivity to the Storage account through the private endpoint from your Azure Virtual Desktop session host)_
+ 8. Open Computer
+ 9. Select the Computer Tab and select Map network drive
+10. ![](/uploads/computermappeddrive.png)
+11. Select a drive letter that isn't in use and paste in the fileshare UNC path created earlier.
+12. ![](/uploads/computermappingdrive.png)

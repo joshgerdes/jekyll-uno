@@ -11,30 +11,30 @@ header:
 ---
 If you are running Azure Virtual Desktop, you want to get the most performance and stability out of them as possible, to reduce cost and increase user experience.
 
-These are a few recommended policies and optimisations to apply to your Azure Virtual Desktop setup. These are in no particular order, they are just recommendations.
+These are a few recommended policies and optimisations to apply to your Azure Virtual Desktop setup. These are in no particular order; they are just recommendations.
 
 ### Configure Timezone Redirection
 
-Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep the consistent time between the device you are connecting from and the session host and by default the timezone in Azure is UTC.
+Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep the consistent time between the device you are connecting from and the session host, and by default, the timezone in Azure is UTC.
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Device** **and Resource Redirection**.
 5. **Enable** the setting **Allow time zone redirection**.
-6. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+6. **Close** the **Group Policy Management console**; as this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 ### Configure Session Time Limit Policies
 
 You can use this policy to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session. This means that sessions users sessions may remain open for an extended period of time, taking up usable resources.
 
-When configuring these, take into consideration a users normal work time, the time they have for lunch etc, the sweet spot to disconnect their session is not during their lunch break, but after they have finished for the day, usually 8-12 hours is recommended, but is dependant on how Azure Virtual Desktop is used.
+When configuring these, take into consideration a users normal work time, the time they have for lunch etc., the sweet spot to disconnect their session is not during their lunch break, but after they have finished for the day, usually 8-12 hours is recommended, but is dependant on how Azure Virtual Desktop is used.
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Session Time Limits**.
-5. Configure the below settings, in accordance with your organisation policies:
+5. Configure the below settings in accordance with your organisation policies:
 
 * **Set time limit for active but idle Remote Desktop Services sessions**
 * _This policy allows you to specify the maximum amount of time that an active Remote Desktop Services session can be idle (without user input) before it is automatically disconnected._
@@ -46,13 +46,13 @@ When configuring these, take into consideration a users normal work time, the ti
 * _This policy allows you to specify whether to terminate a timed-out Terminal Services session instead of disconnecting it._
 * **Set a time limit for log off of RemoteApp sessions**
 * _This policy allows you to specify how long a user's RemoteApp session will remain in a disconnected state after closing all RemoteApp programs before the session is logged off from the RD Session Host server._
-* **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+* **Close** the **Group Policy Management console**; as this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 _Reference: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.com/en/123638 "https://kb.parallels.com/en/123638")
 
 ### DeleteUserAppContainersOnLogoff
 
-Back in March 2019, there were issues with slow server performance, caused by numerous Windows Firewall Rules getting created on user login. A patch was released, however, to enable this '_fix_' a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
+Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -65,7 +65,7 @@ Back in March 2019, there were issues with slow server performance, caused by nu
  9. For the Value name type: **DeleteUserAppContainersOnLogoff**
 10. Change the Value type to **REG_DWORD**
 11. Put: '**1**' to enable the option and click **Apply**
-12. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+12. **Close** the **Group Policy Management console**. As this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 ![](/uploads/deleteuserapp.png)
 
@@ -97,11 +97,11 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 
 Make sure to configure antivirus exclusions for FSLogix Profiles.
 
-For a list of exclusions, along with a PowerShell script to implement them please refer to the following Microsoft documentation: [FSLogix for the enterprise](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix "FSLogix for the enterprise")
+For a list of exclusions, along with a PowerShell script to implement them, please refer to the following Microsoft documentation: [FSLogix for the enterprise](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix "FSLogix for the enterprise")
 
 ### Implement FSLogix Profile Exclusions
 
-By default, FSLogix will capture a lot of user profile data, including Teams Cache, Chrome cache and save it to the profile VHD/VHDX, this causes profile size bloat and can decrease the performance of your applications.
+By default, FSLogix will capture a lot of user profile data, including Teams Cache, Chrome cache and save it to the profile VHD/VHDX; this causes profile size bloat and can decrease the performance of your applications.
 
 It is recommended to implement exclusions to reduce storing user profile data that you don't need.
 
@@ -110,18 +110,18 @@ It is recommended to implement exclusions to reduce storing user profile data th
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **FSLogix** > **Profile Containers** > **Advanced**
 5. **Enable** the setting **Provide RedirXML file to customize directions**.
-6. Point the path to a **UNC path**, that is **accessible** to all session hosts that **contains** are '**redirections.xml**' file. This just needs the folder, it will automatically pick up the redirections.xml file.
-7. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+6. Point the path to a **UNC path** that is **accessible** to all session hosts that **contains** are '**redirections.xml**' file. This just needs the folder; it will automatically pick up the redirections.xml file.
+7. **Close** the **Group Policy Management console**. As this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 An example redirections.xml can be found here: [https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2](https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2 "https://gist.github.com/lukemurraynz/376bd6eeda9d33172a8442e2d76054a2")
 
-_Note: Make sure you test and adjust this for your own environment, the Desktop/Documents have been excluded as the assumption is these are redirected or covered by OneDrive._
+_Note: Make sure you test and adjust this for your own environment. The Desktop/Documents have been excluded as the assumption is these are redirected or covered by OneDrive._
 
 ### Implement Storage Sense
 
-On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device, and when it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also be used to help dehydrate files that are available locally, and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.
+On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device, and when it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also be used to help dehydrate files that are available locally and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.
 
-_Note: If you find that Storage Sense is missing, it is because it is mainly a client setting and may be missing from the Windows Server, you can copy the PolicyDefinitions folder from an Azure Virtual Desktop host to your domains Central Store, ie in my case \\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions. Or just look for StorageSense.admx and StorageSense.adml and copy it (the ADML goes in the language directory ie en-US)._
+_Note: If you find that Storage Sense is missing, it is because it is mainly a client setting and may be missing from the Windows Server; you can copy the PolicyDefinitions folder from an Azure Virtual Desktop host to your domains Central Store, i.e. in my case \\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions. Or just look for StorageSense.admx and StorageSense.adml and copy it (the ADML goes in the language directory, i.e. en-US)._
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
@@ -130,13 +130,13 @@ _Note: If you find that Storage Sense is missing, it is because it is mainly a c
 5. **Enable** the setting **Allow Storage Sense**.
 6. **Enable** the setting **Configure Storage Sense Cloud Content dehydration threshold**
 7. Now we can provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it back to Files on Demand, for example, **30** days since it was last accessed.
-8. **Close** the **Group Policy Management console**, as this is a Computer-based policy it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
+8. **Close** the **Group Policy Management console**. As this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
 ![Storage Sense - Group Policy](/uploads/storagesense_gpo.png "Storage Sense - Group Policy")
 
 ### Configure Microsoft Teams Optimisations
 
-You can run Microsoft Teams in Azure Virtual Desktop, to do so you need to install as a Machine installer and set the WVD environment variable.
+You can run Microsoft Teams in Azure Virtual Desktop. To do so, you need to install as a Machine installer and set the WVD environment variable.
 
 **Install as Machine:**
 
@@ -163,13 +163,13 @@ You can run Microsoft Teams in Azure Virtual Desktop, to do so you need to insta
 
 ### Hide the Shutdown button
 
-This is not so much of an optimization, but it is one of my favourite group policy configurations, something I implement in server base policies, it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown and restart the server from the Start Menu.
+This is not so much of an optimization, but it is one of my favourite group policy configurations, something I implement in server base policies; it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown and restart the server from the Start Menu.
 
-_Note: You can still restart and shut down the server from the Command Prompt, with the 'shutdown' command._
+_Note: You can still restart and shut down the server from the Command Prompt with the 'shutdown' command._
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to User Configuration** > **Policies** > **Administrative Templates** > **Start Menu and Taskbar**
 5. **Enable** the setting **Remove and prevent access to Shut Down, Restart, Sleep, and Hibernate commands.**
-6. **Close** the **Group Policy Management console**, as this is a User-based policy it should take effect on the next user login.
+6. **Close** the **Group Policy Management console**; as this is a User-based policy, it should take effect on the next user login.

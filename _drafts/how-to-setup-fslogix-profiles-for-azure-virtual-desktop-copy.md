@@ -15,7 +15,7 @@ These are a few recommended policies and optimisations to apply to your Azure Vi
 
 ### Configure Timezone Redirection
 
-Timezone redirection will allow you to pass through the time from the local device through to the Azure Virtual Desktop host, this is useful to keep the consistent time between the device you are connecting from and the session host, and by default, the timezone in Azure is UTC.
+Timezone redirection will allow you to pass through the time from the local device to the Azure Virtual Desktop host. This is useful to keep the consistent time between the device you are connecting from and the session host, and by default, the timezone in Azure is UTC.
 
 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
 2. **Expand** your **domain** and **Group Policy Objects**.
@@ -26,7 +26,7 @@ Timezone redirection will allow you to pass through the time from the local devi
 
 ### Configure Session Time Limit Policies
 
-You can use this policy to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session. This means that sessions users sessions may remain open for an extended period of time, taking up usable resources.
+You can use this policy to specify the maximum amount of time that a disconnected session remains active on the server. By default, Remote Desktop Services allows users to disconnect from a Remote Desktop Services session without logging off and ending the session. Unfortunately, this means that sessions users sessions may remain open for an extended period of time, taking up usable resources.
 
 When configuring these, take into consideration a users normal work time, the time they have for lunch etc., the sweet spot to disconnect their session is not during their lunch break, but after they have finished for the day, usually 8-12 hours is recommended, but is dependant on how Azure Virtual Desktop is used.
 
@@ -34,7 +34,7 @@ When configuring these, take into consideration a users normal work time, the ti
 2. **Expand** your **domain** and **Group Policy Objects**.
 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
 4. In the Group Policy Management Editor, **navigate to Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services** > **Remote Desktop Session Host** > **Session Time Limits**.
-5. Configure the below settings in accordance with your organisation policies:
+5. Configure the below settings per your organisation policies:
 
 * **Set time limit for active but idle Remote Desktop Services sessions**
 * _This policy allows you to specify the maximum amount of time that an active Remote Desktop Services session can be idle (without user input) before it is automatically disconnected._
@@ -119,7 +119,7 @@ _Note: Make sure you test and adjust this for your own environment. The Desktop/
 
 ### Implement Storage Sense
 
-On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device, and when it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also be used to help dehydrate files that are available locally and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.
+On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device. When it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also help dehydrate files that are available locally and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.
 
 _Note: If you find that Storage Sense is missing, it is because it is mainly a client setting and may be missing from the Windows Server; you can copy the PolicyDefinitions folder from an Azure Virtual Desktop host to your domains Central Store, i.e. in my case \\\\luke.geek.nz\\SYSVOL\\luke.geek.nz\\Policies\\PolicyDefinitions. Or just look for StorageSense.admx and StorageSense.adml and copy it (the ADML goes in the language directory, i.e. en-US)._
 

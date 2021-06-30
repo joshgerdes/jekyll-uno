@@ -51,7 +51,6 @@ _Note: Updated: 17/06/21_
 * [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=BA-MVP-5003797){:target="_blank"}
 * [Learn Azure in a Month of Lunches - Audiobook](https://azure.microsoft.com/en-gb/resources/learn-azure-in-a-month-of-lunches/){:target="_blank"}
 
-
 ## Other: I have a dragon’s hoard of gold to spend
 
 * [Azure Solutions Architect Training](https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect?aid=7010a000001xDURAA2){:target="_blank"}
@@ -85,3 +84,4 @@ _Note: Updated: 17/06/21_
 * [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}
 * [Microsoft Customer Co-creation](https://customercocreation.microsoft.com/){:target="_blank"}
 * [Security Community Webinars](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/security-community-webinars/ba-p/927888){:target="_blank"}
+* [ Microsoft Trainer Community Channel](https://www.youtube.com/channel/UCcrbVpBfMQOYQv8__mPHRJg){:target="_blank"}

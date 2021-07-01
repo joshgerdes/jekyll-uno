@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/avddesktopfull.png"
 
 ---
 If you are running Azure Virtual Desktop, you want to get the most performance and stability out of them as possible, to reduce cost and increase user experience.

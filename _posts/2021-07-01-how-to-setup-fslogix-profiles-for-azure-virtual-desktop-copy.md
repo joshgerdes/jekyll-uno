@@ -1,5 +1,5 @@
 ---
-date: 2021-06-29T00:00:00.000+12:00
+date: 2021-07-01 00:00:00 +1200
 title: Azure Virtual Desktop Optimisations
 author: Luke
 categories:

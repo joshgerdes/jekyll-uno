@@ -190,3 +190,19 @@ Using the namespace, providers and actions you should now be able to see the pow
 ### Create Custom Role
 
 Now that we understand, how to navigate the Namespaces and Built-In Roles available in Microsoft Azure using PowerShell, now we will create one.
+
+I have created a base template, to help you start.
+
+This base template has the following fields, that will be used by the majority of most custom roles:
+
+* Name
+* IsCustom
+* Description
+* Actions
+* AssignableScopes
+
+Edit these fields (apart from IsCustom) as you need.
+
+[https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621](https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621 "https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621")
+
+This Custom Role - Template, simply allows you to Read the name of all Resource Groups in a subscription and open a Microsoft Support case.

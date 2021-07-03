@@ -243,3 +243,9 @@ Now that you have created your, Custom Role - it is time to assign it! So it is 
 7. ![](/uploads/ad_roleassignmentportal.png)
 8. Now you can **select** the **Azure AD Group/User or Service Principal** you want to **assign** the role to and click **Save**
 9. Congratulations **you have now assigned your Custom role!**
+
+### Assign a Custom Role using PowerShell
+
+You can assign Custom Role's using PowerShell, to do this you need a few things such as the Object ID, Assignable Scope IDs etc, instead of rehashing it, this Microsoft article does a really good job of running through the process.
+
+* [Assign Azure roles using Azure PowerShell](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell "Assign Azure roles using Azure PowerShell")

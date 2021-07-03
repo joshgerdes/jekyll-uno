@@ -40,9 +40,13 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 
 Open Windows PowerShell
 
-Type in: 
+Type in:
 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 
-sdsd
+If you have issues, with installing the Azure PowerShell module - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module")
+
+Once you have the Azure PowerShell module installed, you can connect to your Azure subscription using the little snippet below:
+
+sd

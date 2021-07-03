@@ -75,9 +75,9 @@ Now that you have created your custom role, for Azure Virtual Desktop, it is now
  5. Click on **Add role assignment**
  6. **Select** the **Role** you created earlier _(ie AVD-StartVMOnConnect)_
  7. **Specify** the '**Windows Virtual Desktop**' service principal and select **Save**
- 8. ![](/uploads/azureportal_addroleassignment.png)
+ 8. ![AVD-StartVMOnConnect Custom Role](/uploads/azureportal_addroleassignment.png "AVD-StartVMOnConnect Custom Role")
  9. If you want you can click on Role Assignments, to verify your role has been assigned:
-10. ![](/uploads/azureportal_assignedrolecheck.png)
+10. ![AVD-StartVMOnConnect Custom Role](/uploads/azureportal_assignedrolecheck.png "AVD-StartVMOnConnect Custom Role")
 
 ### Configure Start VM on Connect
 
@@ -86,7 +86,7 @@ Now that you have created your custom role, for Azure Virtual Desktop, it is now
  3. Click on **Properties**
  4. Select '**Yes**' to **Start VM on Connect**
  5. Click **Save**
- 6. ![](/uploads/azureportal_startvmonconnect.png)
+ 6. ![Azure Virtual Desktop - Start VM on Connect](/uploads/azureportal_startvmonconnect.png "Azure Virtual Desktop - Start VM on Connect")
  7. **Congratulations you have now set up Azure Virtual Desktop - Start VM on Connect**, next time someone connects to a turned-off Azure Virtual Desktop session host, the Virtual Machines will now automatically start the users will get a prompt like below:
  8. ![](/uploads/avd_startvmconnectprogress1.png)
  9. ![](/uploads/avd_startvmconnectprogress2.png)

@@ -134,7 +134,7 @@ These are highly important fields as they should tell the users, what resource o
 
 The IsCustom field is used to determine if the Azure Role is a custom made policy or not, any user-created Role will be set to True, while any In-Built role will be False.
 
-The Actions field, is used to determine what management operations can be performed, although the Azure Digital Twins role, doesn't have any (as it is mainly Data Action based), if we look at another Role such as the: Azure Kubernetes Service RBAC Admin role:
+The Actions field, is used to determine what management operations can be performed, although the Azure Digital Twins role, doesn't have any (as it is mainly Data Action based) if we look at another Role such as the: Azure Kubernetes Service RBAC Admin role:
 
 * ""Microsoft.Authorization/*/read",
 * "Microsoft.Insights/alertRules/*",
@@ -178,4 +178,4 @@ If we wanted to drill into the Virtual Machines providers a bit more we can filt
 
     Get-AzProviderOperation -Name Microsoft.Compute/virtualMachines/*
 
-sd
+Here we can see the Actions that can be used!

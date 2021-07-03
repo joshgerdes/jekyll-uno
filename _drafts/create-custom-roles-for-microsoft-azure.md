@@ -124,4 +124,10 @@ These fields, make up your Role.
 
 ![](/uploads/az_rolereview_azdigitaltwinsdataowner.png)
 
-The Name field is pretty, self-explanatory - this is the name of the Azure Role and what you see in the Azure Portal 
+The Name field is pretty, self-explanatory - this is the name of the Azure Role and what you see in the Azure Portal, under Access control (IAM).
+
+![](/uploads/az_rolereview_azdigitaltwinsdataowneriam.png)
+
+The same is true for the: Description field.
+
+These are highly important fields as they should tell the users, what resource or resources the role is for and what type of access is granted.

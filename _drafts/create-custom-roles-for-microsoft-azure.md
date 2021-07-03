@@ -206,3 +206,13 @@ Edit these fields _(apart from IsCustom, which you should leave as True)_ as you
 [https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621](https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621 "https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621")
 
 This Custom Role - Template, simply allows you to read the name of all Resource Groups in a subscription and open a Microsoft Support case.
+
+In my example, I am going to add a new role called: 
+
+* LukeGeek-WebApp Deployment-RW
+
+This role will allow users to Deploy and modify Azure WebApps, among other things!
+
+[https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0](https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0 "https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0")
+
+To add the Custom Role to Azure

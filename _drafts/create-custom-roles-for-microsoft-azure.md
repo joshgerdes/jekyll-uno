@@ -49,4 +49,11 @@ If you have issues, with installing the Azure PowerShell module - see the Micros
 
 Once you have the Azure PowerShell module installed, you can connect to your Azure subscription using the little snippet below:
 
-sd
+      #Prompts for Azure credentials
+      Connect-AzAccount
+      
+      #Prompts Window allowing you to select which  Azure Subscription to connect to
+      $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru
+      Set-AzContext -SubscriptionName $subscriptionName
+
+sdsd

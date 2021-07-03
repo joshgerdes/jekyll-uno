@@ -108,4 +108,20 @@ _Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to r
 
 If you open one of the roles, for example, I will open the Azure Digital Twins Data Owner role, however, it doesn't matter.
 
+You should see the following fields:
+
+* Name
+* Id
+* IsCustom
+* Description
+* Actions
+* NotActions
+* DataActions
+* NotDataActions
+* AssignableScopes
+
+These fields, make up your Role.
+
 ![](/uploads/az_rolereview_azdigitaltwinsdataowner.png)
+
+The Name field is pretty, self-explanatory - this is the name of the Azure Role and what you see in the Azure Portal 

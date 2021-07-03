@@ -187,7 +187,7 @@ Here we can finally see the available actions, for example, the following Action
 
 Using the namespace, providers and actions you should now be able to see the power behind Role-based access control and how granular you can get.
 
-### Create Custom Role
+### Add a Custom Role using PowerShell
 
 Now that we understand, how to navigate the Namespaces and Built-In Roles available in Microsoft Azure using PowerShell, now we will create one.
 
@@ -220,3 +220,7 @@ To add the Custom Role to Azure, I will run the following PowerShell command:
     New-AzRoleDefinition -InputFile "C:\temp\AzureRoles\CustomRoles\LukeGeek-WebApp Deployment-RW.json" -Verbose
 
 Your new Custom Role has now been uploaded to Azure and can be selected for an assignment.
+
+### Add a Custom Role using the Azure Portal
+
+Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and 

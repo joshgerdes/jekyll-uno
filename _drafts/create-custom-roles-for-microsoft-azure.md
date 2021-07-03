@@ -227,6 +227,6 @@ Now that we have been through and investigated the Azure roles and their provide
 
 > _*Gasp! Why didn't you tell me earlier about this, Luke?_ 
 >
-> _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to learn how the Custom Roles were made and to be honest, really just because!_
+> _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to explain how the Custom Roles were made, vs staring at the Azure Portal and to be honest, really just because! Like most things in IT there are multiple ways something can be done!_
 
 sd

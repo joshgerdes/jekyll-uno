@@ -166,4 +166,16 @@ We can drill into a provider a bit further to check out current Operations:
 
     Get-AzProviderOperation -Name Microsoft.Compute/*
 
+This displays a list of all providers within the Microsoft.Compute namespace, such as (but definitely not limited too):
+
+1. VirtualMachines
+2. Virtual Machine Scale Sets
+3. Locations
+4. Disks
+5. Cloud Services
+
+If we wanted to drill into the Virtual Machines providers a bit more we can filter it like:
+
+    Get-AzProviderOperation -Name Microsoft.Compute/virtualMachines/*
+
 sd

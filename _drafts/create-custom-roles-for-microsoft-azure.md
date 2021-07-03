@@ -38,16 +38,13 @@ I am going to run through a few things that will help arm you to understand and 
 
 As a pre-requisite for the following, you need to install the Azure (Az) PowerShell Module, you can skip this section if you already have the PowerShell modules installed.
 
-Open Windows PowerShell
+1. Open Windows PowerShell
+2. Type in:
 
-Type in:
-
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-
-If you have issues, with installing the Azure PowerShell module - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module")
-
-Once you have the Azure PowerShell module installed, you can connect to your Azure subscription using the little snippet below:
+       Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+       Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+3. If you have issues, with installing the Azure PowerShell module - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module")
+4. Once you have the Azure PowerShell module installed, you can connect to your Azure subscription using the little snippet below:
 
       #Prompts for Azure credentials
       Connect-AzAccount
@@ -60,45 +57,36 @@ Once you have the Azure PowerShell module installed, you can connect to your Azu
 
 One of the best ways I found to learn about how an Azure Role is put together, is to take a look at the currently existing roles.
 
-The following PowerShell command will list all current Azure roles:
+1. The following PowerShell command will list all current Azure roles:
 
-    Get-AzRoleDefinition
+       Get-AzRoleDefinition
+2. For a more human-readable view, that lists the Built-in Azure roles and their descriptions you can filter it by:
 
-For a more human-readable view, that lists the Built-in Azure roles and their descriptions you can filter it by:
+       Get-AzRoleDefinition | Select-Object Name, Description
+3. As you can see in the screenshot below, there are a lot of various roles, from EventGrid Contributor to AgFood Platform Service and more! At the time of this article, there were 276 built-in roles.
+4. ![](/uploads/az_roledefinitions.png)
+5. Now that we have successfully been able to pull a list of the existing roles, we will now export them as JSON files, so we can take a proper look at them.
+6. The PowerShell script below will create a few folders on your computer, as a base to work from _(feel free to change the folders to suit your folder structure or access rights)_.
+   * c:\\Temp
+   * c:\\Temp\\AzureRoles
+   * C:\\Temp\\AzureRoles\\BuiltinExports\\
+   * C:\\Temp\\AzureRoles\\CustomRoles
+7. Once the folders have been created, it will Get the Azure Role definitions and export them into JSON into the BuiltinExports folder, so they can be reviewed.
 
-    Get-AzRoleDefinition | Select-Object Name, Description
-
-As you can see in the screenshot below, there are a lot of various roles, from EventGrid Contributor to AgFood Platform Service and more! At the time of this article, there were 276 built-in roles.
-
-![](/uploads/az_roledefinitions.png)
-
-Now that we have successfully been able to pull a list of the existing roles, we will now export them as JSON files, so we can take a proper look at them.
-
-The PowerShell script below will create a few folders on your computer, as a base to work from _(feel free to change the folders to suit your folder structure or access rights)_.
-
-* c:\\Temp
-* c:\\Temp\\AzureRoles
-* C:\\Temp\\AzureRoles\\BuiltinExports\\
-* C:\\Temp\\AzureRoles\\CustomRoles
-
-Once the folders have been created, it will Get the Azure Role definitions and export them into JSON into the BuiltinExports folder, so they can be reviewed.
-
-    New-Item -ItemType Directory -Path c:\Temp -Force
-    New-Item -ItemType Directory -Path c:\Temp\AzureRoles -Force
-    New-Item -ItemType Directory -Path c:\Temp\AzureRoles\BuiltInExports -Force
-    New-Item -ItemType Directory -Path c:\Temp\AzureRoles\CustomRoles -Force
-    
-    $a = Get-AzRoleDefinition
-    
-    Foreach ($role in $a)
-    {
-        $name = $role.Name
-        Get-AzRoleDefinition -Name ($role).Name | ConvertTo-Json | Out-File c:\Temp\AzureRoles\BuiltInExports\$name.json
-    }
-
-Once completed, you should now see the JSON files below:
-
-![](/uploads/az_exportroles.png)
+       New-Item -ItemType Directory -Path c:\Temp -Force
+       New-Item -ItemType Directory -Path c:\Temp\AzureRoles -Force
+       New-Item -ItemType Directory -Path c:\Temp\AzureRoles\BuiltInExports -Force
+       New-Item -ItemType Directory -Path c:\Temp\AzureRoles\CustomRoles -Force
+       
+       $a = Get-AzRoleDefinition
+       
+       Foreach ($role in $a)
+       {
+           $name = $role.Name
+           Get-AzRoleDefinition -Name ($role).Name | ConvertTo-Json | Out-File c:\Temp\AzureRoles\BuiltInExports\$name.json
+       }
+8. Once completed, you should now see the JSON files below:
+9. ![](/uploads/az_exportroles.png)
 
 _Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files, Visual Studio Code will help with the syntax as well._
 
@@ -229,48 +217,26 @@ Now that we have been through and investigated the Azure roles and their provide
 >
 > _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to explain how the Custom Roles were made, vs staring at the Azure Portal and to be honest, really just because! Like most things in IT there are multiple ways something can be done!_
 
-Log in to the Azure Portal
-
-Navigate to your Subscription
-
-Click on Access Control (IAM) on the left-hand side blade
-
-Click on Add
-
-Click on Add Custom Role
-
-Type in the Role Name, for example, WebAdmin-RO
-
-Type in a clear description, so that you can remember what this role is used for in a years time!
-
-For Baseline permissions, select: Start from Scratch
-
-Click Next
-
-Click Add Permissions
-
-If you want, you can select: Download all permissions, to review the providers and actions (very similar to the Get-AzProviderOperation PowerShell command).![](/uploads/ad_role_addpermissions.png)
-
-As you should be able to see, all the Namespace providers are listed with the Actions/Permissions that you can do.
-
-In my example, I am going to search for: Microsoft Web Apps
-
-Select all 'Read' operations (remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)
-
-Click Add
-
-![](/uploads/ad_role_webpermissions.png)
-
-Review the permissions and click Next
-
-Select your assignable scope (where the Role will be allowed so that you can assign it)
-
-Click Next
-
-You can review and download the JSON for backup later (this is handy if you are going to Automate the creation of roles in the future and want a base to start from)
-
-Click Next
-
-Click Create to create your Custom Role!
-
-![](/uploads/ad_role_createcustomroleportal.png)
+ 1. Log in to the Azure Portal
+ 2. Navigate to your Subscription
+ 3. Click on Access Control (IAM) on the left-hand side blade
+ 4. Click on Add
+ 5. Click on Add Custom Role
+ 6. Type in the Role Name, for example, WebAdmin-RO
+ 7. Type in a clear description, so that you can remember what this role is used for in a years time!
+ 8. For Baseline permissions, select: Start from Scratch
+ 9. Click Next
+10. Click Add Permissions
+11. If you want, you can select: Download all permissions, to review the providers and actions (very similar to the Get-AzProviderOperation PowerShell command).![](/uploads/ad_role_addpermissions.png)
+12. As you should be able to see, all the Namespace providers are listed with the Actions/Permissions that you can do.
+13. In my example, I am going to search for: Microsoft Web Apps
+14. Select all 'Read' operations (remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)
+15. Click Add
+16. ![](/uploads/ad_role_webpermissions.png)
+17. Review the permissions and click Next
+18. Select your assignable scope (where the Role will be allowed so that you can assign it)
+19. Click Next
+20. You can review and download the JSON for backup later (this is handy if you are going to Automate the creation of roles in the future and want a base to start from)
+21. Click Next
+22. Click Create to create your Custom Role!
+23. ![](/uploads/ad_role_createcustomroleportal.png)

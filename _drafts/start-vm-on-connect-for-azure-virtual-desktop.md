@@ -78,3 +78,12 @@ Now that you have created your custom role, for Azure Virtual Desktop, it is now
  8. ![](/uploads/azureportal_addroleassignment.png)
  9. If you want you can click on Role Assignments, to verify your role has been assigned:
 10. ![](/uploads/azureportal_assignedrolecheck.png)
+
+### Configure Start VM on Connect
+
+1. Log in to the Azure Portal
+2. Navigate to your Host Pool
+3. Click on Properties
+4. Select 'Yes' to Start VM on Connect
+5. Click Save
+6. ![](/uploads/azureportal_startvmonconnect.png)

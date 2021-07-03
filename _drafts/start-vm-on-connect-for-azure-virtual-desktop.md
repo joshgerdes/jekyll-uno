@@ -9,16 +9,16 @@ header:
   teaser: "/uploads/avddesktopfull.png"
 
 ---
-One of the models of Cloud governance and cost in Microsoft Azure is _'Pay As You Go', ie. Pay for what you need, when you need it._
+One of the models of Cloud governance and cost in Microsoft Azure is _'Pay As You Go', ie. Pay for what you need when you need it._
 
 The Azure Resource Manager fabrics allow you to scale up down resources when you need it, whether it is built-in to the Azure portal or through various other automation mechanisms.
 
-For Azure Virtual Desktop, this means making sure that session hosts _(Virtual Machines)_ are available for users to connect to consume their services, when they need it the most, whether it’s the first thing in the morning or late hours of the evening.
+For Azure Virtual Desktop, this means making sure that session hosts _(Virtual Machines)_ are available for users to connect to consume their services when they need it the most, whether it’s the first thing in the morning or late hours of the evening.
 
-One of the technologies, that can help with this is: [Start VM on Connect ](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect "Start VM On Connect")_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
+One of the technologies that can help with this is: [Start VM on Connect ](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect "Start VM On Connect")_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
 
-* Imagine a 9 - 5 PM Monday to Friday business, during the business period, Azure Virtual Desktop is available, anything out of these hours the session hosts are shut down to reduce operational costs.
-* A business user, get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work, because they were turned off outside of business hours, they can't and have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
+* Imagine a 9 - 5 PM Monday to Friday business; during the business period, Azure Virtual Desktop is available, anything out of these hours, the session hosts are shut down to reduce operational costs.
+* A business user get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work, because they were turned off outside of business hours, they can't and have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
 * Using 'Start Virtual Machine on Connect', the moment that the user attempts to connect a Virtual Machine is started, and then it allows the users to log in and do their work, without a call to IT overall saving money, as the hosts are only started when they are first needed. The feature will also only turn on additional VMs (if available) when the first VM reaches the session limit.
 
 This is a host-level setting, so setting 'Start VM on Connect' will affect all session hosts in the host pool, you cannot target specific Virtual Machines in a session host at this stage.
@@ -88,6 +88,6 @@ Now that you have created your custom role, for Azure Virtual Desktop, it is now
  5. Click **Save**
  6. ![Azure Virtual Desktop - Start VM on Connect](/uploads/azureportal_startvmonconnect.png "Azure Virtual Desktop - Start VM on Connect")
  7. **Congratulations you have now set up Azure Virtual Desktop - Start VM on Connect**, next time someone connects to a turned-off Azure Virtual Desktop session host, the Virtual Machines will now automatically start the users will get a prompt like below:
- 8. ![](/uploads/avd_startvmconnectprogress1.png)
- 9. ![](/uploads/avd_startvmconnectprogress2.png)
+ 8. ![Azure Virtual Desktop - Start VM on Connect](/uploads/avd_startvmconnectprogress1.png "Azure Virtual Desktop - Start VM on Connect")
+ 9. ![Azure Virtual Desktop - Start VM on Connect](/uploads/avd_startvmconnectprogress2.png "Azure Virtual Desktop - Start VM on Connect")
 10. Before finally, prompting for their login credentials!

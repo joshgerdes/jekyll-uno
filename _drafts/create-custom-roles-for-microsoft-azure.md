@@ -26,4 +26,4 @@ Behind the scenes, each role is a separate grouping of permissions that determin
 
 Each role can be assigned to a specific Resource, Subscription, Management Group or Resource Group, through what is called an 'Assignment' _(you are assigning a role if you give someone Contributor rights to a Resource Group for example)_.
 
-* 
+These permissions can be manipulated and custom roles created.

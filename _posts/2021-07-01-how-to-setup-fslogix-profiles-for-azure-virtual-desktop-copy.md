@@ -95,7 +95,7 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 
 ### Virtual-Desktop-Optimization-Tool
 
-Automatically apply a range of optimisations for pooled and personal Azure Desktop hosts. These scripts 
+Automatically apply a range of optimisations for pooled and personal Azure Desktop hosts, this is a good resource to add to your initial image creation builds. 
 
 [Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "Virtual-Desktop-Optimization-Tool"){:target="_blank"}
 

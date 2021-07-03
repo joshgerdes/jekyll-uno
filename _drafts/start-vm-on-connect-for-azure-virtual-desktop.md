@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/avddesktopfull.png"
 
 ---
-One of the models of Cloud governance in Microsoft Azure is _'Pay As You Go', ie. Pay for what you need, when you need it._
+One of the models of Cloud governance and cost in Microsoft Azure is _'Pay As You Go', ie. Pay for what you need, when you need it._
 
 The Azure Resource Manager fabrics allow you to scale up down resources when you need it, whether it is built-in to the Azure portal or through various other automation mechanisms.
 

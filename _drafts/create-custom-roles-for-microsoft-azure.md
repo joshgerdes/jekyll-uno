@@ -56,4 +56,6 @@ Once you have the Azure PowerShell module installed, you can connect to your Azu
       $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru
       Set-AzContext -SubscriptionName $subscriptionName
 
-### sdsd
+### Export Built-in Azure Roles
+
+One of the best ways I found to learn about how an Azure Role is put together, is to take a look at the currently existing roles.

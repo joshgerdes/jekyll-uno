@@ -37,7 +37,7 @@ For the "Windows Virtual Desktop" service principal (this should already exist, 
  4. **Download** the AVD-StartVMOnConnect **JSON** file **below** and **save** it to a location you can edit.
  5.  {% gist 398a8b15257c65d94b8f1993dee22365 %}
  6. **Open** up the **JSON** file _(this is the Custom Role we are creating, as you can see, we are only allowing the ability to Read a Virtual Machine and Start it)_
- 7. **Replace** the: **<SubscriptionID>** with **your subscription ID**, created earlier and **save** the JSON file.
+ 7. **Replace** the: <SubscriptionID> with your **subscription ID**, created earlier and save the JSON file.
  8. ![AVD-StartVMOnConnect Custom Role](/uploads/customrolejson_subscriptionid.png "AVD-StartVMOnConnect Custom Role").
  9. Click on **Access Control (IAM)** in the left-hand side blade
 10. Click **Add**

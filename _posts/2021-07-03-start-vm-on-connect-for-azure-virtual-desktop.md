@@ -15,7 +15,7 @@ The Azure Resource Manager fabrics allow you to scale up down resources when you
 
 For Azure Virtual Desktop, this means ensuring that session hosts _(Virtual Machines)_ are available for users to connect to consume their services when they need it the most, whether it’s the first thing in the morning or late hours of the evening.
 
-One of the technologies that can help with this is: [Start VM on Connect ](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect "Start VM On Connect")_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
+One of the technologies that can help with this is: [Start VM on Connect ](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect "Start VM On Connect"){:target="_blank"}_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
 
 * Imagine a 9 - 5 PM Monday to Friday business; during the business period, Azure Virtual Desktop is available, anything out of these hours, the session hosts are shut down to reduce operational costs.
 * A business user get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work; because they were turned off outside of business hours, they can't and have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
@@ -23,7 +23,7 @@ One of the technologies that can help with this is: [Start VM on Connect ](https
 
 This is a host-level setting, so setting 'Start VM on Connect' will affect all session hosts in the host pool. Therefore, you cannot target specific Virtual Machines in a session host at this stage.
 
-> _As of 03/07/21 (NZ date format - DD/MM/YY): The Start VM on Connect feature is currently in public preview. This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see_ [_Supplemental Terms of Use for Microsoft Azure Previews_](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)_._
+> _As of 03/07/21 (NZ date format - DD/MM/YY): The Start VM on Connect feature is currently in public preview. This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see_ [_Supplemental Terms of Use for Microsoft Azure Previews_](https://azure.microsoft.com/support/legal/preview-supplemental-terms/){:target="_blank"}_._
 
 Follow the guide below to implement; the Microsoft documentation is pretty good but hoping this might fill in a few gaps for people.
 

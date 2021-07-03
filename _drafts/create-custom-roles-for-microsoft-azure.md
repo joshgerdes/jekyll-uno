@@ -68,6 +68,8 @@ For a more human-readable view, that lists the Built-in Azure roles and their de
 
 Get-AzRoleDefinition | Select-Object Name, Description
 
-As you can see in the screenshot below, there are 
+As you can see in the screenshot below, there are a lot of various roles, from EventGrid Contributor to AgFood Platform Service and more.
+
+![](/uploads/az_roledefinitions.png)
 
  

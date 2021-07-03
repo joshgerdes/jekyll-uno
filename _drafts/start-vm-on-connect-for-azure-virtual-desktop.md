@@ -43,7 +43,7 @@ In order for the "Windows Virtual Desktop" service principal (this should alread
 10. Click Add
 11. Click Add Custom Role
 12. ![](/uploads/azureportal_iam_customrole.png)
-13. Name your Custom Role Name something meaningful, for example: _AVD-StartVMOnConnect_
+13. Name your Custom Role Name something meaningful, for example _AVD-StartVMOnConnect_
 14. Add a meaningful Description, for example, mine is:
 
     _Created: 03/07/21_
@@ -63,3 +63,16 @@ In order for the "Windows Virtual Desktop" service principal (this should alread
 22. Here we can verify and save the changed JSON file _(if you want for future reference)_ and click Next to review your configuration
 23. Click Create to create your Custom Role!
 24. ![](/uploads/azureportal_iam_customrole_reviewcreate.png)
+
+### Assign your Custom Role
+
+Now that you have created your custom role, for Azure Virtual Desktop, it is now time to assign it, this is where you can assign and lock down the role, in my case I only have one Resource Group where my session hosts sit in, so going to assign it a Resource Group level, but feel free to assign this at a subscription level.
+
+1. Log in to the Azure Portal
+2. Navigate to the Resource Group _(or Subscription)_, that has your Azure Virtual Desktop session hosts
+3. Click on Access Control (IAM) in the left-hand side blade
+4. Click on + Add
+5. Click on Add role assignment
+6. Select the Role you created earlier _(ie AVD-StartVMOnConnect)_
+7. Specify the 'Windows Virtual Desktop' service principal and select Save
+8. ![](/uploads/azureportal_addroleassignment.png)

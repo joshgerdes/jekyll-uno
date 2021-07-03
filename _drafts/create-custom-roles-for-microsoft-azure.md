@@ -145,3 +145,11 @@ You can see that it has the rights to Read the permissions, create and delete an
 The NotActions field is used to exclude anything from the Allowed actions
 
 The DataActions field allows you to determine what data operations can be performed, usually, these are sub-resource tasks, where management or higher-level operations are performed in the Actions field, more specific resource actions are performed in the DataActions field.
+
+The NotDataActions field is used to exclude anything from the Allowed actions in the DataActions
+
+To help get a feel of the differences with the Actions, here is a list of Actions and DataActions for the Azure Kubernetes Service RBAC Admin role:
+
+![](/uploads/az_rolereview_azkuberservicerbacactions.png)
+
+And finally, the AssignableScopes is used to specify where the role will be available for assignment, whether it can be assigned at a subscription level or resource group or management group level.

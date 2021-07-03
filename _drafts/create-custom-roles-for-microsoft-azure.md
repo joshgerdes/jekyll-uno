@@ -37,3 +37,12 @@ I am going to run through a few things that will help arm you to understand and 
 ### Install the Azure PowerShell Modules
 
 As a pre-requisite for the following, you need to install the Azure (Az) PowerShell Module, you can skip this section if you already have the PowerShell modules installed.
+
+Open Windows PowerShell
+
+Type in: 
+
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+
+sdsd

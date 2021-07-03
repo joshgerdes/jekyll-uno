@@ -223,4 +223,4 @@ Your new Custom Role has now been uploaded to Azure and can be selected for an a
 
 ### Add a Custom Role using the Azure Portal
 
-Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and 
+Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and create manually, you can use the Azure Portal!

@@ -161,3 +161,9 @@ To get a list of all current Providers run the following command:
     Get-AzProviderOperation | Select-Object ProviderNamespace -Unique
 
 At the time of writing, there are 198 current Providers! That's 198 providers or overall buckets of resources that has permissions over.
+
+We can drill into a provider a bit further to check out current Operations:
+
+    Get-AzProviderOperation -Name Microsoft.Compute/*
+
+sd

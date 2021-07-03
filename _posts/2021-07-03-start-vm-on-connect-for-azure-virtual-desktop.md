@@ -19,7 +19,8 @@ One of the technologies that can help with this is: [Start VM on Connect ](https
 
 * Imagine a 9 - 5 PM Monday to Friday business; during the business period, Azure Virtual Desktop is available, anything out of these hours, the session hosts are shut down to reduce operational costs.
 * A business user get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work; because they were turned off outside of business hours, they can't and have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
-* Using 'Start Virtual Machine on Connect', the moment that the user attempts to connect a Virtual Machine is started. Then it allows the users to log in and do their work without a call to IT, overall saving money, as the hosts are only started when they are first needed. The feature will also only turn on additional VMs (if available) when the first VM reaches the session limit.
+* Using 'Start Virtual Machine on Connect', the moment that the user attempts to connect a Virtual Machine is started. 
+* Then it allows the users to log in and do their work without a call to IT, overall saving money, as the hosts are only started when they are first needed. The feature will also only turn on additional VMs (if available) when the first VM reaches the session limit.
 
 This is a host-level setting, so setting 'Start VM on Connect' will affect all session hosts in the host pool. Therefore, you cannot target specific Virtual Machines in a session host at this stage.
 

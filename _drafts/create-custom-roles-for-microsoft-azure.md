@@ -81,4 +81,22 @@ The PowerShell script below will create a few folders on your computer, as a bas
 * C:\\Temp\\AzureRoles\\BuiltinExports\\
 * C:\\Temp\\AzureRoles\\CustomRoles
 
+Once the folders have been created, it will Get the Azure Role definitions and export them into JSON into the BuiltinExports folder, so they can be reviewed.
+
+    New-Item -ItemType Directory -Path c:\Temp -Force
+    New-Item -ItemType Directory -Path c:\Temp\AzureRoles -Force
+    New-Item -ItemType Directory -Path c:\Temp\AzureRoles\BuiltInExports -Force
+    New-Item -ItemType Directory -Path c:\Temp\AzureRoles\CustomRoles -Force
+    
+    $a = Get-AzRoleDefinition
+    
+    Foreach ($role in $a)
+    {
+        $name = $role.Name
+        Get-AzRoleDefinition -Name ($role).Name | ConvertTo-Json | Out-File c:\Temp\AzureRoles\BuiltInExports\$name.json
+    }
+    
+
+sdsd
+
  

@@ -24,7 +24,7 @@ Behind the scenes, each role is a separate grouping of permissions that determin
 * Delete
 * Action
 
-Each role can be assigned to a specific Resource, Subscription, Management Group or Resource Group through an 'Assignment' _(you are assigning a role if you give someone Contributor rights to a Resource Group, for example)_.
+Each role can be assigned to a specific Resource, Subscription, Management Group or Resource Group through an 'Assignment' _(you assign a role if you give someone Contributor rights to a Resource Group, for example)_.
 
 These permissions can be manipulated and custom roles created.
 
@@ -32,7 +32,7 @@ These permissions can be manipulated and custom roles created.
 
 Custom Roles can give people or objects JUST the right amount of permissions to do what they need to do, nothing more and nothing less, an example of this is maybe you are onboarding a support partner. Still, they are only supporting Logic Apps, WebApps and Backups. You don't want them to be able to log support cases for your Azure resources; for example, instead of attempting to mash several roles together that may give more or fewer rights than you need, you can create a custom role that specifically gives them what they need, you can then increase or decrease the permissions as needed, however, if a built-in role already exists for what you want. There is no need to reinvent the wheel, so use it!
 
-I will run through a few things that will help arm you to understand and build your own Custom Roles, primarily using PowerShell.
+I will run through a few things to help arm you understand and build your own Custom Roles, primarily using PowerShell.
 
 ### Install the Azure PowerShell Modules
 
@@ -46,12 +46,12 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module").
 4. Once you have the Azure PowerShell module installed, you can **connect to** your **Azure** subscription using the little snippet below:
 
-      #Prompts for Azure credentials
-      Connect-AzAccount
-      
-      #Prompts Window allowing you to select which  Azure Subscription to connect to
-      $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru
-      Set-AzContext -SubscriptionName $subscriptionName
+   \#Prompts for Azure credentials
+   Connect-AzAccount
+
+   \#Prompts Window allowing you to select which  Azure Subscription to connect to
+   $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru
+   Set-AzContext -SubscriptionName $subscriptionName
 
 ### Export Built-in Azure Roles
 
@@ -194,15 +194,15 @@ This role will allow users to Deploy and modify Azure WebApps, among other thing
 
 1. To **add** the **Custom Role** to Azure, I will **run** the following **PowerShell** command:
 
-    New-AzRoleDefinition -InputFile "C:\temp\AzureRoles\CustomRoles\LukeGeek-WebApp Deployment-RW.json" -Verbose
+   New-AzRoleDefinition -InputFile "C:\\temp\\AzureRoles\\CustomRoles\\LukeGeek-WebApp Deployment-RW.json" -Verbose
 
 **Your new Custom Role has now been uploaded to Azure and can be selected for an assignment.**
 
 ### Add a Custom Role using the Azure Portal.
 
-Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and create manually, you can use the Azure Portal! 
+Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and create manually, you can use the Azure Portal!
 
-> _*Gasp! Why didn't you tell me earlier about this, Luke?_ 
+> _*Gasp! Why didn't you tell me earlier about this, Luke?_
 >
 > _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to explain how the Custom Roles were made, vs staring at the Azure Portal and to be honest, really just because! Like most things in IT there are multiple ways something can be done!_
 

@@ -1,5 +1,5 @@
 ---
-date: 2021-07-03 00:00:00 +1200
+date: 2021-07-03T00:00:00.000+12:00
 title: Create Custom Roles for Microsoft Azure
 author: Luke
 categories:
@@ -207,7 +207,7 @@ Edit these fields _(apart from IsCustom, which you should leave as True)_ as you
 
 This Custom Role - Template, simply allows you to read the name of all Resource Groups in a subscription and open a Microsoft Support case.
 
-In my example, I am going to add a new role called: 
+In my example, I am going to add a new role called:
 
 * LukeGeek-WebApp Deployment-RW
 
@@ -216,3 +216,7 @@ This role will allow users to Deploy and modify Azure WebApps, among other thing
 [https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0](https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0 "https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0")
 
 To add the Custom Role to Azure, I will run the following PowerShell command:
+
+    New-AzRoleDefinition -InputFile "C:\temp\AzureRoles\CustomRoles\LukeGeek-WebApp Deployment-RW.json" -Verbose
+
+d

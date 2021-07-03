@@ -97,6 +97,11 @@ Once the folders have been created, it will Get the Azure Role definitions and e
     }
     
 
-sdsd
+Once completed, you should now see the JSON files below:
+
+  
+![](/uploads/az_exportroles.png)
+
+_Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files, Visual Studio Code will help with the syntax as well._ 
 
  

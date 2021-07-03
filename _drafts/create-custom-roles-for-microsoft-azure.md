@@ -64,7 +64,7 @@ One of the best ways I found to learn about how an Azure Role is put together, i
 
        Get-AzRoleDefinition | Select-Object Name, Description
 3. As you can see in the screenshot below, there are a lot of various roles, from EventGrid Contributor to AgFood Platform Service and more! At the time of this article, there were 276 built-in roles.
-4. ![](/uploads/az_roledefinitions.png)
+4. ![Azure Builtin Roles](/uploads/az_roledefinitions.png "Azure Builtin Roles")
 5. Now that we have successfully been able to pull a list of the existing roles, we will now **export** them as **JSON** files, so we can take a proper look at them.
 6. The PowerShell script below will create a few folders on your computer, as a base to work from _(feel free to change the folders to suit your folder structure or access rights)_.
    * c:\\Temp
@@ -86,7 +86,7 @@ One of the best ways I found to learn about how an Azure Role is put together, i
            Get-AzRoleDefinition -Name ($role).Name | ConvertTo-Json | Out-File c:\Temp\AzureRoles\BuiltInExports\$name.json
        }
 8. Once completed, you should now **see** the **JSON files** below:
-9. ![](/uploads/az_exportroles.png)
+9. ![Azure Role - JSON files](/uploads/az_exportroles.png "Azure Role - JSON files")
 
 _Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files, Visual Studio Code will help with the syntax as well._
 

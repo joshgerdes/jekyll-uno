@@ -22,7 +22,7 @@ One of the technologies that can help with this is: [Start VM on Connect ](https
 * Using 'Start Virtual Machine on Connect', the moment that the user attempts to connect a Virtual Machine is started. 
 * Then it allows the users to log in and do their work without a call to IT, overall saving money, as the hosts are only started when they are first needed. The feature will also only turn on additional VMs (if available) when the first VM reaches the session limit.
 
-This is a host-level setting, so setting 'Start VM on Connect' will affect all session hosts in the host pool. Therefore, you cannot target specific Virtual Machines in a session host at this stage.
+This is a host-level setting, so setting 'Start VM on Connect' will affect all session hosts in the host pool. Therefore, you cannot target specific Virtual Machines in a session host at this stage. This is now supported for both Personal and Pooled session hosts! 
 
 > _As of 03/07/21 (NZ date format - DD/MM/YY): The Start VM on Connect feature is currently in public preview. This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see_ [_Supplemental Terms of Use for Microsoft Azure Previews_](https://azure.microsoft.com/support/legal/preview-supplemental-terms/){:target="_blank"}_._
 

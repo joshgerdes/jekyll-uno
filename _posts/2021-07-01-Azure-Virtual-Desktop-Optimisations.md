@@ -1,7 +1,6 @@
 ---
 date: 2021-07-01 00:00:00 +1200
 title: Azure Virtual Desktop Optimisations
-permalink: /azure/how-to-setup-fslogix-profiles-for-azure-virtual-desktop-copy/
 author: Luke
 categories:
 - Azure

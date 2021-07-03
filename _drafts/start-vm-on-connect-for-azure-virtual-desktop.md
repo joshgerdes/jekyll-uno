@@ -58,3 +58,8 @@ In order for the "Windows Virtual Desktop" service principal (this should alread
 17. Click on Next
 18. Verify the permissions are as below _(if they aren't, you may need the redownload or check the JSON file for syntax issues - I recommend downloading_ [_Visual Studio Code_](https://code.visualstudio.com/ "Visual Studio Code")_)_:
 19. ![](/uploads/azureportal_iam_customrole_permissions.png)
+20. Click Next
+21. We used the subscription property, to select the assignable scope _(ie the scope is where this role will be available for you to assign access to)_, but now using the Azure Portal, we can select a specific Resource Group to limit the roles access, please be careful with doing this, especially if you are planning on expanding out your Azure Virtual Desktop infrastructure in the future as you may forget that this role may not be available in other resource groups. I am going to leave mine at the Subscription level and click Next
+22. Here we can verify and save the changed JSON file _(if you want for future reference)_ and click Next to review your configuration
+23. Click Create to create your Custom Role!
+24. ![](/uploads/azureportal_iam_customrole_reviewcreate.png)

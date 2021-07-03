@@ -108,10 +108,10 @@ You should see the following fields:
 
 These fields, make up your Role.
 
-![](/uploads/az_rolereview_azdigitaltwinsdataowner.png)
+![Azure Role - JSON](/uploads/az_rolereview_azdigitaltwinsdataowner.png "Azure Role - JSON")
 
 * The **Name field** is pretty, self-explanatory - this is the name of the Azure Role and what you see in the Azure Portal, under Access control (IAM).
-* ![](/uploads/az_rolereview_azdigitaltwinsdataowneriam.png)
+* ![Azure Portal - Role](/uploads/az_rolereview_azdigitaltwinsdataowneriam.png "Azure Portal - Role")
 * The same is true for the: **Description** **field**.
 
   _These are highly important fields as they should tell the users, what resource or resources the role is for and what type of access is granted._
@@ -129,7 +129,7 @@ These fields, make up your Role.
 
 To help get a feel of the differences with the Actions, here is a list of Actions and DataActions for the Azure Kubernetes Service RBAC Admin role:
 
-* ![](/uploads/az_rolereview_azkuberservicerbacactions.png)
+* ![Azure Custom Role - JSON](/uploads/az_rolereview_azkuberservicerbacactions.png "Azure Custom Role - JSON")
 * And finally, the **AssignableScopes** is used to specify where the role will be available for assignment, whether it can be assigned at a subscription level or resource group or management group level, you will notice that most if not all built-in Azure Roles have an Assignable scope of "/" - this means that it can be assigned everywhere _(Subscriptions, Resource Groups, Management Groups etc)._
 
 ### Review Azure Provider Namespaces
@@ -216,19 +216,19 @@ Now that we have been through and investigated the Azure roles and their provide
  8. For Baseline permissions, select: **Start from Scratch**
  9. Click **Next**
 10. Click **Add Permissions**
-11. If you want, you can select: Download all permissions, to review the providers and actions _(very similar to the Get-AzProviderOperation PowerShell command)_.![](/uploads/ad_role_addpermissions.png)
+11. If you want, you can select: Download all permissions, to review the providers and actions _(very similar to the Get-AzProviderOperation PowerShell command)_.![Azure Portal - Create Custom Role](/uploads/ad_role_addpermissions.png "Azure Portal - Create Custom Role")
 12. As you should be able to **see**, all the **Namespace providers** are listed with the Actions/Permissions that you can do.
-13. In my example, I am going to search for: **Microsoft Web Apps**
+13. In my example, I am going to search for **Microsoft Web Apps**
 14. **Select** all '**Read**' operations _(remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)_
 15. Click **Add**
-16. ![](/uploads/ad_role_webpermissions.png)
+16. ![Azure Portal - Create Custom Role](/uploads/ad_role_webpermissions.png "Azure Portal - Create Custom Role")
 17. Review the permissions and click **Next**
 18. **Select** your assignable **scope** _(where the Role will be allowed so that you can assign it)_
 19. Click **Next**
 20. You can **review** and download the JSON for backup later _(this is handy if you are going to Automate the creation of roles in the future and want a base to start from)_
 21. Click **Next**
 22. Click **Create to create your Custom Role!**
-23. ![](/uploads/ad_role_createcustomroleportal.png)
+23. ![Azure Portal - Create Custom Role](/uploads/ad_role_createcustomroleportal.png "Azure Portal - Create Custom Role")
 
 ### Assign a Custom Role using the Azure Portal
 
@@ -240,7 +240,7 @@ Now that you have created your, Custom Role - it is time to assign it! So it is 
 4. Click **Add**
 5. Click on **Role Assignment**
 6. Under the 'Role' dropdown, **select** your Custom **Role**
-7. ![](/uploads/ad_roleassignmentportal.png)
+7. ![Azure Portal - Add Role Assignments](/uploads/ad_roleassignmentportal.png "Azure Portal - Add Role Assignments")
 8. Now you can **select** the **Azure AD Group/User or Service Principal** you want to **assign** the role to and click **Save**
 9. Congratulations **you have now assigned your Custom role!**
 

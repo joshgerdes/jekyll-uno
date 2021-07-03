@@ -72,4 +72,13 @@ As you can see in the screenshot below, there are a lot of various roles, from E
 
 ![](/uploads/az_roledefinitions.png)
 
+Now that we have successfully been able to pull a list of the existing roles, we will now export them as JSON files, so we can take a proper look at them.
+
+The PowerShell script below will create a few folders on your computer, as a base to work from _(feel free to change the folders to suit your folder structure or access rights)_.
+
+* c:\\Temp
+* c:\\Temp\\AzureRoles
+* C:\\Temp\\AzureRoles\\BuiltinExports\\
+* C:\\Temp\\AzureRoles\\CustomRoles
+
  

@@ -201,8 +201,8 @@ This base template has the following fields, that will be used by the majority o
 * Actions
 * AssignableScopes
 
-Edit these fields (apart from IsCustom) as you need.
+Edit these fields _(apart from IsCustom, which you should leave as True)_ as you need.
 
 [https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621](https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621 "https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621")
 
-This Custom Role - Template, simply allows you to Read the name of all Resource Groups in a subscription and open a Microsoft Support case.
+This Custom Role - Template, simply allows you to read the name of all Resource Groups in a subscription and open a Microsoft Support case.

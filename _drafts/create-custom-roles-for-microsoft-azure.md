@@ -222,10 +222,10 @@ Now that we have been through and investigated the Azure roles and their provide
 14. **Select** all '**Read**' operations _(remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)_
 15. Click **Add**
 16. ![](/uploads/ad_role_webpermissions.png)
-17. Review the permissions and click Next
-18. Select your assignable scope (where the Role will be allowed so that you can assign it)
-19. Click Next
-20. You can review and download the JSON for backup later (this is handy if you are going to Automate the creation of roles in the future and want a base to start from)
-21. Click Next
-22. Click Create to create your Custom Role!
+17. Review the permissions and click **Next**
+18. **Select** your assignable **scope** _(where the Role will be allowed so that you can assign it)_
+19. Click **Next**
+20. You can **review** and download the JSON for backup later _(this is handy if you are going to Automate the creation of roles in the future and want a base to start from)_
+21. Click **Next**
+22. Click **Create to create your Custom Role!**
 23. ![](/uploads/ad_role_createcustomroleportal.png)

@@ -131,3 +131,15 @@ The Name field is pretty, self-explanatory - this is the name of the Azure Role 
 The same is true for the: Description field.
 
 These are highly important fields as they should tell the users, what resource or resources the role is for and what type of access is granted.
+
+The IsCustom field is used to determine if the Azure Role is a custom made policy or not, any user-created Role will be set to True, while any In-Built role will be False.
+
+The Actions field, is used to determine what management operations can be performed, although the Azure Digital Twins role, doesn't have any (as it is mainly Data Action based), if we look at another Role such as the: Azure Kubernetes Service RBAC Admin role:
+
+* ""Microsoft.Authorization/*/read",
+* "Microsoft.Insights/alertRules/*",
+* "Microsoft.Resources/deployments/write",
+
+You can see that it has the rights to Read the permissions, create and delete any Alert rules and update resources.
+
+* 

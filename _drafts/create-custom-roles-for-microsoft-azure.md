@@ -95,16 +95,14 @@ Once the folders have been created, it will Get the Azure Role definitions and e
         $name = $role.Name
         Get-AzRoleDefinition -Name ($role).Name | ConvertTo-Json | Out-File c:\Temp\AzureRoles\BuiltInExports\$name.json
     }
-    
 
 Once completed, you should now see the JSON files below:
 
-  
 ![](/uploads/az_exportroles.png)
 
-_Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files, Visual Studio Code will help with the syntax as well._ 
+_Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files, Visual Studio Code will help with the syntax as well._
 
-###  Review Built-in Azure Roles
+### Review Built-in Azure Roles
 
 If you open one of the roles, for example, I will open the Azure Digital Twins Data Owner role, however, it doesn't matter.
 
@@ -177,6 +175,14 @@ This displays a list of all providers within the Microsoft.Compute namespace, su
 If we wanted to drill into the Virtual Machines providers a bit more we can filter it like:
 
     Get-AzProviderOperation -Name Microsoft.Compute/virtualMachines/*
-   
-   sd
-   
+
+Here we can finally see the available actions, for example, the following Action will allow you to Read the vmsizes available to a Virtual Machine:
+
+* Operation: Microsoft.Compute/virtualMachines/vmSizes/read
+* operation name: Lists Available Virtual Machine Sizes
+* ProviderNamespace: Microsoft Compute
+* ResourceName: Virtual Machine Size
+* Description: Lists available sizes the virtual machine can be updated to
+* IsDataAction      : False
+
+Using the namespace, providers and actions you should now be able to see the power behind Role-based access control and how granular you can get.

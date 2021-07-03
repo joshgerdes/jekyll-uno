@@ -229,4 +229,34 @@ Now that we have been through and investigated the Azure roles and their provide
 >
 > _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to explain how the Custom Roles were made, vs staring at the Azure Portal and to be honest, really just because! Like most things in IT there are multiple ways something can be done!_
 
-sd
+Log in to the Azure Portal
+
+Navigate to your Subscription
+
+Click on Access Control (IAM) on the left-hand side blade
+
+Click on Add
+
+Click on Add Custom Role
+
+Type in the Role Name, for example, WebAdmin-RO
+
+Type in a clear description, so that you can remember what this role is used for in a years time!
+
+For Baseline permissions, select: Start from Scratch
+
+Click Next
+
+Click Add Permissions
+
+If you want, you can select: Download all permissions, to review the providers and actions (very similar to the Get-AzProviderOperation PowerShell command).![](/uploads/ad_role_addpermissions.png)
+
+As you should be able to see, all the Namespace providers are listed with the Actions/Permissions that you can do.
+
+In my example, I am going to search for: Microsoft Web Apps
+
+Select all 'Read' operations
+
+Click Add
+
+![](/uploads/ad_role_webpermissions.png)

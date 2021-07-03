@@ -48,11 +48,11 @@ When configuring these, take into consideration a users normal work time, the ti
 * _This policy allows you to specify how long a user's RemoteApp session will remain in a disconnected state after closing all RemoteApp programs before the session is logged off from the RD Session Host server._
 * **Close** the **Group Policy Management console**; as this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
-_Reference: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.com/en/123638 "https://kb.parallels.com/en/123638")
+_Reference: Taken from:_ [_https://kb.parallels.com/en/123638_](https://kb.parallels.com/en/123638 "https://kb.parallels.com/en/123638"){:target="_blank"}
 
 ### DeleteUserAppContainersOnLogoff
 
-Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
+Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481"){:target="_blank"}
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -71,7 +71,7 @@ Back in March 2019, there were issues with slow server performance caused by num
 
 ### Configure RDP Shortpath
 
-RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between Remote Desktop Client and Session host. RDP uses this transport to deliver Remote Desktop and RemoteApp while offering better reliability and consistent latency. RDP Shortpath establishes the direct connectivity between Remote Desktop client and Session Host. Direct connectivity reduces the dependency on the Azure Virtual Desktop gateways, improves the connection's reliability, and increases the bandwidth available for each user session. You can read more about it here: [Azure Virtual Desktop RDP Shortpath](https://docs.microsoft.com/en-us/azure/virtual-desktop/shortpath "Azure Virtual Desktop RDP Shortpath").
+RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between Remote Desktop Client and Session host. RDP uses this transport to deliver Remote Desktop and RemoteApp while offering better reliability and consistent latency. RDP Shortpath establishes the direct connectivity between Remote Desktop client and Session Host. Direct connectivity reduces the dependency on the Azure Virtual Desktop gateways, improves the connection's reliability, and increases the bandwidth available for each user session. You can read more about it here: [Azure Virtual Desktop RDP Shortpath](https://docs.microsoft.com/en-us/azure/virtual-desktop/shortpath "Azure Virtual Desktop RDP Shortpath"){:target="_blank"}.
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -95,9 +95,9 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 
 ### Virtual-Desktop-Optimization-Tool
 
-Automatically apply a range of optimisations for pooled and personal Azure Desktop hosts.
+Automatically apply a range of optimisations for pooled and personal Azure Desktop hosts. These scripts 
 
-[Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "Virtual-Desktop-Optimization-Tool")
+[Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "Virtual-Desktop-Optimization-Tool"){:target="_blank"}
 
 ### Implement Windows Defender FSLogix exclusions
 
@@ -127,7 +127,7 @@ _Note: Make sure you test and adjust this for your own environment. The Desktop/
 
 ### DeleteUserAppContainersOnLogoff
 
-Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
+Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481"){:target="_blank"}
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -173,7 +173,7 @@ You can run Microsoft Teams in Azure Virtual Desktop. To do so, you need to inst
 
 **Install the Remote Desktop WebRTC Redirector**
 
-1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service")
+1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service"){:target="_blank"}
 
 ### Hide the Shutdown button
 

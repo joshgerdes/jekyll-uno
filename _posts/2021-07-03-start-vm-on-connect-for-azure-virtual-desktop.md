@@ -35,7 +35,7 @@ For the "Windows Virtual Desktop" service principal (this should already exist, 
  2. Navigate to the **Subscription** _(you can only currently create custom roles at a subscription level)_ that your session hosts exist in
  3. Look for the **Subscription ID** _(**copy** this, we will need it later on, usually found on the Overview window of the Subscription)_
  4. **Download** the AVD-StartVMOnConnect **JSON** file **below** and **save** it to a location you can edit.
- 5. [https://gist.github.com/lukemurraynz/398a8b15257c65d94b8f1993dee22365](https://gist.github.com/lukemurraynz/398a8b15257c65d94b8f1993dee22365 "https://gist.github.com/lukemurraynz/398a8b15257c65d94b8f1993dee22365")
+ 5.  {% gist 398a8b15257c65d94b8f1993dee22365 %}
  6. **Open** up the **JSON** file _(this is the Custom Role we are creating, as you can see, we are only allowing the ability to Read a Virtual Machine and Start it)_
  7. **Replace** the: **<SubscriptionID>** with **your subscription ID**, created earlier and **save** the JSON file.
  8. ![AVD-StartVMOnConnect Custom Role](/uploads/customrolejson_subscriptionid.png "AVD-StartVMOnConnect Custom Role").

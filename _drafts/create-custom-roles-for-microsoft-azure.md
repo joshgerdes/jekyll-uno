@@ -219,4 +219,4 @@ To add the Custom Role to Azure, I will run the following PowerShell command:
 
     New-AzRoleDefinition -InputFile "C:\temp\AzureRoles\CustomRoles\LukeGeek-WebApp Deployment-RW.json" -Verbose
 
-d
+Your new Custom Role has now been uploaded to Azure and can be selected for an assignment.

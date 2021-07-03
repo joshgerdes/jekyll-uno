@@ -155,3 +155,9 @@ To help get a feel of the differences with the Actions, here is a list of Action
 ### Review Azure Provider Namespaces
 
 You may have noticed that each Action has a provider, in the example of a Virtual Machine the provider is: Microsoft.Compute.
+
+To get a list of all current Providers run the following command:
+
+    Get-AzProviderOperation | Select-Object ProviderNamespace -Unique
+
+sd

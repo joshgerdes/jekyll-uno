@@ -93,6 +93,12 @@ RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UD
 18. Put: '**3390**' as the UDP report and click **Apply**
 19. **Close** the **Group Policy Management console**. Restart the session hosts.
 
+### Virtual-Desktop-Optimization-Tool
+
+Automatically apply a range of optimisations for pooled and personal Azure Desktop hosts.
+
+[Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool "Virtual-Desktop-Optimization-Tool")
+
 ### Implement Windows Defender FSLogix exclusions
 
 Make sure to configure antivirus exclusions for FSLogix Profiles.
@@ -119,6 +125,12 @@ An example redirections.xml can be found here:
 
 _Note: Make sure you test and adjust this for your own environment. The Desktop/Documents have been excluded as the assumption is these are redirected or covered by OneDrive._
 
+### DeleteUserAppContainersOnLogoff
+
+Back in March 2019, there were issues with slow server performance caused by numerous Windows Firewall Rules getting created on user login. A patch was released; however, to enable this '_fix_', a registry key needs to be set. You could eventually run into host performance/hang issues if this key is not configured. See: [https://support.microsoft.com/en-us/help/4490481](https://support.microsoft.com/en-us/help/4490481 "https://support.microsoft.com/en-us/help/4490481")
+
+ 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+ 2. **Expand** your **domain** and **Group Policy Objects**.
 ### Implement Storage Sense
 
 On Windows 10, Storage sense is a built-in tool designed to free up space automatically. When it's enabled, the feature monitors your device. When it's running low on space, it deletes temporary files, empties the Recycle Bin, cleans up the Downloads folder, removes previous installation files, and more to make space to install new updates or store more important data. Storage Sense can also help dehydrate files that are available locally and do not need to be stored locally anymore, helping to reduce profile space and OneDrive processing.

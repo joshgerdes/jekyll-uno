@@ -199,7 +199,7 @@ This base template has the following fields, that will be used by the majority o
 * IsCustom
 * Description
 * Actions
-* AssignableScopes
+* AssignableScopes _(make sure you put in the <SubscriptionID> of your Azure subscription, you are assigning the role to.)_
 
 Edit these fields _(apart from IsCustom, which you should leave as True)_ as you need.
 

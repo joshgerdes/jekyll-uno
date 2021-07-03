@@ -62,11 +62,11 @@ One of the best ways I found to learn about how an Azure Role is put together, i
 
 The following PowerShell command will list all current Azure roles:
 
-Get-AzRoleDefinition
+    Get-AzRoleDefinition
 
 For a more human-readable view, that lists the Built-in Azure roles and their descriptions you can filter it by:
 
-Get-AzRoleDefinition | Select-Object Name, Description
+    Get-AzRoleDefinition | Select-Object Name, Description
 
 As you can see in the screenshot below, there are a lot of various roles, from EventGrid Contributor to AgFood Platform Service and more! At the time of this article, there were 276 built-in roles.
 

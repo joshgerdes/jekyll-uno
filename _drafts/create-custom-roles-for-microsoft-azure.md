@@ -27,3 +27,7 @@ Behind the scenes, each role is a separate grouping of permissions that determin
 Each role can be assigned to a specific Resource, Subscription, Management Group or Resource Group, through what is called an 'Assignment' _(you are assigning a role if you give someone Contributor rights to a Resource Group for example)_.
 
 These permissions can be manipulated and custom roles created.
+
+Why would you use custom roles you ask? As usual - it depends!
+
+Custom Roles can be used to give people or objects JUST the right amount of permissions to do what they need to do, nothing more and nothing less, an example of this is maybe you are onboarding a support partner, but they are only supporting Logic Apps, WebApps and Backups and you don't want them to be able to log support cases for your Azure resources for example, instead of attempting to mash several roles together that may give more or fewer rights than you need, you can create a custom role that specifically gives them what they need, you can then increase or decrease the permissions as needed, however, if a built-in role already exists for what you want, then use it!

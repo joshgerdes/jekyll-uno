@@ -177,3 +177,6 @@ This displays a list of all providers within the Microsoft.Compute namespace, su
 If we wanted to drill into the Virtual Machines providers a bit more we can filter it like:
 
     Get-AzProviderOperation -Name Microsoft.Compute/virtualMachines/*
+   
+   sd
+   

@@ -153,3 +153,5 @@ To help get a feel of the differences with the Actions, here is a list of Action
 ![](/uploads/az_rolereview_azkuberservicerbacactions.png)And finally, the AssignableScopes is used to specify where the role will be available for assignment, whether it can be assigned at a subscription level or resource group or management group level, you will notice that most if not all built-in Azure Roles have an Assignable scope of "/" - this means that it can be assigned everywhere _(Subscriptions, Resource Groups, Management Groups etc)._
 
 ### Review Azure Provider Namespaces
+
+You may have noticed that each Action has a provider, in the example of a Virtual Machine the provider is: Microsoft.Compute.

@@ -46,16 +46,13 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module").
 4. Once you have the Azure PowerShell module installed, you can **connect to** your **Azure** subscription using the little snippet below:
 
-   \#Prompts for Azure credentials
-   Connect-AzAccount
+   \#Prompts for Azure credentials Connect-AzAccount
 
-   \#Prompts Window allowing you to select which  Azure Subscription to connect to
-   $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru
-   Set-AzContext -SubscriptionName $subscriptionName
+   \#Prompts Window allowing you to select which  Azure Subscription to connect to $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru Set-AzContext -SubscriptionName $subscriptionName
 
 ### Export Built-in Azure Roles
 
-One of the best ways I found to learn about how an Azure Role is put together is to look at the currently existing roles.
+One of the best ways to learn about how an Azure Role is put together is to look at the currently existing roles.
 
 1. The following PowerShell command will **list** all **current** Azure **roles**:
 

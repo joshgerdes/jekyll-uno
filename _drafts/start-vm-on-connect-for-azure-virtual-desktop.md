@@ -55,3 +55,6 @@ In order for the "Windows Virtual Desktop" service principal (this should alread
 
     Select the JSON file you downloaded and edited earlier
 16. ![](/uploads/azureportal_iam_customrole_create.png)
+17. Click on Next
+18. Verify the permissions are as below _(if they aren't, you may need the redownload or check the JSON file for syntax issues - I recommend downloading_ [_Visual Studio Code_](https://code.visualstudio.com/ "Visual Studio Code")_)_:
+19. ![](/uploads/azureportal_iam_customrole_permissions.png)

@@ -206,21 +206,21 @@ Now that we have been through and investigated the Azure roles and their provide
 >
 > _Well, fellow Azure administrator, I found it easier to look at PowerShell and JSON to explain how the Custom Roles were made, vs staring at the Azure Portal and to be honest, really just because! Like most things in IT there are multiple ways something can be done!_
 
- 1. Log in to the Azure Portal
- 2. Navigate to your Subscription
- 3. Click on Access Control (IAM) on the left-hand side blade
- 4. Click on Add
- 5. Click on Add Custom Role
- 6. Type in the Role Name, for example, WebAdmin-RO
- 7. Type in a clear description, so that you can remember what this role is used for in a years time!
- 8. For Baseline permissions, select: Start from Scratch
- 9. Click Next
-10. Click Add Permissions
-11. If you want, you can select: Download all permissions, to review the providers and actions (very similar to the Get-AzProviderOperation PowerShell command).![](/uploads/ad_role_addpermissions.png)
-12. As you should be able to see, all the Namespace providers are listed with the Actions/Permissions that you can do.
-13. In my example, I am going to search for: Microsoft Web Apps
-14. Select all 'Read' operations (remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)
-15. Click Add
+ 1. Log in to the **Azure Portal**
+ 2. Navigate to your **Subscription**
+ 3. Click on **Access Control (IAM)** on the left-hand side blade
+ 4. Click on **Add**
+ 5. Click on **Add Custom Role**
+ 6. Type in the **Role Name**, for example, WebAdmin-RO
+ 7. Type in a clear **description**, so that you can remember what this role is used for in a years time!
+ 8. For Baseline permissions, select: **Start from Scratch**
+ 9. Click **Next**
+10. Click **Add Permissions**
+11. If you want, you can select: Download all permissions, to review the providers and actions _(very similar to the Get-AzProviderOperation PowerShell command)_.![](/uploads/ad_role_addpermissions.png)
+12. As you should be able to **see**, all the **Namespace providers** are listed with the Actions/Permissions that you can do.
+13. In my example, I am going to search for: **Microsoft Web Apps**
+14. **Select** all '**Read**' operations _(remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)_
+15. Click **Add**
 16. ![](/uploads/ad_role_webpermissions.png)
 17. Review the permissions and click Next
 18. Select your assignable scope (where the Role will be allowed so that you can assign it)

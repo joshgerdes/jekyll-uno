@@ -255,8 +255,22 @@ As you should be able to see, all the Namespace providers are listed with the Ac
 
 In my example, I am going to search for: Microsoft Web Apps
 
-Select all 'Read' operations
+Select all 'Read' operations (remember to look at Data Actions as well, there may be resource level actions you might want to allow or exclude)
 
 Click Add
 
 ![](/uploads/ad_role_webpermissions.png)
+
+Review the permissions and click Next
+
+Select your assignable scope (where the Role will be allowed so that you can assign it)
+
+Click Next
+
+You can review and download the JSON for backup later (this is handy if you are going to Automate the creation of roles in the future and want a base to start from)
+
+Click Next
+
+Click Create to create your Custom Role!
+
+![](/uploads/ad_role_createcustomroleportal.png)

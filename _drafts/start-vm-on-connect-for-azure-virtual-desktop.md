@@ -68,11 +68,13 @@ In order for the "Windows Virtual Desktop" service principal (this should alread
 
 Now that you have created your custom role, for Azure Virtual Desktop, it is now time to assign it, this is where you can assign and lock down the role, in my case I only have one Resource Group where my session hosts sit in, so going to assign it a Resource Group level, but feel free to assign this at a subscription level.
 
-1. Log in to the Azure Portal
-2. Navigate to the Resource Group _(or Subscription)_, that has your Azure Virtual Desktop session hosts
-3. Click on Access Control (IAM) in the left-hand side blade
-4. Click on + Add
-5. Click on Add role assignment
-6. Select the Role you created earlier _(ie AVD-StartVMOnConnect)_
-7. Specify the 'Windows Virtual Desktop' service principal and select Save
-8. ![](/uploads/azureportal_addroleassignment.png)
+ 1. Log in to the Azure Portal
+ 2. Navigate to the Resource Group _(or Subscription)_, that has your Azure Virtual Desktop session hosts
+ 3. Click on Access Control (IAM) in the left-hand side blade
+ 4. Click on + Add
+ 5. Click on Add role assignment
+ 6. Select the Role you created earlier _(ie AVD-StartVMOnConnect)_
+ 7. Specify the 'Windows Virtual Desktop' service principal and select Save
+ 8. ![](/uploads/azureportal_addroleassignment.png)
+ 9. If you want you can click on Role Assignments, to verify your role has been assigned:
+10. ![](/uploads/azureportal_assignedrolecheck.png)

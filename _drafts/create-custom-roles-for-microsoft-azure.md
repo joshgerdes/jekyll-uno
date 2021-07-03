@@ -229,3 +229,12 @@ Now that we have been through and investigated the Azure roles and their provide
 21. Click **Next**
 22. Click **Create to create your Custom Role!**
 23. ![](/uploads/ad_role_createcustomroleportal.png)
+
+### Assign a Custom Role using the Azure Portal
+
+Now that you have created your, Custom Role - it is time to assign it! So it is actually in use.
+
+1. Log in to the **Azure Portal**
+2. Navigate to your **Subscription or Resource Group** you want to delegate this role to
+3. Click on Access Control (IAM)
+4. 

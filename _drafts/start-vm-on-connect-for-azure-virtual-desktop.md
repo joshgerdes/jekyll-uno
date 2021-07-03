@@ -81,9 +81,13 @@ Now that you have created your custom role, for Azure Virtual Desktop, it is now
 
 ### Configure Start VM on Connect
 
-1. Log in to the Azure Portal
-2. Navigate to your Host Pool
-3. Click on Properties
-4. Select 'Yes' to Start VM on Connect
-5. Click Save
-6. ![](/uploads/azureportal_startvmonconnect.png)
+ 1. Log in to the Azure Portal
+ 2. Navigate to your Host Pool
+ 3. Click on Properties
+ 4. Select 'Yes' to Start VM on Connect
+ 5. Click Save
+ 6. ![](/uploads/azureportal_startvmonconnect.png)
+ 7. Congratulations, next time someone connects to a turned-off Azure Virtual Desktop session host, the Virtual Machines will now automatically start the users will get a prompt like below:
+ 8. ![](/uploads/avd_startvmconnectprogress1.png)
+ 9. ![](/uploads/avd_startvmconnectprogress2.png)
+10. Before finally, prompting for their login credentials!

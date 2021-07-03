@@ -142,4 +142,6 @@ The Actions field, is used to determine what management operations can be perfor
 
 You can see that it has the rights to Read the permissions, create and delete any Alert rules and update resources.
 
-* 
+The NotActions field is used to exclude anything from the Allowed actions
+
+The DataActions field allows you to determine what data operations can be performed, usually, these are sub-resource tasks, where management or higher-level operations are performed in the Actions field, more specific resource actions are performed in the DataActions field.

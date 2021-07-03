@@ -236,8 +236,10 @@ Now that you have created your, Custom Role - it is time to assign it! So it is 
 
 1. Log in to the **Azure Portal**
 2. Navigate to your **Subscription or Resource Group** you want to delegate this role to
-3. Click on Access Control (IAM)
-4. Click Add
-5. Click on Role Assignment
-6. Under the 'Role' dropdown, select your Custom Role
+3. Click on **Access Control (IAM)**
+4. Click **Add**
+5. Click on **Role Assignment**
+6. Under the 'Role' dropdown, **select** your Custom **Role**
 7. ![](/uploads/ad_roleassignmentportal.png)
+8. Now you can **select** the **Azure AD Group/User or Service Principal** you want to **assign** the role to and click **Save**
+9. Congratulations **you have now assigned your Custom role!**

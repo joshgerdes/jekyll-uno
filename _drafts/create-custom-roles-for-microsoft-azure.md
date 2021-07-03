@@ -186,3 +186,7 @@ Here we can finally see the available actions, for example, the following Action
 * IsDataAction      : False
 
 Using the namespace, providers and actions you should now be able to see the power behind Role-based access control and how granular you can get.
+
+### Create Custom Role
+
+Now that we understand, how to navigate the Namespaces and Built-In Roles available in Microsoft Azure using PowerShell, now we will create one.

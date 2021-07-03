@@ -59,3 +59,15 @@ Once you have the Azure PowerShell module installed, you can connect to your Azu
 ### Export Built-in Azure Roles
 
 One of the best ways I found to learn about how an Azure Role is put together, is to take a look at the currently existing roles.
+
+The following PowerShell command will list all current Azure roles:
+
+Get-AzRoleDefinition
+
+For a more human-readable view, that lists the Built-in Azure roles and their descriptions you can filter it by:
+
+Get-AzRoleDefinition | Select-Object Name, Description
+
+As you can see in the screenshot below, there are 
+
+ 

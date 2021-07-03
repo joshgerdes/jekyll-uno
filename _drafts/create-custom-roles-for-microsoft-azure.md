@@ -176,7 +176,7 @@ If we wanted to drill into the Virtual Machines providers a bit more we can filt
 
     Get-AzProviderOperation -Name Microsoft.Compute/virtualMachines/*
 
-Here we can finally see the available actions, for example, the following Action will allow you to Read the vmsizes available to a Virtual Machine:
+Here we can finally see the available actions, for example, the following Action will allow you to Read the VM sizes available to a Virtual Machine:
 
 * Operation: Microsoft.Compute/virtualMachines/vmSizes/read
 * operation name: Lists Available Virtual Machine Sizes

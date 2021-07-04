@@ -1,6 +1,6 @@
 ---
 date: 2021-07-04T00:00:00.000+12:00
-title: Add shortcut to Azure Virtual Desktop in the Microsoft 365 waffle
+title: Add shortcut to Azure Virtual Desktop Web Client in the Microsoft 365 waffle
 author: Luke
 categories:
 - Azure
@@ -11,7 +11,7 @@ header:
 ---
 If you are like me, use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a place to access all your applications is a no-brainer!
 
-That includes access to the HTML Azure Virtual Desktop client! Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle!
+That includes access to the HTML Azure Virtual Desktop client! Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle! So you can add much more than the Azure Virtual Desktop web client
 
 > Create custom tiles that will appear in the All apps section of the ‎Office 365‎ app launcher for all of your users. Users can pin the custom tiles directly to their app launcher for quick access.
 

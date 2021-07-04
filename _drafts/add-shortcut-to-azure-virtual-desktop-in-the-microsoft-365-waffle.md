@@ -32,5 +32,5 @@ That includes access to Azure Virtual Desktop! Luckily Microsoft has given us th
 10. **Add** a **description**
 11. ![](/uploads/m365_customapplaunchertitle1.png)
 12. Click **Save**
-13. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the App Launcher to display.
+13. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
 14. 

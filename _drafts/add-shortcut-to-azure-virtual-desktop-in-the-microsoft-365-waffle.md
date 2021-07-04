@@ -27,7 +27,8 @@ That includes access to Azure Virtual Desktop! Luckily Microsoft has given us th
 
  6. Click **+ Add a custom title**
  7. Type in the name of your Desktop, in my example it is: **Contoso Desktop**
- 8. For the URL of the website type in: [**https://aka.ms/wvdarmweb**](https://aka.ms/wvdarmweb "https://aka.ms/wvdarmweb") _(this is the shortened URL for the Azure Virtual Desktop HTML client)_
- 9. Type in a URL of the icon you want the App Launcher to have _(I am using the Azure Virtual Desktop -_ [_https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315_](https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315 "https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315") _PNG as an example, however, make sure this is a location that you have access to and can manage (ie even sitting on your website or Azure Storage account as long as its publically available))._
-10. Add a description
+ 8. For the **URL** of the website type in: [**https://aka.ms/wvdarmweb**](https://aka.ms/wvdarmweb "https://aka.ms/wvdarmweb") _(this is the shortened URL for the Azure Virtual Desktop HTML client)_
+ 9. Type in a **URL** of the **icon** you want the App Launcher to have _(I am using the Azure Virtual Desktop -_ [_https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315_](https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315 "https://azure.microsoft.com/svghandler/virtual-desktop/?width=600&height=315") _PNG as an example, however, make sure this is a location that you have access to and can manage (ie even sitting on your website or Azure Storage account as long as its publically available))._
+10. **Add** a **description**
 11. ![](/uploads/m365_customapplaunchertitle1.png)
+12. Click **Save**

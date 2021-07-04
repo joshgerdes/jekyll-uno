@@ -9,11 +9,14 @@ header:
   teaser: "/uploads/avddesktopfull.png"
 
 ---
-If you are like me, use the Microsoft 365 waffle daily, if not hourly! Then having it as a place to access all your applications is a no-brainer! 
+If you are like me, use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a place to access all your applications is a no-brainer! 
 
-That includes access to Azure Virtual Desktop! Luckily Microsoft has given us the ability to add custom URLs to the Application Launchers in the waffle.
+That includes access to Azure Virtual Desktop! Luckily Microsoft has given us the ability to add Custom App Launchers to the Application Launchers in the waffle!
+
+> Create custom tiles that will appear in the All apps section of the ‎Office 365‎ app launcher for all of your users. Users can pin the custom tiles directly to their app launcher for quick access.
 
 1. Open the [**Microsoft 365 Admin Panel**](https://admin.microsoft.com/#/homepage "M365 Admin")
 2. Expand **Settings**
 3. Click on **Org Settings**
-4. 
+4. Select **Organisation Profile**
+5. Click on Custom app launcher tiles

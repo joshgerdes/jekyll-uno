@@ -21,6 +21,8 @@ That includes access to Azure Virtual Desktop! Luckily Microsoft has given us th
 2. Expand **Settings**
 3. Click on **Org Settings**
 4. Select **Organisation Profile**
-5. Click on Custom app launcher tiles
+5. Click on **Custom app launcher tiles**
 
 ![](/uploads/m365_customapplaunchertitle.png)
+
+6. 

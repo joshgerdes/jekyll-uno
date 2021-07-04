@@ -35,7 +35,8 @@ That includes access to the HTML Azure Virtual Desktop client! Microsoft has giv
  8. ![M365 - Custom App Launcher](/uploads/m365_contosoapp.png "M365 - Custom App Launcher")
  9. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
 10. Once the custom App Launcher has displayed, your users can pin it to the launcher so it is always right on top.
-11. ![M365 Waffle - App Launcher](/uploads/m365_pin.png "M365 Waffle - App Launcher")
+11. Click on your Azure Virtual Desktop launcher and you should be redirected to the Azure Virtual Desktop Web client!
+12. ![M365 Waffle - App Launcher](/uploads/m365_pin.png "M365 Waffle - App Launcher")
 
 _I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website, to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client._
 

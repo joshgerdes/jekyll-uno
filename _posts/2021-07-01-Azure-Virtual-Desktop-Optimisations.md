@@ -175,6 +175,25 @@ You can run Microsoft Teams in Azure Virtual Desktop. To do so, you need to inst
 
 1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service"){:target="_blank"}
 
+### Configure Auto Close Apps on Logoff
+
+When users may go to logoff, open applications may halt or prolong the logoff process, this can leave to sessions being left connected and additional time and resource needed to close applications before logoff. To stop the prompt about open Applications we need to set a registry key - this is not an 'optimisation' to be treated lightly, as it won't ask users to double check some of the apps they have open, as soon as they hit the logoff button - that it is, any open apps will be closed!
+
+ 1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
+ 2. **Expand** your **domain** and **Group Policy Objects**.
+ 3. **Right**-**click** the **GPO** that you created for the group policy settings and select **Edit**.
+ 4. In the Group Policy Management Editor, **navigate to User Configuration** > **Preferences**> **Windows Settings** > **Registry**.
+ 5. Right-click in the window and select **New**, **Registry Item**
+ 6. Select **Update** as the Action
+ 7. Make sure **HKEY_CURRENT_USER** is set to **Hive**
+ 8. Enter in the following for the Key Path: **Control Panel\\Desktop**
+ 9. For the Value name type: **AutoEndTasks**
+10. Change the Value type to **REG_SZ**
+11. Put: '**1**' to enable the option and click **Apply**
+12. **Close** the **Group Policy Management console**. Restart the session hosts.
+
+This is a user-based policy, so will take effect on next logon.
+
 ### Hide the Shutdown button
 
 This is not so much of an optimization, but it is one of my favourite group policy configurations, something I implement in server base policies; it prevents that "Oops!" moment when someone clicks Shutdown on a server, especially with multi-session VDI machines, this just removes the shortcuts to shutdown and restart the server from the Start Menu.

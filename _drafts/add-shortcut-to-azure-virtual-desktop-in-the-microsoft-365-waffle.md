@@ -32,7 +32,8 @@ That includes access to the HTML Azure Virtual Desktop client! Microsoft has giv
 5. **Add** a **description** _(such as Contoso Desktop, used for Line of Business Applications)_
 6. ![](/uploads/m365_customapplaunchertitle1.png)
 7. Click **Save**
-8. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
+8. ![](/uploads/m365_contosoapp.png)
+9. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
 
 _I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website, to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client._
 

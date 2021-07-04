@@ -34,4 +34,8 @@ That includes access to the HTML Azure Virtual Desktop client! Microsoft has giv
 7. Click **Save**
 8. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
 
-_Note: I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website, to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client. At this stage, having a launcher to the Web Client is the best bet and you don't have to worry about users having the Remote Desktop agent installed when working out of the office._
+_I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website, to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client._ 
+
+_I found that I can open the RDP up with the Remote Desktop application directly using Open With: C:\\Users\\%UserAccount%\\AppData\\Local\\Apps\\Remote Desktop\\msrdcw.exe_
+
+_At this stage, having a launcher to the Web Client is the best bet and you don't have to worry about users having the Remote Desktop agent installed when working out of the office._

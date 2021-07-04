@@ -177,7 +177,7 @@ You can run Microsoft Teams in Azure Virtual Desktop. To do so, you need to inst
 
 ### Configure Auto Close Apps on Logoff
 
-When users may go to logoff, open applications may halt or prolong the logoff process, this can leave to sessions being left connected and additional time and resource needed to close applications before logoff. To stop the prompt about open Applications we need to set a registry key - this is not an 'optimisation' to be treated lightly, as it won't ask users to double check some of the apps they have open, as soon as they hit the logoff button - that it is, any open apps will be closed!
+When users may go to logoff, open applications may halt or prolong the logoff process and prompts for users to close applications, this can leave to sessions being left connected, if a user hits logoff or shutdown and walks away. To stop the prompt about open Applications we need to set a registry key - this is not an 'optimisation' to be treated lightly, as it won't ask users to double check some of the apps they have open, as soon as they hit the logoff button - that it is, any open apps will be closed!
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.

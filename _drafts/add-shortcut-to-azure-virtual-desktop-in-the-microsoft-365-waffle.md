@@ -25,15 +25,17 @@ That includes access to the HTML Azure Virtual Desktop client! Microsoft has giv
 
 ![](/uploads/m365_customapplaunchertitle.png)
 
-1. Click **+ Add a custom title**
-2. Type in the name of your Desktop, in my example it is: **Contoso Desktop**
-3. For the **URL** of the website type in: [**https://rdweb.wvd.microsoft.com/arm/webclient/index.html**](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
-4. Type in a **URL** of the **icon** you want the App Launcher to have _(Make sure this is a location that you have access to and can manage (ie even sitting on your website or Azure Storage account as long as it's publically available))._
-5. **Add** a **description** _(such as Contoso Desktop, used for Line of Business Applications)_
-6. ![](/uploads/m365_customapplaunchertitle1.png)
-7. Click **Save**
-8. ![](/uploads/m365_contosoapp.png)
-9. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
+ 1. Click **+ Add a custom title**
+ 2. Type in the name of your Desktop, in my example it is: **Contoso Desktop**
+ 3. For the **URL** of the website type in: [**https://rdweb.wvd.microsoft.com/arm/webclient/index.html**](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
+ 4. Type in a **URL** of the **icon** you want the App Launcher to have _(Make sure this is a location that you have access to and can manage (ie even sitting on your website or Azure Storage account as long as it's publically available))._
+ 5. **Add** a **description** _(such as Contoso Desktop, used for Line of Business Applications)_
+ 6. ![](/uploads/m365_customapplaunchertitle1.png)
+ 7. Click **Save**
+ 8. ![](/uploads/m365_contosoapp.png)
+ 9. Log out of your Admin account and into an account that has an Exchange license, attached to it. It may take some time for the Custom App Launcher to display.
+10. Once the custom App Launcher has displayed, your users can pin it so it is always right on top.
+11. ![](/uploads/m365_pin.png)
 
 _I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website, to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client._
 

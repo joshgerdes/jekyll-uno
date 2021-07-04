@@ -38,4 +38,4 @@ _I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount
 
 _I had some success opening that RDP up with the Remote Desktop application directly using 'Open With' C:\\Users\\%UserAccount%\\AppData\\Local\\Apps\\Remote Desktop\\msrdcw.exe, instead of the default Remote Desktop Connection client._
 
-_At this stage, having a launcher to the Web Client is the best bet and you don't have to worry about users having the Remote Desktop agent installed when working out of the office._
+_At this stage, having a launcher to the Web Client is the best bet vs a shortcut directly to the RDP file as you don't have to worry about users having the Remote Desktop agent installed when working out of the office._

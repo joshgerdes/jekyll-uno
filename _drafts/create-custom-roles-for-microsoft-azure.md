@@ -159,6 +159,30 @@ You may have noticed that each Action has a provider. In the example of a Virtua
 * Description: Lists available sizes the virtual machine can be updated to
 * IsDataAction      : False
 
+6. You can use the PowerShell script below to export all the Providers and their Operations to a CSV for review:
+
+       $Providers = Get-AzProviderOperation
+       
+       $results = @()
+       
+       ForEach ($Provider in $Providers) {
+       
+       
+       
+           $results += [pscustomobject]@{
+               'Provider NameSpace' = $Provider.ProviderNamespace
+               Description          = $Provider.Description
+               'Operation Name'     = $Provider.OperationName
+               Operation            = $Provider.Operation
+               ResourceName         = $Provider.ResourceName
+       
+                               
+           }
+       
+       }
+         
+       $results | Export-csv c:\temp\AzureRBACPermissions.csv -NoTypeInformation
+
 Using the namespace, providers and actions, you should now be able to see the power behind Role-based access control and how granular you can get.
 
 ### Add a Custom Role using PowerShell.

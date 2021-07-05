@@ -1,9 +1,11 @@
 ---
 date: 2021-07-06 00:00:00 +1200
 title: Create Custom Roles for Microsoft Azure
+permalink: /azure/create-custom-roles-for-microsoft-azure/
 author: Luke
 categories:
 - Azure
+- PowerShell
 toc: true
 header:
 header:

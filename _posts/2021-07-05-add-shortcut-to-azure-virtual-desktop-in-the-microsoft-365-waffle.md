@@ -13,9 +13,9 @@ If you are like me, you use the application launchers in the Microsoft 365 waffl
 
 That includes access to the HTML Azure Virtual Desktop client! In addition, Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle!
 
-You can add much more than the Azure Virtual Desktop web client to help improve your user's experience, but this brief guide will focus on adding the Azure Virtual Desktop Web Client.
-
 > Create custom tiles that will appear in the All apps section of the ‎Office 365‎ app launcher for all of your users. Users can pin the custom tiles directly to their app launcher for quick access.
+
+You can add much more than the Azure Virtual Desktop web client to help improve your user's experience, but this brief guide will focus on adding the Azure Virtual Desktop Web Client.
 
 ![M365 Waffle](/uploads/m365_waffle_default.png "M365 Waffle")
 

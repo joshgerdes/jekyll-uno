@@ -45,4 +45,4 @@ _Just some notes on additional testing:_
 _* I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client._
 _* I had some success opening that RDP up with the Remote Desktop application directly using 'Open With' C:\\Users\\%UserAccount%\\AppData\\Local\\Apps\\Remote Desktop\\msrdcw.exe, instead of the default Remote Desktop Connection client locally._
 
-At this stage, having a launcher to the Web Client is the best bet vs a shortcut directly to the RDP file as you don't have to worry about users having the Remote Desktop agent installed when working out of the office.
+At this stage, having a launcher to the Web Client is the best bet vs a shortcut directly to the RDP file as you don't have to worry about users having the Remote Desktop agent installed when working remotely.

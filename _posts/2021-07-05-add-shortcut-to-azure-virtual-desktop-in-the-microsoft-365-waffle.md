@@ -19,7 +19,7 @@ You can add much more than the Azure Virtual Desktop web client to help improve 
 
 ![M365 Waffle](/uploads/m365_waffle_default.png "M365 Waffle")
 
-1. Open the [**Microsoft 365 Admin Panel**](https://admin.microsoft.com/#/homepage "M365 Admin")
+1. Open the [**Microsoft 365 Admin Panel**](https://admin.microsoft.com/#/homepage "M365 Admin"){:target="_blank"}
 2. Expand **Settings**
 3. Click on **Org Settings**
 4. Select **Organisation Profile**
@@ -29,7 +29,7 @@ You can add much more than the Azure Virtual Desktop web client to help improve 
 
  1. Click **+ Add a custom title.**
  2. Please type in the name of your Desktop; in my example, it is **Contoso Desktop.**
- 3. For the **URL** of the website, type in: [**https://rdweb.wvd.microsoft.com/arm/webclient/index.html**](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html")
+ 3. For the **URL** of the website, type in: [**https://rdweb.wvd.microsoft.com/arm/webclient/index.html**](https://rdweb.wvd.microsoft.com/arm/webclient/index.html "https://rdweb.wvd.microsoft.com/arm/webclient/index.html"){:target="_blank"}
  4. Type in a **URL** of the **icon** you want the App Launcher to have _(Make sure this is a location that you have access to and can manage (i.e. even sitting on your website or Azure Storage account as long as it's publically available))._
  5. **Add** a **description** _(such as Contoso Desktop, used for Line of Business Applications)_
  6. ![M365 - Custom App Launcher](/uploads/m365_customapplaunchertitle1.png "M365 - Custom App Launcher")

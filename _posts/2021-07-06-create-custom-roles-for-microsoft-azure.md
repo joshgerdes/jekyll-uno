@@ -204,7 +204,7 @@ This base template has the following fields that the majority of most custom rol
 
 1. **Edit** these **fields** _(apart from IsCustom, which you should leave as True)_ as you need.
 
-[https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621](https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621 "https://gist.github.com/lukemurraynz/2f5f4e0a4cc587d7cd297cee7569f621")
+{% gist 2f5f4e0a4cc587d7cd297cee7569f621 %}
 
 This Custom Role - Template allows you to read the name of all Resource Groups in a subscription and open a Microsoft Support case.
 
@@ -214,7 +214,7 @@ In my example, I am going to add a new role called:
 
 This role will allow users to Deploy and modify Azure WebApps, among other things!
 
-[https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0](https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0 "https://gist.github.com/lukemurraynz/c7112d45f01959963c7e919ce06098d0")
+{% gist c7112d45f01959963c7e919ce06098d0 %}
 
 1. To **add** the **Custom Role** to Azure, I will **run** the following **PowerShell** command:
 

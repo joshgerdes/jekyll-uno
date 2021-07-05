@@ -15,7 +15,7 @@ That includes access to the Azure Virtual Desktop Web client! In addition, Micro
 
 > Create custom tiles that will appear in the All apps section of the ‎Office 365‎ app launcher for all of your users. Users can pin the custom tiles directly to their app launcher for quick access.
 
-You can add much more than the Azure Virtual Desktop web client to help improve your user's experience, but this brief guide will focus on adding the Azure Virtual Desktop Web Client.
+You can add much more than the Azure Virtual Desktop web client to help improve your user's experience, but this quick guide will focus on adding the Azure Virtual Desktop Web Client.
 
 ![M365 Waffle](/uploads/m365_waffle_default.png "M365 Waffle")
 

@@ -43,7 +43,7 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 
        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
        Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module").
+3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module"){:target="_blank"}.
 4. Once you have the Azure PowerShell module installed, you can **connect to** your **Azure** subscription using the little snippet below:
 
        #Prompts for Azure credentials 
@@ -270,4 +270,4 @@ Now that you have created your Custom Role - it is time to assign it! So it is a
 
 You can assign Custom Role's using PowerShell. To do this, you need a few things such as the Object ID, Assignable Scope IDs etc., instead of rehashing it, this Microsoft article does an excellent job of running through the process.
 
-* [Assign Azure roles using Azure PowerShell](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell "Assign Azure roles using Azure PowerShell")
+* [Assign Azure roles using Azure PowerShell](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell "Assign Azure roles using Azure PowerShell"){:target="_blank"}

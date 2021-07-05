@@ -46,9 +46,10 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module").
 4. Once you have the Azure PowerShell module installed, you can **connect to** your **Azure** subscription using the little snippet below:
 
-   \#Prompts for Azure credentials Connect-AzAccount
-
-   \#Prompts Window allowing you to select which  Azure Subscription to connect to $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru Set-AzContext -SubscriptionName $subscriptionName
+       #Prompts for Azure credentials 
+       Connect-AzAccount
+       #Prompts Window allowing you to select which  Azure Subscription to connect to 
+       $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru Set-AzContext -SubscriptionName $subscriptionName
 
 ### Export Built-in Azure Roles
 
@@ -159,7 +160,7 @@ You may have noticed that each Action has a provider. In the example of a Virtua
 * Description: Lists available sizes the virtual machine can be updated to
 * IsDataAction      : False
 
-6. You can use the PowerShell script below to export all the Providers and their Operations to a CSV for review:
+1. You can use the PowerShell script below to export all the Providers and their Operations to a CSV for review:
 
        $Providers = Get-AzProviderOperation
        

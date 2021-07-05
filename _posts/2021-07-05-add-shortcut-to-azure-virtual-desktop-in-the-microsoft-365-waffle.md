@@ -40,7 +40,7 @@ You can add much more than the Azure Virtual Desktop web client to help improve 
 11. **Click** on your Azure Virtual Desktop **launcher,** and you should be **redirected** to the Azure Virtual Desktop **Web client**!
 12. ![M365 Waffle - App Launcher](/uploads/m365_pin.png "M365 Waffle - App Launcher")
 
-_Just some notes on additional testing:_
+Just some notes on additional testing:
 
 * I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount%\\AppData\\Local\\rdclientwpf) to my website to access directly however received an error, even opening up the RDP file directly failed, to test the Remote Desktop client.
 * I had some success opening that RDP up with the Remote Desktop application directly using 'Open With' C:\\Users\\%UserAccount%\\AppData\\Local\\Apps\\Remote Desktop\\msrdcw.exe, instead of the default Remote Desktop Connection client locally.

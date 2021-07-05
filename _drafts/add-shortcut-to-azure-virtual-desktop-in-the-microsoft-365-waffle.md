@@ -1,5 +1,5 @@
 ---
-date: 2021-07-04T00:00:00.000+12:00
+date: 2021-07-05 00:00:00 +1200
 title: Add shortcut to Azure Virtual Desktop Web Client in the Microsoft 365 waffle
 author: Luke
 categories:

@@ -1,6 +1,6 @@
 ---
 date: 2021-07-05 00:00:00 +1200
-title: Add shortcut to Azure Virtual Desktop Web Client to the Microsoft 365 waffle
+title: Add a shortcut to the Azure Virtual Desktop Web Client to the Microsoft 365 waffle
 author: Luke
 categories:
 - Azure

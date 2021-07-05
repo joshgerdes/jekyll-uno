@@ -188,7 +188,7 @@ You may have noticed that each Action has a provider. In the example of a Virtua
 
 Using the namespace, providers and actions, you should now be able to see the power behind Role-based access control and how granular you can get.
 
-### Add a Custom Role using PowerShell.
+### Add a Custom Role using PowerShell
 
 Now that we understand how to navigate the Namespaces and Built-In Roles available in Microsoft Azure using PowerShell, now we will create one.
 
@@ -222,7 +222,7 @@ This role will allow users to Deploy and modify Azure WebApps, among other thing
 
 **Your new Custom Role has now been uploaded to Azure and can be selected for an assignment.**
 
-### Add a Custom Role using the Azure Portal.
+### Add a Custom Role using the Azure Portal
 
 Now that we have been through and investigated the Azure roles and their providers and actions, instead of using PowerShell to look through and create manually, you can use the Azure Portal!
 

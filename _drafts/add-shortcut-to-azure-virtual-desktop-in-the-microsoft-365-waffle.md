@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: "/uploads/avddesktopfull.png"
+  teaser: "/uploads/m365_pin.png"
 
 ---
 If you are like me, use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a place to access all your applications is a no-brainer!

@@ -11,7 +11,9 @@ header:
 ---
 If you are like me, use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a place to access all your applications is a no-brainer!
 
-That includes access to the HTML Azure Virtual Desktop client! In addition, Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle! So you can add much more than the Azure Virtual Desktop web client to help improve your user's experience.
+That includes access to the HTML Azure Virtual Desktop client! In addition, Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle! 
+
+You can add much more than the Azure Virtual Desktop web client to help improve your user's experience, but this guide will focus on adding the Azure Virtual Desktop Web Client.
 
 > Create custom tiles that will appear in the All apps section of the ‎Office 365‎ app launcher for all of your users. Users can pin the custom tiles directly to their app launcher for quick access.
 
@@ -42,4 +44,4 @@ _I attempted copying the Azure Virtual Desktop RDP file (C:\\Users\\%UserAccount
 
 _I had some success opening that RDP up with the Remote Desktop application directly using 'Open With' C:\\Users\\%UserAccount%\\AppData\\Local\\Apps\\Remote Desktop\\msrdcw.exe, instead of the default Remote Desktop Connection client._
 
-_At this stage, having a launcher to the Web Client is the best bet vs a shortcut directly to the RDP file as you don't have to worry about users having the Remote Desktop agent installed when working out of the office._
+At this stage, having a launcher to the Web Client is the best bet vs a shortcut directly to the RDP file as you don't have to worry about users having the Remote Desktop agent installed when working out of the office.

@@ -88,7 +88,7 @@ One of the best ways to learn about how an Azure Role is put together is to look
 8. Once completed, you should now **see** the **JSON files** below:
 9. ![Azure Role - JSON files](/uploads/az_exportroles.png "Azure Role - JSON files")
 
-_Although you can use Notepad, I recommend using_ [_Visual Studio Code_]() _to read these files. This is because Visual Studio Code will help with the syntax as well._
+_Although you can use Notepad, I recommend using_ [_Visual Studio Code_](https://code.visualstudio.com/Download){:target="_blank"} _to read these files. This is because Visual Studio Code will help with the syntax as well._
 
 ### Review Built-in Azure Roles
 

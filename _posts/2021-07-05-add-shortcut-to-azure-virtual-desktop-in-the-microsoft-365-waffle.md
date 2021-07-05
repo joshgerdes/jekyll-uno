@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/m365_pin.png"
 
 ---
-If you are like me, use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a single point of contact to access all your applications is a no-brainer!
+If you are like me, you use the application launchers in the Microsoft 365 waffle daily, if not hourly! Then having it as a single point of contact to access all your applications is a no-brainer!
 
 That includes access to the HTML Azure Virtual Desktop client! In addition, Microsoft has given us the ability to add Custom App Launchers for applications that are accessible to a URL to the Launchers in the waffle!
 

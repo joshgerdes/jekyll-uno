@@ -32,7 +32,7 @@ These permissions can be manipulated and custom roles created.
 
 > Why would you use custom roles you ask? As usual - it depends!
 
-Custom Roles can give people or objects JUST the right amount of permissions to do what they need to do, nothing more and nothing less, an example of this is maybe you are onboarding a support partner. Still, they are only supporting Logic Apps, WebApps and Backups. You don't want them to be able to log support cases for your Azure resources; for example, instead of attempting to mash several roles together that may give more or fewer rights than you need, you can create a custom role that specifically gives them what they need, you can then increase or decrease the permissions as needed, however, if a built-in role already exists for what you want. There is no need to reinvent the wheel, so use it!
+Custom Roles can give people or objects JUST the right amount of permissions to do what they need to do, nothing more and nothing less, an example of this is maybe you are onboarding a support partner, if they are will only be supporting your Logic Apps, WebApps and Backups, you may not want them to be able to log support cases for your Azure resources; instead of attempting to mash several roles together that may give more or fewer rights than you need, you can create a custom role that specifically gives them what they need, you can then increase or decrease the permissions as needed, however, if a built-in role already exists for what you want. There is no need to reinvent the wheel, so use it!
 
 I will run through a few things to help arm you understand and build your own Custom Roles, primarily using PowerShell.
 

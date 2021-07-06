@@ -51,7 +51,7 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
        #Prompts for Azure credentials 
        Connect-AzAccount
        #Prompts Window allowing you to select which  Azure Subscription to connect to 
-       $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru Set-AzContext -SubscriptionName $subscriptionName
+       $subscriptionName = (Get-AzSubscription) | Out-GridView -Title 'Select Azure Subscription' -PassThru | Set-AzContext -SubscriptionName $subscriptionName
 
 ### Export Built-in Azure Roles
 

@@ -19,7 +19,7 @@ The Free pricing tier is a [legacy pricing tier](https://go.microsoft.com/fwlink
 
 You can change a Free Tier Log Analytics workspace to a Pay-as-you-go or commitment tier later.
 
-You are unable to change a Log Analytics workspace created on a higher tier back to Free, even using PowerShell due to adjustments back in 2018 around the Log Analytics billing and plans.
+You are unable to change a Log Analytics workspace created on a higher tier back to Free, even using PowerShell due to [adjustments](https://azure.microsoft.com/en-us/blog/introducing-a-new-way-to-purchase-azure-monitoring-services/ "Introducing a new way to purchase Azure monitoring services") back in 2018 around the Log Analytics billing and plans.
 
 ![](/uploads/log_analytics_free.png)
 

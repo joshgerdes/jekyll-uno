@@ -45,7 +45,7 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 
  1. Log in to the Azure Portal
  2. Search for: Azure Virtual Desktop
- 3. Click on [Insights ](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights")- 
+ 3. Click on [Insights ](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights")-
  4. You should now be greeted by a Workbook blade
  5. This is where we will configure the Azure Virtual Desktop Insights, you can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' (however this will be managed by Microsoft, but it is handy to know the version in case of support later on).
  6. ![](/uploads/azportal_azurevirtualdesktop_insights.png)
@@ -60,3 +60,5 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 15. Click on: Deploy
 16. Once the Workspace and Host Pool deployments are done, click on Refresh
 17. ![](/uploads/azportal_azurevirtualdesktopcheckconfigrefresh.png)
+18. Confirm that Enabled is: True
+19. ![](/uploads/azportal_azurevirtualdesktopcheckconfig.png)

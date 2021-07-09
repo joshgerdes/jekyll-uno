@@ -21,14 +21,14 @@ To configure, we need to create a Log Analytics workspace that both the Host Poo
 
 ### Create a Log Analytics workspace
 
-You can use a Log Analytics workspace if it already exists; if not then we will have to create one.
+You can use a Log Analytics workspace if it already exists; if not, we will have to create one.
 
  1. Log in to the **Azure Portal**
  2. Click on + **Create a Resource**
  3. Search for: **Log Analytics workspace**
  4. Click **Create**
  5. ![Azure Portal - Log Analytics Marketplace](/uploads/azportal_loganalyticsworkspace.png "Azure Portal - Log Analytics Marketplace")
- 6. Here we can **select** the **Resource Group**, **Name** and **Location** of the Log Analytics workspace we are going to create.
+ 6. Here we can **select** the **Resource Group**, **Name** and **Location** of the Log Analytics workspace we will create.
  7. I am going to **create** a new **Resource Group** called: aad_mgmt
  8. I click Create New and **enter** in the **name** of the **Resource Group**
  9. Under Instance Details, make sure you select a name that adheres to your naming governance.
@@ -47,33 +47,33 @@ You can use a Log Analytics workspace if it already exists; if not then we will 
  1. Log in to the **Azure Portal**
  2. **Search** for: **Azure Virtual Desktop**
  3. Click on [**Insights**](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights")
- 4. You should now be greeted by a Workbook blade
- 5. This is where we will **configure** the Azure Virtual Desktop **Insights**. You can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' _(however this will be managed by Microsoft, but it is handy to know the version in case of support later on)._
+ 4. A Workbook blade should now greet you
+ 5. This is where we will **configure** the Azure Virtual Desktop **Insights**. You can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' _(however, this will be managed by Microsoft, but it is handy to know the version in case of support later on)._
  6. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktop_insights.png "Azure Virtual Desktop - Insights")
  7. Click on **Open Configuration Workbook**
  8. Here, **select** the Log Analytics **workspace** you created earlier _(or want to use)_
  9. Select **Configure host pool**
 10. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktopcheckconfiguration.png "Azure Virtual Desktop - Insights")
-11. Click on **Deploy** _(make sure all your Session Hosta are started, so Azure can deploy and configure the Log Analytics agent on the Virtual Machines)_
-12. You can select View Template and Parameters if you want to confirm the host pool and workspace that will be configured.
+11. Click on **Deploy** _(make sure all your Session Hosta are started so that Azure can deploy and configure the Log Analytics agent on the Virtual Machines)_
+12. You can select View Template and Parameters if you want to confirm the host pool and workspace configured.
 13. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktophostpooldeploy.png "Azure Virtual Desktop - Insights")
-14. While the Diagnostic host pool settings are being configured, click on **Configure workspace**
+14. While the Diagnostic host pool settings are being configured, click on **Configure workspace.**
 15. Click on: **Deploy**
-16. Once the Workspace and Host Pool deployments are done, click on **Refresh**
+16. Once the Workspace and Host Pool deployments are done, click on **Refresh.**
 17. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktopcheckconfigrefresh.png "Azure Virtual Desktop - Insights")
 18. **Confirm** that **Enabled** is: True
 19. ![](/uploads/azportal_azurevirtualdesktopcheckconfig.png)
-20. The journey is not over yet, now that the Host Pool and Workspace, have been configured we need to **add** the **Session Hosts** and configure the **performance counters** to go to the same workspace!
-21. Click on: **Session host data settings**
+20. The journey is not over yet; now that the Host Pool and Workspace have been configured, we need to **add** the **Session Hosts** and configure the **performance counters** to the same workspace!
+21. Click on: **Session host data settings.**
 22. **Select** your Log Analytics **workspace**
 23. Select **Add hosts to workspace**
 24. ![](/uploads/azportal_sessionhostdatasettings.png)
 25. Confirm the Deployment and click **Deploy**
-26. **Wait until** the **deployment** has **succeeded** or you may get API errors, then select:
+26. **Wait until** the **deployment** has **succeeded,** or you may get API errors, then select:
 27. Navigate down and click **Configure performance counters**
 28. ![](/uploads/azportal_performancecounterssettings.png)
-29. Click on **Apply** config
-30. **Wait until** the **deployment** has **succeeded** or you may get API errors, then select:
+29. Click on **Apply** config.
+30. **Wait until** the **deployment** has **succeeded,** or you may get API errors, then select:
 31. Navigate down and click on **Configure events**
 32. ![](/uploads/azportal_eventlogssettings.png)
 33. Click on **Deploy**
@@ -82,9 +82,9 @@ You can use a Log Analytics workspace if it already exists; if not then we will 
 34. ![](/uploads/azportal_performancecountersreview.png)
 35. **You have now configured Azure Virtual Desktop Insights!**
 
-    _It may take a few minutes to an hour to populate and collect the data, for some of the events and counters._
+    _It may take a few minutes to an hour to populate and collect the data for some of the events and counters._
 36. ![](/uploads/azportal_azurevirtualdesktopinsights.png)
 
-    _On the plus side, all the data is also in Log Analytics, so can be queried and you can set up Alert rules against it and get more visibility into your Azure Virtual Desktop environment and use._
+    _On the plus side, all the data is also in Log Analytics so that it can be queried, and you can set up Alert rules against it and get more visibility into your Azure Virtual Desktop environment and use._
 
     ![](/uploads/azportal_azurevirtualdesktoploganalytiicsquery.png)

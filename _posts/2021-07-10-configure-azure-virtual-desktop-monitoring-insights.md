@@ -36,7 +36,7 @@ You can use a Log Analytics workspace if it already exists; if not, we will have
 11. ![Azure Portal - Create Log Analytics](/uploads/azportal_createloganalyticsworkspace.png "Azure Portal - Create Log Analytics")
 12. Click on: **Next: Pricing Tier**
 13. **Select** the applicable **pricing tier**, I only have Pay-as-you-go (Per GB 2018), so I will select that.
-14. _Note: You can view the Pricing for Log Analytics on the_ [_Pricing Calculator_](https://azure.microsoft.com/en-us/pricing/details/monitor/, "Azure Pricing Calculator - Azure Monitor")_:  look at the Pay-As-You rates._
+14. _Note: You can view the Pricing for Log Analytics on the_ [_Pricing Calculator_](https://azure.microsoft.com/en-us/pricing/details/monitor/, "Azure Pricing Calculator - Azure Monitor"){:target="_blank"}_:  look at the Pay-As-You rates._
 15. ![Azure Portal - Create Log Analytics](/uploads/azportal_createloganalyticsworkspacepricing.png "Azure Portal - Create Log Analytics")
 16. Click **Next: Tags**
 17. **Enter** in any **applicable tags**, such as Creator, Who it may get billed to, Project ID etc. that’s relevant and select **Review + Create**
@@ -46,7 +46,7 @@ You can use a Log Analytics workspace if it already exists; if not, we will have
 
  1. Log in to the **Azure Portal**
  2. **Search** for: **Azure Virtual Desktop**
- 3. Click on [**Insights**](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights")
+ 3. Click on [**Insights**](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights"){:target="_blank"}
  4. A Workbook blade should now greet you
  5. This is where we will **configure** the Azure Virtual Desktop **Insights**. You can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' _(however, this will be managed by Microsoft, but it is handy to know the version in case of support later on)._
  6. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktop_insights.png "Azure Virtual Desktop - Insights")

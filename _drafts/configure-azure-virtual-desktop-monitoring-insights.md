@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azportal_azurevirtualdesktopinsights.png"
 
 ---
-Microsoft has now added a built-in Monitoring workbook for Azure Virtual Desktop performance monitoring, this monitoring includes dashboards related _(but not limited to)_:
+Microsoft has now added a built-in Monitoring workbook for Azure Virtual Desktop performance monitoring; this monitoring includes dashboards related _(but not limited to)_:
 
 * Session host diagnostics
 * Connection performance
@@ -21,7 +21,7 @@ To configure, we need to create a Log Analytics workspace that both the Host Poo
 
 ### Create a Log Analytics workspace
 
-You can use a Log Analytics workspace if it already exists, if not then we will have to create one.
+You can use a Log Analytics workspace if it already exists; if not then we will have to create one.
 
  1. Log in to the **Azure Portal**
  2. Click on + **Create a Resource**
@@ -39,8 +39,8 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 14. _Note: You can view the Pricing for Log Analytics on the_ [_Pricing Calculator_](https://azure.microsoft.com/en-us/pricing/details/monitor/, "Azure Pricing Calculator - Azure Monitor")_:  look at the Pay-As-You rates._
 15. ![Azure Portal - Create Log Analytics](/uploads/azportal_createloganalyticsworkspacepricing.png "Azure Portal - Create Log Analytics")
 16. Click **Next: Tags**
-17. **Enter** in any **applicable tags**, such as Creator, Who it may get billed to, Project ID etc that’s relevant and select **Review + Create**
-18. **Review** the **configuration** and click **Create**, to create your Log Analytics workspace! _(It should take less than a minute._)
+17. **Enter** in any **applicable tags**, such as Creator, Who it may get billed to, Project ID etc. that’s relevant and select **Review + Create**
+18. **Review** the **configuration** and click **Create** to create your Log Analytics workspace! _(It should take less than a minute._)
 
 ### Configure Azure Virtual Desktop Insights
 
@@ -48,7 +48,7 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
  2. **Search** for: **Azure Virtual Desktop**
  3. Click on [**Insights**](https://portal.azure.com/#blade/Microsoft_Azure_WVD/WvdManagerMenuBlade/insights "Azure Virtual Desktop - Insights")
  4. You should now be greeted by a Workbook blade
- 5. This is where we will **configure** the Azure Virtual Desktop **Insights**, you can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' _(however this will be managed by Microsoft, but it is handy to know the version in case of support later on)._
+ 5. This is where we will **configure** the Azure Virtual Desktop **Insights**. You can see on the lower right-hand side that we will be deploying Azure Monitor for 'Windows Virtual Desktop v1.0.4' _(however this will be managed by Microsoft, but it is handy to know the version in case of support later on)._
  6. ![Azure Virtual Desktop - Insights](/uploads/azportal_azurevirtualdesktop_insights.png "Azure Virtual Desktop - Insights")
  7. Click on **Open Configuration Workbook**
  8. Here, **select** the Log Analytics **workspace** you created earlier _(or want to use)_

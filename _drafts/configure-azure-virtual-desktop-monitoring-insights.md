@@ -79,3 +79,7 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 
     Now click on: Refresh, and you should see 'No missing performance counters', 'No missing events found'.
 34. ![](/uploads/azportal_performancecountersreview.png)
+35. You have now configured Azure Virtual Desktop Insights!
+
+    It may take a few minutes to an hour to populate and collect the data, for some of the events and counters.
+36. ![](/uploads/azportal_azurevirtualdesktopinsights.png)

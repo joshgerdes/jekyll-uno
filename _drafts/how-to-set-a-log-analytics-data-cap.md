@@ -8,11 +8,13 @@ header:
   teaser: ''
 
 ---
-This is just an additional configuration that may help with sizing and pricing Log Analytics, you can set a 'Daily cap' for the amount of Data you ingest per day, to help restrict cost.
+This is just an additional configuration that may help with sizing and pricing Log Analytics, you can set a 'Daily cap' for the amount of Data you ingest **_per day_**, to help restrict cost.
 
 The downside of this is if you reach the cap, you will no longer collect any data, until the following day, meaning you may miss key events or issues.
 
 This is something that I would recommend ONLY to do if you run into any financial constraints, giving you more time time to work through, of course, situation depending.
+
+This is a pretty quick 'How To' so let's get straight into it:
 
 1. Log in to the **Azure Portal**
 2. Search for your Log Analytics Workspace

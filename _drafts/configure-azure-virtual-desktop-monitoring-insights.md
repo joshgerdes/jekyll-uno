@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azportal_azurevirtualdesktopinsights.png"
 
 ---
-Microsoft has a now added a built-in Monitoring workbook for Azure Virtual Desktop performance monitoring, this monitoring includes dashboards related _(but not limited to)_:
+Microsoft has now added a built-in Monitoring workbook for Azure Virtual Desktop performance monitoring, this monitoring includes dashboards related _(but not limited to)_:
 
 * Session host diagnostics
 * Connection performance

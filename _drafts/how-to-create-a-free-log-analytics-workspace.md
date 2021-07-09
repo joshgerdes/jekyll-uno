@@ -9,3 +9,8 @@ header:
   teaser: ''
 
 ---
+When you create a Log Analytics workspace using the Azure Portal, you only get the Pricing or 'Pay-as-you-go' tiers to select.
+
+However, using PowerShell you can create a Log Analytics Free SKU!
+
+![](/uploads/log_analytics_free.png)

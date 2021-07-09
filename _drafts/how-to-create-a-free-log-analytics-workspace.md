@@ -11,13 +11,15 @@ header:
 ---
 When you create a Log Analytics workspace using the Azure Portal, you only get the Pricing or 'Pay-as-you-go' tiers to select.
 
-You use to be able to create a 'Free' tier using the Azure Portal roughly about a year ago, however they removed it with a change in plans.
+You use to be able to create a 'Free' tier using the Azure Portal roughly since 2018, however they removed it with a change in plans.
 
 However, using PowerShell you can still create a Log Analytics Free SKU!
 
 The Free pricing tier is a [legacy pricing tier](https://go.microsoft.com/fwlink/?linkid=2093511) that is available for trying Azure Log Analytics. It has a data cap of 500 MB/day and only 7 days of data retention, so it is intended only for testing and is not to be used for production deployments. 
 
 You can change a Free Tier Log Analytics workspace to a Pay-as-you-go or commitment tier later.
+
+You are unable to change a Log Analytics workspace created on a higher tier back to Free, even using PowerShell due to adjustments back in 2018 around the Log Analytics billing and plans.
 
 ![](/uploads/log_analytics_free.png)
 

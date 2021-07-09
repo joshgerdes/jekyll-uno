@@ -62,3 +62,20 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 17. ![](/uploads/azportal_azurevirtualdesktopcheckconfigrefresh.png)
 18. Confirm that Enabled is: True
 19. ![](/uploads/azportal_azurevirtualdesktopcheckconfig.png)
+20. The journey is not over yet, now that the Host Pool and Workspace, have been configured we need to add the Session Hosts and configure the performance counters to go to the same workspace!
+21. Click on: Session host data settings
+22. Select your Log Analytics workspace
+23. Select Add hosts to workspace
+24. ![](/uploads/azportal_sessionhostdatasettings.png)
+25. Confirm the Deployment and click Deploy
+26. Wait until the deployment has succeeded or you may get API errors, then select:
+27. Navigate down and click Configure performance counters
+28. ![](/uploads/azportal_performancecounterssettings.png)
+29. Click on Apply config
+30. Wait until the deployment has succeeded or you may get API errors, then select:
+31. Navigate down and click on Configure events
+32. ![](/uploads/azportal_eventlogssettings.png)
+33. Click on Deploy
+
+    Now click on: Refresh, and you should see 'No missing performance counters', 'No missing events found'.
+34. ![](/uploads/azportal_performancecountersreview.png)

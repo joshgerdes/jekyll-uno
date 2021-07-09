@@ -83,3 +83,5 @@ You can use a Log Analytics workspace if it already exists, if not then we will 
 
     It may take a few minutes to an hour to populate and collect the data, for some of the events and counters.
 36. ![](/uploads/azportal_azurevirtualdesktopinsights.png)
+37. On the plus side, all the data is also in Log Analytics, so can be queried and you can setup Alert rules against it and get more visibility into your Azure Virtual Desktop environment and use.
+38. ![](/uploads/azportal_azurevirtualdesktoploganalytiicsquery.png)

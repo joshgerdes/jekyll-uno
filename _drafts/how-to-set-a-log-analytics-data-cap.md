@@ -24,4 +24,4 @@ This is a pretty quick 'How To' so let's get straight into it:
 5. **Set** your **cap** in **GB** _(I put 0.166 as my thinking was 5GB per free each month, so 166MB a day, should cap my Log Analytics workspace, although useful for this demo/lab, it's not a number I would recommend for Production)_
 6. Click **Ok**
 
-![](/uploads/azportal_loganalyticscap.png)
+![Log Analytics - Set Daily Cap](/uploads/azportal_loganalyticscap.png "Log Analytics - Set Daily Cap")

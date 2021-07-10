@@ -13,7 +13,7 @@ header:
 ---
 When you create a Log Analytics workspace using the Azure Portal, you only get the Pricing or 'Pay-as-you-go' tiers to select.
 
-You used to create a 'Free' tier using the Azure Portal; however, since 2018; they removed it with a change in plans.
+You used to create a 'Free' tier using the Azure Portal; however, since 2018; they removed it with a change in plans and it became a legacy offering.
 
 However, using PowerShell, you can still create a Log Analytics Free SKU!
 

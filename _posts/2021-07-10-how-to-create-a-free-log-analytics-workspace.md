@@ -8,7 +8,7 @@ categories:
 - PowerShell
 toc: false
 header:
-  teaser: '/uploads/log_analytics_free_tier.png'
+  teaser: uploads/log_analytics_free_tier.png
 
 ---
 When you create a Log Analytics workspace using the Azure Portal, you only get the Pricing or 'Pay-as-you-go' tiers to select.

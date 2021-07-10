@@ -43,6 +43,6 @@ Note: I tested this script on an MSDN subscription, which I've had for a few yea
     #Creates Log Analytics Workspace
     New-AzOperationalInsightsWorkspace -Location $Location -Name $LogAnalyticsName -Sku $SKU -ResourceGroupName $ResourceGroup
 
-> If you get an error: Error Message: Pricing tier doesn't match the subscription's billing model. Read [http://aka.ms/PricingTierWarning](http://aka.ms/PricingTierWarning "http://aka.ms/PricingTierWarning") for more details, unfortunately it means that your Subscription is under a different Billing model, and may have been created recently are you are unable to use the 'Free' tier, instead you may have to create it using 'standard' instead.
+> If you get an error: Error Message: Pricing tier doesn't match the subscription's billing model. Read [http://aka.ms/PricingTierWarning](http://aka.ms/PricingTierWarning "http://aka.ms/PricingTierWarning"){:target="_blank"} for more details, unfortunately it means that your Subscription is under a different Billing model, and may have been created recently are you are unable to use the 'Free' tier, instead you may have to create it using 'standard' instead.
 
 ![](/uploads/log_analytics_free_tier.png)

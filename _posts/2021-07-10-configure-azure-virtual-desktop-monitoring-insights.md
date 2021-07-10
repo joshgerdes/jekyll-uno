@@ -17,7 +17,7 @@ Microsoft has now added a built-in Monitoring workbook for Azure Virtual Desktop
 * User login events
 * Remote Desktop client versions
 
-To configure, we need to create a Log Analytics workspace that both the Host Pool and Workspace will need to connect to.
+To configure, we first need to create a Log Analytics workspace that both the Host Pool and Workspace will connect to.
 
 ### Create a Log Analytics workspace
 

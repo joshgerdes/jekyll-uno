@@ -23,11 +23,6 @@ Features of PSRule for Azure include:
 * Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
 * Runs on macOS, Linux, and Windows.
 
-PSRule for Azure provides two methods for analyzing Azure resources:
-
-* Pre-flight - Before resources are deployed from Azure Resource Manager templates.
-* In-flight - After resources are deployed to an Azure subscription.
-
 With over 200 inbuilt rules _(and you can add your own),_ there is a lot of resource types covered such as (but not limited to):
 
 * Azure App Service
@@ -37,4 +32,13 @@ With over 200 inbuilt rules _(and you can add your own),_ there is a lot of reso
 * Azure Network
 * Azure Public IP
 
-Azure PSRules has been in development since 2019 and is under constant updates
+Azure PSRules has been in development since 2019 and is under constant updates and fixes.
+
+PSRule for Azure provides two methods for analyzing Azure resources:
+
+* [Pre-flight ]()- Before resources are deployed from Azure Resource Manager templates.
+* In-flight - After resources are deployed to an Azure subscription.
+
+Pre-flight validation is used to scan ARM (Azure Resource Manager) templates before services are deployed and allow for quality gaps and better information in pull requests to improve and implement your infrastructure as code components.
+
+The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc, but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console.

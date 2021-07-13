@@ -68,16 +68,14 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
 ### Install PSRule.Azure & PSRule.Rules.CAF
 
-Open PowerShell console and run the following Commands:
+1. Open **PowerShell** console and **run** the following **commands**:
 
-    #The main Module and base rules to validate Azure resources..
-    Install-Module PSRule.Rules.Azure -Scope CurrentUser
+       #The main Module and base rules to validate Azure resources..
+       Install-Module PSRule.Rules.Azure -Scope CurrentUser
+2. Press '**Y**' to **accept PSGallery** as a trusted repository, just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following, just be wary that won't get challenged again:
 
-Press 'Y' to accept PSGallery as a trusted repository, just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following, just be wary that won't get challenged again:
-
-    Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
-
-You should now have the following modules installed:
+       Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+3. You should now have the following modules installed:
 
 * PSRule
 * PSRule.Rules.Azure
@@ -92,19 +90,17 @@ As you can see from the screenshot below, we can target specific Subscriptions, 
 
 Because I want to get the most data available across all resources, I am going to Target everything with the '-All' parameter. 
 
-First, we need to connect to the Azure subscription and then connect to the Azure subscription we have access to or are targeting by running the following:
+1. First, we need to connect to the Azure subscription and then **connect** to the **Azure** subscription we have access to or are targeting by running the following:
 
-    Connect-AzAccount
+       Connect-AzAccount
 
-    Get-AzSubscription  | ogv -PassThru | Set-AzContext
+       Get-AzSubscription  | ogv -PassThru | Set-AzContext
+2. Now that you have connected its time to export the Azure resource information, **run** the following **PowerShell** cmdlet, and **point** it towards an **empty folder**:
 
-Now that you have connected its time to export the Azure resource information, run the following PowerShell cmdlet, and point it towards an empty folder:
+       Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
+3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**, depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
 
-    Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
-
-If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
-
-You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.
+You should **see** the **JSON files** appearing if you open one of these, you should be able to see information about the resources it has extracted.
 
 ### Run PSRule across your JSON files
 
@@ -112,25 +108,23 @@ Now that you have extracted the JSON files of your Azure resources, it's now tim
 
 You don't need to be connected to Azure, for this analysis, just have the PSRule modules installed and can access the JSON files.
 
-PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"), these baselines contain the rules used to analyse your resources and range from Preview to newly released rules, again, we are just going to target ALL rules, as we are after any and all recommendations, in PowerShell run the following:
+PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"), these baselines contain the rules used to analyse your resources and range from Preview to newly released rules, again, we are just going to target ALL rules, as we are after any and all recommendations.
 
-    Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
+1. In **PowerShell run** the following:
 
-This will trigger, PSRules to scan your extracted JSON files, with the ALL rules, and you will get output like below:
+       Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
+2. This will trigger, **PSRules** to **scan** your **extracted JSON** files, with the **ALL** rules, and you will get **output** like below:
+3. ![](/uploads/windowsterminal_data_psrules-azure.png)
+4. Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to **export** the rules to a **CSV**:
 
-![](/uploads/windowsterminal_data_psrules-azure.png)
-
-Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to export the rules to a CSV:
-
-    Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
-
-You should now have a CSV file that you can then review and look for common issues, concerns and work on improving your Azure infrastructure setup!
+       Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
+5. You should now have a CSV file that you can then review and look for common issues, concerns and work on improving your Azure infrastructure setup!
 
 ![](/uploads/export_azruledata_excel.png)
 
 _Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot._
 
-Congratulations, you now have more visibility and hopefully, some useful recommendations for improving your Azure deployment, remember PSRules.Azure is just a supplement to already existing toolsets! 
+**Congratulations**! You now have more visibility and hopefully, some useful recommendations for improving your Azure deployment, remember PSRules.Azure is just a supplement to already existing toolsets! 
 
 ### Additional Resources
 

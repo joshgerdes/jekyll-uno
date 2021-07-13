@@ -1,7 +1,7 @@
 ---
 date: 2021-07-13T00:00:00.000+12:00
 title: Well-Architected Framework Azure infrastructure review with PSRule for Azure
-permalink: azure/Well-Architected-Framework-Azure-infrastructure-review-with-PSRule-for-Azure
+permalink: azure/WAF-Azure-infrastructure-review-with-PSRule-for-Azure/
 
 author: Luke
 categories:

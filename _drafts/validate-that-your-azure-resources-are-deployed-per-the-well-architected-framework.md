@@ -41,7 +41,7 @@ PSRule for Azure provides two methods for analyzing Azure resources:
 
 Pre-flight validation is used to scan ARM (Azure Resource Manager) templates before services are deployed and allow for quality gaps and better information in pull requests to improve and implement your infrastructure as code components.
 
-The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc, but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console! 
+The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc, but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console!
 
 If you are interested in the CI (Continous Integration) options, check out the links below:
 
@@ -51,7 +51,7 @@ We are going to install the PSRule.Azure (based on the Well-Architected Framewor
 
 I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules, this does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
 
-### Install PSRule.Azure
+### Install PSRule.Azure & PSRule.Rules.CAF
 
 Open PowerShell console and run the following Commands:
 
@@ -60,4 +60,8 @@ Open PowerShell console and run the following Commands:
     #A suite of additional rules to validate Azure resources against the Cloud Adoption Framework (CAF) using PSRule.
     Install-Module  PSRule.Rules.CAF -Scope CurrentUser
 
-y
+Press 'Y' to accept PSGallery as a trusted repository, just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following, just be wary that won't get challenged again:
+
+    Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+
+sd

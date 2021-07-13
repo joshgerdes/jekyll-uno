@@ -4,9 +4,9 @@ title: Improve your Azure infrastructure  with PSRule for Azure
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/windowsterminal_data_psrules-azure.png"
 
 ---
 Validate that your Azure Resources are deployed per the Well-Architected Framework.. it is pretty long-winded, but **imagine**!

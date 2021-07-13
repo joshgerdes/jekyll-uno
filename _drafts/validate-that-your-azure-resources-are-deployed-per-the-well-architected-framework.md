@@ -1,6 +1,6 @@
 ---
 date: 2021-07-13 00:00:00 +1200
-title: Improve your Azure infrastructure  with PSRule for Azure
+title: Well-Architected Framework Azure infrastructure review with PSRule for Azure
 author: Luke
 categories:
 - Azure

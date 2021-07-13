@@ -1,6 +1,6 @@
 ---
 date: 2021-07-13 00:00:00 +1200
-title: Validate that your Azure Resources are deployed per the Well-Architected Framework
+title: Improve your Azure infrastructure  with PSRule for Azure
 author: Luke
 categories:
 - Azure
@@ -19,7 +19,22 @@ PSRule is a suite of rules to validate resources and infrastructure as code (IaC
 
 Features of PSRule for Azure include:
 
-* Over 200 pre-built rules to validate Azure resources.
+* Leverage over 200 pre-built rules across five (5) WAF pillars:
+  * Cost Optimization
+
+
+  * Operational Excellence
+
+
+  * Performance Efficiency
+
+
+  * Reliability
+
+
+  * Security
+
+
 * Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
 * Runs on macOS, Linux, and Windows.
 

@@ -71,7 +71,7 @@ You should now have the following modules installed:
 * PSRule.Rules.Azure
 * PSRule.Rules.CAF
 
-### Extract Azure Subscription PSRule.Azure JSON files
+### Extract Azure Subscription PSRule JSON files
 
 Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis, these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
 
@@ -91,4 +91,6 @@ Now that you have connected its time to export the Azure resource information, r
 
     Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
 
-If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes. You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.
+If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
+
+You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.

@@ -38,7 +38,7 @@ Features of PSRule for Azure include:
 * Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
 * It runs on macOS, Linux, and Windows.
 
-With over 200 inbuilt rules _(and you can add your own),_ there is a lot of resource types covered such as _(but not limited to)_:
+With over 200 inbuilt rules _(and you can add your own),_ there is a lot of resource types covered, such as _(but not limited to)_:
 
 * Azure App Service
 * Azure Key vault
@@ -56,11 +56,11 @@ PSRule for Azure provides two methods for analyzing Azure resources:
 
 Pre-flight validation is used to scan ARM (Azure Resource Manager) templates before services are deployed and allow for quality gaps and better information in pull requests to improve and implement your infrastructure as code components.
 
-The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc, but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console!
+The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc., but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console!
 
 We are going to install the PSRule.Azure _(based on the Well-Architected Framework & Cloud Adoption Framework)_.
 
-I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules, this does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
+I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter, or after a major deployment or project to help verify your resources are set up according to some best-practice rules. This does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
 
 ### Install PSRule.Azure & PSRule.Rules.CAF
 
@@ -68,7 +68,7 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
        #The main Module and base rules to validate Azure resources..
        Install-Module PSRule.Rules.Azure -Scope CurrentUser
-2. Press '**Y**' to **accept PSGallery** as a trusted repository, just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following, just be wary that won't get challenged again:
+2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get challenged again:
 
        Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 3. You should now have the following modules installed:
@@ -78,9 +78,9 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
 ### Extract Azure Subscription PSRule JSON files
 
-Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis, these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
+Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis; these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
 
-As you can see from the screenshot below, we can target specific Subscriptions, Tenancies _(yes as long as the account you have access to, has access to the subscription you can export those as well)_, Resource Groups and Tags.
+As you can see from the screenshot below, we can target specific Subscriptions, Tenancies _(yes, as long as the account you have access to has access to the subscription, you can export those as well)_, Resource Groups and Tags.
 
 ![](/uploads/powershellise_exportazruledata.png)
 
@@ -94,15 +94,15 @@ Because I want to get the most data available across all resources, I am going t
 2. Now that you have connected its time to export the Azure resource information, **run** the following **PowerShell** cmdlet, and **point** it towards an **empty folder**:
 
        Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
-3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**, depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
+3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**. Depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
 
-You should **see** the **JSON files** appearing if you open one of these, you should be able to see information about the resources it has extracted.
+You should **see** the **JSON files** appearing if you open one of these. You should be able to see information about the resources it has extracted.
 
 ### Run PSRule across your JSON files
 
 Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin into PSRule.Azure!
 
-You don't need to be connected to Azure, for this analysis, just have the PSRule modules installed and can access the JSON files.
+You don't need to be connected to Azure; for this analysis, just have the PSRule modules installed and can access the JSON files.
 
 PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"), these baselines contain the rules used to analyse your resources and range from Preview to newly released rules, again, we are just going to target ALL rules, as we are after any and all recommendations.
 

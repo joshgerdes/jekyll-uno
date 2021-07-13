@@ -56,11 +56,8 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 Open PowerShell console and run the following Commands:
 
     #The main Module and base rules to validate Azure resources..
-
     Install-Module PSRule.Rules.Azure -Scope CurrentUser
-
     #A suite of additional rules to validate Azure resources against the Cloud Adoption Framework (CAF) using PSRule.
-
     Install-Module  PSRule.Rules.CAF -Scope CurrentUser
 
 y

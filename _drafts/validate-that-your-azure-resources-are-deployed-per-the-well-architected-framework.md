@@ -94,3 +94,7 @@ Now that you have connected its time to export the Azure resource information, r
 If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
 
 You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.
+
+### Run PSRule.Azure across your JSON files
+
+Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoptiona and Well Architectured framework and the rules builtin to PSRule.Azure!

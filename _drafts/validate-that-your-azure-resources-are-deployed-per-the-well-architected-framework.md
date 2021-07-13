@@ -108,3 +108,9 @@ This will trigger, PSRules to scan your extracted JSON files, with the ALL rules
 Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to export the rules to a CSV:
 
     Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
+
+You should now have a CSV file that you can then review and look for common issues, concerns and work on improving your Azure infrastructure setup!
+
+![](/uploads/export_azruledata_excel.png)
+
+Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot.

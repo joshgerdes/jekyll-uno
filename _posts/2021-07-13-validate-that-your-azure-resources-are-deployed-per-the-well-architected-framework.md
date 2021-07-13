@@ -62,6 +62,9 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
        #The main Module and base rules to validate Azure resources..
        Install-Module PSRule.Rules.Azure -Scope CurrentUser
+
+![Install-Module PSRule](/uploads/windowsterminal_install_psrules-azure.png Install-Module PSRule")
+
 2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note, you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get rechallenged:
 
        Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted

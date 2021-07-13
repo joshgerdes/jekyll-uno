@@ -11,11 +11,11 @@ header:
 ---
 Validate that your Azure Resources are deployed per the Well-Architected Framework.. it is pretty long-winded, but **imagine**!
 
-**Of a way of validating your services are secure and deployed in accordance with your companies governance rules, and the Azure Architecture framework, both before and after the resources have been commissioned!**
+**Of a way of validating your services are secure and deployed following your companies governance rules. The Azure Architecture framework, both before and after the resources have been commissioned!**
 
 Imagine no longer! There is a PowerShell module designed specifically for that purpose: **PSRule for Azure**.
 
-PSRule is a suite of rules to validate resources and infrastructure as code (IaC) using PSRule, and the Azure component is using the base PSRule module.
+PSRule is a suite of rules to validate resources and infrastructure as code (IaC) using PSRule, and the Azure component uses the base PSRule module.
 
 Features of PSRule for Azure include:
 
@@ -56,11 +56,11 @@ PSRule for Azure provides two methods for analyzing Azure resources:
 
 Pre-flight validation is used to scan ARM (Azure Resource Manager) templates before services are deployed and allow for quality gaps and better information in pull requests to improve and implement your infrastructure as code components.
 
-The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc., but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console!
+The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc. Still, in this demo, I will run you through installing the Module and doing an export and scan from your PowerShell console!
 
 We are going to install the PSRule.Azure _(based on the Well-Architected Framework & Cloud Adoption Framework)_.
 
-I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter, or after a major deployment or project to help verify your resources are set up according to some best-practice rules. This does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
+I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules. This does not replace Security Center and Azure Advisor; this is intended to be a supplement.
 
 ### Install PSRule.Azure & PSRule.Rules.CAF
 
@@ -68,7 +68,7 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
        #The main Module and base rules to validate Azure resources..
        Install-Module PSRule.Rules.Azure -Scope CurrentUser
-2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note, you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get challenged again:
+2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note, you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get rechallenged:
 
        Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 3. You should now have the following modules installed:
@@ -78,13 +78,13 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
 ### Extract Azure Subscription PSRule JSON files
 
-Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis; these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
+Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis; these extracted files are JSON files containing information, such as your resource names, subscription ID, etc. resource groups in plain text.
 
 As you can see from the screenshot below, we can target specific Subscriptions, Tenancies _(yes, as long as the account you have access to has access to the subscription, you can export those as well)_, Resource Groups and Tags.
 
 ![](/uploads/powershellise_exportazruledata.png)
 
-Because I want to get the most data available across all resources, I am going to Target everything with the '-All' parameter. 
+Because I want to get the most data available across all resources, I will Target everything with the '-All' parameter. 
 
 1. First, we need to connect to the Azure subscription and then **connect** to the **Azure** subscription we have access to or are targeting by running the following:
 
@@ -96,15 +96,15 @@ Because I want to get the most data available across all resources, I am going t
        Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
 3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**. Depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
 
-You should **see** the **JSON files** appearing if you open one of these. You should be able to see information about the resources it has extracted.
+You should **see** the **JSON files** appearing if you open one of these. In addition, you should be able to see information about the resources it has extracted.
 
 ### Run PSRule across your JSON files
 
-Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin into PSRule.Azure!
+Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them following Microsoft Cloud Adoption and Well Architectured framework and the rules builtin into PSRule.Azure!
 
-You don't need to be connected to Azure; for this analysis, just have the PSRule modules installed and can access the JSON files.
+You don't need to be connected to Azure; for this analysis, have the PSRule modules installed and access the JSON files.
 
-PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"); these baselines contain the rules used to analyse your resources and range from Preview to newly released rules; again, we are just going to target ALL rules, as we are after any and all recommendations.
+PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"); these baselines contain the rules used to analyse your resources and range from Preview to newly released rules; again, we will target ALL rules, as we are after all recommendations.
 
 1. In **PowerShell, run** the following:
 
@@ -114,7 +114,7 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
 4. Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to **export** the rules to a **CSV**:
 
        Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
-5. You should now have a CSV file that you can then review and look for common issues, concerns and work on improving your Azure infrastructure setup!
+5. You should now have a CSV file to review and look for common issues, concerns and work on improving your Azure infrastructure setup!
 
 ![](/uploads/export_azruledata_excel.png)
 

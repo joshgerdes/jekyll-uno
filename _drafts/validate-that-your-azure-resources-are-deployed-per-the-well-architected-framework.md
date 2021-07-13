@@ -58,10 +58,6 @@ Pre-flight validation is used to scan ARM (Azure Resource Manager) templates bef
 
 The in-flight method can also be used in Azure DevOps for validation of Terraform resource deployments etc, but in this demo - I am going to run you through installing the Module and doing an export and scan from your PowerShell console!
 
-If you are interested in the CI (Continous Integration) options, check out the links below:
-
-* [Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule")
-
 We are going to install the PSRule.Azure _(based on the Well-Architected Framework & Cloud Adoption Framework)_.
 
 I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules, this does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
@@ -132,9 +128,8 @@ If you found PSRules.Azure interesting, how about getting any Failed rules, how 
 
 * [PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor")
 
-How about running it through a release using Azure DevOps?
-
-* [PSRule extension for Azure Pipelines](https://github.com/microsoft/PSRule-pipelines "PSRule extension for Azure Pipelines")
+  If you are interested in the CI (Continous Integration) options, check out the links below:
+* [Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule")
 
 Extend the PSRules to include Cloud Adoption Framework as well?
 

@@ -114,7 +114,7 @@ _Note: The export contains the Subscription/Resource Names, so you can definitel
 
 **Congratulations**! You now have more visibility and, hopefully, some useful recommendations for improving your Azure services!
 
-_If you want to get a good understanding of the type of data rules, check out my extracted CSV '_[_here_]()_'._
+_If you want to get a good understanding of the type of data rules, check out my extracted CSV '_[_here_](http://luke.geek.nz/uploads/files/Exported_Data_PSRuleAzure.csv){:target="_blank"}_'._
 
 ### Additional Resources
 

@@ -25,5 +25,13 @@ Features of PSRule for Azure include:
 
 PSRule for Azure provides two methods for analyzing Azure resources:
 
-* _Pre-flight_ - Before resources are deployed from Azure Resource Manager templates.
-* _In-flight_ - After resources are deployed to an Azure subscription.
+* Pre-flight - Before resources are deployed from Azure Resource Manager templates.
+* In-flight - After resources are deployed to an Azure subscription.
+
+With over 200 inbuilt rules _(and you can add your own),_ there is a lot of resource types covered such as (but not limited to):
+
+* Azure App Service
+* Azure Key vault
+* Azure Virtual Machine
+* Azure Storage
+* Azure Tags

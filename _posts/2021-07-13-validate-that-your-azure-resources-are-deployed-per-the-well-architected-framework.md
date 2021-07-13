@@ -11,7 +11,7 @@ header:
   teaser: "/uploads/windowsterminal_data_psrules-azure.png"
 
 ---
-Validate that your Azure Resources are deployed per the Well-Architected Framework.. it is pretty long-winded, but **imagine**!
+Validate that your Azure Resources are deployed per the Well-Architected Framework (WAF).. just **imagine**!
 
 **Of a way of validating your services are secure and deployed following your companies governance rules. The Azure Architecture framework, both before and after the resources have been commissioned!**
 

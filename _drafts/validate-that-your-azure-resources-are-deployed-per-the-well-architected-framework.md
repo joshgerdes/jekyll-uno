@@ -19,9 +19,9 @@ PSRule is a suite of rules to validate Azure resources and infrastructure as cod
 
 Features of PSRule for Azure include:
 
-* [Ready to go](https://azure.github.io/PSRule.Rules.Azure/features/#readytogo) - Leverage over 200 pre-built rules to validate Azure resources.
-* [DevOps](https://azure.github.io/PSRule.Rules.Azure/features/#devops) - Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
-* [Cross-platform](https://azure.github.io/PSRule.Rules.Azure/features/#cross-platform) - Run on macOS, Linux, and Windows.
+* Over 200 pre-built rules to validate Azure resources.
+* Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
+* Runs on macOS, Linux, and Windows.
 
 PSRule for Azure provides two methods for analyzing Azure resources:
 
@@ -34,4 +34,7 @@ With over 200 inbuilt rules _(and you can add your own),_ there is a lot of reso
 * Azure Key vault
 * Azure Virtual Machine
 * Azure Storage
-* Azure Tags
+* Azure Network
+* Azure Public IP
+
+Azure PSRules has been in development since 2019 and is under constant updates

@@ -18,6 +18,8 @@ Imagine that you could validateyour Azure Resources are deployed per the Well-Ar
 
 Imagine no longer! There is a PowerShell module designed specifically for that purpose: **PSRule for Azure**.
 
+![PSRule - Azure](/uploads/windowsterminal_data_psrules-azure.png "PSRule - Azure")
+
 PSRule is a suite of rules to validate resources and infrastructure as code _(IaC)_ using PSRule, and the Azure component uses the base PSRule module.
 
 Features of [PSRule for Azure](https://azure.github.io/PSRule.Rules.Azure/ "PSRule for Azure"){:target="_blank"}

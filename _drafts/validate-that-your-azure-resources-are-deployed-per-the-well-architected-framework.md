@@ -70,3 +70,21 @@ You should now have the following modules installed:
 
 * PSRule.Rules.Azure
 * PSRule.Rules.CAF
+
+### Extract Azure Subscription PSRule JSON files
+
+Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis, these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
+
+As you can see from the screenshot below, we can target specific Subscriptions, Tenancies _(yes as long as the account you have access to, has access to the subscription you can export those as well)_, Resource Groups and Tags.
+
+![](/uploads/powershellise_exportazruledata.png)
+
+Because I want to get the most data available across all resources, I am going to Target everything with the '-All' parameter. 
+
+First, we need to connect to the Azure subscription and then connect to the Azure subscription we have access to or are targeting by running the following:
+
+    Connect-AzAccount
+
+    Get-AzSubscription  | ogv -PassThru | Set-AzContext
+
+sd

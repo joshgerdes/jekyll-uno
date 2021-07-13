@@ -62,12 +62,10 @@ Press 'Y' to accept PSGallery as a trusted repository, just a note you can preve
 
     Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
-![](/uploads/windowsterminal_install_psrules-azure.png)
-
 You should now have the following modules installed:
 
+* PSRule
 * PSRule.Rules.Azure
-* PSRule.Rules.CAF
 
 ### Extract Azure Subscription PSRule JSON files
 

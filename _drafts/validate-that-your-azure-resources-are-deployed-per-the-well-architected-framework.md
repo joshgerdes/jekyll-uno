@@ -101,4 +101,4 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
 
     Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
 
-This will trigger, PSRules to scan
+This will trigger, PSRules to scan your extracted JSON files, with the ALL rules, and you will get output like below:![](/uploads/windowsterminal_data_psrules-azure.png)

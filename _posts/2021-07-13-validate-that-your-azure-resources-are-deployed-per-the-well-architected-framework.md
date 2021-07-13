@@ -43,7 +43,7 @@ Azure PSRules has been in development since 2019 and is under constant updates a
 
 PSRule for Azure provides two methods for analyzing Azure resources:
 
-* [Pre-flight ]()- Before resources are deployed from Azure Resource Manager templates.
+* Pre-flight - Before resources are deployed from Azure Resource Manager templates.
 * In-flight - After resources are deployed to an Azure subscription.
 
 Pre-flight validation is used to scan ARM (Azure Resource Manager) templates before services are deployed and allow for quality gaps and better information in pull requests to improve and implement your infrastructure as code components.

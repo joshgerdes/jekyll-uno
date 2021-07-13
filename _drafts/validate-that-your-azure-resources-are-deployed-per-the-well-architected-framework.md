@@ -82,7 +82,7 @@ Now that PSRule has been installed, it's time to log in to Azure and extract inf
 
 As you can see from the screenshot below, we can target specific Subscriptions, Tenancies _(yes, as long as the account you have access to has access to the subscription, you can export those as well)_, Resource Groups and Tags.
 
-![](/uploads/powershellise_exportazruledata.png)
+![Export-AzRuleData](/uploads/powershellise_exportazruledata.png "Export-AzRuleData")
 
 Because I want to get the most data available across all resources, I will Target everything with the '-All' parameter. 
 
@@ -110,13 +110,13 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
 
        Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
 2. This will trigger **PSRules** to **scan** your **extracted JSON** files with the **ALL** rules, and you will get **output** like below:
-3. ![](/uploads/windowsterminal_data_psrules-azure.png)
+3. ![Invoke-PSRules](/uploads/windowsterminal_data_psrules-azure.png "Invoke-PSRules")
 4. Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to **export** the rules to a **CSV**:
 
        Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
 5. You should now have a CSV file to review and look for common issues, concerns and work on improving your Azure infrastructure setup!
 
-![](/uploads/export_azruledata_excel.png)
+![PS Rules Azure - Export CSV](/uploads/export_azruledata_excel.png "PS Rules Azure - Export CSV")
 
 _Note: The export contains the Subscription/Resource Names, so you can definitely see what resources can improve upon; however, I removed it from my screenshot._
 

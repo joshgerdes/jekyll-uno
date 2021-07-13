@@ -97,4 +97,6 @@ You should see the JSON files appearing if you open one of these, you should be 
 
 ### Run PSRule.Azure across your JSON files
 
-Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoptiona and Well Architectured framework and the rules builtin to PSRule.Azure!
+Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin to PSRule.Azure!
+
+You don't need to be connected to Azure

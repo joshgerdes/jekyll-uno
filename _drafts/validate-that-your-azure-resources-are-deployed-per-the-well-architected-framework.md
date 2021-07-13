@@ -87,4 +87,8 @@ First, we need to connect to the Azure subscription and then connect to the Azur
 
     Get-AzSubscription  | ogv -PassThru | Set-AzContext
 
-sd
+Now that you have connected its time to export the Azure resource information, run the following PowerShell cmdlet:
+
+Export-AzRuleData -OutputPath c:\\temp\\AzRuleData -All
+
+_If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes._

@@ -105,4 +105,6 @@ This will trigger, PSRules to scan your extracted JSON files, with the ALL rules
 
 ![](/uploads/windowsterminal_data_psrules-azure.png)
 
-Although it is good being able to see a high level, I prefer to look at it all in once in Excel, so run the following to export the rules to a CSV:
+Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to export the rules to a CSV:
+
+    Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv

@@ -120,7 +120,7 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
 
 _Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot._
 
-**Congratulations**! You now have more visibility and hopefully, some useful recommendations for improving your Azure deployment, remember PSRules.Azure is just a supplement to already existing toolsets! 
+**Congratulations**! You now have more visibility and hopefully, some useful recommendations for improving your Azure services!
 
 ### Additional Resources
 

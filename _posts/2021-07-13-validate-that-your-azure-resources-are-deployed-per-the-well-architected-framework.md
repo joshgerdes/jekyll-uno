@@ -56,7 +56,7 @@ We are going to install the PSRule.Azure _(based on the Well-Architected Framewo
 
 I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules. This does not replace Security Center and Azure Advisor; this is intended to be a supplement.
 
-### Install PSRule.Azure & PSRule.Rules.CAF
+### Install PSRule.Azure
 
 1. Open **PowerShell** console and **run** the following **commands**:
 

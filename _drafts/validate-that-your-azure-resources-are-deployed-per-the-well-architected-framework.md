@@ -95,7 +95,7 @@ If the folder doesn't exist, don't worry - the Export command will create it for
 
 You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.
 
-### Run PSRule.Azure across your JSON files
+### Run PSRule across your JSON files
 
 Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin to PSRule.Azure!
 

@@ -20,7 +20,8 @@ Imagine no longer! There is a PowerShell module designed specifically for that p
 
 PSRule is a suite of rules to validate resources and infrastructure as code (IaC) using PSRule, and the Azure component uses the base PSRule module.
 
-Features of PSRule for Azure include:
+Features of [PSRule for Azure](https://azure.github.io/PSRule.Rules.Azure/ "PSRule for Azure"){:target="_blank"}
+ include:
 
 * Leverage over 200 pre-built rules across five WAF pillars:
   * Cost Optimization

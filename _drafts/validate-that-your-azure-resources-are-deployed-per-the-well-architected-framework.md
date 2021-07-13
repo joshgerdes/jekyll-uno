@@ -11,11 +11,11 @@ header:
 ---
 Validate that your Azure Resources are deployed per the Well-Architected Framework.. it is pretty long-winded, but **imagine**!
 
-**Of a way of validating your services are secure and deployed in accordance with your companies governance rules and the Azure Architecture framework, both before and after the resources have been commissioned!**
+**Of a way of validating your services are secure and deployed in accordance with your companies governance rules, and the Azure Architecture framework, both before and after the resources have been commissioned!**
 
 Imagine no longer! There is a PowerShell module designed specifically for that purpose: **PSRule for Azure**.
 
-PSRule is a suite of rules to validate resources and infrastructure as code (IaC) using PSRule, the Azure component is using the base PSRule module.
+PSRule is a suite of rules to validate resources and infrastructure as code (IaC) using PSRule, and the Azure component is using the base PSRule module.
 
 Features of PSRule for Azure include:
 
@@ -36,7 +36,7 @@ Features of PSRule for Azure include:
 
 
 * Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
-* Runs on macOS, Linux, and Windows.
+* It runs on macOS, Linux, and Windows.
 
 With over 200 inbuilt rules _(and you can add your own),_ there is a lot of resource types covered such as _(but not limited to)_:
 

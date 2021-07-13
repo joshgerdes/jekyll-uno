@@ -113,4 +113,24 @@ You should now have a CSV file that you can then review and look for common issu
 
 ![](/uploads/export_azruledata_excel.png)
 
-Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot.
+_Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot._
+
+Congratulations, you now have more visibility and hopefully, some useful recommendations for improving your Azure deployment, remember PSRules.Azure is just a supplement to already existing toolsets! 
+
+### Additional Resources
+
+If you found PSRules.Azure interesting, how about getting any Failed rules, how about getting any failed rules pushed to Azure Monitor? 
+
+* [PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor")
+
+How about running it through a release using Azure DevOps?
+
+* [PSRule extension for Azure Pipelines](https://github.com/microsoft/PSRule-pipelines "PSRule extension for Azure Pipelines")
+
+Extend the PSRules to include Cloud Adoption Framework as well?
+
+* [PSRule for Cloud Adoption Framework](https://github.com/microsoft/PSRule.Rules.CAF "PSRule for Cloud Adoption Framework")
+
+And finally, creating Custom Rules for your organisation, including Tagging, Naming conventions etc?
+
+* [PSRule.Azure Custom Rules](https://azure.github.io/PSRule.Rules.Azure/customization/ "Organization specific rules")

@@ -108,7 +108,7 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
        Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All' | Export-csv C:\temp\AzRuleDataExport\Exported_Data.csv
 5. You should now have a CSV file to review and look for common issues, concerns and work on improving your Azure infrastructure setup!
 
-![PS Rules Azure - Export CSV](/uploads/export_azruledata_excel.png "PS Rules Azure - Export CSV")
+![PS Rules Azure - Export CSV](/uploads/export_azruledata_excel.png "PS Rules Azure - Export CSV"){:target="_blank"}
 
 _Note: The export contains the Subscription/Resource Names, so you can definitely see what resources can improve upon; however, I removed it from my screenshot._
 

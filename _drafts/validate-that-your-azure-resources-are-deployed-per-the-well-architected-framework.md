@@ -64,4 +64,4 @@ Press 'Y' to accept PSGallery as a trusted repository, just a note you can preve
 
     Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
-sd
+![](/uploads/windowsterminal_install_psrules-azure.png)

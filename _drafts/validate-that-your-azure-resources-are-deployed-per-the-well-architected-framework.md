@@ -1,5 +1,5 @@
 ---
-date: 2021-07-13 00:00:00 +1200
+date: 2021-07-13T00:00:00.000+12:00
 title: Well-Architected Framework Azure infrastructure review with PSRule for Azure
 author: Luke
 categories:
@@ -21,20 +21,10 @@ Features of PSRule for Azure include:
 
 * Leverage over 200 pre-built rules across five WAF pillars:
   * Cost Optimization
-
-
   * Operational Excellence
-
-
   * Performance Efficiency
-
-
   * Reliability
-
-
   * Security
-
-
 * Validate resources and infrastructure code pre or post-deployment using Azure DevOps or Github!
 * It runs on macOS, Linux, and Windows.
 
@@ -84,17 +74,17 @@ As you can see from the screenshot below, we can target specific Subscriptions, 
 
 ![Export-AzRuleData](/uploads/powershellise_exportazruledata.png "Export-AzRuleData")
 
-Because I want to get the most data available across all resources, I will Target everything with the '-All' parameter. 
+Because I want to get the most data available across all resources, I will Target everything with the '-All' parameter.
 
 1. First, we need to connect to the Azure subscription and then **connect** to the **Azure** subscription we have access to or are targeting by running the following:
 
        Connect-AzAccount
-
+       
        Get-AzSubscription  | ogv -PassThru | Set-AzContext
 2. Now that you have connected its time to export the Azure resource information, **run** the following **PowerShell** cmdlet, and **point** it towards an **empty folder**:
 
        Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
-3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**. Depending on how many resources and subscriptions you are extracting, this may take a few minutes. 
+3. If the **folder doesn't** **exist**, _don't worry_ - the Export command will **create** it **for you**. Depending on how many resources and subscriptions you are extracting, this may take a few minutes.
 
 You should **see** the **JSON files** appearing if you open one of these. In addition, you should be able to see information about the resources it has extracted.
 
@@ -122,9 +112,11 @@ _Note: The export contains the Subscription/Resource Names, so you can definitel
 
 **Congratulations**! You now have more visibility and, hopefully, some useful recommendations for improving your Azure services!
 
+If you want to get a good understanding on the type of data rules, check out my extracted CSV 'here'.
+
 ### Additional Resources
 
-* If you found PSRules.Azure interesting; how about getting any Failed rules? How about getting any failed rules pushed to Azure Monitor? 
+* If you found PSRules.Azure interesting; how about getting any Failed rules? How about getting any failed rules pushed to Azure Monitor?
 
 [PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor")
 

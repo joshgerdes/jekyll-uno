@@ -78,7 +78,7 @@ As you can see from the screenshot below, we can target specific Subscriptions, 
 
 ![Export-AzRuleData](/uploads/powershellise_exportazruledata.png "Export-AzRuleData")
 
-Because I want to get the most data available across all resources, I will Target everything with the '-All' parameter.
+Because I want to get the most data available across all resources, I will target everything with the '_-All_' parameter.
 
 1. First, we need to connect to the Azure subscription and then **connect** to the **Azure** subscription we have access to or are targeting by running the following:
 

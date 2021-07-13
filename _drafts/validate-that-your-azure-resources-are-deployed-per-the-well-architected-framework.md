@@ -71,7 +71,7 @@ You should now have the following modules installed:
 * PSRule.Rules.Azure
 * PSRule.Rules.CAF
 
-### Extract Azure Subscription PSRule JSON files
+### Extract Azure Subscription PSRule.Azure JSON files
 
 Now that PSRule has been installed, it's time to log in to Azure and extract information regarding your Azure resources for analysis, these extracted files are JSON files and do contain information, such as your resource names, subscription ID, resource groups in plain text.
 
@@ -87,7 +87,7 @@ First, we need to connect to the Azure subscription and then connect to the Azur
 
     Get-AzSubscription  | ogv -PassThru | Set-AzContext
 
-Now that you have connected its time to export the Azure resource information, run the following PowerShell cmdlet:
+Now that you have connected its time to export the Azure resource information, run the following PowerShell cmdlet, and point it towards an empty folder:
 
     Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
 

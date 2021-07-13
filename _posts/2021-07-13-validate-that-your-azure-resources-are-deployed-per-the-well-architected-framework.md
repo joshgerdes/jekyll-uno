@@ -94,7 +94,7 @@ Now that you have extracted the JSON files of your Azure resources, it's now tim
 
 You don't need to be connected to Azure; for this analysis, have the PSRule modules installed and access the JSON files.
 
-PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"); these baselines contain the rules used to analyse your resources and range from Preview to newly released rules; again, we will target ALL rules, as we are after all recommendations.
+PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"){:target="_blank"}; these baselines contain the rules used to analyse your resources and range from Preview to newly released rules; again, we will target ALL rules, as we are after all recommendations.
 
 1. In **PowerShell, run** the following:
 
@@ -118,16 +118,16 @@ _If you want to get a good understanding of the type of data rules, check out my
 
 * If you found PSRules.Azure interesting; how about getting any Failed rules? How about getting any failed rules pushed to Azure Monitor?
 
-[PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor")
+[PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor"){:target="_blank"}
 
 * If you are interested in the CI (Continous Integration) options, check out the links below:
 
-[Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule")
+[Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule"){:target="_blank"}
 
 * Extend the PSRules to include Cloud Adoption Framework as well?
 
-[PSRule for Cloud Adoption Framework](https://github.com/microsoft/PSRule.Rules.CAF "PSRule for Cloud Adoption Framework")
+[PSRule for Cloud Adoption Framework](https://github.com/microsoft/PSRule.Rules.CAF "PSRule for Cloud Adoption Framework"){:target="_blank"}
 
 * And finally, creating Custom Rules for your organisation, including Tagging, Naming conventions etc.?
 
-[PSRule.Azure Custom Rules](https://azure.github.io/PSRule.Rules.Azure/customization/ "Organization specific rules")
+[PSRule.Azure Custom Rules](https://azure.github.io/PSRule.Rules.Azure/customization/ "Organization specific rules"){:target="_blank"}

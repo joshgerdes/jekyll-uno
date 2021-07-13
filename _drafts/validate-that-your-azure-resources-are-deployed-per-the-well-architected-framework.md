@@ -91,4 +91,4 @@ Now that you have connected its time to export the Azure resource information, r
 
     Export-AzRuleData -OutputPath c:\temp\AzRuleData -All
 
-_If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes._
+If the folder doesn't exist, don't worry - the Export command will create it for you, depending on how many resources and subscriptions you are extracting, this may take a few minutes. You should see the JSON files appearing if you open one of these, you should be able to see information about the resources it has extracted.

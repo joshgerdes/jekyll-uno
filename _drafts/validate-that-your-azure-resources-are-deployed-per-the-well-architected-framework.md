@@ -47,7 +47,7 @@ If you are interested in the CI (Continous Integration) options, check out the l
 
 * [Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule")
 
-We are going to install the PSRule.Azure (based on the Well-Architected Framework) and the PS.Rules CAF (based on the Azure Cloud Adoption Framework) modules, there will be duplication in some of the data, put it adds to improving your deployments and Cloud architecture.
+We are going to install the PSRule.Azure (based on the Well-Architected Framework) and the PS.Rules CAF (based on the Azure Cloud Adoption Framework) modules, there will be duplication in some of the data, but it adds to improving your deployments and Cloud architecture.
 
 I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules, this does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
 

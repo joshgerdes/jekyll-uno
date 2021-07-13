@@ -47,7 +47,7 @@ If you are interested in the CI (Continous Integration) options, check out the l
 
 * [Azure DevOps Pipeline & Github Actions](https://microsoft.github.io/PSRule/ "PSRule")
 
-We are going to install the PSRule.Azure (based on the Well-Architected Framework) and the PS.Rules CAF (based on the Azure Cloud Adoption Framework) modules, there will be duplication in some of the data, but it adds to improving your deployments and Cloud architecture.
+We are going to install the PSRule.Azure _(based on the Well-Architected Framework & Cloud Adoption Framework)_.
 
 I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date and do scans at least every quarter or after a major deployment or project to help verify your resources are set up according to some best-practice rules, this does not replace Security Center and Azure Advisor, this is intended to be of a supplement.
 
@@ -57,8 +57,6 @@ Open PowerShell console and run the following Commands:
 
     #The main Module and base rules to validate Azure resources..
     Install-Module PSRule.Rules.Azure -Scope CurrentUser
-    #A suite of additional rules to validate Azure resources against the Cloud Adoption Framework (CAF) using PSRule.
-    Install-Module  PSRule.Rules.CAF -Scope CurrentUser
 
 Press 'Y' to accept PSGallery as a trusted repository, just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following, just be wary that won't get challenged again:
 
@@ -97,6 +95,12 @@ You should see the JSON files appearing if you open one of these, you should be 
 
 ### Run PSRule across your JSON files
 
-Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin to PSRule.Azure!
+Now that you have extracted the JSON files of your Azure resources, it's now time to analyse them in accordance with Microsoft Cloud Adoption and Well Architectured framework and the rules builtin into PSRule.Azure!
 
 You don't need to be connected to Azure, for this analysis, just have the PSRule modules installed and can access the JSON files.
+
+PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"), these baselines contain the rules used to analyse your resources and range from Preview to newly released rules, again, we are just going to target ALL rules, as we are after any and all recommendations, in PowerShell run the following:
+
+    Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
+
+This will trigger, PSRules to scan

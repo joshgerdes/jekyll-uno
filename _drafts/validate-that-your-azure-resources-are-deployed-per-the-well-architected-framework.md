@@ -68,7 +68,7 @@ I recommend keeping the Modules _(and as such the in-built rules)_ up-to-date an
 
        #The main Module and base rules to validate Azure resources..
        Install-Module PSRule.Rules.Azure -Scope CurrentUser
-2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get challenged again:
+2. Press '**Y**' to **accept PSGallery** as a trusted repository; just a note, you can prevent the confirmation prompt when installing Modules from the PSGallery, by classifying it as a 'Trusted Repository' by running the following. Just be wary that won't get challenged again:
 
        Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 3. You should now have the following modules installed:
@@ -104,12 +104,12 @@ Now that you have extracted the JSON files of your Azure resources, it's now tim
 
 You don't need to be connected to Azure; for this analysis, just have the PSRule modules installed and can access the JSON files.
 
-PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"), these baselines contain the rules used to analyse your resources and range from Preview to newly released rules, again, we are just going to target ALL rules, as we are after any and all recommendations.
+PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/ " PSRule for Azure - All Baselines"); these baselines contain the rules used to analyse your resources and range from Preview to newly released rules; again, we are just going to target ALL rules, as we are after any and all recommendations.
 
-1. In **PowerShell run** the following:
+1. In **PowerShell, run** the following:
 
        Invoke-PSRule -Module 'PSRule.Rules.Azure' -InputPath 'C:\temp\AzRuleDataExport\*.json' -Baseline 'Azure.All'
-2. This will trigger, **PSRules** to **scan** your **extracted JSON** files, with the **ALL** rules, and you will get **output** like below:
+2. This will trigger **PSRules** to **scan** your **extracted JSON** files with the **ALL** rules, and you will get **output** like below:
 3. ![](/uploads/windowsterminal_data_psrules-azure.png)
 4. Although it is good being able to see a high level, I prefer to look at it all at once in Excel, so run the following to **export** the rules to a **CSV**:
 
@@ -118,13 +118,13 @@ PSRule.Azure has a few [baselines](https://azure.github.io/PSRule.Rules.Azure/en
 
 ![](/uploads/export_azruledata_excel.png)
 
-_Note: The export, contains the Subscription/Resource Names so you can definitely see what resources can improve upon, however, I removed it from my screenshot._
+_Note: The export contains the Subscription/Resource Names, so you can definitely see what resources can improve upon; however, I removed it from my screenshot._
 
-**Congratulations**! You now have more visibility and hopefully, some useful recommendations for improving your Azure services!
+**Congratulations**! You now have more visibility and, hopefully, some useful recommendations for improving your Azure services!
 
 ### Additional Resources
 
-* If you found PSRules.Azure interesting, how about getting any Failed rules, how about getting any failed rules pushed to Azure Monitor? 
+* If you found PSRules.Azure interesting; how about getting any Failed rules? How about getting any failed rules pushed to Azure Monitor? 
 
 [PSRule to Azure Monitor](https://github.com/microsoft/PSRule.Monitor "PSRule to Azure Monitor")
 
@@ -136,6 +136,6 @@ _Note: The export, contains the Subscription/Resource Names so you can definitel
 
 [PSRule for Cloud Adoption Framework](https://github.com/microsoft/PSRule.Rules.CAF "PSRule for Cloud Adoption Framework")
 
-* And finally, creating Custom Rules for your organisation, including Tagging, Naming conventions etc?
+* And finally, creating Custom Rules for your organisation, including Tagging, Naming conventions etc.?
 
 [PSRule.Azure Custom Rules](https://azure.github.io/PSRule.Rules.Azure/customization/ "Organization specific rules")

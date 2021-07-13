@@ -6,6 +6,7 @@ permalink: azure/WAF-Azure-infrastructure-review-with-PSRule-for-Azure/
 author: Luke
 categories:
 - Azure
+- PowerShell
 toc: true
 header:
   teaser: "/uploads/windowsterminal_data_psrules-azure.png"

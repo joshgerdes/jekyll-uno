@@ -12,7 +12,7 @@ header:
   teaser: "/uploads/windowsterminal_data_psrules-azure.png"
 
 ---
-Imagine that you could validateyour Azure Resources are deployed per the Well-Architected Framework (WAF).. just **imagine**!
+Imagine if you could validate that your Azure Resources are deployed per the Well-Architected Framework (WAF).. just **imagine**!
 
 **Of a way of validating your services are secure and deployed following the Azure Architecture framework, both before and after the resources have been created!**
 

@@ -33,3 +33,7 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 I've created a Standard_B2ms (2vCPU, 8GB RAM) virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
 
 This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain.
+
+### Setup WebJEA
+
+Now that we have a 

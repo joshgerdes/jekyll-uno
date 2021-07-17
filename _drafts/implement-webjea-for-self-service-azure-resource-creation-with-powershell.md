@@ -22,6 +22,8 @@ Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything 
 
 This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, can be used to enable much more self-service automation.
 
+We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, an Azure Keyvault to retrieve the secrets from
+
 ### Prerequisites
 
 * Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1 

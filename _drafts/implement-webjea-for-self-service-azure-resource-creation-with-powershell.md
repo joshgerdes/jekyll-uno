@@ -88,4 +88,6 @@ This is because the PowerShell execution policy hasn't been set, depending on th
 
 ![](/uploads/webjea_startingdsc.png)
 
-You should also see the files/folders starting to be created:
+You should also see the files/folders starting to be created!
+
+Note: If you need to make a configuration change, feel free to change it in the DSCDeploy.ps1, DSC will make sure that the configuration is applied as per your configuration.

@@ -41,9 +41,16 @@ This server is running: Windows Server 2019 Datacenter and is part of my Active 
 
 Once we have a Windows Server, now it's time to set up WebJEA!
 
+#### Setup Self-Signed Certificate
+
+If you already have a certificate you can use, skip this step, in the case of this demo
+
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
-2. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
-3. Extract it, you should have 2 files and 2 folders:
+
+#### Setup WebJEA
+
+1. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
+2. Extract it, you should have 2 files and 2 folders:
 
 * Site\\
 * StarterFiles\\

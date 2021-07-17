@@ -51,53 +51,31 @@ If you already have a certificate you can use, skip this step, in the case of th
 Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
 
     #Create RootCA
-
     $rootCA = New-SelfSignedCertificate -Subject "CN=MyRootCA"  `
-
     -KeyExportPolicy Exportable  `
-
     -KeyUsage CertSign,CRLSign,DigitalSignature  `
-
     -KeyLength 2048  `
-
     -KeyUsageProperty All  `
-
     -KeyAlgorithm 'RSA'  `
-
     -HashAlgorithm 'SHA256'  `
-
     -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
-
     -NotAfter (Get-Date).AddYears(10)
 
     #Create Self-Signed Certificate
-
     $cert = New-SelfSignedCertificate -Subject "CN=WEBJEA-P01.luke.geek.nz"  `
-
     -Signer $rootCA  `
-
     -KeyLength 2048  `
-
     -KeyExportPolicy Exportable  `
-
     -DnsName WEBJEA-P01.luke.geek.nz, WEBJEA, WEBJEA-P01  `
-
     -KeyAlgorithm 'RSA'  `
-
     -HashAlgorithm 'SHA256'  `
-
     -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
-
     -NotAfter (Get-Date).AddYears(10)
-
     $certhumbprint = $cert.Thumbprint
 
     #Add Root CA to Trusted Root Authorities
-
     New-Item -ItemType Directory 'c:\WebJea\certs' -Force
-
     Export-Certificate -Cert $rootCA -FilePath "C:\WebJEA\certs\rootCA.crt" -Force
-
     Import-Certificate -CertStoreLocation 'Cert:\LocalMachine\Root' -FilePath "C:\WebJEA\certs\rootCA.crt"
 
     Write-Host -ForegroundColor Green -Object "Copy this: $certhumbprint - The Thumbprint is needed for the DSCDeploy.ps1 script"

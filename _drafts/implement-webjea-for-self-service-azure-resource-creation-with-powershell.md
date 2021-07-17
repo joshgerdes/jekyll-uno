@@ -33,7 +33,7 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 * CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed. 
 * A service account to run WebJEA under.
 
-I've created a Standard_B2ms (2vCPU, 8GB RAM) virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
+I've created a Standard_B2ms _(2vCPU, 8GB RAM)_ virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
 
 This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain, I've also created a service account called: webjea_services.
 

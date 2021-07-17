@@ -62,10 +62,12 @@ DSC will do the following for us:
 * Configure SSL (if we were using it)
 * Update the WebJEA config files to point towards the script and log locations
 
-Even though most of the work will be automated for us, we do have to do some configuration to make it work in our environment
+Even though most of the work will be automated for us, we do have to do some configurations to make it work in our environment
 
-I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_.
+I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_, but you can and the commands to create them are in the DSCDeploy.ps1 script.
 
-Change the following variables to suit your setup, in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on C:
+Change the following variables to suit your setup, in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 
 * AppPoolUserName =  'your service account name'
+* AppPoolPassword = 'the password for your service account' #make sure you don't save the DSC file so the password is stored in plain text.
+* 

@@ -105,8 +105,9 @@ Add the WebJEAAdmins group, to the Administrators group of your WebJEA server.
 
 #### Configure WebJEA
 
-1. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
-2. Extract it, you should have 2 files and 2 folders:
+Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
+
+Extract it, you should have 2 files and 2 folders:
 
 * Site\\
 * StarterFiles\\
@@ -137,7 +138,9 @@ Change the following variables to suit your setup, in my case, I have moved WebJ
 
 ![](/uploads/webjea_dsc.png)
 
-One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder, however, if you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run, you can either change the script to point directly to the file location or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
+One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder. 
+
+If you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run, you can either change the script to point directly to the file location or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
 
     cd 'C:\Users\webjea_services\Downloads\webjea-1.1.157.7589'
 

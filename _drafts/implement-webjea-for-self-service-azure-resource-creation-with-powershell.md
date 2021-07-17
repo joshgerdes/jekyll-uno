@@ -74,4 +74,4 @@ Change the following variables to suit your setup, in my case, I have moved WebJ
 
 ![](/uploads/webjea_dsc.png)
 
-Navigate down to, line: 57
+The DSCDeploy.ps1 is calling the DSCConfig deploy script.

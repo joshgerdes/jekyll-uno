@@ -41,4 +41,5 @@ This server is running: Windows Server 2019 Datacenter and is part of my Active 
 
 Once we have a Windows Server, now it's time to set up WebJEA!
 
-Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") onto the WebJEA Windows server
+1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
+2. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") onto the WebJEA Windows server

@@ -85,7 +85,7 @@ Run the following to add the certificate to the 'Trusted Root Authorities' of th
 
 #### Setup a Group Managed Service Account
 
-This is the account we will use to run WebJEA under, it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to. 
+This is the account we will use to run WebJEA under, it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to.
 
 In this guide, I am using a Normal AD service account, because I am using Azure Active Directory Domain Services as my Domain Controller and GMSA are not currently supported. I have also seen some scripts, require the ability to create and read user-specific files, however, it's always good to follow best practices where possible.
 
@@ -94,7 +94,7 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
     #Create A group MSA account
     Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
     New-ADServiceAccount -name webjeagmsa1 -dnshostname (get-addomaincontroller).hostname -principalsallowedtoretrievemanagedpassword WEBJEA-P01.luke.geek.nz
-
+    
     #Create AD Group
     New-ADGroup -Name "WebJEAAdmins" -SamAccountName WebJEAAdmins -GroupCategory Security -GroupScope Global -DisplayName "WebJEA - Admins" -Description "Members of this group are WebJEA Admins"
     
@@ -103,7 +103,7 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
 
 Add the WebJEAAdmins group, to the Administrators group of your WebJEA server.
 
-#### Setup WebJEA
+#### Configure WebJEA
 
 1. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
 2. Extract it, you should have 2 files and 2 folders:

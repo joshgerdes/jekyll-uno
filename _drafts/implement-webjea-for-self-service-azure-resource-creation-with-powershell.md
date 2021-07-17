@@ -43,4 +43,11 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
 2. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
-3. Extract it
+3. Extract it, you should have 2 files and 2 folders:
+
+* Site\\
+* StarterFiles\\
+* DSCConfig.inc
+* DSCDeploy
+
+sd

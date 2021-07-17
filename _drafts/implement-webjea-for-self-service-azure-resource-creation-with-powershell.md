@@ -92,17 +92,13 @@ In this guide, I am using a Normal AD service account, because I am using Azure 
 _Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, you can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
 
     #Create A group MSA account
-
     Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
-
     New-ADServiceAccount -name webjeagmsa1 -dnshostname (get-addomaincontroller).hostname -principalsallowedtoretrievemanagedpassword WEBJEA-P01.luke.geek.nz
 
     #Create AD Group
-
     New-ADGroup -Name "WebJEAAdmins" -SamAccountName WebJEAAdmins -GroupCategory Security -GroupScope Global -DisplayName "WebJEA - Admins" -Description "Members of this group are WebJEA Admins"
-
+    
     Install-adserviceaccount webjeagmsa1
-
     Add-ADGroupmember -identity "luke.geek.nz\WebJEAAdmins" -members (get-adserviceaccount webjeagmsa1).distinguishedname
 
 Add the WebJEAAdmins group, to the Administrators group of your WebJEA server.

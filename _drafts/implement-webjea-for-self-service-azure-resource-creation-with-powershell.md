@@ -56,6 +56,8 @@ If you already have a certificate you can use, skip this step, in the case of th
 
 Copy the Thumbprint, we will need that later.
 
+3. Run the following to add the certificate to the 'Trusted Root Authorities' of the server
+
 #### Setup WebJEA
 
 1. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server

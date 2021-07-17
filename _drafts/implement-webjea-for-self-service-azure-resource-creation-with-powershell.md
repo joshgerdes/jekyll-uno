@@ -74,4 +74,4 @@ Change the following variables to suit your setup, in my case, I have moved WebJ
 
 ![](/uploads/webjea_dsc.png)
 
-One thing to note is that the DSCDeploy.ps1 is calling the DSCConfig deploy script
+One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder, however, if you just opened up PowerShell ISE, you may notice that you are actually in: C:\\Windows\\System32, so it won't be able to find the script to run.

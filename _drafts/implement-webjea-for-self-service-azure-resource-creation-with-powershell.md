@@ -30,4 +30,4 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 * The server must have permission to go out over the internet to Azure and be able to download PowerShell modules.
 * CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed. 
 
-I've created a Standard_B2ms (2vCPU, 8GB RAM) virtual machine
+I've created a Standard_B2ms _(2vCPU, 8GB RAM)_ virtual machine

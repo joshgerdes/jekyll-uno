@@ -23,4 +23,9 @@ Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything 
 
 This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, can be used to enable much more self-service automation.
 
-Prerequsites
+### Prerequisites
+
+* Domain Joined server running Windows 2016 Core/Full with PowerShell 5.1   
+  _(Windows 2012 R2 or PowerShell 4.0 (perhaps with a recompile) should work, but it hasn't been tested.)_
+* CPU/RAM Requirements will depend significantly on your usage.   
+  _My testing shows about 40 MB just to spin up a PowerShell thread plus typical ASP.NET consumption. Your usage will vary greatly depending on what your script does. I'm successfully running WebJEA in production on Windows 2016 core, 2-vCPU, 4GB RAM with light usage._

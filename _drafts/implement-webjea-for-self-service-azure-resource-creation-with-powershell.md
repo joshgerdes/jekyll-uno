@@ -46,7 +46,15 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 If you already have a certificate you can use, skip this step, in the case of this guide, we are going to use a self-signed certificate.
 
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
-2. Open PowerShell ISE as Administrator
+2. Open PowerShell ISE as Administrator and after replacing the DNS name to suite your own environment run the following:
+
+    $todaydt = Get-Date
+
+    $3years = $todaydt.AddYears(3)
+
+    New-SelfSignedCertificate -dnsname WEBJEA-P01.luke.geek.nz, WEBJEA.luke.geek.nz -notafter $3years -CertStoreLocation cert:\LocalMachine\My
+
+Copy the Thumbprint, we will need that later.
 
 #### Setup WebJEA
 

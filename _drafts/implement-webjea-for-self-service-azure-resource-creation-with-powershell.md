@@ -46,13 +46,45 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 If you already have a certificate you can use, skip this step, in the case of this guide, we are going to use a self-signed certificate.
 
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
-2. Open PowerShell ISE as Administrator and after replacing the DNS name to suite your own environment run the following:
+2. Open PowerShell ISE as Administrator and after replacing the DNS name to suit your own environment run the following to create the Root CA certificate:
 
-    $todaydt = Get-Date
+    $rootCA = New-SelfSignedCertificate -Subject "CN=MyRootCA"  `
 
-    $3years = $todaydt.AddYears(3)
+    -KeyExportPolicy Exportable  `
 
-    New-SelfSignedCertificate -dnsname WEBJEA-P01.luke.geek.nz, WEBJEA.luke.geek.nz -notafter $3years -CertStoreLocation cert:\LocalMachine\My
+    -KeyUsage CertSign,CRLSign,DigitalSignature  `
+
+    -KeyLength 2048  `
+
+    -KeyUsageProperty All  `
+
+    -KeyAlgorithm 'RSA'  `
+
+    -HashAlgorithm 'SHA256'  `
+
+    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
+
+    -NotAfter (Get-Date).AddYears(10)
+
+Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
+
+    New-SelfSignedCertificate -Subject "CN=WEBJEA-P-01.luke.geek.nz"  `
+
+    -Signer $rootCA  `
+
+    -KeyLength 2048  `
+
+    -KeyExportPolicy Exportable  `
+
+    -DnsName WEBJEA-P-01.luke.geek.nz, WEBJEA, WEBJEA-P01  `
+
+    -KeyAlgorithm 'RSA'  `
+
+    -HashAlgorithm 'SHA256'  `
+
+    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
+
+    -NotAfter (Get-Date).AddYears(10)
 
 Copy the Thumbprint, we will need that later.
 

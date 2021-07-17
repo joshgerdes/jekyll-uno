@@ -88,7 +88,15 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
 
 Copy the Thumbprint, we will need that later.
 
-3. Run the following to add the certificate to the 'Trusted Root Authorities' of the server
+Run the following to add the certificate to the 'Trusted Root Authorities' of the server
+
+    #Add Root CA to Trusted Root
+
+    New-Item -ItemType Directory 'c:\WebJea\certs'
+
+    Export-Certificate -Cert $rootCA -FilePath "C:\WebJEA\certs\rootCA.crt"
+
+    Import-Certificate -CertStoreLocation 'Cert:\LocalMachine\Root' -FilePath "C:\WebJEA\certs\rootCA.crt"
 
 #### Setup WebJEA
 

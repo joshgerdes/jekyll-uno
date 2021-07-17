@@ -105,6 +105,8 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
 
     Add-ADGroupmember -identity "luke.geek.nz\WebJEAAdmins" -members (get-adserviceaccount webjeagmsa1).distinguishedname
 
+Add the WebJEAAdmins group, to the Administrators group of your WebJEA server.
+
 #### Setup WebJEA
 
 1. Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server

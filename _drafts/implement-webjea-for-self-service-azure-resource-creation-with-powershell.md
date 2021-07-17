@@ -84,6 +84,8 @@ If you get an error, saying that the script is not digitally signed run the foll
 
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-This is because the PowerShell execution policy hasn't been set, depending on the scripts you are running you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again, you should see DSC kick-off and start your configuration and setup of WebJEA.
+This is because the PowerShell execution policy hasn't been set, depending on the scripts you are running you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again, you should see DSC kick-off and start your configuration and setup of IIS and the WebJEA site.
 
 ![](/uploads/webjea_startingdsc.png)
+
+You should also see the files/folders starting to be created:

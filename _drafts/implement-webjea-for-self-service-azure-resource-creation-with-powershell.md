@@ -87,7 +87,9 @@ Run the following to add the certificate to the 'Trusted Root Authorities' of th
 
 This is the account we will use to run WebJEA under, it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to. 
 
-_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, without having to_ 
+In this guide, I am using a Normal AD service account, because I am using Azure Active Directory Domain Services as my Domain Controller and GMSA are not currently supported. I have also seen some scripts, require the ability to create and read user-specific files, however, it's always good to follow best practices where possible.
+
+_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, you can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
 
     #Create A group MSA account
 

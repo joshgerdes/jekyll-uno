@@ -81,7 +81,11 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
 
 Copy the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_, we will need that later.
 
-Run the following to add the certificate to the 'Trusted Root Authorities' of the server
+Run the following to add the certificate to the 'Trusted Root Authorities' of the server.
+
+#### Setup a Group Managed Service Account
+
+This is the account we will use to run WebJEA under, it can be a normal Active Directory user account.
 
 #### Setup WebJEA
 

@@ -37,4 +37,4 @@ This server is running: Windows Server 2019 Datacenter and is part of my Active 
 
 ### Setup WebJEA
 
-Once we have a Windows Server, now its time to 
+Once we have a Windows Server, now its time to setup WebJEA!

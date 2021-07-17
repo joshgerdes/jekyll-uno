@@ -52,7 +52,17 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 
 3. Open PowerShell ISE as Administrator and open DSCDeploy.ps1
 
-WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us, but we do have to do some configuration to make it work in our environment. 
+WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us. 
+
+DSC will do the following for us:
+
+* Install IIS
+* Create the App Pool and set the identity
+* Create and migrate the Site files to the IIS website folder
+* Configure SSL (if we were using it)
+* Update the WebJEA config files to point towards the script and log locations
+
+Even though most of the work will be automated for us, we do have to do some configuration to make it work in our environment
 
 I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_.
 

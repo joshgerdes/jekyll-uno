@@ -60,7 +60,7 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
     -HashAlgorithm 'SHA256'  `
     -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
     -NotAfter (Get-Date).AddYears(10)
-
+    
     #Create Self-Signed Certificate
     $cert = New-SelfSignedCertificate -Subject "CN=WEBJEA-P01.luke.geek.nz"  `
     -Signer $rootCA  `
@@ -72,15 +72,15 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
     -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
     -NotAfter (Get-Date).AddYears(10)
     $certhumbprint = $cert.Thumbprint
-
+    
     #Add Root CA to Trusted Root Authorities
     New-Item -ItemType Directory 'c:\WebJea\certs' -Force
     Export-Certificate -Cert $rootCA -FilePath "C:\WebJEA\certs\rootCA.crt" -Force
     Import-Certificate -CertStoreLocation 'Cert:\LocalMachine\Root' -FilePath "C:\WebJEA\certs\rootCA.crt"
-
+    
     Write-Host -ForegroundColor Green -Object "Copy this: $certhumbprint - The Thumbprint is needed for the DSCDeploy.ps1 script"
 
-Copy the Thumbprint (make sure it is the Thumbprint of the certificate, not the Trusted Root authority), we will need that later.
+Copy the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_, we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server
 

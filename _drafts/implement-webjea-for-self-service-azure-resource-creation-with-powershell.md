@@ -18,11 +18,11 @@ The main goals for WebJEA:
 * Leverage your existing knowledge in PowerShell to build web forms and automate on-demand processes
 * Encourage proper script creation by parsing and honouring advanced function parameters and comments
 
-Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything that you can script with PowerShell can be run through the Portal! Opening a lot of opportunities for automation, without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
+Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything that you can script with PowerShell can be run through the Portal! Opening a lot of opportunities for automation without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
 
-You can read more about WebJEA, directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA")
+You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA").
 
-This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, can be used to enable much more self-service automation.
+This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, it can be used to enable much more self-service automation.
 
 We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Key Vault to retrieve the secrets.
 
@@ -34,7 +34,7 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 
 I've created a Standard_B2ms _(2vCPU, 8GB RAM)_ virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
 
-This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain, I've also created a service account called: webjea_services.
+This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain; I've also created a service account called: webjea_services.
 
 ### Setup WebJEA
 
@@ -42,10 +42,10 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 
 #### Setup Self-Signed Certificate
 
-If you already have a certificate you can use, skip this step, in the case of this guide, we are going to use a self-signed certificate.
+If you already have a certificate you can use, skip this step. In the case of this guide, we are going to use a self-signed certificate.
 
-1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
-2. Open PowerShell ISE as Administrator and after replacing the DNS name to suit your own environment run the following to create the Root CA certificate:
+1. Log into the WebJEA Windows server using your service account _(in my case, it is: luke\\webjea_services)_.
+2. Open PowerShell ISE as Administrator, and after replacing the DNS name to suit your own environment, run the following to create the Root CA certificate:
 
 Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
 
@@ -79,15 +79,15 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
     
     Write-Host -ForegroundColor Green -Object "Copy this: $certhumbprint - The Thumbprint is needed for the DSCDeploy.ps1 script"
 
-Copy the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_, we will need that later.
+Copy the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_; we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server.
 
 #### Setup a Group Managed Service Account
 
-This is the account we will use to run WebJEA under, it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to.
+This is the account we will use to run WebJEA under; it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to.
 
-In this guide, I am using a Normal AD service account, because I am using Azure Active Directory Domain Services as my Domain Controller and GMSA are not currently supported. I have also seen some scripts, require the ability to create and read user-specific files, however, it's always good to follow best practices where possible.
+In this guide, I am using a Normal AD service account because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA are not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
 _Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, you can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
 

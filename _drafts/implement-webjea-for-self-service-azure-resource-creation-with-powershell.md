@@ -25,5 +25,5 @@ This guide will concentrate on setting up WebJEA for self-service Azure Resource
 ### Prerequisites
 
 * Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1 
-* The server must have permission to go out over the internet to Azure and be able to download PowerShell modules
+* The server must have permission to go out over the internet to Azure and be able to download PowerShell modules _(if they aren't installed manually)_.
 * CPU/RAM Requirements will depend significantly on your usage, start off low (2-vCPU/4GB RAM) and grow as needed. 

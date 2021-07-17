@@ -24,7 +24,7 @@ You can read more about WebJEA, directly on the GitHub page: [https://github.com
 
 This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, can be used to enable much more self-service automation.
 
-We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Key vault to retrieve the secrets.
+We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Key Vault to retrieve the secrets.
 
 ### Prerequisites
 

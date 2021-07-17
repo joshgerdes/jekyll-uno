@@ -50,4 +50,4 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 * DSCConfig.inc
 * DSCDeploy
 
-sd
+WebJEA uses PowerShell DSC (Desired State Configuration) to setup a lot of the 

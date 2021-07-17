@@ -86,7 +86,7 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
 
     -NotAfter (Get-Date).AddYears(10)
 
-Copy the Thumbprint, we will need that later.
+Copy the Thumbprint (make sure it is the Thumbprint of the certificate, not the Trusted Root authority), we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server
 

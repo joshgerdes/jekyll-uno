@@ -70,4 +70,8 @@ Change the following variables to suit your setup, in my case, I have moved WebJ
 
 * AppPoolUserName =  'your service account name'
 * AppPoolPassword = 'the password for your service account' #make sure you don't save the DSC file so the password is stored in plain text.
-* 
+* WEB
+
+![](/uploads/webjea_dsc.png)
+
+Navigate down to, line: 57

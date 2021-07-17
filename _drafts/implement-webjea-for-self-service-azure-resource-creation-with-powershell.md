@@ -20,9 +20,11 @@ The main goals for WebJEA:
 
 Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything that you can script with PowerShell can be run through the Portal! Opening a lot of opportunities for automation, without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
 
+You can read more about WebJEA, directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA")
+
 This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, can be used to enable much more self-service automation.
 
-We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Keyvault to retrieve the secrets.
+We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Key vault to retrieve the secrets.
 
 ### Prerequisites
 
@@ -37,4 +39,6 @@ This server is running: Windows Server 2019 Datacenter and is part of my Active 
 
 ### Setup WebJEA
 
-Once we have a Windows Server, now its time to setup WebJEA!
+Once we have a Windows Server, now it's time to set up WebJEA!
+
+Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") onto the WebJEA Windows server

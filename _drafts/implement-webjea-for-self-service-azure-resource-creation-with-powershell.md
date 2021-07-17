@@ -153,4 +153,4 @@ This is because the PowerShell execution policy hasn't been set, depending on th
 
 You should also see the files/folders starting to be created!
 
-Note: If you need to make a configuration change, feel free to change it in the DSCDeploy.ps1, DSC will make sure that the configuration is applied as per your configuration.
+_Note: If you need to make a configuration change, feel free to change it in the DSCDeploy.ps1, DSC will make sure that the configuration is applied as per your configuration and rerun the script, ie if you need to replace the certificate etc._

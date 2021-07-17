@@ -29,11 +29,12 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 * Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1 
 * The server must have permission to go out over the internet to Azure and be able to download PowerShell modules.
 * CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed. 
+* A service account to run WebJEA under.
 
 I've created a Standard_B2ms (2vCPU, 8GB RAM) virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
 
-This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain.
+This server is running: Windows Server 2019 Datacenter and is part of my Active Directory domain, I've also created a service account called: webjea_services.
 
 ### Setup WebJEA
 
-Now that we have a 
+Once we have a Windows Server, now its time to 

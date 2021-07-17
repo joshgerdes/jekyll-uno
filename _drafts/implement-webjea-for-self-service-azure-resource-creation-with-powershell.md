@@ -78,4 +78,4 @@ One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCC
 
     cd 'C:\Users\webjea_services\Downloads\webjea-1.1.157.7589'
 
-Now run the Script.
+Now run the script and wait.

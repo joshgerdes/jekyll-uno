@@ -85,7 +85,23 @@ Run the following to add the certificate to the 'Trusted Root Authorities' of th
 
 #### Setup a Group Managed Service Account
 
-This is the account we will use to run WebJEA under, it can be a normal Active Directory user account.
+This is the account we will use to run WebJEA under, it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to. 
+
+_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, without having to_ 
+
+    #Create A group MSA account
+
+    Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
+
+    New-ADServiceAccount -name webjeagmsa1 -dnshostname (get-addomaincontroller).hostname -principalsallowedtoretrievemanagedpassword WEBJEA-P01.luke.geek.nz
+
+    #Create AD Group
+
+    New-ADGroup -Name "WebJEAAdmins" -SamAccountName WebJEAAdmins -GroupCategory Security -GroupScope Global -DisplayName "WebJEA - Admins" -Description "Members of this group are WebJEA Admins"
+
+    Install-adserviceaccount webjeagmsa1
+
+    Add-ADGroupmember -identity "luke.geek.nz\WebJEAAdmins" -members (get-adserviceaccount webjeagmsa1).distinguishedname
 
 #### Setup WebJEA
 

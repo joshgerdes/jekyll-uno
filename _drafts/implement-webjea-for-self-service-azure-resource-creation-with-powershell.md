@@ -127,7 +127,7 @@ DSC will do the following for us:
 
 Even though most of the work will be automated for us, we do have to do some configurations to make it work in our environment
 
-I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_, but if you using a GMSA then you just need to put the username in the AppPoolUserName, no credentials are needed (make sure the GMSA has access to the server).
+I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_, but if you using a GMSA then you just need to put the username in the AppPoolUserName, no credentials are needed _(make sure the GMSA has access to the server)_.
 
 Change the following variables to suit your setup, in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 

@@ -50,4 +50,8 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 * DSCConfig.inc
 * DSCDeploy
 
-WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us, but we do have to do some configuration to make it work in our environment.
+WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us, but we do have to do some configuration to make it work in our environment. 
+
+I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_.
+
+Change the following variables to suit your setup, in my case, I have moved WebJEA resources

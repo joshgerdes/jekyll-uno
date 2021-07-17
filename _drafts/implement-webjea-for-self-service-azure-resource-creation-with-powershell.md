@@ -79,3 +79,9 @@ One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCC
     cd 'C:\Users\webjea_services\Downloads\webjea-1.1.157.7589'
 
 Now run the script and wait.
+
+If you get an error, saying that the script is not digitally signed run the following in the script pane:
+
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+This is because the PowerShell execution policy hasn't been set, depending on the scripts you are running you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again.

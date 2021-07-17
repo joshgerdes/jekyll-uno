@@ -89,7 +89,7 @@ This is the account we will use to run WebJEA under; it can be a normal Active D
 
 In this guide, I am using a Normal AD service account because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA are not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
-_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts, they allow for additional security, you can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
+_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
 
     #Create A group MSA account
     Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
@@ -101,13 +101,13 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
     Install-adserviceaccount webjeagmsa1
     Add-ADGroupmember -identity "luke.geek.nz\WebJEAAdmins" -members (get-adserviceaccount webjeagmsa1).distinguishedname
 
-Add the WebJEAAdmins group, to the Administrators group of your WebJEA server.
+Add the WebJEAAdmins group to the Administrators group of your WebJEA server.
 
 #### Configure WebJEA
 
 Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
 
-Extract it, you should have 2 files and 2 folders:
+Extract it, and you should have 2 files and 2 folders:
 
 * Site\\
 * StarterFiles\\
@@ -126,7 +126,7 @@ DSC will do the following for us:
 * Configure SSL (if we were using it)
 * Update the WebJEA config files to point towards the script and log locations
 
-Even though most of the work will be automated for us, we do have to do some configurations to make it work in our environment
+Even though most of the work will be automated for us, we do have to do some configurations to make it work in our environment.
 
 I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_, but if you using a GMSA then you just need to put the username in the AppPoolUserName, no credentials are needed _(make sure the GMSA has access to the server)_.
 

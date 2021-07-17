@@ -43,9 +43,10 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 
 #### Setup Self-Signed Certificate
 
-If you already have a certificate you can use, skip this step, in the case of this demo
+If you already have a certificate you can use, skip this step, in the case of this guide, we are going to use a self-signed certificate.
 
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
+2. Open PowerShell ISE as Administrator
 
 #### Setup WebJEA
 

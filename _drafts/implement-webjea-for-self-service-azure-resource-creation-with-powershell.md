@@ -28,9 +28,9 @@ We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA fro
 
 ### Prerequisites
 
-* Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1 
+* Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1
 * The server must have permission to go out over the internet to Azure and be able to download PowerShell modules.
-* CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed. 
+* CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed.
 * A service account to run WebJEA under.
 
 I've created a Standard_B2ms _(2vCPU, 8GB RAM)_ virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
@@ -50,6 +50,58 @@ If you already have a certificate you can use, skip this step, in the case of th
 
 Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
 
+    #Create RootCA
+
+    $rootCA = New-SelfSignedCertificate -Subject "CN=MyRootCA"  `
+
+    -KeyExportPolicy Exportable  `
+
+    -KeyUsage CertSign,CRLSign,DigitalSignature  `
+
+    -KeyLength 2048  `
+
+    -KeyUsageProperty All  `
+
+    -KeyAlgorithm 'RSA'  `
+
+    -HashAlgorithm 'SHA256'  `
+
+    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
+
+    -NotAfter (Get-Date).AddYears(10)
+
+    #Create Self-Signed Certificate
+
+    $cert = New-SelfSignedCertificate -Subject "CN=WEBJEA-P01.luke.geek.nz"  `
+
+    -Signer $rootCA  `
+
+    -KeyLength 2048  `
+
+    -KeyExportPolicy Exportable  `
+
+    -DnsName WEBJEA-P01.luke.geek.nz, WEBJEA, WEBJEA-P01  `
+
+    -KeyAlgorithm 'RSA'  `
+
+    -HashAlgorithm 'SHA256'  `
+
+    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
+
+    -NotAfter (Get-Date).AddYears(10)
+
+    $certhumbprint = $cert.Thumbprint
+
+    #Add Root CA to Trusted Root Authorities
+
+    New-Item -ItemType Directory 'c:\WebJea\certs' -Force
+
+    Export-Certificate -Cert $rootCA -FilePath "C:\WebJEA\certs\rootCA.crt" -Force
+
+    Import-Certificate -CertStoreLocation 'Cert:\LocalMachine\Root' -FilePath "C:\WebJEA\certs\rootCA.crt"
+
+    Write-Host -ForegroundColor Green -Object "Copy this: $certhumbprint - The Thumbprint is needed for the DSCDeploy.ps1 script"
+
 Copy the Thumbprint (make sure it is the Thumbprint of the certificate, not the Trusted Root authority), we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server
@@ -64,9 +116,9 @@ Run the following to add the certificate to the 'Trusted Root Authorities' of th
 * DSCConfig.inc.ps1
 * DSCDeploy.ps1
 
-3. Open PowerShell ISE as Administrator and open DSCDeploy.ps1
+1. Open PowerShell ISE as Administrator and open DSCDeploy.ps1
 
-WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us. 
+WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us.
 
 DSC will do the following for us:
 
@@ -88,7 +140,7 @@ Change the following variables to suit your setup, in my case, I have moved WebJ
 
 ![](/uploads/webjea_dsc.png)
 
-One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder, however, if you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run, you can either change the script to point directly to the file location or you can change the directory you are into to match the files, in my case in the Script pane I run the following: 
+One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder, however, if you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run, you can either change the script to point directly to the file location or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
 
     cd 'C:\Users\webjea_services\Downloads\webjea-1.1.157.7589'
 

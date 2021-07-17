@@ -48,55 +48,11 @@ If you already have a certificate you can use, skip this step, in the case of th
 1. Log into the WebJEA Windows server using your service account _(in my case it is: luke\\webjea_services)_.
 2. Open PowerShell ISE as Administrator and after replacing the DNS name to suit your own environment run the following to create the Root CA certificate:
 
-    $rootCA = New-SelfSignedCertificate -Subject "CN=MyRootCA"  `
-
-    -KeyExportPolicy Exportable  `
-
-    -KeyUsage CertSign,CRLSign,DigitalSignature  `
-
-    -KeyLength 2048  `
-
-    -KeyUsageProperty All  `
-
-    -KeyAlgorithm 'RSA'  `
-
-    -HashAlgorithm 'SHA256'  `
-
-    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
-
-    -NotAfter (Get-Date).AddYears(10)
-
 Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
-
-    New-SelfSignedCertificate -Subject "CN=WEBJEA-P-01.luke.geek.nz"  `
-
-    -Signer $rootCA  `
-
-    -KeyLength 2048  `
-
-    -KeyExportPolicy Exportable  `
-
-    -DnsName WEBJEA-P-01.luke.geek.nz, WEBJEA, WEBJEA-P01  `
-
-    -KeyAlgorithm 'RSA'  `
-
-    -HashAlgorithm 'SHA256'  `
-
-    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"  `
-
-    -NotAfter (Get-Date).AddYears(10)
 
 Copy the Thumbprint (make sure it is the Thumbprint of the certificate, not the Trusted Root authority), we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server
-
-    #Add Root CA to Trusted Root
-
-    New-Item -ItemType Directory 'c:\WebJea\certs'
-
-    Export-Certificate -Cert $rootCA -FilePath "C:\WebJEA\certs\rootCA.crt"
-
-    Import-Certificate -CertStoreLocation 'Cert:\LocalMachine\Root' -FilePath "C:\WebJEA\certs\rootCA.crt"
 
 #### Setup WebJEA
 

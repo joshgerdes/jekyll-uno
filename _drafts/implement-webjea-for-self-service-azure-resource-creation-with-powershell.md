@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-WebJEA allows you to dynamically build web forms for any PowerShell script. WebJEA automatically **parses the script at page load for description, parameters and validation**, **then dynamically builds a form to take input and display formatted output! No webpage knowledge is needed!**
+WebJEA allows you to build web forms for any PowerShell script dynamically. WebJEA automatically **parses the script at page load for description, parameters and validation**, **then dynamically builds a form to take input and display formatted output! No webpage knowledge is needed!**
 
 The main goals for WebJEA:
 
@@ -18,19 +18,19 @@ The main goals for WebJEA:
 * Leverage your existing knowledge in PowerShell to build web forms and automate on-demand processes
 * Encourage proper script creation by parsing and honouring advanced function parameters and comments
 
-Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything that you can script with PowerShell can be run through the Portal! Opening a lot of opportunities for automation without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
+Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything you can script with PowerShell you can run through the Portal! Opening a lot of opportunities for automation without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
 
 You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA").
 
-This guide will concentrate on setting up WebJEA for self-service Azure Resource creation, however, it can be used to enable much more self-service automation.
+This guide will concentrate on setting up WebJEA for self-service Azure Resource creation. However, WebJEA can be used to enable much more self-service automation.
 
 We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from, and an Azure Key Vault to retrieve the secrets.
 
 ### Prerequisites
 
 * Domain Joined server running Windows 2016+ Core/Full with PowerShell 5.1
-* The server must have permission to go out over the internet to Azure and be able to download PowerShell modules.
-* CPU/RAM Requirements will depend significantly on your usage, start off low _(2-vCPU/4GB RAM)_ and grow as needed.
+* The server must have permission to go out over the internet to Azure and download PowerShell modules.
+* CPU/RAM Requirements will depend significantly on your usage, start low _(2-vCPU/4GB RAM)_ and grow as needed.
 
 I've created a Standard_B2ms _(2vCPU, 8GB RAM)_ virtual machine, called: WEBJEA-P01 in an Azure Resource Group called: webjea_prod
 
@@ -87,7 +87,7 @@ Run the following to add the certificate to the 'Trusted Root Authorities' of th
 
 This is the account we will use to run WebJEA under; it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to.
 
-In this guide, I am using a Normal AD service account because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA are not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
+I am using a Normal AD service account in this guide because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
 _Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
 
@@ -116,7 +116,7 @@ Extract it, and you should have 2 files and 2 folders:
 
   Open PowerShell ISE as Administrator and open DSCDeploy.ps1
 
-WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup for us.
+WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup.
 
 DSC will do the following for us:
 
@@ -126,34 +126,42 @@ DSC will do the following for us:
 * Configure SSL (if we were using it)
 * Update the WebJEA config files to point towards the script and log locations
 
-Even though most of the work will be automated for us, we do have to do some configurations to make it work in our environment.
+Even though most of the work will be automated for us by Desired State Configuration, we have to do some configurations to work in our environment.
 
-I am not using a Group Managed Service Account, I am just going to use a normal AD account as a service account _(ie webjea_services)_, but if you using a GMSA then you just need to put the username in the AppPoolUserName, no credentials are needed _(make sure the GMSA has access to the server)_.
+I am not using a Group Managed Service Account. Instead, I will use a normal AD account as a service account _(i.e. webjea_services)_, but if you use a GMSA, you need to put the username in the AppPoolUserName; no credentials are needed _(make sure the GMSA has access to the server)_.
 
-Change the following variables to suit your setup, in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
+Change the following variables to suit your setup; in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 
 * AppPoolUserName =  'your service account name'
-* AppPoolPassword = 'the password for your service account' #make sure you don't save the DSC file so the password is stored in plain text.
+* AppPoolPassword = 'the password for your service account' #make sure you don't save the DSC file, so the password is stored in plain text.
 * WEB
 
 ![](/uploads/webjea_dsc.png)
 
-One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script, by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder. 
+One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script; by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder. 
 
-If you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run, you can either change the script to point directly to the file location or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
+If you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run; you can either change the script to point directly to the file location, or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
 
     cd 'C:\Users\webjea_services\Downloads\webjea-1.1.157.7589'
 
 Now run the script and wait.
 
-If you get an error, saying that the script is not digitally signed run the following in the script pane:
+If you get an error saying that the script is not digitally signed, run the following in the script pane:
 
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-This is because the PowerShell execution policy hasn't been set, depending on the scripts you are running you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again, you should see DSC kick-off and start your configuration and setup of IIS and the WebJEA site.
+This is because the PowerShell execution policy hasn't been set; depending on the scripts you are running, you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again, you should see DSC kick-off and start your configuration and setup of IIS and the WebJEA site.
 
 ![](/uploads/webjea_startingdsc.png)
 
 You should also see the files/folders starting to be created!
 
-_Note: If you need to make a configuration change, feel free to change it in the DSCDeploy.ps1, DSC will make sure that the configuration is applied as per your configuration and rerun the script, ie if you need to replace the certificate etc._
+_Note: If you need to make a configuration change, please change it in the DSCDeploy.ps1, DSC will ensure that the configuration is applied as per your configuration and rerun the script, i.e. if you need to replace the certificate from a self-signed certificate to a managed PKI certificate._
+
+Once DSC has completed, your server should now be running IIS and the IIS server!
+
+To add the IIS Management Tool, this is not required, but will help you manage IIS, run the following PowerShell cmdlet:
+
+    Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementConsole
+
+Open an Internet Browser and navigate to: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA")

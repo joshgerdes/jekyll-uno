@@ -288,15 +288,9 @@ One of the features of WebJEA is the ability to run scripts on page load, we are
 Add the following script to it:
 
     # Login using service principal 
-
     $TenantId = 'TENANTIDHERE' 
-
     $ApplicationId = 'APPLICATIONIDHERE'  
-
     $Secret = ConvertTo-SecureString -String 'SECRETSTRINGHERE' -AsPlainText -Force 
-
     $Credential = [System.Management.Automation.PSCredential]::New($ApplicationId, $Secret) 
-
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
-
     Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName

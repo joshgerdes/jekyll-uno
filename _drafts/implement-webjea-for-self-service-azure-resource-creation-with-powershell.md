@@ -239,7 +239,7 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 
 You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before taking action.
 
-The validate.ps1 script is a really good resource to check out the parameter types used to generate the forms.
+The validate.ps1 script is an excellent resource to check out the parameter types used to generate the forms.
 
 ### Setup Azure Virtual Machine Start/Stop
 
@@ -386,6 +386,6 @@ Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual
 ### Additional Notes
 
 * There is room for improvement around error checking, doing more with the scripts, such as sending an email when triggered, etc., to remind the server to be powered off.
-* Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to be able to make changes, roll back and keep version history.
+* Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to make changes, roll back and keep version history.
 * Remove any hard coding of any secrets to connect to Azure (as an example) from the scripts and implement a password management tool with API access or even the Windows Credential Manager. You want a system where you can easily update the passwords of accounts, limit access and prevent anything from being stored in plain text.
 * Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts this way, and you can set granular control on who can do what.

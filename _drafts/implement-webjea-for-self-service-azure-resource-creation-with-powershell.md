@@ -377,4 +377,4 @@ Congratulations, you have now set up WebJEA, and can Start/Stop any Azure Virtua
 * There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.
 * Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to be able to make changes, roll back and keep version history.
 * Remove any hard coding of any secrets to connect to Azure (as an example) from the scripts, look at implementing a password management tool that has API access or even the Windows Credential Manager. You want a system where you can easily update the passwords of accounts, limit access and prevent anything from being stored in plain text.
-* Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts.
+* Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts, this way you can set granular control on who can do what.

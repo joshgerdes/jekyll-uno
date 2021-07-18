@@ -133,9 +133,20 @@ I am not using a Group Managed Service Account. Instead, I will use a normal AD 
 
 Change the following variables to suit your setup; in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 
-* AppPoolUserName =  'your service account name'
-* AppPoolPassword = 'the password for your service account' #make sure you don't save the DSC file, so the password is stored in plain text.
-* WEB
+| Variable              | Note                                                                                                                                      |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| NodeName              | This is a DSC variable, leave this.                                                                                                       |
+| WebAppPoolName        | WebApp Pool Name, it may be best to leave this as: WebJEA, however you   can change this.                                                 |
+| AppPoolUserName       | Add in your GMSA or Domain Service account username                                                                                       |
+| AppPoolPassword       | If using a Domain Account, add the password in here, if GSMA leave bank                                                                   |
+| WebJEAIISURI          | This is the IIS URL, ie server/WebJEA. You can change this if you want.                                                                   |
+| WebJEAIISFolder       | IIS folder location, this can be changed if you wanted to move IIS to   another drive or location.                                        |
+| WebJEASourceFolder    | The source folder, this is the source folder for the WebJEA files when   they are first downloaded and extracted (ie Downloads directory) |
+| WebJEAScriptsFolder   | This is where the scripts folder will be placed (ie WebJEA installed)                                                                     |
+| WebJEAConfigPath      | This is where the config file will be placed (ie WebJEA installed - it   needs to be the same location as the Scripts folder)             |
+| WebJEALogPath         | WebJEA log path                                                                                                                           |
+| WebJEA_Nlog_LogFile   | WebJEA system log location                                                                                                                |
+| WebJEA_Nlog_UsageFile | WebJEA usage log location                                                                                                                 |
 
 ![](/uploads/webjea_dsc.png)
 

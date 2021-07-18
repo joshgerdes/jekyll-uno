@@ -133,20 +133,20 @@ I am not using a Group Managed Service Account. Instead, I will use a normal AD 
 
 Change the following variables to suit your setup; in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 
-| Variable              | Note                                                                                                                                      |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| NodeName              | This is a DSC variable, leave this.                                                                                                       |
-| WebAppPoolName        | WebApp Pool Name, it may be best to leave this as: WebJEA, however you   can change this.                                                 |
-| AppPoolUserName       | Add in your GMSA or Domain Service account username                                                                                       |
-| AppPoolPassword       | If using a Domain Account, add the password in here, if GSMA leave bank                                                                   |
-| WebJEAIISURI          | This is the IIS URL, ie server/WebJEA. You can change this if you want.                                                                   |
-| WebJEAIISFolder       | IIS folder location, this can be changed if you wanted to move IIS to   another drive or location.                                        |
-| WebJEASourceFolder    | The source folder, this is the source folder for the WebJEA files when   they are first downloaded and extracted (ie Downloads directory) |
-| WebJEAScriptsFolder   | This is where the scripts folder will be placed (ie WebJEA installed)                                                                     |
-| WebJEAConfigPath      | This is where the config file will be placed (ie WebJEA installed - it   needs to be the same location as the Scripts folder)             |
-| WebJEALogPath         | WebJEA log path                                                                                                                           |
-| WebJEA_Nlog_LogFile   | WebJEA system log location                                                                                                                |
-| WebJEA_Nlog_UsageFile | WebJEA usage log location                                                                                                                 |
+| Variable | Note |
+| --- | --- |
+| NodeName | This is a DSC variable, leave this. |
+| WebAppPoolName | WebApp Pool Name, it may be best to leave this as: WebJEA, however you   can change this. |
+| AppPoolUserName | Add in your GMSA or Domain Service account username |
+| AppPoolPassword | If using a Domain Account, add the password in here, if GSMA leave bank |
+| WebJEAIISURI | This is the IIS URL, ie server/WebJEA. You can change this if you want. |
+| WebJEAIISFolder | IIS folder location, this can be changed if you wanted to move IIS to   another drive or location. |
+| WebJEASourceFolder | The source folder, this is the source folder for the WebJEA files when   they are first downloaded and extracted (ie Downloads directory) |
+| WebJEAScriptsFolder | This is where the scripts folder will be placed (ie WebJEA installed) |
+| WebJEAConfigPath | This is where the config file will be placed (ie WebJEA installed - it   needs to be the same location as the Scripts folder) |
+| WebJEALogPath | WebJEA log path |
+| WebJEA_Nlog_LogFile | WebJEA system log location |
+| WebJEA_Nlog_UsageFile | WebJEA usage log location |
 
 ![](/uploads/webjea_dsc.png)
 
@@ -251,7 +251,7 @@ On the WebJEA server, we need to install the Azure PowerShell modules, run the f
 
 #### Create Service Principal
 
-Once, the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to use to connect to Azure to manage our Virtual Machines.
+Once the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to use to connect to Azure to manage our Virtual Machines.
 
 Run the following PowerShell cmdlet to connect to Azure:
 
@@ -263,7 +263,7 @@ Now that we are connected to Azure, we now need to create the SPN, run the follo
     $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($sp.Secret)
     $UnsecureSecret = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
 
-Now you have created an SPN called: WebJEA-AzureResourceCreator, we now need to grab the Tenant ID, run the following:
+Now you have created an SPN called: WebJEA-AzureResourceCreator. We now need to grab the Tenant ID, run the following:
 
     Get-AzContext | Select-Object Tenant
 
@@ -294,7 +294,7 @@ Now run the snippet, and you should be successfully connected to Azure.
 
 #### Create Get-VM script
 
-One of the features of WebJEA is the ability to run scripts on page load, we are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory create a new PS1 file called: Get-VM.ps1
+One of the features of WebJEA is the ability to run scripts on page load. We are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory create a new PS1 file called: Get-VM.ps1
 
 Add the following script to it:
 

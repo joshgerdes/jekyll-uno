@@ -364,6 +364,8 @@ So your config.json, should look similar to:
 
 ### Test Azure Virtual Machine Start/Stop
 
+Now that the scripts have been created, open the WebJEA webpage.
+
 ### Additional Notes
 
 * There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.

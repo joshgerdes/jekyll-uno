@@ -220,7 +220,7 @@ _Note the: \\\\ for each path that is required. If you get a syntax error when a
 
 Save the config file and relaunch the WebJEA webpage. It should now load without prompting for a username and password.
 
-Set the PowerShell execution policy on the machine to Unrestricted so that you can run any PowerShell scripts on it:
+**Set** the PowerShell **execution policy** on the machine to Unrestricted so that you can run any PowerShell scripts on it:
 
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
 

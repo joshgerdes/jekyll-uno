@@ -230,7 +230,7 @@ If you get an: AuthorizationManager check failed error, it is because the PowerS
 
     Get-ChildItem -Path 'C:\WebJEA\scripts\' -Recurse | Unblock-File
 
-You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell files:
+**You now have a base WebJEA install**! By default, WebJEA comes with 2 PowerShell files:
 
 * overview.ps1
 * validate.ps1

@@ -249,7 +249,7 @@ On the WebJEA server, we need to **install** the **Azure PowerShell modules**, r
 
 #### Create Service Principal
 
-Once the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to connect to Azure to manage our Virtual Machines.
+Once the Az PowerShell modules are installed, we need to **set** a **Service Principal** for the PowerShell script to connect to Azure to manage our Virtual Machines.
 
 Run the following PowerShell cmdlet to connect to Azure:
 
@@ -292,7 +292,7 @@ Now run the snippet, and you should be successfully connected to Azure.
 
 #### Create Get-VM script
 
-One of the features of WebJEA is the ability to run scripts on page load. So, we will get the current Power State of our Azure VMs, in the WebJEA scripts directory to create a new PS1 file called: Get-VM.ps1.
+One of the features of WebJEA is the ability to run scripts on page load. So, we will get the current Power State of our Azure VMs, in the **WebJEA scripts directory** to create a new PS1 file called: **Get-VM.ps1**.
 
 Add the following script to it:
 
@@ -304,11 +304,11 @@ Add the following script to it:
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
     Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName
 
-Save the file.
+**Save** the file.
 
 #### Create Set-VM script
 
-Now, it's time to create the Script to Start/Stop the Virtual Machine. In the WebJEA scripts directory, create a new PS1 file called: Set-VM.ps1
+Now, it's time to create the Script to Start/Stop the Virtual Machine. In the **WebJEA scripts directory**, create a new PS1 file called: **Set-VM.ps1**
 
 Add the following script to it:
 
@@ -344,7 +344,7 @@ Add the following script to it:
            Stop-AzVM -Name $VMName -ResourceGroupName $RGName -Confirm:$false  -Force
     }
 
-Save the file.
+**Save** the file.
 
 #### Set VM in WebJEA Config
 
@@ -373,9 +373,9 @@ So your config.json should look similar to:
 
 ### Test Azure Virtual Machine Start/Stop
 
-Now that the scripts have been created open the WebJEA webpage.
+Now that the scripts have been created **open** the **WebJEA** webpage.
 
-Click on the StartStop-AzVM page (it may take a few seconds to load, as it is running the Get-VM script). You should be greeted by a window similar to below:
+Click on the S**tartStop-AzVM** page _(it may take a few seconds to load, as it is running the Get-VM script_). You should be greeted by a window similar to below:
 
 ![](/uploads/webjea_startstopazvm.png)
 

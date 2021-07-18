@@ -164,4 +164,8 @@ To add the IIS Management Tool, this is not required, but will help you manage I
 
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementConsole
 
-Open an Internet Browser and navigate to: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA")
+Open an Internet Browser and navigate to (your equivalent of): [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA")
+
+If you need assistance finding the Website path, open the Internet Information (IIS) Manager, installed and uncollapse Sites, Default WebSite, right-click WebJEA, Manage Application and select Browse.
+
+![](/uploads/webjea_iis_authentication.png)

@@ -229,6 +229,6 @@ You may have noticed these in the config.json file; WebJEA has actually run the 
 
 ### Setup Azure Resource Creation
 
-Now that we have a working WebJEA install, its time to setup the Azure Resource creation script we will use for this demo.
+Now that we have a working WebJEA install, it's time to set up the Azure Resource creation script we will use for this demo.
 
 Install-Module Az -Scope AllUsers

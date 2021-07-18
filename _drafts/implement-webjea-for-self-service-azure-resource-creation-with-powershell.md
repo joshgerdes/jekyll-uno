@@ -184,3 +184,5 @@ Create an Active Directory group for:
 
 * WebJEA-Admins
 * WebJEA-Users
+
+Add your account to the: WebJEA-Admins group

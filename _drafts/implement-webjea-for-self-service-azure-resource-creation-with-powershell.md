@@ -190,31 +190,31 @@ That's normal - it means you haven't been given access and now need to configure
 
 Now that WebJEA has been set up, it is time to configure it; the first thing we need to do is create a Group for WebJEA admins _(see all scripts)_.
 
-Create an Active Directory group for:
+**Create an Active Directory group for:**
 
-* WebJEA-Admins
+* **WebJEA-Admins**
 * WebJEA-Users
 
-Add your account to the: WebJEA-Admins group.
+**Add** your **account** to the: WebJEA-**Admins group**.
 
-Navigate to your WebJEA scripts folder; in my case, I set it up under c:\\WebJEA\\Scripts:
+**Navigate** to your **WebJEA scripts folder**; in my case, I set it up under c:\\WebJEA\\Scripts:
 
 ![](/uploads/webjea_scripts.png)
 
-Before we go any further, take a Backup of the config.json file, rename it to "config.bak".
+Before we go any further, **take** a **Backup** of the config.json file, rename it to "config.bak".
 
-I recommend using Visual Studio Code to edit the config.json to help avoid any syntax issues.
+_I recommend using Visual Studio Code to edit the config.json to help avoid any syntax issues._
 
-Now right click config.json and open it to edit
+Now right click **config.json** and open it to **edit**
 
 This file is the glue that holds WebJEA together.
 
-We are going to make a few edits:
+We are going to make a few **edits**:
 
-* Feel free to update the Title to match your company or Teams
-* Add in the WebJEA-Admins group earlier _(include the Domain Name)_ into the permitted group's session - this controls access for ALL scripts.
+* Feel free to update the **Title** to match your company or Teams
+* **Add in** the WebJEA-**Admins** group earlier _(include the Domain Name)_ into the permitted group's session - this controls access for ALL scripts.
 
-Note the: \\\\ for each path that is required. If you get a syntax error when attempting to load the WebJEA webpage, this is most likely missing.
+_Note the: \\\\ for each path that is required. If you get a syntax error when attempting to load the WebJEA webpage, this is most likely missing._
 
 ![](/uploads/webjea_democonfig.png)
 

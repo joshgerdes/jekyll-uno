@@ -160,11 +160,11 @@ _Note: If you need to make a configuration change, please change it in the DSCDe
 
 Once DSC has completed, your server should now be running IIS and the IIS server!
 
-To add the IIS Management Tool, this is not required, but will help you manage IIS, run the following PowerShell cmdlet:
+To add the IIS Management Tool, this is not required but will help you manage IIS, run the following PowerShell cmdlet:
 
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementConsole
 
-Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA")
+Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA").
 
 If you need assistance finding the Website path, open the Internet Information (IIS) Manager, installed and uncollapse Sites, Default WebSite, right-click WebJEA, Manage Application and select Browse.
 
@@ -178,7 +178,7 @@ That's normal - it means you haven't been given access and now need to configure
 
 ### Configure WebJEA
 
-Now that WebJEA has been set up, it is time to configure it, first thing we need to do is to create a Group for WebJEA admins _(who can see all scripts)_.
+Now that WebJEA has been set up, it is time to configure it; first thing we need to do is to create a Group for WebJEA admins _(who can see all scripts)_.
 
 Create an Active Directory group for:
 
@@ -187,13 +187,13 @@ Create an Active Directory group for:
 
 Add your account to the: WebJEA-Admins group.
 
-Navigate to your WebJEA scripts folder, in my case I set it up under c:\\WebJEA\\Scripts:
+Navigate to your WebJEA scripts folder; in my case, I set it up under c:\\WebJEA\\Scripts:
 
 ![](/uploads/webjea_scripts.png)
 
 Before we go any further, take a Backup of the config.json file, rename it to "config.bak".
 
-I recommend using Visual Studio Code to edit the config.json, to help avoid any syntax issues.
+I recommend using Visual Studio Code to edit the config.json to help avoid any syntax issues.
 
 Now right click config.json and open it to edit
 
@@ -201,14 +201,14 @@ This file is the glue that holds WebJEA together.
 
 We are going to make a few edits:
 
-* Feel free to update the Title, to match your company or Teams
-* Add in the WebJEA-Admins group earlier _(include the Domain Name)_, into the permitted group's session - this controls access for ALL scripts.
+* Feel free to update the Title to match your company or Teams
+* Add in the WebJEA-Admins group earlier _(include the Domain Name)_ into the permitted group's session - this controls access for ALL scripts.
 
-Note the: \\\\ for each path that is required. If you get a syntax error, when attempting to load the WebJEA webpage, this is most likely missing.
+Note the: \\\\ for each path that is required. If you get a syntax error when attempting to load the WebJEA webpage, this is most likely missing.
 
 ![](/uploads/webjea_democonfig.png)
 
-Save the config file and relaunch the WebJEA webpage, it should now load without prompting for a username and password.
+Save the config file and relaunch the WebJEA webpage. It should now load without prompting for a username and password.
 
 Set the PowerShell execution policy on the machine to Unrestricted, so you can run any PowerShell scripts on it:
 
@@ -216,7 +216,7 @@ Set the PowerShell execution policy on the machine to Unrestricted, so you can r
 
 ![](/uploads/webjea_initialoverview.png)
 
-If you get an: AuthorizationManager check failed error, it is because the PowerShell scripts are still in a blocked state, from being downloaded from the internet, run the following command to unblock them, then refresh the WebJEA webpage:
+If you get an: AuthorizationManager check failed error, it is because the PowerShell scripts are still in a blocked state from being downloaded from the internet, run the following command to unblock them, then refresh the WebJEA webpage:
 
     Get-ChildItem -Path 'C:\WebJEA\scripts\' -Recurse | Unblock-File
 
@@ -225,4 +225,4 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 * overview.ps1
 * validate.ps1
 
-You may have noticed these in the config.json file, WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before making an action on it.
+You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before making action on it.

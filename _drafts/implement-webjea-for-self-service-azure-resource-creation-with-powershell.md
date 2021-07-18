@@ -243,4 +243,10 @@ Run the following PowerShell cmdlet to connect to Azure:
 
     Connect-AzAccount
 
-sd
+Now that we are connected to Azure, we now need to create the SPN, run the following:
+
+    $sp = New-AzADServicePrincipal -DisplayName WebJEA-AzureResourceCreator -Role Contributor
+
+    $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($sp.Secret)
+
+    $UnsecureSecret = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)

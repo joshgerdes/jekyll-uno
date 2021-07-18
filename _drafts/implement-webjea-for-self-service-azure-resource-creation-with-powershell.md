@@ -211,3 +211,5 @@ Note the: \\\\ for each path that is required. If you get a syntax error, when a
 Save the config file and relaunch the WebJEA webpage, it should now load without prompting for a username and password.
 
 ![](/uploads/webjea_initialoverview.png)
+
+You now have a base WebJEA install! 

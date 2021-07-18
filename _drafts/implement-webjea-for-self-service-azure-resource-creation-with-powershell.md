@@ -350,20 +350,12 @@ On the line beneath the "onloadscript": "overview.ps1" file add:
 Then add in:
 
     {
-
     "id": "StartStopAzVM",
-
     "displayname": "StartStop-AzVM",
-
     "synopsis": "Starts or Stops Azure Based VMs",
-
     "permittedgroups": [".\\Administrators", "luke.geek.nz\\WebJEAAdmins"],
-
     "script": "Set-VM.ps1",
-
     "onloadscript": "Get-VM.ps1"
-
      }
      
-     sd
-     
+   sd

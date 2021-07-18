@@ -370,7 +370,7 @@ Click on StartStop-AzVM page (it may take a few seconds to load, as its running 
 
 ![](/uploads/webjea_startstopazvm.png)
 
-Congratulations, you have now setup WebJEA, and 
+Congratulations, you have now set up WebJEA, and can Start/Stop any Azure Virtual Machines using self-service!
 
 ### Additional Notes
 

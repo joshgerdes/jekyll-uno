@@ -370,6 +370,8 @@ Click on StartStop-AzVM page (it may take a few seconds to load, as its running 
 
 ![](/uploads/webjea_startstopazvm.png)
 
+Congratulations, you have now setup WebJEA, and 
+
 ### Additional Notes
 
 * There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.

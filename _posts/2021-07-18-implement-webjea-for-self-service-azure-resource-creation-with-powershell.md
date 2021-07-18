@@ -222,7 +222,7 @@ _Note the: \\\\ for each path that is required. If you get a syntax error when a
 
 ![](/uploads/webjea_democonfig.png)
 
-Save the config file and relaunch the WebJEA webpage. It should now load without prompting for a username and password.
+**Save the config file** and **relaunch** the **WebJEA** webpage. It should now load without prompting for a username and password.
 
 **Set** the PowerShell **execution policy** on the machine to Unrestricted so that you can run any PowerShell scripts on it:
 

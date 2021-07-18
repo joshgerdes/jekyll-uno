@@ -243,7 +243,7 @@ The validate.ps1 script is an excellent resource to check out the parameter type
 
 Now that we have a working WebJEA install, it's time to set up the Azure VM Start/Stop script for this demo.
 
-On the WebJEA server, we need to install the Azure PowerShell modules, run the following in Powershell as Administrator:
+On the WebJEA server, we need to **install** the **Azure PowerShell modules**, run the following in Powershell as Administrator:
 
     Install-Module Az -Scope AllUsers
 

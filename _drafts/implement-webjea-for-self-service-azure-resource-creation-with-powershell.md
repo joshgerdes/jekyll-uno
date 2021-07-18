@@ -197,6 +197,12 @@ I recommend using Visual Studio Code to edit the config.json, to help avoid any 
 
 Now right click config.json and open it to edit
 
-This file is the glue that holds WebJEA together
+This file is the glue that holds WebJEA together.
+
+We are going to make a few edits:
+
+Feel free to update the Title, to match your company or Teams
+
+Add in the WebJEA-Admins group earlier, into the permitted group's session - this controls access for ALL scripts.
 
 ![](/uploads/webjea_democonfig.png)

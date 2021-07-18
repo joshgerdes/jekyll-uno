@@ -172,7 +172,7 @@ You should also see the files/folders starting to be created!
 
 _Note: If you need to make a configuration change, please change it in the DSCDeploy.ps1, DSC will ensure that the configuration is applied as per your configuration and rerun the script, i.e. if you need to replace the certificate from a self-signed certificate to a managed PKI certificate._
 
-Once DSC has been completed, you**r server should now be running IIS and the WebJEA site**
+Once DSC has been completed, your **server should now be running IIS and the WebJEA site**
 
 To add the IIS Management Tool, this is not required but will help you manage IIS, run the following PowerShell cmdlet:
 

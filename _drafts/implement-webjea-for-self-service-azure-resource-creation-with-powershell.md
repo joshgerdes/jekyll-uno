@@ -185,4 +185,8 @@ Create an Active Directory group for:
 * WebJEA-Admins
 * WebJEA-Users
 
-Add your account to the: WebJEA-Admins group
+Add your account to the: WebJEA-Admins group.
+
+Navigate to your WebJEA scripts folder, in my case I set it up under: c:\\WebJEA\\Scripts:
+
+![](/uploads/webjea_scripts.png)

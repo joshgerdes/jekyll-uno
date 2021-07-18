@@ -375,11 +375,11 @@ So your config.json should look similar to:
 
 Now that the scripts have been created **open** the **WebJEA** webpage.
 
-Click on the S**tartStop-AzVM** page _(it may take a few seconds to load, as it is running the Get-VM script_). You should be greeted by a window similar to below:
+Click on the **StartStop-AzVM** page _(it may take a few seconds to load, as it is running the Get-VM script_). You should be greeted by a window similar to below:
 
 ![](/uploads/webjea_startstopazvm.png)
 
-Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual Machines using self-service!
+**Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual Machines using self-service!**
 
 ### Additional Notes
 

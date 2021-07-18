@@ -41,5 +41,5 @@ pages:
 - _posts/2021-07-10-configure-azure-virtual-desktop-monitoring-insights.md
 - _posts/2021-07-10-how-to-set-a-log-analytics-data-cap.md
 - _posts/2021-07-13-validate-that-your-azure-resources-are-deployed-per-the-well-architected-framework.md
+- _posts/2021-07-18-implement-webjea-for-self-service-azure-resource-creation-with-powershell.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
-- _posts/implement-webjea-for-self-service-azure-resource-creation-with-powershell.md

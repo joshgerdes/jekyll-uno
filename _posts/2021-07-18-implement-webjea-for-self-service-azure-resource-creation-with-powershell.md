@@ -1,9 +1,11 @@
 ---
 date: 2021-07-18 00:00:00 +1200
 title: Implement WebJEA for self-service Start/Stop of Azure Virtual Machines
+permalink: /azure/implement-webjea-for-self-service-azure-vm/
 author: Luke
 categories:
 - Azure
+- PowerShell
 toc: true
 header:
   teaser: "/uploads/webjea_startstopazvm.png"

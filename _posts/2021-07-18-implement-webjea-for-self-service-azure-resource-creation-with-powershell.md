@@ -20,7 +20,7 @@ The main goals for WebJEA:
 
 Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything you can script with PowerShell you can run through the Portal! Opening a lot of opportunities for automation without having to learn third party automation toolsets! Anyone who knows PowerShell can use it! Each script can be locked down to specific users and AD groups!
 
-You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA").
+You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA"){:target="_blank"}.
 
 This guide will concentrate on setting up WebJEA for self-service Azure Resource management. However, WebJEA can be used to enable much more self-service automation.
 
@@ -88,7 +88,7 @@ This is the **account** we will use to **run WebJEA under**; it **can** be a nor
 
 I am using a Normal AD service account in this guide because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
-_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview")_._
+_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview"){:target="_blank"}_._
 
     #Create A group MSA account
     Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
@@ -104,7 +104,7 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
 
 #### Install WebJEA
 
-**Download** the **latest** [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the **WebJEA** Windows server
+**Download** the **latest** [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases"){:target="_blank"} _(zip file)_ onto the **WebJEA** Windows server
 
 Extract it, and you should have 2 files and 2 folders:
 
@@ -174,7 +174,7 @@ To add the IIS Management Tool, this is not required but will help you manage II
 
     Enable-WindowsOptionalFeature -Online -FeatureName IIS-ManagementConsole
 
-Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA").
+Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea-p01.luke.geek.nz/WebJEA](https://webjea-p01.luke.geek.nz/WebJEA "https://webjea-p01.luke.geek.nz/WebJEA"){:target="_blank"}.
 
 If you need assistance finding the Website path, open the Internet Information (IIS) Manager, installed and uncollapse Sites, Default WebSite, right-click WebJEA, Manage Application and select Browse.
 
@@ -369,7 +369,7 @@ Then add in:
 
 So your config.json should look similar to:
 
-[https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290](https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290 "https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290")
+{% gist 40968df6a8abd455e252f9d045ba9290 %}
 
 ### Test Azure Virtual Machine Start/Stop
 

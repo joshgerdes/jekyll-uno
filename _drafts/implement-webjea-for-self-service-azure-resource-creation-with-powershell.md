@@ -334,5 +334,11 @@ Add the following script to it:
     {
            Stop-AzVM -Name $VMName -ResourceGroupName $RGName -Confirm:$false  -Force
     }
-    
+
 Save the file.
+
+#### Set VM in WebJEA Config
+
+Now that the scripts have been created, it's time to add them to WebJEA to use.
+
+Navigate to your scripts file and make a backup of the config.json file, then edit: config.json

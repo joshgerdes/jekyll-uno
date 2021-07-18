@@ -294,3 +294,5 @@ Add the following script to it:
     $Credential = [System.Management.Automation.PSCredential]::New($ApplicationId, $Secret) 
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
     Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName
+    
+    tfgfg 

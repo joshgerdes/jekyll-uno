@@ -210,6 +210,10 @@ Note the: \\\\ for each path that is required. If you get a syntax error, when a
 
 Save the config file and relaunch the WebJEA webpage, it should now load without prompting for a username and password.
 
+Set the PowerShell execution policy on the machine to Unrestricted, so you can run any PowerShell scripts on it:
+
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
+
 ![](/uploads/webjea_initialoverview.png)
 
 You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell files:
@@ -217,4 +221,4 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 * overview.ps1
 * validate.ps1
 
-You may have noticed these in the config.json file, 
+You may have noticed these in the config.json file, WebJEA has actually run the overview.ps1 file as soon as the 

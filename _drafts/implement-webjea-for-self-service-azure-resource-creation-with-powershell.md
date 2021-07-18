@@ -1,6 +1,6 @@
 ---
 date: 
-title: Implement WebJEA for self-service Azure Resource creation with PowerShell
+title: Implement WebJEA for self-service Start/Stop of Azure Virtual Machines
 author: Luke
 categories:
 - Azure

@@ -225,4 +225,4 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 * overview.ps1
 * validate.ps1
 
-You may have noticed these in the config.json file, WebJEA has actually run the overview.ps1 file as soon as the 
+You may have noticed these in the config.json file, WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before making an action on it.

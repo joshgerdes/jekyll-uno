@@ -178,7 +178,7 @@ That's normal - it means you haven't been given access and now need to configure
 
 ### Configure WebJEA
 
-Now that WebJEA has been set up, it is time to configure it; first thing we need to do is to create a Group for WebJEA admins _(who can see all scripts)_.
+Now that WebJEA has been set up, it is time to configure it; the first thing we need to do is create a Group for WebJEA admins _(see all scripts)_.
 
 Create an Active Directory group for:
 
@@ -210,7 +210,7 @@ Note the: \\\\ for each path that is required. If you get a syntax error when at
 
 Save the config file and relaunch the WebJEA webpage. It should now load without prompting for a username and password.
 
-Set the PowerShell execution policy on the machine to Unrestricted, so you can run any PowerShell scripts on it:
+Set the PowerShell execution policy on the machine to Unrestricted so that you can run any PowerShell scripts on it:
 
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
 
@@ -225,4 +225,4 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 * overview.ps1
 * validate.ps1
 
-You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before making action on it.
+You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before taking action.

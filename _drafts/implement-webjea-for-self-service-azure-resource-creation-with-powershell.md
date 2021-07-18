@@ -363,3 +363,9 @@ So your config.json, should look similar to:
 [https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290](https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290 "https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290")
 
 ### Test Azure Virtual Machine Start/Stop
+
+### Additional Notes
+
+* There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.
+* Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to be able to make changes, rollback and keep version history.
+* 

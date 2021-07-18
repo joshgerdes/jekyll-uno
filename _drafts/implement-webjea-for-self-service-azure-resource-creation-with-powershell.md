@@ -4,7 +4,7 @@ title: Implement WebJEA for self-service Start/Stop of Azure Virtual Machines
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 

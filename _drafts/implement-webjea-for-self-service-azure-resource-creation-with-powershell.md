@@ -295,4 +295,4 @@ Add the following script to it:
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
     Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName
     
-    tfgfg 
+tfgfg

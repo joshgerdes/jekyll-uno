@@ -103,7 +103,7 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
 
 Add the WebJEAAdmins group to the Administrators group of your WebJEA server.
 
-#### Configure WebJEA
+#### Install WebJEA
 
 Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
 
@@ -173,3 +173,5 @@ If you need assistance finding the Website path, open the Internet Information (
 If successful, you should get a username and password prompt:
 
 ![](/uploads/webjea_authentication.png)
+
+### Configure WebJEA

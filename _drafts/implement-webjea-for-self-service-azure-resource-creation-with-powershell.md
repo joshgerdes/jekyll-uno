@@ -239,7 +239,7 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 
 You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before taking action.
 
-The validate.ps1 script is a really good resource to use to check out the parameter types that could be used to generate the forms.
+The validate.ps1 script is a really good resource to check out the parameter types used to generate the forms.
 
 ### Setup Azure Virtual Machine Start/Stop
 
@@ -294,7 +294,7 @@ Now run the snippet, and you should be successfully connected to Azure.
 
 #### Create Get-VM script
 
-One of the features of WebJEA is the ability to run scripts on page load. We are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory create a new PS1 file called: Get-VM.ps1
+One of the features of WebJEA is the ability to run scripts on page load. We are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory to create a new PS1 file called: Get-VM.ps1.
 
 Add the following script to it:
 
@@ -310,7 +310,7 @@ Save the file.
 
 #### Create Set-VM script
 
-Now, it's time to create the Script to Start/Stop the Virtual Machine. In the WebJEA scripts directory create a new PS1 file called: Set-VM.ps1
+Now, it's time to create the Script to Start/Stop the Virtual Machine. In the WebJEA scripts directory, create a new PS1 file called: Set-VM.ps1
 
 Add the following script to it:
 
@@ -354,7 +354,7 @@ Now that the scripts have been created, it's time to add them to WebJEA to use.
 
 Navigate to your scripts file and make a backup of the config.json file, then edit: config.json
 
-On the line beneath the "onloadscript": "overview.ps1" file add:
+On the line beneath the "onloadscript": "overview.ps1" file, add:
 
 },
 
@@ -369,23 +369,23 @@ Then add in:
     "onloadscript": "Get-VM.ps1"
      }
 
-So your config.json, should look similar to:
+So your config.json should look similar to:
 
 [https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290](https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290 "https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290")
 
 ### Test Azure Virtual Machine Start/Stop
 
-Now that the scripts have been created, open the WebJEA webpage.
+Now that the scripts have been created open the WebJEA webpage.
 
-Click on StartStop-AzVM page (it may take a few seconds to load, as its running the Get-VM script). You should be greeted by a window similar to below:
+Click on the StartStop-AzVM page (it may take a few seconds to load, as it is running the Get-VM script). You should be greeted by a window similar to below:
 
 ![](/uploads/webjea_startstopazvm.png)
 
-Congratulations, you have now set up WebJEA, and can Start/Stop any Azure Virtual Machines using self-service!
+Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual Machines using self-service!
 
 ### Additional Notes
 
-* There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.
+* There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc., to remind the server to be powered off.
 * Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to be able to make changes, roll back and keep version history.
 * Remove any hard coding of any secrets to connect to Azure (as an example) from the scripts, look at implementing a password management tool that has API access or even the Windows Credential Manager. You want a system where you can easily update the passwords of accounts, limit access and prevent anything from being stored in plain text.
-* Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts, this way you can set granular control on who can do what.
+* Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts this way, and you can set granular control on who can do what.

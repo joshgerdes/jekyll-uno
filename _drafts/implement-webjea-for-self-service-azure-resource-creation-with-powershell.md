@@ -169,3 +169,7 @@ Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea
 If you need assistance finding the Website path, open the Internet Information (IIS) Manager, installed and uncollapse Sites, Default WebSite, right-click WebJEA, Manage Application and select Browse.
 
 ![](/uploads/webjea_iis_authentication.png)
+
+If successful, you should get a username and password prompt:
+
+![](/uploads/webjea_authentication.png)

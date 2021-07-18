@@ -138,7 +138,7 @@ Change the following variables to suit your setup; in my case, I have moved WebJ
 
 ![](/uploads/webjea_dsc.png)
 
-One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script; by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder. 
+One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script; by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder.
 
 If you just opened up PowerShell ISE, you may notice that you are actually in C:\\Windows\\System32, so it won't be able to find the script to run; you can either change the script to point directly to the file location, or you can change the directory you are into to match the files, in my case in the Script pane I run the following:
 
@@ -234,5 +234,5 @@ Now that we have a working WebJEA install, it's time to set up the Azure Resourc
 On the WebJEA server, we need to install the Azure PowerShell modules, run the following in Powershell as Administrator:
 
     Install-Module Az -Scope AllUsers
-    
-sd
+
+### Setup KeyVault

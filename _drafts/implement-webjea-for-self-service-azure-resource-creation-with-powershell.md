@@ -226,3 +226,9 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 * validate.ps1
 
 You may have noticed these in the config.json file; WebJEA has actually run the overview.ps1 file as soon as the page loads, so you can have scripts run before running another one, which is handy when you need to know the current state of something before taking action.
+
+### Setup Azure Resource Creation
+
+Now that we have a working WebJEA install, its time to setup the Azure Resource creation script we will use for this demo.
+
+Install-Module Az -Scope AllUsers

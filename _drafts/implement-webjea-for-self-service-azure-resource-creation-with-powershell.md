@@ -205,4 +205,6 @@ Feel free to update the Title, to match your company or Teams
 
 Add in the WebJEA-Admins group earlier, into the permitted group's session - this controls access for ALL scripts.
 
+Note the: \\\\ for each path that is required. If you get a syntax error, when attempting to load the WebJEA webpage, this is most likely missing.
+
 ![](/uploads/webjea_democonfig.png)

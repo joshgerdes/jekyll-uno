@@ -24,7 +24,7 @@ Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything 
 
 You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA"){:target="_blank"}.
 
-This guide will concentrate on setting up WebJEA for self-service Azure VM management. However, WebJEA can be used to enable much more than what this blog article covers.
+This guide will concentrate on setting up WebJEA for self-service Azure VM management. However, WebJEA can be used to enable much more than what this blog article covers, from things such as new user onboarding, to resource creation.
 
 ![](/uploads/webjea_startstopazvm.png)
 

@@ -24,7 +24,9 @@ Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything 
 
 You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA"){:target="_blank"}.
 
-This guide will concentrate on setting up WebJEA for self-service Azure Resource management. However, WebJEA can be used to enable much more self-service automation.
+This guide will concentrate on setting up WebJEA for self-service Azure VM management. However, WebJEA can be used to enable much more self-service automation.
+
+![](/uploads/webjea_startstopazvm.png)
 
 We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from.
 

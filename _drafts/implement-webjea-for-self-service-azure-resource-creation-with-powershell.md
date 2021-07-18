@@ -280,3 +280,23 @@ Type in:
 To retrieve the Secret, created in the SPN and add it to the String.
 
 Now run the snippet, and you should be successfully connected to Azure.
+
+#### Create Get-VM script
+
+One of the features of WebJEA is the ability to run scripts on page load, we are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory create a new PS1 file called: Get-VM.ps1
+
+Add the following script to it:
+
+    # Login using service principal 
+
+    $TenantId = 'TENANTIDHERE' 
+
+    $ApplicationId = 'APPLICATIONIDHERE'  
+
+    $Secret = ConvertTo-SecureString -String 'SECRETSTRINGHERE' -AsPlainText -Force 
+
+    $Credential = [System.Management.Automation.PSCredential]::New($ApplicationId, $Secret) 
+
+    Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
+
+    Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName

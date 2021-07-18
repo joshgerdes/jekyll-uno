@@ -195,4 +195,8 @@ Before we go any further, take a Backup of the config.json file, rename it to "c
 
 I recommend using Visual Studio Code to edit the config.json, to help avoid any syntax issues.
 
-Now right click config.json and Open it
+Now right click config.json and open it to edit
+
+This file is the glue that holds WebJEA together
+
+![](/uploads/webjea_democonfig.png)

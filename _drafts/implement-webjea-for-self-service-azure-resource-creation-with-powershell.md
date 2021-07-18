@@ -174,4 +174,13 @@ If successful, you should get a username and password prompt:
 
 ![](/uploads/webjea_authentication.png)
 
+That's normal - it means you haven't been given access and now need to configure it.
+
 ### Configure WebJEA
+
+Now that WebJEA has been set up, it is time to configure it, first thing we need to do is to create a Group for WebJEA admins _(who can see all scripts)_.
+
+Create an Active Directory group for:
+
+* WebJEA-Admins
+* WebJEA-Users

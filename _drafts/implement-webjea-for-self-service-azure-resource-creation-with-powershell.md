@@ -364,3 +364,6 @@ Then add in:
     "onloadscript": "Get-VM.ps1"
 
      }
+     
+     sd
+     

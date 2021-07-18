@@ -254,3 +254,5 @@ Now that we are connected to Azure, we now need to create the SPN, run the follo
 Now you have created an SPN called: WebJEA-AzureResourceCreator, we now need to grab the Tenant ID, run the following:
 
     Get-AzContext | Select-Object Tenant
+ 
+ sd   

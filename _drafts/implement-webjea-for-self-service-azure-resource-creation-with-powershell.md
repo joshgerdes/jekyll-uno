@@ -212,4 +212,7 @@ Save the config file and relaunch the WebJEA webpage, it should now load without
 
 ![](/uploads/webjea_initialoverview.png)
 
-You now have a base WebJEA install! 
+You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell files:
+
+* overview.ps1
+* validate.ps1

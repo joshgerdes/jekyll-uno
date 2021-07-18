@@ -342,3 +342,25 @@ Save the file.
 Now that the scripts have been created, it's time to add them to WebJEA to use.
 
 Navigate to your scripts file and make a backup of the config.json file, then edit: config.json
+
+On the line beneath the "onloadscript": "overview.ps1" file add:
+
+},
+
+Then add in:
+
+    {
+
+    "id": "StartStopAzVM",
+
+    "displayname": "StartStop-AzVM",
+
+    "synopsis": "Starts or Stops Azure Based VMs",
+
+    "permittedgroups": [".\\Administrators", "luke.geek.nz\\WebJEAAdmins"],
+
+    "script": "Set-VM.ps1",
+
+    "onloadscript": "Get-VM.ps1"
+
+     }

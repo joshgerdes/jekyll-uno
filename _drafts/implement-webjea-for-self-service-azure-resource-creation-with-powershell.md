@@ -238,3 +238,9 @@ On the WebJEA server, we need to install the Azure PowerShell modules, run the f
     Install-Module Az -Scope AllUsers
 
 Once, the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to use to connect to Azure to create our Virtual Machine.
+
+Run the following PowerShell cmdlet to connect to Azure:
+
+    Connect-AzAccount
+
+sd

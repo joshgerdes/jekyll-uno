@@ -357,5 +357,7 @@ Then add in:
     "script": "Set-VM.ps1",
     "onloadscript": "Get-VM.ps1"
      }
-     
-   sd
+
+So your config.json, should look similar to:
+
+[https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290](https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290 "https://gist.github.com/lukemurraynz/40968df6a8abd455e252f9d045ba9290")

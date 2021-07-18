@@ -263,5 +263,11 @@ Now that we have the SPN and Tenant ID, it's time to test connectivity.
     $Secret = '<sp secret>'
     $Credential = [PSCredentials]::New($ApplicationId, $Secret)
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
-   
-   sd
+
+Copy the TenantID into the TenantID section
+
+Type: 
+
+    $sp.ApplicationID
+
+To retrieve the ApplicationID created from the SPN in the previous step and add it into the ApplicationID part.

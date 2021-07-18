@@ -304,67 +304,35 @@ Now, it's time to create the Script to Start/Stop the Virtual Machine. In the We
 Add the following script to it:
 
     #Variables
-
     [CmdletBinding(SupportsShouldProcess=$True,ConfirmImpact='Low')]
-
     param
-
     (
-
     [Parameter(Position=1, mandatory=$true,
-
     HelpMessage='What is the name of the Azure Virtual Machine?')]
-
     $VMName,
-
     [Parameter(Position=2, mandatory=$true,
-
     HelpMessage='What is the name of the Azure Resource Group that the Virtual Machine is in?')]
-
     $RGName,
-
     [Parameter(Position=3, mandatory=$true,
-
     HelpMessage='What action do you want to do?')]
-
     [VALIDATESET('Start','Stop')] 
-
     $VMAction
-
     )
-
     # Login using service principal 
-
     $TenantId = 'TENANTIDHERE' 
-
     $ApplicationId = 'APPLICATIONIDHERE'  
-
     $Secret = ConvertTo-SecureString -String 'SECRETSTRINGHERE' -AsPlainText -Force 
-
     $Credential = [System.Management.Automation.PSCredential]::New($ApplicationId, $Secret) 
-
     Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId
-
     Get-AzVM -Status | Select-Object Name, PowerState, ResourceGroupName
-
     if ($VMAction -eq "Start")
-
     {
-
          Start-AzVM -Name $VMName -ResourceGroupName $RGName -Confirm:$false  -Force
-
         return
-
     }
-
     elseif ($VMAction -eq "Stop")
-
     {
-
            Stop-AzVM -Name $VMName -ResourceGroupName $RGName -Confirm:$false  -Force
-
-       
-
     }
     
-    sdsd
+Save the file.

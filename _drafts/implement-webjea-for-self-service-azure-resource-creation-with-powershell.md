@@ -44,9 +44,9 @@ Once we have a Windows Server, now it's time to set up WebJEA!
 
 If you already have a certificate you can use, skip this step. In the case of this guide, we are going to use a self-signed certificate.
 
-Log into the WebJEA Windows server using your service account _(in my case, it is: luke\\webjea_services)_.
+**Log** into the WebJEA **Windows server** using your service account _(in my case, it is: luke\\webjea_services)_.
 
-Open PowerShell ISE as Administrator, and after replacing the DNS name to suit your own environment, run the following to create the Root CA certificate:
+Open **PowerShell** ISE as Administrator, and after replacing the DNS name to suit your own environment, **run the following to create the Root CA and Self-Signed certificate**:
 
 Now that the Root CA is created and trusted, we want to create the actual self-signed certificate:
 
@@ -80,7 +80,33 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
     
     Write-Host -ForegroundColor Green -Object "Copy this: $certhumbprint - The Thumbprint is needed for the DSCDeploy.ps1 script"
 
-Copy the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_; we will need that later.
+| Variable              | Note                                                                                                                                      |
+
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+
+| NodeName              | This is a DSC variable, leave this.                                                                                                       |
+
+| WebAppPoolName        | WebApp Pool Name, it may be best to leave this as: WebJEA, however you   can change this.                                                 |
+
+| AppPoolUserName       | Add in your GMSA or Domain Service account username                                                                                       |
+
+| AppPoolPassword       | If using a Domain Account, add the password in here, if GSMA leave bank                                                                   |
+
+| WebJEAIISURI          | This is the IIS URL, ie server/WebJEA. You can change this if you want.                                                                   |
+
+| WebJEAIISFolder       | IIS folder location, this can be changed if you wanted to move IIS to   another drive or location.                                        |
+
+| WebJEASourceFolder    | The source folder, this is the source folder for the WebJEA files when   they are first downloaded and extracted (ie Downloads directory) |
+
+| WebJEAScriptsFolder   | This is where the scripts folder will be placed (ie WebJEA installed)                                                                     |
+
+| WebJEAConfigPath      | This is where the config file will be placed (ie WebJEA installed - it   needs to be the same location as the Scripts folder)             |
+
+| WebJEALogPath         | WebJEA log path                                                                                                                           |
+
+| WebJEA_Nlog_LogFile   | WebJEA system log location                                                                                                                |
+
+| WebJEA_Nlog_UsageFile | WebJEA usage log location                                                                                                                 |the Thumbprint _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_; we will need that later.
 
 Run the following to add the certificate to the 'Trusted Root Authorities' of the server.
 

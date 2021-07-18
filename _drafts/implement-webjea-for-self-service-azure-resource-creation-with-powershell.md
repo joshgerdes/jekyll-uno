@@ -266,8 +266,14 @@ Now that we have the SPN and Tenant ID, it's time to test connectivity.
 
 Copy the TenantID into the TenantID section
 
-Type: 
+Type:
 
     $sp.ApplicationID
 
 To retrieve the ApplicationID created from the SPN in the previous step and add it into the ApplicationID part.
+
+Type in:
+
+    $UnsecureSecret
+
+To retrieve the Secret, created in the SPN and add it to the String.

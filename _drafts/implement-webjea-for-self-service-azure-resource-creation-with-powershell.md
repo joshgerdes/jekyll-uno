@@ -243,7 +243,7 @@ The validate.ps1 script is a really good resource to check out the parameter typ
 
 ### Setup Azure Virtual Machine Start/Stop
 
-Now that we have a working WebJEA install, it's time to set up the Azure VM Start/Stop script we will use for this demo.
+Now that we have a working WebJEA install, it's time to set up the Azure VM Start/Stop script for this demo.
 
 On the WebJEA server, we need to install the Azure PowerShell modules, run the following in Powershell as Administrator:
 
@@ -251,7 +251,7 @@ On the WebJEA server, we need to install the Azure PowerShell modules, run the f
 
 #### Create Service Principal
 
-Once the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to use to connect to Azure to manage our Virtual Machines.
+Once the Az PowerShell modules are installed, we need to set a Service Principal for the PowerShell script to connect to Azure to manage our Virtual Machines.
 
 Run the following PowerShell cmdlet to connect to Azure:
 
@@ -294,7 +294,7 @@ Now run the snippet, and you should be successfully connected to Azure.
 
 #### Create Get-VM script
 
-One of the features of WebJEA is the ability to run scripts on page load. We are going to get the current Power State of our Azure VMs, in the WebJEA scripts directory to create a new PS1 file called: Get-VM.ps1.
+One of the features of WebJEA is the ability to run scripts on page load. So, we will get the current Power State of our Azure VMs, in the WebJEA scripts directory to create a new PS1 file called: Get-VM.ps1.
 
 Add the following script to it:
 
@@ -385,7 +385,7 @@ Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual
 
 ### Additional Notes
 
-* There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc., to remind the server to be powered off.
+* There is room for improvement around error checking, doing more with the scripts, such as sending an email when triggered, etc., to remind the server to be powered off.
 * Because most of the configuration is JSON/PowerShell files, you could have the entire scripts folder in a git repository to be able to make changes, roll back and keep version history.
-* Remove any hard coding of any secrets to connect to Azure (as an example) from the scripts, look at implementing a password management tool that has API access or even the Windows Credential Manager. You want a system where you can easily update the passwords of accounts, limit access and prevent anything from being stored in plain text.
+* Remove any hard coding of any secrets to connect to Azure (as an example) from the scripts and implement a password management tool with API access or even the Windows Credential Manager. You want a system where you can easily update the passwords of accounts, limit access and prevent anything from being stored in plain text.
 * Using the permitted group's section of the config.json file, you can restrict the ability for certain groups to run scripts this way, and you can set granular control on who can do what.

@@ -100,11 +100,11 @@ _Note: Group Managed Services accounts automatically renew and update the passwo
     Install-adserviceaccount webjeagmsa1
     Add-ADGroupmember -identity "luke.geek.nz\WebJEAAdmins" -members (get-adserviceaccount webjeagmsa1).distinguishedname
 
-Add the WebJEAAdmins group to the Administrators group of your WebJEA server.
+**Add** the **WebJEAAdmins group** to the Administrators group of your WebJEA server.
 
 #### Install WebJEA
 
-Download the latest [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the WebJEA Windows server
+**Download** the **latest** [release package](https://github.com/markdomansky/WebJEA/releases "WebJEA - Releases") _(zip file)_ onto the **WebJEA** Windows server
 
 Extract it, and you should have 2 files and 2 folders:
 
@@ -115,7 +115,7 @@ Extract it, and you should have 2 files and 2 folders:
 
   Open PowerShell ISE as Administrator and open DSCDeploy.ps1
 
-WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup.
+**WebJEA uses PowerShell DSC _(Desired State Configuration)_ to set up a lot of the setup**.
 
 DSC will do the following for us:
 
@@ -129,7 +129,7 @@ Even though most of the work will be automated for us by Desired State Configura
 
 I am not using a Group Managed Service Account. Instead, I will use a normal AD account as a service account _(i.e. webjea_services)_, but if you use a GMSA, you need to put the username in the AppPoolUserName; no credentials are needed _(make sure the GMSA has access to the server)_.
 
-Change the following variables to suit your setup; in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
+**Change** the **following variables** to suit **your setup**; in my case, I have moved WebJEA resources to their own folder, so it's not sitting directly on the OS drive, but until its own Folder.
 
 | Variable | Note |
 | --- | --- |

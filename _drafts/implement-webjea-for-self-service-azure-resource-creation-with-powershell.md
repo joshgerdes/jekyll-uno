@@ -366,6 +366,10 @@ So your config.json, should look similar to:
 
 Now that the scripts have been created, open the WebJEA webpage.
 
+Click on StartStop-AzVM page (it may take a few seconds to load, as its running the Get-VM script). You should be greeted by a window similar to below:
+
+![](/uploads/webjea_startstopazvm.png)
+
 ### Additional Notes
 
 * There is room for improvement around error checking, doing more with the scripts, such as sending an email when it's triggered etc to remind the server to be powered off.

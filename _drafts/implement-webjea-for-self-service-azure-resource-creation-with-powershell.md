@@ -277,3 +277,5 @@ Type in:
     $UnsecureSecret
 
 To retrieve the Secret, created in the SPN and add it to the String.
+
+Now run the snippet, and you should be successfully connected to Azure.

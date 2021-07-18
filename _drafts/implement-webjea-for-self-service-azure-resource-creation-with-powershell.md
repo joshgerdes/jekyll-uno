@@ -254,5 +254,17 @@ Now that we are connected to Azure, we now need to create the SPN, run the follo
 Now you have created an SPN called: WebJEA-AzureResourceCreator, we now need to grab the Tenant ID, run the following:
 
     Get-AzContext | Select-Object Tenant
- 
- sd   
+
+Now that we have the SPN and Tenant ID, it's time to test connectivity.
+
+    # Login using service principal
+
+    $TenantId = '<tenant id>'
+
+    $ApplicationId = '<application id>'
+
+    $Secret = '<sp secret>'
+
+    $Credential = [PSCredentials]::New($ApplicationId, $Secret)
+
+    Connect-AzAccount -ServicePrincipal -Credential $Credential -TenantId $TenantId

@@ -82,11 +82,9 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
 
 **Copy** the **Thumbprint** _(if you do this manually, make sure it is the Thumbprint of the certificate, not the Trusted Root CA certificate)_; we will need that later.
 
-Run the following to add the certificate to the 'Trusted Root Authorities' of the server.
-
 #### Setup a Group Managed Service Account
 
-This is the account we will use to run WebJEA under; it can be a normal Active Directory user account if you feel more comfortable or want to assign permissions to.
+This is the **account** we will use to **run WebJEA under**; it **can** be a normal **Active Directory** user **account** if you feel more comfortable or want to assign permissions to.
 
 I am using a Normal AD service account in this guide because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 

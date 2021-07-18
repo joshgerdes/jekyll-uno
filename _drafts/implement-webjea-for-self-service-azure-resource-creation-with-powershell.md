@@ -187,6 +187,12 @@ Create an Active Directory group for:
 
 Add your account to the: WebJEA-Admins group.
 
-Navigate to your WebJEA scripts folder, in my case I set it up under: c:\\WebJEA\\Scripts:
+Navigate to your WebJEA scripts folder, in my case I set it up under c:\\WebJEA\\Scripts:
 
 ![](/uploads/webjea_scripts.png)
+
+Before we go any further, take a Backup of the config.json file, rename it to "config.bak".
+
+I recommend using Visual Studio Code to edit the config.json, to help avoid any syntax issues.
+
+Now right click config.json and Open it

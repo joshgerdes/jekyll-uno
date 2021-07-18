@@ -22,7 +22,7 @@ Because WebJEA is simply a Self-Service Portal for PowerShell scripts, anything 
 
 You can read more about WebJEA directly on the GitHub page: [https://github.com/markdomansky/WebJEA](https://github.com/markdomansky/WebJEA "https://github.com/markdomansky/WebJEA").
 
-This guide will concentrate on setting up WebJEA for self-service Azure Resource creation. However, WebJEA can be used to enable much more self-service automation.
+This guide will concentrate on setting up WebJEA for self-service Azure Resource management. However, WebJEA can be used to enable much more self-service automation.
 
 We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from.
 
@@ -229,9 +229,9 @@ You may have noticed these in the config.json file; WebJEA has actually run the 
 
 The validate.ps1 script is a really good resource to use to check out the parameter types that could be used to generate the forms.
 
-### Setup Azure Virtual Machine Resource Creation
+### Setup Azure Virtual Machine Start/Stop
 
-Now that we have a working WebJEA install, it's time to set up the Azure Resource creation script we will use for this demo, we will create a Virtual Machine.
+Now that we have a working WebJEA install, it's time to set up the Azure VM Start/Stop script we will use for this demo.
 
 On the WebJEA server, we need to install the Azure PowerShell modules, run the following in Powershell as Administrator:
 

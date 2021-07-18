@@ -207,3 +207,7 @@ We are going to make a few edits:
 Note the: \\\\ for each path that is required. If you get a syntax error, when attempting to load the WebJEA webpage, this is most likely missing.
 
 ![](/uploads/webjea_democonfig.png)
+
+Save the config file and relaunch the WebJEA webpage, it should now load without prompting for a username and password.
+
+![](/uploads/webjea_initialoverview.png)

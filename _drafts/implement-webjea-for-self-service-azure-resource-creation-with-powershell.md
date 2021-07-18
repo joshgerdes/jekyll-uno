@@ -231,4 +231,8 @@ You may have noticed these in the config.json file; WebJEA has actually run the 
 
 Now that we have a working WebJEA install, it's time to set up the Azure Resource creation script we will use for this demo, we will create a Virtual Machine.
 
-Install-Module Az -Scope AllUsers
+On the WebJEA server, we need to install the Azure PowerShell modules, run the following in Powershell as Administrator:
+
+    Install-Module Az -Scope AllUsers
+    
+    sd

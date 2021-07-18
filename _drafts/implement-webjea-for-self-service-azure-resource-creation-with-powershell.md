@@ -202,7 +202,7 @@ This file is the glue that holds WebJEA together.
 We are going to make a few edits:
 
 * Feel free to update the Title, to match your company or Teams
-* Add in the WebJEA-Admins group earlier, into the permitted group's session - this controls access for ALL scripts.
+* Add in the WebJEA-Admins group earlier _(include the Domain Name)_, into the permitted group's session - this controls access for ALL scripts.
 
 Note the: \\\\ for each path that is required. If you get a syntax error, when attempting to load the WebJEA webpage, this is most likely missing.
 
@@ -216,3 +216,5 @@ You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell f
 
 * overview.ps1
 * validate.ps1
+
+You may have noticed these in the config.json file, 

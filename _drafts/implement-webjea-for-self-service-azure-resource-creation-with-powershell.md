@@ -216,7 +216,9 @@ Set the PowerShell execution policy on the machine to Unrestricted, so you can r
 
 ![](/uploads/webjea_initialoverview.png)
 
-If you get an: AuthorizationManager check failed error, it is because the PowerShell scripts are still in a blocked state
+If you get an: AuthorizationManager check failed error, it is because the PowerShell scripts are still in a blocked state, from being downloaded from the internet, run the following command to unblock them, then refresh the WebJEA webpage:
+
+    Get-ChildItem -Path 'C:\WebJEA\scripts\' -Recurse | Unblock-File
 
 You now have a base WebJEA install! By default, WebJEA comes with 2 PowerShell files:
 

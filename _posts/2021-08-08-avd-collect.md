@@ -80,9 +80,9 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 
 #### Available command line parameters (to preselect the desired scenario)
 
-\---------------------------------------------------------------------
-
 * "-Core" - Collects Core data + Runs Diagnostics
+
+
 * "-Extended" - Collects all Core data + Extended (Profiles/FSLogix/OneDrive, Teams, MSIX App Attach) data + Runs Diagnostics
 * "-Profiles" - Collects all Core data + Profiles/FSLogix/OneDrive data + Runs Diagnostics
 * "-Teams" - Collects all Core data + Teams data + Runs Diagnostics

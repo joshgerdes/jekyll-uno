@@ -113,4 +113,11 @@ To collect Core + Profiles data
 
 ### Execute the script
 
-s
+1. **Download** the AVD-Collect **script** to a session host, if you haven't already.
+2. **Extract** the **script** to a folder _(ie C:\\Users\\%username&\\Downloads\\AVD-Collect)_
+3. Right-click on: AVD-Collect.ps1, select Properties
+4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
+5. Open Windows Powershell as Administrator
+6. Now we need to change the directory for where the script is located, in my example the command I use is:
+
+    cd 'C:\Users\Luke\Downloads\AVD-Collect'

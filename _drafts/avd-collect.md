@@ -9,10 +9,10 @@ header:
   teaser: ''
 
 ---
-AVD-Collect is a very useful PowerShell script created by Microsoft Customer Support Services, to assist with troubleshooting issues with Azure Virtual Desktop (and Windows 365), by capturing Logs for analysis _(which could then be passed to Microsoft or allow you to delve deeper)_ and running basic Diagnostics against some best-practice policies.
+AVD-Collect is a very useful PowerShell script created by Microsoft Customer Support Services, to assist with troubleshooting issues with Azure Virtual Desktop (and Windows 365), by capturing Logs for analysis _(which could then be passed to Microsoft or allow you to delve deeper)_ and running basic Diagnostics against some common known issues.
 
-> This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/avd-collect "https://aka.ms/avd-collect")
->
+This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/avd-collect "https://aka.ms/avd-collect")
+
 > There is no publically avaliable github repository for it currently, Microsoft will retain the latest version of the script at this link.
 >
 > This script was NOT created by me and comes 'As/Is', this article is merely intended to share the script to assit others in their AVD troubleshooting.

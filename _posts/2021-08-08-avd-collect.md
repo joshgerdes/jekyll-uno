@@ -37,7 +37,7 @@ A lot of the information below is contained in the script readme _(including a l
 
 _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools, and you will not be prompted again to accept it as long as the registry key is in place._ _You can also use the "-AcceptEula" command line parameter to accept the EULA silently._ _This is a per-user setting, so each user running the script will accept the EULA once._
 
-### Script scenarios:
+### Script scenarios
 
 #### "Core" (suitable for troubleshooting issues that do not involve Profiles or Teams or MSIX App Attach)
 

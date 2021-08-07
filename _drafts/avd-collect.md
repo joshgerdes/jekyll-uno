@@ -126,7 +126,7 @@ To collect Core + Profiles data
         .\AVD-Collect.ps1 -Extended -AcceptEula
  8. **Read** the notice from the Microsoft Customer Support centre and press '**Y**' if you **accept** to move onto the next steps.
  9. The **script** will now **run**:
-10. ![](/uploads/avd-collect_running.png)
+10. ![AVD- Script Running](/uploads/avd-collect_running.png "AVD- Script Running")
 11. You will start to see new folders get created in the directory that the script is running from with the extracted log files. the script will take a few minutes to complete as it extracts the logs and then zips them.
 12. Once the script has ran, there will now be a **ZIP file** of all the Logs collected by the script, in my example, the **logs** consisted of:
 

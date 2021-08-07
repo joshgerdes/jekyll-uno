@@ -17,7 +17,7 @@ This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/
 >
 > This script was NOT created by me and comes 'As/Is', this article is merely intended to share the script to assit others in their AVD troubleshooting.
 >
-> This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics.
+> This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics. No data is automatically uploaded to Microsoft.
 
 A lot of the information below is contained in the script readme and changelog, however, I am supplying this article for reference and to help share this nifty tool.
 

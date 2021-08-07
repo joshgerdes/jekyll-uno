@@ -13,13 +13,13 @@ AVD-Collect is a very useful PowerShell script created by Microsoft Customer Sup
 
 > This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/avd-collect "https://aka.ms/avd-collect")
 >
-> There is no publically avaliable github repository for it currently, Microsoft will retain the latest version of the script at this link. 
+> There is no publically avaliable github repository for it currently, Microsoft will retain the latest version of the script at this link.
 >
 > This script was NOT created by me and comes 'As/Is'.
 >
 > This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics.
 
-A lot of the information below, is contained in the script readme and Changelog
+A lot of the information below, is contained in the script readme and changelog, however, I am supplying in this article for reference and 
 
 ### Script Pre-requisites
 
@@ -35,36 +35,36 @@ This is a per-user setting, so each user running the script will have to accept 
 
 When launched without any command-line parameter, the script will ask you to select one of the following five scenarios:
 
-#### 	"Core" (suitable for troubleshooting issues that do not involve Profiles or Teams or MSIX App Attach)
+#### "Core" (suitable for troubleshooting issues that do not involve Profiles or Teams or MSIX App Attach)
 
 * Collects core troubleshooting data without including Profiles/FSLogix/OneDrive or Teams or MSIXAA related data
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"Core + Profiles" (suitable for troubleshooting Profiles issues)
+#### "Core + Profiles" (suitable for troubleshooting Profiles issues)
 
-* Collects all Core data	
+* Collects all Core data
 * Collects Profiles/FSLogix/OneDrive related information, as available
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"Core + Teams" (suitable for troubleshooting Teams issues)
+#### "Core + Teams" (suitable for troubleshooting Teams issues)
 
 * Collects all Core data
 * Collects Teams related information, as available
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"Core + MSIX App Attach" (suitable for troubleshooting MSIX App Attach issues)
+#### "Core + MSIX App Attach" (suitable for troubleshooting MSIX App Attach issues)
 
 * Collects all Core data
 * Collects MSIX App Attach related information, as available
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"Core + MSRA" (suitable for troubleshooting Remote Assistance issues)
+#### "Core + MSRA" (suitable for troubleshooting Remote Assistance issues)
 
 * Collects all Core data
 * Collects Remote Assistance related information, as available
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"Extended (all)" (suitable for troubleshooting most issues, including Profiles/FSLogix/OneDrive, Teams and MSIX App Attach)
+#### "Extended (all)" (suitable for troubleshooting most issues, including Profiles/FSLogix/OneDrive, Teams and MSIX App Attach)
 
 * Collects all Core data
 * Collects Profiles/FSLogix/OneDrive related information, as available
@@ -72,7 +72,7 @@ When launched without any command-line parameter, the script will ask you to sel
 * Collects MSIX App Attach related information, as available
 * Runs Diagnostics. Diagnostics results will be logged
 
-#### 	"DiagOnly"
+#### "DiagOnly"
 
 * Skips all Core/Extended data collection and runs Diagnostics only (regardless if any other parameters have been specified). Runs Diagnostics. Diagnostics results will be logged
 
@@ -82,14 +82,14 @@ When launched without any command-line parameter, the script will ask you to sel
 
 \---------------------------------------------------------------------
 
-* 	"-Core" - Collects Core data + Runs Diagnostics
-* 	"-Extended" - Collects all Core data + Extended (Profiles/FSLogix/OneDrive, Teams, MSIX App Attach) data + Runs Diagnostics
-* 	"-Profiles" - Collects all Core data + Profiles/FSLogix/OneDrive data + Runs Diagnostics
-* 	"-Teams" - Collects all Core data + Teams data + Runs Diagnostics
-* 	"-MSIXAA" - Collects all Core data + MSIX App Attach data + Runs Diagnostics
-* 	"-MSRA" - Collects all Core data + Remote Assistance data + Runs Diagnostics
-* 	"-DiagOnly" - The script will skip all data collection and will only run the diagnostics part (even if other parameters have been included).
-* 	"-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement
+* "-Core" - Collects Core data + Runs Diagnostics
+* "-Extended" - Collects all Core data + Extended (Profiles/FSLogix/OneDrive, Teams, MSIX App Attach) data + Runs Diagnostics
+* "-Profiles" - Collects all Core data + Profiles/FSLogix/OneDrive data + Runs Diagnostics
+* "-Teams" - Collects all Core data + Teams data + Runs Diagnostics
+* "-MSIXAA" - Collects all Core data + MSIX App Attach data + Runs Diagnostics
+* "-MSRA" - Collects all Core data + Remote Assistance data + Runs Diagnostics
+* "-DiagOnly" - The script will skip all data collection and will only run the diagnostics part (even if other parameters have been included).
+* "-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement
 
 ### Usage example with parameters:
 
@@ -101,7 +101,7 @@ To collect Core + Extended data (incl. Profiles/FSLogix/OneDrive, Teams, MSIX Ap
 
     	.\AVD-Collect.ps1 -Extended
 
-To collect Core + Profiles + MSIX App Attach data 
+To collect Core + Profiles + MSIX App Attach data
 
     	.\AVD-Collect.ps1 -Profiles -MSIXAA
 
@@ -109,4 +109,4 @@ To collect Core + Profiles data
 
     	.\AVD-Collect.ps1 -Profiles
 
-​​​​​​​If you are missing any of the data that the script should normally collect (see "Data being collected"), check the content of "*_AVD-Collect-Log.txt" and "*_AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script. This should be visible in one of the two text files.
+​​​​​​​If you are missing any of the data that the script should normally collect (see "Data being collected"), check the content of "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script. This should be visible in one of the two text files.

@@ -19,7 +19,7 @@ AVD-Collect is a very useful PowerShell script created by Microsoft Customer Sup
 >
 > This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics.
 
-A lot of the information below is contained in the script readme and changelog, however, I am supplying this article for reference and to help share this nifty tool. 
+A lot of the information below is contained in the script readme and changelog, however, I am supplying this article for reference and to help share this nifty tool.
 
 ### Script pre-requisites
 
@@ -27,6 +27,9 @@ A lot of the information below is contained in the script readme and changelog, 
 2. All collected data will be archived into a .zip file located in the same folder as the script itself.
 3. Run the script on AVD host VMs and/or Windows-based devices from where you connect to the AVD hosts, as needed.
 4. When launched, the script will present the Microsoft Diagnostic Tools End User License Agreement (EULA). You need to accept the EULA before you can continue using the script.
+5. If the script does not start, complaining about execution restrictions, then in an elevated PowerShell console run:
+
+       	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Scope Process
 
 _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
 _You can also use the "-AcceptEula" command line parameter to silently accept the EULA._

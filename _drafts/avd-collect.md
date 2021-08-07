@@ -113,7 +113,7 @@ To collect Core + Profiles data
 
 ### Execute the script
 
- 1. **Download** the AVD-Collect **script** to a session host, if you haven't already.
+ 1. **Download** the AVD-Collect **script** to the session host you need to collect the logs from, if you haven't already.
  2. **Extract** the **script** to a folder _(ie C:\\Users\\%username&\\Downloads\\AVD-Collect)_
  3. Right-click on: AVD-Collect.ps1, select Properties
  4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
@@ -127,4 +127,4 @@ To collect Core + Profiles data
  8. Read the notice from the Microsoft Customer Support centre and press 'Y' if you accept to move onto the next steps.
  9. The script will now run:
 10. ![](/uploads/avd-collect_running.png)
-11. 
+11. You will start to see new folders get created in the directory that the script is running from with the extracted log files.

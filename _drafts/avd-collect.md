@@ -141,3 +141,6 @@ To collect Core + Profiles data
 
 13. ![](/uploads/avd-collect-postrun.png)
 14. If needed, you can now send or upload the ZIP file for Microsoft support, if you are troubleshooting yourself, you can navigate to the folders to look at the specific logs that you want, all in one place!
+15. To look at Diagnostic information, open the: AVD-Diag.html file.
+16. You can now see a list of common issues, what the script is looking for, and whether the host has passed or failed these scripts (this can be very useful for Azure Virtual Desktop hosts, to make sure all the standard configuration is done or being applied, including making sure that the session host has access to all the external resources it needs):
+17. ![](/uploads/avd-collect-diagreport.png)

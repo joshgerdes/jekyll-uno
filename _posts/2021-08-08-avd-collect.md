@@ -93,7 +93,7 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 * "-DiagOnly" - The script will skip all data collection and will only run the diagnostics part (even if other parameters have been included).
 * "-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement.
 
-### Usage example with parameters:
+### Usage example with parameters
 
 To collect only Core data (excluding Profiles/FSLogix/OneDrive, Teams, MSIX App Attach):
 

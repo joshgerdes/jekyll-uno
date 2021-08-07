@@ -28,10 +28,8 @@ A lot of the information below is contained in the script readme and changelog, 
 3. Run the script on AVD host VMs and/or Windows-based devices from where you connect to the AVD hosts, as needed.
 4. When launched, the script will present the Microsoft Diagnostic Tools End User License Agreement (EULA). You need to accept the EULA before you can continue using the script.
 
-   _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
-
+_Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
 _You can also use the "-AcceptEula" command line parameter to silently accept the EULA._
-
 _This is a per-user setting, so each user running the script will have to accept the EULA once._
 
 ### Script scenarios:
@@ -110,4 +108,4 @@ To collect Core + Profiles data
 
     	.\AVD-Collect.ps1 -Profiles
 
-​​​​​​​If you are missing any of the data that the script should normally collect, check the content of the "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script. 
+​​​​​​​If you are missing any of the data that the script should normally collect, check the content of the "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script.

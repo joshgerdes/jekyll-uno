@@ -20,6 +20,8 @@ You can download this script from: [https://aka.ms/avd-collect](https://aka.ms/a
 > This script was NOT created by me and comes 'As/Is', this article is merely intended to share the script to assit others in their AVD troubleshooting.
 >
 > This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics. No data is automatically uploaded to Microsoft.
+>
+> Please be aware that the script may change and include new functionality not part of this article, please review the Changelog and Readme of the script directly.
 
 A lot of the information below is contained in the script readme _(including a list of the extensive diagnostics and log locations)_ and changelog; however, I am supplying this article for reference and to help share this nifty tool.
 
@@ -82,16 +84,14 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 
 #### Available command line parameters (to preselect the desired scenario)
 
-* "-Core" - Collects Core data + Runs Diagnostics
-
-
-* "-Extended" - Collects all Core data + Extended (Profiles/FSLogix/OneDrive, Teams, MSIX App Attach) data + Runs Diagnostics
-* "-Profiles" - Collects all Core data + Profiles/FSLogix/OneDrive data + Runs Diagnostics
-* "-Teams" - Collects all Core data + Teams data + Runs Diagnostics
-* "-MSIXAA" - Collects all Core data + MSIX App Attach data + Runs Diagnostics
-* "-MSRA" - Collects all Core data + Remote Assistance data + Runs Diagnostics
-* "-DiagOnly" - The script will skip all data collection and will only run the diagnostics part (even if other parameters have been included).
-* "-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement.
+* Core - Collects Core data + Runs Diagnostics
+* Extended - Collects all Core data + Extended _(Profiles/FSLogix/OneDrive, Teams, MSIX App Attach)_ data + Runs Diagnostics
+* Profiles - Collects all Core data + Profiles/FSLogix/OneDrive data + Runs Diagnostics
+* Teams - Collects all Core data + Teams data + Runs Diagnostics
+* MSIXAA - Collects all Core data + MSIX App Attach data + Runs Diagnostics
+* MSRA - Collects all Core data + Remote Assistance data + Runs Diagnostics
+* DiagOnly - The script will skip all data collection and will only run the diagnostics part _(even if other parameters have been included)_.
+* AcceptEula - Silently accepts the Microsoft Diagnostic Tools End User License Agreement.
 
 ### Usage example with parameters
 

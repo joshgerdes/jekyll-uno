@@ -31,9 +31,7 @@ A lot of the information below is contained in the script readme and changelog, 
 
        	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Scope Process
 
-_Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
-_You can also use the "-AcceptEula" command line parameter to silently accept the EULA._
-_This is a per-user setting, so each user running the script will have to accept the EULA once._
+_Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._ _You can also use the "-AcceptEula" command line parameter to silently accept the EULA._ _This is a per-user setting, so each user running the script will have to accept the EULA once._
 
 ### Script scenarios:
 
@@ -76,7 +74,7 @@ _This is a per-user setting, so each user running the script will have to accept
 
 #### "DiagOnly"
 
-* Skips all Core/Extended data collection and runs Diagnostics only (regardless if any other parameters have been specified). Runs Diagnostics. Diagnostics results will be logged
+* Skips all Core/Extended data collection and runs Diagnostics only (regardless of any other parameters that have been specified). Runs Diagnostics. 
 
 **The default scenario is "Core".​​​​​​​**
 

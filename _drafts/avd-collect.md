@@ -21,7 +21,7 @@ AVD-Collect is a very useful PowerShell script created by Microsoft Customer Sup
 
 A lot of the information below is contained in the script readme and changelog, however, I am supplying this article for reference and to help share this nifty tool. 
 
-### Script Pre-requisites
+### Script pre-requisites
 
 1. The script must be run with elevated permissions in order to collect all required data.
 2. All collected data will be archived into a .zip file located in the same folder as the script itself.
@@ -33,7 +33,7 @@ You can also use the "-AcceptEula" command line parameter to silently accept the
 
 This is a per-user setting, so each user running the script will have to accept the EULA once.
 
-When launched without any command-line parameter, the script will ask you to select one of the following five scenarios:
+### Script scenarios:
 
 #### "Core" (suitable for troubleshooting issues that do not involve Profiles or Teams or MSIX App Attach)
 

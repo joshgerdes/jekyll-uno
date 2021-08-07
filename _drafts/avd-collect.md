@@ -74,7 +74,7 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 
 #### "DiagOnly"
 
-* Skips all Core/Extended data collection and runs Diagnostics only (regardless of any other parameters that have been specified). Runs Diagnostics.
+* Skips all Core/Extended data collection and runs Diagnostics only (regardless of any other parameters that have been specified).
 
 **The default scenario is "Core".​​​​​​​**
 
@@ -113,12 +113,18 @@ To collect Core + Profiles data
 
 ### Execute the script
 
-1. **Download** the AVD-Collect **script** to a session host, if you haven't already.
-2. **Extract** the **script** to a folder _(ie C:\\Users\\%username&\\Downloads\\AVD-Collect)_
-3. Right-click on: AVD-Collect.ps1, select Properties
-4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
-5. Open Windows Powershell as Administrator
-6. Now we need to change the directory for where the script is located, in my example the command I use is:
+ 1. **Download** the AVD-Collect **script** to a session host, if you haven't already.
+ 2. **Extract** the **script** to a folder _(ie C:\\Users\\%username&\\Downloads\\AVD-Collect)_
+ 3. Right-click on: AVD-Collect.ps1, select Properties
+ 4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
+ 5. Open Windows Powershell as Administrator
+ 6. Now we need to change the directory for where the script is located, in my example the command I use is:
 
-       cd 'C:\Users\Luke\Downloads\AVD-Collect'
-7. 
+        cd 'C:\Users\Luke\Downloads\AVD-Collect'
+ 7. By default, the script will run as 'Core', I want to include everything, profiles, Teams etc so run Extended:  
+
+        .\AVD-Collect.ps1 -Extended -AcceptEula
+ 8. Read the notice from the Microsoft Customer Support centre and press 'Y' if you accept to move onto the next steps.
+ 9. The script will now run:
+10. ![](/uploads/avd-collect_running.png)
+11. 

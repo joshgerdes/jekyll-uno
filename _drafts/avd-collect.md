@@ -78,7 +78,7 @@ This is a per-user setting, so each user running the script will have to accept 
 
 **The default scenario is "Core".​​​​​​​**
 
-### Available command line parameters (to preselect the desired scenario)
+#### Available command line parameters (to preselect the desired scenario)
 
 \---------------------------------------------------------------------
 
@@ -109,4 +109,4 @@ To collect Core + Profiles data
 
     	.\AVD-Collect.ps1 -Profiles
 
-​​​​​​​If you are missing any of the data that the script should normally collect (see "Data being collected"), check the content of "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script. This should be visible in one of the two text files.
+​​​​​​​If you are missing any of the data that the script should normally collect, check the content of the "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script. 

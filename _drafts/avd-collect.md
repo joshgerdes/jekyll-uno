@@ -9,9 +9,9 @@ header:
   teaser: ''
 
 ---
-AVD-Collect is a very useful PowerShell script created by Microsoft Customer Support Services, to assist with troubleshooting issues with Azure Virtual Desktop (and Windows 365), by capturing Logs for analysis _(which could then be passed to Microsoft or allow you to delve deeper)_ and running basic Diagnostics against some common known issues.
+AVD-Collect is a very useful PowerShell script created by Microsoft Customer Support Services to assist with troubleshooting issues with Azure Virtual Desktop (and Windows 365), by capturing Logs for analysis _(which could then be passed to Microsoft or allow you to delve deeper)_ and running basic Diagnostics against some common known issues.
 
-This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/avd-collect "https://aka.ms/avd-collect")
+You can download this script from: [https://aka.ms/avd-collect](https://aka.ms/avd-collect "https://aka.ms/avd-collect")
 
 > There is no publically avaliable github repository for it currently, Microsoft will retain the latest version of the script at this link.
 >
@@ -19,7 +19,7 @@ This script can be downloaded from: [https://aka.ms/avd-collect](https://aka.ms/
 >
 > This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics. No data is automatically uploaded to Microsoft.
 
-A lot of the information below is contained in the script readme _(including a list of the extensive diagnostics and log locations)_ and changelog, however, I am supplying this article for reference and to help share this nifty tool.
+A lot of the information below is contained in the script readme _(including a list of the extensive diagnostics and log locations)_ and changelog; however, I am supplying this article for reference and to help share this nifty tool.
 
 ### Script pre-requisites
 
@@ -31,7 +31,7 @@ A lot of the information below is contained in the script readme _(including a l
 
        	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Scope Process
 
-_Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._ _You can also use the "-AcceptEula" command line parameter to silently accept the EULA._ _This is a per-user setting, so each user running the script will have to accept the EULA once._
+_Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools, and you will not be prompted again to accept it as long as the registry key is in place._ _You can also use the "-AcceptEula" command line parameter to silently accept the EULA._ _This is a per-user setting, so each user running the script will have to accept the EULA once._
 
 ### Script scenarios:
 
@@ -89,7 +89,7 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 * "-MSIXAA" - Collects all Core data + MSIX App Attach data + Runs Diagnostics
 * "-MSRA" - Collects all Core data + Remote Assistance data + Runs Diagnostics
 * "-DiagOnly" - The script will skip all data collection and will only run the diagnostics part (even if other parameters have been included).
-* "-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement
+* "-AcceptEula" - Silently accepts the Microsoft Diagnostic Tools End User License Agreement.
 
 ### Usage example with parameters:
 
@@ -114,21 +114,21 @@ To collect Core + Profiles data
 ### Execute the script
 
  1. **Download** the AVD-Collect **script** to the session host you need to collect the logs from, if you haven't already.
- 2. **Extract** the **script** to a folder _(ie C:\\Users\\%username&\\Downloads\\AVD-Collect)_
+ 2. **Extract** the **script** to a folder _(i.e. C:\\Users\\%username&\\Downloads\\AVD-Collect)_
  3. Right-click on: AVD-Collect.ps1, select Properties
  4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
  5. Open Windows Powershell as Administrator
- 6. Now we need to **change** the **directory** for where the script is located, in my example the command I use is:
+ 6. Now we need to **change** the **directory** for where the script is located; in my example, the command I use is:
 
         cd 'C:\Users\Luke\Downloads\AVD-Collect'
- 7. By default, the script will run as 'Core', I want to include everything, profiles, Teams etc so **run** Extended:  
+ 7. By default, the script will run as 'Core', and I want to include everything, profiles, Teams etc., so **run** Extended:  
 
         .\AVD-Collect.ps1 -Extended -AcceptEula
  8. **Read** the notice from the Microsoft Customer Support centre and press '**Y**' if you **accept** to move onto the next steps.
  9. The **script** will now **run**:
 10. ![AVD- Script Running](/uploads/avd-collect_running.png "AVD- Script Running")
 11. You will start to see new folders get created in the directory that the script is running from with the extracted log files. the script will take a few minutes to complete as it extracts the logs and then zips them.
-12. Once the script has ran, there will now be a **ZIP file** of all the Logs collected by the script, in my example, the **logs** consisted of:
+12. Once the script has ran, there will now be a **ZIP file** of all the Logs collected by the script. In my example, the **logs** consisted of:
 
 * Certificates
 * Recent Event Log
@@ -140,7 +140,7 @@ To collect Core + Profiles data
 * Networking and Firewall information
 
 13. ![AVD-Collect Logs](/uploads/avd-collect-postrun.png "AVD-Collect Logs")
-14. If needed, you can now **send** or upload the **ZIP** file to Microsoft **support**, if you are troubleshooting yourself, you can navigate to the folders to look at the specific logs that you want, all in one place!
+14. If needed, you can now **send** or upload the **ZIP** file to Microsoft **support**. If you are troubleshooting yourself, you can navigate to the folders to look at the specific logs that you want, all in one place!
 15. To **look** at **Diagnostic** information, open the: **AVD-Diag.html** file.
 16. You can now see a list of common issues, what the script is looking for, and whether the host has passed or failed these scripts _(this can be very useful for Azure Virtual Desktop hosts, to make sure all the standard configuration is done or being applied, including making sure that the session host has access to all the external resources it needs_):
 17. ![AVD-Collect Diagnostics](/uploads/avd-collect-diagreport.png "AVD-Collect Diagnostics")

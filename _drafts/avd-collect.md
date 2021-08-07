@@ -119,6 +119,5 @@ To collect Core + Profiles data
 4. Because this file has been downloaded from the Internet, it may be in a protected/block status - select **Unblock** and click **Apply**
 5. Open Windows Powershell as Administrator
 6. Now we need to change the directory for where the script is located, in my example the command I use is:
-
     cd 'C:\Users\Luke\Downloads\AVD-Collect'
-    7. 
+7.

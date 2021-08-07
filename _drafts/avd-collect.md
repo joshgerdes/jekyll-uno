@@ -110,3 +110,7 @@ To collect Core + Profiles data
     	.\AVD-Collect.ps1 -Profiles
 
 ​​​​​​​If you are missing any of the data that the script should normally collect, check the content of the "__AVD-Collect-Log.txt" and "__AVD-Collect-Errors.txt" files for more information. Some data may not be present during data collection and thus not picked up by the script.
+
+### Execute the script
+
+s

@@ -121,3 +121,4 @@ To collect Core + Profiles data
 6. Now we need to change the directory for where the script is located, in my example the command I use is:
 
     cd 'C:\Users\Luke\Downloads\AVD-Collect'
+    7. 

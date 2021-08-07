@@ -1,6 +1,6 @@
 ---
 date: 2021-08-08 00:00:00 +1200
-title: 'AVD-Collect - Azure Virtual Desktop Diagnostics, Logging '
+title: 'AVD-Collect - Azure Virtual Desktop Diagnostics and Logging '
 author: Luke
 categories:
 - PowerShell

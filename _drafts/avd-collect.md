@@ -15,7 +15,7 @@ AVD-Collect is a very useful PowerShell script created by Microsoft Customer Sup
 >
 > There is no publically avaliable github repository for it currently, Microsoft will retain the latest version of the script at this link.
 >
-> This script was NOT created by me and comes 'As/Is'.
+> This script was NOT created by me and comes 'As/Is', this article is merely intended to share the script to assit others in their AVD troubleshooting.
 >
 > This script is intended to help support Microsoft Customer Support with assisting customers, but was made publically accessible to assist with MS Support cases and Azure Virtual Desktop diagnostics.
 

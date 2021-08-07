@@ -1,6 +1,6 @@
 ---
 date: 2021-08-08 00:00:00 +1200
-title: AVD Collect
+title: 'AVD-Collect - Azure Virtual Desktop Diagnostics, Logging '
 author: Luke
 categories:
 - PowerShell
@@ -27,11 +27,12 @@ A lot of the information below is contained in the script readme and changelog, 
 2. All collected data will be archived into a .zip file located in the same folder as the script itself.
 3. Run the script on AVD host VMs and/or Windows-based devices from where you connect to the AVD hosts, as needed.
 4. When launched, the script will present the Microsoft Diagnostic Tools End User License Agreement (EULA). You need to accept the EULA before you can continue using the script.
-5. _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
 
-You can also use the "-AcceptEula" command line parameter to silently accept the EULA.
+   _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Microsoft\\CESDiagnosticTools and you will not be prompted again to accept it as long as the registry key is in place._
 
-This is a per-user setting, so each user running the script will have to accept the EULA once.
+_You can also use the "-AcceptEula" command line parameter to silently accept the EULA._
+
+_This is a per-user setting, so each user running the script will have to accept the EULA once._
 
 ### Script scenarios:
 

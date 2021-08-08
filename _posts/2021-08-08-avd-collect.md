@@ -42,31 +42,31 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 #### "Core" (suitable for troubleshooting issues that do not involve Profiles or Teams or MSIX App Attach)
 
 * Collects core troubleshooting data without including Profiles/FSLogix/OneDrive or Teams or MSIXAA related data
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics.
 
 #### "Core + Profiles" (suitable for troubleshooting Profiles issues)
 
 * Collects all Core data
 * Collects Profiles/FSLogix/OneDrive related information, as available
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics. 
 
 #### "Core + Teams" (suitable for troubleshooting Teams issues)
 
 * Collects all Core data
 * Collects Teams related information, as available
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics.
 
 #### "Core + MSIX App Attach" (suitable for troubleshooting MSIX App Attach issues)
 
 * Collects all Core data
 * Collects MSIX App Attach related information, as available
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics.
 
 #### "Core + MSRA" (suitable for troubleshooting Remote Assistance issues)
 
 * Collects all Core data
 * Collects Remote Assistance related information, as available
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics.
 
 #### "Extended (all)" (suitable for troubleshooting most issues, including Profiles/FSLogix/OneDrive, Teams and MSIX App Attach)
 
@@ -74,7 +74,7 @@ _Acceptance of the EULA will be stored in the registry under HKCU\\Software\\Mic
 * Collects Profiles/FSLogix/OneDrive related information, as available
 * Collects Microsoft Teams related information, as available
 * Collects MSIX App Attach related information, as available
-* Runs Diagnostics. Diagnostics results will be logged
+* Runs Diagnostics.
 
 #### "DiagOnly"
 

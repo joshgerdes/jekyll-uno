@@ -6,7 +6,7 @@ categories:
 - PowerShell
 toc: false
 header:
-  teaser: ''
+  teaser: "images/powershell-blog-feature-banner.png"
 
 ---
 Are you attempting to update the Active Directory Schema for LAPS (Local Administrator Password Solution) and keep getting the error below?

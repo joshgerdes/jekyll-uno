@@ -17,7 +17,7 @@ Here are few things you can check:
 
 * Make sure you are a Schema Admin
 * Run PowerShell as Administrator
-* Run the PowerShell from the Schema Master
+* Run the PowerShell to update the schema directly from the Schema Master
 
 You can use the snippet below to check which Domain Controller the Schema Master role is running from:
 

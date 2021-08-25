@@ -69,6 +69,6 @@ Run the PowerShell script below (as Administrator) to Enable; you can always rer
         New-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server' -name 'DisabledByDefault' -value '1' –PropertyType 'DWORD'
         New-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client' -name 'Enabled' -value '0' –PropertyType 'DWORD'
         New-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client' -name 'DisabledByDefault' -value '1' –PropertyType 'DWORD'
-        Write-Host 'Enabling TLSv1.1'
+        Write-Host 'Disabling TLSv1.1'
     }
     disable-tls-1.1

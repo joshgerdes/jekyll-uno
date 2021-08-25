@@ -5,7 +5,7 @@ title: 'Always on VPN - Error 809 The network connection between your computer a
 author: Luke
 categories:
 - Windows
-toc: false
+toc: true
 header:
   teaser: "/uploads/windows-server.jpg"
 

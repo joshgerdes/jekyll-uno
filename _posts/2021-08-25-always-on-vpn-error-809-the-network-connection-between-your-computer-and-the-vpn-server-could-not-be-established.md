@@ -12,7 +12,7 @@ header:
 ---
 I ran into a weird issue, troubleshooting an 'Always On' installation running off Windows Server 2019, the clients were getting:
 
-    Error 809 The network connection between your computer and the VPN server could not be established
+> Error 809 The network connection between your computer and the VPN server could not be established
 
 In my case, the issue wasn't due to [IKEv2 Fragmentation](https://directaccess.richardhicks.com/2019/02/14/troubleshooting-always-on-vpn-error-code-809/ "Troubleshooting Always On VPN Error Code 809") or anything to do with [NAT ](https://directaccess.richardhicks.com/2020/04/13/always-on-vpn-ikev2-load-balancing-and-nat/ "Always On VPN IKEv2 Load Balancing and NAT"){:target="_blank"} to allow the origin IP to flow to the Always-on VPN server. It was due to the ports being limited to: '2'. I found an old post regarding Windows Server 2008 R2: 
 

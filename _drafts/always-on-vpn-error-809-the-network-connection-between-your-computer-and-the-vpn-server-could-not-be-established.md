@@ -34,3 +34,7 @@ This matched my issue, I had never seen more than 2 connections at once.
  8. Click **Ok**
  9. Click **Apply**
 10. **Restart** the Routing and Remote Access **server**
+
+![Routing and Remote Access](/uploads/wan_miniport_ikev2.png "Routing and Remote Access")
+
+![Routing and Remote Access](/uploads/wan_miniport_ports.png "Routing and Remote Access")

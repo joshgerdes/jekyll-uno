@@ -20,7 +20,7 @@ In my case, the issue wasn't due to [IKEv2 Fragmentation](https://directaccess.r
 
 > "If more than two clients try to connect to the server at the same time, the Routing and Remote Access service rejects the IKEv2 connection requests. Additionally, the following message is logged in the Rastapi.log file:"
 
-This matched my issue, I had never seen more than 2 connections at once.
+This matched my issue; I had never seen more than 2 connections at once.
 
 ### Increase Ports
 
@@ -29,11 +29,11 @@ This matched my issue, I had never seen more than 2 connections at once.
  3. **Right**-**click** on **Ports**
  4. Click on: **WAN Miniport (IKEv2)**
  5. Click **Configure**
- 6. **Make sure** that: To **enable remote access**, select Remote access **connections** (inbound only) is **checked**
+ 6. **Ensure** that: To **enable remote access**, select Remote access **connections** (inbound only) is **checked.**
  7. **Change Maximum ports** from 2 _(as an example)_ to a number that matches how many connections you want - I went with **128**
  8. Click **Ok**
  9. Click **Apply**
-10. **Restart** the Routing and Remote Access **server** you should now see more ports listed 'as inactive' until a new session comes along and uses it.
+10. **Restart** the Routing and Remote Access **server. You** should now see more ports listed 'as inactive' until a new session comes along and uses it.
 
 ![Routing and Remote Access](/uploads/wan_miniport_ikev2.png "Routing and Remote Access")
 
@@ -41,9 +41,9 @@ This matched my issue, I had never seen more than 2 connections at once.
 
 ### Enable TLS 1.1
 
-Although this wasn't my initial fix, I had a Microsoft Support call opened regarding this issue, after analysing the logs they recommended enabling TLS 1.0 _(which was disabled by default on a Windows Server 2019 server)_. I would only do this as a last resort - if required.
+Although this wasn't my initial fix, I had a Microsoft Support call opened regarding this issue; after analysing the logs, they recommended enabling TLS 1.0 _(which was disabled by default on a Windows Server 2019 server)_. I would only do this as a last resort - if required.
 
-Run the PowerShell script below (as Administrator) to Enable, then you can always rerun the Disable script to remove the changes.
+Run the PowerShell script below (as Administrator) to Enable; you can always rerun the Disable script to remove the changes.
 
 #### Enable TLS 1.1
 

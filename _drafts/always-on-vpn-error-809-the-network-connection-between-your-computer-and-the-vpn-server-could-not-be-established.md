@@ -33,8 +33,10 @@ This matched my issue, I had never seen more than 2 connections at once.
  7. **Change Maximum ports** from 2 _(as an example)_ to a number that matches how many connections you want - I went with **128**
  8. Click **Ok**
  9. Click **Apply**
-10. **Restart** the Routing and Remote Access **server**
+10. **Restart** the Routing and Remote Access **server** you should now see more ports listed 'as inactive' until a new session comes along and uses it.
 
 ![Routing and Remote Access](/uploads/wan_miniport_ikev2.png "Routing and Remote Access")
 
 ![Routing and Remote Access](/uploads/wan_miniport_ports.png "Routing and Remote Access")
+
+### Change Ports

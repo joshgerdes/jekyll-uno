@@ -39,4 +39,8 @@ This matched my issue, I had never seen more than 2 connections at once.
 
 ![Routing and Remote Access](/uploads/wan_miniport_ports.png "Routing and Remote Access")
 
-### Change Ports
+### Enable TLS 1.1
+
+Although this wasn't my initial fix, I had a Microsoft Support call opened regarding this issue, after analysing the logs they recommended enabling TLS 1.0 _(which was disabled by default on a Windows Server 2019 server)_. I would only do this as a last resort - if required.
+
+Run the script below to Enable, then you can always rerun the Disable script to remove the changes.

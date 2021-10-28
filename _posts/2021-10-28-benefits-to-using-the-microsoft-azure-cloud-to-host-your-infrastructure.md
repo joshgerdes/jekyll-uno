@@ -35,6 +35,7 @@ Below is a high-level list of what I consider some of the benefits of using the 
 * Ability to leverage modern and remote desktop and application technologies such as Windows 365 and Azure Virtual Desktop, by accessing services hosted in Azure.
 * Having your workloads in Azure gives you a step towards, removing the need for traditional domain controllers and migrating to Azure Active Directory joined devices.
 * Azure AutoManage functionality is built in to automatically patch Linux (and Windows of course!), without having to manage separate patching technologies for cross-platform infrastructure.
+* Azure has huge support for Automation, via PowerShell, CLI and API, allowing you to standardize, maintain, tear down and create infrastructure and services, monitoring, self-users on an as needed basis.
 * Azure datacentres are sustainable and run off renewable energy where they can, Microsoft has commitments to be fully renewable.
 * No need for NAS or Local Backups, the backups are all built into Azure.
 * Compliant datacentre across various global security standards - [https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security](https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security "https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security")

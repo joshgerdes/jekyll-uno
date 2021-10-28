@@ -1,5 +1,5 @@
 ---
-date: 2021-10-28 00:00:00 +1300
+date: 2021-10-28T00:00:00.000+13:00
 title: Benefits to using the Microsoft Azure Cloud to host your Infrastructure
 author: Luke
 categories:
@@ -30,3 +30,14 @@ Below is a high-level list of what I consider some of the benefits of using the 
 * Backups are secure by default; they are offline and managed by Microsoft, so if a ransomware attack occurs, won't be able to touch your backups.
 * Constant Security recommendations, improvements built into the platform.
 * Azure Files is geo-redundant and across multiple storage arrays, encrypted at rest.
+* Windows/SQL licensing is all covered as part of the costings, so need to worry about not adhering to MS licensing, Azure helps simplify what can sometimes be confusing and complex licensing.
+* ·Extended security updates for out-of-date Server OS such as Windows Server 2008 R2, Windows Server 2021 R2 without having to pay for extended update support.
+* ·Ability to leverage modern technologies such as Windows 365 and Azure Virtual Desktop easier, by accessing services hosted in Azure.
+* Having your workloads in Azure gives you a step towards, removing the need for traditional domain controllers and migrating to Azure Active Directory joined devices.
+* Azure Auto manage functionality is built in to automatically patch Linux (and Windows of course!), without having to manage separate patching technologies for cross-platform infrastructure.
+* Azure datacentres are sustainable and run off renewable energy where they can, Microsoft has commitments to be fully renewable.
+* No need for NAS or Local Backups, the backups are all built into Azure.
+* Compliant datacentre across various global security standards - [https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security](https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security "https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security")
+* Ability to migrate or expand your resources from Australia to ‘NZ North’ or other new or existing data centres! Azure is global and gives you the ability to scale your infrastructure to a global market easily or bring your resources closer to home if a data centre becomes available.
+* We all know that despite the best of intentions, we rarely ever test, develop, and improve disaster recovery scenarios, sometimes this is because of the complexity of the applications and backup infrastructure. Azure Site Recovery, Geo-Redundant backup, Load Balancers and automation helps make this a lot easier.
+* Ability to better utilise Cloud security tools _(ie such as the Azure Security Center)_, across Cloud and on-premises workloads consistently using Azure Arc and Azure policies.

@@ -31,10 +31,10 @@ Below is a high-level list of what I consider some of the benefits of using the 
 * Constant Security recommendations, improvements built into the platform.
 * Azure Files is geo-redundant and across multiple storage arrays, encrypted at rest.
 * Windows/SQL licensing is all covered as part of the costings, so need to worry about not adhering to MS licensing, Azure helps simplify what can sometimes be confusing and complex licensing.
-* ·Extended security updates for out-of-date Server OS such as Windows Server 2008 R2, Windows Server 2021 R2 without having to pay for extended update support.
-* ·Ability to leverage modern technologies such as Windows 365 and Azure Virtual Desktop easier, by accessing services hosted in Azure.
+* Extended security updates for out-of-date Server OS such as Windows Server 2008 R2, Windows Server 2021 R2 without having to pay for extended update support.
+* Ability to leverage modern technologies such as Windows 365 and Azure Virtual Desktop easier, by accessing services hosted in Azure.
 * Having your workloads in Azure gives you a step towards, removing the need for traditional domain controllers and migrating to Azure Active Directory joined devices.
-* Azure Auto manage functionality is built in to automatically patch Linux (and Windows of course!), without having to manage separate patching technologies for cross-platform infrastructure.
+* Azure AutoManage functionality is built in to automatically patch Linux (and Windows of course!), without having to manage separate patching technologies for cross-platform infrastructure.
 * Azure datacentres are sustainable and run off renewable energy where they can, Microsoft has commitments to be fully renewable.
 * No need for NAS or Local Backups, the backups are all built into Azure.
 * Compliant datacentre across various global security standards - [https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security](https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security "https://docs.microsoft.com/en-us/compliance/assurance/assurance-datacenter-security")

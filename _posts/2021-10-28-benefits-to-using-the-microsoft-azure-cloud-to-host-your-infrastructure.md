@@ -9,7 +9,7 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-Cloud computing offers many benefits, from your traditional on-premises infrastructure, ecosystems such as Microsoft Azure, have an underlying fabric built for today's 'software as a service' or 'software denied' world.
+Cloud computing offers many benefits, from your traditional on-premises infrastructure, ecosystems such as Microsoft Azure, have an underlying fabric built for today's 'software as a service' or 'software defined' world.
 
 The shift of technologies from managing on-premises Exchange environments for mail to consuming Microsoft 365 services has allowed more time for the IT and businesses to adopt, consume and improve their technology and continuously improve to get the most use of it to get ahead the competition.
 

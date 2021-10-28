@@ -8,7 +8,6 @@ categories:
 - PowerShell
 toc: true
 header:
-header:
   teaser: images/iazure-marketplace-banner.png
 ---
 Microsoft Azure uses Role's to define who can access what - Role-Based Access Control (_RBAC)_.

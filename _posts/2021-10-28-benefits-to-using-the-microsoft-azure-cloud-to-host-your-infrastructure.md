@@ -11,7 +11,7 @@ header:
 ---
 Cloud computing offers many benefits, from your traditional on-premises infrastructure, ecosystems such as Microsoft Azure, have an underlying fabric built for today's 'software as a service' or 'software defined' world.
 
-The shift of technologies from managing on-premises Exchange environments for mail to consuming Microsoft 365 services has allowed more time for the IT and businesses to adopt, consume and improve their technology and continuously improve to get the most use of it to get ahead the competition.
+The shift of technologies from managing on-premises Exchange environments for mail to consuming Microsoft 365 services has allowed more time for the IT and businesses to adopt, consume and improve their technology and continuously improve - to get the most use of it and remain competitive in this challenging world.
 
 Below is a high-level list of what I consider some of the benefits of using the Microsoft Azure ecosystem:
 
@@ -32,7 +32,7 @@ Below is a high-level list of what I consider some of the benefits of using the 
 * Azure Files is geo-redundant and across multiple storage arrays, encrypted at rest.
 * Windows/SQL licensing is all covered as part of the costings, so need to worry about not adhering to MS licensing, Azure helps simplify what can sometimes be confusing and complex licensing.
 * Extended security updates for out-of-date Server OS such as Windows Server 2008 R2, Windows Server 2021 R2 without having to pay for extended update support.
-* Ability to leverage modern technologies such as Windows 365 and Azure Virtual Desktop easier, by accessing services hosted in Azure.
+* Ability to leverage modern and remote desktop and application technologies such as Windows 365 and Azure Virtual Desktop, by accessing services hosted in Azure.
 * Having your workloads in Azure gives you a step towards, removing the need for traditional domain controllers and migrating to Azure Active Directory joined devices.
 * Azure AutoManage functionality is built in to automatically patch Linux (and Windows of course!), without having to manage separate patching technologies for cross-platform infrastructure.
 * Azure datacentres are sustainable and run off renewable energy where they can, Microsoft has commitments to be fully renewable.

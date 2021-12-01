@@ -24,7 +24,7 @@ This blog post is intended to help point you in the right direction whether it i
 
 _The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
-_Note: Updated: 17/06/21_
+_Note: Updated: 02/12/21_
 
 ## Beginner: So, what is this outside world of Azure that you speak of?
 
@@ -39,6 +39,8 @@ _Note: Updated: 17/06/21_
 * [Microsoft Azure Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
 * [Channel9](https://channel9.msdn.com/Search?term=Azure&sortBy=recent&lang-en=true){:target="_blank"}
 * [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
+* [Cloud SKills Training Catalogue](https://www.microsoft.com/en-au/business/learn/cloud-training-events/Home/Search/?SearchText=&index=0&RecordCount=12&OrderBy=date&Solutions=Select+all+solutions_Azure+Fundamentals_Azure+Data,+Analytics+and+AI_Azure+Applications+and+Infrastructure_Microsoft+365+Desktop+Deployment_Microsoft+365+Teams_Microsoft+365+Security+and+Compliance_Dynamics+365_Power+Platform_Surface){:target="_blank"}
+
 
 ## Advanced: Up for a Challenge! Let’s throw that ring in the lava
 

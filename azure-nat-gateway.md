@@ -55,7 +55,7 @@ As you can see, I had connected to the public IP of the Linux VM via SSH and did
 
 ![Windows Azure NAT Gateway](/uploads/window_nat_test.png "Windows Azure NAT Gateway")
 
-Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/  "https://www.whatismyip.com/"), as you can see the Public IP of my outbound 
+Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/  "https://www.whatismyip.com/"), as you can see the Public IP of my outbound IP address was my NAT Gateway Public IP prefix!
 
 ## Create a NAT Gateway
 

@@ -22,8 +22,24 @@ Tunnelling outbound traffic through to a specific IP address or IP addresses to 
 
 ## My Testing
 
-sd
+In order to test a NAT Gateway, I created:
+
+* Virtual Network
+* NAT Gateway
+* IP Public Address prefix
+* 1 Windows VM (Windows Server 2019) with Public IP
+* 1 Linux (Ubuntu 18.04) VM with Public IP
+* 1 Windows VM (Windows Server 2019) as a backend pool for an Azure Load Balancer
+
+_Note: Each VM has RDP opened to allow inbound traffic from my network using the Public IP, and a NAT rule allowing RDP traffic on the Load Balancer._
+
+![NAT Gateway - Test](/uploads/natgw_test.png "NAT Gateway - Test") 
 
 ## Create a NAT Gateway
 
 ## Resources
+
+* [What is Virtual Network NAT?]()
+
+
+* [Design Virtual Networks that use NAT gateway resources]()

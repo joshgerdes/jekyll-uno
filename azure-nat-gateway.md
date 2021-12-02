@@ -88,6 +88,10 @@ To create my NAT Gateway, I used the ARM Quickstart template, located here: [htt
 
 Then I created the additional Virtual Machines and Load Balancers and added them to the same VNET created as part of the NAT Gateway.
 
+To create a NAT Gateway using the Azure Portal
+
+1. Using the [Azure Portal](https://portal.azure.com/#create/Microsoft.NatGateway-ARM "Azure Portal - NAT Gateway")
+
 ## Resources
 
 * [What is Virtual Network NAT?]()

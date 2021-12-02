@@ -35,7 +35,12 @@ _Note: Each VM has RDP opened to allow inbound traffic from my network using the
 
 ![NAT Gateway - Test](/uploads/natgw_test.png "NAT Gateway - Test") 
 
-df
+Once the resources were created, I then connected to each machine using RDP/SSH on their Public IP address and tested:
+
+### Linux Machine with Public IP for RDP
+
+* Inbound Public IP: 20.53.92.19
+* Outbound IP: 20.53.73.184
 
 ## Create a NAT Gateway
 

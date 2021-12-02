@@ -31,7 +31,7 @@ Knowing that the Azure NAT gateway existed, and could in theory solve some issue
 * 1 Linux (Ubuntu 18.04) VM with Public IP
 * 1 Windows VM (Windows Server 2019) as a backend pool for an Azure Load Balancer
 
-_Note: Each VM has RDP opened to allow inbound traffic from my network using the Public IP, and a NAT rule allowing RDP traffic on the Load Balancer._
+_Note: Each VM has RDP opened to allow inbound traffic from my network using the Public IP, and a NAT rule allowing RDP traffic on the Load Balancer. There is no point-to-site or site-to-site VPN, RDP connections are directly over the internet to Australia East, from New Zealand._
 
 ![NAT Gateway - Test](/uploads/natgw_test.png "NAT Gateway - Test") 
 
@@ -41,6 +41,10 @@ Once the resources were created, I then connected to each machine using RDP/SSH 
 
 * Inbound Public IP: 20.53.92.19
 * Outbound IP: 20.53.73.184
+
+![](/uploads/linux_ubuntu_nat_test.png)
+
+As you can see, I had connected to 
 
 ## Create a NAT Gateway
 

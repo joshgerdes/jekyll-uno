@@ -33,6 +33,8 @@ Knowing that the Azure NAT gateway existed, and could in theory solve some issue
 
 _Note: Each VM has RDP opened to allow inbound traffic from my network using the Public IP, and a NAT rule allowing RDP traffic on the Load Balancer. There is no point-to-site or site-to-site VPN, RDP connections are directly over the internet to Australia East, from New Zealand._
 
+I had connectivity to all 3 VMs at the same time.
+
 ![NAT Gateway - Test](/uploads/natgw_test.png "NAT Gateway - Test") 
 
 Once the resources were created, I then connected to each machine using RDP/SSH on their Public IP address and tested:
@@ -53,7 +55,7 @@ As you can see, I had connected to the public IP of the Linux VM via SSH and did
 
 ![Windows Azure NAT Gateway](/uploads/window_nat_test.png "Windows Azure NAT Gateway")
 
-Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/  "https://www.whatismyip.com/") 
+Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/  "https://www.whatismyip.com/"), as you can see the Public IP of my outbound 
 
 ## Create a NAT Gateway
 

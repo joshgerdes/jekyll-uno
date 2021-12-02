@@ -73,10 +73,13 @@ Although, not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machi
 
 ![Azure NAT Gateway - VM Scale Set](/uploads/vmss_nat_test.png "Azure NAT Gateway - VM Scale Set")
 
+As you can see from the mess that is my screenshot above, all machines had completely different Public IP addresses, but the outbound public IP addresses came from the 
+
 ### Findings and Observations
 
-* The outbound public IP did seem to change between the workloads if I refreshed 'whatismyip' and 'ifconfig', the public IP changed between 184 and 185, although no loss of connectivity occurred to the Virtual Machines.
-* Any Public IP that is used on the same subnet as a NAT Gateway, needs to be Standard
+* The outbound public IP did seem to change between the workloads if I refreshed '_whatismyip_' and '_ifconfig_', the public IP changed between 184 and 185, although no loss of connectivity occurred to the Virtual Machines.
+* Any Public IP that is used on the same subnet as a NAT Gateway, needs to be Standard.
+* If I had both a Public IP address and a Public IP prefix on my NAT gateway, the Prefix seemed to take precedence.
 
 ## Create a NAT Gateway
 

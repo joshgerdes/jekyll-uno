@@ -101,7 +101,13 @@ Then I created the additional Virtual Machines and Load Balancers and added them
  8. Click **Next: Outbound IP**
  9. We are just going to **create** a new **Public IP address** (_it has to be Standard and Static, the Azure Portal automatically selects this for you - although you can create your Public IP prefix here as well for scalability, you don't need both)_.
 10. ![](/uploads/create_natgateway2.png)
-11.  
+11.  Click **Next: Subnet**
+12. Create or **link** your existing **Virtual Network** and **subnets** and click **Next: Tags**
+13. **Enter** in any **tags** that may be relevant _(Creator, Created on, Created for, Support Team etc)_ 
+14. Click **Next: Review  + Create**
+15. Verify everything looks ok then click **Create**
+
+**Congratulations you have now created your NAT Gateway!**
 
 ## Resources
 

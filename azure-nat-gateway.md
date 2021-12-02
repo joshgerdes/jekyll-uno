@@ -37,6 +37,8 @@ _Note: Each VM has RDP opened to allow inbound traffic from my network using the
 
 ## Create a NAT Gateway
 
+To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template")
+
 ## Resources
 
 * [What is Virtual Network NAT?]()

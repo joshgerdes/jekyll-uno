@@ -64,7 +64,7 @@ Using RDP to the public IP of the Windows Server, I navigated to: [https://www.w
 
 ![](/uploads/windows_nat_test_loadbalancer.png)
 
-This was the last of the 3 test machines, I stood up. Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"), as you can see the Public IP of my outbound IP address was my NAT Gateway Public IP prefix!
+This was the last of the 3 test machines, I stood up. Using RDP to the public IP of the Azure Load BalancerI navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"), as you can see the Public IP of my outbound IP address was my NAT Gateway Public IP prefix, however, this was '20.53.73.18**5**', which was the second IP address available in my /31 IP address prefix.
 
 ## Create a NAT Gateway
 

@@ -117,3 +117,4 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 
 * [Design Virtual Networks that use NAT gateway resources]()
+* [NAT Gateway Pricing](https://azure.microsoft.com/en-us/pricing/details/virtual-network/#pricing "Azure NAT Gateway Pricing")

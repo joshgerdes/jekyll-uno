@@ -18,7 +18,7 @@ _Think along the lines of - you or your organisation might use software-as-a-ser
 
 The administration of this, particularly in scenarios where other people or teams can create and manage resources, can be complex, sure; you can use Standard Load Balancers, which would help, but you have to manage and pay for it.
 
-Tunnelling outbound traffic through to a specific IP address or IP addresses to _'known controllable IP addresses_' for Azure resources _(both IaaS and PaaS)_ which sit in the same Virtual Network is where the Azure NAT Gateway comes in, allowing you to easily allow and control what IPs your traffic is coming from.
+Tunnelling outbound traffic through to a specific IP address or IP addresses to _'known controllable IP addresses_' for Azure resources _(both IaaS and PaaS)_ which sit in the same Virtual Network is where the Azure NAT Gateway comes in, allowing you to easily allow and control what IPs your traffic is coming from. NAT Gateway replaces the default Internet destination in the virtual network’s routing table for the subnets identified
 
 "The Azure NAT gateway is a fully managed, highly resilient service built into the Azure fabric, which can be associated with one or more subnets in the same Virtual Network, that ensures that all outbound Internet-facing traffic will be routed through the gateway. As a result, the NAT gateway gives you a predictable public IP for outbound Internet-facing traffic. It also significantly increases the available [SNAT ports](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-intermittent-outbound-connection-errors) in scenarios where you have a high number of concurrent connections to the same public address/port combination."
 

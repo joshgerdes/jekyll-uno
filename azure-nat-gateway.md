@@ -39,6 +39,8 @@ _Note: Each VM has RDP opened to allow inbound traffic from my network using the
 
 To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template")
 
+Then I created the additional Virtual Machines and Load Balancers and added it to the same VNET created as part of the NAT Gateway.
+
 ## Resources
 
 * [What is Virtual Network NAT?]()

@@ -73,7 +73,7 @@ Although, not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machi
 
 ![Azure NAT Gateway - VM Scale Set](/uploads/vmss_nat_test.png "Azure NAT Gateway - VM Scale Set")
 
-As you can see from the mess that is my screenshot above, all machines had completely different Public IP addresses, but the outbound public IP addresses came from the 
+As you can see from the mess that is my screenshot above, all machines had completely different inbound Public IP addresses, but the outbound public IP addresses came from the NAT Gateway as expected.
 
 ### Findings and Observations
 

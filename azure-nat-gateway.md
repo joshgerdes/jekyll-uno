@@ -53,6 +53,8 @@ As you can see, I had connected to the public IP of the Linux VM via SSH and did
 
 ![Windows Azure NAT Gateway](/uploads/window_nat_test.png "Windows Azure NAT Gateway")
 
+Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/  "https://www.whatismyip.com/") 
+
 ## Create a NAT Gateway
 
 To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template")

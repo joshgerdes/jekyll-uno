@@ -30,6 +30,7 @@ Knowing that the Azure NAT gateway existed, and could in theory solve some issue
 * 1 Windows VM (Windows Server 2019) with Public IP
 * 1 Linux (Ubuntu 18.04) VM with Public IP
 * 1 Windows VM (Windows Server 2019) as a backend pool for an Azure Load Balancer
+* Virtual Machine Scale Set with 4 instances (each with Windows Server 2019)
 
 _Note: Each VM has RDP opened to allow inbound traffic from my network using the Public IP, and a NAT rule allowing RDP traffic on the Load Balancer. There is no point-to-site or site-to-site VPN, RDP connections are directly over the internet to Australia East, from New Zealand._
 
@@ -68,7 +69,7 @@ This was the last of the 3 test machines, I stood up. Using RDP to the public IP
 
 ### Windows Machine behind a VM Scale Set
 
-Although, not in the 
+Although, not in the diagram, 
 
 ### Findings and Observations
 

@@ -44,7 +44,14 @@ Once the resources were created, I then connected to each machine using RDP/SSH 
 
 ![](/uploads/linux_ubuntu_nat_test.png)
 
-As you can see, I had connected to 
+As you can see, I had connected to the public IP of the Linux VM via SSH and did a curl to: [https://ifconfig.me/](https://ifconfig.me/ "https://ifconfig.me/") to grab my public IP. The public IP of my Linux box was my NAT Gateway Public IP prefix!
+
+### Windows Machine with Public IP for RDP
+
+* Inbound Public IP: 20.70.228.211
+* Outbound IP: 20.53.73.184
+
+![](/uploads/window_nat_test.png)
 
 ## Create a NAT Gateway
 

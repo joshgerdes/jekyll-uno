@@ -22,7 +22,7 @@ Tunnelling outbound traffic through to a specific IP address or IP addresses to 
 
 ## My Testing
 
-In order to test a NAT Gateway, I created:
+Knowing that the Azure NAT gateway existed, and could in theory solve some issues I may run into wasn't enough! I wanted to get hands-on and actually test that it would work - the way I thought it would, so I wanted to test it, in order to test a NAT Gateway, I created:
 
 * Virtual Network
 * NAT Gateway

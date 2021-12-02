@@ -80,6 +80,7 @@ As you can see from the mess that is my screenshot above, all machines had compl
 * The outbound public IP did seem to change between the workloads if I refreshed '_whatismyip_' and '_ifconfig_', the public IP changed between 184 and 185, although no loss of connectivity occurred to the Virtual Machines. This was linked to the '4-minute idle timeout' configured on the NAT Gateway, I saw no reason to change the default timeout value, if I was that worried about the exact same IP address - I would have chosen with a Public IP vs a Public IP prefix on the NAT Gateway.
 * Any Public IP that is used on the same subnet as a NAT Gateway, needs to be Standard.
 * If I had both a Public IP address and a Public IP prefix on my NAT gateway, the Prefix seemed to take precedence.
+* You cannot use a Public IP Prefix 
 * A single [NAT gateway resource](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource) supports from 64,000 up to 1 million concurrent flows. Each IP address provides 64,000 SNAT ports to the available inventory. You can use up to 16 IP addresses per NAT gateway resource. The SNAT mechanism is described [here](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource#source-network-address-translation) in more detail.
 
 ## Create a NAT Gateway
@@ -88,7 +89,7 @@ To create my NAT Gateway, I used the ARM Quickstart template, located here: [htt
 
 Then I created the additional Virtual Machines and Load Balancers and added them to the same VNET created as part of the NAT Gateway.
 
-To create a NAT Gateway using the Azure Portal
+**To create a NAT Gateway using the Azure Portal**
 
 1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.NatGateway-ARM "Create network address translation (NAT) gateway")).
 2. Select your **Subscription**
@@ -99,7 +100,8 @@ To create a NAT Gateway using the Azure Portal
 
 ![](/uploads/create_natgateway1.png)
 
-7. Click Next: Outbound IP
+7. Click **Next: Outbound IP**
+8. This is where you can either create a Public IP prefix for use with your NAT Gateway
 
 ## Resources
 

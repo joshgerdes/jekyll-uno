@@ -80,7 +80,7 @@ As you can see from the mess that is my screenshot above, all machines had compl
 * The outbound public IP did seem to change between the workloads if I refreshed '_whatismyip_' and '_ifconfig_', the public IP changed between 184 and 185, although no loss of connectivity occurred to the Virtual Machines. This was linked to the '4-minute idle timeout' configured on the NAT Gateway, I saw no reason to change the default timeout value, if I was that worried about the exact same IP address - I would have chosen with a Public IP vs a Public IP prefix on the NAT Gateway.
 * Any Public IP that is used on the same subnet as a NAT Gateway, needs to be Standard.
 * If I had both a Public IP address and a Public IP prefix on my NAT gateway, the Prefix seemed to take precedence.
-* You cannot use a Public IP Prefix that is in use by the NAT Gateway for any other workloads
+* You cannot use a Public IP Prefix that is in use by the NAT Gateway for any other workload, ie the Public IPs.
 * A single [NAT gateway resource](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource) supports from 64,000 up to 1 million concurrent flows. Each IP address provides 64,000 SNAT ports to the available inventory. You can use up to 16 IP addresses per NAT gateway resource. The SNAT mechanism is described [here](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource#source-network-address-translation) in more detail.
 
 ## Create a NAT Gateway

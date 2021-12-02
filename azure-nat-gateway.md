@@ -42,7 +42,7 @@ Once the resources were created, I then connected to each machine using RDP/SSH 
 * Inbound Public IP: 20.53.92.19
 * Outbound IP: 20.53.73.184
 
-![](/uploads/linux_ubuntu_nat_test.png)
+![Linux Azure NAT Gateway](/uploads/linux_ubuntu_nat_test.png "Linux Azure NAT Gateway")
 
 As you can see, I had connected to the public IP of the Linux VM via SSH and did a curl to: [https://ifconfig.me/](https://ifconfig.me/ "https://ifconfig.me/") to grab my public IP. The public IP of my Linux box was my NAT Gateway Public IP prefix!
 
@@ -51,7 +51,7 @@ As you can see, I had connected to the public IP of the Linux VM via SSH and did
 * Inbound Public IP: 20.70.228.211
 * Outbound IP: 20.53.73.184
 
-![](/uploads/window_nat_test.png)
+![Windows Azure NAT Gateway](/uploads/window_nat_test.png "Windows Azure NAT Gateway")
 
 ## Create a NAT Gateway
 

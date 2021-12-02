@@ -69,7 +69,9 @@ This was the last of the 3 test machines, I stood up. Using RDP to the public IP
 
 ### Windows Machine behind a VM Scale Set
 
-Although, not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machines into my testing (to save on cost they are just Standard_B2ms machines but more than enough for my testing).
+Although, not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machines into my testing _(to save on cost they are just Standard_B2ms machines but more than enough for my testing)_.
+
+![Azure NAT Gateway - VM Scale Set](/uploads/vmss_nat_test.png "Azure NAT Gateway - VM Scale Set")
 
 ### Findings and Observations
 

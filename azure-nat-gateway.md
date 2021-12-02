@@ -66,6 +66,13 @@ Using RDP to the public IP of the Windows Server, I navigated to: [https://www.w
 
 This was the last of the 3 test machines, I stood up. Using RDP to the public IP of the Azure Load BalancerI navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"), as you can see the Public IP of my outbound IP address was my NAT Gateway Public IP prefix, however, this was '20.53.73.18**5**', which was the second IP address available in my /31 IP address prefix.
 
+### Windows Mach
+
+### Findings and Observations
+
+* The outbound public IP did seem to change between the workloads if I refreshed 'whatismyip' and 'ifconfig', the public IP changed between 184 and 185, although no loss of connectivity occurred to the Virtual Machines.
+* Any Public IP that is used on the same subnet as a NAT Gateway, needs to be Standard
+
 ## Create a NAT Gateway
 
 To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template")

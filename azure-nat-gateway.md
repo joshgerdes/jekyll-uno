@@ -16,7 +16,7 @@ With most Cloud resources being accessible over the internet, each publically ac
 
 _Think along the lines of - you or your organisation might use software-as-a-service CRM product. That product is only accessible from your organisations IP for compliance/security reasons, you might access the CRM product from various Azure Virtual Desktop hosts, each with its public IP, or you want to control Multifactor authentication for users using Azure services_.
 
-The administration of this, particularly in scenarios where other people or teams can create and manage resources, can be complex, sure; you can use Standard Load Balancers, which would help, but you have to manage and pay for it.
+The administration of this, particularly in scenarios where other people or teams can create and manage resources, can be complex, sure; you can use Standard Load Balancers or Azure Firewalls, which would help, but you have to manage and pay for it, which is sometimes overkill.
 
 Tunnelling outbound traffic through to a specific IP address or IP addresses to _'known controllable IP addresses_' for Azure resources _(both IaaS and PaaS)_ which sit in the same Virtual Network is where the Azure NAT Gateway comes in, allowing you to easily allow and control what IPs your traffic is coming from. NAT Gateway replaces the default Internet destination in the virtual network’s routing table for the subnets identified
 

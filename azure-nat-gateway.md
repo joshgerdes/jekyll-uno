@@ -91,17 +91,17 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 **To create a NAT Gateway using the Azure Portal**
 
-1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.NatGateway-ARM "Create network address translation (NAT) gateway")).
-2. Select your **Subscription**
-3. **Enter** your NAT **Gateway name**
-4. Enter your **Region**
-5. Enter your availability zone
-6. Set your idle timeout _(I suggest leaving this at 4 minutes, you can change it later if it presents issues)_
-
-![](/uploads/create_natgateway1.png)
-
-7. Click **Next: Outbound IP**
-8. This is where you can either create a Public IP prefix for use with your NAT Gateway
+ 1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.NatGateway-ARM "Create network address translation (NAT) gateway")).
+ 2. Select your **Subscription**
+ 3. **Enter** your NAT **Gateway name**
+ 4. Enter your **Region**
+ 5. Enter your availability zone
+ 6. Set your idle timeout _(I suggest leaving this at 4 minutes, you can change it later if it presents issues)_
+ 7. ![](/uploads/create_natgateway1.png)
+ 8. Click **Next: Outbound IP**
+ 9. We are just going to **create** a new **Public IP address** (_it has to be Standard and Static, the Azure Portal automatically selects this for you - although you can create your Public IP prefix here as well for scalability, you don't need both)_.
+10. ![](/uploads/create_natgateway2.png)
+11.  
 
 ## Resources
 

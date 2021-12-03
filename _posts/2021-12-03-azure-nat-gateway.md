@@ -120,7 +120,7 @@ _When you are actually ready to deploy, remove the -Whatif at the end. Then you 
 
     New-AzResourceGroupDeployment -Name NatGwDeployment -ResourceGroupName RGNAME -TemplateFile .\Create_NATGateway.bicep -whatif
 
-## Resources
+## Additional Resources
 
 * [What is Virtual Network NAT?](){:target="_blank"}
 * [Design Virtual Networks that use NAT gateway resources](){:target="_blank"}

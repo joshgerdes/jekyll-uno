@@ -117,7 +117,7 @@ Just a quick Bicep snippet I created to create the NAT Gateway resource only:
 
 It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Install Bicep tools") _using the PowerShell method)_ and logging into your Azure and running the following _(replace RGNAME with the name of the Resource Group you will be deploying it to)_:
 
-_When you are actually ready to deploy, remove the -Whatif at the end. Then you can go into the resource and add the Public IP/prefix._
+_When you are actually ready to deploy, remove the -Whatif at the end. Then you can go into the resource and add the Public IP/prefix. PowerShell will prompt you for the name of the NAT Gateway and be created in the same location as the Resource Group by default._
 
     New-AzResourceGroupDeployment -Name NatGwDeployment -ResourceGroupName RGNAME -TemplateFile .\Create_NATGateway.bicep -whatif
 

@@ -113,11 +113,11 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 **To create a NAT Gateway using Azure Bicep.**
 
-Just a quick Bicep snippet I created:
+Just a quick Bicep snippet I created to create the NAT Gateway resource:
 
 It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Install Bicep tools") _using the PowerShell method)_ and logging into your Azure and running the following _(replace RGNAME with the name of the Resource Group you will be deploying it to)_:
 
-_When you are actually readyy to deploy, remove the -Whatif at the end._
+_When you are actually ready to deploy, remove the -Whatif at the end. Then you can go into the resource and add the Public IP/prefix._
 
     New-AzResourceGroupDeployment -Name NatGwDeployment -ResourceGroupName RGNAME -TemplateFile .\Create_NATGateway.bicep -whatif
 

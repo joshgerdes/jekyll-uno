@@ -19,7 +19,7 @@ Tunnelling outbound traffic through to a specific IP address or IP addresses to 
 
 "The Azure NAT gateway is a fully managed, highly resilient service built into the Azure fabric, which can be associated with one or more subnets in the same Virtual Network, that ensures that all outbound Internet-facing traffic will be routed through the gateway. As a result, the NAT gateway gives you a predictable public IP for outbound Internet-facing traffic. It also significantly increases the available [SNAT ports](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-intermittent-outbound-connection-errors){:target="_blank"} in scenarios where you have a high number of concurrent connections to the same public address/port combination."
 
-## My Testing
+### My Testing
 
 Knowing that the Azure NAT gateway existed and could, in theory, solve some issues I may run into wasn't enough! I wanted to get hands-on and test that it would work - the way I thought it would, so I wanted to try it. To test a NAT Gateway, I created:
 
@@ -37,7 +37,7 @@ _Note: Each VM has RDP opened to allow inbound traffic from my network using the
 
 Once the Azure resources were created, I then connected to each machine using RDP/SSH on their Public IP address and tested:
 
-### Linux Machine with Public IP for RDP
+#### Linux Machine with Public IP for RDP
 
 * Inbound Public IP: 20.53.92.19
 * Outbound IP: 20.53.73.184
@@ -46,7 +46,7 @@ Once the Azure resources were created, I then connected to each machine using RD
 
 As you can see, I connected to the Linux VM's public IP via SSH and did a curl to: [https://ifconfig.me/](https://ifconfig.me/ "https://ifconfig.me/"){:target="_blank"} to grab my public IP. The public IP of my Linux box was my NAT Gateway Public IP prefix!
 
-### Windows Machine with Public IP for RDP
+#### Windows Machine with Public IP for RDP
 
 * Inbound Public IP: 20.70.228.211
 * Outbound IP: 20.53.73.184
@@ -55,7 +55,7 @@ As you can see, I connected to the Linux VM's public IP via SSH and did a curl t
 
 Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix!
 
-### Windows Machine behind an Azure Load Balancer
+#### Windows Machine behind an Azure Load Balancer
 
 * Inbound Public IP: 20.211.100.67
 * Outbound IP: 20.53.73.185
@@ -64,7 +64,7 @@ Using RDP to the public IP of the Windows Server, I navigated to: [https://www.w
 
 This was the last of the 3 test machines; I stood up. Using RDP to the public IP of the Azure Load BalancerI navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix; however, this was '20.53.73.18**5**', which was the second IP address available in my /31 IP address prefix.
 
-### Windows Machine behind a VM Scale Set
+#### Windows Machine behind a VM Scale Set
 
 Although not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machines into my testing _(to save on cost, they are just Standard_B2ms machines but more than enough for my testing)_.
 
@@ -72,7 +72,7 @@ Although not in the diagram, I decided to add a VM Scale Set of 4 Virtual Machin
 
 As you can see from the mess that is my screenshot above, all machines had completely different inbound Public IP addresses. Still, the outbound public IP addresses came from the NAT Gateway as expected.
 
-### Findings and Observations
+#### Findings and Observations
 
 * The outbound public IP did seem to change between the workloads; if I refreshed '_whatismyip_' and '_ifconfig_', the public IP changed between 184 and 185. However, no loss of connectivity occurred to the Virtual Machines. This was linked to the '4-minute idle timeout' configured on the NAT Gateway; I saw no reason to change the default timeout value; if I were that worried about the same IP address - I would have chosen with a Public IP vs a Public IP prefix on the NAT Gateway.
 * Any Public IP used on the same subnet as a NAT Gateway needs to be Standard.
@@ -80,13 +80,13 @@ As you can see from the mess that is my screenshot above, all machines had compl
 * You cannot use a Public IP Prefix that is in use by the NAT Gateway for any other workload, _i.e. any inbound Public IPs. It would be best if you had another Public IP prefix resource._
 * A single [NAT gateway resource](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource) supports from 64,000 up to 1 million concurrent flows. Each IP address provides 64,000 SNAT ports to the available inventory. Therefore, you can use up to 16 IP addresses per NAT gateway resource. The SNAT mechanism is described [here](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource#source-network-address-translation) in more detail.
 
-## Create a NAT Gateway
+### Create a NAT Gateway
 
 To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template"){:target="_blank"}.
 
 Then I created the additional Virtual Machines and Load Balancers and added them to the same VNET created as part of the NAT Gateway.
 
-### **To create a NAT Gateway using the Azure Portal.**
+#### **To create a NAT Gateway using the Azure Portal.**
 
  1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.network%2Fnat-gateway-1-vm%2Fazuredeploy.json "Create network address translation (NAT) gateway"){:target="_blank"}).
  2. Select your **Subscription**
@@ -106,7 +106,7 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 **Congratulations, you have now created your NAT Gateway!**
 
-### **To create a NAT Gateway using Azure Bicep.**
+#### **To create a NAT Gateway using Azure Bicep.**
 
 Just a quick Bicep snippet I created to create the NAT Gateway resource only:
 
@@ -118,7 +118,7 @@ _When you are actually ready to deploy, remove the -Whatif at the end. Then you 
 
     New-AzResourceGroupDeployment -Name NatGwDeployment -ResourceGroupName RGNAME -TemplateFile .\Create_NATGateway.bicep -whatif
 
-## Additional Resources
+### Additional Resources
 
 * [What is Virtual Network NAT?](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview){:target="_blank"}
 * [Design Virtual Networks that use NAT gateway resources](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource){:target="_blank"}

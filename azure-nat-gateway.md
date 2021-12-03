@@ -111,6 +111,14 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 **Congratulations, you have now created your NAT Gateway!**
 
+**To create a NAT Gateway using Azure Bicep.**
+
+Just a quick Bicep snippet I created:
+
+It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Install Bicep tools") _using the PowerShell method)_ and logging into your Azure 
+
+    New-AzResourceGroupDeployment -Name NatGwDeployment -ResourceGroupName RGNAME -TemplateFile .\Create_NATGateway.bicep -whatif
+
 ## Resources
 
 * [What is Virtual Network NAT?]()

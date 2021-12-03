@@ -9,9 +9,9 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-With most Cloud resources being accessible over the internet, each publically accessible resource has its own public IP address. This makes it a lot more challenging to administer the security and access rules to access third party services.
+With most Cloud resources being accessible over the internet, each publically accessible resource has its own public IP address, this makes it a lot more challenging to administer the security and access rules to access third party services.
 
-_Think along the lines of - you or your organisation might use software-as-a-service CRM product. That product is only accessible from your organisations IP for compliance/security reasons, you might access the CRM product from various Azure Virtual Desktop hosts, each with its public IP, or you want to control Multifactor authentication for users using Azure services_.
+_Think along the lines of - you or your organisation might use software-as-a-service CRM product. That product is only accessible from your organisations IP for compliance/security reasons, you might access the CRM product from various Azure Virtual Desktop hosts, each with its public IP or a random Microsoft Azure datacenter IP, or you want to control Multifactor authentication/conditional access policies for users using Azure services_.
 
 The administration of this, particularly in scenarios where other people or teams can create and manage resources, can be complex, sure; you can use Standard Load Balancers, which would help, but you have to manage and pay for it, which is sometimes overkill.
 

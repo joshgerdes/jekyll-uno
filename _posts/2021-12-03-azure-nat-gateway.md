@@ -122,6 +122,6 @@ _When you are actually ready to deploy, remove the -Whatif at the end. Then you 
 
 ## Additional Resources
 
-* [What is Virtual Network NAT?](){:target="_blank"}
-* [Design Virtual Networks that use NAT gateway resources](){:target="_blank"}
+* [What is Virtual Network NAT?](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview){:target="_blank"}
+* [Design Virtual Networks that use NAT gateway resources](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource){:target="_blank"}
 * [NAT Gateway Pricing](https://azure.microsoft.com/en-us/pricing/details/virtual-network/#pricing "Azure NAT Gateway Pricing"){:target="_blank"}

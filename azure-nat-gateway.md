@@ -96,10 +96,10 @@ Then I created the additional Virtual Machines and Load Balancers and added them
  4. Enter your **Region**
  5. Enter your availability zone
  6. Set your idle timeout _(I suggest leaving this at 4 minutes, you can change it later if it presents issues)_
- 7. ![](/uploads/create_natgateway1.png)
+ 7. ![Create Azure NAT Gateway](/uploads/create_natgateway1.png "Create Azure NAT Gateway")
  8. Click **Next: Outbound IP**
  9. We are just going to **create** a new **Public IP address** (_it has to be Standard and Static, the Azure Portal automatically selects this for you - although you can create your Public IP prefix here for scalability, you don't need it both)_.
-10. ![](/uploads/create_natgateway2.png)
+10. ![Create Azure NAT Gateway](/uploads/create_natgateway2.png "Create Azure NAT Gateway")
 11.  Click **Next: Subnet**
 12. Create or **link** your existing **Virtual Network** and **subnets** and click **Next: Tags**
 13. **Enter** in any **tags** that may be relevant _(Creator, Created on, Created for, Support Team etc.)_ 

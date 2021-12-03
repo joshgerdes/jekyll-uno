@@ -55,7 +55,7 @@ As you can see, I connected to the Linux VM's public IP via SSH and did a curl t
 
 ![Windows Azure NAT Gateway](/uploads/window_nat_test.png "Windows Azure NAT Gateway")
 
-Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://ifconfig.me/ "https://ifconfig.me/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix!
+Using RDP to the public IP of the Windows Server, I navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix!
 
 ### Windows Machine behind an Azure Load Balancer
 
@@ -64,7 +64,7 @@ Using RDP to the public IP of the Windows Server, I navigated to: [https://www.w
 
 ![Windows Machine behind Azure Load Balancer NAT Gateway](/uploads/windows_nat_test_loadbalancer.png "Windows Machine behind Azure Load Balancer NAT Gateway")
 
-This was the last of the 3 test machines; I stood up. Using RDP to the public IP of the Azure Load BalancerI navigated to: [https://www.whatismyip.com/](https://ifconfig.me/ "https://ifconfig.me/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix; however, this was '20.53.73.18**5**', which was the second IP address available in my /31 IP address prefix.
+This was the last of the 3 test machines; I stood up. Using RDP to the public IP of the Azure Load BalancerI navigated to: [https://www.whatismyip.com/](https://www.whatismyip.com/ "https://www.whatismyip.com/"){:target="_blank"}. As you can see, the Public IP of my outbound IP address was my NAT Gateway Public IP prefix; however, this was '20.53.73.18**5**', which was the second IP address available in my /31 IP address prefix.
 
 ### Windows Machine behind a VM Scale Set
 
@@ -84,7 +84,7 @@ As you can see from the mess that is my screenshot above, all machines had compl
 
 ## Create a NAT Gateway
 
-To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://ifconfig.me/ "https://ifconfig.me/"){:target="_blank"}.
+To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template"){:target="_blank"}.
 
 Then I created the additional Virtual Machines and Load Balancers and added them to the same VNET created as part of the NAT Gateway.
 

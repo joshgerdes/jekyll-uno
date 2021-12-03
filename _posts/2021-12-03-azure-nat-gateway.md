@@ -21,7 +21,7 @@ Tunnelling outbound traffic through to a specific IP address or IP addresses to 
 
 ### My Testing
 
-Now lets get testing the NAT Gateway! To test a NAT Gateway, I created:
+Now lets get testing the Azure NAT Gateway! To test the gateway, I created:
 
 * Virtual Network
 * NAT Gateway

@@ -9,7 +9,7 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-## Overview
+## Overview of the Azure NAT Gateway
 
 With most Cloud resources being accessible over the internet, each publically accessible resource has its public IP address. This makes it a lot more challenging to administer the security and access rules to access third party services.
 

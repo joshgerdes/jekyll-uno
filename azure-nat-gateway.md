@@ -115,7 +115,7 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 Just a quick Bicep snippet I created to create the NAT Gateway resource only:
 
-**GISTHERE**
+[https://gist.github.com/lukemurraynz/469bf56e8287d5742ddddfd5c8affd15](https://gist.github.com/lukemurraynz/469bf56e8287d5742ddddfd5c8affd15 "https://gist.github.com/lukemurraynz/469bf56e8287d5742ddddfd5c8affd15")
 
 It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Install Bicep tools") _using the PowerShell method)_ and logging into your Azure and running the following _(replace RGNAME with the name of the Resource Group you will be deploying it to)_:
 

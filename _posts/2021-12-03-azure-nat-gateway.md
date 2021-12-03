@@ -90,7 +90,7 @@ Then I created the additional Virtual Machines and Load Balancers and added them
 
 ### **To create a NAT Gateway using the Azure Portal.**
 
- 1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.NatGateway-ARM "Create network address translation (NAT) gateway"){:target="_blank"}).
+ 1. Log in to the **Azure Portal** and navigate to **Create a resource**, **NAT Gateway** (this link will get you there: [Create-NATGateway](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.network%2Fnat-gateway-1-vm%2Fazuredeploy.json "Create network address translation (NAT) gateway"){:target="_blank"}).
  2. Select your **Subscription**
  3. **Enter** your NAT **Gateway name**
  4. Enter your **Region**

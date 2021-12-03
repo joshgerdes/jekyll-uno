@@ -1,6 +1,6 @@
 ---
 date: 2021-12-03 00:00:00 +1300
-title: Azure NAT Gateway
+title: Azure NAT Gateway - Implementation and Testing
 author: Luke
 categories:
 - Azure

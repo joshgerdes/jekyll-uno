@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: images/iazure-marketplace-banner.png
+  teaser: images/Microsoft_CloudAdoptionFramework_Azure.png
 
 ---
 To help with your Microsoft Cloud Adoption and Azure migration, you need a few things to be successful:
@@ -15,6 +15,8 @@ To help with your Microsoft Cloud Adoption and Azure migration, you need a few t
 2. **Plan**, this may include organisational alignment to get moving to the Cloud
 3. **Ready**, this is where you look at your governance, Landing Zones /Blueprints
 4. **Adopt**, this is where you actually migrate your workloads into the cloud, existing apps and new
+
+![Cloud Adoption Framework for Azure](images/Microsoft_CloudAdoptionFramework_Azure.png "Cloud Adoption Framework for Azure").
 
 Here are some useful tools, templates, and assessments provided by Microsoft to help on your journey:
 

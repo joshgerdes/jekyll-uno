@@ -25,8 +25,7 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 **Define strategy**
 
 * [Cloud journey tracker](https://aka.ms/adopt/journeytracker){:target="_blank"}
-  Navigate to the most relevant adoption content efficiently, and detect early  
-  adoption blockers
+  Navigate to the most relevant adoption content efficiently, and detect early adoption blockers
 * [Business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx){:target="_blank"}
 
 **Plan**

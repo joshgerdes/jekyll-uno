@@ -21,7 +21,6 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 **Define strategy**
 
 * [Cloud journey tracker](https://aka.ms/adopt/journeytracker){:target="_blank"}
-
   Navigate to the most relevant adoption content efficiently, and detect early  
   adoption blockers
 * [Business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx){:target="_blank"}
@@ -30,39 +29,31 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 
 * [Cloud adoption plan generator](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/plan/template){:target="_blank"}
 * [Azure DevOps demo generator](https://azuredevopsdemogenerator.azurewebsites.net/?name=CloudAdoptionPlan){:target="_blank"}
-
   Leverage Azure DevOps to log and track your cloud adoption plan
 * [Cloud adoption plan template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)
-
   Align technical efforts with business outcomes.
 
 **Ready**
 
 * [Azure setup guide](https://aka.ms/adopt/setupguide)
-
   Step-by-step guidance to help admins plan, set up, and secure Azure for your organization
 * [Readiness checklist](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx){:target="_blank"}
 * [Naming and tagging tracking template](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx){:target="_blank"}
 * [Landing zone blueprints](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/first-landing-zone){:target="_blank"}
-
   Host your workloads, pre-provisioned through code. Including foundational capabilities using a defined set of cloud services and best practices.
 
 **Adopt**
 
 * [Strategic migration assessment and readiness tool (SMART)](https://aka.ms/smarttool){:target="_blank"}
-
   Prepare for a scale migration
 * [Azure migration guide](https://aka.ms/adopt/migration/guide){:target="_blank"}
-
   Step-by-step guidance to help assess your current environment, prepare for migration and make the shift to Azure
 * [Azure innovation guide](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/innovation-guide/){:target="_blank"}
-
   Step-by-step guidance to help build innovative solutions leveraging Azure platform capabilities
 
 **Govern**
 
 * [Governance benchmark](https://aka.ms/adopt/gov/assess)
-
   Understand your current state and prepare for your cloud journey
 * [Governance process template](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Governance%20Discipline%20Template.docx){:target="_blank"}
 * [Cost Management process template](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx){:target="_blank"}
@@ -74,7 +65,6 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 **Manage**
 
 * [Azure architecture review](https://aka.ms/adopt/architecturereview){:target="_blank"}
-
   Examine your workloads through the lenses of resiliency, cost, DevOps practices, security and scalability.
 * [Best practices source code](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices){:target="_blank"}
 * [Operations management workbook](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx){:target="_blank"}

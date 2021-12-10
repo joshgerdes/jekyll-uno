@@ -68,7 +68,7 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 
 **Manage**
 
-* [Azure architecture review](https://aka.ms/adopt/architecturereview){:target="_blank"}
+* [Azure Well-Architecture review](https://aka.ms/adopt/architecturereview){:target="_blank"}
   Examine your workloads through the lenses of resiliency, cost, DevOps practices, security and scalability.
 * [Best practices source code](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices){:target="_blank"}
 * [Operations management workbook](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx){:target="_blank"}

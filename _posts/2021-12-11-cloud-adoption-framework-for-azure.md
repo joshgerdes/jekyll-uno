@@ -1,6 +1,6 @@
 ---
 date: 2021-12-11 00:00:00 +1300
-title: Cloud Adoption Framework for Azure
+title: Cloud Adoption Framework for Azure - Tools and Templates
 author: Luke
 categories:
 - Azure

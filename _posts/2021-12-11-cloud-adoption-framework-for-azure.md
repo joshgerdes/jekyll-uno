@@ -22,8 +22,8 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
 
 * [Cloud journey tracker](https://aka.ms/adopt/journeytracker)
 
-  Navigate to the most relevant adoption content efficiently, and detect early   
-   adoption blockers
+  Navigate to the most relevant adoption content efficiently, and detect early  
+  adoption blockers
 * [Business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)
 
 **Plan**
@@ -78,3 +78,5 @@ Here are some useful tools, templates, and assessments provided by Microsoft to 
   Examine your workloads through the lenses of resiliency, cost, DevOps practices, security and scalability.
 * [Best practices source code](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices)
 * [Operations management workbook](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)
+
+> The [Microsoft Cloud Adoption Framework ](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ "Microsoft Cloud Adoption Framework for Azure")page has everything listed above and more! If you are serious about Cloud Adoption, then the reading through the official documentation not only gives you better context to the resources linked to in this page, but gives you more ways to think about potential opportunities to help with your Cloud adoption!

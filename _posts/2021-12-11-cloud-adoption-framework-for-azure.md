@@ -20,7 +20,7 @@ To help with your Microsoft Cloud Adoption and Azure migration, you need a few t
 
 Here are some useful tools, templates, and assessments provided by Microsoft to help on your journey:
 
-*Note: It is not as if you can't get these resources elseware, I purely just wanted a list format for easy reference.*
+*Note: It is not as if you can't get these resources elsewhere, I purely just wanted a list format for easy reference.*
 
 **Define strategy**
 

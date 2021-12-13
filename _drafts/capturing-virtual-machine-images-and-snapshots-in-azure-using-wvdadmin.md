@@ -61,11 +61,11 @@ Before you proceed, just a warning that restoring the snapshot will discard any 
  7. **Expand** your **Resource group**, in my example, it is: SERVERS-RG
  8. **Right-click** your **server**, in my example it is: Server2019
  9. Select **SnapShot-Restore**
-10. ![](/uploads/snapshot-restore.png)
+10. ![Azure Disk Snapshot](/uploads/snapshot-restore.png "Azure Disk Snapshot")
 11. **Select** the **snapshot** you would like to **restore** to, and when you are ready click **Ok**. This will force the Virtual Machine to be shutdown and deallocated and the snapshot to be restored.
-12. ![](/uploads/snapshot-restore_verify.png)
+12. ![Azure Disk Snapshot](/uploads/snapshot-restore_verify.png "Azure Disk Snapshot")
 13. You may also start the VM from WVDAdmin, by right-clicking on the Virtual Server after the snapshot restore and click: Start
-14. ![](/uploads/wvdadmin-startvm.png)
+14. ![Azure Disk Snapshot](/uploads/wvdadmin-startvm.png "Azure Disk Snapshot")
 15. Verify that your Virtual Machine is back up and running and remove any unneeded snapshots and disks from the Azure Portal, to reduce additional costs. If you intend to keep any around, make sure you add appropriate Tags and a review date, so you know what and why they existed in the first place.
 
 A few things to note:
@@ -97,7 +97,7 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
  7. **Expand** your **Resource group**, in my example, it is: SERVERS-RG
  8. **Right-click** your **server**, in my example it is: Server2019
  9. Select **Create a template image**
-10. ![](/uploads/vmimage-create.png)
+10. ![WVDAdmin - Create a template image](/uploads/vmimage-create.png "WVDAdmin - Create a template image")
 11. WVDAdmin will then display the: **Capture Image tab**
 12. Type in an appropriate image name (make sure you understand what it is, add specific versioning etc)
 13. **Verify** that your Template **VM** is **correct**
@@ -107,6 +107,8 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 17. When you are ready, select **Capture**
 18. WVDAdmin will then deallocate your VM and run through the following process:
 19. Deallocate VM -> Create a snapshot of VM ->Create a temporary VM from the snapshot -> Generalise the VM -> deallocate temporary VM -> create the image -> delete temp VM resources
-20. ![](/uploads/vmimage-log.png)
+20. ![WVDAdmin - Capture Image](/uploads/vmimage-log.png "WVDAdmin - Capture Image")
+21. You should now see your Image in your Azure Portal
+22. ![Azure - Custom Image](/uploads/inkedvmimage-azureportal.jpg "Azure - Custom Image")
 
 ### 

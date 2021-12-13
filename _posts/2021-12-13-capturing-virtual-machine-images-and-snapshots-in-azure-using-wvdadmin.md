@@ -8,7 +8,7 @@ toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
 ---
-[WVDAdmin](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/ "WVDAdmin") - is a native administration GUI (graphical user interface) for Azure Virtual Desktop (AVD). WVDAdmin is a free custom-built tool designed to make managing and standing up Azure Virtual Desktop infrastructure easy. Not only can you use it to roll out your Azure Virtual Desktop infrastructure and manage existing workspaces and host pools - you can use it to create Virtual Machine images that can be used for Virtual Scale Sets, but Base also builds or Azure Virtual Desktop session hosts! In addition, WVDAdmin automates creating and using snapshots and virtual machine images in a simple point and click interface - that works!
+[WVDAdmin](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/ "WVDAdmin"){:target="_blank"} - is a native administration GUI (graphical user interface) for Azure Virtual Desktop (AVD). WVDAdmin is a free custom-built tool designed to make managing and standing up Azure Virtual Desktop infrastructure easy. Not only can you use it to roll out your Azure Virtual Desktop infrastructure and manage existing workspaces and host pools - you can use it to create Virtual Machine images that can be used for Virtual Scale Sets, but Base also builds or Azure Virtual Desktop session hosts! In addition, WVDAdmin automates creating and using snapshots and virtual machine images in a simple point and click interface - that works!
 
 ### Prerequisites
 
@@ -17,9 +17,9 @@ header:
 * Virtual Machine _(to be used as your master image)_
 * Of course - WVDAdmin
 
-You can download WVDAdmin from the following page:  [Azure Windows Virtual Desktop administration with WVDAdmin](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/ " Azure Windows Virtual Desktop administration with WVDAdmin").
+You can download WVDAdmin from the following page:  [Azure Windows Virtual Desktop administration with WVDAdmin](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/ " Azure Windows Virtual Desktop administration with WVDAdmin"){:target="_blank"}.
 
-Also, make sure you have set up a [service principal ](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/#service-principal-functional-account "Service principal (functional account) Link")with the appropriate rights to the Resource Groups that holds your Virtual Machine.
+Also, make sure you have set up a [service principal ](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/#service-principal-functional-account "Service principal (functional account) Link"){:target="_blank"} with the appropriate rights to the Resource Groups that holds your Virtual Machine.
 
 Before proceeding ahead, **_make sure you have a virtual machine backup!_**
 

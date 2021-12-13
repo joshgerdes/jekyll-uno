@@ -115,4 +115,4 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 24. WVDAdmin can also copy your Custom Image into a Shared Image Gallery, or you can use it to create an Azure Virtual Desktop session host!
 25. ![WVDAdmin - New Session Host](/uploads/wvdadmin_newsessionhost.png "WVDAdmin - New Session Host")
 
-Hopefully, this article has been
+Hopefully, this article has been of some use - even if you don't use Azure Virtual Desktop - WVDAdmin is a great tool to help with day-to-day Azure Virtual Machine operations.

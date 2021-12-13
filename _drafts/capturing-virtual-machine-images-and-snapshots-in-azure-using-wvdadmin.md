@@ -25,4 +25,17 @@ Before proceeding ahead - **_make sure you have a backup of your Virtual Machine
 
 ### Capturing a Snapshot
 
+Although, possible to do using the Azure Portal, quickly taking an OS disk snapshot and then reverting the change can be a bit tedious, especially if you want to quickly make a backup of the operating system disk before patching or application upgrade, Snapshots are a lot quicker to take and work really well for quick and temporary recovery, especially when you want to quickly try something out - without having to wait for an Azure Backup.
+
+#### Capture a Snapshot
+
+#### 
+
+#### Restore a Snapshot
+
+A few things to note:
+
+* WVDAdmin gave me errors, stating that the "Recovering snapshot was not successful", however, this occurred after the Swapping disk process when the old disk was attempting to be deleted. The recovery did in fact reoccur, I then successfully deleted the disks in the Azure Portal manually.
+* I also had the: _"Virtual machine agent status is not ready."_ error occur, this self-resolved after the Virtual Machine had enough time to start the Azure agent.
+
 ### 

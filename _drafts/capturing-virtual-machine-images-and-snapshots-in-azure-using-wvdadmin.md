@@ -66,6 +66,7 @@ Before you proceed, just a warning that restoring the snapshot will discard any 
 12. ![](/uploads/snapshot-restore_verify.png)
 13. You may also start the VM from WVDAdmin, by right-clicking on the Virtual Server after the snapshot restore and click: Start
 14. ![](/uploads/wvdadmin-startvm.png)
+15. Verify that your Virtual Machine is back up and running and remove any unneeded snapshots and disks from the Azure Portal, to reduce additional costs. If you intend to keep any around, make sure you add appropriate Tags and a review date.
 
 A few things to note:
 

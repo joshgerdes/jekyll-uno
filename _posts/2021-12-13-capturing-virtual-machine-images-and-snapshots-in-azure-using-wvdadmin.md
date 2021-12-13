@@ -51,7 +51,7 @@ Although, possible to do using the Azure Portal, quickly taking an OS disk snaps
 
 #### Restore a Snapshot
 
-Before you proceed, just a warning that restoring the Snapshot will discard any changes made after the Snapshot. The virtual Machine will also be deallocated, so it will stop any connections to it.
+Before you proceed, just a warning that restoring the Snapshot will discard any changes made after the Snapshot. The virtual machine will also be deallocated, so it will stop any connections to it.
 
  1. Open **WVDAdmin**
  2. On the "Welcome" tab, **enter** in your Azure **Tenant id**

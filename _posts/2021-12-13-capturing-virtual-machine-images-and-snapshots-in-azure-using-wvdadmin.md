@@ -19,7 +19,7 @@ header:
 
 You can download WVDAdmin from the following page:  [Azure Windows Virtual Desktop administration with WVDAdmin](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/ " Azure Windows Virtual Desktop administration with WVDAdmin"){:target="_blank"}.
 
-Also, make sure you have set up a [service principal ](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/#service-principal-functional-account "Service principal (functional account) Link"){:target="_blank"} with the appropriate rights to the Resource Groups that holds your Virtual Machine.
+Also, make sure you have set up a [service principal](https://blog.itprocloud.de/Windows-Virtual-Desktop-Admin/#service-principal-functional-account "Service principal (functional account) Link"){:target="_blank"} with the appropriate rights to the Resource Groups that holds your Virtual Machine.
 
 Before proceeding ahead, **_make sure you have a virtual machine backup!_**
 

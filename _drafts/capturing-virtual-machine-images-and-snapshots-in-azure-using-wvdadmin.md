@@ -38,15 +38,15 @@ Although, possible to do using the Azure Portal, quickly taking an OS disk snaps
  7. **Expand** your **Resource group**, in my example, it is: SERVERS-RG
  8. **Right-click** your **server**, in my example it is: Server2019
  9. Select **SnapShot-Create**
-10. ![](/uploads/snapshot-create.png)
+10. ![WVDAdmin - Create Snapshot](/uploads/snapshot-create.png "WVDAdmin - Create Snapshot")
 11. WVDAdmin will then prompt you to verify that you want to create your snapshot
-12. ![](/uploads/snapshot-create_verify.png)
+12. ![WVD - Verify Snapshot](/uploads/snapshot-create_verify.png "WVD - Verify Snapshot")
 13. Confirm the server is correct and click **Ok**
 14. Depending on the size of your disk, this process may only take a few seconds, the virtual machine may experience a slight performance hit, but in my testing, I did not lose RDP connectivity during the snapshot process.
 15. Review the logs to make sure that the snapshot has been created successfully:
 16. ![](/uploads/snapshot-create_verify_log.png)
 17. You should now see the Snapshot in the Azure Portal, in the same Resource Group as the server.
-18. ![](/uploads/snapshot-azureportal.png)
+18. ![Azure Portal - Snapshot](/uploads/snapshot-azureportal.png "Azure Portal - Snapshot")
 
 #### Restore a Snapshot
 

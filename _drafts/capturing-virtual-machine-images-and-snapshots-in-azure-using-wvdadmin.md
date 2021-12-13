@@ -73,4 +73,15 @@ A few things to note:
 * WVDAdmin gave me errors, stating that the "Recovering snapshot was not successful", however, this occurred after the Swapping disk process when the old disk was attempting to be deleted. The recovery did in fact reoccur, I then successfully deleted the disks in the Azure Portal manually.
 * I also had the: _"Virtual machine agent status is not ready."_ error occur, this self-resolved after the Virtual Machine had enough time to start the Azure agent.
 
+### Capturing a Virtual Machine Image
+
+Virtual Machine images, work really well for Azure Virtual Desktop and Virtual Machine scale sets, where you want consistency between your various virtual machines, the same process I will run through works with Windows 10/11 along with Windows Server 2022 and below _(and I would also imagine Linux workloads)_. 
+
+I will be using the Windows Server 2019 Virtual Machine I had created before, however with various applications that I want to be standard across new builds, in my demo I used chocolatey to install:
+
+* Adobe Reader
+* Microsoft Visual C++ runtimes
+* 7Zip
+* VLC
+
 ### 

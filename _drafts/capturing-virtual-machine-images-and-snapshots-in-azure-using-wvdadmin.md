@@ -84,7 +84,7 @@ I will be using the Windows Server 2019 Virtual Machine I had created before, ho
 * 7Zip
 * VLC
 
-Then added a custom user policy to set the wallpaper.
+Then added a custom user policy to set the wallpaper. WVDAdmin will automatically, generalise (sysprep) the machine for you.
 
 #### Capture a Virtual Machine Image
 
@@ -98,5 +98,10 @@ Then added a custom user policy to set the wallpaper.
  8. **Right-click** your **server**, in my example it is: Server2019
  9. Select **Create a template image**
 10. ![](/uploads/vmimage-create.png)
+11. WVDAdmin will then display the: **Capture Image tab**
+12. Type in an appropriate image name (make sure you understand what it is, add specific versioning etc)
+13. **Verify** that your Template **VM** is **correct**
+14. Select your T**arget Resource Group** for your **Image**
+15. If you have a custom PowerShell script, you want to be 
 
 ### 

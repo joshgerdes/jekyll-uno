@@ -29,15 +29,18 @@ Although, possible to do using the Azure Portal, quickly taking an OS disk snaps
 
 #### Capture a Snapshot
 
-1. Open **WVDAdmin**
-2. On the "Welcome" tab, **enter** in your Azure **Tenant id**
-3. **Enter** in your **Service principal (application) ID** and **key**
-4. Click on **Reload all** - to connect to Azure
-5. Expand Azure
-6. Expand Virtual Machines
-7. Expand your Resource group, in my example, it is: SERVERS-RG
-8. Right-click your server, in my example it is: Server2019
-9. Select SnapShot-Create
+ 1. Open **WVDAdmin**
+ 2. On the "Welcome" tab, **enter** in your Azure **Tenant id**
+ 3. **Enter** in your **Service principal (application) ID** and **key**
+ 4. Click on **Reload all** - to connect to Azure
+ 5. **Expand Azure**
+ 6. **Expand Virtual Machines**
+ 7. **Expand** your **Resource group**, in my example, it is: SERVERS-RG
+ 8. **Right-click** your **server**, in my example it is: Server2019
+ 9. Select **SnapShot-Create**
+10. ![](/uploads/snapshot-create.png)
+11. WVDAdmin will then prompt you to verify that you want to create your snapshot
+12. 
 
 #### Restore a Snapshot
 

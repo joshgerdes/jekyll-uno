@@ -62,7 +62,7 @@ Before you proceed, just a warning that restoring the snapshot will discard any 
  8. **Right-click** your **server**, in my example it is: Server2019
  9. Select **SnapShot-Restore**
 10. ![](/uploads/snapshot-restore.png)
-11. WVDAdmin will then prompt you to verify that you want to lose your changes and restore the snapshot
+11. **Select** the **snapshot** you would like to **restore** to, and when you are ready click **Ok**. This will force the Virtual Machine to be shutdown and deallocated and the snapshot to be restored.
 12. ![](/uploads/snapshot-restore_verify.png)
 
 A few things to note:

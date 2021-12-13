@@ -86,4 +86,17 @@ I will be using the Windows Server 2019 Virtual Machine I had created before, ho
 
 Then added a custom user policy to set the wallpaper.
 
+#### Capture a Virtual Machine Image
+
+ 1. Open **WVDAdmin**
+ 2. On the "Welcome" tab, **enter** in your Azure **Tenant id**
+ 3. **Enter** in your **Service principal (application) ID** and **key**
+ 4. Click on **Reload all** - to connect to Azure
+ 5. **Expand Azure**
+ 6. **Expand Virtual Machines**
+ 7. **Expand** your **Resource group**, in my example, it is: SERVERS-RG
+ 8. **Right-click** your **server**, in my example it is: Server2019
+ 9. Select **Create a template image**
+10. ![](/uploads/vmimage-create.png)
+
 ### 

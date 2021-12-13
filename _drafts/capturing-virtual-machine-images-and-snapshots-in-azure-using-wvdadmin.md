@@ -84,4 +84,6 @@ I will be using the Windows Server 2019 Virtual Machine I had created before, ho
 * 7Zip
 * VLC
 
+Then added a custom user policy to set the wallpaper.
+
 ### 

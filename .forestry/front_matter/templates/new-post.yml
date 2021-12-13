@@ -47,4 +47,5 @@ pages:
 - _posts/2021-08-25-always-on-vpn-error-809-the-network-connection-between-your-computer-and-the-vpn-server-could-not-be-established.md
 - _posts/2021-12-03-azure-nat-gateway.md
 - _posts/2021-12-11-cloud-adoption-framework-for-azure.md
+- _posts/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

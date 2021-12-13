@@ -84,7 +84,7 @@ I will be using the Windows Server 2019 Virtual Machine I had created before, ho
 * 7Zip
 * VLC
 
-Then added a custom user policy to set the wallpaper. WVDAdmin will automatically, generalise _(sysprep)_ the machine for you.
+Then added a custom user policy to set the wallpaper. WVDAdmin will automatically, generalise _(sysprep)_ the machine for you, by creating a 'Temp' machine without touching your original Virtual Machine!
 
 #### Capture a Virtual Machine Image
 
@@ -110,5 +110,6 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 20. ![WVDAdmin - Capture Image](/uploads/vmimage-log.png "WVDAdmin - Capture Image")
 21. You should now see your Image in your Azure Portal
 22. ![Azure - Custom Image](/uploads/inkedvmimage-azureportal.jpg "Azure - Custom Image")
+23. You can now create additional Virtual Machines from your Custom image, using the Azure Portal 
 
 ### 

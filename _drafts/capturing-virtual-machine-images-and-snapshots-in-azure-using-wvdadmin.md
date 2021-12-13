@@ -102,6 +102,8 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 12. Type in an appropriate image name (make sure you understand what it is, add specific versioning etc)
 13. **Verify** that your Template **VM** is **correct**
 14. Select your **Target Resource Group** for your **Image**
-15. If you have a custom PowerShell script, you may want to add additional customisations in, add the script path here (_make sure it's publically accessible by Azure, ie Azure storage account, Github repository etc)_.
+15. If you have a custom PowerShell script, you may want to add additional customisations, add the script path here (_make sure it's publically accessible by Azure, ie Azure storage account, Github repository etc)_.
+16. Before proceeding to the next step, **your VM will be deallocated**
+17. When you are ready, select **Capture**
 
 ### 

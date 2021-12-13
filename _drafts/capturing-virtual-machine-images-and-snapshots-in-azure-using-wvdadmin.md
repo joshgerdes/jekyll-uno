@@ -84,7 +84,7 @@ I will be using the Windows Server 2019 Virtual Machine I had created before, ho
 * 7Zip
 * VLC
 
-Then added a custom user policy to set the wallpaper. WVDAdmin will automatically, generalise (sysprep) the machine for you.
+Then added a custom user policy to set the wallpaper. WVDAdmin will automatically, generalise _(sysprep)_ the machine for you.
 
 #### Capture a Virtual Machine Image
 
@@ -105,5 +105,10 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 15. If you have a custom PowerShell script, you may want to add additional customisations, add the script path here (_make sure it's publically accessible by Azure, ie Azure storage account, Github repository etc)_.
 16. Before proceeding to the next step, **your VM will be deallocated**
 17. When you are ready, select **Capture**
+18. WVDAdmin will then deallocate your VM and run through the following process:
+19. Deallocate VM
+20. Create a snapshot of VM
+21. Create a temporary VM from the snapshot
+22. 
 
 ### 

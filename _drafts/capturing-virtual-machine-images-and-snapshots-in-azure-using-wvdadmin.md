@@ -110,6 +110,8 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 20. ![WVDAdmin - Capture Image](/uploads/vmimage-log.png "WVDAdmin - Capture Image")
 21. You should now see your Image in your Azure Portal
 22. ![Azure - Custom Image](/uploads/inkedvmimage-azureportal.jpg "Azure - Custom Image")
-23. You can now create additional Virtual Machines from your Custom image, using the Azure Portal 
+23. You can now create additional Virtual Machines from your Custom image, using the Azure Portal.
+24. WVDAdmin, can also copy your Custom Image into a Shared Image Gallery, or you can use it to create an Azure Virtual Desktop session host!
+25. ![WVDAdmin - New Session Host](/uploads/wvdadmin_newsessionhost.png "WVDAdmin - New Session Host")
 
 ### 

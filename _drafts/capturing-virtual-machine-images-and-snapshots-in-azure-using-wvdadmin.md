@@ -64,6 +64,8 @@ Before you proceed, just a warning that restoring the snapshot will discard any 
 10. ![](/uploads/snapshot-restore.png)
 11. **Select** the **snapshot** you would like to **restore** to, and when you are ready click **Ok**. This will force the Virtual Machine to be shutdown and deallocated and the snapshot to be restored.
 12. ![](/uploads/snapshot-restore_verify.png)
+13. You may also start the VM from WVDAdmin, by right-clicking on the Virtual Server after the snapshot restore and click: Start
+14. ![](/uploads/wvdadmin-startvm.png)
 
 A few things to note:
 

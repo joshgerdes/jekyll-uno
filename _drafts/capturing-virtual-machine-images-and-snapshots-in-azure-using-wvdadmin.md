@@ -106,9 +106,7 @@ Then added a custom user policy to set the wallpaper. WVDAdmin will automaticall
 16. Before proceeding to the next step, **your VM will be deallocated**
 17. When you are ready, select **Capture**
 18. WVDAdmin will then deallocate your VM and run through the following process:
-19. Deallocate VM
-20. Create a snapshot of VM
-21. Create a temporary VM from the snapshot
-22. 
+19. Deallocate VM -> Create a snapshot of VM ->Create a temporary VM from the snapshot -> Generalise the VM -> deallocate temporary VM -> create the image -> delete temp VM resources
+20. ![](/uploads/vmimage-log.png)
 
 ### 

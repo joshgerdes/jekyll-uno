@@ -105,3 +105,5 @@ in Azure Bicep - I am accepting the whitelistpublicip, variable from PowerShell 
 If I navigate to the Azure Portal, I can see my newly created storage account, under the Networking blade, I can see that the Firewall has been enabled and my Public IP has been added successfully:
 
 ![Azure Storage Account - Network](/uploads/storageaccount_firewall.png "Azure Storage Account - Network")
+
+Hopefully, this helps you be more secure from deployment time and gives you a good framework to work on, in the future, the same process can be used to create inbound RDP rules for Virtual Machines as an example.

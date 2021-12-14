@@ -16,3 +16,5 @@ In this article, I will be using PowerShell to obtain my current public IP, then
 I am going to assume that you have both [Azure Bicep ](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Azure Bicep - Install")and[ PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "PowerShell - Azure") modules installed, and know-how to connect to Microsoft Azure.
 
 Utilising PowerShell to create dynamic variables in your deployment, can open the doors to more flexible deployments, such as including the name of the person deploying the infrastructure into the tags of the resource - or in this case adding a whitelisted IP automatically to your Azure resource to be secure by default.
+
+I am going to use PowerShell [splatting ](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting")as it's easier to edit and display, you can easily take the scripts here to make it your own.

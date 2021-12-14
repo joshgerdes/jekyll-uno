@@ -60,7 +60,7 @@ My Azure Bicep is below:
     param whitelistpublicip string = ''
     var location = resourceGroup().location
     
-    resource sftpstorageacc 'Microsoft.Storage/storageAccounts@2021-06-01' = {
+    resource storageaccount 'Microsoft.Storage/storageAccounts@2021-06-01' = {
       name: '${storageaccprefix}${uniqueString(resourceGroup().id)}'
       location: location
       sku: {

@@ -48,7 +48,7 @@ Now we are ready to create the Azure Storage account, I am going to create an Az
     #Deploys the Azure Bicep template
     New-AzResourceGroupDeployment @parameters
 
-![](/uploads/storageaccount_publicip.png)
+![Azure Bicep - Parameter](/uploads/storageaccount_publicip.png "Azure Bicep - Parameter")
 
 As you can see above, I am grabbing my current IP Address, from the ifconfig website and storing it in a variable (as a string object), then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as Parameters strings for Azure Bicep, my IP address _(I am running this from an Azure VM)_ is then passed through, to Azure Bicep.
 
@@ -104,4 +104,4 @@ in Azure Bicep - I am accepting the whitelistpublicip, variable from PowerShell 
 
 If I navigate to the Azure Portal, I can see my newly created storage account, under the Networking blade, I can see that the Firewall has been enabled and my Public IP has been added successfully:
 
-![](/uploads/storageaccount_firewall.png)
+![Azure Storage Account - Network](/uploads/storageaccount_firewall.png "Azure Storage Account - Network")

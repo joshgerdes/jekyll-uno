@@ -48,4 +48,54 @@ Now we are ready to create the Azure Storage account, I am going to create an Az
     #Deploys the Azure Bicep template
     New-AzResourceGroupDeployment @parameters
 
-As you can see above, I am grabbing my current IP Address, from the ifconfig website and storing it in a variable (as a string object), then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as parameters for Azure Bicep.
+![](/uploads/storageaccount_publicip.png)
+
+As you can see above, I am grabbing my current IP Address, from the ifconfig website and storing it in a variable (as a string object), then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as Parameters strings for Azure Bicep, my IP address is then passed through, to Azure Bicep.
+
+My Azure Bicep is below:
+
+    param storageaccprefix string = ''
+    param whitelistpublicip string = ''
+    var location = resourceGroup().location
+    
+    resource sftpstorageacc 'Microsoft.Storage/storageAccounts@2021-06-01' = {
+      name: '${storageaccprefix}${uniqueString(resourceGroup().id)}'
+      location: location
+      sku: {
+        name: 'Standard_ZRS'
+      }
+      kind: 'StorageV2'
+      properties: {
+        defaultToOAuthAuthentication: false
+        allowCrossTenantReplication: false
+        minimumTlsVersion: 'TLS1_2'
+        allowBlobPublicAccess: true
+        allowSharedKeyAccess: true
+        isHnsEnabled: true
+        networkAcls: {
+          resourceAccessRules: []
+          bypass: 'AzureServices'
+          virtualNetworkRules: []
+          ipRules: [
+            {
+              value: whitelistpublicip
+              action: 'Allow'
+            }
+          ]
+          defaultAction: 'Deny'
+        }
+        supportsHttpsTrafficOnly: true
+        encryption: {
+          services: {
+      
+            blob: {
+              keyType: 'Account'
+              enabled: true
+            }
+          }
+          keySource: 'Microsoft.Storage'
+        }
+        accessTier: 'Hot'
+      }
+    }
+    

@@ -23,7 +23,8 @@ I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershe
 
 Azure Bicep deployments *(like ARM)* have the following command: 'TemplateParameterObject'. This allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
 
-Now we are ready to create the Azure Storage account. I will make an Azure Resource Group using PowerShell for my storage account first, then use the New-AzResourceGroupDeployment cmdlet to deploy my storage account from my bicep file.
+Now we are ready to create the Azure Storage account...
+I will first make an Azure Resource Group using PowerShell for my storage account first, then use the New-AzResourceGroupDeployment cmdlet to deploy my storage account from my bicep file.
 
     #Connects to Azure
     Connect-AzAccount

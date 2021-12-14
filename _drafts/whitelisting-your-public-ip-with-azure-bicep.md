@@ -12,3 +12,5 @@ header:
 Being able to whitelist and restrict Azure resources by being accessible by specific Public IP _(Internet Protocol)_ addresses has been around for years, most Azure resources support it, a Storage account is no different.
 
 In this article, I will be using PowerShell to obtain my current public IP, then parse that variable into my Azure Bicep deployment to create a storage account, with the firewall rule allowing ONLY my public IP address.
+
+I am going to assume that you have both [Azure Bicep ](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Azure Bicep - Install")and[ PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "PowerShell - Azure") modules installed

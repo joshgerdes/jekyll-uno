@@ -19,7 +19,7 @@ I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/
 
 Utilising PowerShell to create dynamic variables in your deployment can open the doors to more flexible deployments, such as including the name of the person deploying the infrastructure into the tags of the resource - or in this case, adding a whitelisted IP automatically to your Azure resource to be secure by default.
 
-I will use PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
+I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
 Azure Bicep deployments *(like ARM)* have the following command: 'TemplateParameterObject'. This allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
 

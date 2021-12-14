@@ -21,7 +21,7 @@ Utilising PowerShell to create dynamic variables in your deployment can open the
 
 I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
-Azure Bicep deployments *(like ARM)* have the following command: 'TemplateParameterObject'. This allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
+Azure Bicep deployments *(like ARM)* have the following command: 'TemplateParameterObject'. 'TemplateParameterObject' allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
 
 Now we are ready to create the Azure Storage account...
 I will first make an Azure Resource Group using PowerShell for my storage account first, then use the New-AzResourceGroupDeployment cmdlet to deploy my storage account from my bicep file.

@@ -19,4 +19,33 @@ Utilising PowerShell to create dynamic variables in your deployment, can open th
 
 I am going to use PowerShell [splatting ](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting")as it's easier to edit and display, you can easily take the scripts here to make it your own.
 
-Azure Bicep deployments have the following command: 'TemplateParameterObject', this allows Azure Bicep to accept parameters from PowerShell directly, which can be quite powerful when used with a self-service portal.
+Azure Bicep deployments have the following command: 'TemplateParameterObject', this allows Azure Bicep to accept parameters from PowerShell directly, which can be quite powerful when used with a self-service portal or pipeline.
+
+Now we are ready to create the Azure Storage account, I am going to create an Azure Resource Group using PowerShell for my storage account first, then use the New-AzResourceGroupDeployment cmdlet to deploy my storage account from my bicep file.
+
+    #Connects to Azure
+    Connect-AzAccount
+    #Grabs the Public IP of the currently connected PC and adds it into a variable.
+    $publicip = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
+    #Resource Group Name
+    $resourcegrpname = 'storage_rg'
+    #Creates a resource group for the storage account
+    New-AzResourceGroup -Name $resourcegrpname -Location "AustraliaEast"
+    # Parameters splat, for Azure Bicep
+    # Parameter options for the Azure Bicep Template, this is where your Azure Bicep parameters go
+    $paramObject = @{
+      'storageaccprefix' = 'stg'
+      'whitelistpublicip'  = $publicip
+    }
+    # Parameters for the New-AzResourceGroupDeployment cmdlet goes into.
+    $parameters = @{
+      'Name'                  = 'StorageAccountDeployBase'
+      'ResourceGroupName'     = $resourcegrpname 
+      'TemplateFile'          = 'c:\temp\storageaccount.bicep'
+      'TemplateParameterObject'    = $paramObject
+      'Verbose'               = $true
+    }
+    #Deploys the Azure Bicep template
+    New-AzResourceGroupDeployment @parameters
+
+As you can see above, I am grabbing my current IP Address, from the ifconfig website and storing it in a variable (as a string object), then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as parameters for Azure Bicep.

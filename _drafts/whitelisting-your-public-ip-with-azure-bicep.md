@@ -100,4 +100,8 @@ My Azure Bicep is below:
     }
     
 
-in Azure Bicep - I am accepting the whitelistpublicip, variable from PowerShell and have passed that along to the virtualNetworkRules object, as an Allow, while the defaultAction is 'Deny'
+in Azure Bicep - I am accepting the whitelistpublicip, variable from PowerShell and have passed that along to the virtualNetworkRules object, as an Allow, while the defaultAction is 'Deny'.
+
+If I navigate to the Azure Portal, I can see my newly created storage account, under the Networking blade, I can see that the Firewall has been enabled and my Public IP has been added successfully:
+
+![](/uploads/storageaccount_firewall.png)

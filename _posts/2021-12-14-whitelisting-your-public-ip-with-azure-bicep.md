@@ -1,6 +1,7 @@
 ---
 date: 2021-12-14 00:00:00 +1300
 title: Whitelisting your Public IP with Azure Bicep and PowerShell
+permalink: /azure/whitelisting-your-public-ip-with-azure-bicep/
 author: Luke
 categories:
 - Azure

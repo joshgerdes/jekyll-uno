@@ -48,5 +48,5 @@ pages:
 - _posts/2021-12-03-azure-nat-gateway.md
 - _posts/2021-12-11-cloud-adoption-framework-for-azure.md
 - _posts/2021-12-13-capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin.md
+- _posts/2021-12-14-whitelisting-your-public-ip-with-azure-bicep.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
-- _posts/whitelisting-your-public-ip-with-azure-bicep.md

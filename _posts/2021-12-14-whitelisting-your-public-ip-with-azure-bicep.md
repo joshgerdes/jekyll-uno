@@ -52,7 +52,7 @@ Now we are ready to create the Azure Storage account. I will make an Azure Resou
 
 ![Azure Bicep - Parameter](/uploads/storageaccount_publicip.png "Azure Bicep - Parameter")
 
-As you can see above, I am grabbing my current IP Address from the ifconfig website and storing it in a variable (as a string object), then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as Parameters strings for Azure Bicep, my IP address _(I am running this from an Azure VM)_ is then passed through, to Azure Bicep.
+As you can see above, I am grabbing my current IP Address from the ifconfig website and storing it in a variable *(as a string object)*, then referencing it in the paramObject - which will be passed through to the TemplateParameterObject command as Parameters strings for Azure Bicep, my IP address _(I am running this from an Azure VM)_ is then passed through, to Azure Bicep.
 
 My Azure Bicep is below:
 

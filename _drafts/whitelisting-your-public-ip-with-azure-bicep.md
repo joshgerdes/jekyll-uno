@@ -99,3 +99,5 @@ My Azure Bicep is below:
       }
     }
     
+
+in Azure Bicep - I am accepting the whitelistpublicip, variable from PowerShell and have passed that along to the virtualNetworkRules object, as an Allow, while the defaultAction is 'Deny'

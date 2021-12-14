@@ -73,7 +73,7 @@ My Azure Bicep is below:
         minimumTlsVersion: 'TLS1_2'
         allowBlobPublicAccess: true
         allowSharedKeyAccess: true
-        isHnsEnabled: true
+        isHnsEnabled: false
         networkAcls: {
           resourceAccessRules: []
           bypass: 'AzureServices'

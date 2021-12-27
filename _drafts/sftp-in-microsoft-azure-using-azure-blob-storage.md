@@ -108,4 +108,6 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
  9. Our storage account is empty, we now need to create a top-level container, so I will sect **Create new** and set the name to: ftp
 10. I will leave the Public access level to **Private (no anonymous access)**
 11. Click **Ok**
-12. Now that the ftp container has been created, we need to set the permissions.
+12. Now that the ftp container has been created, we need to **set** the **permissions**, I am simply going to give the permissions of Read, Create, Delete, List and Write. _It's worth noting, that if you only need to read or list contents, then that is the only permissions you need, these permissions are for the Container, not the folder, so you may find your users may have permissions to other folders in the same container if not managed appropriately._
+13. Now we set the **Home directory**. This is the directory that the user will be automatically mapped to, this is optional but if you don't have a Home directory filled in for the user, they will need to connect to the appropriate folders when connecting to SFTP manually.
+14. ![Azure Storage Account SFTP - Local User](/uploads/azureportal_sftplocalusercreate.png "Azure Storage Account SFTP - Local User")

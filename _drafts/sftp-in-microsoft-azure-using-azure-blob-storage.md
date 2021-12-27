@@ -48,3 +48,4 @@ In order to create an Azure Storage account, that supports SFTP - we need to ena
 6. Click on: SFTP support for Azure BLob Storage and click Register - this may take 5-10 minutes to be registered.
 7. _As you can see in the screenshot below, I had already registered mine:_
 8. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
+9. You can continue to hit refresh until it changes from: Registering to: Registered.

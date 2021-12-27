@@ -40,7 +40,7 @@ This article, assumes you have an Azure subscription and rights to create a new 
 
 In order to create an Azure Storage account, that supports SFTP - we need to enable the Preview Feature.
 
- 1. Log in to the Azure Portal
+ 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
  2. Navigate to: Subscriptions
  3. Select the subscription that you want to enable SFTP preview for
  4. Click on: Preview features
@@ -57,4 +57,13 @@ To register the SFTP feature using PowerShell you can run the following cmdlet:
 
 #### Create the Azure Storage Account
 
-Now that the Preview feature has been refistered.
+Now that the Preview feature has been registered, we can now create a new Storage account.
+
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Click on +Create a resource
+3. Type in: Storage account and click on the Microsoft Storage account resource and click Create
+4. ![Azure Portal - Storage account](/uploads/azureportal_createresourcestorageaccount.png "Azure Portal - Storage account")
+5. Select your Subscription you enabled the SFTP feature in earlier
+6. Select your Resource Group (or create a new resource group) to place your storage account into.
+7. Select your storage account name _(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_),_ in my example, I am going with: sftpstorageacc1337
+8. Select your Region, remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region for me (Australia East) is supported)_.

@@ -26,3 +26,5 @@ Before we head into the implementation, just a bit of housekeeping, this is curr
 You can connect to the SFTP storage account by using local _(to the SFTP storage account)_ SSH public-private keypair, or password _(or both)_. You can also set up individual HOME directories _(containers)_ for each user _(maximum of 1000 local user accounts_).
 
 SFTP communicates on port: 22, which is the default port usually used by this service.
+
+#### Creating an Azure Storage account for SFTP

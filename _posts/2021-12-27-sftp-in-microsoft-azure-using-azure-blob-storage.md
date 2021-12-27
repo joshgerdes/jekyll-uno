@@ -122,7 +122,7 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
 
 I will test Connectivity to the SFTP Azure Storage account using Windows 11, although the same concepts apply across various operating systems _(Linux, OSX, etc.)_.
 
-#### Test using SFTP from Windows
+#### Test using SFTP from Windows using command prompt
 
 1. Make sure you have a copy of the Connection String and user password from the SFTP user account created earlier.
 2. Open **Command Prompt**

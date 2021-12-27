@@ -11,7 +11,7 @@ header:
 ---
 SSH File Transfer Protocol _(SFTP)_ support is now supported in Preview for Azure Blob Storage accounts with hierarchical namespace enabled.
 
-Although tools such as Storage Explorer and AzCopy allows a copy to and from Azure storage accounts, sometimes your applications need more traditional integration, so SFTP is a welcome addition to the Microsoft Azure ecosystem, which in some cases removes the need for additional Virtual Machine(s).
+Although tools such as Storage Explorer, Data Factory, AzCopy allows a copy to and from Azure storage accounts, sometimes your applications need more traditional integration, so SFTP is a welcome addition to the Microsoft Azure ecosystem, which in some cases removes the need for additional Virtual Machine(s).
 
 This support enables traditional SFTP connectivity to an Azure Storage account, which as an Azure PaaS _(Platform as a Service)_ resource, offers additional flexibility, reduce operational overhead and increase redundancy and scalability.
 

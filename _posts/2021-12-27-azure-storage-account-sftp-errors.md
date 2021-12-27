@@ -40,4 +40,4 @@ The username is actually comprised of:
 
 STORAGEACCOUNTNAME+FTPNAME, ie: sftpstorageacc1337.lukeftpuser
 
-![](/uploads/sftp_winscptest.png)
+![WinSCP Connection Azure SFTP](/uploads/sftp_winscptest.png "WinSCP Connection Azure SFTP")

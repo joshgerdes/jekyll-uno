@@ -58,7 +58,7 @@ To create an Azure Storage account that supports SFTP - we need to enable the Pr
    _As you can see in the screenshot below, I had already registered mine:_
 7. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
 8. You can continue to hit refresh until it changes from: Registering to Registered.
-9. While we are here, let's check that the Microsoft.Storage resource provider is registered _(it should already be enabled, but it is a good opportunity to check before attempting to create a resource and get a surprise_), by clicking on REsource providers in the left-hand side menu and search for: Storage, if it is set to NotRegistered - click on Microsoft.Storage and click Register.
+9. While we are here, let's check that the Microsoft.Storage resource provider is registered _(it should already be enabled, but it is a good opportunity to check before attempting to create a resource and get a surprise_), by clicking on Resource providers in the left-hand side menu and search for: Storage, if it is set to NotRegistered - click on Microsoft.Storage and click Register.
 
 To register the SFTP feature using PowerShell, you can run the following cmdlet:
 

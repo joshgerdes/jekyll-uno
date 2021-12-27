@@ -15,7 +15,7 @@ Although tools such as Storage Explorer and AzCopy allows a copy to and from Azu
 
 This support enables traditional SFTP connectivity to an Azure Storage account, which as an Azure PaaS _(Platform as a Service)_ resource, offers additional flexibility, reduce operational overhead and increase redundancy and scalability.
 
-We will run through the initial setup of the Azure Storage account using the Microsoft Azure Portal, then connect to it.
+We will run through the initial setup of the Azure Storage account using a combination of PowerShell, Azure Portal and a bit of Azure Bicep, then connect to it.
 
 Azure Storage does not support shared access signature (SAS), or Azure Active Directory (Azure AD) authentication for connecting SFTP clients. Instead, SFTP clients must use either a password or a Secure Shell (SSH) private key credential.
 

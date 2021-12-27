@@ -141,7 +141,7 @@ I will test Connectivity to the SFTP Azure Storage account using Windows 11, alt
 #### Test using WinSCP
 
 1. Make sure you have a copy of the Connection String and user password from the SFTP user account created earlier.
-2. If you haven't already, **download** [**WinSCP **]()and **install** it
+2. If you haven't already, download WinSCP and install it
 3. You should be greeted by the **Login page** _(but if you aren't, click on Session, New Session)_
 4. For the hostname, type in the **URL** for the **storage account** _(after the @ in the connection string)_
 5. For the **username,** type in everything before the @

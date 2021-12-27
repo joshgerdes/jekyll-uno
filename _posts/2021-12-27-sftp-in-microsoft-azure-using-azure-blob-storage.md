@@ -74,7 +74,7 @@ Now that the Preview feature has been registered, we can now create a new Storag
  4. ![Azure Portal - Storage account](/uploads/azureportal_createresourcestorageaccount.png "Azure Portal - Storage account")
  5. Select your **Subscription** you enabled the SFTP feature in earlier
  6. Select your **Resource Group** _(or create a new resource group)_ to place your storage account into.
- 7. **Select__ your **storage account name **_(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources"){:target="_blank"}_), in my example; I am going with: sftpstorageacc1337_
+ 7. Select your storage account name _(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources"){:target="_blank"}_), in my example; I am going with: sftpstorageacc1337_
  8. **Select** your **Region**; remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure Region (Australia East) is supported)_.
  9. **Select** your **performance tier**; premium is supported but remember to select Blob, select Standard.
 10. **Select** your **Redundancy**; remember that GRS-R, GRS isn't supported at this time; I will select Zone-redundant storage (ZRS) so that my storage account is replicated between the three availability zones, but you can also select LRS _(Locally Redundant Storage)._

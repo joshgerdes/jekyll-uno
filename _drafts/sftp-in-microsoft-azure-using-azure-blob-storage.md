@@ -122,7 +122,7 @@ I will be testing connectivity to the SFTP Azure Storage account using Windows 1
 
 #### Test using SFTP locally
 
-1. Make sure you have a copy of the Connection String from the SFTP user account created earlier
+1. Make sure you have a copy of the Connection String and user password from the SFTP user account created earlier
 2. Open **Command Prompt**
 3. Type in **sftp** CONNECTIONSTRING, example below and press Enter:
    * _sftp sftpstorageacc1337.lukeftpuser@sftpstorageacc1337.blob.core.windows.net_
@@ -136,4 +136,7 @@ I will be testing connectivity to the SFTP Azure Storage account using Windows 1
 
    That will give you a list of all the available commands to run, ie upload files etc 
 
-#### Test using SFTP locally
+#### Test using WinSCP
+
+1. Make sure you have a copy of the Connection String and user password from the SFTP user account created earlier
+2. If you haven't already, download [WinSCP]() and install it

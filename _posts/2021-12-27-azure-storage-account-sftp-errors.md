@@ -22,7 +22,7 @@ The solution for this was simple, switch from SSH to **SFTP**
 
 If you were like me, I just flicked to SSH as a habit.
 
-#### Home Directory is not accessible.
+#### Home Directory is not accessible
 
 Make sure that the Home directory _(Folder)_ is created in your container.
 

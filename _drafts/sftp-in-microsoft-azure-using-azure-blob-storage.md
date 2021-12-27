@@ -123,11 +123,17 @@ I will be testing connectivity to the SFTP Azure Storage account using Windows 1
 #### Test using SFTP locally
 
 1. Make sure you have a copy of the Connection String from the SFTP user account created earlier
-2. Open Command Prompt
-3. Type in sftp CONNECTIONSTRING, example below and press Enter:
+2. Open **Command Prompt**
+3. Type in **sftp** CONNECTIONSTRING, example below and press Enter:
    * _sftp sftpstorageacc1337.lukeftpuser@sftpstorageacc1337.blob.core.windows.net_
 4. If you get a prompt to verify the authenticity of the host matches (ie the name/URL of the storage account matches) and type in: Yes, to add the storage account to your known host's list
-5. Press Enter and paste in the copy of the password that was generated for you earlier.
-6. You should be connected to the Azure Storage account via SFTP!
+5. Press **Enter** and paste in the copy of the password that was generated for you earlier.
+6. You should be **connected to the Azure Storage account via SFTP**!
 7. As you can see below, I am in the Files folder, which is my users home folder and there is a file named: Test in it.
 8. ![](/uploads/sftp_windowstest.png)
+
+   Once you have connected to SFTP using the Windows command line you can type in: **?**
+
+   That will give you a list of all the available commands to run, ie upload files etc 
+
+#### Test using SFTP locally

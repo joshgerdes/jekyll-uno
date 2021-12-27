@@ -28,7 +28,7 @@ Make sure that the Home directory _(Folder)_ is created in your container, SFTP 
 
 Also make sure that the Home directory for the user, references Container/Folder, like the below:
 
-![Azure Portal - Enable SFTP](/uploads/azureportal_sftplocalusercreate.png "Azure Portal - Enable SFTP")
+![Azure Portal - Enable SFTP](/uploads/AzurePortal_SFTPLocalUsercreate.png "Azure Portal - Enable SFTP")
 
 #### Wrong username, authentication failed
 

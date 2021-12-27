@@ -15,7 +15,7 @@ Although tools such as Storage Explorer, Data Factory, AzCopy allows a copy to a
 
 This support enables traditional SFTP connectivity to an Azure Storage account, which as an Azure PaaS _(Platform as a Service)_ resource, offers additional flexibility, reduce operational overhead and increase redundancy and scalability.
 
-We will run through the initial setup of the Azure Storage account using the Azure Portal. 
+We will run through the initial setup of the Azure Storage account using the Azure Portal.
 
 Azure Storage does not support shared access signature (SAS), or Azure Active Directory (Azure AD) authentication for connecting SFTP clients. Instead, SFTP clients must use either a password or a Secure Shell _(SSH)_ private key credential.
 
@@ -38,7 +38,7 @@ This article, assumes you have an Azure subscription and rights to create a new 
 
 #### Fill out the SFTP Public Preview Interest Form
 
-Because the SFTP functionality is currently in Private Preview, Microsoft has asked that anyone interested in the SFTP Preview fill out a Microsoft Forms: 
+Because the SFTP functionality is currently in Private Preview, Microsoft has asked that anyone interested in the SFTP Preview fill out a Microsoft Forms:
 
 * [SFTP Public Preview Interest Form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRxE4mlJMX2FKhD4ROGugH69URjBGVVdNSVRRWVUxSFA3WkM5OVk4STJFQS4u "SFTP Public Preview Interest Form")
 
@@ -53,7 +53,7 @@ In order to create an Azure Storage account, that supports SFTP - we need to ena
 3. **Select** the **subscription** that you want to enable **SFTP** preview for
 4. Click on: **Preview features**
 5. Search for: **SFTP**
-6. Click on: **SFTP support for Azure Blob Storage** and click **Register** - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._ 
+6. Click on: **SFTP support for Azure Blob Storage** and click **Register** - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._
 
    _As you can see in the screenshot below, I had already registered mine:_
 7. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
@@ -74,7 +74,7 @@ Now that the Preview feature has been registered, we can now create a new Storag
  4. ![Azure Portal - Storage account](/uploads/azureportal_createresourcestorageaccount.png "Azure Portal - Storage account")
  5. Select your **Subscription** you enabled the SFTP feature in earlier
  6. Select your **Resource Group** _(or create a new resource group)_ to place your storage account into.
- 7. **Select** your **storage account name **_(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_), in my example, I am going with: sftpstorageacc1337_
+ 7. **Select__ your **storage account name **_(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_), in my example, I am going with: sftpstorageacc1337_
  8. **Select** your **Region**, remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region for me (Australia East) is supported)_.
  9. **Select** your **performance tier**, Premium isn't supported so I will select Standard
 10. **Select** your **Redundancy**, remember that GRS-R, GRS isn't supported at this time, I will select Zone-redundant storage (ZRS) so that my storage account is replicated between the 3 availability zones, but you can also select LRS _(Locally Redundant Storage)._
@@ -82,10 +82,10 @@ Now that the Preview feature has been registered, we can now create a new Storag
 12. Click **Next: Advanced**
 13. Leave the Security options, as-is and check: **Enable hierarchical namespace**, under the Data Lake Storage Gen2 subheading
 14. Click **Enable SFTP**
-15. ![](/uploads/azureportal_createstorageaccountenablesftp.png)
+15. ![Azure Portal - Enable SFTP](/uploads/azureportal_createstorageaccountenablesftp.png "Azure Portal - Enable SFTP")
 16. Click: **Next: Networking**
 17. SFTP supports Private Endpoints (_as a blob storage sub-resource)_, but in this case, I will be keeping Connectivity as a **Public endpoint (all networks)**
-18. ![](/uploads/azureportal_createstorageaccountnetwork.png)
+18. ![Azure Portal - Enable SFTP](/uploads/azureportal_createstorageaccountnetwork.png "Azure Portal - Enable SFTP")
 19. Click **Next: Data Protection**
 20. Here you can enable [soft-delete](https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview "Soft delete for blobs") for your blobs and containers, so if a file is deleted, it is retained for 7 days, until it's permanently deleted, I am going to leave mine set as the default of 7 days and click: **Next: Tags**
 21. Add in any applicable Tags, ie who created it, when you created it, what you created it for and click **Review + Create**
@@ -100,7 +100,7 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
  1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. **Navigate** to the **Storage account** you have created for SFTP and click on it
  3. On the Storage account blade, under **Settings**, you will see: **SFTP**
- 4. ![](/uploads/azureportal_storageaccountstpblade.png)
+ 4. ![Azure Portal - Enable SFTP](/uploads/azureportal_storageaccountstpblade.png "Azure Portal - Enable SFTP")
  5. Click on **SFTP** and click **+ Add local user**
  6. Type in the username of the user you would like to use _(remember you can have up to 1000 local users, but there is no integration into Azure AD, Active Directory or other authentication services currently_), in my example I will use: lukeftpuser
  7. You can use either _(and both)_ SSH keys or passwords, in this article - I am simply going to use a password so I select: **SSH Password**.

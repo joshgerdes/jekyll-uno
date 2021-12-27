@@ -13,19 +13,19 @@ SSH File Transfer Protocol _(SFTP)_ support is now supported in Preview for Azur
 
 Although tools such as Storage Explorer, Data Factory, AzCopy allows a copy to and from Azure storage accounts, sometimes your applications need more traditional integration, so SFTP is a welcome addition to the Microsoft Azure ecosystem, which in some cases removes the need for additional Virtual Machine(s).
 
-This support enables traditional SFTP connectivity to an Azure Storage account. As an Azure PaaS _(Platform as a Service)_ resource, offers additional flexibility, reduce operational overhead, and increases Redundancy and scalability.
+This support enables standard SFTP connectivity to an Azure Storage account. As an Azure PaaS _(Platform as a Service)_ resource, it offers additional flexibility, reduces operational overhead, and increases Redundancy and scalability.
 
 We will run through the initial setup of the Azure Storage account using the Azure Portal.
 
 Azure Storage does not support shared access signature (SAS) or Azure Active Directory (Azure AD) authentication for connecting SFTP clients. Instead, SFTP clients must use a password or a Secure Shell _(SSH)_ private essential credential.
 
-Before we head into the implementation, just a bit of housekeeping, this is currently still in Preview at the time of this post; the functionality MAY change by the time it becomes GA (_Generally Available)_.
+Before we head into the implementation, just a bit of housekeeping, this is currently still in Preview at the time this post was written; the functionality MAY change by the time it becomes GA (_Generally Available)_.
 
 > During the public preview, the use of SFTP does not incur any additional charges. However, the standard transaction, storage, and networking prices for the underlying Azure Data Lake Store Gen2 account still apply. SFTP might incur additional charges when the feature becomes generally available. As of the time of the preview SFTP support is only avaliable in certain [regions](https://docs.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support#regional-availability "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)").
 
-You can connect to the SFTP storage account by using local _(to the SFTP storage account)_ SSH public-private keypair or Password _(or both)_. You can also set up individual HOME directories _(containers)_ for each user _(maximum of 1000 local user accounts_).
+You can connect to the SFTP storage account by using local _(to the SFTP storage account)_ SSH public-private keypair or Password _(or both)_. You can also set up individual HOME directories _(containers)_ for each user _(maximum 1000 local user accounts_).
 
-SFTP communicates on port: 22, which is the default port usually used by this service.
+SFTP communicates on port: 22, the default port usually used by this service.
 
 ### Creating an Azure Storage account for SFTP
 
@@ -46,11 +46,11 @@ This MAY be required before proceeding to the following steps; initially, I beli
 
 #### Registering the Feature
 
-In order to create an Azure Storage account, that supports SFTP - we need to enable the Preview Feature.
+To create an Azure Storage account that supports SFTP - we need to enable the Preview Feature.
 
 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
 2. Navigate to: **Subscriptions**
-3. **Select** the **subscription** that you want to enable **SFTP** preview for
+3. **Select** the **Subscription** that you want to enable **SFTP** preview for
 4. Click on: **Preview features**
 5. Search for: **SFTP**
 6. Click on: **SFTP support for Azure Blob Storage** and click **Register** - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._
@@ -60,7 +60,7 @@ In order to create an Azure Storage account, that supports SFTP - we need to ena
 8. You can continue to hit refresh until it changes from: Registering to Registered.
 9. While we are here, let's check that the Microsoft.Storage resource provider is registered _(it should already be enabled, but it is a good opportunity to check before attempting to create a resource and get a surprise_), by clicking on REsource providers in the left-hand side menu and search for: Storage, if it is set to NotRegistered - click on Microsoft.Storage and click Register.
 
-To register the SFTP feature using PowerShell you can run the following cmdlet:
+To register the SFTP feature using PowerShell, you can run the following cmdlet:
 
     Register-AzProviderFeature -FeatureName "AllowSFTP" -ProviderNamespace "Microsoft.Storage"
 
@@ -75,8 +75,8 @@ Now that the Preview feature has been registered, we can now create a new Storag
  5. Select your **Subscription** you enabled the SFTP feature in earlier
  6. Select your **Resource Group** _(or create a new resource group)_ to place your storage account into.
  7. **Select__ your **storage account name **_(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_), in my example; I am going with: sftpstorageacc1337_
- 8. **Select** your **Region**; remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region (Australia East) is supported)_.
- 9. **Select** your **performance tier**, Premium isn't supported, so I will select Standard.
+ 8. **Select** your **Region**; remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure Region (Australia East) is supported)_.
+ 9. **Select** your **performance tier**; premium is supported but remember to select Blob, select Standard.
 10. **Select** your **Redundancy**; remember that GRS-R, GRS isn't supported at this time; I will select Zone-redundant storage (ZRS) so that my storage account is replicated between the three availability zones, but you can also select LRS _(Locally Redundant Storage)._
 11. ![Azure Portal - Create v2 Storage Account](/uploads/azureportal_createstorageaccount.png "Azure Portal - Create v2 Storage Account")
 12. Click **Next: Advanced**

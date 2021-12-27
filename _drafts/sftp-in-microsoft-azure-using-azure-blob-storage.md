@@ -110,8 +110,8 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
 11. Click **Ok**
 12. Now that the ftp container has been created, we need to **set** the **permissions**, I am simply going to give the permissions of Read, Create, Delete, List and Write. _It's worth noting, that if you only need to read or list contents, then that is the only permissions you need, these permissions are for the Container, not the folder, so you may find your users may have permissions to other folders in the same container if not managed appropriately._
 13. Now we set the **Home directory**. This is the directory that the user will be automatically mapped to, this is optional but if you don't have a Home directory filled in for the user, they will need to connect to the appropriate folders when connecting to SFTP manually. The home directory needs to be relative, ie: ftp/files _(the container name and the files folder, located in the ftp container)._
-14. ![](/uploads/azureportal_sftplocalusercreate.png)
+14. ![Azure Portal - Enable SFTP](/uploads/azureportal_sftplocalusercreate.png "Azure Portal - Enable SFTP")
 15. Because we specified Password earlier, **Azure** has automatically **created** a new **password** for that account, although you can generate new passwords - you are unable to specify what the password is, make sure you **copy** this and **store** it in a password **vault** of some kind, the length of the password that was generated for me was: 89 characters.
-16. ![](/uploads/azureportal_sftp_localusercreatepassword.png)
+16. ![Azure Portal - Enable SFTP](/uploads/azureportal_sftp_localusercreatepassword.png "Azure Portal - Enable SFTP")
 17. You should see the connection string of the user, along with the Authentication method and container permissions.
 18. ![Azure Storage Account SFTP - Local User Created](/uploads/azureportal_sftp_localusercreated.png "Azure Storage Account SFTP - Local User Created")

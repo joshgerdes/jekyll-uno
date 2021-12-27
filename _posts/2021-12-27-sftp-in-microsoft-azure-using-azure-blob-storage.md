@@ -150,4 +150,4 @@ I will test Connectivity to the SFTP Azure Storage account using Windows 11, alt
 8. ![Azure SFTP - WinSCP](/uploads/sftp_winscptest.png "Azure SFTP - WinSCP")
 9. ![Azure SFTP - WinSCP](/uploads/sftp_winscptest2.png "Azure SFTP - WinSCP")
 
-Congratulations! You have now created and tested Connectivity to the Azure Storage PaaS service SFTP!
+Congratulations! You have now created and tested Connectivity to the Azure Storage SFTP service!

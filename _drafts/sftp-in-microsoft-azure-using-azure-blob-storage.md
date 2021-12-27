@@ -28,3 +28,10 @@ You can connect to the SFTP storage account by using local _(to the SFTP storage
 SFTP communicates on port: 22, which is the default port usually used by this service.
 
 #### Creating an Azure Storage account for SFTP
+
+This article, assumes you have an Azure subscription and rights to create a new Storage account resource, and the following pre-requisites:
+
+* A standard general-purpose v2 or premium block blob storage account. You can also enable SFTP as you create the account. For more information on these types of storage accounts, see [Storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
+* The account redundancy option of the storage account is set to either locally-redundant storage (LRS) or zone-redundant storage (ZRS), GRS is not supported at this time.
+* The hierarchical namespace feature of the account must be enabled for existing storage accounts. To enable the hierarchical namespace feature, see [Upgrade Azure Blob Storage with Azure Data Lake Storage Gen2 capabilities](https://docs.microsoft.com/en-us/azure/storage/blobs/upgrade-to-data-lake-storage-gen2-how-to).
+* If you're connecting from an on-premises network, make sure that your client allows outgoing communication through port 22. The SFTP uses that port.

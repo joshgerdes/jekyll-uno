@@ -105,5 +105,7 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
  6. Type in the username of the user you would like to use _(remember you can have up to 1000 local users, but there is no integration into Azure AD, Active Directory or other authentication services currently_), in my example I will use: lukeftpuser
  7. You can use either _(and both)_ SSH keys or passwords, in this article - I am simply going to use a password so I select: **SSH Password**.
  8. Click **Next**
- 9. 
-10. 
+ 9. Our storage account is empty, we now need to create a top-level container, so I will sect **Create new** and set the name to: ftp
+10. I will leave the Public access level to **Private (no anonymous access)**
+11. Click **Ok**
+12. Now that the ftp container has been created, we need to set the permissions.

@@ -97,12 +97,13 @@ In case you are interested in Infrastructure as Code, here is an Azure Bicep fil
 
 Now that you have a compatible Azure storage account, it is time to enable SFTP!
 
-1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. **Navigate** to the **Storage account** you have created for SFTP and click on it
-3. On the Storage account blade, under **Settings**, you will see: **SFTP**
-4. ![](/uploads/azureportal_storageaccountstpblade.png)
-5. Click on **SFTP** and click **+ Add local user**
-6. Type in the username of the user you would like to use _(remember you can have up to 1000 local users, but there is no integration into Azure AD, Active Directory or other authentication services currently_), in my example I will use: lukeftpuser
-7. You can use either _(and both)_ SSH keys or passwords, in this article - I am simply going to use a password so I select: **SSH Password**.
-8. 
-9. 
+ 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. **Navigate** to the **Storage account** you have created for SFTP and click on it
+ 3. On the Storage account blade, under **Settings**, you will see: **SFTP**
+ 4. ![](/uploads/azureportal_storageaccountstpblade.png)
+ 5. Click on **SFTP** and click **+ Add local user**
+ 6. Type in the username of the user you would like to use _(remember you can have up to 1000 local users, but there is no integration into Azure AD, Active Directory or other authentication services currently_), in my example I will use: lukeftpuser
+ 7. You can use either _(and both)_ SSH keys or passwords, in this article - I am simply going to use a password so I select: **SSH Password**.
+ 8. Click **Next**
+ 9. 
+10. 

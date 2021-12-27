@@ -2,7 +2,8 @@
 date: 2021-12-27 00:00:00 +1300
 title: Azure Storage Account SFTP errors
 author: Luke
-categories: []
+categories:
+- Azure
 toc: true
 header:
   teaser: ''

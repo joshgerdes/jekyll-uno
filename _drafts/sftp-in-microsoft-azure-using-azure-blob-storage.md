@@ -42,22 +42,23 @@ Because the SFTP functionality is currently in Private Preview, Microsoft has as
 
 * [SFTP Public Preview Interest Form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRxE4mlJMX2FKhD4ROGugH69URjBGVVdNSVRRWVUxSFA3WkM5OVk4STJFQS4u "SFTP Public Preview Interest Form")
 
-This is required before proceeding to the next steps.
+This MAY be required before proceeding to the next steps, initially I believe this was required but there appears to have been a few people who I know have registered the feature without the form - either way, the SFTP Public Preview Interest form, is a good opportunity to supply your use-case information to Microsoft directly, to help improve the nature of the service going forward.
 
 #### Registering the Feature
 
 In order to create an Azure Storage account, that supports SFTP - we need to enable the Preview Feature.
 
- 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
- 2. Navigate to: Subscriptions
- 3. Select the subscription that you want to enable SFTP preview for
- 4. Click on: Preview features
- 5. Search for: SFTP
- 6. Click on: SFTP support for Azure BLob Storage and click Register - this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personsell.
- 7. _As you can see in the screenshot below, I had already registered mine:_
- 8. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
- 9. You can continue to hit refresh until it changes from: Registering to Registered.
-10. While we are here, let's check that the Microsoft.Storage resource provider is registered _(it should already be enabled, but it is a good opportunity to check before attempting to create a resource and get a surprise_), by clicking on REsource providers in the left-hand side menu and search for: Storage, if it is set to NotRegistered - click on Microsoft.Storage and click Register.
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Navigate to: Subscriptions
+3. Select the subscription that you want to enable SFTP preview for
+4. Click on: Preview features
+5. Search for: SFTP
+6. Click on: SFTP support for Azure Blob Storage and click Register - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._ 
+
+   _As you can see in the screenshot below, I had already registered mine:_
+7. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
+8. You can continue to hit refresh until it changes from: Registering to Registered.
+9. While we are here, let's check that the Microsoft.Storage resource provider is registered _(it should already be enabled, but it is a good opportunity to check before attempting to create a resource and get a surprise_), by clicking on REsource providers in the left-hand side menu and search for: Storage, if it is set to NotRegistered - click on Microsoft.Storage and click Register.
 
 To register the SFTP feature using PowerShell you can run the following cmdlet:
 

@@ -68,24 +68,24 @@ To register the SFTP feature using PowerShell you can run the following cmdlet:
 
 Now that the Preview feature has been registered, we can now create a new Storage account.
 
- 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
- 2. Click on +Create a resource
- 3. Type in: Storage account and click on the Microsoft Storage account resource and click Create
+ 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. Click on **+Create a resource**
+ 3. Type in: **Storage account** and click on the Microsoft Storage account resource and click Create
  4. ![Azure Portal - Storage account](/uploads/azureportal_createresourcestorageaccount.png "Azure Portal - Storage account")
- 5. Select your Subscription you enabled the SFTP feature in earlier
- 6. Select your Resource Group (or create a new resource group) to place your storage account into.
- 7. Select your storage account name _(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_),_ in my example, I am going with: sftpstorageacc1337
- 8. Select your Region, remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region for me (Australia East) is supported)_.
- 9. Select your performance tier, Premium isn't supported so I will select Standard
-10. Select your Redundancy, remember that GRS-R, GRS isn't supported at this time, I will select Zone-redundant storage (ZRS) so that my storage account is replicated between the 3 availability zones, but you can also select LRS _(Locally Redundant Storage)._
+ 5. Select your **Subscription** you enabled the SFTP feature in earlier
+ 6. Select your **Resource Group** _(or create a new resource group)_ to place your storage account into.
+ 7. **Select** your **storage account name **_(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_), in my example, I am going with: sftpstorageacc1337_
+ 8. **Select** your **Region**, remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region for me (Australia East) is supported)_.
+ 9. **Select** your **performance tier**, Premium isn't supported so I will select Standard
+10. **Select** your **Redundancy**, remember that GRS-R, GRS isn't supported at this time, I will select Zone-redundant storage (ZRS) so that my storage account is replicated between the 3 availability zones, but you can also select LRS _(Locally Redundant Storage)._
 11. ![Azure Portal - Create v2 Storage Account](/uploads/azureportal_createstorageaccount.png "Azure Portal - Create v2 Storage Account")
-12. Click Next: Advanced
-13. Leave the Security options, as-is and check: Enable hierarchical namespace, under the Data Lake Storage Gen2 subheading
-14. Click Enable SFTP
+12. Click **Next: Advanced**
+13. Leave the Security options, as-is and check: **Enable hierarchical namespace**, under the Data Lake Storage Gen2 subheading
+14. Click **Enable SFTP**
 15. ![](/uploads/azureportal_createstorageaccountenablesftp.png)
-16. Click: Next: Networking
-17. SFTP supports Private Endpoints (_as a blob storage sub-resource)_, but in this case, I will be keeping Connectivity as a Public endpoint (all networks)
+16. Click: **Next: Networking**
+17. SFTP supports Private Endpoints (_as a blob storage sub-resource)_, but in this case, I will be keeping Connectivity as a **Public endpoint (all networks)**
 18. ![](/uploads/azureportal_createstorageaccountnetwork.png)
-19. Click Next: Data Protection
-20. Here you can enable [soft-delete](https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview "Soft delete for blobs") for your blobs and containers, so if a file is deleted, it is retained for 7 days, until it's permanently deleted, I am going to leave mine set as the default of 7 days and click: Next: Tags
+19. Click **Next: Data Protection**
+20. Here you can enable [soft-delete](https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview "Soft delete for blobs") for your blobs and containers, so if a file is deleted, it is retained for 7 days, until it's permanently deleted, I am going to leave mine set as the default of 7 days and click: **Next: Tags**
 21. Add in any applicable Tags, ie who created it, when you created it, what you created it for and click **Review + Create**

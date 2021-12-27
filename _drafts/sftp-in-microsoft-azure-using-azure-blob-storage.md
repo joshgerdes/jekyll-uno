@@ -25,4 +25,4 @@ Before we head into the implementation, just a bit of housekeeping, this is curr
 
 You can connect to the SFTP storage account by using an SSH public-private keypair, or password _(or both)_. You can also set up individual HOME directories for each user.
 
-SFTP communicates on port: 22, which is the default port usually used by this service.
+SFTP communicates on port: 22, which is the default port usually used by this service, you will need to make sure you can communicate outbound to this port.

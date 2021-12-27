@@ -24,7 +24,7 @@ If you were like me, I just flicked to SSH as a habit.
 
 #### Home Directory is not accessible
 
-Make sure that the Home directory _(Folder)_ is created in your container.
+Make sure that the Home directory _(Folder)_ is created in your container, SFTP won't create this for you.
 
 Also make sure that the Home directory for the user, references Container/Folder, like the below:
 

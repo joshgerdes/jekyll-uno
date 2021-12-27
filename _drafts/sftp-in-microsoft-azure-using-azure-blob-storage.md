@@ -42,7 +42,7 @@ Because the SFTP functionality is currently in Private Preview, Microsoft has as
 
 * [SFTP Public Preview Interest Form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRxE4mlJMX2FKhD4ROGugH69URjBGVVdNSVRRWVUxSFA3WkM5OVk4STJFQS4u "SFTP Public Preview Interest Form")
 
-This MAY be required before proceeding to the next steps, initially I believe this was required but there appears to have been a few people who I know have registered the feature without the form - either way, the SFTP Public Preview Interest form, is a good opportunity to supply your use-case information to Microsoft directly, to help improve the nature of the service going forward.
+This MAY be required before proceeding to the next steps, initially I believe this was required - but there appears to have been a few people who I know have registered the feature without the form - either way, the SFTP Public Preview Interest form, is a good opportunity to supply your use-case information to Microsoft directly, to help improve the nature of the service going forward.
 
 #### Registering the Feature
 

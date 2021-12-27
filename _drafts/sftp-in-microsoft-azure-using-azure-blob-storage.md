@@ -96,3 +96,7 @@ In case you are interested in Infrastructure as Code, here is an Azure Bicep fil
 #### Setup SFTP
 
 Now that you have a compatible Azure storage account, it is time to enable SFTP!
+
+1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Navigate to the Storage account you have created for SFTP and click on it
+3. On the Storage account blade, under Settings, you will see: SFTP

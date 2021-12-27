@@ -48,12 +48,12 @@ This MAY be required before proceeding to the next steps, initially I believe th
 
 In order to create an Azure Storage account, that supports SFTP - we need to enable the Preview Feature.
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
-2. Navigate to: Subscriptions
-3. Select the subscription that you want to enable SFTP preview for
-4. Click on: Preview features
-5. Search for: SFTP
-6. Click on: SFTP support for Azure Blob Storage and click Register - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._ 
+1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Navigate to: **Subscriptions**
+3. **Select** the **subscription** that you want to enable **SFTP** preview for
+4. Click on: **Preview features**
+5. Search for: **SFTP**
+6. Click on: **SFTP support for Azure Blob Storage** and click **Register** - _this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personnel based on the Public Preview Interest form - my feature registration occurred quite quickly, so there is a chance that they either have automated the approvals or I was just lucky._ 
 
    _As you can see in the screenshot below, I had already registered mine:_
 7. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")

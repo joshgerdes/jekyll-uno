@@ -115,3 +115,17 @@ Now that you have a compatible Azure storage account, it is time to enable SFTP!
 16. ![Azure Portal - Enable SFTP](/uploads/azureportal_sftp_localusercreatepassword.png "Azure Portal - Enable SFTP")
 17. You should see the connection string of the user, along with the Authentication method and container permissions.
 18. ![Azure Storage Account SFTP - Local User Created](/uploads/azureportal_sftp_localusercreated.png "Azure Storage Account SFTP - Local User Created")
+
+### Test Connectivity via SFTP to an Azure Storage Account
+
+I will be testing connectivity to the SFTP Azure Storage account using Windows 11, although the same concepts apply across various other operating systems _(Linux, OSX etc)_.
+
+#### Test using SSH
+
+1. Make sure you have a copy of the Connection String from the SFTP user account created earlier
+2. Open Command Prompt
+3. Type in sftp CONNECTIONSTRING, example below and press Enter:
+   * _sftp sftpstorageacc1337.lukeftpuser@sftpstorageacc1337.blob.core.windows.net_
+4. If you get a prompt to verify the authenticity of the host matches (ie the name/URL of the storage account matches) and type in: Yes, to add the storage account to your known hosts list
+5. Press Enter and paste in the copy of the password that was generated for you earlier.
+6. ![](/uploads/sftp_windowstest.png)

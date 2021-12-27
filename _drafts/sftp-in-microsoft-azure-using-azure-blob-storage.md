@@ -4,7 +4,7 @@ title: SFTP in Microsoft Azure using Azure Blob Storage
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 
@@ -36,6 +36,14 @@ This article, assumes you have an Azure subscription and rights to create a new 
 * The hierarchical namespace feature of the account must be enabled for existing storage accounts. To enable the hierarchical namespace feature, see [Upgrade Azure Blob Storage with Azure Data Lake Storage Gen2 capabilities](https://docs.microsoft.com/en-us/azure/storage/blobs/upgrade-to-data-lake-storage-gen2-how-to).
 * If you're connecting from an on-premises network, make sure that your client allows outgoing communication through port 22. The SFTP uses that port.
 
+#### Fill out the SFTP Public Preview Interest Form
+
+Because the SFTP functionality is currently in Private Preview, Microsoft has asked that anyone interested in the SFTP Preview fill out a Microsoft Forms: 
+
+* [SFTP Public Preview Interest Form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRxE4mlJMX2FKhD4ROGugH69URjBGVVdNSVRRWVUxSFA3WkM5OVk4STJFQS4u "SFTP Public Preview Interest Form")
+
+This is required before proceeding to the next steps.
+
 #### Registering the Feature
 
 In order to create an Azure Storage account, that supports SFTP - we need to enable the Preview Feature.
@@ -45,7 +53,7 @@ In order to create an Azure Storage account, that supports SFTP - we need to ena
  3. Select the subscription that you want to enable SFTP preview for
  4. Click on: Preview features
  5. Search for: SFTP
- 6. Click on: SFTP support for Azure BLob Storage and click Register - this may take 5-10 minutes to be registered.
+ 6. Click on: SFTP support for Azure BLob Storage and click Register - this may take from minutes to a few days to be registered, as each preview request may need to be manually approved by Microsoft personsell.
  7. _As you can see in the screenshot below, I had already registered mine:_
  8. ![Azure Portal SFTP Preview Feature](/uploads/azureportal_sftppreview.png "Azure Portal SFTP Preview Feature")
  9. You can continue to hit refresh until it changes from: Registering to Registered.
@@ -67,3 +75,4 @@ Now that the Preview feature has been registered, we can now create a new Storag
 6. Select your Resource Group (or create a new resource group) to place your storage account into.
 7. Select your storage account name _(_[_this needs to be globally unique and a maximum of 24 characters_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftstorage "Naming rules and restrictions for Azure resources")_),_ in my example, I am going with: sftpstorageacc1337
 8. Select your Region, remember that only specific regions currently have SFTP support at the time of this article _(luckily for me - the closest Azure region for me (Australia East) is supported)_.
+9. Select your performance

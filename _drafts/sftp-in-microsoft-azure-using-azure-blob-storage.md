@@ -90,3 +90,5 @@ Now that the Preview feature has been registered, we can now create a new Storag
 20. Here you can enable [soft-delete](https://docs.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview "Soft delete for blobs") for your blobs and containers, so if a file is deleted, it is retained for 7 days, until it's permanently deleted, I am going to leave mine set as the default of 7 days and click: **Next: Tags**
 21. Add in any applicable Tags, ie who created it, when you created it, what you created it for and click **Review + Create**
 22. Review your configuration, make sure that Enable SFTP is enabled with Hierarchical namespace and click **Create**.
+
+You can find a bicep file I created to create a storage account ready for SFTP here: [https://gist.github.com/lukemurraynz/e2e087010c73167fdb2ce4a44ad660e9](https://gist.github.com/lukemurraynz/e2e087010c73167fdb2ce4a44ad660e9 "https://gist.github.com/lukemurraynz/e2e087010c73167fdb2ce4a44ad660e9")

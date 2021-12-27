@@ -13,7 +13,7 @@ SSH File Transfer Protocol _(SFTP)_ support is now supported in Preview for Azur
 
 Although tools such as Storage Explorer, Data Factory, AzCopy allows a copy to and from Azure storage accounts, sometimes your applications need more traditional integration, so SFTP is a welcome addition to the Microsoft Azure ecosystem, which in some cases removes the need for additional Virtual Machine(s).
 
-This support enables standard SFTP connectivity to an Azure Storage account. As an Azure PaaS _(Platform as a Service)_ resource, it offers additional flexibility, reduces operational overhead, and increases Redundancy and scalability.
+This support enables standard SFTP connectivity to an Azure Storage account. As an Azure PaaS _(Platform as a Service)_ resource, it offers additional flexibility, reduces operational overhead, and increases redundancy and scalability.
 
 We will run through the initial setup of the Azure Storage account using the Azure Portal.
 

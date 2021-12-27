@@ -130,7 +130,7 @@ I will be testing connectivity to the SFTP Azure Storage account using Windows 1
 5. Press **Enter** and paste in the copy of the password that was generated for you earlier.
 6. You should be **connected to the Azure Storage account via SFTP**!
 7. As you can see below, I am in the Files folder, which is my users home folder and there is a file named: Test in it.
-8. ![](/uploads/sftp_windowstest.png)
+8. ![SFTP Windows](/uploads/sftp_windowstest.png "SFTP Windows")
 
    > Once you have connected to SFTP using the Windows command line you can type in: **?**
    >

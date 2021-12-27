@@ -27,4 +27,17 @@ Make sure that the Home directory _(Folder)_ is created in your container.
 
 Also make sure that the Home directory for the user, references Container/Folder, like the below:
 
-![](/uploads/azureportal_sftplocalusercreate.png)
+![Azure SFTP - Add Local User](/uploads/azureportal_sftplocalusercreate.png "Azure SFTP - Add Local User")
+
+#### Wrong username, authentication failed
+
+When attempting to connect to SFTP using a tool such as WinSCP, I got: 
+
+* Using username "lukeftpuser".
+* Authentication failed.
+
+The username is actually comprised of:
+
+STORAGEACCOUNTNAME+FTPNAME, ie: sftpstorageacc1337.lukeftpuser
+
+![](/uploads/sftp_winscptest.png)

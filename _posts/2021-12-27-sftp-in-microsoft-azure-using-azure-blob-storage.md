@@ -23,7 +23,7 @@ Before we head into the implementation, just a bit of housekeeping, this is curr
 
 > During the public preview, the use of SFTP does not incur any additional charges. However, the standard transaction, storage, and networking prices for the underlying Azure Data Lake Store Gen2 account still apply. SFTP might incur additional charges when the feature becomes generally available. As of the time of the preview SFTP support is only avaliable in certain [regions](https://docs.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support#regional-availability "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)"){:target="_blank"}.
 
-You can connect to the SFTP storage account by using local _(to the SFTP storage account)_ SSH public-private keypair or Password _(or both)_. You can also set up individual HOME directories _(containers)_ for each user _(maximum 1000 local user accounts_).
+You can connect to the SFTP storage account by using local _(to the SFTP storage account)_ SSH public-private keypair or Password _(or both)_. You can also set up individual HOME directories _(because of the hierarchical namespace, these are folders not containers)_ for each user _(maximum 1000 local user accounts_).
 
 ![SFTP Azure Storage Account - High Level Diagram](/images/posts/SFTP_Azure_HLDiagram.png "SFTP Azure Storage Account - High Level Diagram")
 

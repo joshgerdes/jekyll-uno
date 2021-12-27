@@ -132,11 +132,18 @@ I will be testing connectivity to the SFTP Azure Storage account using Windows 1
 7. As you can see below, I am in the Files folder, which is my users home folder and there is a file named: Test in it.
 8. ![](/uploads/sftp_windowstest.png)
 
-   Once you have connected to SFTP using the Windows command line you can type in: **?**
-
-   That will give you a list of all the available commands to run, ie upload files etc 
+   > Once you have connected to SFTP using the Windows command line you can type in: **?**
+   >
+   > That will give you a list of all the available commands to run, ie upload files etc 
 
 #### Test using WinSCP
 
 1. Make sure you have a copy of the Connection String and user password from the SFTP user account created earlier
-2. If you haven't already, download [WinSCP]() and install it
+2. If you haven't already, **download** [**WinSCP **]()and **install** it
+3. You should be greeted by the **Login page** _(but if you aren't, click on Session, New Session)_
+4. For the hostname, type in the **URL** for the **storage account** _(after the @ in the connection string)_
+5. For the **username** type in everything before the @
+6. Type in your **password**
+7. **Verify** that the port is 22 and file protocol is **SFTP** and click **Login**
+8. ![Azure SFTP - WinSCP](/uploads/sftp_winscptest.png "Azure SFTP - WinSCP")
+9. ![Azure SFTP - WinSCP](/uploads/sftp_winscptest2.png "Azure SFTP - WinSCP")

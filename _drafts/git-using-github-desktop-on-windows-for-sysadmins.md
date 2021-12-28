@@ -75,3 +75,11 @@ If you have an Azure DevOps git repository, then follow the steps above – othe
 7. Click Clone
 
 Congratulations, you have now set up a Github git repository using Github Desktop.
+
+### Using Github Desktop
+
+Now that you have a git repository cloned locally, it's time to use it.
+
+#### Initial Commit
+
+Once you have a file created and saved into the folder of your git repository, ie a PowerShell script, you will want to commit it to the git repository.

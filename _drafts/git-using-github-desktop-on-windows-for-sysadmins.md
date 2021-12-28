@@ -101,4 +101,11 @@ Congratulations you now committed your first file into git! It wasn’t that dif
 
 #### Restore file from the previous version
 
-One of the benefits of using git is version control and being able to restore a file
+One of the benefits of using git is version control and being able to restore a file if something stops working or someone had an 'Oops!' moment! With Github Desktop, restoring a previous version is easy.
+
+1. Open Github Desktop
+2. Click on: Current repository to make sure your repository is selected
+3. Click on History _(you may need to click Fetch Origin if files have been updated remotely)_
+4. As you can see, someone (ie Luke Murray) has made a change to my ‘HelloWorld.ps1’ file, to be: “I like Unicorns” and changed the colour of the background and foreground to be both ‘Yellow’.
+5. Using Github Desktop, I can simply right-click that file and select Revert changes in the commit
+6. ![Github Desktop - Revert changes](/uploads/githubdesktop-revertchanges.png "Github Desktop - Revert changes")

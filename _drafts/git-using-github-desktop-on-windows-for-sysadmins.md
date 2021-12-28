@@ -112,3 +112,18 @@ One of the benefits of using git is version control and being able to restore a 
 7. You will now have a new entry in the history that will revert the commit and you can easily push it back to Origin again.
 
 Congratulations, you have successfully reverted a commit to a previous version using Github Desktop.
+
+#### Working with branches
+
+Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is usually where you have your production or fully tested resources)_.
+
+ 1. Open Github Desktop
+ 2. Click on: Current repository to make sure your repository is selected
+ 3. To create a branch click on the Current branch and select New branch and give it a name, ie Dev
+ 4. Make a change to the file like you normally would and save
+ 5. Github Desktop has automatically added your changes and you can commit them to the dev branch, without touching master.
+ 6. ![Github Desktop - Branch commit](/uploads/githubdesktop-branchcommit.png "Github Desktop - Branch commit")
+ 7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by git!
+ 8. When you are ready to merge the dev branch into master, you can click the current branch
+ 9. Select: Choose a branch to merge into master
+10. Select your branch, ie dev

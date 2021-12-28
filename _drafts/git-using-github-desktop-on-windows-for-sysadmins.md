@@ -61,3 +61,12 @@ If you have an Azure DevOps git repository, then follow the steps below – if y
 19. Github Desktop should now clone your repository locally.
 
 Congratulations, you have now set up an Azure DevOps git repository using Github Desktop.
+
+### Add your Github repository
+
+If you have an Azure DevOps git repository, then follow the steps above – otherwise, follow these steps to add your Github repository into Github Desktop.
+
+1. Open Github Desktop
+2. Click File
+3. Click Clone repository….
+4. 

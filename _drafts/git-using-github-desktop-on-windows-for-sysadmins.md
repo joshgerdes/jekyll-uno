@@ -109,3 +109,6 @@ One of the benefits of using git is version control and being able to restore a 
 4. As you can see, someone (ie Luke Murray) has made a change to my ‘HelloWorld.ps1’ file, to be: “I like Unicorns” and changed the colour of the background and foreground to be both ‘Yellow’.
 5. Using Github Desktop, I can simply right-click that file and select Revert changes in the commit
 6. ![Github Desktop - Revert changes](/uploads/githubdesktop-revertchanges.png "Github Desktop - Revert changes")
+7. You will now have a new entry in the history that will revert the commit and you can easily push it back to Origin again.
+
+Congratulations, you have successfully reverted a commit to a previous version using Github Desktop.

@@ -69,4 +69,9 @@ If you have an Azure DevOps git repository, then follow the steps above – othe
 1. Open Github Desktop
 2. Click File
 3. Click Clone repository….
-4. 
+4. ![Github Desktop - Clone repository](/uploads/githubdesktop-cloneareposnap.png "Github Desktop - Clone repository")
+5. On the Github.com tab, enter in your Github credentials
+6. Select the Local path of where you want the Git repository to be saved locally on your device
+7. Click Clone
+
+Congratulations, you have now set up a Github git repository using Github Desktop.

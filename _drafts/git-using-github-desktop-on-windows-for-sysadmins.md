@@ -126,4 +126,14 @@ Another great function of Git branches. Branches allow you to work on features w
  7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by git!
  8. When you are ready to merge the dev branch into master, you can click the current branch
  9. Select: Choose a branch to merge into master
-10. Select your branch, ie dev
+10. Select your branch, _ie dev_
+11. ![Github Desktop - Merge branch](/uploads/githubdesktop-branchmerge.png "Github Desktop - Merge branch")
+12. Click on create a merge commit
+13. You should see a message in Github notifying that the merge was successful and you can push your changes to the origin repository.
+14. Github Desktop should redirect you to the master branch and you can now see your changes:
+15. ![](/uploads/githubdesktop-branchcommited.png)
+16. You can go back to using dev to develop further features, testing etc and repeat the same process.
+
+Using a master branch allows others to get ‘production-ready scripts or codes’ while you may be still working on functionality that you don’t quite want to be released yet.
+
+Hopefully, this article gives you a good base to start your git journey! There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!

@@ -18,7 +18,7 @@ Even though you appear to have connected successfully, you may see the following
 * PTY allocation request failed on channel 0
 * shell request failed on channel 0
 
-The solution for this was simple, switch from SSH to **SFTP**
+You may laugh, but the solution for this was very simple, switch from SSH to **SFTP**!
 
 If you were like me, I just flicked to SSH as a habit.
 

@@ -19,7 +19,7 @@ These thoughts are purely my own.
 
 ![Tech Lead - Venn diagram](/uploads/techlead.png "Tech Lead - Venn diagram")
 
-This is what a day in the life of a technical lead is to me:
+This is what a day in the life of a technical lead means to me:
 
 #### Day in the Life of a Tech Lead:
 

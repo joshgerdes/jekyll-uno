@@ -32,4 +32,4 @@ Installation of Github Desktop is pretty simple, but assuming you have rights to
 1. In your web browser, navigate to [Github Desktop](https://desktop.github.com/) homepage and click on: **Download**
 2. ![Github Desktop - Download](/uploads/githubdesktop-download.png "Github Desktop - Download")
 3. You should have a file such as GitHubDesktopSetup-x64.exe, once it's downloaded _(should only take a few seconds, the file is about 109 MB at the time this was written)_ then run it to install.
-4. 
+4. ![Github Desktop - Installing](/uploads/githubdesktop-installing.png "Github Desktop - Installing")

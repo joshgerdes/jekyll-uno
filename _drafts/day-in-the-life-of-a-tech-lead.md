@@ -45,4 +45,4 @@ This is what a day in the life of a technical lead is to me:
 * Log what's useful, monitor what matters, alert on what's actionable
 * Empower others while making sure that everything is auditable, standardised.
 
-The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn") for independent consulting on Ways of Working, Continuous improvements, I had attended a few of their workshops on ways of working, consulting and 
+The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn") for independent consulting on Ways of Working, Continuous improvements, I had attended a few of their workshops on ways of working, consulting and learnt about this kind of thinking.

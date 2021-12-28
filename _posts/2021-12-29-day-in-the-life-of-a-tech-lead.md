@@ -41,6 +41,8 @@ This is what a day in the life of a technical lead means to me:
 * Make your work visible. Shift your value to performance.
 * Work is never completed. Establish feedback loops.
 * Target high impact problems.
+* Try, Learn, Adapt, Try again
+* Agile is about speed to adapt, not velocity
 * Log what's useful, monitor what matters, alert on what's actionable
 * Empower others while making sure that everything is auditable, standardised.
 

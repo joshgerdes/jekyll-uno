@@ -13,7 +13,7 @@ Being a 'Technical Lead' or 'Tech Lead' means different things to some people an
 
 > "A technical lead is a professional who oversees a team of technical personnel at a software or technology company. They often lead software development or software engineering teams and troubleshoot technical issues that involve software development, engineering tasks and product releases."
 
-Although I agree with this, I would flesh out a bit more of architectural governance (or technical assurance) across it - it also doesn't need to be software development heavy; it can sit in the operational and delivery spaces as well _(waterfall or agile)_ and is more than a specific role, but a frame of mind.
+Although I agree with this, I would flesh out a bit more of architectural governance _(or technical assurance, which is what the role really is)_ across it - it also doesn't need to be software development heavy; it can sit in the operational and delivery spaces as well _(waterfall or agile)_ and is more than a specific role, but a frame of mind.
 
 ![Tech Lead - Venn diagram](/uploads/techlead.png "Tech Lead - Venn diagram")
 

@@ -42,3 +42,7 @@ The username is actually comprised of:
 STORAGEACCOUNTNAME+FTPNAME, ie: sftpstorageacc1337.lukeftpuser
 
 ![WinSCP Connection Azure SFTP](/uploads/sftp_winscptest.png "WinSCP Connection Azure SFTP")
+
+#### Unable to find Azure Storage SSH Keys
+
+This is not an error, but Azure Keyvault, does not currently support SSH keypairs, so once they are created they go a Microsoft.Compute.sshPublicKeys area found here: [SSH Keys](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FsshPublicKeys "SSH Keys"){:target="_blank"}

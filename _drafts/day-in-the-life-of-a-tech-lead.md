@@ -9,11 +9,11 @@ header:
   teaser: "/uploads/techlead.png"
 
 ---
-Being a 'Technical Lead' or 'Tech Lead' means different things to some people and organisations, based on definitions found online a Technical Lead is:
+Being a 'Technical Lead' or 'Tech Lead' means different things to some people and organisations; based on definitions found online, a Technical Lead is:
 
 > "A technical lead is a professional who oversees a team of technical personnel at a software or technology company. They often lead software development or software engineering teams and troubleshoot technical issues that involve software development, engineering tasks and product releases."
 
-Although I do not disagree with this, I would flesh out a bit more of architectural governance across it - it also doesn't need to be software development heavy, it can sit in the operational and delivery spaces as well _(waterfall or agile)_.
+Although I agree with this, I would flesh out a bit more of architectural governance across it - it also doesn't need to be software development heavy; it can sit in the operational and delivery spaces as well _(waterfall or agile)_.
 
 These thoughts are purely my own.
 
@@ -31,8 +31,8 @@ This is what a day in the life of a technical lead is to me:
 * Work alongside Security and Developers to enable cross-team visibility and collaboration
 * Champion improvements in People/Processes and ways of working
 * Work alongside Chapter Members and Chapter Lead to develop Training/Skill programs for Technical areas
-* Develop and promote an ‘everything as code’, ‘everything is automated’ mindset
-* Problem/Incident Management _(ie Continous improvement)_
+* Develop and promote an 'everything as code', 'everything is automated' mindset
+* Problem/Incident Management _(i.e. Continous improvement)_
 
 #### A Technical lead mindset may look like below:
 
@@ -40,11 +40,10 @@ This is what a day in the life of a technical lead is to me:
 * Build what you can't buy. Buy what you can't live without
 * Make your work visible. Shift your value to performance.
 * Work is never completed. Establish feedback loops.
-
-  Target high impact problems.
+* Target high impact problems.
 * Log what's useful, monitor what matters, alert on what's actionable
 * Empower others while making sure that everything is auditable, standardised.
 
-The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn") for independent consulting on Ways of Working, Continuous improvements, I had attended a few of their workshops on ways of working, consulting and learnt about this kind of thinking.
+The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn") for independent consulting on Ways of Working, Continuous improvements; I attended a few of their workshops on ways of working, consulting, and learning about this kind of thinking.
 
-Overall, Information Technology roles are now blending disciplines, that once required 
+Overall, I have noticed that Information Technology roles are now blending disciplines that were once required. specific job roles _(ie Business Analyst, Service Delivery Manager, Developer, Architect),_ although pure technical roles still exist with Cloud technologies, different skillsets are required to get the most value out of technology stacks.

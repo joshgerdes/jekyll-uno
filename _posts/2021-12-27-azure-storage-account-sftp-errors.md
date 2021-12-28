@@ -45,4 +45,4 @@ STORAGEACCOUNTNAME+FTPNAME, ie: sftpstorageacc1337.lukeftpuser
 
 #### Unable to find Azure Storage SSH Keys
 
-This is not an error, but Azure Keyvault, does not currently support SSH keypairs, so once they are created they go a Microsoft.Compute.sshPublicKeys area found here: [SSH Keys](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FsshPublicKeys "SSH Keys"){:target="_blank"}
+This is not an error, but Azure Keyvault, does not currently support SSH keypairs, so once they are created by Azure, they are stored in a Microsoft.Compute.sshPublicKeys resource found here: [SSH Keys](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FsshPublicKeys "SSH Keys"){:target="_blank"}

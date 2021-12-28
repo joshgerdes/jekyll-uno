@@ -95,3 +95,4 @@ Once you have a file created and saved into the folder of your git repository, i
  9. ![Github Desktop - Header](/uploads/githubdesktop-header.png "Github Desktop - Header")
 10. Once it has been committed, you should be able to see the file on the origin git repository, you can Push multiple local git changes at once.
 11. If you click on: History should now see your commit, with your file and description _(as you can see I was using an old PowerShell repository, that I had merged into other repositories since then, but was just using for this article)._
+12. ![Github Desktop - Initial commit](/uploads/githubdesktop-initialhelloworldcommit.png "Github Desktop - Initial commit")

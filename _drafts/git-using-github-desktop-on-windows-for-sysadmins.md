@@ -33,3 +33,18 @@ Installation of Github Desktop is pretty simple, but assuming you have rights to
 2. ![Github Desktop - Download](/uploads/githubdesktop-download.png "Github Desktop - Download")
 3. You should have a file such as GitHubDesktopSetup-x64.exe, once it's downloaded _(should only take a few seconds, the file is about 109 MB at the time this was written)_ then run it to install.
 4. ![Github Desktop - Installing](/uploads/githubdesktop-installing.png "Github Desktop - Installing")
+
+Congratulations, you have now installed Github Desktop!
+
+### Add your Azure DevOps repository
+
+If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
+
+1. Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps")
+2. Navigate to the project you want to add to Github Desktop
+3. Click on Repos, Files
+4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
+5. In the address bar, you will see your URL, it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
+6. Copy the URL and open Github Desktop
+7. Click on File and Clone a repostory
+8. Click on URL

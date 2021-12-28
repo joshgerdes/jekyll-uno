@@ -13,14 +13,23 @@ header:
 
 Although tools such as Visual Studio Code, allows you to easily utilize git source control, and of course, you can use git directly from the command line, sometimes you simply want an easy way to leverage git through a point and click interface directly on your Desktop, there a lot of tools out there to give you easy access to git, but today I will concentrate on Github Desktop.
 
-If you are looking at something a bit more powerful, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree).
+If you are looking at something a bit more powerful, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree "Atlassian Sourcetree").
 
 Introducing Github Desktop... “_Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow.”_
 
 ![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")
 
-Github Desktop gives you a clean, light and easy to use tool to work with git repositories, that is constantly [kept up to date](https://github.com/desktop/desktop) and improved upon
+Github Desktop gives you a clean, light and easy to use tool to work with git repositories, that is constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon
 
 Although Github Desktop, is published by Github – this doesn’t mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
 
-This article assumes that you have a Git repository initialised already, you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min) or [Github](https://github.com/), they are both owned by Microsoft, personally, I have moved from Azure DevOps to Github for my git repositories, but utilise AzureDevOps pipelines.
+This article assumes that you have a Git repository initialised already, you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"), they are both owned by Microsoft, personally, I have moved from Azure DevOps to Github for my git repositories, but utilise AzureDevOps pipelines.
+
+### Install Github Desktop
+
+Installation of Github Desktop is pretty simple, but assuming you have rights to install the software:
+
+1. In your web browser, navigate to [Github Desktop](https://desktop.github.com/) homepage and click on: **Download**
+2. ![Github Desktop - Download](/uploads/githubdesktop-download.png "Github Desktop - Download")
+3. You should have a file such as GitHubDesktopSetup-x64.exe, once it's downloaded _(should only take a few seconds, the file is about 109 MB at the time this was written)_ then run it to install.
+4. 

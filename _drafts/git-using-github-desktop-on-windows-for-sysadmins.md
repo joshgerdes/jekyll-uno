@@ -84,11 +84,14 @@ Now that you have a git repository cloned locally, it's time to use it.
 
 Once you have a file created and saved into the folder of your git repository, ie a PowerShell script, you will want to commit it to the git repository.
 
-1. Open Github Desktop
-2. Click on: Current repository to make sure your repository is selected
-3. ![Github Desktop - Initial Commit](/uploads/githubdesktop-initialhelloworld.png "Github Desktop - Initial Commit")
-4. In my example, I have created a new file called: HelloWorld.ps1 in my PowerShell repository
-5. What you can see in the screenshot below, is the various components that make up the Github Desktop, you can see the changed file (ie the new file), the contents of the file and what will be added, the commit title and the all-important commit description.
-6. ![Github Desktop - Overview](/uploads/githubdesktop-productoverview.png "Github Desktop - Overview")
-7. You can change the title to something more appropriate if you want, but with your commit description, this is what you will use for versioning and seeing what changes you made in the future from a quick glance – make sure it's an appropriate description and click Commit to master.
-8. Committing it to master does not push it to its ‘Origin’ – ie the actual remote git repository _(stored in Github or Azure DevOps)_, committing it will commit to the local git repository, this allows you to work on code locally, without requiring every change to be uploaded to a local repository. In order to commit to the origin and remote repository click on: Push origin.
+ 1. Open Github Desktop
+ 2. Click on: Current repository to make sure your repository is selected
+ 3. ![Github Desktop - Initial Commit](/uploads/githubdesktop-initialhelloworld.png "Github Desktop - Initial Commit")
+ 4. In my example, I have created a new file called: HelloWorld.ps1 in my PowerShell repository
+ 5. What you can see in the screenshot below, is the various components that make up the Github Desktop, you can see the changed file (ie the new file), the contents of the file and what will be added, the commit title and the all-important commit description.
+ 6. ![Github Desktop - Overview](/uploads/githubdesktop-productoverview.png "Github Desktop - Overview")
+ 7. You can change the title to something more appropriate if you want, but with your commit description, this is what you will use for versioning and seeing what changes you made in the future from a quick glance – make sure it's an appropriate description and click Commit to master.
+ 8. Committing it to master does not push it to its ‘Origin’ – ie the actual remote git repository _(stored in Github or Azure DevOps)_, committing it will commit to the local git repository, this allows you to work on code locally, without requiring every change to be uploaded to a local repository. In order to commit to the origin and remote repository click on: Push origin.
+ 9. ![Github Desktop - Header](/uploads/githubdesktop-header.png "Github Desktop - Header")
+10. Once it has been committed, you should be able to see the file on the origin git repository, you can Push multiple local git changes at once.
+11. If you click on: History should now see your commit, with your file and description _(as you can see I was using an old PowerShell repository, that I had merged into other repositories since then, but was just using for this article)._

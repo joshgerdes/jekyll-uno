@@ -115,7 +115,7 @@ Congratulations, you have successfully reverted a commit to a previous version u
 
 #### Working with branches
 
-Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is where you can have your production or thoroughly tested resources)_.
+A great function of Git is branches. Branches allow you to work on features without touching the main or master branch _(which is where you can have your production or thoroughly tested resources)_.
 
  1. Open Github Desktop
  2. Click on: Current repository to make sure your repository is selected

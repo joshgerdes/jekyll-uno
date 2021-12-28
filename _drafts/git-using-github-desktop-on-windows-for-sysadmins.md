@@ -115,7 +115,7 @@ Congratulations, you have successfully reverted a commit to a previous version u
 
 #### Working with branches
 
-A significant function of Git is the ability to create and use branches. Branches allow you to work on features without touching the main or master branch _(where you can have your production or thoroughly tested resources for example)_.
+A significant function of Git is the ability to create and use branches. Branches allow you to work on features without touching the main or master branch _(where you can have your production or thoroughly tested resources, for example)_.
 
  1. Open Github Desktop
  2. Click on: Current repository to make sure your repository is selected

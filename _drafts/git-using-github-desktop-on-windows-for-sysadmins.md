@@ -40,11 +40,16 @@ Congratulations, you have now installed Github Desktop!
 
 If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
 
-1. Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps")
-2. Navigate to the project you want to add to Github Desktop
-3. Click on Repos, Files
-4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
-5. In the address bar, you will see your URL, it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
-6. Copy the URL and open Github Desktop
-7. Click on File and Clone a repostory
-8. Click on URL
+ 1. Sign in to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps")
+ 2. Navigate to the project you want to add to Github Desktop
+ 3. Click on Repos, Files
+ 4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
+ 5. In the address bar, you will see your URL, it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
+ 6. Copy the URL and open Github Desktop
+ 7. Click on File and Clone a repository
+ 8. Click on URL
+ 9. ![Github Desktop - Clone a Repository](/uploads/githubdesktop-clonearepo.png "Github Desktop - Clone a Repository")
+10. Paste in the repository URL you copied earlier
+11. Select the Local path of where you want the Git repository to be saved locally on your device
+12. Now we need to generate git credentials to clone your repository, navigate back to Azure DevOps
+13. ![Azure DevOps - Clone](/uploads/azuredevops-clonerepo.png "Azure DevOps - Clone")

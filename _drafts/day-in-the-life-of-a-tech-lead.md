@@ -26,7 +26,7 @@ This is what a day in the life of a technical lead is to me:
 * Work alongside: Technical Product Owners, Chapter Members, Architecture, Business stakeholders and Service Partners to develop/roadmap/architect and improve technology.
 * Manage delivery and operational risks and dependencies, and remove impediments to the achievement of the team objectives
 * Test and develop roadmaps for preview Cloud capabilities for immediate or future value
-* Act as a Subject Matter Expert (or Consultant) to assist in Design Decisions, Monitoring, Cost and Capacity Requirements
+* Act as a Subject Matter Expert _(or Consultant)_ to assist in Design Decisions, Monitoring, Cost and Capacity Requirements
 * Develop Governance processes for onboarding services into BAU, enabling Technology Infrastructure and Operations staff to use technology in a consistent and secure manner
 * Work alongside Security and Developers to enable cross-team visibility and collaboration
 * Champion improvements in People/Processes and ways of working

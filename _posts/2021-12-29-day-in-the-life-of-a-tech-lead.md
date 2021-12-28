@@ -44,6 +44,6 @@ This is what a day in the life of a technical lead means to me:
 * Log what's useful, monitor what matters, alert on what's actionable
 * Empower others while making sure that everything is auditable, standardised.
 
-The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn"){:target="_blank"} for independent consulting on Ways of Working, Continuous improvements; I attended a few of their workshops on ways of working, consulting, and learning about this kind of thinking.
+The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn"){:target="_blank"} for independent consulting on Ways of Working, Continuous improvement; I attended a few of their workshops on ways of working, consulting, and it helped me take a step back and look at what this kind of mindset may look like, or should be and current blockers.
 
-Overall, I have noticed that Information Technology roles are now blending disciplines that were once required. specific job roles _(ie Business Analyst, Service Delivery Manager, Developer, Architect),_ although pure technical roles still exist with Cloud technologies, different skillsets are required to get the most value out of technology stacks.
+Overall, I have noticed that Information Technology roles are now blending disciplines that once required specific job roles _(ie Business Analyst, Service Delivery Manager, Developer, Architect),_ although pure technical roles still exist with Cloud technologies, different skillsets are required to get the most value out of technology stacks, as technology becomes more consumable.

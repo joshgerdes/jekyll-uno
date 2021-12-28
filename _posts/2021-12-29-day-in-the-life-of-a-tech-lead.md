@@ -15,8 +15,6 @@ Being a 'Technical Lead' or 'Tech Lead' means different things to some people an
 
 Although I agree with this, I would flesh out a bit more of architectural governance across it - it also doesn't need to be software development heavy; it can sit in the operational and delivery spaces as well _(waterfall or agile)_.
 
-These thoughts are purely my own.
-
 ![Tech Lead - Venn diagram](/uploads/techlead.png "Tech Lead - Venn diagram")
 
 This is what a day in the life of a technical lead means to me:

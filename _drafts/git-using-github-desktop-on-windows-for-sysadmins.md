@@ -9,21 +9,21 @@ header:
   teaser: "/uploads/githubdesktop-overview.png"
 
 ---
-[Git](https://en.wikipedia.org/wiki/Git) (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_ has been around for years _(development and the first release began in 2005 by Linus Torvolds)_, and although primary driven and consumed by software developers – it is now a staple of everyday life for an IT professional of many disciplines _(ie Operations, Delivery),_ even if a git repository is used to store your PowerShell scripts _(hint – it should!)_.
+[Git](https://en.wikipedia.org/wiki/Git) (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_ has been around for years _(development and the first release began in 2005 by Linus Torvolds)_, and although primary driven and consumed by software developers – it is now a staple of everyday life for an IT professional of many disciplines _(i.e. Operations, Delivery),_ even if a git repository is used to store your PowerShell scripts _(hint – it should!)_.
 
-Although tools such as Visual Studio Code, allows you to easily utilize git source control, and of course, you can use git directly from the command line, sometimes you simply want an easy way to leverage git through a point and click interface directly on your Desktop, there a lot of tools out there to give you easy access to git, but today I will concentrate on Github Desktop.
+Although tools such as Visual Studio Code allows you to utilize git source control efficiently, and of course, you can use Git directly from the command line, sometimes you want an easy way to leverage Git through a point and click interface now on your Desktop, there a lot of tools out there to give you easy access to Git, but today I will concentrate on Github Desktop.
 
 If you are looking at something a bit more powerful, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree "Atlassian Sourcetree").
 
-Introducing Github Desktop... “_Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow.”_
+Introducing Github Desktop... _"Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow."_
 
 ![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")
 
-Github Desktop gives you a clean, light and easy to use tool to work with git repositories, that is constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon
+Github Desktop gives you a clean, light and easy to use tool to work with git repositories that are constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon
 
-Although Github Desktop, is published by Github – this doesn’t mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
+Although Github Desktop is published by Github – this doesn't mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
 
-This article assumes that you have a Git repository initialised already, you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"), they are both owned by Microsoft, personally, I have moved from Azure DevOps to Github for my git repositories, but utilise AzureDevOps pipelines.
+This article assumes that you have a Git repository initialized already; you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"). Microsoft owns Azure DevOps and Github; personally, I have moved from Azure DevOps to Github for my git repositories but utilize AzureDevOps pipelines.
 
 ### Install Github Desktop
 
@@ -31,12 +31,12 @@ Installation of Github Desktop is pretty simple, but assuming you have rights to
 
 1. In your web browser, navigate to [Github Desktop](https://desktop.github.com/) homepage and click on: **Download**
 2. ![Github Desktop - Download](/uploads/githubdesktop-download.png "Github Desktop - Download")
-3. You should have a file such as GitHubDesktopSetup-x64.exe, once it's downloaded _(should only take a few seconds, the file is about 109 MB at the time this was written)_ then run it to install.
+3. Once it's downloaded, you should have a file such as GitHubDesktopSetup-x64.exe _(it should only take a few seconds, the file is about 109 MB at the time this article was written),_ then run it to install.
 4. ![Github Desktop - Installing](/uploads/githubdesktop-installing.png "Github Desktop - Installing")
 
 Congratulations, you have now installed Github Desktop!
 
-### Add your Azure DevOps repository
+### Add your Azure DevOps repository.
 
 If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
 
@@ -44,14 +44,14 @@ If you have an Azure DevOps git repository, then follow the steps below – if y
  2. Navigate to the project you want to add to Github Desktop
  3. Click on Repos, Files
  4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
- 5. In the address bar, you will see your URL, it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
+ 5. In the address bar, you will see your URL, and it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
  6. Copy the URL and open Github Desktop
  7. Click on File and Clone a repository
  8. Click on URL
  9. ![Github Desktop - Clone a Repository](/uploads/githubdesktop-clonearepo.png "Github Desktop - Clone a Repository")
-10. Paste in the repository URL you copied earlier
+10. Paste in the repository URL you copied earlier.
 11. Select the Local path of where you want the Git repository to be saved locally on your device
-12. Now we need to generate git credentials to clone your repository, navigate back to Azure DevOps
+12. Now we need to generate git credentials to clone your repository, navigate back to Azure DevOps.
 13. ![Azure DevOps - Clone](/uploads/azuredevops-clonerepo.png "Azure DevOps - Clone")
 14. Click on Generate Git Credentials
 15. Azure DevOps will now generate the username and password that will be used by Github Desktop to authenticate with your git repository.
@@ -60,11 +60,11 @@ If you have an Azure DevOps git repository, then follow the steps below – if y
 18. Enter in the username and password that you received from the git credentials, generated by Azure DevOps.
 19. Github Desktop should now clone your repository locally.
 
-Congratulations, you have now set up an Azure DevOps git repository using Github Desktop.
+Congratulations, you have set up an Azure DevOps git repository using Github Desktop.
 
-### Add your Github repository
+### Add your Github repository.
 
-If you have an Azure DevOps git repository, then follow the steps above – otherwise, follow these steps to add your Github repository into Github Desktop.
+If you have an Azure DevOps git repository, follow the steps above – otherwise, follow these steps to add your Github repository into Github Desktop.
 
 1. Open Github Desktop
 2. Click File
@@ -82,58 +82,60 @@ Now that you have a git repository cloned locally, it's time to use it.
 
 #### Initial Commit
 
-Once you have a file created and saved into the folder of your git repository, ie a PowerShell script, you will want to commit it to the git repository.
+Once you have a file created and saved into the folder of your git repository, i.e. a PowerShell script, you will want to commit it to the git repository.
 
  1. Open Github Desktop
- 2. Click on: Current repository to make sure your repository is selected
+ 2. Click on: Current repository to make sure your repository is selected.
  3. ![Github Desktop - Initial Commit](/uploads/githubdesktop-initialhelloworld.png "Github Desktop - Initial Commit")
- 4. In my example, I have created a new file called: HelloWorld.ps1 in my PowerShell repository
- 5. What you can see in the screenshot below, is the various components that make up the Github Desktop, you can see the changed file (ie the new file), the contents of the file and what will be added, the commit title and the all-important commit description.
+ 4. In my example, I have created a new file called: HelloWorld.ps1 in my PowerShell repository.
+ 5. What you can see in the screenshot below is the various components that make up the Github Desktop; you can see the changed file (i.e. the new file), the contents of the file and what will be added, the commit title and the all-important commit description.
  6. ![Github Desktop - Overview](/uploads/githubdesktop-productoverview.png "Github Desktop - Overview")
  7. You can change the title to something more appropriate if you want, but with your commit description, this is what you will use for versioning and seeing what changes you made in the future from a quick glance – make sure it's an appropriate description and click Commit to master.
- 8. Committing it to master does not push it to its ‘Origin’ – ie the actual remote git repository _(stored in Github or Azure DevOps)_, committing it will commit to the local git repository, this allows you to work on code locally, without requiring every change to be uploaded to a local repository. In order to commit to the origin and remote repository click on: Push origin.
+ 8. Committing it to master does not push it to its 'Origin'. I.e. the actual remote git repository _(stored in Github or Azure DevOps)_ will commit to the local git repository. This allows you to work on code locally without requiring every change to be uploaded to a local repository. In order to commit to the Origin and remote repository, click on: Push Origin.
  9. ![Github Desktop - Header](/uploads/githubdesktop-header.png "Github Desktop - Header")
-10. Once it has been committed, you should be able to see the file on the origin git repository, you can Push multiple local git changes at once.
-11. If you click on: History should now see your commit, with your file and description _(as you can see I was using an old PowerShell repository, that I had merged into other repositories since then, but was just using for this article)._
+10. Once it has been committed, you should be able to see the file on the origin git repository, and you can Push multiple local git changes at once.
+11. If you click on: History should now see your commit with your file and description _(as you can see, I was using an old PowerShell repository that I had merged into other repositories since then but was using for this article)._
 12. ![Github Desktop - Initial commit](/uploads/githubdesktop-initialhelloworldcommit.png "Github Desktop - Initial commit")
 
-Congratulations you now committed your first file into git! It wasn’t that difficult!
+Congratulations, you now committed your first file into Git! It wasn't that difficult!
 
 #### Restore file from the previous version
 
-One of the benefits of using git is version control and being able to restore a file if something stops working or someone had an 'Oops!' moment! With Github Desktop, restoring a previous version is easy.
+One of the benefits of using Git is version control and restoring a file if something stops working, or someone had an 'Oops!' moment! With Github Desktop, restoring a previous version is straightforward.
 
 1. Open Github Desktop
 2. Click on: Current repository to make sure your repository is selected
 3. Click on History _(you may need to click Fetch Origin if files have been updated remotely)_
-4. As you can see, someone (ie Luke Murray) has made a change to my ‘HelloWorld.ps1’ file, to be: “I like Unicorns” and changed the colour of the background and foreground to be both ‘Yellow’.
-5. Using Github Desktop, I can simply right-click that file and select Revert changes in the commit
+4. As you can see, someone (i.e. Luke Murray) has made a change to my' HelloWorld. ps1'' file, to be: "I like Unicorn" and changed the background and foreground colour to be both Yellow'.
+5. I can right-click that file and select Revert changes in the commit using Github Desktop.
 6. ![Github Desktop - Revert changes](/uploads/githubdesktop-revertchanges.png "Github Desktop - Revert changes")
-7. You will now have a new entry in the history that will revert the commit and you can easily push it back to Origin again.
+7. You will now have a new entry in the History that will revert the commit, and you can quickly push it back to Origin again.
 
 Congratulations, you have successfully reverted a commit to a previous version using Github Desktop.
 
 #### Working with branches
 
-Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is usually where you have your production or fully tested resources)_.
+Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is usually where you have your production or thoroughly tested resources)_.
 
  1. Open Github Desktop
  2. Click on: Current repository to make sure your repository is selected
- 3. To create a branch click on the Current branch and select New branch and give it a name, ie Dev
- 4. Make a change to the file like you normally would and save
- 5. Github Desktop has automatically added your changes and you can commit them to the dev branch, without touching master.
+ 3. To create a branch, click on the Current branch and select New branch and give it a name, i.e. Dev
+ 4. Make a change to the file like you typically would and save
+ 5. Github Desktop has automatically added your changes, and you can commit them to the dev branch without touching master.
  6. ![Github Desktop - Branch commit](/uploads/githubdesktop-branchcommit.png "Github Desktop - Branch commit")
- 7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by git!
- 8. When you are ready to merge the dev branch into master, you can click the current branch
+ 7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by Git!
+ 8. When you are ready to merge the dev branch into master, you can click the current branch.
  9. Select: Choose a branch to merge into master
-10. Select your branch, _ie dev_
+10. Select your branch, _i.e. Dev_
 11. ![Github Desktop - Merge branch](/uploads/githubdesktop-branchmerge.png "Github Desktop - Merge branch")
-12. Click on create a merge commit
-13. You should see a message in Github notifying that the merge was successful and you can push your changes to the origin repository.
-14. Github Desktop should redirect you to the master branch and you can now see your changes:
+12. Click on create a merge commit.
+13. You should see a message in Github notifying that the merge was successful, and you can push your changes to the origin repository.
+14. Github Desktop should redirect you to the master branch, and you can now see your changes:
 15. ![](/uploads/githubdesktop-branchcommited.png)
-16. You can go back to using dev to develop further features, testing etc and repeat the same process.
+16. You can go back to using Dev to develop additional features, testing etc. and repeat the same process.
 
-Using a master branch allows others to get ‘production-ready scripts or codes’ while you may be still working on functionality that you don’t quite want to be released yet.
+Using a master branch allows others to get production-ready scripts or code'' while you may be still working on functionality that you don't quite want to be released yet.
 
-Hopefully, this article gives you a good base to start your git journey! There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!
+Hopefully, this article gives you an excellent base to start your git journey! 
+
+There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!

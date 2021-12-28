@@ -98,3 +98,7 @@ Once you have a file created and saved into the folder of your git repository, i
 12. ![Github Desktop - Initial commit](/uploads/githubdesktop-initialhelloworldcommit.png "Github Desktop - Initial commit")
 
 Congratulations you now committed your first file into git! It wasn’t that difficult!
+
+#### Restore file from the previous version
+
+One of the benefits of using git is version control and being able to restore a file

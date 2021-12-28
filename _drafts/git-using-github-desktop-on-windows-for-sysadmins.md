@@ -16,3 +16,5 @@ Although tools such as Visual Studio Code, allows you to easily utilize git sour
 If you are looking at something a bit more powerful, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree).
 
 Introducing Github Desktop... “_Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow.”_
+
+![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")

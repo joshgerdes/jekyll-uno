@@ -18,3 +18,9 @@ If you are looking at something a bit more powerful, then I suggest [Atlassian S
 Introducing Github Desktop... “_Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow.”_
 
 ![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")
+
+Github Desktop gives you a clean, light and easy to use tool to work with git repositories, that is constantly [kept up to date](https://github.com/desktop/desktop) and improved upon
+
+Although Github Desktop, is published by Github – this doesn’t mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
+
+This article assumes that you have a Git repository initialised already, you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min) or [Github](https://github.com/), they are both owned by Microsoft, personally, I have moved from Azure DevOps to Github for my git repositories, but utilise AzureDevOps pipelines.

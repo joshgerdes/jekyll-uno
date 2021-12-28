@@ -115,7 +115,7 @@ Congratulations, you have successfully reverted a commit to a previous version u
 
 #### Working with branches
 
-Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is usually where you have your production or thoroughly tested resources)_.
+Another great function of Git branches. Branches allow you to work on features without touching the main or master branch _(which is where you can have your production or thoroughly tested resources)_.
 
  1. Open Github Desktop
  2. Click on: Current repository to make sure your repository is selected
@@ -124,7 +124,7 @@ Another great function of Git branches. Branches allow you to work on features w
  5. Github Desktop has automatically added your changes, and you can commit them to the dev branch without touching master.
  6. ![Github Desktop - Branch commit](/uploads/githubdesktop-branchcommit.png "Github Desktop - Branch commit")
  7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by Git!
- 8. When you are ready to merge the dev branch into master, you can click the current branch.
+ 8. When you are ready to merge the dev branch into master, click the current branch.
  9. Select: Choose a branch to merge into master
 10. Select your branch, _i.e. Dev_
 11. ![Github Desktop - Merge branch](/uploads/githubdesktop-branchmerge.png "Github Desktop - Merge branch")

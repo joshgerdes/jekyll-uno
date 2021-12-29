@@ -52,5 +52,6 @@ pages:
 - _posts/2021-12-27-azure-storage-account-sftp-errors.md
 - _posts/2021-12-27-sftp-in-microsoft-azure-using-azure-blob-storage.md
 - _posts/2021-12-29-day-in-the-life-of-a-tech-lead.md
+- _posts/azure-bicep-and-insert-resource.md
 - _posts/git-using-github-desktop-on-windows-for-sysadmins.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

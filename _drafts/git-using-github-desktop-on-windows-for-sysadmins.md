@@ -23,7 +23,7 @@ Introducing Github Desktop... _"Focus on what matters instead of fighting with G
 
 ![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")
 
-Github Desktop gives you a clean, light and easy to use tool to work with git repositories that are constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon
+Github Desktop gives you a clean, light and easy to use tool to work with git repositories that is constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon!
 
 Although Github Desktop is published by Github – this doesn't mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
 

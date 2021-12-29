@@ -18,6 +18,7 @@ Insert Resource simplifies ARM to Bicep conversion without exporting entire ARM 
 To use Insert Resource, you will need to have:
 
 * Bicep version greater than v0.4.1124
+* Azure CLI
 * Visual Studio Code with the Bicep extension
 
 You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install){:target="_blank"} page.

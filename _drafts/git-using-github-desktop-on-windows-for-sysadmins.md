@@ -70,9 +70,9 @@ If you have an Azure DevOps git repository, follow the steps above – otherwise
 2. Click **File**
 3. Click **Clone repository….**
 4. ![Github Desktop - Clone repository](/uploads/githubdesktop-cloneareposnap.png "Github Desktop - Clone repository")
-5. On the Github.com tab, enter your Github credentials
-6. Select the Local path of where you want the Git repository to be saved locally on your device
-7. Click Clone
+5. On the **Github.com tab**, **enter** your Github **credentials**
+6. **Select** the Local **path** of where you want the Git **repository** to be **saved** locally on your device
+7. Click **Clone**
 
 Congratulations, you have now set up a Github git repository using Github Desktop.
 
@@ -84,17 +84,17 @@ Now that you have a git repository cloned locally, it's time to use it.
 
 Once you have a file created and saved into the folder of your git repository, i.e. a PowerShell script, you will want to commit it to the git repository.
 
- 1. Open Github Desktop
- 2. Click on: Current repository to make sure your repository is selected.
+ 1. Open **Github Desktop**
+ 2. Click on: **Current repository** to make sure your repository is selected.
  3. ![Github Desktop - Initial Commit](/uploads/githubdesktop-initialhelloworld.png "Github Desktop - Initial Commit")
  4. In my example, I have created a new file called: HelloWorld.ps1 in my PowerShell repository.
- 5. What you can see in the screenshot below is the various components that make up the Github Desktop; you can see the changed file (i.e. the new file), the contents of the file and what will be added, the commit title and the all-important commit description.
+ 5. What you can see in the screenshot below is the various components that make up the Github Desktop; you can see the changed file _(i.e. the new file)_, the contents of the file and what will be added, the commit title and the all-important commit description.
  6. ![Github Desktop - Overview](/uploads/githubdesktop-productoverview.png "Github Desktop - Overview")
- 7. You can change the title to something more appropriate if you want, but with your commit description, this is what you will use for versioning and seeing what changes you made in the future from a quick glance – make sure it's an appropriate description and click Commit to master.
- 8. Committing it to master does not push it to its 'Origin'. I.e. the actual remote git repository _(stored in Github or Azure DevOps)_ will commit to the local git repository. This allows you to work on code locally without requiring every change to be uploaded to a local repository. In order to commit to the Origin and remote repository, click on: Push Origin.
+ 7. You can **change** the **title** to something more appropriate if you want, but with your commit **description**, this is what you will use for versioning and seeing what changes you made in the future from a quick glance – make sure it's an appropriate description and click **Commit** to master.
+ 8. Committing it to master does not push it to its 'Origin'. I.e. the actual remote git repository _(stored in Github or Azure DevOps)_ will commit to the local git repository. This allows you to work on code locally without requiring every change to be uploaded to a local repository. In order to commit to the Origin and remote repository, click on: **Push Origin**.
  9. ![Github Desktop - Header](/uploads/githubdesktop-header.png "Github Desktop - Header")
 10. Once it has been committed, you should be able to see the file on the origin git repository, and you can Push multiple local git changes at once.
-11. If you click on: History should now see your commit with your file and description _(as you can see, I was using an old PowerShell repository that I had merged into other repositories since then but was using for this article)._
+11. If you click on: **History** should now **see your commit** with your file and description _(as you can see, I was using an old PowerShell repository that I had merged into other repositories since then but was using for this article)._
 12. ![Github Desktop - Initial commit](/uploads/githubdesktop-initialhelloworldcommit.png "Github Desktop - Initial commit")
 
 Congratulations, you now committed your first file into Git! It wasn't that difficult!
@@ -103,13 +103,13 @@ Congratulations, you now committed your first file into Git! It wasn't that diff
 
 One of the benefits of using Git is version control and restoring a file if something stops working, or someone had an 'Oops!' moment! With Github Desktop, restoring a previous version is straightforward.
 
-1. Open Github Desktop
-2. Click on: Current repository to make sure your repository is selected
-3. Click on History _(you may need to click Fetch Origin if files have been updated remotely)_
-4. As you can see, someone (i.e. Luke Murray) has made a change to my' HelloWorld. ps1'' file, to be: "I like Unicorn" and changed the background and foreground colour to be both Yellow'.
-5. I can right-click that file and select Revert changes in the commit using Github Desktop.
+1. Open **Github Desktop**
+2. Click on: **Current repository** to make sure your repository is selected
+3. Click on **History** _(you may need to click Fetch Origin if files have been updated remotely)_
+4. As you can see, someone (i.e. Luke Murray) has **made a** **change** to my' HelloWorld. ps1'' file, to be: "I like Unicorn" and changed the background and foreground colour to be both Yellow'.
+5. I can **right-click** that **file** and select **Revert changes** in the commit using Github Desktop.
 6. ![Github Desktop - Revert changes](/uploads/githubdesktop-revertchanges.png "Github Desktop - Revert changes")
-7. You will now have a new entry in the History that will revert the commit, and you can quickly push it back to Origin again.
+7. You will now have a new entry in the History that will revert the commit, and you can quickly **push it** back to **Origin** again.
 
 Congratulations, you have successfully reverted a commit to a previous version using Github Desktop.
 
@@ -117,20 +117,20 @@ Congratulations, you have successfully reverted a commit to a previous version u
 
 A significant function of Git is the ability to create and use branches. Branches allow you to work on features without touching the main or master branch _(where you can have your production or thoroughly tested resources, for example)_.
 
- 1. Open Github Desktop
- 2. Click on: Current repository to make sure your repository is selected
- 3. To create a branch, click on the Current branch and select New branch and give it a name, i.e. Dev
- 4. Make a change to the file like you typically would and save
- 5. Github Desktop has automatically added your changes, and you can commit them to the dev branch without touching master.
+ 1. Open **Github Desktop**
+ 2. Click on: **Current repository** to make sure your repository is selected
+ 3. To **create** a branch, click on the **Current branch** and select **New branch** and give it a name, _i.e. Dev_
+ 4. **Make** a **change** to the **file** like you typically would and **save**
+ 5. Github Desktop has automatically added your changes, and you can **commit** them to the **dev branch** without touching master.
  6. ![Github Desktop - Branch commit](/uploads/githubdesktop-branchcommit.png "Github Desktop - Branch commit")
  7. If you navigate to the master branch, you can see that the file has remained untouched. All the control and versioning is done by Git!
- 8. When you are ready to merge the dev branch into master, click the current branch.
- 9. Select: Choose a branch to merge into master
-10. Select your branch, _i.e. Dev_
+ 8. When you are **ready** to **merge** the dev branch into master, click the **current branch**.
+ 9. Select: **Choose a branch** to **merge** into master
+10. **Select** your **branch**, _i.e. Dev_
 11. ![Github Desktop - Merge branch](/uploads/githubdesktop-branchmerge.png "Github Desktop - Merge branch")
-12. Click on create a merge commit.
-13. You should see a message in Github notifying that the merge was successful, and you can push your changes to the origin repository.
-14. Github Desktop should redirect you to the master branch, and you can now see your changes:
+12. Click on **create a merge commit**.
+13. You should see a message in Github notifying that the merge was successful, and you can **push** your **changes** to the **origin** repository.
+14. Github Desktop should redirect you to the master branch, and you can **now see** your **changes**:
 15. ![](/uploads/githubdesktop-branchcommited.png)
 16. You can go back to using Dev to develop additional features, testing etc. and repeat the same process.
 

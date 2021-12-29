@@ -47,7 +47,7 @@ At a very high level, this is what a day in the life of a technical lead means t
 * We live in a VUCA (Volatile, Uncertain, Complexity, Ambiguity) world, you will never see perfect.
 
 
-The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn"){:target="_blank"} for independent consulting on Ways of Working, Continuous improvement; I attended a few of their workshops on ways of working, consulting, and it helped me take a step back and look at what this kind of mindset may look like, or should be and current blockers.
+The views above are my own, but shout out to [Teal Unicorn](https://tealunicorn.com/ "Teal Unicorn"){:target="_blank"} for independent consulting on Ways of Working, Continuous improvement; I attended a few of their workshops on Ways of Working, Ways of Managing and Ways of Consulting, and it helped me take a step back and look at what this kind of mindset may look like, or should be and current blockers.
 
 Overall, I have noticed that Information Technology roles are now blending disciplines that once required specific job roles _(ie Business Analyst, Service Delivery Manager, Developer, Architect),_ although pure technical roles still exist with Cloud technologies, different skillsets are required to get the most value out of technology stacks, as technology becomes more consumable.  You may also be interesting in reading my thoughts on: [The Cloud Frame of Mind](https://luke.geek.nz/the-cloud-frame-of-mind "The Cloud Frame of Mind"){:target="_blank"}
 

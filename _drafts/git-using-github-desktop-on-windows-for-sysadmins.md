@@ -143,3 +143,5 @@ Using a master branch allows others to get production-ready scripts or code'' wh
 Hopefully, this article gives you an excellent base to start your git journey! 
 
 There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!
+
+It is also worth reading this article on the .[gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore " .gitignore ") file, to make sure your git repositories don't end up bloated by unwanted files and you are only committing the files you need to be.

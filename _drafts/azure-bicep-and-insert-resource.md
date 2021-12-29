@@ -22,7 +22,7 @@ In order to use Insert Resource, you will need to have:
 
 You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) page.
 
-Let's import resources!
+#### Let's import resources!
 
  1. Open a new file in **Visual Studio Code**
  2. Set the Language mode to **Bicep**
@@ -37,5 +37,15 @@ Let's import resources!
 11. ![Azure Bicep - Insert Resource](/uploads/bicepinsertresource.png "Azure Bicep - Insert Resource")
 12. Enter in the resource ID you copied earlier
 13. ![](/uploads/bicepinsertresourceenterresourceid.png)
-14. All going well, Azure Bicep should have connected and exported your resource straight into Bicep!
+14. All going well, Azure Bicep should have connected and exported your resource straight into Bicep! As below, it had imported a Log Analytics workspace in my subscription straight into Bicep.
 15. ![](/uploads/bicepinsertedresource.png)
+
+#### To find the resource ID using the Azure Portal
+
+You can use the Azure CLI, to find the Resource ID, but you can also use the Azure Portal, by navigating to it below:
+
+1. Log in to the **Azure Portal**
+2. **Navigate** to the **resource** you want to export to Bicep
+3. On the **Overview** pane, click on **JSON view**
+
+I had problems connecting to export an App Service and App Service plan, so for some resources with multiple dependencies, you may be better off exporting the ARM template from the resources/resource groups and decompiling that way.

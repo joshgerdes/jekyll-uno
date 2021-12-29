@@ -48,4 +48,4 @@ You can use the Azure CLI to find the Resource ID, but you can also use the Azur
 2. **Navigate** to the **Resource** you want to export to Bicep
 3. On the **Overview** pane, click on **JSON view**
 
-I had problems connecting to export an App Service and App Service plan, so for some resources with multiple dependencies, you may be better off exporting the ARM template from the resources/resource groups and decompiling that way.
+I had problems connecting to export an App Service and App Service plan, so for some resources with multiple dependencies, you may be better off exporting the ARM template from the resources/resource groups and decompiling that way, but Insert Resource is a very quick way to bring your resources into Bicep!

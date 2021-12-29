@@ -4,9 +4,9 @@ title: Azure Bicep and Insert Resource
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
-  teaser: ''
+  teaser: "/images/AzureBicepBanner.jpg"
 
 ---
 Azure Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively. Azure Bicep is a **transparent abstraction** over ARM and ARM templates, which means anything that can be done in an ARM Template can be done in Bicep.
@@ -20,7 +20,7 @@ To use Insert Resource, you will need to have:
 * Bicep version greater than v0.4.1124
 * Visual Studio Code with the Bicep extension
 
-You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) page.
+You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install){:target="_blank"} page.
 
 #### Let's import resources!
 

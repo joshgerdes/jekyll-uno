@@ -140,7 +140,7 @@ A significant function of Git is the ability to create and use branches. Branche
 15. ![](/uploads/githubdesktop-branchcommited.png)
 16. You can go back to using Dev to develop additional features, testing etc. and repeat the same process.
 
-Using a master branch allows others to get production-ready scripts or code'' while you may be still working on functionality that you don't quite want to be released yet.
+Using a master branch allows others to get production-ready scripts or code, while you may be still working on functionality that you don't quite want to be released yet.
 
 Hopefully, this article gives you an excellent base to start your git journey! 
 

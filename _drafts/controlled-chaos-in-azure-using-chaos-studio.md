@@ -181,7 +181,7 @@ Now that Azure Chaos Studio is in use by your organization, you may want to know
 
 When an Azure Chaos Studio experiment has touched a resource, there will be an audit trail in the Azure activity log of that resource; here, you can see that 'WhatMemory', which is the Name of my Chaos Experiment, has successfully powered off and on my VM.
 
-![](/uploads/azure_chaosstudio_activitylog.png)
+![Azure Activity Log - Azure Chaos Studio](/uploads/azure_chaosstudio_activitylog.png "Azure Activity Log - Azure Chaos Studio")
 
 #### Azure Alerts
 
@@ -216,9 +216,8 @@ It is easy to set up alerts when a Chaos experiment kicks off; to create an Azur
 27. Type in a **description**
 28. **Specify** the **resource group** to place the alert in _(again, usually a monitor or management resource group)_
 29. Check **Enable alert rule on creation**
-
-Click **Create alert rule**
+30. Click **Create alert rule**
 
 _Note: Activity Log alerts are hidden types; they are not shown in the resource group by default, but if you check the: Show hidden types box, they will appear_
 
-![](/uploads/azure_chaosstudio_alert.png)
+![Azure Activity Log - Azure Chaos Studio](/uploads/azure_chaosstudio_alert.png "Azure Activity Log - Azure Chaos Studio")

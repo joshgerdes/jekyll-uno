@@ -51,10 +51,10 @@ Because we will use Agent-based capabilities to generate our Faults, I needed to
  4. **Select** your **Resource Group** to place the managed identity in (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it's just a preference, I will be placing mine in the Chaos Studio resource group so I can quickly delete it later)_.
  5. **Select** the **RegionRegion**ur resources
  6. Type in a **name** (_this will be the identity that you will see in logs running these experiments, so make sure its something you can identify with)_
- 7. ![](/uploads/azure_userassignedmanageidentity.png)
+ 7. ![Azure Portal - Create User Management Identity](/uploads/azure_userassignedmanageidentity.png "Azure Portal - Create User Management Identity")
  8. Click **Next: Tags**
  9. Make sure you enter appropriate tags to make sure that the resource can be identified and tracked, and click **Review + Create**
-10. ![](/uploads/azuretags_chaos.png)
+10. ![Azure Portal Tags](/uploads/azuretags_chaos.png "Azure Portal Tags")
 11. Verify that everything looks good and click **Create** to create your User Assigned Managed identity.
 
 #### Create Application Insights

@@ -93,3 +93,5 @@ It is now time to add the resources targets to Chaos Studio
 14. ![](/uploads/azure_chaosstudio_enableagenttargets.png)
 15. If for some reason your instrumentation key isn’t filled in, you can find it on the Overview pane of the Application Insights resource.
 16. Click Review + Enable
+17. Review the resources you want to enable Chaos Studio to target and select Enable
+18. You should now be back at the Targets pane and should see that your services are now enabled.

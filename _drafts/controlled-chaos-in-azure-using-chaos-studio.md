@@ -134,3 +134,4 @@ Note: If you name an Experiment, the same as another experiment, it will replace
 19.  Select Add
 20. I am then going to Add delay for 5 Minutes
 21. Then add an abrupt VM shutdown for 10 minutes
+22. ![](/uploads/azure_chaosstudio_createexperimentaddfault2.png)

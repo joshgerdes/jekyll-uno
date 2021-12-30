@@ -30,11 +30,42 @@ Service-direct is tied into the Azure fabric and puts pressure on your resources
 
 Agent-based relies on an agent installed, these are targeted at resources such as Virtual Machine and Virtual Machine scale sets, Agent-based targets use a user-assigned managed identity to manage an agent on your virtual machines and wreak havoc by running capabilities such as stopping services and putting memory and disk pressure on your workloads.
 
-Just a word of warning, before you proceed to allow Chaos to reign in your environment, make sure it is done out of hours or better yet – against development or test resources, also make sure that any resources that support autoscaling is disabled – or you might suddenly find 10 more instances of that resource you were running _(unless of course you’re testing that autoscaling is actually working)_! 😊
+Just a word of warning, before you proceed to allow Chaos to reign in your environment, make sure it is done out of hours or better yet – against development or test resources, also make sure that any resources that support autoscaling are disabled – or you might suddenly find 10 more instances of that resource you were running _(unless of course you’re testing that autoscaling is actually working)_! 😊
 
 In my test setup, I have the following already pre-created that I will be running my experiments against:
 
 * Virtual Machine Scale set _(running Windows with 2 instances)_
-* Single Virtual Machine (running WIndows) to test shutdown against
+* Single Virtual Machine _(running Windows)_ to test shutdown against
 
 The currently supported resource types can be found ‘[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)’.
+
+### Setup Azure Chaos Studio
+
+#### Create Managed Identity
+
+Because we are going to use Agent-based capabilities to generate our Faults, I needed to create a Managed Identity to give Chaos Studio the ability to wreak havoc on my resources!
+
+ 1. In the **Azure Portal** search for [**Managed Identities**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ManagedIdentity%2FuserAssignedIdentities)
+ 2. Click on **Create**
+ 3. **Select** the **subscription** holding the resources that you want to test against
+ 4. **Select** your **Resource Group** to place the managed identity in (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it’s just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
+ 5. **Select** the **Region** of your resources
+ 6. Type in a **name** (_this will be the identity that you will see in logs running these experiments so make sure its something you can identify with)_
+ 7. ![](/uploads/azure_userassignedmanageidentity.png)
+ 8. Click Nex: Tags
+ 9. Make sure you enter appropriate tags, to make sure that the resource can be identified and tracked and click Review + Create
+10. ![](/uploads/azuretags_chaos.png)
+11. Verify that everything looks good and click Create to create your User Assigned Managed identity.
+
+#### Create Application Insights
+
+Now, it's time to create an Application Insights resource, this is for the logs of the experiments to go into, so you can see the faults and their behaviours.
+
+1. In the Azure Portal search for [Application Insights](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents)
+2. Click on Create
+3. Select the subscription holding the resources that you want to test against
+4. Select your Resource Group to place the Application Insights resource into (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it’s just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
+5. Select the Region of your resources
+6. Type in a name
+7.  Select your Log Analytics workspace you want to link Application Insights to (if you don’t have a Log Analytics workspace you can create one ‘[here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)’).
+8. ![](/uploads/azure_applicationinsights.png)

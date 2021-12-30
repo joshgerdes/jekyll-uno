@@ -169,3 +169,10 @@ Now that the experiment has been created, it should appear as a resource in the 
 3. Click Ok to start the Experiment _(and place it into the queue)_
 4. Click on Details to see the experiment progress, if it fails one part of it due to an error it will progress to the next step.
 5. ![](/uploads/azure_chaosstudio_whatmemoryrun.png)
+6. Azure Chaos studio should now run rampant and do what it does best – cause Chaos!
+
+This service is still currently in preview, if you have any issues take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting).
+
+### Monitor and Auditing of Azure Chaos Studio
+
+Now that Azure Chaos Studio is in use by your organization, you may want to know what auditing is available, along with reporting to Application Insights.

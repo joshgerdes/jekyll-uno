@@ -187,10 +187,25 @@ When a resource has been touched by an Azure Chaos Studio experiment, there will
 
 It is easy to set up alerts when a Chaos experiment kicks off, to create an Azure do the following.
 
-1. In the Azure Portal click on Azure Monitor
-2. Click on Alerts
-3. Click + Create
-4. Select Alert Rule
-5. Click Create resource
-6. Filter your resource type to Chaos Experiments
-7. Filter your alert to Subscription
+ 1. In the Azure Portal click on Azure Monitor
+ 2. Click on Alerts
+ 3. Click + Create
+ 4. Select Alert Rule
+ 5. Click Create resource
+ 6. Filter your resource type to Chaos Experiments
+ 7. Filter your alert to Subscription
+ 8. ![](/uploads/azure_chaosstudio_createalert.png)
+ 9. Click Done
+10. Click Add Condition
+11. Select: Starts a Chaos Experiment
+12. Make sure that: Event initiated by is set to *(All services and users)
+13. Click Done
+14. Click Add Action Group
+15. Assign an action group if you have one (these are who and how the alerts will get to you), if you don’t have one click: + Create action group
+16. Specify a resource group to hold your action groups _(usually a monitor or management resource group)_
+17. Type the Action Group name
+18. Type the Action group Display name
+19. Click Next: Notifications
+20. Select Notification Type
+21. Select email
+22. Select Email

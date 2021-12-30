@@ -182,3 +182,15 @@ Now that Azure Chaos Studio is in use by your organization, you may want to know
 When a resource has been touched by an Azure Chaos Studio experiment, there will be an audit trail in the Azure activity log of that resource, here you can see that ‘WhatMemory’ which is the name of my Chaos Experiment has successfully powered off and on my VM.
 
 ![](/uploads/azure_chaosstudio_activitylog.png)
+
+#### Azure Alerts
+
+It is easy to set up alerts when a Chaos experiment kicks off, to create an Azure do the following.
+
+1. In the Azure Portal click on Azure Monitor
+2. Click on Alerts
+3. Click + Create
+4. Select Alert Rule
+5. Click Create resource
+6. Filter your resource type to Chaos Experiments
+7. Filter your alert to Subscription

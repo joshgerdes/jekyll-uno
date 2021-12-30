@@ -176,3 +176,9 @@ This service is still currently in preview, if you have any issues take a look a
 ### Monitor and Auditing of Azure Chaos Studio
 
 Now that Azure Chaos Studio is in use by your organization, you may want to know what auditing is available, along with reporting to Application Insights.
+
+#### Azure Activity Log
+
+When a resource has been touched by an Azure Chaos Studio experiment, there will be an audit trail in the Azure activity log of that resource, here you can see that ‘WhatMemory’ which is the name of my Chaos Experiment has successfully powered off and on my VM.
+
+![](/uploads/azure_chaosstudio_activitylog.png)

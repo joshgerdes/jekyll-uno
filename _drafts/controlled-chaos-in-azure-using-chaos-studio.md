@@ -165,10 +165,10 @@ I will assign permissions to the Resource Group that the VM Scale set exists in,
 Now that the Experiment has been created, it should appear as a resource in the resource group you selected earlier; if you open it, you can see the Experiment's History, Start, and Edit buttons.
 
 1. Click **Start**
-2. ![](/uploads/azure_chaosstudio_whatmemory.png)
+2. ![Azure Chaos studio - Run experiment](/uploads/azure_chaosstudio_whatmemory.png "Azure Chaos studio - Run experiment")
 3. Click **Ok** to **start** the **Experiment** _(and place it into the queue)_
 4. **Click** on **Details** to see the **experiment progress** _(and any errors)_, and if it fails one part, it may move to the next step depending on the fault.
-5. ![](/uploads/azure_chaosstudio_whatmemoryrun.png)
+5. ![Azure Chaos studio - Run experiment](/uploads/azure_chaosstudio_whatmemoryrun.png "Azure Chaos studio - Run experiment")
 6. **Azure Chaos studio should now run rampant and do best – cause Chaos**!
 
 This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting).

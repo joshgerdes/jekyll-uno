@@ -192,31 +192,30 @@ It is easy to set up alerts when a Chaos experiment kicks off; to create an Azur
  4. Select Alert Rule
  5. Click Create resource
  6. Filter your resource type to Chaos Experiments
- 7. Filter your alert to SubscrSubscriptionk Done
- 8. 
- 9. Click Add Condition
-10. Select: Starts a Chaos Experiment
-11. Make sure that: Event initiated by is set to *(All services and users)
-12. Click Done
-13. Click Add Action Group
-14. If you have one, assign an action group (these are who and how the alerts will get to you). If you don't have one click: + Create an action group
-15. Specify a resource group to hold your action groups _(usually a monitor or management resource group)_
-16. Type the Action Group name
-17. Type the Action group Display name
-18. Click Next: Notifications
-19. Select Notification Type
-20. Select email
-21. Select Email
-22. Type in your email address to be notified
-23. Click ok
-24. Type in the Name of the mail to be a reference in the future _(i.e. Help Desk)_
-25. Click Review + Create
-26. Click Create to create your Action group
-27. Type in your rule name (i.e. Alert – Chaos Experiment – Started)
-28. Type in a description
-29. Specify the resource group to place the alert in (again, usually a monitor or management resource group)
-30. Check Enable alert rule on creation
-31. Click Create alert rule
+ 7. Filter your alert to Subscription and click Done
+ 8. Click Add Condition
+ 9. Select: Starts a Chaos Experiment
+10. Make sure that: Event initiated by is set to *(All services and users)
+11. Click Done
+12. Click Add Action Group
+13. If you have one, assign an action group (these are who and how the alerts will get to you). If you don't have one click: + Create an action group
+14. Specify a resource group to hold your action groups _(usually a monitor or management resource group)_
+15. Type the Action Group name
+16. Type the Action group Display name
+17. Click Next: Notifications
+18. Select Notification Type
+19. Select email
+20. Select Email
+21. Type in your email address to be notified
+22. Click ok
+23. Type in the Name of the mail to be a reference in the future _(i.e. Help Desk)_
+24. Click Review + Create
+25. Click Create to create your Action group
+26. Type in your rule name (i.e. Alert – Chaos Experiment – Started)
+27. Type in a description
+28. Specify the resource group to place the alert in (again, usually a monitor or management resource group)
+29. Check Enable alert rule on creation
+30. Click Create alert rule
 
     Note: Activity Log alerts are hidden types; they are not shown in the resource group by default, but if you check the: Show hidden types box, they will appear.
-32. ![](/uploads/azure_chaosstudio_alert.png)
+31. ![](/uploads/azure_chaosstudio_alert.png)

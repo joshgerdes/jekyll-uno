@@ -156,7 +156,7 @@ I will assign permissions to the Resource Group that the VM Scale set exists in,
  6. Click **Next**
  7. Select **Assign access to Managed identity**
  8. Click on **+ Select Members**
- 9. **Select** the **User** assigned **management identit**y
+ 9. **Select** the **User** assigned **management identity**
 10. Click **Review** and **assign**.
 11. Because the shutdown is a service-direct, **go back and give the experiment system managed identity Virtual Machine Contributor rights**, so it has access to shutdown the VM.
 

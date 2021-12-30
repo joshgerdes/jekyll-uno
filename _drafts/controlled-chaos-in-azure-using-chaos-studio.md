@@ -148,26 +148,26 @@ Now that the Experiment has been created, we need to give rights to the Managed 
 
 I will assign permissions to the Resource Group that the VM Scale set exists in, but for more granular control, you might be better off applying the rights to the individual resource. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers) Microsoft page.
 
- 1. In the Azure Portal, click on the Resource Group
- 2. Select Access control (IAM)
- 3. Click + Add
- 4. Click Add Role Assignment
- 5. Click Reader
- 6. Click Next
- 7. Select Assign access to Managed identity
- 8. Click on + Select Members
- 9. Select the User assigned management identity
-10. Click Review and assign.
-11. Because the shutdown is a service-direct, go back and give the experiment system managed identity Virtual Machine Contributor rights, so it has access to shutdown the VM.
+ 1. In the **Azure Portal**, click on the **Resource Group** containing your resources you want to run the Experiment against
+ 2. Select **Access control (IAM)**
+ 3. Click **+ Add**
+ 4. Click **Add Role Assignment**
+ 5. Click **Reader**
+ 6. Click **Next**
+ 7. Select **Assign access to Managed identity**
+ 8. Click on **+ Select Members**
+ 9. **Select** the **User** assigned **management identit**y
+10. Click **Review** and **assign**.
+11. Because the shutdown is a service-direct, **go back and give the experiment system managed identity Virtual Machine Contributor rights**, so it has access to shutdown the VM.
 
 #### Run Experiments
 
 Now that the Experiment has been created, it should appear as a resource in the resource group you selected earlier; if you open it, you can see the Experiment's History, Start, and Edit buttons.
 
-1. Click Start
+1. Click **Start**
 2. ![](/uploads/azure_chaosstudio_whatmemory.png)
-3. Click Ok to start the Experiment _(and place it into the queue)_
-4. Click on Details to see the experiment progress, and if it fails one part of it due to an error, it will move to the next step.
+3. Click **Ok** to **start** the **Experiment** _(and place it into the queue)_
+4. **Click** on **Details** to see the **experiment progress** _(and any errors)_, and if it fails one part, depending on the fault, it may move to the next step.
 5. ![](/uploads/azure_chaosstudio_whatmemoryrun.png)
 6. Azure Chaos studio should now run rampant and do best – cause Chaos!
 

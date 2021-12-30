@@ -113,11 +113,19 @@ An experiment is a collection of capabilities to create faults, put pressure on 
 
 Note: If you name an Experiment, the same as another experiment, it will replace the older experiment with your new one and retain the previous history.
 
-1. In the Azure Portal search for [Chaos Studio](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
-2. On the left band side Blade, select Experiments
-3. Click + Create
-4. Select your Subscription
-5. Select your Resource Group to save the Experiment into
-6. Type in a name for your experiment that makes sense, in this case, we are going to put some Memory pressure on the VM scale set.
-7. Select your region
-8. ![](/uploads/azure_chaosstudio_createexperiment.png)
+ 1. In the Azure Portal search for [Chaos Studio](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
+ 2. On the left band side Blade, select Experiments
+ 3. Click + Create
+ 4. Select your Subscription
+ 5. Select your Resource Group to save the Experiment into
+ 6. Type in a name for your experiment that makes sense, in this case, we are going to put some Memory pressure on the VM scale set.
+ 7. Select your region
+ 8. ![](/uploads/azure_chaosstudio_createexperiment.png)
+ 9. Click Next: Experiment Designer
+10. Using Experiment Designer, you can design your Faults, you can have multiple capabilities hit a resource with scheduled delays, i.e., you can have Memory pressure on a VM for 10 minutes, then CPU pressure then shutdown.
+11. We are going to select Add Action
+12. Then Add Fault
+13.  I am going to select Physical Memory pressure
+14. Leave the direction to 10 minutes
+15. Because this will against my VM scale set, I will add in the instances I want to target _(if you aren’t targeting a VM Scale set you can leave this blank, you can find the instance ID, by going to your VM Scale set, click on Instances, click on the VM instance you want to target and you should see the Instance ID in the Overview pane)_
+16. ![](/uploads/azure_chaosstudio_createexperimentaddfault.png)

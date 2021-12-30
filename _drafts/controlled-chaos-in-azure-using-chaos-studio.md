@@ -159,3 +159,9 @@ I am going to assign permissions to the Resource Group that the VM Scale set exi
  9. Select the User assigned management identity
 10. Click Review and assign.
 11. Because the shutdown is a service-direct, go back and give the experiment system managed identity Virtual Machine Contributor rights, so it has access to shutdown the VM.
+
+#### Run Experiments
+
+Now that the experiment has been created, it should appear as a resource in the resource group you selected earlier, if you open it – you can see the History, Start, and Edit buttons for the Experiment.
+
+1. Click Start

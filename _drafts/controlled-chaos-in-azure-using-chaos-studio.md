@@ -79,3 +79,7 @@ It is now time to add the resources targets to Chaos Studio
 
 1. In the Azure Portal search for [Chaos Studio](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
 2. On the left band side Blade, select Targets
+3. ![](/uploads/azure_chaosstudio_targets.png)
+4. As you can see, I have a Virtual Machine Scale Set and a front-end Network Security Group.
+5. Select the checkbox next to Name, to select all the Resources Select Enable Targets
+6. ![](/uploads/azure_chaosstudio_targets2.png)

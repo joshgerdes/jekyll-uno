@@ -168,3 +168,4 @@ Now that the experiment has been created, it should appear as a resource in the 
 2. ![](/uploads/azure_chaosstudio_whatmemory.png)
 3. Click Ok to start the Experiment _(and place it into the queue)_
 4. Click on Details to see the experiment progress, if it fails one part of it due to an error it will progress to the next step.
+5. ![](/uploads/azure_chaosstudio_whatmemoryrun.png)

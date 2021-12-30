@@ -94,8 +94,8 @@ It is now time to add the resources targets to Chaos Studio
 15. Select Enabled for Application Insights and select your Application Insights account. The instrumentation key should be selected manually.
 16. ![](/uploads/azure_chaosstudio_enableagenttargets.png)
 17. _If your instrumentation key isn't filled in, you can find it on the Overview pane of the Application Insights resource._
-18. Click Review + Enable
-19. Review the resources you want to enable Chaos Studio to target and select Enable
+18. Click **Review + Enable**
+19. **Review** the **resources** you want to enable Chaos Studio to target and select **Enable**
 20. You should now be back at the Targets pane and should see that your services are currently enabled.
 
 ### Configure and run Azure Chaos Studio
@@ -104,9 +104,9 @@ It is now time to add the resources targets to Chaos Studio
 
 There may be actions that you don't want to be run against specific resources; an example might be you don't want anyone to kill any processes on a Virtual Machine.
 
-1. In the Target pane of Chaos Studio, select Actions next to the resource and
-2. Unselect the capability you don't want to run on that resource
-3. Select Save
+1. In the Target pane of Chaos Studio, select **Actions** next to the resource 
+2. **Unselect** the **capability** you don't want to run on that resource
+3. Select **Save**
 4. ![](/uploads/azure_chaosstudio_manageactions.png)
 
 #### Configure Experiments

@@ -17,23 +17,25 @@ You don't have to know every single git command line syntax to use Git.
 
 Tools such as Visual Studio Code allows you to utilize git source control efficiently, and of course, you can use Git directly from the command line; however, sometimes you want an easy way to leverage Git through a point and click interface, there a lot of tools out there to give you easy access to Git, but today I will concentrate on Github Desktop.
 
-If you are looking at something a bit more powerful _(especially if you are wanting to do submodules)_, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree "Atlassian Sourcetree").
+If you are looking at something a bit more powerful _(especially if you are wanting to do submodules)_, then I suggest [Atlassian Sourcetree](https://www.atlassian.com/software/sourcetree "Atlassian Sourcetree"){:target="_blank"}.
 
 Introducing Github Desktop... _"Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub Desktop simplifies your development workflow."_
 
 ![Github Desktop - Overview](/uploads/githubdesktop-overview.png "Github Desktop - Overview")
 
-Github Desktop gives you a clean, light and easy to use tool to work with git repositories that is constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github") and improved upon!
+Github Desktop gives you a clean, light and easy to use tool to work with git repositories that is constantly [kept up to date](https://github.com/desktop/desktop "Github Desktop - Github"){:target="_blank"} and improved upon!
 
 Although Github Desktop is published by Github – this doesn't mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
 
-This article assumes that you have a Git repository initialized already; you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"). Microsoft owns Azure DevOps and Github; personally, I have moved from Azure DevOps to Github for my git repositories but utilize AzureDevOps pipelines.
+This article assumes that you have a Git repository initialized already; you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"){:target="_blank"}. Microsoft owns Azure DevOps and Github; personally, I have moved from Azure DevOps to Github for my git repositories but utilize AzureDevOps pipelines.
+
+![Git High level workflow](/images/posts/HLGit_Workflow.png "Git High level workflow")
 
 ### Install Github Desktop
 
 Installation of Github Desktop is pretty simple, but assuming you have rights to install the software:
 
-1. In your web browser, navigate to [Github Desktop](https://desktop.github.com/) homepage and click on: **Download**
+1. In your web browser, navigate to [Github Desktop](https://desktop.github.com/){:target="_blank"} homepage and click on: **Download**
 2. ![Github Desktop - Download](/uploads/githubdesktop-download.png "Github Desktop - Download")
 3. Once it's downloaded, you should have a file such as GitHubDesktopSetup-x64.exe _(it should only take a few seconds, the file is about 109 MB at the time this article was written),_ then **run** it to **install**.
 4. ![Github Desktop - Installing](/uploads/githubdesktop-installing.png "Github Desktop - Installing")
@@ -44,11 +46,11 @@ Congratulations, you have now installed Github Desktop!
 
 If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
 
- 1. Sign in to [**Azure DevOps**](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps")
+ 1. Sign in to [**Azure DevOps**](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps"){:target="_blank"}
  2. **Navigate** to the **project** you want to add to Github Desktop
  3. Click on **Repos**, **Files**
  4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
- 5. In the address bar, you will see your **URL**, and it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%")
+ 5. In the address bar, you will see your **URL**, and it should look like this: [https://dev.azure.com/%username%/_git/%projectname%](https://dev.azure.com/%username%/_git/%projectname% "https://dev.azure.com/%username%/_git/%projectname%"){:target="_blank"}
  6. **Copy** the **URL** and **open Github Desktop**
  7. Click on **File** and **Clone a repository**
  8. Click on **URL**
@@ -144,4 +146,4 @@ Hopefully, this article gives you an excellent base to start your git journey!
 
 There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!
 
-It is also worth reading this article on the .[gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore " .gitignore ") file, to make sure your git repositories don't end up bloated by unwanted files and you are only committing the files you need to be.
+It is also worth reading this article on the .[gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore " .gitignore "){:target="_blank"} file, to make sure your git repositories don't end up bloated by unwanted files and you are only committing the files you need to be.

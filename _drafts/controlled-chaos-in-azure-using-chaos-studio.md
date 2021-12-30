@@ -4,7 +4,7 @@ title: Controlled Chaos in Azure using Chaos Studio
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 
@@ -95,3 +95,14 @@ It is now time to add the resources targets to Chaos Studio
 16. Click Review + Enable
 17. Review the resources you want to enable Chaos Studio to target and select Enable
 18. You should now be back at the Targets pane and should see that your services are now enabled.
+
+### Configure and run Azure Chaos Studio
+
+#### Action exclusions
+
+There may be actions that you don’t want to be ran against certain resources, an example might be you don’t want anyone to kill any processes on a Virtual Machine.
+
+1. In the Target pane of Chaos Studio, select Actions next to the resource and
+2. Unselect the capability you don’t want to run on that resource
+3. Select Save
+4. ![](/uploads/azure_chaosstudio_manageactions.png)

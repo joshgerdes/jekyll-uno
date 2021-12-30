@@ -42,7 +42,7 @@ Installation of Github Desktop is pretty simple, but assuming you have rights to
 
 Congratulations, you have now installed Github Desktop!
 
-### Add your Azure DevOps repository.
+### Add your Azure DevOps repository
 
 If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
 

@@ -100,7 +100,7 @@ It is now time to add the resources targets to Chaos Studio
 
 #### Action exclusions
 
-There may be actions that you don’t want to be ran against certain resources, an example might be you don’t want anyone to kill any processes on a Virtual Machine.
+There may be actions that you don’t want to be run against certain resources, an example might be you don’t want anyone to kill any processes on a Virtual Machine.
 
 1. In the Target pane of Chaos Studio, select Actions next to the resource and
 2. Unselect the capability you don’t want to run on that resource

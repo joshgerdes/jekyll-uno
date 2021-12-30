@@ -199,7 +199,7 @@ It is easy to set up alerts when a Chaos experiment kicks off; to create an Azur
 10. Make sure that: **Event initiated by is set to *(All services and users)**
 11. Click **Done**
 12. Click **Add Action Group**
-13. If you have one, **assign** an **action group** _(these are who and how the alerts will get to you)_. If you don't have one click: + Create an action group.
+13. If you have one, **assign** an **action group** _(these are who and how the alerts will get to you)_. If you don't have one, click: + Create an action group.
 14. Specify a resource group to hold your action groups _(usually a monitor or management resource group)_
 15. Type the Action Group name
 16. Type the Action group Display name

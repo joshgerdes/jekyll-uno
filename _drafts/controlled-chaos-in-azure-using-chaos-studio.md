@@ -135,7 +135,7 @@ Note: If you name an Experiment the same as another experiment, it will replace 
 18.  Select **Add**
 19. I am then going to **Add delay for 5 Minutes**
 20. Then add an **abrupt VM shutdown** for 10 minutes _(Chaos Studio will automatically restart the VM after the 10-minute duration)_.
-21. ![](/uploads/azure_chaosstudio_createexperimentaddfault2.png)
+21. ![Azure Chaos Studio create experiment](/uploads/azure_chaosstudio_createexperimentaddfault2.png "Azure Chaos Studio create experiment")
 22. As you can see with the Branches _(items that will run in parallel)_ and actions, you can have multiple faults running at once in parallel by using branches or one after the other sequentially.
 23. Now that we are ready with our faulty, we are going to click **Review + Create**
 24. Click **Create**

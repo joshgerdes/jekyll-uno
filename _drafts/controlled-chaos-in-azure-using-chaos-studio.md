@@ -1,5 +1,5 @@
 ---
-date: 2021-12-30 00:00:00 +1300
+date: 2021-12-30T00:00:00.000+13:00
 title: Controlled Chaos in Azure using Chaos Studio
 author: Luke
 categories:
@@ -11,6 +11,8 @@ header:
 ---
 Chaos engineering has been around for a while; Netflix runs their own famous [Chaos Monkey](https://netflix.github.io/chaosmonkey/), supposedly running 24/7, taking down their resources and pushing them to the limit continuously; it almost sounds counter-intuitive – but it's not.
 
+> Chaos engineering is defined as “the discipline of experimenting on a system in order to build confidence in the system’s capability to withstand turbulent conditions in production” (Principles of Chaos Engineering, [http://principlesofchaos.org/](http://principlesofchaos.org/ "http://principlesofchaos.org/")). In other words, it’s a software testing method focusing on finding evidence of problems before they are experienced by users.
+>
 > Chaos engineering is a methodology that helps developers attain consistent reliability by hardening services against failures in production. Another way to think about chaos engineering is that it's about embracing the inherent chaos in complex systems and, through experimentation, growing confidence in your solution's ability to handle it.
 >
 > A common way to introduce chaos is to deliberately inject faults that cause system components to fail. The goal is to observe, monitor, respond to, and improve your system's reliability under adverse circumstances. For example, taking dependencies offline (stopping API apps, shutting down VMs, etc.), restricting access (enabling firewall rules, changing connection strings, etc.), or forcing failover (database level, Front Door, etc.), is a good way to validate that the application is able to handle faults gracefully.
@@ -67,7 +69,7 @@ Now, it's time to create an Application Insights resource. Applications Insights
  4. **Select** your **Resource Group** to place the Application Insights resource into (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it's just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
  5. **Select** the **Region** the resources are in
  6. Type in a **name**
- 7.  **Select** your **Log Analytics workspace** you want to link Application Insights to _(if you don't have a Log Analytics workspace, you can create one '_[_here_](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)_')_.
+ 7. **Select** your **Log Analytics workspace** you want to link Application Insights to _(if you don't have a Log Analytics workspace, you can create one '_[_here_](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)_')_.
  8. ![Azure Portal - Application Insights](/uploads/azure_applicationinsights.png "Azure Portal - Application Insightsv")
  9. Click **Tags**
 10. Make sure you **enter appropriate tags** to make sure that the resource can be identified and tracked, and click **Review + Create**
@@ -81,7 +83,7 @@ It is now time to add the resources targets to Chaos Studio
  2. On the left band side Blade, select **Targets**
  3. ![Azure Chaos Studio](/uploads/azure_chaosstudio_targets.png "Azure Chaos Studio")
  4. As you can see, I have a Virtual Machine Scale Set and a front-end Network Security Group.
- 5. **Select** the **checkbox** next to Name to **select all** the Resources 
+ 5. **Select** the **checkbox** next to Name to **select all** the Resources
  6. Select **Enable Targets**
  7. ![Azure Chaos Studio](/uploads/azure_chaosstudio_targets2.png "Azure Chaos Studio")
  8. Select **Enable service-direct targets (All resources)**
@@ -104,7 +106,7 @@ It is now time to add the resources targets to Chaos Studio
 
 There may be actions that you don't want to be run against specific resources; an example might be you don't want anyone to kill any processes on a Virtual Machine.
 
-1. In the Target pane of Chaos Studio, select **Actions** next to the resource 
+1. In the Target pane of Chaos Studio, select **Actions** next to the resource
 2. **Unselect** the **capability** you don't want to run on that resource
 3. Select **Save**
 4. ![Azure Chaos Studio Actions](/uploads/azure_chaosstudio_manageactions.png "Azure Chaos Studio - Enable targets")
@@ -126,13 +128,13 @@ Note: If you name an Experiment the same as another experiment, it will replace 
  9. **Using** Experiment **Designer**, you can **design** your **Faults**; you can have multiple capabilities hit a resource with expected delays, _i.e., you can have Memory pressure on a VM for 10 minutes, then CPU pressure, then shutdown._
 10. We are going to select **Add Action**
 11. Then **Add Fault**
-12.  I am going to select **Physical Memory** pressure
+12. I am going to select **Physical Memory** pressure
 13. Leave the duration to **10 minutes**
 14. Because this will go against my VM scale set, I will add in the instances I want to target _(if you aren't targeting a VM Scale set, you can leave this blank, you can find the instance ID by going to your VM Scale set click on Instances, click on the VM instance you want to target and you should see the Instance ID in the Overview pane)_
 15. ![Azure Chaos Studio - Add fault](/uploads/azure_chaosstudio_createexperimentaddfault.png "Azure Chaos Studio - Add fault")
 16. Select **Next: Target resources**
 17. **Select** your **resources** _(you will notice as this is an Agent-based capability, only agent supported resources are listed)_
-18.  Select **Add**
+18. Select **Add**
 19. I am then going to **Add delay for 5 Minutes**
 20. Then add an **abrupt VM shutdown** for 10 minutes _(Chaos Studio will automatically restart the VM after the 10-minute duration)_.
 21. ![Azure Chaos Studio create experiment](/uploads/azure_chaosstudio_createexperimentaddfault2.png "Azure Chaos Studio create experiment")
@@ -196,7 +198,7 @@ It is easy to set up alerts when a Chaos experiment kicks off; to create an Azur
  7. **Filter** your **alert** to **Subscription** and click **Done**
  8. Click **Add Condition**
  9. Select: **Starts a Chaos Experiment**
-10. Make sure that: **Event initiated by is set to *(All services and users)**
+10. Make sure that: *_Event initiated by is set to (All services and users)_
 11. Click **Done**
 12. Click **Add Action Group**
 13. If you have one, **assign** an **action group** _(these are who and how the alerts will get to you)_. If you don't have one, click: **+ Create an action group**.

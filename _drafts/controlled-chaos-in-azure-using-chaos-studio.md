@@ -37,7 +37,7 @@ In my test setup, I have the following already pre-created that I will be runnin
 * Virtual Machine Scale set _(running Windows with two instances)_
 * Single Virtual Machine _(running Windows)_ to test shutdown against
 
-The currently supported resource types can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)'.
+The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)'.
 
 ### Setup Azure Chaos Studio
 
@@ -52,8 +52,8 @@ Because we will use Agent-based capabilities to generate our Faults, I needed to
  5. **Select** the **RegionRegion**ur resources
  6. Type in a **name** (_this will be the identity that you will see in logs running these experiments, so make sure its something you can identify with)_
  7. ![](/uploads/azure_userassignedmanageidentity.png)
- 8. Click Nex: Tags
- 9. Make sure you enter appropriate tags to make sure that the resource can be identified and tracked, and click Review + Create
+ 8. Click **Next: Tags**
+ 9. Make sure you enter appropriate tags to make sure that the resource can be identified and tracked, and click **Review + Create**
 10. ![](/uploads/azuretags_chaos.png)
 11. Verify that everything looks good and click Create to create your User Assigned Managed identity.
 

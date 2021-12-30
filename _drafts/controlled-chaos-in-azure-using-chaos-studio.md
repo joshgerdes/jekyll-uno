@@ -167,9 +167,9 @@ Now that the Experiment has been created, it should appear as a resource in the 
 1. Click **Start**
 2. ![](/uploads/azure_chaosstudio_whatmemory.png)
 3. Click **Ok** to **start** the **Experiment** _(and place it into the queue)_
-4. **Click** on **Details** to see the **experiment progress** _(and any errors)_, and if it fails one part, depending on the fault, it may move to the next step.
+4. **Click** on **Details** to see the **experiment progress** _(and any errors)_, and if it fails one part, it may move to the next step depending on the fault.
 5. ![](/uploads/azure_chaosstudio_whatmemoryrun.png)
-6. Azure Chaos studio should now run rampant and do best – cause Chaos!
+6. **Azure Chaos studio should now run rampant and do best – cause Chaos**!
 
 This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting).
 

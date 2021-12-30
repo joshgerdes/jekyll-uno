@@ -112,7 +112,7 @@ One of the benefits of using Git is version control and restoring a file if some
 1. Open **Github Desktop**
 2. Click on: **Current repository** to make sure your repository is selected
 3. Click on **History** _(you may need to click Fetch Origin if files have been updated remotely)_
-4. As you can see, someone (i.e. Luke Murray) has **made a** **change** to my' HelloWorld. ps1'' file, to be: "I like Unicorn" and changed the background and foreground colour to be both Yellow'.
+4. As you can see, someone _(i.e. Luke Murray)_ has **made a** **change** to my' HelloWorld. ps1'' file, to be: "I like Unicorn" and changed the background and foreground colour to be both Yellow'.
 5. I can **right-click** that **file** and select **Revert changes** in the commit using Github Desktop.
 6. ![Github Desktop - Revert changes](/uploads/githubdesktop-revertchanges.png "Github Desktop - Revert changes")
 7. You will now have a new entry in the History that will revert the commit, and you can quickly **push it** back to **Origin** again.
@@ -144,6 +144,6 @@ Using a master branch allows others to get production-ready scripts or code'' wh
 
 Hopefully, this article gives you an excellent base to start your git journey! 
 
-There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need!
+There is a lot more functionality built into Github Desktop, especially around branching, but for day to day use, the above should give you all you need! I 
 
 It is also worth reading this article on the .[gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore " .gitignore "){:target="_blank"} file, to make sure your git repositories don't end up bloated by unwanted files and you are only committing the files you need to be.

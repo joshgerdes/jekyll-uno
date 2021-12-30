@@ -129,3 +129,8 @@ Note: If you name an Experiment, the same as another experiment, it will replace
 14. Leave the direction to 10 minutes
 15. Because this will against my VM scale set, I will add in the instances I want to target _(if you aren’t targeting a VM Scale set you can leave this blank, you can find the instance ID, by going to your VM Scale set, click on Instances, click on the VM instance you want to target and you should see the Instance ID in the Overview pane)_
 16. ![](/uploads/azure_chaosstudio_createexperimentaddfault.png)
+17. Select Next: Target resources
+18. Select your resources (you will notice as this is an Agent-based capability, only agent supported resources are listed)
+19.  Select Add
+20. I am then going to Add delay for 5 Minutes
+21. Then add an abrupt VM shutdown for 10 minutes

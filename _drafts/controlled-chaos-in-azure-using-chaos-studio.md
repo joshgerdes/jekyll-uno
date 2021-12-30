@@ -61,11 +61,21 @@ Because we are going to use Agent-based capabilities to generate our Faults, I n
 
 Now, it's time to create an Application Insights resource, this is for the logs of the experiments to go into, so you can see the faults and their behaviours.
 
-1. In the Azure Portal search for [Application Insights](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents)
-2. Click on Create
-3. Select the subscription holding the resources that you want to test against
-4. Select your Resource Group to place the Application Insights resource into (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it’s just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
-5. Select the Region of your resources
-6. Type in a name
-7.  Select your Log Analytics workspace you want to link Application Insights to (if you don’t have a Log Analytics workspace you can create one ‘[here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)’).
-8. ![](/uploads/azure_applicationinsights.png)
+ 1. In the Azure Portal search for [Application Insights](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents)
+ 2. Click on Create
+ 3. Select the subscription holding the resources that you want to test against
+ 4. Select your Resource Group to place the Application Insights resource into (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it’s just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
+ 5. Select the Region of your resources
+ 6. Type in a name
+ 7.  Select your Log Analytics workspace you want to link Application Insights to (if you don’t have a Log Analytics workspace you can create one ‘[here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)’).
+ 8. ![](/uploads/azure_applicationinsights.png)
+ 9. Click Tags
+10. Make sure you enter appropriate tags, to make sure that the resource can be identified and tracked and click Review + Create
+11. Verify that everything looks good and click Create to create your Application Insights.
+
+#### Setup Chaos Studio Targets
+
+It is now time to add the resources targets to Chaos Studio
+
+1. In the Azure Portal search for [Chaos Studio](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
+2. On the left band side Blade, select Targets

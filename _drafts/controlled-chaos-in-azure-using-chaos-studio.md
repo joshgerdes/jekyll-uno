@@ -107,7 +107,7 @@ There may be actions that you don't want to be run against specific resources; a
 1. In the Target pane of Chaos Studio, select **Actions** next to the resource 
 2. **Unselect** the **capability** you don't want to run on that resource
 3. Select **Save**
-4. ![](/uploads/azure_chaosstudio_manageactions.png "Azure Chaos Studio - Enable targets")
+4. ![Azure Chaos Studio Actions](/uploads/azure_chaosstudio_manageactions.png "Azure Chaos Studio - Enable targets")
 
 #### Configure Experiments
 
@@ -129,7 +129,7 @@ Note: If you name an Experiment the same as another experiment, it will replace 
 12.  I am going to select **Physical Memory** pressure
 13. Leave the duration to **10 minutes**
 14. Because this will go against my VM scale set, I will add in the instances I want to target _(if you aren't targeting a VM Scale set, you can leave this blank, you can find the instance ID by going to your VM Scale set click on Instances, click on the VM instance you want to target and you should see the Instance ID in the Overview pane)_
-15. ![](/uploads/azure_chaosstudio_createexperimentaddfault.png)
+15. ![Azure Chaos Studio - Add fault](/uploads/azure_chaosstudio_createexperimentaddfault.png "Azure Chaos Studio - Add fault")
 16. Select **Next: Target resources**
 17. **Select** your **resources** _(you will notice as this is an Agent-based capability, only agent supported resources are listed)_
 18.  Select **Add**

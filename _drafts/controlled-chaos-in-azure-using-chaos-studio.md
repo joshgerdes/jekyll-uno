@@ -130,11 +130,11 @@ Note: If you name an Experiment the same as another experiment, it will replace 
 13. Leave the duration to **10 minutes**
 14. Because this will go against my VM scale set, I will add in the instances I want to target _(if you aren't targeting a VM Scale set, you can leave this blank, you can find the instance ID by going to your VM Scale set click on Instances, click on the VM instance you want to target and you should see the Instance ID in the Overview pane)_
 15. ![](/uploads/azure_chaosstudio_createexperimentaddfault.png)
-16. Select Next: Target resources
-17. Select your resources (you will notice as this is an Agent-based capability, only agent supported resources are listed)
-18.  Select Add
-19. I am then going to Add delay for 5 Minutes
-20. Then add an abrupt VM shutdown for 10 minutes
+16. Select **Next: Target resources**
+17. **Select** your **resources** _(you will notice as this is an Agent-based capability, only agent supported resources are listed)_
+18.  Select **Add**
+19. I am then going to **Add delay for 5 Minutes**
+20. Then add an **abrupt VM shutdown** for 10 minutes _(Chaos Studio will automatically restart the VM after the 10 minute duration)_.
 21. ![](/uploads/azure_chaosstudio_createexperimentaddfault2.png)
 22. As you can see with the Branches (items that will run in parallel) and actions, you can have multiple faults running at once in parallel by using branches or one after the other sequentially.
 23. Now that we are ready with our faulty, we are going to click **Review + Create**

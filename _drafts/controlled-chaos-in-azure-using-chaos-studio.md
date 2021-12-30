@@ -68,7 +68,7 @@ Now, it's time to create an Application Insights resource. Applications Insights
  5. **Select** the **Region** the resources are in
  6. Type in a **name**
  7.  **Select** your **Log Analytics workspace** you want to link Application Insights to _(if you don't have a Log Analytics workspace, you can create one '_[_here_](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)_')_.
- 8. ![](/uploads/azure_applicationinsights.png)
+ 8. ![Azure Portal - Application Insights](/uploads/azure_applicationinsights.png "Azure Portal - Application Insightsv")
  9. Click **Tags**
 10. Make sure you **enter appropriate tags** to make sure that the resource can be identified and tracked, and click **Review + Create**
 11. Verify that everything looks good and click **Create** to create your Application Insights.
@@ -79,11 +79,11 @@ It is now time to add the resources targets to Chaos Studio
 
  1. In the **Azure Portal**, search for [**Chaos Studio**](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
  2. On the left band side Blade, select **Targets**
- 3. ![](/uploads/azure_chaosstudio_targets.png)
+ 3. ![Azure Chaos Studio](/uploads/azure_chaosstudio_targets.png "Azure Chaos Studio")
  4. As you can see, I have a Virtual Machine Scale Set and a front-end Network Security Group.
  5. **Select** the **checkbox** next to Name to **select all** the Resources 
  6. Select **Enable Targets**
- 7. ![](/uploads/azure_chaosstudio_targets2.png)
+ 7. ![Azure Chaos Studio](/uploads/azure_chaosstudio_targets2.png "Azure Chaos Studio")
  8. Select **Enable service-direct targets (All resources)**
  9. Enabling the service-direct targets will then add the capabilities supported by Service-direct targets into Chaos Studio for you to use.
 10. Once completed, I will **select** the scale set and click **Enable Target**
@@ -92,7 +92,7 @@ It is now time to add the resources targets to Chaos Studio
 13. **Select** your **Subsccription**
 14. Select your **managed identity**
 15. Select Enabled for Application Insights and select your Application Insights account. The instrumentation key should be selected manually.
-16. ![](/uploads/azure_chaosstudio_enableagenttargets.png)
+16. ![Azure Chaos Studio - Enable targets](/uploads/azure_chaosstudio_enableagenttargets.png "Azure Chaos Studio - Enable targets")
 17. _If your instrumentation key isn't filled in, you can find it on the Overview pane of the Application Insights resource._
 18. Click **Review + Enable**
 19. **Review** the **resources** you want to enable Chaos Studio to target and select **Enable**
@@ -107,7 +107,7 @@ There may be actions that you don't want to be run against specific resources; a
 1. In the Target pane of Chaos Studio, select **Actions** next to the resource 
 2. **Unselect** the **capability** you don't want to run on that resource
 3. Select **Save**
-4. ![](/uploads/azure_chaosstudio_manageactions.png)
+4. ![](/uploads/azure_chaosstudio_manageactions.png "Azure Chaos Studio - Enable targets")
 
 #### Configure Experiments
 

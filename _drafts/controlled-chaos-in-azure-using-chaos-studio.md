@@ -209,3 +209,16 @@ It is easy to set up alerts when a Chaos experiment kicks off, to create an Azur
 20. Select Notification Type
 21. Select email
 22. Select Email
+23. Type in your email address to be notified
+24. Click ok
+25. Type in the name of the mail to be a reference in the future _(i.e. Help Desk)_
+26. Click Review + Create
+27. Click Create to create your Action group
+28. Type in your rule name (ie Alert – Chaos Experiment – Started)
+29. Type in a description
+30. Specify the resource group to place the alert in (again, usually a monitor or management resource group)
+31. Check Enable alert rule on creation
+32. Click Create alert rule
+
+    Note: Activity Log alerts are hidden types, they are not shown in the resource group by default, but if you check the: Show hidden types box, they will appear.
+33. ![](/uploads/azure_chaosstudio_alert.png)

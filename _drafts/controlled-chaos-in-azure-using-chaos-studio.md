@@ -90,3 +90,4 @@ It is now time to add the resources targets to Chaos Studio
 11. This is where you link the user-managed identity and Application Insights created earlier
 12. Select your subscription and your managed identity
 13. Select Enabled for Application Insights and select your Application Insights account, the instrumentation key should be selected manually.
+14. ![](/uploads/azure_chaosstudio_enableagenttargets.png)

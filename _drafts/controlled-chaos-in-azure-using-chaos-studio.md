@@ -120,3 +120,4 @@ Note: If you name an Experiment, the same as another experiment, it will replace
 5. Select your Resource Group to save the Experiment into
 6. Type in a name for your experiment that makes sense, in this case, we are going to put some Memory pressure on the VM scale set.
 7. Select your region
+8. ![](/uploads/azure_chaosstudio_createexperiment.png)

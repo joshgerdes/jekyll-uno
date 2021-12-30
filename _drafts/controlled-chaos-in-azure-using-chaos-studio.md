@@ -106,3 +106,17 @@ There may be actions that you don’t want to be run against certain resources, 
 2. Unselect the capability you don’t want to run on that resource
 3. Select Save
 4. ![](/uploads/azure_chaosstudio_manageactions.png)
+
+#### Configure Experiments
+
+An experiment is a collection of capabilities to create faults, put pressure on your resources and overall cause Chaos, that will be run against your target resources. These experiments are saved so you can run them multiple times and edit them later, although currently, you cannot reassign the same experiments to other resources.
+
+Note: If you name an Experiment, the same as another experiment, it will replace the older experiment with your new one and retain the previous history.
+
+1. In the Azure Portal search for [Chaos Studio](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
+2. On the left band side Blade, select Experiments
+3. Click + Create
+4. Select your Subscription
+5. Select your Resource Group to save the Experiment into
+6. Type in a name for your experiment that makes sense, in this case, we are going to put some Memory pressure on the VM scale set.
+7. Select your region

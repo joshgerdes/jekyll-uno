@@ -165,3 +165,6 @@ I am going to assign permissions to the Resource Group that the VM Scale set exi
 Now that the experiment has been created, it should appear as a resource in the resource group you selected earlier, if you open it – you can see the History, Start, and Edit buttons for the Experiment.
 
 1. Click Start
+2. ![](/uploads/azure_chaosstudio_whatmemory.png)
+3. Click Ok to start the Experiment _(and place it into the queue)_
+4. Click on Details to see the experiment progress, if it fails one part of it due to an error it will progress to the next step.

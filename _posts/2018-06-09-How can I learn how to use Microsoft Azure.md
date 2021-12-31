@@ -24,7 +24,7 @@ This blog post is intended to help point you in the right direction whether it i
 
 _The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
-_Note: Updated: 02/12/21_
+_Note: Updated: 01/01/22_
 
 ## Beginner: So, what is this outside world of Azure that you speak of?
 
@@ -86,4 +86,5 @@ _Note: Updated: 02/12/21_
 * [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}
 * [Microsoft Customer Co-creation](https://customercocreation.microsoft.com/){:target="_blank"}
 * [Security Community Webinars](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/security-community-webinars/ba-p/927888){:target="_blank"}
-* [ Microsoft Trainer Community Channel](https://www.youtube.com/channel/UCcrbVpBfMQOYQv8__mPHRJg){:target="_blank"}
+* [Microsoft Trainer Community Channel](https://www.youtube.com/channel/UCcrbVpBfMQOYQv8__mPHRJg){:target="_blank"}
+* [Linkedin - Azure Feeds](https://www.linkedin.com/in/azure-feeds-709457212/recent-activity/){:target="_blank"}

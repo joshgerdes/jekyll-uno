@@ -168,7 +168,7 @@ Now that you have your Connector setup, its time to setup your application
  9. Add a user or group _(preferred)_ you want to have access to this
     Application
 10. Click Assigned
-11. ![Graphical user interface, text, application, email Description](media/1f870a8f049b221113c7756b5185b7cd.png)
+11. ![Azure AD Enterprise Applications - User & Group Assignment](/uploads/azureportal-enterpriseapplicationsuserandgrpassignment.png "Azure AD Enterprise Applications - User & Group Assignment")
 12. Click on Application Proxy
 13. Here you can see and edit the information you created earlier when you
     created the application, copy the External URL

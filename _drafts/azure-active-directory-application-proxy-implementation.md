@@ -87,10 +87,10 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
  6. Accept the system requirements and click Accept Terms & Download
  7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. Run it.
  8. Select: I agree to the license terms and conditions and select Install
- 9. ![Graphical user interface, text, application Description automatically](media/67d490658590b49827b612c32fb8f89e.png)
+ 9. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnector.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
 10. Wait for the Microsoft Azure Active Directory Application to display and login
 11. The Microsoft Azure Active Directory Application Connector will now be registered in your Azure Active Directory tenancy
-12. ![Graphical user interface, text, application Description automatically](media/14fe5895fd079dac1c906544e4ea8037.png)
+12. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnectorinstalled.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
 13. Click Close
 14. Now re-enable IE enhanced security configuration.
 

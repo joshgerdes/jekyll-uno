@@ -104,7 +104,7 @@ And 2 new processes running:
 * ApplicationProxyConnectorService
 * ApplicationProxyConnectorUpdateService
 
-![Graphical user interface, text Description automatically](media/79d5ca2e9942db9b94c4cd0b24ba2b63.png)
+![ApplicationProxyConnectorService](/uploads/azureaadapplicationservices.png "ApplicationProxyConnectorService")
 
 If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell).
 

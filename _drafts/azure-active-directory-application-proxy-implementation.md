@@ -120,30 +120,30 @@ Now that you have created the Connector, the Application Proxy has put our Conne
  6. ![Azure AD Application Proxy Connector Groups](/uploads/azureportal-applicationproxyconnector.png "Azure AD Application Proxy Connector Groups")
  7. Click on **+ New Connector Group**
  8. Give it a **name** _(i.e., On-premises_)
- 9. **Select** the **Connector** you had earlier and **select the** region closest to you _(currently, the following can be chosen: Asia, Australia, Europe, North America)_
+ 9. **Select** the **Connector** you had earlier and **select the** region closest to you _(currently, the following regions can be chosen: Asia, Australia, Europe, North America)_
 10. ![Azure AD Application Proxy - New Connector Group](/uploads/azureportal-applicationproxynewconnectorgroup.png "Azure AD Application Proxy - New Connector Group")
 11. **Click + Create**
 12. Clicking create will create your new On-premises connector group and add the Connector to the group.
 
 ### Configure your Azure Application Proxy Application
 
-Now that you have your Connector setup, its time to set up your Application
+Now that you have your Connector setup, its time to set up your application
 
-1. Login to Azure Portal (on any PC/server)
-2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-3. Select Application Proxy
-4. Click on: + Configure an app
-5. Fill in the details that match your Application:
+1. Login to **Azure Portal** _(on any PC/server)_
+2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+3. Select **Application Proxy**
+4. Click on: **+ Configure an app**
+5. **Fill** in the **details** that match your **application**:
 
-* Name: This is the Application that users will see _(i.e. I am going with Pizza, which is the name of my NAS)_
-* Internal URL: This is the internal URL used to access your Application inside the network _(in my example, it is:_ [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
-* External Url: This is the external URL that will be created so that users can access the application form _(this is not where you set your custom domain)_; _I will go with Pizza._ Note this URL down.
-* Pre-Authentication: You don’t have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
-* Connector Group: Select the connector group you created earlier or that your Connector is signed to.
-* Leave all Additional Settings as default – they can be changed later if you need to.
+* **Name**: This is the application that users will see _(i.e. I am going with Pizza, which is the name of my NAS)_
+* **Internal URL**: This is the internal URL used to access your application inside the network _(in my example, it is:_ [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
+* **External Url**: This is the external URL that will be created so that users can access the application form; _I will go with Pizza._ Note this URL down.
+* **Pre-Authentication**: You don’t have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
+* **Connector Group**: Select the connector group you created earlier or that your Connector is signed to.
+* **Leave** all **Additional Settings as default** – they can be changed later if you need to.
   1. ![](/uploads/azureportal-applicationproxynewapplication.png)
-  2. Verify that everything is filled out correctly and, click + Add
-  3. Azure Application Proxy has now created a new Enterprise Application for you; based on the name mentioned earlier, if you navigate to the external URL mentioned earlier, you should get a prompt similar to below:
+  2. **Verify** that **everything** is filled out **correctly** and, click **+ Add**
+  3. Azure **Application Proxy has now created a new Enterprise Application for you**; based on the name mentioned earlier, if you navigate to the external URL mentioned earlier, you should get a prompt similar to below:
   4. ![Azure AD Login Error](/uploads/azureportal-pizzaloginerror.png "Azure AD Login Error")
   5. It is now time to assign the permissions for users to access the Application via Azure Active Directory!
 
@@ -152,16 +152,16 @@ Now that you have your Connector setup, its time to set up your Application
  1. Login to Azure Portal (on any PC/server)
  2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
  3. Select [Enterprise Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
- 4. Find the Application that was created earlier by the Azure Application Proxy service.
+ 4. Find the application that was created earlier by the Azure Application Proxy service.
  5. ![Azure Active Directory, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Azure Active Directory, Enterprise Application")
  6. Click on the Application
  7. Click on: Users and Groups
  8. Click Add Assignment
- 9. Add a user or group _(preferred)_ you want to have access to this Application.
+ 9. Add a user or group _(preferred)_ you want to have access to this application.
 10. Click Assigned
 11. ![Azure AD Enterprise Applications - User & Group Assignment](/uploads/azureportal-enterpriseapplicationsuserandgrpassignment.png "Azure AD Enterprise Applications - User & Group Assignment")
 12. Click on Application Proxy
-13. Here you can see and edit the information you created earlier when you created the Application, copy the External URL
+13. Here you can see and edit the information you created earlier when you created the application, copy the External URL
 14. Open Microsoft Edge (or another browser of your choice)
 15. Paste in the External URL
 16. Log in with the account that was assigned to the Enterprise application
@@ -180,7 +180,7 @@ Azure Application Proxy supports various [single ](https://docs.microsoft.com/en
  4. Login to Azure Portal (on any PC/server)
  5. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
  6. Select [Enterprise Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
- 7. Find the Application that was created earlier by the Azure Application Proxy service.
+ 7. Find the application that was created earlier by the Azure Application Proxy service.
  8. Click on Single sign-on
  9. Select Password-based
 10. ![Azure Portal - Single Signon](/uploads/azureportal-appproxysso.png "Azure Portal - Single Signon")
@@ -201,13 +201,13 @@ Azure Application Proxy supports various [single ](https://docs.microsoft.com/en
 25. If successful, Azure AD should now have mapped the fields:
 26. ![Azure Portal - Signin Fields](/uploads/azureportal-configuresigninextensionfields.png "Azure Portal - Signin Fields")
 27. Click Save
-28. Next time you log in to the Application, the My Apps Secure Sign-in Extension will have cached the credentials. It should automatically log you into the application, meaning you should only log in once with your Azure AD credentials.
+28. Next time you log in to the application, the My Apps Secure Sign-in Extension will have cached the credentials. It should automatically log you into the application, meaning you should only log in once with your Azure AD credentials.
 
-### Access your Azure Application Proxy published Application
+### Access your Azure Application Proxy published application
 
-1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/), and you will see your Application.
+1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/), and you will see your application.
 2. ![](/uploads/myapps.png)
-3. Your Application will also appear in the Microsoft 365 Waffle (it may take up to an hour to appear):
+3. Your application will also appear in the Microsoft 365 Waffle (it may take up to an hour to appear):
 4. ![](/uploads/m365waffle_pizza.png)
 
 I recommend you go into the Enterprise Application and upload a better image/logo so your users can quickly tell it apart.

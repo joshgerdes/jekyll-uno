@@ -174,6 +174,7 @@ Now that you have your Connector setup, its time to set up your application
 18. ![Synology Login](/uploads/microsoftazureapplicationproxyloginscreen.png "Synology Login")
 
 _Note: Because the Synology web interface was running on port: 5000, I had to go back and add the port to the internal URL, as the Application Proxy was attempting to route to the incorrect port._
+_Note: You may also notice that Microsoft has supplied an *.msappproxy.net certificate, even if your backend service doesn't have one.._
 
 ### Setup Password-based Single-Sign on
 

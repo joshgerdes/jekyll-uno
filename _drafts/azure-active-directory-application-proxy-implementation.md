@@ -57,22 +57,17 @@ The following resources and rights will be needed to set up Azure Application Pr
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
-Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions) restrictions,apply.
+Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions) restrictions, apply.
 
 ## Setup Azure Application Proxy
 
 In this guide, I am going to set up Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device webpage, although it can be any webpage _(Unifi Controller etc)._
 
-I will be configuring the Azure Application Proxy on a domain controller running
-Windows Server 2022.
+I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 
 ### Disable IE Enhanced Security Configuration
 
-The Azure Application Proxy connector requires you to login to Microsoft Azure,
-I will be installing this on a Windows Server 2022 domain controller, if this
-Enhanced Security Configuration is enabled (as it should be) you will have
-problems authenticating to Microsoft Azure, so the easiest thing is to turn it
-off temporarily.
+The Azure Application Proxy connector requires you to log in to Microsoft Azure, I will be installing this on a Windows Server 2022 domain controller, if this Enhanced Security Configuration is enabled (as it should be) you will have problems authenticating to Microsoft Azure, so the easiest thing is to turn it off temporarily.
 
 1. Open Server Manager
 2. Click on Local Server
@@ -83,28 +78,22 @@ off temporarily.
 
 ### Install Azure Application Proxy Connector
 
- 1. Login to Azure Portal (on the server that you want to install the connector
-    on)
- 2. Navigate to: [Azure Active
-    Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 1. Login to Azure Portal (on the server that you want to install the connector on)
+ 2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
  3. Select Application Proxy
  4. ![Graphical user interface, text, application, email Description](media/c3d59ee0dd543f1f2c46ee6755d33e05.png)
  5. Click on: Download connector service
  6. Accept the system requirements and click Accept Terms & Download
- 7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been
-    downloaded. Run it.
+ 7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. Run it.
  8. Select: I agree to the license terms and conditions and select Install
  9. ![Graphical user interface, text, application Description automatically](media/67d490658590b49827b612c32fb8f89e.png)
-10. Wait for the Microsoft Azure Active Directory Application to display and
-    login
-11. The Microsoft Azure Active Directory Application Connector will now be
-    registered in your Azure Active Directory tenancy
+10. Wait for the Microsoft Azure Active Directory Application to display and login
+11. The Microsoft Azure Active Directory Application Connector will now be registered in your Azure Active Directory tenancy
 12. ![Graphical user interface, text, application Description automatically](media/14fe5895fd079dac1c906544e4ea8037.png)
 13. Click Close
 14. Now re-enable IE enhanced security configuration.
 
-You should now see 2 new services appear in services as Automatic (Delayed
-Start):
+You should now see 2 new services appear in services as Automatic (Delayed Start):
 
 * WAPCsvc - Microsoft AAD Application Proxy Connector
 * WAPCUpdaterSvc - Microsoft AAD Application Proxy Connector Updater
@@ -116,21 +105,13 @@ And 2 new processes running:
 
 ![Graphical user interface, text Description automatically](media/79d5ca2e9942db9b94c4cd0b24ba2b63.png)
 
-If you are running Server Core, Microsoft Azure Active Directory Application
-Proxy can be installed via
-[PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell).
+If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell).
 
-The Azure Application Proxy Connector agent gets
-[updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-)
-automatically when a new major version is released by Microsoft.
+The Azure Application Proxy Connector agent gets [updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-) automatically when a new major version is released by Microsoft.
 
 ### Configure Connector Group
 
-Now that you have a created the connector, the Application Proxy has put our
-Connector in a group, that has defaulted to: Asia, because you can have more
-than one Application Proxy Connector for redundancy and different applications,
-we will create a new Connector Group that is set to use the Australia region, if
-Asia works for you – feel free to skip this step.
+Now that you have created the connector, the Application Proxy has put our Connector in a group, that has defaulted to: Asia, because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region, if Asia works for you – feel free to skip this step.
 
  1. Login to Azure Portal (on any PC/server)
  2. Navigate to: [Azure Active
@@ -178,7 +159,7 @@ Now that you have your Connector setup, its time to setup your application
 4. ![Graphical user interface, text, application Description automatically](media/d05773fc034271dc8512e8b1b02c12f4.png)
 5. Its time to assign the rights!
 
-## Assign rights to your Azure Application Proxy Application
+### Assign rights to your Azure Application Proxy Application
 
  1. Login to Azure Portal (on any PC/server)
  2. Navigate to: [Azure Active
@@ -209,7 +190,7 @@ Note: Because the Synology web interface ran on port: 5000, I had to go back and
 add in the port to the internal URL, as Application Proxy was attempting to
 route to port: 5001.
 
-## Setup Password-based Single-Sign on
+### Setup Password-based Single-Sign on
 
 Azure Application Proxy supports various [single
 sign](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)
@@ -246,18 +227,15 @@ allowing Azure AD to store the credentials for me.
 21. Enter in your password
 22. Select the MS Apps extension and select Save
 23. Navigate back to the Azure Portal
-24. Select ‘I was able to sign in’
+24. Select ‘I was able to sign in
 25. If successful, Azure AD should now have mapped the fields:
 26. ![Graphical user interface, text, application, email Description](media/96dff89a4a6a5706d0266034343e727d.png)
 27. Click Save
-28. Next time you login to the Application, the My Apps Secure Sign-in Extension
-    will have cached the credentials and should log you into the application
-    automatically, meaning you should only need to login once with your Azure AD
-    credentials.
+28. Next time you log in to the Application, the My Apps Secure Sign-in Extension will have cached the credentials and should log you into the application automatically, meaning you should only need to login once with your Azure AD credentials.
 
-## Access your Azure Application Proxy published application
+### Access your Azure Application Proxy published application
 
-1. You can now go to: [My Apps (microsoft.com)](https://myapps.microsoft.com/)
+1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/)
    and you will see your application
 2. ![Graphical user interface, application Description automatically](media/713f13c298df2a63bcf844a39e5bea38.png)
 

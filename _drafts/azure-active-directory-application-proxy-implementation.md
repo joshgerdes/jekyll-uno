@@ -9,9 +9,8 @@ header:
   teaser: ''
 
 ---
-Are you running internal web-based applications that you want to securely give
-access to users working remotely? Do you want to enforce or use Azure
-Conditional Access policies to protect and manage access?
+Are you running internal web-based applications that you want to give  
+access to users working remotely securely? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
 
 Let me introduce the [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy)…
 
@@ -34,9 +33,9 @@ Application Proxy supports the following types of applications:
 * Applications hosted behind a Remote Desktop Gateway
 * Rich client apps that are integrated with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
 
-Azure Application Proxy can often be overlooked to solve your business requirements, without the need to implement costly third-party firewalls _(it also doesn’t have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
+Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn’t have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 
-The Azure Application proxy connector is a lightweight agent that is installed on a Windows Server machine, that is logically close to the backend services it is giving access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
+The Azure Application proxy connector is a lightweight agent that is installed on a Windows Server machine that is logically close to the backend services the connector gives access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
 
 | URL | Port | How it's used |
 | --- | --- | --- |

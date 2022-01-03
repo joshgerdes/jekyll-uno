@@ -33,7 +33,7 @@ Application Proxy supports the following types of applications:
 * Applications hosted behind a Remote Desktop Gateway
 * Rich client apps that are integrated with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
 
-Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn’t have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
+Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn't have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 
 The Azure Application proxy connector is a lightweight agent installed on a Windows Server machine that is logically close to the backend services. The Connector gives access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
 
@@ -83,7 +83,7 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
  4. ![Azure Portal - Application Proxy](/uploads/azureportal-applicationproxy.png "Azure Portal - Application Proxy")
  5. Click on: **Download connector service**.
  6. Accept the system requirements and click **Accept Terms & Download**
- 7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. **Run** it.
+ 7. A file named: 'AADApplicationProxyConnectorInstaller.exe' should have been downloaded. **Run** it.
  8. Select: **I agree to the license terms and conditions** and select **Install**
  9. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnector.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
 10. Wait for the Microsoft Azure Active Directory Application to display and **log in** with an Azure Active Directory account with Application Administrator rights.
@@ -138,7 +138,7 @@ Now that you have your Connector setup, its time to set up your application
 * **Name**: This is the application that users will see _(i.e. I am going with Pizza, which is the name of my NAS)_
 * **Internal URL**: This is the internal URL used to access your application inside the network _(in my example, it is:_ [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
 * **External Url**: This is the external URL that will be created so that users can access the application form; _I will go with Pizza._ Note this URL down.
-* **Pre-Authentication**: You don’t have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
+* **Pre-Authentication**: You don't have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
 * **Connector Group**: Select the connector group you created earlier or that your Connector is signed to.
 * **Leave** all **Additional Settings as default** – they can be changed later if you need to.
   1. ![](/uploads/azureportal-applicationproxynewapplication.png)
@@ -172,7 +172,9 @@ _Note: Because the Synology web interface was running on port: 5000, I had to go
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. My Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials.
+Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. 
+
+However, my Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials _(if you want single-sign-on using the password-based sign in, then every user will need to have this extension configured)_.
 
  1. Download and install the [**MyApps Secure Sign-in extension**](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.)
  2. **Log** in using your Microsoft account to the MyApps **extension**
@@ -186,28 +188,28 @@ Azure Application Proxy supports various [single ](https://docs.microsoft.com/en
 10. ![Azure Portal - Single Signon](/uploads/azureportal-appproxysso.png "Azure Portal - Single Signon")
 11. **Type** in the **URL** of the **authentication webpage** and click **Save**
 12. ![](/uploads/azureportal-appproxyssourl.png)
-13. The Azure AD Application Proxy didn’t find my sign-in login and password fields, so I have to manually configure them, select: Configure Pizza Password Single Sign-on Settings.
-14. Select: Manually detect sign-in fields
-15. Select Capture sign-in fields
+13. The Azure AD Application Proxy didn't find my sign-in login and password fields, so I have to manually configure them, select: **Configure Pizza Password Single Sign-on Settings**.
+14. Select: **Manually detect sign-in fields**
+15. Select **Capture sign-in fields**
 16. ![Azure Application Proxy - Configure Sign-on](/uploads/azureportal-configuresignin.png "Azure Application Proxy - Configure Sign-on")
-17. Your MS Edge Extension should show:
+17. Your MS Edge Extension should show **Capture Field**:
 18. ![Azure Application Configure Extension](/uploads/azureportal-configuresigninextension.png "Azure Application Configure Extension")
-19. Enter in your username
-20. Press Enter
-21. Enter in your password
-22. Select the MS Apps extension and select Save
-23. Navigate back to the Azure Portal
-24. Select ‘I was able to sign in
-25. If successful, Azure AD should now have mapped the fields:
+19. **Enter** in your **username**
+20. Press **Enter**
+21. **Enter** in your **password**
+22. **Select** the MS Apps **extension** and select **Save**
+23. Navigate back to the **Azure Portal**
+24. Select '**I was able to sign in.'**
+25. If successful, **Azure AD should now have mapped the fields**:
 26. ![Azure Portal - Signin Fields](/uploads/azureportal-configuresigninextensionfields.png "Azure Portal - Signin Fields")
-27. Click Save
-28. Next time you log in to the application, the My Apps Secure Sign-in Extension will have cached the credentials. It should automatically log you into the application, meaning you should only log in once with your Azure AD credentials.
+27. Click **Save**
+28. Next time you log in to the application, the **My Apps Secure Sign-in Extension will have cached the credentials.** It should automatically log you into the application, meaning you should only log in once with your Azure AD credentials.
 
 ### Access your Azure Application Proxy published application
 
-1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/), and you will see your application.
+1. You can now go to [**My Apps (microsoft.com)**](https://myapps.microsoft.com/), and you will **see** your **application**.
 2. ![](/uploads/myapps.png)
-3. Your application will also appear in the Microsoft 365 Waffle (it may take up to an hour to appear):
+3. Your application will also **appear** in the **Microsoft 365 Waffle** _(it may take up to an hour to appear)_:
 4. ![](/uploads/m365waffle_pizza.png)
 
 I recommend you go into the Enterprise Application and upload a better image/logo so your users can quickly tell it apart.

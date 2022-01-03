@@ -112,18 +112,18 @@ The Azure Application Proxy Connector agent gets [updated](https://docs.microsof
 
 Now that you have created the Connector, the Application Proxy has put our Connector in a group that has defaulted to Asia; because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region if Asia works for you – feel free to skip this step.
 
- 1. Login to Azure Portal (on any PC/server)
- 2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 3. Select Application Proxy
+ 1. Login to **Azure Portal** _(on any PC/server)_
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 3. Select **Application Proxy**
  4. You should now see: Default and your Region
- 5. If you expand the Default Group, will you see your Connector:
+ 5. If you **expand** the Default **Group**, will you see your Connector:
  6. ![Azure AD Application Proxy Connector Groups](/uploads/azureportal-applicationproxyconnector.png "Azure AD Application Proxy Connector Groups")
- 7. Click on + New Connector Group
- 8. Give it a name _(i.e., On-premises_)
- 9. Select the Connector you had earlier and select the region closest to you _(currently, the following can be chosen: Asia, Australia, Europe, North America)_
+ 7. Click on **+ New Connector Group**
+ 8. Give it a **name** _(i.e., On-premises_)
+ 9. **Select** the **Connector** you had earlier and **select the** region closest to you _(currently, the following can be chosen: Asia, Australia, Europe, North America)_
 10. ![Azure AD Application Proxy - New Connector Group](/uploads/azureportal-applicationproxynewconnectorgroup.png "Azure AD Application Proxy - New Connector Group")
-11. Click + Create
-12. This will create your new On-premises connector group and add the Connector to it.
+11. **Click + Create**
+12. Clicking create will create your new On-premises connector group and add the Connector to the group.
 
 ### Configure your Azure Application Proxy Application
 

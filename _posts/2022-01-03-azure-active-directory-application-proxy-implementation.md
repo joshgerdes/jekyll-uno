@@ -32,7 +32,7 @@ Application Proxy supports the following types of applications:
 
 Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn't have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 
-The Azure Application proxy connector is a lightweight agent installed on a Windows Server machine that is logically close to the backend services. 
+The Azure Application proxy connector is a lightweight agent installed on a Windows Server machine that is logically close to the backend service that you want to deliver through the proxy. 
 
 The Connector gives access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
 

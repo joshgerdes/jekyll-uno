@@ -149,26 +149,26 @@ Now that you have your Connector setup, its time to set up your application
 
 ### Assign rights to your Azure Application Proxy Application
 
- 1. Login to Azure Portal (on any PC/server)
- 2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 3. Select [Enterprise Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
- 4. Find the application that was created earlier by the Azure Application Proxy service.
+ 1. Login to **Azure Portal** _(on any PC/server)_
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 3. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
+ 4. **Find** the **application** that was **created** earlier by the Azure Application Proxy service.
  5. ![Azure Active Directory, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Azure Active Directory, Enterprise Application")
- 6. Click on the Application
- 7. Click on: Users and Groups
- 8. Click Add Assignment
- 9. Add a user or group _(preferred)_ you want to have access to this application.
-10. Click Assigned
+ 6. Click on the **Application**
+ 7. Click on: **Users and Groups**
+ 8. Click **Add Assignment**
+ 9. **Add** a **user** or **group** _(preferred)_ you want to have access to this application.
+10. Click **Assigned**
 11. ![Azure AD Enterprise Applications - User & Group Assignment](/uploads/azureportal-enterpriseapplicationsuserandgrpassignment.png "Azure AD Enterprise Applications - User & Group Assignment")
-12. Click on Application Proxy
-13. Here you can see and edit the information you created earlier when you created the application, copy the External URL
-14. Open Microsoft Edge (or another browser of your choice)
-15. Paste in the External URL
-16. Log in with the account that was assigned to the Enterprise application
+12. Click on **Application Proxy**
+13. Here you can see and edit the information you created earlier when you created the application, **copy** the **External URL**
+14. **Open** Microsoft **Edge** (_or another browser of your choice)_
+15. **Paste** in the External **URL**
+16. **Log in** with the Azure Active Directory **account** that was **assigned** to the Enterprise **application**
 17. You should now have access to your on-premises web application from anywhere in the world:
 18. ![Synology Login](/uploads/microsoftazureapplicationproxyloginscreen.png "Synology Login")
 
-_Note: Because the Synology web interface was running on port: 5000, I had to go back and add in the port to the internal URL, as the Application Proxy was attempting to route to the incorrect port._
+_Note: Because the Synology web interface was running on port: 5000, I had to go back and add the port to the internal URL, as the Application Proxy was attempting to route to the incorrect port._
 
 ### Setup Password-based Single-Sign on
 

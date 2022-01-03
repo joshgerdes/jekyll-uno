@@ -21,7 +21,7 @@ Let me introduce the [Azure Active Directory Application Proxy](https://docs.mic
 
 ## Overview
 
-Azure Application Proxy has been around for a few years and allows users _(by Azure Active Directory and an Application Proxy Connector)_ to connect to internally hosted web applications.
+Azure Application Proxy has been around for a few years and allows users _(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
 
 ![Azure Application Proxy - Network Diagram](/uploads/aadproxynetworkdiagram.png "Azure Application Proxy - Network Diagram")
 
@@ -30,11 +30,13 @@ Application Proxy supports the following types of applications:
 * Web applications
 * Web APIs that you want to expose to rich applications on different devices
 * Applications hosted behind a Remote Desktop Gateway
-* Rich client apps that are integrated with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview){:target="_blank"}
+* Rich client apps that are integrated with th eMicrosoft Authentication Library (MSAL)
 
 Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn't have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 
-The Azure Application proxy connector is a lightweight agent installed on a Windows Server machine that is logically close to the backend services. The Connector gives access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
+The Azure Application proxy connector is a lightweight agent installed on a Windows Server machine that is logically close to the backend services. 
+
+The Connector gives access to and relays the information to the Application proxy service in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
 
 | URL | Port | How it's used |
 | --- | --- | --- |
@@ -59,11 +61,11 @@ The following resources and rights will be needed to set up Azure Application Pr
 * A minimum of Application Administrator rights is required to set up the Application and user and group assignments.
 * A server running 2012 R2 or above to install the Application Proxy connector on (and the permissions to install)
 * If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Azure Active Directory as a custom domain in order to be used.
-* [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1){:target="_blank"} license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
+* Azure Active Directory Premium P1 license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
-Note: Normal [Azure AD service limits](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions){:target="_blank"} and restrictions apply.
+_(Note: Normal [Azure AD service limits](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions){:target="_blank"} and restrictions apply)_.
 
 I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 

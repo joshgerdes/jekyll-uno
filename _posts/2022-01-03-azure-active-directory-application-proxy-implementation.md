@@ -28,7 +28,7 @@ Application Proxy supports the following types of applications:
 * Web applications
 * Web APIs that you want to expose to rich applications on different devices
 * Applications hosted behind a Remote Desktop Gateway
-* Rich client apps that are integrated with th eMicrosoft Authentication Library (MSAL)
+* Rich client apps that are integrated with the Microsoft Authentication Library (MSAL)
 
 Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn't have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 

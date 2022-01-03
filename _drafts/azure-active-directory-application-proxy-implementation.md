@@ -75,6 +75,7 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
 4. Select Off for: Administrators
 5. ![Graphical user interface, text, application Description automatically](media/e53e53d41b8069043fb03da19ef29d6f.png)
 6. Close Microsoft Edge (if you have it opened)
+7. ![Disable IE Enhanced Security Configuration](/uploads/disable_ie_enhancedconfiguration.png "Disable IE Enhanced Security Configuration")
 
 ### Install Azure Application Proxy Connector
 

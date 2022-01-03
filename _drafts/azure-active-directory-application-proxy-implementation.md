@@ -46,7 +46,11 @@ The Azure Application proxy connector is a lightweight agent installed on a Wind
 
 ## Setup Azure Application Proxy
 
-In this guide, I will set up Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device webpage. However, it can be any webpage _(Unifi Controller etc.)._
+In this guide I will set up an Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device web page. However, it can be any webpage _(Unifi Controller etc.)._
+
+* I have a Windows Server 2022 Domain Controller
+* Synology NAS
+* Microsoft 365 Developer subscription with appropriate licenses
 
 ### Pre-requisites for Azure Application Proxy setup
 

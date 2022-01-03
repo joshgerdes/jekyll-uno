@@ -50,8 +50,6 @@ in Microsoft Azure via HTTP/HTTPS as long as it has access to the following:
 | login.windows.net  secure.aadcdn.microsoftonline-p.com  *.microsoftonline.com  *.microsoftonline-p.com  *.msauth.net  *.msauthimages.net  *.msecnd.net  *.msftauth.net  *.msftauthimages.net  *.phonefactor.net  enterpriseregistration.windows.net  management.azure.com  policykeyservice.dc.ad.msft.net  ctldl.windowsupdate.com  www.microsoft.com/pkiops | 443/HTTPS | The connector uses these URLs during the registration process. |
 | ctldl.windowsupdate.com | 80/HTTP | The connector uses this URL during the registration process. |
 
-## 
-
 ## Pre-requisites for Azure Application Proxy setup
 
 The following resources and rights will be needed to setup Azure Application

@@ -148,14 +148,11 @@ Now that you have your Connector setup, its time to setup your application
 * Connector Group: Select the connector group you created earlier or that your Connector is signed to.
 * Leave all Additional Settings as default – they can be changed later if you
   need to.
-
-1. ![Graphical user interface, text, application, email Description](media/3c0a7e531ec5f57207bcd06ff55b2480.png)
-2. Verify that everything is filled out correctly and, click + Add
-3. Azure Application Proxy has now created a new Enterprise Application for
-   you, based on the name mentioned earlier, if you navigate to the external
-   URL mentioned earlier, you should get a prompt similar to below:
-4. ![Graphical user interface, text, application Description automatically](media/d05773fc034271dc8512e8b1b02c12f4.png)
-5. Its time to assign the rights!
+  1. ![](/uploads/azureportal-applicationproxynewapplication.png)
+  2. Verify that everything is filled out correctly and, click + Add
+  3. Azure Application Proxy has now created a new Enterprise Application for you, based on the name mentioned earlier if you navigate to the external URL mentioned earlier, you should get a prompt similar to below:
+* ![Graphical user interface, text, application Description automatically](media/d05773fc034271dc8512e8b1b02c12f4.png)
+* Its time to assign the rights!
 
 ### Assign rights to your Azure Application Proxy Application
 

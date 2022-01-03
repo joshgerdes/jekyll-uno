@@ -151,8 +151,8 @@ Now that you have your Connector setup, its time to setup your application
   1. ![](/uploads/azureportal-applicationproxynewapplication.png)
   2. Verify that everything is filled out correctly and, click + Add
   3. Azure Application Proxy has now created a new Enterprise Application for you, based on the name mentioned earlier if you navigate to the external URL mentioned earlier, you should get a prompt similar to below:
-* ![Graphical user interface, text, application Description automatically](media/d05773fc034271dc8512e8b1b02c12f4.png)
-* Its time to assign the rights!
+  4. ![Azure AD Login Error](/uploads/azureportal-pizzaloginerror.png "Azure AD Login Error")
+  5. It is now time to assign the permissions for users to access the application via Azure Active Directory!
 
 ### Assign rights to your Azure Application Proxy Application
 

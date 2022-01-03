@@ -45,7 +45,7 @@ The Connector gives access to and relays the information to the Application prox
 
 ## Setup Azure Application Proxy
 
-I will set up an Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device web page in this guide. However, it can be any webpage _(Unifi Controller etc.)._
+I will set up an Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device web page in this guide. However, it can be any webpage _(Unifi Controller, hosted on Apache, IIS etc.)_ accessible from the connector.
 
 * I have a Windows Server 2022 Domain Controller.
 * Synology NAS _(not domain joined, but accessible on the network via a DNS record from the domain)_

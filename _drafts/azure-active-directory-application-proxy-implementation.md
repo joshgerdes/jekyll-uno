@@ -204,7 +204,7 @@ Azure Application Proxy supports various [single sign](https://docs.microsoft.co
 15. Select Capture sign-in fields
 16. ![Azure Application Proxy - Configure Sign-on](/uploads/azureportal-configuresignin.png "Azure Application Proxy - Configure Sign-on")
 17. Your MS Edge Extension should show:
-18. ![Graphical user interface, website Description automatically](media/a5f480353055db212b43946c2645c989.png)
+18. ![Azure Application Configure Extension](/uploads/azureportal-configuresigninextension.png "Azure Application Configure Extension")
 19. Enter in your username
 20. Press Enter
 21. Enter in your password

@@ -66,7 +66,7 @@ In this guide, I am going to set up Azure Application Proxy to grant access to m
 I will be configuring the Azure Application Proxy on a domain controller running
 Windows Server 2022.
 
-## Disable IE Enhanced Security Configuration
+### Disable IE Enhanced Security Configuration
 
 The Azure Application Proxy connector requires you to login to Microsoft Azure,
 I will be installing this on a Windows Server 2022 domain controller, if this
@@ -81,7 +81,7 @@ off temporarily.
 5. ![Graphical user interface, text, application Description automatically](media/e53e53d41b8069043fb03da19ef29d6f.png)
 6. Close Microsoft Edge (if you have it opened)
 
-## Install Azure Application Proxy Connector
+### Install Azure Application Proxy Connector
 
  1. Login to Azure Portal (on the server that you want to install the connector
     on)
@@ -90,7 +90,7 @@ off temporarily.
  3. Select Application Proxy
  4. ![Graphical user interface, text, application, email Description](media/c3d59ee0dd543f1f2c46ee6755d33e05.png)
  5. Click on: Download connector service
- 6. Accept the system requirements and click Accept terms & Download
+ 6. Accept the system requirements and click Accept Terms & Download
  7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been
     downloaded. Run it.
  8. Select: I agree to the license terms and conditions and select Install
@@ -124,7 +124,7 @@ The Azure Application Proxy Connector agent gets
 [updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-)
 automatically when a new major version is released by Microsoft.
 
-## Configure Connector Group
+### Configure Connector Group
 
 Now that you have a created the connector, the Application Proxy has put our
 Connector in a group, that has defaulted to: Asia, because you can have more
@@ -150,7 +150,7 @@ Asia works for you – feel free to skip this step.
 13. This will now create your new On-premises connector group and add the
     connector to it.
 
-## Configure your Azure Application Proxy Application
+### Configure your Azure Application Proxy Application
 
 Now that you have your Connector setup, its time to setup your application
 
@@ -163,18 +163,10 @@ Now that you have your Connector setup, its time to setup your application
 
 * Name: This is the application that users will see _(i.e. I am going with
   Pizza, which is the name of my NAS)_
-* Internal URL: This is the internal URL used to access your application
-  inside the network _(in my example it is:_
-  [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
-* External Url: This is the external URL that will be created, that users can
-  access the application from _(this is not where you set your custom
-  domain)_, _I am going to go with: pizza._ Note this URL down.
-* Pre-Authentication: You don’t have to authenticate with Azure AD, you can
-  just use passthrough, but it is not something I would recommend without
-  delving into requirements, testing _– I am going to select: Azure Active
-  Directory._
-* Connector Group: Select your connector group you created earlier or that
-  your Connector is signed to.
+* Internal URL: This is the internal URL used to access your application inside the network _(in my example it is:_ [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
+* External Url: This is the external URL that will be created, that users can access the application form _(this is not where you set your custom domain)_, _I am going to go with: pizza._ Note this URL down.
+* Pre-Authentication: You don’t have to authenticate with Azure AD, you can just use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
+* Connector Group: Select the connector group you created earlier or that your Connector is signed to.
 * Leave all Additional Settings as default – they can be changed later if you
   need to.
 

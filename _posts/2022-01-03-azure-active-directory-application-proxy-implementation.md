@@ -9,8 +9,7 @@ header:
   teaser: '/uploads/aadproxynetworkdiagram.png'
 
 ---
-Are you running internal web-based applications that you want to give  
-access to users working remotely securely? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
+Are you running internal web-based applications that you want to give access to users working remotely securely, without the need for a VPN or firewalls? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
 
 Let me introduce the [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy){:target="_blank"}
 

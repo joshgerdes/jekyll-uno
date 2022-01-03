@@ -44,7 +44,11 @@ The Azure Application proxy connector is a lightweight agent installed on a Wind
 | login.windows.net  secure.aadcdn.microsoftonline-p.com  *.microsoftonline.com  *.microsoftonline-p.com  *.msauth.net  *.msauthimages.net  *.msecnd.net  *.msftauth.net  *.msftauthimages.net  *.phonefactor.net  enterpriseregistration.windows.net  management.azure.com  policykeyservice.dc.ad.msft.net  ctldl.windowsupdate.com  www.microsoft.com/pkiops | 443/HTTPS | The connector uses these URLs during the registration process. |
 | ctldl.windowsupdate.com | 80/HTTP | The connector uses this URL during the registration process. |
 
-## Pre-requisites for Azure Application Proxy setup
+## Setup Azure Application Proxy
+
+In this guide, I will set up Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device webpage. However, it can be any webpage _(Unifi Controller etc.)._
+
+### Pre-requisites for Azure Application Proxy setup
 
 The following resources and rights will be needed to set up Azure Application Proxy:
 
@@ -57,10 +61,6 @@ The following resources and rights will be needed to set up Azure Application Pr
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
 Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions) restrictions apply.
-
-## Setup Azure Application Proxy
-
-In this guide, I will set up Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device webpage. However, it can be any webpage _(Unifi Controller etc.)._
 
 I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 

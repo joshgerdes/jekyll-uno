@@ -6,17 +6,17 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: '/uploads/aadproxynetworkdiagram.png'
 
 ---
 Are you running internal web-based applications that you want to give  
 access to users working remotely securely? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
 
-Let me introduce the [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy)…
+Let me introduce the [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy){:target="_blank"}
 
 > Application Proxy is a feature of Azure AD that enables users to access on-premises web applications from a remote client. Application Proxy includes both the Application Proxy service which runs in the cloud, and the Application Proxy connector which runs on an on-premises server. Azure AD, the Application Proxy service, and the Application Proxy connector work together to securely pass the user sign-on token from Azure AD to the web application.
 >
-> Application Proxy supports single sign-on. For more information on supported methods, see [Choosing a single sign-on method](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method).
+> Application Proxy supports single sign-on. For more information on supported methods, see [Choosing a single sign-on method](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method){:target="_blank"}.
 >
 > Application Proxy is recommended for giving remote users access to internal resources. Application Proxy replaces the need for a VPN or reverse proxy.
 
@@ -31,7 +31,7 @@ Application Proxy supports the following types of applications:
 * Web applications
 * Web APIs that you want to expose to rich applications on different devices
 * Applications hosted behind a Remote Desktop Gateway
-* Rich client apps that are integrated with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
+* Rich client apps that are integrated with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview){:target="_blank"}
 
 Azure Application Proxy can often be overlooked to solve your business requirements without the need to implement costly third-party firewalls _(it also doesn't have to be an on-premises workload, for example, if the web application is running on a VM in Azure, it will also work)_.
 
@@ -60,11 +60,11 @@ The following resources and rights will be needed to set up Azure Application Pr
 * A minimum of Application Administrator rights is required to set up the Application and user and group assignments.
 * A server running 2012 R2 or above to install the Application Proxy connector on (and the permissions to install)
 * If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Azure Active Directory as a custom domain in order to be used.
-* [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1) license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
+* [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1){:target="_blank"} license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
-Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions) restrictions apply.
+Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions){:target="_blank"} restrictions apply.
 
 I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 
@@ -82,7 +82,7 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
 ### Install Azure Application Proxy Connector
 
  1. Login to **Azure Portal** _(on the server that you want to install the Connector on)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  3. Select **Application Proxy**
  4. ![Azure Portal - Application Proxy](/uploads/azureportal-applicationproxy.png "Azure Portal - Application Proxy")
  5. Click on: **Download connector service**.
@@ -108,16 +108,16 @@ And the following processes running:
 
 ![ApplicationProxyConnectorService](/uploads/azureaadapplicationservices.png "ApplicationProxyConnectorService")
 
-If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell).
+If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell){:target="_blank"}.
 
-The Azure Application Proxy Connector agent gets [updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-) automatically when a new major version is released by Microsoft.
+The Azure Application Proxy Connector agent gets [updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-){:target="_blank"} automatically when a new major version is released by Microsoft.
 
 ### Configure Connector Group
 
 Now that you have created the Connector, the Application Proxy has put our Connector in a group that has defaulted to Asia; because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region if Asia works for you – feel free to skip this step.
 
  1. Login to **Azure Portal** _(on any PC/server)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  3. Select **Application Proxy**
  4. You should now see: Default and your Region
  5. If you **expand** the Default **Group**, will you see your Connector:
@@ -134,7 +134,7 @@ Now that you have created the Connector, the Application Proxy has put our Conne
 Now that you have your Connector setup, its time to set up your application
 
 1. Login to **Azure Portal** _(on any PC/server)_
-2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
 3. Select **Application Proxy**
 4. Click on: **+ Configure an app**
 5. **Fill** in the **details** that match your **application**:
@@ -154,8 +154,8 @@ Now that you have your Connector setup, its time to set up your application
 ### Assign rights to your Azure Application Proxy Application
 
  1. Login to **Azure Portal** _(on any PC/server)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 3. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 3. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/){:target="_blank"}
  4. **Find** the **application** that was **created** earlier by the Azure Application Proxy service.
  5. ![Azure Active Directory, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Azure Active Directory, Enterprise Application")
  6. Click on the **Application**
@@ -176,16 +176,16 @@ _Note: Because the Synology web interface was running on port: 5000, I had to go
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. 
+Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to){:target="_blank"} sign-on methods, including Kerberos SPN integration. 
 
 However, my Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials _(if you want single-sign-on using the password-based sign in, then every user will need to have this extension configured)_.
 
- 1. Download and install the [**MyApps Secure Sign-in extension**](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.)
+ 1. Download and install the [**MyApps Secure Sign-in extension**](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.){:target="_blank"}
  2. **Log** in using your Microsoft account to the MyApps **extension**
  3. ![](/uploads/myappsextensionlogo.png)
  4. **Login** to **Azure Portal** (_on any PC/server)_
- 5. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 6. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
+ 5. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 6. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/){:target="_blank"}
  7. **Find** the **application** that was created earlier by the Azure Application Proxy service.
  8. Click on **Single sign-on**
  9. Select **Password-based**
@@ -211,7 +211,7 @@ However, my Synology NAS uses standalone accounts, so I will set Password-based 
 
 ### Access your Azure Application Proxy published application
 
-1. You can now go to [**My Apps (microsoft.com)**](https://myapps.microsoft.com/), and you will **see** your **application**.
+1. You can now go to [**My Apps (microsoft.com)**](https://myapps.microsoft.com/){:target="_blank"}, and you will **see** your **application**.
 2. ![](/uploads/myapps.png)
 3. Your application will also **appear** in the **Microsoft 365 Waffle** _(it may take up to an hour to appear)_:
 4. ![](/uploads/m365waffle_pizza.png)

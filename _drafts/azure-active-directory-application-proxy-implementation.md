@@ -164,15 +164,15 @@ Now that you have your Connector setup, its time to set up your application
 13. Here you can see and edit the information you created earlier when you created the application, **copy** the **External URL**
 14. **Open** Microsoft **Edge** (_or another browser of your choice)_
 15. **Paste** in the External **URL**
-16. **Log in** with the Azure Active Directory **account** that was **assigned** to the Enterprise **application**
-17. You should now have access to your on-premises web application from anywhere in the world:
+16. **Log in** with the Azure Active Directory **account** that was **assigned** to the Enterprise **application.**
+17. You should now have access to your on-premises web application from anywhere in the world, and because you are using Azure Active Directory, your conditional access policies and restrictions will be in effect:
 18. ![Synology Login](/uploads/microsoftazureapplicationproxyloginscreen.png "Synology Login")
 
 _Note: Because the Synology web interface was running on port: 5000, I had to go back and add the port to the internal URL, as the Application Proxy was attempting to route to the incorrect port._
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. Still, the Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing Azure AD to store the credentials for me.
+Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. My Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing Azure AD to store my credentials.
 
  1. Download and install the [MyApps Secure Sign-in extension](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.)
  2. Log in using your Microsoft account to the MyApps extension

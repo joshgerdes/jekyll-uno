@@ -55,7 +55,7 @@ The following resources and rights will be needed to set up Azure Application Pr
 * An Azure Active Directory tenant
 * A minimum of Application Administrator rights is required to set up the Application and user and group assignments.
 * A server running 2012 R2 or above to install the Application Proxy connector on (and the permissions to install)
-* If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records.
+* If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Azure Active Directory as a custom domain, in order to be used.
 * [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1) license or M365 Business Premium or E3 license for each user using Azure Active Directory Application Proxy.
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
@@ -68,37 +68,36 @@ I will be configuring the Azure Application Proxy on a domain controller running
 
 The Azure Application Proxy connector requires you to log in to Microsoft Azure, and I will be installing this on a Windows Server 2022 domain controller; if this Enhanced Security Configuration is enabled _(as it should be),_ you will have problems authenticating to Microsoft Azure, so the easiest thing is to turn it off temporarily.
 
-1. Open Server Manager
-2. Click on Local Server
-3. Click on: IE Enhanced Security Configuration
-4. Select Off for: Administrators
-5. ![Graphical user interface, text, application Description automatically](media/e53e53d41b8069043fb03da19ef29d6f.png)
-6. Close Microsoft Edge _(if you have it opened)_
-7. ![Disable IE Enhanced Security Configuration](/uploads/disable_ie_enhancedconfiguration.png "Disable IE Enhanced Security Configuration")
+1. Open **Server Manager**
+2. Click on **Local Server**
+3. Click on: **IE Enhanced Security Configuration**
+4. Select Off for: **Administrators**
+5. **Close** Microsoft **Edge** _(if you have it opened)_
+6. ![Disable IE Enhanced Security Configuration](/uploads/disable_ie_enhancedconfiguration.png "Disable IE Enhanced Security Configuration")
 
 ### Install Azure Application Proxy Connector
 
- 1. Login to Azure Portal (on the server that you want to install the Connector on)
- 2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 3. Select Application Proxy
+ 1. Login to **Azure Portal** _(on the server that you want to install the Connector on)_
+ 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 3. Select **Application Proxy**
  4. ![Azure Portal - Application Proxy](/uploads/azureportal-applicationproxy.png "Azure Portal - Application Proxy")
- 5. Click on: Download connector service.
- 6. Accept the system requirements and click Accept Terms & Download
- 7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. Run it.
- 8. Select: I agree to the license terms and conditions and select Install
+ 5. Click on: **Download connector service**.
+ 6. Accept the system requirements and click **Accept Terms & Download**
+ 7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. **Run** it.
+ 8. Select: **I agree to the license terms and conditions** and select **Install**
  9. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnector.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
-10. Wait for the Microsoft Azure Active Directory Application to display and log in.
-11. The Microsoft Azure Active Directory Application Connector will now be registered in your Azure Active Directory tenancy.
+10. Wait for the Microsoft Azure Active Directory Application to display and **log in** with an Azure Active Directory account with Application Administrator rights.
+11. The Microsoft Azure Active Directory Application **Connector will now** be **registered** in your Azure Active Directory tenancy.
 12. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnectorinstalled.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
-13. Click Close
-14. Now re-enable IE enhanced security configuration.
+13. Click **Close**
+14. Now **re-enable IE enhanced security configuration**.
 
 You should now see two new services appear in services as Automatic (Delayed Start):
 
 * WAPCsvc - Microsoft AAD Application Proxy Connector
 * WAPCUpdaterSvc - Microsoft AAD Application Proxy Connector Updater
 
-And 2 new processes running:
+T
 
 * ApplicationProxyConnectorService
 * ApplicationProxyConnectorUpdateService

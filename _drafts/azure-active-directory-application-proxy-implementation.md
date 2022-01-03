@@ -112,24 +112,23 @@ The Azure Application Proxy Connector agent gets [updated](https://docs.microsof
 
 ### Configure Connector Group
 
-Now that you have created the connector, the Application Proxy has put our Connector in a group, that has defaulted to: Asia, because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region, if Asia works for you – feel free to skip this step.
+Now that you have created the connector, the Application Proxy has put our Connector in a group, that has defaulted to Asia, because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region if Asia works for you – feel free to skip this step.
 
  1. Login to Azure Portal (on any PC/server)
  2. Navigate to: [Azure Active
     Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
  3. Select Application Proxy
  4. You should now see: Default and your Region
- 5. ![Graphical user interface, text, application, email Description](media/ed39566a7692c5d2b7cc83a4b66a2cae.png)
- 6. If you expand the Default Group, will you see your connector:
- 7. ![Graphical user interface, text, application Description automatically](media/27bb798f4476d4ab1d550405a609acd6.png)
- 8. Click on + New Connector Group
- 9. Give it a name _(i.e., On-premises_)
-10. Select the Connector you had earlier and select the region closest to you
+ 5. If you expand the Default Group, will you see your connector:
+ 6. ![Azure AD Application Proxy Connector Groups](/uploads/azureportal-applicationproxyconnector.png "Azure AD Application Proxy Connector Groups")
+ 7. Click on + New Connector Group
+ 8. Give it a name _(i.e., On-premises_)
+ 9. Select the Connector you had earlier and select the region closest to you
     (currently the following can be selected: Asia, Australia, Europe, North
     America)
-11. ![Graphical user interface, text, application, email Description](media/9e2da9fc515b594c11a7ac4dc097b275.png)
-12. Click + Create
-13. This will now create your new On-premises connector group and add the
+10. ![Graphical user interface, text, application, email Description](media/9e2da9fc515b594c11a7ac4dc097b275.png)
+11. Click + Create
+12. This will now create your new On-premises connector group and add the
     connector to it.
 
 ### Configure your Azure Application Proxy Application

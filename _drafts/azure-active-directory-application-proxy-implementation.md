@@ -67,7 +67,7 @@ I will be configuring the Azure Application Proxy on a domain controller running
 
 ### Disable IE Enhanced Security Configuration
 
-The Azure Application Proxy connector requires you to log in to Microsoft Azure, I will be installing this on a Windows Server 2022 domain controller, if this Enhanced Security Configuration is enabled (as it should be) you will have problems authenticating to Microsoft Azure, so the easiest thing is to turn it off temporarily.
+The Azure Application Proxy connector requires you to log in to Microsoft Azure, I will be installing this on a Windows Server 2022 domain controller, if this Enhanced Security Configuration is enabled _(as it should be)_ you will have problems authenticating to Microsoft Azure, so the easiest thing is to turn it off temporarily.
 
 1. Open Server Manager
 2. Click on Local Server
@@ -82,7 +82,7 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
  1. Login to Azure Portal (on the server that you want to install the connector on)
  2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
  3. Select Application Proxy
- 4. ![Graphical user interface, text, application, email Description](media/c3d59ee0dd543f1f2c46ee6755d33e05.png)
+ 4. ![Azure Portal - Application Proxy](/uploads/azureportal-applicationproxy.png "Azure Portal - Application Proxy")
  5. Click on: Download connector service
  6. Accept the system requirements and click Accept Terms & Download
  7. A file named: ‘AADApplicationProxyConnectorInstaller.exe’ should have been downloaded. Run it.

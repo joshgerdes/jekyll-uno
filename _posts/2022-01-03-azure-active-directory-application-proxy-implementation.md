@@ -63,7 +63,7 @@ The following resources and rights will be needed to set up Azure Application Pr
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
-Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions){:target="_blank"} restrictions apply.
+Note: Normal [Azure AD service limits](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions){:target="_blank"} and restrictions apply.
 
 I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 

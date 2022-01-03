@@ -170,14 +170,13 @@ Now that you have your Connector setup, its time to setup your application
 10. Click Assigned
 11. ![Azure AD Enterprise Applications - User & Group Assignment](/uploads/azureportal-enterpriseapplicationsuserandgrpassignment.png "Azure AD Enterprise Applications - User & Group Assignment")
 12. Click on Application Proxy
-13. Here you can see and edit the information you created earlier when you
-    created the application, copy the External URL
+13. Here you can see and edit the information you created earlier when you created the application, copy the External URL
 14. Open Microsoft Edge (or another browser of your choice)
 15. Paste in the External URL
-16. Login with the account that was assigned to the Enterprise application
+16. Log in with the account that was assigned to the Enterprise application
 17. You should now have access to your on-premises web application from anywhere
     in the world:
-18. ![Graphical user interface, website Description automatically](media/664b00f8d9f19123dc0461929c210728.png)
+18. ![Synology Login](/uploads/microsoftazureapplicationproxyloginscreen.png "Synology Login")
 
 Note: Because the Synology web interface ran on port: 5000, I had to go back and
 add in the port to the internal URL, as Application Proxy was attempting to

@@ -157,13 +157,11 @@ Now that you have your Connector setup, its time to setup your application
 ### Assign rights to your Azure Application Proxy Application
 
  1. Login to Azure Portal (on any PC/server)
- 2. Navigate to: [Azure Active
-    Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 3. Select [Enterprise
-    Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
+ 2. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 3. Select [Enterprise Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
  4. Find the Application that was created earlier by the Azure Application Proxy
     service
- 5. ![Graphical user interface, text, application, email Description](media/69931be4533d60671e73ffde60fa4e83.png)
+ 5. ![Azure Active Directory, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Azure Active Directory, Enterprise Application")
  6. Click on the Application
  7. Click on: Users and Groups
  8. Click Add Assignment

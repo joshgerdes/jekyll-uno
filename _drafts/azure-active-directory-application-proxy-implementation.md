@@ -56,7 +56,7 @@ The following resources and rights will be needed to set up Azure Application Pr
 * A minimum of Application Administrator rights is required to set up the Application and user and group assignments.
 * A server running 2012 R2 or above to install the Application Proxy connector on (and the permissions to install)
 * If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Azure Active Directory as a custom domain in order to be used.
-* [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1) license or M365 Business Premium or E3 license for each user using Azure Active Directory Application Proxy.
+* [Azure Active Directory Premium P1](https://www.microsoft.com/en-nz/security/business/identity-access-management/azure-ad-pricing?rtc=1) license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 

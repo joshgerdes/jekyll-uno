@@ -175,7 +175,7 @@ _Note: Because the Synology web interface was running on port: 5000, I had to go
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to){:target="_blank"} sign-on methods, including Kerberos SPN integration. 
+Azure Application Proxy supports various [single](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to){:target="_blank"} sign-on methods, including Kerberos SPN integration. 
 
 However, my Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials _(if you want single-sign-on using the password-based sign in, then every user will need to have this extension configured)_.
 

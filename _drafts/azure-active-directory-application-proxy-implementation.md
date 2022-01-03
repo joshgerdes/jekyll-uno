@@ -212,20 +212,17 @@ Azure Application Proxy supports various [single sign](https://docs.microsoft.co
 23. Navigate back to the Azure Portal
 24. Select ‘I was able to sign in
 25. If successful, Azure AD should now have mapped the fields:
-26. ![Graphical user interface, text, application, email Description](media/96dff89a4a6a5706d0266034343e727d.png)
+26. ![Azure Portal - Signin Fields](/uploads/azureportal-configuresigninextensionfields.png "Azure Portal - Signin Fields")
 27. Click Save
 28. Next time you log in to the Application, the My Apps Secure Sign-in Extension will have cached the credentials and should log you into the application automatically, meaning you should only need to login once with your Azure AD credentials.
 
 ### Access your Azure Application Proxy published application
 
-1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/)
-   and you will see your application
-2. ![Graphical user interface, application Description automatically](media/713f13c298df2a63bcf844a39e5bea38.png)
-
-Your application will also appear in the Microsoft 365 Waffle (it may take up to
-an hour to appear):
-
-![Graphical user interface, application Description automatically](media/e84bf867076476601ca4d6027724c3d7.png)
+1. You can now go to [My Apps (microsoft.com)](https://myapps.microsoft.com/) and you will see your application
+2. ![](/uploads/myapps.png)
+3. Your application will also appear in the Microsoft 365 Waffle (it may take up to
+   an hour to appear):
+4. ![](/uploads/m365waffle_pizza.png)
 
 I recommend, you go into the Enterprise Application and upload a better
 image/logo of your Application so your users can easily tell it apart.

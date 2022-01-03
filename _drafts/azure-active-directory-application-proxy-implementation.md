@@ -172,19 +172,19 @@ _Note: Because the Synology web interface was running on port: 5000, I had to go
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. My Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing Azure AD to store my credentials.
+Azure Application Proxy supports various [single ](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to)sign-on methods, including Kerberos SPN integration. My Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials.
 
- 1. Download and install the [MyApps Secure Sign-in extension](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.)
- 2. Log in using your Microsoft account to the MyApps extension
+ 1. Download and install the [**MyApps Secure Sign-in extension**](https://microsoftedge.microsoft.com/addons/detail/my-apps-secure-signin-ex/gaaceiggkkiffbfdpmfapegoiohkiipl#:\~:text=My%20Apps%20Secure%20Sign-in%20Extension.%20This%20extension%20is,to%20cloud%20applications%20within%20your%20organization%20or%20school.)
+ 2. **Log** in using your Microsoft account to the MyApps **extension**
  3. ![](/uploads/myappsextensionlogo.png)
- 4. Login to Azure Portal (on any PC/server)
- 5. Navigate to: [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
- 6. Select [Enterprise Applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
- 7. Find the application that was created earlier by the Azure Application Proxy service.
- 8. Click on Single sign-on
- 9. Select Password-based
+ 4. **Login** to **Azure Portal** (_on any PC/server)_
+ 5. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+ 6. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
+ 7. **Find** the **application** that was created earlier by the Azure Application Proxy service.
+ 8. Click on **Single sign-on**
+ 9. Select **Password-based**
 10. ![Azure Portal - Single Signon](/uploads/azureportal-appproxysso.png "Azure Portal - Single Signon")
-11. Type in the URL of the authentication webpage and click Save
+11. **Type** in the **URL** of the **authentication webpage** and click **Save**
 12. ![](/uploads/azureportal-appproxyssourl.png)
 13. The Azure AD Application Proxy didn’t find my sign-in login and password fields, so I have to manually configure them, select: Configure Pizza Password Single Sign-on Settings.
 14. Select: Manually detect sign-in fields

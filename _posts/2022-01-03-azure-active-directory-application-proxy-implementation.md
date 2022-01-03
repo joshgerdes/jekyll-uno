@@ -19,7 +19,7 @@ Let me introduce the Microsoft Azure Active Directory Application Proxy...
 
 ## Overview
 
-The [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy) has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users _(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
+The [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy){:target="_blank"} has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users _(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
 
 ![Azure Application Proxy - Network Diagram](/uploads/aadproxynetworkdiagram.png "Azure Application Proxy - Network Diagram")
 

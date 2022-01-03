@@ -97,7 +97,7 @@ You should now see two new services appear in services as Automatic (Delayed Sta
 * WAPCsvc - Microsoft AAD Application Proxy Connector
 * WAPCUpdaterSvc - Microsoft AAD Application Proxy Connector Updater
 
-T
+And the following processes running:
 
 * ApplicationProxyConnectorService
 * ApplicationProxyConnectorUpdateService

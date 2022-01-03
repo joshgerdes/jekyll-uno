@@ -61,9 +61,7 @@ Note: Normal [Azure AD service limits and](https://docs.microsoft.com/en-us/azur
 
 ## Setup Azure Application Proxy
 
-In this guide, I am going to setup Azure Application Proxy to grant access to my
-Synology NAS _(Network Attached Storage)_ device webpage, although it can be any
-webpage _(Unifi Controller etc)._
+In this guide, I am going to set up Azure Application Proxy to grant access to my Synology NAS _(Network Attached Storage)_ device webpage, although it can be any webpage _(Unifi Controller etc)._
 
 I will be configuring the Azure Application Proxy on a domain controller running
 Windows Server 2022.

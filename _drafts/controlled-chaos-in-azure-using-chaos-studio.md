@@ -99,7 +99,7 @@ It is now time to add the resources targets to Chaos Studio
 18. Click **Review + Enable**
 19. **Review** the **resources** you want to enable Chaos Studio to target and select **Enable**
 20. You should now be back at the Targets pane make sure you select Manage actions and make sure that all actions are ticked and click **Save**
-21. ![](/uploads/azurechaosactions.png)
+21. ![Azure Chaos Studio Capabilities](/uploads/azurechaosactions.png "Azure Chaos Studio Capabilities")
 
 ### Configure and run Azure Chaos Studio
 

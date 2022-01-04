@@ -110,6 +110,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukemurraynz"
+          - label: "Linktree"
+      icon: "fab fa-house-person-return"
+      url: "https://linktr.ee/lukemurray"
 
 # Site Footer
 # footer:

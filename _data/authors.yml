@@ -18,8 +18,3 @@ Luke:
           - label: "Linktree"
       icon: "fas fa-fw fa-link"
       url: "https://linktr.ee/lukemurray"
-    - label: "Buy me a coffee"
-      icon: "fas fa-coffee"
-      url: "https://www.buymeacoffee.com/lukemurray"
-
-      

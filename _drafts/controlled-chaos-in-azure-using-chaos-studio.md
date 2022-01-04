@@ -98,7 +98,8 @@ It is now time to add the resources targets to Chaos Studio
 17. _If your instrumentation key isn't filled in, you can find it on the Overview pane of the Application Insights resource._
 18. Click **Review + Enable**
 19. **Review** the **resources** you want to enable Chaos Studio to target and select **Enable**
-20. You should now be back at the Targets pane and should see that your services are currently enabled.
+20. You should now be back at the Targets pane make sure you select Manage actions and make sure that all actions are ticked and click Save
+21. ![](/uploads/azurechaosactions.png)
 
 ### Configure and run Azure Chaos Studio
 

@@ -15,6 +15,6 @@ Luke:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lukemurraynz"
-          - label: "Linktree"
+    - label: "Linktree"
       icon: "fas fa-fw fa-link"
       url: "https://linktr.ee/lukemurray"

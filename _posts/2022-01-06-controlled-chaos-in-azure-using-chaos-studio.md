@@ -7,7 +7,6 @@ categories:
 toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
-
 ---
 Chaos engineering has been around for a while; Netflix runs their own famous [Chaos Monkey](https://netflix.github.io/chaosmonkey/){:target="_blank"}, supposedly running 24/7, taking down their resources and pushing them to the limit continuously; it almost sounds counter-intuitive – but it's not.
 

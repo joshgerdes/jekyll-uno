@@ -149,9 +149,9 @@ _Note: I had an API error; after some investigation, I found it was having probl
 
 Now that the Experiment has been created, we need to give rights to the Managed User account created earlier _(and/or the System managed identity that was created when the Experiment was created for service-direct experiments)_.
 
-I will assign permissions to the Resource Group that the VM Scale set exists in, but for more granular control, you might be better off applying the rights to the individual resource. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers) Microsoft page.
+I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers) Microsoft page.
 
- 1. In the **Azure Portal**, click on the **Resource Group** containing your resources you want to run the Experiment against
+ 1. In the **Azure Portal**, click on the **Resource Group** containing the resources you want to run the Experiment against
  2. Select **Access control (IAM)**
  3. Click **+ Add**
  4. Click **Add Role Assignment**

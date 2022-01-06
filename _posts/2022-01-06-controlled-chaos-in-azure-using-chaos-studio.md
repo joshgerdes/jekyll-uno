@@ -93,7 +93,7 @@ It is now time to add the resources targets to Chaos Studio
 10. Once completed, I will **select** the scale set and click **Enable Target**
 11. Then finally, **Enable agent-based targets (VM, VMSS)**
 12. This is where you link the user-managed identity, and Application Insights created earlier
-13. **Select** your **Subsccription**
+13. **Select** your **Subscription**
 14. Select your **managed identity**
 15. Select Enabled for Application Insights and select your Application Insights account. The instrumentation key should be selected manually.
 16. ![Azure Chaos Studio - Enable targets](/uploads/azure_chaosstudio_enableagenttargets.png "Azure Chaos Studio - Enable targets")

@@ -1,5 +1,5 @@
 ---
-date: 2021-12-30T00:00:00.000+13:00
+date: 2022-01-06 00:00:00 +1300
 title: Controlled Chaos in Azure using Chaos Studio
 author: Luke
 categories:

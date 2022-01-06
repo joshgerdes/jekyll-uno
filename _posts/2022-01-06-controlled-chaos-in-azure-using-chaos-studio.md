@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: images/iazure-marketplace-banner.png
+  teaser: images/chaosengineering-banner.png
 
 ---
 Chaos engineering has been around for a while; Netflix runs their own famous [Chaos Monkey](https://netflix.github.io/chaosmonkey/){:target="_blank"}, supposedly running 24/7, taking down their resources and pushing them to the limit continuously; it almost sounds counter-intuitive – but it's not.
@@ -18,6 +18,8 @@ Chaos engineering has been around for a while; Netflix runs their own famous [Ch
 > A common way to introduce chaos is to deliberately inject faults that cause system components to fail. The goal is to observe, monitor, respond to, and improve your system's reliability under adverse circumstances. For example, taking dependencies offline (stopping API apps, shutting down VMs, etc.), restricting access (enabling firewall rules, changing connection strings, etc.), or forcing failover (database level, Front Door, etc.), is a good way to validate that the application is able to handle faults gracefully.
 
 Introducing controlled Chaos tools such as Chaos Monkey and now – [Azure Chaos Studio](https://azure.microsoft.com/en-us/services/chaos-studio/){:target="_blank"} allows you to put pressure and, in some cases, take down your services to teach you how your services will react under strain and identity areas of improvement as resiliency and scalability to improve your systems.
+
+![Chaos](/images/chaosengineering-banner.png "Chaos")
 
 Azure Chaos Studio _(currently in Preview and only supported in several_ [_regions_](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=chaos-studio){:target="_blank"} _now)_ is an enabler for 'controlled Chaos' in the Microsoft Azure ecosystem. Using that same tool that Microsoft uses to test and improve their services – you can as well!
 

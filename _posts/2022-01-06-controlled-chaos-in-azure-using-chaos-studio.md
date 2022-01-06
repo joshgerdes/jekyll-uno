@@ -6,19 +6,20 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: images/iazure-marketplace-banner.png
----
-Chaos engineering has been around for a while; Netflix runs their own famous [Chaos Monkey](https://netflix.github.io/chaosmonkey/){:target="_blank"}, supposedly running 24/7, taking down their resources and pushing them to the limit continuously; it almost sounds counter-intuitive – but it's not.
+  teaser: ''
 
-> Chaos engineering is defined as “the discipline of experimenting on a system in order to build confidence in the system’s capability to withstand turbulent conditions in production” (Principles of Chaos Engineering, [http://principlesofchaos.org/](http://principlesofchaos.org/ "http://principlesofchaos.org/"){:target="_blank"}). In other words, it’s a software testing method focusing on finding evidence of problems before they are experienced by users.
+---
+Chaos engineering has been around for a while; Netflix runs their own famous [Chaos Monkey](https://netflix.github.io/chaosmonkey/), supposedly running 24/7, taking down their resources and pushing them to the limit continuously; it almost sounds counter-intuitive – but it's not.
+
+> Chaos engineering is defined as “the discipline of experimenting on a system in order to build confidence in the system’s capability to withstand turbulent conditions in production” (Principles of Chaos Engineering, [http://principlesofchaos.org/](http://principlesofchaos.org/ "http://principlesofchaos.org/")). In other words, it’s a software testing method focusing on finding evidence of problems before they are experienced by users.
 >
 > Chaos engineering is a methodology that helps developers attain consistent reliability by hardening services against failures in production. Another way to think about chaos engineering is that it's about embracing the inherent chaos in complex systems and, through experimentation, growing confidence in your solution's ability to handle it.
 >
 > A common way to introduce chaos is to deliberately inject faults that cause system components to fail. The goal is to observe, monitor, respond to, and improve your system's reliability under adverse circumstances. For example, taking dependencies offline (stopping API apps, shutting down VMs, etc.), restricting access (enabling firewall rules, changing connection strings, etc.), or forcing failover (database level, Front Door, etc.), is a good way to validate that the application is able to handle faults gracefully.
 
-Introducing controlled Chaos tools such as Chaos Monkey and now – [Azure Chaos Studio](https://azure.microsoft.com/en-us/services/chaos-studio/){:target="_blank"} allows you to put pressure and, in some cases, take down your services to teach you how your services will react under strain and identity areas of improvement as resiliency and scalability to improve your systems.
+Introducing controlled Chaos tools such as Chaos Monkey and now – [Azure Chaos Studio](https://azure.microsoft.com/en-us/services/chaos-studio/) allows you to put pressure and, in some cases, take down your services to teach you how your services will react under strain and identity areas of improvement as resiliency and scalability to improve your systems.
 
-Azure Chaos Studio _(currently in Preview and only supported in several_ [_regions_](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=chaos-studio){:target="_blank"} _now)_ is an enabler for 'controlled Chaos' in the Microsoft Azure ecosystem. Using that same tool that Microsoft uses to test and improve their services – you can as well!
+Azure Chaos Studio _(currently in Preview and only supported in several_ [_regions_](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=chaos-studio) _now)_ is an enabler for 'controlled Chaos' in the Microsoft Azure ecosystem. Using that same tool that Microsoft uses to test and improve their services – you can as well!
 
 Chaos Studio works by creating Experiments _(i.e., Faults/Capabilities)_ that run against Targets _(your resources, whether they are agent or service-based)_.
 
@@ -38,7 +39,7 @@ In my test setup, I have the following already pre-created that I will be runnin
 * Virtual Machine Scale set _(running Windows with two instances)_
 * Single Virtual Machine _(running Windows)_ to test shutdown against
 
-The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers){:target="_blank"}'.
+The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers)'.
 
 ### Setup Azure Chaos Studio
 
@@ -46,7 +47,7 @@ The currently supported resource types of Azure Chaos Studio can be found '[here
 
 Because we will use Agent-based capabilities to generate our Faults, I needed to create a Managed Identity to give Chaos Studio the ability to wreak havoc on my resources!
 
- 1. In the **Azure Portal,** search for [**Managed Identities**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ManagedIdentity%2FuserAssignedIdentities){:target="_blank"}
+ 1. In the **Azure Portal,** search for [**Managed Identities**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ManagedIdentity%2FuserAssignedIdentities)
  2. Click on **Create**
  3. **Select** the **subscrSubscription**ng the resources that you want to test against
  4. **Select** your **Resource Group** to place the managed identity in (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it's just a preference, I will be placing mine in the Chaos Studio resource group so I can quickly delete it later)_.
@@ -62,13 +63,13 @@ Because we will use Agent-based capabilities to generate our Faults, I needed to
 
 Now, it's time to create an Application Insights resource. Applications Insights is for the logs of the experiments to go into, so you can see the faults and their behaviours.
 
- 1. In the **Azure Portal**, search for [**Application Insights**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents){:target="_blank"}
+ 1. In the **Azure Portal**, search for [**Application Insights**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents)
  2. Click on **Create**
  3. **Select** the **Subscription** the resources that you want to test against
  4. **Select** your **Resource Group** to place the Application Insights resource into (_I suggest creating a new Resource Group, as your Chaos experiments may have a different lifecycle than your resources, but it's just a preference, I will be placing mine in the Chaos Studio resource group so I can easily delete it later)_.
  5. **Select** the **Region** the resources are in
  6. Type in a **name**
- 7. **Select** your **Log Analytics workspace** you want to link Application Insights to _(if you don't have a Log Analytics workspace, you can create one '_[_here_](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces){:target="_blank"}_')_.
+ 7. **Select** your **Log Analytics workspace** you want to link Application Insights to _(if you don't have a Log Analytics workspace, you can create one '_[_here_](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces)_')_.
  8. ![Azure Portal - Application Insights](/uploads/azure_applicationinsights.png "Azure Portal - Application Insightsv")
  9. Click **Tags**
 10. Make sure you **enter appropriate tags** to make sure that the resource can be identified and tracked, and click **Review + Create**
@@ -78,7 +79,7 @@ Now, it's time to create an Application Insights resource. Applications Insights
 
 It is now time to add the resources targets to Chaos Studio
 
- 1. In the **Azure Portal**, search for [**Chaos Studio**](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview){:target="_blank"}
+ 1. In the **Azure Portal**, search for [**Chaos Studio**](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview)
  2. On the left band side Blade, select **Targets**
  3. ![Azure Chaos Studio](/uploads/azure_chaosstudio_targets.png "Azure Chaos Studio")
  4. As you can see, I have a Virtual Machine Scale Set and a front-end Network Security Group.
@@ -117,7 +118,7 @@ An experiment is a collection of capabilities to create faults, put pressure on 
 
 Note: If you name an Experiment the same as another experiment, it will replace the older Experiment with your new one and retain the previous history.
 
- 1. In the **Azure Portal,** search for [**Chaos Studio**](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview){:target="_blank"}.
+ 1. In the **Azure Portal,** search for [**Chaos Studio**](https://portal.azure.com/#blade/Microsoft_Azure_Chaos/ChaosStudioMenuBlade/overview).
  2. On the left band side Blade, select **Experiments**
  3. Click **+ Create**
  4. **Select** your **Subscription**
@@ -148,7 +149,7 @@ _Note: I had an API error; after some investigation, I found it was having probl
 
 Now that the Experiment has been created, we need to give rights to the Managed User account created earlier _(and/or the System managed identity that was created when the Experiment was created for service-direct experiments)_.
 
-I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers){:target="_blank"} Microsoft page.
+I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers) Microsoft page.
 
  1. In the **Azure Portal**, click on the **Resource Group** containing the resources you want to run the Experiment against
  2. Select **Access control (IAM)**
@@ -173,7 +174,7 @@ Now that the Experiment has been created, it should appear as a resource in the 
 5. ![Azure Chaos studio - Run experiment](/uploads/azure_chaosstudio_whatmemoryrun.png "Azure Chaos studio - Run experiment")
 6. **Azure Chaos studio should now run rampant and do best – cause Chaos**!
 
-This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting){:target="_blank"}.
+This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting).
 
 ### Monitor and Auditing of Azure Chaos Studio
 
@@ -220,6 +221,6 @@ It is easy to set up alerts when a Chaos experiment kicks off; to create an Azur
 29. Check **Enable alert rule on creation**
 30. Click **Create alert rule**
 
-_Note: Activity Log alerts are hidden types; they are not shown in the resource group by default, but if you check the: Show hidden types box, they will appear_
+_Note: Activity Log alerts are hidden types; they are not shown in the resource group by default, but if you check the: Show hidden types box, they will appear._
 
 ![Azure Activity Log - Azure Chaos Studio](/uploads/azure_chaosstudio_alert.png "Azure Activity Log - Azure Chaos Studio")

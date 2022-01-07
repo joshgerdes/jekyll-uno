@@ -46,12 +46,12 @@ That that we have the prerequisites sorted let's set it up...
  1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
  2. Select **+ New Project**
  3. Give your **project** a **name** _(i.e., I am going with: DNSAsCode)_
- 4. ![](/uploads/azuredevops-creatednsproject.png)
+ 4. ![Azure DevOps - Create New Project](/uploads/azuredevops-creatednsproject.png "Azure DevOps - Create New Project")
  5. Click **Create** _(your project will now be created)_
  6. Click on **Repos**
  7. Click on **Files**
  8. Find the '**Initialize Main branch with a README or gitignore**' section and click **Initialize.**
- 9. ![](/uploads/azuredevops-initializerepo.png)
+ 9. ![Azure DevOps - Create New Project](/uploads/azuredevops-initializerepo.png "Azure DevOps - Create New Project")
 10. You should now have an empty git repository!
 
     #### Create Azure DevOps Service Connection
@@ -200,6 +200,8 @@ As seen below, there were no resources before my deployment and the Azure Pipeli
 _Note: You can expand the Agent Job to see the steps of the job, I hid it as it revealed subscription ID information etc during the deployment._
 
 ![Azure DevOps - badasscloud.com DNS deployment](/uploads/azure-devopsdeployment-azurebicep.gif "Azure DevOps - badasscloud.com DNS deployment")
+
+Remember to update your nameserver records for your domain to point towards the nameserver entries in the Azure DNS zone resource, to use Azure DNS!
 
 #### Edit the Bicep file
 

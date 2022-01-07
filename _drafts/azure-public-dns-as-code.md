@@ -25,4 +25,31 @@ Using an Azure DevOps pipeline and repository and Azure Bicep, we are going to d
 
 ![Azure Bicep - Pipeline High Level](/uploads/azurebicep_dns_hld.png "Azure Bicep - Pipeline High Level")
 
-## Create Azure Public DNS as Code
+### Create Azure Public DNS as Code
+
+#### Prerequisites
+
+* An [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) account and permissions to create a service endpoint
+* An Azure subscription that you have at least contributor rights to
+* A git repository _(I am going to use the repository in Azure DevOps, but you could use a nested repository from GitHub)_
+* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) for local editing
+* A domain name and rights to change the nameservers to point towards Azure DNS
+
+In this article, I will be using an Azure subscription I have access to an Azure DevOps _(free)_ subscription, and a custom domain I join named ‘badasscloud.com’.
+
+I am going to assume that you have nothing set up, but feel free to skip the sections that aren’t relevant.
+
+That that we have the prerequisites sorted, let’s set it up...
+
+#### Create Azure DevOps Repository
+
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 2. Select **+ New Project**
+ 3. Give your **project** a **name** _(i.e., I am going with: DNSAsCode)_
+ 4. ![](/uploads/azuredevops-creatednsproject.png)
+ 5. Click **Create** _(your project will now be created)_
+ 6. Click on **Repos**
+ 7. Click on **Files**
+ 8. Find the ‘**Initialize Main branch with a README or gitignore**’ section and click **Initialize**
+ 9. ![](/uploads/azuredevops-initializerepo.png)
+10. You should now have an empty git repository!

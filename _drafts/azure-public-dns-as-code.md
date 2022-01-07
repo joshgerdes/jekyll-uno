@@ -146,4 +146,18 @@ This pipeline will run through the following steps:
 * Create the Azure resource group to place your DNS zone into (if it doesn't already exist)
 * Finally, do the actual Azure Bicep deployment and create your Primary DNS zone resource and if necessary modify any resources.
 
-Download the yaml pipeline 
+Copy the contents of the yaml pipeline above and let's import it to Azure DevOps.
+
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 2. Navigate to the DNS As Code **project** you created earlier
+ 3. Click on **Pipelines**
+ 4. Click on the **Create Pipeline**
+ 5. Select **Azure Repos Git (YAML)**
+ 6. **Select** your DNSAsCode **repository**
+ 7. Select **Starter pipeline**
+ 8. Overwrite the contents of the starter pipeline with the YAML file supplied
+ 9. ![](/uploads/azuredevops-newpipeline.png)
+10. Click on the arrow next to Save and Run and select Save
+11. Select Commit directly to the main branch'
+12. Click Save
+13. You may get an error about the trigger, you can ignore it - we will need to set the variables and trigger now.

@@ -155,17 +155,17 @@ Copy the contents of the yaml pipeline above and let's import it to Azure DevOps
  5. Select **Azure Repos Git (YAML)**
  6. **Select** your DNSAsCode **repository**
  7. Select **Starter pipeline**
- 8. Overwrite the contents of the starter pipeline with the YAML file supplied
+ 8. **Overwrite** the contents of the starter **pipeline** with the YAML file supplied
  9. ![](/uploads/azuredevops-newpipeline.png)
-10. Click on the arrow next to Save and Run and select Save
-11. Select Commit directly to the main branch'
-12. Click Save
+10. Click on the arrow next to Save and Run and select **Save**
+11. Select **Commit directly to the main branch**
+12. Click **Save**
 13. You may get an error about the trigger, you can ignore it - we will need to set the variables and trigger now.
-14. Click on Pipelines, select your newly created pipeline
-15. Select Edit
-16. Click Variables
-17. Click on New Variable
-18. We need to add 4 variables, to make the deployment more environment-specific, add the following variables into Azure DevOps _(these variables will be accessible by this pipeline only)._
+14. Click on **Pipelines**, select your newly created pipeline
+15. Select **Edit**
+16. Click **Variables**
+17. Click on **New Variable**
+18. We need to **add** 4 **variables**, to make the deployment more environment-specific, add the following variables into Azure DevOps _(these variables will be accessible by this pipeline only)._
 
 | Variable | Note |
 | --- | --- |
@@ -174,4 +174,5 @@ Copy the contents of the yaml pipeline above and let's import it to Azure DevOps
 | ResourceGroupName | The name of the Resource Group that the DNS Zone resource will be deployed into, i.e. DNS-PRD-RG |
 | SPN | The name of the Service Connection, that we created earlier to connect Azure DevOps to Azure, i.e., SPN.AzureDNSCode |
 
-1. 
+1. ![](/uploads/azuredevops-variables.png)
+2. Click **Save**

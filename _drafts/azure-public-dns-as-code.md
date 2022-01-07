@@ -196,3 +196,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 11. Click Permit
 12. Click Permit again, to authorise your SPN access to your pipeline for all future runs
 13. Your pipeline will be added to the queue and once an agent becomes available will start to run.
+
+As seen below, there were no resources before my deployment and the Azure Pipeline agent kicked off and created the resources in the Azure portal.
+
+_Note: You can expand the Agent Job to see the steps of the job, I hid it as it revealed subscription ID information etc during the deployment._

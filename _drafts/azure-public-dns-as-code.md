@@ -202,3 +202,7 @@ As seen below, there were no resources before my deployment and the Azure Pipeli
 _Note: You can expand the Agent Job to see the steps of the job, I hid it as it revealed subscription ID information etc during the deployment._
 
 ![](/uploads/azure-devopsdeployment-azurebicep.gif)
+
+#### Edit the Bicep file
+
+Now that you have successfully deployed your Azure Bicep file, you can go into the Azure Bicep and update the A, CNAME records to match your own environment - any new change to this repository will automatically trigger Continous Integration and deployment, you can override this behaviour by editing the Pipeline, clicking Edit Trigger and unselect 'Enable; continuous integration

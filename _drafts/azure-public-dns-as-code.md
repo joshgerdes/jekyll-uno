@@ -89,5 +89,7 @@ That that we have the prerequisites sorted, let’s set it up...
     14. Give the Service connection a name _(this is the display name that is visual in Azure DevOps)_
     15. Add a description _(ie created by, created on, created for)_
     16. Click on Verify and save
-    17. You now have a new Service connection
+    17. You now have a new Service connection!
     18. ![](/uploads/new_azure_serviceconnectioncreated.png)
+
+_Note: The password for the service principal is valid for 1 year, so when they expire you can come into the Azure DevOps service connection and update it here._

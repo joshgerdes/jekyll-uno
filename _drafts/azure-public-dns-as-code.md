@@ -115,20 +115,20 @@ To add the Azure Bicep file into Azure DevOps you can commit it into the git rep
 
  1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
  2. Navigate to the DNS As Code **project** you created earlier
- 3. Click on Repos
- 4. Click on Files
- 5. Click on the Ellipsis on the right-hand side
- 6. Click New
- 7. Click File
+ 3. Click on **Repos**
+ 4. Click on **Files**
+ 5. Click on the **Ellipsis** on the right-hand side
+ 6. Click **New**
+ 7. Click **File**
  8. ![](/uploads/azuredevops-createfile.png)
- 9. Type in the name of your file (including the bicep extension), ie Deploy-PublicDNS.bicep
-10. Click Create
-11. Copy the contents of the Azure Bicep file supplied above and paste them into the Contents of Deploy-PublicDNS.bicep in Azure DevOps
+ 9. Type in the name of your file _(including the bicep extension)_, ie **Deploy-PublicDNS.bicep**
+10. Click **Create**
+11. **Copy** the **contents** of the Azure **Bicep** file supplied above and **paste** them into the Contents of **Deploy-PublicDNS.bicep in Azure DevOps**
 12. ![](/uploads/azuredevops-deploypublicdnsinitialcommit.png)
-13. Click Commit
-14. Click Commit again
-15. While we are here, let's delete the README.md file (as it will cause issues with the pipeline later on), click on the README.md file
+13. Click **Commit**
+14. Click **Commit** again
+15. While we are here, let's **delete** the **README.md** file (as it will cause issues with the pipeline later on), click on the README.md file
 16. Click on the Ellipsis on the right-hand side
-17. Click Delete
-18. Click Commit
-19. You should now only have your: Deploy-PublicDNS.bicep in the repostory.
+17. Click **Delete**
+18. Click **Commit**
+19. You should now only have your: Deploy-PublicDNS.bicep in the repository.

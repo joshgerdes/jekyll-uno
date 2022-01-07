@@ -173,7 +173,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 | ResourceGroupName | The name of the Resource Group that the DNS Zone resource will be deployed into, i.e. DNS-PRD-RG |
 | SPN | The name of the Service Connection, that we created earlier to connect Azure DevOps to Azure, i.e., SPN.AzureDNSCode |
 
- 1. ![](/uploads/azuredevops-variables.png)
+ 1. ![Azure DevOps Variables](/uploads/azuredevops-variables.png "Azure DevOps Variables")
  2. Click **Save**
 
     #### Test & final approval of Azure DevOps Pipeline
@@ -190,7 +190,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
  9. **Click** on A**gent job 1**
 10. You will see a message: **This pipeline needs permission to access a resource before this run can continue**
 11. Click **View**
-12. ![](/uploads/azuredevops-spn-approval.png)
+12. ![Azure DevOps - badasscloud.com DNS deployment](/uploads/azuredevops-spn-approval.png "Azure DevOps - badasscloud.com DNS deployment")
 13. Click **Permit**
 14. Click **Permit** again, to authorise your SPN access to your pipeline for all future runs
 15. Your **pipeline** will be added to the **queue** and once an agent becomes available will start to **run**.

@@ -93,3 +93,18 @@ That that we have the prerequisites sorted, let’s set it up...
     18. ![](/uploads/new_azure_serviceconnectioncreated.png)
 
 _Note: The password for the service principal is valid for 1 year, so when they expire you can come into the Azure DevOps service connection and update it here._
+
+#### Add Azure Bicep
+
+Now that Azure DevOps has the delegated rights to create resources in Microsoft Azure, now we need to add the Azure Bicep for Azure DNS Zone.
+
+I have created the below Azure Bicep file named: Deploy-PublicDNS.bicep
+
+**Don't edit the file yet, you can add your DNS records later - after we add some variables into the Azure Pipeline.**
+
+This file will:
+
+* Create a new public Azure DNS zone, if it doesn't exist
+* Add/Remove and modify any records
+
+I have added CNAME, A Record and TXT Records as a base.

@@ -107,9 +107,9 @@ This file will:
 * Create a new public Azure DNS zone, if it doesn't exist
 * Add/Remove and modify any records
 
-I have added CNAME, A Record and TXT Records as a base. 
+I have added CNAME, A Record and TXT Records as a base.
 
-GITHUB 
+GITHUB
 
 To add the Azure Bicep file into Azure DevOps you can commit it into the git repository, see a previous post on '[Git using Github Desktop on Windows for SysAdmins](https://luke.geek.nz/windows/git-using-github-desktop-on-windows-for-sysadmins/ "Git using Github Desktop on Windows for SysAdmins ")' to help get started. However, at this stage, I am just going to create it manually in the portal.
 
@@ -161,3 +161,17 @@ Copy the contents of the yaml pipeline above and let's import it to Azure DevOps
 11. Select Commit directly to the main branch'
 12. Click Save
 13. You may get an error about the trigger, you can ignore it - we will need to set the variables and trigger now.
+14. Click on Pipelines, select your newly created pipeline
+15. Select Edit
+16. Click Variables
+17. Click on New Variable
+18. We need to add 4 variables, to make the deployment more environment-specific, add the following variables into Azure DevOps _(these variables will be accessible by this pipeline only)._
+
+| Variable | Note |
+| --- | --- |
+| location | Location where you want to deploy the Resource into – i.e. ‘Australia East’ |
+| PrimaryDNSZone | The name of your domain you want the public zone to be, i.e. badasscloud.com |
+| ResourceGroupName | The name of the Resource Group that the DNS Zone resource will be deployed into, i.e. DNS-PRD-RG |
+| SPN | The name of the Service Connection, that we created earlier to connect Azure DevOps to Azure, i.e., SPN.AzureDNSCode |
+
+1. 

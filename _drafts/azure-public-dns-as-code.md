@@ -196,3 +196,4 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 10. ![](/uploads/azuredevops-spn-approval.png)
 11. Click Permit
 12. Click Permit again, to authorise your SPN access to your pipeline for all future runs
+13. Your pipeline will be added to the queue and start running.

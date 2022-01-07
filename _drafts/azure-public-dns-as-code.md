@@ -179,4 +179,20 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 
    #### Test & final approval of Azure DevOps Pipeline
 
-   Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**!
+   Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**! 
+
+   We will deploy a once-off to grant the pipeline access to the service principal created earlier and verify that it works.
+
+
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 2. Navigate to the DNS As Code **project** you created earlier
+ 3. Click on **Pipelines**
+ 4. Click on your Pipeline
+ 5. Select Run pipeline
+ 6. Click Run
+ 7. Click on Agent job 1
+ 8. You will see a message: This pipeline needs permission to access a resource before this run can continue
+ 9. Click View
+10. ![](/uploads/azuredevops-spn-approval.png)
+11. Click Permit
+12. Click Permit again, to authorise your SPN access to your pipeline for all future runs

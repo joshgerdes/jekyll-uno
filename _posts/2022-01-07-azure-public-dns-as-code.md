@@ -6,16 +6,16 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "images/iazure-marketplace-banner.png"
 
 ---
-The Microsoft Azure ecosystem offers a lot of capabilities that empower individuals and businesses; one of those capabilities that are often overlooked is [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) _(Domain Name System)_.
+The Microsoft Azure ecosystem offers a lot of capabilities that empower individuals and businesses; one of those capabilities that are often overlooked is [DNS](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"} _(Domain Name System)_.
 
 > _Azure DNS allows you to host your DNS domain in Azure, so you can manage your DNS records using the same credentials, billing, and support contract as your other Azure services. Zones can be either public or private, where Private DNS Zones (in Managed Preview) are only visible to VMs that are in your virtual network._
 >
 > _You can configure Azure DNS to resolve hostnames in your public domain. For example, if you purchased the contoso.xyz domain name from a domain name registrar, you can configure Azure DNS to host the contoso.xyz domain and resolve `www.contoso.xyz` to the IP address of your web server or web app._
 
-In this article, we are going to focus on [Azure Public DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview).
+In this article, we are going to focus on [Azure Public DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview){:target="_blank"}.
 
 I had my external DNS under source control using Terraform and the Cloudflare provider a few years ago. I wanted to see if I use source control and continuous integration to do the same thing using Azure DNS and Azure Bicep.
 
@@ -29,10 +29,10 @@ Using an Azure DevOps pipeline and repository and Azure Bicep, we will deploy an
 
 #### Prerequisites
 
-* An [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) account and permissions to create a service endpoint
+* An [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/){:target="_blank"} account and permissions to create a service endpoint
 * An Azure subscription that you have at least contributor rights to
 * A git repository _(I am going to use the repository in Azure DevOps, but you could use a nested repository from GitHub)_
-* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) for local editing
+* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0){:target="_blank"} modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install){:target="_blank"} for local editing
 * A domain name and rights to change the nameservers to point towards Azure DNS
 
 In this article, I will be using an Azure subscription. I have access to an Azure DevOps _(free)_ subscription and a custom domain I joined named 'badasscloud.com'.
@@ -43,7 +43,7 @@ That that we have the prerequisites sorted let's set it up...
 
 #### Create Azure DevOps Repository
 
- 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314){:target="_blank"}
  2. Select **+ New Project**
  3. Give your **project** a **name** _(i.e., I am going with: DNSAsCode)_
  4. ![Azure DevOps - Create New Project](/uploads/azuredevops-creatednsproject.png "Azure DevOps - Create New Project")
@@ -71,7 +71,7 @@ That that we have the prerequisites sorted let's set it up...
             az.cmd account show --query id --output tsv
             az.cmd account show --query name --output tsv
      3. Make sure you **record** the **password**, **application ID** and the **subscription ID/name**; you will need this for the next step - you won't be able to view it anywhere else; if you lose it, you can rerun the sp create command to generate a new password. Now that we have the SPN, we need to add the details into Azure DevOps.
-     4. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+     4. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314){:target="_blank"}
      5. Navigate to the DNS As Code **project** you created earlier
      6. Click on **Project Setting**s _(bottom right-hand side of the window)_
      7. Click on **Service connections**
@@ -109,11 +109,11 @@ This file will:
 
 I have added CNAME, A Record and TXT Records as a base.
 
-**GITHUB**
+{% gist ce9c06f3afdb43666409acc3ccd619b6 %}
 
 To add the Azure Bicep file into Azure DevOps, you can commit it into the git repository; see a previous post on '[Git using Github Desktop on Windows for SysAdmins](https://luke.geek.nz/windows/git-using-github-desktop-on-windows-for-sysadmins/ "Git using Github Desktop on Windows for SysAdmins ")' to help get started. However, at this stage, I will create it manually in the portal.
 
- 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314){:target="_blank"}
  2. Navigate to the DNS As Code **project** you created earlier
  3. Click on **Repos**
  4. Click on **Files**
@@ -137,7 +137,7 @@ To add the Azure Bicep file into Azure DevOps, you can commit it into the git re
 
 Now that we have the initial Azure Bicep file, it's time to create our pipeline that will do the heavy lifting. I have created the base pipeline that you can download, and we will import it into Azure DevOps.
 
-**GITHUB**
+{% gist 41f615da65884024384dbf13288ff7c2 %}
 
 This pipeline will run through the following steps:
 
@@ -147,7 +147,7 @@ This pipeline will run through the following steps:
 
 Copy the contents of the YAML pipeline above, and let's import it to Azure DevOps.
 
- 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314){:target="_blank"}
  2. Navigate to the DNS As Code **project** you created earlier
  3. Click on **Pipelines**
  4. Click on the **Create Pipeline**
@@ -181,7 +181,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
     Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**!
 
     We will deploy a once-off to grant the pipeline access to the service principal created earlier and verify that it works.
- 3. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 3. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314){:target="_blank"}
  4. Navigate to the DNS As Code **project** you created earlier
  5. Click on **Pipelines**
  6. Click on your **Pipeline**

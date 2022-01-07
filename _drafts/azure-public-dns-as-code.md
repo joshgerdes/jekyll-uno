@@ -109,7 +109,7 @@ This file will:
 
 I have added CNAME, A Record and TXT Records as a base.
 
-GITHUB
+**GITHUB**
 
 To add the Azure Bicep file into Azure DevOps, you can commit it into the git repository; see a previous post on '[Git using Github Desktop on Windows for SysAdmins](https://luke.geek.nz/windows/git-using-github-desktop-on-windows-for-sysadmins/ "Git using Github Desktop on Windows for SysAdmins ")' to help get started. However, at this stage, I will create it manually in the portal.
 
@@ -137,12 +137,12 @@ To add the Azure Bicep file into Azure DevOps, you can commit it into the git re
 
 Now that we have the initial Azure Bicep file, it's time to create our pipeline that will do the heavy lifting. I have created the base pipeline that you can download, and we will import it into Azure DevOps.
 
-**PIPELINE**
+**GITHUB**
 
 This pipeline will run through the following steps:
 
 * Spin up an Azure-hosted agent running Ubuntu _(it already has the Azure CLI and PowerShell setup)_
-* Create the Azure resource group to place your DNS zone into (if it doesn't already exist)
+* Create the Azure resource group to place your DNS zone into _(if it doesn't already exist)_
 * Finally, do the actual Azure Bicep deployment and create your Primary DNS zone resource, and, if necessary, modify any resources.
 
 Copy the contents of the YAML pipeline above, and let's import it to Azure DevOps.

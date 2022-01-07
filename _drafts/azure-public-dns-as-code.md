@@ -88,3 +88,6 @@ That that we have the prerequisites sorted, let’s set it up...
     13. Click Verify to verify that Azure DevOps can connect to Azure, you should hopefully see a Verification succeeded.
     14. Give the Service connection a name _(this is the display name that is visual in Azure DevOps)_
     15. Add a description _(ie created by, created on, created for)_
+    16. Click on Verify and save
+    17. You now have a new Service connection
+    18. ![](/uploads/new_azure_serviceconnectioncreated.png)

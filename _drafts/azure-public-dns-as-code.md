@@ -94,7 +94,7 @@ That that we have the prerequisites sorted, let’s set it up...
 
 _Note: The password for the service principal is valid for 1 year, so when they expire you can come into the Azure DevOps service connection and update it here._
 
-#### Add Azure Bicep
+#### Add Azure Bicep to Repository
 
 Now that Azure DevOps has the delegated rights to create resources in Microsoft Azure, now we need to add the Azure Bicep for Azure DNS Zone.
 
@@ -132,3 +132,14 @@ To add the Azure Bicep file into Azure DevOps you can commit it into the git rep
 17. Click **Delete**
 18. Click **Commit**
 19. You should now only have your: Deploy-PublicDNS.bicep in the repository.
+
+#### Create Azure DevOps Pipeline
+
+Now that we have the initial Azure Bicep file, it's time to create our pipeline that will do the heavy lifting, I have created the base pipeline that you can download and we will import it into Azure DevOps.
+
+This pipeline will run through the following steps:
+
+* Spin up an Azure-hosted agent running Ubuntu _(it already has the Azure CLI and PowerShell setup)_
+* This step is not needed, but I have included [Super-Linter](https://github.com/github/super-linter "Super-Linter"), which scans the code in the repository automatically for syntax errors and best-practice - _this is why the README.md file was deleted earlier, as there are some syntax issues in the file that Super-Linter doesn't like and would cause your deployment to fail._
+* Create the Azure resource group to place your DNS zone into (if it doesn't already exist)
+* Finally, do the actual Azure Bicep deployment and create your Primary DNS zone resource and if necessary modify any resources.

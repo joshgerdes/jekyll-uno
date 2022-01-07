@@ -56,5 +56,16 @@ That that we have the prerequisites sorted, let’s set it up...
 
     #### Create Azure DevOps Service Connection
 
-    For Azure DevOps to connect to Microsoft Azure, we need to set up a service principal,  you can create the service connection in Azure DevOps, however, it usually generates a service principal with a name that could be unrecognisable in the future, I prefer to generate them according to naming convention and something that I can look at and instantly recognised its usecase, to do that we will create it using Azure CLI.
+    For Azure DevOps to connect to Microsoft Azure, we need to set up a service principal,  you can create the service connection in Azure DevOps, however, it usually generates a service principal with a name that could be unrecognisable in the future, I prefer to generate them according to naming convention and something that I can look at and instantly recognised its use-case, to do that we will create it using Azure CLI.
     1. Open PowerShell
+    2. Run the following to connect to Azure and create your Service Principal with Contributor access to Azure:
+
+           #Connects to Microsoft Azure
+           az.cmd login
+           #Set SPN name
+           $AppRegName = 'SPN.AzureSubscription.Contributor'
+           #Creates SPN and sets SPN as Contributor to the subscription
+           $spn = az.cmd ad sp create-for-rbac --name $AppRegName --role 'contributor'
+           #Exports Password, Tenant & App ID for better readability - required for Azure DevOps setup
+           $spn | ConvertFrom-Json | Select-Object -Property password, tenant, appId
+    3. 

@@ -107,4 +107,8 @@ This file will:
 * Create a new public Azure DNS zone, if it doesn't exist
 * Add/Remove and modify any records
 
-I have added CNAME, A Record and TXT Records as a base.
+I have added CNAME, A Record and TXT Records as a base. 
+
+GITHUB 
+
+To add the Azure Bicep file into Azure DevOps you can commit it into the git repository, see a previous post on '[Git using Github Desktop on Windows for SysAdmins](https://luke.geek.nz/windows/git-using-github-desktop-on-windows-for-sysadmins/ "Git using Github Desktop on Windows for SysAdmins ")' to help get started. However, at this stage, I am just going to create it manually in the portal.

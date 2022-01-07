@@ -137,9 +137,13 @@ To add the Azure Bicep file into Azure DevOps you can commit it into the git rep
 
 Now that we have the initial Azure Bicep file, it's time to create our pipeline that will do the heavy lifting, I have created the base pipeline that you can download and we will import it into Azure DevOps.
 
+**PIPELINE**
+
 This pipeline will run through the following steps:
 
 * Spin up an Azure-hosted agent running Ubuntu _(it already has the Azure CLI and PowerShell setup)_
 * This step is not needed, but I have included [Super-Linter](https://github.com/github/super-linter "Super-Linter"), which scans the code in the repository automatically for syntax errors and best-practice - _this is why the README.md file was deleted earlier, as there are some syntax issues in the file that Super-Linter doesn't like and would cause your deployment to fail._
 * Create the Azure resource group to place your DNS zone into (if it doesn't already exist)
 * Finally, do the actual Azure Bicep deployment and create your Primary DNS zone resource and if necessary modify any resources.
+
+Download the yaml pipeline 

@@ -69,7 +69,8 @@ That that we have the prerequisites sorted, let’s set it up...
             #Exports Password, Tenant & App ID for better readability - required for Azure DevOps setup
             $spn | ConvertFrom-Json | Select-Object -Property password, tenant, appId
             az.cmd account show --query id --output tsv
-     3. Make sure you record the password, application ID and the subscription ID, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password. Now that we have the SPN we need to add the details into Azure DevOps.
+            az.cmd account show --query name --output tsv
+     3. Make sure you record the password, application ID and the subscription ID/name, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password. Now that we have the SPN we need to add the details into Azure DevOps.
      4. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
      5. Navigate to the DNS As Code project you created earlier
      6. Click on Project Settings _(bottom right-hand side of the window)_
@@ -78,4 +79,12 @@ That that we have the prerequisites sorted, let’s set it up...
      9. Select Azure Resource Manager
     10. Click Next
     11. Click on: Service Principal (Manual) and click Next
-    12. 
+    12. Enter in the following details, that we exported earlier from the creation of the service principal:
+        * Subscription ID
+        * Subscription Name
+        * Service Principal ID _(the appId)_
+        * Service principal key _(password)_
+        * Tenant ID
+    13. Click Verify to verify that Azure DevOps can connect to Azure, you should hopefully see a Verification succeeded.
+    14. Give the Service connection a name _(this is the display name that is visual in Azure DevOps)_
+    15. Add a description _(ie created by, created on, created for)_

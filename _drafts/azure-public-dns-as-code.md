@@ -90,7 +90,7 @@ That that we have the prerequisites sorted let's set it up...
     15. **Add** a **description** _(i.e. created by, created on, created for)_
     16. Click on **Verify and save**
     17. You now have a new Service connection!
-    18. ![](/uploads/new_azure_serviceconnectioncreated.png)
+    18. ![Azure DevOps - Service Connection](/uploads/new_azure_serviceconnectioncreated.png "Azure DevOps - Service Connection")
 
 _Note: The password for the service principal is valid for one year, so when they expire, you can come into the Azure DevOps service connection and update it here._
 
@@ -120,11 +120,11 @@ To add the Azure Bicep file into Azure DevOps, you can commit it into the git re
  5. Click on the **Ellipsis** on the right-hand side
  6. Click **New**
  7. Click **File**
- 8. ![](/uploads/azuredevops-createfile.png)
+ 8. ![Azure DevOps - New File](/uploads/azuredevops-createfile.png "Azure DevOps - New File")
  9. Type in the name of your file _(including the bicep extension)_, i.e. **Deploy-PublicDNS.bicep**
 10. Click **Create**
 11. **Copy** the **contents** of the Azure **Bicep** file supplied above and **paste** them into the Contents of **Deploy-PublicDNS.bicep in Azure DevOps**
-12. ![](/uploads/azuredevops-deploypublicdnsinitialcommit.png)
+12. ![Azure DevOps - Azure Bicep](/uploads/azuredevops-deploypublicdnsinitialcommit.png "Azure DevOps - Azure Bicep")
 13. Click **Commit**
 14. Click **Commit** again
 15. While we are here, let's **delete** the **README.md** file (as it will cause issues with the pipeline later on), click on the README.md file.
@@ -155,7 +155,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
  6. **Select** your DNSAsCode **repository**
  7. Select **Starter pipeline**
  8. **Overwrite** the contents of the starter **pipeline** with the YAML file supplied
- 9. ![](/uploads/azuredevops-newpipeline.png)
+ 9. ![Azure DevOps - YAML](/uploads/azuredevops-newpipeline.png "Azure DevOps - YAML")
 10. Click on the arrow next to Save and Run and select **Save**
 11. Select **Commit directly to the main branch**
 12. Click **Save**

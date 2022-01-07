@@ -113,6 +113,9 @@ author:
     - label: "Linktree"
       icon: "fas fa-fw fa-link"
       url: "https://linktr.ee/lukemurray"
+    - label: "Credly"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.credly.com/users/luke-murray.465eb5c5"
 
 # Site Footer
 # footer:

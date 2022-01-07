@@ -112,3 +112,12 @@ I have added CNAME, A Record and TXT Records as a base.
 GITHUB 
 
 To add the Azure Bicep file into Azure DevOps you can commit it into the git repository, see a previous post on '[Git using Github Desktop on Windows for SysAdmins](https://luke.geek.nz/windows/git-using-github-desktop-on-windows-for-sysadmins/ "Git using Github Desktop on Windows for SysAdmins ")' to help get started. However, at this stage, I am just going to create it manually in the portal.
+
+1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+2. Navigate to the DNS As Code **project** you created earlier
+3. Click on Repos
+4. Click on Files
+5. Click on the Ellipsis on the right-hand side
+6. Click New
+7. Click File
+8. ![](/uploads/azuredevops-createfile.png)

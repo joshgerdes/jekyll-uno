@@ -57,8 +57,8 @@ That that we have the prerequisites sorted, let’s set it up...
     #### Create Azure DevOps Service Connection
 
     For Azure DevOps to connect to Microsoft Azure, we need to set up a service principal,  you can create the service connection in Azure DevOps, however, it usually generates a service principal with a name that could be unrecognisable in the future in Azure, I prefer to generate them according to naming convention and something that I can look at and instantly recognised its use-case, to do that we will create it using Azure CLI.
-     1. Open PowerShell
-     2. Run the following to connect to Azure and create your Service Principal with Contributor access to Azure:
+     1. Open **PowerShell**
+     2. **Run** the following **commands** to connect to Azure and **create** your **Service Principal** with Contributor **access** to **Azure**:
 
             #Connects to Microsoft Azure
             az.cmd login
@@ -70,25 +70,25 @@ That that we have the prerequisites sorted, let’s set it up...
             $spn | ConvertFrom-Json | Select-Object -Property password, tenant, appId
             az.cmd account show --query id --output tsv
             az.cmd account show --query name --output tsv
-     3. Make sure you record the password, application ID and the subscription ID/name, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password. Now that we have the SPN we need to add the details into Azure DevOps.
+     3. Make sure you **record** the **password**, **application ID** and the **subscription ID/name**, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password. Now that we have the SPN we need to add the details into Azure DevOps.
      4. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
-     5. Navigate to the DNS As Code project you created earlier
-     6. Click on Project Settings _(bottom right-hand side of the window)_
-     7. Click on Service connections
-     8. Click on: Create a service connection
-     9. Select Azure Resource Manager
-    10. Click Next
-    11. Click on: Service Principal (Manual) and click Next
-    12. Enter in the following details, that we exported earlier from the creation of the service principal:
+     5. Navigate to the DNS As Code **project** you created earlier
+     6. Click on **Project Setting**s _(bottom right-hand side of the window)_
+     7. Click on **Service connections**
+     8. Click on: **Create a service connection**
+     9. Select **Azure Resource Manager**
+    10. Click **Next**
+    11. Click on: **Service Principal (Manual**) and click Next
+    12. **Enter** in the following **details**, that we exported earlier from the creation of the service principal:
         * Subscription ID
         * Subscription Name
         * Service Principal ID _(the appId)_
         * Service principal key _(password)_
         * Tenant ID
-    13. Click Verify to verify that Azure DevOps can connect to Azure, you should hopefully see a Verification succeeded.
-    14. Give the Service connection a name _(this is the display name that is visual in Azure DevOps)_
-    15. Add a description _(ie created by, created on, created for)_
-    16. Click on Verify and save
+    13. Click **Verify** to verify that Azure DevOps can connect to Azure, you should hopefully see a Verification succeeded.
+    14. Give the **Service** connection a **name** _(this is the display name that is visual in Azure DevOps)_
+    15. **Add** a **description** _(ie created by, created on, created for)_
+    16. Click on **Verify and save**
     17. You now have a new Service connection!
     18. ![](/uploads/new_azure_serviceconnectioncreated.png)
 

@@ -176,3 +176,7 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 
 1. ![](/uploads/azuredevops-variables.png)
 2. Click **Save**
+
+   #### Test & final approval of Azure DevOps Pipeline
+
+   Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**!

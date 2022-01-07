@@ -23,4 +23,4 @@ My theory was I could make a change to a file and then commit it and have the Az
 
 Using an Azure DevOps pipeline and repository and Azure Bicep, we are going to deploy an Azure Public DNS zone to a resource group automatically on a successful commit, and any records.
 
-![](/uploads/azurebicep_dns_hld.png)
+![Azure Bicep - Pipeline High Level](/uploads/azurebicep_dns_hld.png "Azure Bicep - Pipeline High Level")

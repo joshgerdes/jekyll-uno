@@ -200,3 +200,5 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 As seen below, there were no resources before my deployment and the Azure Pipeline agent kicked off and created the resources in the Azure portal.
 
 _Note: You can expand the Agent Job to see the steps of the job, I hid it as it revealed subscription ID information etc during the deployment._
+
+![](/uploads/azure-devopsdeployment-azurebicep.gif)

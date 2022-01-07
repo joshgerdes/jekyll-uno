@@ -173,36 +173,54 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 | ResourceGroupName | The name of the Resource Group that the DNS Zone resource will be deployed into, i.e. DNS-PRD-RG |
 | SPN | The name of the Service Connection, that we created earlier to connect Azure DevOps to Azure, i.e., SPN.AzureDNSCode |
 
-1. ![](/uploads/azuredevops-variables.png)
-2. Click **Save**
+ 1. ![](/uploads/azuredevops-variables.png)
+ 2. Click **Save**
 
-   #### Test & final approval of Azure DevOps Pipeline
+    #### Test & final approval of Azure DevOps Pipeline
 
-   Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**! 
+    Now that the Azure Pipeline has been created and variables set, it's time to test, warning **this will run an actual deployment to your Azure subscription**!
 
-   We will deploy a once-off to grant the pipeline access to the service principal created earlier and verify that it works.
-
-
- 1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
- 2. Navigate to the DNS As Code **project** you created earlier
- 3. Click on **Pipelines**
- 4. Click on your Pipeline
- 5. Select Run pipeline
- 6. Click Run
- 7. Click on Agent job 1
- 8. You will see a message: This pipeline needs permission to access a resource before this run can continue
- 9. Click View
-10. ![](/uploads/azuredevops-spn-approval.png)
-11. Click Permit
-12. Click Permit again, to authorise your SPN access to your pipeline for all future runs
-13. Your pipeline will be added to the queue and once an agent becomes available will start to run.
+    We will deploy a once-off to grant the pipeline access to the service principal created earlier and verify that it works.
+ 3. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+ 4. Navigate to the DNS As Code **project** you created earlier
+ 5. Click on **Pipelines**
+ 6. Click on your **Pipeline**
+ 7. Select **Run pipeline**
+ 8. Click **Run**
+ 9. **Click** on A**gent job 1**
+10. You will see a message: **This pipeline needs permission to access a resource before this run can continue**
+11. Click **View**
+12. ![](/uploads/azuredevops-spn-approval.png)
+13. Click **Permit**
+14. Click **Permit** again, to authorise your SPN access to your pipeline for all future runs
+15. Your **pipeline** will be added to the **queue** and once an agent becomes available will start to **run**.
 
 As seen below, there were no resources before my deployment and the Azure Pipeline agent kicked off and created the resources in the Azure portal.
 
 _Note: You can expand the Agent Job to see the steps of the job, I hid it as it revealed subscription ID information etc during the deployment._
 
-![](/uploads/azure-devopsdeployment-azurebicep.gif)
+![Azure DevOps - badasscloud.com DNS deployment](/uploads/azure-devopsdeployment-azurebicep.gif "Azure DevOps - badasscloud.com DNS deployment")
 
 #### Edit the Bicep file
 
 Now that you have successfully deployed your Azure Bicep file, you can go into the Azure Bicep and update the A, CNAME records to match your own environment - any new change to this repository will automatically trigger Continous Integration and deployment, you can override this behaviour by editing the Pipeline, clicking Edit Trigger and unselect 'Enable; continuous integration
+
+Each variable _(var object) (cnames, arecords)_ is enclosed in brackets, this array allows you to add multiple records, for example, if I wanted to add another name record, it would look like this:
+
+    //Variable array for your CNAME records. Add, remove and amend as needed, any new record needs to be included in {}.
+    var cnamerecords = [
+     {
+     name: 'blog'
+     value: 'luke.geek.nz'
+     }
+      {
+     name: 'fancierblog'
+     value: 'azure.com'
+     }
+    ]
+
+Simply add another object under the first, as long as it is included in the brackets, then upon deployment Azure Bicep will parse the variable array and for each record, create/modify the DNS records, you only ever need to edit the content in the variable without touching the actual resource deployment.
+
+As records are added and removed over time, you will develop a commit history and with the power of Azure DevOps, can implement scheduling changes at certain times and approval!
+
+Hopefully, this article helps you achieve Infrastructure as Code for your Azure DNS resource, the same concept can be applied for other resources using Azure Bicep as well.

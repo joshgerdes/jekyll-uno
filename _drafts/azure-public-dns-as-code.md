@@ -68,9 +68,6 @@ That that we have the prerequisites sorted, let’s set it up...
            $spn = az.cmd ad sp create-for-rbac --name $AppRegName --role 'contributor'
            #Exports Password, Tenant & App ID for better readability - required for Azure DevOps setup
            $spn | ConvertFrom-Json | Select-Object -Property password, tenant, appId
-    3. Make sure you record the password and application ID, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password.
-
-#### Create Azure DevOps Repository
-
-1. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
-2. Select **+ New Project**
+    3. Make sure you record the password and application ID, you will need this for the next step - you won't be able to view anywhere else, if you lose it you can rerun the sp create command to generate a new password. Now that we have the SPN we need to add the details into Azure DevOps.
+    4. [**Sign in to Azure DevOps**](https://go.microsoft.com/fwlink/?LinkId=2014676&githubsi=true&clcid=0x409&WebUserId=e3e298aac5104b0e8e949b3b5bbeb314)
+    5. Select **+ New Project**

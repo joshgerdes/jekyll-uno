@@ -53,3 +53,8 @@ That that we have the prerequisites sorted, let’s set it up...
  8. Find the ‘**Initialize Main branch with a README or gitignore**’ section and click **Initialize**
  9. ![](/uploads/azuredevops-initializerepo.png)
 10. You should now have an empty git repository!
+
+    #### Create Azure DevOps Service Connection
+
+    For Azure DevOps to connect to Microsoft Azure, we need to set up a service principal,  you can create the service connection in Azure DevOps, however, it usually generates a service principal with a name that could be unrecognisable in the future, I prefer to generate them according to naming convention and something that I can look at and instantly recognised its usecase, to do that we will create it using Azure CLI.
+    1. Open PowerShell

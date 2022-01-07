@@ -142,7 +142,6 @@ Now that we have the initial Azure Bicep file, it's time to create our pipeline 
 This pipeline will run through the following steps:
 
 * Spin up an Azure-hosted agent running Ubuntu _(it already has the Azure CLI and PowerShell setup)_
-* This step is not needed, but I have included [Super-Linter](https://github.com/github/super-linter "Super-Linter"), which scans the code in the repository automatically for syntax errors and best-practice - _this is why the README.md file was deleted earlier, as there are some syntax issues in the file that Super-Linter doesn't like and would cause your deployment to fail._
 * Create the Azure resource group to place your DNS zone into (if it doesn't already exist)
 * Finally, do the actual Azure Bicep deployment and create your Primary DNS zone resource, and, if necessary, modify any resources.
 
@@ -196,4 +195,4 @@ Copy the contents of the YAML pipeline above, and let's import it to Azure DevOp
 10. ![](/uploads/azuredevops-spn-approval.png)
 11. Click Permit
 12. Click Permit again, to authorise your SPN access to your pipeline for all future runs
-13. Your pipeline will be added to the queue and once an agent becomes avaliable will start to run.
+13. Your pipeline will be added to the queue and once an agent becomes available will start to run.

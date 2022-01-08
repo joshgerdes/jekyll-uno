@@ -2,10 +2,10 @@
 date: 2022-01-08 00:00:00 +1300
 title: My website
 author: Luke
-categories: []
+categories: [Misc]
 toc: false
 header:
-  teaser: ''
+  teaser: "images/cover.jpg"
 
 ---
 Pretty simple article today regarding 'My website'.
@@ -24,11 +24,11 @@ Having it on Github pages, helped me learn a lot more about using git and source
   
 Then for comments, I use Disqus and for analytics, Google Analytics and Bing Webmaster Tools.  
   
-* [Markdown](https://www.markdownguide.org/getting-started/ "https://www.markdownguide.org/getting-started/")  
-* [https://pages.github.com/](https://pages.github.com/ "https://pages.github.com/")  
-* [What CMS is this site using?](https://whatcms.org/?s=luke.geek.nz "https://whatcms.org/?s=luke.geek.nz")  
-* [https://forestry.io/](https://forestry.io/ "https://forestry.io/")  
-* [https://disqus.com/](https://disqus.com/ "https://disqus.com/")  
+* [Markdown](https://www.markdownguide.org/getting-started/ "https://www.markdownguide.org/getting-started/"){:target="_blank"}
+* [https://pages.github.com/](https://pages.github.com/ "https://pages.github.com/"){:target="_blank"}
+* [What CMS is this site using?](https://whatcms.org/?s=luke.geek.nz "https://whatcms.org/?s=luke.geek.nz"){:target="_blank"}
+* [https://forestry.io/](https://forestry.io/ "https://forestry.io/"){:target="_blank"}
+* [https://disqus.com/](https://disqus.com/ "https://disqus.com/"){:target="_blank"}  
   
 All in all - I just have to pay for the domain, everything else is free and because it's stateless, caching content is a lot easier and I don't have to worry about keeping a CMS up to date/patched or a database tuned!  
   

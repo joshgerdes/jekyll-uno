@@ -17,7 +17,7 @@ Using Azure Active Directory, you know only your specified users have access to 
 
 You can have both a site to site and point to site VPN running on the same gateway, today we are going to set up a Point to Site VPN using Windows 11.
 
-You can only have 128 concurrent points to site connections to Microsoft Azure _(unless you are running 2 gateways in the Active/Active mode, which allows you to run 256)._ 
+Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed, because we are using Azure Active Directory and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double this number if you are running in Active/Active and have a second gateway)_.
 
 You can read more about the Virtual Network Gateways and VPN SKUs at the official Microsoft documentation '[here'](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways "What is VPN Gateway?"); depending on your requirements your gateway SKU may be different.
 

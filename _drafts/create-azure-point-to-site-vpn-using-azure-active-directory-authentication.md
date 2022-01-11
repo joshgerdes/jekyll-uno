@@ -38,3 +38,5 @@ First things first, let's create a Virtual Network.
 
 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
 2. Click on **+ Create a resource**
+3. Search for: **Virtual Network** and click on it
+4. Click **Create**

@@ -19,6 +19,8 @@ You can have both a site to site and point to site VPN running on the same gatew
 
 Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed, because we are using Azure Active Directory and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double the number of throughput and connections if you are running in Active/Active and have a second gateway, or select a higher SKU)_.
 
+A note about Gateway SKUs _(apart from Basic)_ you can resize in the same generation _(ie Generation 1 VpnGw1 to VpnGw3, but you can't go from Generation 1 VpnGw1 to Generation 2 VpnGw5, in order to upgrade you have to delete and recreate the gateway, just keep this in mind when deciding on the SKU of your resources_).
+
 You can read more about the Virtual Network Gateways and VPN SKUs at the official Microsoft documentation '[here'](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways "What is VPN Gateway?"); depending on your requirements your gateway SKU may be different.
 
 ### Create Azure Point to Site VPN using Azure Active Directory authentication

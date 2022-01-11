@@ -27,5 +27,12 @@ You can read more about the Virtual Network Gateways and VPN SKUs at the officia
 
 #### Prerequisites
 
-* An Azure subscription _(that you have at least contributor rights to)_
+* An Azure subscription _(that you have at least contributor rights to and the ability to create Users and Groups)_
 * An endpoint device running Windows 10 or 11 that you can install the [Azure VPN client](https://www.microsoft.com/en-us/p/azure-vpn-client-preview/9np355qt2sqb?rtc=2&activetab=pivot:overviewtab " Azure VPN Client") onto
+
+#### Create Virtual Network
+
+First things first, let's create a Virtual Network.
+
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Click on **+ Create a resource**

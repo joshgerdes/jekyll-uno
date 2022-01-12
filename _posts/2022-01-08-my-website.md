@@ -1,6 +1,6 @@
 ---
 date: 2022-01-08 00:00:00 +1300
-title: My website
+title: My Website Setup
 author: Luke
 categories: [Misc]
 toc: false
@@ -8,7 +8,7 @@ header:
   teaser: "images/cover.jpg"
 
 ---
-Pretty simple article today regarding 'My website'.
+Pretty simple article today regarding 'My website setup'.
 
 I've had a few people ask what CMS _(Content Management System)_ my website runs on - and no it's not running on an Azure App Service!  
   

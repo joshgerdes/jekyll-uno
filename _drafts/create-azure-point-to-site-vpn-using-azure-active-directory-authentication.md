@@ -143,3 +143,4 @@ Now that the Point to Site VPN has been configured it's time to connect!
 10. Click Save
 11. ![](/uploads/azurevpnclient-beforeconnection.png)
 12. Click Connect
+13. ![](/uploads/azurevpnclient-afterconnection.png)

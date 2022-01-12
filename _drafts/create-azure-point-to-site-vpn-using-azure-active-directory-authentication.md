@@ -144,3 +144,4 @@ Now that the Point to Site VPN has been configured it's time to connect!
 11. ![](/uploads/azurevpnclient-beforeconnection.png)
 12. Click Connect
 13. ![](/uploads/azurevpnclient-afterconnection.png)
+14. You should now be connected to the Azure network through a point to site VPN!

@@ -52,3 +52,27 @@ First things first, let's create a Virtual Network.
 14. Click **Next: Tags**
 15. Enter in appropriate tags and click **Review + Create**
 16. Review your configuration and click **Create**
+
+#### Create Virtual Network Gateway
+
+Now that we have the foundation of our setup - an Azure Virtual Network, it is time to provision the [Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways "What is VPN Gateway?") itself, just a note before we continue the Gateway can take 30-60 minutes to provision.
+
+ 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+ 2. Click on **+ Create a resource**
+ 3. Type in and search for: **Virtual Network Gateway**
+ 4. Click **Create**
+ 5. Type in the name of your Azure Virtual Network Gateway
+ 6. Select the region (it must be the same region as your virtual network)
+ 7. Select the Gateway Type: VPN
+ 8. The VPN type is: Route-based
+ 9. Select the SKU, in this example - I will be going with VpnGw1
+10. Select the Generation of the Virtual Network Gateway, I am going with: Generation 1
+11. Select the Virtual Network that you created earlier, it will automatically find and assign the Gateway to the subnet named: GatewaySubnet
+12. Select Standard public IP address SKU
+13. Select Public IP address and select: Create new
+14. Type in your public IP name 
+15. Leave 'Enable active-active mode' and 'Configure BGP' as Disabled.
+16. Click Review + Create
+17. ![](/uploads/azureportal-createvnetfgw.png)
+18. Verify configuration is correct and clicks Create
+19. It can take up to 30-60 minutes for the Virtual Network Gateway to be created.

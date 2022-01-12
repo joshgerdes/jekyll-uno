@@ -13,7 +13,7 @@ You may be working remotely or only have a few devices needing access to your re
 
 This functionality allows your computer to connect privately to resources over a secure tunnel using your internet connection, using an Azure Virtual Network gateway, you can seamlessly connect to resources without the need of opening up your resources to the internet or having to whitelist your _(or third party vendor)_ IP address, which may change daily.
 
-Using Azure Active Directory, you know only your specified users access your Azure resources.
+You know only your specified users access your Azure resources using Azure Active Directory.
 
 You can have a site to site and point to site VPN running on the same Gateway today. We will set up a Point to Site VPN using Windows 11.
 
@@ -43,12 +43,12 @@ First things first, let's create a Virtual Network.
  3. Search for: **Virtual Network** and click on it
  4. Click **Create**
  5. **Select** or create your **Resource Group** that you want your network resource to sit in _(I recommend Virtual Network and the gateway resources sit in its own Resource Group away from other resources so that they can be protected by resource locks, RBAC and they are usually classified as a shared resource)_.
- 6. ![](/uploads/azureportal-createvirtualnetwork.png)
+ 6. ![Azure Virtual Network](/uploads/azureportal-createvirtualnetwork.png "Azure Virtual Network")
  7. Click **Next: IP Addresses**
  8. Now we need to **define** the **Address space** and subnets; I will leave the Address space as 10.0.0.0/16 but remove the Default subnet _(select the checkbox next to the Subnet and select Delete)_
  9. Click +**Add Subnet**, and add a new subnet with the name of GatewaySubnet with an IP range of: 10.0.1.0/27 _(this Subnet will be used by our Virtual Network Gateway, and the name needs to be exactly GatewaySubnet)_.
 10. Now I will add a subnet named: app servers, for the Virtual Machines I will need to connect to will be placed.
-11. ![](/uploads/azureportal-createvirtualnetworksubnets.png)
+11. ![Azure Virtual Network](/uploads/azureportal-createvirtualnetworksubnets.png "Azure Virtual Network")
 12. Click **Next: Security**
 13. Leave everything _(BastionHost, DDoS Protection Standard, Firewall)_ as Disabled.
 14. Click **Next: Tags**
@@ -75,7 +75,7 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 14. **Type** in your public IP **name**
 15. **Leave** 'Enable active-active mode' and 'Configure BGP' as **Disabled**.
 16. Click **Review + Create**
-17. ![](/uploads/azureportal-createvnetfgw.png)
+17. ![Azure Virtual Network Gateway](/uploads/azureportal-createvnetfgw.png "Azure Virtual Network Gateway")
 18. **Verify configuration** is correct and clicks **Create**
 19. It can take up to 30-60 minutes for the Virtual Network Gateway to be created.
 
@@ -100,13 +100,13 @@ Now we need to grant the Azure VPN application permissions.
 
         https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
  3. If you get an error about external identity, then replace /**common**/ with your tenant ID.
- 4. ![](/uploads/azureportal_azurevpnpermissions.png)
+ 4. ![Azure VPN Permissions](/uploads/azureportal_azurevpnpermissions.png "Azure VPN Permissions")
  5. Click **Accept**
  6. Navigate back to **Azure Active Directory**
  7. Select **Enterprise Applications**
  8. Select **Azure VPN**
  9. **Copy** the **Application ID** of the Azure VPN enterprise application _(you will need both Application ID and tenant ID for the next steps)_
-10. ![](/uploads/azurevpn_enterpriseappvpn.png)
+10. ![Azure VPN](/uploads/azurevpn_enterpriseappvpn.png "Azure VPN")
 
 ##### Configure Point to Site Connection
 
@@ -122,7 +122,7 @@ Now its time to configure the Virtual Network Gateway
  8. For **Tenant, ID enter** in: https://login.microsoftonline.com/**TENANTID**/ and enter in your own Tenant ID.
  9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application), put in the Application ID of the Azure VPN.
 10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
-11. ![](/uploads/azure-point-to-site-configuration.png)
+11. ![Azure Virtual Network Gateway](/uploads/azure-point-to-site-configuration.png "Azure Virtual Network Gateway")
 12. Click **Save**
 13. It may take 1-5 minutes to save the configuration
 
@@ -133,25 +133,25 @@ Now that the Point to Site VPN has been configured it's time to connect!
  1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane, then back to the Point-to-site configuration)_.
  2. Extract the zip file, you will need these files
  3. **Download** the [**Azure VPN Client **](https://go.microsoft.com/fwlink/?linkid=2117554)to your computer.
- 4. ![](/uploads/windowsstore-azurevpn.png)
+ 4. ![Azure VPN Client](/uploads/windowsstore-azurevpn.png "Azure VPN Client")
  5. Once, downloaded click **Open.**
  6. Click the **+** sign (lower left)
  7. Click **Import**
  8. **Navigate** to the: **azurevpnconfig.xml** file that you downloaded earlier and click **Open**
  9. You can change the Connection Name to something more user friendly _(you can also edit the file directly for when you look at pushing out this to multiple users, but make sure you have a backup of the file)_
 10. Click **Save**
-11. ![](/uploads/azurevpnclient-beforeconnection.png)
+11. ![Azure VPN Connection](/uploads/azurevpnclient-beforeconnection.png "Azure VPN Connection")
 12. Click **Connect**
 13. Enter in your Azure Active Directory credentials _(you may be prompted for MFA, depending on the rules - you can use Azure VPN application under conditional access)_
-14. ![](/uploads/azurevpnclient-afterconnection.png)
+14. ![Azure VPN Connection](/uploads/azurevpnclient-afterconnection.png "Azure VPN Connection")
 15. **You should now be connected to the Azure network through a point to site VPN!**
 16. If I run 'ipconfig /all' on my device, I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
-17. ![](/uploads/azurevpn-ipconfig.png)
+17. ![Azure Point to Site Connections](/uploads/azurevpn-ipconfig.png "Azure Point to Site Connections")
 18. If I navigate back to the Point-to-site connection in the Azure Portal, I can see, my connection has been allocated:
-19. ![](/uploads/azurevpn-p2sconnections.png)
+19. ![Azure Point to Site Connections](/uploads/azurevpn-p2sconnections.png "Azure Point to Site Connections")
 20. I can now use Remote Desktop to connect to a Virtual Machine, running in my AppServers Subnet, which I am running without the need of a Public IP or bastion/jump host:
-21. ![](/uploads/azurevpn-rdp.png)
+21. ![Azure Point to Site VPN](/uploads/azurevpn-rdp.png "Azure Point to Site VPN")
 
-Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying modifying your DNS the configuration.
+Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying your DNS configuration.
 
 You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections") Client page.

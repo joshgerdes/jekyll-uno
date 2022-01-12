@@ -131,7 +131,7 @@ Now that the Point to Site VPN has been configured it's time to connect!
 
  1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane, then back to the Point-to-site configuration)_.
  2. Extract the zip file, you will need these files
- 3. **Download** the [**Azure VPN Client **](https://go.microsoft.com/fwlink/?linkid=2117554){:target="_blank"} to your computer.
+ 3. **Download** the [Azure VPN Client](https://go.microsoft.com/fwlink/?linkid=2117554){:target="_blank"} to your computer.
  4. ![Azure VPN Client](/uploads/windowsstore-azurevpn.png "Azure VPN Client")
  5. Once, downloaded click **Open.**
  6. Click the **+** sign (lower left)

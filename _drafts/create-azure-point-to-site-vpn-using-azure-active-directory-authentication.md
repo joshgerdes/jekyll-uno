@@ -103,3 +103,6 @@ Now we need to grant the Azure VPN application, permissions.
 1. If you get an error about external identity, then replace /**common**/ with your tenant ID.
 2. ![](/uploads/azureportal_azurevpnpermissions.png)
 3. Click **Accept**
+4. Navigate back to: **Azure Active Directory**
+5. Select **Enterprise Applications**
+6. Select **Azure VPN**

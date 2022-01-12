@@ -70,7 +70,7 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 11. **Select** the **Virtual Network** that you created earlier, and it will automatically find and assign the Gateway to the Subnet named: GatewaySubnet
 12. **Select** Standard **public IP** address **SKU**
 13. **Select Public IP** address and select: **Create new**
-14. **Type** in your public IP **name** 
+14. **Type** in your public IP **name**
 15. **Leave** 'Enable active-active mode' and 'Configure BGP' as **Disabled**.
 16. Click **Review + Create**
 17. ![](/uploads/azureportal-createvnetfgw.png)
@@ -81,4 +81,23 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 
 Now that the Virtual Network has been created, we can now set up Azure Active Directory authentication.
 
-##### Collect Directory ID
+##### Collect Azure Active Directory Tenant ID
+
+First, we need to collect the Azure AD Tenancy ID
+
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Click on Azure Active Directory
+3. In the Overview pane, copy the Tenant ID and save this for the next step
+
+##### Grant Azure VPN Client permisisons
+
+Now we need to grant the Azure VPN application, permissions.
+
+1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Open a new window and type in:
+
+       
+       https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
+
+
+1. 

@@ -85,9 +85,9 @@ Now that the Virtual Network has been created, we can now set up Azure Active Di
 
 First, we need to collect the Azure AD Tenancy ID
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
-2. Click on Azure Active Directory
-3. In the Overview pane, copy the Tenant ID and save this for the next step
+1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Click on **Azure Active Directory**
+3. In the Overview pane, **copy** the **Tenant ID** and save this for the next step
 
 ##### Grant Azure VPN Client permisisons
 
@@ -108,3 +108,7 @@ Now we need to grant the Azure VPN application, permissions.
 6. Select **Azure VPN**
 7. **Copy** the **Application ID** of the Azure VPN enterprise application _(you will need both Application ID and tenant ID for the next steps)_
 8. ![](/uploads/azurevpn_enterpriseappvpn.png)
+
+##### Configure Point to Site Connection
+
+Now its time to configure the Virtual Network Gateway

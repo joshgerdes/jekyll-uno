@@ -76,3 +76,7 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 17. ![](/uploads/azureportal-createvnetfgw.png)
 18. **Verify configuration** is correct and clicks **Create**
 19. It can take up to 30-60 minutes for the Virtual Network Gateway to be created.
+
+#### Setup Azure Active Directory authentication on the Virtual Network Gateway
+
+Now that the Virtual Network has been created, we can now Azure Active Directory authentication.

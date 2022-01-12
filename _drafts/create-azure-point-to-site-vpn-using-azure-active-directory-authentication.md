@@ -79,4 +79,6 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 
 #### Setup Azure Active Directory authentication on the Virtual Network Gateway
 
-Now that the Virtual Network has been created, we can now setup Azure Active Directory authentication.
+Now that the Virtual Network has been created, we can now set up Azure Active Directory authentication.
+
+##### Collect Directory ID

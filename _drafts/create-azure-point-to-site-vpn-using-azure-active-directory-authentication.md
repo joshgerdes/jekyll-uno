@@ -112,3 +112,16 @@ Now we need to grant the Azure VPN application, permissions.
 ##### Configure Point to Site Connection
 
 Now its time to configure the Virtual Network Gateway
+
+ 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. **Navigate** to the Virtual Network **Gateway** you created earlier
+ 3. Click on **Point-to-site configuration**
+ 4. Click **Configure now**
+ 5. Enter in your **address pool** _(this is the address pool of the VPN clients, make sure this doesn't overlap with any other IP range you use, I will go with: 172.0.0.0/16)_
+ 6. Make sure the Tunnel type is: **OpenVPN (SSL)**
+ 7. Select **Azure Active Directory** for the **Authentication** type
+ 8. For **Tenant, ID enter** in: https://login.microsoftonline.com/**TENANTID**/ and enter in your own Tenant ID.
+ 9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application) put in the Application ID of the Azure VPN
+10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
+11. ![](/uploads/azure-point-to-site-configuration.png)
+12. Click **Save** 

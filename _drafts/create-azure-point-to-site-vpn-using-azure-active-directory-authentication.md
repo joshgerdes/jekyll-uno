@@ -130,9 +130,9 @@ Now that the Point to Site VPN has been configured it's time to connect!
 
  1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane then back to the Point-to-site configuration)_.
  2. Extract the zip file, you will need these files
- 3. Download the [Azure VPN Client](https://go.microsoft.com/fwlink/?linkid=2117554) to your computer.
+ 3. **Download** the [**Azure VPN Client **](https://go.microsoft.com/fwlink/?linkid=2117554)to your computer.
  4. ![](/uploads/windowsstore-azurevpn.png)
- 5. Once, downloaded click Open
+ 5. Once, downloaded click **Open**
  6. Click the **+** sign (lower left)
  7. Click **Import**
  8. **Navigate** to the: **azurevpnconfig.xml** file that you downloaded earlier and click **Open**
@@ -143,7 +143,7 @@ Now that the Point to Site VPN has been configured it's time to connect!
 13. Enter in your Azure Active Directory credentials _(you may be prompted for MFA, depending on the rules - you can use Azure VPN application under conditional access)_
 14. ![](/uploads/azurevpnclient-afterconnection.png)
 15. **You should now be connected to the Azure network through a point to site VPN!**
-16. **If I run 'ipconfig /all' on my device I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2**
+16. If I run 'ipconfig /all' on my device I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
 17. ![](/uploads/azurevpn-ipconfig.png)
 18. If I navigate back to the Point-to-site connection in the Azure Portal, I can see, my connection has been allocated:
 19. ![](/uploads/azurevpn-p2sconnections.png)

@@ -17,6 +17,8 @@ Using Azure Active Directory, you know only your specified users access your Azu
 
 You can have a site to site and point to site VPN running on the same Gateway today. We will set up a Point to Site VPN using Windows 11.
 
+![](/uploads/hl_azurep2s.png)
+
 Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed; because we are using Azure Active Directory and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double the number of throughput and connections if you are running in Active/Active and have a second gateway, or select a higher SKU)_.
 
 > Azure AD authentication is supported for OpenVPN® protocol connections only and requires the Azure VPN client.

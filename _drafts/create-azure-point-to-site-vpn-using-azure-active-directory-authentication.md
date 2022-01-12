@@ -100,4 +100,6 @@ Now we need to grant the Azure VPN application, permissions.
        https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
 
 
-1. 
+1. If you get an error about external identity, then replace /**common**/ with your tenant ID.
+2. ![](/uploads/azureportal_azurevpnpermissions.png)
+3. Click Accept

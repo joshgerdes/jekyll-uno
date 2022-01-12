@@ -148,3 +148,5 @@ Now that the Point to Site VPN has been configured it's time to connect!
 15. You should now be connected to the Azure network through a point to site VPN!
 16. If I run 'ipconfig /all' on my device I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
 17. ![](/uploads/azurevpn-ipconfig.png)
+18. If I navigate back to the Point-to-site connection in the Azure Portal, I can see, my connection has been allocated:
+19. ![](/uploads/azurevpn-p2sconnections.png) 

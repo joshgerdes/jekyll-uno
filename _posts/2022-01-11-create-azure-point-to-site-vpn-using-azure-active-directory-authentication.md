@@ -6,8 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
-
+  teaser: 'uploads/hl_azurep2s.png'
 ---
 You may be working remotely or only have a few devices needing access to your resources in Azure; a solution that can be deployed is a point to site connection straight into your Microsoft Azure network.
 

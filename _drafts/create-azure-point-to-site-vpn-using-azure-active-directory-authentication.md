@@ -106,3 +106,5 @@ Now we need to grant the Azure VPN application, permissions.
 4. Navigate back to: **Azure Active Directory**
 5. Select **Enterprise Applications**
 6. Select **Azure VPN**
+7. Copy the Application ID of the Azure VPN enterprise application
+8. ![](/uploads/azurevpn_enterpriseappvpn.png)

@@ -87,11 +87,11 @@ First, we need to collect the Azure AD Tenancy ID
 
 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
 2. Click on **Azure Active Directory**
-3. In the Overview pane, **copy** the **Tenant ID** and save this for the next step
+3. In the Overview pane, **copy** the **Tenant ID** and save this for the next step.
 
 ##### Grant Azure VPN Client permisisons
 
-Now we need to grant the Azure VPN application, permissions.
+Now we need to grant the Azure VPN application permissions.
 
  1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. Open a new window and type in and press Enter:
@@ -118,7 +118,7 @@ Now its time to configure the Virtual Network Gateway
  6. Make sure the Tunnel type is: **OpenVPN (SSL)**
  7. Select **Azure Active Directory** for the **Authentication** type
  8. For **Tenant, ID enter** in: https://login.microsoftonline.com/**TENANTID**/ and enter in your own Tenant ID.
- 9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application) put in the Application ID of the Azure VPN
+ 9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application), put in the Application ID of the Azure VPN.
 10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
 11. ![](/uploads/azure-point-to-site-configuration.png)
 12. Click **Save**
@@ -128,11 +128,11 @@ Now its time to configure the Virtual Network Gateway
 
 Now that the Point to Site VPN has been configured it's time to connect!
 
- 1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane then back to the Point-to-site configuration)_.
+ 1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane, then back to the Point-to-site configuration)_.
  2. Extract the zip file, you will need these files
  3. **Download** the [**Azure VPN Client **](https://go.microsoft.com/fwlink/?linkid=2117554)to your computer.
  4. ![](/uploads/windowsstore-azurevpn.png)
- 5. Once, downloaded click **Open**
+ 5. Once, downloaded click **Open.**
  6. Click the **+** sign (lower left)
  7. Click **Import**
  8. **Navigate** to the: **azurevpnconfig.xml** file that you downloaded earlier and click **Open**
@@ -143,13 +143,13 @@ Now that the Point to Site VPN has been configured it's time to connect!
 13. Enter in your Azure Active Directory credentials _(you may be prompted for MFA, depending on the rules - you can use Azure VPN application under conditional access)_
 14. ![](/uploads/azurevpnclient-afterconnection.png)
 15. **You should now be connected to the Azure network through a point to site VPN!**
-16. If I run 'ipconfig /all' on my device I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
+16. If I run 'ipconfig /all' on my device, I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
 17. ![](/uploads/azurevpn-ipconfig.png)
 18. If I navigate back to the Point-to-site connection in the Azure Portal, I can see, my connection has been allocated:
 19. ![](/uploads/azurevpn-p2sconnections.png)
-20. I can now use Remote Desktop to connect to a Virtual Machine, running in my AppServers subnet, which I am running without the need of a Public IP or bastion/jump host:
+20. I can now use Remote Desktop to connect to a Virtual Machine, running in my AppServers Subnet, which I am running without the need of a Public IP or bastion/jump host:
 21. ![](/uploads/azurevpn-rdp.png)
 
-Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(whether that is Azure Private DNS zone or your own DNS server)_,  you can however set Custom DNS servers by modifying the configuration.
+Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(whether that is Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying the configuration.
 
-You can set your own Custom DNS settings (remember to add the DNS suffix if needed as well) and configure the VPN to automatically connect, by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections") Client page.
+You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect, by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections") Client page.

@@ -154,3 +154,5 @@ Now that the Point to Site VPN has been configured it's time to connect!
 Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying your DNS configuration.
 
 You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections"){:target="_blank"} Client page.
+
+Using Intune, you can also push this configuration to your Windows 10 and 11 clients [Create custom Intune profiles to deploy VPN client profiles](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-profile-intune"){:target="_blank"}

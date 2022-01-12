@@ -128,3 +128,7 @@ Now its time to configure the Virtual Network Gateway
 13. It may take 1-5 minutes to save the configuration
 
 ##### Install and connect using the Azure VPN client
+
+Now that the Point to Site VPN has been configured it's time to connect!
+
+1. Click on Download VPN client _(if it is greyed out, then navigate to the Overview pane then back to the Point-to-site configuration)_.

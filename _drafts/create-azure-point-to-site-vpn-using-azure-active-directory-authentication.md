@@ -93,21 +93,18 @@ First, we need to collect the Azure AD Tenancy ID
 
 Now we need to grant the Azure VPN application, permissions.
 
-1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. Open a new window and type in and press Enter:
+ 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. Open a new window and type in and press Enter:
 
-       
-       https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
-
-
-1. If you get an error about external identity, then replace /**common**/ with your tenant ID.
-2. ![](/uploads/azureportal_azurevpnpermissions.png)
-3. Click **Accept**
-4. Navigate back to **Azure Active Directory**
-5. Select **Enterprise Applications**
-6. Select **Azure VPN**
-7. **Copy** the **Application ID** of the Azure VPN enterprise application _(you will need both Application ID and tenant ID for the next steps)_
-8. ![](/uploads/azurevpn_enterpriseappvpn.png)
+        https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
+ 3. If you get an error about external identity, then replace /**common**/ with your tenant ID.
+ 4. ![](/uploads/azureportal_azurevpnpermissions.png)
+ 5. Click **Accept**
+ 6. Navigate back to **Azure Active Directory**
+ 7. Select **Enterprise Applications**
+ 8. Select **Azure VPN**
+ 9. **Copy** the **Application ID** of the Azure VPN enterprise application _(you will need both Application ID and tenant ID for the next steps)_
+10. ![](/uploads/azurevpn_enterpriseappvpn.png)
 
 ##### Configure Point to Site Connection
 
@@ -124,7 +121,7 @@ Now its time to configure the Virtual Network Gateway
  9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application) put in the Application ID of the Azure VPN
 10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
 11. ![](/uploads/azure-point-to-site-configuration.png)
-12. Click **Save** 
+12. Click **Save**
 13. It may take 1-5 minutes to save the configuration
 
 ##### Install and connect using the Azure VPN client
@@ -149,4 +146,6 @@ Now that the Point to Site VPN has been configured it's time to connect!
 16. If I run 'ipconfig /all' on my device I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
 17. ![](/uploads/azurevpn-ipconfig.png)
 18. If I navigate back to the Point-to-site connection in the Azure Portal, I can see, my connection has been allocated:
-19. ![](/uploads/azurevpn-p2sconnections.png) 
+19. ![](/uploads/azurevpn-p2sconnections.png)
+20. I can now use Remote Desktop to connect to a Virtual Machine I have running without the need of a Public IP or bastion/jump host:
+21. ![](/uploads/azurevpn-rdp.png)

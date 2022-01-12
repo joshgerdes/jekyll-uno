@@ -125,4 +125,6 @@ Now its time to configure the Virtual Network Gateway
 10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
 11. ![](/uploads/azure-point-to-site-configuration.png)
 12. Click **Save** 
-13. It may take 1-5 minutes to Save the configuration
+13. It may take 1-5 minutes to save the configuration
+
+##### Install and connect using the Azure VPN client

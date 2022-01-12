@@ -93,8 +93,8 @@ First, we need to collect the Azure AD Tenancy ID
 
 Now we need to grant the Azure VPN application, permissions.
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
-2. Open a new window and type in:
+1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Open a new window and type in and press Enter:
 
        
        https://login.microsoftonline.com/common/oauth2/authorize?client_id=41b23e61-6c1e-4545-b367-cd054e0ed4b4&response_type=code&redirect_uri=https://portal.azure.com&nonce=1234&prompt=admin_consent
@@ -102,4 +102,4 @@ Now we need to grant the Azure VPN application, permissions.
 
 1. If you get an error about external identity, then replace /**common**/ with your tenant ID.
 2. ![](/uploads/azureportal_azurevpnpermissions.png)
-3. Click Accept
+3. Click **Accept**

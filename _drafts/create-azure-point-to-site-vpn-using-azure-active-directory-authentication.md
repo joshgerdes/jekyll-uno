@@ -150,6 +150,6 @@ Now that the Point to Site VPN has been configured it's time to connect!
 20. I can now use Remote Desktop to connect to a Virtual Machine, running in my AppServers Subnet, which I am running without the need of a Public IP or bastion/jump host:
 21. ![](/uploads/azurevpn-rdp.png)
 
-Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(whether that is Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying the configuration.
+Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network _(Azure Private DNS zone or your DNS server)_; you can set Custom DNS servers by modifying modifying your DNS the configuration.
 
 You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections") Client page.

@@ -1,5 +1,5 @@
 ---
-date: 2022-01-11 00:00:00 +1300
+date: 2022-01-12 00:00:00 +1300
 title: Create Azure Point to Site VPN using Azure Active Directory authentication
 author: Luke
 categories:

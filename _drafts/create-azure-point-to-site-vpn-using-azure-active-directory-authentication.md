@@ -131,4 +131,8 @@ Now its time to configure the Virtual Network Gateway
 
 Now that the Point to Site VPN has been configured it's time to connect!
 
-1. Click on Download VPN client _(if it is greyed out, then navigate to the Overview pane then back to the Point-to-site configuration)_.
+1. Click on **Download VPN client** _(if it is greyed out, then navigate to the Overview pane then back to the Point-to-site configuration)_.
+2. Extract the zip file, you will need these files
+3. Download the [Azure VPN Client](https://go.microsoft.com/fwlink/?linkid=2117554) to your computer.
+4. ![](/uploads/windowsstore-azurevpn.png)
+5. Once, downloaded click Open

@@ -36,7 +36,19 @@ You can read more about the Virtual Network Gateways and VPN SKUs at the officia
 
 First things first, let's create a Virtual Network.
 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
-2. Click on **+ Create a resource**
-3. Search for: **Virtual Network** and click on it
-4. Click **Create**
+ 1. Log in to the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+ 2. Click on **+ Create a resource**
+ 3. Search for: **Virtual Network** and click on it
+ 4. Click **Create**
+ 5. **Select** or create your **Resource Group** that you want your network resource to sit in _(I recommend Virtual Network and the gateway resources sit in its own Resource Group away from other resources so that they can be protected by resource locks, RBAC and they are usually classified as a shared resource)_.
+ 6. ![](/uploads/azureportal-createvirtualnetwork.png)
+ 7. Click **Next: IP Addresses**
+ 8. Now we need to **define** the **Address space** and subnets, I will leave the Address space as 10.0.0.0/16, but remove the Default subnet _(select the checkbox next to the subnet and select Delete)_
+ 9. Click +**Add Subnet**, and add a new subnet with the name of: GatewaySubnet with an IP range of: 10.0.1.0/27 _(this subnet will be used by our Virtual Network Gateway and the name needs to be exactly GatewaySubnet)_.
+10. Now I will add a subnet named: app servers, for the Virtual Machines I will need to connect to will be placed.
+11. ![](/uploads/azureportal-createvirtualnetworksubnets.png)
+12. Click **Next: Security**
+13. Leave everything _(BastionHost, DDoS Protection Standard, Firewall)_ as Disabled
+14. Click **Next: Tags**
+15. Enter in appropriate tags and click **Review + Create**
+16. Review your configuration and click **Create**

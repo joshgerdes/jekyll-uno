@@ -24,7 +24,7 @@ This blog post is intended to help point you in the right direction whether it i
 
 _The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
-_Note: Updated: 01/01/22_
+_Note: Updated: 16/01/22_
 
 ## Beginner: So, what is this outside world of Azure that you speak of?
 
@@ -65,6 +65,7 @@ _Note: Updated: 01/01/22_
 
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 
+* [AWESOME-Azure-Architecture](https://github.com/lukemurraynz/awesome-azure-architecture/blob/main/README.md){:target="_blank"}
 * [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/){:target="_blank"}
 * [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
 * [Azure Quick Start Templates](https://github.com/Azure/azure-quickstart-templates){:target="_blank"}

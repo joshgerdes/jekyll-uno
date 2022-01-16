@@ -6,12 +6,12 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: 'images/Awesome_Azure_Architecture.png'
 
 ---
 A very brief Blog article today, I have created an AWESOME-Azure-Architecture list, this list is hosted in Github and located here:
 
-* [AWESOME-Azure-Architecture](https://github.com/lukemurraynz/awesome-azure-architecture/blob/main/README.md "AWESOME-Azure-Architecture")
+* [AWESOME-Azure-Architecture](https://github.com/lukemurraynz/awesome-azure-architecture/blob/main/README.md "AWESOME-Azure-Architecture"){:target="_blank"}
 
 This list is a curated list of AWESOME blogs, videos, tutorials, code, tools & scripts, related to the design and implementation of solutions in Microsoft Azure.
 

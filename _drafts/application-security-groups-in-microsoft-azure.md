@@ -23,6 +23,13 @@ There are a few things to be mindful of:
 
 In my example, I have a single virtual network, with 2 subnets (one subnet, has an Azure Virtual Desktop session host and the other one has a webserver running IIS), using Azure Application Security Groups, we will restrict IIS access to the webserver from the Azure Virtual Session hosts only - so IIS won't be accessible from any other machine in the Virtual Network.
 
-#### Create Application Security Grou
+#### Create Application Security Group
 
-Creating an
+Let's get started by creating an Application Security Group.
+
+1. Open the Azure Portal
+2. Click on [**+ Create a resource**](https://portal.azure.com/#create/hub "Azure Portal - Create a resoruce")
+3. Search for: Application security group and select it
+4. Click Create
+5. Select the subscription that the Application Security group will be created in
+6. Select the Resource Group _(in my example, I am selecting AVD)_

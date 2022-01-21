@@ -44,9 +44,9 @@ Now that the Application Security group has been created it's time to assign it 
 
 1. Open the **Azure Portal**
 2. **Navigate** to your **Azure Virtual Desktop** session host _(or other workloads you are going to use)_
-3. Select Networking
-4. Select Application security groups
-5. Click Configure the application security groups
-6. Select the Application Security group created earlier
+3. Select **Networking**
+4. Select **Application security groups**
+5. Click **Configure the application security groups**
+6. **Select** the Application Security **group** created earlier
 7. ![](/uploads/assign-applicationsecuritygroup.png)
-8. Click Save
+8. Click **Save**

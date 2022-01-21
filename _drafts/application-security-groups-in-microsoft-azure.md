@@ -56,8 +56,30 @@ Now that the Application Security group has been created it's time to assign it 
 Now it's time to assign a block rule to our web server, for port 80 as by default it is allowed through the 'AllowVnetInBound' default rule.
 
 1. Navigate to the **Network Security Group** that holds your web server _(I am going to make the change on a Network Security group that is tied to the Network Interface of the web server, but the same principle applies if it was applied to a Network Security Group on the subnet - you just need to add the destination IP of the webserver)_
-2. Click on I**nbound security rules**
+2. Click on **Inbound security rules**
 3. Click **+ Add**
 4. Add a **Deny** port **rule** for port **80** for all source
 5. ![](/uploads/create-blocknsg80rule.png)
 6. Click **Save**
+
+After a few minutes, traffic from any workloads on the virtual network will now be blocked from accessing the web server on port 80.
+
+![](/uploads/avd-testport80_deny.png)
+
+#### Create Allow rule using Application Security Group
+
+Just a note around the priorities of Network Security Group rules: 
+
+> Rules are processed in priority order _(using a number between 100 and 4096)_, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. 
+>
+> As a result, any rules that exist with lower priorities (higher numbers) that have the same attributes as rules with higher priorities are not processed.
+
+1. Navigate to the **Network Security Group** that holds your web server _(I am going to make the change on a Network Security group that is tied to the Network Interface of the web server, but the same principle applies if it was applied to a Network Security Group on the subnet - you just need to add the destination IP of the webserver)_
+2. Click on **Inbound security rules**
+3. Click **+ Add**
+4. For Source, select the Application Security Group 
+5. Select HTTP as the service
+6. Select Allow as the action
+7. Set the Priority to be lower than the block rule, ie 4095
+8. Click Save
+9. ![](/uploads/avd-testport80_allow.png)

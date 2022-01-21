@@ -22,7 +22,7 @@ There are a few things to be mindful of:
 * The rules that specify an application security group as the source or destination are only applied to the network interfaces that are members of the application security group; this does not affect anything not in this group, even though your Network Security Group is based on the subnet.
 * You can assign more than one Application Security group to a resource
 
-In my example, I have a single virtual network, with 2 subnets (one subnet, has an Azure Virtual Desktop session host and the other one has a webserver running IIS), using Azure Application Security Groups, we will restrict IIS access to the webserver from the Azure Virtual Session hosts only - so IIS won't be accessible from any other machine in the Virtual Network.
+In my example, I have a single virtual network, with 2 subnets _(one subnet, has an Azure Virtual Desktop session host and the other one has a webserver running IIS)_, using Azure Application Security Groups, we will restrict IIS access to the webserver from the Azure Virtual Session hosts only - so IIS won't be accessible from any other machine in the Virtual Network.
 
 #### Create Application Security Group
 
@@ -50,3 +50,14 @@ Now that the Application Security group has been created it's time to assign it 
 6. **Select** the Application Security **group** created earlier
 7. ![](/uploads/assign-applicationsecuritygroup.png)
 8. Click **Save**
+
+#### Assign Block Rule Security Group
+
+Now it's time to assign a block rule to our web server, for port 80 as by default it is allowed through the 'AllowVnetInBound' default rule.
+
+1. Navigate to the **Network Security Group** that holds your web server _(I am going to make the change on a Network Security group that is tied to the Network Interface of the web server, but the same principle applies if it was applied to a Network Security Group on the subnet - you just need to add the destination IP of the webserver)_
+2. Click on I**nbound security rules**
+3. Click **+ Add**
+4. Add a **Deny** port **rule** for port **80** for all source
+5. ![](/uploads/create-blocknsg80rule.png)
+6. Click **Save**

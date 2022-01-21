@@ -89,3 +89,7 @@ Just a note around the priorities of Network Security Group rules:
 After a few minutes, traffic from any workloads on the virtual network will now be allowed for any workloads from your Azure Virtual Desktop farm only _(assigned to the Application Security group)_.
 
 ![](/uploads/avd-testport80_edgeallow.png)
+
+If I attempted to access the webserver from my application server, it fails:
+
+![](/uploads/avd-testport80_deny.png)

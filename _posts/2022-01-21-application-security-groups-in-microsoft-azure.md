@@ -6,10 +6,10 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: '/uploads/highleveldiagram_asg.png'
 
 ---
-Azure Application Security Groups allow you to define what workloads _(Virtual Machines)_ you are running in Azure has access to what resource - without being tied by managing complex IP address rules inside a [Network Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview "Network security groups").
+Azure Application Security Groups allow you to define what workloads _(Virtual Machines)_ you are running in Azure has access to what resource - without being tied by managing complex IP address rules inside a [Network Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview "Network security groups"){:target="_blank"}.
 
 > Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses.
 
@@ -18,7 +18,7 @@ These Azure Application Security groups allow you to define your workloads, for 
 There are a few things to be mindful of:
 
 * Azure Application Security Groups are Virtual Network-specific, so they can work to allow resources across subnets, but not in separate Virtual Networks, even if they have peered.
-* As with most Azure resources, there are Subscription level[ limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#azure-resource-manager-virtual-networking-limits "Networking limits - Azure Resource Manager"); you cannot have more than 3,000 Azure Application Security groups in a single subscription and region.
+* As with most Azure resources, there are Subscription level[ limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#azure-resource-manager-virtual-networking-limits "Networking limits - Azure Resource Manager"){:target="_blank"}; you cannot have more than 3,000 Azure Application Security groups in a single subscription and region.
 * The rules that specify an application security group as the source or destination are only applied to the network interfaces that are members of the application security group; this does not affect anything not in this group, even though your Network Security Group is based on the subnet.
 * You can assign more than one Application Security group to a resource
 
@@ -31,7 +31,7 @@ In my example, I have a single virtual network, with 2 subnets _(one subnet, has
 Let's get started by creating an Application Security Group.
 
 1. Open the **Azure Portal**
-2. Click on [**+ Create a resource**](https://portal.azure.com/#create/hub "Azure Portal - Create a resoruce")
+2. Click on [**+ Create a resource**](https://portal.azure.com/#create/hub "Azure Portal - Create a resoruce"){:target="_blank"}
 3. Search for: **Application security group** and select it
 4. Click **Create**
 5. **Select** the **subscription** that the Application Security group will be created in

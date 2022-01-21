@@ -27,12 +27,25 @@ In my example, I have a single virtual network, with 2 subnets (one subnet, has 
 
 Let's get started by creating an Application Security Group.
 
-1. Open the Azure Portal
+1. Open the **Azure Portal**
 2. Click on [**+ Create a resource**](https://portal.azure.com/#create/hub "Azure Portal - Create a resoruce")
-3. Search for: Application security group and select it
-4. Click Create
-5. Select the subscription that the Application Security group will be created in
-6. Select the Resource Group _(in my example, I am selecting AVD)_
+3. Search for: **Application security group** and select it
+4. Click **Create**
+5. **Select** the **subscription** that the Application Security group will be created in
+6. **Select** the **Resource Group** _(in my example, I am selecting AVD)_
 7. ![](/uploads/create-applicationsecuritygroup.png)
-8. Click Review + create
-9. Click Create
+8. Click **Review + create**
+9. Click **Create**
+
+#### Assign Application Security Group
+
+Now that the Application Security group has been created it's time to assign it this our Azure Virtual Desktop session hosts.
+
+1. Open the **Azure Portal**
+2. **Navigate** to your **Azure Virtual Desktop** session host _(or other workloads you are going to use)_
+3. Select Networking
+4. Select Application security groups
+5. Click Configure the application security groups
+6. Select the Application Security group created earlier
+7. ![](/uploads/assign-applicationsecuritygroup.png)
+8. Click Save

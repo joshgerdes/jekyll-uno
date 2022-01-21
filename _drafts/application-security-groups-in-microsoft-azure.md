@@ -33,3 +33,6 @@ Let's get started by creating an Application Security Group.
 4. Click Create
 5. Select the subscription that the Application Security group will be created in
 6. Select the Resource Group _(in my example, I am selecting AVD)_
+7. ![](/uploads/create-applicationsecuritygroup.png)
+8. Click Review + create
+9. Click Create

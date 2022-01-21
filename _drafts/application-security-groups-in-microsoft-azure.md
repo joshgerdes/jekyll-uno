@@ -93,3 +93,5 @@ After a few minutes, traffic from any workloads on the virtual network will now 
 If I attempted to access the webserver from my application server, it fails:
 
 ![](/uploads/avd-testport80_deny.png)
+
+Hopefully, this helps you avoid overly complex security rules that are reliant on knowing and managing the IP of your workloads and help secure your networks.

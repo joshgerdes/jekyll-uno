@@ -20,3 +20,9 @@ There are a few things to be mindful of:
 * Azure Application Security Groups are Virtual Network-specific, so they can work to allow resources across subnets, but not in separate Virtual Networks, even if they have peered.
 * As with most Azure resources, there are Subscription level[ limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#azure-resource-manager-virtual-networking-limits "Networking limits - Azure Resource Manager"); you cannot have more than 3,000 Azure Application Security groups in a single subscription and region.
 * The rules that specify an application security group as the source or destination are only applied to the network interfaces that are members of the application security group; this does not affect anything not in this group, even though your Network Security Group is based on the subnet.
+
+In my example, I have a single virtual network, with 2 subnets (one subnet, has an Azure Virtual Desktop session host and the other one has a webserver running IIS), using Azure Application Security Groups, we will restrict IIS access to the webserver from the Azure Virtual Session hosts only - so IIS won't be accessible from any other machine in the Virtual Network.
+
+#### Create Application Security Grou
+
+Creating an

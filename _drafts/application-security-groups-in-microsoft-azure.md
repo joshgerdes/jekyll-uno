@@ -83,3 +83,7 @@ Just a note around the priorities of Network Security Group rules:
 7. Set the Priority to be lower than the block rule, ie 4095
 8. Click Save
 9. ![](/uploads/avd-testport80_allow.png)
+
+After a few minutes, traffic from any workloads on the virtual network will now be allowed for any workloads from your Azure Virtual Desktop farm only _(assigned to the Application Security group)_.
+
+![](/uploads/avd-testport80_edgeallow.png)

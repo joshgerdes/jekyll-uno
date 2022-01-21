@@ -1,10 +1,10 @@
 ---
-date: 2022-01-19T00:00:00.000+13:00
+date: 2022-01-21 00:00:00 +1300
 title: Application Security Groups in Microsoft Azure
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 

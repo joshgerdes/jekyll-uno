@@ -15,3 +15,7 @@ For a [fee](https://azure.microsoft.com/en-us/pricing/details/defender-for-cloud
 This reduces exposure to attacks while providing easy access when you need to connect to a VM.
 
 Today we are going to use the Azure Portal, and configure Just-in-Time access for RDP for a Windows virtual machine, running in Microsoft Azure which has a public IP.
+
+This article assumes you have the authority and permissions (_at least Security Administrator role)_ to configure and pay for Defender for Cloud
+
+### Configure Defender for Cloud

@@ -1,5 +1,5 @@
 ---
-date: 2022-01-29 00:00:00 +1300
+date: 2022-01-28 00:00:00 +1300
 title: Just in Time access to Azure Virtual Machines
 author: Luke
 categories:

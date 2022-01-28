@@ -35,6 +35,20 @@ Now if you go to the Network Security Group attached to the network interface of
 
 ![](/uploads/azureportal-justintime_nsgblock.png)
 
+### Configure Just In Time
+
+Now that we have enabled Defender for Cloud, it's time to configure what ports (can be used for more than just RDP and SSH access) and the length of time that access is allowed. 
+
+1. Click on Microsoft Defender for Cloud
+2. Select Workload Protections
+3. Select Just-In-Time VM access
+4. ![](/uploads/azureportal-defenderforcloud.png)
+5. Select the VM you have configured
+6. Click the ellipsis on the right-hand side
+7. Select Edit
+8. Azure has automatically added the port for RDP (3389) and set a maximum 3 hour request time (that I am allowed to connect to the VM), I can also restrict Just In TIme access from certain IP addresses and IP ranges, to avoid anyone being able able to RDP from their home IP.
+9. ![](/uploads/azureportal-configurationports.png)
+
 ### Request Access for Just In Time Access to RDP
 
 You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access")request JiT access to Azure VM through PowerShell and the REST API, but we are going to use the Azure Portal.
@@ -49,7 +63,4 @@ You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-
 8. If you look at the Network Security Group, you should be able to see a new 'Allow' rule has been created with a priority lower than the block rule.
 9. ![](/uploads/azureportal-justintime_nsgallow.png)
 
-1. Click on Microsoft Defender for Cloud
-2. Select Workload Protections
-3. Select Just-In-Time VM access
-4. ![](/uploads/azureportal-defenderforcloud.png)
+### Additional Resources

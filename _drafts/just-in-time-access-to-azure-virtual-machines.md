@@ -20,8 +20,17 @@ This article assumes you have the authority and permissions (_at least Security 
 
 ### Configure Defender for Cloud
 
-1. Open the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
-2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
-3. Click on Configuration
-4. Click on: Upgrade your Security Center subscription to enable a just-in-time access
-5. ![](/uploads/azureportal-configurationinitialjit.png)
+ 1. Open the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+ 2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
+ 3. Click on Configuration
+ 4. Click on: Upgrade your Security Center subscription to enable a just-in-time access
+ 5. ![](/uploads/azureportal-configurationinitialjit.png)
+ 6. Select the Subscription that holds your VM and select Upgrade
+ 7. If you want to make use of the rest of the Cloud Defender offerings (and you should), then make sure you install the Log Analytics agent, however for Just In Time Access, you don't need it.
+ 8. Navigate back to your Virtual Machine
+ 9. Click on Configuration
+10. Now you should see: Enable for Just-in-Time VM access, select this to enable Just in Time.
+
+Now if you go to the Network Security Group attached to the network interface of the VM, you should see a Deny Rule for: 3389 that's been created with a priority lower than the allow rules, forcing the block.
+
+![](/uploads/azureportal-justintime_nsgblock.png)

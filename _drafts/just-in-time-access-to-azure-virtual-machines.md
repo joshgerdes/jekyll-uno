@@ -20,7 +20,7 @@ This article assumes you have the authority and permissions (_at least Security 
 
 ### Configure Defender for Cloud
 
- 1. Open the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
  3. Click on Configuration
  4. Click on: Upgrade your Security Center subscription to enable a just-in-time access
@@ -34,3 +34,22 @@ This article assumes you have the authority and permissions (_at least Security 
 Now if you go to the Network Security Group attached to the network interface of the VM, you should see a Deny Rule for 3389 that's been created with a priority lower than the allowed rules, forcing the block.
 
 ![](/uploads/azureportal-justintime_nsgblock.png)
+
+### Request Access for Just In Time Access to RDP
+
+You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access")request JiT access to Azure VM through PowerShell and the REST API, but we are going to use the Azure Portal.
+
+1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
+3. Click Connect
+4. You should see an information alert at the top of the blade "This VM has a just-in-time access policy. Select "Request access" before connecting."
+5. ![](/uploads/azureportal-requestaccess.png)
+6. Click Request access
+7. You should now have access to RDP to the machine!
+8. If you look at the Network Security Group, you should be able to see a new 'Allow' rule has been created with a priority lower than the block rule.
+9. ![](/uploads/azureportal-justintime_nsgallow.png)
+
+1. Click on Microsoft Defender for Cloud
+2. Select Workload Protections
+3. Select Just-In-Time VM access
+4. ![](/uploads/azureportal-defenderforcloud.png)

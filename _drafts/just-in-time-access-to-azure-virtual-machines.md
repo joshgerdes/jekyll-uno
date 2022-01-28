@@ -52,7 +52,7 @@ Now that we have enabled Defender for Cloud, it's time to configure what ports (
 
 ### Request Access for Just In Time Access to RDP
 
-You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access")request JiT access to Azure VM through PowerShell and the REST API, but we are going to use the Azure Portal.
+You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access")request JiT access to Azure VM through PowerShell and the REST API _(see Additional Resources below for a PowerShell script to get you started)_, but we are going to use the Azure Portal.
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. **Navigate** to the **Virtual Machine** you would like to enable Defender for Cloud on and enable Just in Time Access for
@@ -64,5 +64,12 @@ You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-
  8. You should now have access to RDP to the machine!
  9. If you look at the Network Security Group, you should be able to see a new 'Allow' rule has been created with a priority lower than the block rule.
 10. ![](/uploads/azureportal-justintime_nsgallow.png)
+11. After 3 hours, the allowed rules will be removed automatically.
+
+Hopefully, this helps keep your environment secure, if you implement this, make sure you read about the custom roles, to prevent the people from just adding in a rule for their public IP in the address manually, you may be better to create a custom role _(see the script in Additional Resources below to create this role)_.
 
 ### Additional Resources
+
+* [Secure your management ports with just-in-time access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc "Secure your management ports with just-in-time access")
+* [Understanding just-in-time (JIT) VM access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview "Understanding just-in-time (JIT) VM access")
+* [Just in Time Access Policy Script & Custom Role Script](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Powershell%20scripts/JIT%20Scripts "JIT Scripts")

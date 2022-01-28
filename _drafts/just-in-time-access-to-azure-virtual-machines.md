@@ -31,6 +31,6 @@ This article assumes you have the authority and permissions (_at least Security 
  9. Click on Configuration
 10. Now you should see: Enable for Just-in-Time VM access, select this to enable Just in Time.
 
-Now if you go to the Network Security Group attached to the network interface of the VM, you should see a Deny Rule for: 3389 that's been created with a priority lower than the allow rules, forcing the block.
+Now if you go to the Network Security Group attached to the network interface of the VM, you should see a Deny Rule for 3389 that's been created with a priority lower than the allowed rules, forcing the block.
 
 ![](/uploads/azureportal-justintime_nsgblock.png)

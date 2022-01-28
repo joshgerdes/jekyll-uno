@@ -13,3 +13,5 @@ Microsoft Defender for Cloud offers advanced security features, combining functi
 For a [fee](https://azure.microsoft.com/en-us/pricing/details/defender-for-cloud/ " Microsoft Defender for Cloud pricing") for Microsoft Defender for Cloud, you can use Just In Time or JIT to lock down inbound traffic to your Azure Virtual Machines when you only need it.
 
 This reduces exposure to attacks while providing easy access when you need to connect to a VM.
+
+Today we are going to use the Azure Portal, and configure Just-in-Time access for RDP for a Windows virtual machine, running in Microsoft Azure which has a public IP.

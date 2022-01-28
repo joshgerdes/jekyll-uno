@@ -19,3 +19,9 @@ Today we are going to use the Azure Portal, and configure Just-in-Time access fo
 This article assumes you have the authority and permissions (_at least Security Administrator role)_ to configure and pay for Defender for Cloud
 
 ### Configure Defender for Cloud
+
+1. Open the [Azure Portal](https://portal.azure.com/#home "Azure Portal")
+2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
+3. Click on Configuration
+4. Click on: Upgrade your Security Center subscription to enable a just-in-time access
+5. ![](/uploads/azureportal-configurationinitialjit.png)

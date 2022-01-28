@@ -11,7 +11,7 @@ header:
 ---
 Microsoft Defender for Cloud offers advanced security features, combining functions such as adaptive application controls _(application whitelisting)_, networking hardening _(machine learning that learns the traffic passing through your network security group, which helps you create more restricted rules)_ and advanced antivirus and threat protection; however, a hidden gem of this suite is: Just in Time VM Access.
 
-For a [fee](https://azure.microsoft.com/en-us/pricing/details/defender-for-cloud/ " Microsoft Defender for Cloud pricing") for Microsoft Defender for Cloud, you can use Just In Time or JIT to lock down inbound traffic to your Azure Virtual Machines when you only need it.
+For a [fee](https://azure.microsoft.com/en-us/pricing/details/defender-for-cloud/ " Microsoft Defender for Cloud pricing"){:target="_blank"} for Microsoft Defender for Cloud, you can use Just In Time or JIT to lock down inbound traffic to your Azure Virtual Machines when you only need it.
 
 This reduces exposure to attacks while providing easy access when you need to connect to a VM.
 
@@ -21,7 +21,7 @@ This article assumes you have the authority and permissions (_at least the Secur
 
 ### Configure Defender for Cloud
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}
  2. Navigate to the Virtual Machine you would like to enable Defender for Cloud on and enable Just in Time Access for
  3. Click on **Configuration**
  4. Click on: **Upgrade your Security Center subscription** to enable just-in-time access.
@@ -53,9 +53,9 @@ Now that we have enabled Defender for Cloud, it's time to configure what ports (
 
 ### Request Access for Just In Time Access to RDP
 
-You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access")request JiT access to Azure VM through PowerShell and the REST API _(see Additional Resources below for a PowerShell script to get you started)_, but we are going to use the Azure Portal.
+You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-powershell "Secure your management ports with just-in-time access"){:target="_blank"} request JiT access to Azure VM through PowerShell and the REST API _(see Additional Resources below for a PowerShell script to get you started)_, but we are going to use the Azure Portal.
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}
  2. **Navigate** to the **Virtual Machine** you would like to enable Defender for Cloud on and enable Just in Time Access for
  3. Click **Connect**
  4. You should see an information alert at the top of the blade "This VM has a just-in-time access policy. Select "Request access" before connecting."
@@ -71,6 +71,6 @@ Hopefully, this helps keep your environment secure; if you implement this, make 
 
 ### Additional Resources
 
-* [Secure your management ports with just-in-time access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc "Secure your management ports with just-in-time access")
-* [Understanding just-in-time (JIT) VM access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview "Understanding just-in-time (JIT) VM access")
-* [Just in Time Access Policy Script & Custom Role Script](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Powershell%20scripts/JIT%20Scripts "JIT Scripts")
+* [Secure your management ports with just-in-time access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc "Secure your management ports with just-in-time access"){:target="_blank"}
+* [Understanding just-in-time (JIT) VM access](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview "Understanding just-in-time (JIT) VM access"){:target="_blank"}
+* [Just in Time Access Policy Script & Custom Role Script](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Powershell%20scripts/JIT%20Scripts "JIT Scripts"){:target="_blank"}

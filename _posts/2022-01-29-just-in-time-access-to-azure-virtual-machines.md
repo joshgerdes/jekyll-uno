@@ -66,7 +66,7 @@ You can [programmatically ](https://docs.microsoft.com/en-us/azure/defender-for-
 10. ![](/uploads/azureportal-justintime_nsgallow.png)
 11. After 3 hours, the allowed rules will be removed automatically.
 
-Hopefully, this helps keep your environment secure; if you implement this, make sure you read about the custom roles, to prevent the people from just adding in a rule for their public IP in the address manually, you may be better to create a custom role _(see the script in Additional Resources below to create this role)_.
+Hopefully, this helps keep your environment secure; if you implement this, make sure you read about the custom roles. To prevent the people from just adding in a rule for their public IP in the address manually, it may be better to create a custom role _(see the script in Additional Resources below to create this role)_.
 
 ### Additional Resources
 

@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, you can deploy Applications to your Virtual Machines. 
+The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, you can deploy Applications to your Virtual Machines.
 
 > An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications). An Azure Compute Gallery provides:
 >
@@ -35,11 +35,13 @@ Along with images, Azure VM applications that support both Linux and Windows ope
 
 Azure VM Application packages _(stored in an Azure Storage account)_, uses multiple resources, as below:
 
-| Resource               | Description                                                                                                                                                                                                                                                                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Azure compute gallery  | A gallery is a repository for managing and sharing application packages. Users can share the gallery resource and all the child resources will be shared automatically. The gallery name must be unique per subscription. For example, you may have one gallery to store all your OS images and another gallery to store all your VM applications. |
-| VM application         | This is the definition of your VM application. This is a logical resource that stores the common metadata for all the versions under it. For example, you may have an application definition for Apache Tomcat and have multiple versions within it.                                                                                               |
-| VM Application version | This is the deployable resource. You can globally replicate your VM application versions to target regions closer to your VM infrastructure. The VM Application Version must be replicated to a region before it may be deployed on a VM in that region.                                                                                           |
+| Resource | Description |
+| --- | --- |
+| Azure compute gallery | A gallery is a repository for managing and sharing application packages. Users can share the gallery resource and all the child resources will be shared automatically. The gallery name must be unique per subscription. For example, you may have one gallery to store all your OS images and another gallery to store all your VM applications. |
+| VM application | This is the definition of your VM application. This is a logical resource that stores the common metadata for all the versions under it. For example, you may have an application definition for Apache Tomcat and have multiple versions within it. |
+| VM Application version | This is the deployable resource. You can globally replicate your VM application versions to target regions closer to your VM infrastructure. The VM Application Version must be replicated to a region before it may be deployed on a VM in that region. |
 
 * Storage costs of storing each package and any replicas.
 * Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
+
+Before we deploy our first 

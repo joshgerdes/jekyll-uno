@@ -32,3 +32,5 @@ Along with images, Azure VM applications that support both Linux and Windows ope
 > * Support for virtual machines, and both flexible and uniform scale sets
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
 > * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) policy.
+
+Azure VM Application packages _(stored in an Azure Storage account)_, uses multiple resources

@@ -21,3 +21,14 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 > * Scaling your deployments with resource replicas in each region.
 
 Along with images, Azure VM applications that support both Linux and Windows operating systems gets these benefits.
+
+> While you can create an image of a VM with apps pre-installed, you would need to update your image each time you have application changes. Separating your application installation from your VM images means there’s no need to publish a new image for every line of code change.
+>
+> Application packages provide benefits over other deployment and packaging methods:
+>
+> * Grouping and versioning of your packages
+> * VM applications can be globally replicated to be closer to your infrastructure, so you don’t need to use AzCopy or other storage copy mechanisms to copy the bits across Azure regions.
+> * Sharing with other users through Azure Role Based Access Control (RBAC)
+> * Support for virtual machines, and both flexible and uniform scale sets
+> * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
+> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) policy.

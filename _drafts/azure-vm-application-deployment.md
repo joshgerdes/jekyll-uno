@@ -33,4 +33,9 @@ Along with images, Azure VM applications that support both Linux and Windows ope
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
 > * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) policy.
 
-Azure VM Application packages _(stored in an Azure Storage account)_, uses multiple resources
+Azure VM Application packages _(stored in an Azure Storage account)_, uses multiple resources, as below:
+
+There is no extra charge for using VM Application Packages, but you will be charged for the following resources:
+
+* Storage costs of storing each package and any replicas.
+* Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.

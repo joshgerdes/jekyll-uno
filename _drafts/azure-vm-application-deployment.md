@@ -11,4 +11,4 @@ header:
 ---
 The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, you can deploy Applications to your Virtual Machines. 
 
-Azure VM applications supports both Linux and Windows and is currently in Public Preview.
+Azure VM applications support both Linux and Windows and is currently in Public Preview.

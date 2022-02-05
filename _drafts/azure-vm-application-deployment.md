@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, you can deploy Applications to your Virtual Machines.
+The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, and you can deploy Applications to your Virtual Machines.
 
 ### Overview
 
@@ -22,7 +22,7 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 > * Sharing across subscriptions, and even between Active Directory _(AD)_ tenants, using Azure RBAC.
 > * Scaling your deployments with resource replicas in each region.
 
-Along with images, Azure VM applications that support both Linux and Windows operating systems gets these benefits.
+With images, Azure VM applications that support both Linux and Windows operating systems get these benefits.
 
 > While you can create an image of a VM with apps pre-installed, you would need to update your image each time you have application changes. Separating your application installation from your VM images means there’s no need to publish a new image for every line of code change.
 >
@@ -35,7 +35,7 @@ Along with images, Azure VM applications that support both Linux and Windows ope
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
 > * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) policy.
 
-Azure VM Application packages _(stored in an Azure Storage account)_, uses multiple resources, as below:
+Azure VM Application packages _(stored in an Azure Storage account)_ uses multiple resources, as below:
 
 | Resource | Description |
 | --- | --- |
@@ -53,11 +53,11 @@ Before we deploy our first VM application, there are a few things we need to be 
 * VM Application requires an Azure storage account to store your applications
 * The VM Application gets downloaded to the VM using the name of the VM application _(not the actual name and extension of your file in the storage account)_
 * Currently, in order to retry a failed installation, you need to remove the application from the profile and add it back
-* No more than 5 applications per Virtual Machine deployed at a time
+* No more than five applications per Virtual Machine deployed at a time
 * The maximum size of the application is 1 GB
-* You can't have multiple versions of the same application installed on a Virtual Machine, a newer version will supersede an older version either via an upgrade command or complete reinstall.
+* You can't have multiple versions of the same application installed on a Virtual Machine, and a newer version will supersede an older version either via an upgrade command or complete reinstall.
 
-In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine, this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application _(theoretically you can also use this to run PowerShell installs or chocolatey installs)_. 
+In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine; this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc.)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application _(theoretically you can also use this to run PowerShell installs or chocolatey installs)_. 
 
 > It's worth noting the VM Applications are currently in Public Preview, there is a good chance there will be changes in the way these operate and are configured when it becomes Generally Available.
 
@@ -71,11 +71,11 @@ In order to use VM Applications, we need:
 * Azure Compute gallery
 * VM application definition and version _(in my example: the Datto RMM agent)_
 
-Following the guide, we will run through the creation of everything from scratch, I am however assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview") give a few good examples for getting started with various different applications.
+Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview") give a few good examples for getting started with various applications.
 
 #### Setup Storage Account
 
-The Storage account is where your application will be placed, it uses blobs, depending on the importance of your application deployments, you may want to go for geo-replication etc, but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
+The Storage account is where your application will be placed; it uses blobs; depending on the importance of your application deployments, you may want to go for geo-replication etc, but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Click on **+ Create a Resource**
@@ -84,7 +84,7 @@ The Storage account is where your application will be placed, it uses blobs, dep
  5. **Select** your **subscription**
  6. **Select** a **Resource Group** for your storage account, **or create** a new **one**
  7. **Enter** your storage account **name** _(this needs to be globally unique)_
- 8. **Select** your **region** that your application will be in, although the application can be replicated to other regions, it's better to select your primary region here.
+ 8. **Select** your **region** that your application will be in; although the application can be replicated to other regions, it's better to select your primary region here.
  9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
 10. ![](/uploads/create-a-storage-account-microsoft-azure.png)
 11. You can **leave** most **settings** here as **default**, the application executable will need to be able to be accessed directly, make sure the **Minimum TLS** is at least **1.2**.
@@ -118,7 +118,7 @@ VM application definitions are created within a gallery and carry information ab
  3. **Find and click on** your **Azure Compute Gallery** you created earlier
  4. On the overview pane, select **+ Add**
  5. Click on +**VM application definition**
- 6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **Application**
+ 6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **application**
  7. Select your **region**
  8. Select the **OS type** - in my case, I select **Windows**
  9. ![](/uploads/create-a-vm-application-definition-microsoft-azure.png)

@@ -143,9 +143,9 @@ Now that we have the application definition setup, it's time to set up the versi
  4. Click on **Definitions **_(besides the Get Started link)_
  5. **Select** your Application **definition**
  6. Click on: **+Add** 
- 7. **Enter** in your **version number**, and this will increment and grow as you adjust and troubleshoot your application; I recommend starting with 0.0.1 then working your way up.
+ 7. **Enter** in your **version number**, and this will increment and grow as you adjust and troubleshoot your application; I recommend starting with 0.0.1 then working your way up, with 1.0.0 being potentially your final/production-ready releast.
  8. Select your **Region**
- 9. Now we need to select our source application package _(you can enter in your blob URL if you know it)_, we haven't uploaded it to our storage account yet, so we will select **Browse**
+ 9. Now we need to select our source application package _(you can enter in your blob URL if you know it)_; we haven't uploaded it to our storage account yet, so we will select **Browse**
 10. **Select** your **Storage account**
 11. Press **+ Container**
 12. **Enter** in the **name** of your **container** _( it has to be in lowercase)_, such as the application name _(to keep things separate, consider a container per application)_

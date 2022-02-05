@@ -1,6 +1,6 @@
 ---
 date: 2022-02-03 00:00:00 +1300
-title: Azure VM Application Deployment
+title: Datto Remote Management Azure VM Application Deployment
 author: Luke
 categories:
 - Azure

@@ -104,3 +104,7 @@ Now that we have the Storage account to store your application binaries, we now 
  8. ![](/uploads/create-azure-compute-gallery-microsoft-azure.png)
  9. Select **Review + Create**
 10. Verify everything is correct and click on: **Create**
+
+#### Create Application Definition
+
+VM application definitions are created within a gallery and carry information about the application and requirements for using it internally. This includes the operating system type for the VM application versions contained within the application definition.

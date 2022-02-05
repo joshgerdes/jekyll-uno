@@ -186,3 +186,34 @@ Now that your Azure VM Application has been created, it is now time to deploy to
 13. ![](/uploads/vm-p01-datto-rmm.png)
 
 ### Troubleshooting VM Application
+
+#### Package Location
+
+The package/extension location is here: 
+
+* C:\\Packages\\Plugins\\Microsoft.CPlat.Core.VMApplicationManagerWindows\\{VERSION#}\\
+
+You will find your Application binary under Downloads.
+
+#### Logs
+
+**For the extension status logs, navigate to:** 
+
+* C:\\Packages\\Plugins\\Microsoft.CPlat.Core.VMApplicationManagerWindows\\{VERSION#}\\Status
+
+You should see files such as:
+
+* 0.status
+
+You can right-click these and open them in Notepad, and you should have the timestamp and the last status message, this should be identical to what you see in the Azure Portal.
+
+**For the application install logs, navigate to:** 
+
+* C:\\Packages\\Plugins\\Microsoft.CPlat.Core.VMApplicationManagerWindows\\{VERSION#}\\Downloads\\{APPNAME}\\{APPVERSION}\\
+
+You may see files such as:
+
+* stderr
+* stdout
+
+You can right-click these and open them in Notepad, any errors will be noted in these.

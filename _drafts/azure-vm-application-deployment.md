@@ -187,6 +187,8 @@ Now that your Azure VM Application has been created, it is now time to deploy to
 
 ### Troubleshooting VM Application
 
+If you have problems installing a package, just a reminder that the VM Application, uploads your file based on the name of the Application, to the server and needs to be renamed with a valid extension as part of the install script.
+
 #### Package Location
 
 The package/extension location is here: 

@@ -181,4 +181,4 @@ Now that your Azure VM Application has been created, it is now time to deploy to
  8. Click **Ok**
  9. ![](/uploads/vm-p01-microsoft-azure.png)
 10. You can select your Install Order _(i.e. if you had multiple applications, you can select which one installs 1st, 2nd, third and so on)_; I will select No Reference and click Save to start the deployment.
-11. If you click Extensions, you should see that a: VMAppExtension has started to be installed; click on Refresh to update the status and click on the Extension to a more detailed status message.
+11. If you click Extensions, you should see that a: VMAppExtension has started to be installed; click on Refresh to update the status and click on the Extension to a more detailed status message, hopefully you see ":Operational Install is SUCCESS"

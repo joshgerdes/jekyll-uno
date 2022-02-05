@@ -57,7 +57,7 @@ Before we deploy our first VM application, there are a few things we need to be 
 * The maximum size of the application is 1 GB
 * You can't have multiple versions of the same application installed on a Virtual Machine, a newer version will supersede an older version either via an upgrade command or complete reinstall.
 
-In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine, this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application. 
+In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine, this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application _(theoretically you can also use this to run PowerShell installs or chocolatey installs)_. 
 
 > It's worth noting the VM Applications are currently in Public Preview, there is a good chance there will be changes in the way these operate and are configured when it becomes Generally Available.
 
@@ -130,3 +130,7 @@ VM application definitions are created within a gallery and carry information ab
 12. ![](/uploads/create-a-vm-application-definition-metadata-microsoft-azure.png)
 13. Click **Review + create**
 14. Verify your configuration and select **Create**
+
+#### Create Application version
+
+Now that we have the application definition setup, its time to now setup the version 

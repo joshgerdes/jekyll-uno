@@ -111,8 +111,14 @@ Now that we have the Storage account to store your application binaries, we now 
 
 VM application definitions are created within a gallery and carry information about the application and requirements for using it internally. This includes the operating system type for the VM application versions contained within the application definition. The name of your Application definition defines the name of the file that will be downloaded to your virtual machines.
 
-1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Navigate to '**All Resources'**
-3. **Find and click on** your **Azure Compute Gallery** you created earlier
-4. On the overview pane, select **+ Add**
-5. Click on +**VM application definition**
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Navigate to '**All Resources'**
+ 3. **Find and click on** your **Azure Compute Gallery** you created earlier
+ 4. On the overview pane, select **+ Add**
+ 5. Click on +**VM application definition**
+ 6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **Application**
+ 7. Select your **region**
+ 8. Select the **OS type** - in my case, I select **Windows**
+ 9. ![](/uploads/create-a-vm-application-definition-microsoft-azure.png)
+10. Click **Next: Publishing Options**
+11. 

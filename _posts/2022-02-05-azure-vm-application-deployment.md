@@ -12,7 +12,7 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 
 ### Overview
 
-> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications). An Azure Compute Gallery provides:
+> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications){:target="_blank"}. An Azure Compute Gallery provides:
 >
 > * Global replication.
 > * Versioning and grouping of resources for easier management.
@@ -32,7 +32,7 @@ With images, Azure VM applications that support both Linux and Windows operating
 > * Sharing with other users through Azure Role Based Access Control (RBAC)
 > * Support for virtual machines, and both flexible and uniform scale sets
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
-> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects) policy.
+> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects){:target="_blank"} policy.
 
 Azure VM Application packages _(stored in an Azure Storage account)_ uses multiple resources, as below:
 
@@ -70,16 +70,16 @@ In order to use VM Applications, we need:
 * Azure Compute gallery
 * VM application definition and version _(in my example: the Datto RMM agent)_
 
-Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview") give a few good examples for getting started with various applications.
+Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview"){:target="_blank"} give a few good examples for getting started with various applications.
 
 #### Setup Storage Account
 
 The Storage account is where your application will be placed; it uses blobs; depending on the importance of your application deployments, you may want to go for geo-replication etc., but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Click on **+ Create a Resource**
  3. Search for: **Storage account**, and **select** it
- 4. Click [**Create**](https://portal.azure.com/#create/Microsoft.StorageAccount-ARM "Create a storage account")
+ 4. Click [**Create**](https://portal.azure.com/#create/Microsoft.StorageAccount-ARM "Create a storage account"){:target="_blank"}
  5. **Select** your **subscription**
  6. **Select** a **Resource Group** for your storage account, **or create** a new **one**
  7. **Enter** your storage account **name** _(this needs to be globally unique)_
@@ -97,10 +97,10 @@ The Storage account is where your application will be placed; it uses blobs; dep
 
 Now that we have the Storage account to store your application binaries, we now need an Azure Compute Gallery _(previously the Shared Image Gallery)_ to keep your application definition and version metadata.
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Click on **+ Create a Resource**
  3. Search for: **Azure Compute Gallery** and **select** it
- 4. Click [**Create**](https://portal.azure.com/#create/microsoft.sharedImageGallery "Create Azure compute gallery")
+ 4. Click [**Create**](https://portal.azure.com/#create/microsoft.sharedImageGallery "Create Azure compute gallery"){:target="_blank"}
  5. **Select** your **subscription** and **resource group** _(in this case, I am going to use the same resource group as the Storage account I created earlier)_
  6. Type in a **name**, and **select** your **region**
  7. Although not mandatory, use the opportunity to fill in a description for the purpose of the Compute Gallery for future reference
@@ -112,7 +112,7 @@ Now that we have the Storage account to store your application binaries, we now 
 
 VM application definitions are created within a gallery and carry information about the application and requirements for using it internally. This includes the operating system type for the VM application versions contained within the application definition. The name of your Application definition defines the name of the file that will be downloaded to your virtual machines.
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to '**All Resources'**
  3. **Find and click on** your **Azure Compute Gallery** you created earlier
  4. On the overview pane, select **+ Add**
@@ -136,7 +136,7 @@ VM application definitions are created within a gallery and carry information ab
 
 Now that we have the application definition setup, it's time to set up the version and upload our binary file.+
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to '**All Resources'**
  3. **Find and click on** your **Azure Compute Gallery** you created earlier
  4. Click on **Definitions **_(besides the Get Started link)_
@@ -170,7 +170,7 @@ Now that we have the application definition setup, it's time to set up the versi
 
 Now that your Azure VM Application has been created, it is now time to deploy to a Virtual Machine. I have a Windows Server 2022 Datacenter Azure Gen 2 VM running as a Standard_B2ms as my test machine, and because I am going to use the Datto RMM agent to connect to the machine, I don't need any RDP ports open etc.
 
- 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to **Virtual Machines**
  3. Click on your Virtual Machine
  4. Under Settings, click **Extensions + Applications**
@@ -266,4 +266,4 @@ You can right-click these and open them in Notepad, any errors will be noted in 
 
 #### Troubleshooting during preview
 
-* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#troubleshooting-during-preview "Troubleshooting during preview")
+* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#troubleshooting-during-preview "Troubleshooting during preview"){:target="_blank"}

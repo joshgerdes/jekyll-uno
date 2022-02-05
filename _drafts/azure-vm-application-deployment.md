@@ -147,4 +147,11 @@ Now that we have the application definition setup, it's time to now set up the v
  8. Select your **Region**
  9. Now we need to select our source application package _(you can enter in your blob URL if you know it)_, we haven't uploaded it to our storage account yet, so we will select **Browse**
 10. **Select** your **Storage account**
-11. 
+11. Press **+ Container**
+12. **Enter** in the **name** of your **container** _( it has to be in lowercase)_, such as the application name _(to keep things separate, consider a container per application)_
+13. Press **Upload**
+14. **Browse** to your **file** and select it
+15. Expand **Advanced**
+16. Make sure that Blob type is: **Blob**
+17. ![](/uploads/upload-blob-microsoft-azure.png)![](/uploads/upload-blob-microsoft-azure.png)
+18. Click **Upload**

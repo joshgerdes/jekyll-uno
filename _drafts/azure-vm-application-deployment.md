@@ -94,12 +94,13 @@ The Storage account is where your application will be placed, it uses blobs, dep
 
 Now that we have the Storage account to store your application binaries, we now need an Azure Compute Gallery _(previously the Shared Image Gallery)_ to store your application definition and version metadata
 
-1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click on **+ Create a Resource**
-3. Search for: **Azure Compute Gallery** and **select** it
-4. Click [**Create**](https://portal.azure.com/#create/microsoft.sharedImageGallery "Create Azure compute gallery")
-5. **Select** your **subscription** and **resource group** _(in this case, I am going to use the same resource group as the Storage account I created earlier)_
-6. Type in a **name**, and **select** your **region**
-7. Although not mandatory, use the opportunity to fill in a description for the purpose of the Compute Gallery for future reference
-8. ![](/uploads/create-azure-compute-gallery-microsoft-azure.png)
-9. Select **Review + Create**
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Click on **+ Create a Resource**
+ 3. Search for: **Azure Compute Gallery** and **select** it
+ 4. Click [**Create**](https://portal.azure.com/#create/microsoft.sharedImageGallery "Create Azure compute gallery")
+ 5. **Select** your **subscription** and **resource group** _(in this case, I am going to use the same resource group as the Storage account I created earlier)_
+ 6. Type in a **name**, and **select** your **region**
+ 7. Although not mandatory, use the opportunity to fill in a description for the purpose of the Compute Gallery for future reference
+ 8. ![](/uploads/create-azure-compute-gallery-microsoft-azure.png)
+ 9. Select **Review + Create**
+10. Verify everything is correct and click on: **Create**

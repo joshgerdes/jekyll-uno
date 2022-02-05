@@ -15,9 +15,9 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 >
 > * Global replication.
 > * Versioning and grouping of resources for easier management.
-> * Highly available resources with Zone Redundant Storage (ZRS) accounts in regions that support Availability Zones. ZRS offers better resilience against zonal failures.
-> * Premium storage support (Premium_LRS).
-> * Sharing across subscriptions, and even between Active Directory (AD) tenants, using Azure RBAC.
+> * Highly available resources with Zone Redundant Storage _(ZRS)_ accounts in regions that support Availability Zones. ZRS offers better resilience against zonal failures.
+> * Premium storage support _(Premium_LRS)_.
+> * Sharing across subscriptions, and even between Active Directory _(AD)_ tenants, using Azure RBAC.
 > * Scaling your deployments with resource replicas in each region.
 
 Along with images, Azure VM applications that support both Linux and Windows operating systems gets these benefits.

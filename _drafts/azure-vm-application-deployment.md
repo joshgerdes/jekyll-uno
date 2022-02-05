@@ -59,4 +59,12 @@ Before we deploy our first VM application, there are a few things we need to be 
 
 In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine, this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application. 
 
-### Overview
+### Prerequisites
+
+In order to use VM Applications, we need:
+
+* A storage account
+* Azure Compute gallery
+* VM application definition and version _(in my example: the Datto RMM agent)_
+
+Following the guide, we will run through the creation of everything from scratch, I am however assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview") give a few good examples for getting started with various different applications.

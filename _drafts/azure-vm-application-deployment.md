@@ -85,3 +85,8 @@ The Storage account is where your application will be placed, it uses blobs, dep
  8. **Select** your **region** that your application will be in, although the application can be replicated to other regions, it's better to select your primary region here.
  9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
 10. ![](/uploads/create-a-storage-account-microsoft-azure.png)
+11. You can leave most settings here as default, the application executable will need to be able to be accessed directly, make sure the Minimum TLS is at least 1.2.
+12. You don't need hierarchical namespace etc, unselect 'Allow cross-tenant replication' unless this is a feature you use.
+13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
+14. Click **Next: Networking**
+15. 

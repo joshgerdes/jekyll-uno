@@ -73,8 +73,15 @@ Following the guide, we will run through the creation of everything from scratch
 
 #### Setup Storage Account
 
-1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click on **+ Create a Resource**
-3. Search for: **Storage account**, and **select** it
-4. Click [**Create**](https://portal.azure.com/#create/Microsoft.StorageAccount-ARM "Create a storage account")
-5. 
+The Storage account is where your application will be placed, it uses blobs, depending on the importance of your application deployments, you may want to go for geo-replication etc, but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
+
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Click on **+ Create a Resource**
+ 3. Search for: **Storage account**, and **select** it
+ 4. Click [**Create**](https://portal.azure.com/#create/Microsoft.StorageAccount-ARM "Create a storage account")
+ 5. **Select** your **subscription**
+ 6. **Select** a **Resource Group** for your storage account, **or create** a new **one**
+ 7. **Enter** your storage account **name** _(this needs to be globally unique)_
+ 8. **Select** your **region** that your application will be in, although the application can be replicated to other regions, it's better to select your primary region here.
+ 9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
+10. ![](/uploads/create-a-storage-account-microsoft-azure.png)

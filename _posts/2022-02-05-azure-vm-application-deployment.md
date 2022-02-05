@@ -6,8 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
-
+   teaser: images/iazure-marketplace-banner.png
 ---
 The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, and you can deploy Applications to your Virtual Machines.
 

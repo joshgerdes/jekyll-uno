@@ -160,4 +160,4 @@ Now that we have the application definition setup, it's time to now set up the v
 21. The **Install script** is the command to install to your application, by default windows applications are set to install cmd, this already knows the directory your files are in because the file will be uploaded as the application name (ie DattoRMM), it needs to be renamed to include .exe and then ran, I will switch to PowerShell for the Install script, so will enter:
 
         powershell.exe -command "Rename-Item '.\DattoRMM' -NewName 'DattoRMM.exe'; Start-Process '.\DattoRMM.exe'"
-22. s
+22. If you have a script to uninstall the application, enter it _(in my case, I am just going to put a '.' to skip this)_

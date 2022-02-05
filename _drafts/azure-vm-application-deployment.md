@@ -75,7 +75,7 @@ Following the guide, we will run through the creation of everything from scratch
 
 #### Setup Storage Account
 
-The Storage account is where your application will be placed; it uses blobs; depending on the importance of your application deployments, you may want to go for geo-replication etc, but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
+The Storage account is where your application will be placed; it uses blobs; depending on the importance of your application deployments, you may want to go for geo-replication etc., but in this example, I will be going with a locally redundant, StorageV2 general-purpose account.
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Click on **+ Create a Resource**
@@ -87,16 +87,16 @@ The Storage account is where your application will be placed; it uses blobs; dep
  8. **Select** your **region** that your application will be in; although the application can be replicated to other regions, it's better to select your primary region here.
  9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
 10. ![](/uploads/create-a-storage-account-microsoft-azure.png)
-11. You can **leave** most **settings** here as **default**, the application executable will need to be able to be accessed directly, make sure the **Minimum TLS** is at least **1.2**.
-12. You don't need hierarchical namespace etc, unselect '_Allow cross-tenant replication'_ unless this is a feature you use.
+11. You can **leave** most **settings** here as **default**, the application executable will need to be able to be accessed directly; make sure the **Minimum TLS** is at least **1.2**.
+12. You don't need hierarchical namespace etc.; unselect '_Allow cross-tenant replication'_ unless this is a feature you use.
 13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
-14. Click **Review + Create** to skip to the last blade, most defaults are fine, but if you wanted to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your configuration and select **Create**.
+14. Click **Review + Create** to skip to the last blade; most defaults are fine, but if you want to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your Configuration and select **Create**.
 15. Go back to your storage account and click **Configuration**
-16. Make sure: Allow storage account key access is: **Enabled**, if it is not select Enabled and click **Save**.
+16. Make sure: Allow storage account key access is: **Enabled**; if it is not, select Enabled and click **Save**.
 
 #### Setup Azure Compute Gallery
 
-Now that we have the Storage account to store your application binaries, we now need an Azure Compute Gallery _(previously the Shared Image Gallery)_ to store your application definition and version metadata
+Now that we have the Storage account to store your application binaries, we now need an Azure Compute Gallery _(previously the Shared Image Gallery)_ to keep your application definition and version metadata.
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Click on **+ Create a Resource**
@@ -118,12 +118,12 @@ VM application definitions are created within a gallery and carry information ab
  3. **Find and click on** your **Azure Compute Gallery** you created earlier
  4. On the overview pane, select **+ Add**
  5. Click on +**VM application definition**
- 6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **application**
+ 6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **applicatio.n**
  7. Select your **region**
- 8. Select the **OS type** - in my case, I select **Windows**
+ 8. Select the **OS type** - in my case, and I select **Windows**
  9. ![](/uploads/create-a-vm-application-definition-microsoft-azure.png)
 10. Click **Next: Publishing Options**
-11. The following fields are not mandatory, but they are areas I recommend filling in, to help report on and manage your applications.
+11. The following fields are not mandatory, but I recommend filling in areas to help report on and manage your applications.
     * Description
     * End of life date
     * Eula link
@@ -131,11 +131,11 @@ VM application definitions are created within a gallery and carry information ab
     * Release notes URI
 12. ![](/uploads/create-a-vm-application-definition-metadata-microsoft-azure.png)
 13. Click **Review + create**
-14. Verify your configuration and select **Create**
+14. Verify your Configuration and select **Create**
 
 #### Create Application version
 
-Now that we have the application definition setup, it's time to now set up the version and upload our binary file.+
+Now that we have the application definition setup, it's time to set up the version and upload our binary file.+
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Navigate to '**All Resources'**
@@ -143,7 +143,7 @@ Now that we have the application definition setup, it's time to now set up the v
  4. Click on **Definitions **_(besides the Get Started link)_
  5. **Select** your Application **definition**
  6. Click on: **+Add** 
- 7. **Enter** in your **version number**, this will increment and grow as you adjust and troubleshoot your application, I recommend starting with 0.0.1, then working your way up.
+ 7. **Enter** in your **version number**, and this will increment and grow as you adjust and troubleshoot your application; I recommend starting with 0.0.1 then working your way up.
  8. Select your **Region**
  9. Now we need to select our source application package _(you can enter in your blob URL if you know it)_, we haven't uploaded it to our storage account yet, so we will select **Browse**
 10. **Select** your **Storage account**
@@ -157,12 +157,12 @@ Now that we have the application definition setup, it's time to now set up the v
 18. Click **Upload**
 19. **Select** your newly uploaded file and click **Select**
 20. _Note: You can only upload one file as part of your package, you can upload a ZIP file and have your Install script extract it_
-21. The **Install script** is the command to install to your application, by default windows applications are set to install cmd, this already knows the directory your files are in because the file will be uploaded as the application name (ie DattoRMM), it needs to be renamed to include .exe and then ran, I will switch to PowerShell for the Install script, so will enter:
+21. The **Install script** is the command to install to your application, by default windows applications are set to install cmd. This already knows the directory your files are in because the file will be uploaded as the application name (i.e. DattoRMM), it needs to be renamed to include .exe and then ran, I will switch to PowerShell for the Install script, so will enter:
 
         powershell.exe -command "Rename-Item '.\DattoRMM' -NewName 'DattoRMM.exe'; Start-Process '.\DattoRMM.exe'"
 22. If you have a script to uninstall the application, enter it _(in my case, I am just going to put a '.' to skip this, as I don't currently have an uninstall script developed)_
-23. The rest of the configuration isn't mandatory, the Update script is used by Azure when a new version of an application is created, by default the Azure VM extension will treat an upgrade like a completely new install and run the install steps unless an update script is defined.
+23. The rest of the Configuration isn't mandatory; the Update script is used by Azure when a new version of an application is created; by default, the Azure VM extension will treat an upgrade like a completely new install and run the install steps unless an update script is defined.
 24. ![](/uploads/create-a-vm-application-version-microsoft-azure.png)
 25. Click **Next: Replication**
-26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions, for example, Australia East to West Europe, and have it store it then Zone Redundant or Local storage. In my example, I am going to leave mine as 1 replica in Australia East on locally-redundant storage and click **Review + create**
+26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions, for example, Australia East to West Europe, and have it store it then Zone Redundant or Local storage. In my example, I am going to leave mine as one replica in Australia East on locally-redundant storage and click **Review + create**
 27. Verify everything looks ok and click **Create** to create your application version!

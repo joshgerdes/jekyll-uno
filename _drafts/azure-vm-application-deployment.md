@@ -153,5 +153,5 @@ Now that we have the application definition setup, it's time to now set up the v
 14. **Browse** to your **file** and select it
 15. Expand **Advanced**
 16. Make sure that Blob type is: **Blob**
-17. ![](/uploads/upload-blob-microsoft-azure.png)![](/uploads/upload-blob-microsoft-azure.png)
+17. ![](/uploads/upload-blob-microsoft-azure.png)
 18. Click **Upload**

@@ -51,7 +51,7 @@ Before we deploy our first VM application, there are a few things we need to be 
 
 * VM Application requires an Azure Compute Gallery
 * VM Application requires an Azure storage account to store your applications
-* The VM Application gets downloaded to the VM using the name of the VM application _(not the actual name and extension of your file in the storage account)_
+* The VM Application gets downloaded to the VM using the name of the VM application _(not the actual name and Extension of your file in the storage account)_
 * Currently, in order to retry a failed installation, you need to remove the application from the profile and add it back
 * No more than five applications per Virtual Machine deployed at a time
 * The maximum size of the application is 1 GB
@@ -164,7 +164,21 @@ Now that we have the application definition setup, it's time to set up the versi
 23. The rest of the Configuration isn't mandatory; the Update script is used by Azure when a new version of an application is created; by default, the Azure VM extension will treat an upgrade like a completely new install and run the install steps unless an update script is defined.
 24. ![](/uploads/create-a-vm-application-version-microsoft-azure.png)
 25. Click **Next: Replication**
-26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions, for example, Australia East to West Europe, and have it store it then Zone Redundant or Local storage. In my example, I am going to leave mine as one replica in Australia East on locally-redundant storage and click **Review + create**
+26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions _(depending on where your workloads are)_, such as Australia East to West Europe, and store it then Zone Redundant or Local storage. In my example, I am going to leave mine as one replica in Australia East on locally-redundant storage and click **Review + create**
 27. Verify everything looks ok and click **Create** to create your application version! This may take a few minutes to create, depending on your configuration and replication.
 
 ### Deploy Azure VM Application
+
+Now that your Azure VM Application has been created, it is now time to deploy to a Virtual Machine. I have a Windows Server 2022 Datacenter Azure Gen 2 VM running as a Standard_B2ms as my test machine, and because I am going to use the Datto RMM agent to connect to the machine, I don't need any RDP ports open etc.
+
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Navigate to **Virtual Machines**
+ 3. Click on your Virtual Machine
+ 4. Under Settings, click **Extensions + Applications**
+ 5. Click **VM Applications**
+ 6. Click **+ Add application**
+ 7. **Select** your **application** _(note you can select a particular version, by default, it is the latest)_
+ 8. Click **Ok**
+ 9. ![](/uploads/vm-p01-microsoft-azure.png)
+10. You can select your Install Order _(i.e. if you had multiple applications, you can select which one installs 1st, 2nd, third and so on)_; I will select No Reference and click Save to start the deployment.
+11. If you click Extensions, you should see that a: VMAppExtension has started to be installed; click on Refresh to update the status and click on the Extension to a more detailed status message.

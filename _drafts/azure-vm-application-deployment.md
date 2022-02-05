@@ -165,4 +165,4 @@ Now that we have the application definition setup, it's time to set up the versi
 24. ![](/uploads/create-a-vm-application-version-microsoft-azure.png)
 25. Click **Next: Replication**
 26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions, for example, Australia East to West Europe, and have it store it then Zone Redundant or Local storage. In my example, I am going to leave mine as one replica in Australia East on locally-redundant storage and click **Review + create**
-27. Verify everything looks ok and click **Create** to create your application version!
+27. Verify everything looks ok and click **Create** to create your application version! This may take a few minutes to create, depending on your configuration and replication.

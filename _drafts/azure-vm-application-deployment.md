@@ -41,11 +41,16 @@ Azure VM Application packages _(stored in an Azure Storage account)_, uses multi
 | VM application | This is the definition of your VM application. This is a logical resource that stores the common metadata for all the versions under it. For example, you may have an application definition for Apache Tomcat and have multiple versions within it. |
 | VM Application version | This is the deployable resource. You can globally replicate your VM application versions to target regions closer to your VM infrastructure. The VM Application Version must be replicated to a region before it may be deployed on a VM in that region. |
 
-* Storage costs of storing each package and any replicas.
-* Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
+* There is no extra charge for using VM Application Packages, but you will be charged for the following resources:
+  * Storage costs of storing each package and any replicas.
+  * Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
 
 Before we deploy our first VM application, there are a few things we need to be aware of:
 
 * VM Application requires an Azure Compute Gallery
 * VM Application requires an Azure storage account to store your applications
 * The VM Application gets downloaded to the VM using the name of the VM application _(not the actual name and extension of your file in the storage account)_
+* Currently, in order to retry a failed installation, you need to remove the application from the profile and add it back
+* No more than 5 applications per Virtual Machine deployed at a time
+* The maximum size of the application is 1 GB
+* You can't have multiple versions of the same application installed on a Virtual Machine, a newer version will supersede an older version either via an upgrade command or complete reinstall.

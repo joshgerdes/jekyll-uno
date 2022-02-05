@@ -133,4 +133,8 @@ VM application definitions are created within a gallery and carry information ab
 
 #### Create Application version
 
-Now that we have the application definition setup, its time to now setup the version 
+Now that we have the application definition setup, it's time to now set up the version and upload our binary file.+
+
+1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Navigate to '**All Resources'**
+3. **Find and click on** your **Azure Compute Gallery** you created earlier

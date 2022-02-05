@@ -48,4 +48,4 @@ Before we deploy our first VM application, there are a few things we need to be 
 
 * VM Application requires an Azure Compute Gallery
 * VM Application requires an Azure storage account to store your applications
-* 
+* The VM Application gets downloaded to the VM using the name of the VM application _(not the actual name and extension of your file in the storage account)_

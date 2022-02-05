@@ -168,6 +168,8 @@ Now that we have the application definition setup, it's time to set up the versi
 
 ### Deploy Azure VM Application
 
+#### Deploy Azure VM Application to Virtual Machines using the Azure Portal
+
 Now that your Azure VM Application has been created, it is now time to deploy to a Virtual Machine. I have a Windows Server 2022 Datacenter Azure Gen 2 VM running as a Standard_B2ms as my test machine, and because I am going to use the Datto RMM agent to connect to the machine, I don't need any RDP ports open etc.
 
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
@@ -184,7 +186,7 @@ Now that your Azure VM Application has been created, it is now time to deploy to
 12. My Virtual Machine has now had the Datto Remote Management agent installed successfully and has appeared in the portal for me to connect to!
 13. ![](/uploads/vm-p01-datto-rmm.png)
 
-#### Deploy Azure VM to Multiple Virtual Machines using PowerShell
+#### Deploy Azure VM Application to Multiple Virtual Machines using PowerShell
 
 I've created the PowerShell script below to deploy an application to multiple Virtual Machines at once, it can easily be adjusted for a PowerShell Runbook that runs periodically to install software on machines it may be missing. As usual, please make sure you test and run any PowerShell scripts first in a demo environment.
 

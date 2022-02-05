@@ -88,5 +88,5 @@ The Storage account is where your application will be placed, it uses blobs, dep
 11. You can leave most settings here as default, the application executable will need to be able to be accessed directly, make sure the Minimum TLS is at least 1.2.
 12. You don't need hierarchical namespace etc, unselect 'Allow cross-tenant replication' unless this is a feature you use.
 13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
-14. Click **Next: Networking**
+14. Click **Review + Create** to skip to the last blade, most defaults are fine, but if you wanted to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your configuration and select **Create**.
 15. 

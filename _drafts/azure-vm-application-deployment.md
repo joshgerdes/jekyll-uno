@@ -219,3 +219,7 @@ You may see files such as:
 * stdout
 
 You can right-click these and open them in Notepad, any errors will be noted in these.
+
+#### Troubleshooting during preview
+
+* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#troubleshooting-during-preview "Troubleshooting during preview")

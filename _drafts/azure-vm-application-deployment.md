@@ -11,6 +11,8 @@ header:
 ---
 The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, you can deploy Applications to your Virtual Machines.
 
+### Overview
+
 > An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications). An Azure Compute Gallery provides:
 >
 > * Global replication.
@@ -54,3 +56,5 @@ Before we deploy our first VM application, there are a few things we need to be 
 * No more than 5 applications per Virtual Machine deployed at a time
 * The maximum size of the application is 1 GB
 * You can't have multiple versions of the same application installed on a Virtual Machine, a newer version will supersede an older version either via an upgrade command or complete reinstall.
+
+In this article, we are going to deploy the Datto Remote Management & Monitoring Agent to a Windows Server 2022 Virtual Machine, this agent is a simple executable that installs on a virtual machine and allows remote access and management of a virtual machine, without requiring any other form of connectivity _(Azure Bastion, RDP via Public IP, Site to Site VPN etc)_ for an MSP _(Managed Service Provider)_ using the Datto toolset, the same concept can be applied to any application. 

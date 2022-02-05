@@ -161,4 +161,6 @@ Now that we have the application definition setup, it's time to now set up the v
 
         powershell.exe -command "Rename-Item '.\DattoRMM' -NewName 'DattoRMM.exe'; Start-Process '.\DattoRMM.exe'"
 22. If you have a script to uninstall the application, enter it _(in my case, I am just going to put a '.' to skip this, as I don't currently have an uninstall script developed)_
-23. The Update script is used by Azure when a new version of an application is created.
+23. The rest of the configuration isn't mandatory, the Update script is used by Azure when a new version of an application is created, by default the Azure VM extension will treat an upgrade like a completely new install and run the install steps unless an update script is defined.
+24. ![](/uploads/create-a-vm-application-version-microsoft-azure.png)
+25. Click **Next: Replication**

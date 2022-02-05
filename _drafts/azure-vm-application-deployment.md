@@ -88,9 +88,11 @@ The Storage account is where your application will be placed, it uses blobs, dep
  9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
 10. ![](/uploads/create-a-storage-account-microsoft-azure.png)
 11. You can **leave** most **settings** here as **default**, the application executable will need to be able to be accessed directly, make sure the **Minimum TLS** is at least **1.2**.
-12. You don't need hierarchical namespace etc, unselect 'Allow cross-tenant replication' unless this is a feature you use.
+12. You don't need hierarchical namespace etc, unselect '_Allow cross-tenant replication'_ unless this is a feature you use.
 13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
 14. Click **Review + Create** to skip to the last blade, most defaults are fine, but if you wanted to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your configuration and select **Create**.
+15. Go back to your storage account and click **Configuration**
+16. Make sure: Allow storage account key access is: **Enabled**, if it is not select Enabled and click **Save**.
 
 #### Setup Azure Compute Gallery
 
@@ -135,6 +137,14 @@ VM application definitions are created within a gallery and carry information ab
 
 Now that we have the application definition setup, it's time to now set up the version and upload our binary file.+
 
-1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Navigate to '**All Resources'**
-3. **Find and click on** your **Azure Compute Gallery** you created earlier
+ 1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Navigate to '**All Resources'**
+ 3. **Find and click on** your **Azure Compute Gallery** you created earlier
+ 4. Click on **Definitions **_(besides the Get Started link)_
+ 5. **Select** your Application **definition**
+ 6. Click on: **+Add** 
+ 7. **Enter** in your **version number**, this will increment and grow as you adjust and troubleshoot your application, I recommend starting with 0.0.1, then working your way up.
+ 8. Select your **Region**
+ 9. Now we need to select our source application package _(you can enter in your blob URL if you know it)_, we haven't uploaded it to our storage account yet, so we will select **Browse**
+10. **Select** your **Storage account**
+11. 

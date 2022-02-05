@@ -45,3 +45,7 @@ Azure VM Application packages _(stored in an Azure Storage account)_, uses multi
 * Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
 
 Before we deploy our first VM application, there are a few things we need to be aware of:
+
+* VM Application requires an Azure Compute Gallery
+* VM Application requires an Azure storage account to store your applications
+* 

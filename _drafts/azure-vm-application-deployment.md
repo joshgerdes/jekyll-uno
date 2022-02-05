@@ -1,5 +1,5 @@
 ---
-date: 2022-02-03 00:00:00 +1300
+date: 2022-02-05 00:00:00 +1300
 title: Datto Remote Management Azure VM Application Deployment
 author: Luke
 categories:
@@ -184,6 +184,51 @@ Now that your Azure VM Application has been created, it is now time to deploy to
 11. If you click Extensions, you should see that a: VMAppExtension has started to be installed; click on Refresh to update the status and click on the Extension to a more detailed status message, hopefully you see ":Operational Install is SUCCESS"
 12. My Virtual Machine has now had the Datto Remote Management agent installed successfully and has appeared in the portal for me to connect to!
 13. ![](/uploads/vm-p01-datto-rmm.png)
+
+#### Deploy Azure VM to Multiple Virtual Machines using PowerShell
+
+I've created the PowerShell script below to deploy an application to multiple Virtual Machines at once, it can easily be adjusted for a PowerShell Runbook that runs periodically to install software on machines it may be missing. As usual, please make sure you test and run any PowerShell scripts first in a demo environment.
+
+    $allvms = Get-AzVM
+    $applicationname = 'DattoRMM'
+    $galleryname = 'AzComputeGallery'
+    $galleryrg = 'vmapps-prod-rg'
+    $appversion = '0.0.1'
+    
+      
+    try
+    {
+      ForEach ($vm in $allvms)
+    
+      {
+        $AzVM = Get-AzVM -ResourceGroupName $vm.ResourceGroupName -Name $vm.Name
+        $appversion = Get-AzGalleryApplicationVersion `
+        -GalleryApplicationName $applicationname `
+        -GalleryName $galleryname `
+        -Name $appversion `
+        -ResourceGroupName $galleryrg
+        $packageid = $appversion.Id
+        $app = New-AzVmGalleryApplication -PackageReferenceId $packageid
+        Add-AzVmGalleryApplication -VM $AzVM -GalleryApplication $app
+        Update-AzVM -ResourceGroupName $vm.ResourceGroupName -VM $AzVM -ErrorAction Stop
+      }
+    }
+    
+    catch [Microsoft.Azure.Commands.Compute.Common.ComputeCloudException]
+    {
+      #Most likely failed due to duplicate package ID/identical version
+      [Management.Automation.ErrorRecord]$e = $_
+    
+      $info = [PSCustomObject]@{
+        Exception = $e.Exception.Message
+        Reason    = $e.CategoryInfo.Reason
+        Target    = $e.CategoryInfo.TargetName
+      }
+    
+      $info
+    }
+    
+    
 
 ### Troubleshooting VM Application
 

@@ -89,4 +89,17 @@ The Storage account is where your application will be placed, it uses blobs, dep
 12. You don't need hierarchical namespace etc, unselect 'Allow cross-tenant replication' unless this is a feature you use.
 13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
 14. Click **Review + Create** to skip to the last blade, most defaults are fine, but if you wanted to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your configuration and select **Create**.
-15. 
+
+#### Setup Azure Compute Gallery
+
+Now that we have the Storage account to store your application binaries, we now need an Azure Compute Gallery _(previously the Shared Image Gallery)_ to store your application definition and version metadata
+
+1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click on **+ Create a Resource**
+3. Search for: **Azure Compute Gallery** and **select** it
+4. Click [**Create**](https://portal.azure.com/#create/microsoft.sharedImageGallery "Create Azure compute gallery")
+5. **Select** your **subscription** and **resource group** _(in this case, I am going to use the same resource group as the Storage account I created earlier)_
+6. Type in a **name**, and **select** your **region**
+7. Although not mandatory, use the opportunity to fill in a description for the purpose of the Compute Gallery for future reference
+8. ![](/uploads/create-azure-compute-gallery-microsoft-azure.png)
+9. Select **Review + Create**

@@ -121,4 +121,12 @@ VM application definitions are created within a gallery and carry information ab
  8. Select the **OS type** - in my case, I select **Windows**
  9. ![](/uploads/create-a-vm-application-definition-microsoft-azure.png)
 10. Click **Next: Publishing Options**
-11. 
+11. The following fields are not mandatory, but they are areas I recommend filling in, to help report on and manage your applications.
+    * Description
+    * End of life date
+    * Eula link
+    * Privacy URI
+    * Release notes URI
+12. ![](/uploads/create-a-vm-application-definition-metadata-microsoft-azure.png)
+13. Click **Review + create**
+14. Verify your configuration and select **Create**

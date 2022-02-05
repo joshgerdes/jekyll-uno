@@ -155,3 +155,9 @@ Now that we have the application definition setup, it's time to now set up the v
 16. Make sure that Blob type is: **Blob**
 17. ![](/uploads/upload-blob-microsoft-azure.png)
 18. Click **Upload**
+19. **Select** your newly uploaded file and click **Select**
+20. _Note: You can only upload one file as part of your package, you can upload a ZIP file and have your Install script extract it_
+21. The **Install script** is the command to install to your application, by default windows applications are set to install cmd, this already knows the directory your files are in because the file will be uploaded as the application name (ie DattoRMM), it needs to be renamed to include .exe and then ran, I will switch to PowerShell for the Install script, so will enter:
+
+        powershell.exe -command "Rename-Item '.\DattoRMM' -NewName 'DattoRMM.exe'; Start-Process '.\DattoRMM.exe'"
+22. s

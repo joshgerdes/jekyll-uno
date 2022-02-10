@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/azure-feeds-keep-up-to-date-with-the-ever-changing-and-evolving-microsoft-azur.png"
 
 ---
 Over the past few months, I have been busy working on a new project...
@@ -23,4 +23,6 @@ Originally starting using official Microsoft services, due to the massive amount
 
 You can subscribe to a single feed by clicking 'Download Feed' using your favourite RSS reader (even [Outlook](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97 " What are RSS feeds?")) and get the content delivered straight to you from official and community updates! Allowing you to keep up with Azure Updates and Azure community-driven updates easily, or just browse the webpage and filter by Author or Category for content that you may be after.
 
-![](/uploads/azure-feeds-keep-up-to-date-with-the-ever-changing-and-evolving-microsoft-azur.png)
+**Check out..** [**https://azurefeeds.com/**](https://azurefeeds.com/ "https://azurefeeds.com/")
+
+[![Azure Feeds](/uploads/azure-feeds-keep-up-to-date-with-the-ever-changing-and-evolving-microsoft-azur.png "Azure Feeds")](https://azurefeeds.com/ "https://azurefeeds.com/")

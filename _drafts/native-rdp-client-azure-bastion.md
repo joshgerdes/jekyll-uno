@@ -17,7 +17,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 
 ### Prerequisites
 
-* This configuration requires the Standard SKU tier for Azure Bastion.
+* This configuration requires the [Standard](https://aka.ms/bastionsku "Azure Bastion documentation") tier for Azure Bastion.
 * A Virtual Machine to connect to
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
@@ -36,17 +36,18 @@ If you have a Virtual Machine but haven't set up Azure Bastion, run through the 
  5. This is a Networking resource to place it in the same Resource Group as my Virtual Network.
  6. Please type in a **Name** for the **Bastion** instance; I will call mine: Bastion
  7. **Select** the **Region** that **matches** the Virtual **Network** region
- 8. Select the **Virtual Network**
- 9. It now warns you about creating an: AzureBastionSubnet with a prefix of at least /27, so we need to create one; click on **Manage Subnet Configuration**.
-10. Click **+ Subnet**
-11. For the Name type in: **AzureBastionSubnet**
-12. For the **Subnet** address range: **10.0.1.0/27** _If you get an error that indicates the address is overlapping with another subnet it may be because the Address space is only a /24; click Cancel and click on Address Space in the Virtual Network and change the /24 to/16 to increase the address range._
-13. Click **Save** to create the subnet
+ 8. Select **Standard** Tier
+ 9. Select the **Virtual Network**
+10. It now warns you about creating an: AzureBastionSubnet with a prefix of at least /27, so we need to create one; click on **Manage Subnet Configuration**.
+11. Click **+ Subnet**
+12. For the Name type in: **AzureBastionSubnet**
+13. For the **Subnet** address range: **10.0.1.0/27** _If you get an error that indicates the address is overlapping with another subnet it may be because the Address space is only a /24; click Cancel and click on Address Space in the Virtual Network and change the /24 to/16 to increase the address range._
+14. Click **Save** to create the subnet
     ![Azure - Bastion](/uploads/az_subnet.png "Azure - Bastion")
-14. Up the Top, click **Create a Bastion**. To go back to the Bastion setup, your Subnet should be selected automatically.
-15. You do need a **Public IP** for Bastion, so **confirm** the **name** is appropriate, then click **Review + Create**
+15. Up the Top, click **Create a Bastion**. To go back to the Bastion setup, your Subnet should be selected automatically.
+16. You do need a **Public IP** for Bastion, so **confirm** the **name** is appropriate, then click **Review + Create**
     ![Azure - Bastion](/uploads/bastionsetup.png "Azure - Bastion")
-16. Click on **Create** to create your Bastion instance!
+17. Click on **Create** to create your Bastion instance!
 
 **Note: Bastion may take 10-20 minutes to provision.**
 

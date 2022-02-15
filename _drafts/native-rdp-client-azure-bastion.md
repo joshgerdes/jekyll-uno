@@ -17,7 +17,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 
 ### Prerequisites
 
-* This configuration requires the [Standard](https://aka.ms/bastionsku "Azure Bastion documentation") tier for Azure Bastion.
+* This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings "Azure Bastion documentation") tier for Azure Bastion.
 * A Virtual Machine to connect to
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
@@ -45,10 +45,16 @@ If you have a Virtual Machine but haven't set up Azure Bastion, run through the 
 14. Click **Save** to create the subnet
     ![Azure - Bastion](/uploads/az_subnet.png "Azure - Bastion")
 15. Up the Top, click **Create a Bastion**. To go back to the Bastion setup, your Subnet should be selected automatically.
-16. You do need a **Public IP** for Bastion, so **confirm** the **name** is appropriate, then click **Review + Create**
-    ![Azure - Bastion](/uploads/bastionsetup.png "Azure - Bastion")
-17. Click on **Create** to create your Bastion instance!
+16. You do need a **Public IP** for Bastion, so **confirm** the **name** is appropriate, then click **Next: Tags**
+17. ![](/uploads/2022-02-16-10_44_32-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+18. Add in appropriate tags, then click **Next: Advanced**
+19. Check the box next to: **Native client support (Preview)**
+20. ![](/uploads/2022-02-16-10_46_19-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+21. Click **Next: Review + Create**
+22. Click on **Create** to create your Bastion instance!
 
 **Note: Bastion may take 10-20 minutes to provision.**
 
 ### Check Bastion SKU
+
+If you already have an Azure Bastion instance, let us check the SKU and if needed change it to Standard. Just a note: _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, you must delete and recreate Azure Bastion._

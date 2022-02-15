@@ -1,5 +1,5 @@
 ---
-date: 2022-02-16 00:00:00 +1300
+date: 2022-02-16T00:00:00.000+13:00
 title: Native RDP Client & Azure Bastion
 author: Luke
 categories:
@@ -18,7 +18,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 ### Prerequisites
 
 * This configuration requires the Standard SKU tier for Azure Bastion.
-* A Virtual Machine to connect to 
+* A Virtual Machine to connect to
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
 * Reader role on the Azure Bastion resource
@@ -26,7 +26,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 
 ### Create Azure Bastion
 
-If you have a Virtual Machine, but haven't setup Azure Bastion, run through the below to set it up:
+If you have a Virtual Machine but haven't set up Azure Bastion, run through the below to set it up:
 
  1. Log in to the **Azure Portal**
  2. Click on **Create a resource**
@@ -40,8 +40,7 @@ If you have a Virtual Machine, but haven't setup Azure Bastion, run through the 
  9. It now warns you about creating an: AzureBastionSubnet with a prefix of at least /27, so we need to create one; click on **Manage Subnet Configuration**.
 10. Click **+ Subnet**
 11. For the Name type in: **AzureBastionSubnet**
-12. For the **Subnet** address range: **10.0.1.0/27**
-    _If you get an error that indicates the address is overlapping with the aadds-subnet, it may be because the Address space is only a /24; click Cancel and click on Address Space in the Virtual Network and change the /24 to/16 to increase the address range._
+12. For the **Subnet** address range: **10.0.1.0/27** _If you get an error that indicates the address is overlapping with another subnet it may be because the Address space is only a /24; click Cancel and click on Address Space in the Virtual Network and change the /24 to/16 to increase the address range._
 13. Click **Save** to create the subnet
     ![Azure - Bastion](/uploads/az_subnet.png "Azure - Bastion")
 14. Up the Top, click **Create a Bastion**. To go back to the Bastion setup, your Subnet should be selected automatically.

@@ -15,5 +15,9 @@ In early February 2022, Azure Bastion Preview support for the [native Windows SS
 
 * This configuration requires the Standard SKU tier for Azure Bastion.
 * A Virtual Machine to connect to 
+* Reader role on the Virtual Machine
+* Read role on the Network Interface Card of the Virtual Machine
+* Reader role on the Azure BAstion resource
+* Virtual Machine Administrator (or User) login role - if using [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows "Login to Windows virtual machine in Azure using Azure Active Directory authentication") authentication.
 
 ### Create Azure Bastion

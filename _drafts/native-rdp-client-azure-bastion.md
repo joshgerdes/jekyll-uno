@@ -67,3 +67,4 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 4. Change Tier to **Standard**
 5. Check: **Native client support (Preview)**
 6. Click **Apply**
+7. ![](/uploads/2022-02-16-10_58_47-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)

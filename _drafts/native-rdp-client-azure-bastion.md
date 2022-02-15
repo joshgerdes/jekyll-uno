@@ -69,3 +69,12 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 5. Check: **Native client support (Preview)**
 6. Click **Apply**
 7. ![](/uploads/2022-02-16-10_58_47-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+
+### Connect to VM using Native RDP Support
+
+1. Open command prompt or Terminal
+2. Type: **az login**
+3. Login to your Azure subscription
+4. We need the resource ID of the VM we need to connect to, type in: **az vm show --resource-group 'appserver-rg' --name 'APP-P01' --show-details**
+5. _Change the resource group and VM name above to match your VM_
+6. Copy the id of the Virtual Machine you want to connect to 

@@ -78,3 +78,10 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 4. We need the resource ID of the VM we need to connect to, type in: **az vm show --resource-group 'appserver-rg' --name 'APP-P01' --show-details**
 5. _Change the resource group and VM name above to match your VM_
 6. Copy the id of the Virtual Machine you want to connect to 
+7. Because I am running the Azure CLI from a PowerShell terminal, I am going to use the following variables:
+
+       $BastionName = 'Bastion'
+       $BastionRG = 'network-rg'
+       $VMResourceID= '/subscriptions/000000-0000-0000-0000000/resourceGroups/appserver-rg/providers/Microsoft.Compute/virtualMachines/APP-P01'
+       az network bastion rdp --name $BastionName --resource-group $BastionRG --target-resource-id $VMResourceID
+8. s

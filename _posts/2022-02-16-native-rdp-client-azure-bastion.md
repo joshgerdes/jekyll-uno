@@ -1,5 +1,5 @@
 ---
-date: 2022-02-16 12:20:00 +1300
+date: 2022-02-16 00:00:00 +1300
 title: Native RDP Client & Azure Bastion
 author: Luke
 categories:

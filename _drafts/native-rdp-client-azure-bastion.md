@@ -84,4 +84,5 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
        $BastionRG = 'network-rg'
        $VMResourceID= '/subscriptions/000000-0000-0000-0000000/resourceGroups/appserver-rg/providers/Microsoft.Compute/virtualMachines/APP-P01'
        az network bastion rdp --name $BastionName --resource-group $BastionRG --target-resource-id $VMResourceID
-8. Run the command, your Remote Desktop window should open up and the tunnel has been established, if you close the Azure CLI window, your RDP session will be dropped.
+8. Run the command, your Remote Desktop window should open up and the tunnel has been established, if you close the Azure CLI window, your RDP session will be dropped!
+9. ![](/uploads/azurebastiontst.gif)

@@ -85,4 +85,4 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 8. Run the command, your Remote Desktop window should open up, and the tunnel has been established; if you close the Azure CLI window, your RDP session will be dropped!
 9. ![](/uploads/azurebastiontst.gif)
 
-As you could most likely tell, there are no options to enable drive passthrough, etc. You would usually find in Remote Desktop, but the copying of files/text, etc., does work!
+As you could most likely tell, there are no options to enable drive passthrough, etc. You would usually find when connecting to Remote Desktop, but the copying of files/text, etc., does work!

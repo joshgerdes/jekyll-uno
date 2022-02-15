@@ -18,7 +18,8 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 ### Prerequisites
 
 * This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings "Azure Bastion documentation") tier for Azure Bastion.
-* A Virtual Machine to connect to
+* A Virtual Machine(s) to connect 
+* Latest [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli "Azure CLI")
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
 * Reader role on the Azure Bastion resource

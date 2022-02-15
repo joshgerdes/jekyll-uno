@@ -63,3 +63,7 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 
 1. Log in to the **Azure Portal**
 2. Navigate to your **Bastion** resource
+3. Click on: **Configuration**
+4. Change Tier to **Standard**
+5. Check: **Native client support (Preview)**
+6. Click **Apply**

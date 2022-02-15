@@ -21,7 +21,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 * A Virtual Machine to connect to 
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
-* Reader role on the Azure BAstion resource
+* Reader role on the Azure Bastion resource
 * Virtual Machine Administrator _(or User)_ login role - _if using_ [_Azure Active Directory_](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows "Login to Windows virtual machine in Azure using Azure Active Directory authentication") _authentication_.
 
 ### Create Azure Bastion

@@ -56,7 +56,7 @@ If you have a Virtual Machine but haven't set up Azure Bastion, run through the 
 
 ### Check Bastion SKU
 
-If you already have an Azure Bastion instance, let us check the SKU and, if needed change it to Standard. Just a note:
+If you already have an Azure Bastion instance, let's check the SKU and, if needed, change it to Standard. Just a note:
 
 _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, you must delete and recreate Azure Bastion._
 

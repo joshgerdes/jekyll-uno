@@ -18,7 +18,7 @@ Let's create an Azure Virtual Machine and test the native RDP client!
 ### Prerequisites
 
 * This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings "Azure Bastion documentation") tier for Azure Bastion.
-* A Virtual Machine(s) to connect 
+* A Virtual Machine(s) to connect
 * Latest [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli "Azure CLI")
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine
@@ -58,7 +58,7 @@ If you have a Virtual Machine but haven't set up Azure Bastion, run through the 
 
 ### Check Bastion SKU
 
-If you already have an Azure Bastion instance, let us check the SKU and if needed change it to Standard. Just a note: 
+If you already have an Azure Bastion instance, let us check the SKU and if needed change it to Standard. Just a note:
 
 _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, you must delete and recreate Azure Bastion._
 
@@ -77,11 +77,11 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 3. Login to your Azure subscription
 4. We need the resource ID of the VM we need to connect to, type in: **az vm show --resource-group 'appserver-rg' --name 'APP-P01' --show-details**
 5. _Change the resource group and VM name above to match your VM_
-6. Copy the id of the Virtual Machine you want to connect to 
+6. Copy the id of the Virtual Machine you want to connect to
 7. Because I am running the Azure CLI from a PowerShell terminal, I am going to use the following variables:
 
        $BastionName = 'Bastion'
        $BastionRG = 'network-rg'
        $VMResourceID= '/subscriptions/000000-0000-0000-0000000/resourceGroups/appserver-rg/providers/Microsoft.Compute/virtualMachines/APP-P01'
        az network bastion rdp --name $BastionName --resource-group $BastionRG --target-resource-id $VMResourceID
-8. s
+8. Run the command, your Remote Desktop window should open up and the tunnel has been established, if you close the Azure CLI window, your RDP session will be dropped.

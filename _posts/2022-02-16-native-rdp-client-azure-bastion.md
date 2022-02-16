@@ -13,7 +13,7 @@ In early February 2022, Azure Bastion Preview support for the [native Windows SS
 
 > Azure Bastion is a fully managed service that provides more secure and seamless Remote Desktop Protocol (RDP) and Secure Shell Protocol (SSH) access to virtual machines (VMs) without any exposure through public IP addresses. Provision the service directly in your local or peered virtual network to get support for all the VMs within it.
 
-Let's create an Azure Virtual Machine and test the native RDP client!
+Let’s test the native RDP client through a secure connection using Azure Bastion!
 
 ### Prerequisites
 

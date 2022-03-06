@@ -120,6 +120,8 @@ If the deployment fails for some reason, you can simply repeat it, as it is idem
 
 We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation_._
 
+#### Install
+
 #### Additional Recommended Reading
 
 * _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:

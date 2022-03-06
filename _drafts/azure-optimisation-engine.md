@@ -76,4 +76,20 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Empty subnets
 >   * Orphaned NICs
 
-A few hours after setting up the engine, you'll get a Power BI dashboard with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
+The Azure Optimization Engine is battle-tested, 
+
+* Providing custom recommendations since Nov 2019 
+* Serving Azure customers worldwide
+* From smaller 50-500 VMs customers to larger ones with more than 5K VMs
+* Several customer-specific developments (custom collectors and recommendation algorithms) • 
+* Flexibility options include (multi-subscription and multi-tenant capability)
+* Lightweight
+*  Based on cheap services _(Azure Automation, Storage, small SQL Database_) 
+
+A few hours after setting up the engine, you will get access to a Power BI dashboard with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
+
+These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
+
+Azure Optimization Engine, runs on top of Azure Automation and Log Analytics, 
+
+![](/uploads/architecture.jpg)

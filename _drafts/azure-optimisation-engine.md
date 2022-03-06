@@ -93,7 +93,7 @@ These recommendations are then updated every 7 days.
 
 #### Architecture
 
-![](/uploads/architecture.jpg)
+![Azure Optimization Engine Architecture](/uploads/architecture.jpg "Azure Optimization Engine Architecture")
 
 Azure Optimization Engine, runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON, and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
 

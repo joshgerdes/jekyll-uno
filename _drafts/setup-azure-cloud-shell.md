@@ -32,3 +32,7 @@ Just some noticeable things to be aware of regarding the Azure Cloud Shell:
 * Permissions are set as a regular Linux user in Bash
 
 It is reasonably easy to set up, but in this article, I will show you the additional configuration options you have available, such as selecting your own storage account, region and resource group to conform to any naming policies and preferences you may have.
+
+### To set up Azure Cloud Shell
+
+1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure - Portal")

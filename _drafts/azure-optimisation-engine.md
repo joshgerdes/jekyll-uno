@@ -68,7 +68,7 @@ Azure Optimization Engine combines multiple data sources to give you better data
 > * Operational Excellence
 >   * Load Balancers without backend pool
 >   * Service Principal credentials/certificates expired or about to expire
->   * Subscriptions close to the maximum limit of RBAC assignments
+>   * Subscriptions close to the maximum limit of RBAC _(Role Based Access Control)_ assignments
 >   * Management Groups close to the maximum limit of RBAC assignments
 >   * Subscriptions close to the maximum limit of resource groups
 >   * Subnets with low free IP space
@@ -86,12 +86,12 @@ The Azure Optimization Engine is battle-tested,
 * Lightweight
 *  Based on cheap services _(Azure Automation, Storage, small SQL Database_) 
 
-A few hours after setting up the engine, you will get access to a Power BI dashboard with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
+A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
 
 These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
 
 #### Architecture
 
-Azure Optimization Engine, runs on top of Azure Automation and Log Analytics, 
+Azure Optimization Engine, runs on top of Azure Automation and Log Analytics. 
 
 ![](/uploads/architecture.jpg)

@@ -104,8 +104,8 @@ Azure Optimization Engine, runs on top of Azure Automation _(Runbooks for each d
 Taken directly from the Git repository readme, the prerequisite for Azure Optimization Engine are:
 
 * A supported Azure subscription _(see the_ [_FAQs_](https://github.com/helderpinto/AzureOptimizationEngine#faq) _on Github)_
-* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.3.0 "Install the Azure Az PowerShell module")
-* [Microsoft.Graph.Authentication](https://www.powershellgallery.com/packages/Microsoft.Graph.Authentication/1.3.1 " Microsoft.Graph.Authentication ") and [Microsoft.Graph.Identity.DirectoryManagement](https://www.powershellgallery.com/packages/Microsoft.Graph.Identity.DirectoryManagement/ "Microsoft.Graph.Identity.DirectoryManagement") PowerShell modules
+* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "Install the Azure Az PowerShell module")
+* [Microsoft.Graph.Authentication](https://docs.microsoft.com/en-us/graph/powershell/installation " Microsoft.Graph.Authentication ") and [Microsoft.Graph.Identity.DirectoryManagement](https://docs.microsoft.com/en-us/graph/powershell/installation "Microsoft.Graph.Identity.DirectoryManagement") PowerShell modules
 * A user account with Owner permissions over the chosen subscription, so that the Automation Managed Identity is granted the required privileges over the subscription (Reader) and deployment resource group _(Contributor)_
 * _(Optional)_ A user account with at least Privileged Role Administrator permissions over the Azure AD tenant, so that the Managed Identity is granted the required privileges over Azure AD _(Global Reader)_
 

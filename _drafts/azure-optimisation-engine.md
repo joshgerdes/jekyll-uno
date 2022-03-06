@@ -118,7 +118,7 @@ During deployment, you'll be asked several questions. You must plan for the foll
 
 If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them. 
 
-We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation _(installation instructions for using the_ [_CloudShell_](https://github.com/helderpinto/AzureOptimizationEngine#installation) _can be found directly on the Git repository - I recommend you )._
+We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation_._
 
 #### Additional Recommended Reading
 

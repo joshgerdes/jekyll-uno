@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
 This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022! 

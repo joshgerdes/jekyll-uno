@@ -9,11 +9,11 @@ header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
-This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022! 
+This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022!
 
 This article, along with others of its kind _(Articles, Videos etc)_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
-Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine"). 
+Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine").
 
 _Note: Although I had originally planned on having this as a video, due to delay in receiving appropriate equipment, I have fallen to an article, however, plan on making a video on this in the future, feel free to add/ask any questions in the comments section below and I will make sure to cover them in any future video._
 
@@ -21,7 +21,7 @@ _Note: Although I had originally planned on having this as a video, due to delay
 
 ### Overview
 
-> The Azure Optimization Engine _(AOE)_ is an extensible solution designed to generate optimization recommendations for your Azure environment, like a fully customizable Azure Advisor. 
+> The Azure Optimization Engine _(AOE)_ is an extensible solution designed to generate optimization recommendations for your Azure environment, like a fully customizable Azure Advisor.
 >
 > The first custom recommendations use-case covered by this tool was augmenting Azure Advisor Cost recommendations, particularly Virtual Machine right-sizing, with a fit score based on VM metrics and properties.
 
@@ -35,13 +35,13 @@ The [Azure Optimization Engine]() can…
 
 Azure Optimization Engine combines multiple data sources to give you better data-driven decisions and recommendations, outside of that usually deployed by the inbuilt Azure Advisor, example use-cases and data sources can be seen below:
 
-* Azure Resource Graph _(Virtual Machine and Managed Disks properties)_ 
-* Azure Monitor Logs _(Virtual Machine performance metrics)_ 
-* Azure Consumption _(consumption/billing usage details events)_ 
-* Extracts data periodically to build a recommendations history 
-* Joins and queries data in an analytics-optimized repository _(Log Analytics)_ 
-* Virtual Machine performance metrics collected with Log Analytics agent 
-* Can leverage existing customer set-up 
+* Azure Resource Graph _(Virtual Machine and Managed Disks properties)_
+* Azure Monitor Logs _(Virtual Machine performance metrics)_
+* Azure Consumption _(consumption/billing usage details events)_
+* Extracts data periodically to build a recommendations history
+* Joins and queries data in an analytics-optimized repository _(Log Analytics)_
+* Virtual Machine performance metrics collected with Log Analytics agent
+* Can leverage existing customer set-up
 * Requires only a few metrics collected with a frequency >= 60 seconds
 
 > Besides collecting **all Azure Advisor recommendations**, AOE includes other custom recommendations that you can tailor to your needs:
@@ -76,16 +76,16 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Empty subnets
 >   * Orphaned NICs
 
-The Azure Optimization Engine is battle-tested 
+The Azure Optimization Engine is battle-tested
 
-* Providing custom recommendations since Nov 2019 
+* Providing custom recommendations since Nov 2019
 * Serving Azure customers worldwide
 * From smaller 50-500 VMs customers to larger ones with more than 5K VMs
-* Several customer-specific developments (custom collectors and recommendation algorithms) 
+* Several customer-specific developments (custom collectors and recommendation algorithms)
 * Flexibility options include _(multi-subscription and multi-tenant capability)_
-*  Based on cheap services _(Azure Automation, Storage, small SQL Database_) 
+* Based on cheap services _(Azure Automation, Storage, small SQL Database_)
 
-A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
+A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine.
 
 These recommendations are then updated every 7 days.
 
@@ -116,23 +116,16 @@ During deployment, you'll be asked several questions. You must plan for the foll
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
 
-If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them. 
+If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them.
 
 We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation_._
 
-##### Install Azure PowerShell
-
-1. Open Windows PowerShell
-2. Type in: 
-
-       Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-
-##### Install Microsoft Graph
+##### Install Azure PowerShell & Microsoft Graph modules
 
 1. Open Windows PowerShell
 2. Type in:
 
-       Install-Module Microsoft.Graph -Scope CurrentUser
+       Install-Module -Name Az,Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 
 #### Install
 
@@ -145,6 +138,4 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
   2. [Part 2 - Collecting Data](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 2")
   3. [Part 3 - Generating & Viewing Recommendations](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 3")
   4. [Part 4 - Automating Continous Optimization with the Azure Optimization Engine](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317 "Automating Continuous Optimization with the Azure Optimization Engine")
-
-
 * [Azure Optimization Engine Github - Usage instructions](https://github.com/helderpinto/AzureOptimizationEngine#usage-instructions "Azure Optimization Engine")

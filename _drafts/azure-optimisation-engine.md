@@ -118,6 +118,8 @@ During deployment, you'll be asked several questions. You must plan for the foll
 
 If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them. 
 
+We will now go through and install the pre-requisites from scratch
+
 #### Additional Recommended Reading
 
 * _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:

@@ -71,3 +71,5 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Subnets with too much IP space wasted
 >   * Empty subnets
 >   * Orphaned NICs
+
+A few hours after setting up the engine, you'll get a Power BI dashboard with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.

@@ -97,6 +97,25 @@ These recommendations are then updated every 7 days and you can contribute with 
 
 Azure Optimization Engine, runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON, and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
 
+### Install
+
+#### Pre-requisites
+
+Taken directly from the Git repository readme, the prerequisite for Azure Optimization Engine are:
+
+* A supported Azure subscription _(see the_ [_FAQs_](https://github.com/helderpinto/AzureOptimizationEngine#faq)_)_
+* Azure Powershell 6.6.0+
+* Microsoft.Graph.Authentication and Microsoft.Graph.Identity.DirectoryManagement PowerShell modules
+* A user account with Owner permissions over the chosen subscription, so that the Automation Managed Identity is granted the required privileges over the subscription (Reader) and deployment resource group _(Contributor)_
+* _(Optional)_ A user account with at least Privileged Role Administrator permissions over the Azure AD tenant, so that the Managed Identity is granted the required privileges over Azure AD _(Global Reader)_
+
+During deployment, you'll be asked several questions. You must plan for the following:
+
+* Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_, otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md)_)_.
+* An Azure subscription to deploy the solution (if you're reusing a Log Analytics workspace, you must deploy into the same subscription the workspace is in).
+* A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
+* Azure region
+
 #### Additional Recommended Reading
 
 * _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:

@@ -120,6 +120,8 @@ If the deployment fails for some reason, you can simply repeat it, as it is idem
 
 We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation_._
 
+##### Install Azure PowerShell
+
 #### Install
 
 Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!

@@ -33,11 +33,11 @@ The [Azure Optimization Engine]() can…
 
 Azure Optimization Engine combines multiple data sources to give you better data-driven decisions and recommendations, outside of that usually deployed by the inbuilt Azure Advisor, example use-cases and data sources can be seen below:
 
-* Azure Resource Graph (Virtual Machine and Managed Disks properties) 
-* Azure Monitor Logs(Virtual Machine performance metrics) 
-* Azure Consumption (consumption/billing usage details events) 
+* Azure Resource Graph _(Virtual Machine and Managed Disks properties)_ 
+* Azure Monitor Logs _(Virtual Machine performance metrics)_ 
+* Azure Consumption _(consumption/billing usage details events)_ 
 * Extracts data periodically to build a recommendations history 
-* Joins and queries data in an analytics-optimized repository (Log Analytics) 
+* Joins and queries data in an analytics-optimized repository _(Log Analytics)_ 
 * Virtual Machine performance metrics collected with Log Analytics agent 
 * Can leverage existing customer set-up 
 * Requires only a few metrics collected with a frequency >= 60 seconds

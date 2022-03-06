@@ -122,6 +122,8 @@ We will now go through and install the pre-requisites from scratch, as in this a
 
 #### Install
 
+Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!
+
 #### Additional Recommended Reading
 
 * _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:

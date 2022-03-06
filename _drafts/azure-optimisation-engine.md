@@ -90,7 +90,7 @@ A few hours after setting up the engine, you will get access to a Power BI dashb
 
 These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
 
-> It is worth noting that Azure Optimisation Engine is NOT an official Microsoft Product,
+> It is worth noting that Azure Optimisation Engine is **NOT** an official **Microsoft Product,** and as such is under no offical support, it was created and maintened by: Hélder Pinto, a Senior Customer Engineer for Microsoft and would like to take the opportunity to thank Hélder the amazing work he is doing with this product on a continous basis, and giving me his blessing to write this article.
 
 #### Architecture
 

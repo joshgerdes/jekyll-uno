@@ -81,9 +81,8 @@ The Azure Optimization Engine is battle-tested
 * Providing custom recommendations since Nov 2019 
 * Serving Azure customers worldwide
 * From smaller 50-500 VMs customers to larger ones with more than 5K VMs
-* Several customer-specific developments (custom collectors and recommendation algorithms) • 
-* Flexibility options include (multi-subscription and multi-tenant capability)
-* Lightweight
+* Several customer-specific developments (custom collectors and recommendation algorithms) 
+* Flexibility options include _(multi-subscription and multi-tenant capability)_
 *  Based on cheap services _(Azure Automation, Storage, small SQL Database_) 
 
 A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
@@ -94,9 +93,9 @@ These recommendations are then updated every 7 days and you can contribute with 
 
 #### Architecture
 
-Azure Optimization Engine, runs on top of Azure Automation and Log Analytics. 
-
 ![](/uploads/architecture.jpg)
+
+Azure Optimization Engine, runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON, and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
 
 #### Additional Recommended Reading
 

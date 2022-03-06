@@ -90,6 +90,8 @@ A few hours after setting up the engine, you will get access to a Power BI dashb
 
 These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
 
+#### Architecture
+
 Azure Optimization Engine, runs on top of Azure Automation and Log Analytics, 
 
 ![](/uploads/architecture.jpg)

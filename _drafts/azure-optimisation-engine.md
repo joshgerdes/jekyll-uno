@@ -9,7 +9,9 @@ header:
   teaser: ''
 
 ---
-As part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022! This article, along with others of its kind _(Articles, Videos etc)_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
+This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022! 
+
+This article, along with others of its kind _(Articles, Videos etc)_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
 Today I will be covering the Azure Optimization Engine.
 

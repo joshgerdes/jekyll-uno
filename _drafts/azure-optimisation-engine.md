@@ -122,6 +122,18 @@ We will now go through and install the pre-requisites from scratch, as in this a
 
 ##### Install Azure PowerShell
 
+1. Open Windows PowerShell
+2. Type in: 
+
+       Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+
+##### Install Microsoft Graph
+
+1. Open Windows PowerShell
+2. Type in:
+
+       Install-Module Microsoft.Graph -Scope CurrentUser
+
 #### Install
 
 Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!

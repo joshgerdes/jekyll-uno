@@ -1,6 +1,6 @@
 ---
 date: 2022-03-06 00:00:00 +1300
-title: Azure Optimisation Engine
+title: Azure Optimization Engine
 author: Luke
 categories:
 - Azure
@@ -89,6 +89,8 @@ The Azure Optimization Engine is battle-tested,
 A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
 
 These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
+
+> It is worth noting that Azure Optimisation Engine is NOT an official Microsoft Product,
 
 #### Architecture
 

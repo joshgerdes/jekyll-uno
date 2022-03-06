@@ -76,7 +76,7 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Empty subnets
 >   * Orphaned NICs
 
-The Azure Optimization Engine is battle-tested, 
+The Azure Optimization Engine is battle-tested 
 
 * Providing custom recommendations since Nov 2019 
 * Serving Azure customers worldwide
@@ -90,7 +90,7 @@ A few hours after setting up the engine, you will get access to a Power BI dashb
 
 These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
 
-> It is worth noting that Azure Optimisation Engine is **NOT** an official **Microsoft Product,** and as such is under no offical support, it was created and maintened by: Hélder Pinto, a Senior Customer Engineer for Microsoft and would like to take the opportunity to thank Hélder the amazing work he is doing with this product on a continous basis, and giving me his blessing to write this article.
+> It is worth noting that Azure Optimisation Engine is **NOT** an official **Microsoft Product,** and as such is under no offical support, it was created and maintened by: Hélder Pinto, a Senior Customer Engineer for Microsoft and would like to take the opportunity to thank Hélder the amazing work he is doing with this product on a continous basis, and giving me his blessing to write this article, on which he has already done an amazing job documenting on Github.
 
 #### Architecture
 

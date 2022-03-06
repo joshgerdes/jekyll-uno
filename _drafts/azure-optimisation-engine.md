@@ -13,7 +13,9 @@ This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azu
 
 This article, along with others of its kind _(Articles, Videos etc)_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
-Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine").
+Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine"). 
+
+_Note: Although I had originally planned on having this as a video, due to delay in receiving appropriate equipment, I have fallen to an article, however, plan on making a video on this in the future, feel free to add/ask any questions in the comments section below and I will make sure to cover them in any future video._
 
 ![](/uploads/azurespringclean_2022_aoe.png)
 

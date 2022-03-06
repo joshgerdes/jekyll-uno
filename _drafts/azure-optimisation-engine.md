@@ -87,7 +87,7 @@ The Azure Optimization Engine is battle-tested
 
 A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine. 
 
-These recommendations are then updated every 7 days and you can contribute with your own custom ones if needed.
+These recommendations are then updated every 7 days.
 
 > It is worth noting that Azure Optimisation Engine is **NOT** an official **Microsoft Product,** and as such is under no offical support, it was created and maintened by: Hélder Pinto, a Senior Customer Engineer for Microsoft and would like to take the opportunity to thank Hélder the amazing work he is doing with this product on a continous basis, and giving me his blessing to write this article, on which he has already done an amazing job documenting on Github.
 
@@ -118,7 +118,7 @@ During deployment, you'll be asked several questions. You must plan for the foll
 
 If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them. 
 
-We will now go through and install the pre-requisites from scratch, as we will be deploying the Azure Optimization Engine from our local workstation.
+We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation _(installation instructions for using the_ [_CloudShell_](https://github.com/helderpinto/AzureOptimizationEngine#installation) _can be found directly on the Git repository - I recommend you )._
 
 #### Additional Recommended Reading
 

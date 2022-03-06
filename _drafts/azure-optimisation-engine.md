@@ -39,3 +39,35 @@ Azure Optimization Engine combines multiple data sources to give you better data
 * Virtual Machine performance metrics collected with Log Analytics agent 
 * Can leverage existing customer set-up 
 * Requires only a few metrics collected with a frequency >= 60 seconds
+
+> Besides collecting **all Azure Advisor recommendations**, AOE includes other custom recommendations that you can tailor to your needs:
+>
+> * Cost
+>   * Augmented Advisor Cost VM right-size recommendations, with fit score based on Virtual Machine guest OS metrics _(collected by Log Analytics agents)_ and Azure properties
+>   * Underutilized VM Scale Sets
+>   * Unattached disks
+>   * Standard Load Balancers without backend pool
+>   * Application Gateways without backend pool
+>   * VMs deallocated since a long time ago (_forgotten VMs)_
+>   * Orphaned Public IPs
+> * High Availability
+>   * Virtual Machine high availability _(availability zones count, availability set, managed disks, storage account distribution when using unmanaged disks)_
+>   * VM Scale Set high availability _(availability zones count, managed disks)_
+>   * Availability Sets structure _(fault/update domains count)_
+> * Performance
+>   * VM Scale Sets constrained by lack of compute resources
+> * Security
+>   * Service Principal credentials/certificates without expiration date
+>   * NSG rules referring to empty or non-existing subnets
+>   * NSG rules referring to orphan or removed NICs
+>   * NSG rules referring to orphan or removed Public IPs
+> * Operational Excellence
+>   * Load Balancers without backend pool
+>   * Service Principal credentials/certificates expired or about to expire
+>   * Subscriptions close to the maximum limit of RBAC assignments
+>   * Management Groups close to the maximum limit of RBAC assignments
+>   * Subscriptions close to the maximum limit of resource groups
+>   * Subnets with low free IP space
+>   * Subnets with too much IP space wasted
+>   * Empty subnets
+>   * Orphaned NICs

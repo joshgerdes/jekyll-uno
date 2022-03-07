@@ -36,4 +36,5 @@ The Azure Cloud Shell is very easy to set up and get going, but in this article,
 ### To set up Azure Cloud Shell
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure - Portal")
-2. 
+2. Click on the little Terminal/PowerShell icon in the upper navigation bar
+3. ![Azure Portal - Cloud Shell](/uploads/cloudshell_azureportal_icon.png "Azure Portal - Cloud Shell")

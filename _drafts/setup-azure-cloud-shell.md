@@ -51,3 +51,6 @@ By default, CloudShell creates a new Resource Group, Storage account, Fileshare 
 * Fileshare _(new or existing)_
 
 1. ![](/uploads/stgconfigured_azureportal.png)
+2. Click on **Create Storage** when you are ready to start the verification _(which happens after you click Create storage, don't worry as long as you have the window open you can make any additional changes)_ and deployment.
+
+Using this method is handy when you have more than one person administering the subscription.

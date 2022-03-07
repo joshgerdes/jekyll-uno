@@ -1,5 +1,5 @@
 ---
-date: 2022-03-06 00:00:00 +1300
+date: 2022-03-06T00:00:00.000+13:00
 title: Azure Optimization Engine
 author: Luke
 categories:
@@ -118,7 +118,9 @@ During deployment, you'll be asked several questions. You must plan for the foll
 
 If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them.
 
-We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation_._
+We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
+
+You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Azure Cloud Shell")
 
 ##### Install Azure PowerShell & Microsoft Graph modules
 

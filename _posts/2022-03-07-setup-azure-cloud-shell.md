@@ -37,15 +37,15 @@ By default, CloudShell creates a new Resource Group, Storage account, Fileshare 
 ### To set up Azure Cloud Shell
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure - Portal"){:target="_blank"}
-2. Click on the little Terminal/PowerShell icon in the upper navigation bar
+2. Click on the little **Terminal/PowerShell icon** in the upper navigation bar
 3. ![Azure Portal - Cloud Shell](/uploads/cloudshell_azureportal_icon.png "Azure Portal - Cloud Shell")
 4. You should get notified, "You have no storage mounted" click on **Show advanced settings**
 5. ![](/uploads/nostgmounted_azureportal.png)
-6. Here you can easily create your CloudShell storage account with your own preferences:
+6. Here you can easily **create your CloudShell storage account with your own preferences**:
 
 * The subscription
 * Region
-* Resource Group
+* Resource Group _(new or existing)_
 * Storage account _(new or existing)_
 * Fileshare _(new or existing)_
 

@@ -38,3 +38,5 @@ The Azure Cloud Shell is very easy to set up and get going, but in this article,
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure - Portal")
 2. Click on the little Terminal/PowerShell icon in the upper navigation bar
 3. ![Azure Portal - Cloud Shell](/uploads/cloudshell_azureportal_icon.png "Azure Portal - Cloud Shell")
+4. You should get notified, "You have no storage mounted" click on **Show advanced settings**
+5. ![](/uploads/nostgmounted_azureportal.png)

@@ -19,7 +19,7 @@ Both Bash and PowerShell experiences are available.
 
 > Microsoft routinely maintains and updates Cloud Shell, which comes equipped with commonly used CLI tools including Linux shell interpreters, PowerShell modules, Azure tools, text editors, source control, build tools, container tools, database tools, and more. Cloud Shell also includes language support for several popular programming languages such as Node.js, .NET, and Python.
 
-Along with native tools such as Azure PowerShell, it also contains Azure Bicep and Terraform, allowing you to implement and test functionality, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://docs.microsoft.com/en-us/azure/cloud-shell/features "Features & tools for Azure Cloud Shell")'.
+Along with native tools such as Azure PowerShell, it also contains Terraform, allowing you to implement and test functionality such as Infrastructure as Code, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://docs.microsoft.com/en-us/azure/cloud-shell/features "Features & tools for Azure Cloud Shell")'.
 
 Just some noticeable things to be aware of regarding the Azure Cloud Shell:
 

@@ -33,6 +33,8 @@ Just some noticeable things to be aware of regarding the Azure Cloud Shell:
 
 The Azure Cloud Shell is very easy to set up and get going, but in this article, I will show you the additional configuration options you have available, such as selecting your own storage account, region and resource group to conform to any naming policies and preferences you may have.
 
+By default, CloudShell creates a new Resource Group, Storage account, Fileshare in the Southeast Asia region.
+
 ### To set up Azure Cloud Shell
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure - Portal")
@@ -40,3 +42,12 @@ The Azure Cloud Shell is very easy to set up and get going, but in this article,
 3. ![Azure Portal - Cloud Shell](/uploads/cloudshell_azureportal_icon.png "Azure Portal - Cloud Shell")
 4. You should get notified, "You have no storage mounted" click on **Show advanced settings**
 5. ![](/uploads/nostgmounted_azureportal.png)
+6. Here you can easily create your CloudShell storage account with your own preferences:
+
+* The subscription
+* Region
+* Resource Group
+* Storage account _(new or existing)_
+* Fileshare _(new or existing)_
+
+1. ![](/uploads/stgconfigured_azureportal.png)

@@ -142,7 +142,8 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 
        Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
 7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
-8. 
+8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
+9. ![](/uploads/2022-03-12-09_48_40-plex.png)
 
 #### Additional Recommended Reading
 

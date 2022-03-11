@@ -144,8 +144,9 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
  7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
  8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
  9. ![](/uploads/2022-03-12-09_48_40-plex.png)
-10. A browser window will then popup, authenticate to Azure.
-11. 
+10. A browser window will then popup, authenticate to Azure _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
+11. Once authentication, you will need to confirm the Azure subscription you want to deploy Azure Optimization Engine to.
+12. ![](/uploads/aoe-selectazsubscription.png)
 
 #### Additional Recommended Reading
 

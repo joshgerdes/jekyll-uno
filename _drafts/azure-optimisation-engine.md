@@ -133,6 +133,10 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!
 
+1. In your favourite web browser navigate to [AzureOptimizationEngine ](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine")GitHub repository
+2. Select Code, Download Zip
+3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
+
 #### Additional Recommended Reading
 
 * _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:

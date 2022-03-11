@@ -147,6 +147,10 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 10. A browser window will then popup, authenticate to Azure _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
 11. Once authentication, you will need to confirm the Azure subscription you want to deploy Azure Optimization Engine to.
 12. ![](/uploads/aoe-selectazsubscription.png)
+13. Once your subscription is selected, its time to select a naming prefix for your resources _(if you select Enter you can manually name each resource),_ in my case my prefix will be: _aoe_
+14. ![](/uploads/aoe-selectazprefix.png)
+15. If you have an existing Log Analytics workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource, I am creating this from fresh so will select 'N'
+16. ![](/uploads/aoe-selectazloganalyticworkspace.png)
 
 #### Additional Recommended Reading
 

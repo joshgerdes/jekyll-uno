@@ -137,7 +137,10 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 2. Select **Code**, **Download Zip**
 3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
 4. **Download** and **extract** the ZIP file to a location, you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
-5. 
+5. Because the scripts were downloaded from the internet, we will need to Unblock these so that we can run them, open PowerShell and run the script below _(changing your path to the path that the files were extracted)_
+
+       Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
+6. sd
 
 #### Additional Recommended Reading
 

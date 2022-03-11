@@ -141,7 +141,7 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 6. Because the scripts were downloaded from the internet, we will need to Unblock these so that we can run them, open PowerShell and run the script below _(changing your path to the path that the files were extracted)_
 
        Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
-7. Now that the script and associated files have been unblocked, change 
+7. Now that the script and associated files have been unblocked, change the directory to the location of the Deploy-AzureOptimizationEngine.ps1 file.
 
 #### Additional Recommended Reading
 

@@ -133,17 +133,18 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!
 
-1. In your favourite web browser **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository
-2. Select **Code**, **Download Zip**
-3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
-4. **Download** and **extract** the ZIP file to a location, you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
-5. Open PowerShell _(or Windows Terminal)_
-6. Because the scripts were downloaded from the internet, we will need to **Unblock** these so that we can run them, open PowerShell and run the **script** below _(changing your path to the path that the files were extracted)_
+ 1. In your favourite web browser **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository
+ 2. Select **Code**, **Download Zip**
+ 3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
+ 4. **Download** and **extract** the ZIP file to a location, you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
+ 5. Open PowerShell _(or Windows Terminal)_
+ 6. Because the scripts were downloaded from the internet, we will need to **Unblock** these so that we can run them, open PowerShell and run the **script** below _(changing your path to the path that the files were extracted)_
 
-       Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
-7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
-8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
-9. ![](/uploads/2022-03-12-09_48_40-plex.png)
+        Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
+ 7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
+ 8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
+ 9. ![](/uploads/2022-03-12-09_48_40-plex.png)
+10. 
 
 #### Additional Recommended Reading
 

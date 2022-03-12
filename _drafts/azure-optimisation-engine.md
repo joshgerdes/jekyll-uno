@@ -170,8 +170,10 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy.
 
 1. Open PowerShell and login to Azure using: Connect-AzAccount
-2. Type: 
+2. Connect to your Azure subscription that contains the Virtual Machines you want to onboard to Log Analytics
+3. Type: 
 
+       # Register the resource provider if it's not already registered
        Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
 
 3\.0

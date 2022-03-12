@@ -158,9 +158,11 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 21. Now enter the **password** for the **sqladmin** account and press Enter
 22. Verify that everything is correct, then press **Y** to deploy Azure Optimization Engine!
 23. ![](/uploads/deploy-azureoptimizationengine.gif)
-24. Deployment could take 5-10 minutes...
+24. Deployment could take 10-25 minutes... _(mine took 22 minutes and 51 seconds)_
 25. While leaving the PowerShell window open, log into the Azure Portal; you should now have a new Resource Group, and your resources will start getting created... you can click on Deployments _(under Settings navigation bar)_ in the Resource Group to review the deployment status.
 26. ![](/uploads/deploycheck-azureoptimizationengine.gif)
+
+#### Configure
 
 #### Additional Recommended Reading
 

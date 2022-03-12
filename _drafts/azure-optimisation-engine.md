@@ -171,13 +171,13 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
 
 1. Open **PowerShell** and **login** to **Azure** using: Connect-AzAccount
 2. **Connect to** your Azure **subscription** that contains the Virtual Machines you want to onboard to Log Analytics
-3. Type: 
+3. Type:
 
        # Register the resource provider if it's not already registered
        Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
 4. The PowerShell script below will:
    * Copies the built-in Azure Policy definition of [Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines](https://www.azadvertizer.net/azpolicyadvertizer/0868462e-646c-4fe3-9ced-a733534b6a2c.html?desc=compareJson&left=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.0.json&right=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.1.json " Azure Policy definition Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines ")
-   * Create a User-Managed Identity 
+   * Create a User-Managed Identity
    * Assign: Log Analytics contributor rights to a subscription scope
    * Create a policy assignment, and assign it to the subscription
 5. Just update the variables to match your setup
@@ -214,6 +214,51 @@ or
 
      #Fix specific workspaces configuration, using a custom counter collection frequency
     ./Setup-LogAnalyticsWorkspaces.ps1 -AutoFix -WorkspaceIds "d69e840a-2890-4451-b63c-bcfc5580b90f","961550b2-2c4a-481a-9559-ddf53de4b455" -IntervalSeconds 30
+
+##### Azure Automation - Runbooks & Automation
+
+The wind that gives Azure Optimization Engine its lift is Azure Automation and Runbooks, at the time I deployed this - I had x1 Azure Automation account and 33 runbooks!
+
+Looking at the runbooks deployed, you can get a sense of what Azure Optimization Engine is doing...
+
+| NAME | TYPE |
+| --- | --- |
+| aoegeek-auto | Automation Account |
+| Export-AADObjectsToBlobStorage (aoegeek-auto/Export-AADObjectsToBlobStorage) | Runbook |
+| Export-AdvisorRecommendationsToBlobStorage (aoegeek-auto/Export-AdvisorRecommendationsToBlobStorage) | Runbook |
+| Export-ARGAppGatewayPropertiesToBlobStorage (aoegeek-auto/Export-ARGAppGatewayPropertiesToBlobStorage) | Runbook |
+| Export-ARGAvailabilitySetPropertiesToBlobStorage (aoegeek-auto/Export-ARGAvailabilitySetPropertiesToBlobStorage) | Runbook |
+| Export-ARGLoadBalancerPropertiesToBlobStorage (aoegeek-auto/Export-ARGLoadBalancerPropertiesToBlobStorage) | Runbook |
+| Export-ARGManagedDisksPropertiesToBlobStorage (aoegeek-auto/Export-ARGManagedDisksPropertiesToBlobStorage) | Runbook |
+| Export-ARGNICPropertiesToBlobStorage (aoegeek-auto/Export-ARGNICPropertiesToBlobStorage) | Runbook |
+| Export-ARGNSGPropertiesToBlobStorage (aoegeek-auto/Export-ARGNSGPropertiesToBlobStorage) | Runbook |
+| Export-ARGPublicIpPropertiesToBlobStorage (aoegeek-auto/Export-ARGPublicIpPropertiesToBlobStorage) | Runbook |
+| Export-ARGResourceContainersPropertiesToBlobStorage (aoegeek-auto/Export-ARGResourceContainersPropertiesToBlobStorage) | Runbook |
+| Export-ARGUnmanagedDisksPropertiesToBlobStorage (aoegeek-auto/Export-ARGUnmanagedDisksPropertiesToBlobStorage) | Runbook |
+| Export-ARGVirtualMachinesPropertiesToBlobStorage (aoegeek-auto/Export-ARGVirtualMachinesPropertiesToBlobStorage) | Runbook |
+| Export-ARGVMSSPropertiesToBlobStorage (aoegeek-auto/Export-ARGVMSSPropertiesToBlobStorage) | Runbook |
+| Export-ARGVNetPropertiesToBlobStorage (aoegeek-auto/Export-ARGVNetPropertiesToBlobStorage) | Runbook |
+| Export-AzMonitorMetricsToBlobStorage (aoegeek-auto/Export-AzMonitorMetricsToBlobStorage) | Runbook |
+| Export-ConsumptionToBlobStorage (aoegeek-auto/Export-ConsumptionToBlobStorage) | Runbook |
+| Export-RBACAssignmentsToBlobStorage (aoegeek-auto/Export-RBACAssignmentsToBlobStorage) | Runbook |
+| Ingest-OptimizationCSVExportsToLogAnalytics (aoegeek-auto/Ingest-OptimizationCSVExportsToLogAnalytics) | Runbook |
+| Ingest-RecommendationsToSQLServer (aoegeek-auto/Ingest-RecommendationsToSQLServer) | Runbook |
+| Recommend-AADExpiringCredentialsToBlobStorage (aoegeek-auto/Recommend-AADExpiringCredentialsToBlobStorage) | Runbook |
+| Recommend-AdvisorAsIsToBlobStorage (aoegeek-auto/Recommend-AdvisorAsIsToBlobStorage) | Runbook |
+| Recommend-AdvisorCostAugmentedToBlobStorage (aoegeek-auto/Recommend-AdvisorCostAugmentedToBlobStorage) | Runbook |
+| Recommend-ARMOptimizationsToBlobStorage (aoegeek-auto/Recommend-ARMOptimizationsToBlobStorage) | Runbook |
+| Recommend-LongDeallocatedVmsToBlobStorage (aoegeek-auto/Recommend-LongDeallocatedVmsToBlobStorage) | Runbook |
+| Recommend-UnattachedDisksToBlobStorage (aoegeek-auto/Recommend-UnattachedDisksToBlobStorage) | Runbook |
+| Recommend-UnusedAppGWsToBlobStorage (aoegeek-auto/Recommend-UnusedAppGWsToBlobStorage) | Runbook |
+| Recommend-UnusedLoadBalancersToBlobStorage (aoegeek-auto/Recommend-UnusedLoadBalancersToBlobStorage) | Runbook |
+| Recommend-VMsHighAvailabilityToBlobStorage (aoegeek-auto/Recommend-VMsHighAvailabilityToBlobStorage) | Runbook |
+| Recommend-VMSSOptimizationsToBlobStorage (aoegeek-auto/Recommend-VMSSOptimizationsToBlobStorage) | Runbook |
+| Recommend-VNetOptimizationsToBlobStorage (aoegeek-auto/Recommend-VNetOptimizationsToBlobStorage) | Runbook |
+| Remediate-AdvisorRightSizeFiltered (aoegeek-auto/Remediate-AdvisorRightSizeFiltered) | Runbook |
+| Remediate-LongDeallocatedVMsFiltered (aoegeek-auto/Remediate-LongDeallocatedVMsFiltered) | Runbook |
+| Remediate-UnattachedDisksFiltered (aoegeek-auto/Remediate-UnattachedDisksFiltered) | Runbook |
+
+sd
 
 #### Additional Recommended Reading
 

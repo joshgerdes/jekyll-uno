@@ -155,7 +155,8 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 18. Once validation has passed, select the region that Azure Optimization will be deployed to, I will deploy to australiaeast, so I select 1.
 19. Azure Optimization Engine, now requires the SQL Admin username, for the SQL server and database it will created, I will go with: sqladmin
 20. ![](/uploads/aoe-selectlocationsql.png)
-21. 
+21. Now enter the password for the sqladmin account and press Enter
+22. Verify that everything is correct then press Y to deploy Azure Optimization Engine!
 
 #### Additional Recommended Reading
 

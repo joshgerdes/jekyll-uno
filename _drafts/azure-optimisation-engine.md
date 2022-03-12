@@ -308,6 +308,8 @@ When we set up the Azure SQL database earlier, as part of the Azure Optimization
 
 #### View Recommendations
 
+It's worth noting, that because Azure Optimization Engine stores its data into Log Analytics and SQL, you can use languages such as KQL directly on the Log Analytics workspace to pull out any information you might need and develop integration into other toolsets.
+
 ##### Workbooks
 
 There are x3 Azure Log Analytics workbooks included in the Azure Optimization Engine, these are as follows:

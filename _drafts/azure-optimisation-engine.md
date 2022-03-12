@@ -247,6 +247,24 @@ or
      #Fix specific workspaces configuration, using a custom counter collection frequency
     ./Setup-LogAnalyticsWorkspaces.ps1 -AutoFix -WorkspaceIds "d69e840a-2890-4451-b63c-bcfc5580b90f","961550b2-2c4a-481a-9559-ddf53de4b455" -IntervalSeconds 30
 
+##### Setup Azure AD-based recommendations by granting permissions to Managed Identity.
+
+Azure Optimization Engine, has the ability to do recommendations based on Azure Active Directory roles and permissions, but in order to do that, the System Assigned Identity of the Azure Optimization Engine account needs to be given 'Global Reader' rights. As part of the deployment, you may have gotten the following error: 
+
+_Cannot bind argument to parameter 'DirectoryRoleId' because it is an empty string._
+
+_Could not grant role. If you want Azure AD-based recommendations, please grant the Global Reader role manually to the aoegeek-auto managed identity or, for previous versions of AOE, to the Run As Account principal._
+
+We are going to grant the Azure Automation account 'Global Reader' rights manually in the Azure Portal.
+
+1. Open **Azure Portal**
+2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts")
+3. **Open** your Azure Optimisation Engine **automation account**
+4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
+5. ![](/uploads/aoe-managedidentityazautomate.png)
+6. Select **Azure role assignments**
+7. 
+
 ##### Azure Automation - Runbooks & Automation
 
 The wind that gives Azure Optimization Engine its lift is Azure Automation and Runbooks, at the time I deployed this - I had x1 Azure Automation account and 33 runbooks!
@@ -323,7 +341,7 @@ There are x3 Azure Log Analytics workbooks included in the Azure Optimization En
 They can be easily accessed in the Azure Portal.
 
 1. Log in to the **Azure Portal**
-2. Navigate to [Log Analytics Workspace](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
+2. Navigate to [**Log Analytics Workspace**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
 3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
 
 #### Additional Recommended Reading

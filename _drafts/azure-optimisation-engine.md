@@ -165,12 +165,16 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 
 #### Configure
 
-##### Grant Managed Identity Azure AD Reader Rights
+##### Onboard Azure VMs to Log Analytics
 
-Now that Azure Optimization Engine has been deployed, in order to use any of the Azure AD-based recommendations, we need to grant the 'Global Reader' role to the managed identity.
+Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy.
 
-1. Log in to the Azure Portal
-2. Navigate to Managed Identioties
+1. Open PowerShell and login to Azure using: Connect-AzAccount
+2. Type: 
+
+       Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
+
+3\.0
 
 #### Additional Recommended Reading
 

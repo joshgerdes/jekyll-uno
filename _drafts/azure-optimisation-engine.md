@@ -176,11 +176,15 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
        # Register the resource provider if it's not already registered
        Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
 4. The PowerShell script below will:
-   * Copy the built-in Azure Policy definition of Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines
+   * Copies the built-in Azure Policy definition of [Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines](https://www.azadvertizer.net/azpolicyadvertizer/0868462e-646c-4fe3-9ced-a733534b6a2c.html?desc=compareJson&left=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.0.json&right=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.1.json " Azure Policy definition Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines ")
    * Create a User-Managed Identity 
    * Assign: Log Analytics contributor rights to a subscription scope
    * Create a policy assignment, and assign it to the subscription
 5. Just update the variables to match your setup
+
+_Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs._
+
+##### Onboard Azure VMs to Log Analytics using the Azure Portal
 
 #### Additional Recommended Reading
 

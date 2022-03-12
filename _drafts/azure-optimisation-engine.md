@@ -257,13 +257,17 @@ _Could not grant role. If you want Azure AD-based recommendations, please grant 
 
 We are going to grant the Azure Automation account 'Global Reader' rights manually in the Azure Portal.
 
-1. Open **Azure Portal**
-2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts")
-3. **Open** your Azure Optimisation Engine **automation account**
-4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
-5. ![](/uploads/aoe-managedidentityazautomate.png)
-6. Select **Azure role assignments**
-7. 
+ 1. Open **Azure Portal**
+ 2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts")
+ 3. **Open** your Azure Optimisation Engine **automation account**
+ 4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
+ 5. ![](/uploads/aoe-managedidentityazautomate.png)
+ 6. **Copy** the **object ID**
+ 7. Now navigate to [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Azure Active Directory")
+ 8. Click on **Roles and Administrators**
+ 9. Search for: **Global Reader**
+10. Select Global Reader and select **+ Add assignments**
+11. Paste in the object ID earlier, and click **Ok** to grant Global Reader rights to the Azure Automation identity.
 
 ##### Azure Automation - Runbooks & Automation
 

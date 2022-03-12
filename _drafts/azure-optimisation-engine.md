@@ -195,7 +195,16 @@ _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on 
 
 ##### Setup Log Analytic Performance Counters
 
-Now that we have Virtual Machines reporting to our Log Analytic instance, its time to make sure we are collecting as much data as we need to give suitable recommendations.
+Now that we have Virtual Machines reporting to our Log Analytic instance, it's time to make sure we are collecting as much data as we need to give suitable recommendations, luckily a script has already been included in the Azure Optimization repository called '_Setup-LogAnalyticsWorkspaces.ps1_' to configure the performance counters.
+
+1. Open **PowerShell** _(or Windows Terminal)_
+2. **Change** the **directory** to the **location** of the Setup-LogAnalyticsWorkspaces.ps1, in the root folder of the repository extracted earlier
+3. Run the following PowerShell commands to download the required PowerShell Modules:
+
+       Install-Module -Name Az.ResourceGraph
+       Install-Module -Name Az.OperationalInsights
+4. Then run: .**\\Setup-LogAnalyticsWorkspaces.ps1**
+5. The script will then go through all Log Analytic workspaces that you have access to and add the necessary performance counters, if they are missing.
 
 #### Additional Recommended Reading
 

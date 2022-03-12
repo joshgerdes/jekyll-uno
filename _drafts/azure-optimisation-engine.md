@@ -152,7 +152,9 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 15. If you have an existing Log Analytics workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource, I am creating this from fresh so will select 'N'
 16. ![](/uploads/aoe-selectazloganalyticworkspace.png)
 17. The Azure Optimization Engine will now check that the names and resources are available to be deployed to your subscriptions and resources _(nothing is deployed during this stage - if there is an error, you can fix the issue and go back)_.
-18. Once validation has passed, select the region that Azure Optimization will be deployed to, I will deploy to: australiaeast, so its \[1\]
+18. Once validation has passed, select the region that Azure Optimization will be deployed to, I will deploy to australiaeast, so I select 1.
+19. Azure Optimization Engine, now requires the SQL Admin username, for the SQL server and database it will created, I will go with: sqladmin
+20. 
 
 #### Additional Recommended Reading
 

@@ -258,7 +258,9 @@ Looking at the runbooks deployed, you can get a sense of what Azure Optimization
 | Remediate-LongDeallocatedVMsFiltered (aoegeek-auto/Remediate-LongDeallocatedVMsFiltered) | Runbook |
 | Remediate-UnattachedDisksFiltered (aoegeek-auto/Remediate-UnattachedDisksFiltered) | Runbook |
 
-sd
+A lot of the runbooks, such as the Log Analytics workspace ID, link up to Azure Automation variables, such as this period in Days to look back for Advisor recommendations, by default, this is '7' but you can change this variable to suit your organisation's needs.
+
+![](/uploads/aoe-variables.png)
 
 #### Additional Recommended Reading
 

@@ -133,7 +133,7 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 Now that we have the prerequisites installed! Let's set up Azure Optimization Engine!
 
- 1. In your favourite web browser, **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository.
+ 1. In your favourite web browser, **navigate** to the [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository.
  2. Select **Code**, **Download Zip**
  3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
  4. **Download** and **extract** the ZIP file to a location you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
@@ -169,8 +169,8 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 
 Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy.
 
-1. Open PowerShell and login to Azure using: Connect-AzAccount
-2. Connect to your Azure subscription that contains the Virtual Machines you want to onboard to Log Analytics
+1. Open **PowerShell** and **login** to **Azure** using: Connect-AzAccount
+2. **Connect to** your Azure **subscription** that contains the Virtual Machines you want to onboard to Log Analytics
 3. Type: 
 
        # Register the resource provider if it's not already registered
@@ -185,6 +185,13 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
 _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs._
 
 ##### Onboard Azure VMs to Log Analytics using the Azure Portal
+
+1. Open **Azure Portal**
+2. Navigate to [**Log Analytic Workspaces**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytic Workspaces")
+3. **Click on** the Log Analytic **workspace** that was provisioned for Azure Optimization Engine
+4. Navigate to **Virtual Machines** _(under Workspace Data Sources)_
+5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed.
+6. ![](/uploads/aoe-2019vmgen1_connectla.png)
 
 #### Additional Recommended Reading
 

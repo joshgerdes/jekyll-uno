@@ -182,7 +182,7 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
    * Create a policy assignment, and assign it to the subscription
 5. Just update the variables to match your setup
 
-_Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs._
+_Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs, although this policy may be replaced by the: Configure Windows virtual machines to run Azure Monitor Agent policy._
 
 ##### Onboard Azure VMs to Log Analytics using the Azure Portal
 

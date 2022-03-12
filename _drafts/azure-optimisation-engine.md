@@ -193,6 +193,10 @@ _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on 
 5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed. Repeat for any further Virtual Machines.
 6. ![](/uploads/aoe-2019vmgen1_connectla.png)
 
+##### Setup Log Analytic Performance Counters
+
+Now that we have Virtual Machines reporting to our Log Analytic instance, its time to make sure we are collecting as much data as we need to give suitable recommendations.
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

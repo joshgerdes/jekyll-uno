@@ -249,7 +249,7 @@ or
 
 ##### Setup Azure AD-based recommendations by granting permissions to Managed Identity.
 
-Azure Optimization Engine, has the ability to do recommendations based on Azure Active Directory roles and permissions, but in order to do that, the System Assigned Identity of the Azure Optimization Engine account needs to be given 'Global Reader' rights. As part of the deployment, you may have gotten the following error: 
+Azure Optimization Engine, has the ability to do recommendations based on Azure Active Directory roles and permissions, but in order to do that, the System Assigned Identity of the Azure Optimization Engine account needs to be given 'Global Reader' rights. As part of the deployment, you may have gotten the following error:
 
 _Cannot bind argument to parameter 'DirectoryRoleId' because it is an empty string._
 
@@ -318,9 +318,11 @@ A lot of the runbooks, such as the Log Analytics workspace ID, link up to Azure 
 
 ##### Azure Automation - Schedules
 
-Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC, you can update these to match how often you want to run, and if needed a more necessary timezone, its worth noting that some data may rely on other data.
+Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC. 
 
 ![](/uploads/aoe-schedules.png)
+
+When making changes to these schedules _(or moving the Runbooks to be run from a Hybrid worker)_, it is recommended to use the Reset-AutomationSchedules.ps1 script. These times need to be in UTC.
 
 ##### Azure Automation - Credentials
 

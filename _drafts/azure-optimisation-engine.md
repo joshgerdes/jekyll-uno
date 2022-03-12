@@ -190,7 +190,7 @@ _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on 
 2. Navigate to [**Log Analytic Workspaces**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytic Workspaces")
 3. **Click on** the Log Analytic **workspace** that was provisioned for Azure Optimization Engine
 4. Navigate to **Virtual Machines** _(under Workspace Data Sources)_
-5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed.
+5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed. Repeat for any further Virtual Machines.
 6. ![](/uploads/aoe-2019vmgen1_connectla.png)
 
 #### Additional Recommended Reading

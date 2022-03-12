@@ -274,6 +274,24 @@ When we set up the Azure SQL database earlier, as part of the Azure Optimization
 
 ![](/uploads/aoe-credentials.png)
 
+#### View Recommendations
+
+##### Workbooks
+
+There are x3 Azure Log Analytics workbooks included in the Azure Optimization Engine, these are as follows:
+
+| NAME | TYPE |
+| --- | --- |
+| Resources Inventory | Azure Workbook |
+| Identities and Roles | Azure Workbook |
+| Costs Growing | Azure Workbook |
+
+They can be easily accessed in the Azure Portal.
+
+1. Log in to the **Azure Portal**
+2. Navigate to [Log Analytics Workspace](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
+3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

@@ -204,8 +204,16 @@ Now that we have Virtual Machines reporting to our Log Analytic instance, it's t
        Install-Module -Name Az.ResourceGraph
        Install-Module -Name Az.OperationalInsights
 4. Then run: .**\\Setup-LogAnalyticsWorkspaces.ps1**
-5. The script will then go through all Log Analytic workspaces that you have access to and add the necessary performance counters if they are missing.
+5. The script will then go through all Log Analytic workspaces that you have access to and check for performance counters.
 6. ![](/uploads/deploycheck-loganalytics.gif)
+7. If they are missing from the Log Analytics workspace, then you can run:
+
+       ./Setup-LogAnalyticsWorkspaces.ps1 -AutoFix
+
+or
+
+     #Fix specific workspaces configuration, using a custom counter collection frequency
+    ./Setup-LogAnalyticsWorkspaces.ps1 -AutoFix -WorkspaceIds "d69e840a-2890-4451-b63c-bcfc5580b90f","961550b2-2c4a-481a-9559-ddf53de4b455" -IntervalSeconds 30
 
 #### Additional Recommended Reading
 

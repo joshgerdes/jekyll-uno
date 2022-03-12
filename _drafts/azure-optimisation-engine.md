@@ -165,7 +165,7 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 
 #### Configure
 
-##### Onboard Azure VMs to Log Analytics
+##### Onboard Azure VMs to Log Analytics using Azure Policy and PowerShell
 
 Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy.
 
@@ -175,8 +175,12 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
 
        # Register the resource provider if it's not already registered
        Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
-
-3\.0
+4. The PowerShell script below will:
+   * Copy the built-in Azure Policy definition of Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines
+   * Create a User-Managed Identity 
+   * Assign: Log Analytics contributor rights to a subscription scope
+   * Create a policy assignment, and assign it to the subscription
+5. Just update the variables to match your setup
 
 #### Additional Recommended Reading
 

@@ -11,11 +11,11 @@ header:
 ---
 This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022!
 
-This article, along with others of its kind _(Articles, Videos etc)_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
+This article, along with others of its kind _(Articles, Videos etc.),_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
 Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine").
 
-_Note: Although I had originally planned on having this as a video, due to delay in receiving appropriate equipment, I have fallen to an article, however, plan on making a video on this in the future, feel free to add/ask any questions in the comments section below and I will make sure to cover them in any future video._
+_Note: Although I had initially planned on having this as a video, due to delay in receiving appropriate equipment, I have fallen to an article; however, I plan on making a video on this in the future; feel free to add/ask any questions in the comments section below, and I will make sure to cover them in any future video._
 
 ![](/uploads/azurespringclean_2022_aoe.png)
 
@@ -29,9 +29,9 @@ The [Azure Optimization Engine]() can…
 
 * Enable new custom recommendation types
 * Augment Azure Advisor recommendations with richer details that better drive action
-* Add fit score to recommendations
+* Add fit score to recommendations.
 * Add historical perspective to recommendations _(the older the recommendation, the higher the chances to remediate it)_
-* Drive automated continuous optimization
+* Drive continuous automated optimization
 
 Azure Optimization Engine combines multiple data sources to give you better data-driven decisions and recommendations, outside of that usually deployed by the inbuilt Azure Advisor, example use-cases and data sources can be seen below:
 
@@ -85,7 +85,7 @@ The Azure Optimization Engine is battle-tested
 * Flexibility options include _(multi-subscription and multi-tenant capability)_
 * Based on cheap services _(Azure Automation, Storage, small SQL Database_)
 
-A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and from custom recommendations included in the engine.
+A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and custom recommendations included in the engine.
 
 These recommendations are then updated every 7 days.
 
@@ -95,30 +95,30 @@ These recommendations are then updated every 7 days.
 
 ![Azure Optimization Engine Architecture](/uploads/architecture.jpg "Azure Optimization Engine Architecture")
 
-Azure Optimization Engine, runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON, and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
+Azure Optimization Engine runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
 
 ### Install
 
-#### Pre-requisites
+#### Prerequisites
 
 Taken directly from the Git repository readme, the prerequisite for Azure Optimization Engine are:
 
 * A supported Azure subscription _(see the_ [_FAQs_](https://github.com/helderpinto/AzureOptimizationEngine#faq) _on Github)_
-* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "Install the Azure Az PowerShell module") _(Azure Bicep support is not currently available, but is being worked on)_.
+* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "Install the Azure Az PowerShell module") _(Azure Bicep support is not currently available but is being worked on)_.
 * [Microsoft.Graph.Authentication](https://docs.microsoft.com/en-us/graph/powershell/installation " Microsoft.Graph.Authentication ") and [Microsoft.Graph.Identity.DirectoryManagement](https://docs.microsoft.com/en-us/graph/powershell/installation "Microsoft.Graph.Identity.DirectoryManagement") PowerShell modules
 * A user account with Owner permissions over the chosen subscription, so that the Automation Managed Identity is granted the required privileges over the subscription (Reader) and deployment resource group _(Contributor)_
 * _(Optional)_ A user account with at least Privileged Role Administrator permissions over the Azure AD tenant, so that the Managed Identity is granted the required privileges over Azure AD _(Global Reader)_
 
-During deployment, you'll be asked several questions. You must plan for the following:
+During deployment, you'll be asked several questions. It would be best if you planned for the following:
 
-* Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_, otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md)_)_.
+* Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_; otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md)_)_.
 * An Azure subscription to deploy the solution (if you're reusing a Log Analytics workspace, you must deploy into the same subscription the workspace is in).
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
 
 If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them.
 
-We will now go through and install the pre-requisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
+We will now go through and install the prerequisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
 
 You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Azure Cloud Shell")
 
@@ -131,7 +131,7 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 #### Install
 
-Now that we have the pre-requisites installed! Let's set up Azure Optimization Engine!
+Now that we have the prerequisites installed! Let's set up Azure Optimization Engine!
 
  1. In your favourite web browser **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository
  2. Select **Code**, **Download Zip**
@@ -147,9 +147,9 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 10. A browser window will then popup, **authenticate to Azure** _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
 11. Once authentication, you will need to **confirm** the Azure **subscription** you want to deploy Azure Optimization Engine to.
 12. ![](/uploads/aoe-selectazsubscription.png)
-13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter you can manually name each resource),_ in my case my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organisation/use-case as you may run into issues with the name already being used.
+13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter you can manually name each resource),_ in my case my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organization/use-case as you may run into issues with the name already being used.
 14. ![](/uploads/aoe-selectazprefix.png)
-15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource, I am creating this from fresh so will select '**N**'
+15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource, I am creating this from fresh so will select **'N**'
 16. ![](/uploads/aoe-selectazloganalyticworkspace.png)
 17. The Azure Optimization **Engine will now check that the names and resources are available** to be deployed to your subscriptions and resources _(nothing is deployed during this stage - if there is an error, you can fix the issue and go back)_.
 18. Once validation has passed, **select** the **region** that Azure Optimization will be deployed to, I will deploy to australiaeast, so I select 1.
@@ -164,7 +164,7 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 
 #### Additional Recommended Reading
 
-* _“Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization”_ blog post series:
+* _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:
   1. [Part 1 - Solution Overview](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 1")
   2. [Part 2 - Collecting Data](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 2")
   3. [Part 3 - Generating & Viewing Recommendations](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 3")

@@ -268,6 +268,12 @@ Along with containing the variables and configurations used by the Runbooks, it 
 
 ![](/uploads/aoe-schedules.png)
 
+##### Azure Automation - Credentials
+
+When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the runbooks in the Azure Automation credential pane.
+
+![](/uploads/aoe-credentials.png)
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

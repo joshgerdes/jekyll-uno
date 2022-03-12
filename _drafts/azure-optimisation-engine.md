@@ -157,7 +157,9 @@ Now that we have the pre-requisites installed! Let's set up Azure Optimization E
 20. ![](/uploads/aoe-selectlocationsql.png)
 21. Now enter the **password** for the **sqladmin** account and press Enter
 22. Verify that everything is correct then press **Y** to deploy Azure Optimization Engine!
-23. Deployment could take 5-10 minutes.
+23. ![](/uploads/deploy-azureoptimizationengine.gif)
+24. Deployment could take 5-10 minutes.
+25. 
 
 #### Additional Recommended Reading
 

@@ -112,7 +112,7 @@ Taken directly from the Git repository readme, the prerequisite for Azure Optimi
 During deployment, you'll be asked several questions. It would be best if you planned for the following:
 
 * Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_; otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md)_)_.
-* An Azure subscription to deploy the solution (if you're reusing a Log Analytics workspace, you must deploy into the same subscription the workspace is in).
+* An Azure subscription to deploy the solution _(if you're reusing a Log Analytics workspace, you must deploy into the same subscription the workspace is in)._
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
 
@@ -127,7 +127,7 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 1. Open Windows PowerShell
 2. Type in:
 
-       Install-Module -Name Az,Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
+       Install-Module -Name Az,Microsoft.Graph.Authentication,Microsoft.Graph.Identity.DirectoryManagement -Scope CurrentUser -Repository PSGallery -Force
 
 #### Install
 
@@ -164,6 +164,13 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 27. If you notice a failure, in the Deployment tab for: 'PolicyDeployment' you can ignore this, as it may have failed if the SQL Server hasn't been provisioned yet; once it has been provisioned, you can navigate back to this failed deployment and click 'Redeploy', to deploy a SQL Security Alert policy.
 
 #### Configure
+
+##### Grant Managed Identity Azure AD Reader Rights
+
+Now that Azure Optimization Engine has been deployed, in order to use any of the Azure AD-based recommendations, we need to grant the 'Global Reader' role to the managed identity.
+
+1. Log in to the Azure Portal
+2. Navigate to Managed Identioties
 
 #### Additional Recommended Reading
 

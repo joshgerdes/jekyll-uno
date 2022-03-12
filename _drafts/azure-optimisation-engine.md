@@ -324,6 +324,8 @@ Along with containing the variables and configurations used by the Runbooks, it 
 
 When making changes to these schedules _(or moving the Runbooks to be run from a Hybrid worker)_, it is recommended to use the Reset-AutomationSchedules.ps1 script. These times need to be in UTC.
 
+![](/uploads/update-automationschedules.gif)
+
 ##### Azure Automation - Credentials
 
 When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the runbooks in the Azure Automation credential pane.

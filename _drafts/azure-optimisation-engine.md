@@ -116,9 +116,9 @@ During deployment, you'll be asked several questions. It would be best if you pl
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
 
-If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(ie they can be applied multiple times without changing the result)_. The same process is used if you want to upgrade a previous deployment with the latest version. You just have to keep the same deployment options, so make sure you document them.
+If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(i.e. they can be applied multiple times without changing the result)_. The exact process is used to upgrade a previous deployment with the latest version. You have to keep the same deployment options, so make sure you document them.
 
-We will now go through and install the prerequisites from scratch, as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
+We will now go through and install the prerequisites from scratch; as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
 
 You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Azure Cloud Shell")
 
@@ -133,10 +133,10 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 Now that we have the prerequisites installed! Let's set up Azure Optimization Engine!
 
- 1. In your favourite web browser **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository
+ 1. In your favourite web browser, **navigate** to [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository.
  2. Select **Code**, **Download Zip**
  3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
- 4. **Download** and **extract** the ZIP file to a location, you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
+ 4. **Download** and **extract** the ZIP file to a location you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
  5. Open PowerShell _(or Windows Terminal)_
  6. Because the scripts were downloaded from the internet, we will need to **Unblock** these so that we can run them, open PowerShell and run the **script** below _(changing your path to the path that the files were extracted)_
 
@@ -147,19 +147,19 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 10. A browser window will then popup, **authenticate to Azure** _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
 11. Once authentication, you will need to **confirm** the Azure **subscription** you want to deploy Azure Optimization Engine to.
 12. ![](/uploads/aoe-selectazsubscription.png)
-13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter you can manually name each resource),_ in my case my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organization/use-case as you may run into issues with the name already being used.
+13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter, you can manually name each resource); in_ my case, my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organization/use-case as you may run into issues with the name already being used.
 14. ![](/uploads/aoe-selectazprefix.png)
-15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource, I am creating this from fresh so will select **'N**'
+15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource; I am creating this from fresh, so I will choose **'N.**'
 16. ![](/uploads/aoe-selectazloganalyticworkspace.png)
 17. The Azure Optimization **Engine will now check that the names and resources are available** to be deployed to your subscriptions and resources _(nothing is deployed during this stage - if there is an error, you can fix the issue and go back)_.
-18. Once validation has passed, **select** the **region** that Azure Optimization will be deployed to, I will deploy to australiaeast, so I select 1.
-19. Azure Optimization Engine, now **requires** the **SQL Admin** username, for the SQL server and database it will create, I will go with: sqladmin
+18. Once validation has passed, **select** the **region** that Azure Optimization will be deployed to; I will deploy to australiaeast, so I choose 1.
+19. Azure Optimization Engine now **requires** the **SQL Admin** username; for the SQL server and database it will create, I will go with: sqladmin
 20. ![](/uploads/aoe-selectlocationsql.png)
 21. Now enter the **password** for the **sqladmin** account and press Enter
-22. Verify that everything is correct then press **Y** to deploy Azure Optimization Engine!
+22. Verify that everything is correct, then press **Y** to deploy Azure Optimization Engine!
 23. ![](/uploads/deploy-azureoptimizationengine.gif)
 24. Deployment could take 5-10 minutes...
-25. While leaving the PowerShell window open, log into the Azure Portal, you should now have a new Resource Group and your resources will start getting created... you can click on Deployments _(under Settings navigation bar)_ in the Resource Group to review the deployment status.
+25. While leaving the PowerShell window open, log into the Azure Portal; you should now have a new Resource Group, and your resources will start getting created... you can click on Deployments _(under Settings navigation bar)_ in the Resource Group to review the deployment status.
 26. ![](/uploads/deploycheck-azureoptimizationengine.gif)
 
 #### Additional Recommended Reading

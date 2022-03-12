@@ -262,6 +262,12 @@ A lot of the runbooks, such as the Log Analytics workspace ID, link up to Azure 
 
 ![](/uploads/aoe-variables.png)
 
+##### Azure Automation - Schedules
+
+Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC, you can update these to match how often you want to run.
+
+![](/uploads/aoe-schedules.png)
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

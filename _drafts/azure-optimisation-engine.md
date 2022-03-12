@@ -182,6 +182,38 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
    * Create a policy assignment, and assign it to the subscription
 5. Just update the variables to match your setup
 
+       #requires -Version 1.0
+       # Variables
+       #Enter your subscription name
+       $subscriptionName = 'luke.geek.nz'
+       #Enter the name of yuour 
+       $policyDisplayName = 'Deploy - Log Analytics' #Cant Exceed 24 characters
+       $location = 'australiaeast'
+       $resourceGroup = 'aoegeek-rg'
+       $UsrIdentityName = 'AOE_ManagedIdentityUsr'
+       $param = @{
+         logAnalytics = 'aoegeek-la'
+       }
+       # Get a reference to the subscription that will be the scope of the assignment
+       $sub = Get-AzSubscription -SubscriptionName $subscriptionName
+       $subid = $sub.Id
+       #Creates User Managed identity 
+       $AzManagedIdentity = New-AzUserAssignedIdentity -ResourceGroupName $resourceGroup -Name $UsrIdentityName
+       #Adds Contributor rights to User Managed identity to Subscription
+       #Waits 10 seconds to allow for Azure AD to replicate and recognise Managed identity has been created.
+       Start-Sleep -Seconds '10'
+       #Assigns role assignement to managed identity
+        New-AzRoleAssignment -Objectid $AzManagedIdentity.PrincipalId -scope ('/subscriptions/' + $subid ) -RoleDefinitionName 'Log Analytics Contributor'
+       # Get a reference to the built-in policy definition that will be assigned
+       $definition = Get-AzPolicyDefinition | Where-Object -FilterScript {
+         $_.Properties.DisplayName -eq 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' 
+       }
+       # Create the policy assignment with the built-in definition against your subscription
+       New-AzPolicyAssignment -Name $policyDisplayName -DisplayName $policyDisplayName -Scope ('/subscriptions/' + $subid ) -PolicyDefinition $definition -IdentityType 'UserAssigned'  -IdentityId $AzManagedIdentity.id -location $location -PolicyParameterObject $param
+       #Creates R3mediation task, to deploy the extension to the VM
+       $policyAssignmentID = Get-AzPolicyAssignment -Name $policyDisplayName | Select-Object -Property PolicyAssignmentId 
+       Start-AzPolicyRemediation -Name 'Deploy - LA Agent' -PolicyAssignmentId $policyAssignmentID.PolicyAssignmentId -ResourceDiscoveryMode ReEvaluateCompliance
+
 _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs, although this policy may be replaced by the: Configure Windows virtual machines to run Azure Monitor Agent policy. Although I haven't personally tested it yet, the same script above can be modified to suit._
 
 ##### Onboard Azure VMs to Log Analytics using the Azure Portal

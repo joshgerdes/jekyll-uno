@@ -167,7 +167,7 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 
 ##### Onboard Azure VMs to Log Analytics using Azure Policy and PowerShell
 
-Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy.
+Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy. This is required if you want to get Azure Advisor Virtual Machine right-size recommendations augmented with guest OS metrics. If you don't collect metrics from the Virtual Machines, you will still have a fully functional Optimization Engine, with many recommendations, but the Advisor Virtual Machine right-size ones will be served as is.
 
 1. Open **PowerShell** and **login** to **Azure** using: Connect-AzAccount
 2. **Connect to** your Azure **subscription** that contains the Virtual Machines you want to onboard to Log Analytics
@@ -217,6 +217,8 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
 _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs, although this policy may be replaced by the: Configure Windows virtual machines to run Azure Monitor Agent policy. Although I haven't personally tested it yet, the same script above can be modified to suit._
 
 ##### Onboard Azure VMs to Log Analytics using the Azure Portal
+
+If you do not want to onboard VMs with Policy, you can do it manually via the Azure Portal.
 
 1. Open **Azure Portal**
 2. Navigate to [**Log Analytic Workspaces**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytic Workspaces")

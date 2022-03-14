@@ -363,6 +363,10 @@ They can be easily accessed in the Azure Portal.
 
 ###### Resource Inventory - Virtual Machines
 
+![](/uploads/aoe-workbookresourceinventory_virtualmachines.png)
+
+###### Resource Inventory - Virtual Machines
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

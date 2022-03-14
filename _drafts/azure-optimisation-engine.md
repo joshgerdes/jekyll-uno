@@ -446,6 +446,8 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 
 ###### PowerBI - Operational Excellence
 
+![](/uploads/aoe-powerbi_operationalexcellencepng.png)
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

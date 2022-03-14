@@ -440,6 +440,10 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 
 ![](/uploads/aoe-powerbi_ha.png)
 
+###### PowerBI - Security
+
+![](/uploads/aoe-powerbi_security.png)
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

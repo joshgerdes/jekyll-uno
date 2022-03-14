@@ -365,7 +365,17 @@ They can be easily accessed in the Azure Portal.
 
 ![](/uploads/aoe-workbookresourceinventory_virtualmachines.png)
 
-###### Resource Inventory - Virtual Machines
+###### Resource Inventory - Virtual Machine ScaleSets
+
+![](/uploads/aoe-workbookresourceinventory_virtualmachinescaletset.png)
+
+###### Resource Inventory - Virtual Machine ScaleSets Disks
+
+![](/uploads/aoe-workbookresourceinventory_virtualmachinescaletsetdisks.png)
+
+###### Resource Inventory - Virtual Networks
+
+![](/uploads/aoe-workbookresourceinventory_virtualnetworks.png)
 
 #### Additional Recommended Reading
 

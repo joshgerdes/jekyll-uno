@@ -17,7 +17,7 @@ Today I will be covering the [Azure Optimization Engine](https://github.com/held
 
 _Note: Although I had initially planned on having this as a video, due to delay in receiving appropriate equipment, I have fallen to an article; however, I plan on making a video on this in the future; feel free to add/ask any questions in the comments section below, and I will make sure to cover them in any future video._
 
-![](/uploads/azurespringclean_2022_aoe.png)
+![#AzureSpringClean - Azure Optimization Engine](/uploads/azurespringclean_2022_aoe.png "#AzureSpringClean - Azure Optimization Engine")
 
 ### Overview
 

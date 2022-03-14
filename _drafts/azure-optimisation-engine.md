@@ -135,7 +135,7 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 
  1. In your favourite web browser, **navigate** to the [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository.
  2. Select **Code**, **Download Zip**
- 3. ![](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png)
+ 3. ![Azure Optimization Engine - GitHub](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png "Azure Optimization Engine - GitHub")
  4. **Download** and **extract** the ZIP file to a location you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
  5. Open PowerShell _(or Windows Terminal)_
  6. Because the scripts were downloaded from the internet, we will need to **Unblock** these so that we can run them, open PowerShell and run the **script** below _(changing your path to the path that the files were extracted)_
@@ -143,24 +143,24 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
         Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
  7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
  8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
- 9. ![](/uploads/2022-03-12-09_48_40-plex.png)
+ 9. ![Windows Terminal -\\Deploy-AzureOptimizationEngine.ps1](/uploads/2022-03-12-09_48_40-plex.png "Windows Terminal -\Deploy-AzureOptimizationEngine.ps1")
 10. A browser window will then popup, **authenticate to Azure** _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
 11. Once authentication, you will need to **confirm** the Azure **subscription** you want to deploy Azure Optimization Engine to.
-12. ![](/uploads/aoe-selectazsubscription.png)
+12. ![Azure Optimization Engine - Select Subscription](/uploads/aoe-selectazsubscription.png "Azure Optimization Engine - Select Subscription")
 13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter, you can manually name each resource); in_ my case, my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organization/use-case as you may run into issues with the name already being used.
-14. ![](/uploads/aoe-selectazprefix.png)
+14. ![Azure Optimization Engine - Select Region](/uploads/aoe-selectazprefix.png "Azure Optimization Engine - Select Region")
 15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource; I am creating this from fresh, so I will choose **'N.**'
-16. ![](/uploads/aoe-selectazloganalyticworkspace.png)
+16. ![Azure Log Analytics](/uploads/aoe-selectazloganalyticworkspace.png "Azure Log Analytics")
 17. The Azure Optimization **Engine will now check that the names and resources are available** to be deployed to your subscriptions and resources _(nothing is deployed during this stage - if there is an error, you can fix the issue and go back)_.
 18. Once validation has passed, **select** the **region** that Azure Optimization will be deployed to; I will deploy to australiaeast, so I choose 1.
 19. Azure Optimization Engine now **requires** the **SQL Admin** username; for the SQL server and database it will create, I will go with: sqladmin
-20. ![](/uploads/aoe-selectlocationsql.png)
+20. ![Azure Optimization Engine - Region](/uploads/aoe-selectlocationsql.png "Azure Optimization Engine - Region")
 21. Now enter the **password** for the **sqladmin** account and press Enter
 22. Verify that everything is correct, then press **Y** to deploy Azure Optimization Engine!
-23. ![](/uploads/deploy-azureoptimizationengine.gif)
+23. ![Windows Terminal - Deploy Azure Optimization Engine](/uploads/deploy-azureoptimizationengine.gif "Windows Terminal - Deploy Azure Optimization Engine")
 24. Deployment could take 10-25 minutes... _(mine took 22 minutes and 51 seconds)_
 25. While leaving the PowerShell window open, log into the Azure Portal; you should now have a new Resource Group, and your resources will start getting created... you can click on Deployments _(under Settings navigation bar)_ in the Resource Group to review the deployment status.
-26. ![](/uploads/deploycheck-azureoptimizationengine.gif)
+26. ![Azure Portal - Deployments](/uploads/deploycheck-azureoptimizationengine.gif "Azure Portal - Deployments")
 27. If you notice a failure, in the Deployment tab for: 'PolicyDeployment' you can ignore this, as it may have failed if the SQL Server hasn't been provisioned yet; once it has been provisioned, you can navigate back to this failed deployment and click 'Redeploy', to deploy a SQL Security Alert policy.
 
 _Note: The Azure SQL database, will have the Public IP from the location the script was deployed from, whitelisted on the Azure SQL database, you may need to adjust this depending on your requirements._
@@ -227,7 +227,7 @@ If you do not want to onboard VMs with Policy, you can do it manually via the Az
 3. **Click on** the Log Analytic **workspace** that was provisioned for Azure Optimization Engine
 4. Navigate to **Virtual Machines** _(under Workspace Data Sources)_
 5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed. Repeat for any further Virtual Machines.
-6. ![](/uploads/aoe-2019vmgen1_connectla.png)
+6. ![Log Analytics - Connect VM](/uploads/aoe-2019vmgen1_connectla.png "Log Analytics - Connect VM")
 
 ##### Setup Log Analytic Performance Counters
 
@@ -241,7 +241,7 @@ Now that we have Virtual Machines reporting to our Log Analytic instance, it's t
        Install-Module -Name Az.OperationalInsights
 4. Then run: .**\\Setup-LogAnalyticsWorkspaces.ps1**
 5. The script will then go through all Log Analytic workspaces that you have access to and check for performance counters.
-6. ![](/uploads/deploycheck-loganalytics.gif)
+6. ![Windows PowerShell - \\Setup-LogAnalyticsWorkspaces.ps1](/uploads/deploycheck-loganalytics.gif "Windows PowerShell - \Setup-LogAnalyticsWorkspaces.ps1")
 7. If they are missing from the Log Analytics workspace, then you can run:
 
        ./Setup-LogAnalyticsWorkspaces.ps1 -AutoFix
@@ -265,7 +265,7 @@ We are going to grant the Azure Automation account 'Global Reader' rights manual
  2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts")
  3. **Open** your Azure Optimisation Engine **automation account**
  4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
- 5. ![](/uploads/aoe-managedidentityazautomate.png)
+ 5. ![Azure Automation - Identity](/uploads/aoe-managedidentityazautomate.png "Azure Automation - Identity")
  6. **Copy** the **object ID**
  7. Now navigate to [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Azure Active Directory")
  8. Click on **Roles and Administrators**
@@ -318,23 +318,23 @@ Looking at the runbooks deployed, you can get a sense of what Azure Optimization
 
 A lot of the runbooks, such as the Log Analytics workspace ID, link up to Azure Automation variables, such as this period in Days to look back for Advisor recommendations, by default, this is '7' but you can change this variable to suit your organisation's needs.
 
-![](/uploads/aoe-variables.png)
+![Azure Automation - Runbooks & Automation](/uploads/aoe-variables.png "Azure Automation - Runbooks & Automation")
 
 ##### Azure Automation - Schedules
 
 Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC.
 
-![](/uploads/aoe-schedules.png)
+![Azure Automation - Schedules](/uploads/aoe-schedules.png "Azure Automation - Schedules")
 
 When making changes to these schedules _(or moving the Runbooks to be run from a Hybrid worker)_, it is recommended to use the Reset-AutomationSchedules.ps1 script. These times need to be in UTC.
 
-![](/uploads/update-automationschedules.gif)
+![Terminal - Reset-AutomationSchedules.ps1](/uploads/update-automationschedules.gif "Terminal - Reset-AutomationSchedules.ps1")
 
 ##### Azure Automation - Credentials
 
 When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the Runbooks in the Azure Automation credential pane.
 
-![](/uploads/aoe-credentials.png)
+![Azure Automation - Credentials](/uploads/aoe-credentials.png "Azure Automation - Credentials")
 
 #### View Recommendations
 
@@ -356,32 +356,32 @@ They can be easily accessed in the Azure Portal.
 2. Navigate to [**Log Analytics Workspace**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
 3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
 4. Click on: **Workbooks** filter at the top to display the 3 Azure Optimization Engine
-5. ![](/uploads/aoe-displayworkbooks.png)
+5. ![Log Analtics - Workbooks](/uploads/aoe-displayworkbooks.png "Log Analtics - Workbooks")
 6. After a few days of collecting data, you should now be able to see data like below.
 
 ###### Resource Inventory - General
 
-![](/uploads/aoe-workbookresourceinventory.png)
+![Resource Inventory - General](/uploads/aoe-workbookresourceinventory.png "Resource Inventory - General")
 
 ###### Resource Inventory - Virtual Machines
 
-![](/uploads/aoe-workbookresourceinventory_virtualmachines.png)
+![Resource Inventory - Virtual Machines](/uploads/aoe-workbookresourceinventory_virtualmachines.png "Resource Inventory - Virtual Machines")
 
 ###### Resource Inventory - Virtual Machine ScaleSets
 
-![](/uploads/aoe-workbookresourceinventory_virtualmachinescaletset.png)
+![Resource Inventory - Virtual Machine ScaleSets](/uploads/aoe-workbookresourceinventory_virtualmachinescaletset.png "Resource Inventory - Virtual Machine ScaleSets")
 
 ###### Resource Inventory - Virtual Machine ScaleSets Disks
 
-![](/uploads/aoe-workbookresourceinventory_virtualmachinescaletsetdisks.png)
+![Resource Inventory - Virtual Machine ScaleSets Disks](/uploads/aoe-workbookresourceinventory_virtualmachinescaletsetdisks.png "Resource Inventory - Virtual Machine ScaleSets Disks")
 
 ###### Resource Inventory - Virtual Networks
 
-![](/uploads/aoe-workbookresourceinventory_virtualnetworks.png)
+![Resource Inventory - Virtual Networks](/uploads/aoe-workbookresourceinventory_virtualnetworks.png "Resource Inventory - Virtual Networks")
 
 ###### Identities and Roles - Overview
 
-![](/uploads/aoe-workbookaad_overview.png)
+![Identities and Roles - Overview](/uploads/aoe-workbookaad_overview.png "Identities and Roles - Overview")
 
 ##### Power BI
 
@@ -393,7 +393,7 @@ The Optimization Engine already has a starter PowerBI file, which pulls data fro
 
 1. Open Microsoft Store and search for: [**Power BI Desktop**](https://aka.ms/pbidesktopstore " Microsoft Power BI Desktop")
 2. Click **Get**
-3. ![](/uploads/microsoft-store-powerbidesktop.png)
+3. ![Power BI Desktop](/uploads/microsoft-store-powerbidesktop.png "Power BI Desktop")
 4. Once Downloaded, click **Open**
 
 ###### Obtain Azure SQL Information
@@ -404,12 +404,12 @@ In order to connect PowerBI to the Azure SQL database, we need to know the URL o
  2. Navigate to [**SQL Servers**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2Fservers "Azure Portal - SQL servers")
  3. Click on the SQL server created earlier, under the Security heading click on **Firewall and Virtual Networks**
  4. Under: Client IP address, make sure your public IP is added and click **Save**
- 5. ![](/uploads/aoe-sql-server-firewall.png)
+ 5. ![Azure SQL - Virtual Network](/uploads/aoe-sql-server-firewall.png "Azure SQL - Virtual Network")
  6. Now that we have verified/added our client IP, we need to get the SQL **database** _(not server)_ URL
  7. Click on **Overview**
  8. **Click** on the _aoeoptimization_ **database** _(under Available resources, down the bottom)_
  9. Click on **Copy to Clipboard** for the **server Name**/URL
-10. ![](/uploads/aoe-sql-database-name.png)
+10. ![Azure SQL - Database URL](/uploads/aoe-sql-database-name.png "Azure SQL - Database URL")
 
 ###### Open PowerBI Desktop File
 
@@ -430,23 +430,23 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 
 ###### PowerBI - Overview
 
-![](/uploads/aoe-powerbi_overview.png)
+![PowerBI - Overview](/uploads/aoe-powerbi_overview.png "PowerBI - Overview")
 
 ###### PowerBI - Cost
 
-![](/uploads/aoe-powerbi_cost.png)
+![PowerBI - Cost](/uploads/aoe-powerbi_cost.png "PowerBI - Cost")
 
 ###### PowerBI - High Availability
 
-![](/uploads/aoe-powerbi_ha.png)
+![PowerBI - High Availability](/uploads/aoe-powerbi_ha.png "PowerBI - High Availability")
 
 ###### PowerBI - Security
 
-![](/uploads/aoe-powerbi_security.png)
+![PowerBI - Security](/uploads/aoe-powerbi_security.png "PowerBI - Security")
 
 ###### PowerBI - Operational Excellence
 
-![](/uploads/aoe-powerbi_operationalexcellencepng.png)
+![PowerBI - Operational Excellence](/uploads/aoe-powerbi_operationalexcellencepng.png "PowerBI - Operational Excellence")
 
 **Congratulations! You have now successfully stood up and configured Azure Optimization Engine!** 
 

@@ -396,12 +396,29 @@ The Optimization Engine already has a starter PowerBI file, which pulls data fro
 3. ![](/uploads/microsoft-store-powerbidesktop.png)
 4. Once Downloaded, click **Open**
 
+###### Obtain Azure SQL Information
+
+In order to connect PowerBI to the Azure SQL database, we need to know the URL of the database and make sure our IP has been opened on the Azure SQL Firewall.
+
+1. Open **Azure Portal**
+2. Navigate to [**SQL Servers**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2Fservers "Azure Portal - SQL servers")
+3. Click on the SQL server created earlier, under the Security heading click on **Firewall and Virtual Networks**
+4. Under: Client IP address, make sure your public IP is added
+
 ###### Open PowerBI Desktop File
 
 Now that we have PowerBI Desktop installed, it's time to open: AzureOptimizationEngine.pbix. This PowerBI file is located in the Views folder of the Azure Optimization Engine repository.
 
-1. **Open**: **AzureOptimizationEngine.pbix** in PowerBI Desktop
-2. 
+ 1. **Open**: **AzureOptimizationEngine.pbix** in PowerBI Desktop
+ 2. On the Home page ribbon, click on **Transform Data**
+ 3. Click **Data source settings**
+ 4. Click **Change Source**
+ 5. **Change** the default **SQL server** of aoedevgithub-sql.database.windows.net to your SQL database, copied earlier.
+ 6. Click **Ok**
+ 7. Click Ok and press **Apply Changes**
+ 8. It will prompt for credentials, click on **Database**
+ 9. Enter in your SQLAdmin details entered as part of the Azure Optimization Engine setup
+10. Click **Connect**
 
 #### Additional Recommended Reading
 

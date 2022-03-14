@@ -434,7 +434,7 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 
 ###### PowerBI - Cost
 
-![](/uploads/aoe-powerbi_cost.jpg)
+![](/uploads/aoe-powerbi_cost.png)
 
 #### Additional Recommended Reading
 

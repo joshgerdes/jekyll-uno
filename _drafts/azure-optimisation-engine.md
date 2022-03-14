@@ -163,6 +163,8 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 26. ![](/uploads/deploycheck-azureoptimizationengine.gif)
 27. If you notice a failure, in the Deployment tab for: 'PolicyDeployment' you can ignore this, as it may have failed if the SQL Server hasn't been provisioned yet; once it has been provisioned, you can navigate back to this failed deployment and click 'Redeploy', to deploy a SQL Security Alert policy.
 
+_Note: The Azure SQL database, will have the Public IP from the location the script was deployed from, whitelisted on the Azure SQL database, you may need to adjust this depending on your requirements._
+
 #### Configure
 
 ##### Onboard Azure VMs to Log Analytics using Azure Policy and PowerShell

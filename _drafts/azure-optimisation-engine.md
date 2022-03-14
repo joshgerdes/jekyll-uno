@@ -76,6 +76,8 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Empty subnets
 >   * Orphaned NICs
 
+Feel free to skip to the Workbook and PowerBI sections to take a look at some of the out of box data and recommendations.
+
 The Azure Optimization Engine is battle-tested
 
 * Providing custom recommendations since Nov 2019

@@ -355,7 +355,7 @@ They can be easily accessed in the Azure Portal.
 1. Log in to the **Azure Portal**
 2. Navigate to [**Log Analytics Workspace**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
 3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
-4. Click on: **Workbooks** filter at the top to display the 3 Azure Optimization Engine 
+4. Click on: **Workbooks** filter at the top to display the 3 Azure Optimization Engine
 5. ![](/uploads/aoe-displayworkbooks.png)
 6. After a few days of collecting data, you should now be able to see data like below.
 
@@ -386,6 +386,13 @@ They can be easily accessed in the Azure Portal.
 ##### Power BI
 
 The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful. The Optimization Engine already has a starter PowerBI file, which pulls data from the database.
+
+###### Install PowerBI Desktop
+
+1. Open Microsoft Store and search for: [**Power BI Desktop**](https://aka.ms/pbidesktopstore " Microsoft Power BI Desktop")
+2. Click **Get**
+3. ![](/uploads/microsoft-store-powerbidesktop.png)
+4. Once Downloaded, click **Open**
 
 #### Additional Recommended Reading
 

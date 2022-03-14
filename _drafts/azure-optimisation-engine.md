@@ -355,6 +355,13 @@ They can be easily accessed in the Azure Portal.
 3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
 4. Click on: **Workbooks** filter at the top to display the 3 Azure Optimization Engine 
 5. ![](/uploads/aoe-displayworkbooks.png)
+6. After a few days of collecting data, you should now be able to see data like below.
+
+###### Resource Inventory - General
+
+![](/uploads/aoe-workbookresourceinventory.png)
+
+###### Resource Inventory - Virtual Machines
 
 #### Additional Recommended Reading
 

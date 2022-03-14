@@ -385,7 +385,7 @@ They can be easily accessed in the Azure Portal.
 
 ##### Power BI
 
-The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful, and the recommendations given from PowerBI and SQL. 
+The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful, and the recommendations given from PowerBI and SQL.
 
 The Optimization Engine already has a starter PowerBI file, which pulls data from the database.
 
@@ -425,6 +425,16 @@ Now that we have PowerBI Desktop installed, it's time to open: AzureOptimization
  8. It will prompt for credentials, click on **Database**
  9. Enter in your SQLAdmin details entered as part of the Azure Optimization Engine setup
 10. Click **Connect**
+
+After PowerBI updates its database and queries, your PowerBI report should now be populated with data like below.
+
+###### PowerBI - Overview
+
+![](/uploads/aoe-powerbi_overview.png)
+
+###### PowerBI - Cost
+
+![](/uploads/aoe-powerbi_cost.jpg)
 
 #### Additional Recommended Reading
 

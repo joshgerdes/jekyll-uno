@@ -403,7 +403,12 @@ In order to connect PowerBI to the Azure SQL database, we need to know the URL o
 1. Open **Azure Portal**
 2. Navigate to [**SQL Servers**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2Fservers "Azure Portal - SQL servers")
 3. Click on the SQL server created earlier, under the Security heading click on **Firewall and Virtual Networks**
-4. Under: Client IP address, make sure your public IP is added
+4. Under: Client IP address, make sure your public IP is added and click **Save**
+5. ![](/uploads/aoe-sql-server-firewall.png)
+6. Now that we have verified/added our client IP, we need to get the SQL **database** _(not server)_ URL
+7. Click on Overview
+8. Click on the aoeoptimization database _(under Available resources, down the bottom)_
+9. 
 
 ###### Open PowerBI Desktop File
 

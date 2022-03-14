@@ -385,7 +385,9 @@ They can be easily accessed in the Azure Portal.
 
 ##### Power BI
 
-The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful. The Optimization Engine already has a starter PowerBI file, which pulls data from the database.
+The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful, and the recommendations given from PowerBI and SQL. 
+
+The Optimization Engine already has a starter PowerBI file, which pulls data from the database.
 
 ###### Install PowerBI Desktop
 

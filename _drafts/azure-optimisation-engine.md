@@ -394,6 +394,13 @@ The true power of the Azure Optimization engine, is the data stored in the SQL d
 3. ![](/uploads/microsoft-store-powerbidesktop.png)
 4. Once Downloaded, click **Open**
 
+###### Open PowerBI Desktop File
+
+Now that we have PowerBI Desktop installed, it's time to open: AzureOptimizationEngine.pbix. This PowerBI file is located in the Views folder of the Azure Optimization Engine repository.
+
+1. **Open**: **AzureOptimizationEngine.pbix** in PowerBI Desktop
+2. 
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

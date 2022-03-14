@@ -377,6 +377,14 @@ They can be easily accessed in the Azure Portal.
 
 ![](/uploads/aoe-workbookresourceinventory_virtualnetworks.png)
 
+###### Identities and Roles - Overview
+
+![](/uploads/aoe-workbookaad_overview.png)
+
+##### Power BI
+
+There are x3 Azure Log Analytics workbooks included in the Azure Optimization Engine, these are as follows:
+
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:

@@ -320,7 +320,7 @@ A lot of the runbooks, such as the Log Analytics workspace ID, link up to Azure 
 
 ##### Azure Automation - Schedules
 
-Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC. 
+Along with containing the variables and configurations used by the Runbooks, it also contains the schedules for the ingest of data into the storage account and SQL databases, most of these are Daily, but schedules such as ingesting from the Azure Advisor are weekly, by default these times are in UTC.
 
 ![](/uploads/aoe-schedules.png)
 
@@ -330,7 +330,7 @@ When making changes to these schedules _(or moving the Runbooks to be run from a
 
 ##### Azure Automation - Credentials
 
-When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the runbooks in the Azure Automation credential pane.
+When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the Runbooks in the Azure Automation credential pane.
 
 ![](/uploads/aoe-credentials.png)
 
@@ -353,6 +353,8 @@ They can be easily accessed in the Azure Portal.
 1. Log in to the **Azure Portal**
 2. Navigate to [**Log Analytics Workspace**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytics Workspace")
 3. Click on the Log Analytics workspace you set up for Azure Optimization Engine earlier and click on **Workbooks** _(under General)_.
+4. Click on: **Workbooks** filter at the top to display the 3 Azure Optimization Engine 
+5. ![](/uploads/aoe-displayworkbooks.png)
 
 #### Additional Recommended Reading
 

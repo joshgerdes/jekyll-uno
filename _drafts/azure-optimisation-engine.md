@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
-This post is part of [Azure Spring Clean](https://www.azurespringclean.com/ "Azure Spring Clean") 2022!
+This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/) which is a community event focused on Azure management topics from March 14-18, 2022. Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organizing this event.
 
 This article, along with others of its kind _(Articles, Videos etc.),_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
@@ -450,7 +450,7 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 
 ![PowerBI - Operational Excellence](/uploads/aoe-powerbi_operationalexcellencepng.png "PowerBI - Operational Excellence")
 
-**Congratulations! You have now successfully stood up and configured Azure Optimization Engine!** 
+**Congratulations! You have now successfully stood up and configured Azure Optimization Engine!**
 
 #### Additional Recommended Reading
 

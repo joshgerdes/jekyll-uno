@@ -1,5 +1,5 @@
 ---
-date: 2022-03-06T00:00:00.000+13:00
+date: 2022-03-16 00:00:00 +1300
 title: Azure Optimization Engine
 author: Luke
 categories:

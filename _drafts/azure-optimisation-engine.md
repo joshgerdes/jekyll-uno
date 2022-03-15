@@ -9,7 +9,9 @@ header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
-This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/) which is a community event focused on Azure management topics from March 14-18, 2022. Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organizing this event.
+This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/) which is a community event focused on Azure management topics from March 14-18, 2022. 
+
+Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organizing this event.
 
 This article, along with others of its kind _(Articles, Videos etc.),_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
@@ -21,7 +23,7 @@ Today I will be covering the [Azure Optimization Engine](https://github.com/held
 
 > The Azure Optimization Engine _(AOE)_ is an extensible solution designed to generate optimization recommendations for your Azure environment, like a fully customizable Azure Advisor.
 >
-> The first custom recommendations use-case covered by this tool was augmenting Azure Advisor Cost recommendations, particularly Virtual Machine right-sizing, with a fit score based on VM metrics and properties.
+> The first custom recommendations use-case covered by this tool was augmenting Azure Advisor Cost recommendations, particularly Virtual Machine right-sizing, with a fit score based on VM _(Virtual Machine)_ metrics and properties.
 
 The [Azure Optimization Engine]() can…
 

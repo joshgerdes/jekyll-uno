@@ -9,9 +9,9 @@ header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
-This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/) which is a community event focused on Azure management topics from March 14-18, 2022. 
+This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/), which is a community event focused on Azure management topics from March 14-18, 2022. 
 
-Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organizing this event.
+Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organising this event.
 
 This article, along with others of its kind _(Articles, Videos etc.),_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
@@ -31,17 +31,17 @@ The [Azure Optimization Engine]() can…
 * Augment Azure Advisor recommendations with richer details that better drive action
 * Add fit score to recommendations.
 * Add historical perspective to recommendations _(the older the recommendation, the higher the chances to remediate it)_
-* Drive continuous automated optimization
+* Drive continuous automated optimisation
 
-Azure Optimization Engine combines multiple data sources to give you better data-driven decisions and recommendations, outside of that usually deployed by the inbuilt Azure Advisor, example use-cases and data sources can be seen below:
+Azure Optimisation Engine combines multiple data sources to give you better data-driven decisions and recommendations, outside of that usually deployed by the inbuilt Azure Advisor, example use-cases and data sources can be seen below:
 
 * Azure Resource Graph _(Virtual Machine and Managed Disks properties)_
 * Azure Monitor Logs _(Virtual Machine performance metrics)_
 * Azure Consumption _(consumption/billing usage details events)_
 * Extracts data periodically to build a recommendations history
-* Joins and queries data in an analytics-optimized repository _(Log Analytics)_
+* Joins and queries data in an analytics-optimised repository _(Log Analytics)_
 * Virtual Machine performance metrics collected with Log Analytics agent
-* Can leverage existing customer set-up
+* Can leverage existing customer setup
 * Requires only a few metrics collected with a frequency >= 60 seconds
 
 > Besides collecting **all Azure Advisor recommendations**, AOE includes other custom recommendations that you can tailor to your needs:
@@ -76,9 +76,9 @@ Azure Optimization Engine combines multiple data sources to give you better data
 >   * Empty subnets
 >   * Orphaned NICs
 
-Feel free to skip to the Workbook and PowerBI sections to take a look at some of the out of box data and recommendations.
+Feel free to skip to the Workbook and PowerBI sections to look at some of the outs of box data and recommendations.
 
-The Azure Optimization Engine is battle-tested
+The Azure Optimisation Engine is battle-tested
 
 * Providing custom recommendations since Nov 2019
 * Serving Azure customers worldwide
@@ -87,9 +87,9 @@ The Azure Optimization Engine is battle-tested
 * Flexibility options include _(multi-subscription and multi-tenant capability)_
 * Based on cheap services _(Azure Automation, Storage, small SQL Database_)
 
-A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimization opportunities, coming from both Azure Advisor and custom recommendations included in the engine.
+A few hours after setting up the engine, you will get access to a Power BI dashboard and Log Analytic Workbooks with all Azure optimisation opportunities, coming from both Azure Advisor and tailored recommendations included in the engine.
 
-These recommendations are then updated every 7 days.
+These recommendations are then updated every seven days.
 
 > It is worth noting that Azure Optimisation Engine is **NOT** an official **Microsoft Product,** and as such is under no offical support, it was created and maintened by: Hélder Pinto, a Senior Customer Engineer for Microsoft and would like to take the opportunity to thank Hélder the amazing work he is doing with this product on a continous basis, and giving me his blessing to write this article, on which he has already done an amazing job documenting on Github.
 
@@ -97,7 +97,7 @@ These recommendations are then updated every 7 days.
 
 ![Azure Optimization Engine Architecture](/uploads/architecture.jpg "Azure Optimization Engine Architecture")
 
-Azure Optimization Engine runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics and is supplemented by a storage account to store JSON and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
+Azure Optimization Engine runs on top of Azure Automation _(Runbooks for each data source)_ and Log Analytics. It is supplemented by a storage account to store JSON and Azure SQL database to help control ingestion _(last processed blob and lines processed)_.
 
 ### Install
 
@@ -118,7 +118,7 @@ During deployment, you'll be asked several questions. It would be best if you pl
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
 
-If the deployment fails for some reason, you can simply repeat it, as it is idempotent _(i.e. they can be applied multiple times without changing the result)_. The exact process is used to upgrade a previous deployment with the latest version. You have to keep the same deployment options, so make sure you document them.
+If the deployment fails for some reason, you can repeat it, as it is idempotent _(i.e. they can be applied multiple times without changing the result)_. The exact process is used to upgrade a previous deployment with the latest version. You have to keep the same deployment options, so make sure you document them.
 
 We will now go through and install the prerequisites from scratch; as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
 
@@ -143,15 +143,15 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
  6. Because the scripts were downloaded from the internet, we will need to **Unblock** these so that we can run them, open PowerShell and run the **script** below _(changing your path to the path that the files were extracted)_
 
         Get-ChildItem -r 'C:\temp\AzureOptimizationEngine-master\AzureOptimizationEngine-master' | Unblock-File
- 7. Now that the script and associated files have been unblocked, **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
+ 7. Now that the script and associated files have been unblocked **change** the **directory** to the **location** of the Deploy-AzureOptimizationEngine.ps1 **file**.
  8. Run: **.\\Deploy-AzureOptimizationEngine.ps1**
  9. ![Windows Terminal -\\Deploy-AzureOptimizationEngine.ps1](/uploads/2022-03-12-09_48_40-plex.png "Windows Terminal -\Deploy-AzureOptimizationEngine.ps1")
 10. A browser window will then popup, **authenticate to Azure** _(connect to the Azure tenant that has access to the Azure subscription you wish to set up Azure Optimization Engine on)_.
-11. Once authentication, you will need to **confirm** the Azure **subscription** you want to deploy Azure Optimization Engine to.
+11. Once authentication, you will need to **confirm** the Azure **subscription** to which you want to deploy Azure Optimization Engine.
 12. ![Azure Optimization Engine - Select Subscription](/uploads/aoe-selectazsubscription.png "Azure Optimization Engine - Select Subscription")
-13. Once your subscription is selected, it's time to **select** a **naming prefix** for your resources _(if you select Enter, you can manually name each resource); in_ my case, my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organization/use-case as you may run into issues with the name already being used.
+13. Once your subscription is selected, it's time to **choose** a **naming prefix** for your resources _(if you choose Enter, you can manually name each resource); in_ my case, my prefix will be: _aoegeek._ Because Azure Optimization Engine will be creating resources that are globally available, make sure you select a prefix that suits your organisation/use-case as you may run into issues with the name already being used.
 14. ![Azure Optimization Engine - Select Region](/uploads/aoe-selectazprefix.png "Azure Optimization Engine - Select Region")
-15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource; I am creating this from fresh, so I will choose **'N.**'
+15. If you have an **existing Log Analytics** workspace that your Virtual Machines and resources are connected to, you can specify 'Y' here to select your existing resource; I am creating this from fresh so that I will choose **'N.**'
 16. ![Azure Log Analytics](/uploads/aoe-selectazloganalyticworkspace.png "Azure Log Analytics")
 17. The Azure Optimization **Engine will now check that the names and resources are available** to be deployed to your subscriptions and resources _(nothing is deployed during this stage - if there is an error, you can fix the issue and go back)_.
 18. Once validation has passed, **select** the **region** that Azure Optimization will be deployed to; I will deploy to australiaeast, so I choose 1.
@@ -165,13 +165,13 @@ Now that we have the prerequisites installed! Let's set up Azure Optimization En
 26. ![Azure Portal - Deployments](/uploads/deploycheck-azureoptimizationengine.gif "Azure Portal - Deployments")
 27. If you notice a failure, in the Deployment tab for: 'PolicyDeployment' you can ignore this, as it may have failed if the SQL Server hasn't been provisioned yet; once it has been provisioned, you can navigate back to this failed deployment and click 'Redeploy', to deploy a SQL Security Alert policy.
 
-_Note: The Azure SQL database, will have the Public IP from the location the script was deployed from, whitelisted on the Azure SQL database, you may need to adjust this depending on your requirements._
+_Note: The Azure SQL database will have the Public IP from the location the script was deployed from, allowed on the Azure SQL database; you may need to adjust this depending on your requirements._
 
 #### Configure
 
 ##### Onboard Azure VMs to Log Analytics using Azure Policy and PowerShell
 
-Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy. This is required if you want to get Azure Advisor Virtual Machine right-size recommendations augmented with guest OS metrics. If you don't collect metrics from the Virtual Machines, you will still have a fully functional Optimization Engine, with many recommendations, but the Advisor Virtual Machine right-size ones will be served as is.
+Now that Azure Optimization has been installed, let's onboard our current and future Azure Virtual Machines to Azure Optimization Engine, using Azure Policy. This is required if you want to get Azure Advisor Virtual Machine right-size recommendations augmented with guest OS metrics. If you don't collect metrics from the Virtual Machines, you will still have a fully functional Optimisation Engine, with many recommendations, but the Advisor Virtual Machine right-size ones will be served as is.
 
 1. Open **PowerShell** and **login** to **Azure** using: Connect-AzAccount
 2. **Connect to** your Azure **subscription** that contains the Virtual Machines you want to onboard to Log Analytics
@@ -218,7 +218,7 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
        $policyAssignmentID = Get-AzPolicyAssignment -Name $policyDisplayName | Select-Object -Property PolicyAssignmentId 
        Start-AzPolicyRemediation -Name 'Deploy - LA Agent' -PolicyAssignmentId $policyAssignmentID.PolicyAssignmentId -ResourceDiscoveryMode ReEvaluateCompliance
 
-_Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines, If you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs, although this policy may be replaced by the: Configure Windows virtual machines to run Azure Monitor Agent policy. Although I haven't personally tested it yet, the same script above can be modified to suit._
+_Note: The default 'Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines' policy doesn't currently support Gen 2 or Windows Server 2022 Virtual Machines; if you have these, then you can copy the Azure Policy definition and then make your own with the new imageSKUs, although this policy may be replaced by the: Configure Windows virtual machines to run Azure Monitor Agent policy. Although I haven't tested it yet, the same script above can be modified to suit._
 
 ##### Onboard Azure VMs to Log Analytics using the Azure Portal
 
@@ -233,7 +233,7 @@ If you do not want to onboard VMs with Policy, you can do it manually via the Az
 
 ##### Setup Log Analytic Performance Counters
 
-Now that we have Virtual Machines reporting to our Log Analytic instance, it's time to make sure we are collecting as much data as we need to give suitable recommendations, luckily a script has already been included in the Azure Optimization repository called '_Setup-LogAnalyticsWorkspaces.ps1_' to configure the performance counters.
+Now that we have Virtual Machines reporting to our Log Analytic instance, it's time to make sure we are collecting as much data as we need to give suitable recommendations, luckily a script has already been included in the Azure Optimisation repository called '_Setup-LogAnalyticsWorkspaces.ps1_' to configure the performance counters.
 
 1. Open **PowerShell** _(or Windows Terminal)_
 2. **Change** the **directory** to the **location** of the Setup-LogAnalyticsWorkspaces.ps1, in the root folder of the repository extracted earlier
@@ -334,7 +334,7 @@ When making changes to these schedules _(or moving the Runbooks to be run from a
 
 ##### Azure Automation - Credentials
 
-When we set up the Azure SQL database earlier, as part of the Azure Optimization setup, we configured the SQL Admin account and password, these credentials are stored and used by the Runbooks in the Azure Automation credential pane.
+When we set up the Azure SQL database earlier, as part of the Azure Optimisation setup, we configured the SQL Admin account and password, these credentials are stored and used by the Runbooks in the Azure Automation credential pane.
 
 ![Azure Automation - Credentials](/uploads/aoe-credentials.png "Azure Automation - Credentials")
 
@@ -387,9 +387,9 @@ They can be easily accessed in the Azure Portal.
 
 ##### Power BI
 
-The true power of the Azure Optimization engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful, and the recommendations given from PowerBI and SQL.
+The true power of the Azure Optimisation engine, is the data stored in the SQL database, using PowerBI you can pull the data into dashboards and make it more meaningful, and the recommendations given from PowerBI and SQL.
 
-The Optimization Engine already has a starter PowerBI file, which pulls data from the database.
+The Optimisation Engine already has a starter PowerBI file, which pulls data from the database.
 
 ###### Install PowerBI Desktop
 
@@ -458,5 +458,5 @@ After PowerBI updates its database and queries, your PowerBI report should now b
   1. [Part 1 - Solution Overview](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 1")
   2. [Part 2 - Collecting Data](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 2")
   3. [Part 3 - Generating & Viewing Recommendations](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 3")
-  4. [Part 4 - Automating Continous Optimization with the Azure Optimization Engine](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317 "Automating Continuous Optimization with the Azure Optimization Engine")
+  4. [Part 4 - Automating Continous Optimisation with the Azure Optimization Engine](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317 "Automating Continuous Optimization with the Azure Optimization Engine")
 * [Azure Optimization Engine Github - Usage instructions](https://github.com/helderpinto/AzureOptimizationEngine#usage-instructions "Azure Optimization Engine")

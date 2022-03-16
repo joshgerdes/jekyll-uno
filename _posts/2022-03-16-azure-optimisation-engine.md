@@ -10,13 +10,13 @@ header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 
 ---
-This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/), which is a community event focused on Azure management topics from March 14-18, 2022. 
+This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/){:target="_blank"}, which is a community event focused on Azure management topics from March 14-18, 2022. 
 
-Thanks to [Joe Carlyle](https://twitter.com/wedoazure) and [Thomas Thornton](https://twitter.com/tamstar1234) for putting in the time and organising this event.
+Thanks to [Joe Carlyle](https://twitter.com/wedoazure){:target="_blank"} and [Thomas Thornton](https://twitter.com/tamstar1234){:target="_blank"} for putting in the time and organising this event.
 
 This article, along with others of its kind _(Articles, Videos etc.),_ cover Azure Management topics such as Azure Monitor, Azure Cost Management, Azure Policy, Azure Security Principles or Azure Foundations!
 
-Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine").
+Today I will be covering the [Azure Optimization Engine](https://github.com/helderpinto/AzureOptimizationEngine "Azure Optimization Engine"){:target="_blank"}.
 
 ![#AzureSpringClean - Azure Optimization Engine](/uploads/azurespringclean_2022_aoe.png "#AzureSpringClean - Azure Optimization Engine")
 
@@ -106,15 +106,15 @@ Azure Optimization Engine runs on top of Azure Automation _(Runbooks for each da
 
 Taken directly from the Git repository readme, the prerequisite for Azure Optimization Engine are:
 
-* A supported Azure subscription _(see the_ [_FAQs_](https://github.com/helderpinto/AzureOptimizationEngine#faq) _on Github)_
-* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "Install the Azure Az PowerShell module") _(Azure Bicep support is not currently available but is being worked on)_.
-* [Microsoft.Graph.Authentication](https://docs.microsoft.com/en-us/graph/powershell/installation " Microsoft.Graph.Authentication ") and [Microsoft.Graph.Identity.DirectoryManagement](https://docs.microsoft.com/en-us/graph/powershell/installation "Microsoft.Graph.Identity.DirectoryManagement") PowerShell modules
+* A supported Azure subscription _(see the_ [_FAQs_](https://github.com/helderpinto/AzureOptimizationEngine#faq) _on Github){:target="_blank"}_
+* [Azure Powershell 6.6.0+](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "Install the Azure Az PowerShell module"){:target="_blank"} _(Azure Bicep support is not currently available but is being worked on)_.
+* [Microsoft.Graph.Authentication](https://docs.microsoft.com/en-us/graph/powershell/installation " Microsoft.Graph.Authentication "){:target="_blank"} and [Microsoft.Graph.Identity.DirectoryManagement](https://docs.microsoft.com/en-us/graph/powershell/installation "Microsoft.Graph.Identity.DirectoryManagement"){:target="_blank"} PowerShell modules
 * A user account with Owner permissions over the chosen subscription, so that the Automation Managed Identity is granted the required privileges over the subscription (Reader) and deployment resource group _(Contributor)_
 * _(Optional)_ A user account with at least Privileged Role Administrator permissions over the Azure AD tenant, so that the Managed Identity is granted the required privileges over Azure AD _(Global Reader)_
 
 During deployment, you'll be asked several questions. It would be best if you planned for the following:
 
-* Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_; otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md)_)_.
+* Whether you're going to reuse an existing Log Analytics Workspace or create a new one. **IMPORTANT**: you should ideally reuse a workspace where you have VMs onboarded and already sending performance metrics _(`Perf` table)_; otherwise, you will not fully leverage the augmented right-size recommendations capability. If this is not possible/desired for some reason, you can still manage to use multiple workspaces _(see_ [_Configuring Log Analytics workspaces_](https://github.com/helderpinto/AzureOptimizationEngine/blob/master/docs/configuring-workspaces.md){:target="_blank"}_)_.
 * An Azure subscription to deploy the solution _(if you're reusing a Log Analytics workspace, you must deploy into the same subscription the workspace is in)._
 * A unique name prefix for the Azure resources being created (if you have specific naming requirements, you can also choose resource names during deployment)
 * Azure region
@@ -123,7 +123,7 @@ If the deployment fails for some reason, you can repeat it, as it is idempotent 
 
 We will now go through and install the prerequisites from scratch; as in this article, I will be deploying the Azure Optimization Engine from our local workstation.
 
-You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Azure Cloud Shell")
+You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Azure Cloud Shell"){:target="_blank"}
 
 ##### Install Azure PowerShell & Microsoft Graph modules
 
@@ -136,7 +136,7 @@ You can also install from the [Azure Cloud Shell,](https://luke.geek.nz/azure/se
 
 Now that we have the prerequisites installed! Let's set up Azure Optimization Engine!
 
- 1. In your favourite web browser, **navigate** to the [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine") GitHub repository.
+ 1. In your favourite web browser, **navigate** to the [**AzureOptimizationEngine**](https://github.com/helderpinto/AzureOptimizationEngine "https://github.com/helderpinto/AzureOptimizationEngine"){:target="_blank"} GitHub repository.
  2. Select **Code**, **Download Zip**
  3. ![Azure Optimization Engine - GitHub](/uploads/2022-03-12-09_23_49-helderpinto_azureoptimizationengine_-the-azure-optimization-engine-is-an-extensi.png "Azure Optimization Engine - GitHub")
  4. **Download** and **extract** the ZIP file to a location you can easily navigate to in PowerShell (_I have extracted it to C:\\temp\\AzureOptimizationEngine-master\\AzureOptimizationEngine-master)_
@@ -181,7 +181,7 @@ Now that Azure Optimization has been installed, let's onboard our current and fu
        # Register the resource provider if it's not already registered
        Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
 4. The PowerShell script below will:
-   * Copies the built-in Azure Policy definition of [Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines](https://www.azadvertizer.net/azpolicyadvertizer/0868462e-646c-4fe3-9ced-a733534b6a2c.html?desc=compareJson&left=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.0.json&right=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.1.json " Azure Policy definition Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines ")
+   * Copies the built-in Azure Policy definition of [Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines](https://www.azadvertizer.net/azpolicyadvertizer/0868462e-646c-4fe3-9ced-a733534b6a2c.html?desc=compareJson&left=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.0.json&right=https%3A%2F%2Fwww.azadvertizer.net%2Fazpolicyadvertizerjson%2F0868462e-646c-4fe3-9ced-a733534b6a2c_2.0.1.json " Azure Policy definition Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines "){:target="_blank"}
    * Create a User-Managed Identity
    * Assign: Log Analytics contributor rights to a subscription scope
    * Create a policy assignment, and assign it to the subscription
@@ -226,7 +226,7 @@ _Note: The default 'Deploy - Configure Log Analytics extension to be enabled on 
 If you do not want to onboard VMs with Policy, you can do it manually via the Azure Portal.
 
 1. Open **Azure Portal**
-2. Navigate to [**Log Analytic Workspaces**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytic Workspaces")
+2. Navigate to [**Log Analytic Workspaces**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces "Log Analytic Workspaces"){:target="_blank"}
 3. **Click on** the Log Analytic **workspace** that was provisioned for Azure Optimization Engine
 4. Navigate to **Virtual Machines** _(under Workspace Data Sources)_
 5. Click on the Virtual Machine you want to link up to the Log Analytics workspace, and click **Connect -** this will trigger the Log Analytic extension and agent o be installed. Repeat for any further Virtual Machines.
@@ -265,12 +265,12 @@ _Could not grant role. If you want Azure AD-based recommendations, please grant 
 We are going to grant the Azure Automation account 'Global Reader' rights manually in the Azure Portal.
 
  1. Open **Azure Portal**
- 2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts")
+ 2. Navigate to [**Automation Accounts**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Automation Accounts"){:target="_blank"}
  3. **Open** your Azure Optimisation Engine **automation account**
  4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
  5. ![Azure Automation - Identity](/uploads/aoe-managedidentityazautomate.png "Azure Automation - Identity")
  6. **Copy** the **object ID**
- 7. Now navigate to [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Azure Active Directory")
+ 7. Now navigate to [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Azure Active Directory"){:target="_blank"}
  8. Click on **Roles and Administrators**
  9. Search for: **Global Reader**
 10. Select Global Reader and select **+ Add assignments**
@@ -394,7 +394,7 @@ The Optimisation Engine already has a starter PowerBI file, which pulls data fro
 
 ###### Install PowerBI Desktop
 
-1. Open Microsoft Store and search for: [**Power BI Desktop**](https://aka.ms/pbidesktopstore " Microsoft Power BI Desktop")
+1. Open Microsoft Store and search for: [**Power BI Desktop**](https://aka.ms/pbidesktopstore " Microsoft Power BI Desktop"){:target="_blank"}
 2. Click **Get**
 3. ![Power BI Desktop](/uploads/microsoft-store-powerbidesktop.png "Power BI Desktop")
 4. Once Downloaded, click **Open**
@@ -404,7 +404,7 @@ The Optimisation Engine already has a starter PowerBI file, which pulls data fro
 In order to connect PowerBI to the Azure SQL database, we need to know the URL of the database and make sure our IP has been opened on the Azure SQL Firewall.
 
  1. Open **Azure Portal**
- 2. Navigate to [**SQL Servers**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2Fservers "Azure Portal - SQL servers")
+ 2. Navigate to [**SQL Servers**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2Fservers "Azure Portal - SQL servers"){:target="_blank"}
  3. Click on the SQL server created earlier, under the Security heading click on **Firewall and Virtual Networks**
  4. Under: Client IP address, make sure your public IP is added and click **Save**
  5. ![Azure SQL - Virtual Network](/uploads/aoe-sql-server-firewall.png "Azure SQL - Virtual Network")
@@ -456,8 +456,8 @@ After PowerBI updates its database and queries, your PowerBI report should now b
 #### Additional Recommended Reading
 
 * _"Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization"_ blog post series:
-  1. [Part 1 - Solution Overview](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 1")
-  2. [Part 2 - Collecting Data](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 2")
-  3. [Part 3 - Generating & Viewing Recommendations](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 3")
-  4. [Part 4 - Automating Continous Optimisation with the Azure Optimization Engine](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317 "Automating Continuous Optimization with the Azure Optimization Engine")
-* [Azure Optimization Engine Github - Usage instructions](https://github.com/helderpinto/AzureOptimizationEngine#usage-instructions "Azure Optimization Engine")
+  1. [Part 1 - Solution Overview](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 1"){:target="_blank"}
+  2. [Part 2 - Collecting Data](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 2"){:target="_blank"}
+  3. [Part 3 - Generating & Viewing Recommendations](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796 "Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization – Part 3"){:target="_blank"}
+  4. [Part 4 - Automating Continous Optimisation with the Azure Optimization Engine](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317 "Automating Continuous Optimization with the Azure Optimization Engine"){:target="_blank"}
+* [Azure Optimization Engine Github - Usage instructions](https://github.com/helderpinto/AzureOptimizationEngine#usage-instructions "Azure Optimization Engine"){:target="_blank"}

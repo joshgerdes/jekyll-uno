@@ -339,7 +339,7 @@ When we set up the Azure SQL database earlier, as part of the Azure Optimisation
 
 ![Azure Automation - Credentials](/uploads/aoe-credentials.png "Azure Automation - Credentials")
 
-#### View Recommendations
+### View Recommendations
 
 It's worth noting, that because Azure Optimization Engine stores its data into Log Analytics and SQL, you can use languages such as KQL directly on the Log Analytics workspace to pull out any information you might need and develop integration into other toolsets.
 

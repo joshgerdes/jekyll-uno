@@ -26,7 +26,7 @@ Today I will be covering the [Azure Optimization Engine](https://github.com/held
 >
 > The first custom recommendations use-case covered by this tool was augmenting Azure Advisor Cost recommendations, particularly Virtual Machine right-sizing, with a fit score based on VM _(Virtual Machine)_ metrics and properties.
 
-The [Azure Optimization Engine]() can…
+The Azure Optimization Engine can…
 
 * Enable new custom recommendation types
 * Augment Azure Advisor recommendations with richer details that better drive action

@@ -5,7 +5,7 @@ author: Luke
 categories:
 - Azure
 permalink: /azure/azure-optimization-engine
-toc: false
+toc: true
 header:
   teaser: "/uploads/azurespringclean_2022_aoe.png"
 

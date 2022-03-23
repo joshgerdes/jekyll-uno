@@ -1,0 +1,21 @@
+{
+  "name": "The web3 stack",
+  "collection": [
+    {
+      "id": "1",
+      "category": "layer-1-blockchains",
+      "stacks": [
+        "ethereum",
+        "solana",
+        "cosmos",
+        "near",
+        "polkadot",
+        "avalanche",
+        "texos",
+        "celo",
+        "fantom",
+        "aurora"
+      ]
+    }
+  ]
+}

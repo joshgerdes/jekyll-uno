@@ -15,10 +15,10 @@ I recently, installed and configured a UDM-PRO at home, so now it's time to set 
 
 I am going to create a Virtual Network and Gateway resources using Azure Bicep, but feel free to skip ahead.
 
-My address range is as follows:
+My address range is as follows _(so make sure you adjust to match your own setup and IP ranges)_:
 
-| On-premises    | Azure       |
-| -------------- | ----------- |
+| On-premises | Azure |
+| --- | --- |
 | 192.168.1.0/24 | 10.0.0.0/16 |
 
 #### Prerequisites

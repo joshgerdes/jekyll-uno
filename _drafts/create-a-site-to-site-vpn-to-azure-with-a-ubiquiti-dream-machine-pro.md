@@ -25,3 +25,4 @@ My address range is as follows _(so make sure you adjust to match your own setup
 
 1. The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) for local editing
 2. An Azure subscription that you have at least contributor rights to
+3. Permissions to the UDM Pro to setup a new Network connection

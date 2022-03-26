@@ -13,7 +13,13 @@ The Ubiquiti [Dream Machine Pro](https://store.ui.com/collections/unifi-network-
 
 I recently, installed and configured a UDM-PRO at home, so now it's time to set up a site-to-vpn to my Microsoft Azure network.
 
-I am going to create a Virtual Network and Gateway resources using Azure Bicep, 
+I am going to create a Virtual Network and Gateway resources using Azure Bicep, but feel free to skip ahead.
+
+My address range is as follows:
+
+| On-premises    | Azure       |
+| -------------- | ----------- |
+| 192.168.1.0/24 | 10.0.0.0/16 |
 
 #### Prerequisites
 

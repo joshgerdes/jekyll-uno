@@ -110,3 +110,7 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
 After a few minutes, the VPN should become connected and you should be able to connect to devices on the Azure Network using their private IP address.
 
 If you have problems, make sure that the Gateway IPs line up and are correct, along with the pre-shared key.  You can also Pause the Network from the UDM-Pro and Resume to reinitiate the connection.
+
+You can also troubleshoot the VPN connection, from the Azure Portal, by navigating the Virtual network gateway and selecting VPN Troubleshoot.
+
+![Azure Portal - VPN Troubleshoot](/uploads/azureportal_vpntroubleshoot.png "Azure Portal - VPN Troubleshoot")

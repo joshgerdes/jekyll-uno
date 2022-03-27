@@ -41,4 +41,31 @@ Update the parameters to match your own needs, and you may need to edit the Bice
 
 The shared key will be used between the UDM Pro and your Azure network; make sure this is unique.
 
+    #Connects to Azure
+    Connect-AzAccount
+    #Resource Group Name
+    $resourcegrpname = 'network_rg'
+    #Creates a resource group for the storage account
+    New-AzResourceGroup -Name $resourcegrpname -Location 'AustraliaEast'
+    # Parameters splat, for Azure Bicep
+    # Parameter options for the Azure Bicep Template, this is where your Azure Bicep parameters go
+    $paramObject = @{
+    'sitecode' = 'luke'
+    'environment' = 'prod'
+    'contactEmail' = 'email@luke.geek.nz'
+    'sharedkey' = '18d5b51a17c68a42d493651bed88b73234bbaad0'
+    'onpremisesgwip' = '123.456.789.101'
+    'onpremisesaddress' = '192.168.1.0/24'
+    }
+    # Parameters for the New-AzResourceGroupDeployment cmdlet goes into.
+    $parameters = @{
+    'Name' = 'AzureNetwork-S2S'
+    'ResourceGroupName' = $resourcegrpname
+    'TemplateFile' = 'c:\temp\Deploy-AzVNETS2S.bicep'
+    'TemplateParameterObject' = $paramObject
+    'Verbose' = $true
+    }
+    #Deploys the Azure Bicep template
+    New-AzResourceGroupDeployment @parameters -WhatIf
+
 Note: The _'_[_-whatif_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if?tabs=azure-powershell%2CCLI "Bicep deployment what-if operation")' parameter has been added as a safeguard, so once you know the changes are suitable, then remove and rerun.

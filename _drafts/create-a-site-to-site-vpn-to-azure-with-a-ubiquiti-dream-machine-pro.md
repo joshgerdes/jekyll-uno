@@ -74,7 +74,7 @@ Note: The _'_[_-whatif_](https://docs.microsoft.com/en-us/azure/azure-resource-m
 
 The Virtual Network Gateway can take 20+ minutes to deploy, leave the Terminal/PowerShell window open, you can also check the Deployment in the Azure Portal _(Under Deployments panel in the Resource Group)_.
 
-![](/uploads/vnet-deployments2svpnazportal.png)
+![Azure Portal - Resource Group Deployments](/uploads/vnet-deployments2svpnazportal.png "Azure Portal - Resource Group Deployments")
 
 The Azure Bicep file is located here:
 
@@ -89,13 +89,13 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
 #### Configure - Ubiquiti Dream Machine Pro
 
  1. **Login** to the **UDM-Pro**
- 2. ![](/uploads/udm-pro_unifi-os.png)
+ 2. ![Unifi OS](/uploads/udm-pro_unifi-os.png "UDM Pro Unifi OS")
  3. Click on **Network** _(under Applications heading)_
  4. Click **Settings** _(Gear icon)_
- 5. ![](/uploads/udm-pro_networksettings.png)
+ 5. ![Unifi OS - Network](/uploads/udm-pro_networksettings.png "UDM Pro Unifi OS")
  6. Click **VPN**
- 7. ![](/uploads/udm-pro_vpn_s2svpn.png)
- 8. Scroll down and click **+ Create Site-to site-VPN\]**
+ 7. ![UDM Pro Unifi OS - VPN](/uploads/udm-pro_vpn_s2svpn.png "UDM Pro Unifi OS - VPN")
+ 8. Scroll down and click **+ Create Site-to site-VPN**
  9. Fill in the following information:
     * **Network Name **_(ie Azure - SYD)_
     * **VPN Protocol** _(select Manual IPsec)_

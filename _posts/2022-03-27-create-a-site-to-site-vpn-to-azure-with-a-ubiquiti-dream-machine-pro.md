@@ -97,7 +97,7 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
  7. ![UDM Pro Unifi OS - VPN](/uploads/udm-pro_vpn_s2svpn.png "UDM Pro Unifi OS - VPN")
  8. Scroll down and click **+ Create Site-to site-VPN**
  9. Fill in the following information:
-    * **Network Name **_(ie Azure - SYD)_
+    * **Network Name**_(ie Azure - SYD)_
     * **VPN Protocol** _(select Manual IPsec)_
     * **Pre-shared Key** _(enter in the SAME key that was used by Azure Bicep to create the Connection - if you have lost it, it can be updated in Azure, under Shared key on the connection attached to the Virtual network gateway, but will stop any other VPN connections using the old key)_
     * **Server Address** _(make sure you select the interface for your WAN/External IP)_

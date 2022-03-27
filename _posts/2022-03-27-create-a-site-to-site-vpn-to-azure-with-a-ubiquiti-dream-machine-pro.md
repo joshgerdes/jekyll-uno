@@ -78,7 +78,7 @@ The Virtual Network Gateway can take 20+ minutes to deploy, leave the Terminal/P
 
 The Azure Bicep file is located here:
 
-GIST
+{% gist 4399d36266e8be79afc62db7edf31d8c %}
 
 Once deployed, run the following command to capture and copy the Gateway Public IP: 
 

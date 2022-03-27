@@ -70,4 +70,8 @@ The shared key will be used between the UDM Pro and your Azure network; make sur
 
 Note: The _'_[_-whatif_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if?tabs=azure-powershell%2CCLI "Bicep deployment what-if operation")' parameter has been added as a safeguard, so once you know the changes are suitable, then remove and rerun.
 
-The Virtual Network Gateway can take 20+ minutes to deploy.
+The Virtual Network Gateway can take 20+ minutes to deploy, leave the Terminal/PowerShell window open, you can also check the Deployment in the Azure Portal _(Under Deployments panel in the Resource Group)_.
+
+![](/uploads/vnet-deployments2svpnazportal.png)
+
+The Azure Bicep file is located here:

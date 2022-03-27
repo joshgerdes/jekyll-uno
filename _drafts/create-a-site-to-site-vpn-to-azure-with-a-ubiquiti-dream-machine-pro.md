@@ -23,9 +23,9 @@ My address range is as follows _(so make sure you adjust to match your setup and
 
 #### Prerequisites
 
-1. The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) for local editing
-2. An Azure subscription that you have at least contributor rights to
-3. Permissions to the UDM Pro to set up a new network connection
+* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install) for local editing
+* An Azure subscription that you have at least contributor rights to
+* Permissions to the UDM Pro to set up a new network connection
 
 I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting") as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
@@ -88,4 +88,21 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
 
 #### Configure - Ubiquiti Dream Machine Pro
 
-1. Login to the UDM-Pro 
+ 1. **Login** to the **UDM-Pro**
+ 2. ![](/uploads/udm-pro_unifi-os.png)
+ 3. Click on **Network** _(under Applications heading)_
+ 4. Click **Settings** _(Gear icon)_
+ 5. ![](/uploads/udm-pro_networksettings.png)
+ 6. Click **VPN**
+ 7. ![](/uploads/udm-pro_vpn_s2svpn.png)
+ 8. Scroll down and click **+ Create Site-to site-VPN\]**
+ 9. Fill in the following information:
+    * **Network Name **_(ie Azure - SYD)_
+    * **VPN Protocol** _(select Manual IPsec)_
+    * **Pre-shared Key** _(enter in the SAME key that was used by Azure Bicep to create the Connection - if you have lost it, it can be updated in Azure, under Shared key on the connection attached to the Virtual network gateway, but will stop any other VPN connections using the old key)_
+    * **Server Address** _(make sure you select the interface for your WAN/External IP)_
+    * **Remote** Gateway/**Subnets** (Enter in the Address Prefix of your Azure virtual network and Press Enter)
+    * **Remote IP Address** _(Enter in the Public IP of the Virtual Network gateway, the same IP retrieved by Get-AzPublicIPAddress cmdlet )_
+10. Select **Manual**
+11. Select **IPSec Profile**, and select **Azure Dynamic Routing**
+12. Click **Apply Changes**

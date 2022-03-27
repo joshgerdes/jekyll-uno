@@ -103,9 +103,9 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
     * **Server Address** _(make sure you select the interface for your WAN/External IP)_
     * **Remote** Gateway/**Subnets** _(Enter in the Address Prefix of your Azure virtual network or subnets, remember to add any peered virtual networks and Press Enter)_
     * **Remote IP Address** _(Enter in the Public IP of the Virtual Network gateway, the same IP retrieved by Get-AzPublicIPAddress cmdlet )_
-10. ![](/uploads/udmpro_s2svpnsettings1.png)
+10. ![UDM Pro - Azure S2S VPN](/uploads/udmpro_s2svpnsettings1.png "UDM Pro - Azure S2S VPN")
 11. Select **Manual**
-12. ![](/uploads/udmpro_s2svpnsettings2.png)
+12. ![UDM Pro - Azure S2S VPN](/uploads/udmpro_s2svpnsettings2.png "UDM Pro - Azure S2S VPN")
 
     Select **IPSec Profile**, and select **Azure Dynamic Routing**
 13. Click **Apply Changes**

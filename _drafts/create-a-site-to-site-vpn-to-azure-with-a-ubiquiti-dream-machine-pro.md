@@ -106,3 +106,7 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
 10. Select **Manual**
 11. Select **IPSec Profile**, and select **Azure Dynamic Routing**
 12. Click **Apply Changes**
+
+After a few minutes, the VPN should become connected and you should be able to connect to devices on the Azure Network using their private IP address.
+
+If you have problems, make sure that the Gateway IPs line up and are correct, along with the pre-shared key.  You can also Pause the Network from the UDM-Pro and Resume to reinitiate the connection.

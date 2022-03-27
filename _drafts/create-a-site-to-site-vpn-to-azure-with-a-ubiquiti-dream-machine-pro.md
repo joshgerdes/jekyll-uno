@@ -4,7 +4,7 @@ title: Create a Site to Site VPN to Azure with a Ubiquiti Dream Machine Pro
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 

@@ -37,7 +37,7 @@ Azure Bicep deployments _(like ARM)_ have the following command: 'TemplateParame
 
 I will first make an Azure Resource Group using PowerShell for my Azure Virtual Network, then use the New-AzResourceGroupDeployment cmdlet to deploy my Virtual Network and subnets from my bicep file.
 
-Update the parameters to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards. 
+Update the parameters to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards.
 
 The shared key will be used between the UDM Pro and your Azure network; make sure this is unique.
 
@@ -69,3 +69,5 @@ The shared key will be used between the UDM Pro and your Azure network; make sur
     New-AzResourceGroupDeployment @parameters -WhatIf
 
 Note: The _'_[_-whatif_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if?tabs=azure-powershell%2CCLI "Bicep deployment what-if operation")' parameter has been added as a safeguard, so once you know the changes are suitable, then remove and rerun.
+
+The Virtual Network Gateway can take 20+ minutes to deploy.

@@ -101,7 +101,7 @@ Copy the Public IP, we will need this for configuring the UDM Pro, this would ha
     * **VPN Protocol** _(select Manual IPsec)_
     * **Pre-shared Key** _(enter in the SAME key that was used by Azure Bicep to create the Connection - if you have lost it, it can be updated in Azure, under Shared key on the connection attached to the Virtual network gateway, but will stop any other VPN connections using the old key)_
     * **Server Address** _(make sure you select the interface for your WAN/External IP)_
-    * **Remote** Gateway/**Subnets** (Enter in the Address Prefix of your Azure virtual network and Press Enter)
+    * **Remote** Gateway/**Subnets** _(Enter in the Address Prefix of your Azure virtual network or subnets, remember to add any peered virtual networks and Press Enter)_
     * **Remote IP Address** _(Enter in the Public IP of the Virtual Network gateway, the same IP retrieved by Get-AzPublicIPAddress cmdlet )_
 10. Select **Manual**
 11. Select **IPSec Profile**, and select **Azure Dynamic Routing**

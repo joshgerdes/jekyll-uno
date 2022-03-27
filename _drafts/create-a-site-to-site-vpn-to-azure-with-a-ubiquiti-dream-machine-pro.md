@@ -85,3 +85,7 @@ Once deployed, run the following command to capture and copy the Gateway Public 
     Get-AzPublicIPAddress | Select-Object Name, IpAddress 
 
 Copy the Public IP, we will need this for configuring the UDM Pro, this would have been generated dynamically.
+
+#### Configure - Ubiquiti Dream Machine Pro
+
+1. Login to the UDM-Pro 

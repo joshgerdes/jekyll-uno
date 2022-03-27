@@ -77,3 +77,11 @@ The Virtual Network Gateway can take 20+ minutes to deploy, leave the Terminal/P
 ![](/uploads/vnet-deployments2svpnazportal.png)
 
 The Azure Bicep file is located here:
+
+GIST
+
+Once deployed, run the following command to capture and copy the Gateway Public IP: 
+
+    Get-AzPublicIPAddress | Select-Object Name, IpAddress 
+
+Copy the Public IP, we will need this for configuring the UDM Pro, this would have been generated dynamically.

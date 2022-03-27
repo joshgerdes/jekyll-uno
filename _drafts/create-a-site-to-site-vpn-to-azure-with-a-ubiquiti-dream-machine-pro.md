@@ -9,13 +9,13 @@ header:
   teaser: ''
 
 ---
-The Ubiquiti [Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro "Dream Machine Pro"), has a lot of functionality built-in, including IPsec Site-to-site VPN _(Virtual Private Network)_ support.
+The Ubiquiti [Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro "Dream Machine Pro") has a lot of functionality built-in, including IPsec Site-to-site VPN _(Virtual Private Network)_ support.
 
-I recently, installed and configured a UDM-PRO at home, so now it's time to set up a site-to-vpn to my Microsoft Azure network.
+I recently installed and configured a UDM-PRO at home, so now it's time to set up a site-to-vpn to my Microsoft Azure network.
 
-I am going to create a Virtual Network and Gateway resources using Azure Bicep, but feel free to skip ahead.
+I will create Virtual Network and Gateway resources using Azure Bicep, but please skip ahead.
 
-My address range is as follows _(so make sure you adjust to match your own setup and IP ranges)_:
+My address range is as follows _(so make sure you adjust to match your setup and IP ranges)_:
 
 | On-premises | Azure |
 | --- | --- |
@@ -27,10 +27,16 @@ My address range is as follows _(so make sure you adjust to match your own setup
 2. An Azure subscription that you have at least contributor rights to
 3. Permissions to the UDM Pro to set up a new network connection
 
-I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting") as it’s easier to edit and display. You can easily take the scripts here to make them your own.
+I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting") as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
 #### Deploy - Azure Network
 
 I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Azure Bicep - Install") and[ PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "PowerShell - Azure") modules installed and the know-how to connect to Microsoft Azure.
 
-Azure Bicep deployments _(like ARM)_ have the following command: ‘TemplateParameterObject’. ‘TemplateParameterObject’ allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
+Azure Bicep deployments _(like ARM)_ have the following command: 'TemplateParameterObject'. 'TemplateParameterObject' allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
+
+I will first make an Azure Resource Group using PowerShell for my Azure Virtual Network, then use the New-AzResourceGroupDeployment cmdlet to deploy my Virtual Network and subnets from my bicep file.
+
+Update the parameters to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards. 
+
+The shared key will be used between the UDM Pro and your Azure network; make sure this is unique and  

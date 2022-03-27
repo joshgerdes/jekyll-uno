@@ -29,7 +29,7 @@ My address range is as follows _(so make sure you adjust to match your setup and
 
 I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting") as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
-#### Deploy - Azure Network
+#### Deploy - Azure Network and Virtual Network Gateway
 
 I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Azure Bicep - Install") and[ PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "PowerShell - Azure") modules installed and the know-how to connect to Microsoft Azure.
 
@@ -37,7 +37,9 @@ Azure Bicep deployments _(like ARM)_ have the following command: 'TemplateParame
 
 I will first make an Azure Resource Group using PowerShell for my Azure Virtual Network, then use the New-AzResourceGroupDeployment cmdlet to deploy my Virtual Network and subnets from my bicep file.
 
-Update the parameters to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards.
+Along with the Virtual Network, we will also create 2 other Azure resources needed for a Site to Site VPN, a [Local Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal "Tutorial: Create a site-to-site VPN connection in the Azure portal") _(this will represent your on-premises subnet and external IP to assist with routing)_ and a [Virtual Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways "What is VPN Gateway?") _(which is used to send encrypted traffic over the internet between your on-premises site(s) and Azure)_.
+
+Update the parameters of the PowerShell script below, to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards.
 
 The shared key will be used between the UDM Pro and your Azure network; make sure this is unique.
 

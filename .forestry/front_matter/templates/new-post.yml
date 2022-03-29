@@ -68,4 +68,5 @@ pages:
 - _posts/2022-03-07-setup-azure-cloud-shell.md
 - _posts/2022-03-16-azure-optimisation-engine.md
 - _posts/2022-03-27-create-a-site-to-site-vpn-to-azure-with-a-ubiquiti-dream-machine-pro.md
+- _posts/azure-network-adapter-implementation-and-testing.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

@@ -9,3 +9,4 @@ header:
   teaser: ''
 
 ---
+Azure Network Adapter, introduced in Windows Server 2019, allows standalone servers access to Microsoft Azure.

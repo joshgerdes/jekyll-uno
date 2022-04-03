@@ -15,9 +15,13 @@ Although most organizations will implement expressroute or site-to-site connecti
 
 In order to configure the Azure Network Adapter on Windows Server, we need to install [Windows Admin Center](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview "Windows Admin Center"); Windows Admin Center allows us to leverage modern ways of working _(integrates traditional Server Manager functionality with new server and Hybrid/Azure functionality)_ with Windows Server(s) and enables features such as [Storage Migration Services](https://docs.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview "Storage Migration Service overview") and [Azure Network Adapter](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapterhttps://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter "Use Azure Network Adapter to connect a server to an Azure Virtual Network").
 
+The Windows Server 2022 I am using is running from my home _(on-premises network)_ on a VMWare ESXi host.
+
+My Azure network is sitting in: the 'Australia East' region.
+
 ### Install Windows Admin Center
 
-There are a few deployment options when it comes to Windows Admin Cente, the most common are:
+There are a few deployment options when it comes to Windows Admin Center, the most common are:
 
 * Standalone
 * Gateway
@@ -28,4 +32,4 @@ A gateway installation is a more formal deployment, where the gateway has access
 
 Both options rely on the following protocols, HTTPS to the user displaying Windows Admin Center and WMI/PowerShell to the servers that it needs to manage, whether an Internet connection for Azure workloads or on-premises.
 
-In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)_.
+In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)._ 

@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 Azure Network Adapter, introduced in Windows Server 2019 _(and available in Windows Server 2022)_, allows standalone servers access to Microsoft Azure by creating a Point-to-Site connection into an Azure Virtual Network.

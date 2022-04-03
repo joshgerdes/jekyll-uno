@@ -39,7 +39,7 @@ Although you can use a custom SSL cert _(and you should in production scenarios,
 I will also install using the Windows Admin Center default TCP port of 6516, although this can be changed to suit your environment _(for example to 443)_, for Gateway servers using 6516 will stop any issues if already using TCP 443 for another service.
 
 1. **Open PowerShell** as Administrator on your server
-2. **Run** the following **commands** to install the latest version of Windows Admin Center:
+2. **Run** the following **commands** to download the latest version of Windows Admin Center to your Desktop and install it:
 
        #Download the msi file
        Invoke-WebRequest -Uri 'https://aka.ms/WACDownload' -OutFile "$env:USERPROFILE\Desktop\WinAdminCenter.msi"

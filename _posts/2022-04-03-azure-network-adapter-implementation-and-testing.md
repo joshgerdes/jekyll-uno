@@ -48,11 +48,11 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
        #install windows admin center
        $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
        Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
-3. ![](/uploads/install-windowsadmincenter.gif)
+3. ![Windows Admin Center -Installation](/uploads/install-windowsadmincenter.gif)
 4. Once installed, let us start it. Type in:
 
        Start-Process 'https://localhost:6516' -WindowStyle Maximized
-5. ![](/uploads/start-windowsadmincenter.gif)
+5. ![Windows Admin Center -Run](/uploads/start-windowsadmincenter.gif)
 6. Finally, after you have confirmed Windows Admin Center is installed, you can run the following to delete the setup file.
 
        ## Remove the msi file
@@ -65,19 +65,19 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
  1. **Open Windows Admin Center** _(ie https://localhost:6516/)_ in your favourite browser.
  2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
  3. **Enter** in any applicable **credentials**
- 4. ![](/uploads/select-wac_server.png)
+ 4. ![Windows Admin Center - Azure Network Adapter Setup](/uploads/select-wac_server.png)
  5. On the upper right-hand side _(not the bottom)_, click on the **Cog** 
- 6. ![](/uploads/select-wac_settings.png)
+ 6. ![Windows Admin Center - Azure Network Adapter Setup](/uploads/select-wac_settings.png)
  7. Navigate down to **Register**, under the Gateway heading.
  8. Click **Register** _(the account you use to Register with Azure, needs rights to be able to create an Azure Service Principal)_
- 9. ![](/uploads/select-wac_serverregister.png)
+ 9. ![Windows Admin Center - Azure Registration](/uploads/select-wac_serverregister.png)
 10. Make sure that **Azure Global** is **selected** _(this is applicable for most scenarios, but if not select the Cloud that you need to connect to)_
 11. Click **Copy**
 12. **Click** on the **link** under '3' **Enter** the **Code**
 13. **Enter** in the **Code** and press **Enter**
 14. **Enter** your **Azure Credentials** to verify connectivity
 15. Finally, **make sure** that your **Azure Active Directory** Tenant **ID matches** the correct **tenancy**. You can reuse an existing Azure Application/Service Principal, but in my case, I am, going to let Windows Admin Center create it for me and select **Connect**.
-16. ![](/uploads/select-wac_serverregisterazapp.png)
+16. ![Windows Admin Center - Azure Application/Service Principal Setup](/uploads/select-wac_serverregisterazapp.png)
 17. Then select **Sign In**
 18. **Select Accept**.
 
@@ -88,18 +88,18 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
  3. **Enter** in any applicable **credentials**
  4. Select **Azure hybrid center**
  5. Select Setup, under **Azure Network Adapter**
- 6. ![](/uploads/select-wac_aznetworkadaptersetup.png)
+ 6. ![Windows Admin Center - Azure Network Adapter Setup](/uploads/select-wac_aznetworkadaptersetup.png)
  7. Select your **Subscription**, **Region** and **Virtual Network**
- 8. If you don't already have a [GatewaySubnet ](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub "VPN Gateway configuration "){:target="_blank"} configured, Windows Admin Center will do that for you, as well as a [Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku "VPN Gateway configuration "){:target="_blank"}.
+ 8. If you don't already have a [GatewaySubnet](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub "VPN Gateway configuration "){:target="_blank"} configured, Windows Admin Center will do that for you, as well as a [Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku "VPN Gateway configuration "){:target="_blank"}.
  9. For: **Client Address Space**, this is where you need to **create** a new **subnet** that doesn't match your existing on-premises and Azure subnets, that the server will connect using when connected via the Point to Site VPN. Make sure the subnet is large enough for all point to site clients. Because my on-premises is: '192.168.1.0/24' and my Azure network is '10.100.0.0/16' - my Client Address space will be: 172.0.0.0/24.
-10. ![](/uploads/select-wac_aznetworkadaptersetupgwnetwork.png)
-11. The Azure Network Adapter uses certificates to authenticate the VPN connection to Azure, if you have your own PKI _(Public Key Infrastructure)_ [certificate authority](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/server-certificate-deployment "Server Certificate Deployment"){:target="_blank"}, I recommend you use this. In this guide, I am going to leave it to auto-generate a self-signed root and client certificate _(these are Computer certificates, not used based)_.
+10. ![Windows Admin Center - Azure Network Adapter Setup](/uploads/select-wac_aznetworkadaptersetupgwnetwork.png)
+11. The Azure Network Adapter uses certificates to authenticate the VPN connection to Azure, if you have your own PKI _(Public Key Infrastructure)_ [certificate authority](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/server-certificate-deployment "Server Certificate Deployment"){:target="_blank"}, I recommend you use this. In this guide, I am going to leave it to auto-generate a self-signed root and client certificate_(these are Computer certificates, not used based)_.
 12. Click **Create**
 13. Windows Admin Center will now leverage the Azure Application created earlier to **create** the **GatewaySubnet** _(if missing)_ and create the Virtual Network **Gateway**, this creation **process** could take **up to 35 minutes**, so we now need to wait.
-14. ![](/uploads/select-wac_aznetworkadapternotification.png)
+14. ![Windows Admin Center - Notification](/uploads/select-wac_aznetworkadapternotification.png)
 15. You should be able to see the Gateway being created in the Azure Portal _(ie a new Virtual Network Gateway named: WAC-Created-vpngw-79)_ was created.
 16. After a while, you should get a notification that the point to site connection, was successful (if not click on **+ Add Azure Network Adapter**, and rerun the deployment)
-17. ![](/uploads/select-wac_aznetworkadapterconnected.png)
+17. ![Windows Admin Center - Connected](/uploads/select-wac_aznetworkadapterconnected.png)
 
 #### Testing Azure Network Adapter
 
@@ -107,10 +107,10 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 
 * If I do a '_route print_', I can see my Azure App Servers subnet: 10.100.2.0, is available through the VPN interface.
 
-  ![](/uploads/wac-networkadapter-routeprint.gif)
+  ![Route Print](/uploads/wac-networkadapter-routeprint.gif)
 * I was able to successfully RDP to an Azure VM using the private IP
 
-  ![](/uploads/wac-networkadapter-vmrdp.gif)
+  ![Windows Network Adapter - RDP](/uploads/wac-networkadapter-vmrdp.gif)
 
 #### Additional Notes
 

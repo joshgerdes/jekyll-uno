@@ -62,7 +62,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 
 #### Register Windows Admin Center with Microsoft Azure
 
- 1. **Open Windows Admin Center** _(ie https://localhost:6516/)_ in your favourite browser.
+ 1. **Open Windows Admin Center** _(ie <https://localhost:6516/>)_ in your favourite browser.
  2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
  3. **Enter** in any applicable **credentials**
  4. ![Windows Admin Center - Azure Network Adapter Setup](/uploads/select-wac_server.png)
@@ -83,7 +83,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 
 #### Configure Azure Network Adapter
 
- 1. **Open Windows Admin Center** _(ie https://localhost:6516/)_ in your favourite browser.
+ 1. **Open Windows Admin Center** _(ie <https://localhost:6516/>)_ in your favourite browser.
  2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
  3. **Enter** in any applicable **credentials**
  4. Select **Azure hybrid center**

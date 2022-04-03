@@ -21,22 +21,22 @@ My Azure network is sitting in: the 'Australia East' region.
 
 ### Install Windows Admin Center
 
-There are a few deployment options when it comes to Windows Admin Center, the most common are:
+There are a few deployment options when it comes to Windows Admin Center. The most common are:
 
 * Standalone
 * Gateway
 
-Standalone deployment is for managing a small number of virtual machines, it is usually installed locally on users' endpoints.
+Standalone deployment is for managing a small number of virtual machines, and it is usually installed locally on users' endpoints.
 
-A gateway installation is a more formal deployment, where the gateway has access to the servers it is managing, gateway installs are recommended when multiple users are accessing it.
+A gateway installation is a more formal deployment, where the gateway has access to the servers it is managing; gateway installs are recommended when multiple users are accessing it.
 
 Both options rely on the following protocols, HTTPS to the user displaying Windows Admin Center and WMI/PowerShell to the servers that it needs to manage, whether an Internet connection for Azure workloads or on-premises.
 
 In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)._
 
-Although you can use a custom SSL cert _(and you should in production scenarios, particularly when using a trusted Gateway)_, for the purposes of this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_.
+Although you can use a custom SSL cert _(and you should use in production scenarios, mainly when using a trusted Gateway)_, for this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_.
 
-I will also install using the Windows Admin Center default TCP port of 6516, although this can be changed to suit your environment _(for example to 443)_, for Gateway servers using 6516 will stop any issues if already using TCP 443 for another service.
+I will also install using the Windows Admin Center default TCP port of 6516; although this can be changed to suit your environment _(for example, to 443)_, for Gateway servers using 6516 will stop any issues if you are already using TCP 443 for another service.
 
 1. **Open PowerShell** as Administrator on your server
 2. **Run** the following **commands** to download the latest version of Windows Admin Center to your Desktop and install it:
@@ -47,8 +47,8 @@ I will also install using the Windows Admin Center default TCP port of 6516, alt
        $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
        Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
 3. ![](/uploads/install-windowsadmincenter.gif)
-4. Once, installed let us start it, type in:
+4. Once installed, let us start it. Type in:
 
        #Runs WinAdminCenter
        Start-Process 'https://localhost:6516/'
-5. 
+5. ![](/uploads/start-windowsadmincenter.gif)

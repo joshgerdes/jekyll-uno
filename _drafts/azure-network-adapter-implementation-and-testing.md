@@ -86,4 +86,6 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
 3. **Enter** in any applicable **credentials**
 4. Select **Azure hybrid center**
-5. 
+5. Select Setup, under **Azure Network Adapter**
+6. ![](/uploads/select-wac_aznetworkadaptersetup.png)
+7. 

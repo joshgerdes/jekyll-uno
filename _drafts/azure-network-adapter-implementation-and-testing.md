@@ -33,3 +33,5 @@ A gateway installation is a more formal deployment, where the gateway has access
 Both options rely on the following protocols, HTTPS to the user displaying Windows Admin Center and WMI/PowerShell to the servers that it needs to manage, whether an Internet connection for Azure workloads or on-premises.
 
 In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)._ 
+
+Although you can use a custom SSL cert _(and you should in production scenarios, particularly when using a trusted Gateway)_, for the purposes of this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_.

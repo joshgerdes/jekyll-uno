@@ -49,7 +49,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 3. ![](/uploads/install-windowsadmincenter.gif)
 4. Once installed, let us start it. Type in:
 
-       
+       Start-Process 'https://localhost:6516' -WindowStyle Maximized
    1. 
 5. ![](/uploads/start-windowsadmincenter.gif)
 6. Finally, after you have confirmed Windows Admin Center is installed, you can run the following to delete the setup file.

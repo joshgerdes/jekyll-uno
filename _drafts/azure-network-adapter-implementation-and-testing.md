@@ -97,3 +97,5 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 13. Windows Admin Center will now leverage the Azure Application created earlier to **create** the **GatewaySubnet** _(if missing)_ and create the Virtual Network **Gateway**, this creation **process** could take **up to 35 minutes**, so we now need to wait.
 14. ![](/uploads/select-wac_aznetworkadapternotification.png)
 15. You should be able to see the Gateway being created in the Azure Portal _(ie a new Virtual Network Gateway named: WAC-Created-vpngw-79)_ was created.
+16. After a while, you should get a notification that the point to site connection, was successful (if not click on **+ Add Azure Network Adapter**, and rerun the deployment)
+17. ![](/uploads/select-wac_aznetworkadapterconnected.png)

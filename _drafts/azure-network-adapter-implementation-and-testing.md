@@ -56,3 +56,5 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 
     ## Remove the msi file
     Remove-Item -Path "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
+
+### Setup Azure Network Adapter

@@ -19,6 +19,8 @@ The Windows Server 2022 _(called: UTILITY-P01)_ I am using is running from my ho
 
 My Azure network is sitting in: the 'Australia East' region.
 
+> This feature is still in Preview, and compatibility between the API versions and other errors or issues may still be worked on by Microsoft. Keep this in mind, functionality may change, so be wary of using this in a production scenario.
+
 ### Install Windows Admin Center
 
 There are a few deployment options when it comes to Windows Admin Center. The most common are:
@@ -114,6 +116,5 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 #### Additional Notes
 
 * Do not add Custom Routes _(ie for Service Endpoints)_ to the Virtual Network Gateway, the API used to create the Custom Routes, isn't compatible with the Azure Network Adapter yet. I added some custom routes into the Azure Virtual Network Gateway using the 'Set-AzVirtualNetworkGateway' cmdlet and was unable to add the Azure Network Adapter until the custom routes were removed. 
-* This feature is still in Preview, and compatibility between the API versions and other errors or issues may still be worked on by Microsoft. Keep this in mind, functionality may change, so be wary of using this in a production scenario.
 * Deleting the Azure Network Adapter connection from Windows Admin Center, will not delete the Virtual Network Gateway, this needs to be deleted manually to avoid any additional cost - if not required.
-* If you have a naming convention, make sure that the Virtual Network Gateway has been created ahead of time, there is no current way to specify a custom name for the Gateway within the Windows Admin Center experiance.
+* If you have a naming convention, make sure that the Virtual Network Gateway has been created ahead of time, there is no current way to specify a custom name for the Gateway within the Windows Admin Center experience.

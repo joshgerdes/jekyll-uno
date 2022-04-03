@@ -1,5 +1,5 @@
 ---
-date: 2022-03-29 00:00:00 +1300
+date: 2022-04-03 00:00:00 +1300
 title: Azure Network Adapter - Implementation and Testing
 author: Luke
 categories:
@@ -50,7 +50,6 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 4. Once installed, let us start it. Type in:
 
        Start-Process 'https://localhost:6516' -WindowStyle Maximized
-   1. 
 5. ![](/uploads/start-windowsadmincenter.gif)
 6. Finally, after you have confirmed Windows Admin Center is installed, you can run the following to delete the setup file.
 

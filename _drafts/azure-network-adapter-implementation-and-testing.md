@@ -54,7 +54,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 5. ![](/uploads/start-windowsadmincenter.gif)
 6. Finally, after you have confirmed Windows Admin Center is installed, you can run the following to delete the setup file.
 
-    ## Remove the msi file
-    Remove-Item -Path "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
+       ## Remove the msi file
+       Remove-Item -Path "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
 
 ### Setup Azure Network Adapter

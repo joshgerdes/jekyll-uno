@@ -49,8 +49,8 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 3. ![](/uploads/install-windowsadmincenter.gif)
 4. Once installed, let us start it. Type in:
 
-       #Runs WinAdminCenter
-       Start-Process 'https://localhost:6516/'
+       
+   1. 
 5. ![](/uploads/start-windowsadmincenter.gif)
 6. Finally, after you have confirmed Windows Admin Center is installed, you can run the following to delete the setup file.
 
@@ -58,3 +58,6 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
        Remove-Item -Path "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
 
 ### Setup Azure Network Adapter
+
+1. Open Windows Admin Center _(ie https://localhost:6516/)_ in your favourite browser.
+2. 

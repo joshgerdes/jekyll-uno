@@ -94,3 +94,5 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 10. ![](/uploads/select-wac_aznetworkadaptersetupgwnetwork.png)
 11. The Azure Network Adapter uses certificates to authenticate the VPN connection to Azure, if you have your own PKI _(Public Key Infrastructure)_ [certificate authority](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/server-certificate-deployment "Server Certificate Deployment"), I recommend you use this. In this guide, I am going to leave it to auto-generate a self-signed root and client certificate.
 12. Click **Create**
+13. Windows Admin Center will now leverage the Azure Application created earlier to create the GatewaySubnet (if missing) and create the Virtual Network Gateway, this creation process could take up to 35 minutes.
+14. ![](/uploads/select-wac_aznetworkadapternotification.png)

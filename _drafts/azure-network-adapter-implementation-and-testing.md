@@ -91,6 +91,6 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
  7. Select your **Subscription**, **Region** and **Virtual Network**
  8. If you don't already have a [GatewaySubnet ](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub "VPN Gateway configuration ")configured, Windows Admin Center will do that for you, as well as a [Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku "VPN Gateway configuration ").
  9. For: **Client Address Space**, this is where you need to **create** a new **subnet** that doesn't match your existing on-premises and Azure subnets, that the server will connect using when connected via the Point to Site VPN. Make sure the subnet is large enough for all point to site clients. Because my on-premises is: '192.168.1.0/24' and my Azure network is '10.100.0.0/16' - my Client Address space will be: 172.0.0.0/24.
-10. ![](/uploads/select-wac_aznetworkadaptersetupnetwork.png)
+10. ![](/uploads/select-wac_aznetworkadaptersetupgwnetwork.png)
 11. The Azure Network Adapter uses certificates to authenticate the VPN connection to Azure, if you have your own PKI _(Public Key Infrastructure)_ [certificate authority](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/server-certificate-deployment "Server Certificate Deployment"), I recommend you use this. In this guide, I am going to leave it to auto-generate a self-signed root and client certificate.
 12. Click **Create**

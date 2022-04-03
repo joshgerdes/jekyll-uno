@@ -59,8 +59,21 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 
 ### Setup Azure Network Adapter
 
-1. **Open Windows Admin Center** _(ie https://localhost:6516/)_ in your favourite browser.
-2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
-3. **Enter** in any applicable **credentials**
-4. ![](/uploads/select-wac_server.png)
-5. 
+ 1. **Open Windows Admin Center** _(ie https://localhost:6516/)_ in your favourite browser.
+ 2. **Select** the **server** you want to install Azure Network Adapter on, and select **Connect**
+ 3. **Enter** in any applicable **credentials**
+ 4. ![](/uploads/select-wac_server.png)
+ 5. On the upper right-hand side _(not the bottom)_, click on the **Cog** 
+ 6. ![](/uploads/select-wac_settings.png)
+ 7. Navigate down to: **Register**, under the Gateway heading.
+ 8. Click **Register** _(the account you use to Register with Azure, needs rights to be able to create an Azure Service Principal)_
+ 9. ![](/uploads/select-wac_serverregister.png)
+10. Make sure that **Azure Global** is **selected** _(this is applicable for most scenarios, but if not select the Cloud that you need to connect to)_
+11. Click **Copy**
+12. **Click** on the **link** under '3' **Enter** the **Code**
+13. **Enter** in the **Code** and press **Enter**
+14. **Enter** your **Azure Credentials** to verify connectivity
+15. Finally, **make sure** that your **Azure Active Directory** Tenant **ID matches** the correct **tenancy**. You can reuse an existing Azure Application/Service Principal, but in my case, I am, going to let Windows Admin Center create it for me and select **Connect**.
+16. ![](/uploads/select-wac_serverregisterazapp.png)
+17. Then select **Sign In**
+18. **Select Accept**.

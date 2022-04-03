@@ -101,3 +101,5 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 17. ![](/uploads/select-wac_aznetworkadapterconnected.png)
 
 #### Testing Azure Network Adapter
+
+The VPN was established automatically, after a server restart.

@@ -108,4 +108,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 * If I do a '_route print_', I can see my Azure App Servers subnet: 10.100.2.0, is available through the VPN interface.
 
   ![](/uploads/wac-networkadapter-routeprint.gif)
+* I was able to successfully RDP to an Azure VM using the private IP
+
+  ![](/uploads/wac-networkadapter-vmrdp.gif)
 * 

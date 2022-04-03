@@ -47,5 +47,5 @@ I will also install using the Windows Admin Center default TCP port of 6516, alt
        $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
        Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
        #Runs WinAdminCenter
-       Start-Process -FilePath 'C:\Program Files (x86)\Microsoft\Windows\Start Menu\Programs\Startup\WinAdminCenter.exe'
+       Start-Process 'https://localhost:6516/'
 3. 

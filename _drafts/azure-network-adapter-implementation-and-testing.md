@@ -14,3 +14,18 @@ Azure Network Adapter, introduced in Windows Server 2019 _(and available in Wind
 Although most organizations will implement expressroute or site-to-site connectivity through a physical or NVA _(Network Virtual Appliance)_ firewall or router, there may be times when you want to limit connectivity, stand up a PoC _(Proof of Concept)_ or need access to Azure services on a single server only, which is where the Azure Network Adapter comes into play.
 
 In order to configure the Azure Network Adapter on Windows Server, we need to install [Windows Admin Center](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview "Windows Admin Center"); Windows Admin Center allows us to leverage modern ways of working _(integrates traditional Server Manager functionality with new server and Hybrid/Azure functionality)_ with Windows Server(s) and enables features such as [Storage Migration Services](https://docs.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview "Storage Migration Service overview") and [Azure Network Adapter](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapterhttps://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter "Use Azure Network Adapter to connect a server to an Azure Virtual Network").
+
+### Install Windows Admin Center
+
+There are a few deployment options when it comes to Windows Admin Cente, the most common are:
+
+* Standalone
+* Gateway
+
+Standalone deployment is for managing a small number of virtual machines, it is usually installed locally on users' endpoints.
+
+A gateway installation is a more formal deployment, where the gateway has access to the servers it is managing, gateway installs are recommended when multiple users are accessing it.
+
+Both options rely on the following protocols, HTTPS to the user displaying Windows Admin Center and WMI/PowerShell to the servers that it needs to manage, whether an Internet connection for Azure workloads or on-premises.
+
+In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)_.

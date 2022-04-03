@@ -32,23 +32,20 @@ A gateway installation is a more formal deployment, where the gateway has access
 
 Both options rely on the following protocols, HTTPS to the user displaying Windows Admin Center and WMI/PowerShell to the servers that it needs to manage, whether an Internet connection for Azure workloads or on-premises.
 
-In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)._ 
+In this article, I am going to install Windows Admin Center as a Standalone _(on the same Windows Server 2022, that I will set up the Azure Network Adapter on, but this is not required)._
 
-Although you can use a custom SSL cert _(and you should in production scenarios, particularly when using a trusted Gateway)_, for the purposes of this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_. 
+Although you can use a custom SSL cert _(and you should in production scenarios, particularly when using a trusted Gateway)_, for the purposes of this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_.
 
 I will also install using the Windows Admin Center default TCP port of 6516, although this can be changed to suit your environment _(for example to 443)_, for Gateway servers using 6516 will stop any issues if already using TCP 443 for another service.
 
 1. **Open PowerShell** as Administrator on your server
-2. Run the following _c_ommands to install the latest version of Windows Admin Center:
+2. **Run** the following **commands** to install the latest version of Windows Admin Center:
 
-    ## Download the msi file
-    Invoke-WebRequest -Uri 'https://aka.ms/WACDownload' -OutFile "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
-    
-    ## install windows admin center
-    $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
-    Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
-    
-    ## Runs WinAdminCenter
-    Start-Process -FilePath 'C:\Program Files (x86)\Microsoft\Windows\Start Menu\Programs\Startup\WinAdminCenter.exe'
-  
+       #Download the msi file
+       Invoke-WebRequest -Uri 'https://aka.ms/WACDownload' -OutFile "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
+       #install windows admin center
+       $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
+       Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
+       #Runs WinAdminCenter
+       Start-Process -FilePath 'C:\Program Files (x86)\Microsoft\Windows\Start Menu\Programs\Startup\WinAdminCenter.exe'
 3. 

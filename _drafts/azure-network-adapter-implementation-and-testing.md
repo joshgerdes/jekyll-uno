@@ -115,4 +115,4 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 #### Additional Notes
 
 * Do not add Custom Routes to the Virtual Network Gateway, the API used to create the Custom Routes, isn't compatible with the Azure Network Adapter yet. I added some custom routes into the Azure Virtual Network Gateway using the 'Set-AzVirtualNetworkGateway' cmdlet and was unable to add the Azure Network Adapter until the custom routes were removed. 
-* This feature is still in Preview, and compatibility between the API versions may still be worked on by Microsoft.
+* This feature is still in Preview, and compatibility between the API versions and other errors or issues may still be worked on by Microsoft.

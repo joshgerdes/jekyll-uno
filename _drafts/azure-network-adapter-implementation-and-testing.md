@@ -15,7 +15,7 @@ Although most organizations will implement expressroute or site-to-site connecti
 
 In order to configure the Azure Network Adapter on Windows Server, we need to install [Windows Admin Center](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview "Windows Admin Center"); Windows Admin Center allows us to leverage modern ways of working _(integrates traditional Server Manager functionality with new server and Hybrid/Azure functionality)_ with Windows Server(s) and enables features such as [Storage Migration Services](https://docs.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview "Storage Migration Service overview") and [Azure Network Adapter](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapterhttps://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter "Use Azure Network Adapter to connect a server to an Azure Virtual Network").
 
-The Windows Server 2022 I am using is running from my home _(on-premises network)_ on a VMWare ESXi host.
+The Windows Server 2022 _(called: UTILITY-P01)_ I am using is running from my home _(on-premises network)_ on a VMWare ESXi host.
 
 My Azure network is sitting in: the 'Australia East' region.
 
@@ -37,3 +37,18 @@ In this article, I am going to install Windows Admin Center as a Standalone _(on
 Although you can use a custom SSL cert _(and you should in production scenarios, particularly when using a trusted Gateway)_, for the purposes of this article I am going to generate a self-signed certificate _(this certificate can be changed by rerunning the setup file and changing the certificate thumbprint)_. 
 
 I will also install using the Windows Admin Center default TCP port of 6516, although this can be changed to suit your environment _(for example to 443)_, for Gateway servers using 6516 will stop any issues if already using TCP 443 for another service.
+
+1. **Open PowerShell** as Administrator on your server
+2. Run the following _c_ommands to install the latest version of Windows Admin Center:
+
+    ## Download the msi file
+    Invoke-WebRequest -Uri 'https://aka.ms/WACDownload' -OutFile "$env:USERPROFILE\Desktop\WinAdminCenter.msi"
+    
+    ## install windows admin center
+    $msiArgs = @('/i', "$env:USERPROFILE\Desktop\WinAdminCenter.msi", '/qn', '/L*v', 'log.txt', 'SME_PORT=6516', 'SSL_CERTIFICATE_OPTION=generate')
+    Start-Process msiexec.exe -Wait -ArgumentList $msiArgs
+    
+    ## Runs WinAdminCenter
+    Start-Process -FilePath 'C:\Program Files (x86)\Microsoft\Windows\Start Menu\Programs\Startup\WinAdminCenter.exe'
+  
+3. 

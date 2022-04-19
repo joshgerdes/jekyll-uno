@@ -113,7 +113,10 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 ### Troubleshooting
 
-If you get no Folders, listed when the script prompts you to select a folder _(ie Please select folder)_:
+* The 'resource-bridge-onboarding-script.ps1' script contains an output file, named: arcvmware-output.log. This log file exists in the same directory as the script and is useful for an investigation into any errors.
+
+
+* If you get no Folders, listed when the script prompts you to select a folder _(ie Please select folder)_:
 
 1. Right-click the Datacenter in vSphere
 2. Select New Folder

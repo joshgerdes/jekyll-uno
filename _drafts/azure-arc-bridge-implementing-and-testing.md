@@ -9,9 +9,9 @@ header:
   teaser: ''
 
 ---
-Azure Arc Bridge (currently in preview), is part of the core Azure Arc Hybrid Cloud platform.
+[Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview "What is Azure Arc resource bridge ") _(currently in preview)_, is part of the core Azure Arc Hybrid Cloud platform.
 
-The Azure Arc resource bridge allows for VM self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows. 
+The Azure Arc resource bridge allows for VM self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
 
 > The resource bridge is a packaged virtual machine, which hosts a _management_ Kubernetes cluster that requires no user management. This virtual appliance delivers the following benefits:
 >
@@ -21,3 +21,5 @@ The Azure Arc resource bridge allows for VM self-servicing and management of on-
 > * Supports deployment to any private cloud hosted on Hyper-V or VMware from the Azure portal or using the Azure Command-Line Interface (CLI).
 >
 > All management operations are performed from Azure, no local configuration is required on the appliance.
+
+![](/uploads/arc-bridge-architecture-overview.png)

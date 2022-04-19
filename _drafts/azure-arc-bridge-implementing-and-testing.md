@@ -11,6 +11,8 @@ header:
 ---
 [Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview "What is Azure Arc resource bridge ") _(currently in preview)_, is part of the core Azure Arc Hybrid Cloud platform.
 
+### Overview
+
 The Azure Arc resource bridge allows for VM self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
 
 Along with normal integration of Azure Arc workloads, such as support for Azure Policy. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
@@ -42,3 +44,18 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(supported on a version greater than VMware vSphere version 6.7)_.
 
 I will be running vSphere 7.0.3, on a single host in my home lab, connected to my Visual Studio subscription.
+
+### Prerequisites
+
+#### Private cloud environments
+
+The following private cloud environments and their versions are officially supported for the Azure Arc resource bridge:
+
+* VMware vSphere version 6.7
+* Azure Stack HCI
+
+#### Required Azure permissions
+
+* Contributor rights to the Resource Group that the Azure Arc bridge resource will be created to
+* The Arc resource bridge communicates outbound securely to Azure Arc over TCP port 443
+* 

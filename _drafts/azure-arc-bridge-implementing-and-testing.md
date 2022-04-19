@@ -43,7 +43,7 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 
 These regions, hold the Resource Bridge metadata for the resources.
 
-Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(supported on a version greater than VMware vSphere version 6.7)_.
+Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere.
 
 I will be running vSphere 6.7, on a single host in my home lab, connected to my Visual Studio subscription.
 

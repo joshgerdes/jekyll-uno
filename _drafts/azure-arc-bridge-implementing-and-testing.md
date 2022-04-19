@@ -45,7 +45,7 @@ These regions, hold the Resource Bridge metadata for the resources.
 
 Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(supported on a version greater than VMware vSphere version 6.7)_.
 
-I will be running vSphere 7.0.3, on a single host in my home lab, connected to my Visual Studio subscription.
+I will be running vSphere 6.7, on a single host in my home lab, connected to my Visual Studio subscription.
 
 ### Prerequisites
 
@@ -55,6 +55,8 @@ The following private cloud environments and their versions are officially suppo
 
 * VMware vSphere version 6.7
 * Azure Stack HCI
+
+_Note: You are unable to set this up on vSphere 7.0.3, as it is not currently supported - I tried!_
 
 #### Permissions
 

@@ -35,3 +35,5 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 > All management operations are performed from Azure, no local configuration is required on the appliance.
 
 ![](/uploads/arc-bridge-architecture-overview.png)
+
+Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(version greater than VMware vSphere version 6.7)_.

@@ -68,6 +68,7 @@ The following private cloud environments and their versions are officially suppo
 #### Required On-premises resources
 
 * Resource pool with a reservation of at least 16 GB of RAM and four vCPUs. It should also have access to a datastore with at least 100 GB of free disk space.
+* A workstation, with rights to run PowerShell, and install Python and the Azure CLI, with line of site to vCenter.
 
 #### Networking
 

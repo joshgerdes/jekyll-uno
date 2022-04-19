@@ -41,6 +41,8 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 > * East US
 > * West Europe
 
+These regions, hold the Resource Bridge metadata for the resources.
+
 Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(supported on a version greater than VMware vSphere version 6.7)_.
 
 I will be running vSphere 7.0.3, on a single host in my home lab, connected to my Visual Studio subscription.
@@ -56,17 +58,38 @@ The following private cloud environments and their versions are officially suppo
 
 #### Required Azure permissions
 
-* Contributor rights to the Resource Group that the Azure Arc bridge resource will be created to
+* Contributor rights to the Resource Group that the Azure Arc bridge resource will be created.
+
+#### Required Azure resources
+
+* Resource Group for your Azure Arc Resource Bridge
+
+#### Networking
+
 * The Arc resource bridge communicates outbound securely to Azure Arc over TCP port 443
 
 ### Create Azure Arc Resource Bridge
 
 #### Create Resource Bridge
 
-1. Log in to the [**Azure Portal**]()
-2. In the search box up the top, type in: **Azure Arc**
-3. Click **Azure Arc**
-4. Click on: **VMware vCenters (preview)**
-5. Click **Add**
-6. ![](/uploads/azure_arc_vmware_portal.png)
-7. 
+ 1. Log in to the [**Azure Portal**]()
+ 2. In the search box up the top, type in: **Azure Arc**
+ 3. Click **Azure Arc**
+ 4. Click on: **VMware vCenters (preview)**
+ 5. Click **Add**
+ 6. ![](/uploads/azure_arc_vmware_portal.png)
+ 7. Click: **Create a new resource bridge**
+ 8. ![](/uploads/azure_arc_vmware_portal_createresourcebridge.png)
+ 9. Click **Next: Basics**
+10. **Enter** the **following** information to suit your environment:
+
+* **Name** _(of the Resource Bridge resource)_
+* Select the **region** for your Metadata
+* Create a [**Custom location **](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-location "Create and manage custom locations on Azure Arc-enabled Kubernetes")_(that matches your on-premises location, where your resources are stored, ie could be a data centre prefix that matches your naming convention)_
+* Enter in the **name** of your **vCenter** resource _(this will represent your vCenter in Azure, so make sure it is easily identifiable)_
+
+1. ![](/uploads/azure_arc_vmware_portal_createresourcesbridge.png)
+2. Click **Next: Tags**
+3. A list of default tags has been supplied, feel free to enter or change these to suit your environment.
+4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
+5. Click **Next: Download and run script**

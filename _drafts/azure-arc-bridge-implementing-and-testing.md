@@ -92,4 +92,5 @@ The following private cloud environments and their versions are officially suppo
 2. Click **Next: Tags**
 3. A list of default tags has been supplied, feel free to enter or change these to suit your environment.
 4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
-5. Click **Next: Download and run script**
+5. Click **Next: Download and run the script**
+6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete.

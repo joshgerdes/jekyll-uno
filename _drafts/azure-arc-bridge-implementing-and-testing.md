@@ -68,7 +68,7 @@ The following private cloud environments and their versions are officially suppo
 #### Required On-premises resources
 
 * Resource pool with a reservation of at least 16 GB of RAM and four vCPUs. It should also have access to a datastore with at least 100 GB of free disk space.
-* A workstation, with rights to run PowerShell, and install Python and the Azure CLI, with line of site to vCenter.
+* A workstation, with rights to run PowerShell, and install Python and the Azure CLI, with a line of sight to vCenter.
 
 #### Networking
 
@@ -102,7 +102,7 @@ The following private cloud environments and their versions are officially suppo
  5. Click **Next: Download and run the script**
  6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete _(it may take a minute or two, you will see: Successfully register your subscription(s) when completed)_.
  7. Once completed, download the onboarding PowerShell script
- 8. Run the PowerShell script from a computer that has access to Azure and vCenter
+ 8. Run the PowerShell script from a computer that has access to Azure and vCenter, this script will download the necessary dependencies _(Azure CLI, Python)_ and if necessary authenticate to Azure.
 
         Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
         ./resource-bridge-onboarding-script.ps1

@@ -13,7 +13,7 @@ header:
 
 ### Overview
 
-The Azure Arc resource bridge allows for VM self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
+The Azure Arc resource bridge allows for VM (Virtual Machine) self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
 
 Along with normal integration of Azure Arc workloads, such as support for Azure Policy. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
 
@@ -110,3 +110,12 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
         ./resource-bridge-onboarding-script.ps1
  9. gh
 10. sd
+
+### Troubleshooting
+
+If you get no Folders, listed when the script prompts you to select a folder _(ie Please select folder)_:
+
+1. Right-click the Datacenter in vSphere
+2. Select New Folder
+3. Select New VM and Templates folder
+4. Create a folder

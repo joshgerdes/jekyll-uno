@@ -75,7 +75,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 #### Networking
 
 * The Arc resource bridge communicates outbound securely to Azure Arc over TCP port 443
-* At least one free IP _(Internet Protocol)_ address on the on-premises network _(or 3 if there isn't a DHCP server)_
+* At least one free IP _(Internet Protocol)_ address on the on-premises network _(or 3 if there isn't a DHCP server)._ Make sure this isn't a used IP, you will need to enter this during the bridge provisioning script.
 
 ### Create Azure Arc Resource Bridge
 

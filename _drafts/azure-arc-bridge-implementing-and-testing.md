@@ -18,12 +18,12 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 * Start, stop and restart a virtual machine
 * Control access and add Azure tags
 * Add, remove, and update network interfaces
-* Add, remove, and update disks and update VM size (CPU cores and memory)
+* Add, remove, and update disks and update VM size _(CPU cores and memory)_
 * Enable guest management
 * Install extensions
 
 
-* Azure Stack HCI - You can provision and manage on-premises Windows and Linux virtual machines (VMs) running on Azure Stack HCI clusters.
+* Azure Stack HCI - You can provision and manage on-premises Windows and Linux virtual machines _(VMs)_ running on Azure Stack HCI clusters.
 
 > The resource bridge is a packaged virtual machine, which hosts a _management_ Kubernetes cluster that requires no user management. This virtual appliance delivers the following benefits:
 >

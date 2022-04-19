@@ -103,12 +103,17 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
  4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
  5. Click **Next: Download and run the script**
  6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete _(it may take a minute or two, you will see: Successfully register your subscription(s) when completed)_.
- 7. Once completed, download the onboarding PowerShell script
- 8. Run the PowerShell script from a computer that has access to Azure and vCenter, this script will download the necessary dependencies _(Azure CLI, Python)_ and if necessary authenticate to Azure.
+ 7. Once completed, **download** the **onboarding** PowerShell **script**
+ 8. **Run** the PowerShell **script** from a computer that has access to Azure and vCenter, this script will download the necessary dependencies _(Azure CLI, Python)_ and if necessary authenticate to Azure.
 
         Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
         ./resource-bridge-onboarding-script.ps1
- 9. gh
+ 9. When the script runs, you will be prompted for the following information.
+    * **Proxy** information _(if the Workstation is behind a proxy)_
+    * **UAC** _(User Access Control)_ **approval** for the script to install Azure CLI/Python on the workstation
+    * **Azure authentication**
+    * **vCenter** FQDN/**Address**
+    * 
 10. sd
 
 ### Troubleshooting
@@ -122,3 +127,5 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 2. Select New Folder
 3. Select New VM and Templates folder
 4. Create a folder
+
+* If your Center, becomes unavailable, it is most likely because you specified the same IP for the Azure Arc Appliance, if this is the case, log in to the host containing your Azure Arc Bridge and stop/delete the resources from the disk and remove from inventory. Then rerun deployment again, this time selecting an appropriate IP.

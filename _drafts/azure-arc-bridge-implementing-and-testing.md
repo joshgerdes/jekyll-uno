@@ -56,17 +56,23 @@ The following private cloud environments and their versions are officially suppo
 * VMware vSphere version 6.7
 * Azure Stack HCI
 
-#### Required Azure permissions
+#### Permissions
 
 * Contributor rights to the Resource Group that the Azure Arc bridge resource will be created.
+* vSphere account _(with at least Read and modify VM rights)_
 
 #### Required Azure resources
 
 * Resource Group for your Azure Arc Resource Bridge
 
+#### Required On-premises resources
+
+* Resource pool with a reservation of at least 16 GB of RAM and four vCPUs. It should also have access to a datastore with at least 100 GB of free disk space.
+
 #### Networking
 
 * The Arc resource bridge communicates outbound securely to Azure Arc over TCP port 443
+* At least one free IP _(Internet Protocol)_ address on the on-premises network _(or 3 if there isn't a DHCP server)_
 
 ### Create Azure Arc Resource Bridge
 
@@ -88,9 +94,16 @@ The following private cloud environments and their versions are officially suppo
 * Create a [**Custom location **](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-location "Create and manage custom locations on Azure Arc-enabled Kubernetes")_(that matches your on-premises location, where your resources are stored, ie could be a data centre prefix that matches your naming convention)_
 * Enter in the **name** of your **vCenter** resource _(this will represent your vCenter in Azure, so make sure it is easily identifiable)_
 
-1. ![](/uploads/azure_arc_vmware_portal_createresourcesbridge.png)
-2. Click **Next: Tags**
-3. A list of default tags has been supplied, feel free to enter or change these to suit your environment.
-4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
-5. Click **Next: Download and run the script**
-6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete.
+ 1. ![](/uploads/azure_arc_vmware_portal_createresourcesbridge.png)
+ 2. Click **Next: Tags**
+ 3. A list of default tags has been supplied, feel free to enter or change these to suit your environment.
+ 4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
+ 5. Click **Next: Download and run the script**
+ 6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete _(it may take a minute or two, you will see: Successfully register your subscription(s) when completed)_.
+ 7. Once completed, download the onboarding PowerShell script
+ 8. Run the PowerShell script from a computer that has access to Azure and vCenter
+
+        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+        ./resource-bridge-onboarding-script.ps1
+ 9. gh
+10. sd

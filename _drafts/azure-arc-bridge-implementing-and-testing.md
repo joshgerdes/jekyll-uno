@@ -113,6 +113,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
     * **UAC** _(User Access Control)_ **approval** for the script to install Azure CLI/Python on the workstation
     * **Azure authentication**
     * **vCenter** FQDN/**Address**
+    * **vCenter Username** & **Password**
     * 
 10. sd
 

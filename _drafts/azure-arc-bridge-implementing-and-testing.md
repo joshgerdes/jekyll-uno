@@ -114,14 +114,16 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
     * **Azure authentication**
     * **vCenter** FQDN/**Address**
     * **vCenter Username** & **Password**
-    * 
-10. sd
+    * **vCenter datastore**
+    * **vCenter folder** _(to place the template in)_
+    * **IP address**
+10. sdsd
+11. sdsd
+12. 
 
 ### Troubleshooting
 
 * The 'resource-bridge-onboarding-script.ps1' script contains an output file, named: arcvmware-output.log. This log file exists in the same directory as the script and is useful for an investigation into any errors.
-
-
 * If you get no Folders, listed when the script prompts you to select a folder _(ie Please select folder)_:
 
 1. Right-click the Datacenter in vSphere

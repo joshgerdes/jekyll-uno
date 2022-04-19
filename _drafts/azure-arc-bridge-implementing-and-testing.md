@@ -117,7 +117,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
     * **vCenter datastore**
     * **vCenter folder** _(to place the template in)_
     * **IP address**
-10. sdsd
+10. ![](/uploads/deploy-azurearcbridge.gif)
 
 #### Link vCenter to Azure Arc
 

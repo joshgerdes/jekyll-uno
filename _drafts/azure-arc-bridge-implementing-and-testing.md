@@ -37,3 +37,5 @@ Along with normal integration of Azure Arc workloads, such as support for Azure 
 ![](/uploads/arc-bridge-architecture-overview.png)
 
 Today, we are going to stand up an Azure Arc Bridge, that supports VMWare vSphere _(version greater than VMware vSphere version 6.7)_.
+
+I will be running vSphere 7.0.3

@@ -118,8 +118,17 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
     * **vCenter folder** _(to place the template in)_
     * **IP address**
 10. sdsd
-11. sdsd
-12. 
+
+#### Link vCenter to Azure Arc
+
+1. Log in to the [**Azure Portal**]()
+2. In the search box up the top, type in: **Azure Arc**
+3. Click **Azure Arc**
+4. Click on: **Resource bridges (preview)**
+5. Click on your Azure Arc Bridge and **verify** the **status** is '**Running**' _(if it is not make sure it has been started on-premises)_
+6. In the Azure Portal, click on **VMWare vCenters (preview)**
+7. Click **Add**
+8. 
 
 ### Troubleshooting
 

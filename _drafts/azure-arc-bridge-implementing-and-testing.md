@@ -58,4 +58,15 @@ The following private cloud environments and their versions are officially suppo
 
 * Contributor rights to the Resource Group that the Azure Arc bridge resource will be created to
 * The Arc resource bridge communicates outbound securely to Azure Arc over TCP port 443
-* 
+
+### Create Azure Arc Resource Bridge
+
+#### Create Resource Bridge
+
+1. Log in to the [**Azure Portal**]()
+2. In the search box up the top, type in: **Azure Arc**
+3. Click **Azure Arc**
+4. Click on: **VMware vCenters (preview)**
+5. Click **Add**
+6. ![](/uploads/azure_arc_vmware_portal.png)
+7. 

@@ -121,14 +121,26 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 #### Link vCenter to Azure Arc
 
-1. Log in to the [**Azure Portal**]()
-2. In the search box up the top, type in: **Azure Arc**
-3. Click **Azure Arc**
-4. Click on: **Resource bridges (preview)**
-5. Click on your Azure Arc Bridge and **verify** the **status** is '**Running**' _(if it is not make sure it has been started on-premises)_
-6. In the Azure Portal, click on **VMWare vCenters (preview)**
-7. Click **Add**
-8. 
+You may not need to do the below, but my Bridge was in a 'running' state but hadn't added in the connection to vCenter.
+
+ 1. Log in to the [**Azure Portal**]()
+ 2. In the search box up the top, type in: **Azure Arc**
+ 3. Click **Azure Arc**
+ 4. Click on: **Resource bridges (preview)**
+ 5. Click on your Azure Arc Bridge and **verify** the **status** is '**Running**' _(if it is not make sure it has been started on-premises)_
+ 6. In the Azure Portal, click on **VMWare vCenters (preview)**
+ 7. Click **Add**
+ 8. Click **Use an existing resource bridge**
+ 9. Click **Next: Basics**
+10. Create your **Custom Location**, then **enter** in the on-premises **vCenter** details
+11. ![](/uploads/azure_arc_vmware_portal_bridge_vcenter.png)
+12. On the next blade, enter in your appropriate **Tags** then click **Create**
+13. Wait for the deployment to complete, this could take 2-5 minutes.
+14. In the search box up the top, type in: **Azure Arc**
+15. Click **Azure Arc**
+16. Click on: **VMware vCenters (preview)**
+17. You should now see your vSphere instance in a Connected state
+18. ![](/uploads/azure_arc_vmware_portal_bridge_vcenterdeployed.png)
 
 ### Troubleshooting
 

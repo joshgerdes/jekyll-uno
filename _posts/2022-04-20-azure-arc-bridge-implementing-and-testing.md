@@ -100,8 +100,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
  1. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridge.png "Azure Arc - vCenter")
  2. Click **Next: Tags**
  3. A list of default tags has been supplied; feel free to enter or change these to suit your environment.
- 4.   
-    ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png "Azure Arc - vCenter")
+ 4. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png "Azure Arc - vCenter")
  5. Click **Next: Download and run the script.**
  6. Click on **Register** to register the Azure Arc Provider to your subscription. Please wait for this process to complete _(it may take a minute or two, you will see: Successfully register your subscription(s) when completed)_.
  7. Once completed, **download** the **onboarding** PowerShell **script**

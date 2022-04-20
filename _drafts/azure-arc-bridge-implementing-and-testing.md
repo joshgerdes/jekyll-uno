@@ -166,7 +166,9 @@ Now that the Bridge has been created, we need to allow resources _(such as Virtu
 
 Now that you have set up an Azure Arc Bridge, and onboarded vCenter resources. You can now see and manage your vCenter Virtual Machines in Azure, examples below.
 
-#### Restart Virtual Machines
+Make sure that you have VM Tools installed and up-to-date to help full functionality, such as Restart.
+
+#### Stop/Stop Virtual Machines
 
 ### Troubleshooting
 

@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azure_arc_vmware_portal_createresourcebridge.png"
 
 ---
-[Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview "What is Azure Arc resource bridge ") _(currently in preview)_ is part of the core Azure Arc Hybrid Cloud platform.
+[Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview "What is Azure Arc resource bridge "){:target="_blank"} _(currently in preview)_ is part of the core Azure Arc Hybrid Cloud platform.
 
 ### Overview
 
@@ -34,7 +34,7 @@ Along with standard integration of Azure Arc workloads, such as support for Azur
 >
 > All management operations are performed from Azure, no local configuration is required on the appliance.
 
-![](/uploads/arc-bridge-architecture-overview.png)
+![Azure Arc - Overview](/uploads/arc-bridge-architecture-overview.png)
 
 > Azure Arc resource bridge currently supports the following Azure regions:
 >
@@ -81,7 +81,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 #### Create Resource Bridge
 
- 1. Log in to the [**Azure Portal**]()
+ 1. Log in to the **Azure Portal**
  2. In the search box up the top, type in: **Azure Arc**
  3. Click **Azure Arc**
  4. Click on: **VMware vCenters (preview)**
@@ -94,7 +94,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 * **Name** _(of the Resource Bridge resource)_
 * Select the **region** for your Metadata
-* Create a [**Custom Location**](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations "Create and manage custom locations on Azure Arc-enabled Kubernetes") _(that matches your on-premises location, where your resources are stored, i.e. could be a data centre prefix that matches your naming convention)_
+* Create a [**Custom Location**](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations "Create and manage custom locations on Azure Arc-enabled Kubernetes"){:target="_blank"} _(that matches your on-premises location, where your resources are stored, i.e. could be a data centre prefix that matches your naming convention)_
 * Enter in the **name** of your **vCenter** resource _(this will represent your vCenter in Azure, so make sure it is easily identifiable)_
 
  1. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridge.png "Azure Arc - vCenter")
@@ -124,7 +124,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 You may not need to do the below, but my Bridge was in a 'running' state but hadn't added in the connection to vCenter.
 
- 1. Log in to the [**Azure Portal**]()
+ 1. Log in to the **Azure Portal**
  2. In the search box up the top, type in: **Azure Arc**
  3. Click **Azure Arc**
  4. Click on: **Resource bridges (preview)**
@@ -147,7 +147,7 @@ You may not need to do the below, but my Bridge was in a 'running' state but had
 
 Now that the Bridge has been created, we need to allow resources _(such as Virtual Machines, Datastores,  Networks)_.
 
- 1. Log in to the [**Azure Portal**]()
+ 1. Log in to the **Azure Portal**
  2. In the search box up the top, type in: **Azure Arc**
  3. Click **Azure Arc**
  4. Click on: **VMware vCenters (preview)**

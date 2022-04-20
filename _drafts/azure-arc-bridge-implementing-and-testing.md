@@ -142,6 +142,24 @@ You may not need to do the below, but my Bridge was in a 'running' state but had
 17. You should now see your vSphere instance in a Connected state
 18. ![](/uploads/azure_arc_vmware_portal_bridge_vcenterdeployed.png)
 
+#### Enable vCenter resources to be managed in Microsoft Azure
+
+Now that the Bridge has been created, we need to allow resources _(such as Virtual Machines, Datastores,  Networks)_.
+
+ 1. Log in to the [**Azure Portal**]()
+ 2. In the search box up the top, type in: **Azure Arc**
+ 3. Click **Azure Arc**
+ 4. Click on: **VMware vCenters (preview)**
+ 5. Click on your **vCenter instance**
+ 6. Under vCenter Inventory, select **Virtual Machines**
+ 7. ![](/uploads/azure_arc_vsphere_vm.png)
+ 8. Select the Virtual Machines, you want to enable for management in Azure and click '**Enable in Azure**'
+ 9. Select your applicable Subscription and Resource Group (this is where the Azure Arc VM resources will be placed)
+10. Make sure '**Enable Guest management**' is selected
+11. Enter in your Administrator _(this is the Admin Username and password of the workloads you want to install the Azure guest management too)_
+12. ![](/uploads/azure_arc_vsphere_vmguestagent.png)
+13. Click **Enable**
+
 ### Troubleshooting
 
 * The 'resource-bridge-onboarding-script.ps1' script contains an output file, named: arcvmware-output.log. This log file exists in the same directory as the script and is useful for an investigation into any errors.

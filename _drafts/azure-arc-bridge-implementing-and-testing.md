@@ -1,12 +1,12 @@
 ---
-date: 2022-04-19 00:00:00 +1200
+date: 2022-04-20 14:00:00 +1200
 title: Azure Arc Bridge - Implementing and Testing
 author: Luke
 categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azure_arc_vmware_portal_createresourcebridge.png"
 
 ---
 [Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview "What is Azure Arc resource bridge ") _(currently in preview)_, is part of the core Azure Arc Hybrid Cloud platform.

@@ -170,6 +170,8 @@ Now that you have set up an Azure Arc Bridge, and onboarded vCenter resources. Y
 
 #### Stop/Stop Virtual Machines
 
+![](/uploads/startstopvm-azurearcbridge.gif)
+
 ### Troubleshooting
 
 * The 'resource-bridge-onboarding-script.ps1' script contains an output file, named: arcvmware-output.log. This log file exists in the same directory as the script and is useful for an investigation into any errors.

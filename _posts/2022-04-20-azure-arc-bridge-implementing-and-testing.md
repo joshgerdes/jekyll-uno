@@ -1,5 +1,5 @@
 ---
-date: 2022-04-20 14:00:00 +1200
+date: 2022-04-20 14:00:00 +1300
 title: Azure Arc Bridge - Implementing and Testing
 author: Luke
 categories:

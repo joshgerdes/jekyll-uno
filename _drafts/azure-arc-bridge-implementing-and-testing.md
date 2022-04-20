@@ -159,6 +159,7 @@ Now that the Bridge has been created, we need to allow resources _(such as Virtu
 11. Enter in your Administrator _(this is the Admin Username and password of the workloads you want to install the Azure guest management too)_
 12. ![](/uploads/azure_arc_vsphere_vmguestagent.png)
 13. Click **Enable**
+14. It can take a few minutes to onboard these clients. If it fails, then pick a single Virtual Machine and attempt to onboard that.
 
 ### Troubleshooting
 

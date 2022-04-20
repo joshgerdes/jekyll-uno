@@ -1,6 +1,6 @@
 ---
 date: 2022-04-20 14:00:00 +1300
-title: Azure Arc Bridge - Implementing and Testing
+title: Azure Arc Bridge - Implementation and Testing
 author: Luke
 categories:
 - Azure

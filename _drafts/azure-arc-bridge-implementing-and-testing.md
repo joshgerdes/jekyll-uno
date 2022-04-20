@@ -13,9 +13,9 @@ header:
 
 ### Overview
 
-The Azure Arc resource bridge allows for VM (Virtual Machine) self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
+The Azure Arc resource bridge allows for VM _(Virtual Machine)_ self-servicing and management of on-premises Azure Stack HCI and VMWare virtualized workloads, supporting both Linux and Windows.
 
-Along with normal integration of Azure Arc workloads, such as support for Azure Policy. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
+Along with normal integration of Azure Arc workloads, such as support for Azure Policy and Azure extensions, Defender for Cloud support. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
 
 * Start, stop and restart a virtual machine
 * Control access and add Azure tags
@@ -86,9 +86,9 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
  3. Click **Azure Arc**
  4. Click on: **VMware vCenters (preview)**
  5. Click **Add**
- 6. ![](/uploads/azure_arc_vmware_portal.png)
+ 6. ![Azure Arc - Resource Bridge](/uploads/azure_arc_vmware_portal.png "Azure Arc - Resource Bridge")
  7. Click: **Create a new resource bridge**
- 8. ![](/uploads/azure_arc_vmware_portal_createresourcebridge.png)
+ 8. ![Azure Arc - Resource Bridge](/uploads/azure_arc_vmware_portal_createresourcebridge.png "Azure Arc - Resource Bridge")
  9. Click **Next: Basics**
 10. **Enter** the **following** information to suit your environment:
 
@@ -97,10 +97,10 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 * Create a [**Custom location **](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-location "Create and manage custom locations on Azure Arc-enabled Kubernetes")_(that matches your on-premises location, where your resources are stored, ie could be a data centre prefix that matches your naming convention)_
 * Enter in the **name** of your **vCenter** resource _(this will represent your vCenter in Azure, so make sure it is easily identifiable)_
 
- 1. ![](/uploads/azure_arc_vmware_portal_createresourcesbridge.png)
+ 1. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridge.png "Azure Arc - vCenter")
  2. Click **Next: Tags**
  3. A list of default tags has been supplied, feel free to enter or change these to suit your environment.
- 4. ![](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png)
+ 4. Azure Arc - vCenter![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridgetags.png "Azure Arc - vCenter")
  5. Click **Next: Download and run the script**
  6. Click on **Register**, to register the Azure Arc Provider, to your subscription. Wait for this process to complete _(it may take a minute or two, you will see: Successfully register your subscription(s) when completed)_.
  7. Once completed, **download** the **onboarding** PowerShell **script**
@@ -117,7 +117,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
     * **vCenter datastore**
     * **vCenter folder** _(to place the template in)_
     * **IP address**
-10. ![](/uploads/deploy-azurearcbridge.gif)
+10. ![Azure Arc - vCenter Onboarding](/uploads/deploy-azurearcbridge.gif "Azure Arc - vCenter Onboarding")
 
 #### Link vCenter to Azure Arc
 
@@ -133,14 +133,14 @@ You may not need to do the below, but my Bridge was in a 'running' state but had
  8. Click **Use an existing resource bridge**
  9. Click **Next: Basics**
 10. Create your **Custom Location**, then **enter** in the on-premises **vCenter** details
-11. ![](/uploads/azure_arc_vmware_portal_bridge_vcenter.png)
+11. ![Azure Arc - vCenter Onboarding](/uploads/azure_arc_vmware_portal_bridge_vcenter.png "Azure Arc - vCenter Onboarding")
 12. On the next blade, enter in your appropriate **Tags** then click **Create**
 13. Wait for the deployment to complete, this could take 2-5 minutes.
 14. In the search box up the top, type in: **Azure Arc**
 15. Click **Azure Arc**
 16. Click on: **VMware vCenters (preview)**
 17. You should now see your vSphere instance in a Connected state
-18. ![](/uploads/azure_arc_vmware_portal_bridge_vcenterdeployed.png)
+18. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_bridge_vcenterdeployed.png "Azure Arc - vCenter")
 
 #### Enable vCenter resources to be managed in Microsoft Azure
 
@@ -152,12 +152,12 @@ Now that the Bridge has been created, we need to allow resources _(such as Virtu
  4. Click on: **VMware vCenters (preview)**
  5. Click on your **vCenter instance**
  6. Under vCenter Inventory, select **Virtual Machines**
- 7. ![](/uploads/azure_arc_vsphere_vm.png)
+ 7. ![Azure Arc - vCenter](/uploads/azure_arc_vsphere_vm.png "Azure Arc - vCenter")
  8. Select the Virtual Machines, you want to enable for management in Azure and click '**Enable in Azure**'
  9. Select your applicable Subscription and Resource Group (this is where the Azure Arc VM resources will be placed)
 10. Make sure '**Enable Guest management**' is selected
 11. Enter in your Administrator _(this is the Admin Username and password of the workloads you want to install the Azure guest management too)_
-12. ![](/uploads/azure_arc_vsphere_vmguestagent.png)
+12. ![Azure Arc - On-premises VM](/uploads/azure_arc_vsphere_vmguestagent.png "Azure Arc - On-premises VM")
 13. Click **Enable**
 14. It can take a few minutes to onboard these clients. If it fails, then pick a single Virtual Machine and attempt to onboard that.
 15. You can now repeat the process to onboard Networks, Resource Pools etc.
@@ -170,13 +170,15 @@ Now that you have set up an Azure Arc Bridge, and onboarded vCenter resources. Y
 
 #### Stop/Stop Virtual Machines
 
-![](/uploads/startstopvm-azurearcbridge.gif)
+![Azure Arc - Start/Stop VM](/uploads/startstopvm-azurearcbridge.gif "Azure Arc - Start/Stop VM")
 
 #### Resize Virtual Machines - CPU/Memory
 
-![](/uploads/resizevm-azurearcbridge.gif)
+![Azure Arc - Resize VM](/uploads/resizevm-azurearcbridge.gif "Azure Arc - Resize VM")
 
 #### Resize Virtual Machines - Disk
+
+![Azure Arc - Resize Disk](/uploads/resizevmdisk-azurearcbridge.gif "Azure Arc - Resize Disk")
 
 ### Troubleshooting
 

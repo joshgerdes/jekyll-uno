@@ -16,7 +16,7 @@ header:
 
 The Azure Arc resource bridge allows for VM _(Virtual Machine)_ self-servicing and managing on-premises Azure Stack HCI and VMWare virtualised workloads, supporting Linux and Windows.
 
-Along with standard integration of Azure Arc workloads, such as support for Azure Policy and Azure extensions, Defender for Cloud support. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
+Along with standard integration of Azure Arc workloads, such as support for Azure Policy and Azure extensions, Azure Update Management and Defender for Cloud support. The Azure Arc resource bridge offers the following self-service functionality direct from the Microsoft Azure portal, offering a single pane of a glass of your workloads, whether they exist on-premises or in Azure:
 
 * Start, stop and restart a virtual machine
 * Control access and add Azure tags

@@ -160,7 +160,13 @@ Now that the Bridge has been created, we need to allow resources _(such as Virtu
 12. ![](/uploads/azure_arc_vsphere_vmguestagent.png)
 13. Click **Enable**
 14. It can take a few minutes to onboard these clients. If it fails, then pick a single Virtual Machine and attempt to onboard that.
-15. You can now repeat the process to onboard Networks, Resource Pools, 
+15. You can now repeat the process to onboard Networks, Resource Pools etc.
+
+### Manage Virtual Machines in Microsoft Azure
+
+Now that you have set up an Azure Arc Bridge, and onboarded vCenter resources. You can now see and manage your vCenter Virtual Machines in Azure, examples below.
+
+#### Restart Virtual Machines
 
 ### Troubleshooting
 

@@ -172,9 +172,11 @@ Now that you have set up an Azure Arc Bridge, and onboarded vCenter resources. Y
 
 ![](/uploads/startstopvm-azurearcbridge.gif)
 
-#### Resize Virtual Machines
+#### Resize Virtual Machines - CPU/Memory
 
 ![](/uploads/resizevm-azurearcbridge.gif)
+
+#### Resize Virtual Machines - Disk
 
 ### Troubleshooting
 

@@ -4,7 +4,7 @@ title: Azure Arc Bridge - Implementation and Testing
 author: Luke
 categories:
 - Azure
-permalink: /azure/azure-arc-bridge-implementing-and-testing
+permalink: /azure/azure-arc-bridge-implementing-and-testing/
 toc: true
 header:
   teaser: "/uploads/azure_arc_vmware_portal_createresourcebridge.png"

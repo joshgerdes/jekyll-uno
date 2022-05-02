@@ -9,7 +9,7 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-In early February 2022, Azure Bastion Preview support for the [native Windows SSH and RDP](https://docs.microsoft.com/en-us/azure/bastion/connect-native-client-windows "Connect to a VM using the native client (Preview)"){:target="_blank"} client came out, and this meant that we no longer have to rely on the Azure Portal and the limitations of a web browser - the support also includes File transfer through the clipboard by copying and pasted into the RDP session!
+In early February 2022, Azure Bastion Preview support for the [native Windows SSH and RDP](https://docs.microsoft.com/en-us/azure/bastion/connect-native-client-windows?WT.mc_id=AZ-MVP-5004796 "Connect to a VM using the native client (Preview)"){:target="_blank"} client came out, and this meant that we no longer have to rely on the Azure Portal and the limitations of a web browser - the support also includes File transfer through the clipboard by copying and pasted into the RDP session!
 
 > Azure Bastion is a fully managed service that provides more secure and seamless Remote Desktop Protocol (RDP) and Secure Shell Protocol (SSH) access to virtual machines (VMs) without any exposure through public IP addresses. Provision the service directly in your local or peered virtual network to get support for all the VMs within it.
 
@@ -17,13 +17,13 @@ Let’s test the native RDP client through a secure connection using Azure Basti
 
 ### Prerequisites
 
-* This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings "Azure Bastion documentation"){:target="_blank"} tier for Azure Bastion.
+* This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings?WT.mc_id=AZ-MVP-5004796 "Azure Bastion documentation"){:target="_blank"} tier for Azure Bastion.
 * A Virtual Machine(s) to connect
-* Latest [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli "Azure CLI"){:target="_blank"}
+* Latest [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "Azure CLI"){:target="_blank"}
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine.
 * Reader role on the Azure Bastion resource
-* Virtual Machine Administrator _(or User)_ login role _using_ [_Azure Active Directory_](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows "Login to Windows virtual machine in Azure using Azure Active Directory authentication"){:target="_blank"} _authentication_.
+* Virtual Machine Administrator _(or User)_ login role _using_ [_Azure Active Directory_](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows?WT.mc_id=AZ-MVP-5004796 "Login to Windows virtual machine in Azure using Azure Active Directory authentication"){:target="_blank"}_authentication_.
 
 ### Create Azure Bastion
 
@@ -45,10 +45,10 @@ If you have a Virtual Machine but haven't set up Azure Bastion, run through the 
 14. Click **Save** to create the subnet ![Azure - Bastion](/uploads/az_subnet.png "Azure - Bastion")
 15. Up the Top, click **Create a Bastion**. Your subnet should be selected automatically to go back to the Bastion setup.
 16. You do need a **Public IP** for Bastion, so **confirm** the **name** is appropriate, then click **Next: Tags.**
-17. ![](/uploads/2022-02-16-10_44_32-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+17. ![Azure Bastion](/uploads/2022-02-16-10_44_32-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
 18. Add in appropriate tags, then click **Next: Advanced**
 19. Check the box next to **Native client support (Preview)**
-20. ![](/uploads/2022-02-16-10_46_19-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+20. ![Azure Bastion](/uploads/2022-02-16-10_46_19-create-a-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
 21. Click **Next: Review + Create**
 22. Click on **Create** to create your Bastion instance!
 
@@ -66,7 +66,7 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
 4. Change Tier to **Standard**
 5. Check: **Native client support (Preview)**
 6. Click **Apply**
-7. ![](/uploads/2022-02-16-10_58_47-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
+7. ![Azure Bastion](/uploads/2022-02-16-10_58_47-bastion-microsoft-azure-mozilla-firefox-private-browsing.png)
 
 ### Connect to VM using Native RDP Support
 
@@ -83,6 +83,6 @@ _Downgrading from a Standard SKU to a Basic SKU is not supported. To downgrade, 
        $VMResourceID= '/subscriptions/000000-0000-0000-0000000/resourceGroups/appserver-rg/providers/Microsoft.Compute/virtualMachines/APP-P01'
        az network bastion rdp --name $BastionName --resource-group $BastionRG --target-resource-id $VMResourceID
 8. Run the command, your Remote Desktop window should open up, and the tunnel has been established; if you close the Azure CLI window, your RDP session will be dropped!
-9. ![](/uploads/azurebastiontst.gif)
+9. ![Azure Bastion](/uploads/azurebastiontst.gif)
 
 As you could most likely tell, there are no options to enable drive passthrough, etc. You would usually find when connecting to Remote Desktop, but the copying of files/text, etc., does work!

@@ -44,7 +44,7 @@ As a pre-requisite for the following, you need to install the Azure (Az) PowerSh
 
        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
        Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-6.1.0 "Install the Azure Az PowerShell module"){:target="_blank"}.
+3. If you have issues **installing** the **Azure PowerShell module** - see the Microsoft documentation directly: Install the [Azure Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796 "Install the Azure Az PowerShell module"){:target="_blank"}.
 4. Once you have the Azure PowerShell module installed, you can **connect to** your **Azure** subscription using the little snippet below:
 
        #Prompts for Azure credentials 
@@ -87,7 +87,7 @@ One of the best ways to learn about how an Azure Role is put together is to look
 8. Once completed, you should now **see** the **JSON files** below:
 9. ![Azure Role - JSON files](/uploads/az_exportroles.png "Azure Role - JSON files")
 
-_Although you can use Notepad, I recommend using_ [_Visual Studio Code_](https://code.visualstudio.com/Download){:target="_blank"} _to read these files. This is because Visual Studio Code will help with the syntax as well._
+_Although you can use Notepad, I recommend using_ [_Visual Studio Code_](https://code.visualstudio.com/Download){:target="_blank"}_to read these files. This is because Visual Studio Code will help with the syntax as well._
 
 ### Review Built-in Azure Roles
 
@@ -271,4 +271,4 @@ Now that you have created your Custom Role - it is time to assign it! So it is a
 
 You can assign Custom Role's using PowerShell. To do this, you need a few things such as the Object ID, Assignable Scope IDs etc., instead of rehashing it, this Microsoft article does an excellent job of running through the process.
 
-* [Assign Azure roles using Azure PowerShell](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell "Assign Azure roles using Azure PowerShell"){:target="_blank"}
+* [Assign Azure roles using Azure PowerShell](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell?WT.mc_id=AZ-MVP-5004796 "Assign Azure roles using Azure PowerShell"){:target="_blank"}

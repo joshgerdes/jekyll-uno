@@ -9,15 +9,15 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://docs.microsoft.com/en-us/azure/virtual-desktop/overview "What is Azure Virtual Desktop?"){:target="_blank"} is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10 _(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
+Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://docs.microsoft.com/en-us/azure/virtual-desktop/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Virtual Desktop?"){:target="_blank"} is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10_(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
 
 In this guide, I will run you through creating Azure Virtual Desktop from scratch, along with some prerequisites that will help you manage AVD after you create it.
 
-Before I begin, I recommend reading the Azure Virtual Desktop Azure product page "[here](https://azure.microsoft.com/en-us/services/virtual-desktop/ " Azure Virtual Desktop -   Enable a secure remote desktop experience from virtually anywhere."){:target="_blank"}" to understand the pricing model, features and additional resources that could help you in your journey.
+Before I begin, I recommend reading the Azure Virtual Desktop Azure product page "[here](https://azure.microsoft.com/en-us/services/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 " Azure Virtual Desktop -   Enable a secure remote desktop experience from virtually anywhere."){:target="_blank"}" to understand the pricing model, features and additional resources that could help you in your journey.
 
-When selecting a region for your Session Hosts _(Virtual Machines)_, I recommend you have a look at the: [Azure Virtual Desktop Experience Estimator](https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/ " Azure Virtual Desktop Experience Estimator") to help validate the proper region for your Session Hosts and the round trip time _(I am in New Zealand, so my recommended region is: Australia East, which is what I will be using for this guide)_.
+When selecting a region for your Session Hosts _(Virtual Machines)_, I recommend you have a look at the: [Azure Virtual Desktop Experience Estimator](https://azure.microsoft.com/en-us/services/virtual-desktop/assessment/?WT.mc_id=AZ-MVP-5004796 " Azure Virtual Desktop Experience Estimator") to help validate the proper region for your Session Hosts and the round trip time _(I am in New Zealand, so my recommended region is: Australia East, which is what I will be using for this guide)_.
 
-_If you don't already have a Microsoft Azure subscription, you can sign up for a Free subscription "_[_here_](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}_"._
+_If you don't already have a Microsoft Azure subscription, you can sign up for a Free subscription "_[_here_](https://azure.microsoft.com/en-us/free/?WT.mc_id=AZ-MVP-5004796 "Create your Azure free account today"){:target="_blank"}_"._
 
 Assuming you already have an Azure subscription and the appropriate access to create resources in that subscription, gets begin!
 
@@ -36,7 +36,7 @@ Assuming you already have an Azure subscription and the appropriate access to cr
     ![Azure AD Domain Services - Basic Config](/uploads/adds_basics.png "Azure AD Domain Services - Basic Config")
  9. Click **Next**
 10. We will set up the **Networking**; if you have an already existing Virtual Network, select it.
-    _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/azure/active-directory-domain-services/create-instance?WT.mc_id=Portal-Microsoft_AAD_DomainServices){:target="_blank"}
+    _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 11. I will let it create a **Virtual Network** and its Subnet (/24); click **Next**.
     ![Azure AD Domain Services - Networking Config](/uploads/adds_networking.png "Azure AD Domain Services - Networking Config")
 12. **Azure AD Domain Services** will **create** a new Azure AD **Group** called: **AAD DC Administrators** - this group will be used for Administrator level permissions on the Azure AD Domain Services domain _(it automatically adds the account you are using to create Azure AD Domain Services into this group)_.
@@ -159,14 +159,14 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
 _Note: You can use the little arrows on the left-hand side of your Remote Desktop window to copy and paste text to and from your Bastion connection._
 
 1. This will now install the base Active Directory remote management tools, including Group Policy Management, so you can now create and manage the Group Policy objects for your Azure Virtual Desktop hosts.
-   ![](/uploads/utility_servertools.png)
+   ![Server Tools](/uploads/utility_servertools.png)
 2. We will now set up some base configurations to **create** a custom **OU** for the Azure Virtual Desktops **hosts** to go into:
 
 * Open **Active Directory Users & Computers**
 * **Expand** out the **Domain** and right-click (at the Top Level)
 * Select **New, Organisational Unit**
 
-![](/uploads/utility_newou.png)
+![Server Tools](/uploads/utility_newou.png)
 
 * Type in: AVD
 * In the AVD OU, **create** a new **OU** called: Hosts
@@ -177,7 +177,7 @@ _Note: You can use the little arrows on the left-hand side of your Remote Deskto
 * Click on **Attribute Editor**
 * Find the **distinguishedName attribute**
 
-![](/uploads/utility_serverdn.png)
+![Server Tools](/uploads/utility_serverdn.png)
 
 * Open and **Copy** the **Value** for future _(in my case: OU=Hosts,OU=AVD,DC=luke,DC=geek,DC=nz)_ for future reference.
 * Now that we have the AVD Hosts OU, you can also open Group Policy Management and create your Computer policies.

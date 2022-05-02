@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/githubdesktop-overview.png"
 
 ---
-[Git](https://en.wikipedia.org/wiki/Git){:target="_blank"} (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_ has been around for years _(development and the first release began in 2005 by Linus Torvolds)_.
+[Git](https://en.wikipedia.org/wiki/Git){:target="_blank"} (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_has been around for years_(development and the first release began in 2005 by Linus Torvolds)_.
 
 Although primary driven and consumed by software developers – it is now a staple of everyday life for an IT professional of many disciplines _(i.e. Operations, Delivery),_ even if a git repository is used to store your PowerShell scripts _(hint – it should!)_.
 
@@ -27,7 +27,7 @@ Github Desktop gives you a clean, light and easy to use tool to work with git re
 
 Although Github Desktop is published by Github – this doesn't mean you cannot use a git repository hosted by another provider, such as Azure DevOps.
 
-This article assumes that you have a Git repository initialized already; you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps") or [Github](https://github.com/ "GitHub"){:target="_blank"}. Microsoft owns Azure DevOps and Github; personally, I have moved from Azure DevOps to Github for my git repositories but utilize AzureDevOps pipelines.
+This article assumes that you have a Git repository initialized already; you can create free repositories from [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min&WT.mc_id=AZ-MVP-5004796 "Azure DevOps") or [Github](https://github.com/ "GitHub"){:target="_blank"}. Microsoft owns Azure DevOps and Github; personally, I have moved from Azure DevOps to Github for my git repositories but utilize AzureDevOps pipelines.
 
 ![Git High level workflow](/images/posts/HLGit_Workflow.png "Git High level workflow")
 
@@ -46,7 +46,7 @@ Congratulations, you have now installed Github Desktop!
 
 If you have an Azure DevOps git repository, then follow the steps below – if you have chosen to go: Github, then feel free to skip this section for the next.
 
- 1. Sign in to [**Azure DevOps**](https://azure.microsoft.com/en-us/services/devops/?nav=min "Azure DevOps"){:target="_blank"}
+ 1. Sign in to [**Azure DevOps**](https://azure.microsoft.com/en-us/services/devops/?nav=min&WT.mc_id=AZ-MVP-5004796 "Azure DevOps"){:target="_blank"}
  2. **Navigate** to the **project** you want to add to Github Desktop
  3. Click on **Repos**, **Files**
  4. ![Azure DevOps - Repo](/uploads/azuredevops-repos.png "Azure DevOps - Repo")
@@ -137,7 +137,7 @@ A significant function of Git is the ability to create and use branches. Branche
 12. Click on **create a merge commit**.
 13. You should see a message in Github notifying that the merge was successful, and you can **push** your **changes** to the **origin** repository.
 14. Github Desktop should redirect you to the master branch, and you can **now see** your **changes**:
-15. ![](/uploads/githubdesktop-branchcommited.png)
+15. ![Github Desktop ](/uploads/githubdesktop-branchcommited.png)
 16. You can go back to using Dev to develop additional features, testing etc. and repeat the same process.
 
 Using a master branch allows others to get production-ready scripts or code, or avoid automation around continuous deployment to production resources, while you may be still working on functionality that you don't quite want to be released yet.

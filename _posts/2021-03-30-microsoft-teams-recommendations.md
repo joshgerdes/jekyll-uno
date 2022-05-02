@@ -12,7 +12,7 @@ header:
 
 
 ---
-In the age of remote working and collaboration, Microsoft Teams is one of the most popular tools being used to increase communication and productivity. 
+In the age of remote working and collaboration, Microsoft Teams is one of the most popular tools being used to increase communication and productivity.
 
 Especially those undergoing implementation and migrations from Skype for Business to Microsoft Teams - it is a good opportunity to take a step back and evaluate and clarify your implementation, the recommendations below as good as a place to start as any.
 

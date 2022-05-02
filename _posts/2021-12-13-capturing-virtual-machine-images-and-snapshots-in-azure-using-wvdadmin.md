@@ -44,7 +44,7 @@ Although, possible to do using the Azure Portal, quickly taking an OS disk snaps
 13. Confirm the server is correct and click **Ok**
 14. Depending on the size of your disk, this process may only take a few seconds; the virtual Machine may experience a slight performance hit. Still, I did not lose RDP connectivity during the snapshot process in my testing.
 15. Review the logs to make sure that the Snapshot has been created successfully:
-16. ![](/uploads/snapshot-create_verify_log.png)
+16. ![Snapshot](/uploads/snapshot-create_verify_log.png)
 17. You should now see the Snapshot in the Azure Portal, in the same Resource Group as the server.
 18. ![Azure Portal - Snapshot](/uploads/snapshot-azureportal.png "Azure Portal - Snapshot")
 

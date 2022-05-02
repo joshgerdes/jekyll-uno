@@ -13,8 +13,8 @@ In layman’s terms essentially, the servers or virtual hosts you would usually 
 
 More information on what Azure is and the services that offer _(which is ever-increasing)_ can be found on the following official Microsoft web pages:
 
-* [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
-* [What Azure Products & Services does Azure have?](https://azure.microsoft.com/en-us/services/){:target="_blank"}
+* [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [What Azure Products & Services does Azure have?](https://azure.microsoft.com/en-us/services/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
 This mammoth of a public cloud offering often causes confusion around knowing what Azure is capable of and the hardest part is knowing where to start! To quote a famous Hobbit.
 
@@ -24,21 +24,19 @@ This blog post is intended to help point you in the right direction whether it i
 
 _The links below are external to my website and I have no control over them. I have tried to categorise the resources in terms of skill level as much as I can and kept to training resources that are free, and I plan on keeping it up to date and add more as I come across them. Feel free to recommend others in the comments below._
 
-_Note: Updated: 11/02/22_
-
 ## Beginner: So, what is this outside world of Azure that you speak of?
 
-* [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/){:target="_blank"}
-* [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/ "Get started with Azure"){:target="_blank"}
-* [Get your Azure free account](https://azure.microsoft.com/en-us/free/ "Create your Azure free account today"){:target="_blank"}
+* [What is Azure?](https://azure.microsoft.com/en-us/overview/what-is-azure/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Get started with Azure](https://azure.microsoft.com/en-gb/get-started/?WT.mc_id=AZ-MVP-5004796 "Get started with Azure"){:target="_blank"}
+* [Get your Azure free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=AZ-MVP-5004796 "Create your Azure free account today"){:target="_blank"}
 * [Wikipedia - More about Azure and some acronyms (IaaS/PaaS)](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="_blank"}
 
 ## Intermediate: I am excited! Now to eat supper
 
 * [Create a 3-Tier Application Using Azure Virtual Machines](https://www.udemy.com/free-azure/){:target="_blank"}
-* [Microsoft Azure Essentials](https://www.microsoft.com/en-us/azureessentials){:target="_blank"}
-* [Channel9](https://channel9.msdn.com/Search?term=Azure&sortBy=recent&lang-en=true){:target="_blank"}
-* [Microsoft Learn](https://docs.microsoft.com/en-us/learn/){:target="_blank"}
+* [Microsoft Azure Essentials](https://docs.microsoft.com/en-us/learn/azure/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Channel9](https://docs.microsoft.com/en-us/shows/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Microsoft Learn](https://docs.microsoft.com/en-us/learn/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Cloud SKills Training Catalogue](https://www.microsoft.com/en-au/business/learn/cloud-training-events/Home/Search/?SearchText=&index=0&RecordCount=12&OrderBy=date&Solutions=Select+all+solutions_Azure+Fundamentals_Azure+Data,+Analytics+and+AI_Azure+Applications+and+Infrastructure_Microsoft+365+Desktop+Deployment_Microsoft+365+Teams_Microsoft+365+Security+and+Compliance_Dynamics+365_Power+Platform_Surface){:target="_blank"}
 
 
@@ -50,8 +48,8 @@ _Note: Updated: 11/02/22_
 * [Azure Tips and Tricks](https://microsoft.github.io/AzureTipsAndTricks/){:target="_blank"}
 * [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ){:target="_blank"}
 * [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA){:target="_blank"}
-* [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=BA-MVP-5003797){:target="_blank"}
-* [Learn Azure in a Month of Lunches - Audiobook](https://azure.microsoft.com/en-gb/resources/learn-azure-in-a-month-of-lunches/){:target="_blank"}
+* [Solution Architect: Design Power Platform solutions](https://docs.microsoft.com/en-us/learn/paths/solution-architect-data/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Learn Azure in a Month of Lunches - Audiobook](https://azure.microsoft.com/en-gb/resources/learn-azure-in-a-month-of-lunches/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
 ## Other: I have a dragon’s hoard of gold to spend
 
@@ -66,28 +64,28 @@ _Note: Updated: 11/02/22_
 ## Bonus Material: You have built the citadel, now its time to defend the wall
 
 * [AWESOME-Azure-Architecture](https://github.com/lukemurraynz/awesome-azure-architecture/blob/main/README.md){:target="_blank"}
-* [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/){:target="_blank"}
-* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure){:target="_blank"}
+* [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Code Samples](https://docs.microsoft.com/en-gb/samples/browse/?products=azure?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Azure Quick Start Templates](https://github.com/Azure/azure-quickstart-templates){:target="_blank"}
-* [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/){:target="_blank"}
-* [Azure Products by region](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all){:target="_blank"}
-* [Azure Updates](https://azure.microsoft.com/en-us/updates/){:target="_blank"}
-* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/){:target="_blank"}
-* [Azure Virtual Datacenter Guidance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/vdc){:target="_blank"}
-* [Azure Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/){:target="_blank"}
-* [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/){:target="_blank"}
-* [Cloud Migration Resources](https://azure.microsoft.com/en-us/migration/resources/){:target="_blank"}
-* [Enterprise Cloud Strategy eBook](http://info.microsoft.com/enterprise-cloud-strategy-ebook.en-gb.1.html){:target="_blank"}
-* [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/){:target="_blank"}
+* [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Products by region](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Updates](https://azure.microsoft.com/en-us/updates/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Videos](https://azure.microsoft.com/en-us/resources/videos/index/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Virtual Datacenter Guidance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/vdc?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Well Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Whitepapers](https://azure.microsoft.com/en-us/resources/whitepapers/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Cloud Migration Resources](https://azure.microsoft.com/en-us/migration/resources/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Enterprise Cloud Strategy eBook](https://azure.microsoft.com/en-us/resources/enterprise-cloud-strategy/en-us/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Find an Azure Partner](https://azure.microsoft.com/en-us/partners/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Microsoft Azure Reddit](https://www.reddit.com/r/AZURE/){:target="_blank"}
 * [Microsoft Azure Twitter](https://twitter.com/Azure){:target="_blank"}
-* [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/){:target="_blank"}
+* [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [The Azure Podcast](http://azpodcast.azurewebsites.net/){:target="_blank"}
-* [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/){:target="_blank"}
+* [Windows Server on Azure](https://azure.microsoft.com/en-us/campaigns/windows-server/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Visual Studio subscriptions benefits](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription){:target="_blank"}
 * [Microsoft Customer Co-creation](https://customercocreation.microsoft.com/){:target="_blank"}
-* [Security Community Webinars](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/security-community-webinars/ba-p/927888){:target="_blank"}
+* [Security Community Webinars](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/join-our-security-community/ba-p/927888?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Microsoft Trainer Community Channel](https://www.youtube.com/channel/UCcrbVpBfMQOYQv8__mPHRJg){:target="_blank"}
 * [Linkedin - Azure Feeds](https://www.linkedin.com/in/azure-feeds-709457212/recent-activity/){:target="_blank"}
 * [Azure Feeds](https://azurefeeds.com/){:target="_blank"}
-* [Awesome Azure Architecture Awesome](https://github.com/lukemurraynz/awesome-azure-architecture#readme{:target="_blank"}
+* [Awesome Azure Architecture Awesome](https://github.com/lukemurraynz/awesome-azure-architecture#readme){:target="_blank"}

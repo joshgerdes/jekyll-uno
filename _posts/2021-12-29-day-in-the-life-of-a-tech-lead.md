@@ -32,7 +32,7 @@ At a very high level, this is what a day in the life of a technical lead means t
 * Develop and promote an 'everything as code', 'everything is automated' mindset
 * Problem/Incident Management _(i.e. Continous improvement)_
 
-#### A Technical lead mindset may look like below:
+#### A Technical lead mindset may look like below
 
 * Automate what's trivial, boring, mundane, and belittling
 * Build what you can't buy. Buy what you can't live without

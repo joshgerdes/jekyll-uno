@@ -8,7 +8,7 @@ toc: true
 header: 
   teaser: "images/iazure-marketplace-banner.png"
 ---
-![](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
+![Azure Backup Overview](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
 * TOC
 {:toc}
@@ -82,8 +82,8 @@ From time to time the Azure backup agent may fail. Sometimes this will self-reso
     
     sc delete WindowsAzureTelemetryService 
    
-5\. Create a folder called OLD in "C:\ WindowsAzure" and move the old version of the agent to it and the folders that say Packages. 
-6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
+5\. Create a folder called OLD in "C:\ WindowsAzure" and move the old version of the agent to it and the folders that say Packages.
+6\. Install the service again using the link: [https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409](https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409?WT.mc_id=AZ-MVP-5004796 "https://go.microsoft.com/fwlink/?LinkID=394789&clcid=0x409") or the latest agent available.  
 7\. Restart the server.
 
 ## Resolution #4

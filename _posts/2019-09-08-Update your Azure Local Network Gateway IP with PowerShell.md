@@ -8,14 +8,9 @@ categories:
 header:
   teaser: "images/powershell-blog-feature-banner.png"
 ---
-One of the issues you face with setting up an Azure [Site to Site
-VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal){:target="_blank"}
-is making sure that your Azure Local Network Gateway always has your
-Public/On-premises IP.
+One of the issues you face with setting up an Azure [Site to Site VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} is making sure that your Azure Local Network Gateway always has your Public/On-premises IP.
 
-This setup is fine when used in environments that have Static IPs (and yes if
-setting this up for a Business or Production, it is highly recommended to have a
-static IP!).
+This setup is fine when used in environments that have Static IPs (and yes if setting this up for a Business or Production, it is highly recommended to have a static IP!).
 
 However, when used in environments like my home network or lab environments - which has a Dynamic IP that could change at any time it will cause connectivity issues if your IP changes and the Local Network Gateway is not updated.
 
@@ -25,11 +20,8 @@ Local Network Gateway.
 
 Prerequisites:
 
-* [Az PowerShell
-  Module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-2.6.0){:target="_blank"}
-* [Azure Service
-  Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal){:target="_blank"}
-  (with Contributor rights to the Azure Local Network Gateway)
+* [Az PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Service Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} (with Contributor rights to the Azure Local Network Gateway)
 
 Once you have the Azure Service Principal and Az Module installed, you need to
 edit the following variables to suit your environment:
@@ -42,5 +34,4 @@ edit the following variables to suit your environment:
 
 {% gist 1b73335e1d0eadcfe4064f8221077ca1 %}
 
-_Note: Script is also hosted on my Github repository. Feel free to
-clone/recommend improvements or fork._
+_Note: Script is also hosted on my Github repository. Feel free to clone/recommend improvements or fork._

@@ -20,11 +20,9 @@ other attacks which targeted that protocol)* which needs to be eradicated from
 any use! To be clearer all you need to do is read this article from Ned Pyle
 from Microsoft back in 2016.
 
--   [Stop using
-    SMB1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/){:target="_blank"}
+- [Stop using SMB1](https://techcommunity.microsoft.com/t5/storage-at-microsoft/stop-using-smb1/ba-p/425858?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
--   [SMB1 Product
-    Clearinghouse](https://blogs.technet.microsoft.com/filecab/2017/06/01/smb1-product-clearinghouse/){:target="_blank"}
+- [SMB1 Product Clearinghouse](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb1-product-clearinghouse/ba-p/426008?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
 There are a lot of resources out there to disable SMB1, included is a PowerShell
 script I wrote back in 2017 that I used to assist with disabling SMB1 across

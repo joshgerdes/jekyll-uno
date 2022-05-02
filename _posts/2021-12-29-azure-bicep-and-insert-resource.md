@@ -21,7 +21,7 @@ To use Insert Resource, you will need to have:
 * Azure CLI
 * Visual Studio Code with the Bicep extension
 
-You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install){:target="_blank"} page.
+You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} page.
 You can also review the Bicep changes and latest release notes on Github here: [Azure Bicep releases](https://github.com/Azure/bicep/releases){:target="_blank"}
 
 #### Import Resources into Bicep using Azure CLI and Bicep
@@ -38,9 +38,9 @@ You can also review the Bicep changes and latest release notes on Github here: [
 10. **Start typing** in **Bicep**; if you have the latest version, **you should see: Bicep: Insert Resource.**, select this
 11. ![Azure Bicep - Insert Resource](/uploads/bicepinsertresource.png "Azure Bicep - Insert Resource")
 12. Enter in the resource ID you copied earlier.
-13. ![](/uploads/bicepinsertresourceenterresourceid.png)
+13. ![Azure Bicep - Insert Resource](/uploads/bicepinsertresourceenterresourceid.png)
 14. Azure Bicep should have connected and exported your Resource straight into Bicep! As below, it had imported a Log Analytics workspace in my subscription straight into Bicep.
-15. ![](/uploads/bicepinsertedresource.png)
+15. ![Azure Bicep - Insert Resource](/uploads/bicepinsertedresource.png)
 
 #### To find the resource ID using the Azure Portal.
 

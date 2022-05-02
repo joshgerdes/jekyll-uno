@@ -122,7 +122,7 @@ You only need to add the IP ranges of the Region that your Azure DevOps instance
 
 You can find the region that your Azure DevOps instance sits in by following the article below:
 
-* [Microsoft-hosted agents for Azure Pipelines - Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking)
+* [Microsoft-hosted agents for Azure Pipelines - Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796#networking)
 
 You can retrieve the list of Azure IP Ranges and Service Tags from the following Microsoft JSON file:
 

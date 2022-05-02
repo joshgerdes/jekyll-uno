@@ -12,7 +12,7 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 
 ### Overview
 
-> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications){:target="_blank"}. An Azure Compute Gallery provides:
+> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796){:target="_blank"}. An Azure Compute Gallery provides:
 >
 > * Global replication.
 > * Versioning and grouping of resources for easier management.
@@ -32,7 +32,7 @@ With images, Azure VM applications that support both Linux and Windows operating
 > * Sharing with other users through Azure Role Based Access Control (RBAC)
 > * Support for virtual machines, and both flexible and uniform scale sets
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
-> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects){:target="_blank"} policy.
+> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects?WT.mc_id=AZ-MVP-5004796){:target="_blank"} policy.
 
 Azure VM Application packages _(stored in an Azure Storage account)_ uses multiple resources, as below:
 
@@ -43,8 +43,9 @@ Azure VM Application packages _(stored in an Azure Storage account)_ uses multip
 | VM Application version | This is the deployable resource. You can globally replicate your VM application versions to target regions closer to your VM infrastructure. The VM Application Version must be replicated to a region before it may be deployed on a VM in that region. |
 
 There is no extra charge for using VM Application Packages, but you will be charged for the following resources:
-  * Storage costs of storing each package and any replicas.
-  * Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
+
+* Storage costs of storing each package and any replicas.
+* Network egress charges for replication of the first image version from the source region to the replicated regions. Subsequent replicas are handled within the region, so there are no additional charges.
 
 Before we deploy our first VM application, there are a few things we need to be aware of:
 
@@ -70,7 +71,7 @@ In order to use VM Applications, we need:
 * Azure Compute gallery
 * VM application definition and version _(in my example: the Datto RMM agent)_
 
-Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[ VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#exe-installer "VM Applications overview"){:target="_blank"} give a few good examples for getting started with various applications.
+Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#exe-installer "VM Applications overview"){:target="_blank"} give a few good examples for getting started with various applications.
 
 #### Setup Storage Account
 
@@ -85,10 +86,10 @@ The Storage account is where your application will be placed; it uses blobs; dep
  7. **Enter** your storage account **name** _(this needs to be globally unique)_
  8. **Select** your **region** that your application will be in; although the application can be replicated to other regions, it's better to select your primary region here.
  9. **Select** the **performance** and **redundancy** to match your requirements and click **Next: Advanced**
-10. ![](/uploads/create-a-storage-account-microsoft-azure.png)
+10. ![Azure Portal - Create Storage Account](/uploads/create-a-storage-account-microsoft-azure.png)
 11. You can **leave** most **settings** here as **default**, the application executable will need to be able to be accessed directly; make sure the **Minimum TLS** is at least **1.2**.
 12. You don't need hierarchical namespace etc.; unselect '_Allow cross-tenant replication'_ unless this is a feature you use.
-13. ![](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
+13. ![Azure Portal - Create Storage Account](/uploads/create-a-storage-account-advanced-microsoft-azure.png)
 14. Click **Review + Create** to skip to the last blade; most defaults are fine, but if you want to adjust the blob retainment and soft delete settings, go to the Data Protection tab, set them, then review your Configuration and select **Create**.
 15. Go back to your storage account and click **Configuration**
 16. Make sure: Allow storage account key access is: **Enabled**; if it is not, select Enabled and click **Save**.
@@ -104,7 +105,7 @@ Now that we have the Storage account to store your application binaries, we now 
  5. **Select** your **subscription** and **resource group** _(in this case, I am going to use the same resource group as the Storage account I created earlier)_
  6. Type in a **name**, and **select** your **region**
  7. Although not mandatory, use the opportunity to fill in a description for the purpose of the Compute Gallery for future reference
- 8. ![](/uploads/create-azure-compute-gallery-microsoft-azure.png)
+ 8. ![Azure Portal - Create Storage Account](/uploads/create-azure-compute-gallery-microsoft-azure.png)
  9. Select **Review + Create**
 10. Verify everything is correct and click on: **Create**
 
@@ -120,7 +121,7 @@ VM application definitions are created within a gallery and carry information ab
  6. Your subscription and resource group should be automatically selected to the location of the Compute Gallery, type in the **name of** your **applicatio.n**
  7. Select your **region**
  8. Select the **OS type** - in my case, and I select **Windows**
- 9. ![](/uploads/create-a-vm-application-definition-microsoft-azure.png)
+ 9. ![Azure Portal - Create Application Definition](/uploads/create-a-vm-application-definition-microsoft-azure.png)
 10. Click **Next: Publishing Options**
 11. The following fields are not mandatory, but I recommend filling in areas to help report on and manage your applications.
     * Description
@@ -128,7 +129,7 @@ VM application definitions are created within a gallery and carry information ab
     * Eula link
     * Privacy URI
     * Release notes URI
-12. ![](/uploads/create-a-vm-application-definition-metadata-microsoft-azure.png)
+12. ![Azure Portal - Create Metadata](/uploads/create-a-vm-application-definition-metadata-microsoft-azure.png)
 13. Click **Review + create**
 14. Verify your Configuration and select **Create**
 
@@ -139,7 +140,7 @@ Now that we have the application definition setup, it's time to set up the versi
  1. Open the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to '**All Resources'**
  3. **Find and click on** your **Azure Compute Gallery** you created earlier
- 4. Click on **Definitions **_(besides the Get Started link)_
+ 4. Click on **Definitions**_(besides the Get Started link)_
  5. **Select** your Application **definition**
  6. Click on: **+Add** 
  7. **Enter** in your **version number**, and this will increment and grow as you adjust and troubleshoot your application; I recommend starting with 0.0.1 then working your way up, with 1.0.0 being potentially your final/production-ready releast.
@@ -152,7 +153,7 @@ Now that we have the application definition setup, it's time to set up the versi
 14. **Browse** to your **file** and select it
 15. Expand **Advanced**
 16. Make sure that Blob type is: **Blob**
-17. ![](/uploads/upload-blob-microsoft-azure.png)
+17. ![Azure Portal - Azure Blob](/uploads/upload-blob-microsoft-azure.png)
 18. Click **Upload**
 19. **Select** your newly uploaded file and click **Select**
 20. _Note: You can only upload one file as part of your package, you can upload a ZIP file and have your Install script extract it_
@@ -161,7 +162,7 @@ Now that we have the application definition setup, it's time to set up the versi
         powershell.exe -command "Rename-Item '.\DattoRMM' -NewName 'DattoRMM.exe'; Start-Process '.\DattoRMM.exe'"
 22. If you have a script to uninstall the application, enter it _(in my case, I am just going to put a '.' to skip this, as I don't currently have an uninstall script developed)_
 23. The rest of the Configuration isn't mandatory; the Update script is used by Azure when a new version of an application is created; by default, the Azure VM extension will treat an upgrade like a completely new install and run the install steps unless an update script is defined.
-24. ![](/uploads/create-a-vm-application-version-microsoft-azure.png)
+24. ![Azure Portal - Application Version](/uploads/create-a-vm-application-version-microsoft-azure.png)
 25. Click **Next: Replication**
 26. Like Azure Compute Images, you can replicate your Azure VM applications across multiple regions _(depending on where your workloads are)_, such as Australia East to West Europe, and store it then Zone Redundant or Local storage. In my example, I am going to leave mine as one replica in Australia East on locally-redundant storage and click **Review + create**
 27. Verify everything looks ok and click **Create** to create your application version! This may take a few minutes to create, depending on your configuration and replication.
@@ -180,11 +181,11 @@ Now that your Azure VM Application has been created, it is now time to deploy to
  6. Click **+ Add application**
  7. **Select** your **application** _(note you can select a particular version, by default, it is the latest)_
  8. Click **Ok**
- 9. ![](/uploads/vm-p01-microsoft-azure.png)
+ 9. ![Azure Portal - VM-P01](/uploads/vm-p01-microsoft-azure.png)
 10. You can select your Install Order _(i.e. if you had multiple applications, you can select which one installs 1st, 2nd, third and so on)_; I will select No Reference and click Save to start the deployment.
 11. If you click Extensions, you should see that a: VMAppExtension has started to be installed; click on Refresh to update the status and click on the Extension to a more detailed status message, hopefully you see ":Operational Install is SUCCESS"
 12. My Virtual Machine has now had the Datto Remote Management agent installed successfully and has appeared in the portal for me to connect to!
-13. ![](/uploads/vm-p01-datto-rmm.png)
+13. ![Azure - Datto RMM](/uploads/vm-p01-datto-rmm.png)
 
 #### Deploy Azure VM Application to Multiple Virtual Machines using PowerShell
 
@@ -228,8 +229,6 @@ I've created the PowerShell script below to deploy an application to multiple Vi
     
       $info
     }
-    
-    
 
 ### Troubleshooting VM Application
 
@@ -268,4 +267,4 @@ You can right-click these and open them in Notepad, any errors will be noted in 
 
 #### Troubleshooting during preview
 
-* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications#troubleshooting-during-preview "Troubleshooting during preview"){:target="_blank"}
+* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#troubleshooting-during-preview "Troubleshooting during preview"){:target="_blank"}

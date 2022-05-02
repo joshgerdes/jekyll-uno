@@ -12,13 +12,13 @@ The Azure Cloud Shell allows connectivity to Microsoft Azure using an authentica
 
 Azure Cloud Shell is assigned per unique user account and automatically authenticated with each session.
 
-Get a modern command-line experience from multiple access points, including the [Azure portal](https://portal.azure.com/){:target="_blank"}, [shell.azure.com](https://shell.azure.com/){:target="_blank"}, [Azure mobile app](https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/){:target="_blank"}, Azure docs _(e.g._ [_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/overview?view=azure-cli-latest){:target="_blank"}_,_ [_Azure PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azurermps-6.8.1&viewFallbackFrom=azurermps-6.1.0){:target="_blank"}_)_, and [VS Code Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account){:target="_blank"}.
+Get a modern command-line experience from multiple access points, including the [Azure portal](https://portal.azure.com/){:target="_blank"}, [shell.azure.com](https://shell.azure.com/){:target="_blank"}, [Azure mobile app](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, Azure docs_(e.g._[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_,_ [_Azure PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_)_, and [VS Code Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account){:target="_blank"}.
 
 Both Bash and PowerShell experiences are available.
 
 > Microsoft routinely maintains and updates Cloud Shell, which comes equipped with commonly used CLI tools including Linux shell interpreters, PowerShell modules, Azure tools, text editors, source control, build tools, container tools, database tools, and more. Cloud Shell also includes language support for several popular programming languages such as Node.js, .NET, and Python.
 
-Along with native tools such as Azure PowerShell, it also contains Terraform, allowing you to implement and test functionality such as Infrastructure as Code, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://docs.microsoft.com/en-us/azure/cloud-shell/features "Features & tools for Azure Cloud Shell"){:target="_blank"}'.
+Along with native tools such as Azure PowerShell, it also contains Terraform, allowing you to implement and test functionality such as Infrastructure as Code, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://docs.microsoft.com/en-us/azure/cloud-shell/features?WT.mc_id=AZ-MVP-5004796 "Features & tools for Azure Cloud Shell"){:target="_blank"}'.
 
 Just some noticeable things to be aware of regarding the Azure Cloud Shell:
 
@@ -40,7 +40,7 @@ By default, CloudShell creates a new Resource Group, Storage account, Fileshare 
 2. Click on the little **Terminal/PowerShell icon** in the upper navigation bar
 3. ![Azure Portal - Cloud Shell](/uploads/cloudshell_azureportal_icon.png "Azure Portal - Cloud Shell")
 4. You should get notified, "You have no storage mounted" click on **Show advanced settings**
-5. ![](/uploads/nostgmounted_azureportal.png)
+5. ![Azure Portal - Cloud Shell](/uploads/nostgmounted_azureportal.png)
 6. Here you can easily **create your CloudShell storage account with your own preferences**:
 
 * The subscription
@@ -49,8 +49,8 @@ By default, CloudShell creates a new Resource Group, Storage account, Fileshare 
 * Storage account _(new or existing)_
 * Fileshare _(new or existing)_
 
-1. ![](/uploads/stgconfigured_azureportal.png)
+1. ![Azure Portal - Cloud Shell Storage Account](/uploads/stgconfigured_azureportal.png)
 2. Click on **Create Storage** when you are ready to start the verification _(which happens after you click Create storage, don't worry as long as you have the window open you can make any additional changes)_ and deployment.
-3. ![](/uploads/cloudshell.png)
+3. ![Azure Portal - Cloud Shell](/uploads/cloudshell.png)
 
 Using this method is handy when you have more than one person administering the subscription, each person can have its own file share, which can then be backed up using Azure Backup and easily removed later when not needed.

@@ -9,7 +9,7 @@ header:
   teaser: '/uploads/highleveldiagram_asg.png'
 
 ---
-Azure Application Security Groups (ASG) allow you to define what workloads _(Virtual Machines)_ you are running in Azure has access to what resource - without being tied by managing complex IP address rules inside a [Network Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview "Network security groups"){:target="_blank"}.
+Azure Application Security Groups (ASG) allow you to define what workloads _(Virtual Machines)_ you are running in Azure has access to what resource - without being tied by managing complex IP address rules inside a [Network Security Group](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview?WT.mc_id=AZ-MVP-5004796 "Network security groups"){:target="_blank"}.
 
 > Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses.
 
@@ -18,7 +18,7 @@ These Azure Application Security groups allow you to define your workloads, for 
 There are a few things to be mindful of:
 
 * Azure Application Security Groups are Virtual Network-specific, so they can work to allow resources across subnets, but not in separate Virtual Networks, even if they have peered.
-* As with most Azure resources, there are Subscription level[ limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#azure-resource-manager-virtual-networking-limits "Networking limits - Azure Resource Manager"){:target="_blank"}; you cannot have more than 3,000 Azure Application Security groups in a single subscription and region.
+* As with most Azure resources, there are Subscription level[limits](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=%2Fazure%2Fvirtual-network%2Ftoc.json&WT.mc_id=AZ-MVP-5004796#azure-resource-manager-virtual-networking-limits "Networking limits - Azure Resource Manager"){:target="_blank"}; you cannot have more than 3,000 Azure Application Security groups in a single subscription and region.
 * The rules that specify an application security group as the source or destination are only applied to the network interfaces that are members of the application security group; this does not affect anything not in this group, even though your Network Security Group is based on the subnet.
 * You can assign more than one Application Security group to a resource
 
@@ -88,10 +88,10 @@ Just a note around the priorities of Network Security Group rules:
 
 After a few minutes, traffic from any workloads on the virtual network will now be allowed for any workloads from your Azure Virtual Desktop farm only _(assigned to the Application Security group)_.
 
-![](/uploads/avd-testport80_edgeallow.png)
+![AVD - Test Port 80 Allow](/uploads/avd-testport80_edgeallow.png)
 
 If I attempted to access the webserver from my application server, it fails:
 
-![](/uploads/avd-testport80_deny.png)
+![AVD - Test Port 80 Deny](/uploads/avd-testport80_deny.png)
 
 Hopefully, this helps you avoid overly complex security rules that are reliant on knowing and managing the IP of your workloads and help secure your networks.

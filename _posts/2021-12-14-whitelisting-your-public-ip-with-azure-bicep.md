@@ -15,11 +15,11 @@ Allowing and restricting Azure resources by being accessible by specific Public 
 
 In this article, I will be using PowerShell to obtain my current public IP, then parse that variable into my Azure Bicep deployment to create a storage account, with the firewall rule allowing ONLY my public IP address.
 
-I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows "Azure Bicep - Install"){:target="_blank"} and[ PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps "PowerShell - Azure"){:target="_blank"} modules installed and the know-how to connect to Microsoft Azure.
+I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796#windows "Azure Bicep - Install"){:target="_blank"} and [PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?WT.mc_id=AZ-MVP-5004796 "PowerShell - Azure"){:target="_blank"} modules installed and the know-how to connect to Microsoft Azure.
 
 Utilising PowerShell to create dynamic variables in your deployment can open the doors to more flexible deployments, such as including the name of the person deploying the infrastructure into the tags of the resource - or in this case, adding a whitelisted IP automatically to your Azure resource to be secure by default.
 
-I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
+I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2&WT.mc_id=AZ-MVP-5004796 "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
 Azure Bicep deployments *(like ARM)* have the following command: 'TemplateParameterObject'. 'TemplateParameterObject' allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
 
@@ -102,7 +102,6 @@ My Azure Bicep is below:
         accessTier: 'Hot'
       }
     }
-    
 
 In Azure Bicep - I am accepting the whitelistpublicip variable from PowerShell and have passed that along to the virtualNetworkRules object as an Allow, while the defaultAction is 'Deny'.
 

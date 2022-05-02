@@ -27,7 +27,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
  7. If you already have a Resource Group, then **select** it, if not you can create a new **resource group**. I am going to put my resources user profiles in the same resource group as my utility server: aad_infra _(this is just personal preference, keeping the session hosts in their own resource groups)_.
  8. **Type in** a Storage **Account Name** _(the name needs to be globally unique across all of Azure, the field can contain only lowercase letters and numbers. Name must be between 3 and 24 characters.)_, in my case I have gone with: fslogixprofileslgnz.
  9. **Select** your **Region** _(the same region you have your Azure Virtual Desktop session hosts and Virtual Network)_
-10. **Select** Standard **performance** _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile"){:target="_blank"}_)_
+10. **Select** Standard **performance** _(Microsoft have recommendations, based on users on what Tier to select -_ [_https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile_](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile?WT.mc_id=AZ-MVP-5004796 "https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}_)_
 11. For Redundancy, I am going to **select LRS** storage _(I haven't built have any redundancy in my Azure Virtual Desktop farm)_.
 12. _Note: Just a heads up, don't select Geo-Redundant if you are looking to create File Shares on this Storage account over 100TiB, it is only supported in LRS. If you do need this kind of large file size, I recommend using a completely different storage account from the one you are using for user profiles. My screenshot below has GRS, just ignore it!_
 13. ![FSLogix - Azure Storage Account](/uploads/storageaccount_projectdetails.png "FSLogix - Azure Storage Account")
@@ -64,10 +64,10 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 11. Select **+ File Share**
 12. Give this **File share** a **name**: fslogixprofiles
 13. Even though you don't need to have a Quota _(the Fileshare will grow)_, I will add one in stop any surprises and make sure that I have an ongoing task to review and optimize the profiles
-14. Because user profiles are generally a lot of read/write activity, select **Transaction Optimized** _(take a look at the_ [_https://azure.microsoft.com/en-us/pricing/details/storage/files/_](https://azure.microsoft.com/en-us/pricing/details/storage/files/ "https://azure.microsoft.com/en-us/pricing/details/storage/files/"){:target="_blank"} _)_
+14. Because user profiles are generally a lot of read/write activity, select **Transaction Optimized** _(take a look at the_ [_https://azure.microsoft.com/en-us/pricing/details/storage/files/_](https://azure.microsoft.com/en-us/pricing/details/storage/files/?WT.mc_id=AZ-MVP-5004796 "https://azure.microsoft.com/en-us/pricing/details/storage/files/?WT.mc_id=AZ-MVP-5004796"){:target="_blank"} _)_
 15. Click **Create**
 16. ![FSLogix - File Share](/uploads/storageaccount_newfileshare.png "FSLogix - File Share")
-17. One last thing we can do on the Storage Account is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs](https://docs.microsoft.com/en-us/azure/backup/backup-afs "https://docs.microsoft.com/en-us/azure/backup/backup-afs"){:target="_blank"}
+17. One last thing we can do on the Storage Account is **enable backups** for your **Azure File Share** - [https://docs.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796](https://docs.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796 "https://docs.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}
 
 ### Configure File Share
 
@@ -107,7 +107,7 @@ Now that the Azure Active Directory rights have been assigned and the File Share
 Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy for FSLogix.
 
  1. **Connect to** your Azure Active Directory **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
- 2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download"){:target="_blank"} onto the Utility server
+ 2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download?WT.mc_id=AZ-MVP-5004796"){:target="_blank"} onto the Utility server
  3. **Extract** the FSLogix agent **zip** file to a folder
  4. Now we will **create** a **Central Store** to manage the Group Policy consistently
  5. On your Utility server, browse to **C:\\Windows** _(If you are primarily using Azure Virtual Desktop, it may be best to copy the PolicyDefinitions folder from an Azure Virtual Desktop session host to make sure you can edit all the latest Windows 10 policies)_

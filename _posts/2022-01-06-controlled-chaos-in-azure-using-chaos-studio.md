@@ -17,11 +17,11 @@ Chaos engineering has been around for a while; Netflix runs their own famous [Ch
 >
 > A common way to introduce chaos is to deliberately inject faults that cause system components to fail. The goal is to observe, monitor, respond to, and improve your system's reliability under adverse circumstances. For example, taking dependencies offline (stopping API apps, shutting down VMs, etc.), restricting access (enabling firewall rules, changing connection strings, etc.), or forcing failover (database level, Front Door, etc.), is a good way to validate that the application is able to handle faults gracefully.
 
-Introducing controlled Chaos tools such as Chaos Monkey and now – [Azure Chaos Studio](https://azure.microsoft.com/en-us/services/chaos-studio/){:target="_blank"} allows you to put pressure and, in some cases, take down your services to teach you how your services will react under strain and identity areas of improvement as resiliency and scalability to improve your systems.
+Introducing controlled Chaos tools such as Chaos Monkey and now – [Azure Chaos Studio](https://azure.microsoft.com/en-us/services/chaos-studio/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} allows you to put pressure and, in some cases, take down your services to teach you how your services will react under strain and identity areas of improvement as resiliency and scalability to improve your systems.
 
 ![Chaos](/images/chaosengineering-banner.png "Chaos")
 
-Azure Chaos Studio _(currently in Preview and only supported in several_ [_regions_](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=chaos-studio){:target="_blank"} _now)_ is an enabler for 'controlled Chaos' in the Microsoft Azure ecosystem. Using that same tool that Microsoft uses to test and improve their services – you can as well!
+Azure Chaos Studio _(currently in Preview and only supported in several_ [_regions_](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=chaos-studio&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_now)_ is an enabler for 'controlled Chaos' in the Microsoft Azure ecosystem. Using that same tool that Microsoft uses to test and improve their services – you can as well!
 
 Chaos Studio works by creating Experiments _(i.e., Faults/Capabilities)_ that run against Targets _(your resources, whether they are agent or service-based)_.
 
@@ -41,7 +41,7 @@ In my test setup, I have the following already pre-created that I will be runnin
 * Virtual Machine Scale set _(running Windows with two instances)_
 * Single Virtual Machine _(running Windows)_ to test shutdown against
 
-The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers){:target="_blank"}'.
+The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796){:target="_blank"}'.
 
 ### Setup Azure Chaos Studio
 
@@ -151,7 +151,7 @@ _Note: I had an API error; after some investigation, I found it was having probl
 
 Now that the Experiment has been created, we need to give rights to the Managed User account created earlier _(and/or the System managed identity that was created when the Experiment was created for service-direct experiments)_.
 
-I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers) Microsoft page.
+I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796) Microsoft page.
 
  1. In the **Azure Portal**, click on the **Resource Group** containing the resources you want to run the Experiment against
  2. Select **Access control (IAM)**

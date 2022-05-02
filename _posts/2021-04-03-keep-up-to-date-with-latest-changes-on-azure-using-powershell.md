@@ -12,7 +12,7 @@ header:
 ---
 Keeping up with what is happening with changes and previews in Microsoft Azure is difficult, change happens all the time - and being able to stay informed on what is happening with the Azure ecosystem is half the battle, whether it is a new feature or security fix.
 
-Microsoft publishes the latest updates on Azure Products and features to their Azure Updates blog: [https://azure.microsoft.com/en-us/updates/](https://azure.microsoft.com/en-us/updates/ "https://azure.microsoft.com/en-us/updates/")
+Microsoft publishes the latest updates on Azure Products and features to their Azure Updates blog: [https://azure.microsoft.com/en-us/updates/](https://azure.microsoft.com/en-us/updates/ "https://azure.microsoft.com/en-us/updates/?WT.mc_id=AZ-MVP-5004796")
 
 So you can browse the website each week, or... monitor the RSS feeds. Sometimes this isn't enough, you may want to do something with this information such as:
 
@@ -21,7 +21,6 @@ So you can browse the website each week, or... monitor the RSS feeds. Sometimes 
 * Publish the information to Microsoft Teams channels to keep people informed.
 
 I have created a basic PowerShell function, that will retrieve the latest updates from the Microsoft Azure Updates RSS Feed and turn it into a PowerShell object you can actually use to keep informed.
-
 
 ## The Script - Get-AzureBlogUpdates
 
@@ -34,18 +33,18 @@ The script is hosted on my Github repository. Feel free to clone/recommend impro
     #Runs the actual Function:
     Get-AzureBlogUpdates
 
-![](/uploads/windowsterminal_5oqnizj8ko.png)
+![Get-AzureBlogUpdates](/uploads/windowsterminal_5oqnizj8ko.png)
 
     #EXAMPLE - Gets Azure Blog Updates, that have been published in the last 7 days.
     $PublishedIntheLastDays = (Get-Date).AddDays(-7)
     Get-AzureBlogUpdates | Where-Object 'Published Date' -GT $PublishedIntheLastDays
 
-![](/uploads/windowsterminal_duphvuiqpz.png)
+![Get-AzureBlogUpdates](/uploads/windowsterminal_duphvuiqpz.png)
 
     #EXAMPLE - Gets all Azure Blog Updates, and displays it as a Table, organised by Category
     Get-AzureBlogUpdates | Sort-Object Category -Descending | Format-Table
 
-![](/uploads/windowsterminal_xrskcraov0.png)
+![Get-AzureBlogUpdates](/uploads/windowsterminal_xrskcraov0.png)
 
     #EXAMPLE -Gets the latest 10 Azure Blog Articles
     Get-AzureBlogUpdates | Select -Last 10

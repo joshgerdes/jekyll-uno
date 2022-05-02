@@ -16,7 +16,7 @@ You know only your specified users access your Azure resources using Azure Activ
 
 You can have a site to site and point to site VPN running on the same Gateway today. We will set up a Point to Site VPN using Windows 11.
 
-![](/uploads/hl_azurep2s.png)
+![Azure Point to Site](/uploads/hl_azurep2s.png)
 
 Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed; because we are using Azure Active Directory and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double the number of throughput and connections if you are running in Active/Active and have a second gateway, or select a higher SKU)_.
 
@@ -155,5 +155,6 @@ Note: I don't have a DNS service running in Azure, but the Azure VPN agent will 
 
 You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections"){:target="_blank"} Client page.
 
-Using Intune, you can also push this configuration to your Windows 10 and 11 clients 
-* [Create custom Intune profiles to deploy VPN client profiles](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-profile-intune){:target="_blank"}
+Using Intune, you can also push this configuration to your Windows 10 and 11 clients
+
+* [Create custom Intune profiles to deploy VPN client profiles](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-profile-intune?WT.mc_id=AZ-MVP-5004796){:target="_blank"}

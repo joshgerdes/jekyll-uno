@@ -9,13 +9,13 @@ header:
   teaser: "images/iazure-marketplace-banner.png"
 
 ---
-The Microsoft Azure ecosystem offers a lot of capabilities that empower individuals and businesses; one of those capabilities that are often overlooked is [DNS](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"} _(Domain Name System)_.
+The Microsoft Azure ecosystem offers a lot of capabilities that empower individuals and businesses; one of those capabilities that are often overlooked is [DNS](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"}_(Domain Name System)_.
 
 > _Azure DNS allows you to host your DNS domain in Azure, so you can manage your DNS records using the same credentials, billing, and support contract as your other Azure services. Zones can be either public or private, where Private DNS Zones (in Managed Preview) are only visible to VMs that are in your virtual network._
 >
 > _You can configure Azure DNS to resolve hostnames in your public domain. For example, if you purchased the contoso.xyz domain name from a domain name registrar, you can configure Azure DNS to host the contoso.xyz domain and resolve `www.contoso.xyz` to the IP address of your web server or web app._
 
-In this article, we are going to focus on [Azure Public DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview){:target="_blank"}.
+In this article, we are going to focus on [Azure Public DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
 
 I had my external DNS under source control using Terraform and the Cloudflare provider a few years ago. I wanted to see if I use source control and continuous integration to do the same thing using Azure DNS and Azure Bicep.
 
@@ -29,10 +29,10 @@ Using an Azure DevOps pipeline and repository and Azure Bicep, we will deploy an
 
 #### Prerequisites
 
-* An [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/){:target="_blank"} account and permissions to create a service endpoint
+* An [Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} account and permissions to create a service endpoint
 * An Azure subscription that you have at least contributor rights to
 * A git repository _(I am going to use the repository in Azure DevOps, but you could use a nested repository from GitHub)_
-* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0){:target="_blank"} modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install){:target="_blank"} for local editing
+* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"} modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for local editing
 * A domain name and rights to change the nameservers to point towards Azure DNS
 
 In this article, I will be using an Azure subscription. I have access to an Azure DevOps _(free)_ subscription and a custom domain I joined named 'badasscloud.com'.

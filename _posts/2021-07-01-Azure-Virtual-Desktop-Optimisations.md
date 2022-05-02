@@ -67,11 +67,11 @@ Back in March 2019, there were issues with slow server performance caused by num
 11. Put: '**1**' to enable the option and click **Apply**
 12. **Close** the **Group Policy Management console**. As this is a Computer-based policy, it may take up to 90 minutes to take effect unless the session hosts are restarted to force it to pick up the policy sooner.
 
-![](/uploads/deleteuserapp.png)
+![Delete user Apps](/uploads/deleteuserapp.png)
 
 ### Configure RDP Shortpath
 
-RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between Remote Desktop Client and Session host. RDP uses this transport to deliver Remote Desktop and RemoteApp while offering better reliability and consistent latency. RDP Shortpath establishes the direct connectivity between Remote Desktop client and Session Host. Direct connectivity reduces the dependency on the Azure Virtual Desktop gateways, improves the connection's reliability, and increases the bandwidth available for each user session. You can read more about it here: [Azure Virtual Desktop RDP Shortpath](https://docs.microsoft.com/en-us/azure/virtual-desktop/shortpath "Azure Virtual Desktop RDP Shortpath"){:target="_blank"}.
+RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between Remote Desktop Client and Session host. RDP uses this transport to deliver Remote Desktop and RemoteApp while offering better reliability and consistent latency. RDP Shortpath establishes the direct connectivity between Remote Desktop client and Session Host. Direct connectivity reduces the dependency on the Azure Virtual Desktop gateways, improves the connection's reliability, and increases the bandwidth available for each user session. You can read more about it here: [Azure Virtual Desktop RDP Shortpath](https://docs.microsoft.com/en-us/azure/virtual-desktop/shortpath?WT.mc_id=AZ-MVP-5004796 "Azure Virtual Desktop RDP Shortpath"){:target="_blank"}.
 
  1. On a server with the Group Policy Management Console is installed for managing your Azure Virtual Desktop farm, **open** the **Group Policy Management Console**.
  2. **Expand** your **domain** and **Group Policy Objects**.
@@ -103,7 +103,7 @@ Automatically apply a range of optimisations for pooled and personal Azure Deskt
 
 Make sure to configure antivirus exclusions for FSLogix Profiles.
 
-For a list of exclusions, along with a PowerShell script to implement them, please refer to the following Microsoft documentation: [FSLogix for the enterprise](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix "FSLogix for the enterprise")
+For a list of exclusions, along with a PowerShell script to implement them, please refer to the following Microsoft documentation: [FSLogix for the enterprise](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix?WT.mc_id=AZ-MVP-5004796 "FSLogix for the enterprise")
 
 ### Implement FSLogix Profile Exclusions
 
@@ -175,7 +175,7 @@ You can run Microsoft Teams in Azure Virtual Desktop. To do so, you need to inst
 
 **Install the Remote Desktop WebRTC Redirector**
 
-1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service"){:target="_blank"}
+1. The Remote Desktop WebRTC Redirector onto the Sessions Hosts: [https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service](https://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD#install-the-teams-websocket-service "hhttps://docs.microsoft.com/en-us/azure/virtual-desktop/teams-on-AVD?WT.mc_id=AZ-MVP-5004796#install-the-teams-websocket-service"){:target="_blank"}
 
 ### Configure Auto Close Apps on Logoff
 

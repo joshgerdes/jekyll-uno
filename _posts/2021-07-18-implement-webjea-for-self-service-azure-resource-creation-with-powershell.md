@@ -26,7 +26,7 @@ You can read more about WebJEA directly on the GitHub page: [https://github.com/
 
 This guide will concentrate on setting up WebJEA for self-service Azure VM management. However, WebJEA can be used to enable much more than what this blog article covers, from things such as new user onboarding, to resource creation.
 
-![](/uploads/webjea_startstopazvm.png)
+![WebJEA - Start/Stop](/uploads/webjea_startstopazvm.png)
 
 We will use a Windows Server 2019, running in Microsoft Azure, to run WebJEA from.
 
@@ -92,7 +92,7 @@ This is the **account** we will use to **run WebJEA under**; it **can** be a nor
 
 I am using a normal AD (Active Directory) service account in this guide because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
-_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview "Group Managed Service Accounts Overview"){:target="_blank"}_._
+_Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview?WT.mc_id=AZ-MVP-5004796 "Group Managed Service Accounts Overview"){:target="_blank"}_._
 
     #Create A group MSA account
     Add-kdsrootkey -effectivetime ((get-date).addhours(-10))
@@ -150,7 +150,7 @@ I am not using a Group Managed Service Account. Instead, I will use a normal AD 
 | WebJEA_Nlog_LogFile | WebJEA system log location |
 | WebJEA_Nlog_UsageFile | WebJEA usage log location |
 
-![](/uploads/webjea_dsc.png)
+![WebJEA - DSC](/uploads/webjea_dsc.png)
 
 One thing to note is that the DSCDeploy.ps1 is calling _(dot sourcing)_ the DSCConfig deploy script; by default, it is looking for it in the same folder as the DSCDeploy.ps1 folder.
 
@@ -166,7 +166,7 @@ If you get an error saying that the script is not digitally signed, run the foll
 
 This is because the PowerShell execution policy hasn't been set; depending on the scripts you are running, you may have to update the execution policy for the entire system, but for now, we will set it to Bypass for this process only, now re-run the script again, you should see DSC kick-off and start your configuration and setup of IIS and the WebJEA site.
 
-![](/uploads/webjea_startingdsc.png)
+![WebJEA - DSC](/uploads/webjea_startingdsc.png)
 
 You should also see the files/folders starting to be created!
 
@@ -182,11 +182,11 @@ Open an Internet Browser and navigate to _(your equivalent of)_: [https://webjea
 
 If you need assistance finding the Website path, open the Internet Information (IIS) Manager, installed and uncollapse Sites, Default WebSite, right-click WebJEA, Manage Application and select Browse.
 
-![](/uploads/webjea_iis_authentication.png)
+![WebJEA - IIS](/uploads/webjea_iis_authentication.png)
 
 If successful, you should get a username and password prompt:
 
-![](/uploads/webjea_authentication.png)
+![WebJEA - IIS](/uploads/webjea_authentication.png)
 
 That's normal - it means you haven't been given access and now need to configure it.
 
@@ -203,7 +203,7 @@ Now that WebJEA has been set up, it is time to configure it; the first thing we 
 
 **Navigate** to your **WebJEA scripts folder**; in my case, I set it up under c:\\WebJEA\\Scripts:
 
-![](/uploads/webjea_scripts.png)
+![WebJEA - Scripts](/uploads/webjea_scripts.png)
 
 Before we go any further, **take** a **Backup** of the config.json file, rename it to "config.bak".
 
@@ -220,7 +220,7 @@ We are going to make a few **edits**:
 
 _Note the: \\\\ for each path that is required. If you get a syntax error when attempting to load the WebJEA webpage, this is most likely missing._
 
-![](/uploads/webjea_democonfig.png)
+![WebJEA - Demo](/uploads/webjea_democonfig.png)
 
 **Save the config file** and **relaunch** the **WebJEA** webpage. It should now load without prompting for a username and password.
 
@@ -228,7 +228,7 @@ _Note the: \\\\ for each path that is required. If you get a syntax error when a
 
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
 
-![](/uploads/webjea_initialoverview.png)
+![WebJEA - Demo](/uploads/webjea_initialoverview.png)
 
 If you get an: AuthorizationManager check failed error, it is because the PowerShell scripts are still in a blocked state from being downloaded from the internet, run the following command to unblock them, then refresh the WebJEA webpage:
 
@@ -381,7 +381,7 @@ Now that the scripts have been created **open** the **WebJEA** webpage.
 
 Click on the **StartStop-AzVM** page _(it may take a few seconds to load, as it is running the Get-VM script_). You should be greeted by a window similar to below:
 
-![](/uploads/webjea_startstopazvm.png)
+![WebJEA - Demo](/uploads/webjea_startstopazvm.png)
 
 **Congratulations, you have now set up WebJEA and can Start/Stop any Azure Virtual Machines using self-service!**
 

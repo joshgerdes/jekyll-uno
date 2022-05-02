@@ -3,7 +3,7 @@ date: "2018-06-26"
 title: Using PowerShell DSC for Windows Hardening
 author: Luke
 categories:
-  - PowerShell
+    - PowerShell
 permalink: /Using-dsc-for-windows-hardening
 header:
   teaser: "images/powershell-blog-feature-banner.png"
@@ -14,17 +14,16 @@ has always interested me and as such, something I like to dabble in it.
 There are many reasons for using PowerShell DSC and hopefully today, I can help
 enlighten you towards some of its use. DSC can be used for things such as:
 
--   Installing IIS and other Windows Features – and making sure they are
-    installed!
+- Installing IIS and other Windows Features – and making sure they are installed!
 
--   Installing Apache – Yes – even on Linux!
+- Installing Apache – Yes – even on Linux!
 
--   Installing scripts and executables
+- Installing scripts and executables
 
 There are other examples, but essentially Microsoft has some good documentation
 around it.
 
-<https://docs.microsoft.com/en-us/powershell/dsc/overview>
+<https://docs.microsoft.com/en-us/powershell/dsc/overview?view=dsc-2.0&WT.mc_id=AZ-MVP-5004796>
 
 Enough about what is PowerShell DSC, one of the benefits of DSC is that you can
 use them to set and maintain a certain configuration – one of the good use of
@@ -41,20 +40,19 @@ Note: I take no responsibility for any damage incurred and definitely recommend 
 
 The rough guide of the process to replicate this is as follows:
 
-1.  Download the [IASE Group
-    Policies](https://iase.disa.mil/stigs/gpo/Pages/index.aspx){:target="_blank"} and
+1. Download the [IASE Group  Policies](https://iase.disa.mil/stigs/gpo/Pages/index.aspx){:target="_blank"} and
     [ADMXtoDSC](https://github.com/gpoguy/ADMXToDSC){:target="_blank"} script
 
-2.  On a Windows Server 2012 R2 Server *(part of an AD Domain)* with Group Policy
+2. On a Windows Server 2012 R2 Server *(part of an AD Domain)* with Group Policy
     Management console installed, create a new GPO called ‘WindowsServer2016’
 
-3.  Right-click the GPO and select Import Settings
+3. Right-click the GPO and select Import Settings
 
-4.  Follow the prompts and import from the folder, where you had extracted the
+4. Follow the prompts and import from the folder, where you had extracted the
     ADMX templates to and import the settings for the GPO you want to turn into
     a DSC script
 
-5.  Once completed run the ADMXtoDSC script, parameters include the GPO name and
+5. Once completed run the ADMXtoDSC script, parameters include the GPO name and
     output path.
 
 Once done, essentially you have now created a good baseline for Windows Server
@@ -84,6 +82,6 @@ Start-DscConfiguration -Path ./Server2016 -Wait -Verbose -Force
 {% endhighlight %}
 
 Or alternatively use [Microsoft Azure
-Automation](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview){:target="_blank"}
+Automation](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 to set the desired state configuration baseline, apply and maintain the changes
 going forward.

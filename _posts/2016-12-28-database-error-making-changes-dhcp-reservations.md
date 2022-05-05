@@ -23,4 +23,4 @@ To disable the Windows indexing service from indexing the DHCP server follow the
 
 Useful Resources:
 
-Microsoft Anti-Virus Exclusion List &#8211; <a href="https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx" target="_blank">https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx</a>
+Microsoft Anti-Virus Exclusion List &#8211; <a href="https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx?WT.mc_id=AZ-MVP-5004796" target="_blank">https://social.technet.microsoft.com/wiki/contents/articles/953.microsoft-anti-virus-exclusion-list.aspx</a>

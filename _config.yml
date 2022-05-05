@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "luke.geek.nz"
 title_separator          : "-"
-subtitle                 : #'Technical Consultant, Azure Solutions Architect Expert, Technologist and a drinker of coffee.'
+subtitle                 : #'Technical Consultant, Microsoft Azure MVP, Azure Solutions Architect Expert, Technologist and a drinker of coffee.'
 name                     : "Luke Murray"
 description              : "'Technical Consultant, Azure Solutions Architect Expert, Technologist and a drinker of coffee.'"
 url                      : https://luke.geek.nz

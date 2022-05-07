@@ -38,7 +38,7 @@ An example is below:
 
 In this case, I have used the _hidden-title_ of 'Web Server', allowing me to quickly view what resources may be mapped to my Web Server.
 
-You may notice that the Test-Virtual Machines title, is displayed in the Resource Groups search blade, and not in the actual Resource Group, there are some areas of the Portal that will not display the hidden-title tag currently.
+You may notice that the Test-Virtual Machines title, is displayed in the Resource Groups search blade and not in the actual Resource Group, there are some areas of the Portal that will not display the hidden-title tag currently.
 
 If I navigate to my Virtual Machine and click on the Tags blade, all I see is my CreatedBy tag.
 
@@ -56,7 +56,7 @@ You can use the Azure Portal directly to add the Tags to apply hidden tags.
 
 ![Azure Portal - Add Tags](/uploads/azureportal_hiddentagsadd.png "Azure Portal - Add Tags")
 
-You can remove the Tag by adding the hidden-tag again and keeping the value empty _(ie blanking out the hidden-title will remove the title)_, but it will still be against the metadata as a Tag that exists - it is much cleaner to use PowerShell.
+You can remove the Tag by adding the hidden-tag again and keeping the value empty _(ie blanking out the hidden-title will remove the title)_, but it will still be against the metadata _(Resource Graph)_ as a Tag that exists - it is much cleaner to use PowerShell.
 
 ![Azure - Resource Tags](/uploads/azureportal_hiddentagsremove.png "Azure - Resource Tags")
 

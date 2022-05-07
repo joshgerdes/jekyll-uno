@@ -73,3 +73,17 @@ A handy snippet to use to add/remove the Tags on individual or multiple resource
 This will snippet will gather all the resources in your Resource Group, then select their Resource IDs, the script will then prompt with a GUI allowing you to select which resources or resources you want to update your tags on, then once you click Ok, it will update the Tags on the resources you selected.
 
 ![PowerShell - Add Azure Tags](/uploads/powershell_hiddentagsadd.png "PowerShell - Add Azure Tags")
+
+You may be wondering if the Hidden tags are useful for automation, but if the 'Get-AzTag' cmdlet doesn't work, how can I retrieve the resources? It's a good question, and that is where 'Get-AzResource' comes to the rescue.
+
+Examples are:
+
+    Get-AzResource -TagName hidden-ShutdownAutomation
+
+    Get-AzResource -TagValue Yes
+
+    $TagName = 'hidden-title'
+    $TagValue = 'Web Server'
+    Get-AzResource -TagName $TagName -TagValue $TagValue | Where-Object -FilterScript {
+        $_.ResourceType -like 'Microsoft.Compute/virtualMachines' 
+    }

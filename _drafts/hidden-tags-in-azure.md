@@ -52,12 +52,16 @@ However, if I navigate to the Overview page and click on JSON View, I can see th
 
 #### Azure Portal
 
-You can use the Azure Portal and add the Tags to apply hidden tags.
+You can use the Azure Portal directly to add the Tags to apply hidden tags.
 
-![](/uploads/azureportal_hiddentagsadd.png)
+![Azure Portal - Add Tags](/uploads/azureportal_hiddentagsadd.png "Azure Portal - Add Tags")
 
 You can remove the Tag by adding the hidden-tag again and keeping the value empty (ie blanking out the hidden-title will remove the title), but it will still be against the metadata as a Tag that exists - it is much cleaner to use PowerShell.
 
+![Azure - Resource Tags](/uploads/azureportal_hiddentagsremove.png "Azure - Resource Tags")
+
 #### PowerShell
+
+sdsd 
 
 sd

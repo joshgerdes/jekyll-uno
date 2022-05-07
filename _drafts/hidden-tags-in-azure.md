@@ -62,7 +62,7 @@ You can remove the Tag by adding the hidden-tag again and keeping the value empt
 
 #### PowerShell
 
-Get-AzTag and Remove-AzTag, do not display the hidden tags, to add and remove the tags, you need to add them through 'Update-AzTag' and 'Replace' or 'Merge' to overwrite the tags, which needs the Resource targetted by Resource ID.
+Get-AzTag and Remove-AzTag, do not display the hidden tags, to add and remove the tags, you need to add them through 'Update-AzTag' and 'Replace' or 'Merge' to overwrite the tags, which requires the Resource targetted by Resource ID.
 
 A handy snippet to use to add/remove the Tags on individual or multiple resources is:
 
@@ -70,7 +70,7 @@ A handy snippet to use to add/remove the Tags on individual or multiple resource
     $resouceGroup = 'vm-dev-rg'
     Get-AzResource -ResourceGroupName $resouceGroup | Select-Object ResourceId | Out-GridView -PassThru | Update-AzTag -Tag $replacedTags -Operation Merge
 
-This will snippet will gather all the resources in your Resource Group, then select their Resource IDs, the script will then prompt with a GUI allowing you to select which resources or resources you want to update your tags on, then once you click Ok, it will update the Tags on the resources you selected.
+This will snippet will gather all the resources in your Resource Group, then select their Resource IDs; the script will then prompt with a GUI allowing you to select which resources or resources you want to update your tags on, then once you click Ok, it will update the Tags on the resources you selected.
 
 ![PowerShell - Add Azure Tags](/uploads/powershell_hiddentagsadd.png "PowerShell - Add Azure Tags")
 

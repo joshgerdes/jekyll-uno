@@ -19,10 +19,13 @@ Tags starting with the prefix of _'hidden-'_ will not be displayed under Tags in
 
 Examples are:
 
-sd
+| Tags | Value |
+| --- | --- |
+| hidden-title | Web Server |
+| hidden-ShutdownAutomation | Yes |
 
 ### hidden-title
 
-As I mentioned above, every tag with 'hidden-' in front of it will be hidden in the Azure Portal, however, 'hidden-title' behaves differently. 
+As I mentioned above, every tag with 'hidden-' in front of it will be hidden in the Azure Portal. However, 'hidden-title' behaves differently.
 
-You may have noticed that some resources in Azure, especially if they are created by Azure itself, and the name is GUID based, has a '(name)' around it after the resource name, this is because of the hidden-title tag.
+You may have noticed that some resources in Azure, especially if the Azure ARM _(Azure Resource Manager)_ creates them and the name is GUID based, has a '(name)' around them after the resource name; this is because of the hidden-title tag.

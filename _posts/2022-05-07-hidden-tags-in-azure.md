@@ -56,7 +56,7 @@ You can use the Azure Portal directly to add the Tags to apply hidden tags.
 
 ![Azure Portal - Add Tags](/uploads/azureportal_hiddentagsadd.png "Azure Portal - Add Tags")
 
-You can remove the Tag by adding the hidden-tag again and keeping the value empty _(ie blanking out the hidden-title will remove the title)_, but it will still be against the metadata _(Resource Graph)_ as a Tag that exists - it is much cleaner to use PowerShell.
+You can remove the Tag by adding the hidden-tag again and keeping the value empty _(ie blanking out the hidden-title will remove the title)_, but it will still be against the metadata _(Resource Graph)_ as a Tag that exists (as seen in the screenshot below) - it is much cleaner to use PowerShell.
 
 ![Azure - Resource Tags](/uploads/azureportal_hiddentagsremove.png "Azure - Resource Tags")
 

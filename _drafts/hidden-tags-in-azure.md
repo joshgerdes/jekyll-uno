@@ -47,3 +47,7 @@ If I navigate to the Tags blade of my Virtual Machine, all I see is my CreatedBy
 However, if I navigate to the Overview page and click on JSON View, I can see the hidden tags in the resource metadata.
 
 ![Azure Portal - Resource Tags](/uploads/azureportal-hiddentitle-vmtagsjson.png "Azure Portal - Resource Tags")
+
+### hidden tags
+
+Although, 

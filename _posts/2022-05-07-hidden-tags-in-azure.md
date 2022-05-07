@@ -42,7 +42,7 @@ You may notice that the Test-Virtual Machines title, is displayed in the Resourc
 
 If I navigate to my Virtual Machine and click on the Tags blade, all I see is my CreatedBy tag.
 
-If I navigate to the Tags blade of my Virtual Machine, all I see is my CreatedBy tag![Azure Portal - Tags](/uploads/azureportal-hiddentitle-vmtags.png "Azure Portal - Tags")
+![Azure Portal - Tags](/uploads/azureportal-hiddentitle-vmtags.png "Azure Portal - Tags")
 
 However, if I navigate to the Overview page and click on JSON View, I can see the hidden tags in the resource metadata.
 

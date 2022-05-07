@@ -34,7 +34,7 @@ The hidden-title tag is especially useful for being able to pick resources that 
 
 An example is below:
 
-![](/uploads/azureportal_hiddentitle.png)
+![Azure Portal - Hidden Title Tag](/uploads/azureportal_hiddentitle.png "Azure Portal - Hidden Title Tag")
 
 In this case, I have used the _hidden-title_ of 'Web Server', allowing me to quickly view what resources may be mapped to my Web Server.
 
@@ -42,4 +42,4 @@ You may notice that the Test-Virtual Machines title, is displayed in the Resourc
 
 If I navigate to my Virtual Machine and click on the Tags blade, all I see is my CreatedBy tag.
 
-If I navigate to the Tags blade of my Virtual Machine, all I see is my CreatedBy tag![](/uploads/azureportal-hiddentitle-vmtags.png)
+If I navigate to the Tags blade of my Virtual Machine, all I see is my CreatedBy tag![Azure Portal - Tags](/uploads/azureportal-hiddentitle-vmtags.png "Azure Portal - Tags")

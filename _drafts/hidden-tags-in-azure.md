@@ -31,3 +31,15 @@ As I mentioned above, every tag with 'hidden-' in front of it will be hidden in 
 You may have noticed that some resources in Azure, especially if the Azure ARM _(Azure Resource Manager)_ creates them and the name is GUID based, has a '(name)' around them after the resource name; this is because of the hidden-title tag.
 
 The hidden-title tag is especially useful for being able to pick resources that belong to a specific service or application.
+
+An example is below:
+
+![](/uploads/azureportal_hiddentitle.png)
+
+In this case, I have used the _hidden-title_ of 'Web Server', allowing me to quickly view what resources may be mapped to my Web Server.
+
+You may notice that the Test-Virtual Machines title, is displayed in the Resource Groups search blade, and not in the actual Resource Group, there are some areas of the Portal that will not display the hidden-title tag currently.
+
+If I navigate to my Virtual Machine and click on the Tags blade, all I see is my CreatedBy tag.
+
+If I navigate to the Tags blade of my Virtual Machine, all I see is my CreatedBy tag![](/uploads/azureportal-hiddentitle-vmtags.png)

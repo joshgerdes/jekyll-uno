@@ -56,12 +56,20 @@ You can use the Azure Portal directly to add the Tags to apply hidden tags.
 
 ![Azure Portal - Add Tags](/uploads/azureportal_hiddentagsadd.png "Azure Portal - Add Tags")
 
-You can remove the Tag by adding the hidden-tag again and keeping the value empty (ie blanking out the hidden-title will remove the title), but it will still be against the metadata as a Tag that exists - it is much cleaner to use PowerShell.
+You can remove the Tag by adding the hidden-tag again and keeping the value empty _(ie blanking out the hidden-title will remove the title)_, but it will still be against the metadata as a Tag that exists - it is much cleaner to use PowerShell.
 
 ![Azure - Resource Tags](/uploads/azureportal_hiddentagsremove.png "Azure - Resource Tags")
 
 #### PowerShell
 
-sdsd 
+Get-AzTag and Remove-AzTag, do not display the hidden tags, to add and remove the tags, you need to add them through 'Update-AzTag' and 'Replace' or 'Merge' to overwrite the tags, which needs the Resource targetted by Resource ID.
 
-sd
+A handy snippet to use to add/remove the Tags on individual or multiple resources is:
+
+    $replacedTags = @{"hidden-title" = "Web Server"; "hidden-ShutdownAutomation" = "Yes"}
+    $resouceGroup = 'vm-dev-rg'
+    Get-AzResource -ResourceGroupName $resouceGroup | Select-Object ResourceId | Out-GridView -PassThru | Update-AzTag -Tag $replacedTags -Operation Merge
+
+This will snippet will gather all the resources in your Resource Group, then select their Resource IDs, the script will then prompt with a GUI allowing you to select which resources or resources you want to update your tags on, then once you click Ok, it will update the Tags on the resources you selected.
+
+![PowerShell - Add Azure Tags](/uploads/powershell_hiddentagsadd.png "PowerShell - Add Azure Tags")

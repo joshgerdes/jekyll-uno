@@ -87,3 +87,16 @@ Examples are:
     Get-AzResource -TagName $TagName -TagValue $TagValue | Where-Object -FilterScript {
         $_.ResourceType -like 'Microsoft.Compute/virtualMachines' 
     }
+
+#### Azure Bicep
+
+You can also add the Tags, with Azure Bicep.
+
+Example is:
+
+    param resourceTags object = {
+       hidden-title: 'Web Server'
+       hidden-ShutdownAutomation: 'Yes'
+    }
+    
+    tags: resourceTags

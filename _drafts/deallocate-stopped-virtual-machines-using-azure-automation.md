@@ -40,6 +40,12 @@ Today, we are going to set up an Azure Automation runbook, triggered by a Resour
 To do this, we need a few resources.
 
 * Azure Automation Account
-* Az.AlertsManagement module
-* Azure Automation runbook
+* Az.AlertsManagement module in the Azure Automation account
+* Az.Accounts module _(updated in the Azure Automation account)_
+* Azure Automation runbook _(I will supply this below)_
 * Resource Health Alert
+* Webhook _(to trigger to the runbook and pass the JSON from the alert)_
+
+And, of course, 'Contributor' rights to the Microsoft Azure subscription to provide the resources and the alerts and resources and set up the system managed identity.
+
+We will run through setting up this from scratch using the Azure Portal and an already created PowerShell Azure Automation runbook.

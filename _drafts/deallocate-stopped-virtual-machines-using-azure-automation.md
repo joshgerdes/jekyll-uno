@@ -51,3 +51,13 @@ To do this, we need a few resources.
 And, of course, 'Contributor' rights to the Microsoft Azure subscription to provide the resources and the alerts and resources and set up the system managed identity.
 
 We will set up this from scratch using the Azure Portal and an already created PowerShell Azure Automation runbook.
+
+### Deploy Deallocate Solution
+
+#### Setup Azure Automation Account
+
+First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account") resource.
+
+1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+2. Click **+ Create a resource.**
+3. 

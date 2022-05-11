@@ -28,6 +28,8 @@ However, you need to know this, and those new to Microsoft Azure, or users who d
 
 This is where our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation]() runbook to deallocate the Virtual Machine.
 
+### Overview
+
 Today, we are going to set up an Azure Automation runbook, triggered by a Resource Health alert that will go through the following steps:
 
 1. User shutdowns Virtual Machine from within the Operating System
@@ -48,4 +50,4 @@ To do this, we need a few resources.
 
 And, of course, 'Contributor' rights to the Microsoft Azure subscription to provide the resources and the alerts and resources and set up the system managed identity.
 
-We will run through setting up this from scratch using the Azure Portal and an already created PowerShell Azure Automation runbook.
+We will set up this from scratch using the Azure Portal and an already created PowerShell Azure Automation runbook.

@@ -25,3 +25,5 @@ Suppose a Virtual Machine is not being used. In that case, turning off a Virtual
 ![Microsoft Azure - Virtual Machine Power States](/uploads/azvm-power-states.png "Microsoft Azure - Virtual Machine Power States")
 
 However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles") rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
+
+This is where our solution can help, by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an Azure Automation runbook to deallocate the Virtual Machine.

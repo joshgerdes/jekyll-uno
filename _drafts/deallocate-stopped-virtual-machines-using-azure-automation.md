@@ -26,4 +26,13 @@ Suppose a Virtual Machine is not being used. In that case, turning off a Virtual
 
 However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles") rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
 
-This is where our solution can help, by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation]() runbook to deallocate the Virtual Machine.
+This is where our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation]() runbook to deallocate the Virtual Machine.
+
+Today, we are going to set up an Azure Automation runbook, triggered by a Resource Health alert that will go through the following steps:
+
+1. User shutdowns Virtual Machine from within the Operating System
+2. The Virtual Machine enters an unavailable state
+3. A Resource Alert is triggered when the Virtual Machine becomes unavailable (after being available) by a user initiated event
+4. The Alert triggers a Webhook to an Azure Automation runbook
+5. Using permissions assigned to the Azure Automation account through a System Managed Identity connects to Microsoft Azure and checks the VM state, if VM state is still 'Stopped' then deallocate virtual machine
+6. Then finally, resolve the triggered alert

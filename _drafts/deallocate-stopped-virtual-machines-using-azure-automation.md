@@ -34,5 +34,12 @@ Today, we are going to set up an Azure Automation runbook, triggered by a Resour
 2. The Virtual Machine enters an unavailable state
 3. A Resource Alert is triggered when the Virtual Machine becomes unavailable (after being available) by a user initiated event
 4. The Alert triggers a Webhook to an Azure Automation runbook
-5. Using permissions assigned to the Azure Automation account through a System Managed Identity connects to Microsoft Azure and checks the VM state, if VM state is still 'Stopped' then deallocate virtual machine
-6. Then finally, resolve the triggered alert
+5. Using permissions assigned to the Azure Automation account through a System Managed Identity connects to Microsoft Azure and checks the VM state; if the Virtual Machine state is still 'Stopped', then deallocate the virtual machine.
+6. Then finally, resolve the triggered alert.
+
+To do this, we need a few resources.
+
+* Azure Automation Account
+* Az.AlertsManagement module
+* Azure Automation runbook
+* Resource Health Alert

@@ -63,7 +63,7 @@ First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/auto
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
  2. Click **+ Create a resource.**
  3. Type in **automation**
- 4. Select **Create** under Automation, and select **Automation**
+ 4. Select **Create** under Automation, and select **Automation.**
  5. ![](/uploads/azureportal-create-automation.jpg)
  6. Select your **subscription**
  7. Select your **Resource Group** or Create one if you don't already have one _(I recommend placing your automation resources in an Azure Management or Automation resource group, this will also contain your Runbooks)_
@@ -91,7 +91,7 @@ You can set up a custom role to be least privileged and use that instead. But in
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
  2. Navigate to your Azure **Automation account**
  3. Click on: **Identity**
- 4. Make sure that the **System assigned** toggle is: **On** and click **Azure role assignments**
+ 4. Make sure that the **System assigned** toggle is: **On** and click **Azure role assignments.**
  5. ![](/uploads/azureportal-automation_managedidentity.jpg)
  6. Click **+ Add role assignments**
  7. Select the **Subscription** _(make sure this subscription matches the same subscription your Virtual Machines are in)_
@@ -214,4 +214,16 @@ Now that the Automation framework has been created with the Azure Automation acc
 30. Give the **webhook** a **name**.
 31. Click **Review + create** 
 32. Click **Create**
-33. Finally, enter in an Alert **name** and **description**, specify the resource group for the Alert to go into and click **Save**
+33. Finally, enter in an Alert **name** and **description**, specify the resource group for the Alert to go into and click **Save.**
+
+### Test Deallocate Solution
+
+So now we have stood up our:
+
+* Azure automation account
+* Alert
+* Action Group
+* Azure automation runbook 
+* Webhook
+
+It is time to test!

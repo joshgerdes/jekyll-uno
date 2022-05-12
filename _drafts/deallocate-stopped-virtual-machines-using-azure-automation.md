@@ -226,4 +226,4 @@ So now we have stood up our:
 * Azure automation runbook 
 * Webhook
 
-It is time to test! I have a VM called: VM-D01, running Windows _(theoretically, this runbook will also run against Linux workloads, as its relying on the Azure agent to send the correct status to the Azure Logs, but in my testing, it was against Windows workloads._
+It is time to test! I have a VM called: VM-D01, running Windows _(theoretically, this runbook will also run against Linux workloads, as its relying on the Azure agent to send the correct status to the Azure Logs, but in my testing, it was against Windows workloads)_ in the same subscription that the alert has been deployed against_._

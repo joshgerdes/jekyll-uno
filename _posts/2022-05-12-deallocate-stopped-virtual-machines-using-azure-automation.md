@@ -150,7 +150,7 @@ Now that the modules have been imported into your Azure Automation account, it i
  9. ![Create Azure Runbook](/uploads/azureportal-runbook-create.jpg "Create Azure Runbook")
 10. Click **Create**
 11. Now you will be greeted with a blank edit pane; paste in the Runbook from below:
-12. GIST
+12. {% gist f727d53c027eacc79121d325eeb49d7f %}
 13. Click **Save**
 14. ![Azure Automation runbook](/uploads/azureportal-runbook-import.jpg "Azure Automation runbook")
 15. Click **Publish** _(so the runbook is actually in production and can be used)_

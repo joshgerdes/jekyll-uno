@@ -203,4 +203,13 @@ Now that the Automation framework has been created with the Azure Automation acc
 19. **Select** your subscription and **resource group** _(this is where the Action alert will go, I recommend your Azure Management/Monitoring resource group that may have a Log Analytics workspace as an example)_.
 20. Give your Action Group a **name**, i.e. AzureAutomateActionGroup
 21. The display name will be automatically generated, but feel free to adjust it to suit your naming convention
-22. Click **Review + create**
+22. Click **Next: Notifications**
+23. Under **Notifications**, you can trigger an **email alert**, which can be handy in determining how often the runbook runs. This can be modified and removed if it is running, especially during testing.
+24. Click **Next: Actions**
+25. Under Action Type, select **Webhook**
+26. **Paste** in the **URI** created earlier when setting up the Webhook
+27. Select **Yes** to enable the **common alert schema** (_this is required as the JSON that the runbook is parsing is expecting it to the in the schema, if it isn't the runbook will fail)_
+28. ![](/uploads/azureportal-actiongroup-webhook.jpg)
+29. Click **Ok**
+30. Give the **webhook** a **name**.
+31. Click **Review + create** 

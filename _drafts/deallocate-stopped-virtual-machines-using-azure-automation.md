@@ -172,3 +172,8 @@ Now that the Azure runbook has been imported, we need to set up a Webhook for th
 10. **Copy** the **URL** and paste it somewhere safe _(you won't see this again! and you need it for the next steps)_
 11. ![](/uploads/azureportal-webhook-create.jpg)
 12. Click **Ok**
+13. Click on **Configure parameters and run settings.**
+14. Because we will be taking in dynamic data from an Azure Alert, enter in: **\[EmptyString\]**
+15. Click **Ok**
+16. Click **Create**
+17. You have now setup the webhook _(make sure you have saved the URL from the earlier step as you will need it in the next steps)!_

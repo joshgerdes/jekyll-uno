@@ -122,7 +122,7 @@ In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by 
 11. ![](/uploads/azureportal-automation_modules_az-accounts.jpg)
 12. Make sure that the Runtime version is: **5.1** 
 13. Click **Import**
-14. Now that the Az.Accounts has been updated, it's time to import Az.AlertsManagement!
+14. Now that the Az.Accounts have been updated, and it's time to import Az.AlertsManagement!
 15. Click on **Modules**
 16. Click on **+ Add a module**
 17. Click on **Browse from Gallery**
@@ -176,4 +176,14 @@ Now that the Azure runbook has been imported, we need to set up a Webhook for th
 14. Because we will be taking in dynamic data from an Azure Alert, enter in: **\[EmptyString\]**
 15. Click **Ok**
 16. Click **Create**
-17. You have now setup the webhook _(make sure you have saved the URL from the earlier step as you will need it in the next steps)!_
+17. You have now set up the webhook _(make sure you have saved the URL from the earlier step as you will need it in the next steps)!_
+
+#### Setup Alert
+
+Now that the Automation framework has been created with the Azure Automation account, runbook and webhook, we now need a way to detect if a Virtual Machine has been Stopped; this is where a Resource Health alert will come in.
+
+1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview "Monitor | Overview")
+3. Click on **Service Health**
+4. Select **Resource Health**
+5. Select **Select +** 

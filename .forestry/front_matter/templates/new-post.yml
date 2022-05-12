@@ -71,5 +71,5 @@ pages:
 - _posts/2022-04-03-azure-network-adapter-implementation-and-testing.md
 - _posts/2022-04-20-azure-arc-bridge-implementing-and-testing.md
 - _posts/2022-05-07-hidden-tags-in-azure.md
-- _posts/deallocate-stopped-virtual-machines-using-azure-automation.md
+- _posts/2022-05-12-deallocate-stopped-virtual-machines-using-azure-automation.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

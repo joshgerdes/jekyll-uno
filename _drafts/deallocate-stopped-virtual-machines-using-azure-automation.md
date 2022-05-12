@@ -107,7 +107,7 @@ You can set up a custom role to be least privileged and use that instead. But in
 
 ##### Import Modules
 
-In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"), and update the Az.Accounts as its required as a pre-requsite for Az.AlertsManagement.
+In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"), and update the Az.Accounts as its required as a pre-requisite for Az.AlertsManagement.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
  2. Navigate to your Azure **Automation account**
@@ -133,8 +133,22 @@ In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by 
 22. Click **Select**
 23. Make sure that the Runtime version is: **5.1** 
 24. Click **Import** _(if you get an error, make sure that Az.Accounts has been updated, through the Gallery import as above)_
-25. Now you have successfully added the dependant modules!
+25. Now you have successfully added the dependent modules!
 
 ##### Import Runbook
 
 Now that the modules have been imported into your Azure Automation account, it is time to import the Azure Automation runbook.
+
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Navigate to your Azure **Automation account**
+ 3. Click on **Runbooks**
+ 4. Click **+ Create a runbook**
+ 5. Specify a **name** _(i.e. Deallocate-AzureVirtualMachine)_
+ 6. Select Runbook type of: **PowerShell**
+ 7. Select Runtime version of: **5.1**
+ 8. Type in a **Description** that explains the runbook _(this isn't mandatory, but like Tags is recommended, this is an opportunity to indicate to others what it is for and who set it up)_
+ 9. ![](/uploads/azureportal-runbook-create.jpg)
+10. Click **Create**
+11. Now you will be greeted with a blank edit pane; paste in the Runbook from below:
+12. GIST
+13. Click **Save**

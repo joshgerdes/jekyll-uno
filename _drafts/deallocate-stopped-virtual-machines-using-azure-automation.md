@@ -58,6 +58,21 @@ We will set up this from scratch using the Azure Portal and an already created P
 
 First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account") resource.
 
-1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
-2. Click **+ Create a resource.**
-3. 
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Click **+ Create a resource.**
+ 3. Type in **automation**
+ 4. Select **Create** under Automation, and select **Automation**
+ 5. ![](/uploads/azureportal-create-automation.jpg)
+ 6. Select your **subscription**
+ 7. Select your **Resource Group** or Create one if you don't already have one _(I recommend placing your automation resources in an Azure Management or Automation resource group, this will also contain your Runbooks)_
+ 8. Select your **region**
+ 9. ![](/uploads/azureportal-create-automation_basics.jpg)
+10. Select **Next**
+11. Make sure: **System assigned** is selected for Managed identities _(this will be required for giving your automation account permissions to deallocate your Virtual Machine, but it can be enabled later if you already have an Azure Automation account)_.
+12. Click **Next**
+13. Leave Network connectivity as default (**Public access**)
+14. Click **Next**
+15. **Enter** in appropriate **tags**
+16. ![](/uploads/azureportal-create-automation_tags.jpg)
+17. Click **Review + Create**
+18. After validation has passed, select **Create**

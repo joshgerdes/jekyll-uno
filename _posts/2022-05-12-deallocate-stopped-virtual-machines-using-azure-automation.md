@@ -4,7 +4,7 @@ title: Deallocate 'Stopped' Virtual Machines using Azure Automation
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
 

@@ -115,10 +115,21 @@ In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by 
  4. Click on **+ Add a module**
  5. Click on **Browse from Gallery**
  6. Click: **Click here to browse from the gallery**
- 7. Type in: **Az-Accounts**
+ 7. Type in: **Az.Accounts**
  8. Press **Enter**
- 9. Click on **Az-Accounts**
+ 9. Click on **Az.Accounts**
 10. Click **Select**
 11. ![](/uploads/azureportal-automation_modules_az-accounts.jpg)
-12. Make sure that the Runtime version is: **5.1** _(so it will run on PowerShell 5.1, PowerShell 7 is in preview but not supported by the modules yet)_
+12. Make sure that the Runtime version is: **5.1** 
 13. Click **Import**
+14. Now that the Az.Accounts has been updated, it's time to import Az.AlertsManagement!
+15. Click on **Modules**
+16. Click on **+ Add a module**
+17. Click on **Browse from Gallery**
+18. Click: **Click here to browse from the gallery**
+19. Type in: **Az.AlertsManagement** _(note its Alert**s)**_
+20. Click **Az.AlertsManagement**
+21. ![](/uploads/azureportal-automation_modules_az-alertsmanagement.jpg)
+22. Click **Select**
+23. Make sure that the Runtime version is: **5.1** 
+24. Click **Import**

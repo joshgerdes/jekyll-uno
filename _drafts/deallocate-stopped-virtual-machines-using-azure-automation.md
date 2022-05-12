@@ -104,3 +104,21 @@ You can set up a custom role to be least privileged and use that instead. But in
 14. Click **Save**
 15. Click **Refresh** _(it may take a few seconds to update the Portal, so if it is blank - give it 10 seconds and try again)_.
 16. You have now set up the System Managed identity and granted it the roles necessary to execute the automation.
+
+##### Import Modules
+
+In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"), and update the Az.Accounts as its required as a pre-requsite for Az.AlertsManagement.
+
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Navigate to your Azure **Automation account**
+ 3. Click on **Modules**
+ 4. Click on **+ Add a module**
+ 5. Click on **Browse from Gallery**
+ 6. Click: **Click here to browse from the gallery**
+ 7. Type in: **Az-Accounts**
+ 8. Press **Enter**
+ 9. Click on **Az-Accounts**
+10. Click **Select**
+11. ![](/uploads/azureportal-automation_modules_az-accounts.jpg)
+12. Make sure that the Runtime version is: **5.1** _(so it will run on PowerShell 5.1, PowerShell 7 is in preview but not supported by the modules yet)_
+13. Click **Import**

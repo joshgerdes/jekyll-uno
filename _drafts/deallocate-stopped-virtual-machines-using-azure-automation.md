@@ -213,3 +213,5 @@ Now that the Automation framework has been created with the Azure Automation acc
 29. Click **Ok**
 30. Give the **webhook** a **name**.
 31. Click **Review + create** 
+32. Click **Create**
+33. Finally, enter in an Alert **name** and **description**, specify the resource group for the Alert to go into and click **Save**

@@ -20,13 +20,13 @@ header:
 | Deallocating | This is the transitional state between running and deallocated. | Not billed |
 | Deallocated | The Virtual Machine has released the lease on the underlying hardware and is completely powered off. This state is also referred to as Stopped (Deallocated). | Not billed |
 
-Suppose a Virtual Machine is not being used. In that case, turning off a Virtual Machine from the Microsoft Azure Portal _(or programmatically via_ [_PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796 "Azure PowerShell Documentation"){:target="_blank"}_/_[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}_)_ is recommended to ensure that the Virtual Machine is deallocated and its affinity on the host has been released.
+Suppose a Virtual Machine is not being used. In that case, turning off a Virtual Machine from the Microsoft Azure Portal _(or programmatically via_ [_PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell Documentation"){:target="_blank"}_/_[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}_)_ is recommended to ensure that the Virtual Machine is deallocated and its affinity on the host has been released.
 
 ![Microsoft Azure - Virtual Machine Power States](/uploads/azvm-power-states.png "Microsoft Azure - Virtual Machine Power States")
 
 However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles"){:target="_blank"} rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
 
-Our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation]() runbook to deallocate the Virtual Machine.
+Our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} runbook to deallocate the Virtual Machine.
 
 ### Overview
 

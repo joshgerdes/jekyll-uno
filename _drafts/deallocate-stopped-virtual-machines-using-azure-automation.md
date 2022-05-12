@@ -182,9 +182,19 @@ Now that the Azure runbook has been imported, we need to set up a Webhook for th
 
 Now that the Automation framework has been created with the Azure Automation account, runbook and webhook, we now need a way to detect if a Virtual Machine has been Stopped; this is where a Resource Health alert will come in.
 
-1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
-2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview "Monitor | Overview")
-3. Click on **Service Health**
-4. Select **Resource Health**
-5. Select **+ Add resource health alert**
-6. 
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview "Monitor | Overview")
+ 3. Click on **Service Health**
+ 4. Select **Resource Health**
+ 5. Select **+ Add resource health alert**
+ 6. Select your **subscription**
+ 7. Select **Virtual machine** for Resource Type
+ 8. You can target specific Resource Groups for your alert _(and, as such, your automation)_ or **select all.**
+ 9. Check **Include all future resource groups**
+10. Check **include all future resources**
+11. Under the Alert conditions, make sure **Event Status** is: **All selected**
+12. Set Current resource status to **Unavailable**
+13. Set Previous resource status to **All selected**
+14. For reason type, select: **User initiated** and **unknown**
+15. ![](/uploads/azureportal-alert-create.jpg)
+16. 

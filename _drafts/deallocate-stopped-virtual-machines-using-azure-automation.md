@@ -186,4 +186,5 @@ Now that the Automation framework has been created with the Azure Automation acc
 2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview "Monitor | Overview")
 3. Click on **Service Health**
 4. Select **Resource Health**
-5. Select **Select +** 
+5. Select **+ Add resource health alert**
+6. 

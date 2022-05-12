@@ -176,9 +176,9 @@ Now that the Azure runbook has been imported, we need to set up a Webhook for th
 14. Because we will be taking in dynamic data from an Azure Alert, enter in: **\[EmptyString\]**
 15. Click **Ok**
 16. Click **Create**
-17. You have now set up the webhook _(make sure you have saved the URL from the earlier step as you will need it in the next steps)!_
+17. You have now set up the webhook _(make sure you have saved the URL from the earlier step as you will need it in the following steps)!_
 
-#### Setup Alert
+#### Setup Alert & Action Group
 
 Now that the Automation framework has been created with the Azure Automation account, runbook and webhook, we now need a way to detect if a Virtual Machine has been Stopped; this is where a Resource Health alert will come in.
 
@@ -197,4 +197,10 @@ Now that the Automation framework has been created with the Azure Automation acc
 13. Set Previous resource status to **All selected**
 14. For reason type, select: **User initiated** and **unknown**
 15. ![](/uploads/azureportal-alert-create.jpg)
-16. 
+16. Now that we have the Alert rule configured, we need to set up an Action group. That will get triggered when the alert gets fired.
+17. Click **Select Action groups.**
+18. Click **+ Create action group**
+19. **Select** your subscription and **resource group** _(this is where the Action alert will go, I recommend your Azure Management/Monitoring resource group that may have a Log Analytics workspace as an example)_.
+20. Give your Action Group a **name**, i.e. AzureAutomateActionGroup
+21. The display name will be automatically generated, but feel free to adjust it to suit your naming convention
+22. Click **Review + create**

@@ -56,6 +56,8 @@ We will set up this from scratch using the Azure Portal and an already created P
 
 #### Setup Azure Automation Account
 
+##### Create Azure Automation Account
+
 First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account") resource.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
@@ -76,3 +78,29 @@ First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/auto
 16. ![](/uploads/azureportal-create-automation_tags.jpg)
 17. Click **Review + Create**
 18. After validation has passed, select **Create**
+
+##### Configure System Identity
+
+Now that we have our Azure Automation account, its time to set up the System Managed Identity and grant it the following roles:
+
+* Virtual Machine Contributor _(to deallocate the Virtual Machine)_
+* Monitoring Contributor _(to close the Azure Alert)_
+
+You can set up a custom role to be least privileged and use that instead. But in this article, we will stick to the built-in roles. 
+
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Navigate to your Azure **Automation account**
+ 3. Click on: **Identity**
+ 4. Make sure that the **System assigned** toggle is: **On** and click **Azure role assignments**
+ 5. ![](/uploads/azureportal-automation_managedidentity.jpg)
+ 6. Click **+ Add role assignments**
+ 7. Select the **Subscription** _(make sure this subscription matches the same subscription your Virtual Machines are in)_
+ 8. Select Role: **Virtual Machine Contributor**
+ 9. Click **Save**
+10. Now we repeat the same process for **Monitoring Contributor**
+11. lick **+ Add role assignments**
+12. Select the **Subscription** _(make sure this subscription matches the same subscription your Virtual Machines are in)_
+13. Select Role: **Monitoring Contributor**
+14. Click **Save**
+15. Click **Refresh** _(it may take a few seconds to update the Portal, so if it is blank - give it 10 seconds and try again)_.
+16. You have now set up the System Managed identity and granted it the roles necessary to execute the automation.

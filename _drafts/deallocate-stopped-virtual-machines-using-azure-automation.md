@@ -152,3 +152,23 @@ Now that the modules have been imported into your Azure Automation account, it i
 11. Now you will be greeted with a blank edit pane; paste in the Runbook from below:
 12. GIST
 13. Click **Save**
+14. ![](/uploads/azureportal-runbook-import.jpg)
+15. Click **Publish** _(so the runbook is actually in production and can be used)_
+16. You can select View or Edit at any stage, but you have now imported the Azure Automation runbook!
+
+##### Setup Webhook
+
+Now that the Azure runbook has been imported, we need to set up a Webhook for the Alert to trigger and start the runbook.
+
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 2. Navigate to your Azure **Automation account**
+ 3. Click on **Runbooks**
+ 4. **Click** on the **runbook** you just imported _(i.e. Deallocate-AzureVirtualMachine)_
+ 5. Click on **Add webhook**
+ 6. Click **Create a new webhook**
+ 7. **Enter** a **name** for the webhook
+ 8. Make sure it is **Enabled**
+ 9. You can edit the expiry date to match your security requirements; make sure you **record** the expiry date, as it will need to be renewed before it expires.
+10. **Copy** the **URL** and paste it somewhere safe _(you won't see this again! and you need it for the next steps)_
+11. ![](/uploads/azureportal-webhook-create.jpg)
+12. Click **Ok**

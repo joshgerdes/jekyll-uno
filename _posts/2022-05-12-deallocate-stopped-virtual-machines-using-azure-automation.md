@@ -60,7 +60,7 @@ We will set up this from scratch using the Azure Portal and an already created P
 
 First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"} resource.
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Click **+ Create a resource.**
  3. Type in **automation**
  4. Select **Create** under Automation, and select **Automation.**
@@ -88,7 +88,7 @@ Now that we have our Azure Automation account, its time to set up the System Man
 
 You can set up a custom role to be least privileged and use that instead. But in this article, we will stick to the built-in roles. 
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
  3. Click on: **Identity**
  4. Make sure that the **System assigned** toggle is: **On** and click **Azure role assignments.**
@@ -109,7 +109,7 @@ You can set up a custom role to be least privileged and use that instead. But in
 
 We will use the Azure Runbook and use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"){:target="_blank"}, and update the Az.Accounts as required as a pre-requisite for Az.AlertsManagement.
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
  3. Click on **Modules**
  4. Click on **+ Add a module**
@@ -139,7 +139,7 @@ We will use the Azure Runbook and use a few Azure PowerShell Modules; by default
 
 Now that the modules have been imported into your Azure Automation account, it is time to import the Azure Automation runbook.
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
  3. Click on **Runbooks**
  4. Click **+ Create a runbook**
@@ -160,7 +160,7 @@ Now that the modules have been imported into your Azure Automation account, it i
 
 Now that the Azure runbook has been imported, we need to set up a Webhook for the Alert to trigger and start the runbook.
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
  3. Click on **Runbooks**
  4. **Click** on the **runbook** you just imported _(i.e. Deallocate-AzureVirtualMachine)_
@@ -182,8 +182,8 @@ Now that the Azure runbook has been imported, we need to set up a Webhook for th
 
 Now that the Automation framework has been created with the Azure Automation account, runbook and webhook, we now need a way to detect if a Virtual Machine has been Stopped; this is where a Resource Health alert will come in.
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal").
- 2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview "Monitor | Overview")
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
+ 2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview){:target="_blank"}
  3. Click on **Service Health**
  4. Select **Resource Health**
  5. Select **+ Add resource health alert**

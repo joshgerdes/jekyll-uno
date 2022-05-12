@@ -134,3 +134,7 @@ In the Azure Runbook, we will use - will use a few Azure PowerShell Modules; by 
 23. Make sure that the Runtime version is: **5.1** 
 24. Click **Import** _(if you get an error, make sure that Az.Accounts has been updated, through the Gallery import as above)_
 25. Now you have successfully added the dependant modules!
+
+##### Import Runbook
+
+Now that the modules have been imported into your Azure Automation account, it is time to import the Azure Automation runbook.

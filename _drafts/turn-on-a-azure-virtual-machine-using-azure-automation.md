@@ -42,8 +42,8 @@ Today, we are going to set up an Azure Automation runbook, triggered by a schedu
 
 To do this, we need a few resources.
 
-* Azure Automation Account
-* Azure Automation runbook _(I will supply this below)_
+* [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") Account
+* Azure Automation [runbook](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-types?WT.mc_id=AZ-MVP-5004796 "Azure Automation runbook types") _(I will supply a PowerShell runbook below)_
 * [AbstractAPI ](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs")API Key
 
 And, of course, 'Contributor' rights to the Microsoft Azure subscription to create the resources and the schedule, along with setting up the System Managed identity to grant the Azure Automation account access to start the Virtual Machine.

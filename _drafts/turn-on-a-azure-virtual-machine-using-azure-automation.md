@@ -1,5 +1,5 @@
 ---
-date: 2022-05-12T00:00:00.000+12:00
+date: 2022-05-21 00:00:00 +1200
 title: Turn on a Azure Virtual Machine using Azure Automation
 author: Luke
 categories:
@@ -20,39 +20,37 @@ header:
 | Deallocating | This is the transitional state between running and deallocated. | Not billed |
 | Deallocated | The Virtual Machine has released the lease on the underlying hardware and is completely powered off. This state is also referred to as Stopped (Deallocated). | Not billed |
 
-Suppose a Virtual Machine is not being used. In that case, turning off a Virtual Machine from the Microsoft Azure Portal _(or programmatically via_ [_PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell Documentation"){:target="_blank"}_/_[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}_)_ is recommended to ensure that the Virtual Machine is deallocated and its affinity on the host has been released.
+Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services")_, but not a requirement)_, but what about starting it?
 
-![Microsoft Azure - Virtual Machine Power States](/uploads/azvm-power-states.png "Microsoft Azure - Virtual Machine Power States")
+You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_. 
 
-However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles"){:target="_blank"} rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
+This works fine for most scenarios, but what happens if a Bank or Public Holiday falls during the week? With the normal schedule, your Virtual Machine starts. 
 
-Our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} runbook to deallocate the Virtual Machine.
+Because all your users are on Holiday, it wastes money while you and your users drink snicker cocktails at the beach?
+
+This is where using a third party timezone API like '[AbstractApi](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs")' comes in handy; incorporating a lookup to check if it's a Public Holiday before starting that Virtual Machine can help reduce unnecessary costs.
+
+I have written a base runbook that does precisely that, every time the runbook runs, it checks if it is a public Holiday. If it is - then the Virtual Machine isn't started; if it isn't, then the virtual machine is started.
 
 ### Overview
 
-Today, we are going to set up an Azure Automation runbook, triggered by a Resource Health alert that will go through the following steps:
+Today, we are going to set up an Azure Automation runbook, triggered by a scheduled will go through the following steps:
 
-1. User shutdowns Virtual Machine from within the Operating System
-2. The Virtual Machine enters an unavailable state
-3. A Resource Alert is triggered when the Virtual Machine becomes unavailable (after being available) by a user initiated event
-4. The Alert triggers a Webhook to an Azure Automation runbook
-5. Using permissions assigned to the Azure Automation account through a System Managed Identity connects to Microsoft Azure and checks the VM state; if the Virtual Machine state is still 'Stopped', then deallocate the virtual machine.
-6. Then finally, resolve the triggered alert.
+1. On a schedule _(7 AM, it will trigger an Azure Automation runbook)_
+2. The Azure Automation runbook will do a lookup to an external API, in this case, AbstractApi.
+3. The runbook will check the date and detect if it falls on a Public Holiday; if it is a Public Holiday, it will exit the Azure Automation runbook; if it is a standard workday, it will start the Virtual Machine.
 
 To do this, we need a few resources.
 
 * Azure Automation Account
-* Az.AlertsManagement module in the Azure Automation account
-* Az.Accounts module _(updated in the Azure Automation account)_
 * Azure Automation runbook _(I will supply this below)_
-* Resource Health Alert
-* Webhook _(to trigger to the runbook and pass the JSON from the alert)_
+* [AbstractAPI ](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs")API Key
 
-And, of course, 'Contributor' rights to the Microsoft Azure subscription to provide the resources and the alerts and resources and set up the system managed identity.
+And, of course, 'Contributor' rights to the Microsoft Azure subscription to create the resources and the schedule, along with setting up the System Managed identity to grant the Azure Automation account access to start the Virtual Machine.
 
-We will set up this from scratch using the Azure Portal and an already created PowerShell Azure Automation runbook.
+We will set up this from scratch using the Azure Portal and use an already created PowerShell Azure Automation runbook.
 
-### Deploy Deallocate Solution
+### Deploy Start VM Solution
 
 #### Setup Azure Automation Account
 
@@ -86,7 +84,7 @@ Now that we have our Azure Automation account, its time to set up the System Man
 * Virtual Machine Contributor _(to deallocate the Virtual Machine)_
 * Monitoring Contributor _(to close the Azure Alert)_
 
-You can set up a custom role to be least privileged and use that instead. But in this article, we will stick to the built-in roles. 
+You can set up a custom role to be least privileged and use that instead. But in this article, we will stick to the built-in roles.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
@@ -120,7 +118,7 @@ We will use the Azure Runbook and use a few Azure PowerShell Modules; by default
  9. Click on **Az.Accounts**
 10. Click **Select**
 11. ![Import Az.Accounts module](/uploads/azureportal-automation_modules_az-accounts.jpg "Import Az.Accounts module")
-12. Make sure that the Runtime version is: **5.1** 
+12. Make sure that the Runtime version is: **5.1**
 13. Click **Import**
 14. Now that the Az.Accounts have been updated, and it's time to import Az.AlertsManagement!
 15. Click on **Modules**
@@ -131,7 +129,7 @@ We will use the Azure Runbook and use a few Azure PowerShell Modules; by default
 20. Click **Az.AlertsManagement**
 21. ![Az.AlertsManagement module](/uploads/azureportal-automation_modules_az-alertsmanagement.jpg "Az.AlertsManagement module")
 22. Click **Select**
-23. Make sure that the Runtime version is: **5.1** 
+23. Make sure that the Runtime version is: **5.1**
 24. Click **Import** _(if you get an error, make sure that Az.Accounts has been updated, through the Gallery import as above)_
 25. Now you have successfully added the dependent modules!
 
@@ -212,7 +210,7 @@ Now that the Automation framework has been created with the Azure Automation acc
 28. ![Create Azure Action Group](/uploads/azureportal-actiongroup-webhook.jpg "Create Azure Action Group")
 29. Click **Ok**
 30. Give the **webhook** a **name**.
-31. Click **Review + create** 
+31. Click **Review + create**
 32. Click **Create**
 33. Finally, enter in an Alert **name** and **description**, specify the resource group for the Alert to go into and click **Save.**
 
@@ -223,7 +221,7 @@ So now we have stood up our:
 * Azure automation account
 * Alert
 * Action Group
-* Azure automation runbook 
+* Azure automation runbook
 * Webhook
 
 It is time to test! I have a VM called: VM-D01, running Windows _(theoretically, this runbook will also run against Linux workloads, as its relying on the Azure agent to send the correct status to the Azure Logs, but in my testing, it was against Windows workloads)_ in the same subscription that the alert has been deployed against.

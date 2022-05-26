@@ -1,6 +1,6 @@
 ---
 date: 2022-05-27 00:00:00 +1200
-title: How to contribute to Microsoft Documentation
+title: How to contribute to Microsoft documentation
 author: Luke
 categories:
 - Azure

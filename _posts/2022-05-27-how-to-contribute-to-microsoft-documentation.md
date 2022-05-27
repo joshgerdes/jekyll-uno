@@ -13,7 +13,7 @@ header:
 ---
 Did you know you can contribute to Microsoft documentation _(ms docs)_?
 
-Suppose you see something not quite right, technically or even if the document's readability doesn't look right! Then, in true community style, true community style, you can contribute!
+Suppose you see something not quite right, technically or even if the document's readability doesn't look right! Then, in true community style, you can contribute!
 
 > Tip: You can edit it straight from the Github webpage directly, or pressing "**.**" in a Github repository will open up Visual Studio Code in Dev spaces with the markdown linter to help check against best practices from your browser.
 

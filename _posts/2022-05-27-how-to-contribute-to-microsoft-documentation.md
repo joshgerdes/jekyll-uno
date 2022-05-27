@@ -6,6 +6,7 @@ categories:
 - Azure
 - Misc
 toc: false
+permalink: /misc/how-to-contribute-to-microsoft-documentation/
 header:
   teaser: "/uploads/msdocs_contribute_issue.png"
 

@@ -22,7 +22,7 @@ See the image below for an example:
 
 Once the pull request is made, it will be reviewed by designated technical document reviewers/product owners at Microsoft. Then your changes will be merged live if successful _(and if not, the reviewers will let you know why and what changes could be made)_!
 
-* [Microsoft Docs contributor guide overview](https://docs.microsoft.com/en-us/contribute/?WT.mc_id=AZ-MVP-5004796 "Microsoft Docs contributor guide overview")
+* [Microsoft Docs contributor guide overview](https://docs.microsoft.com/en-us/contribute/?WT.mc_id=AZ-MVP-5004796 "Microsoft Docs contributor guide overview"){:target="_blank"}
 
 If you don't want to make the edit yourself, you can also raise an issue and give your feedback by linking to the document, and this will then be worked on by someone to review, contact the relevant product owners, and amended.
 

@@ -8,7 +8,6 @@ toc: true
 header:
   teaser: "/uploads/microsoft_azure.jpg"
 ---
-### Architecture in the Cloud
 
 Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system.
 

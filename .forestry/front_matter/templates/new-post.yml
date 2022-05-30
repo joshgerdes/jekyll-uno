@@ -73,5 +73,6 @@ pages:
 - _posts/2022-05-07-hidden-tags-in-azure.md
 - _posts/2022-05-12-deallocate-stopped-virtual-machines-using-azure-automation.md
 - _posts/2022-05-27-how-to-contribute-to-microsoft-documentation.md
+- _posts/architecture-in-the-cloud.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
 - _posts/turn-on-a-azure-virtual-machine-using-azure-automation.md

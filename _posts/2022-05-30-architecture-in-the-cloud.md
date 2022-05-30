@@ -15,7 +15,9 @@ The architecture of a system must balance and align the business requirements wi
 
 The finished architecture is a balance of risk, cost, and capability throughout the system and its components.
 
-Running a solution in the cloud does not reduce the need for requirements to be clear. In fact, the flexibility and power provided by the cloud mean that it is even more important to have clear requirements from business stakeholders; otherwise, you could end up solving problems that don't exist, missing an important design decision, or going beyond the available budget by adding unnecessary resiliency.![Requirements and Architecture](/uploads/requirementsandarchitecture.png "Requirements and Architecture")
+Running a solution in the cloud does not reduce the need for requirements to be clear. In fact, the flexibility and power provided by the cloud mean that it is even more important to have clear requirements from business stakeholders; otherwise, you could end up solving problems that don't exist, missing an important design decision, or going beyond the available budget by adding unnecessary resiliency.
+
+![Requirements and Architecture](/uploads/requirementsandarchitecture.png "Requirements and Architecture")
 
 #### Non-functional requirements _(NFRs)_
 

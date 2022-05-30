@@ -7,7 +7,6 @@ categories:
 toc: true
 header:
   teaser: "/uploads/microsoft_azure.jpg"
-
 ---
 ### Architecture in the Cloud
 
@@ -72,12 +71,12 @@ Below is a short list of NFRs (not exhaustive) that may be provided by the busin
 
 ##### **Azure SLAs**
 
-* Familiarize yourself with [Azure service-level agreements](https://azure.microsoft.com/en-au/support/legal/sla/?WT.mc_id=AZ-MVP-5004796 " Service-level agreements")
+* Familiarize yourself with [Azure service-level agreements](https://azure.microsoft.com/en-au/support/legal/sla/?WT.mc_id=AZ-MVP-5004796 " Service-level agreements"){:target="_blank"}
 * An Azure Service-level Agreement (SLA) can also be read as a minimum service-level objective (SLO).
 * An SLA is a financial guarantee, not an absolute guarantee
 * Read the SLA details carefully, particularly the definition of "downtime" for each service, which gives important hints about failure modes
 
-For example, in the [SLA for Azure SQL Database](https://azure.microsoft.com/en-au/support/legal/sla/azure-sql-database/v1_8/?WT.mc_id=AZ-MVP-5004796 " SLA for Azure SQL Database"), "downtime" is defined as:
+For example, in the [SLA for Azure SQL Database](https://azure.microsoft.com/en-au/support/legal/sla/azure-sql-database/v1_8/?WT.mc_id=AZ-MVP-5004796 " SLA for Azure SQL Database"){:target="_blank"}, "downtime" is defined as:
 
 _"The total accumulated Deployment Minutes across all Databases in a given Microsoft Azure subscription during which the Database is unavailable. A minute is considered unavailable for a given Database if all continuous attempts by Customer to establish a connection to the Database within the minute fail."_
 
@@ -87,6 +86,6 @@ The Azure SQL Database team expect almost all outages to be transient (brief and
 
 Finally, resources such as the Azure Architecture Center, Cloud Adoption and Well-Architected Framework can help with thinking around the design and building blocks of your architecture
 
-* [**Azure Architecture Center**](https://docs.microsoft.com/en-us/azure/architecture/?WT.mc_id=AZ-MVP-5004796 "Azure Architecture Center")
-* [**Microsoft Azure Well-Architected Framework**](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework")
-* [**Microsoft Cloud Adoption Framework for Azure**](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure")
+* [**Azure Architecture Center**](https://docs.microsoft.com/en-us/azure/architecture/?WT.mc_id=AZ-MVP-5004796 "Azure Architecture Center"){:target="_blank"}
+* [**Microsoft Azure Well-Architected Framework**](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}
+* [**Microsoft Cloud Adoption Framework for Azure**](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"){:target="_blank"}

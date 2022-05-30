@@ -9,11 +9,11 @@ header:
   teaser: "/uploads/microsoft_azure.jpg"
 
 ---
-The term ‘_Scaffolding_’ for Cloud essentially refers to creating a base design to establish an architecture foundation that supports a scalable, reliable, flexible, dynamic, and redundant architecture.
+The term '_Scaffolding_' for Cloud essentially refers to creating a base design to establish an architecture foundation that supports a scalable, reliable, flexible, dynamic, and redundant architecture.
 
-Although the Azure Scaffold methodology itself has been integrated into the [Microsoft Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"), I do like the use of the word scaffold for building your core foundation, we are going to take a look at some key resources to develop your scaffold.
+Although the Azure Scaffold methodology itself has been integrated into the [Microsoft Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"), I do like the use of the word scaffold for building your core foundation. We will take a look at some essential resources to develop your platform.
 
-We are going to take a look at a theoretical company, and what the beginning of its governance may look like.
+We will take a look at a theoretical company and what the beginning of its governance may look like.
 
 ## Accounts
 
@@ -23,11 +23,11 @@ These accounts will be subscription and Billing owners and need to have MFA _(Mu
 
 ## Subscriptions
 
-The Azure account is a globally unique entity that gets you access to Azure services and your Azure subscriptions. You can create multiple subscriptions in your Azure account to create separation e.g., for billing or management purposes. In your subscription(s) you can manage resources in resources groups. Azure subscription can have a trust relationship with an Azure Active Directory _(Azure AD)_ instance.
+The Azure account is a globally unique entity that gets you access to Azure services and your Azure subscriptions. You can create multiple subscriptions in your Azure account to create separation, e.g., for billing or management purposes. In your subscription(s), you can manage resources in resource groups. In addition, azure subscription can have a trust relationship with an Azure Active Directory _(Azure AD)_ instance.
 
 ![Management Groups](/uploads/managementgroupsandsubscriptions.png "Management Groups")
 
-Depending on the size of the environment, you may have one or many subscriptions, you may have a Subscription to separate resources for:
+Depending on the size of the environment, you may have one or many subscriptions, and you may have a Subscription to separate resources for:
 
 * Production
 * Development
@@ -39,19 +39,19 @@ Depending on the size of the environment, you may have one or many subscriptions
 
 Depending on the size of the environment, it is best to start with one subscription for Production resources _(most resources can be moved across subscriptions)_ and add additional subscriptions where/as needed.
 
-Each subscription is also managed by resource quotas, for example, if you were setting up a reasonably large Azure Virtual Desktop farm, you may have the session hosts in another subscription to prevent any issues creating Virtual Machines on another subscription.
+Each subscription is also managed by resource quotas; for example, if you were setting up a reasonably large Azure Virtual Desktop farm, you may have the session hosts in another subscription to prevent any issues creating Virtual Machines on another subscription.
 
 ## Resource Groups
 
 A [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal?WT.mc_id=AZ-MVP-5004796#what-is-a-resource-group "What is a resource group") is a container that holds related resources for an Azure solution.
 
-The resource group can include all the resources for the solution, or only those resources that you want to manage as a group. You decide how you want to allocate resources to resource groups based on what makes the most sense for your organization.
+The resource group can include all the resources for the solution or only those resources that you want to manage as a group. You decide how you want to allocate resources to resource groups based on what makes the most sense for your organization.
 
 Generally, add resources that share the same lifecycle to the same resource group so you can easily deploy, update, and delete them as a group.
 
 A Resource Group should be created for each application separately, it is also recommended to separate Production and Development resources into separate resource groups.
 
-Resource Groups also allow you to enable Locks, to prevent anyone from deleting or modifying the resources, this is extremely useful when working with infrastructure resources, such as Networks.
+Resource Groups also allow you to enable Locks, to prevent anyone from deleting or modifying the resources; this is extremely useful when working with infrastructure resources, such as Networks.
 
 | Environment | Application Name | Azure Region | Azure Service | Example Name |
 | --- | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ Resource Groups also allow you to enable Locks, to prevent anyone from deleting 
 
 [Azure management groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796 "What are Azure management groups?") provide a level of scope above subscriptions.
 
-You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management.
+You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. You can build flexible management groups and subscriptions structure to organize your resources into a hierarchy for unified policy and access management.
 
 It is recommended to use management groups to deploy _(but not limited to)_:
 
@@ -72,9 +72,9 @@ It is recommended to use management groups to deploy _(but not limited to)_:
 
 ## Azure Policies
 
-Resource [policies ](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?")will be used to assign resource tags to resources, control costs by limiting the types of resources that can be created and restrict resources to preferred Azure locations. The azure policy is a default allow and explicit deny system.
+Resource [policies ](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?")will be used to assign resource tags to resources, control costs by limiting the types of resources that can be created and restrict resources to preferred Azure locations. The azure policy is a default allow, and explicit deny system.
 
-Azure Policies can be deployed to Subscriptions/Resource Groups and Management Groups, example policies to deploy as a base could be:
+Azure Policies can be deployed to Subscriptions/Resource Groups and Management Groups; example policies to deploy as a base could be:
 
 ### **Built-in policies**
 
@@ -85,13 +85,13 @@ Resources should be created only in the Australian regions below. Attempts to cr
 * Australia East
 * Australia Southeast
 * **Allowed virtual machine SKUs**
-* Production Environments - Virtual Machines should be configured to use managed disks
-* Non-Production Environments - Virtual Machines should be configured to use managed disks
+* Production Environments - Virtual Machines should be configured to use managed disks.
+* Non-Production Environments - Virtual Machines should be configured to use managed disks.
 * Virtual Machines must be provisioned based on the least number of resources required.
 * **Allowed storage account SKUs**
 * Production Environments – Storage accounts created for production subscriptions should use one of the following storage account SKUs:
 * Standard_GRS. Geo-redundant storage
-* Standard_RAGRS. Read access geo-redundant storage
+* Standard_RAGRS. Read access geo-redundant storage.
 * Non-Production Environments – Storage accounts created for non-production subscriptions should use one of the following storage account SKUs:
 * Standard_LRS. Locally redundant storage
 * Standard_ZRS. Zone-redundant storage
@@ -136,7 +136,7 @@ A useful naming convention composes resource names from important information ab
 
 Some resource names, such as PaaS services with public endpoints or virtual machine DNS labels, have global scopes, so they must be unique across the Azure platform.
 
-The use of these limitations and scopes have been used to determine the following naming conventions, across associated client resources.
+The use of these limitations and scopes have been used to determine the following naming conventions across associated client resources.
 
 | Casing | Name Format |
 | --- | --- |
@@ -273,13 +273,13 @@ The use of these limitations and scopes have been used to determine the followin
 Organizing cloud-based resources is a crucial task for IT unless you only have simple deployments. Use naming and tagging standards to organize your resources for these reasons:
 
 * **Resource management**: Your IT teams will need to quickly locate resources associated with specific workloads, environments, ownership groups, or other important information. Organizing resources is critical to assigning organizational roles and access permissions for resource management.
-* **Cost management and optimization**: Making business groups aware of cloud resource consumption requires IT to understand the resources and workloads each team is using.
-* **Operations management**: Visibility for the operations management team regarding business commitments and SLAs is an important aspect of ongoing operations.
+* **Cost management and optimization**: Making business groups aware of cloud resource consumption requires IT to understand each team's resources and workloads.
+* **Operations management**: Visibility for the operations management team regarding business commitments and SLAs is an essential aspect of ongoing operations.
 * **Security:** Classification of data and security impact is a vital data point for the team when breaches or other security issues arise.
 * **Governance and regulatory compliance:** Maintaining consistency across resources helps identify deviation from agreed-upon policies.
-* **Automation:** In addition to making resources easier for IT to manage, a proper organizational scheme allows you to take advantage of automation as part of resource creation, operational monitoring, and the creation of DevOps processes.
+* **Automation:** In addition to making resources easier for IT to manage, a proper organizational scheme allows you to take advantage of automation as part of resource creation, operational monitoring, and the result of DevOps processes.
 
-**Workload optimization:** Tagging can help identify patterns and resolve broad issues. Tag can also help identify the assets required to support a single workload. Tagging all assets associated with each workload enables deeper analysis of your mission-critical workloads to make sound architectural decisions.
+**Workload optimization:** Tagging can help identify patterns and resolve broad issues. A tag can also help determine the assets required to support a single workload. Tagging all assets associated with each workload enables more profound analysis of your mission-critical workloads to make sound architectural decisions.
 
 ### Tagging Types
 
@@ -317,13 +317,13 @@ Tag at the Resource Group level and then have an Azure policy implemented which 
 
 Azure Private Endpoint will be configured for PaaS resources which only need to be accessed on an internal network.
 
-Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a [private endpoint](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796 "What is a private endpoint?") in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary.
+Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database), and Azure hosted customer-owned/partner services over a [private endpoint](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796 "What is a private endpoint?") in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. As a result, exposing your service to the public internet is no longer necessary.
 
 ### RBAC
 
 Role Based Access Control will be used across Azure resources and resource groups.
 
-Each Azure Resource Group will have an Azure Active Directory group created for it with Contributor access. This allows any user a member of the group to only have access to the Resource Group resources only.
+Each Azure Resource Group will have an Azure Active Directory group created for it with Contributor access. This allows any user, a member of the group, to only have access to the Resource Group resources.
 
 Users are to be added to groups ONLY – not directly to the resources or resource groups, so simplify management and increase visibility.
 
@@ -334,9 +334,9 @@ Microsoft Defender for Cloud has two main goals:
 * to help you understand your current security situation
 * to help you efficiently and effectively improve your security
 
-The central feature in Defender for Cloud that enables you to achieve those goals is a secure score. Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
+The central feature in Defender for Cloud that enables you to achieve those goals is a secure score. Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score to tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
 
-Defender for Cloud and Security contacts will be enabled on all subscriptions, Basic is Free.
+Defender for Cloud and Security contacts will be enabled on all subscriptions, and Basic is Free.
 
 ## Cost Management
 
@@ -344,9 +344,9 @@ Defender for Cloud and Security contacts will be enabled on all subscriptions, B
 
 Implement Budget alerts. These Alerts will be configured to email the Business Owners or other Stakeholders once a Resource Group reaches a specific threshold.
 
-It is recommended to set 3 Budget alerts, to help with awareness.
+It is recommended to set 3 Budget alerts to help with awareness.
 
-For Resource Group budgets the following naming standard has been created for Resource Groups:
+For Resource Group budgets, the following naming standard has been created for Resource Groups:
 
 | Budget Name | Alert Threshold (Percent) |
 | --- | --- |
@@ -354,7 +354,7 @@ For Resource Group budgets the following naming standard has been created for Re
 | {RESOURCEGROUPNAME}-MonthlyBudget-{Number} | 60% |
 | {RESOURCEGROUPNAME}-MonthlyBudget-{Number} | 70% |
 
-For Subscription budgets the following naming standard is created:
+For Subscription budgets, the following naming standard is created:
 
 | Budget Name | Alert Threshold (Percent) |
 | --- | --- |
@@ -364,7 +364,7 @@ For Subscription budgets the following naming standard is created:
 
 ### Processes
 
-Proactive Cost Management activities to be performed and defined as part of BAU/Cloud Operations on a continuous basis.
+Proactive Cost Management activities to be performed and defined as part of BAU/Cloud Operations continuously.
 
 * Monitor and forecast
 * Cost controls – Forecast and tune

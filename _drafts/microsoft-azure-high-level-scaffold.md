@@ -1,5 +1,5 @@
 ---
-date: 2022-05-30 00:00:00 +1200
+date: 2022-05-31 00:00:00 +1200
 title: Microsoft Azure - High Level Scaffold
 author: Luke
 categories:

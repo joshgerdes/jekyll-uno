@@ -17,13 +17,13 @@ We are going to take a look at a theoretical company, and what the beginning of 
 
 ## Accounts
 
-Azure subscriptions are bound to Accounts.
+[Azure ](https://docs.microsoft.com/en-us/azure/?product=popular&WT.mc_id=AZ-MVP-5004796 "Azure documentation")subscriptions are bound to Accounts.
 
 These accounts will be subscription and Billing owners and need to have MFA _(Multi-factor authentication)_ enabled.
 
 ## Subscriptions
 
-The Azure account is a globally unique entity that gets you access to Azure services and your Azure subscriptions. You can create multiple subscriptions in your Azure account to create separation e.g., for billing or management purposes. In your subscription(s) you can manage resources in resources groups. Azure subscription can have a trust relationship with an Azure Active Directory (Azure AD) instance.
+The Azure account is a globally unique entity that gets you access to Azure services and your Azure subscriptions. You can create multiple subscriptions in your Azure account to create separation e.g., for billing or management purposes. In your subscription(s) you can manage resources in resources groups. Azure subscription can have a trust relationship with an Azure Active Directory _(Azure AD)_ instance.
 
 ![Management Groups](/uploads/managementgroupsandsubscriptions.png "Management Groups")
 
@@ -43,7 +43,7 @@ Each subscription is also managed by resource quotas, for example, if you were s
 
 ## Resource Groups
 
-A resource group is a container that holds related resources for an Azure solution.
+A [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal?WT.mc_id=AZ-MVP-5004796#what-is-a-resource-group "What is a resource group") is a container that holds related resources for an Azure solution.
 
 The resource group can include all the resources for the solution, or only those resources that you want to manage as a group. You decide how you want to allocate resources to resource groups based on what makes the most sense for your organization.
 
@@ -59,11 +59,11 @@ Resource Groups also allow you to enable Locks, to prevent anyone from deleting 
 
 ## Management Groups
 
-Azure management groups provide a level of scope above subscriptions.
+[Azure management groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796 "What are Azure management groups?") provide a level of scope above subscriptions.
 
 You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management.
 
-It is recommended to use management groups to deploy:
+It is recommended to use management groups to deploy _(but not limited to)_:
 
 * Access rights
 * Policies
@@ -72,7 +72,7 @@ It is recommended to use management groups to deploy:
 
 ## Azure Policies
 
-Resource policies will be used to assign resource tags to resources, control costs by limiting the types of resources that can be created and restrict resources to preferred Azure locations. The azure policy is a default allow and explicit deny system.
+Resource [policies ](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?")will be used to assign resource tags to resources, control costs by limiting the types of resources that can be created and restrict resources to preferred Azure locations. The azure policy is a default allow and explicit deny system.
 
 Azure Policies can be deployed to Subscriptions/Resource Groups and Management Groups, example policies to deploy as a base could be:
 
@@ -114,7 +114,7 @@ This initiative includes policies that address a subset of New Zealand Informati
 
 ## Resource Locks
 
-Resource Locks must be used to protect production resources _(such as Virtual Networks, or Domain Controllers)_ from being accidentally deleted.
+[Resource Locks](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json&WT.mc_id=AZ-MVP-5004796 "Lock your resources to protect your infrastructure") must be used to protect production resources _(such as Virtual Networks, or Domain Controllers)_ from being accidentally deleted.
 
 * Who can create or delete locks in your organization?
 

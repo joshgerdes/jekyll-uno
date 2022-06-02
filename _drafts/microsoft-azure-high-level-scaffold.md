@@ -1,6 +1,6 @@
 ---
 date: 2022-06-02 00:00:00 +1200
-title: Microsoft Azure - High Level Scaffold
+title: Microsoft Azure - Naming & Tagging Conventions
 author: Luke
 categories:
 - Azure

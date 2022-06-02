@@ -79,6 +79,12 @@ The use of these limitations and scopes have been used to determine the followin
 
 ![Azure Naming - Global](/uploads/azurenaming.png "Azure Naming - Global")
 
+### Resource Group
+
+| Environment | Application Name | Azure Region | Azure Service | Example Name |
+| --- | --- | --- | --- | --- |
+| Production | application1 | Australia East | Resource Group | company-application1-rg-au-e-prod |
+
 ### Resource Type Codes
 
 | Resource Type | Short Code | Scope | Character Limit |

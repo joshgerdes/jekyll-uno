@@ -1,5 +1,5 @@
 ---
-date: 2022-06-02 00:00:00 +1200
+date: 2022-06-02T00:00:00.000+12:00
 title: Microsoft Azure Tagging Conventions
 author: Luke
 categories:
@@ -52,4 +52,4 @@ Tag at the Resource Group level and then have an Azure policy implemented that t
 | Business Unit | {BusinessUnit} | Partnership | Tags the resource with the name of the Business Unit or Company that owns the resources. | BusinessUnit:Finance |
 | Snapshot | True | Functional | This is an Automation functional tag, i.e., tag the resource (Disk) with a tagging code which can create daily snapshots of disks. | Snapshot:True |
 
-## 
+##

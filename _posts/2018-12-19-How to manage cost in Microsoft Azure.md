@@ -5,7 +5,8 @@ author: Luke
 categories:
 - Azure
 toc: true
-
+header:
+  teaser: "images/powershell-blog-feature-banner.png"
 ---
 Microsoft has built up the Microsoft Azure ecosystem to offer scale and performance as and when needed; this gives customers the ability to not only remain competitive by lead and disrupt their industries without having to worry about on-premises datacentre capacity, redundancy, and manual processes, this, however, comes at a cost, where engineers may have in the past not cared or been responsible for cost – the Cloud has enabled us not only to consume valuable resources but also drive the cost up which has now shifted left to System Administrators or DevOps Engineers to keep things running and keeping cost low.
 

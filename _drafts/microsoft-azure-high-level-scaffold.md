@@ -1,5 +1,5 @@
 ---
-date: 2022-05-31 00:00:00 +1200
+date: 2022-06-02 00:00:00 +1200
 title: Microsoft Azure - High Level Scaffold
 author: Luke
 categories:
@@ -11,7 +11,7 @@ header:
 ---
 The term '_Scaffolding_' for Cloud essentially refers to creating a base design to establish an architecture foundation that supports a scalable, reliable, flexible, dynamic, and redundant architecture.
 
-Although the Azure Scaffold methodology itself has been integrated into the [Microsoft Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"), I do like the use of the word scaffold for building your core foundation. We will take a look at some essential resources to develop your platform.
+Although the Azure Scaffold methodology itself has been integrated into the [Microsoft Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"), I do like the use of the word scaffold for building your core foundation. We will take a look at some essential resources to developing your platform.
 
 We will take a look at a theoretical company and what the beginning of its governance may look like.
 
@@ -136,7 +136,7 @@ A useful naming convention composes resource names from important information ab
 
 Some resource names, such as PaaS services with public endpoints or virtual machine DNS labels, have global scopes, so they must be unique across the Azure platform.
 
-The use of these limitations and scopes have been used to determine the following naming conventions across associated client resources.
+The use of these limitations and scopes have been used to determine the following naming conventions across associated resources.
 
 | Casing | Name Format |
 | --- | --- |
@@ -279,7 +279,7 @@ Organizing cloud-based resources is a crucial task for IT unless you only have s
 * **Governance and regulatory compliance:** Maintaining consistency across resources helps identify deviation from agreed-upon policies.
 * **Automation:** In addition to making resources easier for IT to manage, a proper organizational scheme allows you to take advantage of automation as part of resource creation, operational monitoring, and the result of DevOps processes.
 
-**Workload optimization:** Tagging can help identify patterns and resolve broad issues. A tag can also help determine the assets required to support a single workload. Tagging all assets associated with each workload enables more profound analysis of your mission-critical workloads to make sound architectural decisions.
+**Workload optimization:** Tagging can help identify patterns and resolve broad issues. A tag can also help determine the assets required to support a single workload. Tagging all assets associated with each workload enables a more profound analysis of your mission-critical workloads to make sound architectural decisions.
 
 ### Tagging Types
 
@@ -295,7 +295,7 @@ The common tagging patterns listed below provide examples of how tagging can be 
 
 ### Tagging Baselines
 
-Tag at the Resource Group level and then have an Azure policy implemented which tags the resources in that Resource Group with the appropriate tags.
+Tag at the Resource Group level and then have an Azure policy implemented that tags the resources in that Resource Group with the appropriate tags.
 
 | Tag Name | Value | Tag Type | Description | Example |
 | --- | --- | --- | --- | --- |

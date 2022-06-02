@@ -19,8 +19,8 @@ Some resource names, such as PaaS services with public endpoints or virtual mach
 
 There's no one size fits all to Azure naming conventions, it needs to suit your organisation, however, it is worth noting that there are limitations to naming rules to Azure resources.
 
-* [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources")
-* [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention")
+* [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources"):target="_blank"}
+* [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention"):target="_blank"}
 
 The use of these limitations and scopes have been used to determine the following naming conventions across associated resources.
 

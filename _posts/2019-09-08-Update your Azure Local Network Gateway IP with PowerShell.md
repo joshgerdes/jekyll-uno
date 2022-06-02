@@ -5,8 +5,8 @@ author: Luke
 categories:
 - Azure
 - PowerShell
-header:
-  teaser: "images/powershell-blog-feature-banner.png"
+header: 
+  teaser: "images/iazure-marketplace-banner.png"
 ---
 One of the issues you face with setting up an Azure [Site to Site VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} is making sure that your Azure Local Network Gateway always has your Public/On-premises IP.
 

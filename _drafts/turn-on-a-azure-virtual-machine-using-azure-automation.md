@@ -133,78 +133,17 @@ Now that the modules have been imported into your Azure Automation account, it i
 16. Click **Publish** _(so the runbook is actually in production and can be used)_
 17. You can select View or Edit at any stage, but you have now imported the Azure Automation runbook!
 
-##### Setup Webhook
+##### Setup Variables
 
-Now that the Azure runbook has been imported, we need to set up a Webhook for the Alert to trigger and start the runbook.
+Now that the Azure runbook has been imported, we need to set up the variables, which include the API key.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**
- 3. Click on **Runbooks**
- 4. **Click** on the **runbook** you just imported _(i.e. Deallocate-AzureVirtualMachine)_
- 5. Click on **Add webhook**
- 6. Click **Create a new webhook**
- 7. **Enter** a **name** for the webhook
- 8. Make sure it is **Enabled**
- 9. You can edit the expiry date to match your security requirements; make sure you **record** the expiry date, as it will need to be renewed before it expires.
-10. **Copy** the **URL** and paste it somewhere safe _(you won't see this again! and you need it for the next steps)_
-11. ![Create Azure webhook](/uploads/azureportal-webhook-create.jpg "Create Azure webhook")
-12. Click **Ok**
-13. Click on **Configure parameters and run settings.**
-14. Because we will be taking in dynamic data from an Azure Alert, enter in: **\[EmptyString\]**
-15. Click **Ok**
-16. Click **Create**
-17. You have now set up the webhook _(make sure you have saved the URL from the earlier step as you will need it in the following steps)!_
-
-#### Setup Alert & Action Group
-
-Now that the Automation framework has been created with the Azure Automation account, runbook and webhook, we now need a way to detect if a Virtual Machine has been Stopped; this is where a Resource Health alert will come in.
-
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
- 2. Navigate to: [**Monitor**](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview){:target="_blank"}
- 3. Click on **Service Health**
- 4. Select **Resource Health**
- 5. Select **+ Add resource health alert**
- 6. Select your **subscription**
- 7. Select **Virtual machine** for Resource Type
- 8. You can target specific Resource Groups for your alert _(and, as such, your automation)_ or **select all.**
- 9. Check **Include all future resource groups**
-10. Check **include all future resources**
-11. Under the Alert conditions, make sure **Event Status** is: **All selected**
-12. Set Current resource status to **Unavailable**
-13. Set Previous resource status to **All selected**
-14. For reason type, select: **User initiated** and **unknown**
-15. ![Create Azure Resource Health Alert](/uploads/azureportal-alert-create.jpg "Create Azure Resource Health Alert")
-16. Now that we have the Alert rule configured, we need to set up an Action group. That will get triggered when the alert gets fired.
-17. Click **Select Action groups.**
-18. Click **+ Create action group**
-19. **Select** your subscription and **resource group** _(this is where the Action alert will go, I recommend your Azure Management/Monitoring resource group that may have a Log Analytics workspace as an example)_.
-20. Give your Action Group a **name**, i.e. AzureAutomateActionGroup
-21. The display name will be automatically generated, but feel free to adjust it to suit your naming convention
-22. Click **Next: Notifications**
-23. Under **Notifications**, you can trigger an **email alert**, which can be handy in determining how often the runbook runs. This can be modified and removed if it is running, especially during testing.
-24. Click **Next: Actions**
-25. Under Action Type, select **Webhook**
-26. **Paste** in the **URI** created earlier when setting up the Webhook
-27. Select **Yes** to enable the **common alert schema** (_this is required as the JSON that the runbook is parsing is expecting it to the in the schema, if it isn't the runbook will fail)_
-28. ![Create Azure Action Group](/uploads/azureportal-actiongroup-webhook.jpg "Create Azure Action Group")
-29. Click **Ok**
-30. Give the **webhook** a **name**.
-31. Click **Review + create**
-32. Click **Create**
-33. Finally, enter in an Alert **name** and **description**, specify the resource group for the Alert to go into and click **Save.**
-
-### Test Deallocate Solution
-
-So now we have stood up our:
-
-* Azure automation account
-* Alert
-* Action Group
-* Azure automation runbook
-* Webhook
-
-It is time to test! I have a VM called: VM-D01, running Windows _(theoretically, this runbook will also run against Linux workloads, as its relying on the Azure agent to send the correct status to the Azure Logs, but in my testing, it was against Windows workloads)_ in the same subscription that the alert has been deployed against.
-
-As you can see below, I shut down the Virtual Machine. After a few minutes _(be patient, Azure needs to wait for the status of the VM to be triggered)_, an Azure Alert was fired into Azure Monitor, which triggered the webhook and runbook, and the Virtual Machine was deallocated, and the Azure Alert was closed.
-
-![Azure deallocate testing](/uploads/deallocatevm.gif "Azure deallocate testing")
+ 3. Click **Variables**
+ 4. Click **+ Add a variable**
+ 5. **Create** a Variable named: **AbstractApiKey** _(this needs to match the variable name as part of the 'Get-AutomationVariable' cmdlet)_.
+ 6. Enter in a **description**
+ 7. Select **String**
+ 8. **Enter** in the **API** key you retrieved earlier from Abstract API.
+ 9. ![](/uploads/azure-azautomate_variables.png)
+10. Click **Save**

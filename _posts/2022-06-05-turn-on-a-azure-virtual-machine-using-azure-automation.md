@@ -145,7 +145,7 @@ Now that the Azure runbook has been imported, we need to set up the variables, w
  6. Enter in a **description**
  7. Select **String**
  8. **Enter** in the **API** key you retrieved earlier from Abstract API.
- 9. ![](/uploads/azure-azautomate_variables.png)
+ 9. ![Azure Automation - Variables](/uploads/azure-azautomate_variables.png)
 10. Click **Save**
 
 ##### Setup Schedule

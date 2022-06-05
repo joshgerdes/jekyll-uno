@@ -171,8 +171,11 @@ Now that the variables have been set up, we need to set up the schedule. This is
 18. Click **Add a Schedule**
 19. Press: **Link a schedule to your runbook**
 20. Select **your** newly created **Schedule**
-21. Click **Ok**
-22. Your schedule has now been configured and the runbook will run the next time it matches your scheduled date and time.
+21. For the Tag Name, select **Shutdown**
+22. For the Tag Value name, Select **Yes**
+23. For Shutdown, select **false**
+24. Click **Ok**
+25. Your schedule has now been configured and the runbook will run the next time it matches your scheduled date and time.
 
 ##### Configure Tags
 

@@ -188,4 +188,4 @@ The runbook is written, so it doesn't need to be adjusted for future machines an
 | --- | --- |
 | Shutdown | Yes |
 
-Congradulations, the next time your schedule triggers, every runbook with the Shutdown tag will be started, according to your schedule, workday. If its a Public Holiday or a Weekend, the Virtual Machine will remain off - saving cost.
+Congratulations, the next time your schedule triggers, every runbook with the Shutdown tag will be started, according to your schedule, and workday. If it's a Public Holiday or a Weekend, the Virtual Machine will remain off - saving cost.

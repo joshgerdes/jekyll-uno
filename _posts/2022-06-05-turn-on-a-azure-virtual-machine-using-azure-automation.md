@@ -20,7 +20,7 @@ header:
 | Deallocating | This is the transitional state between running and deallocated. | Not billed |
 | Deallocated | The Virtual Machine has released the lease on the underlying hardware and is completely powered off. This state is also referred to as Stopped (Deallocated). | Not billed |
 
-Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services")_, but not a requirement)_, but what about starting it?
+Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services"){:target="_blank"}_, but not a requirement)_, but what about starting it?
 
 You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_.
 
@@ -28,7 +28,7 @@ This works fine for most scenarios, but what happens if a Bank or Public Holiday
 
 Because all your users are on Holiday, it wastes money while you and your users drink snicker cocktails at the beach?
 
-This is where using a third party timezone API like '[AbstractApi](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs")' comes in handy; incorporating a lookup to check if it's a Public Holiday before starting that Virtual Machine can help reduce unnecessary costs.
+This is where using a third party timezone API like '[AbstractApi](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs"){:target="_blank"}' comes in handy; incorporating a lookup to check if it's a Public Holiday before starting that Virtual Machine can help reduce unnecessary costs.
 
 I have written a base runbook that does precisely that, every time the runbook runs, it checks if it is a public Holiday. If it is - then the Virtual Machine isn't started; if it isn't, then the virtual machine is started.
 
@@ -42,9 +42,9 @@ Today, we are going to set up an Azure Automation runbook, triggered by a schedu
 
 To do this, we need a few resources.
 
-* [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") Account
-* Azure Automation [runbook](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-types?WT.mc_id=AZ-MVP-5004796 "Azure Automation runbook types") _(I will supply a PowerShell runbook below)_
-* [AbstractAPI ](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs")API Key
+* [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?"){:target="_blank"} Account
+* Azure Automation [runbook](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-types?WT.mc_id=AZ-MVP-5004796 "Azure Automation runbook types"){:target="_blank"} _(I will supply a PowerShell runbook below)_
+* [AbstractAPI ](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs"){:target="_blank"} API Key
 
 And, of course, 'Contributor' rights to the Microsoft Azure subscription to create the resources and the schedule, along with setting up the System Managed identity to grant the Azure Automation account access to start the Virtual Machine.
 

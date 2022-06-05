@@ -147,3 +147,21 @@ Now that the Azure runbook has been imported, we need to set up the variables, w
  8. **Enter** in the **API** key you retrieved earlier from Abstract API.
  9. ![](/uploads/azure-azautomate_variables.png)
 10. Click **Save**
+
+##### Setup Schedule
+
+Now that the variables have been set up, we need to set up the schedule. This is the schedule that will be used to start the Virtual Machine. In the example below we are going to use a Standard Monday -> Friday work week, but adjust the time and date for when you need to start the virtual machine up.
+
+ 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
+ 2. Navigate to your Azure **Automation account**
+ 3. Click **Schedule**
+ 4. Click **+ Add a schedule**
+ 5. **Type** in a **name** for the **schedule** _(ie Azure Virtual Machine - Start)_.
+ 6. Type in a **Description**
+ 7. **Select** the **Start Date** to match when you want to start the Schedule _(ie first Monday of the week)_.
+ 8. **Select** your **Timezone**, so that the script runs on the right time/date which makes your timezone.
+ 9. For Recurrance, specify: **Recurring**
+10. Set it to Recur every: **1 Day**
+11. Check **Monday**, **Tuesday**, **Wednesday**, **Thursday**, and **Friday**
+12. Leave Saturday and Sunday unchecked.
+13. Click **Create**

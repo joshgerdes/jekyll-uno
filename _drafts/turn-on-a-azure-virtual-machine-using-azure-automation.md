@@ -121,17 +121,17 @@ Now that the modules have been imported into your Azure Automation account, it i
  4. Click **+ Create a runbook**
  5. Specify a **name** _(i.e. Start-AzureVirtualMachine)_
  6. Select Runbook type of **PowerShell**
- 7. A select Runtime version of: **5.1**
- 8. Type in a **Description** that explains the runbook _(this isn't mandatory, but like Tags is recommended, this is an opportunity to indicate to others what it is for and who set it up)_
- 9. ![](/uploads/azure-createazurerunbook.png)
-10. Click **Create**
-11. Now you will be greeted with a blank edit pane; paste in the Runbook from below:
-12. {% gist fd0cf7b4564fa4a03cfcaa93d30cd3fc %}
-13. **Change** the **country code** to align with your own country. You can use the IP [geolocation API](https://app.abstractapi.com/api/ip-geolocation/tester "IP geolocation API") in Abstract API to do a live test, which will give you your country code. Feel free to amend the Write-Output messages to make sense for your environment.
-14. Click **Save**
-15. ![Azure Runbook - PowerShell](/uploads/azurerunbook_publishedsource.png "Azure Runbook - PowerShell")
-16. Click **Publish** _(so the runbook is actually in production and can be used)_
-17. You can select View or Edit at any stage, but you have now imported the Azure Automation runbook!
+    1. A select Runtime version of: **5.1** _(7.1 works as well)._
+ 7. Type in a **Description** that explains the runbook _(this isn't mandatory, but like Tags is recommended, this is an opportunity to indicate to others what it is for and who set it up)_
+ 8. ![](/uploads/azure-createazurerunbook.png)
+ 9. Click **Create**
+10. Now you will be greeted with a blank edit pane; paste in the Runbook from below:
+11. {% gist fd0cf7b4564fa4a03cfcaa93d30cd3fc %}
+12. **Change** the **country code** to align with your own country. You can use the IP [geolocation API](https://app.abstractapi.com/api/ip-geolocation/tester "IP geolocation API") in Abstract API to do a live test, which will give you your country code. Feel free to amend the Write-Output messages to make sense for your environment.
+13. Click **Save**
+14. ![Azure Runbook - PowerShell](/uploads/azurerunbook_publishedsource.png "Azure Runbook - PowerShell")
+15. Click **Publish** _(so the runbook is actually in production and can be used)_
+16. You can select View or Edit at any stage, but you have now imported the Azure Automation runbook!
 
 ##### Setup Variables
 

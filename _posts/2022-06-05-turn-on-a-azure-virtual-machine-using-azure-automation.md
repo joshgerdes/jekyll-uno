@@ -9,6 +9,16 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
+Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services"){:target="_blank"}_, but not a requirement)_, but what about starting it?
+
+You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_.
+
+This works fine for most scenarios, but what happens if a Bank or Public Holiday falls during the week? With the normal schedule, your Virtual Machine starts.
+
+Because all your users are on Holiday, it wastes money while you and your users drink snicker cocktails at the beach?
+
+This is where using a third party timezone API like '[AbstractApi](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs"){:target="_blank"}' comes in handy; incorporating a lookup to check if it's a Public Holiday before starting that Virtual Machine can help reduce unnecessary costs.
+
 [Virtual Machines](https://azure.microsoft.com/en-us/overview/what-is-a-virtual-machine/?WT.mc_id=AZ-MVP-5004796#overview " What is a virtual machine (VM)?"){:target="_blank"} in Microsoft Azure have different states and, depending on what state the Virtual Machine is in, will determine whether you get billed or not _(for the Compute, storage and network adapters are still billed)_.
 
 | Power state | Description | Billing |
@@ -19,16 +29,6 @@ header:
 | Stopped | The Virtual Machine is allocated on a host but not running. Also called PoweredOff state or Stopped (Allocated). This can be result of invoking the PowerOff API operation or invoking shutdown from within the guest OS. The Stopped state may also be observed briefly during VM creation or while starting a VM from Deallocated state. | Billed |
 | Deallocating | This is the transitional state between running and deallocated. | Not billed |
 | Deallocated | The Virtual Machine has released the lease on the underlying hardware and is completely powered off. This state is also referred to as Stopped (Deallocated). | Not billed |
-
-Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services"){:target="_blank"}_, but not a requirement)_, but what about starting it?
-
-You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_.
-
-This works fine for most scenarios, but what happens if a Bank or Public Holiday falls during the week? With the normal schedule, your Virtual Machine starts.
-
-Because all your users are on Holiday, it wastes money while you and your users drink snicker cocktails at the beach?
-
-This is where using a third party timezone API like '[AbstractApi](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs"){:target="_blank"}' comes in handy; incorporating a lookup to check if it's a Public Holiday before starting that Virtual Machine can help reduce unnecessary costs.
 
 I have written a base runbook that does precisely that, every time the runbook runs, it checks if it is a public Holiday. If it is - then the Virtual Machine isn't started; if it isn't, then the virtual machine is started.
 

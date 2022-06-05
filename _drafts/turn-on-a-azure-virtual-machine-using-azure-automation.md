@@ -100,7 +100,7 @@ You can set up a custom role to be least privileged and use that instead. But in
 
 ##### Setup Abstract API Key
 
-Now we need to create an API key, which will be used in the runbook to start the Virtual Machine, the API key will allow connections to the Abstract API to retrieve public Holliday information. 
+Now we need to create an API key, which will be used in the runbook to start the Virtual Machine, the API key will allow connections to the Abstract API to retrieve public Holliday information.
 
 1. Create an [**Abstract API**](https://www.abstractapi.com/ "Abstract API") account
 2. **Log in** to the newly created account
@@ -177,4 +177,13 @@ Now that the variables have been set up, we need to set up the schedule. This is
 
 ##### Configure Tags
 
-The runbook is written, so it doesn't need to be adjusted for future machines and making changes on the fly, this relies on each Virtual Machine that you want started to be 
+The runbook is written, so it doesn't need to be adjusted for future machines and making changes on the fly, this relies on each Virtual Machine that you want started to be started using the Runbook to be tagged.
+
+1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
+2. Navigate to your Azure **Virtual Machine**
+3. Click **Tags**
+4. **Add the following tag**:
+
+| Tag Key | Tag Value |
+| --- | --- |
+| Shutdown | Yes |

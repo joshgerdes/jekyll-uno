@@ -82,7 +82,6 @@ First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/auto
 Now that we have our Azure Automation account, its time to set up the System Managed Identity and grant it the following roles:
 
 * Virtual Machine Contributor _(to deallocate the Virtual Machine)_
-* Monitoring Contributor _(to close the Azure Alert)_
 
 You can set up a custom role to be least privileged and use that instead. But in this article, we will stick to the built-in roles.
 

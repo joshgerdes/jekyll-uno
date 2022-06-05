@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 You may be attempting to deploy an Azure Landing Zone, such as the Enterprise Scale Landing Zone and receive the following error:
@@ -15,7 +15,7 @@ You may be attempting to deploy an Azure Landing Zone, such as the Enterprise Sc
 
 This is because by default, even if you have Owner right on an Azure subscription, and are a Global Administer, you are unable to assign rights at the root '/' tenant level, to be able to create new Management Groups and move subscriptions between them.
 
-However, users who have the Global Azure Active Directory role can elevate rights to do this.  There are a few steps to enabling this, including using [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/what-is-azure-powershell?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell") to assign rights.
+However, users who have the Global Azure Active Directory role can elevate rights to do this.  There are a few steps to enabling this, including using [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/what-is-azure-powershell?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell"){:target="_blank"} to assign rights.
 
 With an account with Global Administrator rights, do the following:
 

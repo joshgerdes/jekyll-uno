@@ -165,3 +165,16 @@ Now that the variables have been set up, we need to set up the schedule. This is
 11. Check **Monday**, **Tuesday**, **Wednesday**, **Thursday**, and **Friday**
 12. Leave Saturday and Sunday unchecked.
 13. Click **Create**
+14. Now that the Schedule has been created, we need to bind it to a Runbook
+15. On the Automation account blade, click on **Runbooks**
+16. Click on your 'Start Azure Virtual Machine' runbook
+17. Select **Schedules**
+18. Click **Add a Schedule**
+19. Press: **Link a schedule to your runbook**
+20. Select **your** newly created **Schedule**
+21. Click **Ok**
+22. Your schedule has now been configured and the runbook will run the next time it matches your scheduled date and time.
+
+##### Configure Tags
+
+The runbook is written, so it doesn't need to be adjusted for future machines and making changes on the fly, this relies on each Virtual Machine that you want started to be 

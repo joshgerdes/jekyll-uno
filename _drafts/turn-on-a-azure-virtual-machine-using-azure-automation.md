@@ -1,5 +1,5 @@
 ---
-date: 2022-05-21 00:00:00 +1200
+date: 2022-06-05 00:00:00 +1200
 title: Turn on a Azure Virtual Machine using Azure Automation
 author: Luke
 categories:

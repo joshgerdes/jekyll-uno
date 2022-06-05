@@ -22,9 +22,9 @@ header:
 
 Turning off a Virtual Machine in Microsoft Azure on a schedule can quickly be done using the built-in Shutdown controls in the Virtual Machine blade _(part of_ [_Azure Lab Services_](https://azure.microsoft.com/en-us/services/lab-services/?WT.mc_id=AZ-MVP-5004796 " Azure Lab Services")_, but not a requirement)_, but what about starting it?
 
-You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_. 
+You have a few options, Logic Apps, PowerShell, Functions and Runbooks; most of the time, these will run on a standard 7 AM to 5 PM Monday to Friday schedule _(meaning the Virtual Machine is off during off-peak hours and weekends, reducing compute cost)_.
 
-This works fine for most scenarios, but what happens if a Bank or Public Holiday falls during the week? With the normal schedule, your Virtual Machine starts. 
+This works fine for most scenarios, but what happens if a Bank or Public Holiday falls during the week? With the normal schedule, your Virtual Machine starts.
 
 Because all your users are on Holiday, it wastes money while you and your users drink snicker cocktails at the beach?
 
@@ -95,43 +95,20 @@ You can set up a custom role to be least privileged and use that instead. But in
  7. Select the **Subscription** _(make sure this subscription matches the same subscription your Virtual Machines are in)_
  8. Select Role: **Virtual Machine Contributor**
  9. Click **Save**
-10. Now we repeat the same process for **Monitoring Contributor**
-11. lick **+ Add role assignments**
-12. Select the **Subscription** _(make sure this subscription matches the same subscription your Virtual Machines are in)_
-13. Select Role: **Monitoring Contributor**
-14. Click **Save**
-15. Click **Refresh** _(it may take a few seconds to update the Portal, so if it is blank - give it 10 seconds and try again)_.
-16. You have now set up the System Managed identity and granted it the roles necessary to execute the automation.
+10. Click **Refresh** _(it may take a few seconds to update the Portal, so if it is blank - give it 10 seconds and try again)_.
+11. You have now set up the System Managed identity and granted it the roles necessary to execute the automation.
 
-##### Import Modules
+##### Setup Abstract API Key
 
-We will use the Azure Runbook and use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"){:target="_blank"}, and update the Az.Accounts as required as a pre-requisite for Az.AlertsManagement.
+Now we need to create an API key, which will be used in the runbook to start the Virtual Machine, the API key will allow connections to the Abstract API to retrieve public Holliday information. 
 
- 1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
- 2. Navigate to your Azure **Automation account**
- 3. Click on **Modules**
- 4. Click on **+ Add a module**
- 5. Click on **Browse from Gallery**
- 6. Click: **Click here to browse from the gallery**
- 7. Type in: **Az.Accounts**
- 8. Press **Enter**
- 9. Click on **Az.Accounts**
-10. Click **Select**
-11. ![Import Az.Accounts module](/uploads/azureportal-automation_modules_az-accounts.jpg "Import Az.Accounts module")
-12. Make sure that the Runtime version is: **5.1**
-13. Click **Import**
-14. Now that the Az.Accounts have been updated, and it's time to import Az.AlertsManagement!
-15. Click on **Modules**
-16. Click on **+ Add a module**
-17. Click on **Browse from Gallery**
-18. Click: **Click here to browse from the gallery**
-19. Type in: **Az.AlertsManagement** _(note its Alert**s)**_
-20. Click **Az.AlertsManagement**
-21. ![Az.AlertsManagement module](/uploads/azureportal-automation_modules_az-alertsmanagement.jpg "Az.AlertsManagement module")
-22. Click **Select**
-23. Make sure that the Runtime version is: **5.1**
-24. Click **Import** _(if you get an error, make sure that Az.Accounts has been updated, through the Gallery import as above)_
-25. Now you have successfully added the dependent modules!
+1. Create an [**Abstract API**](https://www.abstractapi.com/ "Abstract API") account
+2. **Log in** to the newly created account
+3. On the left-hand navigation bar, click on **Holidays**
+4. ![](/uploads/abstractapi_navigation.png)
+5. Click on '**Try it out**
+6. **Copy** the **API key**
+7. ![Abstract API - API Key](/uploads/abstractapi_key.png "Abstract API - API Key")
 
 ##### Import Runbook
 

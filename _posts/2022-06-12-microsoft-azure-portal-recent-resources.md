@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 The Microsoft Azure Portal displays a list of Recent resources _(whether they are subscriptions or Resources)_ you have accessed, usually when you first log in to the portal itself.
@@ -15,7 +15,7 @@ This capability makes it quick to access resources you use the most often, but s
 
 The Azure portal has a service called: Recent, to access it.
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/?l=en.en-nz#home "Microsoft Azure Portal")
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/?l=en.en-nz#home "Microsoft Azure Portal"){:target="_blank"}
 2. In the search bar type in: **Recent**
 3. ![Azure Portal - Recent](/uploads/azureportal_searchrecent.png "Azure Portal - Recent")
 4. Select **Recent**

@@ -77,4 +77,15 @@ If you wish to disable Advanced Filters, and go back to the Global Filter, you c
 
 ### Additional Resources
 
-To get the most out of your Azure Portal experience, the below Microsoft documentation is worth a read.
+To get the most out of your Azure Portal experience, the below Microsoft documentation is worth a read _(in no particular order)_.
+
+* [Manage Azure portal settings and preferences](https://docs.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences")
+* [Azure subscription states](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-states?WT.mc_id=AZ-MVP-5004796 "Azure subscription states")
+* [Add, remove, and rearrange favorites](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-add-remove-sort-favorites?WT.mc_id=AZ-MVP-5004796 "Add, remove, and rearrange favorites")
+* [View and filter Azure resource information](https://docs.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views?WT.mc_id=AZ-MVP-5004796 "View and filter Azure resource information")
+
+#### Send Feedback to Microsoft
+
+On the last note, Microsoft has made it easy to create Feedback, that will get fed back to the Azure Portal and product teams straight in the Microsoft Azure Portal, if you ever see anything that may need changing, or a link out of date don't hesitate to send your feedback to Microsoft, by pressing the little Feedback button on the top right of your navigation bar. 
+
+![](/uploads/azureportal_feedback.png)

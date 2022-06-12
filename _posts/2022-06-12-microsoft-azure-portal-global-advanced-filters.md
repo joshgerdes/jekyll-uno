@@ -77,6 +77,8 @@ If you wish to disable Advanced Filters, and go back to the Global Filter, you c
 
 ### Additional Resources
 
+#### Microsoft Docs
+
 To get the most out of your Azure Portal experience, the below Microsoft documentation is worth a read _(in no particular order)_.
 
 * [Manage Azure portal settings and preferences](https://docs.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences"){:target="_blank"}

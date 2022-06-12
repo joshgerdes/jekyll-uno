@@ -13,7 +13,7 @@ We've all been there! In the Azure portal, looking for a resource or subscriptio
 
 You may see a checkbox or message like the below:
 
-> Show only subscriptions selected in the [global subscriptions filter](https://portal.azure.com/#settings/directory "Portal settings | Directories + subscriptions")
+> **Show only subscriptions selected in the global subscriptions filter.**
 >
 > ![Show only subscriptions selected in the global subscriptions filter](/uploads/azureportal_globalfilter.png "Show only subscriptions selected in the global subscriptions filter")
 

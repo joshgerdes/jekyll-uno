@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azureportal_advanced_subscription_filter.png"
 
 ---
 We've all been there! In the Azure portal, looking for a resource or subscription and cannot find it! Once permissions are ruled out, you are left with the Portal itself, and the filter.
@@ -70,4 +70,11 @@ Let us take a look at the Advanced subscription filters.
 
 1. Using the logic above, we can easily create filters based on the state of a subscription and name, an example is, creating a filter that displays all subscriptions with 'dev' in its name:
 2. ![](/uploads/azureportal_advanced_subscription_filter.png)
-3. 
+
+You can only have one Filter displayed at once in the Azure Portal, but you can easily switch between them, by clicking **Activate**, next to the filter name.
+
+If you wish to disable Advanced Filters, and go back to the Global Filter, you can deselect the Toggle for Advanced Filters.
+
+### Additional Resources
+
+To get the most out of your Azure Portal experience, the below Microsoft documentation is worth a read.

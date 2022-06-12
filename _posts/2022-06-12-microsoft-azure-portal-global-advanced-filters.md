@@ -89,3 +89,5 @@ To get the most out of your Azure Portal experience, the below Microsoft documen
 On the last note, Microsoft has made it easy to create Feedback, that will get fed back to the Azure Portal and product teams straight in the Microsoft Azure Portal, if you ever see anything that may need changing, or a link out of date don't hesitate to send your feedback to Microsoft, by pressing the little Feedback button on the top right of your navigation bar. 
 
 ![](/uploads/azureportal_feedback.png)
+
+The Microsoft Azure portal is in development all the time and is now built with [Azure Resource Graph](https://docs.microsoft.com/en-us/azure/governance/resource-graph/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Graph?") capabilities, it is very easy not to try and see new functionality, so I recommend you keep your eyes out and try new features.

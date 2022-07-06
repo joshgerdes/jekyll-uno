@@ -107,7 +107,9 @@ So what resources are we going to migrate?
 * Azure SQL Database
 * Azure Virtual Machine & associated dependencies _(Resource Groups, Network Interfaces, Managed Disks)._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7szAjZu2yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+_Note: There is no Audio in the demo video below, but it will guide you through Azure Resource Mover and some of the options._
+
+DEMO
 
 #### Some items to note
 
@@ -128,6 +130,6 @@ To learn more about Azure Resource Mover, visit the Azure Resource Mover page.
 
 Azure Resource Mover videos:
 
-* [Azure Unblogged - Azure Resource Mover (microsoft.com)](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036)
+* [Azure Unblogged - Azure Resource Mover](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036)
 * [Azure Friday Video](https://twitter.com/azurefriday/status/1388863346255015943?s=20)
 * [Azure Resource Mover whiteboarding video](https://www.youtube.com/watch?v=6FslxGE9YJM)

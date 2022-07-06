@@ -109,7 +109,7 @@ So what resources are we going to migrate?
 
 _Note: There is no Audio in the demo video below, but it will guide you through Azure Resource Mover and some of the options._
 
-DEMO
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7szAjZu2yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Some items to note
 

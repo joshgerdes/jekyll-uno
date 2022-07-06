@@ -119,3 +119,15 @@ sss
 * Azure Resource Mover can be used to migrate Azure Virtual Desktop session hosts across regions.
 * DNS records can be key to reducing the complexity and interruption to end users as part of your migration.
 * There are PowerShell cmdlets _(i.e., New-AzResourceMoverMoveCollection)_
+
+### Additional Resources
+
+To learn more about Azure Resource Mover, visit the Azure Resource Mover page.
+
+* [azure.microsoft.com/services/resource-mover](https://azure.microsoft.com/en-us/services/resource-mover/?WT.mc_id=AZ-MVP-5004796)
+
+Azure Resource Mover videos:
+
+* [Azure Unblogged - Azure Resource Mover (microsoft.com)](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036)
+* [Azure Friday Video](https://twitter.com/azurefriday/status/1388863346255015943?s=20)
+* [Azure Resource Mover whiteboarding video](https://www.youtube.com/watch?v=6FslxGE9YJM)

@@ -1,6 +1,6 @@
 ---
 date: 2022-07-06 00:00:00 +1200
-title: Migrating Resources between regions using Azure Resource Mover
+title: Migrating resources between regions using Azure Resource Mover
 author: Luke
 categories:
 - Azure

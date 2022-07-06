@@ -81,5 +81,5 @@ pages:
 - _posts/2022-06-06-you-don-t-have-authorization-to-perform-action-microsoft.resources-deployments-validate-action.md
 - _posts/2022-06-12-microsoft-azure-portal-global-advanced-filters.md
 - _posts/2022-06-12-microsoft-azure-portal-recent-resources.md
+- _posts/2022-07-06-migrating-resources-between-regions-using-azure-resource-mover.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
-- _posts/migrating-resources-between-regions-using-azure-resource-mover.md

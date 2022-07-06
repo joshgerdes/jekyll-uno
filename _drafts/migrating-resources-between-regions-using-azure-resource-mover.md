@@ -15,7 +15,7 @@ Migrating resources between regions is something that you may want to consider. 
 
 ### Overview
 
-![Azure Resource Mover](/uploads/azureresourcemover_header.png)
+![Azure Resource Mover](/uploads/azureresourcemover_header.png "Keep calm and migrate it in Azure")
 
 Azure Resource Mover helps you to move Azure resources between Azure regions, offering a single pane of glass to migrate different resource types, such as Virtual Machines or Azure SQL databases from a single portal without having to know how to migrate the individual underlying resources, or trying to work out the dependencies for each resource.
 

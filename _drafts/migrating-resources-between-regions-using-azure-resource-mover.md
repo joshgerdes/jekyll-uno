@@ -99,4 +99,10 @@ For our demo, we are going to migrate from Australia East to West US3.
 
 ![Azure Regions  - Australia East to West US3](/uploads/azure-resource-mover-australia-to-westus3.png "Azure Regions  - Australia East to West US3")
 
-s
+So what resources are we going to migrate?
+
+* Virtual Network
+* Azure SQL Database
+* Azure Virtual Machine & associated dependencies _(Resource Groups, Network Interfaces, Managed Disks)._
+
+sss

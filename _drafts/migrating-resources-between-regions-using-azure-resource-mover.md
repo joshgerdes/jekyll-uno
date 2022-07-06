@@ -91,4 +91,8 @@ Azure Resource Mover uses a 6-step process.
 
 ![Azure Resource Mover - In Action](/uploads/azure-resource-mover-arm-in-action.png "Azure Resource Mover - In Action")
 
-s
+So enough talking, let us see Azure Resource Mover in action?
+
+For our demo, we are going to migrate from Australia East to West US3.
+
+> Make sure you review your quota and subscription limits, for the other region before you look to migrate them.

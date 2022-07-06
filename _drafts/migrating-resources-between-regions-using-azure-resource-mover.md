@@ -19,7 +19,7 @@ Migrating resources between regions is something that you may want to consider. 
 
 Azure Resource Mover helps you to move Azure resources between Azure regions, offering a single pane of glass to migrate different resource types, such as Virtual Machines or Azure SQL databases from a single portal without having to know how to migrate the individual underlying resources, or trying to work out the dependencies for each resource.
 
-### Why would you migrate resources between Regions?
+#### Why would you migrate resources between Regions?
 
 Let’s start with why would you migrate resources between regions? Common scenarios include:
 
@@ -28,3 +28,27 @@ Let’s start with why would you migrate resources between regions? Common scena
 * Meeting data residential and compliance requirements.
 * Consolidating workloads for mergers and acquisitions.
 * The cost of resources in one region may also be cheaper than in another.
+
+#### So, what are the risks of migrating resources?
+
+Whatever your reason, moving your applications from Point A to Point B is often no easy task. Here are common reasons why:
+
+* Moving resources can pose a risk of an outage.
+* Workloads are often made up of multiple services, each requiring its own method and tools to move.
+* Interdependencies are often not understood.
+* Testing and rollback of these complex scenarios can be daunting.
+
+#### So, what are the benefits of using Azure Resource Mover?
+
+So, what are some of the benefits that Azure Resource Mover offers us?
+
+The ability to plan with ease, reducing time and complexity for your move:
+
+* Streamline your move process by identifying dependencies.
+* Plan and test your move multiple times.
+* Stage your move as part of a scheduled downtime.
+* Azure Resource Mover helps you orchestrate seamlessly with a consistent experience across common Azure resources​:
+* Move multiple resources through a single pane of glass.
+* Reduce manual touchpoints, which could increase the change of services being missed.
+* Reduce overall time for your move from months to weeks or days* (based on the service and data being consumed).
+* Azure Resource Mover helps you move with confidence by planning, testing, and moving related resources together and validate and test your move before final commitment (by testing your migrated services, while having the peace of mind that your source resources are left intact until you commit to the migration).

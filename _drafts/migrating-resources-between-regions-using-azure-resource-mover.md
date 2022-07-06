@@ -51,3 +51,5 @@ So, what are some of the benefits that Azure Resource Mover offers us?
 * Reduce manual touchpoints, which could increase the change of services being missed.
 * Reduce overall time for your move from months to weeks or days* (based on the service and data being consumed).
 * Azure Resource Mover helps you move with confidence by planning, testing, and moving related resources together and validating and testing your move before final commitment _(by testing your migrated services, while having the peace of mind that your source resources are left intact until you commit to the migration)_.
+
+> So to recap, Azure Resource Mover offers you a unified experience to move multiple resource types across regions while validating dependencies between services and giving you the flexibility to adjust resources such as the Names, SKUs and Availability Zones during the migration to the destination region.

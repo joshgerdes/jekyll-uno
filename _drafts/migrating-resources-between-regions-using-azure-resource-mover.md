@@ -93,6 +93,8 @@ Azure Resource Mover uses a 6-step process.
 
 So enough talking, let us see Azure Resource Mover in action?
 
+#### Demo
+
 For our demo, we are going to migrate from Australia East to West US3.
 
 > Make sure you review your [quota and subscription limits](https://docs.microsoft.com/en-us/azure/networking/check-usage-against-limits?WT.mc_id=AZ-MVP-5004796 "Check resource usage against limits"), for the other region before you look to migrate them.
@@ -106,3 +108,14 @@ So what resources are we going to migrate?
 * Azure Virtual Machine & associated dependencies _(Resource Groups, Network Interfaces, Managed Disks)._
 
 sss
+
+#### Some items to note
+
+* You can't select individual disks as resources to move across regions. However, disks are moved as part of a VM move.
+* You can migrate encrypted Virtual Machines but needs manual intervention to copy the keys
+* You can move resources to another subscription AFTER moving resources to the destination region.
+* You cannot move peered Virtual Networks across subscriptions, you need to remove the peering first, then re-add it back in the destination region.
+* Make sure your quota and required services have been registered and increased for the additional region
+* Azure Resource Mover can be used to migrate Azure Virtual Desktop session hosts across regions.
+* DNS records can be key to reducing the complexity and interruption to end users as part of your migration.
+* There are PowerShell cmdlets _(i.e., New-AzResourceMoverMoveCollection)_

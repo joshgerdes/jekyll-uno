@@ -53,3 +53,28 @@ So, what are some of the benefits that Azure Resource Mover offers us?
 * Azure Resource Mover helps you move with confidence by planning, testing, and moving related resources together and validating and testing your move before final commitment _(by testing your migrated services, while having the peace of mind that your source resources are left intact until you commit to the migration)_.
 
 > So to recap, Azure Resource Mover offers you a unified experience to move multiple resource types across regions while validating dependencies between services and giving you the flexibility to adjust resources such as the Names, SKUs and Availability Zones during the migration to the destination region.
+
+#### What can Azure Resource Mover move?
+
+The currently supported resources _(as of July 2023)_ are:
+
+* Azure Virtual Machines
+* Azure SQL Database
+* Azure Virtual Network
+* SQL elastic pools
+* Azure Load balancer
+* Public IP
+* Resource group
+* Network security group
+* Network interfaces
+* Azure Availability Sets
+
+And Azure Storage account region replication support is scheduled in the next 6-9 months to be released so the storage account migration should be ready by the time the NZ North comes live.
+
+An updated list of Resources currently supported by Azure Resource Mover can be found here: [What resources can I move across regions using Resource Mover?](https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover "https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover")
+
+#### Azure Resource Mover - The 6-Step Process!
+
+![Azure Resource Mover - 6 Step Process](/uploads/azure-resource-mover-6-step-process.png "Azure Resource Mover - 6 Step Process")
+
+k

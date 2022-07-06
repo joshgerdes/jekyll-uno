@@ -96,3 +96,7 @@ So enough talking, let us see Azure Resource Mover in action?
 For our demo, we are going to migrate from Australia East to West US3.
 
 > Make sure you review your [quota and subscription limits](https://docs.microsoft.com/en-us/azure/networking/check-usage-against-limits?WT.mc_id=AZ-MVP-5004796 "Check resource usage against limits"), for the other region before you look to migrate them.
+
+![Azure Regions  - Australia East to West US3](/uploads/azure-resource-mover-australia-to-westus3.png "Azure Regions  - Australia East to West US3")
+
+s

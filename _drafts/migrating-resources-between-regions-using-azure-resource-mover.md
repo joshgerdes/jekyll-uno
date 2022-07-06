@@ -79,10 +79,16 @@ An updated list of Resources currently supported by Azure Resource Mover can be 
 
 Azure Resource Mover uses a 6-step process.
 
-1. The first step is to select the resources you´d like to transfer! A tip from my side is to just pick the Virtual Machine object if you are migrating Virtual Machines, the dependencies will be identified by the Azure Resource Mover service itself!
-2. The dependency check will be performed, identifying that you need to move other resources along with your virtual machine (Resource Group, NIC, Managed Disks etc.)
-3. Start the preparation. This step initiates the preparation while creating a resource group with a dedicated Storage Account and a Recovery Services Vault to perform the move. The prepare step also creates the underlying ARM template deployments for the destination region.
-4. Move initiation starts the process of transferring the resources to the target region. Certain dependencies should be 'committed' before prepare can be initiated, on other resources. If your resource is stateless such as a Network interface, a new ARM deployment will occur, but if your machine is stateful such as a Virtual Machine, Azure Site Recovery will start to copy the disk of your source machine to the target region.  
-    ATTENTION! Resources might be temporarily not available – perform these steps out of business hours
-5. Commit your move or discard the move! Depending on if you want to complete the move process you can decide whether you want to keep or remove the replicated resources in the destination region.
-6. Delete the source is the cleanup step required to remove the source resources from the region you have transferred from to finish your migration.
+1. The first step is to **select** the **resources** you´d like to transfer! _A tip is to just pick the Virtual Machine object if you are migrating Virtual Machines, the dependencies will be identified by the Azure Resource Mover service itself!_
+2. The **dependency check** will be performed, identifying that you need to move other resources along with your virtual machine _(Resource Group, NIC, Managed Disks etc.)_
+3. Start the **preparation**. This step initiates the preparation while creating a resource group with a dedicated Storage Account and a Recovery Services Vault to perform the move. The prepare step also creates the underlying ARM template deployments for the destination region.
+4. **Move** initiation starts the process of transferring the resources to the target region. Certain dependencies should be 'committed' before preparation can be initiated, on other resources. If your resource is stateless such as a Network interface, a new ARM deployment will occur, but if your machine is stateful such as a Virtual Machine, Azure Site Recovery will start to copy the disk of your source machine to the target region.  
+   **ATTENTION! Resources might be temporarily not available – perform these steps out of business hours**
+5. **Commit** your move or discard the move! Depending on if you want to complete the move process you can decide whether you want to keep or remove the replicated resources in the destination region.
+6. **Delete** the **source** is the cleanup step required to remove the source resources from the region you have transferred from to finish your migration.
+
+### Let's see Azure Resource Mover in action
+
+![Azure Resource Mover - In Action](/uploads/azure-resource-mover-arm-in-action.png "Azure Resource Mover - In Action")
+
+s

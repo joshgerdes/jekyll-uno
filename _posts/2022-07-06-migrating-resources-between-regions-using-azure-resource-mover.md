@@ -9,9 +9,9 @@ header:
   teaser: "/uploads/azureresourcemover_header.png"
 
 ---
-With over 70+ Microsoft Azure [regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/?WT.mc_id=AZ-MVP-5004796#overview " Azure geographies") across the globe and new regions popping up all the time _(for example new New Zealand North region coming in 2023)_!
+With over 70+ Microsoft Azure [regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/?WT.mc_id=AZ-MVP-5004796#overview " Azure geographies"){:target="_blank"} across the globe and new regions popping up all the time _(for example new New Zealand North region coming in 2023)_!
 
-Migrating resources between regions is something that you may want to consider. Let's look at migrating workloads between them, by using [Azure Resource Mover](https://docs.microsoft.com/en-us/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Mover?").
+Migrating resources between regions is something that you may want to consider. Let's look at migrating workloads between them, by using [Azure Resource Mover](https://docs.microsoft.com/en-us/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Mover?"){:target="_blank"}.
 
 ### Overview
 
@@ -71,7 +71,7 @@ The currently supported resources _(as of July 2023)_ are:
 
 And Azure Storage account region replication support is scheduled in the next 6-9 months to be released so the storage account migration should be ready by the time the NZ North comes live.
 
-An updated list of Resources currently supported by Azure Resource Mover can be found here: [What resources can I move across regions using Resource Mover?](https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover "https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover")
+An updated list of Resources currently supported by Azure Resource Mover can be found here: [What resources can I move across regions using Resource Mover?](https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover "https://docs.microsoft.com/en-us/azure/resource-mover/common-questions?WT.mc_id=AZ-MVP-5004796#what-resources-can-i-move-across-regions-using-resource-mover"){:target="_blank"}
 
 #### Azure Resource Mover - The 6-Step Process!
 
@@ -97,7 +97,7 @@ So enough talking, let us see Azure Resource Mover in action?
 
 For our demo, we are going to migrate from Australia East to West US3.
 
-> Make sure you review your [quota and subscription limits](https://docs.microsoft.com/en-us/azure/networking/check-usage-against-limits?WT.mc_id=AZ-MVP-5004796 "Check resource usage against limits"), for the other region before you look to migrate them.
+> Make sure you review your [quota and subscription limits](https://docs.microsoft.com/en-us/azure/networking/check-usage-against-limits?WT.mc_id=AZ-MVP-5004796 "Check resource usage against limits"){:target="_blank"}, for the other region before you look to migrate them.
 
 ![Azure Regions  - Australia East to West US3](/uploads/azure-resource-mover-australia-to-westus3.png "Azure Regions  - Australia East to West US3")
 
@@ -126,10 +126,10 @@ _Note: There is no Audio in the demo video below, but it will guide you through 
 
 To learn more about Azure Resource Mover, visit the Azure Resource Mover page.
 
-* [azure.microsoft.com/services/resource-mover](https://azure.microsoft.com/en-us/services/resource-mover/?WT.mc_id=AZ-MVP-5004796)
+* [azure.microsoft.com/services/resource-mover](https://azure.microsoft.com/en-us/services/resource-mover/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
 Azure Resource Mover videos:
 
-* [Azure Unblogged - Azure Resource Mover](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036)
-* [Azure Friday Video](https://twitter.com/azurefriday/status/1388863346255015943?s=20)
-* [Azure Resource Mover whiteboarding video](https://www.youtube.com/watch?v=6FslxGE9YJM)
+* [Azure Unblogged - Azure Resource Mover](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036){:target="_blank"}
+* [Azure Friday Video](https://twitter.com/azurefriday/status/1388863346255015943?s=20){:target="_blank"}
+* [Azure Resource Mover whiteboarding video](https://www.youtube.com/watch?v=6FslxGE9YJM){:target="_blank"}

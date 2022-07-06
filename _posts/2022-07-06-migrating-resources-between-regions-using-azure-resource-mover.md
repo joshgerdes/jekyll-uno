@@ -132,4 +132,6 @@ Azure Resource Mover videos:
 
 * [Azure Unblogged - Azure Resource Mover](https://techcommunity.microsoft.com/t5/itops-talk-blog/azure-unblogged-azure-resource-mover/ba-p/2050036){:target="_blank"}
 * [Azure Friday Video](https://twitter.com/azurefriday/status/1388863346255015943?s=20){:target="_blank"}
-* [Azure Resource Mover whiteboarding video](https://www.youtube.com/watch?v=6FslxGE9YJM){:target="_blank"}
+* [Azure Resource Mover - Move resources between regions, subscriptions and resource groups -John Savill](https://www.youtube.com/watch?v=6FslxGE9YJM){:target="_blank"}
+
+

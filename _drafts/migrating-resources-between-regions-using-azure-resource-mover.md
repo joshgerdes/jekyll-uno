@@ -9,9 +9,9 @@ header:
   teaser: "/uploads/azureresourcemover_header.png"
 
 ---
-With over 70+ Microsoft Azure [regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/?WT.mc_id=AZ-MVP-5004796#overview " Azure geographies") across the globe and new regions popping up all the time _(for example new_ [_New Zealand North_](https://azure.microsoft.com/en-au/global-infrastructure/geographies/?WT.mc_id=AZ-MVP-5004796#geographies "New Zealand North") _region coming in 2023)_!
+With over 70+ Microsoft Azure [regions](https://azure.microsoft.com/en-us/global-infrastructure/geographies/?WT.mc_id=AZ-MVP-5004796#overview " Azure geographies") across the globe and new regions popping up all the time _(for example new New Zealand North region coming in 2023)_!
 
-Migrating resources between regions is something that you may want to consider. Let's look at migrating workloads between them, by using Azure Resource Mover.
+Migrating resources between regions is something that you may want to consider. Let's look at migrating workloads between them, by using [Azure Resource Mover](https://docs.microsoft.com/en-us/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Mover?").
 
 ### Overview
 

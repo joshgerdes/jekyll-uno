@@ -56,7 +56,7 @@ So, what are some of the benefits that Azure Resource Mover offers us?
 
 #### What can Azure Resource Mover move?
 
-The currently supported resources _(as of July 2023)_ are:
+The currently supported resources _(as of July 2022)_ are:
 
 * Azure Virtual Machines
 * Azure SQL Database

@@ -4,7 +4,7 @@ title: Migrating resources between regions using Azure Resource Mover
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: "/uploads/azureresourcemover_header.png"
 

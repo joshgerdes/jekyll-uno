@@ -77,4 +77,4 @@ We will be using a mix of services such as:
 * PowerShell
 * Azure Bicep
 
-To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal.
+To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this article I am going to assume you have it setup already.

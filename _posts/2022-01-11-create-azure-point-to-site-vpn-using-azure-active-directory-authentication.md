@@ -24,7 +24,7 @@ Depending on the SKU of your Virtual Network Gateway, depends on the number of c
 
 A note about Gateway SKUs _(apart from Basic)_ you can resize in the same generation _(i.e. Generation 1 VpnGw1 to VpnGw3, but you can't go from Generation 1 VpnGw1 to Generation 2 VpnGw5, in order to upgrade, you have to delete and recreate the Gateway, just keep this in mind when deciding on the SKU of your resources_).
 
-You can read more about the Virtual Network Gateways and VPN SKUs at the official Microsoft documentation '[here'](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways "What is VPN Gateway?"){:target="_blank"}; your Gateway SKU may differ depending on your requirements.
+You can read more about the Virtual Network Gateways and VPN SKUs at the official Microsoft documentation [here](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways?WT.mc_id=AZ-MVP-5004796){:target="_blank"}; your Gateway SKU may differ depending on your requirements.
 
 ### Create Azure Point to Site VPN using Azure Active Directory authentication
 

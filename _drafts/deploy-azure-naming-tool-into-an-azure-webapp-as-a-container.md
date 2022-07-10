@@ -4,9 +4,9 @@ title: Deploy Azure Naming Tool into an Azure WebApp as a container
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azurenamingtool_referencepage.png"
 
 ---
 Organising your cloud workloads to support governance, operational management, and accounting requirements, can take a lot of effort before the first resource is first created.

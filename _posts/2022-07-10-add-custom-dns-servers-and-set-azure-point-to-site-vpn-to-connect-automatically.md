@@ -15,6 +15,7 @@ To do this, you need to edit the 'azurevpnconfig.xml' file and reimport the VPN 
 
 1. Open: azurevpnconfig.xml in your favourite editor _(ie Visual Studio Code or Notepad)_
 2. Underneath the <name> _(which you can also change, as this is the name that users will see in Windows)_ add: < clientconfig>.
+
 For example:
 
       <name>Luke's Azure Point to Site VPN</name>
@@ -30,7 +31,6 @@ For example:
               <dnssuffixes>
               <dnssuffix>.luke.geek.nz</dnssuffix>
         </dnssuffixes>
-        
     </clientconfig>
 
 Save your azurevpnconfig.xml and import it into the Azure VPN client.

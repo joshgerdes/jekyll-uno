@@ -38,3 +38,5 @@ Save your azurevpnconfig.xml and import it into the Azure VPN client.
   
 Once the VPN has been re-established your Custom DNS settings and suffxies should take effect.
 If you included the <AlwaysOn> this will reconnect automatically, after your first connection and after computer reboots.
+  
+If you need assistance setting up a Point to Site VPN, check out my article here: [Create Azure Point to Site VPN using Azure Active Directory authentication ](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/)

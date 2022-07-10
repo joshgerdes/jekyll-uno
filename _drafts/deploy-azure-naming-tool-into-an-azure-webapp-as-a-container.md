@@ -59,9 +59,9 @@ This information is straight from the project [README.md](https://github.com/mic
 
 ### Deployment
 
-Today, we are going to deploy the Azure Naming Tool, into an Azure WebApp, running as a Container.
+#### Prerequisites
 
-![Azure Naming Tool - High-Level Architecture](/uploads/azurenamingtool_architecture.png "Azure Naming Tool - High-Level Architecture")
+Today, we are going to deploy the Azure Naming Tool, into an Azure WebApp, running as a Container.![Azure Naming Tool - High-Level Architecture](/uploads/azurenamingtool_architecture.png "Azure Naming Tool - High-Level Architecture")
 
 The Azure resources we will create are:
 
@@ -77,4 +77,10 @@ We will be using a mix of services such as:
 * [PowerShell](https://docs.microsoft.com/en-us/powershell/?WT.mc_id=AZ-MVP-5004796 "PowerShell") & [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?WT.mc_id=AZ-MVP-5004796 "Azure Command-Line Interface (CLI) documentation")
 * [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/?WT.mc_id=AZ-MVP-5004796 "Bicep documentation")
 
-To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already.
+To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already. 
+
+Note: I am going to connect to the Cloud Shell using the [Windows Terminal](https://docs.microsoft.com/en-us/shows/it-ops-talk/azure-cloud-shell-in-the-windows-terminal?WT.mc_id=AZ-MVP-5004796 "Azure Cloud Shell in the Windows Terminal"), so any screenshots will be of the Terminal, but it's the same behaviour if I was using the browser experience.
+
+#### Deploy - Resource Group & Container Registry
+
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell

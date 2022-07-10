@@ -26,8 +26,33 @@ This is where the Azure Naming Tool, as part of the Microsoft Cloud Adoption fra
 
 ### Overview
 
-The Naming Tool was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging). Once the organizational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource.
+The Naming Tool _(v2 as of June 2022)_ was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging). Once the organizational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource.
+
+![Azure \[naming-tool\]](/uploads/azurenamingtoollogo.png "Azure [naming-tool]")
 
 This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its configuration and offers users the ability to generate and customize their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention") taking all the restrictions into account. Azure Naming Tool - also offers a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
 
 ![Azure Naming Tool - Reference](/uploads/azurenamingtool_referencepage.png "Azure Naming Tool - Reference")
+
+This information is straight from the project [README.md](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/AzNamingTool/README.md "Azure Naming Tool v2"):
+
+> **Project Components**
+>
+> * UI/Admin
+> * API
+> * JSON configuration files
+> * Dockerfile
+>
+> **Important Notes**
+>
+> The following are important notes/aspects of the Azure Naming Tool:
+>
+> * The application is designed to run as a stand-alone solution, with no internet/Azure connection.
+> * The application can be run as a .NET 6 site, or as a Docker container.
+> * The site can be hosted in any environment, including internal or in a public/private cloud.
+> * The application uses local JSON files to store the configuration of the components.
+> * The application requires persistent storage. If running as a container, a volume is required to store configuration files.
+> * The application contains a _repository_ folder, which contains the default component configuration JSON files. When deployed, these files are copied to the _settings_ folder.
+> * The Admin interface allows configurations to be "reset", if needed. This process copies the configuration from the _repository_ folder to the _settings_ folder.
+> * The API requires an API Key for all executions. A default API Key (guid) will be generated on first launch. This value can be updated in the Admin section.
+> * On first launch, the application will prompt for the Admin password to be set.

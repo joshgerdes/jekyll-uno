@@ -56,3 +56,25 @@ This information is straight from the project [README.md](https://github.com/mic
 > * The Admin interface allows configurations to be "reset", if needed. This process copies the configuration from the _repository_ folder to the _settings_ folder.
 > * The API requires an API Key for all executions. A default API Key (guid) will be generated on first launch. This value can be updated in the Admin section.
 > * On first launch, the application will prompt for the Admin password to be set.
+
+### Deployment
+
+Today, we are going to deploy the Azure Naming Tool, into an Azure WebApp, running as a Container.
+
+![Azure Naming Tool - High-Level Architecture](/uploads/azurenamingtool_architecture.png "Azure Naming Tool - High-Level Architecture")
+
+The Azure resources we will create are:
+
+* Azure Container Registry
+* Azure Storage Account _(with File Share - to store our persistent data and configuration)_
+* Azure App Service Plan and App Service _(to run our Azure Naming Tool)_
+
+To deploy these Azure resources, you need Contributor rights in at least a Resource Group.
+
+We will be using a mix of services such as:
+
+* Docker
+* PowerShell
+* Azure Bicep
+
+To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal.

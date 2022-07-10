@@ -37,4 +37,4 @@ For example:
 Save your azurevpnconfig.xml and import it into the Azure VPN client.
   
 Once the VPN has been re-established your Custom DNS settings and suffxies should take effect.
-If yuu included the <AlwaysOn> this will reconnect automatically, after your first connection and after computer reboots.
+If you included the <AlwaysOn> this will reconnect automatically, after your first connection and after computer reboots.

@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-Organising your cloud workloads to support governance, operational management, and accounting requirements, can take a lot of effort before the first resource is first created. 
+Organising your cloud workloads to support governance, operational management, and accounting requirements, can take a lot of effort before the first resource is first created.
 
 Well-defined naming and metadata tagging conventions help to quickly locate and manage resources. These conventions also help associate cloud usage costs with business teams via chargeback and show-back accounting mechanisms, along with quickly identifying what services are used across services.
 
@@ -26,8 +26,8 @@ This is where the Azure Naming Tool, as part of the Microsoft Cloud Adoption fra
 
 ### Overview
 
-The Naming Tool was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging). Once the organizational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource. 
+The Naming Tool was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging). Once the organizational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource.
 
-This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its configuration and offers users the ability to generate and customize their own Microsoft Azure Naming convention taking all the restrictions into account. Azure Naming Tool - also offers a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
+This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its configuration and offers users the ability to generate and customize their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention") taking all the restrictions into account. Azure Naming Tool - also offers a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
 
-![](/uploads/azurenamingtool_referencepage.png)
+![Azure Naming Tool - Reference](/uploads/azurenamingtool_referencepage.png "Azure Naming Tool - Reference")

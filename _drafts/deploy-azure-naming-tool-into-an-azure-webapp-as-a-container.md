@@ -65,7 +65,7 @@ Today, we are going to deploy the Azure Naming Tool, into an Azure WebApp, runni
 
 The Azure resources we will create are:
 
-* Azure Container Registry
+* [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/?WT.mc_id=AZ-MVP-5004796 " Azure Container Registry")
 * Azure Storage Account _(with File Share - to store our persistent data and configuration)_
 * Azure App Service Plan and App Service _(to run our Azure Naming Tool)_
 
@@ -74,7 +74,7 @@ To deploy these Azure resources, you need Contributor rights in at least a Resou
 We will be using a mix of services such as:
 
 * Docker
-* PowerShell
+* PowerShell & Azure CLI
 * Azure Bicep
 
-To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this article I am going to assume you have it setup already.
+To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already.

@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 The Azure Point to Site VPN will take the DNS servers from the Virtual Network, that the Gateway is peering into by default, but due to VNET Peering or custom configuration if you may want to point this to custom DNS servers.
@@ -35,3 +35,6 @@ For example:
     </clientconfig>
 
 Save your azurevpnconfig.xml and import it into the Azure VPN client.
+  
+Once the VPN has been re-established your Custom DNS settings and suffxies should take effect.
+If yuu included the <AlwaysOn> this will reconnect automatically, after your first connection and after computer reboots.

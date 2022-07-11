@@ -117,3 +117,9 @@ The Azure Container Registry will be stored to host and build your image definit
 ![AzureNaming Tool - Azure Container Registry](/uploads/AzNamingTool_ContainerRegistryImageBuild.gif "AzureNaming Tool - Azure Container Registry")
 
 #### Deploy Azure App Service and WebApp
+
+For the following, we will use a mix of Azure Bicep and the Azure Portal _(I ran into an Access Key error and PowerShell_ [_issue_](https://github.com/Azure/azure-powershell/issues/10645 "webapp: New-AzWebApp does not set LinuxFxVersion from ContainerImageName") _when attempting to map the share using Bicep and PowerShell - if you managed to complete the setup feel free to add a comment in the comments below)_.
+
+Azure Bicep will be used to create the App Service and Storage account + file share, then we will use the Azure Portal to complete the setup _(Azure WebApp as a Container and mapping the persistent file share)_.
+
+First, we need to install Azure Bicep and import the Bicep file into Cloud Shell, we could Upload the file straight from the Portal, or clone a [repo](https://github.com/lukemurraynz/Azure-Bicep "Azure-Bicep") with the file - but because I am using Azure Cloud Shell from the Terminal because Azure Cloud Shell runs on Linux - I am going to use 'nano' to create the Bicep file manually - feel free to do any of the above options to get the Azure Bicep into Cloud Shell.

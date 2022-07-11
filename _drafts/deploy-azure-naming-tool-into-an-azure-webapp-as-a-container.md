@@ -190,3 +190,5 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 26. Select **Basic configuration**
 27. Select the **Storage account** created earlier _(as part of the Bicep deployment)_ and select **Azure File share**
 28. Select your Storage container and enter in: **/app/settings** to the mount path and click **Ok**
+29. ![Azure App Service - Mount Azure File Share](/uploads/azure-naming-tool-webapp-deployment-storage-mount.png "Azure App Service - Mount Azure File Share")
+30. 

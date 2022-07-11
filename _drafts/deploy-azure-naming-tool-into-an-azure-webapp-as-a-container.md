@@ -90,6 +90,8 @@ Not is time to clone the git repository into our Cloud Shell, so we can build th
 
        git clone https://github.com/microsoft/CloudAdoptionFramework
        cd ./CloudAdoptionFramework/ready/AzNamingTool/
+       
+cv
 
 #### Create Resource Group & Azure Container Registry
 
@@ -102,6 +104,8 @@ Now that we have our Repository, it's time to create our Resource Group and Cont
     $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic
     Connect-AzContainerRegistry -Name $registry.Name
 
+df
+
 #### Build your image to the Azure Container Registry
 
 The Azure Container Registry will be stored to host and build your image definition, as Docker support is not native to the Azure Cloud Shell, now that we have created it is time to build the image and push it to the registry. Make sure you are in the AzNamingTool folder _(CloudAdoptionFramework/ready/AzNamingTool/)_.
@@ -109,3 +113,5 @@ The Azure Container Registry will be stored to host and build your image definit
 1. Run the following Azure CLI command:
 
     az acr build --image azurenamingtool:v1 --registry $registry.Name --file Dockerfile .
+
+fg

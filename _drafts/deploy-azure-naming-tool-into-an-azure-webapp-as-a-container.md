@@ -234,3 +234,9 @@ If you click **Reference,** you can see the reference criteria that Azure Naming
 If you navigate to: **Configuration**, this is where you can specify any Custom changes to suit your Organisation or Organisations _(yes you can use this as a Cloud Architect or Consultant, to generate names of multiple organisations)_. If you don't like the default prefixes for the Resources, Regions, Environment or even Delimiters you can adjust them here.
 
 ![Azure Naming Tool - Configuration](/uploads/azurenamingtool-configuration.png "Azure Naming Tool - Configuration")
+
+On the **Configuration** pane, you can also **Export** and **Import** a configuration from a previous install.
+
+There is also an Azure Naming Tool Swagger API, that you can leverage _(the API key can be found under Admin)_, in your Infrastructure as Code or script deployments.
+
+![Azure Naming Tool - API](/uploads/azurenamingtool-api.png "Azure Naming Tool - API")

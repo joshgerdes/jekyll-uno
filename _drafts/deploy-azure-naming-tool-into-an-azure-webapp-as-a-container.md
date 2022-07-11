@@ -181,9 +181,12 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 17. ![Azure App Deployment - Application Insights](/uploads/azure-naming-tool-webapp-deployment-app-insights.png "Azure App Deployment - Application Insights")
 18. Enter in any applicable **Tags** and finally click **Review + Create**
 19. Click **Create**
-20. Now that your container is running, we need to mount the Azure file share
+20. Now that your container is running, we need to mount the Azure file share so any persistent data is saved.
 21. **Open** your newly created **App Service**
 22. Navigate to **Configuration**, under Settings in the navigation bar
 23. Click on **Path mappings**
 24. Click **+ New Azure Storage Mount**
-25. 
+25. **Give** the **mount** a **name**: ie _aznamingtool-stg-mnt_
+26. Select **Basic configuration**
+27. Select the **Storage account** created earlier _(as part of the Bicep deployment)_ and select **Azure File share**
+28. Select your Storage container and enter in: **/app/settings** to the mount path and click **Ok**

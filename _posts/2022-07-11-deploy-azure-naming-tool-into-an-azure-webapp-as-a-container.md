@@ -20,7 +20,7 @@ There's no one size fits Azure naming convention; it needs to suit your organisa
 * [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources"){:target="_blank"}
 * [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention"){:target="_blank"}
 
-With rules around naming resources that are Global, specific to Resource Groups or that have maximum character limits that can't contain specific characters - it can become a project on its own, the world of Cloud where resources are treated as [cattle and not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/ "The History of Pets vs Cattle and How to Use the Analogy Properly"){:target="_blank"} - the effort to develop a proper naming convention, used across teams or even companies can be quiet complex.
+With rules around naming resources that are Global, specific to Resource Groups or that have maximum character limits that can't contain specific characters - it can become a project on its own, the world of Cloud where resources are treated as [cattle and not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/ "The History of Pets vs Cattle and How to Use the Analogy Properly"){:target="_blank"} - the effort to develop a proper naming convention, used across teams or even companies can be quite complex.
 
 This is where the Azure Naming Tool, as part of the Microsoft Cloud Adoption framework, comes into play.
 

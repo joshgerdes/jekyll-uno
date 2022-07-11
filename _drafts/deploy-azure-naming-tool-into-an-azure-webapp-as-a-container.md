@@ -91,7 +91,7 @@ Not is time to clone the git repository into our Cloud Shell, so we can build th
        git clone https://github.com/microsoft/CloudAdoptionFramework
        cd ./CloudAdoptionFramework/ready/AzNamingTool/
 
-cv
+![AzNaming Tool - CloudAdoptionFramework Repo Cloning](/uploads/aznamingtool_repoclone.gif "AzNaming Tool - CloudAdoptionFramework Repo Cloning")
 
 #### Create Resource Group & Azure Container Registry
 

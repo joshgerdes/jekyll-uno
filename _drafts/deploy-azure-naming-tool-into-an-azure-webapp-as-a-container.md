@@ -210,3 +210,13 @@ Your App Service will be publically accessible by default and although you may w
 1. To lock it down to a specific Public IP, in your App Service, Select **Networking**, then **Access restriction**
 2. Add in your **Public IP** to restrict it from being accessible from your network and click **Ok**
 3. Make sure you select the scm instance and select: **Same restrictions** so that the SCM instance isn't also publically accessible.
+
+### Configuration
+
+Now that you have successfully deployed the Azure Naming Tool, let's take a look.
+
+To open your **Azure Naming Tool**, navigate to your **App Service** and select **Browse** (or copy the URL).
+
+When you open it the first time, you will have the option to create an Admin password, set your Password and select Save, if the Azure File Share wasn't mounted to the Web App - then your password won't be saved if the App Services crashes or gets reloaded to another node.
+
+![](/uploads/azure-naming-tool.png)

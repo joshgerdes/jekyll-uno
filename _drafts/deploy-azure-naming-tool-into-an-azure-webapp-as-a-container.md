@@ -179,4 +179,5 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 15. If you want to enable Network injection, by placing it on your Virtual Network you can configure this, we are just going head to **Monitoring** 
 16. Application Insights isn't required, but it is recommended _(it's too late to deploy it later if you need it and it does support .NET Linux containers which is what Azure Naming Tool is)_, I always enable it so select **Yes** and **Next Tags**
 17. ![Azure App Deployment - Application Insights](/uploads/azure-naming-tool-webapp-deployment-app-insights.png "Azure App Deployment - Application Insights")
-18. 
+18. Enter in any applicable **Tags** and finally click **Review + Create**
+19. Click **Create**

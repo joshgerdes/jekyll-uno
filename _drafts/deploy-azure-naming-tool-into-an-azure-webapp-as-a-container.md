@@ -104,7 +104,7 @@ Now that we have our Repository, it's time to create our Resource Group and Cont
        $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic
        Connect-AzContainerRegistry -Name $registry.Name
 
-![](/uploads/aznamingtool_containerregistrycreate.gif)
+![AzNaming Tool - Create Container Registry](/uploads/aznamingtool_containerregistrycreate.gif "AzNaming Tool - Create Container Registry")
 
 #### Build your image to the Azure Container Registry
 

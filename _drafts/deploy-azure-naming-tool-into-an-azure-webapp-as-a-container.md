@@ -1,5 +1,5 @@
 ---
-date: 2022-07-10 00:00:00 +1200
+date: 2022-07-10T00:00:00.000+12:00
 title: Deploy Azure Naming Tool into an Azure WebApp as a container
 author: Luke
 categories:
@@ -104,7 +104,7 @@ Now that we have our Repository, it's time to create our Resource Group and Cont
        $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic
        Connect-AzContainerRegistry -Name $registry.Name
 
-![AzNaming Tool - Create Container Registry](/uploads/aznamingtool_containerregistrycreate.gif "AzNaming Tool - Create Container Registry")
+![](/uploads/AzNamingTool_ContainerRegistryImageBuild.gif)
 
 #### Build your image to the Azure Container Registry
 
@@ -114,4 +114,4 @@ The Azure Container Registry will be stored to host and build your image definit
 
        az acr build --image azurenamingtool:v1 --registry $registry.Name --file Dockerfile .
 
-fg
+![](/uploads/AzNamingTool_ContainerRegistryImageBuild.gif)

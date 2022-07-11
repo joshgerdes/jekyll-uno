@@ -30,7 +30,7 @@ The Naming Tool _(v2 as of June 2022)_ was developed using a naming pattern base
 
 ![Azure \[naming-tool\]](/uploads/azurenamingtoollogo.png "Azure [naming-tool]")
 
-This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its Configuration and offers users the ability to generate and customise their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention") taking all the restrictions into account. Azure Naming Tool - also provides a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
+This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its Configuration and offers users the ability to generate and customise their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention") taking all the restrictions into account. In addition, Azure Naming Tool - also provides a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
 
 ![Azure Naming Tool - Reference](/uploads/azurenamingtool_referencepage.png "Azure Naming Tool - Reference")
 
@@ -77,7 +77,7 @@ We will be using a mix of services such as:
 * [PowerShell](https://docs.microsoft.com/en-us/powershell/?WT.mc_id=AZ-MVP-5004796 "PowerShell") & [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?WT.mc_id=AZ-MVP-5004796 "Azure Command-Line Interface (CLI) documentation")
 * [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/?WT.mc_id=AZ-MVP-5004796 "Bicep documentation")
 
-To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, and if you haven't set up your Azure Cloud Shell, you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already.
+To reduce the need to set up these dependencies on individual workstations, we will use a mix of the Azure Cloud Shell and Azure Portal. If you haven't set up your Azure Cloud Shell, you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")" for this remainder of this article I am going to assume you have it set up already.
 
 Note: I will connect to the Cloud Shell using the [Windows Terminal](https://docs.microsoft.com/en-us/shows/it-ops-talk/azure-cloud-shell-in-the-windows-terminal?WT.mc_id=AZ-MVP-5004796 "Azure Cloud Shell in the Windows Terminal") so that any screenshots will be of the Terminal, but it's the same behaviour if I used the browser experience.
 
@@ -95,7 +95,7 @@ Not is time to clone the git repository into our Cloud Shell so that we can buil
 
 #### Create Resource Group & Azure Container Registry
 
-Now that we have our Repository, it's time to create our Resource Group and Container Registry _(Public)_; we will use a few PowerShell cmdlets to create the resources; make sure you change the name of your Container Registry and Resource Group to match your environment.
+Now that we have our Repository, it's time to create our Resource Group and Container Registry _(Public)_; we will use a few PowerShell cmdlets to develop the resources; make sure you change the name of your Container Registry and Resource Group to match your environment.
 
 1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
 2. **Run** the following **commands** to **create** the **Resource Group** and the **Azure Container Registry**:
@@ -140,7 +140,7 @@ We will use Nano, copy the Azure Bicep file and Paste it into Nano, and make sur
 
        nano AzNamingTool_main.bicep
 2. **Paste** the Azure **Bicep file** and do any final edits
-3. Now we need to save the file, press **Ctrl+X** on your keyboard
+3. Now we need to save the file; press **Ctrl+X** on your keyboard
 4. Press **Y** to save the file
 5. Verify the file name and press **Enter** to accept the filename.
 
@@ -148,7 +148,7 @@ We will use Nano, copy the Azure Bicep file and Paste it into Nano, and make sur
 
 ##### Deploy Azure Bicep
 
-Now it's time to create the Azure App Service Plan and Storage account _(remove the -whatif flag at the end, when you confirmed there are no errors)_.
+Now it's time to create the Azure App Service Plan and Storage account _(remove the -what if flag at the end, when you confirmed there are no errors)_.
 
 1. **Run** the following **command** to deploy the **App Service and Storage** account into your Resource Group:
 
@@ -158,7 +158,7 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
 
 AZUREBICEPHERE-77a108f508fe8856fddc47a68891e2de
 
-Your resources _(App Service, Storage account with File Share)_ should now be deployed, we can now close our trusty Cloud Shell.
+Your resources _(App Service, Storage account with File Share)_ should now be deployed, and we can now close our trusty Cloud Shell.
 
 ##### Deploy and configure WebApp as a Container
 
@@ -176,22 +176,22 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 12. Change Image Source to **Azure Container Registry**
 13. Select your **Registry** and **Azure Naming Too**l image, then select **Next: Networking**
 14. ![Azure Naming Tool - Registry](/uploads/azure-naming-tool-webapp-deployment-docker.png "Azure Naming Tool - Registry")
-15. If you want to enable Network injection, by placing it on your Virtual Network you can configure this, we are just going head to **Monitoring** 
-16. Application Insights isn't required, but it is recommended _(it's too late to deploy it later if you need it and it does support .NET Linux containers which is what Azure Naming Tool is)_, I always enable it so select **Yes** and **Next Tags**
+15. If you want to enable Network injection, by placing it on your Virtual Network, you can configure this, and we are just going head to **Monitoring.** 
+16. Application Insights isn't required, but it is recommended _(it's too late to deploy it later if you need it, and it does support .NET Linux containers which is what Azure Naming Tool is)_; I always enable it, so select **Yes** and **Next Tags.**
 17. ![Azure App Deployment - Application Insights](/uploads/azure-naming-tool-webapp-deployment-app-insights.png "Azure App Deployment - Application Insights")
 18. Enter in any applicable **Tags** and finally click **Review + Create**
 19. Click **Create**
-20. Now that your container is running, we need to mount the Azure file share so any persistent data is saved.
-21. **Open** your newly created **App Service**
+20. Now that your container is running, we need to mount the Azure file share, so any persistent data is saved.
+21. **Open** your newly created **App Service.**
 22. Navigate to **Configuration**, under Settings in the navigation bar
 23. Click on **Path mappings**
 24. Click **+ New Azure Storage Mount**
-25. **Give** the **mount** a **name**: ie _aznamingtool-stg-mnt_
+25. **Give** the **mount** a **name**: i.e. _a naming tool-stg-mnt_
 26. Select **Basic Configuration**
 27. Select the **Storage account** created earlier _(as part of the Bicep deployment)_ and select **Azure File share**
-28. Select your Storage container and enter in: **/app/settings** to the mount path and click **Ok**
+28. Select your Storage container and enter in**/app/settings** to the mount path and click **Ok**
 29. ![Azure App Service - Mount Azure File Share](/uploads/azure-naming-tool-webapp-deployment-storage-mount.png "Azure App Service - Mount Azure File Share")
-30. Then select Save, to **Save** the Path Mappings
+30. Then select Save to **Save** the Path Mappings
 
 ##### Optional: Azure App Service Tweaks
 
@@ -205,19 +205,19 @@ By now, your Azure Naming Tool should be accessible,  you don't need to do any o
 
 ###### Configure Firewall
 
-Your App Service will be publically accessible by default and although you may want to link it to your network via a Private Endpoint, locking down by Public IP may be suitable in some scenarios _(such as this demo environment)_. 
+Your App Service will be publically accessible by default, and although you may want to link it to your network via a Private Endpoint, locking down by Public IP may be suitable in some scenarios _(such as this demo environment)_. 
 
-1. To lock it down to a specific Public IP, in your App Service, Select **Networking**, then **Access restriction**
-2. Add in your **Public IP** to restrict it from being accessible from your network and click **Ok**
+1. To lock it down to a specific Public IP, in your App Service, Select **Networking**, then **Access restriction.**
+2. Add in your **Public IP** to restrict it from being accessible from your network and click **Ok.**
 3. Make sure you select the scm instance and select: **Same restrictions** so that the SCM instance isn't also publically accessible.
 
 ### Let's take a look!
 
-Now that you have successfully deployed the Azure Naming Tool, let's take a look.
+Now that you have successfully deployed the Azure Naming Tool let's take a look.
 
 To open your **Azure Naming Tool**, navigate to your **App Service** and select **Browse** (or copy the URL).
 
-When you open it the first time, you will have the option to create an Admin password, set your Password and select Save, if the Azure File Share wasn't mounted to the Web App - then your password won't be saved if the App Services crashes or gets reloaded to another node.
+When you open it the first time, you will have the option to create an Admin password, set your Password and select Save; if the Azure File Share wasn't mounted to the Web App - then your Password won't be saved if the App Services crashes or gets reloaded to another node.
 
 ![](/uploads/azure-naming-tool.png)
 
@@ -227,16 +227,16 @@ You can immediately generate a naming standard out of the box _(and it already c
 
 ![Azure Naming Standard - Generate](/uploads/azurenamingtool-generate.png "Azure Naming Standard - Generate")
 
-If you click **Reference,** you can see the reference criteria that Azure Naming Tool works with generating your Naming schema, for example for ApiManagement APS, we can see that the short name is: API, it supports up to 256 characters but cannot have a '#', and does not need a globally unique name.
+If you click **Reference,** you can see the reference criteria that Azure Naming Tool works with generating your Naming schema; for example, for ApiManagement APS, we can see that the short name is: API; it supports up to 256 characters but cannot have a '#', and does not need a globally unique name.
 
 ![Azure Naming Tool - Reference API Management](/uploads/azurenamingstandard-referenceapi.png "Azure Naming Tool - Reference API Management")
 
-If you navigate to: **Configuration**, this is where you can specify any Custom changes to suit your Organisation or Organisations _(yes you can use this as a Cloud Architect or Consultant, to generate names of multiple organisations)_. If you don't like the default prefixes for the Resources, Regions, Environment or even Delimiters you can adjust them here.
+If you navigate to: **Configuration**, this is where you can specify any Custom changes to suit your Organisation or Organisations _(yes, you can use this as a Cloud Architect or Consultant to generate names of multiple organisations)_. If you don't like the default prefixes for the Resources, Regions, Environment or even Delimiters, you can adjust them here.
 
 ![Azure Naming Tool - Configuration](/uploads/azurenamingtool-configuration.png "Azure Naming Tool - Configuration")
 
-On the **Configuration** pane, you can also **Export** and **Import** a configuration from a previous install.
+You can also **Export** and **Import** a configuration from a previous install on the Configuration pane.
 
-There is also an Azure Naming Tool Swagger API, that you can leverage _(the API key can be found under Admin)_, in your Infrastructure as Code or script deployments.
+There is also an Azure Naming Tool Swagger API that you can leverage _(the API key can be found under Admin)_ in your Infrastructure as Code or script deployments.
 
 ![Azure Naming Tool - API](/uploads/azurenamingtool-api.png "Azure Naming Tool - API")

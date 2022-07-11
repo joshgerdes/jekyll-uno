@@ -83,7 +83,7 @@ Note: I will connect to the Cloud Shell using the [Windows Terminal](https://doc
 
 #### Clone the Git Repository
 
-Not is time to clone the git repository into our Cloud Shell so that we can build the docker image definition.
+Now is time to clone the git repository into our Cloud Shell so that we can build the docker image definition.
 
 1. **Log in** to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal"){:target="_blank"} and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
 2. **Run** the following **commands** and wait for the Repository to be cloned directly into the CloudShell virtual instance:
@@ -147,6 +147,8 @@ We will use Nano, copy the Azure Bicep file and Paste it into Nano, and make sur
 
    ![Azure Naming Tool - Create Bicep file](/uploads/createazbicepfile.gif "Azure Naming Tool - Create Bicep file")
 
+{% gist 77a108f508fe8856fddc47a68891e2de %}
+
 ##### Deploy Azure Bicep
 
 Now it's time to create the Azure App Service Plan and Storage account _(remove the -what if flag at the end, when you confirmed there are no errors)_.
@@ -156,8 +158,6 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
        New-AzResourceGroupDeployment -Name 'AzNamingTool-WebApp' -ResourceGroupName 'AzNamingTool-PROD-RG' -TemplateFile .\AzNamingTool.bicep -WhatIf
 
 ![Azure Naming Tool - Deploy Azure Bicep resources](/uploads/deployaznamingtoolbicepresources.gif "Azure Naming Tool - Deploy Azure Bicep resources")
-
-{% gist 77a108f508fe8856fddc47a68891e2de %}
 
 Your resources _(App Service, Storage account with File Share)_ should now be deployed, and we can now close our trusty Cloud Shell.
 

@@ -157,6 +157,10 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
 
 ![Azure Naming Tool - Bicep Deployment](/uploads/deployaznamingtoolbicepresources.gif "Azure Naming Tool - Bicep Deployment")
 
-AZUREBICEPHERE
+AZUREBICEPHERE-77a108f508fe8856fddc47a68891e2de
 
 Your resources _(App Service, Storage account with File Share)_ should now be deployed, we can now close our trusty Cloud Shell.
+
+##### Deploy and configure WebApp as a Container
+
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") 

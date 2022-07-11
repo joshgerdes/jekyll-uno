@@ -115,3 +115,5 @@ The Azure Container Registry will be stored to host and build your image definit
        az acr build --image azurenamingtool:v1 --registry $registry.Name --file Dockerfile .
 
 ![AzureNaming Tool - Azure Container Registry](/uploads/AzNamingTool_ContainerRegistryImageBuild.gif "AzureNaming Tool - Azure Container Registry")
+
+#### Deploy Azure App Service and WebApp

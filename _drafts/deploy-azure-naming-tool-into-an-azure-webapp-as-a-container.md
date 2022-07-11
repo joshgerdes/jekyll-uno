@@ -123,3 +123,26 @@ For the following, we will use a mix of Azure Bicep and the Azure Portal _(I ran
 Azure Bicep will be used to create the App Service and Storage account + file share, then we will use the Azure Portal to complete the setup _(Azure WebApp as a Container and mapping the persistent file share)_.
 
 First, we need to install Azure Bicep and import the Bicep file into Cloud Shell, we could Upload the file straight from the Portal, or clone a [repo](https://github.com/lukemurraynz/Azure-Bicep "Azure-Bicep") with the file - but because I am using Azure Cloud Shell from the Terminal because Azure Cloud Shell runs on Linux - I am going to use 'nano' to create the Bicep file manually - feel free to do any of the above options to get the Azure Bicep into Cloud Shell.
+
+##### Install Azure Bicep
+
+1. To install Azure Bicep run:
+
+    az bicep install
+
+![Azure Cloud Shell - Install Azure Bicep](/uploads/install_azbicep.gif "Azure Cloud Shell - Install Azure Bicep")
+
+##### Create Azure Bicep File
+
+We are going to use Nano, and simply copy the Azure Bicep file and Paste it into nano, make sure you adjust the parameters to suit your environment before deploying.
+
+1. In the Azure Cloud Shell, lets create the file by typing
+
+    nano AzNamingTool_main.bicep
+
+1. Paste the Azure Bicep file and do any final edits
+2. Now we need to save the file, press **Ctrl+X** on your keyboard
+3. Press **Y** to save the file
+4. Verify the file name and press **Enter** to accept the filename.
+
+   ![Azure Cloud Shell - Create Bicep file](/uploads/createazbicepfile.gif "Azure Cloud Shell - Create Bicep file")

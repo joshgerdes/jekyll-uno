@@ -172,4 +172,11 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
  8. Select the **Region** that your App Service plan was deployed to
  9. **Select** the App Service **Plan** created earlier, then Select **Next: Docker**
 10. ![Azure Naming Tool - Web App Deployment](/uploads/azure-naming-tool-webapp-deployment-general.png "Azure Naming Tool - Web App Deployment")
-11. 
+11. Under Options, select **Single Container**
+12. Change Image Source to **Azure Container Registry**
+13. Select your **Registry** and **Azure Naming Too**l image, then select **Next: Networking**
+14. ![Azure Naming Tool - Registry](/uploads/azure-naming-tool-webapp-deployment-docker.png "Azure Naming Tool - Registry")
+15. If you want to enable Network injection, by placing it on your Virtual Network you can configure this, we are just going head to **Monitoring** 
+16. Application Insights isn't required, but it is recommended _(it's too late to deploy it later if you need it and it does support .NET Linux containers which is what Azure Naming Tool is)_, I always enable it so select **Yes** and **Next Tags**
+17. ![Azure App Deployment - Application Insights](/uploads/azure-naming-tool-webapp-deployment-app-insights.png "Azure App Deployment - Application Insights")
+18. 

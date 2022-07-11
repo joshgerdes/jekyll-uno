@@ -77,10 +77,35 @@ We will be using a mix of services such as:
 * [PowerShell](https://docs.microsoft.com/en-us/powershell/?WT.mc_id=AZ-MVP-5004796 "PowerShell") & [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?WT.mc_id=AZ-MVP-5004796 "Azure Command-Line Interface (CLI) documentation")
 * [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/?WT.mc_id=AZ-MVP-5004796 "Bicep documentation")
 
-To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already. 
+To reduce the need to set up these dependencies on individual workstations, we will be using a mix of the Azure Cloud Shell and Azure Portal, if you haven't set up your Azure Cloud Shell you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")", for this remainder of this article I am going to assume you have it set up already.
 
 Note: I am going to connect to the Cloud Shell using the [Windows Terminal](https://docs.microsoft.com/en-us/shows/it-ops-talk/azure-cloud-shell-in-the-windows-terminal?WT.mc_id=AZ-MVP-5004796 "Azure Cloud Shell in the Windows Terminal"), so any screenshots will be of the Terminal, but it's the same behaviour if I was using the browser experience.
 
-#### Deploy - Resource Group & Container Registry
+#### Clone the Git Repository
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell
+Not is time to clone the git repository into our Cloud Shell, so we can build the docker image definition.
+
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell _(make sure you are in PowerShell (not Bash))._
+2. Run the following commands and wait for the repository to be cloned directly into the CloudShell virtual instance:
+
+       git clone https://github.com/microsoft/CloudAdoptionFramework
+       cd ./CloudAdoptionFramework/ready/AzNamingTool/
+
+#### Create Resource Group & Azure Container Registry
+
+Now that we have our Repository, it's time to create our Resource Group and Container Registry _(Public)_, we will use a few PowerShell cmdlets to create the resources, make sure you change the name of your Container Registry and Resource Group to match your environment.
+
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell _(make sure you are in PowerShell (not Bash))._
+2. Run the following commands to create the Resource Group and the Azure Container Registry:
+
+    $ResourceGroup = New-AzResourceGroup -Name 'AzNamingTool-PROD-RG' -Location 'Australia East'
+    $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic
+    Connect-AzContainerRegistry -Name $registry.Name
+
+#### Build your image to the Azure Container Registry
+
+The Azure Container Registry will be stored to host and build your image definition, as Docker support is not native to the Azure Cloud Shell, now that we have created it is time to build the image and push it to the registry. Make sure you are in the AzNamingTool folder _(CloudAdoptionFramework/ready/AzNamingTool/)_.
+
+1. Run the following Azure CLI command:
+
+    az acr build --image azurenamingtool:v1 --registry $registry.Name --file Dockerfile .

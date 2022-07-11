@@ -146,3 +146,9 @@ We are going to use Nano, and simply copy the Azure Bicep file and Paste it into
 4. Verify the file name and press **Enter** to accept the filename.
 
    ![Azure Cloud Shell - Create Bicep file](/uploads/createazbicepfile.gif "Azure Cloud Shell - Create Bicep file")
+
+##### Deploy Azure Bicep
+
+Now it's time to create the Azure App Service Plan and Storage account _(remove the -whatif flag at the end, when you confirmed there are no errors)_.
+
+We are going to use Nano, and

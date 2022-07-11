@@ -191,4 +191,22 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 27. Select the **Storage account** created earlier _(as part of the Bicep deployment)_ and select **Azure File share**
 28. Select your Storage container and enter in: **/app/settings** to the mount path and click **Ok**
 29. ![Azure App Service - Mount Azure File Share](/uploads/azure-naming-tool-webapp-deployment-storage-mount.png "Azure App Service - Mount Azure File Share")
-30. 
+30. Then select Save, to **Save** the Path Mappings
+
+##### Optional: Azure App Service Tweaks
+
+By now, your Azure Naming Tool should be accessible,  you don't need to do any of the following, but I recommend them at a bare minimum _(environment and use case depending)_.
+
+###### Enable [**Always On**](https://docs.microsoft.com/en-us/azure/app-service/configure-common?tabs=portal&WT.mc_id=AZ-MVP-5004796 "Configure an App Service app")
+
+1. In your App Service, select **Configuration**, then **General Settings**
+2. Check '**On**' under 'Always On'
+3. Click **Save**
+
+###### Configure Firewall
+
+Your App Service will be publically accessible by default and although you may want to link it to your network via a Private Endpoint, locking down by Public IP may be suitable in some scenarios _(such as this demo environment)_. 
+
+1. To lock it down to a specific Public IP, in your App Service, Select **Networking**, then **Access restriction**
+2. Add in your **Public IP** to restrict it from being accessible from your network and click **Ok**
+3. Make sure you select the scm instance and select: **Same restrictions** so that the SCM instance isn't also publically accessible.

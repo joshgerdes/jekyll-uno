@@ -85,20 +85,20 @@ Note: I am going to connect to the Cloud Shell using the [Windows Terminal](http
 
 Not is time to clone the git repository into our Cloud Shell, so we can build the docker image definition.
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell _(make sure you are in PowerShell (not Bash))._
-2. Run the following commands and wait for the repository to be cloned directly into the CloudShell virtual instance:
+1. **Log in** to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
+2. **Run** the following **commands** and wait for the repository to be cloned directly into the CloudShell virtual instance:
 
        git clone https://github.com/microsoft/CloudAdoptionFramework
        cd ./CloudAdoptionFramework/ready/AzNamingTool/
 
-![AzNaming Tool - CloudAdoptionFramework Repo Cloning](/uploads/aznamingtool_repoclone.gif "AzNaming Tool - CloudAdoptionFramework Repo Cloning")
+![Azure Naming Tool - Clone Repo](/uploads/AzNamingTool_RepoClone.gif "Azure Naming Tool - Clone Repo")
 
 #### Create Resource Group & Azure Container Registry
 
 Now that we have our Repository, it's time to create our Resource Group and Container Registry _(Public)_, we will use a few PowerShell cmdlets to create the resources, make sure you change the name of your Container Registry and Resource Group to match your environment.
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the Azure Cloud Shell _(make sure you are in PowerShell (not Bash))._
-2. Run the following commands to create the Resource Group and the Azure Container Registry:
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
+2. **Run** the following **commands** to **create** the **Resource Group** and the **Azure Container Registry**:
 
        $ResourceGroup = New-AzResourceGroup -Name 'AzNamingTool-PROD-RG' -Location 'Australia East'
        $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic
@@ -110,7 +110,7 @@ Now that we have our Repository, it's time to create our Resource Group and Cont
 
 The Azure Container Registry will be stored to host and build your image definition, as Docker support is not native to the Azure Cloud Shell, now that we have created it is time to build the image and push it to the registry. Make sure you are in the AzNamingTool folder _(CloudAdoptionFramework/ready/AzNamingTool/)_.
 
-1. Run the following Azure CLI command:
+1. **Run** the following **Azure CLI** command:
 
        az acr build --image azurenamingtool:v1 --registry $registry.Name --file Dockerfile .
 
@@ -126,26 +126,25 @@ First, we need to install Azure Bicep and import the Bicep file into Cloud Shell
 
 ##### Install Azure Bicep
 
-1. To install Azure Bicep run:
+1. To **install** Azure **Bicep** run:
 
-    az bicep install
+       az bicep install
 
-![Azure Cloud Shell - Install Azure Bicep](/uploads/install_azbicep.gif "Azure Cloud Shell - Install Azure Bicep")
+![Azure Naming Tool - Install Azure Bicep](/uploads/install_azbicep.gif "Azure Naming Tool - Install Azure Bicep")
 
 ##### Create Azure Bicep File
 
 We are going to use Nano, and simply copy the Azure Bicep file and Paste it into nano, make sure you adjust the parameters to suit your environment before deploying.
 
-1. In the Azure Cloud Shell, lets create the file by typing
+1. In the A**zure Cloud Shell**, let us create the file by typing
 
-    nano AzNamingTool_main.bicep
+       nano AzNamingTool_main.bicep
+2. **Paste** the Azure **Bicep file** and do any final edits
+3. Now we need to save the file, press **Ctrl+X** on your keyboard
+4. Press **Y** to save the file
+5. Verify the file name and press **Enter** to accept the filename.
 
-1. Paste the Azure Bicep file and do any final edits
-2. Now we need to save the file, press **Ctrl+X** on your keyboard
-3. Press **Y** to save the file
-4. Verify the file name and press **Enter** to accept the filename.
-
-   ![Azure Cloud Shell - Create Bicep file](/uploads/createazbicepfile.gif "Azure Cloud Shell - Create Bicep file")
+   ![Azure Naming Tool - Create Bicep file](/uploads/createazbicepfile.gif "Azure Naming Tool - Create Bicep file")
 
 ##### Deploy Azure Bicep
 
@@ -153,7 +152,7 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
 
 1. Run the following command to deploy the App Service and Storage account into your Resource Group:
 
-    New-AzResourceGroupDeployment -Name 'AzNamingTool-WebApp' -ResourceGroupName 'AzNamingTool-PROD-RG' -TemplateFile .\AzNamingTool.bicep -WhatIf
+   New-AzResourceGroupDeployment -Name 'AzNamingTool-WebApp' -ResourceGroupName 'AzNamingTool-PROD-RG' -TemplateFile .\\AzNamingTool.bicep -WhatIf
 
 ![Azure Naming Tool - Bicep Deployment](/uploads/deployaznamingtoolbicepresources.gif "Azure Naming Tool - Bicep Deployment")
 
@@ -163,4 +162,12 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 
 ##### Deploy and configure WebApp as a Container
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") 
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal")
+2. Click **+ Create a Resource**
+3. Search for: Web App and click **Create a Web App**
+4. Select your **Subscription** and **Resource Group**
+5. **Select** a **name** for your Web App _(AzNamingTool-AS-Prod)_
+6. In **Publish**, select **Docker Container**
+7. For Operating system: Select **Linux**
+8. Select the **Region** that your App Service plan was deployed to
+9. **Select** the App Service **Plan** created earlier.

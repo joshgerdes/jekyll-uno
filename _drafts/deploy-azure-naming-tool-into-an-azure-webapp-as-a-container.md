@@ -162,12 +162,14 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 
 ##### Deploy and configure WebApp as a Container
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal")
-2. Click **+ Create a Resource**
-3. Search for: Web App and click **Create a Web App**
-4. Select your **Subscription** and **Resource Group**
-5. **Select** a **name** for your Web App _(AzNamingTool-AS-Prod)_
-6. In **Publish**, select **Docker Container**
-7. For Operating system: Select **Linux**
-8. Select the **Region** that your App Service plan was deployed to
-9. **Select** the App Service **Plan** created earlier.
+ 1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal")
+ 2. Click **+ Create a Resource**
+ 3. Search for: Web App and click **Create a Web App**
+ 4. Select your **Subscription** and **Resource Group**
+ 5. **Select** a **name** for your Web App _(AzNamingTool-AS-Prod)_
+ 6. In **Publish**, select **Docker Container**
+ 7. For Operating system: Select **Linux**
+ 8. Select the **Region** that your App Service plan was deployed to
+ 9. **Select** the App Service **Plan** created earlier, then Select **Next: Docker**
+10. ![Azure Naming Tool - Web App Deployment](/uploads/azure-naming-tool-webapp-deployment-general.png "Azure Naming Tool - Web App Deployment")
+11. 

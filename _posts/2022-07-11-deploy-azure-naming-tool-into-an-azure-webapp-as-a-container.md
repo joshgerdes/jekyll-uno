@@ -17,24 +17,24 @@ A useful naming convention composes resource names from important information ab
 
 There's no one size fits Azure naming convention; it needs to suit your organisation. However, it is worth noting that there are limitations to naming rules for Azure resources.
 
-* [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources")
-* [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention")
+* [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources"){:target="_blank"}
+* [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention"){:target="_blank"}
 
-With rules around naming resources that are Global, specific to Resource Groups or that have maximum character limits that can't contain specific characters - it can become a project on its own, the world of Cloud where resources are treated as [cattle and not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/ "The History of Pets vs Cattle and How to Use the Analogy Properly") - the effort to develop a proper naming convention, used across teams or even companies can be quiet complex.
+With rules around naming resources that are Global, specific to Resource Groups or that have maximum character limits that can't contain specific characters - it can become a project on its own, the world of Cloud where resources are treated as [cattle and not pets](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/ "The History of Pets vs Cattle and How to Use the Analogy Properly"){:target="_blank"} - the effort to develop a proper naming convention, used across teams or even companies can be quiet complex.
 
 This is where the Azure Naming Tool, as part of the Microsoft Cloud Adoption framework, comes into play.
 
 ### Overview
 
-The Naming Tool _(v2 as of June 2022)_ was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging). Once the organisational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource.
+The Naming Tool _(v2 as of June 2022)_ was developed using a naming pattern based on [Microsoft's best practices](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging){:target="_blank"}. Once the organisational components have been defined by an administrator, users can use the tool to generate a name for the desired Azure resource.
 
 ![Azure \[naming-tool\]](/uploads/azurenamingtoollogo.png "Azure [naming-tool]")
 
-This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure") GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its Configuration and offers users the ability to generate and customise their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention") taking all the restrictions into account. In addition, Azure Naming Tool - also provides a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
+This tool sitting in the [Microsoft/CloudAdoptionFramework](https://github.com/microsoft/CloudAdoptionFramework "Microsoft Cloud Adoption Framework for Azure"){:target="_blank"} GitHub repository runs as a standalone Web _(.NET 6 Blazor application)_ application using stateless JSON files for its Configuration and offers users the ability to generate and customise their own [Microsoft Azure Naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention"){:target="_blank"} taking all the restrictions into account. In addition, Azure Naming Tool - also provides a Swagger API that can be used in your Infrastructure as Code deployments to generate the names of resources on the fly.
 
 ![Azure Naming Tool - Reference](/uploads/azurenamingtool_referencepage.png "Azure Naming Tool - Reference")
 
-This information is straight from the project [README.md](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/AzNamingTool/README.md "Azure Naming Tool v2"):
+This information is straight from the project [README.md](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/AzNamingTool/README.md "Azure Naming Tool v2"){:target="_blank"}:
 
 > **Project Components**
 >
@@ -65,27 +65,27 @@ Today, we will deploy the Azure Naming Tool into an Azure WebApp, running as a C
 
 The Azure resources we will create are:
 
-* [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/?WT.mc_id=AZ-MVP-5004796 " Azure Container Registry")
-* [Azure Storage Account](https://azure.microsoft.com/en-us/products/category/storage/?WT.mc_id=AZ-MVP-5004796 "Storage") _(with File Share - to store our persistent data and Configuration)_
+* [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/?WT.mc_id=AZ-MVP-5004796 " Azure Container Registry"){:target="_blank"}
+* [Azure Storage Account](https://azure.microsoft.com/en-us/products/category/storage/?WT.mc_id=AZ-MVP-5004796 "Storage"){:target="_blank"} _(with File Share - to store our persistent data and Configuration)_
 * [Azure App Service Plan and App Service for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/?WT.mc_id=AZ-MVP-5004796 " Web App for Containers") _(to run our Azure Naming Tool)_
 
 You need Contributor rights in at least a Resource Group to deploy these Azure resources.
 
 We will be using a mix of services such as:
 
-* [Docker](https://www.docker.com/ "Docker")
-* [PowerShell](https://docs.microsoft.com/en-us/powershell/?WT.mc_id=AZ-MVP-5004796 "PowerShell") & [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?WT.mc_id=AZ-MVP-5004796 "Azure Command-Line Interface (CLI) documentation")
-* [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/?WT.mc_id=AZ-MVP-5004796 "Bicep documentation")
+* [Docker](https://www.docker.com/ "Docker"){:target="_blank"}
+* [PowerShell](https://docs.microsoft.com/en-us/powershell/?WT.mc_id=AZ-MVP-5004796 "PowerShell"){:target="_blank"} & [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?WT.mc_id=AZ-MVP-5004796 "Azure Command-Line Interface (CLI) documentation"){:target="_blank"}
+* [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/?WT.mc_id=AZ-MVP-5004796 "Bicep documentation"){:target="_blank"}
 
-To reduce the need to set up these dependencies on individual workstations, we will use a mix of the Azure Cloud Shell and Azure Portal. If you haven't set up your Azure Cloud Shell, you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell ")" for this remainder of this article I am going to assume you have it set up already.
+To reduce the need to set up these dependencies on individual workstations, we will use a mix of the Azure Cloud Shell and Azure Portal. If you haven't set up your Azure Cloud Shell, you can refer to an article I wrote previously "[here](https://luke.geek.nz/azure/setup-azure-cloud-shell/ "Setup Azure Cloud Shell "){:target="_blank"}" for this remainder of this article I am going to assume you have it set up already.
 
-Note: I will connect to the Cloud Shell using the [Windows Terminal](https://docs.microsoft.com/en-us/shows/it-ops-talk/azure-cloud-shell-in-the-windows-terminal?WT.mc_id=AZ-MVP-5004796 "Azure Cloud Shell in the Windows Terminal") so that any screenshots will be of the Terminal, but it's the same behaviour if I used the browser experience.
+Note: I will connect to the Cloud Shell using the [Windows Terminal](https://docs.microsoft.com/en-us/shows/it-ops-talk/azure-cloud-shell-in-the-windows-terminal?WT.mc_id=AZ-MVP-5004796 "Azure Cloud Shell in the Windows Terminal"){:target="_blank"} so that any screenshots will be of the Terminal, but it's the same behaviour if I used the browser experience.
 
 #### Clone the Git Repository
 
 Not is time to clone the git repository into our Cloud Shell so that we can build the docker image definition.
 
-1. **Log in** to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
+1. **Log in** to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal"){:target="_blank"} and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
 2. **Run** the following **commands** and wait for the Repository to be cloned directly into the CloudShell virtual instance:
 
        git clone https://github.com/microsoft/CloudAdoptionFramework
@@ -97,7 +97,7 @@ Not is time to clone the git repository into our Cloud Shell so that we can buil
 
 Now that we have our Repository, it's time to create our Resource Group and Container Registry _(Public)_; we will use a few PowerShell cmdlets to develop the resources; make sure you change the name of your Container Registry and Resource Group to match your environment.
 
-1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal") and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
+1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal"){:target="_blank"} and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
 2. **Run** the following **commands** to **create** the **Resource Group** and the **Azure Container Registry**:
 
        $ResourceGroup = New-AzResourceGroup -Name 'AzNamingTool-PROD-RG' -Location 'Australia East'
@@ -118,7 +118,7 @@ The Azure Container Registry will be stored to host and build your image definit
 
 #### Deploy Azure App Service and WebApp
 
-For the following, we will use a mix of Azure Bicep and the Azure Portal _(I ran into an Access Key error and PowerShell_ [_issue_](https://github.com/Azure/azure-powershell/issues/10645 "webapp: New-AzWebApp does not set LinuxFxVersion from ContainerImageName") _when attempting to map the share using Bicep and PowerShell - if you managed to complete the setup feel free to add a comment in the comments below)_.
+For the following, we will use a mix of Azure Bicep and the Azure Portal _(I ran into an Access Key error and PowerShell_ [_issue_](https://github.com/Azure/azure-powershell/issues/10645 "webapp: New-AzWebApp does not set LinuxFxVersion from ContainerImageName"){:target="_blank"} _when attempting to map the share using Bicep and PowerShell - if you managed to complete the setup feel free to add a comment in the comments below)_.
 
 Azure Bicep will be used to create the App Service and Storage account + file share, and then we will use the Azure Portal to complete the setup _(Azure WebApp as a Container and mapping the persistent file share)_.
 
@@ -136,9 +136,10 @@ First, we need to install Azure Bicep and import the Bicep file into Cloud Shell
 
 We will use Nano, copy the Azure Bicep file and Paste it into Nano, and make sure you adjust the parameters to suit your environment before deploying.
 
-1. In the A**zure Cloud Shell**, let us create the file by typing.
+1. In the **Azure Cloud Shell**, let us create the file by typing.
 
        nano AzNamingTool_main.bicep
+
 2. **Paste** the Azure **Bicep file** and do any final edits
 3. Now we need to save the file; press **Ctrl+X** on your keyboard
 4. Press **Y** to save the file
@@ -156,7 +157,7 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
 
 ![Azure Naming Tool - Deploy Azure Bicep resources](/uploads/deployaznamingtoolbicepresources.gif "Azure Naming Tool - Deploy Azure Bicep resources")
 
-AZUREBICEPHERE-77a108f508fe8856fddc47a68891e2de
+{% gist 77a108f508fe8856fddc47a68891e2de %}
 
 Your resources _(App Service, Storage account with File Share)_ should now be deployed, and we can now close our trusty Cloud Shell.
 
@@ -197,7 +198,7 @@ Your resources _(App Service, Storage account with File Share)_ should now be de
 
 By now, your Azure Naming Tool should be accessible,  you don't need to do any of the following, but I recommend them at a bare minimum _(environment and use case depending)_.
 
-###### Enable [**Always On**](https://docs.microsoft.com/en-us/azure/app-service/configure-common?tabs=portal&WT.mc_id=AZ-MVP-5004796 "Configure an App Service app")
+###### Enable [**Always On**](https://docs.microsoft.com/en-us/azure/app-service/configure-common?tabs=portal&WT.mc_id=AZ-MVP-5004796 "Configure an App Service app"){:target="_blank"}
 
 1. In your App Service, select **Configuration**, then **General Settings**
 2. Check **'On**' under 'Always On'
@@ -219,7 +220,7 @@ To open your **Azure Naming Tool**, navigate to your **App Service** and select 
 
 When you open it the first time, you will have the option to create an Admin password, set your Password and select Save; if the Azure File Share wasn't mounted to the Web App - then your Password won't be saved if the App Services crashes or gets reloaded to another node.
 
-![](/uploads/azure-naming-tool.png)
+![Azure Naming Tool](/uploads/azure-naming-tool.png)
 
 Click on **Generate**
 

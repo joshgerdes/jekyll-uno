@@ -230,3 +230,7 @@ You can immediately generate a naming standard out of the box _(and it already c
 If you click **Reference,** you can see the reference criteria that Azure Naming Tool works with generating your Naming schema, for example for ApiManagement APS, we can see that the short name is: API, it supports up to 256 characters but cannot have a '#', and does not need a globally unique name.
 
 ![Azure Naming Tool - Reference API Management](/uploads/azurenamingstandard-referenceapi.png "Azure Naming Tool - Reference API Management")
+
+If you navigate to: **Configuration**, this is where you can specify any Custom changes to suit your Organisation or Organisations _(yes you can use this as a Cloud Architect or Consultant, to generate names of multiple organisations)_. If you don't like the default prefixes for the Resources, Regions, Environment or even Delimiters you can adjust them here.
+
+![Azure Naming Tool - Configuration](/uploads/azurenamingtool-configuration.png "Azure Naming Tool - Configuration")

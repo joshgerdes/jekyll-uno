@@ -100,7 +100,7 @@ Now that we have our Repository, it's time to create our Resource Group and Cont
 1. Log in to the [Microsoft Azure Portal](https://portal.azure.com/#home "Microsoft Azure - Portal"){:target="_blank"} and open up the **Azure Cloud Shell** _(make sure you are in PowerShell (not Bash))._
 2. **Run** the following **commands** to **create** the **Resource Group** and the **Azure Container Registry**:
 
-**Remember to change the name of the Container Registry - this is a globally unique resource, so if someone else has already created a registry with the same name, yours won't deploy**
+**Remember to change the name of the Container Registry - this is a globally unique resource, so if someone else has already created a registry with the same name, yours won't deploy.**
 
        $ResourceGroup = New-AzResourceGroup -Name 'AzNamingTool-PROD-RG' -Location 'Australia East'
        $registry = New-AzContainerRegistry -ResourceGroupName 'AzNamingTool-PROD-RG' -Name "ContainerRegistryAzNamingTool" -EnableAdminUser -Sku Basic

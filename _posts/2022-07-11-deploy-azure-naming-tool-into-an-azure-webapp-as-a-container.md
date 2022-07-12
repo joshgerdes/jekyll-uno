@@ -147,11 +147,13 @@ We will use Nano, copy the Azure Bicep file and Paste it into Nano, and make sur
 
    ![Azure Naming Tool - Create Bicep file](/uploads/createazbicepfile.gif "Azure Naming Tool - Create Bicep file")
 
+**Remember to edit the Azure Bicep parameters, the Resource Names need to be globally unique, so you may run into problems if someone has deployed using the same name!**
+
 {% gist 77a108f508fe8856fddc47a68891e2de %}
 
 ##### Deploy Azure Bicep
 
-Now it's time to create the Azure App Service Plan and Storage account _(remove the -what if flag at the end, when you confirmed there are no errors)_.
+Now it's time to create the Azure App Service Plan and Storage account **_(remove the -what if flag at the end, when you confirmed there are no errors)_**.
 
 1. **Run** the following **command** to deploy the **App Service and Storage** account into your Resource Group:
 

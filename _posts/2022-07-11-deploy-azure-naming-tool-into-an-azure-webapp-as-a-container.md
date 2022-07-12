@@ -155,7 +155,7 @@ Now it's time to create the Azure App Service Plan and Storage account _(remove 
 
 1. **Run** the following **command** to deploy the **App Service and Storage** account into your Resource Group:
 
-       New-AzResourceGroupDeployment -Name 'AzNamingTool-WebApp' -ResourceGroupName 'AzNamingTool-PROD-RG' -TemplateFile .\AzNamingTool.bicep -WhatIf
+       New-AzResourceGroupDeployment -Name 'AzNamingTool-WebApp' -ResourceGroupName 'AzNamingTool-PROD-RG' -TemplateFile .\AzNamingTool_main.bicep -WhatIf
 
 ![Azure Naming Tool - Deploy Azure Bicep resources](/uploads/deployaznamingtoolbicepresources.gif "Azure Naming Tool - Deploy Azure Bicep resources")
 

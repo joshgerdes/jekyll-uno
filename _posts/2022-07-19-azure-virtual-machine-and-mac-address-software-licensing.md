@@ -45,4 +45,4 @@ You can also use Device Manager to check and update the MAC address:
 6. Reboot your computer to enable the changes.
 7. Check that the changes took effect.
 
-> Finally - make sure you document this MAC address somewhere with the reasons WHY the change was made. You can also Tag the secondary MAC address in Azure with Notes, such as the Reason why it exists, who created it etc.
+> Finally - make sure you document this MAC address somewhere with the reasons WHY the change was made. You can also Tag the secondary MAC address in Azure with notes, such as the reason why it exists, who created it etc.

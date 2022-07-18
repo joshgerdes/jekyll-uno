@@ -84,4 +84,5 @@ pages:
 - _posts/2022-07-06-migrating-resources-between-regions-using-azure-resource-mover.md
 - _posts/2022-07-10-add-custom-dns-servers-and-set-azure-point-to-site-vpn-to-connect-automatically.md
 - _posts/2022-07-11-deploy-azure-naming-tool-into-an-azure-webapp-as-a-container.md
+- _posts/azure-virtual-machine-and-mac-address-software-licensing.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: images/iazure-marketplace-banner.png
 
 ---
 You may need an Azure Virtual Machine to install or license software bound to a media access control address _(MAC address)_.
@@ -17,11 +17,11 @@ In Microsoft Azure, you can make changes to the Primary Network interface; these
 
 This causes issues when the software is licensed to a specific MAC address; you could reissue the license to the new MAC address OR create a Secondary Interface in Microsoft Azure and update the MAC address on the secondary network interface.
 
-You can easily [create a new Network Interface](https://docs.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id=AZ-MVP-5004796#network-interfaces "Network interfaces") from the Azure Portal and then attach it to the Virtual Machine (_the virtual machine needs to be off to allow the NIC to be attached)_.
+You can easily [create a new Network Interface](https://docs.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id=AZ-MVP-5004796#network-interfaces "Network interfaces"){:target="_blank"} from the Azure Portal and then attach it to the Virtual Machine (_the virtual machine needs to be off to allow the NIC to be attached)_.
 
 ##### Change Network Adapter MAC using PowerShell
 
-Once the NIC is created and attached, run the following PowerShell command in the Azure Virtual Virtual machine _(assuming this is a Windows OS, but the same process should work for_ [_Linux_](https://www.linuxshelltips.com/change-mac-address-linux/ "How to Change Network MAC Address in Linux")_)_:
+Once the NIC is created and attached, run the following PowerShell command in the Azure Virtual Virtual machine _(assuming this is a Windows OS, but the same process should work for_ [_Linux_](https://www.linuxshelltips.com/change-mac-address-linux/ "How to Change Network MAC Address in Linux"){:target="_blank"}_)_:
 
     Get-NetAdapter
 

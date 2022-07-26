@@ -11,7 +11,7 @@ header:
 ---
 > **Error code**: AllocationFailed or ZonalAllocationFailed
 >
-> **Error message**: "Allocation failed. We do not have sufficient capacity for the requested VM size in this region. Read more about improving likelihood of allocation success at [https://aka.ms/allocation-guidance](https://aka.ms/allocation-guidance?WT.mc_id=AZ-MVP-5004796 "https://aka.ms/allocation-guidance")"
+> **Error message**: "Allocation failed. We do not have sufficient capacity for the requested VM size in this region. Read more about improving likelihood of allocation success at [https://aka.ms/allocation-guidance](https://aka.ms/allocation-guidance?WT.mc_id=AZ-MVP-5004796 "https://aka.ms/allocation-guidance"){:target="_blank"}"
 
 When you create a virtual machine _(VM)_, start stopped _(deallocated)_ VMs, or resize a VM, Microsoft Azure allocates compute resources to your subscription.
 
@@ -28,13 +28,13 @@ Microsoft is continually investing in additional infrastructure and features to 
 * Take note of the Region
 * Take note of the Availability Zone.
 
-Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure Support") know; that Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
+Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure Support"){:target="_blank"} know; that Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
 
 ##### Purchase On-demand Capacity Reservation
 
 On-demand Capacity Reservation enables you to reserve Compute capacity in an Azure region or an Availability Zone for any duration of time. 
 
-Unlike [Reserved Instances](https://azure.microsoft.com/en-us/pricing/reserved-vm-instances/?WT.mc_id=AZ-MVP-5004796 "Reserved Instances"), you do not have to sign up for a 1-year or a 3-year term commitment.
+Unlike [Reserved Instances](https://azure.microsoft.com/en-us/pricing/reserved-vm-instances/?WT.mc_id=AZ-MVP-5004796 "Reserved Instances"){:target="_blank"}, you do not have to sign up for a 1-year or a 3-year term commitment.
 
 Once the Capacity Reservation is created, the capacity is available immediately and is exclusively reserved for your use until the reservation is deleted.
 
@@ -59,13 +59,13 @@ Make sure your Virtual Machine is not in a Proximtry or Avalibility Group and do
 
 ##### Change the Virtual Machine version.
 
-By version, I don't mean [Generation 1 and Generation 2](https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2?WT.mc_id=AZ-MVP-5004796#features-and-capabilities "Generation 1 vs. generation 2 features") Virtual Machines; I mean the version of underlying Compute; when you look at a VM SKU size, you will see:
+By version, I don't mean [Generation 1 and Generation 2](https://docs.microsoft.com/en-us/azure/virtual-machines/generation-2?WT.mc_id=AZ-MVP-5004796#features-and-capabilities "Generation 1 vs. generation 2 features"){:target="_blank"} Virtual Machines; I mean the version of underlying Compute; when you look at a VM SKU size, you will see:
 
 > Standard_DC24s_**v3**
 >
 > \[Family\] + _\[Sub-family\]_* + \[# of vCPUs\] + _\[Constrained vCPUs\]_* + \[Additive Features\] + _\[Accelerator Type\]_* + **\[Version\]**
 
-You can read more about Virtual Machine Naming conversions "[here](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions?WT.mc_id=AZ-MVP-5004796 "Azure virtual machine sizes naming conventions")".
+You can read more about Virtual Machine Naming conversions "[here](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions?WT.mc_id=AZ-MVP-5004796 "Azure virtual machine sizes naming conventions"){:target="_blank"}".
 
 The version of the VM series links to the underlying hardware associated with the Virtual Machine series; with most new hardware releases, the version changes; an example is: from v3 to v4. 
 

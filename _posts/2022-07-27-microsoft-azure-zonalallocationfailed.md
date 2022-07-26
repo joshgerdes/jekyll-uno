@@ -73,6 +73,6 @@ Microsoft may run a promotion on the pricing for early adopters to move to the n
 
 1. You can change the version of the SKU by looking in the Azure Portal, Sizing, and you should be able to see other versions of the same SKU; if you are at v5, try resizing to v4 - or the other way around. 
 
-Keep in mind that changing the VM SKU will force the Virtual Machine to deallocate _(stop)_, as it triggers ARM to stand up the Virtual Machine on different server clusters/hardware.
+Remember that changing the VM SKU will force the Virtual Machine to deallocate _(stop)_, as it triggers ARM to stand up the Virtual Machine on different server clusters/hardware.
 
 I have found that there are no noticeable decreases in performance for most workloads, but keep in mind you may be returning on older hardware - but it should get you going, and then you can update the SKU to the latest version later.

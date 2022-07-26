@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/zonalallocationfailed.png"
 
 ---
 > **Error code**: AllocationFailed or ZonalAllocationFailed

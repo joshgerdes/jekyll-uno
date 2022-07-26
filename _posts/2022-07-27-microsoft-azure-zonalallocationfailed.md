@@ -4,7 +4,7 @@ title: 'Microsoft Azure - ZonalAllocationFailed '
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: "/uploads/zonalallocationfailed.png"
 

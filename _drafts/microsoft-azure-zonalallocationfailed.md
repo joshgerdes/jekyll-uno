@@ -46,3 +46,15 @@ So why would you purchase On-demand Capacity reservations?
 
 * You are operating Azure workloads that scale out and run off a fresh image, like a Citrix farm and want to ensure the capacity is available for the minimum workloads you need.
 * You have a project coming up where you need the capacity to be available.
+
+##### Redeploy to another Availability Zone
+
+The server cluster that ARM (Azure Resource Manager) attempted to deploy your workload may not have the necessary capacity, but another Availability Zone _(datacenter)_ might.
+
+Make sure your Virtual Machine is not in a Proximtry or Avalibility Group and do the following.
+
+1. Take note of the Availability Zone that your deployment failed _(i.e. Availability Zone 1)_
+2. Remove any resources that may have been created as part of the original failed deployment
+3. Redeploy your workload and select another Availability Zone, such as _(2 - if your failed deployment was in Zone 1)_
+
+##### Change Virtual Machine generation

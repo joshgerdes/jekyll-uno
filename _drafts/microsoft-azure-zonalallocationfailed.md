@@ -28,6 +28,21 @@ Microsoft is continually investing in additional infrastructure and features to 
 * Take note of the Region
 * Take note of the Availability Zone.
 
-Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure support") know; that Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
+Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure Support") know; that Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
 
-In the meantime, here are some things to try to get going.
+##### Purchase On-demand Capacity Reservation
+
+On-demand Capacity Reservation enables you to reserve Compute capacity in an Azure region or an Availability Zone for any duration of time. 
+
+Unlike [Reserved Instances](https://azure.microsoft.com/en-us/pricing/reserved-vm-instances/?WT.mc_id=AZ-MVP-5004796 "Reserved Instances"), you do not have to sign up for a 1-year or a 3-year term commitment.
+
+Once the Capacity Reservation is created, the capacity is available immediately and is exclusively reserved for your use until the reservation is deleted.
+
+Capacity Reservations are priced at the same rate as the underlying VM size. 
+
+For example, if you create a reservation for the D2s_v3 VMs, you will start getting billed for the D2s_v3 VMs, even if the reservation is not being used.
+
+So why would you purchase On-demand Capacity reservations?
+
+* You are operating Azure workloads that scale out and run off a fresh image, like a Citrix farm and want to ensure the capacity is available for the minimum workloads you need.
+* You have a project coming up where you need the capacity to be available.

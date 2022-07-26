@@ -19,15 +19,15 @@ When you create a virtual machine _(VM)_, start stopped _(deallocated)_ VMs, or 
 
 Microsoft is continually investing in additional infrastructure and features to ensure that they always have all VM types available to support customer demand. However, you may occasionally experience resource allocation failures because of unprecedented growth in demand for Azure services in specific regions.
 
-**Waiting for more Compute to be added to the Azure server clusters may not be an option, so what can you do?**
+#### **Waiting for more Compute to be added to the Azure server clusters may not be an option, so what can you do?**
 
-The first thing is to:
+##### Raise a Support Case
 
 * Take a screenshot of the error
 * Copy the Activity/Deployment ID
 * Take note of the Region
 * Take note of the Availability Zone.
 
-Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure support") know; Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
+Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5004796 " Azure support") know; that Microsoft may already be aware, but raising a support request helps identify potentially impacted customers. If you know of other SKUs you need to deploy, you can let them know.
 
 In the meantime, here are some things to try to get going.

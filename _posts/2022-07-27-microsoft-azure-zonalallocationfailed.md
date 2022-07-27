@@ -32,7 +32,7 @@ Let [Azure Support](https://azure.microsoft.com/en-us/support/?WT.mc_id=AZ-MVP-5
 
 ##### Purchase On-demand Capacity Reservation
 
-On-demand Capacity Reservation enables you to reserve Compute capacity in an Azure region or an Availability Zone for any duration of time. 
+[On-demand Capacity Reservation](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview?WT.mc_id=AZ-MVP-5004796 "On-demand Capacity Reservation"){:target="_blank"} enables you to reserve Compute capacity in an Azure region or an Availability Zone for any duration of time. 
 
 Unlike [Reserved Instances](https://azure.microsoft.com/en-us/pricing/reserved-vm-instances/?WT.mc_id=AZ-MVP-5004796 "Reserved Instances"){:target="_blank"}, you do not have to sign up for a 1-year or a 3-year term commitment.
 

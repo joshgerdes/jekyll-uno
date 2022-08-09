@@ -188,4 +188,4 @@ Now that you have all your CSV files containing the Public Holidays in your coun
 
 ![Validate Azure Storage Account Table](/uploads/import-csvtoazuretablesvalidate.gif "Validate Azure Storage Account Table")
 
-Now the 
+Now the Public Holidays are imported into the Azure storage account table with additional information, such as the Day it falls, and the Date format has been changed to suit NZ format _(DD-MM-YYYY)_. If we log in to the Azure Portal, navigate to the Storage account and under Storage Browser, we can now see our table is full of data.

@@ -43,7 +43,7 @@ The deployment steps will be separated into different sections to help simplify 
 
 > First, make sure you adjust the names of your resources and locations to suit your naming conventions and regional locations _(such as Australia East or West Europe)_. Your deployments may fail if a name is already in use. See "[Microsoft Azure Naming Conventions](https://luke.geek.nz/azure/microsoft-azure-naming-conventions/ "Microsoft Azure Naming Conventions ")" for more about Naming conventions.
 
-### Create Resource Group
+#### Create Resource Group
 
 The Resource Group will contain all resources related to the API that we will deploy today.
 
@@ -65,7 +65,7 @@ If you prefer PowerShell, you can deploy a new Resource Group with the below:
 
     New-AzResourceGroup -Name 'rg-publicholidays-prd-ae' -Location 'Australia East' -Tag @{Application="Public Holidays API"}
 
-### Create Storage Account
+#### Create Storage Account
 
 Now that the Resource Group has been created, it's time to import our Storage Account - which will hold our Table of data around Public Holidays.
 
@@ -84,7 +84,9 @@ If you prefer PowerShell, you can deploy a new Storage account with the below:
 
     New-AzStorageAccount -ResourceGroupName 'rg-publicholidays-prd-ae' -Name 'funcnzpublicholidaystgac' -Location 'Australia East' -SkuName 'Standard_LRS' -Kind StorageV2
 
-### Import Public Holiday data
+#### Import Public Holiday data
+
+##### Create Azure Storage Account Table
 
 Now that we have the Storage account that will hold our Public Holiday time to import the data. Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
 

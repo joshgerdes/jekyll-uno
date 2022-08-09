@@ -88,7 +88,7 @@ If you prefer PowerShell, you can deploy a new Storage account with the below:
 
 ##### Create Azure Storage Account Table
 
-Now that we have the Storage account that will hold our Public Holiday time to import the data. 
+Now that we have the Storage account that will hold our Public Holiday time to import the data.
 
 Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
 
@@ -189,7 +189,7 @@ Now that you have all your CSV files containing the Public Holidays in your Coun
 
 ![Validate Azure Storage Account Table](/uploads/import-csvtoazuretablesvalidate.gif "Validate Azure Storage Account Table")
 
-Now the Public Holidays are imported into the Azure storage account table with additional information, such as the Day it falls, and the Date format has been changed to suit NZ format _(DD-MM-YYYY)_. 
+Now the Public Holidays are imported into the Azure storage account table with additional information, such as the Day it falls, and the Date format has been changed to suit NZ format _(DD-MM-YYYY)_.
 
 If we log in to the Azure Portal, navigate to the Storage account and under Storage Browser, we can now see our Table is full of Public Holidays.
 
@@ -265,5 +265,4 @@ The Azure function app will rely on a few PowerShell Modules; for the FunctionAp
            'Az.Storage'  = '4.*'
            'AzTable'     = '2.*'
        }
-       
-5. Click Save
+5. Click **Save**

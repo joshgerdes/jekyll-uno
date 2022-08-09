@@ -115,6 +115,10 @@ If you want to do this manually, the Azure table will have the following columns
 | --- | --- | --- | --- | --- | --- | --- |
 | Date | Country | Type | Name | Day | Year | Comments |
 
-We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. 
+We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries.  You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference. 
 
-To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue.
+To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue. 
+
+I have created a CSV _(Comma-separated values)_ file with a list of countries _(i.e. US, NZ, AU)_ called 'SourceTimeDate.CSV', but you can adjust this to suit your requirements and placed it in a folder on my C:\\ drive called: Temp.
+
+1.  Open Visual Studio Code, or PowerShell ISE and

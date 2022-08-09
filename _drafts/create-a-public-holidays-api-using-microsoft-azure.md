@@ -42,3 +42,5 @@ We will use a mix of the Azure Portal and PowerShell to deploy this solution fro
 The deployment steps will be separated into different sections to help simplify implementation. 
 
 > First, make sure you adjust the names of your resources and locations to suit your naming conventions and regional locations _(such as Australia East or West Europe)_. Your deployments may fail if a name is already in use. See "[Microsoft Azure Naming Conventions](https://luke.geek.nz/azure/microsoft-azure-naming-conventions/ "Microsoft Azure Naming Conventions ")" for more about Naming conventions.
+
+### Create Resource Group

@@ -139,4 +139,15 @@ Once you have all the CSV files for your Public Holidays and before we import th
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure table. Using a PowerShell session that is logged into Azure, let us import the data.
+Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure table. Let us import the data using a PowerShell session that is logged into Azure.
+
+    # Imports Public Holiday into Azure Storage table
+    # Requires AzTable Module (not part of the normal Az cmdlets)
+    Import-Module AzTable
+    
+    #Imports data from CSV files into $GLobalHolidays variable
+    $GlobalHolidays = Get-ChildItem "$Folder\DateTimeSource\*.csv" | Foreach-Object {
+      $basename = $_.BaseName
+      import-csv $_ 
+    }
+    

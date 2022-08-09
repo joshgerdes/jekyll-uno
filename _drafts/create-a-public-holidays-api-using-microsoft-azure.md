@@ -236,8 +236,14 @@ Now that the Function App has been created before creating the GetPublicHoliday 
 
 Next, we need to give the Function App the ability to read the Azure storage account. To do this, we need to configure a System assigned managed identity.
 
-1. Navigate to your Azure Function
-2. Click **Identity**
-3. Under the System assigned heading, toggle the status to **On**
-4. Click **Save**
-5. Select **Yes**, to enable the System assigned managed identity
+ 1. Navigate to your Azure Function
+ 2. Click **Identity**
+ 3. Under the System assigned heading, toggle the status to **On**
+ 4. Click **Save**
+ 5. Select **Yes**, to enable the System assigned managed identity
+ 6. Under Permissions, click **Azure role assignments**
+ 7. Click **+ Add role assignment**
+ 8. For Scope, select **Storage**
+ 9. Select your Subscription and storage account containing your Public Holiday data
+10. For role, select: **Storage Table Data Reader**
+11. Click **Save**

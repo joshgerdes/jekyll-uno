@@ -210,12 +210,12 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
  7. For Runtime Stack, select **PowerShell Core**
  8. Select the latest version (at this time, it's **7.2**)
  9. Select your **Region**
-10. Select **Linux** _(or Windows - it doesn't matter)_
+10. Select **Windows**
 11. Set your **Plan** _(in my example, its Consumption (Serverless))_
 12. Click **Review + Create**
 13. Click **Create**
 
-![Azure Function - Create](/uploads/azureportal_createazfunctionapi.png "Azure Function - Create")
+![Azure Function - Create](/uploads/azureportal_createazfunctionapiwin.png "Azure Function - Create")
 
 ##### Configure Environment Variables
 

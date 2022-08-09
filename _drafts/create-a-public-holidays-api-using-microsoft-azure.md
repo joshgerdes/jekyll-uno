@@ -245,7 +245,7 @@ Next, we need to give the Function App the ability to read the Azure storage acc
  7. Click **+ Add role assignment**
  8. For Scope, select **Storage**
  9. Select your Subscription and storage account containing your Public Holiday data
-10. For role, select: **Storage Table Data Reader**
+10. For role, select **Contributor** _(Storage Table Data Reader is not enough)._
 11. Click **Save**
 
 ##### Configure Requirements
@@ -311,7 +311,7 @@ Now that the Function App has been configured, it is time to create our Function
        $tableName = 'PublicHolidays'
        
        $ClientIP = $Request.Headers."x-forwarded-for".Split(":")[0]
-       
+       Import-Module AzTable
        try {   
            
          $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName

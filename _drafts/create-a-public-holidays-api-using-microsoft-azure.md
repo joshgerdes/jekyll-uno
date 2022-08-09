@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/azureportal_storagebrowser_api_table.png"
 
 ---
 Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/tomation "Turn on a Azure Virtual Machine using Azure Automation ") I did on using a third-party API _(Application Programming Interface)_ to start a Virtual Machine when it wasn't a Public Holiday, I had a thought on what could be an option if I wanted an API only accessible on an internal network or if I wanted to include custom Holidays such as Star Wars day or company holidays? And could I create and query my API using Microsoft Azure services? You can!
@@ -398,7 +398,7 @@ Congratulations! You have now created a Public Holiday API that you can call for
 
 ##### Configure Azure API Management
 
-Now that the Function App is responding to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). 
+Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers cache functionality.
 
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. **Navigate** to your **Azure Function**
@@ -411,5 +411,5 @@ Now that the Function App is responding to requests, we can expose the HTTP endp
 
 ![](/uploads/azureportal_createapimanagement.png)
 
- 9. Wait for 10 minutes to half an hour for provisioning to take place, and Azure API Management will be in an activating state.
-10. 
+1. Wait for 10 minutes to half an hour for provisioning to take place, and Azure API Management will be in an activating state.
+2. 

@@ -282,4 +282,5 @@ Now that the Function App has been configured, it is time to create our Function
 
 ![Create Azure Function App](/uploads/azureportal_createfunctionpublicholidays.png "Create Azure Function App")
 
-1s
+1. Click **Code + Test**
+2. 

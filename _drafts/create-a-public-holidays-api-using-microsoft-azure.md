@@ -179,3 +179,10 @@ Now that you have all your CSV files containing the Public Holidays in your coun
       -rowKey ((++$counter)) -property @{"Date"=$HolidayDate;"Country"=$Holiday.CountryCode;"Type"=$Holiday.Type;"Name"=$Holiday.LocalName;"Day"=$Dayofweek;"Year"=$Year;"Comments"=$Holiday.Counties}
     
     }
+    
+    #Validate the data in the Storage table
+    Get-AzTableRow -table $cloudTable
+
+![Import CSV to Azure Storage Account](/uploads/import-csvtoazuretables.gif "Import CSV to Azure Storage Account")
+
+![Validate Azure Storage Account Table](/uploads/import-csvtoazuretablesvalidate.gif "Validate Azure Storage Account Table")

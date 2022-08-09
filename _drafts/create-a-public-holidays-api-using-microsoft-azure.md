@@ -61,6 +61,10 @@ _However, I recommend you consider what resources might be shared outside of thi
 
 ![Create a resource group](/uploads/azureportal_creatergapi.png "Create a resource group")
 
+If you prefer PowerShell, you can deploy a new Resource Group with the below:
+
+    New-AzResourceGroup -Name 'rg-publicholidays-prd-ae' -Location 'Australia East' -Tag @{Application="Public Holidays API"}
+
 ### Create Storage Account
 
 Now that the Resource Group

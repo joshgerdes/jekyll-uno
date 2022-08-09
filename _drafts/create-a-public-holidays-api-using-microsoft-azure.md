@@ -76,7 +76,7 @@ Now that the Resource Group has been created, it's time to import our Storage Ac
  5. Enter in a **Name** for your **Storage Account** (_like 'funcnzpublicholidaystgac')_
  6. Select your **Region** _(i.e. Australia East)_
  7. For **Performance**, I am going to select: **Standard**
- 8. For **Redundancy**, as this is a demo, I will select **Locally-redundant storage (LRS). If** you plan on running this in production, you may consider ZRS for zone redundancy.
+ 8. For **Redundancy**, as this is a demo, I will select **Locally-redundant storage (LRS). However, if** you plan on running this in production, you may consider ZRS for zone redundancy.
  9. If you plan on locking down the Storage Account to your Virtual Network or specific IP addresses, continue to the Networking Tab; we can accept the defaults and click: **Review**.
 10. Click **Create**
 
@@ -88,7 +88,9 @@ If you prefer PowerShell, you can deploy a new Storage account with the below:
 
 ##### Create Azure Storage Account Table
 
-Now that we have the Storage account that will hold our Public Holiday time to import the data. Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
+Now that we have the Storage account that will hold our Public Holiday time to import the data. 
+
+Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
 
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts")
@@ -106,7 +108,7 @@ You can use PowerShell to create the Table below:
     $storageContext = $storageAccount.Context
     New-AzStorageTable -Name 'PublicHolidays' -Context $storageContext
 
-##### Import Public Holiday Demo Data
+##### Import Public Holiday Data into Table
 
 Now that we have the Azure storage account and PublicHolidays table, it's time to import the data.
 
@@ -193,10 +195,12 @@ If we log in to the Azure Portal, navigate to the Storage account and under Stor
 
 ![](/uploads/azureportal_storagebrowser_api_table.png)
 
-#### Create Azure Function
+#### Create API
 
 That we have our Table with Public Holiday data, it's time to create our Azure Function to act as the API that will talk to the azure storage account!
 
-##### Create Azure Storage Account Table
+##### Create Azure Function
 
-Now tg
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
+3. 

@@ -219,4 +219,10 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
 
 ##### Configure Environment Variables
 
-Now that the Function App has been created before creating the GetPublicHoliday function, we need to add a few environment variables.
+Now that the Function App has been created before creating the GetPublicHoliday function, we need to add a few environment variables that the Function will use; these variables will contain the ResourceGroup and Storage account name.
+
+1. Navigate to your Azure Function
+2. Click **Configuration**
+3. Click **+ New application setting**
+4. 
+5. 

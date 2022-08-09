@@ -47,7 +47,7 @@ The deployment steps will be separated into different sections to help simplify 
 
 The Resource Group will contain all resources related to the API that we will deploy today.
 
-_However, I recommend you consider what resources might be shared outside of this API - such as API Management, and put them in a separate Shared or Common Resource Group, to keep the lifecycle of your resources together (ie API resources all in one place, so if it gets decommissioned, it is as easy a deleting the Resource Group)._
+_However, I recommend you consider what resources might be shared outside of this API - such as API Management, and put them in a separate Shared or Common Resource Group, to keep the li.e.ecycle of your resources together (ie API resources all in one place, so if it gets decommissioned, it is as easy a deleting the Resource Group)._
 
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource Groups")
@@ -221,7 +221,7 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
 
 Now that the Function App has been created before creating the GetPublicHoliday function, we need to add a few environment variables that the Function will use; these variables will contain the ResourceGroup and Storage account name.
 
-1. Navigate to your Azure Function
+1. **Navigate** to your **Azure Function**
 2. Click **Configuration**
 3. Click **+ New application setting**
 4. Under the name, add: **PublicHolidayRESOURCEGROUPNAME**
@@ -236,7 +236,7 @@ Now that the Function App has been created before creating the GetPublicHoliday 
 
 Next, we need to give the Function App the ability to read the Azure storage account. To do this, we need to configure a System assigned managed identity.
 
- 1. Navigate to your Azure Function
+ 1. **Navigate** to your **Azure Function**
  2. Click **Identity**
  3. Under the System assigned heading, toggle the status to **On**
  4. Click **Save**
@@ -250,4 +250,7 @@ Next, we need to give the Function App the ability to read the Azure storage acc
 
 ##### Setup GetPublicHoliday Function
 
-Now that the groundwork is done, its time to create our Function!
+Now that the groundwork is done, it's time to create our Function!
+
+1. **Navigate** to your **Azure Function**
+2. Click **Identity**

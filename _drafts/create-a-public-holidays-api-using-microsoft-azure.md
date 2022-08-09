@@ -115,10 +115,22 @@ If you want to do this manually, the Azure table will have the following columns
 | --- | --- | --- | --- | --- | --- | --- |
 | Date | Country | Type | Name | Day | Year | Comments |
 
-We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries.  You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference. 
+We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference. 
 
 To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue. 
 
-I have created a CSV _(Comma-separated values)_ file with a list of countries _(i.e. US, NZ, AU)_ called 'SourceTimeDate.CSV', but you can adjust this to suit your requirements and placed it in a folder on my C:\\ drive called: Temp.
+I have created a CSV _(Comma-separated values)_ file with a list of countries _(i.e. US, NZ, AU)_ called 'SourceTimeDate.CSV', but you can adjust this to suit your requirements and place it in a folder on my C:\\ drive called: Temp\\API.
 
-1.  Open Visual Studio Code, or PowerShell ISE and
+1.  Open **PowerShell** and **run** the following: 
+
+    $Folder = 'C:\Temp\API\'
+    $Csv = Import-csv "$Folder\DateTimeSource\SourceTimeDate.csv"
+    $CurrentYear = (Get-Date).Year
+    
+       ForEach ($Country in $Csv)
+      {
+    $CountryCode = $Country.Country
+    Invoke-WebRequest -Uri "https://date.nager.at/PublicHoliday/Country/$CountryCode/$CurrentYear/CSV" -OutFile "$FolderAPI\DateTimeSource\Country$CountryCode$CurrentYear.csv" 
+    }
+
+These cmdlets will download a bunch of CSV files into the API folder, with the Public Holidays for each Country for this year, and then you can adjust the $CurrentYear variable for future years _(i.e. 2025)_.

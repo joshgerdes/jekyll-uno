@@ -224,5 +224,10 @@ Now that the Function App has been created before creating the GetPublicHoliday 
 1. Navigate to your Azure Function
 2. Click **Configuration**
 3. Click **+ New application setting**
-4. 
-5. 
+4. Under the name, add: **PublicHolidayRESOURCEGROUPNAME**
+5. For value, type in the name of your resource group.
+6. Add a second application setting named: **PublicHolidaySTORAGEACCNAME**
+7. For value, type in the name of your storage account that contains the Public Holiday table.
+8. Click **Save** _(to save the variables)_.
+
+![Azure Function - Variables](/uploads/azureportal_funcapp_api_variables.png "Azure Function - Variables")

@@ -366,3 +366,4 @@ Now that the Function App has been configured, it is time to create our Function
       }
     )
     
+2. Copy sd

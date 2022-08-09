@@ -121,7 +121,7 @@ To do this, we will need PowerShell, so assuming you have logged into PowerShell
 
 I have created a CSV _(Comma-separated values)_ file with a list of countries _(i.e. US, NZ, AU)_ called 'SourceTimeDate.CSV', but you can adjust this to suit your requirements and place it in a folder on my C:\\ drive called: Temp\\API.
 
-1.  Open **PowerShell** and **run** the following: 
+Open **PowerShell** and **run** the following: 
 
     $Folder = 'C:\Temp\API\'
     $Csv = Import-csv "$Folder\DateTimeSource\SourceTimeDate.csv"
@@ -139,4 +139,4 @@ Once you have all the CSV files for your Public Holidays and before we import th
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-.
+Now that you have all your Public Holidays for your countries

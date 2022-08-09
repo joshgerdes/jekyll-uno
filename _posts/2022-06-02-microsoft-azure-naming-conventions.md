@@ -21,6 +21,7 @@ There's no one size fits all to Azure naming conventions, it needs to suit your 
 
 * [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules?WT.mc_id=AZ-MVP-5004796 "Naming rules and restrictions for Azure resources"){:target="_blank"}
 * [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming?WT.mc_id=AZ-MVP-5004796 "Define your naming convention"){:target="_blank"}
+* [Deploy Azure Naming Tool into an Azure WebApp as a container](https://luke.geek.nz/azure/deploy-azure-naming-tool-into-an-azure-webapp-as-a-container/) "Deploy Azure Naming Tool into an Azure WebApp as a container"){:target="_blank"}
 
 The use of these limitations and scopes have been used to determine the following naming conventions across associated resources.
 

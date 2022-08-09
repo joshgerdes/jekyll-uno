@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09 00:00:00 +1200
+date: 2022-08-09T00:00:00.000+12:00
 title: Create a Public Holidays API using Microsoft Azure
 author: Luke
 categories:
@@ -39,4 +39,6 @@ We will use a mix of the Azure Portal and PowerShell to deploy this solution fro
 
 ### Deployment
 
-The deployment steps will be separated into different sections to help simplify implementation. Make sure you adjust the names of your resources and locations to suit your naming conventions and regional locations _(such as Australia East or West Europe)_. Your deployments may fail if a name has already been used.
+The deployment steps will be separated into different sections to help simplify implementation. 
+
+> First, make sure you adjust the names of your resources and locations to suit your naming conventions and regional locations _(such as Australia East or West Europe)_. Your deployments may fail if a name is already in use. See "[Microsoft Azure Naming Conventions](https://luke.geek.nz/azure/microsoft-azure-naming-conventions/ "Microsoft Azure Naming Conventions ")" for more about Naming conventions.

@@ -106,7 +106,7 @@ You can use PowerShell to create the Table below:
     $storageContext = $storageAccount.Context
     New-AzStorageTable -Name 'PublicHolidays' -Context $storageContext
 
-##### Import Public Holiday Data
+##### Import Public Holiday Demo Data
 
 Now that we have the Azure storage account and PublicHolidays table, it's time to import the data.
 
@@ -138,7 +138,7 @@ Once you have all the CSV files for your Public Holidays and before we import th
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-Now that you have all your CSV files containing the Public Holidays in your Country or countries, now it's time to import them into the Azure Table. First, let us import the data using a PowerShell session logged into Azure.
+Now that you have all your CSV files containing the Public Holidays in your Country or countries, it's time to import them into the Azure Table. First, we import the data using a PowerShell session logged into Azure.
 
     # Imports Public Holiday into Azure Storage table
     # Requires AzTable Module (not part of the normal Az cmdlets)
@@ -195,7 +195,7 @@ If we log in to the Azure Portal, navigate to the Storage account and under Stor
 
 #### Create Azure Function
 
-That we have our Table with Public Holiday data, its time to create our Azure Function to act as the API that will talk to the 
+That we have our Table with Public Holiday data, it's time to create our Azure Function to act as the API that will talk to the azure storage account!
 
 ##### Create Azure Storage Account Table
 

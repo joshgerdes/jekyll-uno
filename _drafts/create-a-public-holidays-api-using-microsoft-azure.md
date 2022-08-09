@@ -231,3 +231,12 @@ Now that the Function App has been created before creating the GetPublicHoliday 
 8. Click **Save** _(to save the variables)_.
 
 ![Azure Function - Variables](/uploads/azureportal_funcapp_api_variables.png "Azure Function - Variables")
+
+##### Configure Managed Identity
+
+Next, we need to give the Function App the ability to read the Azure storage account. To do this, we need to configure a System assigned managed identity.
+
+1. Navigate to your Azure Function
+2. Click **Identity**
+3. Under the System assigned, heading toggle the status to: **On**
+4. Click **Save**

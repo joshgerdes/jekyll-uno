@@ -290,7 +290,8 @@ Now that the Function App has been configured, it is time to create our Function
     2. Read the body of the request.
     3. Write to the Azure Functions log stream.
     4. Interact with query parameters or the body of the request.
-    5. Associate values to output bindings by calling 'Push-OutputBinding'. #>
+    5. Associate values to output bindings by calling 'Push-OutputBinding'. 
+    https://luke.geek.nz/ #>
     
     using namespace System.Net
     

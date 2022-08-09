@@ -100,7 +100,7 @@ Now that we have the Storage account that will hold our Public Holiday time to i
 
 ![Create Azure Storage Account Table](/uploads/azureportal_createpublicholidaystable.png "Create Azure Storage Account Table")
 
-You can use PowerShell to create the table below:
+You can use PowerShell to create the Table below:
 
     $storageAccount = Get-AzStorageAccount -ResourceGroupName 'rg-publicholidays-prd-ae' -Name 'funcnzpublicholidaystgac'
     $storageContext = $storageAccount.Context
@@ -110,7 +110,7 @@ You can use PowerShell to create the table below:
 
 Now that we have the Azure storage account and PublicHolidays table, it's time to import the data.
 
-If you want to do this manually, the Azure table will have the following columns:
+If you want to do this manually, the Azure Table will have the following columns:
 
 | --- | --- | --- | --- | --- | --- | --- |
 | Date | Country | Type | Name | Day | Year | Comments |
@@ -139,7 +139,7 @@ Once you have all the CSV files for your Public Holidays and before we import th
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure table. Let us import the data using a PowerShell session that is logged into Azure.
+Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure Table. Let us import the data using a PowerShell session that is logged into Azure.
 
     # Imports Public Holiday into Azure Storage table
     # Requires AzTable Module (not part of the normal Az cmdlets)
@@ -180,9 +180,12 @@ Now that you have all your CSV files containing the Public Holidays in your coun
     
     }
     
+    
     #Validate the data in the Storage table
     Get-AzTableRow -table $cloudTable
 
 ![Import CSV to Azure Storage Account](/uploads/import-csvtoazuretables.gif "Import CSV to Azure Storage Account")
 
 ![Validate Azure Storage Account Table](/uploads/import-csvtoazuretablesvalidate.gif "Validate Azure Storage Account Table")
+
+Now the 

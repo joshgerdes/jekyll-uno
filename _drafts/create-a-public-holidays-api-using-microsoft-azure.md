@@ -134,3 +134,9 @@ I have created a CSV _(Comma-separated values)_ file with a list of countries _(
     }
 
 These cmdlets will download a bunch of CSV files into the API folder, with the Public Holidays for each Country for this year, and then you can adjust the $CurrentYear variable for future years _(i.e. 2025)_.
+
+Once you have all the CSV files for your Public Holidays and before we import the data into the Azure storage table, now is the time to create a new Custom Holidays CSV; you can easily use an existing one to create a new CSV containing your company's public holidays or other days that may be missing from the normal list, make sure it matches the correct format and save it into the same folder. 
+
+![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
+
+.

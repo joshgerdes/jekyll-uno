@@ -139,4 +139,4 @@ Once you have all the CSV files for your Public Holidays and before we import th
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-Now that you have all your Public Holidays for your countries
+Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure table. Using a PowerShell session that is logged into Azure, let us import the data.

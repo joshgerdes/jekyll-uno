@@ -112,7 +112,6 @@ Now that we have the Azure storage account and PublicHolidays table, it's time t
 
 If you want to do this manually, the Azure Table will have the following columns:
 
-| --- | --- | --- | --- | --- | --- | --- |
 | Date | Country | Type | Name | Day | Year | Comments |
 
 We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference.
@@ -135,11 +134,11 @@ Open **PowerShell** and **run** the following:
 
 These cmdlets will download a bunch of CSV files into the API folder, with the Public Holidays for each Country for this year, and then you can adjust the $CurrentYear variable for future years _(i.e. 2025)_.
 
-Once you have all the CSV files for your Public Holidays and before we import the data into the Azure storage table, now is the time to create a new Custom Holidays CSV; you can easily use an existing one to create a new CSV containing your company's public holidays or other days that may be missing from the normal list, make sure it matches the correct format and save it into the same folder.
+Once you have all the CSV files for your Public Holidays and before we import the data into the Azure storage table, now is the time to create a new Custom Holidays CSV; you can easily use an existing one to create a new CSV containing your company's public holidays or other days that may be missing from the standard list, make sure it matches the correct format and save it into the same folder.
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
-Now that you have all your CSV files containing the Public Holidays in your country or countries, now it's time to import them into the Azure Table. Let us import the data using a PowerShell session that is logged into Azure.
+Now that you have all your CSV files containing the Public Holidays in your Country or countries, now it's time to import them into the Azure Table. Let us import the data using a PowerShell session that is logged into Azure.
 
     # Imports Public Holiday into Azure Storage table
     # Requires AzTable Module (not part of the normal Az cmdlets)

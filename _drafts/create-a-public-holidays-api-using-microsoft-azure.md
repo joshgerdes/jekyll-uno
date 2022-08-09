@@ -238,5 +238,6 @@ Next, we need to give the Function App the ability to read the Azure storage acc
 
 1. Navigate to your Azure Function
 2. Click **Identity**
-3. Under the System assigned, heading toggle the status to: **On**
+3. Under the System assigned heading, toggle the status to **On**
 4. Click **Save**
+5. Select **Yes**, to enable the System assigned managed identity

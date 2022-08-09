@@ -55,7 +55,7 @@ _However, I recommend you consider what resources might be shared outside of thi
 4. Select your **Subscription**
 5. Type in a name for your **Resource Group** _(like 'rg-publicholidays-prd-ae')_
 6. Select your **Region** and click **Next: Tags**
-7. Enter in applicable **tags** _(ie Application: Public Holidays API)_
+7. Enter in applicable **tags** _(i.e. Application: Public Holidays API)_
 8. Click **Next: Review + create**
 9. Click **Create**
 
@@ -84,4 +84,14 @@ If you prefer PowerShell, you can deploy a new Storage account with the below:
 
     New-AzStorageAccount -ResourceGroupName 'rg-publicholidays-prd-ae' -Name 'funcnzpublicholidaystgac' -Location 'Australia East' -SkuName 'Standard_LRS' -Kind StorageV2
 
-### Create Storage Account
+### Import Public Holiday data
+
+Now that we have the Storage account that will hold our Public Holiday time to import the data. Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
+
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts")
+3. **Navigate** to your created **Storage** account
+4. In the Navigation blade, click **Tables**
+5. Click **+ Table**
+6. For Table Name, I will go with **PublicHolidays**
+7. Click **Ok**

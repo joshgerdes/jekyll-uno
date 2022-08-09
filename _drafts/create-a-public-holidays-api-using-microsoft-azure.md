@@ -19,4 +19,6 @@ _Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure 
 #### Pre-requisites
 
 * An Azure subscription, with at least Contributor rights to a Resource Group.
-* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts")_, Az.Storage & AzTables)_
+* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts")_,_ [_Az.Storage_](https://docs.microsoft.com/en-us/powershell/module/az.storage/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Storage") _&_ [_AzTables_](https://www.powershellgallery.com/packages/AzTable/ "AzTable")_)_
+
+_Note: AzTables is not part of the normal Az PowerShell module set and is a separate module that you will need to install (Install-Module AzTables)._

@@ -412,4 +412,4 @@ Now that the Function App responds to requests, we can expose the HTTP endpoint 
 ![](/uploads/azureportal_createapimanagement.png)
 
 1. Wait for 10 minutes to half an hour for provisioning to take place, and Azure API Management will be in an activating state.
-2. 
+2. Once API Management has been provisioned, you can **copy** the **Virtual IP (VIP)** addresses of API Management and **restrict** your **function** app to **only** allow **inbound** access from that **IP**.

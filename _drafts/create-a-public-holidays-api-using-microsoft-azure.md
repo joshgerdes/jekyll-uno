@@ -277,4 +277,5 @@ Now that the Function App has been configured, it is time to create our Function
 4. Change Development environment to **Develop in Portal**
 5. Select Template, an **HTTP trigger**
 6. For the New Function name, I will go with **GetPublicHoliday**
-7. Change Authorization level to **Anonymous** _(if you aren't going to implement API Management, select Function and look at whitelisting your IP only)_.
+7. Change Authorization level to **Anonymous** _(if you aren't going to implement API Management, select Function and look at whitelisting your IP only, we will be locking it down to API Management later)_.
+8. Click **Create**

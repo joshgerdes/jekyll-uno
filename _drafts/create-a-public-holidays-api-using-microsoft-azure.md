@@ -411,5 +411,5 @@ Now that the Function App is responding to requests, we can expose the HTTP endp
 
 ![](/uploads/azureportal_createapimanagement.png)
 
- 9. Wait for 10 minutes to half an hour for provisioning to take place.
+ 9. Wait for 10 minutes to half an hour for provisioning to take place, and Azure API Management will be in an activating state.
 10. 

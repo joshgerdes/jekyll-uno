@@ -95,3 +95,7 @@ Now that we have the Storage account that will hold our Public Holiday time to i
 5. Click **+ Table**
 6. For Table Name, I will go with **PublicHolidays**
 7. Click **Ok**
+
+![Create Azure Storage Account Table](/uploads/azureportal_createpublicholidaystable.png "Create Azure Storage Account Table")
+
+g

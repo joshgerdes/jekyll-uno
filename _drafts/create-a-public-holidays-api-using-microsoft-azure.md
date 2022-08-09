@@ -9,15 +9,24 @@ header:
   teaser: ''
 
 ---
-Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/tomation "Turn on a Azure Virtual Machine using Azure Automation ") I did on using a third-party API _(Application Programming Interface)_ to start a Virtual Machine, when it wasn't a Public Holiday, I had a thought on what could be an option if I wanted an API only accessible on an internal network or if I wanted to include custom Holidays such as Star Wars day or company holidays? And could I create and query my own API using Microsoft Azure services? You can!
+Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/tomation "Turn on a Azure Virtual Machine using Azure Automation ") I did on using a third-party API _(Application Programming Interface)_ to start a Virtual Machine when it wasn't a Public Holiday, I had a thought on what could be an option if I wanted an API only accessible on an internal network or if I wanted to include custom Holidays such as Star Wars day or company holidays? And could I create and query my own API using Microsoft Azure services? You can!
 
 ### Overview
 
 > Today we will create a base Public Holidays API using several Microsoft Azure serverless services, such as Azure Function, Azure Storage Account and API Management.
 
-_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options") _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB")_._ 
+_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options") _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB")_._
 
 The solution will be made up of the following:
+
+| Azure Service | Name | Plan | Note |
+| --- | --- | --- | --- |
+| Application Insights | ai-nzPublicHolidays-prd-ae |  |  |
+| Azure API Management | apims-publicholidays-prd-ae | Developer (No SLA) |  |
+| Azure Function | func-nzpublicHolidays-prd-ae | Function App - Consumption |  |
+| Azure Storage Account | funcnzpublicholidaystgac | StorageV2 (general purpose v2) - Locally-redundant storage (LRS) | Contains 'PublicHolidays' table |
+| Azure Storage Account | rgnzpublicholidayspb4ed | Storage (general purpose v1)  - Locally-redundant storage (LRS) | Contains Azure Functions App Files |
+| Resource Group | rg-publicholidays-prd-ae |  | Resource Group - containing above resources. |
 
 #### Pre-requisites
 

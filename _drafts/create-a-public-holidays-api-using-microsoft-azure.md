@@ -38,3 +38,5 @@ _Note: AzTables is not part of the standard Az PowerShell module set and is a se
 We will use a mix of the Azure Portal and PowerShell to deploy this solution from start to finish; you can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference _(feel free to fork, raise pull requests etc.)._
 
 ### Deployment
+
+The deployment steps will be separated into different sections to help simplify implementation. Make sure you adjust the names of your resources and locations to suit your naming conventions and regional locations _(such as Australia East or West Europe)_. Your deployments may fail if a name has already been used.

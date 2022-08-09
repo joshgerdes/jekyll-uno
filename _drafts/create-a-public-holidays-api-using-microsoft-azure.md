@@ -374,7 +374,7 @@ Now that the Function App has been configured, it is time to create our Function
        )
 3. Click **Save**
 
-##### Test Function PublicHolidays
+##### Test Function - PublicHolidays
 
 Before proceeding with the next step, it's time to test the function.
 
@@ -398,7 +398,18 @@ Congratulations! You have now created a Public Holiday API that you can call for
 
 ##### Configure Azure API Management
 
+Now that the Function App is responding to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). 
+
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
-3. Navigate to your **resource group** and click **+ Create**
-4. Search for: **Function**
+2. **Navigate** to your **Azure Function**
+3. On the Navigation blade, select **API Management**
+4. Click **Create New**
+5. Select your subscription, **Region**, and organisation **name**.
+6. Select a [**Pricing Tier**](https://azure.microsoft.com/en-us/pricing/details/api-management/?WT.mc_id=AZ-MVP-5004796 " API Management pricing")
+7. Click **Review + Create**
+8. Click **Create**
+
+![](/uploads/azureportal_createapimanagement.png)
+
+ 9. Wait for 10 minutes to half an hour for provisioning to take place.
+10. 

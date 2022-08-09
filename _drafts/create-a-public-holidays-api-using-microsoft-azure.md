@@ -257,13 +257,18 @@ The Azure function app will rely on a few PowerShell Modules; for the FunctionAp
 3. Change the dropdown to **requirements.psd1**
 4. In the hash brackets, comment out the #Az module line _(as this will load the entire Az Module set, which will cause an increased delay in the startup as those extra modules aren't needed)_, and add the following:
 
+       # This file enables modules to be automatically managed by the Functions service.
+       # See https://aka.ms/functionsmanageddependency for additional information.
+       #
        @{
            # For latest supported version, go to 'https://www.powershellgallery.com/packages/Az'. 
            # To use the Az module in your function app, please uncomment the line below.
            #'Az' = '8.*'
-           'Az.Accounts' = '2.*'
-           'Az.Storage'  = '4.*'
-           'AzTable'     = '2.*'
+           'Az.Accounts'  = '2.*'
+           'Az.Storage'   = '4.*'
+           'Az.Resources' = '2.*'
+           'AzTable'      = '2.*'
+       
        }
 5. Click **Save**
 
@@ -311,7 +316,9 @@ Now that the Function App has been configured, it is time to create our Function
        $tableName = 'PublicHolidays'
        
        $ClientIP = $Request.Headers."x-forwarded-for".Split(":")[0]
+       
        Import-Module AzTable
+       
        try {   
            
          $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName
@@ -359,7 +366,7 @@ Now that the Function App has been configured, it is time to create our Function
        #$body =  $TriggerMetadata
        
        
-       # Associate values to output bindings by calling 'Push-OutputBinding'.
+       # Associate values to output bindings by calling Push-OutputBinding'
        Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
            StatusCode = $status
            Body       = $body
@@ -367,3 +374,13 @@ Now that the Function App has been configured, it is time to create our Function
        )
        
 3. Click **Save**
+
+##### Test Function PublicHolidays
+
+Before proceeding with the next step, it's time to test the function.
+
+1. **Navigate** to your **Azure Function**
+2. Click **Functions**
+3. Click **GetPublicHoliday**
+4. Click **Code + Test**
+5. Click **Test/Run**

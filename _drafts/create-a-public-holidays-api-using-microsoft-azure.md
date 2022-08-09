@@ -24,4 +24,4 @@ _Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure 
 
 _Note: AzTables is not part of the normal Az PowerShell module set and is a separate module that you will need to install (Install-Module AzTables)._
 
-We will use a mix of the Azure Portal and PowerShell to deploy this solution; the source data and code can be found directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference.  
+We will use a mix of the Azure Portal and PowerShell to deploy this solution from start to finish; the source data and code can be found directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference.

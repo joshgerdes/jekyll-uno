@@ -45,6 +45,10 @@ The deployment steps will be separated into different sections to help simplify 
 
 ### Create Resource Group
 
+The Resource Group will contain all resources related to the API that we will deploy today. 
+
+_However, I recommend you consider what resources might be shared outside of this API - such as API Management, and put them in a separate Shared or Common Resource Group, to keep the lifecycle of your resources together (ie API resources all in one place, so if it gets decommissioned, it is as easy a deleting the Resource Group)._
+
 1.  Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource Groups")
 3. Click **+ Create**
@@ -56,3 +60,7 @@ The deployment steps will be separated into different sections to help simplify 
 9. Click **Create**
 
 ![Create a resource group](/uploads/azureportal_creatergapi.png "Create a resource group")
+
+### Create Storage Account
+
+Now that the Resource Group

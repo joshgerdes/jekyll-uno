@@ -17,6 +17,8 @@ Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-
 
 _Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options") _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB")_._ 
 
+The solution will be made up of the following:
+
 #### Pre-requisites
 
 * An Azure subscription, with at least Contributor rights to a Resource Group.
@@ -24,4 +26,4 @@ _Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure 
 
 _Note: AzTables is not part of the normal Az PowerShell module set and is a separate module that you will need to install (Install-Module AzTables)._
 
-We will use a mix of the Azure Portal and PowerShell to deploy this solution from the start to finish; the source data and code can be found directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference _(feel free to fork, raise pull requests etc)._
+We will use a mix of the Azure Portal and PowerShell to deploy this solution from the start to finish; the source data and code can be found directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference _(feel free to fork, raise pull requests etc.)._

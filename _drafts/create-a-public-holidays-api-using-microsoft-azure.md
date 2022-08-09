@@ -384,3 +384,13 @@ Before proceeding with the next step, it's time to test the function.
 3. Click **GetPublicHoliday**
 4. Click **Code + Test**
 5. Click **Test/Run**
+6. Change HTTP method to **Get**
+7. Under Query, add Country value and Date value.
+
+Note: Make sure the Date format and Country format match what is in the Azure storage account.
+
+You can also Invoke the function app directly with PowerShell, with the Date and Country as Parameters at the end:
+
+    Invoke-RestMethod -URI "https://func-nzpublicholidays-prd-ae.azurewebsites.net/api/GetPublicHoliday?Date=25-12-2023&CountryCode=NZ"
+
+![](/uploads/testpublicholidayapi.gif)

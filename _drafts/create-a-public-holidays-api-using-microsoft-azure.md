@@ -19,3 +19,4 @@ _Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure 
 #### Pre-requisites
 
 * An Azure subscription, with at least Contributor rights to a Resource Group.
+* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts")_, Az.Storage & AzTables)_

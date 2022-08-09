@@ -266,3 +266,15 @@ The Azure function app will rely on a few PowerShell Modules; for the FunctionAp
            'AzTable'     = '2.*'
        }
 5. Click **Save**
+
+##### Create Function PublicHolidays
+
+Now that the Function App has been configured, it is time to create our Function.
+
+1. **Navigate** to your **Azure Function**
+2. Click **Functions**
+3. Click **+ Create**
+4. Change Development environment to **Develop in Portal**
+5. Select Template, an **HTTP trigger**
+6. For the New Function name, I will go with **GetPublicHoliday**
+7. Change Authorization level to **Anonymous** _(if you aren't going to implement API Management, select Function and look at whitelisting your IP only)_.

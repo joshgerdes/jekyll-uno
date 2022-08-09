@@ -417,4 +417,4 @@ Now that the Function App responds to requests, we can expose the HTTP endpoint 
 2. Once API Management has been provisioned, you can **copy** the **Virtual IP (VIP)** addresses of API Management and **restrict** your **function** app to **only** allow **inbound** access from that **IP**.
 3. Once you have done that, add the GetPublicHoliday function app into Azure API Management, add the paths to add a version, and then, using the subscription key, you run the following command to pull data.
 
-    Invoke-RestMethod -uri "https://apims-nzpublicholidays-prd-ae.azure-api.net/v1/GetPublicHoliday?Date=4/05/2022&CountryCode=NZ&Ocp-Apim-Subscription-Key=KEY"
+    Invoke-RestMethod -uri "https://apims-nzpublicholidays-prd-ae.azure-api.net/v1/GetPublicHoliday?Date=4/05/2022&CountryCode=NZ&Ocp-Apim-Subscription-Key=$KEY"

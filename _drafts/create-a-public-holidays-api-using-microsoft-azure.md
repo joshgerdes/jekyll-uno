@@ -398,7 +398,7 @@ Congratulations! You have now created a Public Holiday API that you can call for
 
 ##### Configure Azure API Management
 
-Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers cache functionality.
+Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers inbuilt shared cache functionality and integration into [Azure Cache for Redis](https://azure.microsoft.com/en-us/services/cache/?WT.mc_id=AZ-MVP-5004796 " Azure Cache for Redis®2").
 
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. **Navigate** to your **Azure Function**

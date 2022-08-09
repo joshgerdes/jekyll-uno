@@ -4,18 +4,18 @@ title: Create a Public Holidays API using Microsoft Azure
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: "/uploads/azureportal_storagebrowser_api_table.png"
 
 ---
-Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/tomation "Turn on a Azure Virtual Machine using Azure Automation ") I did on using a third-party API _(Application Programming Interface)_ to start a Virtual Machine when it wasn't a Public Holiday, I had a thought on what could be an option if I wanted an API only accessible on an internal network or if I wanted to include custom Holidays such as Star Wars day or company holidays? And could I create and query my API using Microsoft Azure services? You can!
+Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/tomation "Turn on a Azure Virtual Machine using Azure Automation"){:target="_blank"} I did on using a third-party API _(Application Programming Interface)_ to start a Virtual Machine when it wasn't a Public Holiday, I had a thought on what could be an option if I wanted an API only accessible on an internal network or if I wanted to include custom Holidays such as Star Wars day or company holidays? And could I create and query my API using Microsoft Azure services? You can!
 
 ### Overview
 
 > Today we will create a base Public Holidays API using several Microsoft Azure serverless services, such as Azure Function, Azure Storage Account and API Management.
 
-_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options") _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB")_._
+_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options"){:target="_blank"} _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB"){:target="_blank"}_._
 
 The solution will be made up of the following:
 
@@ -33,11 +33,11 @@ The solution will be made up of the following:
 #### Pre-requisites
 
 * An Azure subscription _(with at least Contributor rights to a Resource Group)_.
-* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts")_,_ [_Az.Storage_](https://docs.microsoft.com/en-us/powershell/module/az.storage/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Storage") _&_ [_AzTables_](https://www.powershellgallery.com/packages/AzTable/ "AzTable")_)_
+* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts"){:target="_blank"}_,_ [_Az.Storage_](https://docs.microsoft.com/en-us/powershell/module/az.storage/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Storage"){:target="_blank"} _&_ [_AzTables_](https://www.powershellgallery.com/packages/AzTable/ "AzTable"){:target="_blank"}_)_
 
 _Note: AzTables is not part of the standard Az PowerShell module set and is a separate module you will need to install (Install-Module AzTables)._
 
-We will use a mix of the Azure Portal and PowerShell to deploy this solution from start to finish; you can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference _(feel free to fork, raise pull requests etc.)._ In this guide, I will try not to assume preexisting knowledge _(other than general Azure and PowerShell knowledge)_.
+We will use a mix of the Azure Portal and PowerShell to deploy this solution from start to finish; you can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API"){:target="_blank"} for reference _(feel free to fork, raise pull requests etc.)._ In this guide, I will try not to assume preexisting knowledge _(other than general Azure and PowerShell knowledge)_.
 
 ### Deployment
 
@@ -51,8 +51,8 @@ The Resource Group will contain all resources related to the API that we will de
 
 _However, I recommend you consider what resources might be shared outside of this API - such as API Management, and put them in a separate Shared or Common Resource Group, to keep the li.e.ecycle of your resources together (ie API resources all in one place, so if it gets decommissioned, it is as easy a deleting the Resource Group)._
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource Groups")
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
+2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource Groups"){:target="_blank"}
 3. Click **+ Create**
 4. Select your **Subscription**
 5. Type in a name for your **Resource Group** _(like 'rg-publicholidays-prd-ae')_
@@ -71,8 +71,8 @@ If you prefer PowerShell, you can deploy a new Resource Group with the below:
 
 Now that the Resource Group has been created, it's time to import our Storage Account - which will hold our Table of data around Public Holidays.
 
- 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
- 2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts")
+ 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
+ 2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts"){:target="_blank"}
  3. Click **+ Create**
  4. Select the **Subscription** and **Resource Group** you created earlier
  5. Enter in a **Name** for your **Storage Account** (_like 'funcnzpublicholidaystgac')_
@@ -94,8 +94,8 @@ Now that we have the Storage account that will hold our Public Holiday time to i
 
 Most of this task will be done with PowerShell, but first, we need to create the Table that will hold our Public Holidays.
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts")
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
+2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts"){:target="_blank"}
 3. **Navigate** to your created **Storage** account
 4. In the Navigation blade, click **Tables**
 5. Click **+ Table**
@@ -118,7 +118,7 @@ If you want to do this manually, the Azure Table will have the following columns
 
 | Date | Country | Type | Name | Day | Year | Comments |
 
-We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference.
+We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API"){:target="_blank"} for reference.
 
 To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue.
 
@@ -203,8 +203,8 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
 
 ##### Create Azure Function
 
- 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
- 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
+ 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
+ 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups"){:target="_blank"}
  3. Navigate to your **resource group** and click **+ Create**
  4. Search for: **Function**
  5. Select **Function App**, and click **Create**
@@ -400,14 +400,14 @@ Congratulations! You have now created a Public Holiday API that you can call for
 
 ##### Configure Azure API Management
 
-Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"). Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers inbuilt shared cache functionality and integration into [Azure Cache for Redis](https://azure.microsoft.com/en-us/services/cache/?WT.mc_id=AZ-MVP-5004796 " Azure Cache for Redis®2").
+Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"){:target="_blank"}. Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers inbuilt shared cache functionality and integration into [Azure Cache for Redis](https://azure.microsoft.com/en-us/services/cache/?WT.mc_id=AZ-MVP-5004796 " Azure Cache for Redis®2"){:target="_blank"}.
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
 2. **Navigate** to your **Azure Function**
 3. On the Navigation blade, select **API Management**
 4. Click **Create New**
 5. Select your subscription, **Region**, and organisation **name**.
-6. Select a [**Pricing Tier**](https://azure.microsoft.com/en-us/pricing/details/api-management/?WT.mc_id=AZ-MVP-5004796 " API Management pricing")
+6. Select a [**Pricing Tier**](https://azure.microsoft.com/en-us/pricing/details/api-management/?WT.mc_id=AZ-MVP-5004796 " API Management pricing"){:target="_blank"}
 7. Click **Review + Create**
 8. Click **Create**
 

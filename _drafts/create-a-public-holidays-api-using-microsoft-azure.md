@@ -67,4 +67,4 @@ If you prefer PowerShell, you can deploy a new Resource Group with the below:
 
 ### Create Storage Account
 
-Now that the Resource Group
+Now that the Resource Group has been created, its time to import our Storage Account - which will hold our Table of data around Public Holidays.

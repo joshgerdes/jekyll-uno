@@ -54,3 +54,5 @@ The deployment steps will be separated into different sections to help simplify 
 7. Enter in applicable **tags** _(ie Application: Public Holidays API)_
 8. Click **Next: Review + create**
 9. Click **Create**
+
+![Create a resource group](/uploads/azureportal_creatergapi.png "Create a resource group")

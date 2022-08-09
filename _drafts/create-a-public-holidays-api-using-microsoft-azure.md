@@ -48,4 +48,9 @@ The deployment steps will be separated into different sections to help simplify 
 1.  Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource Groups")
 3. Click **+ Create**
-4. 
+4. Select your **Subscription**
+5. Type in a name for your **Resource Group** _(like 'rg-publicholidays-prd-ae')_
+6. Select your **Region** and click **Next: Tags**
+7. Enter in applicable **tags** _(ie Application: Public Holidays API)_
+8. Click **Next: Review + create**
+9. Click **Create**

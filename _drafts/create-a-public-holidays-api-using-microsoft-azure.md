@@ -108,20 +108,20 @@ You can use PowerShell to create the table below:
 
 ##### Import Public Holiday Data
 
-Now that we have the Azure storage account and PublicHolidays table, it's time to import the data. 
+Now that we have the Azure storage account and PublicHolidays table, it's time to import the data.
 
 If you want to do this manually, the Azure table will have the following columns:
 
 | --- | --- | --- | --- | --- | --- | --- |
 | Date | Country | Type | Name | Day | Year | Comments |
 
-We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference. 
+We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. You can find the source data and code directly in the GitHub repository here: [lukemurraynz/PublicHoliday-API](https://github.com/lukemurraynz/PublicHoliday-API "PublicHoliday-API") for reference.
 
-To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue. 
+To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue.
 
 I have created a CSV _(Comma-separated values)_ file with a list of countries _(i.e. US, NZ, AU)_ called 'SourceTimeDate.CSV', but you can adjust this to suit your requirements and place it in a folder on my C:\\ drive called: Temp\\API.
 
-Open **PowerShell** and **run** the following: 
+Open **PowerShell** and **run** the following:
 
     $Folder = 'C:\Temp\API\'
     $Csv = Import-csv "$Folder\DateTimeSource\SourceTimeDate.csv"
@@ -135,7 +135,7 @@ Open **PowerShell** and **run** the following:
 
 These cmdlets will download a bunch of CSV files into the API folder, with the Public Holidays for each Country for this year, and then you can adjust the $CurrentYear variable for future years _(i.e. 2025)_.
 
-Once you have all the CSV files for your Public Holidays and before we import the data into the Azure storage table, now is the time to create a new Custom Holidays CSV; you can easily use an existing one to create a new CSV containing your company's public holidays or other days that may be missing from the normal list, make sure it matches the correct format and save it into the same folder. 
+Once you have all the CSV files for your Public Holidays and before we import the data into the Azure storage table, now is the time to create a new Custom Holidays CSV; you can easily use an existing one to create a new CSV containing your company's public holidays or other days that may be missing from the normal list, make sure it matches the correct format and save it into the same folder.
 
 ![Custom Public Holidays API](/uploads/customholidays_api.png "Custom Public Holidays API")
 
@@ -162,3 +162,20 @@ Now that you have all your CSV files containing the Public Holidays in your coun
     $storageContext = $storageAccount.Context
     $cloudTable = (Get-AzStorageTable -Name $tableName -Context $storageContext).CloudTable
     
+      
+    #Imports CSV data into Azure Table
+    $counter = 0
+    ForEach ($Holiday in $GlobalHolidays)
+    
+    {
+      $Date = [DateTime]($Holiday.Date)
+      $Dayofweek = $Date.DayOfWeek | Out-String
+      $Year = $Date.Year
+      $HolidayDate = Get-Date $Date -format "dd-MM-yyyy"
+    
+     Add-AzTableRow `
+      -table $cloudTable `
+      -partitionKey '1' `
+      -rowKey ((++$counter)) -property @{"Date"=$HolidayDate;"Country"=$Holiday.CountryCode;"Type"=$Holiday.Type;"Name"=$Holiday.LocalName;"Day"=$Dayofweek;"Year"=$Year;"Comments"=$Holiday.Counties}
+    
+    }

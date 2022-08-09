@@ -217,4 +217,6 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
 
 ![Azure Function - Create](/uploads/azureportal_createazfunctionapi.png "Azure Function - Create")
 
-s
+##### Configure Environment Variables
+
+Now that the Function App has been created before creating the GetPublicHoliday function, we need to add a few environment variables.

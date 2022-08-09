@@ -257,7 +257,7 @@ The Azure function app will rely on a few PowerShell Modules; for the FunctionAp
 1. **Navigate** to your **Azure Function**
 2. Click **App files**
 3. Change the dropdown to **requirements.psd1**
-4. In the hash brackets, comment out the #Az module line _(as this will load the entire Az Module set, which will cause an increased delay in the startup as those extra modules aren't needed)_, and add the following:
+4. In the hash array, comment out the #Az module line _(as this will load the entire Az Module set, which will cause an increased delay in the startup as those extra modules aren't needed)_, and add the following:
 
        # This file enables modules to be automatically managed by the Functions service.
        # See https://aka.ms/functionsmanageddependency for additional information.
@@ -417,4 +417,4 @@ Now that the Function App responds to requests, we can expose the HTTP endpoint 
 2. Once API Management has been provisioned, you can **copy** the **Virtual IP (VIP)** addresses of API Management and **restrict** your **function** app to **only** allow **inbound** access from that **IP**.
 3. Once you have done that, add the GetPublicHoliday function app into Azure API Management, add the paths to add a version, and then, using the subscription key, you run the following command to pull data.
 
-    Invoke-RestMethod -uri "https://apims-nzpublicholidays-prd-ae.azure-api.net/v1/GetPublicHoliday?Date=4/05/2022&CountryCode=NZ&Ocp-Apim-Subscription-Key=4c7f1188a85542528da497942814ea83"
+    Invoke-RestMethod -uri "https://apims-nzpublicholidays-prd-ae.azure-api.net/v1/GetPublicHoliday?Date=4/05/2022&CountryCode=NZ&Ocp-Apim-Subscription-Key=KEY"

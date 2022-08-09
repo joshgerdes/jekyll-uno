@@ -28,6 +28,8 @@ The solution will be made up of the following:
 | Azure Storage Account | rgnzpublicholidayspb4ed | Storage (general purpose v1)  - Locally-redundant storage (LRS) | Contains Azure Functions App Files |
 | Resource Group | rg-publicholidays-prd-ae |  | Resource Group - containing above resources. |
 
+![Azure Resource Group - Diagram](/uploads/api_resourcegroupazviz.png "Azure Resource Group - Diagram")
+
 #### Pre-requisites
 
 * An Azure subscription _(with at least Contributor rights to a Resource Group)_.

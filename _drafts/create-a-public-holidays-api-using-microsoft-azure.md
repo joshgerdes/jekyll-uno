@@ -393,3 +393,5 @@ You can also Invoke the function app directly with PowerShell, with the Date and
     Invoke-RestMethod -URI "https://func-nzpublicholidays-prd-ae.azurewebsites.net/api/GetPublicHoliday?Date=25-12-2023&CountryCode=NZ"
 
 ![Test Public Holiday API](/uploads/testpublicholidayapi.gif "Test Public Holiday API")
+
+Congratulations! You have now created a Public Holiday API, that you can call for automation.

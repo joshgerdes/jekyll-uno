@@ -67,4 +67,14 @@ If you prefer PowerShell, you can deploy a new Resource Group with the below:
 
 ### Create Storage Account
 
-Now that the Resource Group has been created, its time to import our Storage Account - which will hold our Table of data around Public Holidays.
+Now that the Resource Group has been created, it's time to import our Storage Account - which will hold our Table of data around Public Holidays.
+
+1.  Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **Click on the burger and click** [**Storage Accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Storage accounts")
+3. Click **+ Create**
+4. Select the **Subscription** and **Resource Group** you created earlier
+5. Enter in a **Name** for your **Storage Account** (_like 'funcnzpublicholidaystgac')_
+6. Select your **Region** _(ie Australia East)_
+7. For **Performance**, I am going to select: **Standard**
+8. For **Redundancy**, as this is a demo, I will select **Locally-redundant storage (LRS). If** you plan on running this in production, then you may want to consider ZRS for zone redudancy.
+9. Click Next: 

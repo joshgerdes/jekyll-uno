@@ -192,3 +192,9 @@ Now the Public Holidays are imported into the Azure storage account table with a
 If we log in to the Azure Portal, navigate to the Storage account and under Storage Browser, we can now see our Table is full of Public Holidays.
 
 ![](/uploads/azureportal_storagebrowser_api_table.png)
+
+#### Create Azure Function
+
+##### Create Azure Storage Account Table
+
+Now tg

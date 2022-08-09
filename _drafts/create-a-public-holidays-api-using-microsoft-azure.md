@@ -394,4 +394,11 @@ You can also Invoke the function app directly with PowerShell, with the Date and
 
 ![Test Public Holiday API](/uploads/testpublicholidayapi.gif "Test Public Holiday API")
 
-Congratulations! You have now created a Public Holiday API, that you can call for automation.
+Congratulations! You have now created a Public Holiday API that you can call for automation! You can lock down the Function App to only certain IPs or proceed to configure Azure API Management.
+
+##### Configure Azure API Management
+
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
+3. Navigate to your **resource group** and click **+ Create**
+4. Search for: **Function**

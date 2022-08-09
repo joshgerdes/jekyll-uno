@@ -195,6 +195,8 @@ If we log in to the Azure Portal, navigate to the Storage account and under Stor
 
 #### Create Azure Function
 
+That we have our Table with Public Holiday data, its time to create our Azure Function to act as the API that will talk to the 
+
 ##### Create Azure Storage Account Table
 
 Now tg

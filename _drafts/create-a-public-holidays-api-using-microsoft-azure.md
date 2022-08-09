@@ -97,7 +97,7 @@ Most of this task will be done with PowerShell, but first, we need to create the
 3. **Navigate** to your created **Storage** account
 4. In the Navigation blade, click **Tables**
 5. Click **+ Table**
-6. For Table Name, I will go with **PublicHolidays**
+6. For a Table Name, I will go with **PublicHolidays**
 7. Click **Ok**
 
 ![Create Azure Storage Account Table](/uploads/azureportal_createpublicholidaystable.png "Create Azure Storage Account Table")
@@ -248,9 +248,22 @@ Next, we need to give the Function App the ability to read the Azure storage acc
 10. For role, select: **Storage Table Data Reader**
 11. Click **Save**
 
-##### Setup GetPublicHoliday Function
+##### Configure Requirements
 
-Now that the groundwork is done, it's time to create our Function!
+The Azure function app will rely on a few PowerShell Modules; for the FunctionApp to load them, we need to add them to the requirements.psd1 file.
 
 1. **Navigate** to your **Azure Function**
-2. Click **Identity**
+2. Click **App files**
+3. Change the dropdown to **requirements.psd1**
+4. In the hash brackets, comment out the #Az module line _(as this will load the entire Az Module set, which will cause an increased delay in the startup as those extra modules aren't needed)_, and add the following:
+
+       @{
+           # For latest supported version, go to 'https://www.powershellgallery.com/packages/Az'. 
+           # To use the Az module in your function app, please uncomment the line below.
+           #'Az' = '8.*'
+           'Az.Accounts' = '2.*'
+           'Az.Storage'  = '4.*'
+           'AzTable'     = '2.*'
+       }
+       
+5. Click Save

@@ -318,15 +318,13 @@ Now that the Function App has been configured, it is time to create our Function
        $tableName = 'PublicHolidays'
        
        $ClientIP = $Request.Headers."x-forwarded-for".Split(":")[0]
-       
-       Import-Module AzTable
-       
+            
        try {   
            
          $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName
          $storageContext = $storageAccount.Context
          $cloudTable = (Get-AzStorageTable -Name $tableName -Context $storageContext).CloudTable
-       
+         Import-Module AzTable   
              
          $Tables = Get-AzTableRow -table $cloudTable 
        

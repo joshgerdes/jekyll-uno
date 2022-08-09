@@ -110,6 +110,11 @@ You can use PowerShell to create the table below:
 
 Now that we have the Azure storage account and PublicHolidays table, it's time to import the data. 
 
-The Azure table, will have the following columns:
+If you want to do this manually, the Azure table will have the following columns:
 
-We could enter the data manually, but I am going to  
+| --- | --- | --- | --- | --- | --- | --- |
+| Date | Country | Type | Name | Day | Year | Comments |
+
+We could enter the data manually, but I will leverage the Nager API to download and parse a CSV file for a few countries. 
+
+To do this, we will need PowerShell, so assuming you have logged into PowerShell and set the context to your Azure subscription, let us continue.

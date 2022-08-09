@@ -146,6 +146,8 @@ Now that you have all your CSV files containing the Public Holidays in your coun
     Import-Module AzTable
     
     #Imports data from CSV files into $GLobalHolidays variable
+    $Folder = 'C:\Temp\API\'
+    
     $GlobalHolidays = Get-ChildItem "$Folder\DateTimeSource\*.csv" | Foreach-Object {
       $basename = $_.BaseName
       import-csv $_ 

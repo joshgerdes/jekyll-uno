@@ -151,3 +151,12 @@ Now that you have all your CSV files containing the Public Holidays in your coun
       import-csv $_ 
     }
     
+    #Connect-AzAccount
+    #Connects to Azure Storage Account
+    $storageAccountName = 'funcnzpublicholidaystgac'
+    $resourceGroupName = 'rg-publicHolidays-prd-ae'
+    $tableName = 'PublicHolidays'
+    $storageAccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName
+    $storageContext = $storageAccount.Context
+    $cloudTable = (Get-AzStorageTable -Name $tableName -Context $storageContext).CloudTable
+    

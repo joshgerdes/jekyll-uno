@@ -98,4 +98,10 @@ Now that we have the Storage account that will hold our Public Holiday time to i
 
 ![Create Azure Storage Account Table](/uploads/azureportal_createpublicholidaystable.png "Create Azure Storage Account Table")
 
-g
+You can use PowerShell to create the table below:
+
+    $storageAccount = Get-AzStorageAccount -ResourceGroupName 'rg-publicholidays-prd-ae' -Name 'funcnzpublicholidaystgac'
+    $storageContext = $storageAccount.Context
+    New-AzStorageTable -Name 'PublicHolidays' -Context $storageContext
+
+s

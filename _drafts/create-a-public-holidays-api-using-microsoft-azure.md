@@ -201,6 +201,20 @@ That we have our Table with Public Holiday data, it's time to create our Azure F
 
 ##### Create Azure Function
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
-3. 
+ 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Click **Click on the burger and click** [**Resource groups**](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups "Resource groups")
+ 3. Navigate to your **resource group** and click **+ Create**
+ 4. Search for: **Function**
+ 5. Select **Function App**, and click **Create**
+ 6. Enter your **Function App Name** _(i.e. 'func-nzpublicHolidays-prd-ae')_
+ 7. For Runtime Stack, select **PowerShell Core**
+ 8. Select the latest version (at this time, it's **7.2**)
+ 9. Select your **Region**
+10. Select **Linux** _(or Windows - it doesn't matter)_
+11. Set your **Plan** _(in my example, its Consumption (Serverless))_
+12. Click **Review + Create**
+13. Click **Create**
+
+![Azure Function - Create](/uploads/azureportal_createazfunctionapi.png "Azure Function - Create")
+
+s

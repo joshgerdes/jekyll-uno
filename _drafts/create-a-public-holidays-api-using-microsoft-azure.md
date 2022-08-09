@@ -106,4 +106,10 @@ You can use PowerShell to create the table below:
     $storageContext = $storageAccount.Context
     New-AzStorageTable -Name 'PublicHolidays' -Context $storageContext
 
-s
+##### Import Public Holiday Data
+
+Now that we have the Azure storage account and PublicHolidays table, it's time to import the data. 
+
+The Azure table, will have the following columns:
+
+We could enter the data manually, but I am going to  

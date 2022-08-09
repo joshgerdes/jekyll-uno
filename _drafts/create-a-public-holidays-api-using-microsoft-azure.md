@@ -247,3 +247,7 @@ Next, we need to give the Function App the ability to read the Azure storage acc
  9. Select your Subscription and storage account containing your Public Holiday data
 10. For role, select: **Storage Table Data Reader**
 11. Click **Save**
+
+##### Setup GetPublicHoliday Function
+
+Now that the groundwork is done, its time to create our Function!

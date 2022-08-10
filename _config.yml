@@ -25,6 +25,7 @@ destination: _site
 paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
+theme: minima
 highlighter: rouge
 
 kramdown:

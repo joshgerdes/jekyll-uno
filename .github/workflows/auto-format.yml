@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: "🟨 Use clang-format"
-        uses: DoozyX/clang-format-lint-action@v0.13
+        uses: DoozyX/clang-format-lint-action@v0.14
         with:
           source: "."
           exclude: "./third_party ./external"

@@ -1,0 +1,12 @@
+/app/assets/javascripts/locale/**/app.js
+/fixtures/lib/gitlab/graphql/
+/node_modules/
+/public/
+/vendor/
+/tmp/
+/sitespeed-result/
+
+# ignore stylesheets for now as this clashes with our linter
+*.css
+*.scss
+*.md

@@ -1,0 +1,81 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+# ------------------
+# Source code
+# ------------------
+[*]
+end_of_line = lf
+charset = utf-8
+
+# C++ source files
+[*.{cpp,h,hpp}]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# CMake configuration files
+[CMakeLists.txt,CMakeSettings.json,*.cmake{,.in}]
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+
+# Override for Makefile
+[{Makefile, makefile, GNUmakefile}]
+indent_style = tab
+
+# CI configuration files
+[{.travis.yml,appveyor.yml,Vagrantfile}]
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+
+# Markdown/reStructuredText documentation files
+[*.{md,markdown,rst}]
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+max_line_length = 120
+
+# Windows shell scripts
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+# Unix shell scripts
+[*.sh]
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+# Python scripts
+[*.py]
+indent_size = 4
+indent_style = space
+
+# Yaml files
+[*.{yml,yaml,json,toml}]
+indent_size = 2
+indent_style = space
+
+# Visual studio property sheets
+[*.{props,targets}]
+indent_size = 2
+indent_style = space
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[LICENSE]
+insert_final_newline = false

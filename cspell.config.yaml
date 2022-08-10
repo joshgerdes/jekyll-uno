@@ -1,0 +1,156 @@
+---
+version: "0.2"
+files:
+  - "**/*"
+dictionaryDefinitions:
+  - name: cmake-refined
+    path: ./config/cmake-refined-words.txt
+    addWords: false
+  - name: qt
+    path: ./config/qt-words.txt
+    addWords: false
+  - name: linux-package
+    path: ./config/linux-package-words.txt
+    addWords: false
+  - name: taskfile
+    path: ./config/taskfile-words.txt
+    addWords: false
+dictionaries:
+  - qt
+  - taskfile
+  - bash
+  - cmake-refined
+  - cpp-refined
+  - docker
+  - linux-package
+  - python-common
+ignorePaths:
+  - s**/node_modules/**
+  - "**/vscode-extension/**"
+  - "**/.git/**"
+  - ".github/actions/**"
+  - ".github/workflows/**"
+  - "cmake/modules/**"
+  - "docs/api-docs/**"
+  - "cspell.config.yaml"
+  - "*.gz"
+  - "*.lock"
+  - "*.svg"
+  - .gitignore
+  - .devcontainer/.dockerignore
+  - .vscode
+  - megalinter
+  - package-lock.json
+  - report
+  - pnpm-lock.yaml
+  - dist/**
+  - build/**
+  - /project-words.txt
+  - ./qt-words.txt
+  - ./taskfile-words.txt
+  - ./cmake-refined-words.txt
+  - ./linux-package-words.txt
+useGitignore: true
+language: en, en-GB, de, de-DE
+allowCompoundWords: true
+enableGlobDot: true
+words:
+  - aqtinstall
+  - APPL
+  - ARGN
+  - cbproj
+  - ccache
+  - ccmake
+  - clangd
+  - cmakelang
+  - Codacy
+  - codecov
+  - cppcheck
+  - cppstd
+  - cpptools
+  - cschlosser.doxdocgen
+  - Devel
+  - DCOMPONENT
+  - DOPTION*
+  - DPROJECT
+  - eamodio
+  - fasterer
+  - FILEOS
+  - fips
+  - ftest
+  - fprofile
+  - furo
+  - Fuzzer
+  - Gcov
+  - giticket
+  - groupproj
+  - gtest
+  - hmarr
+  - hwrap
+  - icns
+  - IHELP
+  - IOPTIONS
+  - IQUIT
+  - IWYU
+  - jamf
+  - jinja
+  - jmuelbert
+  - juergen
+  - kwarg
+  - kwargs
+  - LCOV
+  - libcxx
+  - libfmt
+  - libgmp
+  - libmpfr
+  - libspdlog
+  - lstrip
+  - muelbert
+  - Mülbert
+  - munki
+  - munkiadmin
+  - munkipkg
+  - myclass
+  - noqa
+  - oclint
+  - parg
+  - pargs
+  - Pavlik
+  - Pboard
+  - plists
+  - pipenv
+  - pkgsinfo
+  - PTRACE
+  - pthread
+  - pthreads
+  - pylance
+  - pyyaml
+  - qtconanboilerplate
+  - qtwidgettest
+  - REDIST
+  - SAST
+  - sectnums
+  - socat
+  - sonarqube
+  - spdlog
+  - svgz
+  - SYSREQUIRES
+  - rubocop
+  - twxs
+  - uncrustify
+  - venv
+  - VRAC
+  - webp
+  - Wextra
+  - Wignored
+  - winver
+  - Wmaybe
+  - Wmissing
+  - Wpedantic
+  - Wreorder
+  - Wreturn
+  - Wuninitialized
+  - Wunused
+  - xcodeproj
+flagWords:
+  - hte

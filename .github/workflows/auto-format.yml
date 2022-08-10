@@ -1,0 +1,47 @@
+---
+name: format
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  format:
+    name: "💎 Format"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "🧰 Checkout"
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: "🟨 Use clang-format"
+        uses: DoozyX/clang-format-lint-action@v0.13
+        with:
+          source: "."
+          exclude: "./third_party ./external"
+          extensions: "h,cpp,hpp"
+          clangFormatVersion: 12
+          inplace: True
+
+      - name: "🟨 Setup Python"
+        uses: actions/setup-python@v2
+
+      - name: "🟨 Install cmakelang"
+        uses: BSFishy/pip-action@v1
+        with:
+          packages: cmakelang pyyaml jinja2
+
+      - name: "🟨 Use cmake-format"
+        run: find . \( -name '*.cmake' -o -name 'CMakeLists.txt' \) -exec cmake-format -i {} \;
+
+      - name: "📨 Use Commit"
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: github_actions
+          message: ":art: Committing format changes"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

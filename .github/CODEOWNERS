@@ -1,0 +1,37 @@
+# This file does not signify real code owners. We use it to automate the
+# process of assigning code reviews. But generally all members of the
+# project own the whole product.
+
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+#       @global-owner1 @global-owner2
+
+# You can also use email addresses if you prefer. They'll be
+# used to look up users just like we do for commit author
+# emails.
+#.go docs@example.com
+
+# The `docs/*` pattern will match files like
+# `docs/getting-started.md` but not further nested files like
+# `docs/build-app/troubleshooting.md`.
+# docs/*  docs@example.com
+
+# Normally, *.ui, *.cpp and *.h files are reviewed by the core-cpp team only
+# All files containing UI text are reviewed by the ui-review team
+*.cpp                           @jmuelbert
+*.h                             @jmuelbert
+*.ui                            @jmuelbert
+
+# The lua-interface team is also reviewing everything below the mudlet-lua
+# folder and some pre-installed packages
+/src/app                        @jmuelbert
+/src/appquick                   @jmuelbert
+/src/libs/models                @jmuelbert
+/src/libs/quick                 @jmuelbert
+/src/libs/widgets               @jmuelbert
+
+CMakeLists.txt                  @jmuelbert
+/cmake/                         @jmuelbert

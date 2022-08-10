@@ -5,6 +5,7 @@ baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
+
 author:
   name: 'Jürgen Mülbert'
   email: juergen.muelbert@gmail.com
@@ -12,27 +13,5 @@ author:
   github_username:  jmuelbert
   linkedin_username:  in/juergenmuelbert
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
-theme: minima
-highlighter: rouge
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+show_downloads: true
+theme: jekyll-theme-cayman

@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/juptyer_notebook.png"
 
 ---
-up an [Jupyter](https://jupyter.org/ "Jupyter") Notebook's, commonly used by Data Scientists and students, allow you to run code, such as Python and PowerShell, inside a Notebook format, and display the output inside the notebook, this is really useful for teaching a subject or displaying up-to-date information.
+nvironup an [Jupyter](https://jupyter.org/ "Jupyter") Notebook's, commonly used by Data Scientists and students, allow you to run code, such as Python and PowerShell, inside a Notebook format, and display the output inside the notebook, this is really useful for teaching a subject or displaying up-to-date information.
 
 I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.
 
@@ -30,14 +30,14 @@ Once all the prerequsites are installed, its time to create the Notebook.
 
 1. Open **Visual Studio Code**
 2. Click **File**, **New File**
-3. Select J**upyter Notebook**
+3. Select **Jupyter Notebook**
 4. Press **+ Code** _(to add a Code snippet)_
 5. First we need to import the pyodbc library:
 
        #Libraries
        import pyodbc
 
-Then we need to add the snippet to connect to the SQL database _(this can be in a seperate Codeblock or the same codeblock, as long as the import is ran before the SQL connection is made)_:
+Then we need to **add the snippet to connect to the SQL database** _(this can be in a seperate Codeblock or the same codeblock, as long as the import is ran before the SQL connection is made - **make sure you update the server and database variables,** to match your environment!)_:
 
     #Connection to SQL database
     
@@ -55,7 +55,7 @@ The 'Authentication=ActiveDirectoryInteractive' parameter as part of the Connect
 
 If you want to hardcode credentials into the Notebook _(not recommend)_, you can remove the '_Authentication=ActiveDirectoryInteractive_' section and enter in the credentials into the username and password field.
 
-Now that we have connected to the database, lets run a query to obtain the SQL version:
+Now that we have connected to the database, lets **run a test query to obtain the SQL version**:
 
     #Sample select query
     cursor.execute("SELECT @@version;")

@@ -30,4 +30,23 @@ Once all the prerequsites are installed, its time to create the Notebook.
 
 1.  Open Visual Studio Code
 2. Click File, New File
-3. 
+3. Select Jupyter Notebook
+4. Press + Code _(to add a Code snippet)_
+5. First we need to import the pyodbc library:
+
+    #Libraries
+    import pyodbc
+
+Then we need to add the snippet to connect to the SQL database _(this can be in a seperate Codeblock or the same codeblock, as long as the import is ran before the SQL connection is made)_:
+
+    #Connection to SQL database
+    
+    
+    server = 'tcp:SQLSERVER.database.windows.net' 
+    database = 'DBNAME' 
+    username = 'user@contoso.com' 
+    password = 'password' 
+    
+    
+    connection = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};Server='+server+',1433;Database='+database+';Uid='+username+';Pwd='+password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive')
+    cursor = connection.cursor()

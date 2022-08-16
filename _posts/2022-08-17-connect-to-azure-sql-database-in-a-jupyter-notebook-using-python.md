@@ -9,20 +9,20 @@ header:
   teaser: "/uploads/juptyer_notebook.png"
 
 ---
-[Jupyter](https://jupyter.org/ "Jupyter") Notebooks, commonly used by Data Scientists and students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
+[Jupyter](https://jupyter.org/ "Jupyter") Notebooks, commonly used by Data Scientists and Students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
 
 I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.
 
-To run a Jupyther Notebook, you can install [Anaconda](https://www.anaconda.com/products/distribution "Anaconda") and then use that to download Juypter to run the notebooks from a locally _(or server)_ hosted web-based interface.
+To run a Jupyther Notebook, you can install [Anaconda](https://www.anaconda.com/products/distribution "Anaconda"){:target="blank"} and then use that to download Juypter to run the notebooks from a locally _(or server)_ hosted web-based interface.
 
-However, today I will be using Visual Studio Code with the [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code ") on a windows endpoint.
+However, today I will be using Visual Studio Code with the [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code "){:target="blank"} on a windows endpoint.
 
 Make sure you install:
 
-* [Python](https://www.python.org/downloads/ "Python")
-* [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc ") library
-* [Microsoft ODBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server") _(has to be v17 or newer to support Azure Active Directory authentication)_.
-* [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") + [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code ")
+* [Python](https://www.python.org/downloads/ "Python"){:target="blank"}
+* [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc "){:target="blank"} library
+* [Microsoft ODBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server"){:target="blank"} _(has to be v17 or newer to support Azure Active Directory authentication)_.
+* [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") + [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code"){:target="blank"}
 
 _Note: Jupyter notebook extensions end in '*.ipynb'._
 
@@ -68,4 +68,4 @@ Now that we have connected to the database, let us **run a test query to obtain 
 
 Congratulations, you have successfully connected to an Azure SQL database and ran a query against the database.
 
-_A_ [_GIST_](https://gist.github.com/lukemurraynz/6636632309bc2bf2b1b37676ee0881ce "python.sqldb.text") _has been created, with the code as well, in case issues are copied from the website._
+_A_ [_GIST_](https://gist.github.com/lukemurraynz/6636632309bc2bf2b1b37676ee0881ce "python.sqldb.text"){:target="blank"} _has been created, with the code as well, in case issues are copied from the website._

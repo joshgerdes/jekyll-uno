@@ -67,3 +67,5 @@ Now that we have connected to the database, lets run a query to obtain the SQL v
 ![](/uploads/juptyer_notebook_query.png)
 
 Congradulations, you have successfully connected to an Azure SQL database and ran a query against the database.
+
+_A GIST has been created, with the code as well, in case there are issues copying from the website._

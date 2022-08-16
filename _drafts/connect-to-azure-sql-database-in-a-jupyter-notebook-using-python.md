@@ -21,6 +21,6 @@ Make sure you install:
 
 * [Python](https://www.python.org/downloads/ "Python")
 * [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc ") library
-* 
+* [Microsoft ODBC Driver for SQL Sever](https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server") _(has to be v17 or newer to support Azure Active Directory authentication)_.
 
 _Note: Jupyter notebook extensions end in '*.ipynb'._

@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/juptyer_notebook.png"
 
 ---
-[Jupyter](https://jupyter.org/ "Jupyter") Notebooks, commonly used by Data Scientists and Students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
+[Jupyter](https://jupyter.org/ "Jupyter"){:target="blank"} Notebooks, commonly used by Data Scientists and Students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
 
 I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.
 

@@ -34,8 +34,8 @@ Once all the prerequsites are installed, its time to create the Notebook.
 4. Press + Code _(to add a Code snippet)_
 5. First we need to import the pyodbc library:
 
-    \#Libraries
-    import pyodbc
+   \#Libraries
+   import pyodbc
 
 Then we need to add the snippet to connect to the SQL database _(this can be in a seperate Codeblock or the same codeblock, as long as the import is ran before the SQL connection is made)_:
 
@@ -63,5 +63,7 @@ Now that we have connected to the database, lets run a query to obtain the SQL v
     while row:
     print(row[0])
     row = cursor.fetchone()
-    
+
+![](/uploads/juptyer_notebook_query.png)
+
 Congradulations, you have successfully connected to an Azure SQL database and ran a query against the database.

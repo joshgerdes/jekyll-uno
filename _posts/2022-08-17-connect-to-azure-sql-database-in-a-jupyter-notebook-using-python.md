@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/juptyer_notebook.png"
 
 ---
-nvironup an [Jupyter](https://jupyter.org/ "Jupyter") Notebook's, commonly used by Data Scientists and students, allow you to run code, such as Python and PowerShell, inside a Notebook format, and display the output inside the notebook, this is really useful for teaching a subject or displaying up-to-date information.
+[Jupyter](https://jupyter.org/ "Jupyter") Notebook's, commonly used by Data Scientists and students, allow you to run code, such as Python and PowerShell, inside a Notebook format, and display the output inside the notebook, this is really useful for teaching a subject or displaying up-to-date information.
 
 I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.
 
@@ -53,9 +53,9 @@ Then we need to **add the snippet to connect to the SQL database** _(this can be
 
 The 'Authentication=ActiveDirectoryInteractive' parameter as part of the Connection string, will prompt for an interactive Azure Active Directory prompt to display and ask for credentials to be logged in, this includes MFA support. If you use this method, then the username and password variables are simply placeholders.
 
-If you want to hardcode credentials into the Notebook _(not recommend)_, you can remove the '_Authentication=ActiveDirectoryInteractive_' section and enter in the credentials into the username and password field.
+If you want to hardcode credentials into the Notebook _(not recommended)_, you can remove the '_Authentication=ActiveDirectoryInteractive_' section and enter the credentials into the username and password field.
 
-Now that we have connected to the database, lets **run a test query to obtain the SQL version**:
+Now that we have connected to the database, let us **run a test query to obtain the SQL version**:
 
     #Sample select query
     cursor.execute("SELECT @@version;")
@@ -66,6 +66,6 @@ Now that we have connected to the database, lets **run a test query to obtain th
 
 ![](/uploads/juptyer_notebook_query.png)
 
-Congradulations, you have successfully connected to an Azure SQL database and ran a query against the database.
+Congratulations, you have successfully connected to an Azure SQL database and ran a query against the database.
 
 _A_ [_GIST_](https://gist.github.com/lukemurraynz/6636632309bc2bf2b1b37676ee0881ce "python.sqldb.text") _has been created, with the code as well, in case there are issues copying from the website._

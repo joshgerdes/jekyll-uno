@@ -22,5 +22,12 @@ Make sure you install:
 * [Python](https://www.python.org/downloads/ "Python")
 * [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc ") library
 * [Microsoft ODBC Driver for SQL Sever](https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server") _(has to be v17 or newer to support Azure Active Directory authentication)_.
+* [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") + [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code ") 
 
 _Note: Jupyter notebook extensions end in '*.ipynb'._
+
+Once all the prerequsites are installed, its time to create the Notebook.
+
+1.  Open Visual Studio Code
+2. Click File, New File
+3. 

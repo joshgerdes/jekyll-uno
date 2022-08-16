@@ -15,4 +15,11 @@ I am not a python or Jupyter expert, so this article will be brief on how I was 
 
 To run a Jupyther Notebook, you can install [Anaconda](https://www.anaconda.com/products/distribution "Anaconda"), and then use that to download Juypter to run the notebooks from a locally _(or server)_ hosted web-based interface.
 
-However, today I will be using Visual Studio Code with the [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code ").
+However, today I will be using Visual Studio Code with the [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code ") on a windows endpoint.
+
+Make sure you install:
+
+* [Python](https://www.python.org/downloads/ "Python")
+* pyodbc libraries _(pip install pyodbc)_
+
+_Note: Jupyter notebook extensions end in '*.ipynb'._

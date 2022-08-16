@@ -68,4 +68,4 @@ Now that we have connected to the database, lets run a query to obtain the SQL v
 
 Congradulations, you have successfully connected to an Azure SQL database and ran a query against the database.
 
-_A GIST has been created, with the code as well, in case there are issues copying from the website._
+_A_ [_GIST_](https://gist.github.com/lukemurraynz/6636632309bc2bf2b1b37676ee0881ce "python.sqldb.text") _has been created, with the code as well, in case there are issues copying from the website._

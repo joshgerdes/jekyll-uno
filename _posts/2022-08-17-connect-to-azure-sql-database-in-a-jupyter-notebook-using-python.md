@@ -64,7 +64,7 @@ Now that we have connected to the database, let us **run a test query to obtain 
     print(row[0])
     row = cursor.fetchone()
 
-![](/uploads/juptyer_notebook_query.png)
+![Jupyter python SQL connection](/uploads/juptyer_notebook_query.png)
 
 Congratulations, you have successfully connected to an Azure SQL database and ran a query against the database.
 

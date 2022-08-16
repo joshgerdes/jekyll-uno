@@ -28,14 +28,14 @@ _Note: Jupyter notebook extensions end in '*.ipynb'._
 
 Once all the prerequsites are installed, its time to create the Notebook.
 
-1. Open Visual Studio Code
-2. Click File, New File
-3. Select Jupyter Notebook
-4. Press + Code _(to add a Code snippet)_
+1. Open **Visual Studio Code**
+2. Click **File**, **New File**
+3. Select J**upyter Notebook**
+4. Press **+ Code** _(to add a Code snippet)_
 5. First we need to import the pyodbc library:
 
-   \#Libraries
-   import pyodbc
+       #Libraries
+       import pyodbc
 
 Then we need to add the snippet to connect to the SQL database _(this can be in a seperate Codeblock or the same codeblock, as long as the import is ran before the SQL connection is made)_:
 

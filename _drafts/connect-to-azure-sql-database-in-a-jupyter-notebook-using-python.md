@@ -5,6 +5,7 @@ author: Luke
 categories: []
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/juptyer_notebook.png"
 
 ---
+[Jupyter](https://jupyter.org/ "Jupyter") Notebook's 

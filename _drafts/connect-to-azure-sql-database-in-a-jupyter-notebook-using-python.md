@@ -50,3 +50,7 @@ Then we need to add the snippet to connect to the SQL database _(this can be in 
     
     connection = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};Server='+server+',1433;Database='+database+';Uid='+username+';Pwd='+password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive')
     cursor = connection.cursor()
+
+The 'Authentication=ActiveDirectoryInteractive' parameter as part of the Connection string, will prompt for an interactive Azure Active Directory prompt to display and ask for credentials to be logged in, this includes MFA support. If you use this method, then the username and password variables are simply placeholders.
+
+If you want to hardcode credentials into the Notebook _(not recommend)_, you can remove the 'Authentication=ActiveDirectoryInteractive' section and enter in the credentials into the username and password field.

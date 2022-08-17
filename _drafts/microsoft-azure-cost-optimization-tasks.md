@@ -113,12 +113,18 @@ The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure En
 
 #### Review unused files and VHDs
 
-Save Azure cost by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts. 
+Save Azure costs by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts. 
 
-When a VM is deleted from Azure portal, the underlying OS and data disks may not get deleted. Such disks continue to consume Azure storage and accounts for cost for storing them. These disks are called Orphaned Disks.
+When a VM is deleted from the Azure portal, the underlying OS and data disks may not get deleted. Such disks continue to consume Azure storage and account for the cost of storing them. These disks are called Orphaned Disks.
 
 As mentioned above, some Virtual Machines with unmanaged disks when deleted will keep the VHDs around. 
 
-Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can Report on any disks that are not in use by a VM, and then delete them. 
+Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can report on any disks that are not in use by a VM, and then delete them. 
 
-_Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder uses unmanaged disks to create new Session hosts etc, so context is key._
+_Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc, so context is key._
+
+With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts. It’s a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. The lifecycle management policy lets you:
+
+1. Transition blobs to a cooler storage tier (hot to cool, hot to archive, or cool to archive) to optimize for performance and cost
+2. Delete blobs at the end of their lifecycles
+3. Define rules to be run once per day at the storage account level.

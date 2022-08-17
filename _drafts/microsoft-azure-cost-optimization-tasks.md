@@ -152,3 +152,14 @@ Generally, I recommend 3 budgets should be configured, to give enough notice:
 * 50%
 * 60%
 * 70%
+
+#### Review Tags
+
+You apply tags to your Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. Each tag consists of a name and a value pair. For example, you can apply the name "Environment" and the value "Production" to all the resources in production. 
+
+Tags can be used to determine things like: 
+
+* Who to bill?
+* Who supports it? 
+
+The right tags can mean that the right owners get charged internally and have more ownership of their resource costs. Examples below:

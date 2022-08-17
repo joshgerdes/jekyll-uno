@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/cost_pillar_overview.png"
 
 ---
-Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem! 
+Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem!
 
 There are no one-size-fits when it comes to cost optimization, but there are some general tasks that can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.
 
@@ -218,17 +218,17 @@ Backup:
 
 #### Review unused Public IPs
 
-Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services. 
+Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services.
 
 This is also a great opportunity to inspect what Public IP addresses you have and make sure there are resources, that have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
 
-The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource. 
+The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource.
 
-When resources get created, sometimes they will create a Public IP, these can be removed as part of the build but left in the Resource Groups. 
+When resources get created, sometimes they will create a Public IP, these can be removed as part of the build but left in the Resource Groups.
 
-We want to remove unattached Public IP to save money. 
+We want to remove unattached Public IP to save money.
 
-_Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._ 
+_Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._
 
 1. Log in to the **Azure Portal** and navigate to the [**Public IP Addresses **](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Addresses")blade
 2. Look in the ‘**Associated to**’ column and if not required click on the **Public IP**
@@ -236,12 +236,12 @@ _Note: In some cases, the Product Owner may need to be consulted before any chan
 
 #### Review Azure Storage Accounts
 
-An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. Data in your Azure storage account is durable and highly available, secure, and massively scalable. 
+An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 General-purpose storage accounts may be configured for either of the following performance tiers:
 
 * A standard performance tier for storing blobs, files, tables, queues, and Azure virtual machine disks.
-* A premium performance tier for storing unmanaged virtual machine disks. If a Storage account is Premium but only needs to be Standard _(or LRS instead of ZRS)_, this can save some money. 
+* A premium performance tier for storing unmanaged virtual machine disks. If a Storage account is Premium but only needs to be Standard _(or LRS instead of ZRS)_, this can save some money.
 
 Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required.
 
@@ -249,6 +249,6 @@ Note: In some cases, the Product Owner may need to be consulted before any chang
 2. Click on **Manage View**, **Edit Columns**, and add in: **SKU**
 3. **Review** the **Premium** Storage **Accounts** and determine if any accounts need to be downsized to Standard
 4. To **change**, click on the **Storage Account**
-5. Click on **Configuration** and change from **Premium** to **Standard** 
+5. Click on **Configuration** and change from **Premium** to **Standard**
 
 You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t?

@@ -163,3 +163,5 @@ Tags can be used to determine things like:
 * Who supports it? 
 
 The right tags can mean that the right owners get charged internally and have more ownership of their resource costs. Examples below:
+
+For further examples and a base tagging convention, check out a blog article I wrote on [Microsoft Azure Tagging conventions](https://luke.geek.nz/azure/microsoft-azure-tagging-conventions/ "Microsoft Azure Tagging Conventions ").

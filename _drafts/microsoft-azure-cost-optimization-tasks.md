@@ -6,10 +6,12 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/cost_pillar_overview.png"
 
 ---
 Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem!
+
+#### Overview
 
 Although Microsoft takes a lot of traditional infrastructure management and security concerns off your hand, you are still responsible for the spending and making sure the value of the technologies and services you consume, match your business goals and agility.
 
@@ -23,8 +25,36 @@ The right governance and oversight can help prevent Cloud sprawl and wasted cons
 
 To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?") at least quarterly. 
 
-> This is not an exhaustive list, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?") and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor") help supplement these tasks. 
+> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?") and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor") help supplement these tasks. 
 >
 > If you have other tasks that you run, feel free to share them with the community in the page comments below.
 
 The [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?WT.mc_id=AZ-MVP-5004796 "Overview of Microsoft Graph") and [KQL queries](https://luke.geek.nz/azure-resource-graph-explorer-and-the-powershell-azure-resource-graph "Azure Resource Graph Explorer and the PowerShell Azure Resource Graph ") can also be used in conjunction with PowerShell to pull recommendations straight out of Advisor, which can then be fed into reports, and the use of community tools such as the [Azure Optimization Engine](https://luke.geek.nz/azure/azure-optimization-engine "Azure Optimization Engine ") cannot be undervalued.
+
+#### Design
+
+![Azure - Monitor & optimize](/uploads/cost_pillar_overview.png "Azure - Monitor & optimize")
+
+##### Keep within the cost constraints
+
+Every design choice has cost implications. Before choosing an architectural pattern, Azure service, or a price model for the service, consider the budget constraints set by the company. As part of the design, identify acceptable boundaries on scale, redundancy, and performance against cost. After estimating the initial cost, set budgets and alerts at different scopes to measure the cost. 
+
+One of the cost drivers can be unrestricted resources. These resources typically need to scale and consume more cost to meet demand.
+
+##### Aim for scalable costs
+
+A key benefit of the cloud is the ability to scale dynamically. The workload cost should scale linearly with demand. 
+
+You can save costs through automatic scaling. Consider the usage metrics and performance to determine the number of instances. Choose smaller instances for a highly variable workload and scale out to get the required level of performance, rather than up. This choice will enable you to make your cost calculations and estimates granular.
+
+##### Pay for the consumption
+
+Adopt a leasing model instead of owning infrastructure. Azure offers many SaaS and PaaS resources that simplify the overall architecture. The cost of hardware, software, development, operations, security, and data center space is included in the pricing model. Also, choose pay-as-you-go over fixed pricing. That way, as a consumer, you're charged for only what you use.
+
+##### Right resources, the right size
+
+Choose the right resources that are aligned with business goals and can handle the performance of the workload. 
+
+An inappropriate or misconfigured service can impact the cost. 
+
+For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand, and deliver expected outcomes.

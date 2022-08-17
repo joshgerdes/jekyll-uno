@@ -139,9 +139,11 @@ Budgets in Cost Management help you plan for and drive organizational accountabi
 
 Budgets help you inform others about their spending to proactively manage costs and monitor how spending progresses over time.
 
-When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped. You can use budgets to compare and track spending as you analyze costs.
+When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped, however, you can use Budget alerts as a trigger to run Azure Logic Apps, or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
 
-Make sure you have Azure Budget notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.
+Make sure you have [Azure Budget](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Azure Budget") notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. 
+
+This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.
 
 Examples of budgets that could be configured:
 

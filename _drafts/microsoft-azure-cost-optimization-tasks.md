@@ -75,3 +75,11 @@ Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/B
 
 1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an Application associated with it.
 2. If the Azure App Service actually is getting utilized _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.
+
+##### Review shutdown workloads
+
+Because you pay for Azure Resources as ‘Pay As You Go’ a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload actually needs to be on 24/7! 
+
+For example, you have automation configured to automatically start up and shut down workloads based on the following schedule: 7 AM Start – 7 PM Stop _(& off Weekends)_.
+
+You can add servers to this automated schedule by adding the following Tag to the Virtual Machine, or trigger automation when a workload is ‘Shutdown’ and not deallocated.

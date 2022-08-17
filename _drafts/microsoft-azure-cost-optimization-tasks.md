@@ -186,8 +186,12 @@ If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed i
 
 If any are eligible for HUB, click on the Virtual Machine… 
 
-1. Click the Configuration blade
-2. Select Licensing, Already have a Windows server license?
-3. Yes and Save 
+1. Click the **Configuration blade**
+2. Select **Licensing, Already have a Windows server license?**
+3. **Yes** and **Save** 
 
 _Note: This is a non-intrusive change that will take effect on the billing immediately and doesn’t cause any impact on the Virtual Machine._
+
+#### Review Backups
+
+Azure Backup is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure. Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads that have been backed up to migrate, test or clone and that you no longer need to retain the data for.

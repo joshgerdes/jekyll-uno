@@ -123,7 +123,11 @@ Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machi
 
 _Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc, so context is key._
 
-With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts. It’s a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. The lifecycle management policy lets you:
+With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts. It’s a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. 
+
+![](/uploads/azureblogstglifecyclemgmnt.PNG)
+
+The lifecycle management policy lets you:
 
 1. Transition blobs to a cooler storage tier (hot to cool, hot to archive, or cool to archive) to optimize for performance and cost
 2. Delete blobs at the end of their lifecycles

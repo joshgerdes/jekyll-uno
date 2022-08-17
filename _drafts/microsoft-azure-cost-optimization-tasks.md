@@ -98,7 +98,7 @@ Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/Brows
 1. The SQL Database Pricing Tier is ‘Standard’ and is actually using the DTUs (usually found by looking at the Compute utilization on the databases), if not downsize the DTU limit.
 2. Check Geo-Replication to make sure that the SQL Database is not replicating across Regions if it doesn’t need to be.
 
-##### Review Azure Reserved Instances
+#### Review Azure Reserved Instances
 
 Azure reserved instances significantly reduce costs—up to 72 percent compared to pay-as-you-go prices—with one-year or three-year terms on Windows and Linux virtual machines (VMs). What's more, you can now improve budgeting and forecasting with a single upfront payment (i.e. Pay for a VM Upfront for 1/3 Year or 5 Years) making it easy to calculate your investments. Or, lower your upfront cash outflow with monthly payment options at no additional cost.
 
@@ -110,3 +110,15 @@ The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure En
 2. What workloads are they used for?
 3. Is there a project that may replace or resize the workloads in the next year?
 4. Who is paying for the workloads?
+
+#### Review unused files and VHDs
+
+Save Azure cost by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts. 
+
+When a VM is deleted from Azure portal, the underlying OS and data disks may not get deleted. Such disks continue to consume Azure storage and accounts for cost for storing them. These disks are called Orphaned Disks.
+
+As mentioned above, some Virtual Machines with unmanaged disks when deleted will keep the VHDs around. 
+
+Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can Report on any disks that are not in use by a VM, and then delete them. 
+
+_Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder uses unmanaged disks to create new Session hosts etc, so context is key._

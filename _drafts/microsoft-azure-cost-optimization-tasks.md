@@ -9,7 +9,9 @@ header:
   teaser: "/uploads/cost_pillar_overview.png"
 
 ---
-Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem!
+Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem! 
+
+There are no one-size-fits when it comes to cost optimization, but there are some general tasks that can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.
 
 #### Overview
 

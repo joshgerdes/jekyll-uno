@@ -64,3 +64,14 @@ For example, building a multi-region service when the service levels don't requi
 Treat cost monitoring and optimization as a process, rather than a point-in-time activity. Conduct regular cost reviews and measure and forecast the capacity needs so that you can provision resources dynamically and scale with demand. Review the cost management recommendations and take action.
 
 Today, we will focus on **Monitor and optimize**.
+
+#### Review Underutilized Resources
+
+Optimize and improve efficiency by identifying idle and underutilized resources across the Azure ecosystem.
+
+##### Review Azure App Service Plans
+
+Review Azure App Service Plans to determine if: 
+
+1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an Application associated with it.
+2. If the Azure App Service actually is getting utilised _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.

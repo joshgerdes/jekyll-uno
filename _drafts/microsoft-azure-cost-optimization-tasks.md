@@ -143,6 +143,8 @@ Budgets help you inform others about their spending to proactively manage costs 
 
 When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped, however, you can use Budget alerts as a trigger to run Azure Logic Apps, or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
 
+![Azure Budget](/uploads/azure_budget.png "Azure Budget")
+
 Make sure you have [Azure Budget](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Azure Budget") notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold.
 
 This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.

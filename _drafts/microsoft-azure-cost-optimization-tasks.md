@@ -252,3 +252,7 @@ Note: In some cases, the Product Owner may need to be consulted before any chang
 5. Click on **Configuration** and change from **Premium** to **Standard**
 
 You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t?
+
+#### Download PDF
+
+Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "here".

@@ -180,22 +180,38 @@ The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-bene
 
 Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure as a service, or IaaS)_, and save up to 55% on Azure SQL Database _(platform as a service, or PaaS)_ and SQL Server on Azure Virtual Machines _(IaaS)_ with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.
 
-To verify if a server is using the Azure Hybrid Benefit Log in to the Azure Portal and navigate to the Virtual Machine Blade Make sure that the: OS Licensing Benefit column is selected. 
+To verify if a server is using the Azure Hybrid Benefit Log in to the Azure Portal and navigate to the Virtual Machine Blade Make sure that the: OS Licensing Benefit column is selected.
 
-If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads (such as Linux) will have ‘Not Supported’. 
+If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads (such as Linux) will have ‘Not Supported’.
 
-If any are eligible for HUB, click on the Virtual Machine… 
+If any are eligible for HUB, click on the Virtual Machine…
 
 1. Click the **Configuration blade**
 2. Select **Licensing, Already have a Windows server license?**
-3. **Yes** and **Save** 
+3. **Yes** and **Save**
 
 _Note: This is a non-intrusive change that will take effect on the billing immediately and doesn’t cause any impact on the Virtual Machine._
 
 #### Review Backups
 
-[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure. 
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
 
 Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads that have been backed up to migrate, test, or clone and that you no longer need to retain the data for.
 
-_Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around._
+> Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in the backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around.
+
+Login to the Azure Portal and navigate to the Recovery Services Vault page Navigate to each one and click on:
+
+Backup:
+
+1. Under **Usage**, click on **Backup Items**
+2. Click on **Azure Virtual Machines** 
+3. **Sort** the **Backup** items by **Latest Restore Point** _(so the older restore points are at the top)_ 
+
+   Using the Latest Restore Point as a guide, IF there are any servers that can have their Backups deleted:
+
+
+1. Click on the **Name** of the Backup Item
+2. Click on **Stop Backup**
+3. Select **Delete Backup Data** _(this is non-reversible)_
+4. Type in the name of the **Backup Item** and select **Stop Backup**

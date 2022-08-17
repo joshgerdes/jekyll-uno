@@ -123,12 +123,28 @@ Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machi
 
 _Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc, so context is key._
 
-With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts. It’s a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. 
+With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. 
 
-![](/uploads/azureblogstglifecyclemgmnt.PNG)
+![Azure Blob Storage Lifecycle Management](/uploads/azureblogstglifecyclemgmnt.PNG "Azure Blob Storage Lifecycle Management")
 
 The lifecycle management policy lets you:
 
-1. Transition blobs to a cooler storage tier (hot to cool, hot to archive, or cool to archive) to optimize for performance and cost
+1. Transition blobs to a cooler storage tier _(hot to cool, hot to archive, or cool to archive)_ to optimize for performance and cost
 2. Delete blobs at the end of their lifecycles
 3. Define rules to be run once per day at the storage account level.
+
+#### Review budgets
+
+Budgets in Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services you consume or subscribe to during a specific period. They help you inform others about their spending to proactively manage costs and monitor how spending progresses over time. 
+
+When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped. You can use budgets to compare and track spending as you analyze costs.
+
+Make sure you have Azure Budget notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner. 
+
+Examples of budgets that could be configured: 
+
+Generally, I recommend 3 budgets should be configured, to give enough notice: 
+
+* 50% 
+* 60% 
+* 70%

@@ -251,7 +251,7 @@ Note: In some cases, the Product Owner may need to be consulted before any chang
 4. To **change**, click on the **Storage Account**
 5. Click on **Configuration** and change from **Premium** to **Standard**
 
-You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t?
+You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t? Can the storage account be changed to Standard during off hours or other non peak ?
 
 #### - Download PDF verson of these Tasks
 

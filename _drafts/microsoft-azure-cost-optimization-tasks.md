@@ -23,9 +23,9 @@ Today we are going to go back to basics and look at the [Cost Optimization](http
 
 The right governance and oversight can help prevent Cloud sprawl and wasted consumption costs.
 
-To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?") at least quarterly. 
+To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?") at least quarterly.
 
-> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?") and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor") help supplement these tasks. 
+> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?") and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor") help supplement these tasks.
 >
 > If you have other tasks that you run, feel free to share them with the community in the page comments below.
 
@@ -37,13 +37,13 @@ The [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?WT.mc_id=A
 
 ##### Keep within the cost constraints
 
-Every design choice has cost implications. Before choosing an architectural pattern, Azure service, or a price model for the service, consider the budget constraints set by the company. As part of the design, identify acceptable boundaries on scale, redundancy, and performance against cost. After estimating the initial cost, set budgets and alerts at different scopes to measure the cost. 
+Every design choice has cost implications. Before choosing an architectural pattern, Azure service, or a price model for the service, consider the budget constraints set by the company. As part of the design, identify acceptable boundaries on scale, redundancy, and performance against cost. After estimating the initial cost, set budgets and alerts at different scopes to measure the cost.
 
 One of the cost drivers can be unrestricted resources. These resources typically need to scale and consume more cost to meet demand.
 
 ##### Aim for scalable costs
 
-A key benefit of the cloud is the ability to scale dynamically. The workload cost should scale linearly with demand. 
+A key benefit of the cloud is the ability to scale dynamically. The workload cost should scale linearly with demand.
 
 You can save costs through automatic scaling. Consider the usage metrics and performance to determine the number of instances. Choose smaller instances for a highly variable workload and scale out to get the required level of performance, rather than up. This choice will enable you to make your cost calculations and estimates granular.
 
@@ -53,9 +53,9 @@ Adopt a leasing model instead of owning infrastructure. Azure offers many SaaS a
 
 ##### Right resources, the right size
 
-Choose the right resources that are aligned with business goals and can handle the performance of the workload. 
+Choose the right resources that are aligned with business goals and can handle the performance of the workload.
 
-An inappropriate or misconfigured service can impact the cost. 
+An inappropriate or misconfigured service can impact the cost.
 
 For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand, and deliver expected outcomes.
 
@@ -63,4 +63,4 @@ For example, building a multi-region service when the service levels don't requi
 
 Treat cost monitoring and optimization as a process, rather than a point-in-time activity. Conduct regular cost reviews and measure and forecast the capacity needs so that you can provision resources dynamically and scale with demand. Review the cost management recommendations and take action.
 
-Today, we will focus on: **Monitor and optimize**.
+Today, we will focus on **Monitor and optimize**.

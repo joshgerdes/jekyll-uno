@@ -253,6 +253,6 @@ Note: In some cases, the Product Owner may need to be consulted before any chang
 
 You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t?
 
-#### Download PDF
+#### - Download PDF verson of these Tasks
 
-Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "here".
+Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "[here](https://github.com/lukemurraynz/presentations/blob/main/2022/Microsoft%20Azure%20-%20Cost%20Optimization_1.0.pdf "Azure Cost Optimization PDF")".

@@ -220,14 +220,16 @@ Backup:
 
 Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services. 
 
+This is also a great opportunity to inspect what Public IP addresses you have and make sure there are resources, that have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
+
 The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource. 
 
 When resources get created, sometimes they will create a Public IP, these can be removed as part of the build but left in the Resource Groups. 
 
 We want to remove unattached Public IP to save money. 
 
-_Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required,. Also this is a great opportunity to review and make sure you have resources that_ 
+_Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._ 
 
-1. Log in to the Azure Portal and navigate to the [Public IP Addresses](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Addresses") blade
-2. Look in the ‘Associated to’ column and if not required click on the Public IP
-3. Click Delete
+1. Log in to the **Azure Portal** and navigate to the [**Public IP Addresses **](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Addresses")blade
+2. Look in the ‘**Associated to**’ column and if not required click on the **Public IP**
+3. Click **Delete**

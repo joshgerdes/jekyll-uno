@@ -1,6 +1,6 @@
 ---
 date: 2022-08-18 00:00:00 +1200
-title: Microsoft Azure - Cost Optimization Tasks
+title: Microsoft Azure - Operational Cost Optimization Tasks
 author: Luke
 categories:
 - Azure
@@ -147,7 +147,7 @@ This is set up in the Azure Portal, on the Resource Group under Budgets, and set
 
 Examples of budgets that could be configured:
 
-Generally, I recommend 3 budgets should be configured, to give enough notice:
+Generally, I recommend that 3 budgets should be configured, to give enough notice:
 
 * 50%
 * 60%
@@ -182,7 +182,7 @@ Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure
 
 To verify if a server is using the Azure Hybrid Benefit Log in to the Azure Portal and navigate to the Virtual Machine Blade Make sure that the: OS Licensing Benefit column is selected.
 
-If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads (such as Linux) will have ‘Not Supported’.
+If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads _(such as Linux)_ will have ‘Not Supported’.
 
 If any are eligible for HUB, click on the Virtual Machine…
 
@@ -200,18 +200,16 @@ Azure Backup is cost-effective and less complex than other cloud backup solution
 
 > Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in the backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around.
 
-Login to the Azure Portal and navigate to the Recovery Services Vault page Navigate to each one and click on:
+Log in to the Azure Portal and navigate to the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page Navigate to each one and click on:
 
 Backup:
 
 1. Under **Usage**, click on **Backup Items**
-2. Click on **Azure Virtual Machines** 
-3. **Sort** the **Backup** items by **Latest Restore Point** _(so the older restore points are at the top)_ 
+2. Click on **Azure Virtual Machines**
+3. **Sort** the **Backup** items by **Latest Restore Point** _(so the older restore points are at the top)_
 
    Using the Latest Restore Point as a guide, IF there are any servers that can have their Backups deleted:
-
-
-1. Click on the **Name** of the Backup Item
-2. Click on **Stop Backup**
-3. Select **Delete Backup Data** _(this is non-reversible)_
-4. Type in the name of the **Backup Item** and select **Stop Backup**
+4. Click on the **Name** of the Backup Item
+5. Click on **Stop Backup**
+6. Select **Delete Backup Data** _(this is non-reversible)_
+7. Type in the name of the **Backup Item** and select **Stop Backup**

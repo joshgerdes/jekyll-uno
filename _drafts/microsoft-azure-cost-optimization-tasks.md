@@ -93,7 +93,7 @@ The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure En
 
 ##### Review Azure SQL Databases
 
-Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases") to determine if: 
+Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases") to determine if:
 
 1. The SQL Database Pricing Tier is ‘Standard’ and is actually using the DTUs (usually found by looking at the Compute utilization on the databases), if not downsize the DTU limit.
 2. Check Geo-Replication to make sure that the SQL Database is not replicating across Regions if it doesn’t need to be.
@@ -106,24 +106,24 @@ Azure reserved instances significantly reduce costs—up to 72 percent compared 
 
 The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The Azure Advisor needs to be reviewed for Reserved Instance recommendations.
 
-1. When reviewing Reserved Instances you need to take into consideration: 
+1. When reviewing Reserved Instances you need to take into consideration:
 2. What workloads are they used for?
 3. Is there a project that may replace or resize the workloads in the next year?
 4. Who is paying for the workloads?
 
 #### Review unused files and VHDs
 
-Save Azure costs by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts. 
+Save Azure costs by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts.
 
 When a VM is deleted from the Azure portal, the underlying OS and data disks may not get deleted. Such disks continue to consume Azure storage and account for the cost of storing them. These disks are called Orphaned Disks.
 
-As mentioned above, some Virtual Machines with unmanaged disks when deleted will keep the VHDs around. 
+As mentioned above, some Virtual Machines with unmanaged disks when deleted will keep the VHDs around.
 
-Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can report on any disks that are not in use by a VM, and then delete them. 
+Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can report on any disks that are not in use by a VM, and then delete them.
 
 _Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc, so context is key._
 
-With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data. 
+With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data.
 
 ![Azure Blob Storage Lifecycle Management](/uploads/azureblogstglifecyclemgmnt.PNG "Azure Blob Storage Lifecycle Management")
 
@@ -135,16 +135,18 @@ The lifecycle management policy lets you:
 
 #### Review budgets
 
-Budgets in Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services you consume or subscribe to during a specific period. They help you inform others about their spending to proactively manage costs and monitor how spending progresses over time. 
+Budgets in Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services you consume or subscribe to during a specific period. 
+
+Budgets help you inform others about their spending to proactively manage costs and monitor how spending progresses over time.
 
 When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped. You can use budgets to compare and track spending as you analyze costs.
 
-Make sure you have Azure Budget notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner. 
+Make sure you have Azure Budget notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.
 
-Examples of budgets that could be configured: 
+Examples of budgets that could be configured:
 
-Generally, I recommend 3 budgets should be configured, to give enough notice: 
+Generally, I recommend 3 budgets should be configured, to give enough notice:
 
-* 50% 
-* 60% 
+* 50%
+* 60%
 * 70%

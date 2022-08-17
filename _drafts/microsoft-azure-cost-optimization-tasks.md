@@ -78,8 +78,15 @@ Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/B
 
 ##### Review shutdown workloads
 
-Because you pay for Azure Resources as ‘Pay As You Go’ a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload actually needs to be on 24/7! 
+Because you pay for Azure Resources as ‘Pay As You Go’ a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload actually needs to be on 24/7!
 
 For example, you have automation configured to automatically start up and shut down workloads based on the following schedule: 7 AM Start – 7 PM Stop _(& off Weekends)_.
 
 You can add servers to this automated schedule by adding the following Tag to the Virtual Machine, or trigger automation when a workload is ‘Shutdown’ and not deallocated, see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation ")" for a potential place to start.
+
+##### Review Azure Advisor
+
+The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
+
+1. The Azure Advisor will recommend Reserved Instances
+2. The Azure Advisor will recommend if a Virtual Machine is running on a VM size GREATER than what it needs (based on CPU utilization under 5% in the last 14 days). If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it down to a more suitable size.

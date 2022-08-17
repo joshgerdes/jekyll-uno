@@ -71,7 +71,7 @@ Optimize and improve efficiency by identifying idle and underutilized resources 
 
 ##### Review Azure App Service Plans
 
-Review Azure App Service Plans to determine if: 
+Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FserverFarms "Azure Portal - App Service plan") to determine if:
 
 1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an Application associated with it.
 2. If the Azure App Service actually is getting utilised _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.

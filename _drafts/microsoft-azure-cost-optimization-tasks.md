@@ -194,4 +194,8 @@ _Note: This is a non-intrusive change that will take effect on the billing immed
 
 #### Review Backups
 
-Azure Backup is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure. Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads that have been backed up to migrate, test, or clone and that you no longer need to retain the data for.
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure. 
+
+Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads that have been backed up to migrate, test, or clone and that you no longer need to retain the data for.
+
+_Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around._

@@ -264,3 +264,23 @@ You can also look at the Replication, does that Storage Account need to be Geo-R
 #### - Download the PDF version of these Tasks
 
 Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "[here](https://github.com/lukemurraynz/presentations/blob/main/2022/Microsoft%20Azure%20-%20Cost%20Optimization_1.0.pdf "Azure Cost Optimization PDF")".
+
+#### - Azure Operational Checklist table
+
+This is a very quick, example of what an Azure Operational Checklist could look like, if you record what tasks you do, then you can look at further automation around implementation and reporting.
+
+| --- | --- | --- |
+| Azure Operational Checklist - for the month of: 00/00/00 |  |  |
+| Action | Completed | Notes |
+| Review App Service Plans |  |  |
+| Review Shutdown'able' workloads |  |  |
+| Review Azure Advisor |  |  |
+| Review Azure SQL Databases |  |  |
+| Review Azure Reserved Instances |  |  |
+| Review unused files and VHDs |  |  |
+| Review Budgets |  |  |
+| Review Tags |  |  |
+| Review HuB |  |  |
+| Review Backups |  |  |
+| Review unused Public IPs |  |  |
+| Review Azure storage accounts |  |  |

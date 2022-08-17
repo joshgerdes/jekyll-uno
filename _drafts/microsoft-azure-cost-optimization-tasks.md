@@ -135,13 +135,13 @@ The lifecycle management policy lets you:
 
 #### Review budgets
 
-Budgets in Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services you consume or subscribe to during a specific period. 
+Budgets in Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services you consume or subscribe to during a specific period.
 
 Budgets help you inform others about their spending to proactively manage costs and monitor how spending progresses over time.
 
 When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped, however, you can use Budget alerts as a trigger to run Azure Logic Apps, or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
 
-Make sure you have [Azure Budget](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Azure Budget") notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold. 
+Make sure you have [Azure Budget](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Azure Budget") notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold.
 
 This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.
 
@@ -155,22 +155,27 @@ Generally, I recommend 3 budgets should be configured, to give enough notice:
 
 #### Review Tags
 
-You apply tags to your Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. Each tag consists of a name and a value pair. For example, you can apply the name "Environment" and the value "Production" to all the resources in production. 
+You apply tags to your Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. Each tag consists of a name and a value pair. For example, you can apply the name "Environment" and the value "Production" to all the resources in production.
 
-Tags can be used to determine things like: 
+Tags can be used to determine things like:
 
 * Who to bill?
-* Who supports it? 
+* Who supports it?
 
 The right tags can mean that the right owners get charged internally and have more ownership of their resource costs. Examples below:
 
-| **Tag Name**          | **Value**     | **Comment**                                                                       |
-|-----------------------|---------------|-----------------------------------------------------------------------------------|
-| **Dept**              | Finance       | Name of the department who owns the resources.                                    |
-| **Environment**       | UAT           | What environment the Resource is used for such as Production, UAT and Development |
-| **Application Owner** | Luke Murray   | The name of the Product Owner for the service sitting inside the Resource Group   |
-| **Support Team**      | Platform Team | What team is responsible for the resources/site for support reasons               |
-| **Billing Code**      | Operational   | Purchase order or project billing code                                            |
-
+| Tag Name | Value | Comment |
+| --- | --- | --- |
+| Dept | Finance | Name of the department who owns the resources. |
+| Environment | UAT | What environment the Resource is used for such as Production, UAT and Development |
+| Application Owner | Luke Murray | The name of the Product Owner for the service sitting inside the Resource Group |
+| Support Team | Platform Team | What team is responsible for the resources/site for support reasons |
+| Billing Code | Operational | Purchase order or project billing code |
 
 For further examples and a base tagging convention, check out a blog article I wrote on [Microsoft Azure Tagging conventions](https://luke.geek.nz/azure/microsoft-azure-tagging-conventions/ "Microsoft Azure Tagging Conventions ").
+
+#### Review Hub (Hybrid Use Benefit)
+
+The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers who have licenses with Software Assurance, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure. 
+
+Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure as a service, or IaaS)_, and save up to 55% on Azure SQL Database _(platform as a service, or PaaS)_ and SQL Server on Azure Virtual Machines _(IaaS)_ with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.

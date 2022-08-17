@@ -58,3 +58,9 @@ Choose the right resources that are aligned with business goals and can handle t
 An inappropriate or misconfigured service can impact the cost. 
 
 For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand, and deliver expected outcomes.
+
+##### Monitor and optimize
+
+Treat cost monitoring and optimization as a process, rather than a point-in-time activity. Conduct regular cost reviews and measure and forecast the capacity needs so that you can provision resources dynamically and scale with demand. Review the cost management recommendations and take action.
+
+Today, we will focus on: **Monitor and optimize**.

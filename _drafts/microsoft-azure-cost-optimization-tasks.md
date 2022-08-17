@@ -89,4 +89,11 @@ You can add servers to this automated schedule by adding the following Tag to th
 The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
 
 1. The Azure Advisor will recommend Reserved Instances
-2. The Azure Advisor will recommend if a Virtual Machine is running on a VM size GREATER than what it needs (based on CPU utilization under 5% in the last 14 days). If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it down to a more suitable size.
+2. The Azure Advisor will recommend if a Virtual Machine is running on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it down to a more suitable size.
+
+##### Review Azure SQL Databases
+
+Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases") to determine if: 
+
+1. The SQL Database Pricing Tier is ‘Standard’ and is actually using the DTUs (usually found by looking at the Compute utilization on the databases), if not downsize the DTU limit.
+2. Check Geo-Replication to make sure that the SQL Database is not replicating across Regions if it doesn’t need to be.

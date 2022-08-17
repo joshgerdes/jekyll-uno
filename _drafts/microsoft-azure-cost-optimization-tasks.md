@@ -164,4 +164,13 @@ Tags can be used to determine things like:
 
 The right tags can mean that the right owners get charged internally and have more ownership of their resource costs. Examples below:
 
+| **Tag Name**          | **Value**     | **Comment**                                                                       |
+|-----------------------|---------------|-----------------------------------------------------------------------------------|
+| **Dept**              | Finance       | Name of the department who owns the resources.                                    |
+| **Environment**       | UAT           | What environment the Resource is used for such as Production, UAT and Development |
+| **Application Owner** | Luke Murray   | The name of the Product Owner for the service sitting inside the Resource Group   |
+| **Support Team**      | Platform Team | What team is responsible for the resources/site for support reasons               |
+| **Billing Code**      | Operational   | Purchase order or project billing code                                            |
+
+
 For further examples and a base tagging convention, check out a blog article I wrote on [Microsoft Azure Tagging conventions](https://luke.geek.nz/azure/microsoft-azure-tagging-conventions/ "Microsoft Azure Tagging Conventions ").

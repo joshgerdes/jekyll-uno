@@ -82,4 +82,4 @@ Because you pay for Azure Resources as ‘Pay As You Go’ a quick win can be to
 
 For example, you have automation configured to automatically start up and shut down workloads based on the following schedule: 7 AM Start – 7 PM Stop _(& off Weekends)_.
 
-You can add servers to this automated schedule by adding the following Tag to the Virtual Machine, or trigger automation when a workload is ‘Shutdown’ and not deallocated.
+You can add servers to this automated schedule by adding the following Tag to the Virtual Machine, or trigger automation when a workload is ‘Shutdown’ and not deallocated, see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation ")" for a potential place to start.

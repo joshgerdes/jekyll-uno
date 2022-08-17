@@ -68,4 +68,6 @@ Now that we have connected to the database, let us **run a test query to obtain 
 
 Congratulations, you have successfully connected to an Azure SQL database and ran a query against the database.
 
+If the connection to SQL appears to be stalling, check to make sure the Azure authentication window, isn't hidden behind another window.
+
 _A_ [_GIST_](https://gist.github.com/lukemurraynz/6636632309bc2bf2b1b37676ee0881ce "python.sqldb.text"){:target="blank"} _has been created, with the code as well, in case issues are copied from the website._

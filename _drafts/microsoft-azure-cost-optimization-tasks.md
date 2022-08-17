@@ -176,6 +176,18 @@ For further examples and a base tagging convention, check out a blog article I w
 
 #### Review Hub (Hybrid Use Benefit)
 
-The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers who have licenses with Software Assurance, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure. 
+The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers who have licenses with Software Assurance, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure.
 
 Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure as a service, or IaaS)_, and save up to 55% on Azure SQL Database _(platform as a service, or PaaS)_ and SQL Server on Azure Virtual Machines _(IaaS)_ with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.
+
+To verify if a server is using the Azure Hybrid Benefit Log in to the Azure Portal and navigate to the Virtual Machine Blade Make sure that the: OS Licensing Benefit column is selected. 
+
+If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads (such as Linux) will have ‘Not Supported’. 
+
+If any are eligible for HUB, click on the Virtual Machine… 
+
+1. Click the Configuration blade
+2. Select Licensing, Already have a Windows server license?
+3. Yes and Save 
+
+_Note: This is a non-intrusive change that will take effect on the billing immediately and doesn’t cause any impact on the Virtual Machine._

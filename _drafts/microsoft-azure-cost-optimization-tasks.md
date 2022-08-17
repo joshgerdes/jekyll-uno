@@ -102,4 +102,11 @@ Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/Brows
 
 Azure reserved instances significantly reduce costs—up to 72 percent compared to pay-as-you-go prices—with one-year or three-year terms on Windows and Linux virtual machines (VMs). What's more, you can now improve budgeting and forecasting with a single upfront payment (i.e. Pay for a VM Upfront for 1/3 Year or 5 Years) making it easy to calculate your investments. Or, lower your upfront cash outflow with monthly payment options at no additional cost.
 
-![](/uploads/azure-ri.png)
+![Azure Reserved Instance](/uploads/azure-ri.png "Azure Reserved Instance")
+
+The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The Azure Advisor needs to be reviewed for Reserved Instance recommendations.
+
+1. When reviewing Reserved Instances you need to take into consideration: 
+2. What workloads are they used for?
+3. Is there a project that may replace or resize the workloads in the next year?
+4. Who is paying for the workloads?

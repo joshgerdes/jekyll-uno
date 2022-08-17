@@ -238,7 +238,7 @@ We want to remove unattached Public IP to save money.
 
 _Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._
 
-1. Log in to the **Azure Portal** and navigate to the [**Public IP Addresses **](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Addresses")blade
+1. Log in to the **Azure Portal** and navigate to the [Public IP Addresses](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Address") blade
 2. Look in the ‘**Associated to**’ column and if not required click on the **Public IP**
 3. Click **Delete**
 
@@ -253,14 +253,14 @@ General-purpose storage accounts may be configured for either of the following p
 
 Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required.
 
-1. Log in to the **Azure Portal** and navigate to the [**Storage Account **](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Azure Storage Account")blade
+1. Log in to the **Azure Portal** and navigate to the [**Storage Account**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Azure Portal - Storage account") blade
 2. Click on **Manage View**, **Edit Columns**, and add in: **SKU**
 3. **Review** the **Premium** Storage **Accounts** and determine if any accounts need to be downsized to Standard
 4. To **change**, click on the **Storage Account**
 5. Click on **Configuration** and change from **Premium** to **Standard**
 
-You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t? Can the storage account be changed to Standard during off hours or other non peak ?
+You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t? Can the storage account be changed to Standard during off hours or other non-peak?
 
-#### - Download PDF verson of these Tasks
+#### - Download the PDF version of these Tasks
 
 Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "[here](https://github.com/lukemurraynz/presentations/blob/main/2022/Microsoft%20Azure%20-%20Cost%20Optimization_1.0.pdf "Azure Cost Optimization PDF")".

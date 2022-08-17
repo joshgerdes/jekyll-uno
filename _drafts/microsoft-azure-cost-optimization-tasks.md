@@ -233,3 +233,22 @@ _Note: In some cases, the Product Owner may need to be consulted before any chan
 1. Log in to the **Azure Portal** and navigate to the [**Public IP Addresses **](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Addresses")blade
 2. Look in the ‘**Associated to**’ column and if not required click on the **Public IP**
 3. Click **Delete**
+
+#### Review Azure Storage Accounts
+
+An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. Data in your Azure storage account is durable and highly available, secure, and massively scalable. 
+
+General-purpose storage accounts may be configured for either of the following performance tiers:
+
+* A standard performance tier for storing blobs, files, tables, queues, and Azure virtual machine disks.
+* A premium performance tier for storing unmanaged virtual machine disks. If a Storage account is Premium but only needs to be Standard _(or LRS instead of ZRS)_, this can save some money. 
+
+Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required.
+
+1. Log in to the Azure Portal and navigate to the Storage Account blade
+2. Click on Manage View, Edit Columns, and add in: SKU
+3. Review the Premium Storage Accounts and determine if any accounts need to be downsized to Standard
+4. To change, click on the Storage Account
+5. Click on Configuration and change from Premium to Standard 
+
+You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t?

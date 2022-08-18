@@ -204,11 +204,11 @@ _Note: This is a non-intrusive change that will take effect on the billing immed
 
 [Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
 
-Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads backed up to migrate, test, or clone and you no longer need to retain the data for.
+Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads backed up to migrate, test, or clone, and you no longer need to retain the data.
 
 > Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in the backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around.
 
-Log in to the Azure Portal and navigate to the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page. Navigate to each one and click on:
+Log in to the Azure Portal and navigate the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page. Navigate to each one and click on:
 
 Backup:
 
@@ -226,7 +226,7 @@ Backup:
 
 Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services.
 
-This is also a great opportunity to inspect what Public IP addresses you have and make sure some resources have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
+This is also a great opportunity to inspect what Public IP addresses you have and make sure some resources have public IP that do not need to be assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
 
 The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource.
 

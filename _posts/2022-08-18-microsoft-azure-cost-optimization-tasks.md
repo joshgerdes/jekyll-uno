@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/cost_pillar_overview.png"
 
 ---
-Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure") platform is not a set-and-forget ecosystem!
+Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure"){:target="_blank"} platform is not a set-and-forget ecosystem!
 
 There are no one-size-fits when it comes to cost optimization, but there are some general tasks that can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.
 
@@ -17,7 +17,7 @@ There are no one-size-fits when it comes to cost optimization, but there are som
 
 Although Microsoft takes a lot of traditional infrastructure management and security concerns off your hand, you are still responsible for the spending and making sure the value of the technologies and services you consume, match your business goals and agility.
 
-Today we are going to go back to basics and look at the [Cost Optimization](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796#cost-optimization "Cost optimization") pillar of the Microsoft [Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework").
+Today we are going to go back to basics and look at the [Cost Optimization](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796#cost-optimization "Cost optimization"){:target="_blank"} pillar of the Microsoft [Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}.
 
 > “The cost optimization pillar provides principles for balancing business goals with budget justification to create a cost-effective workload while avoiding capital-intensive solutions. Cost optimization is about looking at ways to reduce unnecessary expenses and improve operational efficiencies.”
 >
@@ -25,13 +25,13 @@ Today we are going to go back to basics and look at the [Cost Optimization](http
 
 The right governance and oversight can help prevent Cloud sprawl and wasted consumption costs.
 
-To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?") at least quarterly.
+To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?"){:target="_blank"} at least quarterly.
 
-> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?") and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor") help supplement these tasks.
+> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?"){:target="_blank"} and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor"){:target="_blank"} help supplement these tasks.
 >
 > If you have other tasks that you run, feel free to share them with the community in the page comments below.
 
-The [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?WT.mc_id=AZ-MVP-5004796 "Overview of Microsoft Graph") and [KQL queries](https://luke.geek.nz/azure-resource-graph-explorer-and-the-powershell-azure-resource-graph "Azure Resource Graph Explorer and the PowerShell Azure Resource Graph ") can also be used in conjunction with PowerShell to pull recommendations straight out of Advisor, which can then be fed into reports, and the use of community tools such as the [Azure Optimization Engine](https://luke.geek.nz/azure/azure-optimization-engine "Azure Optimization Engine ") cannot be undervalued.
+The [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?WT.mc_id=AZ-MVP-5004796 "Overview of Microsoft Graph") and [KQL queries](https://luke.geek.nz/azure-resource-graph-explorer-and-the-powershell-azure-resource-graph "Azure Resource Graph Explorer and the PowerShell Azure Resource Graph "){:target="_blank"} can also be used in conjunction with PowerShell to pull recommendations straight out of Advisor, which can then be fed into reports, and the use of community tools such as the [Azure Optimization Engine](https://luke.geek.nz/azure/azure-optimization-engine "Azure Optimization Engine "){:target="_blank"} cannot be undervalued.
 
 #### Design
 
@@ -73,29 +73,29 @@ Optimize and improve efficiency by identifying idle and underutilized resources 
 
 ##### Review Azure App Service Plans
 
-Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FserverFarms "Azure Portal - App Service plan") to determine if:
+Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FserverFarms "Azure Portal - App Service plan"){:target="_blank"} to determine if:
 
 1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an associated application.
 2. If the Azure App Service is getting utilized _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.
 
 ##### Review shutdown workloads
 
-Because you pay for Azure Resources as ‘Pay As You Go’, a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload needs to be 24/7!
+Because you pay for Azure Resources as ‘Pay As You Go’, a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines"){:target="_blank"} to determine if the workload needs to be 24/7!
 
 For example, you have automation configured to automatically start up and shut down workloads based on the following schedule: 7 AM Start – 7 PM Stop _(& off Weekends)_.
 
-You can add servers to this automated schedule by adding the following Tag to the Virtual Machine or trigger automation when a workload is ‘Shutdown’ and not deallocated; see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation ")" for a potential place to start.
+You can add servers to this automated schedule by adding the following Tag to the Virtual Machine or trigger automation when a workload is ‘Shutdown’ and not deallocated; see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation "){:target="_blank"}" for a potential place to start.
 
 ##### Review Azure Advisor
 
-The Azure Advisor is an inbuilt tool critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
+The Azure Advisor is an inbuilt tool critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor"){:target="_blank"} needs to be reviewed for Cost recommendations.
 
 1. The Azure Advisor will recommend Reserved Instances.
 2. The Azure Advisor will recommend if a Virtual Machine runs on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and resize it to a more suitable size.
 
 ##### Review Azure SQL Databases
 
-Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases") to determine if:
+Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases"){:target="_blank"} to determine if:
 
 1. The SQL Database Pricing Tier is ‘Standard’ and uses the DTUs (usually found by looking at the Compute utilization on the databases); if not, downsize the DTU limit.
 2. Check Geo-Replication to ensure that the SQL Database is not replicating across Regions if it doesn’t need to be.
@@ -121,11 +121,11 @@ When a VM is deleted from the Azure portal, the underlying OS and data disks may
 
 As mentioned above, some Virtual Machines with unmanaged disks will keep the VHDs around when deleted.
 
-Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft),_ you can report on any disks that are not in use by a VM and then delete them.
+Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks"){:target="_blank"} _(provided by Microsoft),_ you can report on any disks that are not in use by a VM and then delete them.
 
 _Note: Be VERY cautious doing this; solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc., so context is key._
 
-With the Azure Storage accounts using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts, so we are only retaining recent and relevant data.
+With the Azure Storage accounts using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle"){:target="_blank"} on the storage accounts, so we are only retaining recent and relevant data.
 
 ![Azure Blob Storage Lifecycle Management](/uploads/azureblogstglifecyclemgmnt.PNG "Azure Blob Storage Lifecycle Management")
 
@@ -143,7 +143,7 @@ Budgets help you inform others about their spending to proactively manage costs 
 
 When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources is affected, and your consumption isn't stopped; however, you can use Budget alerts as a trigger to run Azure Logic Apps or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
 
-![](/uploads/azure_budget.png)
+![Azure Budget](/uploads/azure_budget.png)
 
 Ensure Azure Budget notifications are configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold.
 
@@ -178,11 +178,11 @@ The right tags can mean that the right owners get charged internally and have mo
 | Support Team | Platform Team | What team is responsible for the resources/site for support reasons |
 | Billing Code | Operational | Purchase order or project billing code |
 
-For further examples and a base tagging convention, check out a blog article I wrote on [Microsoft Azure Tagging conventions](https://luke.geek.nz/azure/microsoft-azure-tagging-conventions/ "Microsoft Azure Tagging Conventions ").
+For further examples and a base tagging convention, check out a blog article I wrote on [Microsoft Azure Tagging conventions](https://luke.geek.nz/azure/microsoft-azure-tagging-conventions/ "Microsoft Azure Tagging Conventions "){:target="_blank"}.
 
 #### Review Hub (Hybrid Use Benefit)
 
-The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers with Software Assurance licenses, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure.
+The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit"){:target="_blank"} is a pricing benefit for customers with Software Assurance licenses, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure.
 
 Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure as a service, or IaaS)_, and save up to 55% on Azure SQL Database _(platform as a service, or PaaS)_ and SQL Server on Azure Virtual Machines _(IaaS)_ with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.
 
@@ -202,13 +202,13 @@ _Note: This is a non-intrusive change that will take effect on the billing immed
 
 #### Review Backups
 
-[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup"){:target="_blank"} is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
 
 Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads backed up to migrate, test, or clone, and you no longer need to retain the data.
 
 > Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in the backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around.
 
-Log in to the Azure Portal and navigate the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page. Navigate to each one and click on:
+Log in to the Azure Portal and navigate the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services"){:target="_blank"} page. Navigate to each one and click on:
 
 Backup:
 
@@ -238,7 +238,7 @@ We want to remove unattached Public IP to save money.
 
 _Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._
 
-1. Log in to the **Azure Portal** and navigate to the [Public IP Addresses](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Address") blade
+1. Log in to the **Azure Portal** and navigate to the [Public IP Addresses](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Address"){:target="_blank"} blade
 2. Look in the ‘**Associated to**’ column, and if not required, click on the **Public IP**
 3. Click **Delete**
 
@@ -253,7 +253,7 @@ General-purpose storage accounts may be configured for either of the following p
 
 Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required.
 
-1. Log in to the **Azure Portal** and navigate to the [**Storage Account**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Azure Portal - Storage account") blade
+1. Log in to the **Azure Portal** and navigate to the [**Storage Account**](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts "Azure Portal - Storage account"){:target="_blank"} blade
 2. Click on **Manage View**, **Edit Columns**, and add in: **SKU**
 3. **Review** the **Premium** Storage **Accounts** and determine if any accounts need to be downsized to Standard
 4. To **change**, click on the **Storage Account**
@@ -263,7 +263,7 @@ You can also look at the Replication. Does that Storage Account need to be Geo-R
 
 #### - Download the PDF version of these Tasks
 
-Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "[here](https://github.com/lukemurraynz/presentations/blob/main/2022/Microsoft%20Azure%20-%20Cost%20Optimization_1.0.pdf "Azure Cost Optimization PDF")".
+Finally, if you prefer this in a more PDF/Visual format - you can download a PDF version of this directly from my Github "[here](https://github.com/lukemurraynz/presentations/blob/main/2022/Microsoft%20Azure%20-%20Cost%20Optimization_1.0.pdf "Azure Cost Optimization PDF"){:target="_blank"}".
 
 #### - Azure Operational Checklist table
 

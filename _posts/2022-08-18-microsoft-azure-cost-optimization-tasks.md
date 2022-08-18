@@ -91,7 +91,7 @@ You can add servers to this automated schedule by adding the following Tag to th
 The Azure Advisor is an inbuilt tool critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
 
 1. The Azure Advisor will recommend Reserved Instances.
-2. The Azure Advisor will recommend if a Virtual Machine runs on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it to a more suitable size.
+2. The Azure Advisor will recommend if a Virtual Machine runs on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and resize it to a more suitable size.
 
 ##### Review Azure SQL Databases
 
@@ -226,7 +226,7 @@ Backup:
 
 Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services.
 
-This is also a great opportunity to inspect what Public IP addresses you have and make sure some resources have public IP that do not need to be assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
+This is also a great opportunity to inspect what Public IP addresses you have and make sure some resources have public IPs that does not need to be assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
 
 The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource.
 
@@ -269,4 +269,18 @@ Finally, if you prefer this in a more PDF/Visual format - you can download a PDF
 
 This is a very quick example of what an Azure Operational Checklist could look like; if you record what tasks you do, you can look at further automation around implementation and reporting.
 
-#### 
+| **Azure Checklist**                 | ****   | **** | ****             |
+|-------------------------------------|--------|------|------------------|
+| **Action**                          | Status | Date | Note/Opportunity |
+| **Review Azure App Service Plans**  |        |      |                  |
+| **Review shutdown workloads**       |        |      |                  |
+| **Review Azure Advisor**            |        |      |                  |
+| **Review Azure SQL Databases**      |        |      |                  |
+| **Review Azure Reserved Instances** |        |      |                  |
+| **Review unused files and VHDs**    |        |      |                  |
+| **Review budgets**                  |        |      |                  |
+| **Review Tags**                     |        |      |                  |
+| **Review Hub (Hybrid Use Benefit)** |        |      |                  |
+| **Review Backups**                  |        |      |                  |
+| **Review unused Public IPs**        |        |      |                  |
+| **Review Azure Storage Accounts**   |        |      |                  |

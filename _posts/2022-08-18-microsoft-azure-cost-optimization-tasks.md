@@ -47,23 +47,23 @@ One of the cost drivers can be unrestricted resources. These resources typically
 
 A key benefit of the cloud is the ability to scale dynamically. The workload cost should scale linearly with demand.
 
-You can save costs through automatic scaling. Consider the usage metrics and performance to determine the number of instances. Choose smaller instances for a highly variable workload and scale out to get the required level of performance, rather than up. This choice will enable you to make your cost calculations and estimates granular.
+You can save costs through automatic scaling. Consider the usage metrics and performance to determine the number of instances. Choose smaller instances for a highly variable workload and scale out to get the required level of performance rather than up. This choice will enable you to make your cost calculations and estimates granular.
 
 ##### Pay for the consumption
 
-Adopt a leasing model instead of owning infrastructure. Azure offers many SaaS and PaaS resources that simplify the overall architecture. The cost of hardware, software, development, operations, security, and data center space is included in the pricing model. Also, choose pay-as-you-go over fixed pricing. That way, as a consumer, you're charged for only what you use.
+Adopt a leasing model instead of owning infrastructure. Azure offers many SaaS and PaaS resources that simplify the overall architecture. The cost of hardware, software, development, operations, security, and data centre space is included in the pricing model. Also, choose pay-as-you-go over fixed pricing. That way, you're charged for only what you use as a consumer.
 
 ##### Right resources, the right size
 
-Choose the right resources that are aligned with business goals and can handle the performance of the workload.
+Choose the right resources aligned with business goals and can handle the workload's performance.
 
 An inappropriate or misconfigured service can impact the cost.
 
-For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand, and deliver expected outcomes.
+For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand and deliver expected outcomes.
 
 ##### Monitor and optimize
 
-Treat cost monitoring and optimization as a process, rather than a point-in-time activity. Conduct regular cost reviews and measure and forecast the capacity needs so that you can provision resources dynamically and scale with demand. Review the cost management recommendations and take action.
+Treat cost monitoring and optimization as a process rather than a point-in-time activity. Conduct regular cost reviews and measure and forecast the capacity needs so that you can provision resources dynamically and scale with demand. Review the cost management recommendations and take action.
 
 Today, we will focus on **Monitor and optimize**.
 
@@ -75,57 +75,57 @@ Optimize and improve efficiency by identifying idle and underutilized resources 
 
 Review [Azure App Service Plans](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FserverFarms "Azure Portal - App Service plan") to determine if:
 
-1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an Application associated with it.
-2. If the Azure App Service actually is getting utilized _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.
+1. The Azure App Service Plan is ‘Standard’ or ‘Premium’ pricing and has an associated application.
+2. If the Azure App Service is getting utilized _(by looking at the Metrics/CPU)_ and doesn’t need to be downscaled to a smaller plan.
 
 ##### Review shutdown workloads
 
-Because you pay for Azure Resources as ‘Pay As You Go’ a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload actually needs to be on 24/7!
+Because you pay for Azure Resources as ‘Pay As You Go’, a quick win can be to review [Virtual Machines](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Compute%2FVirtualMachines "Azure Portal - Virtual Machines") to determine if the workload needs to be 24/7!
 
 For example, you have automation configured to automatically start up and shut down workloads based on the following schedule: 7 AM Start – 7 PM Stop _(& off Weekends)_.
 
-You can add servers to this automated schedule by adding the following Tag to the Virtual Machine, or trigger automation when a workload is ‘Shutdown’ and not deallocated, see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation ")" for a potential place to start.
+You can add servers to this automated schedule by adding the following Tag to the Virtual Machine or trigger automation when a workload is ‘Shutdown’ and not deallocated; see my article on "[Turn on an Azure Virtual Machine using Azure Automation](https://luke.geek.nz/azure/turn-on-a-azure-virtual-machine-using-azure-automation/ "Turn on a Azure Virtual Machine using Azure Automation ")" for a potential place to start.
 
 ##### Review Azure Advisor
 
-The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
+The Azure Advisor is an inbuilt tool critical to optimizing the Azure Environment. The [Azure Advisor](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorMenuBlade/Cost "Azure Portal - Azure Advisor") needs to be reviewed for Cost recommendations.
 
-1. The Azure Advisor will recommend Reserved Instances
-2. The Azure Advisor will recommend if a Virtual Machine is running on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it down to a more suitable size.
+1. The Azure Advisor will recommend Reserved Instances.
+2. The Azure Advisor will recommend if a Virtual Machine runs on a VM size GREATER than what it needs _(based on CPU utilization under 5% in the last 14 days)_. If the Azure Advisor reports an overprovisioned machine, you need to investigate its use and then resize it to a more suitable size.
 
 ##### Review Azure SQL Databases
 
 Review [Azure SQL Databases](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Sql%2Fservers%2Fdatabases "Azure Portal - Azure SQL databases") to determine if:
 
-1. The SQL Database Pricing Tier is ‘Standard’ and is actually using the DTUs (usually found by looking at the Compute utilization on the databases), if not downsize the DTU limit.
-2. Check Geo-Replication to make sure that the SQL Database is not replicating across Regions if it doesn’t need to be.
+1. The SQL Database Pricing Tier is ‘Standard’ and uses the DTUs (usually found by looking at the Compute utilization on the databases); if not, downsize the DTU limit.
+2. Check Geo-Replication to ensure that the SQL Database is not replicating across Regions if it doesn’t need to be.
 
 #### Review Azure Reserved Instances
 
-Azure reserved instances significantly reduce costs—up to 72 percent compared to pay-as-you-go prices—with one-year or three-year terms on Windows and Linux virtual machines (VMs). What's more, you can now improve budgeting and forecasting with a single upfront payment (i.e. Pay for a VM Upfront for 1/3 Year or 5 Years) making it easy to calculate your investments. Or, lower your upfront cash outflow with monthly payment options at no additional cost.
+Azure reserved instances significantly reduce costs—up to 72 per cent compared to pay-as-you-go prices—with one-year or three-year terms on Windows and Linux virtual machines (VMs). What's more, you can now improve budgeting and forecasting with a single upfront payment (i.e. Pay for a VM Upfront for 1/3 Year or 5 Years), making it easy to calculate your investments. Or lower your upfront cash outflow with monthly payment options at no additional cost.
 
 ![Azure Reserved Instance](/uploads/azure-ri.png "Azure Reserved Instance")
 
-The Azure Advisor is an inbuilt tool that is critical to optimizing the Azure Environment. The Azure Advisor needs to be reviewed for Reserved Instance recommendations.
+The Azure Advisor is an inbuilt tool critical to optimizing the Azure Environment. The Azure Advisor needs to be reviewed for Reserved Instance recommendations.
 
-1. When reviewing Reserved Instances you need to take into consideration:
+1. When reviewing Reserved Instances, you need to take into consideration:
 2. What workloads are they used for?
-3. Is there a project that may replace or resize the workloads in the next year?
+3. Is there a project that may replace or resize the workloads next year?
 4. Who is paying for the workloads?
 
 #### Review unused files and VHDs
 
-Save Azure costs by cleaning up unused VHDs in your Azure storage Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts.
+Save Azure costs by cleaning up unused VHDs in your Azure storage. Azure stores Azure Virtual Machine OS and data disks in Azure storage accounts.
 
 When a VM is deleted from the Azure portal, the underlying OS and data disks may not get deleted. Such disks continue to consume Azure storage and account for the cost of storing them. These disks are called Orphaned Disks.
 
-As mentioned above, some Virtual Machines with unmanaged disks when deleted will keep the VHDs around.
+As mentioned above, some Virtual Machines with unmanaged disks will keep the VHDs around when deleted.
 
-Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft)_ you can report on any disks that are not in use by a VM, and then delete them.
+Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks") _(provided by Microsoft),_ you can report on any disks that are not in use by a VM and then delete them.
 
-_Note: Be VERY cautious doing this, solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc, so context is key._
+_Note: Be VERY cautious doing this; solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc., so context is key._
 
-With the Azure Storage accounts, using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts so we are only retaining recent and relevant data.
+With the Azure Storage accounts using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle") on the storage accounts, so we are only retaining recent and relevant data.
 
 ![Azure Blob Storage Lifecycle Management](/uploads/azureblogstglifecyclemgmnt.PNG "Azure Blob Storage Lifecycle Management")
 

@@ -141,17 +141,17 @@ Budgets in Cost Management help you plan for and drive organizational accountabi
 
 Budgets help you inform others about their spending to proactively manage costs and monitor how spending progresses over time.
 
-When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources are affected and your consumption isn't stopped, however, you can use Budget alerts as a trigger to run Azure Logic Apps, or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
+When the budget thresholds you've created are exceeded, notifications are triggered. None of your resources is affected, and your consumption isn't stopped; however, you can use Budget alerts as a trigger to run Azure Logic Apps or Functions to automate the shutdown and resize resources. You can use budgets to compare and track spending as you analyze costs.
 
 ![](/uploads/azure_budget.png)
 
-Make sure you have [Azure Budget](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Azure Budget") notifications configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold.
+Ensure Azure Budget notifications are configured to email Product Owners or other Stakeholders once a Resource Group or Subscription reaches a specific threshold.
 
 This is set up in the Azure Portal, on the Resource Group under Budgets, and set to email the Application Owner.
 
 Examples of budgets that could be configured:
 
-Generally, I recommend that 3 budgets should be configured, to give enough notice:
+Generally, I recommend that three budgets should be configured to give enough notice:
 
 * 50%
 * 60%
@@ -182,15 +182,15 @@ For further examples and a base tagging convention, check out a blog article I w
 
 #### Review Hub (Hybrid Use Benefit)
 
-The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers who have licenses with Software Assurance, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure.
+The [Azure Hybrid Benefit](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/?WT.mc_id=AZ-MVP-5004796 "Azure Hybrid Benefit") is a pricing benefit for customers with Software Assurance licenses, which helps maximize the value of existing on-premises Windows Server and/or SQL Server license investments when migrating to Azure.
 
 Eligible customers can save up to 40% on Azure Virtual Machines _(infrastructure as a service, or IaaS)_, and save up to 55% on Azure SQL Database _(platform as a service, or PaaS)_ and SQL Server on Azure Virtual Machines _(IaaS)_ with Azure Hybrid Benefit, which increases to up to 80% when combined with Azure Reserved Instances.
 
 ![Azure - Hybrid Use Benefit](/uploads/operationaltasks_hub.png "Azure - Hybrid Use Benefit")
 
-To verify if a server is using the Azure Hybrid Benefit Log in to the Azure Portal and navigate to the Virtual Machine Blade Make sure that the: OS Licensing Benefit column is selected.
+To verify if a server is using the Azure Hybrid Benefit, Log in to the Azure Portal and navigate to the Virtual Machine Blade. Make sure that the: OS Licensing Benefit column is selected.
 
-If a Virtual Machine Already has HUB it will have: Azure hybrid benefit listed in the column, any non-supported workloads _(such as Linux)_ will have ‘Not Supported’.
+If a Virtual Machine Already has HUB, it will have: The azure hybrid benefit listed in the column, and any non-supported workloads _(such as Linux)_ will have ‘Not Supported’.
 
 If any are eligible for HUB, click on the Virtual Machine…
 
@@ -204,11 +204,11 @@ _Note: This is a non-intrusive change that will take effect on the billing immed
 
 [Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup") is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
 
-Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads that have been backed up to migrate, test, or clone and that you no longer need to retain the data for.
+Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads backed up to migrate, test, or clone and you no longer need to retain the data for.
 
 > Note: This can be a tricky one as you will need to talk to product owners to confirm the workloads were just Dev/Test workloads, and not required, there may be legal implications for keeping workloads in the backup. But if someone stood up something to play with, particularly in a Sandbox or Development subscription there may not be a reason to keep it around.
 
-Log in to the Azure Portal and navigate to the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page Navigate to each one and click on:
+Log in to the Azure Portal and navigate to the [Recovery Services Vault](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.RecoveryServices%2Fvaults "Azure Portal - Recovery Services") page. Navigate to each one and click on:
 
 Backup:
 
@@ -216,7 +216,7 @@ Backup:
 2. Click on **Azure Virtual Machines**
 3. **Sort** the **Backup** items by **Latest Restore Point** _(so the older restore points are at the top)_
 
-   Using the Latest Restore Point as a guide, IF there are any servers that can have their Backups deleted:
+   Using the Latest Restore Point as a guide, IF any servers can have their Backups deleted:
 4. Click on the **Name** of the Backup Item
 5. Click on **Stop Backup**
 6. Select **Delete Backup Data** _(this is non-reversible)_
@@ -226,7 +226,7 @@ Backup:
 
 Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services.
 
-This is also a great opportunity to inspect what Public IP addresses you have and make sure there are resources, that have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
+This is also a great opportunity to inspect what Public IP addresses you have and make sure there are resources that have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
 
 The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource.
 

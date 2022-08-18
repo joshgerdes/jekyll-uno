@@ -269,18 +269,4 @@ Finally, if you prefer this in a more PDF/Visual format - you can download a PDF
 
 This is a very quick, example of what an Azure Operational Checklist could look like, if you record what tasks you do, then you can look at further automation around implementation and reporting.
 
-| --- | --- | --- |
-| Azure Operational Checklist - for the month of: 00/00/00 |  |  |
-| Action | Completed | Notes |
-| Review App Service Plans |  |  |
-| Review Shutdown'able' workloads |  |  |
-| Review Azure Advisor |  |  |
-| Review Azure SQL Databases |  |  |
-| Review Azure Reserved Instances |  |  |
-| Review unused files and VHDs |  |  |
-| Review Budgets |  |  |
-| Review Tags |  |  |
-| Review HuB |  |  |
-| Review Backups |  |  |
-| Review unused Public IPs |  |  |
-| Review Azure storage accounts |  |  |
+#### 

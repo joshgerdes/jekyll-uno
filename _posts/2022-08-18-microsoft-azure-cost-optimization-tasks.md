@@ -9,13 +9,13 @@ header:
   teaser: "/uploads/cost_pillar_overview.png"
 
 ---
-Like doing service on your car, the [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure"){:target="_blank"} platform is not a set-and-forget ecosystem!
+The [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure"){:target="_blank"} platform is not a set-and-forget ecosystem like doing service on your car!
 
-There are no one-size-fits when it comes to cost optimization, but there are some general tasks that can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.
+There are no one-size-fits when it comes to cost optimization, but some general tasks can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.
 
 #### Overview
 
-Although Microsoft takes a lot of traditional infrastructure management and security concerns off your hand, you are still responsible for the spending and making sure the value of the technologies and services you consume, match your business goals and agility.
+Although Microsoft takes a lot of traditional infrastructure management and security concerns off your hand, you are still responsible for the spending and ensuring the value of the technologies and services you consume match your business goals and agility.
 
 Today we are going to go back to basics and look at the [Cost Optimization](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796#cost-optimization "Cost optimization"){:target="_blank"} pillar of the Microsoft [Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}.
 
@@ -47,7 +47,7 @@ One of the cost drivers can be unrestricted resources. These resources typically
 
 A key benefit of the cloud is the ability to scale dynamically. The workload cost should scale linearly with demand.
 
-You can save costs through automatic scaling. Consider the usage metrics and performance to determine the number of instances. Choose smaller instances for a highly variable workload and scale out to get the required level of performance rather than up. This choice will enable you to make your cost calculations and estimates granular.
+You can save costs through automatic scaling. First, consider the usage metrics and performance to determine the number of instances. Then, choose smaller instances for a highly variable workload and scale out to get the required level of performance rather than up. This choice will enable you to make your cost calculations and estimates granular.
 
 ##### Pay for the consumption
 
@@ -59,7 +59,7 @@ Choose the right resources aligned with business goals and can handle the worklo
 
 An inappropriate or misconfigured service can impact the cost.
 
-For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Certain infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand and deliver expected outcomes.
+For example, building a multi-region service when the service levels don't require high availability or geo-redundancy will increase cost without any reasonable business justification. Specific infrastructure resources are delivered as fix-sized building blocks. Ensure that these blocks are adequately sized to meet capacity demand and deliver expected outcomes.
 
 ##### Monitor and optimize
 

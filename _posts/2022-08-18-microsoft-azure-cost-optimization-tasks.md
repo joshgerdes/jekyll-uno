@@ -271,7 +271,7 @@ This is a very quick example of what an Azure Operational Checklist could look l
 
 | **Azure Checklist**                 | ****   | **** | ****             |
 |-------------------------------------|--------|------|------------------|
-| **Action**                          | Status | Date | Note/Opportunity |
+| **Action**                          | **Status** | **Date** | **Note/Opportunity** |
 | **Review Azure App Service Plans**  |        |      |                  |
 | **Review shutdown workloads**       |        |      |                  |
 | **Review Azure Advisor**            |        |      |                  |

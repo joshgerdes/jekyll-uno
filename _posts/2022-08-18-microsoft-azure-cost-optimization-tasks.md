@@ -226,25 +226,25 @@ Backup:
 
 Public IP addresses allow Internet resources to communicate inbound to Azure resources. Public IP addresses enable Azure resources to communicate to the Internet and public-facing Azure services.
 
-This is also a great opportunity to inspect what Public IP addresses you have and make sure there are resources that have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
+This is also a great opportunity to inspect what Public IP addresses you have and make sure some resources have public IP that does not need to have them assigned! Tip setup an Azure Policy that prevents the creation of Public IPs.
 
 The address is dedicated to the resource until it’s unassigned by you. A resource without a public IP assigned can communicate outbound. Azure dynamically assigns an available IP address that isn’t dedicated to the resource.
 
 ![Azure Portal - Public IP Address](/uploads/operationaltasks_pip.png "Azure Portal - Public IP Address")
 
-When resources get created, sometimes they will create a Public IP, these can be removed as part of the build but left in the Resource Groups.
+When resources get created, sometimes they will create a Public IP; these can be removed as part of the build but left in the Resource Groups.
 
 We want to remove unattached Public IP to save money.
 
 _Note: In some cases, the Product Owner may need to be consulted before any changes are made, as some of the resources may be inflight projects or required._
 
 1. Log in to the **Azure Portal** and navigate to the [Public IP Addresses](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Network%2FPublicIpAddresses "Azure Portal - Public IP Address") blade
-2. Look in the ‘**Associated to**’ column and if not required click on the **Public IP**
+2. Look in the ‘**Associated to**’ column, and if not required, click on the **Public IP**
 3. Click **Delete**
 
 #### Review Azure Storage Accounts
 
-An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
+An Azure storage account contains all your Azure Storage data objects: blobs, files, queues, tables, and disks. Your Azure storage account's data is durable, highly available, secure, and massively scalable.
 
 General-purpose storage accounts may be configured for either of the following performance tiers:
 
@@ -259,7 +259,7 @@ Note: In some cases, the Product Owner may need to be consulted before any chang
 4. To **change**, click on the **Storage Account**
 5. Click on **Configuration** and change from **Premium** to **Standard**
 
-You can also look at the Replication, does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t? Can the storage account be changed to Standard during off hours or other non-peak?
+You can also look at the Replication. Does that Storage Account need to be Geo-Redundant if the rest of the application that uses it isn’t? Can the storage account be changed to Standard during off-hours or non-peak?
 
 #### - Download the PDF version of these Tasks
 
@@ -267,6 +267,6 @@ Finally, if you prefer this in a more PDF/Visual format - you can download a PDF
 
 #### - Azure Operational Checklist table
 
-This is a very quick, example of what an Azure Operational Checklist could look like, if you record what tasks you do, then you can look at further automation around implementation and reporting.
+This is a very quick example of what an Azure Operational Checklist could look like; if you record what tasks you do, you can look at further automation around implementation and reporting.
 
 #### 

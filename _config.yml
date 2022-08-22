@@ -24,9 +24,13 @@ url: 'https://jmuelbert.github.io' # the base hostname & protocol for your site,
 twitter_username: jmuelbert
 github_username: jmuelbert
 
+source: pages/
+encoding: UTF-8
+
 # Build settings
 markdown: kramdown
 theme: minima
+remote_theme: benbalter/retlab
 plugins:
   - jekyll-feed
 # Exclude from processing.

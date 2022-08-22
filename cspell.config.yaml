@@ -1,4 +1,3 @@
----
 version: "0.2"
 files:
   - "**/*"
@@ -28,11 +27,11 @@ ignorePaths:
   - s**/node_modules/**
   - "**/vscode-extension/**"
   - "**/.git/**"
-  - ".github/actions/**"
-  - ".github/workflows/**"
-  - "cmake/modules/**"
-  - "docs/api-docs/**"
-  - "cspell.config.yaml"
+  - .github/actions/**
+  - .github/workflows/**
+  - cmake/modules/**
+  - docs/api-docs/**
+  - cspell.config.yaml
   - "*.gz"
   - "*.lock"
   - "*.svg"
@@ -55,8 +54,8 @@ language: en, en-GB, de, de-DE
 allowCompoundWords: true
 enableGlobDot: true
 words:
-  - aqtinstall
   - APPL
+  - aqtinstall
   - ARGN
   - cbproj
   - ccache
@@ -69,16 +68,16 @@ words:
   - cppstd
   - cpptools
   - cschlosser.doxdocgen
-  - Devel
   - DCOMPONENT
+  - Devel
   - DOPTION*
   - DPROJECT
   - eamodio
   - fasterer
   - FILEOS
   - fips
-  - ftest
   - fprofile
+  - ftest
   - furo
   - Fuzzer
   - Gcov
@@ -94,8 +93,10 @@ words:
   - IWYU
   - jamf
   - jinja
+  - jmbde
   - jmuelbert
   - juergen
+  - kramdown
   - kwarg
   - kwargs
   - LCOV
@@ -117,17 +118,18 @@ words:
   - pargs
   - Pavlik
   - Pboard
-  - plists
   - pipenv
   - pkgsinfo
-  - PTRACE
+  - plists
   - pthread
   - pthreads
+  - PTRACE
   - pylance
   - pyyaml
   - qtconanboilerplate
   - qtwidgettest
   - REDIST
+  - rubocop
   - SAST
   - sectnums
   - socat
@@ -135,7 +137,6 @@ words:
   - spdlog
   - svgz
   - SYSREQUIRES
-  - rubocop
   - twxs
   - uncrustify
   - venv

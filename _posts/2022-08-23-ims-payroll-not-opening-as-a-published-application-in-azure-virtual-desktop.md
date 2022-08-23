@@ -9,9 +9,9 @@ header:
   teaser: "/uploads/imspayroll_avdpublishedapp.png"
 
 ---
-[Azure Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 " Azure Virtual Desktop") allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
+[Azure Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 " Azure Virtual Desktop"){:target="_blank"} allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
 
-One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll ").
+One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll "){:target="_blank"}.
 
 IMS Payroll worked well as a published application for months until one day; it didn't seem to open for the user, whether as a published application or in the Full Desktop.
 
@@ -19,7 +19,7 @@ The symptoms were that once the user clicked on the icon, it would appear to ope
 
 Even if you don't have IMS Payroll, you may experience applications with a similar experience, and hopefully, this article will help point you in the right direction.
 
-![](/uploads/imspayroll_avdpublishedapp.png)
+![Azure Virtual Desktop - Published Application](/uploads/imspayroll_avdpublishedapp.png)
 
 One noticeable difference we found in our testing - was that it opened for us and other users using different accounts.
 

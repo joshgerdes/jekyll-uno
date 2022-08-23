@@ -25,7 +25,7 @@ One noticeable difference we found in our testing - was that it opened for us an
 
 After some discovery, we discovered that the user had gone to another branch office site and used a different monitor setup, and IMS Payroll was out of drawing range. Usually, windows would be able to snap this back into view; however, after comparing the registry keys for our user vs the user who had the issue, we discovered that IMS Payroll sets the location in the user registry.
 
-* Registry Key location: **Computer\\HKEY_CURRENT_USER\\IMS Payroll Partner\\Layout**
+* Registry Key location: **\\HKEY_CURRENT_USER\\IMS Payroll Partner\\Layout**
 
 In our case, the settings were as follows:
 

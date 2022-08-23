@@ -1,5 +1,5 @@
 ---
-date: 
+date: 2022-08-24 00:00:00 +1200
 title: IMS Payroll not opening as a published application in Azure Virtual Desktop
 author: Luke
 categories:

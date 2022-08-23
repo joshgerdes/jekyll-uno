@@ -11,7 +11,7 @@ header:
 ---
 Azure Virtual Desktop allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
 
-One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll "). Small-medium businesses use IMS Payroll for their payroll.
+One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll "). Some small-medium businesses use IMS Payroll for their payroll.
 
 IMS Payroll worked well as a published application for months until one day; it didn't seem to open for the user, whether as a published application or in the Full Desktop.
 
@@ -60,4 +60,4 @@ For the users who couldn't see IMS Payroll, their settings looked more like this
     "LastPage"="6"
     
 
-The difference was that the Left entry had moved the Window too far, left out of view, so it could not be seen by the user when opening as a published app or in Desktop.
+The difference was that the Left entry had moved the Window too far, left out of view, so it could not be seen by the user when opening as a published app or on a Desktop.

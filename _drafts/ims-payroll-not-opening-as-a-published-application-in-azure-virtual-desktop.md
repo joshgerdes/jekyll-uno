@@ -21,7 +21,7 @@ Even if you don't have IMS Payroll, you may experience applications with a simil
 
 ![](/uploads/imspayroll_avdpublishedapp.png)
 
-One noticeable difference we found in our testing - was that it opened for us and other users using our and their accounts.
+One noticeable difference we found in our testing - was that it opened for us and other users using different accounts.
 
 After some discovery, we discovered that the user had gone to another branch office site and used a different monitor setup, and IMS Payroll was out of drawing range. Usually, windows would be able to snap this back into view; however, after comparing the registry keys for our user vs the user who had the issue, we discovered that IMS Payroll sets the location in the user registry.
 
@@ -62,7 +62,6 @@ For the users who couldn't see IMS Payroll, their settings looked more like this
     "SkipWelcome"="1"
     "SkinName"="lfUltraFlat"
     "LastPage"="6"
-    
 
 The difference was that the Left entry had moved the Window too far, left out of view, so it could not be seen by the user when opening as a published app or on a Desktop.
 

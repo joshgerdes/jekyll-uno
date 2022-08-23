@@ -11,11 +11,13 @@ header:
 ---
 Azure Virtual Desktop allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
 
-One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll "). Some small-medium businesses use IMS Payroll for their payroll.
+One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll ").
 
 IMS Payroll worked well as a published application for months until one day; it didn't seem to open for the user, whether as a published application or in the Full Desktop.
 
 The symptoms were that once the user clicked on the icon, it would appear to open _(visible on the Taskbar)_, but there was no window, and when you hovered over the preview thumbnail, it was blank. The cursor also appeared to be active with a circle, indicating it was trying to open.
+
+Even if you don't have IMS Payroll, you may experience applications with a similar experience, and hopefully, this article will help point you in the right direction.
 
 ![](/uploads/imspayroll_avdpublishedapp.png)
 
@@ -64,4 +66,6 @@ For the users who couldn't see IMS Payroll, their settings looked more like this
 
 The difference was that the Left entry had moved the Window too far, left out of view, so it could not be seen by the user when opening as a published app or on a Desktop.
 
-After the Left entry was changed from -1444 to 684. IMS became visible again, as a both a published application and on the Full Desktop.
+After the Left entry was changed from -1444 to 684. IMS became visible again as a published application and on the Full Desktop.
+
+_Note: Instead of the registry, some applications may have configuration files stored in the user's AppData folders._

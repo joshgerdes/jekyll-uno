@@ -67,4 +67,6 @@ The difference was that the Left entry had moved the Window too far, left out of
 
 After the Left entry was changed from -1444 to 684. IMS became visible again as a published application and on the Full Desktop.
 
-_Note: Some applications may have configuration files stored in the user's AppData folders instead of the registry._
+Due to the hard-coded user registry entries, this specific issue would have occurred regardless of Azure Virtual Desktop, running in a Terminal Services environment, or even locally, when working with different monitor setups.
+
+_Note: Some applications may have configuration files stored in the user's AppData folders instead of the registry; if in doubt, raise a support ticket with the application vendor._

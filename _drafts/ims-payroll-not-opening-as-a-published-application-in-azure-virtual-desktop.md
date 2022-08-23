@@ -19,4 +19,45 @@ This worked well as a published application for months until one day; it didn't 
 
 One noticeable difference we found in our testing - was that it opened for us using our account.
 
-After some digging, we discovered that the user had gone to another branch office site and used a different monitor setup and IMS Payroll was out of drawing range, usually windows would be able to snap this back into view however, after doing a comparison of the registry keys for our user vs the user who had the issue we discovered that IMS Payroll sets the location in the registry.
+After some discovery, we discovered that the user had gone to another branch office site and used a different monitor setup, and IMS Payroll was out of drawing range. usually, windows would be able to snap this back into view; however, after comparing the registry keys for our user vs the user who had the issue, we discovered that IMS Payroll sets the location in the user registry.
+
+* Registry Key location: **Computer\\HKEY_CURRENT_USER\\IMS Payroll Partner\\Layout**
+
+In our case, the settings were as followed:
+
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\IMS Payroll Partner\Layout]
+    "Left"="684"
+    "Top"="310"
+    "Height"="713"
+    "Width"="1127"
+    "StatusBar"="1"
+    "ActiveHelp"="0"
+    "EmployeePage"="0"
+    "PayrollPage"="5"
+    "CompanyPage"="1"
+    "SkipWelcome"="1"
+    "SkinName"="lfUltraFlat"
+    "LastPage"="6"
+
+For the users who couldn't see IMS Payroll, their settings looked more like this:
+
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\IMS Payroll Partner\Layout]
+    "Left"="-1444"
+    "Top"="310"
+    "Height"="713"
+    "Width"="1127"
+    "StatusBar"="1"
+    "ActiveHelp"="0"
+    "EmployeePage"="0"
+    "PayrollPage"="5"
+    "CompanyPage"="1"
+    "SkipWelcome"="1"
+    "SkinName"="lfUltraFlat"
+    "LastPage"="6"
+    
+
+The difference being the Left entry had moved the Window too far left out of view.

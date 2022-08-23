@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/imspayroll_avdpublishedapp.png"
 
 ---
-Azure Virtual Desktop allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
+[Azure Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 " Azure Virtual Desktop") allows you to access an entire desktop or a published application with shortcuts and an appearance like it was running locally; depending on the requirements; I prefer published applications where possible to keep the user experience on the endpoint device and keep the cost down.
 
 One of the applications I published for a customer is [MYOB IMS Payroll](https://www.myob.com/nz/enterprise/ims-payroll " MYOB IMS Payroll ").
 
@@ -21,7 +21,7 @@ Even if you don't have IMS Payroll, you may experience applications with a simil
 
 ![](/uploads/imspayroll_avdpublishedapp.png)
 
-One noticeable difference we found in our testing - was that it opened for us using our account.
+One noticeable difference we found in our testing - was that it opened for us and other users using our and their accounts.
 
 After some discovery, we discovered that the user had gone to another branch office site and used a different monitor setup, and IMS Payroll was out of drawing range. Usually, windows would be able to snap this back into view; however, after comparing the registry keys for our user vs the user who had the issue, we discovered that IMS Payroll sets the location in the user registry.
 
@@ -68,4 +68,4 @@ The difference was that the Left entry had moved the Window too far, left out of
 
 After the Left entry was changed from -1444 to 684. IMS became visible again as a published application and on the Full Desktop.
 
-_Note: Instead of the registry, some applications may have configuration files stored in the user's AppData folders._
+_Note: Some applications may have configuration files stored in the user's AppData folders instead of the registry._

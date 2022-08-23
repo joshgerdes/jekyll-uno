@@ -61,3 +61,5 @@ For the users who couldn't see IMS Payroll, their settings looked more like this
     
 
 The difference was that the Left entry had moved the Window too far, left out of view, so it could not be seen by the user when opening as a published app or on a Desktop.
+
+After the Left entry was changed from -1444 to 684. IMS became visible again, as a both a published application and on the Full Desktop.

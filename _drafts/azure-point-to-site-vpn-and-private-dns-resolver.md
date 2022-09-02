@@ -58,5 +58,7 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 
 1. Open the **Azure Portal**
 2. Click on **+ Create a resource**
-3. 
-4. 
+3. Type in: **DNS Private Resolver**
+4. ![Azure DNS Private Resolver](/uploads/azureportal_creatednsprivateresolver.png "Azure DNS Private Resolver")
+5. Click **Create**
+6. 

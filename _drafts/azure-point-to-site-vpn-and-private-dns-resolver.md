@@ -102,4 +102,6 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 11. Once connected, ping a resource behind a private endpoint, and you should get the private IP of that resource back and should be able to connect to that resource privately.
 12. ![Azure Private DNS Resolver ping](/uploads/azurevpn_testprivateendpoint.png "Azure Private DNS Resolver ping")
 
-Any future or current private endpoints that are linked to the same Virtual Network, will instantly be accessible without any additional changes on the Azure VPN client.
+Any future or current private endpoints linked to the same Virtual Network will instantly be accessible without additional changes on the Azure VPN client.
+
+### Additional resources

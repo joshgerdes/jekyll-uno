@@ -16,4 +16,4 @@ This is not sustainable, not scalable, and you might end up throwing your hands 
 
 For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Azure Active Directory authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication").
 
-_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). Please bear this in mind if you aim to use this in a Production scenario; functionality and services may change._
+_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change._

@@ -83,20 +83,20 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 
 Now that the DNS Resolver has been created, with an inbound endpoint, allowing the lookup of private endpoints, we need to add the Private Resolver DNS relay to our point to site VPN configuration; first, we need the newly created private IP of the inbound endpoint.
 
-1. Navigate to the [**DNS Private Resolver**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FdnsResolvers "DNS Private Resolvers") in the Azure Portal
-2. **Open** your DNS Private **Resolver service**
-3. Click on **Inbound Endpoints**
-4. Make note of the **private IP** of your inbound endpoint
-5. ![Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png "Private DNS Resolver")
-6. Now that the Private Inbound resolver has been configured, we need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with a private endpoint; you will need to modify the '[azurevpnconfig.xml](https://docs.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download?WT.mc_id=AZ-MVP-5004796#generate "Generate profile files")' file and reimport the VPN.
-7. Right-click 'azurevpnconfig.xml' and edit in Notepad or Visual Studio Code
-8. Under: </serverlist>
-9. **Add**:
+ 1. Navigate to the [**DNS Private Resolver**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FdnsResolvers "DNS Private Resolvers") in the Azure Portal
+ 2. **Open** your DNS Private **Resolver service**
+ 3. Click on **Inbound Endpoints**
+ 4. Make note of the **private IP** of your inbound endpoint
+ 5. ![Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png "Private DNS Resolver")
+ 6. Now that the Private Inbound resolver has been configured, we need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with a private endpoint; you will need to modify the '[azurevpnconfig.xml](https://docs.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download?WT.mc_id=AZ-MVP-5004796#generate "Generate profile files")' file and reimport the VPN.
+ 7. Right-click 'azurevpnconfig.xml' and edit in Notepad or Visual Studio Code
+ 8. Under: </serverlist>
+ 9. **Add**:
 
-    <clientconfig>
-    <dnsservers>
-    <dnsserver>10.0.18.4</dnsserver>
-    </dnsservers>
-    </clientconfig>
-    
-10. sd
+        <clientconfig>
+        <dnsservers>
+        <dnsserver>10.0.18.4</dnsserver>
+        </dnsservers>
+        </clientconfig>
+10. **Save** and **reimport** to the Azure VPN Client
+11. s

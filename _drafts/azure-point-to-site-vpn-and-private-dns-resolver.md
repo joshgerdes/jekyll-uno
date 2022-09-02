@@ -45,7 +45,7 @@ The Azure DNS private resolver inbound endpoint has a private IP that is part of
 
 Azure DNS private resolver outbound endpoint conditionally forwards the request to on-premises or other target DNS servers.
 
-Today, we will connect to private endpoints to concentrate on the Inbound functionality of Azure Private DNS Resolver.
+**Today, we will connect to private endpoints to concentrate on the Inbound functionality of Azure Private DNS Resolver.**
 
 ### Deployment
 

@@ -88,4 +88,4 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 3. Click on **Inbound Endpoints**
 4. Make note of the **private IP** of your inbound endpoint
 5. ![Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png "Private DNS Resolver")
-6. 
+6. Now that the Private Inbound resolver has been configured, we now need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with private 

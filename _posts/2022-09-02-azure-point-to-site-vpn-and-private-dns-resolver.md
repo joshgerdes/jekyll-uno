@@ -37,9 +37,10 @@ This solution can work with your Azure ExpressRoute, Azure VPN, or Azure Bastion
 
 Name resolution queries for Azure workloads from the on-premises network are conditionally forwarded to the Azure DNS private resolver inbound endpoint, which enables you to perform name resolution of workloads registered on Azure Private DNS Zones from on-premises.
 
-| Inbound Endpoint | Azure DNS private resolver inbound endpoint that receives the name resolution request from Azure & on-premises network and resolve names. |
-| --- | --- |
-| Outbound Endpoint | Azure DNS private resolver outbound endpoint conditionally forwards the request to on-premises or other target DNS servers. |
+| Endpoint          | Blurb                                                                                                                                     |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Inbound Endpoint  | Azure DNS private resolver inbound endpoint that receives the name resolution request from Azure & on-premises network and resolve names. |
+| Outbound Endpoint | Azure DNS private resolver outbound endpoint conditionally forwards the request to on-premises or other target DNS servers.               |
 
 The Azure DNS private resolver inbound endpoint has a private IP that is part of a subnet where the endpoint has been created. The IP address of the DNS private resolver inbound endpoint is then set as a DNS server on the on-premises network.
 
@@ -114,32 +115,3 @@ The third-party resources below include reading and learning about the Azure Pri
 * [Azure DNS Private Resolver - MicroHack](https://github.com/dawlysd/azure-dns-private-resolver-microhack "Azure DNS Private Resolver - MicroHack"){:target="_blank"}
 * My Azure Bicep export for reference:
 
-`        param dnsResolvers_PrivateDNSResolver_name string = 'PrivateDNSResolver'
-param virtualNetworks_vnettest_externalid string = '/subscriptions/1f0d1466-208f-4810-bb90-8af1b404d549/resourceGroups/pointtositetest/providers/Microsoft.Network/virtualNetworks/vnettest'
-
-resource dnsResolvers_PrivateDNSResolver_name_resource 'Microsoft.Network/dnsResolvers@2020-04-01-preview' = {
-  name: dnsResolvers_PrivateDNSResolver_name
-  location: 'australiaeast'
-  properties: {
-    virtualNetwork: {
-      id: virtualNetworks_vnettest_externalid
-    }
-  }
-}
-
-resource dnsResolvers_PrivateDNSResolver_name_InboundEndpoint 'Microsoft.Network/dnsResolvers/inboundEndpoints@2020-04-01-preview' = {
-  parent: dnsResolvers_PrivateDNSResolver_name_resource
-  name: 'InboundEndpoint'
-  location: 'australiaeast'
-  properties: {
-    ipConfigurations: [
-      {
-        subnet: {
-          id: '${virtualNetworks_vnettest_externalid}/subnets/dnsresolvesubnet'
-        }
-        privateIpAddress: '10.0.18.4'
-        privateIpAllocationMethod: 'Dynamic'
-      }
-    ]
-  }
-}`

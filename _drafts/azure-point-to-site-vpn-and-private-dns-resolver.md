@@ -53,3 +53,5 @@ To deploy Azure Private DNS Resolver, we will need a few things.
 * A Virtual Network
 * A [subnet](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview#subnet-restrictions "Subnet restrictions") dedicated to resolving DNS queries _(/28)_
 * A private endpoint _(i.e. Storage Account, SQL Database)_ is linked to the virtual network.
+
+_I assume you already have a Virtual Network tied to your Virtual Network gateway as part of the '_[_Point to Site VPN_](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication ")_' setup._

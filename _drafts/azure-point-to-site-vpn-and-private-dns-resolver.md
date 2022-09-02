@@ -75,7 +75,7 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 15. If you have already created a subnet, select it - else, click **Create New**
 16. Enter in your subnet name and address range
 17. Click **Save**
-18. ![](/uploads/azureportal_creatednsprivateresolversubnet.png)
+18. ![Private DNS Resolver create subnet](/uploads/azureportal_creatednsprivateresolversubnet.png "Private DNS Resolver create subnet")
 19. Click **Review + Create**
 20. Click **Create**
 
@@ -87,5 +87,5 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 2. **Open** your DNS Private **Resolver service**
 3. Click on **Inbound Endpoints**
 4. Make note of the **private IP** of your inbound endpoint
-5. ![](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png)
+5. ![Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png "Private DNS Resolver")
 6. 

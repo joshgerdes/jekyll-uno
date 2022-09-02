@@ -18,4 +18,6 @@ For this article, I assume you have an Azure Point to Site already set up; if yo
 
 _Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change._
 
-k
+So what is Azure DNS Resolver?
+
+> Azure DNS private resolver is a cloud-native, highly available, and DevOps-friendly service. It provides a simple, zero-maintenance, reliable, and secure Domain Name System (DNS) service to resolve and conditionally forward DNS queries from a virtual network, on-premises, and to other target DNS servers without the need to create and manage a custom DNS solution. Resolve DNS names hosted in Azure Private DNS Zones from on-premises networks as well as DNS queries for your own domain names. This will make your DNS infrastructure work privately and seamlessly across on-premises networks and enable key hybrid networking scenarios.

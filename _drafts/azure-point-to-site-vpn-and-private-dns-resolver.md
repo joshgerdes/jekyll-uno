@@ -81,4 +81,7 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 
 #### Adjust Point to Site DNS
 
-Now that the DNS Resolver has been created, with an inbound endpoint, allowing the lookup of private endpoints, we need to add the Private Resolver DNS relay to our point to site VPN configuration
+Now that the DNS Resolver has been created, with an inbound endpoint, allowing the lookup of private endpoints, we need to add the Private Resolver DNS relay to our point to site VPN configuration; first, we need the newly created private IP of the inbound endpoint.
+
+1. Navigate to the [DNS Private Resolver](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FdnsResolvers "DNS Private Resolvers") in the Azure Portal
+2. 

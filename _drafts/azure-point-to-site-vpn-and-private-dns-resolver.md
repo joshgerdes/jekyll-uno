@@ -105,3 +105,5 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 Any future or current private endpoints linked to the same Virtual Network will instantly be accessible without additional changes on the Azure VPN client.
 
 ### Additional resources
+
+The third-party resources below include reading and learning about the Azure Private DNS Resolver.

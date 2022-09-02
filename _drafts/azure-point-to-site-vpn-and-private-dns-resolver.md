@@ -109,3 +109,5 @@ Any future or current private endpoints linked to the same Virtual Network will 
 The third-party resources below include reading and learning about the Azure Private DNS Resolver.
 
 * [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal")
+* [Intro to Azure DNS Private Resolver](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-dns-private-resolver/?WT.mc_id=AZ-MVP-5004796 "Intro to Azure DNS Private Resolver")
+* [Azure DNS Private Resolver - MicroHack](https://github.com/dawlysd/azure-dns-private-resolver-microhack "Azure DNS Private Resolver - MicroHack")

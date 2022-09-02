@@ -51,5 +51,5 @@ Today, we will connect to private endpoints to concentrate on the Inbound functi
 To deploy Azure Private DNS Resolver, we will need a few things.
 
 * A Virtual Network
-* A subnet dedicated to resolving DNS queries _(/28)_
-* A private endpoint _(i.e. Storage Account, SQL Database)_ that is linked to the virtual network.
+* A [subnet](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview#subnet-restrictions "Subnet restrictions") dedicated to resolving DNS queries _(/28)_
+* A private endpoint _(i.e. Storage Account, SQL Database)_ is linked to the virtual network.

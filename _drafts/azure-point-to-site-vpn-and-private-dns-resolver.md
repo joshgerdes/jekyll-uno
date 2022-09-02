@@ -32,4 +32,6 @@ This solution can work with your Azure ExpressRoute, Azure VPN, or Azure Bastion
 
 ![Azure Private DNS Resolver](/uploads/dns-private-resolver.png "Azure Private DNS Resolver")
 
-.
+#### Inbound or Outbound?
+
+sd

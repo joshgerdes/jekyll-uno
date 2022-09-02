@@ -29,3 +29,10 @@ _Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time o
 Customers will no longer need to provision IaaS-based solutions on their virtual networks to resolve names registered on Azure Private DNS Zones and can do conditional forwarding of domains back to on-premises, across multi-cloud providers, and public DNS servers.
 
 This solution can work with your Azure ExpressRoute, Azure VPN, or Azure Bastion setup.
+
+#### What are the benefits of Azure Private DNS Resolver?
+
+* **Zero Maintenance:** Fully managed service which does not require you to patch or plan for any downtime of your service.
+* **Cost Reduction:** Run at a fraction of traditional IaaS solutions which typically would require planning for high availability, resiliency, and backup of configurations.
+* **Highly Available:** Built-in high availability, zone redundancy. You will no longer need to plan for [availability zones](https://docs.microsoft.com/azure/availability-zones/az-overview) awareness nor how many instances to provision per region Azure availability zones are physically separate locations within each Azure region that are tolerant to local failures and are connected by a high-performance network with a round-trip latency of less than 2ms.
+* **DevOps Friendly:** Build your pipelines with Terraform, Azure Resource Manager, REST API support, Go, Typescript/Javascript. This will allow you to keep a consistent configuration and experience across regions and different instances of your service.

@@ -80,6 +80,38 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 19. Click **Review + Create**
 20. Click **Create**
 
+My Azure Bicep export for reference:
+
+    param dnsResolvers_PrivateDNSResolver_name string = 'PrivateDNSResolver'
+    param virtualNetworks_vnettest_externalid string = '/subscriptions/57627713-eff2-44fa-a546-a2c8fde3c6e3/resourceGroups/pointtositetest/providers/Microsoft.Network/virtualNetworks/vnettest'
+    
+    resource dnsResolvers_PrivateDNSResolver_name_resource 'Microsoft.Network/dnsResolvers@2020-04-01-preview' = {
+      name: dnsResolvers_PrivateDNSResolver_name
+      location: 'australiaeast'
+      properties: {
+        virtualNetwork: {
+          id: virtualNetworks_vnettest_externalid
+        }
+      }
+    }
+    
+    resource dnsResolvers_PrivateDNSResolver_name_InboundEndpoint 'Microsoft.Network/dnsResolvers/inboundEndpoints@2020-04-01-preview' = {
+      parent: dnsResolvers_PrivateDNSResolver_name_resource
+      name: 'InboundEndpoint'
+      location: 'australiaeast'
+      properties: {
+        ipConfigurations: [
+          {
+            subnet: {
+              id: '${virtualNetworks_vnettest_externalid}/subnets/dnsresolvesubnet'
+            }
+            privateIpAddress: '10.0.18.4'
+            privateIpAllocationMethod: 'Dynamic'
+          }
+        ]
+      }
+    }
+
 #### Adjust Point to Site DNS
 
 Now that the DNS Resolver has been created, with an inbound endpoint, allowing the lookup of private endpoints, we need to add the Private Resolver DNS relay to our point-to-site VPN configuration; first, we need the newly created private IP of the inbound endpoint.

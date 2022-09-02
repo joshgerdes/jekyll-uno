@@ -5,7 +5,7 @@ author: Luke
 categories: []
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azureprivatednsresolver.png"
 
 ---
 You might access resources such as [Azure SQL databases](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=AZ-MVP-5004796 "Azure SQL Database") or [Azure Storage accounts](https://docs.microsoft.com/azure/storage/?WT.mc_id=AZ-MVP-5004796 "Azure Storage documentation") if you're connecting to a Microsoft Azure network externally _(_[_from a non-Azure VM_](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances?WT.mc_id=AZ-MVP-5004796#azure-provided-name-resolution "Name resolution for resources in Azure virtual networks") _or VPN)_; especially if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to [private link](https://azure.microsoft.com/services/private-link/?WT.mc_id=AZ-MVP-5004796 "Private Link") resources, you may have to edit your local host's file, and override local DNS to point to the IP of the [private endpoint]() for each service.
@@ -23,3 +23,7 @@ _Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time o
 #### So what is Azure DNS Resolver?
 
 > Azure DNS private resolver is a cloud-native, highly available, and DevOps-friendly service. It provides a simple, zero-maintenance, reliable, and secure Domain Name System (DNS) service to resolve and conditionally forward DNS queries from a virtual network, on-premises, and to other target DNS servers without the need to create and manage a custom DNS solution. Resolve DNS names hosted in Azure Private DNS Zones from on-premises networks as well as DNS queries for your own domain names. This will make your DNS infrastructure work privately and seamlessly across on-premises networks and enable key hybrid networking scenarios.
+
+![](/uploads/azureprivatednsresolver.png)
+
+s

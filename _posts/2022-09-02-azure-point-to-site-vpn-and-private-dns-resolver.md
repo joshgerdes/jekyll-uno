@@ -80,38 +80,6 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 19. Click **Review + Create**
 20. Click **Create**
 
-My Azure Bicep export for reference:
-
-    param dnsResolvers_PrivateDNSResolver_name string = 'PrivateDNSResolver'
-    param virtualNetworks_vnettest_externalid string = '/subscriptions/57627713-eff2-44fa-a546-a2c8fde3c6e3/resourceGroups/pointtositetest/providers/Microsoft.Network/virtualNetworks/vnettest'
-    
-    resource dnsResolvers_PrivateDNSResolver_name_resource 'Microsoft.Network/dnsResolvers@2020-04-01-preview' = {
-      name: dnsResolvers_PrivateDNSResolver_name
-      location: 'australiaeast'
-      properties: {
-        virtualNetwork: {
-          id: virtualNetworks_vnettest_externalid
-        }
-      }
-    }
-    
-    resource dnsResolvers_PrivateDNSResolver_name_InboundEndpoint 'Microsoft.Network/dnsResolvers/inboundEndpoints@2020-04-01-preview' = {
-      parent: dnsResolvers_PrivateDNSResolver_name_resource
-      name: 'InboundEndpoint'
-      location: 'australiaeast'
-      properties: {
-        ipConfigurations: [
-          {
-            subnet: {
-              id: '${virtualNetworks_vnettest_externalid}/subnets/dnsresolvesubnet'
-            }
-            privateIpAddress: '10.0.18.4'
-            privateIpAllocationMethod: 'Dynamic'
-          }
-        ]
-      }
-    }
-
 #### Adjust Point to Site DNS
 
 Now that the DNS Resolver has been created, with an inbound endpoint, allowing the lookup of private endpoints, we need to add the Private Resolver DNS relay to our point-to-site VPN configuration; first, we need the newly created private IP of the inbound endpoint.
@@ -144,3 +112,34 @@ The third-party resources below include reading and learning about the Azure Pri
 * [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal"){:target="_blank"}
 * [Intro to Azure DNS Private Resolver](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-dns-private-resolver/?WT.mc_id=AZ-MVP-5004796 "Intro to Azure DNS Private Resolver"){:target="_blank"}
 * [Azure DNS Private Resolver - MicroHack](https://github.com/dawlysd/azure-dns-private-resolver-microhack "Azure DNS Private Resolver - MicroHack"){:target="_blank"}
+* My Azure Bicep export for reference:
+
+    param dnsResolvers_PrivateDNSResolver_name string = 'PrivateDNSResolver'
+    param virtualNetworks_vnettest_externalid string = '/subscriptions/57627713-eff2-44fa-a546-a2c8fde3c6e3/resourceGroups/pointtositetest/providers/Microsoft.Network/virtualNetworks/vnettest'
+    
+    resource dnsResolvers_PrivateDNSResolver_name_resource 'Microsoft.Network/dnsResolvers@2020-04-01-preview' = {
+      name: dnsResolvers_PrivateDNSResolver_name
+      location: 'australiaeast'
+      properties: {
+        virtualNetwork: {
+          id: virtualNetworks_vnettest_externalid
+        }
+      }
+    }
+    
+    resource dnsResolvers_PrivateDNSResolver_name_InboundEndpoint 'Microsoft.Network/dnsResolvers/inboundEndpoints@2020-04-01-preview' = {
+      parent: dnsResolvers_PrivateDNSResolver_name_resource
+      name: 'InboundEndpoint'
+      location: 'australiaeast'
+      properties: {
+        ipConfigurations: [
+          {
+            subnet: {
+              id: '${virtualNetworks_vnettest_externalid}/subnets/dnsresolvesubnet'
+            }
+            privateIpAddress: '10.0.18.4'
+            privateIpAllocationMethod: 'Dynamic'
+          }
+        ]
+      }
+    }

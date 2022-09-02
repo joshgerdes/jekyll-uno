@@ -107,3 +107,5 @@ Any future or current private endpoints linked to the same Virtual Network will 
 ### Additional resources
 
 The third-party resources below include reading and learning about the Azure Private DNS Resolver.
+
+* [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal")

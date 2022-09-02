@@ -68,3 +68,5 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 10. Select your **Virtual Network** _(the same Virtual Network that has your Virtual Network Gateway for the Point to Site VPN and your Private endpoints)_
 11. ![Create Azure Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinitialpane.png "Create Azure Private DNS Resolver")
 12. Click **Next: Inbound Endpoints >**
+13. Now its time to add our Inbound Endpoint and create the Private DNS Resolver Subnet, click **+ Add an endpoint**
+14. 

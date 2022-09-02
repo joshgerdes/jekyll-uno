@@ -56,9 +56,14 @@ To deploy Azure Private DNS Resolver, we will need a few things.
 
 _I assume you already have a Virtual Network tied to your Virtual Network gateway as part of the '_[_Point to Site VPN_](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication ")_' setup._
 
-1. Open the **Azure Portal**
-2. Click on **+ Create a resource**
-3. Type in: **DNS Private Resolver**
-4. ![Azure DNS Private Resolver](/uploads/azureportal_creatednsprivateresolver.png "Azure DNS Private Resolver")
-5. Click **Create**
-6. 
+ 1. Open the **Azure Portal**
+ 2. Click on **+ Create a resource**
+ 3. Type in: **DNS Private Resolver**
+ 4. ![Azure DNS Private Resolver](/uploads/azureportal_creatednsprivateresolver.png "Azure DNS Private Resolver")
+ 5. Click **Create**
+ 6. Select your **Subscription**
+ 7. Select your **Resource Group** _(I recommend placing the DNS Private Resolver in the same resource group as your Virtual Network - but place this service in a Resource Group that makes sense for your environment, i.e. shared services or a specific network team resource group)_
+ 8. Type in a **name** for your DNS Private Resolver _(this is a regional service, but the name does not need a globally unique )_
+ 9. **Select** your **Region** _(this needs to be the same region as the Virtual Network)_
+10. Select your **Virtual Network** _(the same Virtual Network that has your Virtual Network Gateway for the Point to Site VPN and your Private endpoints)_
+11. 

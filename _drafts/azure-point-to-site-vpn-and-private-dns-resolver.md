@@ -34,4 +34,10 @@ This solution can work with your Azure ExpressRoute, Azure VPN, or Azure Bastion
 
 #### Inbound or Outbound?
 
-sd
+Name resolution queries for Azure workloads from the on-premises network are conditionally forwarded to the Azure DNS private resolver inbound endpoint, which enables you to perform name resolution of workloads registered on Azure Private DNS Zones from on-premises.
+
+| Inbound Endpoint  | Azure DNS private resolver inbound endpoint that receives the name resolution request from Azure & on-premises network and resolve names. |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Outbound Endpoint | Azure DNS private resolver outbound endpoint conditionally forwards the request to on-premises or other target DNS servers.               |
+
+s

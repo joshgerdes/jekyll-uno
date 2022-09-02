@@ -28,4 +28,4 @@ _Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time o
 
 Customers will no longer need to provision IaaS-based solutions on their virtual networks to resolve names registered on Azure Private DNS Zones and can do conditional forwarding of domains back to on-premises, across multi-cloud providers, and public DNS servers.
 
-This solution can work with your existing Azure ExpressRoute, Azure VPN, or Azure Bastion setup.
+This solution can work with your Azure ExpressRoute, Azure VPN, or Azure Bastion setup.

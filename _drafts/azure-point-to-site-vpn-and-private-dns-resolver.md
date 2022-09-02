@@ -2,7 +2,8 @@
 date: 2022-09-02 00:00:00 +1200
 title: Azure Private DNS Resolver and Azure Point to Site VPN
 author: Luke
-categories: []
+categories:
+- Azure
 toc: true
 header:
   teaser: "/uploads/azureprivatednsresolver.png"

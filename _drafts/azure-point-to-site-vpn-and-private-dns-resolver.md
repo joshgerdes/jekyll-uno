@@ -91,10 +91,12 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 6. Now that the Private Inbound resolver has been configured, we need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with a private endpoint; you will need to modify the '[azurevpnconfig.xml](https://docs.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download?WT.mc_id=AZ-MVP-5004796#generate "Generate profile files")' file and reimport the VPN.
 7. Right-click 'azurevpnconfig.xml' and edit in Notepad or Visual Studio Code
 8. Under: </serverlist>
-9. Add:
+9. **Add**:
 
     <clientconfig>
-     <dnsservers>
-    <dnsserver>10.0.17.4</dnsserver>
+    <dnsservers>
+    <dnsserver>10.0.18.4</dnsserver>
     </dnsservers>
-      </clientconfig>
+    </clientconfig>
+    
+10. sd

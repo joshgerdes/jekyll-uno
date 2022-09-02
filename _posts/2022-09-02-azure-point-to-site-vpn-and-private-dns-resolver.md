@@ -105,6 +105,7 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 12. ![Azure Private DNS Resolver ping](/uploads/azurevpn_testprivateendpoint.png "Azure Private DNS Resolver ping")
 
 Any future or current private endpoints linked to the same Virtual Network will instantly be accessible without additional changes on the Azure VPN client.
+If you have a Hub & Spoke topology, then you may place the DNS Private Resolver in the HUB, then use [forwarding rules](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796#link-your-forwarding-ruleset-to-the-second-virtual-network){:target="_blank"} to link to other peered VNETs.
 
 ### Additional resources
 

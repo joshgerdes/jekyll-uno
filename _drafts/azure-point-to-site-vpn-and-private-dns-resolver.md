@@ -8,6 +8,8 @@ header:
   teaser: ''
 
 ---
-You might access resources such as Azure SQL databases or Azure Storage accounts if you're connecting to a Microsoft Azure network; if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to private link resources, you may have to edit your local host's file, and override local DNS to point to the IP of the private endpoint for each service.
+You might access resources such as [Azure SQL databases](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=AZ-MVP-5004796 "Azure SQL Database") or [Azure Storage accounts](https://docs.microsoft.com/azure/storage/?WT.mc_id=AZ-MVP-5004796 "Azure Storage documentation") if you're connecting to a Microsoft Azure network; if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to [private link](https://azure.microsoft.com/services/private-link/?WT.mc_id=AZ-MVP-5004796 "Private Link") resources, you may have to edit your local host's file, and override local DNS to point to the IP of the private endpoint for each service.
 
-This is not sustainable, not scaleable, and you might end up switching back to Public facing services and just whitelisting your and other users' Public IPs to gain access to Azure resources.
+This is not sustainable, not scaleable, and you might end up throwing your hands in the air and switching back to public-facing services and just whitelisting your and other users' Public IPs to gain access to Azure resources - which can lead to its own set of issues, such as unmanaged IPs left with access to resources after contractors or users leave or have finished their work, IP address changes if not managed correctly can allow any user or company to have a direct line of sight to your company resources.
+
+Today we will concentrate on DNS resolution of Private Endpoints, using [Azure DNS Private Resolver](https://docs.microsoft.com/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure DNS Private Resolver?") when connecting to Azure using a Point to Site VPN.

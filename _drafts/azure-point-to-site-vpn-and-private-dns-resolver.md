@@ -74,4 +74,5 @@ _I assume you already have a Virtual Network tied to your Virtual Network gatewa
 16. Enter in your subnet name and address range
 17. Click **Save**
 18. ![](/uploads/azureportal_creatednsprivateresolversubnet.png)
-19. Click **Next: Outbound Endpoints**
+19. Click **Review + Create**
+20. Click **Create**

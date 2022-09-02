@@ -15,3 +15,5 @@ This is not sustainable, not scalable, and you might end up throwing your hands 
 > Today we will concentrate on DNS resolution of Private Endpoints, using [Azure DNS Private Resolver](https://docs.microsoft.com/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure DNS Private Resolver?") when connecting to Azure using a [Point to Site VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about?WT.mc_id=AZ-MVP-5004796 "About Point-to-Site VPN").
 
 For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Azure Active Directory authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication").
+
+_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). Please bear this in mind if you aim to use this in a Production scenario; functionality and services may change._

@@ -19,7 +19,7 @@ This is not sustainable, not scalable, and you might end up throwing your hands 
 
 For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Azure Active Directory authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication"){:target="_blank"}.
 
-_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change. This also means there are current_ [_regional restrictions_](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796#regional-availability "Regional availability"){:target="_blank"}_, and Azure Private DNS Resolver is not currently available in all regions._
+_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change. This also means there are current_ [_regional restrictions_](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796#regional-availability "Regional availability"){:target="_blank"}_, and Azure Private DNS Resolver is not currently available in all regions. Also bear in mind the [cost](https://azure.microsoft.com/en-us/pricing/details/dns/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} of this service._
 
 #### So what is Azure DNS Resolver?
 

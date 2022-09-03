@@ -114,7 +114,7 @@ The third-party resources below include reading and learning about the Azure Pri
 * [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal"){:target="_blank"}
 * [Intro to Azure DNS Private Resolver](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-dns-private-resolver/?WT.mc_id=AZ-MVP-5004796 "Intro to Azure DNS Private Resolver"){:target="_blank"}
 * [Azure DNS Private Resolver - MicroHack](https://github.com/dawlysd/azure-dns-private-resolver-microhack "Azure DNS Private Resolver - MicroHack"){:target="_blank"}
-* My Azure Bicep export for reference:
+* My Azure Private DNS Resolver Bicep export for reference:
 
         param dnsResolvers_PrivateDNSResolver_name string = 'PrivateDNSResolver'
         param virtualNetworks_vnettest_externalid string = '/subscriptions/57627713-eff2-44fa-a546-a2c8fde3c6e3/resourceGroups/pointtositetest/providers/Microsoft.Network/virtualNetworks/vnettest'

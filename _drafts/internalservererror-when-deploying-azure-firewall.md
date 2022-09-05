@@ -20,7 +20,7 @@ If you click Input in the deployment, you may notice your vnetName, vnetAddressS
 
 ![Azure Firewall deployment](/uploads/deploymentfailedazurefirewallinputs.png "Azure Firewall deployment")
 
-Even though the Azure Firewall, will appear as deployed. You will notice that it won't have a Private IP assigned.
+Even though the Azure Firewall will appear as deployed. You will notice that it won't have a Private IP assigned.
 
 To resolve this error:
 

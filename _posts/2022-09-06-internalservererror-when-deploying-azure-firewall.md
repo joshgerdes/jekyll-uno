@@ -6,10 +6,10 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/deploymentfailedazurefirewall.png"
 
 ---
-When attempting to deploy an [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"), you may get a error: Conflict, DeploymentFailed error.
+When attempting to deploy an [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"), you may get an error: Conflict, DeploymentFailed error.
 
     "code": "InternalServerError",
     "message": "An error occurred."
@@ -25,7 +25,7 @@ Even though the Azure Firewall will appear as deployed. You will notice that it 
 To resolve this error:
 
 1. **Delete** the **Azure Firewall** that has been **partially deployed**
-2. **Create** a **User Defined route**:
+2. **Create** a [**User Defined route **](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table?WT.mc_id=AZ-MVP-5004796 "Create, change, or delete a route table")for the internet:
 
 | Name | Address Prefix | Next hop type |
 | --- | --- | --- |
@@ -34,4 +34,4 @@ To resolve this error:
 1. Link it to the **AzureFirewallSubnet**
 2. **Redeploy**
 
-This error may occur as your internet route may be flowing via BGP routes from on-premises.
+This error may occur as your internet route may be flowing via BGP routes from on-premises, the user-defined route will override this route.

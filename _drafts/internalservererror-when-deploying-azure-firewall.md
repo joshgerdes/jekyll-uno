@@ -26,8 +26,12 @@ To resolve this error:
 
 1. Delete the Azure Firewall that has been partially deployed
 2. Create a User Defined route:
-3. s
-4. Link it to the AzureFirewallSubnet
-5. Redeploy
+
+| Name     | Address Prefix | Next hop type |
+| -------- | -------------- | ------------- |
+| Internet | 0.0.0.0/0      | Internet      |
+
+3. Link it to the AzureFirewallSubnet
+4. Redeploy
 
 This error may occur as your internet route may be flowing via BGP routes from on-premises.

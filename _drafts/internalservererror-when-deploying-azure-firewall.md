@@ -24,14 +24,14 @@ Even though the Azure Firewall, will appear as deployed. You will notice that it
 
 To resolve this error:
 
-1. Delete the Azure Firewall that has been partially deployed
-2. Create a User Defined route:
+1. **Delete** the **Azure Firewall** that has been **partially deployed**
+2. **Create** a **User Defined route**:
 
-| Name     | Address Prefix | Next hop type |
-| -------- | -------------- | ------------- |
-| Internet | 0.0.0.0/0      | Internet      |
+| Name | Address Prefix | Next hop type |
+| --- | --- | --- |
+| Internet | 0.0.0.0/0 | Internet |
 
-3. Link it to the AzureFirewallSubnet
-4. Redeploy
+1. Link it to the **AzureFirewallSubnet**
+2. **Redeploy**
 
 This error may occur as your internet route may be flowing via BGP routes from on-premises.

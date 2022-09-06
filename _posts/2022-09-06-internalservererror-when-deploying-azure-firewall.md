@@ -25,7 +25,7 @@ Even though the Azure Firewall will appear as deployed. You will notice that it 
 To resolve this error:
 
 1. **Delete** the **Azure Firewall** that has been **partially deployed**
-2. **Create** a **[User Defined route]**(https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table?WT.mc_id=AZ-MVP-5004796 "Create, change, or delete a route table"){:target="_blank"} for the internet:
+2. **Create** a **[User Defined route](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table?WT.mc_id=AZ-MVP-5004796 "Create, change, or delete a route table")**{:target="_blank"} for the internet:
 
 | Name | Address Prefix | Next hop type |
 | --- | --- | --- |

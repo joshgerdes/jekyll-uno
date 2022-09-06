@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/deploymentfailedazurefirewall.png"
 
 ---
-When attempting to deploy an [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"), you may get an error: Conflict, DeploymentFailed error.
+When attempting to deploy an [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"), you may get an error: Conflict, DeploymentFailed error. This error can occur when you have an expressroute connection, and the Firewall is not deployed in Force Tunneled mode.
 
     "code": "InternalServerError",
     "message": "An error occurred."
@@ -34,4 +34,4 @@ To resolve this error:
 1. Link it to the **AzureFirewallSubnet**
 2. **Redeploy**
 
-This error may occur as your internet route may be flowing via BGP routes from on-premises, the user-defined route will override this route.
+This error may occur as your internet route may flow via BGP routes from on-premises; the user-defined route will override this route.

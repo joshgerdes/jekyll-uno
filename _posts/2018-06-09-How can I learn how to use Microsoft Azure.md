@@ -33,10 +33,12 @@ _The links below are external to my website and I have no control over them. I h
 
 ## Intermediate: I am excited! Now to eat supper
 
+* [Azure Academy](https://www.youtube.com/c/AzureAcademy){:target="_blank"}
 * [Create a 3-Tier Application Using Azure Virtual Machines](https://www.udemy.com/free-azure/){:target="_blank"}
 * [Microsoft Azure Essentials](https://docs.microsoft.com/en-us/learn/azure/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Channel9](https://docs.microsoft.com/en-us/shows/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [Microsoft Learn](https://docs.microsoft.com/en-us/learn/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [John Savill's Technical Training](https://www.youtube.com/c/NTFAQGuy){:target="_blank"}
 * [Cloud SKills Training Catalogue](https://www.microsoft.com/en-au/business/learn/cloud-training-events/Home/Search/?SearchText=&index=0&RecordCount=12&OrderBy=date&Solutions=Select+all+solutions_Azure+Fundamentals_Azure+Data,+Analytics+and+AI_Azure+Applications+and+Infrastructure_Microsoft+365+Desktop+Deployment_Microsoft+365+Teams_Microsoft+365+Security+and+Compliance_Dynamics+365_Power+Platform_Surface){:target="_blank"}
 
 

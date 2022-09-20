@@ -15,7 +15,7 @@ Using a previous [blog post](https://luke.geek.nz/azure/turn-on-a-azure-virtual-
 
 > Today we will create a base Public Holidays API using several Microsoft Azure serverless services, such as Azure Function, Azure Storage Account and API Management.
 
-_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options"){:target="_blank"} _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB"){:target="_blank"}_._
+_Note: As this is a demonstration, I will be using a_ [_Consumption-based Azure Function_](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale?WT.mc_id=AZ-MVP-5004796 "Azure Functions hosting options"){:target="_blank"} _and Azure storage account, and although it is a good place to start - depending on your requirements, you may be better off with Azure Function Premium Plan to avoid cold-start times, and if you need a high amount of requests and writes (GET and POSTs) and resiliency, then replace the Storage account table with a_ [_Cosmos DB_](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=AZ-MVP-5004796 "Azure Cosmos DB"){:target="_blank"}_._
 
 The solution will be made up of the following:
 
@@ -33,7 +33,7 @@ The solution will be made up of the following:
 #### Pre-requisites
 
 * An Azure subscription _(with at least Contributor rights to a Resource Group)_.
-* Azure PowerShell modules _(_[_Az.Accounts_](https://docs.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts"){:target="_blank"}_,_ [_Az.Storage_](https://docs.microsoft.com/en-us/powershell/module/az.storage/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Storage"){:target="_blank"} _&_ [_AzTables_](https://www.powershellgallery.com/packages/AzTable/ "AzTable"){:target="_blank"}_)_
+* Azure PowerShell modules _(_[_Az.Accounts_](https://learn.microsoft.com/en-us/powershell/module/az.accounts/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Accounts"){:target="_blank"}_,_ [_Az.Storage_](https://learn.microsoft.com/en-us/powershell/module/az.storage/?view=azps-8.2.0&WT.mc_id=AZ-MVP-5004796 "Az.Storage"){:target="_blank"} _&_ [_AzTables_](https://www.powershellgallery.com/packages/AzTable/ "AzTable"){:target="_blank"}_)_
 
 _Note: AzTables is not part of the standard Az PowerShell module set and is a separate module you will need to install (Install-Module AzTables)._
 
@@ -398,7 +398,7 @@ Congratulations! You have now created a Public Holiday API that you can call for
 
 ##### Configure Azure API Management
 
-Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"){:target="_blank"}. Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers inbuilt shared cache functionality and integration into [Azure Cache for Redis](https://azure.microsoft.com/en-us/services/cache/?WT.mc_id=AZ-MVP-5004796 " Azure Cache for Redis®2"){:target="_blank"}.
+Now that the Function App responds to requests, we can expose the HTTP endpoint through [Azure API Management](https://learn.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition?WT.mc_id=AZ-MVP-5004796 "Expose serverless APIs from HTTP endpoints using Azure API Management"){:target="_blank"}. Azure API Management will give greater flexibility and security over API endpoints, particularly when dealing with more than one API. Azure API Management also offers inbuilt shared cache functionality and integration into [Azure Cache for Redis](https://azure.microsoft.com/en-us/services/cache/?WT.mc_id=AZ-MVP-5004796 " Azure Cache for Redis®2"){:target="_blank"}.
 
 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
 2. **Navigate** to your **Azure Function**

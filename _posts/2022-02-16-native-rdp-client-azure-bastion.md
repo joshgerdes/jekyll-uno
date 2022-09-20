@@ -9,7 +9,7 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-In early February 2022, Azure Bastion Preview support for the [native Windows SSH and RDP](https://docs.microsoft.com/en-us/azure/bastion/connect-native-client-windows?WT.mc_id=AZ-MVP-5004796 "Connect to a VM using the native client (Preview)"){:target="_blank"} client came out, and this meant that we no longer have to rely on the Azure Portal and the limitations of a web browser - the support also includes File transfer through the clipboard by copying and pasted into the RDP session!
+In early February 2022, Azure Bastion Preview support for the [native Windows SSH and RDP](https://learn.microsoft.com/en-us/azure/bastion/connect-native-client-windows?WT.mc_id=AZ-MVP-5004796 "Connect to a VM using the native client (Preview)"){:target="_blank"} client came out, and this meant that we no longer have to rely on the Azure Portal and the limitations of a web browser - the support also includes File transfer through the clipboard by copying and pasted into the RDP session!
 
 > Azure Bastion is a fully managed service that provides more secure and seamless Remote Desktop Protocol (RDP) and Secure Shell Protocol (SSH) access to virtual machines (VMs) without any exposure through public IP addresses. Provision the service directly in your local or peered virtual network to get support for all the VMs within it.
 
@@ -17,13 +17,13 @@ Let’s test the native RDP client through a secure connection using Azure Basti
 
 ### Prerequisites
 
-* This configuration requires the [Standard](https://docs.microsoft.com/en-us/azure/bastion/configuration-settings?WT.mc_id=AZ-MVP-5004796 "Azure Bastion documentation"){:target="_blank"} tier for Azure Bastion.
+* This configuration requires the [Standard](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings?WT.mc_id=AZ-MVP-5004796 "Azure Bastion documentation"){:target="_blank"} tier for Azure Bastion.
 * A Virtual Machine(s) to connect
-* Latest [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "Azure CLI"){:target="_blank"}
+* Latest [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "Azure CLI"){:target="_blank"}
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine.
 * Reader role on the Azure Bastion resource
-* Virtual Machine Administrator _(or User)_ login role _using_ [_Azure Active Directory_](https://docs.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows?WT.mc_id=AZ-MVP-5004796 "Login to Windows virtual machine in Azure using Azure Active Directory authentication"){:target="_blank"}_authentication_.
+* Virtual Machine Administrator _(or User)_ login role _using_ [_Azure Active Directory_](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows?WT.mc_id=AZ-MVP-5004796 "Login to Windows virtual machine in Azure using Azure Active Directory authentication"){:target="_blank"}_authentication_.
 
 ### Create Azure Bastion
 

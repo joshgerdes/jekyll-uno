@@ -21,7 +21,7 @@ To use Insert Resource, you will need to have:
 * Azure CLI
 * Visual Studio Code with the Bicep extension
 
-You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} page.
+You can easily install both or upgrade following the Microsoft documentation on the: [Install Bicep tools](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} page.
 You can also review the Bicep changes and latest release notes on Github here: [Azure Bicep releases](https://github.com/Azure/bicep/releases){:target="_blank"}
 
 #### Import Resources into Bicep using Azure CLI and Bicep

@@ -27,6 +27,6 @@ In my case, the Storage account I was attempting to remove the Private Endpoint 
 
 Generally, it is recommended that keep the lock taken on the storage account by Azure Backup. If you delete the lock, your storage account will be prone to accidental deletion and if it's deleted, you'll lose your snapshots or backups.
 
-[https://docs.microsoft.com/en-us/azure/backup/backup-afs#best-practices](https://docs.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796#best-practices "https://docs.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796#best-practices")
+[https://learn.microsoft.com/en-us/azure/backup/backup-afs#best-practices](https://learn.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796#best-practices "https://learn.microsoft.com/en-us/azure/backup/backup-afs?WT.mc_id=AZ-MVP-5004796#best-practices")
 
-[https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources "https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json&WT.mc_id=AZ-MVP-5004796")
+[https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json&WT.mc_id=AZ-MVP-5004796")

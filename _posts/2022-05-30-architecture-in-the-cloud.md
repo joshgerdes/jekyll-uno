@@ -87,6 +87,6 @@ The Azure SQL Database team expect almost all outages to be transient (brief and
 
 Finally, resources such as the Azure Architecture Center, Cloud Adoption and Well-Architected Framework can help with thinking around the design and building blocks of your architecture
 
-* [**Azure Architecture Center**](https://docs.microsoft.com/en-us/azure/architecture/?WT.mc_id=AZ-MVP-5004796 "Azure Architecture Center"){:target="_blank"}
-* [**Microsoft Azure Well-Architected Framework**](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}
-* [**Microsoft Cloud Adoption Framework for Azure**](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"){:target="_blank"}
+* [**Azure Architecture Center**](https://learn.microsoft.com/en-us/azure/architecture/?WT.mc_id=AZ-MVP-5004796 "Azure Architecture Center"){:target="_blank"}
+* [**Microsoft Azure Well-Architected Framework**](https://learn.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}
+* [**Microsoft Cloud Adoption Framework for Azure**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"){:target="_blank"}

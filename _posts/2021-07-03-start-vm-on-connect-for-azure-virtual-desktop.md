@@ -15,7 +15,7 @@ The Azure Resource Manager fabrics allow you to scale up down resources when you
 
 For Azure Virtual Desktop, this means ensuring that session hosts _(Virtual Machines)_ are available for users to connect to consume their services when they need it the most, whether it’s the first thing in the morning or late hours of the evening.
 
-One of the technologies that can help with this is: [Start VM on Connect](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect?WT.mc_id=AZ-MVP-5004796 "Start VM On Connect"){:target="_blank"}_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
+One of the technologies that can help with this is: [Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect?WT.mc_id=AZ-MVP-5004796 "Start VM On Connect"){:target="_blank"}_(Start VM on Connect allows users to start the virtual machine from a deallocated state)_.
 
 * Imagine a 9 AM -> 5 PM Monday to Friday business; during the day, Azure Virtual Desktop is available, however anything out of these hours (through Scheduled Shutdowns or Azure Automation Runbooks etc), the session hosts are shut down to reduce operational costs.
 * A business user get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work; because they were turned off outside of business hours, they can't connect and then have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).

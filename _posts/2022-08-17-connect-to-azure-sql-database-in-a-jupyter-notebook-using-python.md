@@ -21,7 +21,7 @@ Make sure you install:
 
 * [Python](https://www.python.org/downloads/ "Python"){:target="blank"}
 * [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc "){:target="blank"} library
-* [Microsoft ODBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server"){:target="blank"} _(has to be v17 or newer to support Azure Active Directory authentication)_.
+* [Microsoft ODBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server"){:target="blank"} _(has to be v17 or newer to support Azure Active Directory authentication)_.
 * [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") + [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code"){:target="blank"}
 
 _Note: Jupyter notebook extensions end in '*.ipynb'._

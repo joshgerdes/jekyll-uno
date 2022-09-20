@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/deploymentfailedazurefirewall.png"
 
 ---
-When attempting to deploy an [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"){:target="_blank"}, you may get an error: Conflict, DeploymentFailed error. This error can occur when you have an expressroute connection, and the Firewall is not deployed in Force Tunneled mode, as the routes from the BGP link will be replacing the default Azure internet route, required for the Azure Firewall.
+When attempting to deploy an [Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"){:target="_blank"}, you may get an error: Conflict, DeploymentFailed error. This error can occur when you have an expressroute connection, and the Firewall is not deployed in Force Tunneled mode, as the routes from the BGP link will be replacing the default Azure internet route, required for the Azure Firewall.
 
     "code": "InternalServerError",
     "message": "An error occurred."
@@ -25,7 +25,7 @@ Even though the Azure Firewall will appear as deployed. You will notice that it 
 To resolve this error:
 
 1. **Delete** the **Azure Firewall** that has been **partially deployed**
-2. **Create** a **[User Defined route](https://docs.microsoft.com/en-us/azure/virtual-network/manage-route-table?WT.mc_id=AZ-MVP-5004796 "Create, change, or delete a route table")**{:target="_blank"} for the internet:
+2. **Create** a **[User Defined route](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table?WT.mc_id=AZ-MVP-5004796 "Create, change, or delete a route table")**{:target="_blank"} for the internet:
 
 | Name | Address Prefix | Next hop type |
 | --- | --- | --- |

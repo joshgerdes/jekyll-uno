@@ -20,13 +20,13 @@ header:
 | Deallocating | This is the transitional state between running and deallocated. | Not billed |
 | Deallocated | The Virtual Machine has released the lease on the underlying hardware and is completely powered off. This state is also referred to as Stopped (Deallocated). | Not billed |
 
-Suppose a Virtual Machine is not being used. In that case, turning off a Virtual Machine from the Microsoft Azure Portal _(or programmatically via_ [_PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell Documentation"){:target="_blank"}_/_[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}_)_ is recommended to ensure that the Virtual Machine is deallocated and its affinity on the host has been released.
+Suppose a Virtual Machine is not being used. In that case, turning off a Virtual Machine from the Microsoft Azure Portal _(or programmatically via_ [_PowerShell_](https://learn.microsoft.com/en-us/powershell/azure/?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell Documentation"){:target="_blank"}_/_[_Azure CLI_](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}_)_ is recommended to ensure that the Virtual Machine is deallocated and its affinity on the host has been released.
 
 ![Microsoft Azure - Virtual Machine Power States](/uploads/azvm-power-states.png "Microsoft Azure - Virtual Machine Power States")
 
-However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles"){:target="_blank"} rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
+However, you need to know this, and those new to Microsoft Azure, or users who don't have [Virtual Machine Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?WT.mc_id=AZ-MVP-5004796 "Azure built-in roles"){:target="_blank"} rights to deallocate a Virtual Machine, may simply shut down the operating system, leaving the Virtual Machine in a 'Stopped' state, but still tied to an underlying Azure host and incurring cost.
 
-Our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} runbook to deallocate the Virtual Machine.
+Our solution can help; by triggering an Alert when a Virtual Machine becomes unavailable due to a user-initiated shutdown, we can then start an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} runbook to deallocate the Virtual Machine.
 
 ### Overview
 
@@ -58,7 +58,7 @@ We will set up this from scratch using the Azure Portal and an already created P
 
 ##### Create Azure Automation Account
 
-First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"} resource.
+First, we need an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"} resource.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Click **+ Create a resource.**
@@ -107,7 +107,7 @@ You can set up a custom role to be least privileged and use that instead. But in
 
 ##### Import Modules
 
-We will use the Azure Runbook and use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://docs.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"){:target="_blank"}, and update the Az.Accounts as required as a pre-requisite for Az.AlertsManagement.
+We will use the Azure Runbook and use a few Azure PowerShell Modules; by default, Azure Automation has the base Azure PowerShell modules, but we will need to add [Az.AlertsManagement](https://learn.microsoft.com/en-us/powershell/module/az.alertsmanagement/?WT.mc_id=AZ-MVP-5004796 "Az.AlertsManagement"){:target="_blank"}, and update the Az.Accounts as required as a pre-requisite for Az.AlertsManagement.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Navigate to your Azure **Automation account**

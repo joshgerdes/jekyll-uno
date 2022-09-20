@@ -9,7 +9,7 @@ header:
   teaser: images/iazure-marketplace-banner.png
 
 ---
-Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://docs.microsoft.com/en-us/azure/virtual-desktop/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Virtual Desktop?"){:target="_blank"} is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10_(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
+Previously known as Windows Virtual Desktop, [Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Virtual Desktop?"){:target="_blank"} is the successor of Microsoft Remote Desktop; although compatible with Server OS (Operating System), it is the first to support Windows 10_(and soon Windows 11)_ multisession, reducing application compatibility issues and giving consistent user experience.
 
 In this guide, I will run you through creating Azure Virtual Desktop from scratch, along with some prerequisites that will help you manage AVD after you create it.
 
@@ -36,7 +36,7 @@ Assuming you already have an Azure subscription and the appropriate access to cr
     ![Azure AD Domain Services - Basic Config](/uploads/adds_basics.png "Azure AD Domain Services - Basic Config")
  9. Click **Next**
 10. We will set up the **Networking**; if you have an already existing Virtual Network, select it.
-    _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+    _Azure AD Domain Services uses a dedicated subnet within a virtual network to hold all of its resources. If using an existing network, ensure that the network configuration does not block the ports required for Azure AD Domain Services to run._ [_Learn more_](https://learn.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 11. I will let it create a **Virtual Network** and its Subnet (/24); click **Next**.
     ![Azure AD Domain Services - Networking Config](/uploads/adds_networking.png "Azure AD Domain Services - Networking Config")
 12. **Azure AD Domain Services** will **create** a new Azure AD **Group** called: **AAD DC Administrators** - this group will be used for Administrator level permissions on the Azure AD Domain Services domain _(it automatically adds the account you are using to create Azure AD Domain Services into this group)_.

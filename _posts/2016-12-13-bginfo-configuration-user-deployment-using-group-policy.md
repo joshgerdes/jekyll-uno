@@ -18,7 +18,7 @@ This utility runs under the user’s context. This does not need admin rights. A
 
 Use the following guide to create the BG Info package…
 
- 1. Download BGInfo – <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo?WT.mc_id=AZ-MVP-5004796" target="_blank">https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo?WT.mc_id=AZ-MVP-5004796</a>
+ 1. Download BGInfo – <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo?WT.mc_id=AZ-MVP-5004796" target="_blank">https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo?WT.mc_id=AZ-MVP-5004796</a>
     <img src="https://i1.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi2.png?w=1500" alt="" data-recalc-dims="1" />
  2. Run and extract it to a folder – for example c:\\temp\\bginfo
     <img src="https://i0.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121216_0805_BgInfoConfi3.png?w=1500" alt="" data-recalc-dims="1" />

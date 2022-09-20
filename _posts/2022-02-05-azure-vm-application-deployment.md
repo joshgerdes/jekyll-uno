@@ -12,7 +12,7 @@ The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more th
 
 ### Overview
 
-> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796){:target="_blank"}. An Azure Compute Gallery provides:
+> An Azure Compute Gallery helps you build structure and organization around your Azure resources, like images and [applications](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796){:target="_blank"}. An Azure Compute Gallery provides:
 >
 > * Global replication.
 > * Versioning and grouping of resources for easier management.
@@ -32,7 +32,7 @@ With images, Azure VM applications that support both Linux and Windows operating
 > * Sharing with other users through Azure Role Based Access Control (RBAC)
 > * Support for virtual machines, and both flexible and uniform scale sets
 > * If you have Network Security Group (NSG) rules applied on your VM or scale set, downloading the packages from an internet repository might not be possible. And with storage accounts, downloading packages onto locked-down VMs would require setting up private links.
-> * VM applications can be used with the [DeployIfNotExists](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/effects?WT.mc_id=AZ-MVP-5004796){:target="_blank"} policy.
+> * VM applications can be used with the [DeployIfNotExists](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effects?WT.mc_id=AZ-MVP-5004796){:target="_blank"} policy.
 
 Azure VM Application packages _(stored in an Azure Storage account)_ uses multiple resources, as below:
 
@@ -71,7 +71,7 @@ In order to use VM Applications, we need:
 * Azure Compute gallery
 * VM application definition and version _(in my example: the Datto RMM agent)_
 
-Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[VM Applications docs](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#exe-installer "VM Applications overview"){:target="_blank"} give a few good examples for getting started with various applications.
+Following the guide, we will run through the creation of everything from scratch; I am, however, assuming you already have the executable or application package and know the instructions to install/uninstall it - as each application is different. The Microsoft[VM Applications docs](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#exe-installer "VM Applications overview"){:target="_blank"} give a few good examples for getting started with various applications.
 
 #### Setup Storage Account
 
@@ -267,4 +267,4 @@ You can right-click these and open them in Notepad, any errors will be noted in 
 
 #### Troubleshooting during preview
 
-* [Troubleshooting during preview](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#troubleshooting-during-preview "Troubleshooting during preview"){:target="_blank"}
+* [Troubleshooting during preview](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-applications?WT.mc_id=AZ-MVP-5004796#troubleshooting-during-preview "Troubleshooting during preview"){:target="_blank"}

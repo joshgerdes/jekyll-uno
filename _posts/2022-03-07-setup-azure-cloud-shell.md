@@ -12,13 +12,13 @@ The Azure Cloud Shell allows connectivity to Microsoft Azure using an authentica
 
 Azure Cloud Shell is assigned per unique user account and automatically authenticated with each session.
 
-Get a modern command-line experience from multiple access points, including the [Azure portal](https://portal.azure.com/){:target="_blank"}, [shell.azure.com](https://shell.azure.com/){:target="_blank"}, [Azure mobile app](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, Azure docs_(e.g._[_Azure CLI_](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_,_ [_Azure PowerShell_](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_)_, and [VS Code Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account){:target="_blank"}.
+Get a modern command-line experience from multiple access points, including the [Azure portal](https://portal.azure.com/){:target="_blank"}, [shell.azure.com](https://shell.azure.com/){:target="_blank"}, [Azure mobile app](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, Azure docs_(e.g._[_Azure CLI_](https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_,_ [_Azure PowerShell_](https://learn.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}_)_, and [VS Code Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account){:target="_blank"}.
 
 Both Bash and PowerShell experiences are available.
 
 > Microsoft routinely maintains and updates Cloud Shell, which comes equipped with commonly used CLI tools including Linux shell interpreters, PowerShell modules, Azure tools, text editors, source control, build tools, container tools, database tools, and more. Cloud Shell also includes language support for several popular programming languages such as Node.js, .NET, and Python.
 
-Along with native tools such as Azure PowerShell, it also contains Terraform, allowing you to implement and test functionality such as Infrastructure as Code, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://docs.microsoft.com/en-us/azure/cloud-shell/features?WT.mc_id=AZ-MVP-5004796 "Features & tools for Azure Cloud Shell"){:target="_blank"}'.
+Along with native tools such as Azure PowerShell, it also contains Terraform, allowing you to implement and test functionality such as Infrastructure as Code, without needing to touch your local machine and is always up-to-date, a full list of tools can be found '[here](https://learn.microsoft.com/en-us/azure/cloud-shell/features?WT.mc_id=AZ-MVP-5004796 "Features & tools for Azure Cloud Shell"){:target="_blank"}'.
 
 Just some noticeable things to be aware of regarding the Azure Cloud Shell:
 

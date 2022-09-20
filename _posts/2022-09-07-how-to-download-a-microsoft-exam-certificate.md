@@ -23,7 +23,7 @@ The certificate format has also been refreshed.
 
 To view and print your certificate:
 
-1. Navigate to: [**https://docs.microsoft.com/en-us/users/me/activity**](https://docs.microsoft.com/en-us/users/me/activity "https://docs.microsoft.com/en-us/users/me/activity")**/**
+1. Navigate to: [**https://learn.microsoft.com/en-us/users/me/activity**](https://learn.microsoft.com/en-us/users/me/activity "https://learn.microsoft.com/en-us/users/me/activity")**/**
 2. Click on: **Certifications**
 3. **Find** your certificate and click on **View certification details**.
 4. Click a **Print** certification, then click Print and you can print and save it as a PDF or print _(remember to uncheck print Headers and footers, to remove any footers from the print)_.

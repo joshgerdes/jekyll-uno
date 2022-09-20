@@ -23,7 +23,7 @@ enlighten you towards some of its use. DSC can be used for things such as:
 There are other examples, but essentially Microsoft has some good documentation
 around it.
 
-<https://docs.microsoft.com/en-us/powershell/dsc/overview?view=dsc-2.0&WT.mc_id=AZ-MVP-5004796>
+<https://learn.microsoft.com/en-us/powershell/dsc/overview?view=dsc-2.0&WT.mc_id=AZ-MVP-5004796>
 
 Enough about what is PowerShell DSC, one of the benefits of DSC is that you can
 use them to set and maintain a certain configuration – one of the good use of
@@ -82,6 +82,6 @@ Start-DscConfiguration -Path ./Server2016 -Wait -Verbose -Force
 {% endhighlight %}
 
 Or alternatively use [Microsoft Azure
-Automation](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+Automation](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 to set the desired state configuration baseline, apply and maintain the changes
 going forward.

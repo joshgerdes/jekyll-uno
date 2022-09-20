@@ -17,7 +17,7 @@ There are no one-size-fits when it comes to cost optimization, but some general 
 
 Although Microsoft takes a lot of traditional infrastructure management and security concerns off your hand, you are still responsible for the spending and ensuring the value of the technologies and services you consume match your business goals and agility.
 
-Today we are going to go back to basics and look at the [Cost Optimization](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796#cost-optimization "Cost optimization"){:target="_blank"} pillar of the Microsoft [Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}.
+Today we are going to go back to basics and look at the [Cost Optimization](https://learn.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796#cost-optimization "Cost optimization"){:target="_blank"} pillar of the Microsoft [Well-Architected Framework](https://learn.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}.
 
 > “The cost optimization pillar provides principles for balancing business goals with budget justification to create a cost-effective workload while avoiding capital-intensive solutions. Cost optimization is about looking at ways to reduce unnecessary expenses and improve operational efficiencies.”
 >
@@ -25,13 +25,13 @@ Today we are going to go back to basics and look at the [Cost Optimization](http
 
 The right governance and oversight can help prevent Cloud sprawl and wasted consumption costs.
 
-To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?"){:target="_blank"} at least quarterly.
+To help get you started, I have put together a list of some optimization opportunities, that should be run regularly, items such as reviewing unassociated public IPs should be done Monthly _(along with Azure Advisor checks)_, and [Azure Reservation reviews](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations?WT.mc_id=AZ-MVP-5004796 "What are Azure Reservations?"){:target="_blank"} at least quarterly.
 
-> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?"){:target="_blank"} and [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor"){:target="_blank"} help supplement these tasks.
+> **_This is not an exhaustive list_**, and the use of [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Policy?"){:target="_blank"} and [Azure Advisor](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796 "Introduction to Azure Advisor"){:target="_blank"} help supplement these tasks.
 >
 > If you have other tasks that you run, feel free to share them with the community in the page comments below.
 
-The [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview?WT.mc_id=AZ-MVP-5004796 "Overview of Microsoft Graph") and [KQL queries](https://luke.geek.nz/azure-resource-graph-explorer-and-the-powershell-azure-resource-graph "Azure Resource Graph Explorer and the PowerShell Azure Resource Graph "){:target="_blank"} can also be used in conjunction with PowerShell to pull recommendations straight out of Advisor, which can then be fed into reports, and the use of community tools such as the [Azure Optimization Engine](https://luke.geek.nz/azure/azure-optimization-engine "Azure Optimization Engine "){:target="_blank"} cannot be undervalued.
+The [Microsoft Graph](https://learn.microsoft.com/en-us/graph/overview?WT.mc_id=AZ-MVP-5004796 "Overview of Microsoft Graph") and [KQL queries](https://luke.geek.nz/azure-resource-graph-explorer-and-the-powershell-azure-resource-graph "Azure Resource Graph Explorer and the PowerShell Azure Resource Graph "){:target="_blank"} can also be used in conjunction with PowerShell to pull recommendations straight out of Advisor, which can then be fed into reports, and the use of community tools such as the [Azure Optimization Engine](https://luke.geek.nz/azure/azure-optimization-engine "Azure Optimization Engine "){:target="_blank"} cannot be undervalued.
 
 #### Design
 
@@ -121,11 +121,11 @@ When a VM is deleted from the Azure portal, the underlying OS and data disks may
 
 As mentioned above, some Virtual Machines with unmanaged disks will keep the VHDs around when deleted.
 
-Using a PowerShell [script](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks"){:target="_blank"} _(provided by Microsoft),_ you can report on any disks that are not in use by a VM and then delete them.
+Using a PowerShell [script](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/find-unattached-disks?WT.mc_id=AZ-MVP-5004796 "Find and delete unattached Azure managed and unmanaged disks"){:target="_blank"} _(provided by Microsoft),_ you can report on any disks that are not in use by a VM and then delete them.
 
 _Note: Be VERY cautious doing this; solutions such as Citrix and Azure Image Builder use unmanaged disks to create new Session hosts, etc., so context is key._
 
-With the Azure Storage accounts using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle"){:target="_blank"} on the storage accounts, so we are only retaining recent and relevant data.
+With the Azure Storage accounts using Blob data – such as Diagnostic Accounts, it is a good idea to implement [Azure Blob Storage Lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "Azure Blob Storage Lifecycle"){:target="_blank"} on the storage accounts, so we are only retaining recent and relevant data.
 
 ![Azure Blob Storage Lifecycle Management](/uploads/azureblogstglifecyclemgmnt.PNG "Azure Blob Storage Lifecycle Management")
 
@@ -202,7 +202,7 @@ _Note: This is a non-intrusive change that will take effect on the billing immed
 
 #### Review Backups
 
-[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup"){:target="_blank"} is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
+[Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-overview?WT.mc_id=AZ-MVP-5004796 "Azure Backup"){:target="_blank"} is simple because it’s built into the platform. It has one-click backup support for SQL databases and virtual machines running in Azure.
 
 Azure Backup is cost-effective and less complex than other cloud backup solutions while keeping your data safe from ransomware and human errors. Sometimes there will be workloads backed up to migrate, test, or clone, and you no longer need to retain the data.
 

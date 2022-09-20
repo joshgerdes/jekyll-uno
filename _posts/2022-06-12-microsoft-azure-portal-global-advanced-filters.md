@@ -19,7 +19,7 @@ You may see a checkbox or message like the below:
 
 This is because the Microsoft Azure portal has a default filter, which is very handy in hiding subscriptions and resources you don't want to see or use all the time.
 
-The following Microsoft document '[Manage Azure portal settings and preferences](https://docs.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences"){:target="_blank"}' is a great place to start, but let us take a look ourselves.
+The following Microsoft document '[Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences"){:target="_blank"}' is a great place to start, but let us take a look ourselves.
 
 ### Azure Portal Filters
 
@@ -81,10 +81,10 @@ If you wish to disable Advanced Filters, and go back to the Global Filter, you c
 
 To get the most out of your Azure Portal experience, the below Microsoft documentation is worth a read _(in no particular order)_.
 
-* [Manage Azure portal settings and preferences](https://docs.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences"){:target="_blank"}
-* [Azure subscription states](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-states?WT.mc_id=AZ-MVP-5004796 "Azure subscription states"){:target="_blank"}
-* [Add, remove, and rearrange favorites](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-add-remove-sort-favorites?WT.mc_id=AZ-MVP-5004796 "Add, remove, and rearrange favorites")
-* [View and filter Azure resource information](https://docs.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views?WT.mc_id=AZ-MVP-5004796 "View and filter Azure resource information"){:target="_blank"}
+* [Manage Azure portal settings and preferences](https://learn.microsoft.com/en-us/azure/azure-portal/set-preferences?WT.mc_id=AZ-MVP-5004796 "Manage Azure portal settings and preferences"){:target="_blank"}
+* [Azure subscription states](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/subscription-states?WT.mc_id=AZ-MVP-5004796 "Azure subscription states"){:target="_blank"}
+* [Add, remove, and rearrange favorites](https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-add-remove-sort-favorites?WT.mc_id=AZ-MVP-5004796 "Add, remove, and rearrange favorites")
+* [View and filter Azure resource information](https://learn.microsoft.com/en-us/azure/azure-portal/manage-filter-resource-views?WT.mc_id=AZ-MVP-5004796 "View and filter Azure resource information"){:target="_blank"}
 
 #### Send Feedback to Microsoft
 
@@ -92,4 +92,4 @@ On the last note, Microsoft has made it easy to create Feedback, that will get f
 
 ![Azure Portal - Feedback](/uploads/azureportal_feedback.png)
 
-The Microsoft Azure portal is in development all the time and is now built with [Azure Resource Graph](https://docs.microsoft.com/en-us/azure/governance/resource-graph/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Graph?") capabilities, it is very easy not to try and see new functionality, so I recommend you keep your eyes out and try new features.
+The Microsoft Azure portal is in development all the time and is now built with [Azure Resource Graph](https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Resource Graph?") capabilities, it is very easy not to try and see new functionality, so I recommend you keep your eyes out and try new features.

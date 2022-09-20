@@ -19,7 +19,7 @@ Let me introduce the Microsoft Azure Active Directory Application Proxy...
 
 ## Overview
 
-The [Azure Active Directory Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy?WT.mc_id=AZ-MVP-5004796){:target="_blank"}has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users_(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
+The [Azure Active Directory Application Proxy](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy?WT.mc_id=AZ-MVP-5004796){:target="_blank"}has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users_(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
 
 ![Azure Application Proxy - Network Diagram](/uploads/aadproxynetworkdiagram.png "Azure Application Proxy - Network Diagram")
 
@@ -65,7 +65,7 @@ The following resources and rights will be needed to set up Azure Application Pr
 
 ![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
 
-_(Note: Normal [Azure AD service limits](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions?WT.mc_id=AZ-MVP-5004796){:target="_blank"} and restrictions apply)_.
+_(Note: Normal [Azure AD service limits](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions?WT.mc_id=AZ-MVP-5004796){:target="_blank"} and restrictions apply)_.
 
 I will be configuring the Azure Application Proxy on a domain controller running Windows Server 2022.
 
@@ -109,9 +109,9 @@ And the following processes running:
 
 ![ApplicationProxyConnectorService](/uploads/azureaadapplicationservices.png "ApplicationProxyConnectorService")
 
-If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
+If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
 
-The Azure Application Proxy Connector agent gets [updated](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq?WT.mc_id=AZ-MVP-5004796#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-){:target="_blank"} automatically when a new major version is released by Microsoft.
+The Azure Application Proxy Connector agent gets [updated](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq?WT.mc_id=AZ-MVP-5004796#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-){:target="_blank"} automatically when a new major version is released by Microsoft.
 
 ### Configure Connector Group
 
@@ -178,7 +178,7 @@ _Note: You may also notice that Microsoft has supplied an *.msappproxy.net certi
 
 ### Setup Password-based Single-Sign on
 
-Azure Application Proxy supports various [single](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to?WT.mc_id=AZ-MVP-5004796){:target="_blank"} sign-on methods, including Kerberos SPN integration. 
+Azure Application Proxy supports various [single](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-config-sso-how-to?WT.mc_id=AZ-MVP-5004796){:target="_blank"} sign-on methods, including Kerberos SPN integration. 
 
 However, my Synology NAS uses standalone accounts, so I will set Password-based single sign-on, allowing the MyApps extension to store my credentials _(if you want single-sign-on using the password-based sign in, then every user will need to have this extension configured)_.
 

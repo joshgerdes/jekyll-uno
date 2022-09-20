@@ -17,7 +17,7 @@ In Microsoft Azure, you can make changes to the Primary Network interface; these
 
 This causes issues when the software is licensed to a specific MAC address; you could reissue the license to the new MAC address OR create a Secondary Interface in Microsoft Azure and update the MAC address on the secondary network interface.
 
-You can easily [create a new Network Interface](https://docs.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id=AZ-MVP-5004796#network-interfaces "Network interfaces"){:target="_blank"} from the Azure Portal and then attach it to the Virtual Machine (_the virtual machine needs to be off to allow the NIC to be attached)_.
+You can easily [create a new Network Interface](https://learn.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id=AZ-MVP-5004796#network-interfaces "Network interfaces"){:target="_blank"} from the Azure Portal and then attach it to the Virtual Machine (_the virtual machine needs to be off to allow the NIC to be attached)_.
 
 ##### Change Network Adapter MAC using PowerShell
 

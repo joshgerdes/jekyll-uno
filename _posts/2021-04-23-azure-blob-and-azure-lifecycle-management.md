@@ -11,7 +11,7 @@ header:
 ---
 Azure Blob storage (Platform-as-a-service (PaaS)) is used for streaming and storing documents, videos, pictures, backups, and other unstructured text or binary data… however the functionality extends beyond just a place to “store stuff”, it can save you money and time by automating the lifecycle of your data using Azure Blob Lifecycle Management and access tiers.
 
-As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to [mount a container](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support?WT.mc_id=AZ-MVP-5004796 "Network File System (NFS) 3.0 protocol support in Azure Blob storage (preview)"){:target="_blank"} in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
+As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to [mount a container](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support?WT.mc_id=AZ-MVP-5004796 "Network File System (NFS) 3.0 protocol support in Azure Blob storage (preview)"){:target="_blank"} in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.
 
 # First up what is a Blob?
 
@@ -115,6 +115,6 @@ Once the Policy has been saved, it is Enabled by default. You can disable it by 
 
 \#ProTip - You can have multiple Lifecycle Policies on a single storage account.
 
-\#ProTip - You can learn more about Lifecycle policies by going to the Microsoft documentation here: [Optimize costs by automating Azure Blob Storage access tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
+\#ProTip - You can learn more about Lifecycle policies by going to the Microsoft documentation here: [Optimize costs by automating Azure Blob Storage access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
 
 \#ProTip - If you are looking for integration with Azure AD or Active Directory NTFS permissions, replicating data from fileservers, you are better off looking at Azure File Shares and not blob storage.

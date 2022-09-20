@@ -42,8 +42,8 @@ Today, we are going to set up an Azure Automation runbook, triggered by a schedu
 
 To do this, we need a few resources.
 
-* [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?"){:target="_blank"} Account
-* Azure Automation [runbook](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-types?WT.mc_id=AZ-MVP-5004796 "Azure Automation runbook types"){:target="_blank"} _(I will supply a PowerShell runbook below)_
+* [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?"){:target="_blank"} Account
+* Azure Automation [runbook](https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types?WT.mc_id=AZ-MVP-5004796 "Azure Automation runbook types"){:target="_blank"} _(I will supply a PowerShell runbook below)_
 * [AbstractAPI ](https://www.abstractapi.com/ "Automate routine dev work with Abstract's suite of APIs"){:target="_blank"} API Key
 
 And, of course, 'Contributor' rights to the Microsoft Azure subscription to create the resources and the schedule, along with setting up the System Managed identity to grant the Azure Automation account access to start the Virtual Machine.
@@ -56,7 +56,7 @@ We will set up this from scratch using the Azure Portal and use an already creat
 
 ##### Create Azure Automation Account
 
-First, we need an [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"} resource.
+First, we need an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"} resource.
 
  1. Log into the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}.
  2. Click **+ Create a resource.**

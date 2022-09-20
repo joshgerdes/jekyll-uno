@@ -41,7 +41,7 @@ In my test setup, I have the following already pre-created that I will be runnin
 * Virtual Machine Scale set _(running Windows with two instances)_
 * Single Virtual Machine _(running Windows)_ to test shutdown against
 
-The currently supported resource types of Azure Chaos Studio can be found '[here](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796){:target="_blank"}'.
+The currently supported resource types of Azure Chaos Studio can be found '[here](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796){:target="_blank"}'.
 
 ### Setup Azure Chaos Studio
 
@@ -151,7 +151,7 @@ _Note: I had an API error; after some investigation, I found it was having probl
 
 Now that the Experiment has been created, we need to give rights to the Managed User account created earlier _(and/or the System managed identity that was created when the Experiment was created for service-direct experiments)_.
 
-I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796) Microsoft page.
+I will assign permissions to the Resource Group that the VM Scale set exists in, but you might be better off applying the rights to the individual resource for more granular control. You can see suggested roles to give resources: [Supported resource types and role assignments for the Chaos Studio](https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-fault-providers?WT.mc_id=AZ-MVP-5004796) Microsoft page.
 
  1. In the **Azure Portal**, click on the **Resource Group** containing the resources you want to run the Experiment against
  2. Select **Access control (IAM)**
@@ -176,7 +176,7 @@ Now that the Experiment has been created, it should appear as a resource in the 
 5. ![Azure Chaos studio - Run experiment](/uploads/azure_chaosstudio_whatmemoryrun.png "Azure Chaos studio - Run experiment")
 6. **Azure Chaos studio should now run rampant and do best – cause Chaos**!
 
-This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://docs.microsoft.com/en-us/azure/chaos-studio/troubleshooting){:target="_blank"}.
+This service is still currently in Preview. If you have any issues, take a look at the: [Troubleshoot issues with Azure Chaos Studio](https://learn.microsoft.com/en-us/azure/chaos-studio/troubleshooting){:target="_blank"}.
 
 ### Monitor and Auditing of Azure Chaos Studio
 

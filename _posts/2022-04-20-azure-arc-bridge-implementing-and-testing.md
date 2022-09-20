@@ -10,7 +10,7 @@ header:
   teaser: "/uploads/azure_arc_vmware_portal_createresourcebridge.png"
 
 ---
-[Azure Arc Bridge](https://docs.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Arc resource bridge "){:target="_blank"}_(currently in preview)_ is part of the core Azure Arc Hybrid Cloud platform.
+[Azure Arc Bridge](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Arc resource bridge "){:target="_blank"}_(currently in preview)_ is part of the core Azure Arc Hybrid Cloud platform.
 
 ### Overview
 
@@ -95,7 +95,7 @@ _Note: You are unable to set this up on vSphere 7.0.3, as it is not currently su
 
 * **Name** _(of the Resource Bridge resource)_
 * Select the **region** for your Metadata
-* Create a [**Custom Location**](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations?WT.mc_id=AZ-MVP-5004796 "Create and manage custom locations on Azure Arc-enabled Kubernetes"){:target="_blank"}_(that matches your on-premises location, where your resources are stored, i.e. could be a data centre prefix that matches your naming convention)_
+* Create a [**Custom Location**](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations?WT.mc_id=AZ-MVP-5004796 "Create and manage custom locations on Azure Arc-enabled Kubernetes"){:target="_blank"}_(that matches your on-premises location, where your resources are stored, i.e. could be a data centre prefix that matches your naming convention)_
 * Enter in the **name** of your **vCenter** resource _(this will represent your vCenter in Azure, so make sure it is easily identifiable)_
 
  1. ![Azure Arc - vCenter](/uploads/azure_arc_vmware_portal_createresourcesbridge.png "Azure Arc - vCenter")

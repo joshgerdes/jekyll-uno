@@ -17,7 +17,7 @@ The administration of this, particularly in scenarios where other people or team
 
 Tunnelling outbound traffic through to a specific IP address or IP addresses to _'known controllable IP addresses_' for Azure resources _(both IaaS and PaaS)_ which sit in the same Virtual Network is where the Azure NAT Gateway comes in, allowing you to easily allow and control what IPs your traffic is coming from. NAT Gateway replaces the default Internet destination in the virtual network’s routing table for the subnets identified
 
-"The Azure NAT gateway is a fully managed, highly resilient service built into the Azure fabric, which can be associated with one or more subnets in the same Virtual Network, that ensures that all outbound Internet-facing traffic will be routed through the gateway. As a result, the NAT gateway gives you a predictable public IP for outbound Internet-facing traffic. It also significantly increases the available [SNAT ports](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-intermittent-outbound-connection-errors?WT.mc_id=AZ-MVP-5004796){:target="_blank"} in scenarios where you have a high number of concurrent connections to the same public address/port combination."
+"The Azure NAT gateway is a fully managed, highly resilient service built into the Azure fabric, which can be associated with one or more subnets in the same Virtual Network, that ensures that all outbound Internet-facing traffic will be routed through the gateway. As a result, the NAT gateway gives you a predictable public IP for outbound Internet-facing traffic. It also significantly increases the available [SNAT ports](https://learn.microsoft.com/en-us/azure/app-service/troubleshoot-intermittent-outbound-connection-errors?WT.mc_id=AZ-MVP-5004796){:target="_blank"} in scenarios where you have a high number of concurrent connections to the same public address/port combination."
 
 ### My Testing
 
@@ -78,11 +78,11 @@ As you can see from the mess that is my screenshot above, all machines had compl
 * Any Public IP used on the same subnet as a NAT Gateway needs to be Standard.
 * If I had both a Public IP address and a Public IP prefix on my NAT gateway, the Prefix seemed to take precedence.
 * You cannot use a Public IP Prefix that is in use by the NAT Gateway for any other workload, _i.e. any inbound Public IPs. It would be best if you had another Public IP prefix resource._
-* A single [NAT gateway resource](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796) supports from 64,000 up to 1 million concurrent flows. Each IP address provides 64,000 SNAT ports to the available inventory. Therefore, you can use up to 16 IP addresses per NAT gateway resource. The SNAT mechanism is described [here](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796#source-network-address-translation) in more detail.
+* A single [NAT gateway resource](https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796) supports from 64,000 up to 1 million concurrent flows. Each IP address provides 64,000 SNAT ports to the available inventory. Therefore, you can use up to 16 IP addresses per NAT gateway resource. The SNAT mechanism is described [here](https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796#source-network-address-translation) in more detail.
 
 ### Create a NAT Gateway
 
-To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template?WT.mc_id=AZ-MVP-5004796 "https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}.
+To create my NAT Gateway, I used the ARM Quickstart template, located here: [https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template](https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template?WT.mc_id=AZ-MVP-5004796 "https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/quickstart-create-nat-gateway-template?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}.
 
 Then I created the additional Virtual Machines and Load Balancers and added them to the same VNET created as part of the NAT Gateway.
 
@@ -112,7 +112,7 @@ Just a quick Bicep snippet I created to create the NAT Gateway resource only:
 
 {% gist 469bf56e8287d5742ddddfd5c8affd15 %}
 
-It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796#windows "Install Bicep tools"){:target="_blank"}_using the PowerShell method)_and logging into your Azure and running the following_(replace RGNAME with the name of the Resource Group you will be deploying it to)_:
+It can be deployed by opening PowerShell _(after_ [_Bicep is installed_](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796#windows "Install Bicep tools"){:target="_blank"}_using the PowerShell method)_and logging into your Azure and running the following_(replace RGNAME with the name of the Resource Group you will be deploying it to)_:
 
 _When you are actually ready to deploy, remove the -Whatif at the end. Then you can go into the resource and add the Public IP/prefix. PowerShell will prompt you for the name of the NAT Gateway and be created in the same location as the Resource Group by default._
 
@@ -120,6 +120,6 @@ _When you are actually ready to deploy, remove the -Whatif at the end. Then you 
 
 ### Additional Resources
 
-* [What is Virtual Network NAT?](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
-* [Design Virtual Networks that use NAT gateway resources](https://docs.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [What is Virtual Network NAT?](https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Design Virtual Networks that use NAT gateway resources](https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-gateway-resource?WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 * [NAT Gateway Pricing](https://azure.microsoft.com/en-us/pricing/details/virtual-network/?WT.mc_id=AZ-MVP-5004796#pricing "Azure NAT Gateway Pricing"){:target="_blank"}

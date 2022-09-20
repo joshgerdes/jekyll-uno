@@ -8,7 +8,7 @@ categories:
 header: 
   teaser: "images/iazure-marketplace-banner.png"
 ---
-One of the issues you face with setting up an Azure [Site to Site VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} is making sure that your Azure Local Network Gateway always has your Public/On-premises IP.
+One of the issues you face with setting up an Azure [Site to Site VPN](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} is making sure that your Azure Local Network Gateway always has your Public/On-premises IP.
 
 This setup is fine when used in environments that have Static IPs (and yes if setting this up for a Business or Production, it is highly recommended to have a static IP!).
 
@@ -20,8 +20,8 @@ Local Network Gateway.
 
 Prerequisites:
 
-* [Az PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}
-* [Azure Service Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} (with Contributor rights to the Azure Local Network Gateway)
+* [Az PowerShell Module](https://learn.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.5.0&WT.mc_id=AZ-MVP-5004796){:target="_blank"}
+* [Azure Service Principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal?WT.mc_id=AZ-MVP-5004796){:target="_blank"} (with Contributor rights to the Azure Local Network Gateway)
 
 Once you have the Azure Service Principal and Az Module installed, you need to
 edit the following variables to suit your environment:

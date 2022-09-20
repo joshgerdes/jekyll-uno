@@ -9,17 +9,17 @@ header:
   teaser: "/uploads/azureprivatednsresolver.png"
 
 ---
-You might access resources such as [Azure SQL databases](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=AZ-MVP-5004796 "Azure SQL Database"){:target="_blank"} or [Azure Storage accounts](https://docs.microsoft.com/azure/storage/?WT.mc_id=AZ-MVP-5004796 "Azure Storage documentation"){:target="_blank"} if you're connecting to a Microsoft Azure network externally _(_[_from a non-Azure VM_](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances?WT.mc_id=AZ-MVP-5004796#azure-provided-name-resolution "Name resolution for resources in Azure virtual networks"){:target="_blank"} _or VPN)_; mainly if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to [private link](https://azure.microsoft.com/services/private-link/?WT.mc_id=AZ-MVP-5004796 "Private Link"){:target="_blank"} resources, you may have to edit your local host's file and override local DNS to point to the IP of the [private endpoint](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for each service.
+You might access resources such as [Azure SQL databases](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=AZ-MVP-5004796 "Azure SQL Database"){:target="_blank"} or [Azure Storage accounts](https://learn.microsoft.com/azure/storage/?WT.mc_id=AZ-MVP-5004796 "Azure Storage documentation"){:target="_blank"} if you're connecting to a Microsoft Azure network externally _(_[_from a non-Azure VM_](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances?WT.mc_id=AZ-MVP-5004796#azure-provided-name-resolution "Name resolution for resources in Azure virtual networks"){:target="_blank"} _or VPN)_; mainly if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to [private link](https://azure.microsoft.com/services/private-link/?WT.mc_id=AZ-MVP-5004796 "Private Link"){:target="_blank"} resources, you may have to edit your local host's file and override local DNS to point to the IP of the [private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for each service.
 
 This is not sustainable, not scalable, and you might end up throwing your hands in the air and switching back to public-facing services and just whitelisting other users' Public IPs to gain access to Azure resources - which can lead to its own set of issues, such as unmanaged IPs left with access to resources after contractors or users leave or have finished their work, IP address changes if not managed correctly can allow any user or company to have a direct line of sight to your company resources.
 
 ### Overview
 
-> Today we will concentrate on DNS resolution of Private Endpoints, using [Azure DNS Private Resolver](https://docs.microsoft.com/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure DNS Private Resolver?"){:target="_blank"} as a DNS proxy when connecting to Azure using a [Point to Site VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about?WT.mc_id=AZ-MVP-5004796 "About Point-to-Site VPN"){:target="_blank"}.
+> Today we will concentrate on DNS resolution of Private Endpoints, using [Azure DNS Private Resolver](https://learn.microsoft.com/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure DNS Private Resolver?"){:target="_blank"} as a DNS proxy when connecting to Azure using a [Point to Site VPN](https://learn.microsoft.com/azure/vpn-gateway/point-to-site-about?WT.mc_id=AZ-MVP-5004796 "About Point-to-Site VPN"){:target="_blank"}.
 
 For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Azure Active Directory authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication"){:target="_blank"}.
 
-_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change. This also means there are current_ [_regional restrictions_](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796#regional-availability "Regional availability"){:target="_blank"}_, and Azure Private DNS Resolver is not currently available in all regions. Also bear in mind the [cost](https://azure.microsoft.com/en-us/pricing/details/dns/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} of this service._
+_Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change. This also means there are current_ [_regional restrictions_](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796#regional-availability "Regional availability"){:target="_blank"}_, and Azure Private DNS Resolver is not currently available in all regions. Also bear in mind the [cost](https://azure.microsoft.com/en-us/pricing/details/dns/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} of this service._
 
 #### So what is Azure DNS Resolver?
 
@@ -53,7 +53,7 @@ Azure DNS private resolver outbound endpoint conditionally forwards the request 
 To deploy Azure Private DNS Resolver, we will need a few things.
 
 * A Virtual Network
-* A [subnet](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-overview#subnet-restrictions "Subnet restrictions"){:target="_blank"} dedicated to resolving DNS queries _(/28)_
+* A [subnet](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview#subnet-restrictions "Subnet restrictions"){:target="_blank"} dedicated to resolving DNS queries _(/28)_
 * A private endpoint _(i.e. Storage Account, SQL Database)_ is linked to the virtual network.
 
 #### Deploy DNS Private Resolver
@@ -90,7 +90,7 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
  3. Click on **Inbound Endpoints**
  4. Make a note of the **private IP** of your inbound endpoint.
  5. ![Private DNS Resolver](/uploads/azureportal_creatednsprivateresolverinboundendpointip.png "Private DNS Resolver")
- 6. Now that the Private Inbound resolver has been configured, we need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with a private endpoint; you will need to modify the '[azurevpnconfig.xml](https://docs.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download?WT.mc_id=AZ-MVP-5004796#generate "Generate profile files"){:target="_blank"}' file and reimport the VPN.
+ 6. Now that the Private Inbound resolver has been configured, we need to add the DNS relay into our Azure VPN configuration so that our DNS queries will respond with a private endpoint; you will need to modify the '[azurevpnconfig.xml](https://learn.microsoft.com/en-us/azure/vpn-gateway/about-vpn-profile-download?WT.mc_id=AZ-MVP-5004796#generate "Generate profile files"){:target="_blank"}' file and reimport the VPN.
  7. Right-click 'azurevpnconfig.xml' and edit in Notepad or Visual Studio Code
  8. Under: </serverlist>
  9. **Add** _(replace the IP listed below with the IP of your Inbound endpoint copied earlier)_:
@@ -105,14 +105,14 @@ Now that the DNS Resolver has been created, with an inbound endpoint, allowing t
 12. ![Azure Private DNS Resolver ping](/uploads/azurevpn_testprivateendpoint.png "Azure Private DNS Resolver ping")
 
 Any future or current private endpoints linked to the same Virtual Network will instantly be accessible without additional changes on the Azure VPN client.
-If you have a Hub & Spoke topology, then you may place the DNS Private Resolver in the HUB, then use [forwarding rules](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796#link-your-forwarding-ruleset-to-the-second-virtual-network){:target="_blank"} to link to other peered VNETs.
+If you have a Hub & Spoke topology, then you may place the DNS Private Resolver in the HUB, then use [forwarding rules](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796#link-your-forwarding-ruleset-to-the-second-virtual-network){:target="_blank"} to link to other peered VNETs.
 
 ### Additional resources
 
 The third-party resources below include reading and learning about the Azure Private DNS Resolver.
 
-* [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://docs.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal"){:target="_blank"}
-* [Intro to Azure DNS Private Resolver](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-dns-private-resolver/?WT.mc_id=AZ-MVP-5004796 "Intro to Azure DNS Private Resolver"){:target="_blank"}
+* [Quickstart: Create an Azure private DNS Resolver using the Azure portal](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-get-started-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create an Azure private DNS Resolver using the Azure portal"){:target="_blank"}
+* [Intro to Azure DNS Private Resolver](https://learn.microsoft.com/en-us/learn/modules/intro-to-azure-dns-private-resolver/?WT.mc_id=AZ-MVP-5004796 "Intro to Azure DNS Private Resolver"){:target="_blank"}
 * [Azure DNS Private Resolver - MicroHack](https://github.com/dawlysd/azure-dns-private-resolver-microhack "Azure DNS Private Resolver - MicroHack"){:target="_blank"}
 * My Azure Private DNS Resolver Bicep export for reference:
 

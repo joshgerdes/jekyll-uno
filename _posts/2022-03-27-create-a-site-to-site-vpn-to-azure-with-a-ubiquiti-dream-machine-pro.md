@@ -23,21 +23,21 @@ My address range is as follows _(so make sure you adjust to match your setup and
 
 #### Prerequisites
 
-* The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0?WT.mc_id=AZ-MVP-5004796) modules and [Azure Bicep/Azure CLI](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for local editing
+* The latest [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.1.0?WT.mc_id=AZ-MVP-5004796) modules and [Azure Bicep/Azure CLI](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for local editing
 * An Azure subscription that you have at least contributor rights to
 * Permissions to the UDM Pro to set up a new network connection
 
-I will be using PowerShell [splatting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?WT.mc_id=AZ-MVP-5004796 "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
+I will be using PowerShell [splatting](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?WT.mc_id=AZ-MVP-5004796 "Splatting"){:target="_blank"} as it's easier to edit and display. You can easily take the scripts here to make them your own.
 
 #### Deploy - Azure Network and Virtual Network Gateway
 
-I will assume that you have both [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows?WT.mc_id=AZ-MVP-5004796 "Azure Bicep - Install") and[PowerShell Azure](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?WT.mc_id=AZ-MVP-5004796 "PowerShell - Azure"){:target="_blank"} modules installed and the know-how to connect to Microsoft Azure.
+I will assume that you have both [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install#windows?WT.mc_id=AZ-MVP-5004796 "Azure Bicep - Install") and[PowerShell Azure](https://learn.microsoft.com/en-us/powershell/azure/install-az-ps?WT.mc_id=AZ-MVP-5004796 "PowerShell - Azure"){:target="_blank"} modules installed and the know-how to connect to Microsoft Azure.
 
 Azure Bicep deployments _(like ARM)_ have the following command: 'TemplateParameterObject'. 'TemplateParameterObject' allows Azure Bicep to accept parameters from PowerShell directly, which can be pretty powerful when used with a self-service portal or pipeline.
 
 I will first make an Azure Resource Group using PowerShell for my Azure Virtual Network, then use the New-AzResourceGroupDeployment cmdlet to deploy my Virtual Network and subnets from my bicep file.
 
-Along with the Virtual Network, we will also create 2 other Azure resources needed for a Site to Site VPN, a [Local Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create a site-to-site VPN connection in the Azure portal"){:target="_blank"} _(this will represent your on-premises subnet and external IP to assist with routing)_and a [Virtual Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways?WT.mc_id=AZ-MVP-5004796 "What is VPN Gateway?"){:target="_blank"} _(which is used to send encrypted traffic over the internet between your on-premises site(s) and Azure)_.
+Along with the Virtual Network, we will also create 2 other Azure resources needed for a Site to Site VPN, a [Local Network Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create a site-to-site VPN connection in the Azure portal"){:target="_blank"} _(this will represent your on-premises subnet and external IP to assist with routing)_and a [Virtual Network Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways?WT.mc_id=AZ-MVP-5004796 "What is VPN Gateway?"){:target="_blank"} _(which is used to send encrypted traffic over the internet between your on-premises site(s) and Azure)_.
 
 Update the parameters of the PowerShell script below, to match your own needs, and you may need to edit the Bicep file itself to add/remove subnets and change the IP address space to match your standards.
 
@@ -70,7 +70,7 @@ The shared key will be used between the UDM Pro and your Azure network; make sur
     #Deploys the Azure Bicep template
     New-AzResourceGroupDeployment @parameters -WhatIf
 
-Note: The _'_[_-whatif_](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if?tabs=azure-powershell%2CCLI?WT.mc_id=AZ-MVP-5004796 "Bicep deployment what-if operation"){:target="_blank"}' parameter has been added as a safeguard, so once you know the changes are suitable, then remove and rerun.
+Note: The _'_[_-whatif_](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if?tabs=azure-powershell%2CCLI?WT.mc_id=AZ-MVP-5004796 "Bicep deployment what-if operation"){:target="_blank"}' parameter has been added as a safeguard, so once you know the changes are suitable, then remove and rerun.
 
 The Virtual Network Gateway can take 20+ minutes to deploy, leave the Terminal/PowerShell window open, you can also check the Deployment in the Azure Portal _(Under Deployments panel in the Resource Group)_.
 

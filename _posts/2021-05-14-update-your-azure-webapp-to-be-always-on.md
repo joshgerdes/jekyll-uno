@@ -50,4 +50,4 @@ The Azure policy below, contains a set of 3 policies which used in combination s
 For more information about the "Always On" feature please see the documentation below:
 
 * [Azure Web Sites adds Always On](https://azure.microsoft.com/en-us/updates/azure-web-sites-adds-always-on/?WT.mc_id=AZ-MVP-5004796 "https://azure.microsoft.com/en-us/updates/azure-web-sites-adds-always-on/?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}
-* [Application performance FAQs for Web Apps in Azure](https://docs.microsoft.com/en-us/troubleshoot/azure/general/web-apps-performance-faqs?WT.mc_id=AZ-MVP-5004796 "https://docs.microsoft.com/en-us/troubleshoot/azure/general/web-apps-performance-faqs?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}
+* [Application performance FAQs for Web Apps in Azure](https://learn.microsoft.com/en-us/troubleshoot/azure/general/web-apps-performance-faqs?WT.mc_id=AZ-MVP-5004796 "https://learn.microsoft.com/en-us/troubleshoot/azure/general/web-apps-performance-faqs?WT.mc_id=AZ-MVP-5004796"){:target="_blank"}

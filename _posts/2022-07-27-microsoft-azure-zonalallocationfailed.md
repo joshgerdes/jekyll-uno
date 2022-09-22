@@ -19,6 +19,8 @@ When you create a virtual machine _(VM)_, start stopped _(deallocated)_ VMs, or 
 
 Microsoft is continually investing in additional infrastructure and features to ensure that they always have all VM types available to support customer demand. However, you may occasionally experience resource allocation failures because of unprecedented growth in demand for Azure services in specific regions.
 
+These tips, also apply to the 'Following SKUs have failed for Capacity Restrictions' error.
+
 This error could also be caused by a parameter issue with your Infrastructure as Code deployments, if you are to restrictive and it attempts to create a resource that isn't supported - an example is a SKU that doesn't support Accelerated Networking, or an attempt to deploy an Ultra SSD disk for a SKU that doesn't deploy it.
 
 #### **Waiting for more Compute to be added to the Azure server clusters may not be an option, so what can you do?**

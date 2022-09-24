@@ -80,3 +80,17 @@ The version of the VM series links to the underlying hardware associated with th
 Remember that changing the VM SKU will force the Virtual Machine to deallocate _(stop)_, as it triggers ARM to stand up the Virtual Machine on different server clusters/hardware.
 
 _I have found that there are no noticeable decreases in performance for most workloads, but keep in mind you may be returning on older hardware - but it should get you going, and then you can update the SKU to the latest version later._
+
+
+##### Increase regional vCPU quotas
+
+Azure Resource Manager enforces two types of vCPU quotas for virtual machines:
+
+* standard vCPU quotas
+* spot vCPU quotas
+Standard vCPU quotas apply to pay-as-you-go VMs and reserved VM instances. They are enforced at two tiers, for each subscription, in each region:
+
+* The first tier is the total regional vCPU quota.
+* The second tier is the VM-family vCPU quota such as D-series vCPUs.
+
+Check your subscription quotas and if necessary, raise a request to increase them by following the guide here: [Increase regional vCPU quotas]{https://learn.microsoft.com/azure/quotas/regional-quota-requests?WT.mc_id=AZ-MVP-5004796}

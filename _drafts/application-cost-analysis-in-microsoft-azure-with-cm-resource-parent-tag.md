@@ -50,10 +50,16 @@ To apply the ResourceID of the parent resource, you can use the [Azure Portal](h
 2. Click **Tags**
 3. Add in: **cm-resource-parent** in the value and the resource ID of your parent as a value.
 
-_Note: You are unable to have a multi-hierarchy, i.e. a Parent, then Child and Child off that - it is purely a Parent and Child relationship at this stage. Also, the Resource ID will change if the Parent resources are moved to another Resource group or subscription._
+_Note: You cannot have a multi-hierarchy, i.e. a Parent, then Child and Child off that - it is purely a Parent and Child relationship at this stage. Also, the Resource ID will change if the Parent resources are moved to another Resource group or subscription._
 
-These Tags can work easily with other cost management tags you may be using, so it doesn't replace but supplements your visibility.
+These Tags can work easily with other cost management tags you may be using _(but you cannot have more than one cm-resource-parent tag)_, so it doesn't replace but supplements your visibility. They are supported on any resource that is Tag-capable.
 
 You may have to wait up to a day _(24 hours)_ before the changes are visible in Azure Cost Analysis.
 
 I have the [Azure Naming Tool](https://luke.geek.nz/azure/deploy-azure-naming-tool-into-an-azure-webapp-as-a-container/ "Azure Naming Tool") deployed in my example and would like to see the overall cost; these resources are deployed across multiple resources in the same subscription.
+
+Choosing my WebApp as my parent resource, I tagged all child resources _(App Service Plan, Container Registry, Storage Account)_ with the relevant tag and resource ID as seen below:
+
+![Azure Portal - Child resource](/uploads/azureportal_cmtags_child.png "Azure Portal - Child resource")
+
+d

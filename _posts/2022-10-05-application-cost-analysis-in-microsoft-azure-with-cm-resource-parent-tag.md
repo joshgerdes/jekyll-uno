@@ -9,19 +9,19 @@ header:
   teaser: "/uploads/azureportal_costanalysis_aznamingtool.png"
 
 ---
-Cost Analysis in Microsoft Azure allows you to analyse the cost of your services; these services can be scoped into Resource Groups, Resources and Services; you can also group your services by [Tags](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources?tabs=json&WT.mc_id=AZ-MVP-5004796 "Use tags to organize your Azure resources and management hierarchy").
+Cost Analysis in Microsoft Azure allows you to analyse the cost of your services; these services can be scoped into Resource Groups, Resources and Services; you can also group your services by [Tags](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources?tabs=json&WT.mc_id=AZ-MVP-5004796 "Use tags to organize your Azure resources and management hierarchy"){:target="_blank"}.
 
 Azure tags are name-value pairs used to organize resources. You can apply tags for individual resources, display show back or ownership and can be used for automation - but what assigning parent/child relationships to your resources?
 
-[Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide") work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "_cm-resource-parent_" tag comes in.
+[Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide"){:target="_blank"} work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "_cm-resource-parent_" tag comes in.
 
-Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship. The 'cm' is: Cost Management.
+Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"{:target="_blank"}), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship. The 'cm' is: Cost Management.
 
 ![cm-resource-parent Child Relationship](/uploads/parentchild.png "cm-resource-parent Child Relationship")
 
 To use the cm-resource-parent tag, you must choose a parent resource _(an example may be an App Service or an Azure Virtual Desktop host pool)._ No changes will be made to this resource, but you need the ResourceID of the resource to apply to Child resources.
 
-To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by
+To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}, by
 
 1. **Open** the **resource** that you want to be the parent of.
 2. Select **Properties** in the resource menu.
@@ -44,7 +44,7 @@ As an Azure Tag is a Key/Value pair - the tags will be similar to:
 | --- | --- |
 | cm-resource-parent | /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip |
 
-To apply the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by
+To apply the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}, by
 
 1. **Open** the **resource** you want to be the child of the parent you selected above.
 2. Click **Tags**
@@ -62,7 +62,7 @@ Choosing my WebApp as my parent resource, I tagged all child resources _(App Ser
 
 ![Azure Portal - Child resource](/uploads/azureportal_cmtags_child.png "Azure Portal - Child resource")
 
-After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)") and selected **Resources** and could view the current cost of my service after a few days of use.
+After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)"){:target="_blank"} and selected **Resources** and could view the current cost of my service after a few days of use.
 
 ![Azure Cost Analysis](/uploads/azureportal_costanalysis_aznamingtool.png "Azure Cost Analysis")
 

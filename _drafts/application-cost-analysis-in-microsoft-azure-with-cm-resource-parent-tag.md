@@ -17,11 +17,11 @@ Azure tags are name-value pairs used to organize resources. You can apply tags f
 
 Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship.
 
-To use the cm-resource-parent tag, you have to choose a parent resource _(an example of this may be an App Service or an Azure Virtual Desktop host pool)._ No changes will be made to this resource, but you need the ResourceID of the resource to apply to Child resources.
+To use the cm-resource-parent tag, you must choose a parent resource _(an example may be an App Service or an Azure Virtual Desktop host pool)._ No changes will be made to this resource, but you need the ResourceID of the resource to apply to Child resources.
 
-To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by 
+To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by
 
-1. **Open** the **resource** that you want to be the parent.
+1. **Open** the **resource** that you want to be the parent of.
 2. Select **Properties** in the resource menu.
 3. Find the **Resource ID** property and copy its value.
 
@@ -38,9 +38,14 @@ Once you have the Resource ID of your resource, it is time to tag your Child's r
 
 As an Azure Tag is a Key/Value pair - the tags will be similar to:
 
-| Name                | Value                                                                                                                                    |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-|  cm-resource-parent | /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip |
+| Name | Value |
+| --- | --- |
+| cm-resource-parent | /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip |
 
+To apply the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by
 
-s
+1. **Open** the **resource** you want to be the child of the parent you selected above.
+2. Click **Tags**
+3. Add in: **cm-resource-parent** in the value and the resource ID of your parent as a value.
+
+_Note: You are unable to have a multi-hierarchy, i.e. a Parent, then Child and Child off that - it is purely a Parent and Child relationship at this stage._

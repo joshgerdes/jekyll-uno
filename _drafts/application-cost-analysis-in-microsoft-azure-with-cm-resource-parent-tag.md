@@ -16,3 +16,31 @@ Azure tags are name-value pairs used to organize resources. You can apply tags f
 [Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide") work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "cm-resource-parent" tag comes in.
 
 Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship.
+
+To use the cm-resource-parent tag, you have to choose a parent resource _(an example of this may be an App Service or an Azure Virtual Desktop host pool)._ No changes will be made to this resource, but you need the ResourceID of the resource to apply to Child resources.
+
+To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by 
+
+1. **Open** the **resource** that you want to be the parent.
+2. Select **Properties** in the resource menu.
+3. Find the **Resource ID** property and copy its value.
+
+You can easily use PowerShell to find the ResourceID as well:
+
+    $ResourceName = 'Parent Resource'
+    Get-AzResource -Name $ResourceName | Select-Object ResourceId
+
+A resource ID looks like this _(you will need to copy the full thing, this will be used on your child resources)_:
+
+    /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip
+
+Once you have the Resource ID of your resource, it is time to tag your Child's resources.
+
+As an Azure Tag is a Key/Value pair - the tags will be similar to:
+
+| Name                | Value                                                                                                                                    |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+|  cm-resource-parent | /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip |
+
+
+s

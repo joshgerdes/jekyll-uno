@@ -65,3 +65,7 @@ Choosing my WebApp as my parent resource, I tagged all child resources _(App Ser
 After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)") and selected **Resources** and could view the current cost of my service after a few days of use.
 
 ![Azure Cost Analysis](/uploads/azureportal_costanalysis_aznamingtool.png "Azure Cost Analysis")
+
+And another example can be seen below - where I have added a Public IP as a child resource of the Azure storage account, which, although the parent in this relationship, is a child in the Azure Naming Tool.
+
+![Azure Cost Analysis](/uploads/azureportal_costanalysis_example2.png "Azure Cost Analysis")

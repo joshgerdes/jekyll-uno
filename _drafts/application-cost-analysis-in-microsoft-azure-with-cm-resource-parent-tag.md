@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/azureportal_costanalysis_aznamingtool.png"
 
 ---
 Cost Analysis in Microsoft Azure allows you to analyse the cost of your services; these services can be scoped into Resource Groups, Resources and Services; you can also group your services by [Tags](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources?tabs=json&WT.mc_id=AZ-MVP-5004796 "Use tags to organize your Azure resources and management hierarchy").
@@ -62,6 +62,6 @@ Choosing my WebApp as my parent resource, I tagged all child resources _(App Ser
 
 ![Azure Portal - Child resource](/uploads/azureportal_cmtags_child.png "Azure Portal - Child resource")
 
-After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)") and selected **Resources** and could view the current cost of my service.
+After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)") and selected **Resources** and could view the current cost of my service after a few days of use.
 
 ![Azure Cost Analysis](/uploads/azureportal_costanalysis_aznamingtool.png "Azure Cost Analysis")

@@ -13,7 +13,7 @@ Cost Analysis in Microsoft Azure allows you to analyse the cost of your services
 
 Azure tags are name-value pairs used to organize resources. You can apply tags for individual resources, display show back or ownership and can be used for automation - but what assigning parent/child relationships to your resources?
 
-[Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide") work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "cm-resource-parent" tag comes in.
+[Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide") work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "_cm-resource-parent_" tag comes in.
 
 Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship. The 'cm' is: Cost Management.
 
@@ -69,3 +69,11 @@ After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.
 And another example can be seen below - where I have added a Public IP as a child resource of the Azure storage account, which, although the parent in this relationship, is a child in the Azure Naming Tool.
 
 ![Azure Cost Analysis](/uploads/azureportal_costanalysis_example2.png "Azure Cost Analysis")
+
+As you can see, the 'cm-resource-parent' is another way to group related resources of different types from a cost analysis angle; still, in preview, this tag opens up the door for various other initiatives across observability, security stacks etc. 
+
+Although not tested, you also should be able to output the resource ID of your Bicep code and add that as a variable for any resources deployed via Infrastructure as Code.
+
+It's worth noting that this feature is still in Preview at the time of this article, so if you incur any bugs or have feature requests, you can use the 'Rate the Cost Analysis Preview' feature in the Azure Portal to supply feedback to the product teams.
+
+![Cost Analysis - Product Feedback](/uploads/cost_analysis_productfeedback.png "Cost Analysis - Product Feedback")

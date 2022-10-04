@@ -30,7 +30,7 @@ You can easily use PowerShell to find the ResourceID as well:
     $ResourceName = 'Parent Resource'
     Get-AzResource -Name $ResourceName | Select-Object ResourceId
 
-A resource ID looks like this _(you will need to copy the full thing, this will be used on your child resources)_:
+A resource ID looks like this _(you will need to copy the full thing, this will be used on your child's resources)_:
 
     /subscriptions/4501c644-74a3-4bfc-a456-16425eccd2a4/resourceGroups/vm-preprod-rg/providers/Microsoft.Network/publicIPAddresses/VM-T01-ip
 
@@ -48,4 +48,10 @@ To apply the ResourceID of the parent resource, you can use the [Azure Portal](h
 2. Click **Tags**
 3. Add in: **cm-resource-parent** in the value and the resource ID of your parent as a value.
 
-_Note: You are unable to have a multi-hierarchy, i.e. a Parent, then Child and Child off that - it is purely a Parent and Child relationship at this stage._
+_Note: You are unable to have a multi-hierarchy, i.e. a Parent, then Child and Child off that - it is purely a Parent and Child relationship at this stage. Also, the Resource ID will change if the Parent resources are moved to another Resource group or subscription._
+
+These Tags can work easily with other cost management tags you may be using, so it doesn't replace but supplements your visibility.
+
+You may have to wait up to a day _(24 hours)_ before the changes are visible in Azure Cost Analysis.
+
+I have the [Azure Naming Tool](https://luke.geek.nz/azure/deploy-azure-naming-tool-into-an-azure-webapp-as-a-container/ "Azure Naming Tool") deployed in my example and would like to see the overall cost; these resources are deployed across multiple resources in the same subscription.

@@ -62,4 +62,6 @@ Choosing my WebApp as my parent resource, I tagged all child resources _(App Ser
 
 ![Azure Portal - Child resource](/uploads/azureportal_cmtags_child.png "Azure Portal - Child resource")
 
-d
+After 24 hours, I then went to the [**Cost Analysis (Preview)**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/costanalysisv3 "Cost analysis (preview)") and selected **Resources** and could view the current cost of my service.
+
+![Azure Cost Analysis](/uploads/azureportal_costanalysis_aznamingtool.png "Azure Cost Analysis")

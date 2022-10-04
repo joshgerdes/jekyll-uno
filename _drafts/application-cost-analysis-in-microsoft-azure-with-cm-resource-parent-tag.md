@@ -17,6 +17,8 @@ Azure tags are name-value pairs used to organize resources. You can apply tags f
 
 Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"), Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship.
 
+![cm-resource-parent Child Relationship](/uploads/parentchild.png "cm-resource-parent Child Relationship")
+
 To use the cm-resource-parent tag, you must choose a parent resource _(an example may be an App Service or an Azure Virtual Desktop host pool)._ No changes will be made to this resource, but you need the ResourceID of the resource to apply to Child resources.
 
 To find the ResourceID of the parent resource, you can use the [Azure Portal](https://portal.azure.com/#home "Azure Portal"), by

@@ -75,5 +75,3 @@ As you can see, the 'cm-resource-parent' is another way to group related resourc
 Although not tested, you also should be able to output the resource ID of your Bicep code and add that as a variable for any resources deployed via Infrastructure as Code.
 
 It's worth noting that this feature is still in Preview at the time of this article, so if you incur any bugs or have feature requests, you can use the 'Rate the Cost Analysis Preview' feature in the Azure Portal to supply feedback to the product teams.
-
-![Cost Analysis - Product Feedback](/uploads/cost_analysis_productfeedback.png "Cost Analysis - Product Feedback")

@@ -15,7 +15,7 @@ Azure tags are name-value pairs used to organize resources. You can apply tags f
 
 [Tags](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=%2Fazure%2Fazure-resource-manager%2Fmanagement%2Ftoc.json&WT.mc_id=AZ-MVP-5004796 "Resource naming and tagging decision guide"){:target="_blank"} work well for most used cases, but there may be times when you want to get a more in-depth view of the service and dependencies - this is where the "_cm-resource-parent_" tag comes in.
 
-Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"){:target="_blank"}, Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship. The 'cm' is: Cost Management.
+Introduced in [Cost Analysis preview](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#group-related-resources-in-the-cost-analysis-preview "Group related resources in the cost analysis preview"){:target="_blank"}, Q3 of 2022, the 'cm-resource-parent tag' allows you to Group related resources together - to help give you a quick view of the solution's total cost in a parent/child relationship. The 'cm' in the tag stands for: Cost Management.
 
 ![cm-resource-parent Child Relationship](/uploads/parentchild.png "cm-resource-parent Child Relationship")
 

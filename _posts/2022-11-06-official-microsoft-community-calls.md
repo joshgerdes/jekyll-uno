@@ -6,8 +6,7 @@ categories:
 - misc
 toc: false
 header:
-  teaser: ''
-
+  teaser: images/iazure-marketplace-banner.png
 ---
 You don't have a be a [Microsoft MVP](https://mvp.microsoft.com/ "Microsoft MVP") to engage with Microsoft product teams, and help give feedback! One of the best ways that the Microsoft product teams engage with the community- is through Public Community Calls!
 

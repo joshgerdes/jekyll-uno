@@ -17,7 +17,7 @@ header:
 
 ### Overview
 
-Azure-Firewall-mon _(AFM)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA creates AFM, IT IS NOT A SUPPORTED MICROSOFT PRODUCT.
+Azure-Firewall-mon _(AFM)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA makes AFM, IT IS NOT A SUPPORTED MICROSOFT PRODUCT.
 
 Monitoring Azure Firewall can be a pain - with trawling through logs - using the [Azure Firewall Workbook](https://learn.microsoft.com/en-us/azure/firewall/firewall-workbook?WT.mc_id=AZ-MVP-5004796 "Monitor logs using Azure Firewall Workbook") - helps fill in the gap - especially around the application and network rule traffic. Still, you may want something simpler and designed for real-time traffic to assist with in-the-moment troubleshooting.
 

@@ -97,4 +97,5 @@ pages:
 - _posts/2022-10-14-microsoft-ignite-2022-azure-infrastructure-microsoft-documentation-updates.md
 - _posts/2022-11-06-official-microsoft-community-calls.md
 - _posts/active-directory-domain-controllers-in-azure.md
+- _posts/deploy-azure-firewall-mon-to-a-static-web-app.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

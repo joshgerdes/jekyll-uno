@@ -38,4 +38,4 @@ We can deploy it to an Azure [Static Web App](https://azure.microsoft.com/en-us/
 Today, we are going to deploy Azure-Firewall-mon into an Azure Static Web App - to do this, we will need the following prerequisites:
 
 * A [GitHub](https://github.com/ "GitHub") account
-* An Azure subscription _(with permissions to deploy Event Hub, deploy an Azure Static WebApp, and configure Diagnostics on the Azure Firewall)_
+* An [Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less. On Azure.") subscription _(with permissions to deploy Event Hub, deploy an Azure Static WebApp, and configure Diagnostics on the Azure Firewall)_

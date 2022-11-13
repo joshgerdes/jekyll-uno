@@ -23,4 +23,4 @@ Azure-Firewall-mon is an open-source, [Single Page Application](https://en.wikip
 
 ![az-firewall-mon landing page](/uploads/az-firewall-mon.png "az-firewall-mon")
 
-For those of us - who would rather host it in our environment, we can deploy it to an Azure Static Web App.
+For those of us - who would rather host it in our environment, we can deploy it to an Azure [Static Web App](https://azure.microsoft.com/en-us/products/app-service/static/?WT.mc_id=AZ-MVP-5004796 " Static Web Apps").

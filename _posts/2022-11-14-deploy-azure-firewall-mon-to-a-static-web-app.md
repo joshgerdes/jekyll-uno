@@ -129,7 +129,7 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](https:
 21. Click **Create**
 22. ![Azure Event Hub - Create shared access policy](/uploads/azure_azfirewall_mon_sharedaccesspolicy.png "Azure Event Hub - Create shared access policy")
 
-    #### Configure Azure Firewall to stream to Event Hub
+    #### Configure Azure Firewall to stream to Event Hub and run Azure Firewall monitor
 
     Now that we have an Event Hub configured and a Shared access policy set to Listen - it's time to configure the Azure Firewall to direct logs to the Namespace.
 23. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}

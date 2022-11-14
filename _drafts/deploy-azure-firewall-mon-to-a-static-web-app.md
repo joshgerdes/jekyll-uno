@@ -17,15 +17,15 @@ header:
 
 ### Overview
 
-Azure-Firewall-mon _(AFM)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA makes AFM, IT IS NOT A SUPPORTED MICROSOFT PRODUCT.
+Azure-Firewall-mon _(AFM)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA makes AFM, **IT IS NOT A SUPPORTED MICROSOFT PRODUCT**.
 
 Monitoring Azure Firewall can be a pain - with trawling through logs - using the [Azure Firewall Workbook](https://learn.microsoft.com/en-us/azure/firewall/firewall-workbook?WT.mc_id=AZ-MVP-5004796 "Monitor logs using Azure Firewall Workbook") - helps fill in the gap - especially around the application and network rule traffic. Still, you may want something more straightforward and designed for real-time traffic to assist with in-the-moment troubleshooting.
 
-Azure-Firewall-mon is an open-source, [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) written in [Angular](https://angular.io/) and hosted on an [Azure WebApp](https://az-firewall-mon.azurewebsites.net "az-firewall-mon") - so to use this, you don't need to deploy to your environment.. add in an Event Hub connection string, and away you go _(there is also a demo mode - so you can see what the experience will be like)_!
+**Azure-Firewall-mon is an open-source,** [**Single Page Application**](https://en.wikipedia.org/wiki/Single-page_application) **written in** [**Angular**](https://angular.io/) **and hosted on an** [**Azure WebApp **](https://az-firewall-mon.azurewebsites.net "az-firewall-mon")- so to use this, you don't need to deploy to your environment.. add in an Event Hub connection string, and away you go _(there is also a demo mode - so you can see what the experience will be like)_!
 
 ![az-firewall-mon landing page](/uploads/az-firewall-mon.png "az-firewall-mon")
 
-We can deploy it to an Azure [Static Web App](https://azure.microsoft.com/en-us/products/app-service/static/?WT.mc_id=AZ-MVP-5004796 " Static Web Apps") for those who would instead host it in our environment.
+**We can deploy it to an Azure** [**Static Web App**](https://azure.microsoft.com/en-us/products/app-service/static/?WT.mc_id=AZ-MVP-5004796 " Static Web Apps") **for those who would instead host it in our environment.**
 
 > "Azure Static Web Apps is a service that automatically builds and deploys full-stack web apps to Azure from a code repository. When you create an Azure Static Web Apps resource, Azure interacts directly with GitHub or Azure DevOps to monitor a branch of your choice. Every time you push commits or accept pull requests into the watched branch, a build is automatically run and your app and API is deployed to Azure."
 
@@ -39,7 +39,21 @@ Today, we are going to deploy Azure-Firewall-mon into an Azure Static Web App - 
 
 * A [GitHub](https://github.com/ "GitHub") account
 * An [Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less. On Azure.") subscription _(with permissions to deploy Event Hub, deploy an Azure Static WebApp, and configure Diagnostics on the Azure Firewall)_
+* Azure Firewall _(provisioned)_
 
 _Note: Also, ensure that your Event Hub is in the same region as your Azure Firewall so that you can use Diagnostics settings. Regarding the Azure Static WebApp - it doesn't matter; this is a global service  - and you will be entering the Event Hub listener._
 
-We will use the Azure Portal to provision the workflow _(however, I will have added Azure Bicep to the bottom of the article for reference)_.
+We will use the Azure Portal to provision the workflow _(however, I will have added Azure Bicep to the bottom of the article for reference)_. 
+
+This article - assumes you have basic knowledge of GitHub and Microsoft Azure.
+
+For this demo, I am using a [Hub & Spoke Azure](https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli&WT.mc_id=AZ-MVP-5004796 "Hub-spoke network topology in Azure") topology.
+
+#### Fork the GitHub repository
+
+The first thing we need to do is clone the Azure-Firewall-mon repository; this repository holds the source control of Azure-Firewall-mon. However, we need a clone of it - to use in our Static Web App - this will also allow us to pull down and build the latest changes and updates of the Azure-Firewall-mon tool while having the stability of maintaining your version of the tool.
+
+1. In your favourite browser of choice, navigate to: [https://github.com/nicolgit/azure-firewall-mon](https://github.com/nicolgit/azure-firewall-mon "https://github.com/nicolgit/azure-firewall-mon")
+2. Click **Fork** _(top right of the repository)_
+3. ![GitHub - Create a new fork](/uploads/github_azfirewall_mon_createfork.png "GitHub - Create a new fork")
+4. Click **Create fork**

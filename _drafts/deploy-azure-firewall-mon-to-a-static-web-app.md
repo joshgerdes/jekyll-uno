@@ -129,9 +129,13 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 
     #### Configure Azure Firewall to stream to Event Hub
 
-    Now that we have an Event Hub configured, and a Shared access policy, set to Listen - its time to configure the Azure Firewall to direct logs to the Namespace.
+    Now that we have an Event Hub configured and a Shared access policy set to Listen - it's time to configure the Azure Firewall to direct logs to the Namespace.
 
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
 2. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
-3. 
+3. Select **Diagnostic Settings**
+4. Click **+ Add diagnostic setting**
+5. ![Azure Firewall - Diagnostic Settings](/uploads/azure_azfirewall_create_diagsettings.png "Azure Firewall - Diagnostic Settings")
+6. s
+7. 

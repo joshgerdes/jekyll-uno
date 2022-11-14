@@ -150,6 +150,59 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 40. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can troubleshoot your Azure Firewall quickly in real-time!**
 41. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")
 
+#### **References: GitHub Action**
+
+    name: Azure Static Web Apps CI/CD
+    
+    on:
+      push:
+        branches:
+          - main
+      pull_request:
+        types: [opened, synchronize, reopened, closed]
+        branches:
+          - main
+    
+    jobs:
+      build_and_deploy_job:
+        if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+        runs-on: ubuntu-latest
+        name: Build and Deploy Job
+        steps:
+          - uses: actions/checkout@v2
+            with:
+              submodules: true
+    
+          - uses: actions/setup-node@v1
+            with:
+              node-version: "18.x"
+          - name: Build And Deploy
+            id: builddeploy
+            uses: Azure/static-web-apps-deploy@v1
+            with:
+              azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_CLIFF_06D4C2810 }}
+              repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+              action: "upload"
+              ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+              # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+              app_location: "/firewall-mon-app/" # App source code path
+              api_location: "" # Api source code path - optional
+              output_location: "dist/firewall-mon-app" # Built app content directory - optional
+    
+              ###### End of Repository/Build Configurations ######
+    
+      close_pull_request_job:
+        if: github.event_name == 'pull_request' && github.event.action == 'closed'
+        runs-on: ubuntu-latest
+        name: Close Pull Request Job
+        steps:
+          - name: Close Pull Request
+            id: closepullrequest
+            uses: Azure/static-web-apps-deploy@v1
+            with:
+              azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_CLIFF_06D4C2810 }}
+              action: "close"
+
 #### **References: Azure Bicep**
 
 Below are some Azure Bicep references:

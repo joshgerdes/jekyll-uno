@@ -113,5 +113,9 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
  7. Select your **location** _(make sure this is the same region as your Azure Firewall)_
  8. Select your **Pricing Tier** _(in this example, I am going with Basic)_
  9. Click **Review + create**
-10. Once the Namespace has been created, its time to create our Event Hub, navigate to your newly created AzFirewallMonitor namespace
+10. Once the Namespace has been created, it's time to create our Event Hub; navigate to your newly created AzFirewallMonitor namespace.
 11. Under **Entitles**, click **+ Event Hub**
+12. Under the name, enter the Event Hub name _(i.e. AzMonitorCapture)_
+13. Leave the defaults _(and Message retention to 1 day)_
+14. Click **Review + Create**
+15. Click **Create**

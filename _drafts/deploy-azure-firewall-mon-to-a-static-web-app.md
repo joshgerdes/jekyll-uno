@@ -43,7 +43,7 @@ Today, we are going to deploy Azure-Firewall-mon into an Azure Static Web App - 
 
 _Note: Also, ensure that your Event Hub is in the same region as your Azure Firewall so that you can use Diagnostics settings. Regarding the Azure Static WebApp - it doesn't matter; this is a global service  - and you will be entering the Event Hub listener._
 
-We will use the Azure Portal and a browser to provision the workflow _(however, I will have added Azure Bicep to the bottom of the article for reference)_. 
+We will use the Azure Portal and a browser to provision the workflow _(however, I will have added Azure Bicep to the bottom of the article for reference)_.
 
 This article - assumes you have basic knowledge of GitHub and Microsoft Azure.
 
@@ -73,7 +73,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
  8. Select your **region** _(this is the staging environment used to create your resource so it can then be replicated geographically)_.
  9. Select **Source**, as **GitHub**
 10. Click **Sign in** with **GitHub** _(and sign in with an account with access to the GitHub Repository fork of azure-firewall-mon created earlier)_.
-11. **Authorise** the **Azure Static Web Apps** to have access to your repositories 
+11. **Authorise** the **Azure Static Web Apps** to have access to your repositories
 12. **Select** your **organisation** and the azure-firewall-mon **repository** you forked earlier.
 13. Select '**main**' for the branch
 14. Under Build Presents, select **Angular**
@@ -85,7 +85,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 20. ![Create Azure Static WebApp - Angular - Azure Portal](/uploads/create_azstaticwebapp_portal_azfw-mon.gif "Create Azure Static WebApp - Angular - Azure Portal")
 21. If you select **Actions** in GitHub, you should see a deployment start.
 22. After roughly 5 minutes, your **Azure Static App - will have deployed azure-firewall-mon**!
-23. **Navigate** to your newly created [**Azure Static App **](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps")in the Azure Portal
+23. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
 24. Click **Browse**
 25. You should now see **azure-firewall-mon**!
 26. ![azure-firewall-mon](/uploads/azure_azfirewall_mon_deployed.png "azure-firewall-mon")

@@ -74,3 +74,9 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
  9. Select **Source**, as **GitHub**
 10. Click **Sign in** with **GitHub** _(and sign in with an account with access to the GitHub Repository fork of azure-firewall-mon created earlier)_.
 11. **Authorise** the **Azure Static Web Apps** to have access to your repositories 
+12. **Select** your **organisation** and the azure-firewall-mon **repository** you forked earlier.
+13. Select '**main**' for the branch
+14. Under Build Presents, select **Angular**
+15. For App location, enter "**/firewall-mon-app/**"
+16. Leave Api location empty
+17. For the Output location, enter: **"dist/firewall-mon-app"**

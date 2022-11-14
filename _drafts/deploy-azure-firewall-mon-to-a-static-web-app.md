@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/azfirewallmon.png"
 
 ---
 [Azure-Firewall-mon](https://github.com/nicolgit/azure-firewall-mon "Azure-Firewall-mon") is a near real-time [Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?") log viewer.
@@ -144,8 +144,10 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 10. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
 11. Click **Save**
 12. Navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the namespace)_
-13. Click Shared access policies, and create a new Shared access policy with **Listen**
+13. Click Shared access policies, and create a new Shared access policy with **Listen.**
 14. Copy the **Connection string-primary key**
 15. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
 16. Click **Browse**
-17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier
+17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier!
+18. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can now troubleshoot your Azure Firewall easily in real-time!**
+19. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")

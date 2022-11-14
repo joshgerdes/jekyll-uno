@@ -63,7 +63,13 @@ The first thing we need to do is clone the Azure-Firewall-mon repository; this r
 
 Now that you have created a fork, it's time to create your Azure Static WebApp!
 
-1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. Click **+ Create a resource**
-3. Type in: **Static Web App**
-4. Select and click **Create**
+ 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. Click **+ Create a resource**
+ 3. Type in: **Static Web App**
+ 4. Select and click **Create**
+ 5. Create or **select** a **Resource Group**
+ 6. **Type** in the **name** of your Static Web App
+ 7. For the plan type, we will go with **Free**
+ 8. Select your **region** _(this is the staging environment used to create your resource so it can then be replicated geographically)_.
+ 9. Select **Source**, as **GitHub**
+10. Click **Sign in** with **GitHub** _(and sign in with an account with access to the GitHub Repository fork of azure-firewall-mon created earlier)_.

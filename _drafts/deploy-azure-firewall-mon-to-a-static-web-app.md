@@ -146,4 +146,6 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 12. Navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the namespace)_
 13. Click Shared access policies, and create a new Shared access policy with **Listen**
 14. Copy the **Connection string-primary key**
-15. 
+15. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
+16. Click **Browse**
+17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier

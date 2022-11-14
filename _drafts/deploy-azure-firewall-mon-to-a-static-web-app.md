@@ -90,4 +90,12 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 25. You should now see **azure-firewall-mon**!
 26. ![azure-firewall-mon](/uploads/azure_azfirewall_mon_deployed.png "azure-firewall-mon")
 
-_Note: In GitHub, under Actions and the Build and Deploy Job, you may see a note that about Note.js 12 actions are deprecated; you can set the node version to be higher. Refer to a copy of my Github Actions file here:_ [_AzureStaticWebAppsCICD.yml_](https://gist.github.com/lukemurraynz/3f300a5eb73b2693d3a9378261a023db "Azure Static Web Apps CI/CD") _for adding a setup-node step running on the latest version of 18._
+_Note: In GitHub, under Actions and the Build and Deploy Job, you may see a note that about Note.js 12 actions are deprecated; you can set the node version to be higher._ 
+
+Add the step to set the node version below submodules and above the Build and Deploy step:
+
+          - uses: actions/setup-node@v1
+            with:
+              node-version: "18.x"
+
+    Refer to a copy of my Github Actions file here: AzureStaticWebAppsCICD.yml for adding a setup-node step running on the latest version of 18.

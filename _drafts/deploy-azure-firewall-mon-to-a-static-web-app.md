@@ -120,5 +120,10 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 14. Click **Review + Create**
 15. Click **Create**
 16. ![Create Azure Event Hub](/uploads/azure_azfirewall_mon_createeventhub.png "Create Azure Event Hub")
-17. Now, that the Event Hub is created - we now need to create a Shared access policy, in the Event Hub namespace, click on **Shared access policies**
+17. Now that the Event Hub is created - we now need to create a Shared access policy; in the Event Hub namespace, click on **Shared access policies.**
 18. Click **+ Add**
+19. Type in a **Policy name **_(i.e. AzMonitorListener)_
+20. Select **Listen**
+21. Click **Create**
+22. ![Azure Event Hub - Create shared access policy](/uploads/azure_azfirewall_mon_sharedaccesspolicy.png "Azure Event Hub - Create shared access policy")
+23. s

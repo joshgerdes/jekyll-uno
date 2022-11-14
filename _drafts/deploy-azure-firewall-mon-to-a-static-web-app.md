@@ -73,3 +73,4 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
  8. Select your **region** _(this is the staging environment used to create your resource so it can then be replicated geographically)_.
  9. Select **Source**, as **GitHub**
 10. Click **Sign in** with **GitHub** _(and sign in with an account with access to the GitHub Repository fork of azure-firewall-mon created earlier)_.
+11. **Authorise** the **Azure Static Web Apps** to have access to your repositories 

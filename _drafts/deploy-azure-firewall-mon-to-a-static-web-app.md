@@ -123,7 +123,7 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 17. Now that the Event Hub is created - we now need to create a Shared access policy; in the Event Hub namespace, click on **Shared access policies.**
 18. Click **+ Add**
 19. Type in a **Policy name **_(i.e. AzMonitorListener)_
-20. Select **Listen, and Send**
+20. Select **Listen and Send**
 21. Click **Create**
 22. ![Azure Event Hub - Create shared access policy](/uploads/azure_azfirewall_mon_sharedaccesspolicy.png "Azure Event Hub - Create shared access policy")
 
@@ -132,11 +132,14 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
     Now that we have an Event Hub configured and a Shared access policy set to Listen - it's time to configure the Azure Firewall to direct logs to the Namespace.
 
 
-1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
-3. Select **Diagnostic Settings**
-4. Click **+ Add diagnostic setting**
-5. ![Azure Firewall - Diagnostic Settings](/uploads/azure_azfirewall_create_diagsettings.png "Azure Firewall - Diagnostic Settings")
-6. Type in a Diagnostic setting name _(i.e. AzureFirewallMonitor)_
-7. Select **All Logs**
-8. Select **Stream to an event hub**
+ 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
+ 3. Select **Diagnostic Settings**
+ 4. Click **+ Add diagnostic setting**
+ 5. ![Azure Firewall - Diagnostic Settings](/uploads/azure_azfirewall_create_diagsettings.png "Azure Firewall - Diagnostic Settings")
+ 6. Type in a Diagnostic setting name _(i.e. AzureFirewallMonitor)_
+ 7. Select **All Logs**
+ 8. Select **Stream to an event hub**
+ 9. Select your subscription, event hub namespace, event hub and policy created earlier.
+10. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
+11. Click **Save**

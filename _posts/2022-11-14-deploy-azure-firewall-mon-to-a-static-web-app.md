@@ -4,7 +4,7 @@ title: Deploy Azure-Firewall-mon to a Static Web App
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: "/uploads/azfirewallmon.png"
 

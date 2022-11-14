@@ -151,3 +151,30 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier!
 18. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can troubleshoot your Azure Firewall quickly in real-time!**
 19. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")
+
+#### **References: Azure Bicep**
+
+Below are some Azure Bicep references:
+
+##### Azure Static Web App
+
+    param staticSites_AzFw_Mon_name string = 'AzFw-Mon'
+    
+    resource staticSites_AzFw_Mon_name_resource 'Microsoft.Web/staticSites@2022-03-01' = {
+      name: staticSites_AzFw_Mon_name
+      location: 'Central US'
+      sku: {
+        name: 'Free'
+        tier: 'Free'
+      }
+      properties: {
+        repositoryUrl: 'https://github.com/lukemurraynz/azure-firewall-mon'
+        branch: 'main'
+        stagingEnvironmentPolicy: 'Enabled'
+        allowConfigFileUpdates: true
+        provider: 'GitHub'
+        enterpriseGradeCdnStatus: 'Disabled'
+      }
+    }
+    
+s

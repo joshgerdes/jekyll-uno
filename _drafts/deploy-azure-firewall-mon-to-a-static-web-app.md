@@ -133,4 +133,5 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. Click **+ Create a resource**
+2. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
+3. 

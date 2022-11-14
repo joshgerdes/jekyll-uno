@@ -100,7 +100,7 @@ Add the step to set the node version below submodules and above the Build and De
 
 Refer to a copy of my Github Actions file here: [AzureStaticWebAppsCICD.yml](https://gist.github.com/lukemurraynz/3f300a5eb73b2693d3a9378261a023db "Azure Static Web Apps CI/CD") for a comparison of GitHub action - a setup-node step running on the latest version of 18.
 
-#### Create Event Hub namespace
+#### Create Event Hub namespace and shared access policy
 
 Even if you use the externally hosted version of [Azure Firewall Monitor](), you still need an Event Hub and namespace - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
 
@@ -126,4 +126,11 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 20. Select **Listen**
 21. Click **Create**
 22. ![Azure Event Hub - Create shared access policy](/uploads/azure_azfirewall_mon_sharedaccesspolicy.png "Azure Event Hub - Create shared access policy")
-23. s
+
+    #### Configure Azure Firewall to stream to Event Hub
+
+    Now that we have an Event Hub configured, and a Shared access policy, set to Listen - its time to configure the Azure Firewall to direct logs to the Namespace.
+
+
+1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Click **+ Create a resource**

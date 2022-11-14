@@ -51,9 +51,9 @@ For this demo, I am using a [Hub & Spoke Azure](https://learn.microsoft.com/azur
 
 #### Fork the GitHub repository
 
-The first thing we need to do is clone the Azure-Firewall-mon repository; this repository holds the source control of Azure-Firewall-mon. However, we need a clone of it - to use in our Static Web App - this will also allow us to pull down and build the latest changes and updates of the Azure-Firewall-mon tool while having the stability of maintaining your version of the tool.
+The first thing we need to do is clone the Azure-Firewall-mon repository; this repository holds the source control of Azure-Firewall-mon. First, however, we need a clone of it - to use in our Static Web App - this will also allow us to pull down and build the latest changes and updates of the Azure-Firewall-mon tool while having the stability of maintaining your version of the device.
 
-1. In your favourite browser of choice, navigate to: [https://github.com/nicolgit/azure-firewall-mon](https://github.com/nicolgit/azure-firewall-mon "https://github.com/nicolgit/azure-firewall-mon")
+1. In your favourite browser of choice, navigate to: [https://github.com/nicolgit/azure-firewall-mon](https://github.com/nicolgit/azure-firewall-mon "https://github.com/nicolgit/azure-firewall-mon").
 2. Click **Fork** _(top right of the repository)_
 3. ![GitHub - Create a new fork](/uploads/github_azfirewall_mon_createfork.png "GitHub - Create a new fork")
 4. Click **Create fork**
@@ -61,7 +61,7 @@ The first thing we need to do is clone the Azure-Firewall-mon repository; this r
 
 #### Create Static Web App and deploy azure-firewall-mon
 
-Now that you have created a fork, it's time to create your Azure Static WebApp!
+Now that you have created a fork, it's time to make your Azure Static WebApp!
 
  1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. Click **+ Create a resource**
@@ -70,7 +70,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
  5. Create or **select** a **Resource Group**
  6. **Type** in the **name** of your Static Web App
  7. For the plan type, we will go with **Free**
- 8. Select your **region** _(this is the staging environment used to create your resource so it can then be replicated geographically)_.
+ 8. Please select your **region** _(this is the staging environment used to create your resource so the Azure Static Web App can then be replicated geographically)_.
  9. Select **Source**, as **GitHub**
 10. Click **Sign in** with **GitHub** _(and sign in with an account with access to the GitHub Repository fork of azure-firewall-mon created earlier)_.
 11. **Authorise** the **Azure Static Web Apps** to have access to your repositories
@@ -78,7 +78,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 13. Select '**main**' for the branch
 14. Under Build Presents, select **Angular**
 15. For App location, enter "**/firewall-mon-app/**"
-16. Leave Api location empty
+16. Leave the API location empty
 17. For the Output location, enter: **"dist/firewall-mon-app"**
 18. ![Azure Static WebApps - Angular Build](/uploads/github_azfirewall_mon_createbuildangular.png "Azure Static WebApps - Angular Build")
 19. If you navigate to your own forked GitHub repository, you should see a new folder created under .github/workflows - and a new GitHub Actions workflow file!
@@ -90,7 +90,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 25. You should now see **azure-firewall-mon**!
 26. ![azure-firewall-mon](/uploads/azure_azfirewall_mon_deployed.png "azure-firewall-mon")
 
-_Note: In GitHub, under Actions and the Build and Deploy Job, you may see a note that about Note.js 12 actions are deprecated; you can set the node version to be higher._
+_Note: In GitHub, under Actions and the Build and Deploy Job, you may see a message about Note.js 12 actions being deprecated; you can set the node version to be higher._
 
 Add the step to set the node version below submodules and above the Build and Deploy step:
 
@@ -102,7 +102,7 @@ Refer to a copy of my Github Actions file here: [AzureStaticWebAppsCICD.yml](htt
 
 #### Create Event Hub namespace and shared access policy
 
-Even if you use the externally hosted version of [Azure Firewall Monitor](), you still need an Event Hub and namespace - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
+Even if you use the externally hosted version of [Azure Firewall Monitor](), you still need an Event Hub and Namespace to stream the events from our Azure Firewall to the Azure Firewall Monitor.
 
  1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
  2. Click **+ Create a resource**
@@ -113,14 +113,14 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
  7. Select your **location** _(make sure this is the same region as your Azure Firewall)_
  8. Select your **Pricing Tier** _(in this example, I am going with Basic)_
  9. Click **Review + create**
-10. Once the Namespace has been created, it's time to create our Event Hub; navigate to your newly created AzFirewallMonitor namespace.
+10. Once the Namespace has been created, it's time to make our Event Hub; navigate to your newly created AzFirewallMonitor namespace.
 11. Under **Entitles**, click **+ Event Hub**
 12. Under the name, enter the Event Hub name _(i.e. AzMonitorCapture)_
 13. Leave the defaults _(and Message retention to 1 day)_
 14. Click **Review + Create**
 15. Click **Create**
 16. ![Create Azure Event Hub](/uploads/azure_azfirewall_mon_createeventhub.png "Create Azure Event Hub")
-17. Now that the Event Hub is created - we now need to create a Shared access policy; in the Event Hub namespace, click on **Shared access policies.**
+17. Now that the Event Hub is created, we need to create a Shared access policy; in the Event Hub namespace, click on **Shared access policies.**
 18. Click **+ Add**
 19. Type in a **Policy name **_(i.e. AzMonitorListener)_
 20. Select **Send**
@@ -143,11 +143,11 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
  9. Select your subscription, event hub namespace, event hub and policy created earlier.
 10. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
 11. Click **Save**
-12. Navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the namespace)_
+12. Please navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the Namespace)_
 13. Click Shared access policies, and create a new Shared access policy with **Listen.**
 14. Copy the **Connection string-primary key**
 15. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
 16. Click **Browse**
 17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier!
-18. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can now troubleshoot your Azure Firewall easily in real-time!**
+18. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can troubleshoot your Azure Firewall quickly in real-time!**
 19. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")

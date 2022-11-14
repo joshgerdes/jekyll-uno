@@ -41,3 +41,5 @@ Today, we are going to deploy Azure-Firewall-mon into an Azure Static Web App - 
 * An [Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less. On Azure.") subscription _(with permissions to deploy Event Hub, deploy an Azure Static WebApp, and configure Diagnostics on the Azure Firewall)_
 
 _Note: Also, ensure that your Event Hub is in the same region as your Azure Firewall so that you can use Diagnostics settings. Regarding the Azure Static WebApp - it doesn't matter; this is a global service  - and you will be entering the Event Hub listener._
+
+We will use the Azure Portal to provision the workflow _(however, I will have added Azure Bicep to the bottom of the article for reference)_.

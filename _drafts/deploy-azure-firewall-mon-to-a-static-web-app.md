@@ -102,7 +102,7 @@ Refer to a copy of my Github Actions file here: [AzureStaticWebAppsCICD.yml](htt
 
 #### Create Event Hub & namespace
 
-Now that we have our Static Web App - running azure-firewall-mon - it's time to deploy our Event Hub - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
+Even if you use the externally hosted version of [Azure Firewall Monitor](), you still need an Event Hub and namespace - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
 
 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
 2. Click **+ Create a resource**

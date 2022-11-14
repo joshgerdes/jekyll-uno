@@ -80,3 +80,4 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 15. For App location, enter "**/firewall-mon-app/**"
 16. Leave Api location empty
 17. For the Output location, enter: **"dist/firewall-mon-app"**
+18. ![Azure Static WebApps - Angular Build](/uploads/github_azfirewall_mon_createbuildangular.png "Azure Static WebApps - Angular Build")

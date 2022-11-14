@@ -49,6 +49,8 @@ This article - assumes you have basic knowledge of GitHub and Microsoft Azure.
 
 For this demo, I am using a [Hub & Spoke Azure](https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli&WT.mc_id=AZ-MVP-5004796 "Hub-spoke network topology in Azure"){:target="_blank"} topology.
 
+![Azure Firewall Monitor - High Level Architecture](/uploads/AzMonArchitecture.png "Azure Firewall Monitor - High Level Architecture")
+
 #### Fork the GitHub repository
 
 The first thing we need to do is clone the Azure-Firewall-mon repository; this repository holds the source control of Azure-Firewall-mon. First, however, we need a clone of it - to use in our Static Web App - this will also allow us to pull down and build the latest changes and updates of the Azure-Firewall-mon tool while having the stability of maintaining your version of the device.

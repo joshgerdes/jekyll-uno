@@ -82,11 +82,12 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 17. For the Output location, enter: **"dist/firewall-mon-app"**
 18. ![Azure Static WebApps - Angular Build](/uploads/github_azfirewall_mon_createbuildangular.png "Azure Static WebApps - Angular Build")
 19. If you navigate to your own forked GitHub repository, you should see a new folder created under .github/workflows - and a new GitHub Actions workflow file.
-20. If you select **Actions** in GitHub, you should see a deployment start.
-21. After roughly 5 minutes, your **Azure Static App - will have deployed azure-firewall-mon**!
-22. **Navigate** to your newly created [**Azure Static App **](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps")in the Azure Portal
-23. Click **Browse**
-24. You should now see **azure-firewall-mon**!
-25. ![azure-firewall-mon](/uploads/azure_azfirewall_mon_deployed.png "azure-firewall-mon")
+20. ![Create Azure Static WebApp - Angular - Azure Portal](/uploads/create_azstaticwebapp_portal_azfw-mon.gif "Create Azure Static WebApp - Angular - Azure Portal")
+21. If you select **Actions** in GitHub, you should see a deployment start.
+22. After roughly 5 minutes, your **Azure Static App - will have deployed azure-firewall-mon**!
+23. **Navigate** to your newly created [**Azure Static App **](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps")in the Azure Portal
+24. Click **Browse**
+25. You should now see **azure-firewall-mon**!
+26. ![azure-firewall-mon](/uploads/azure_azfirewall_mon_deployed.png "azure-firewall-mon")
 
 _Note: In GitHub, under Actions and the Build and Deploy Job, you may see a note that about Note.js 12 actions are deprecated; you can set the node version to be higher. Refer to a copy of my Github Actions file here:_ [_AzureStaticWebAppsCICD.yml_](https://gist.github.com/lukemurraynz/3f300a5eb73b2693d3a9378261a023db "Azure Static Web Apps CI/CD") _for adding a setup-node step running on the latest version of 18._

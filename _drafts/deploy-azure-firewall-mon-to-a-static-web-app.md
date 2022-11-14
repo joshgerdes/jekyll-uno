@@ -81,3 +81,8 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 16. Leave Api location empty
 17. For the Output location, enter: **"dist/firewall-mon-app"**
 18. ![Azure Static WebApps - Angular Build](/uploads/github_azfirewall_mon_createbuildangular.png "Azure Static WebApps - Angular Build")
+19. If you navigate to your own forked GitHub repository, you should see a new folder created under .github/workflows - and a new GitHub Actions workflow file.
+20. If you select **Actions** in GitHub, you should see a deployment start.
+21. After roughly 5 minutes, your Azure Static App - will have deployed azure-firewall-mon!
+
+_Note: In GitHub, under Actions and the Build and Deploy Job, you may see a note that about Note.js 12 actions are deprecated; you can set the node version to be higher. Refer to a copy of my Github Actions file here:_ [_AzureStaticWebAppsCICD.yml_](https://gist.github.com/lukemurraynz/3f300a5eb73b2693d3a9378261a023db "Azure Static Web Apps CI/CD") _for reference to adding a setup-node step running on the latest version of 18._

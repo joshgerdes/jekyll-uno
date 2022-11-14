@@ -57,3 +57,6 @@ The first thing we need to do is clone the Azure-Firewall-mon repository; this r
 2. Click **Fork** _(top right of the repository)_
 3. ![GitHub - Create a new fork](/uploads/github_azfirewall_mon_createfork.png "GitHub - Create a new fork")
 4. Click **Create fork**
+5. You have now created a fork of the 'azure-firewall-mon' repository; when a new update of Azure-Firewall-mon comes out - you can also select 'Sync fork' - to keep your fork up-to-date and trigger a new build.
+
+#### Fork the GitHub repository

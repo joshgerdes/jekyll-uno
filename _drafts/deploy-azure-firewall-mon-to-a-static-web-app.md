@@ -119,3 +119,5 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 13. Leave the defaults _(and Message retention to 1 day)_
 14. Click **Review + Create**
 15. Click **Create**
+16. ![Create Azure Event Hub](/uploads/azure_azfirewall_mon_createeventhub.png "Create Azure Event Hub")
+17. s

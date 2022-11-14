@@ -104,12 +104,14 @@ Refer to a copy of my Github Actions file here: [AzureStaticWebAppsCICD.yml](htt
 
 Even if you use the externally hosted version of [Azure Firewall Monitor](), you still need an Event Hub and namespace - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
 
-1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
-2. Click **+ Create a resource**
-3. Type in: **Event Hubs**
-4. Select and click **Create**
-5. Select your subscription and **Resource Group**;
-6. Type in the **Namespace** of the event hub _(i.e. AzureFirewallMonitor)_
-7. Select your **location** _(make sure this is the same region as your Azure Firewall)_
-8. Select your **Pricing Tier** _(in this example, I am going with Basic)_
-9. Click **Review + create**
+ 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+ 2. Click **+ Create a resource**
+ 3. Type in: **Event Hubs**
+ 4. Select and click **Create**
+ 5. Select your subscription and **Resource Group**;
+ 6. Type in the **Namespace** of the event hub _(i.e. AzureFirewallMonitor)_
+ 7. Select your **location** _(make sure this is the same region as your Azure Firewall)_
+ 8. Select your **Pricing Tier** _(in this example, I am going with Basic)_
+ 9. Click **Review + create**
+10. Once the Namespace has been created, its time to create our Event Hub, navigate to your newly created AzFirewallMonitor namespace
+11. Under **Entitles**, click **+ Event Hub**

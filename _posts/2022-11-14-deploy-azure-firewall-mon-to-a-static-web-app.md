@@ -25,6 +25,8 @@ Monitoring Azure Firewall can be a pain - with trawling through logs - using the
 
 ![az-firewall-mon landing page](/uploads/az-firewall-mon.png "az-firewall-mon")
 
+![az-firewall-mon landing page](/uploads/azfirewallmon.png "az-firewall-mon")
+
 **We can deploy it to an Azure** [**Static Web App**](https://azure.microsoft.com/en-us/products/app-service/static/?WT.mc_id=AZ-MVP-5004796 " Static Web Apps"){:target="_blank"} **for those who would instead host it in our environment.**
 
 > "Azure Static Web Apps is a service that automatically builds and deploys full-stack web apps to Azure from a code repository. When you create an Azure Static Web Apps resource, Azure interacts directly with GitHub or Azure DevOps to monitor a branch of your choice. Every time you push commits or accept pull requests into the watched branch, a build is automatically run and your app and API is deployed to Azure."

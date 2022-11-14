@@ -130,27 +130,25 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
     #### Configure Azure Firewall to stream to Event Hub
 
     Now that we have an Event Hub configured and a Shared access policy set to Listen - it's time to configure the Azure Firewall to direct logs to the Namespace.
-
-
- 1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
- 2. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
- 3. Select **Diagnostic Settings**
- 4. Click **+ Add diagnostic setting**
- 5. ![Azure Firewall - Diagnostic Settings](/uploads/azure_azfirewall_create_diagsettings.png "Azure Firewall - Diagnostic Settings")
- 6. Type in a Diagnostic setting name _(i.e. AzureFirewallMonitor)_
- 7. Select **All Logs**
- 8. Select **Stream to an event hub**
- 9. Select your subscription, event hub namespace, event hub and policy created earlier.
-10. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
-11. Click **Save**
-12. Please navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the Namespace)_
-13. Click Shared access policies, and create a new Shared access policy with **Listen.**
-14. Copy the **Connection string-primary key**
-15. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
-16. Click **Browse**
-17. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier!
-18. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can troubleshoot your Azure Firewall quickly in real-time!**
-19. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")
+23. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+24. Navigate to your [**Azure Firewall**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Network%2FazureFirewalls "Firewalls")
+25. Select **Diagnostic Settings**
+26. Click **+ Add diagnostic setting**
+27. ![Azure Firewall - Diagnostic Settings](/uploads/azure_azfirewall_create_diagsettings.png "Azure Firewall - Diagnostic Settings")
+28. Type in a Diagnostic setting name _(i.e. AzureFirewallMonitor)_
+29. Select **All Logs**
+30. Select **Stream to an event hub**
+31. Select your subscription, event hub namespace, event hub and policy created earlier.
+32. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
+33. Click **Save**
+34. Please navigate back to your **Event Hub** namespace and select your **Event Hub entity**; now, we need to create a Shared access policy to **Listen** _(for the entity, not the Namespace)_
+35. Click Shared access policies, and create a new Shared access policy with **Listen.**
+36. Copy the **Connection string-primary key**
+37. **Navigate** to your newly created [**Azure Static App**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2FStaticSites "Static Web Apps") in the Azure Portal
+38. Click **Browse**
+39. You should now see **azure-firewall-mon**, and enter in the **Connection string-primary key copied** earlier!
+40. **Congratulations you have now set up Azure Firewall Monitor on an Azure Static Web App and can troubleshoot your Azure Firewall quickly in real-time!**
+41. ![Run Azure Firewall Monitor](/uploads/run_azstaticwebapp_portal_azfw-mon.gif "Run Azure Firewall Monitor")
 
 #### **References: Azure Bicep**
 
@@ -176,5 +174,103 @@ Below are some Azure Bicep references:
         enterpriseGradeCdnStatus: 'Disabled'
       }
     }
+
+##### Event Hub
+
+    param namespaces_AzFirewallMonitor_name string = 'AzFirewallMonitor'
+    param location string = resourceGroup().location
     
-s
+    
+    resource namespaces_AzFirewallMonitor_name_resource 'Microsoft.EventHub/namespaces@2022-01-01-preview' = {
+      name: namespaces_AzFirewallMonitor_name
+      location: 'Australia East'
+      sku: {
+        name: 'Basic'
+        tier: 'Basic'
+        capacity: 1
+      }
+      properties: {
+        minimumTlsVersion: '1.2'
+        publicNetworkAccess: 'Enabled'
+        disableLocalAuth: false
+        zoneRedundant: true
+        isAutoInflateEnabled: false
+        maximumThroughputUnits: 0
+        kafkaEnabled: false
+      }
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_AzMonitorListner 'Microsoft.EventHub/namespaces/authorizationrules@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_resource
+      name: 'AzMonitorListner'
+      location: location
+      properties: {
+        rights: [
+          'Listen'
+          'Send'
+        ]
+      }
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_RootManageSharedAccessKey 'Microsoft.EventHub/namespaces/authorizationrules@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_resource
+      name: 'RootManageSharedAccessKey'
+      location: location
+      properties: {
+        rights: [
+          'Listen'
+          'Manage'
+          'Send'
+        ]
+      }
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_azmonitorcapture 'Microsoft.EventHub/namespaces/eventhubs@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_resource
+      name: 'azmonitorcapture'
+      location: location
+      properties: {
+        messageRetentionInDays: 1
+        partitionCount: 2
+        status: 'Active'
+      }
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_default 'Microsoft.EventHub/namespaces/networkRuleSets@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_resource
+      name: 'default'
+      location: location
+      properties: {
+        publicNetworkAccess: 'Enabled'
+        defaultAction: 'Allow'
+        virtualNetworkRules: []
+        ipRules: []
+      }
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_azmonitorcapture_AzMonitor 'Microsoft.EventHub/namespaces/eventhubs/authorizationrules@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_azmonitorcapture
+      name: 'AzMonitor'
+      location: location
+      properties: {
+        rights: [
+          'Listen'
+        ]
+      }
+      dependsOn: [
+    
+        namespaces_AzFirewallMonitor_name_resource
+      ]
+    }
+    
+    resource namespaces_AzFirewallMonitor_name_azmonitorcapture_Default 'Microsoft.EventHub/namespaces/eventhubs/consumergroups@2022-01-01-preview' = {
+      parent: namespaces_AzFirewallMonitor_name_azmonitorcapture
+      name: '$Default'
+      location: location
+      properties: {
+      }
+      dependsOn: [
+    
+        namespaces_AzFirewallMonitor_name_resource
+      ]
+    }

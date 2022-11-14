@@ -123,7 +123,7 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
 17. Now that the Event Hub is created - we now need to create a Shared access policy; in the Event Hub namespace, click on **Shared access policies.**
 18. Click **+ Add**
 19. Type in a **Policy name **_(i.e. AzMonitorListener)_
-20. Select **Listen and Send**
+20. Select **Send**
 21. Click **Create**
 22. ![Azure Event Hub - Create shared access policy](/uploads/azure_azfirewall_mon_sharedaccesspolicy.png "Azure Event Hub - Create shared access policy")
 
@@ -143,3 +143,4 @@ Even if you use the externally hosted version of [Azure Firewall Monitor](), you
  9. Select your subscription, event hub namespace, event hub and policy created earlier.
 10. ![Azure Firewall - Diagnostic setting](/uploads/azure_azfirewall_configure_diagsettings.png "Azure Firewall - Configure Diagnostic setting")
 11. Click **Save**
+12. Navigate back to your **Event Hub** namespace, and select your **Event Hub entity**; now we need to create a Shared access policy to **Listen** _(for the entity, not the namespace)_

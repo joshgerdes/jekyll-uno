@@ -81,7 +81,7 @@ Now that you have created a fork, it's time to create your Azure Static WebApp!
 16. Leave Api location empty
 17. For the Output location, enter: **"dist/firewall-mon-app"**
 18. ![Azure Static WebApps - Angular Build](/uploads/github_azfirewall_mon_createbuildangular.png "Azure Static WebApps - Angular Build")
-19. If you navigate to your own forked GitHub repository, you should see a new folder created under .github/workflows - and a new GitHub Actions workflow file.
+19. If you navigate to your own forked GitHub repository, you should see a new folder created under .github/workflows - and a new GitHub Actions workflow file!
 20. ![Create Azure Static WebApp - Angular - Azure Portal](/uploads/create_azstaticwebapp_portal_azfw-mon.gif "Create Azure Static WebApp - Angular - Azure Portal")
 21. If you select **Actions** in GitHub, you should see a deployment start.
 22. After roughly 5 minutes, your **Azure Static App - will have deployed azure-firewall-mon**!

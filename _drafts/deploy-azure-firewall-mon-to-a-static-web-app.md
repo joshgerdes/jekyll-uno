@@ -17,7 +17,7 @@ header:
 
 ### Overview
 
-Azure-Firewall-mon _(AFM)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA makes AFM, **IT IS NOT A SUPPORTED MICROSOFT PRODUCT**.
+Azure-Firewall-mon _(AFM or Azure Firewall Monitor)_ is a custom solution _(currently in a functional beta)_ created by an Italian Microsoft Cloud Solution Architect called: [Nicola Delfino](https://nicolgit.github.io/ "Nicola Delfino"), its worth mentioning that although a Microsoft CSA makes AFM, **IT IS NOT A SUPPORTED MICROSOFT PRODUCT**.
 
 Monitoring Azure Firewall can be a pain - with trawling through logs - using the [Azure Firewall Workbook](https://learn.microsoft.com/en-us/azure/firewall/firewall-workbook?WT.mc_id=AZ-MVP-5004796 "Monitor logs using Azure Firewall Workbook") - helps fill in the gap - especially around the application and network rule traffic. Still, you may want something more straightforward and designed for real-time traffic to assist with in-the-moment troubleshooting.
 
@@ -59,7 +59,7 @@ The first thing we need to do is clone the Azure-Firewall-mon repository; this r
 4. Click **Create fork**
 5. You have now created a fork of the 'azure-firewall-mon' repository; when a new update of Azure-Firewall-mon comes out - you can also select 'Sync fork' - to keep your fork up-to-date and trigger a new build.
 
-#### Create Static Web App
+#### Create Static Web App and deploy azure-firewall-mon
 
 Now that you have created a fork, it's time to create your Azure Static WebApp!
 
@@ -99,3 +99,10 @@ Add the step to set the node version below submodules and above the Build and De
               node-version: "18.x"
 
 Refer to a copy of my Github Actions file here: [AzureStaticWebAppsCICD.yml](https://gist.github.com/lukemurraynz/3f300a5eb73b2693d3a9378261a023db "Azure Static Web Apps CI/CD") for a comparison of GitHub action - a setup-node step running on the latest version of 18.
+
+#### Create Event Hub & namespace
+
+Now that we have our Static Web App - running azure-firewall-mon - it's time to deploy our Event Hub - which will stream the events from our Azure Firewall - to the Azure Firewall Monitor.
+
+1. Navigate to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal")
+2. Click **+ Create a resource**

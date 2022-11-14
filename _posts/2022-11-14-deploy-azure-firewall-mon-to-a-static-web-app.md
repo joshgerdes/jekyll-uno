@@ -267,18 +267,6 @@ Below are some Azure Bicep references:
       }
     }
     
-    resource namespaces_AzFirewallMonitor_name_RootManageSharedAccessKey 'Microsoft.EventHub/namespaces/authorizationrules@2022-01-01-preview' = {
-      parent: namespaces_AzFirewallMonitor_name_resource
-      name: 'RootManageSharedAccessKey'
-      location: location
-      properties: {
-        rights: [
-          'Listen'
-          'Manage'
-          'Send'
-        ]
-      }
-    }
     
     resource namespaces_AzFirewallMonitor_name_azmonitorcapture 'Microsoft.EventHub/namespaces/eventhubs@2022-01-01-preview' = {
       parent: namespaces_AzFirewallMonitor_name_resource

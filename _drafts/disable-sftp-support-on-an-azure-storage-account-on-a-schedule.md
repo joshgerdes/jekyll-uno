@@ -80,3 +80,7 @@ Now that the base Modules have been updated, we need to create a System Managed 
    4. Click **Save**
 
 _You should now see the Azure automation account, listed as having Storage account contributor rights - under your Automation account's Access Control (IAM) blade._
+
+##### Import Runbook - Set-AzStgFTP.ps1
+
+sd

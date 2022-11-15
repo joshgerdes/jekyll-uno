@@ -166,11 +166,12 @@ The Runbook uses the following parameters:
 | --- | --- |
 | resourceGroupName | Enter the name of the Azure Resource Group, that contains your Azure Storage account. |
 | storageAccountName | Enter the name of your Azure Storage account. |
-| enableSftp | The following boolean values are accepted: $false (Disable SFTP) and $true (Enable SFTP). |
+| enableSftp | The following boolean values are accepted: False (Disable SFTP) and True (Enable SFTP). |
 
-1. Find your Runbook, and select **Start**
-2. Enter in your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
-3. ![](/uploads/azautomation_runbook_runparameters.png)
+1. Find your Runbook, and select **Start.**
+2. Enter your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
+3. ![Start Azure Automation runbook](/uploads/azautomation_runbook_runparameters.png "Start Azure Automation runbook")
 4. Click **Ok**
 5. The Runbook will run, and as you can see - outputs its state Before the Runbook ran and after.
 6. ![](/uploads/azautomation_runbook_run.png)
+7. ![](/uploads/azautomation_runbook_run.png)

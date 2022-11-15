@@ -71,4 +71,10 @@ _Note: the Az.The accounts module will need to finish its import before the Az.T
 Now that the base Modules have been updated, we need to create a System Managed Identity - this Managed Identity will allow the Azure Automation runbook to authenticate to your Azure resources - and, in our example - make changes, such as Disabling or Enabling the SFTP service. This System Managed Identity will need Storage Account Contributor rights.
 
 1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
-2. Find your Azure Automation account and click on it, 
+2. Find your Azure Automation account and click on it; click on **Identity** _(under Account Settings)_
+3. Select Status to: **On** and select **Save**
+4. Click on: **Azure role assignments**
+   1. Select your **Scope** _(in our example, we will go with Storage - to limit what changes this Azure Automation account can make)_
+   2. Select the **Subscription** and **storage account** Resource you want to disable or enable the SFTP service on.
+   3. For the role, select **Storage Account Contributor**.
+   4. Click **Save**

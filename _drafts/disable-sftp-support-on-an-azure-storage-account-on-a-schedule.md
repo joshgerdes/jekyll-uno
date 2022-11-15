@@ -166,4 +166,7 @@ The Runbook uses the following parameters:
 | storageAccountName | Enter the name of your Azure Storage account. |
 | enableSftp | The following boolean values are accepted: $false (Disable SFTP) and $true (Enable SFTP). |
 
-1. 
+1. Find your Runbook, and select **Start**
+2. Enter in your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
+3. 
+4. Click **Ok**

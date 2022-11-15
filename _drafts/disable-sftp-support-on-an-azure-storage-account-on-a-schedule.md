@@ -13,4 +13,6 @@ Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azu
 
 > Enabling the SFTP endpoint has a cost of $0.30 per hour. We will start applying this hourly cost on or after December 1, 2022.
 
-This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! There may be instances, where you do not need SFTP support 24 hours a day, 7 days a week!
+This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! There may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
+
+Using an Azure Automation PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is great from a security and cost perspective.

@@ -16,3 +16,9 @@ Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azu
 This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! There may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
 
 Using an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is great from a security and cost perspective.
+
+To do this, we will need an:
+
+* Azure Automation Account
+* System Managed Identity set with Storage Account Contributor rights
+* PowerShell runbook _(supplied below)_

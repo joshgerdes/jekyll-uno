@@ -23,4 +23,4 @@ To do this, we will need an:
 * System Managed Identity set with Storage Account Contributor rights
 * PowerShell runbook _(supplied below)_
 
-For the purpose of this article, I am going to assume you already have an Azure Automation account - if you do not - then follow the Microsoft documentation: Create a standalone Azure Automation account.
+For this article, I will assume you already have an Azure Automation account - if you do not - then follow the Microsoft documentation: [Create a standalone Azure Automation account](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account").

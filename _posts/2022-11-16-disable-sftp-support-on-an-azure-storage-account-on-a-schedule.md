@@ -9,17 +9,17 @@ header:
   teaser: "/uploads/azautomation_runbook_run.png"
 
 ---
-Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support?WT.mc_id=AZ-MVP-5004796#pricing-and-billing "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage") has now gone GA _(Generally Available)_ across most regions as part of the GA release - SFTP support for Azure Storage accounts was free while it was in preview - but now that the service is GA - there is an additional charge for SFTP _(Secure File Transfer)_ functionality.
+Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support?WT.mc_id=AZ-MVP-5004796#pricing-and-billing "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage"){:target="_blank"} has now gone GA _(Generally Available)_ across most regions as part of the GA release - SFTP support for Azure Storage accounts was free while it was in preview - but now that the service is GA - there is an additional charge for SFTP _(Secure File Transfer)_ functionality.
 
 > Enabling the SFTP endpoint has a cost of $0.30 per hour. We will start applying this hourly cost on or after December 1, 2022.
 
 This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! Therefore, there may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
 
-_Feel free to check out a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage ") _on setting up SFTP support for an Azure storage account._
+_Feel free to check out a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage "){:target="_blank"} _on setting up SFTP support for an Azure storage account._
 
 #### Overview
 
-Using an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is excellent from a security and cost perspective.
+Using an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?"){:target="_blank"} PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is excellent from a security and cost perspective.
 
 #### Prerequisites
 
@@ -29,7 +29,7 @@ To do this, we will need an:
 * System Managed Identity set with Storage Account Contributor rights
 * PowerShell runbook _(supplied below)_
 
-For this article, I will assume you already have an Azure Automation account - if you do not - then follow the Microsoft documentation: [Create a standalone Azure Automation account](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account").
+For this article, I will assume you already have an Azure Automation account - if you do not - then follow the Microsoft documentation: [Create a standalone Azure Automation account](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal&WT.mc_id=AZ-MVP-5004796 "Create a standalone Azure Automation account"){:target="_blank"}.
 
 #### Deploy & Configure
 
@@ -44,7 +44,7 @@ Az.Accounts are a dependent service of the latest Az.Storage account, so let us 
 
 ##### Update Az.Accounts module
 
-1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts"){:target="_blank"}.
 2. Find your Azure Automation account and, click on it, navigate to **Modules** _(under Shared resources)_.
 3. Select **Browse Gallery**
 4. Search for: **Az.Accounts**
@@ -57,7 +57,7 @@ Az.Accounts are a dependent service of the latest Az.Storage account, so let us 
 
 _Note: the Az.The accounts module will need to finish its import before the Az.The storage module is updated._
 
-1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts"){:target="_blank"}.
 2. Find your Azure Automation account and, click on it, navigate to **Modules** _(under Shared resources)_.
 3. Select **Browse Gallery**
 4. Search for: **Az.Storage**
@@ -70,7 +70,7 @@ _Note: the Az.The accounts module will need to finish its import before the Az.T
 
 Now that the base Modules have been updated, we need to create a System Managed Identity - this Managed Identity will allow the Azure Automation runbook to authenticate to your Azure resources - and, in our example - make changes, such as Disabling or Enabling the SFTP service. This System Managed Identity will need Storage Account Contributor rights.
 
-1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts"){:target="_blank"}.
 2. Find your Azure Automation account and click on it; click on **Identity** _(under Account Settings)_
 3. Select Status to: **On** and select **Save**
 4. Click on: **Azure role assignments**
@@ -85,7 +85,7 @@ _You should now see the Azure automation account, listed as having Storage accou
 
 Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Automation account has been given permission - to enable and disable the SFTP service on the storage account- it's time to import the Runbook that will make this happen.
 
- 1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+ 1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts"){:target="_blank"}.
  2. Find your Azure Automation account and, click on it, navigate to **Runbooks** _(under Process Automation)_.
  3. Click **+ Create a Runbook**
  4. Enter your runbook **name** _(i.e. Set-AzSFTP)_
@@ -94,7 +94,7 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
  7. \[Optional\] Add a description of what this Runbook does and who to contact.
  8. Click **Create**
  9. Open the newly created blank Runbook, and select **Edit**
-10. **Copy** the following PowerShell [**script**](https://github.com/lukemurraynz/Azure/blob/main/Azure%20Automation/Set-AzStgSFTP.ps1 "Set-AzStgSFTP.ps1") into the Edit pane:
+10. **Copy** the following PowerShell [**script**](https://github.com/lukemurraynz/Azure/blob/main/Azure%20Automation/Set-AzStgSFTP.ps1 "Set-AzStgSFTP.ps1"){:target="_blank"} into the Edit pane:
 
          param
             (
@@ -175,4 +175,4 @@ The Runbook uses the following parameters:
 5. The Runbook will run, and as you can see - outputs its state Before the Runbook ran and after.
 6. ![Azure Automation - Run](/uploads/azautomation_runbook_run.png "Azure Automation - Run")
 
-**Once working correctly, you can set up an** [**Azure Automation schedule**](https://learn.microsoft.com/en-us/azure/automation/shared-resources/schedules?WT.mc_id=AZ-MVP-5004796 "Azure Automation schedule") **to trigger the runbook to enable and disable the SFTP when needed only!**
+**Once working correctly, you can set up an** [**Azure Automation schedule**](https://learn.microsoft.com/en-us/azure/automation/shared-resources/schedules?WT.mc_id=AZ-MVP-5004796 "Azure Automation schedule"){:target="_blank"} **to trigger the runbook to enable and disable the SFTP when needed only!**

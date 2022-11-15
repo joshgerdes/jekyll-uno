@@ -65,3 +65,10 @@ _Note: the Az.The accounts module will need to finish its import before the Az.T
 6. Click '**Az.Storage**' and select **Select.**
 7. Set the **runtime** version to: **5.1** & select impor**t**
 8. Wait for 5 minutes while the module imports.
+
+##### Create System Managed Identity
+
+Now that the base Modules have been updated, we need to create a System Managed Identity - this Managed Identity will allow the Azure Automation runbook to authenticate to your Azure resources - and, in our example - make changes, such as Disabling or Enabling the SFTP service. This System Managed Identity will need Storage Account Contributor rights.
+
+1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+2. Find your Azure Automation account and click on it, 

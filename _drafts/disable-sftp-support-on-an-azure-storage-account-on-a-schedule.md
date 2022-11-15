@@ -6,10 +6,10 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: "/uploads/azautomation_runbook_run.png"
 
 ---
-Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support?WT.mc_id=AZ-MVP-5004796#pricing-and-billing "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage") has now gone GA _(Generally Available)_ across most regions as part of the GA release - SFTP support for Azure Storage accounts was free while it was in preview - but now that the service is GA - there is an additional charge for SFTP functionality.
+Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azure/storage/blobs/secure-file-transfer-protocol-support?WT.mc_id=AZ-MVP-5004796#pricing-and-billing "SSH File Transfer Protocol (SFTP) support for Azure Blob Storage") has now gone GA _(Generally Available)_ across most regions as part of the GA release - SFTP support for Azure Storage accounts was free while it was in preview - but now that the service is GA - there is an additional charge for SFTP _(Secure File Transfer)_ functionality.
 
 > Enabling the SFTP endpoint has a cost of $0.30 per hour. We will start applying this hourly cost on or after December 1, 2022.
 
@@ -75,7 +75,7 @@ Now that the base Modules have been updated, we need to create a System Managed 
 3. Select Status to: **On** and select **Save**
 4. Click on: **Azure role assignments**
    1. Select your **Scope** _(in our example, we will go with Storage - to limit what changes this Azure Automation account can make)_
-   2. Select the **Subscription** and **storage account** Resource you want to disable or enable the SFTP service on.
+   2. Select the **Subscription** and **Storage account** Resource on which you want to disable or enable the SFTP service.
    3. For the role, select **Storage Account Contributor**.
    4. Click **Save**
 
@@ -89,11 +89,11 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
  2. Find your Azure Automation account and, click on it, navigate to **Runbooks** _(under Process Automation)_.
  3. Click **+ Create a Runbook**
  4. Enter your runbook **name** _(i.e. Set-AzSFTP)_
- 5. Select the Runbook type as: **PowerShell**
+ 5. Select the Runbook type as **PowerShell**
  6. Select the Runtime version as: **5.1**
- 7. \[Optional\] Add a description of what this runbook does and who to contact.
+ 7. \[Optional\] Add a description of what this Runbook does and who to contact.
  8. Click **Create**
- 9. Open the newly created blank runbook, and select **Edit**
+ 9. Open the newly created blank Runbook, and select **Edit**
 10. **Copy** the following PowerShell [**script**](https://github.com/lukemurraynz/Azure/blob/main/Azure%20Automation/Set-AzStgSFTP.ps1 "Set-AzStgSFTP.ps1") into the Edit pane:
 
          param
@@ -168,11 +168,11 @@ The Runbook uses the following parameters:
 | storageAccountName | Enter the name of your Azure Storage account. |
 | enableSftp | The following boolean values are accepted: False (Disable SFTP) and True (Enable SFTP). |
 
-1. Find your Runbook, and select **Start.**
+1. Next, find your Runbook, and select **Start.**
 2. Enter your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
 3. ![Start Azure Automation runbook](/uploads/azautomation_runbook_runparameters.png "Start Azure Automation runbook")
 4. Click **Ok**
 5. The Runbook will run, and as you can see - outputs its state Before the Runbook ran and after.
 6. ![Azure Automation - Run](/uploads/azautomation_runbook_run.png "Azure Automation - Run")
-7. s
-8. 
+
+**Once working correctly, you can set up an** [**Azure Automation schedule**](https://learn.microsoft.com/en-us/azure/automation/shared-resources/schedules?WT.mc_id=AZ-MVP-5004796 "Azure Automation schedule") **to trigger the runbook to enable and disable the SFTP when needed only!**

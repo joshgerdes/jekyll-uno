@@ -172,3 +172,5 @@ The Runbook uses the following parameters:
 2. Enter in your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
 3. ![](/uploads/azautomation_runbook_runparameters.png)
 4. Click **Ok**
+5. The Runbook will run, and as you can see - outputs its state Before the Runbook ran and after.
+6. ![](/uploads/azautomation_runbook_run.png)

@@ -15,7 +15,7 @@ Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azu
 
 This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! There may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
 
-_Note: Checkout a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage ") _on setting up SFTP support for an Azure storage account._
+_Feel free to checkout a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage ") _on setting up SFTP support for an Azure storage account._
 
 #### Overview
 

@@ -13,15 +13,15 @@ Azure Storage account [SFTP functionality](https://learn.microsoft.com/en-us/azu
 
 > Enabling the SFTP endpoint has a cost of $0.30 per hour. We will start applying this hourly cost on or after December 1, 2022.
 
-This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! There may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
+This service has worked for me without a hitch for months, but as with most resources in Microsoft Azure - you pay for what you use! Therefore, there may be instances where you do not need SFTP support 24 hours a day, seven days a week! This is where the following Azure Automation runbook can help.
 
-_Feel free to checkout a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage ") _on setting up SFTP support for an Azure storage account._
+_Feel free to check out a_ [_previous article_](https://luke.geek.nz/azure/sftp-in-microsoft-azure-using-azure-blob-storage/ "SFTP in Microsoft Azure using Azure Blob Storage ") _on setting up SFTP support for an Azure storage account._
 
 #### Overview
 
-Using an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is great from a security and cost perspective.
+Using an [Azure Automation](https://learn.microsoft.com/en-us/azure/automation/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Automation?") PowerShell runbook and Schedules _(as part of the Azure Automation account)_  - we can turn on the SFTP endpoint - when we need it and disable it - the rest of the time - which is excellent from a security and cost perspective.
 
-#### Prerequisites 
+#### Prerequisites
 
 To do this, we will need an:
 
@@ -33,4 +33,11 @@ For this article, I will assume you already have an Azure Automation account - i
 
 #### Deploy & Configure
 
-sd
+Now that the Azure Automation account has been configured and set up - we need to add the Runbook, but before we can do that - there are some dependencies. SFTP is a new service that the currently installed Az Modules in the Azure Automation don't have visibility on - so to configure the SFTP service - we need to update 2 Modules to the most recent version.
+
+These modules are:
+
+* Az.Accounts _(≥ 2.10.3)_
+* Az.Storage
+
+Az.Accounts is a dependant service of the latest Az.Storage account, so let us import that first.

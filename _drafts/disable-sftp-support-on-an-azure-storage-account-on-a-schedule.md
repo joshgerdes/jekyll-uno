@@ -78,3 +78,5 @@ Now that the base Modules have been updated, we need to create a System Managed 
    2. Select the **Subscription** and **storage account** Resource you want to disable or enable the SFTP service on.
    3. For the role, select **Storage Account Contributor**.
    4. Click **Save**
+
+_You should now see the Azure automation account, listed as having Storage account contributor rights - under your Automation account's Access Control (IAM) blade._

@@ -173,5 +173,6 @@ The Runbook uses the following parameters:
 3. ![Start Azure Automation runbook](/uploads/azautomation_runbook_runparameters.png "Start Azure Automation runbook")
 4. Click **Ok**
 5. The Runbook will run, and as you can see - outputs its state Before the Runbook ran and after.
-6. ![](/uploads/azautomation_runbook_run.png)
-7. ![](/uploads/azautomation_runbook_run.png)
+6. ![Azure Automation - Run](/uploads/azautomation_runbook_run.png "Azure Automation - Run")
+7. s
+8. 

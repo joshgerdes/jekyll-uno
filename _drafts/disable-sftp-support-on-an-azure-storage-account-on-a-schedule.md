@@ -168,5 +168,5 @@ The Runbook uses the following parameters:
 
 1. Find your Runbook, and select **Start**
 2. Enter in your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
-3. 
+3. ![Start Azure PowerShell runbook](/uploads/azautomation_runbook_runparameters.png "Start Azure PowerShell runbook")
 4. Click **Ok**

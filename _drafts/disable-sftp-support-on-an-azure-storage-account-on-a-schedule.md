@@ -106,7 +106,7 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
                 [string]
                 $storageAccountName,
             
-                [Parameter(Mandatory = $true, HelpMessage = '$True = Enable SFTP & $False = Disable SFTP')][ValidateSet('$false','$true')]
+                [Parameter(Mandatory = $true, HelpMessage = '$True = Enable SFTP & $False = Disable SFTP')][ValidateSet('False','True')]
                 $enableSftp
             )
           
@@ -115,8 +115,7 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
             Disables or enables SFTP support on an Azure Storage Account.
             .DESCRIPTION
             Disables or enables SFTP support on an Azure Storage Account. The intention is for this script to be used in Azure Automation, alongside a Schedule to enable or disable SFTP support on an Azure Storage Account.
-        	.AUTHOR
-             Luke Murray (https://luke.geek.nz)
+        
             .EXAMPLE
             Set-AzStgSFTP -resourceGroupName sftp_prod -storageAccountName sftpprod0 -EnableSFTP $true
           #>
@@ -134,21 +133,24 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
         Write-Output -InputObject $resourceGroupName 
         Write-Output -InputObject $storageAccountName
         Write-Output -InputObject $EnableSFTP
-        $SetSFTP = [boolean]$enableSftp
         # set and store context
         $AzureContext = Set-AzContext -SubscriptionName $AzureContext.Subscription -DefaultProfile $AzureContext
-          
-            $SFTPStatus = Get-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName | Select-Object -ExpandProperty EnableSftp
         
-            $Status = $SFTPStatus -replace 'True', 'Enabled' -replace 'False', 'Disabled'
+          
+          $SetSFTP = [System.Convert]::ToBoolean($enableSftp)
+        
+            $SFTPStatusBefore = Get-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName | Select-Object -ExpandProperty EnableSftp
+        
+            $Status = $SFTPStatusBefore -replace 'True', 'Enabled' -replace 'False', 'Disabled'
         
             Write-Output -InputObject ('SFTP for {0} currently has SFTP set to: {1} before update.' -f $storageAccountName, $Status)
           
-            Set-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName -EnableSftp $SetSFTP
+            Set-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName -EnableSftp $SetSFTP 
+           
         
-            $SFTPStatus = Get-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName | Select-Object -ExpandProperty EnableSftp
+            $SFTPStatusAfter = Get-AzStorageAccount -DefaultProfile $AzureContext -ResourceGroupName $resourceGroupName -Name $storageAccountName | Select-Object -ExpandProperty EnableSftp
         
-            $Status = $SFTPStatus -replace 'True', 'Enabled' -replace 'False', 'Disabled'
+            $Status = $SFTPStatusAfter -replace 'True', 'Enabled' -replace 'False', 'Disabled'
         
             Write-Output -InputObject ('SFTP for {0} currently has SFTP set to: {1} after update.' -f $storageAccountName, $Status)
 11. Click **Save**
@@ -168,5 +170,5 @@ The Runbook uses the following parameters:
 
 1. Find your Runbook, and select **Start**
 2. Enter in your parameters, **Resource Group**, **Storage Account** and **Enable SFTP.**
-3. ![Start Azure PowerShell runbook](/uploads/azautomation_runbook_runparameters.png "Start Azure PowerShell runbook")
+3. ![](/uploads/azautomation_runbook_runparameters.png)
 4. Click **Ok**

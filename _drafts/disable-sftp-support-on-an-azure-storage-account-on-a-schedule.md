@@ -4,7 +4,7 @@ title: Disable SFTP support on an Azure Storage account on a Schedule
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 
@@ -62,4 +62,6 @@ _Note: the Az.Accounts module will need to finish its import before the Az.Stora
 3. Select **Browse Gallery**
 4. Search for: **Az.Storage**
 5. ![Import  Az.Storage](/uploads/azautomation_gallery_azstorage.png " Az.Storage")
-6. s
+6. Click '**Az.Storage**' and select **Select**
+7. Set the **runtime** version to: **5.1** & select **Import**
+8. Wait for 5 minutes while the module imports.

@@ -48,5 +48,18 @@ Az.Accounts is a dependant service of the latest Az.Storage account, so let us i
 2. Find your Azure Automation account and, click on it, navigate to **Modules** _(under Shared resources)_.
 3. Select **Browse Gallery**
 4. Search for: **Az.Accounts**
-5. ![Az.Accounts](/uploads/azautomation_gallery_azaccounts.png "Az.Accounts")
+5. ![Import Az.Accounts](/uploads/azautomation_gallery_azaccounts.png "Az.Accounts")
+6. Click '**Az.Accounts**' and select **Select**
+7. Set the **runtime** version to: **5.1** & select **Import**
+8. Wait for 5 minutes while the module imports.
+
+##### Update Az.Storage module
+
+_Note: the Az.Accounts module will need to finish its import before the Az.Storage module is updated._
+
+1. In the [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"), navigate to [**Azure Automation accounts**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts "Azure Automation Accounts").
+2. Find your Azure Automation account and, click on it, navigate to **Modules** _(under Shared resources)_.
+3. Select **Browse Gallery**
+4. Search for: **Az.Storage**
+5. ![Import  Az.Storage](/uploads/azautomation_gallery_azstorage.png " Az.Storage")
 6. s

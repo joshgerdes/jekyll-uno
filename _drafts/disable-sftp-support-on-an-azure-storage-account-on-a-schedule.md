@@ -153,3 +153,11 @@ Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Aut
             Write-Output -InputObject ('SFTP for {0} currently has SFTP set to: {1} after update.' -f $storageAccountName, $Status)
 11. Click **Save**
 12. Click **Publish**
+
+##### Run Runbook - Set-AzStgFTP
+
+Now that the Runbook is imported, we need to run it.
+
+The Runbook uses the following parameters:
+
+sd

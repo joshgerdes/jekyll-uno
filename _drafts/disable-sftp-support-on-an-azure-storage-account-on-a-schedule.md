@@ -160,4 +160,10 @@ Now that the Runbook is imported, we need to run it.
 
 The Runbook uses the following parameters:
 
-sd
+| Parameters | Values |
+| --- | --- |
+| resourceGroupName | Enter the name of the Azure Resource Group, that contains your Azure Storage account. |
+| storageAccountName | Enter the name of your Azure Storage account. |
+| enableSftp | The following boolean values are accepted: $false (Disable SFTP) and $true (Enable SFTP). |
+
+1. 

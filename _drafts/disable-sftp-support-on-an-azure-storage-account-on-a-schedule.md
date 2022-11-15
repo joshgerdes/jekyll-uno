@@ -83,4 +83,6 @@ _You should now see the Azure automation account, listed as having Storage accou
 
 ##### Import Runbook - Set-AzStgFTP.ps1
 
+Now that the AzAccounts, Az.Storage modules have been updated, and the Azure Automation account has been given permission - to enable and disable the SFTP service on the storage account- it's time to import the Runbook that will make this happen.
+
 sd

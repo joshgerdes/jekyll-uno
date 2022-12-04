@@ -64,4 +64,6 @@ The following are common, Azure Dev Box roles.
 
 #### Deployment
 
-sdsd
+##### Create Dev Center
+
+First, we need to create our Dev Center. A Dev Center, allows us to centrally manage our developer environments and enable development teams with self-service capability. 

@@ -33,7 +33,7 @@ Microsoft Dev Box supports any developer IDE, SDK, or tool that runs on Windows.
 
 ![High-level Azure Devbox workflow](/uploads/hl-devbox_workflow.png "High-level Devbox workflow")
 
-Essentially, Microsoft Dev Box is a managed service that enables developers to create on-demand, high-performance, secure, ready-to-code, project-specific workstations in the cloud.
+Essentially, [Microsoft Dev Box](https://learn.microsoft.com/azure/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box documentation") is a managed service that enables developers to create on-demand, high-performance, secure, ready-to-code, project-specific workstations in the cloud.
 
 Microsoft Dev Box is available today as a [preview ](https://azure.microsoft.com/en-us/updates/public-preview-microsoft-dev-box/?WT.mc_id=AZ-MVP-5004796 "Public preview: Microsoft Dev Box")from the Azure Portal. During this period, organizations get the first 15 hours of the dev box 8vCPU and 32 GB Memory SKU for free every month, along with the first 365 hours of the dev box Storage SSD 512 GB SKU. 
 

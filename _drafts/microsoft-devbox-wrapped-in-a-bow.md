@@ -19,6 +19,18 @@ It's that time of year again! The time to be jolly and experience the Month of D
 >
 > #### If you would like to donate please visit our [Just Giving Page](https://www.justgiving.com/fundraising/festivetechcalendar2022).
 
-Today, we are going to unwrap our present and take a peek inside the box - at Microsoft Dev Box! 
+Today, we are going to unwrap our present and take a peek inside the box - at Microsoft Dev Box!
 
 #### Overview
+
+Microsoft Dev Box provides self-service access for developers to high-performance, cloud-based workstations preconfigured and ready-to-code for specific projects—all while maintaining security and corporate governance. With Microsoft Dev Box, organizations can:
+
+* Maximize dev productivity with ready-to-code, self-service Dev Boxes.
+* Centralize governance of workstations running anywhere to maintain greater security, compliance, and cost efficiency.
+* Customize dev boxes with everything developers need for their current projects.
+
+Microsoft Dev Box supports any developer IDE, SDK, or tool that runs on Windows. Developers can target any development workload that can be built from Windows including desktop, mobile, IoT, and web applications. Microsoft Dev Box even supports building cross-platform apps thanks to Windows Subsystem for Linux and Windows Subsystem for Android. Remote access gives developers the flexibility to securely access dev boxes from any device, whether it’s Windows, macOS, Android, iOS, or a web browser.
+
+![High-level Azure Devbox workflow](/uploads/hl-devbox_workflow.png "High-level Devbox workflow")
+
+s

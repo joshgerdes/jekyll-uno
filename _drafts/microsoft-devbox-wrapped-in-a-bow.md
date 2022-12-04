@@ -9,4 +9,6 @@ header:
   teaser: "/uploads/festivetechcalendar2022.png"
 
 ---
-**Microsoft Dev Box wrapped in a bow**
+**![](/uploads/festivetechcalendar2022.png)**
+
+It's that time of year again! The time to be jolly and experience the Month of December, by looking t the [Festive Tech Calendar](https://festivetechcalendar.com/ "Festive Tech Calender").

@@ -9,6 +9,16 @@ header:
   teaser: "/uploads/festivetechcalendar2022.png"
 
 ---
-**![](/uploads/festivetechcalendar2022.png)**
+**![Festive Tech Calender - Microsoft Dev Box](/uploads/festivetechcalendar2022.png "Festive Tech Calender - Microsoft Dev Box")**
 
-It's that time of year again! The time to be jolly and experience the Month of December, by looking t the [Festive Tech Calendar](https://festivetechcalendar.com/ "Festive Tech Calender").
+It's that time of year again! The time to be jolly and experience the Month of December, by looking at the [Festive Tech Calendar](https://festivetechcalendar.com/ "Festive Tech Calender")!
+
+> This year the Festive Tech Calendar Team is **raising money** for the charity [@missingpeople](https://www.missingpeople.org.uk/).
+>
+> We believe its important to support charities that do great work. Without fundraising Missing People wouldn’t be able to find vulnerable missing people and reunite families.
+>
+> #### If you would like to donate please visit our [Just Giving Page](https://www.justgiving.com/fundraising/festivetechcalendar2022).
+
+Today, we are going to unwrap our present and take a peek inside the box - at Microsoft Dev Box! 
+
+#### Overview

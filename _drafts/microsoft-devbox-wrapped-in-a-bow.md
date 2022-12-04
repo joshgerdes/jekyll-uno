@@ -38,3 +38,5 @@ Essentially, [Microsoft Dev Box](https://learn.microsoft.com/azure/dev-box/?WT.m
 Microsoft Dev Box is available today as a [preview ](https://azure.microsoft.com/en-us/updates/public-preview-microsoft-dev-box/?WT.mc_id=AZ-MVP-5004796 "Public preview: Microsoft Dev Box")from the Azure Portal. During this period, organizations get the first 15 hours of the dev box 8vCPU and 32 GB Memory SKU for free every month, along with the first 365 hours of the dev box Storage SSD 512 GB SKU. 
 
 Beyond that, organizations pay only for what they use with a consumption-based pricing model. With this model, organizations are charged on a per-hour basis depending on the number of Compute and Storage that are consumed.
+
+##### Concepts

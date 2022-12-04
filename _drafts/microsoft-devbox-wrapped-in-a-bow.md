@@ -39,6 +39,10 @@ Microsoft Dev Box is available today as a [preview ](https://azure.microsoft.com
 
 Beyond that, organizations pay only for what they use with a consumption-based pricing model. With this model, organizations are charged on a per-hour basis depending on the number of Compute and Storage that are consumed.
 
+To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterprise, Microsoft Endpoint Manager, and Azure Active Directory P1. These licenses are included in M365 F3, E3, E5, A3, A5, and Microsoft Business Premium and Microsoft 365 Education benefit plans.
+
+![](/uploads/microsoft_devbox_selfservicedevelopment.png)
+
 ##### Concepts
 
 | Concepts | Notes |

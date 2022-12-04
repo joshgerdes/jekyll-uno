@@ -43,6 +43,8 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 
 ![Microsoft Dev Box](/uploads/microsoft_devbox_selfservicedevelopment.png "Microsoft Dev Box")
 
+> _Disclaimer: At the time of writing, this service is still in Public Preview, some services and license requirements may change by the time this becomes generally avaliable._
+
 ##### Concepts & Roles
 
 | Concepts | Notes |

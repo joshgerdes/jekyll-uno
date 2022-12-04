@@ -56,6 +56,12 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 
 The following are common, Azure Dev Box roles.
 
+| Role | Responsibilities | Permissions |
+| --- | --- | --- |
+| Dev Infra Admins | Providing developer infrastructure and tools to the development teas | Can create and manage dev centers, can create projects and define images that are used to create the dev boxes |
+| Project Admins | Does administrative tasks for the Dev Box solution and assist with day to day tasks. | Can create and manage dev box pools across different regions |
+| Dev Box Users | Members of your development teams | Can self-service and create one or more dev boxes, depending on the projects assigned. |
+
 #### Deployment
 
 sdsd

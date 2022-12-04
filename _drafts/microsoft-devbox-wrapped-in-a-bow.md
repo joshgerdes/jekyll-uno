@@ -43,7 +43,7 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 
 ![Microsoft Dev Box](/uploads/microsoft_devbox_selfservicedevelopment.png "Microsoft Dev Box")
 
-##### Concepts
+##### Concepts & Roles
 
 | Concepts | Notes |
 | --- | --- |
@@ -53,6 +53,8 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 | Network connection | Network connections store configuration information like Active Directory join type and virtual network that dev boxes use to connect to network resources. |
 | Dev box pool | A dev box pool is a collection of dev boxes that you manage together and to which you apply similar settings. |
 | Dev box | A dev box is a preconfigured ready-to-code workstation that you create through the self-service developer portal. The new dev box has all the tools, binaries, and configuration required for a dev box user to be productive immediately |
+
+The following are common, Azure Dev Box roles.
 
 #### Deployment
 

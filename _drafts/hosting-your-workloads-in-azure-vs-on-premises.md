@@ -22,7 +22,7 @@ There are several key differences between Azure and hosting your own datacenter,
 
 Overall, Azure and hosting your own datacenter are two different approaches, with different advantages and disadvantages. Azure can provide a more cost-effective, scalable, and secure solution, but may require the adoption of a different operating model and a learning curve, while hosting your own datacenter can provide more control and flexibility, but may require a larger investment and ongoing operational costs.
 
-The total cost of ownership (TCO) of Azure and on-premises can vary depending on several factors, including the specific services and resources that are used, the usage patterns and workloads, the pricing options and discounts, and the cost optimization strategies and techniques that are implemented.
+The [total cost of ownership (TCO) of Azure](https://azure.microsoft.com/pricing/tco/calculator/?WT.mc_id=AZ-MVP-5004796 "Total Cost of Ownership (TCO) Calculator") and on-premises can vary depending on several factors, including the specific services and resources that are used, the usage patterns and workloads, the pricing options and discounts, and the cost optimization strategies and techniques that are implemented.
 
 In general, the TCO of Azure can be lower than the TCO of on-premises, for the following reasons:
 

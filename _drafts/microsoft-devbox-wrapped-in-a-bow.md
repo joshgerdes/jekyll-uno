@@ -282,4 +282,50 @@ Additional reading on Microsoft Dev Box can be found below:
 * [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box")
 * [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box PREVIEW pricing")
 
-##### 
+##### Azure Bicep
+
+Below are some Azure Bicep samples for Azure Dev Box.
+
+###### Dev Center
+
+    param name string
+    param location string
+    param tags object
+    
+    resource name_resource 'Microsoft.DevCenter/devcenters@2022-08-01-preview' = {
+      name: name
+      location: location
+      tags: tags
+      identity: {
+        type: 'none'
+      }
+    }
+
+###### DevBox Host Pool
+
+    param projects_MobileGameDevelopment_name string = 'MobileGameDevelopment'
+    
+    resource projects_MobileGameDevelopment_name_MobleDevelopmentWin10Secure 'Microsoft.DevCenter/projects/pools@2022-09-01-preview' = {
+      name: '${projects_MobileGameDevelopment_name}/MobleDevelopmentWin10Secure'
+      location: 'australiaeast'
+      properties: {
+        devBoxDefinitionName: 'Win10-VS'
+        networkConnectionName: 'ProductionVNETAADJConnection'
+        licenseType: 'Windows_Client'
+        localAdministrator: 'Disabled'
+      }
+    }
+    
+    resource projects_MobileGameDevelopment_name_MobleDevelopmentWin10Secure_default 'Microsoft.DevCenter/projects/pools/schedules@2022-09-01-preview' = {
+      parent: projects_MobileGameDevelopment_name_MobleDevelopmentWin10Secure
+      name: 'default'
+      properties: {
+        type: 'StopDevBox'
+        frequency: 'Daily'
+        time: '11:15'
+        timeZone: 'Pacific/Auckland'
+        state: 'Enabled'
+      }
+    }
+
+s

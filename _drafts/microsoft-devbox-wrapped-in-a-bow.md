@@ -144,7 +144,12 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 
 ##### Create Dev box definitions
 
-It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether it is a_ [_custom_](https://luke.geek.nz/azure/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin/ "Capturing Virtual Machine images and Snapshots in Azure using WVDAdmin") _image or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note, that if you want to use a Custom Image - you will need an [Azure Compute gallery.](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery")
+It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether it is a_ [_custom_](https://luke.geek.nz/azure/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin/ "Capturing Virtual Machine images and Snapshots in Azure using WVDAdmin") _image or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note, that if you want to use a Custom Image - you will need an [Azure Compute gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery"), and if you decide to go down this route, make sure you check out [Azure VM Image Builder](https://learn.microsoft.com/azure/virtual-machines/image-builder-overview?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796 "Azure VM Image Builder overview"), to help automate and build your images.
+
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Navigate to your **Dev center**
+3. Navigate to **Dev box definitions**
+4. 
 
 ##### Create Project
 

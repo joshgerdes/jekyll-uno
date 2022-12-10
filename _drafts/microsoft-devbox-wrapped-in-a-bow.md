@@ -136,3 +136,7 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 10. Now that we have created, the Network connection - it is time to link it to our Dev Center - so it can be used.
 11. **Navigate** to your **Dev Center**
 12. Under Dev Box configuration, select **Networking**
+13. Click **+ Add**
+14. **Select** your Network **connection** that has just been created
+15. ![Azure Dev Center - Link Network Connection](/uploads/azuredevbox-createnetworkconnectionlinkdevcenter.png "Azure Dev Center - Link Network Connection")
+16. Click **Add**

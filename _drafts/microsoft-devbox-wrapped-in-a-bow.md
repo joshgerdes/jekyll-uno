@@ -95,5 +95,5 @@ In your favorite browser, let us create a standard Dev Box environment - startin
 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Click **+ Create a resource**
 3. Search for: Dev center, select your Dev center, and click **Create**
-4. ![](/uploads/azuredevbox-createdevcentermarketplace.png)
-5. 
+4. ![Microsoft Azure Portal - Dev center](/uploads/azuredevbox-createdevcentermarketplace.png "Microsoft Azure Portal - Dev center")
+5. Select the **Subscription** and **ResourceGroup** you want to deploy your Dev Center into, you can use this opportunity to create a new Resource Group - consider your use of Dev Center, and whether this shoulpd be in a 

@@ -140,3 +140,4 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 14. **Select** your Network **connection** that has just been created
 15. ![Azure Dev Center - Link Network Connection](/uploads/azuredevbox-createnetworkconnectionlinkdevcenter.png "Azure Dev Center - Link Network Connection")
 16. Click **Add**
+17. The Network Connection will check of all the network requirements for the Dev Box service, such as the Azure tenant

@@ -281,6 +281,7 @@ Additional reading on Microsoft Dev Box can be found below:
 
 * [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box"){:target="_blank"}
 * [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box PREVIEW pricing"){:target="_blank"}
+* [Build developer environments fast with Microsoft Dev Box - Youtube](https://www.youtube.com/watch?v=kyeuSpR74W4){:target="_blank"}
 
 ##### Azure Bicep
 

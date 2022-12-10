@@ -106,4 +106,8 @@ _Deployment of the Microsoft Dev Center will take a few minutes._
 
 ##### \[Optional\] - Create Virtual Network
 
-In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to already existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone connectivity! In my demo - I will create a Virtual Network from scratch.
+In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to already existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone connectivity! In my demo, I don't currently have a Virtual Network - so I will create a Virtual Network from scratch.
+
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **+ Create a resource**
+3. Search for: Virtual Network

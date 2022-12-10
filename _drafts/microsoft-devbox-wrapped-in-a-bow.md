@@ -142,9 +142,13 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 16. Click **Add**
 17. The Network Connection will check all the network requirements for the Dev Box service, such as the Azure tenant and Intune configuration _(ie is there a restriction in Endpoint Management for Windows)._
 
+##### Create Dev box definitions
+
+It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition can be 
+
 ##### Create Project
 
-Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being "As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed" - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.
+Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being the following user story _"As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed"_ - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.
 
  1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Navigate to your **Dev center**

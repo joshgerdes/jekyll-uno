@@ -185,3 +185,7 @@ Now, that we have our Dev Center, and our Virtual Network connection - it is tim
 20. Once you have confirmed your users have been assigned, click on **Review + assign** to assign your users or groups to the project, allowing them to create Dev Boxes.
 
 _Note: I have found it can take 5-10 minutes for access to be granted to the users before they can create Dev Boxes._
+
+##### Create Dev Box Pool
+
+Now that we have our project and dev box definitions - its time to create our Dev Box Pool - which is what the Dev Boxes will be created from.

@@ -219,4 +219,6 @@ Now it's time to create our Dev Box! To do this we need to go to the Dev box Dev
 3. Enter your **name** of the DevBox _(ie what you will name the Virtual Machine, and see in the portal - make sure this is meaningful - as you may have more than one Dev Box)_
 4. **Select** your assigned **Dev Box Pool,** and select your **Dev Box definition**
 5. ![Microsoft Dev Box - Create Virtual Machine](/uploads/azuredevbox-createdevbox.png "Microsoft Dev Box - Create Virtual Machine")
-6. s
+6. Click **Create**
+
+_Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically start upon creation.**_

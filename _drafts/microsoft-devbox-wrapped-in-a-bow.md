@@ -188,4 +188,10 @@ _Note: I have found it can take 5-10 minutes for access to be granted to the use
 
 ##### Create Dev Box Pool
 
-Now that we have our project and dev box definitions - its time to create our Dev Box Pool - which is what the Dev Boxes will be created from.
+Now that we have our project and dev box definitions - it's time to create our Dev Box Pool - which is what the Dev Boxes will be created from.
+
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Navigate to your **Dev center**
+3. Navigate to **Projects**
+4. **Navigate** to **the project** you created earlier _(ie for me its MobileGameDevelopment)_
+5. 

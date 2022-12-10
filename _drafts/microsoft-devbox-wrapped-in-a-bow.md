@@ -240,3 +240,7 @@ As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down 
 7. Click **Enable Auto-stop**
 8. Select **Yes**
 9. Configure your **Stop Time** and **time zone**
+
+If a user is logged in during the Auto-stop time, they will get an option to delay or suspend the shutdown. 
+
+You may also have multiple pools - selected with the same Dev box image definition - if your project runs across multiple timezones, so you can schedule a 7 PM Shutdown in New Zealand and a 7 PM shutdown for those developers in the United States. 

@@ -184,4 +184,4 @@ Now, that we have our Dev Center, and our Virtual Network connection - it is tim
 19. ![Azure Dev Box - Assign Project Members](/uploads/azuredevbox-assignprojectmembers.png "Azure Dev Box - Assign Project Members")
 20. Once you have confirmed your users have been assigned, click on **Review + assign** to assign your users or groups to the project, allowing them to create Dev Boxes.
 
-_Note: It can take 5-10 minutes for access to be granted to the users before they can create Dev Boxes._
+_Note: I have found it can take 5-10 minutes for access to be granted to the users before they can create Dev Boxes._

@@ -70,6 +70,8 @@ General scenarios at a high level are:
 | Dev box pool | A dev box pool is a collection of dev boxes that you manage together and to which you apply similar settings. |
 | Dev box | A dev box is a preconfigured ready-to-code workstation that you create through the self-service developer portal. The new dev box has all the tools, binaries, and configuration required for a dev box user to be productive immediately |
 
+![DevBox Hierarchy](/uploads/festivetechcalendar2022_devboxhierarchy.png "DevBox Hierarchy")
+
 The following are common, Azure Dev Box roles.
 
 | Role | Responsibilities | Permissions |

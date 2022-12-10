@@ -328,4 +328,3 @@ Below are some Azure Bicep samples for Azure Dev Box.
       }
     }
 
-s

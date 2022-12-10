@@ -222,3 +222,11 @@ Now it's time to create our Dev Box! To do this we need to go to the Dev box Dev
 6. Click **Create**
 
 _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically start upon creation.**_
+
+#### Configuration
+
+There are a few extra things, we can configure for the Azure DevBox environment. 
+
+##### Auto-Stop
+
+Now it's time to create 

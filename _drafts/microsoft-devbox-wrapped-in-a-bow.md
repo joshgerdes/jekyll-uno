@@ -236,4 +236,7 @@ As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down 
 3. Navigate to **Projects**
 4. **Navigate** to **the project** you created earlier _(ie for me its MobileGameDevelopment)_
 5. Click on the **Dev box pools**
-6. 
+6. Click on **Edit** on your pools
+7. Click **Enable Auto-stop**
+8. Select **Yes**
+9. Configure your **Stop Time** and **time zone**

@@ -190,11 +190,16 @@ _Note: I have found it can take 5-10 minutes for access to be granted to the use
 
 Now that we have our project and dev box definitions - it's time to create our Dev Box Pool - which is what the Dev Boxes will be created from.
 
-1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Navigate to your **Dev center**
-3. Navigate to **Projects**
-4. **Navigate** to **the project** you created earlier _(ie for me its MobileGameDevelopment)_
-5. Click on **Dev box pools**
-6. Click on **+ Create**
-7. ![Azure Dev Box - Create Dev Box Pools](/uploads/azuredevbox-createdevboxpools.png "Azure Dev Box - Create Dev Box Pools")
-8. 
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Navigate to your **Dev center**
+ 3. Navigate to **Projects**
+ 4. **Navigate** to **the project** you created earlier _(ie for me its MobileGameDevelopment)_
+ 5. Click on **Dev box pools**
+ 6. Click on **+ Create**
+ 7. ![Azure Dev Box - Create Dev Box Pools](/uploads/azuredevbox-createdevboxpools.png "Azure Dev Box - Create Dev Box Pools")
+ 8. Type in a **name** - _ie MobleDevelopmentWin11_
+ 9. **Select** your **Network connection**
+10. Select your **definition**
+11. Select your Creator **privileges** _(ie select whether your user will be a standard user or have Local administrator rights on their devbox)_
+12. Configure Auto-stop, or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure"). 
+13. Click **Create**

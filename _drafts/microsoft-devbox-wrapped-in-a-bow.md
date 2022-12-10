@@ -144,7 +144,7 @@ Now that we have our Dev Center and our Virtual Network - it's time to make a Ne
 
 ##### Create Dev box definitions
 
-It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether a custom or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note that if you want to use a Custom Image - you will need an [Azure Compute gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery"), and if you decide to go down this route, make sure you check out [Azure VM Image Builder](https://learn.microsoft.com/azure/virtual-machines/image-builder-overview?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796 "Azure VM Image Builder overview") to help automate and build your images. You can have multiple definitions per project.
+It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether a_ [_custom_](https://luke.geek.nz/azure/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin/ "Capturing Virtual Machine images and Snapshots in Azure using WVDAdmin") _or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note that if you want to use a Custom Image - you will need an [Azure Compute gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery"), and if you decide to go down this route, make sure you check out [Azure VM Image Builder](https://learn.microsoft.com/azure/virtual-machines/image-builder-overview?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796 "Azure VM Image Builder overview") to help automate and build your images. You can have multiple definitions per project.
 
  1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Navigate to your **Dev center**
@@ -262,8 +262,6 @@ As the Dev Box is Pay As You Go, you can ensure that a Dev Box is shut down afte
 7. Click **Enable Auto-stop**
 8. Select **Yes**
 9. Configure your **Stop Time** and **time zone**
-
-If a user is logged in during the Auto-stop time, they will get an option to delay or suspend the shutdown.
 
 You may also have multiple pools - selected with the exact Dev box image definition - if your project runs across various timezones, so you can schedule a 7 PM Shutdown in New Zealand and a 7 PM shutdown for those developers in the United States.
 

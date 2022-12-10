@@ -159,7 +159,7 @@ It's time to create our Dev box definition. The Dev box definition is the type o
 
 You can edit a Dev box definition, change the image, Compute, and storage after it has been created, this could be useful if there are issues with the latest version of the image, you can roll back the version - so people can create their Dev Boxes while the image is worked on.
 
-##### Create Project
+##### Create and assign Project
 
 Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being the following user story _"As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed"_ - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.
 
@@ -172,4 +172,14 @@ Now, that we have our Dev Center, and our Virtual Network connection - it is tim
  7. Type in the name of our **Project** and enter a **description**
  8. ![](/uploads/azuredevbox-createprojectbasics.png)
  9. You can use Tags, to add additional information on billing for the project, or the project administrator's contact details - but we will just select **Review + create** and **Create**
-10. 
+10. Once the Project has been created, we now need to assign assignees to use the project. I will assign a DevBox User role to the project so that I can create a Dev Box.
+11. Within the Project, click on the **Access Control (IAM)**
+12. Click **+ Add**
+13. Select **Add Role assignment**
+14. Select **DevCenter Dev Box User**
+15. Click **Next**
+16. Make sure User, Group, or Service principal is selected and click **+ Select Members.**
+17. Ideally, you would be assigning the Dev Box User role to an Azure AD group - but in my demo, I will select an individual user
+18. Click **Next**
+19. ![Azure Dev Box - Assign Project Members](/uploads/azuredevbox-assignprojectmembers.png "Azure Dev Box - Assign Project Members")
+20. s

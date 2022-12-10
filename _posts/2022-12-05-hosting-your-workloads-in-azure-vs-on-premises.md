@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/microsoft_azure.jpg"
 
 ---
-[Azure ](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less— On Azure")is a cloud computing platform that provides a wide range of services and capabilities for building and deploying applications and workloads in the cloud. In contrast, hosting your own datacenter involves setting up and managing a physical infrastructure, including servers, storage, networking, and other components, in a location controlled by the organization.
+[Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less— On Azure"){:target="_blank"} is a cloud computing platform that provides a wide range of services and capabilities for building and deploying applications and workloads in the cloud. In contrast, hosting your own datacenter involves setting up and managing a physical infrastructure, including servers, storage, networking, and other components, in a location controlled by the organization.
 
 Azure and hosting your own datacenter are two different approaches for deploying and managing applications and workloads.
 

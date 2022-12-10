@@ -11,19 +11,19 @@ header:
 ---
 **![Festive Tech Calender - Microsoft Dev Box](/uploads/festivetechcalendar2022.png "Festive Tech Calender - Microsoft Dev Box")**
 
-It's that time of year again! The time to be jolly and experience the Month of December by looking at the [Festive Tech Calendar](https://festivetechcalendar.com/ "Festive Tech Calender")!
+It's that time of year again! The time to be jolly and experience the Month of December by looking at the [Festive Tech Calendar](https://festivetechcalendar.com/ "Festive Tech Calender"){:target="_blank"}!
 
-> This year the Festive Tech Calendar Team is **raising money** for the charity [@missingpeople](https://www.missingpeople.org.uk/).
+> This year the Festive Tech Calendar Team is **raising money** for the charity [@missingpeople](https://www.missingpeople.org.uk/){:target="_blank"}.
 >
 > We believe its important to support charities that do great work. Without fundraising Missing People wouldn’t be able to find vulnerable missing people and reunite families.
 >
-> #### If you would like to donate please visit our [Just Giving Page](https://www.justgiving.com/fundraising/festivetechcalendar2022).
+> #### If you would like to donate please visit our [Just Giving Page](https://www.justgiving.com/fundraising/festivetechcalendar2022){:target="_blank"}
 
 Today, we sent our present and took a peek inside the box - at Microsoft Dev Box!
 
 #### Overview
 
-[Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box") provides self-service access for developers to high-performance, cloud-based workstations preconfigured and ready-to-code for specific projects—all while maintaining security and corporate governance. With Microsoft Dev Box, organizations can:
+[Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box"){:target="_blank"} provides self-service access for developers to high-performance, cloud-based workstations preconfigured and ready-to-code for specific projects—all while maintaining security and corporate governance. With Microsoft Dev Box, organizations can:
 
 * Maximize dev productivity with ready-to-code, self-service Dev Boxes.
 * Central management of workstations running anywhere to maintain greater security, compliance, and cost efficiency.
@@ -33,9 +33,9 @@ Microsoft Dev Box supports any developer IDE, SDK, or tool that runs on Windows.
 
 ![High-level Azure Devbox workflow](/uploads/hl-devbox_workflow.png "High-level Devbox workflow")
 
-[Microsoft Dev Box](https://learn.microsoft.com/azure/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box documentation") is a managed service that enables developers to create on-demand, high-performance, secure, ready-to-code, project-specific workstations in the cloud.
+[Microsoft Dev Box](https://learn.microsoft.com/azure/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box documentation"){:target="_blank"} is a managed service that enables developers to create on-demand, high-performance, secure, ready-to-code, project-specific workstations in the cloud.
 
-Microsoft Dev Box is available today as a [preview ](https://azure.microsoft.com/en-us/updates/public-preview-microsoft-dev-box/?WT.mc_id=AZ-MVP-5004796 "Public preview: Microsoft Dev Box")from the Azure Portal. During this period, organizations get the first 15 hours of the dev box 8vCPU and 32 GB Memory SKU for free every month, along with the first 365 hours of the dev box Storage SSD 512 GB SKU.
+Microsoft Dev Box is available today as a [preview](https://azure.microsoft.com/en-us/updates/public-preview-microsoft-dev-box/?WT.mc_id=AZ-MVP-5004796 "Public preview: Microsoft Dev Box"){:target="_blank"} from the Azure Portal. During this period, organizations get the first 15 hours of the dev box 8vCPU and 32 GB Memory SKU for free every month, along with the first 365 hours of the dev box Storage SSD 512 GB SKU.
 
 Beyond that, organizations pay only for what they use with a consumption-based pricing model. With this model, organizations are charged per hour depending on the number of Compute and Storage consumed.
 
@@ -47,7 +47,7 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 
 So, where does Microsoft Dev Box fit in?
 
-Microsoft offers a plethora of services, from [Azure Virtual Desktop](https://azure.microsoft.com/products/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 "Azure Virtual Desktop"), [Windows 365](https://www.microsoft.com/en-us/windows-365?WT.mc_id=AZ-MVP-5004796 "Windows 365 Cloud PC"), and now [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box") - where would you use Microsoft Dev Box over another service, such as Windows 365?
+Microsoft offers a plethora of services, from [Azure Virtual Desktop](https://azure.microsoft.com/products/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 "Azure Virtual Desktop"), [Windows 365](https://www.microsoft.com/en-us/windows-365?WT.mc_id=AZ-MVP-5004796 "Windows 365 Cloud PC"){:target="_blank"}, and now [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box"){:target="_blank"} - where would you use Microsoft Dev Box over another service, such as Windows 365?
 
 General scenarios at a high level are:
 
@@ -86,18 +86,18 @@ The following are typical Azure Dev Box roles.
 
 ##### Create Dev Center
 
-First, we need to create our [Dev Center](https://learn.microsoft.com/azure/dev-box/concept-dev-box-concepts?WT.mc_id=AZ-MVP-5004796#dev-center "Microsoft Dev Box Preview key concepts"). A Dev Center allows us to centrally manage our developer environments and enable development teams with self-service capability. Dev Center is used by more than just Microsoft DevBox - an example is [Azure Deployment Environments](https://azure.microsoft.com/products/deployment-environments/?WT.mc_id=AZ-MVP-5004796#overview "Azure Deployment Environments") - which allows devs to spin up templated _(ARM)_ application infrastructure quickly - but we will focus on components of Dev Center - used by Microsoft Dev Box.
+First, we need to create our [Dev Center](https://learn.microsoft.com/azure/dev-box/concept-dev-box-concepts?WT.mc_id=AZ-MVP-5004796#dev-center "Microsoft Dev Box Preview key concepts"){:target="_blank"}. A Dev Center allows us to centrally manage our developer environments and enable development teams with self-service capability. Dev Center is used by more than just Microsoft DevBox - an example is [Azure Deployment Environments](https://azure.microsoft.com/products/deployment-environments/?WT.mc_id=AZ-MVP-5004796#overview "Azure Deployment Environments"){:target="_blank"} - which allows devs to spin up templated _(ARM)_ application infrastructure quickly - but we will focus on components of Dev Center - used by Microsoft Dev Box.
 
-> Please confirm what [region](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#faq "Frequently asked questions about Microsoft Dev Box") you can deploy Dev Box. As this is in Public Preview at the time of writing - only certain regions are supported.
+> Please confirm what [region](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#faq "Frequently asked questions about Microsoft Dev Box"){:target="_blank"} you can deploy Dev Box. As this is in Public Preview at the time of writing - only certain regions are supported.
 
 Let's create a standard Dev Box environment in your favourite browser, starting with the Dev Center...
 
-1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
 2. Click **+ Create a resource**
 3. Search for: Dev center, select your Dev center and click **Create**
 4. ![Microsoft Azure Portal - Dev center](/uploads/azuredevbox-createdevcentermarketplace.png "Microsoft Azure Portal - Dev center")
 5. Select the **Subscription** and **ResourceGroup** you want to deploy your Dev Center; you can use this opportunity to create a new Resource Group.
-6. Type in the **name__ of your **DevCenter **_(in my example, it is named DevCenter-Devs)_
+6. Type in the **name__ of your** DevCenter **_(in my example, it is named DevCenter-Devs)_
 7. Then select the **location** _(region)_ in which you want to deploy your DevCenter.
 8. ![Azure Portal - Create a dev center](/uploads/azuredevbox-createdevcenterbasicspage.png "Azure Portal - Create a dev center")
 9. Click **Review + Create,** then **Create**
@@ -108,7 +108,7 @@ _Deployment of the Microsoft Dev Center will take a few minutes._
 
 To use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone secure connectivity through network links! In my demo, I don't currently have a Virtual Network - so I will create a Virtual Network from scratch.
 
- 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Click **+ Create a resource**
  3. Search for: **Virtual Network**
  4. **Create** a **Virtual Network**
@@ -124,7 +124,7 @@ To use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtu
 
 Now that we have our Dev Center and our Virtual Network - it's time to make a Network connection - this connection will be used by Dev Center - to allow our Dev Boxes to connect to the Virtual Network - and to select your Virtual Machine identification _(i.e. Azure Active Directory, or Hybrid Azure Active Directory)_.
 
- 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Click **+ Create a resource.**
  3. Type in: **Network Connection,** find and click **Create**
  4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
@@ -144,9 +144,9 @@ Now that we have our Dev Center and our Virtual Network - it's time to make a Ne
 
 ##### Create Dev box definitions
 
-It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether a_ [_custom_](https://luke.geek.nz/azure/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin/ "Capturing Virtual Machine images and Snapshots in Azure using WVDAdmin") _or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note that if you want to use a Custom Image - you will need an [Azure Compute gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery"), and if you decide to go down this route, make sure you check out [Azure VM Image Builder](https://learn.microsoft.com/azure/virtual-machines/image-builder-overview?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796 "Azure VM Image Builder overview") to help automate and build your images. You can have multiple definitions per project.
+It's time to create our Dev box definition. The Dev box definition is the type of Virtual Machines -or Dev Boxes that are standard for your environment. A dev box definition will be used to define the image _(whether a_ [_custom_](https://luke.geek.nz/azure/capturing-virtual-machine-images-and-snapshots-in-azure-using-wvdadmin/ "Capturing Virtual Machine images and Snapshots in Azure using WVDAdmin"){:target="_blank"} _or marketplace image),_ SKU of virtual machines _(Compute + Memory)_, and available storage. Note that if you want to use a Custom Image - you will need an [Azure Compute gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery?WT.mc_id=AZ-MVP-5004796 "Store and share resources in an Azure Compute Gallery"){:target="_blank"}, and if you decide to go down this route, make sure you check out [Azure VM Image Builder](https://learn.microsoft.com/azure/virtual-machines/image-builder-overview?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796 "Azure VM Image Builder overview"){:target="_blank"} to help automate and build your images. You can have multiple definitions per project.
 
- 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to your **Dev center**
  3. Navigate to **Dev box definitions**
  4. Click **+ Create**
@@ -163,14 +163,14 @@ You can edit a Dev box definition, change the image, Compute, and storage after 
 
 Now that we have our Dev Center and Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being the following user story _"As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed"_ - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.
 
- 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to your **Dev center**
  3. Navigate to **Projects**
  4. Select **+ Create**
  5. Select your **Resource Group**
  6. Select your **Dev center**
  7. Please type in the name of our **Project** and enter a **description.**
- 8. ![](/uploads/azuredevbox-createprojectbasics.png)
+ 8. ![Azure DevBox - Create Project](/uploads/azuredevbox-createprojectbasics.png)
  9. You can use Tags to add additional information on billing for the project or the project administrator's contact details - but we will select **Review + create** and **Create**
 10. Once the Project has been created, we need to assign assignees to use the project. I will give a DevBox User role to the project so I can make a Dev Box.
 11. Within the Project, click on the **Access Control (IAM)**
@@ -190,7 +190,7 @@ _Note: I have found it can take 5-10 minutes for access to be granted to the use
 
 Now that we have our project and dev box definitions - it's time to create our Dev Box Pool - which is what the Dev Boxes will be made from.
 
- 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Navigate to your **Dev center**
  3. Navigate to **Projects**
  4. **Navigate** to **the project** you created earlier _(i.e. for me, its MobileGameDevelopment)_
@@ -201,7 +201,7 @@ Now that we have our project and dev box definitions - it's time to create our D
  9. **Select** your **Network connection**
 10. Select your **definition**
 11. Select your Creator **privileges** _(i.e. select whether your user will be a standard user or have Local administrator rights on their devbox)_
-12. Configure Auto-stop or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure").
+12. Configure Auto-stop or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure"){:target="_blank"}.
 13. Click **Create**
 
 After 1-2 minutes, your Dev Box pool has been created.
@@ -214,7 +214,7 @@ Now that your Dev Center, Network, and Dev Box project has been stood up - it's 
 
 Now it's time to create our Dev Box! To do this, we need to go to the Dev box Developer portal _(as a Dev Center Devbox, User)_
 
-1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
+1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box"){:target="_blank"}
 2. Click on **+ New Dev Box**
 3. Enter your **name** of the DevBox _(i.e. what you will name the Virtual Machine and see in the portal - make sure this is meaningful - as you may have more than one Dev Box)_
 4. **Select** your assigned **Dev Box Pool,** and select your **Dev Box definition**
@@ -226,7 +226,7 @@ _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically s
 
 ##### Connect Dev Box using Microsoft Dev Box Portal
 
-1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
+1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box"){:target="_blank"}
 2. **Click** on the Dev **Box** you want to connect to.
 3. Select **Open in the browser**
 4. ![Azure DevBox - HTML Client](/uploads/azuredevbox-desktophtml.png "Azure DevBox - HTML Client")
@@ -240,8 +240,8 @@ _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically s
 
 Like Azure Virtual Desktop, you can connect to your Dev Box using the Remote Desktop client.
 
-1. Download and install the [**Remote Desktop Client**](https://learn.microsoft.com/azure/virtual-desktop/users/connect-windows?tabs=subscribe&WT.mc_id=AZ-MVP-5004796 "Remote Desktop Client")
-2. [**Subscribe**](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe-with-url&WT.mc_id=AZ-MVP-5004796#subscribe-to-a-workspace "Subscribe to a workspace") to the Azure workspace
+1. Download and install the [**Remote Desktop Client**](https://learn.microsoft.com/azure/virtual-desktop/users/connect-windows?tabs=subscribe&WT.mc_id=AZ-MVP-5004796 "Remote Desktop Client"){:target="_blank"}
+2. [**Subscribe**](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe-with-url&WT.mc_id=AZ-MVP-5004796#subscribe-to-a-workspace "Subscribe to a workspace"){:target="_blank"} to the Azure workspace
 3. As long as the Dev Box has been created, you can see your Dev Box and connect to it directly.
 4. ![Remote Desktop Client - Microsoft Dev Box](/uploads/azuredevbox-remotedesktopapplication.png "Remote Desktop Client - Microsoft Dev Box")
 
@@ -253,7 +253,7 @@ We can configure a few extra things for the Azure DevBox environment.
 
 As the Dev Box is Pay As You Go, you can ensure that a Dev Box is shut down after hours.
 
-1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
 2. Navigate to your **Dev center**
 3. Navigate to **Projects**
 4. **Navigate** to **the project** you created earlier _(i.e. for me, its MobileGameDevelopment)_
@@ -279,8 +279,8 @@ As Microsoft Dev Box is still in Public Preview - at the time of writing - the e
 
 Additional reading on Microsoft Dev Box can be found below:
 
-* [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box")
-* [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box PREVIEW pricing")
+* [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box"){:target="_blank"}
+* [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box PREVIEW pricing"){:target="_blank"}
 
 ##### Azure Bicep
 

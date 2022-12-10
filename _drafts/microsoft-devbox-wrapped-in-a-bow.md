@@ -108,11 +108,14 @@ _Deployment of the Microsoft Dev Center will take a few minutes._
 
 In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to already existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone connectivity! In my demo, I don't currently have a Virtual Network - so I will create a Virtual Network from scratch.
 
-1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **+ Create a resource**
-3. Search for: **Virtual Network**
-4. **Create** a **Virtual Network** 
-5. **Select** your Virtual Network **name** and **region** _(make sure the region aligns to your workloads and Azure DevCenter location)_
-6. ![Azure Portal - Create VNET](/uploads/azuredevbox-createvnetbasicspage.png "Azure Portal - Create VNET")
-7. Click **Next: IP Addresses**
-8. 
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Click **+ Create a resource**
+ 3. Search for: **Virtual Network**
+ 4. **Create** a **Virtual Network** 
+ 5. **Select** your Virtual Network **name** and **region** _(make sure the region aligns to your workloads and Azure DevCenter location)_
+ 6. ![Azure Portal - Create VNET](/uploads/azuredevbox-createvnetbasicspage.png "Azure Portal - Create VNET")
+ 7. Click **Next: IP Addresses**
+ 8. I am going to leave the IP address space the default of 10.1.0.0/16 - but change the default subnet name to devbox-subnet.
+ 9. ![Azure Portal - Create VNET](/uploads/azuredevbox-createvnetipaddressespage.png "Azure Portal - Create VNET")
+10. Click **Review + create**
+11. Click **Create**

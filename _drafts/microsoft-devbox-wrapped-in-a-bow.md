@@ -51,11 +51,11 @@ Microsoft offers a plethora of services, from [Azure Virtual Desktop](https://az
 
 General scenarios at a high level are:
 
-| Scenario                                                                                 | Product               |
-| ---------------------------------------------------------------------------------------- | --------------------- |
-| Production multi-session, supporting Windows Server and Client OS, Published Aps         | Azure Virtual Desktop |
-| Production dedicated personal PCs, for shift/party time users - or small environments    | Windows 365           |
-| Dev/Test Ondemand Windows machines for Testing and development with custom image support | Azure Dev Box         |
+| Scenario | Product |
+| --- | --- |
+| Production multi-session, supporting Windows Server and Client OS, Published Aps | Azure Virtual Desktop |
+| Production dedicated personal PCs, for shift/party time users - or small environments | Windows 365 |
+| Dev/Test Ondemand Windows machines for Testing and development with custom image support | Azure Dev Box |
 
 ![Microsot Windows Experiances Strategy](/uploads/ms_microsoftwindowsexperiances_strategy.png "Microsoft Windows Experiances Strategy")
 

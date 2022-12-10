@@ -228,6 +228,8 @@ _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically s
 
 1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
 2. Click on the Dev Box you have just selected.
+3. Select **Open in browser**
+4. 
 
 ##### Connect Dev Box using Remote Desktop Application
 

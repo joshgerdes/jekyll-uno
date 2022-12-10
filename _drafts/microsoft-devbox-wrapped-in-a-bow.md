@@ -84,6 +84,6 @@ The following are common, Azure Dev Box roles.
 
 ##### Create Dev Center
 
-First, we need to create our [Dev Center](https://learn.microsoft.com/azure/dev-box/concept-dev-box-concepts?WT.mc_id=AZ-MVP-5004796#dev-center "Microsoft Dev Box Preview key concepts"). A Dev Center, allows us to centrally manage our developer environments and enable development teams with self-service capability.
+First, we need to create our [Dev Center](https://learn.microsoft.com/azure/dev-box/concept-dev-box-concepts?WT.mc_id=AZ-MVP-5004796#dev-center "Microsoft Dev Box Preview key concepts"). A Dev Center, allows us to centrally manage our developer environments and enable development teams with self-service capability. Dev Center is used by more than just Microsoft DevBox and can 
 
 > Please confirm what [region](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#faq "Frequently asked questions about Microsoft Dev Box") you can deploy Dev Box. As this is in Public Preview at the time of writing - only certain regions are supported.

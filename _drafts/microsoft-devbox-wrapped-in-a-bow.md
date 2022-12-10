@@ -227,7 +227,14 @@ _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically s
 ##### Connect Dev Box using Microsoft Dev Box Portal
 
 1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
-2. Click on your Dev Box you have just selected.
+2. Click on the Dev Box you have just selected.
+
+##### Connect Dev Box using Remote Desktop Application
+
+Just like - Azure Virtual Desktop, you can connect to your Dev Box using the Remote Desktop client.
+
+1. Download and install the [**Remote Desktop Client**](https://learn.microsoft.com/azure/virtual-desktop/users/connect-windows?tabs=subscribe&WT.mc_id=AZ-MVP-5004796 "Remote Desktop Client")
+2. [**Subscribe**](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe-with-url&WT.mc_id=AZ-MVP-5004796#subscribe-to-a-workspace "Subscribe to a workspace") to the Azure workspace
 
 #### Configuration
 

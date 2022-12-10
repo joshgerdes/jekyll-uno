@@ -204,4 +204,4 @@ Now that we have our project and dev box definitions - it's time to create our D
 12. Configure Auto-stop, or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure"). 
 13. Click **Create**
 
-The creation of the Dev Box Pool can take up to 10 minutes to create, as it goes through a validation process to confirm connectivity.
+The creation of the Dev Box Pool can take a few minutes to create, as it goes through a validation process to confirm connectivity.

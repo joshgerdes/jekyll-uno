@@ -141,3 +141,7 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 15. ![Azure Dev Center - Link Network Connection](/uploads/azuredevbox-createnetworkconnectionlinkdevcenter.png "Azure Dev Center - Link Network Connection")
 16. Click **Add**
 17. The Network Connection will check all the network requirements for the Dev Box service, such as the Azure tenant and Intune configuration _(ie is there a restriction in Endpoint Management for Windows)._
+
+##### Create Project
+
+Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being "As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed" - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development.

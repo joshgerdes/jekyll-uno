@@ -224,6 +224,11 @@ Now it's time to create our Dev Box! To do this we need to go to the Dev box Dev
 
 _Note: Dev box creation can take 30-90 minutes. **Dev boxes will automatically start upon creation.**_
 
+##### Connect Dev Box using Microsoft Dev Box Portal
+
+1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
+2. Click on your Dev Box you have just selected.
+
 #### Configuration
 
 There are a few extra things, we can configure for the Azure DevBox environment. 

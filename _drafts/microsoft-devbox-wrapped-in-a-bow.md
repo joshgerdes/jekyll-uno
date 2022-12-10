@@ -145,3 +145,14 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 ##### Create Project
 
 Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being "As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed" - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.
+
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Navigate to your **Dev center**
+ 3. Navigate to **Projects**
+ 4. Select **+ Create**
+ 5. Select your **Resource Group**
+ 6. Select your **Dev center**
+ 7. Type in the name of our **Project** and enter a **description**
+ 8. ![](/uploads/azuredevbox-createprojectbasics.png)
+ 9. You can use Tags, to add additional information on billing for the project, or the project administrator's contact details - but we will just select **Review + create** and **Create**
+10. 

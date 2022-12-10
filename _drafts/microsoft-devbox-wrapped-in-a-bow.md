@@ -270,3 +270,16 @@ You may also have multiple pools - selected with the exact Dev box image definit
 Not as much as a Configuration item, but more of a quick - howto! As a Dev Box user, you can shut down your Dev Box or delete it from the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")**.**
 
 ![Azure Dev Box - Stop or Delete](/uploads/azuredevbox-closedelete.png "Azure Dev Box - Stop or Delete")
+
+#### Additional Resources
+
+As Microsoft Dev Box is still in Public Preview - at the time of writing - the experience may change before its GA (Generally available). 
+
+##### Documentation
+
+Additional reading on Microsoft Dev Box can be found below:
+
+* [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box")
+* [Microsoft Dev Box pricing](https://azure.microsoft.com/pricing/details/dev-box/?WT.mc_id=AZ-MVP-5004796 "Microsoft Dev Box PREVIEW pricing")
+
+##### 

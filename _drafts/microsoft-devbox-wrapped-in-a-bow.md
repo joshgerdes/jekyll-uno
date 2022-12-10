@@ -153,9 +153,9 @@ It's time to create our Dev box definition. The Dev box definition is the type o
  5. For our **Image definition name**, I will go with Win11-VS
  6. For Images, there are a plethora of images available! For the purposes of this guide, I will be using: Visual Studio 2019 Enterprise on Windows 11 Enterprise + Microsoft 365 Apps 22H2 image.
  7. ![Azure Dev Box definitions](/uploads/azuredevbox-createpdevboxdefinitionsimages.png "Azure Dev Box definitions")
- 8. I will select the Latest image version, and specify 4vCPU, 16GB of RAM, and a 256 GB SSD drive.
+ 8. I will select the Latest image version, and specify **4vCPU, 16GB of RAM**, and a **256 GB** SSD drive.
  9. ![Azure Dev Box definitions](/uploads/azuredevbox-createpdevboxdefinitions.png "Azure Dev Box definitions")
-10. 
+10. Click **Create**
 
 ##### Create Project
 

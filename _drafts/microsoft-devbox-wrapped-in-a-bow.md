@@ -144,4 +144,4 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 
 ##### Create Project
 
-Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being "As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed" - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development.
+Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being "As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed" - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.

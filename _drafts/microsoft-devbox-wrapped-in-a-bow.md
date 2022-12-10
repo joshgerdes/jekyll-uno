@@ -47,7 +47,11 @@ To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterp
 
 So where does Microsoft Dev Box fit in?
 
-Microsoft offers a plethora of services, from Azure Virtual Desktop, Windows 365, and now Microsoft Dev Box - where would you use Microsoft Dev Box over another service, such as Windows 365?
+Microsoft offers a plethora of services, from [Azure Virtual Desktop](https://azure.microsoft.com/products/virtual-desktop/?WT.mc_id=AZ-MVP-5004796 "Azure Virtual Desktop"), [Windows 365](https://www.microsoft.com/en-us/windows-365?WT.mc_id=AZ-MVP-5004796 "Windows 365 Cloud PC"), and now [Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box") - where would you use Microsoft Dev Box over another service, such as Windows 365?
+
+General scenarios at a high level are:
+
+![Microsot Windows Experiances Strategy](/uploads/ms_microsoftwindowsexperiances_strategy.png "Microsoft Windows Experiances Strategy")
 
 ##### Concepts & Roles
 

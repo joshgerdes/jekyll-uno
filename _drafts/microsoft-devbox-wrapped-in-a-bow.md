@@ -194,4 +194,7 @@ Now that we have our project and dev box definitions - it's time to create our D
 2. Navigate to your **Dev center**
 3. Navigate to **Projects**
 4. **Navigate** to **the project** you created earlier _(ie for me its MobileGameDevelopment)_
-5. 
+5. Click on **Dev box pools**
+6. Click on **+ Create**
+7. ![Azure Dev Box - Create Dev Box Pools](/uploads/azuredevbox-createdevboxpools.png "Azure Dev Box - Create Dev Box Pools")
+8. 

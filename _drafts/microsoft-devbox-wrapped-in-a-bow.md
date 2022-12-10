@@ -182,4 +182,4 @@ Now, that we have our Dev Center, and our Virtual Network connection - it is tim
 17. Ideally, you would be assigning the Dev Box User role to an Azure AD group - but in my demo, I will select an individual user
 18. Click **Next**
 19. ![Azure Dev Box - Assign Project Members](/uploads/azuredevbox-assignprojectmembers.png "Azure Dev Box - Assign Project Members")
-20. s
+20. Once you have confirmed your users have been assigned, click on **Review + assign** to assign your users or groups to the project, allowing them to create Dev Boxes.

@@ -130,5 +130,6 @@ Now, that we have our Dev Center, and our Virtual Network - it's time to create 
 4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
 5. As I will be using Azure Active Directory joined Virtual Machines, I will make sure that the Domain join type is: **Azure Active Directory join**.
 6. For the **Network connection name**, I will select: ProductionVNETAADJConnection
-7. I will select my Virtual Network and subnet, that the Dev Box will be placed into.
-8. 
+7. I will select my Virtual Network and subnet, which the Dev Box will be placed into.
+8. ![Create Azure Network Connection ](/uploads/azuredevbox-createnetworkconnectionbasicspage.png "Create Azure Network Connection ")
+9. Click **Review + Create,** and click **Create**

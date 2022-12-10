@@ -124,12 +124,15 @@ In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you nee
 
 Now, that we have our Dev Center, and our Virtual Network - it's time to create a Network connection - this connection will be used by Dev Center - to allow our Dev Boxes to connect to the Virtual Network - and to select your Virtual Machine identification _(ie Azure Active Directory, or Hybrid Azure Active Directory)_.
 
-1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. Click **+ Create a resource**
-3. Type in: **Network Connection,** find and click **Create**
-4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
-5. As I will be using Azure Active Directory joined Virtual Machines, I will make sure that the Domain join type is: **Azure Active Directory join**.
-6. For the **Network connection name**, I will select: ProductionVNETAADJConnection
-7. I will select my Virtual Network and subnet, which the Dev Box will be placed into.
-8. ![Create Azure Network Connection ](/uploads/azuredevbox-createnetworkconnectionbasicspage.png "Create Azure Network Connection ")
-9. Click **Review + Create,** and click **Create**
+ 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. Click **+ Create a resource**
+ 3. Type in: **Network Connection,** find and click **Create**
+ 4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
+ 5. As I will be using Azure Active Directory joined Virtual Machines, I will make sure that the Domain join type is: **Azure Active Directory join**.
+ 6. For the **Network connection name**, I will select: ProductionVNETAADJConnection
+ 7. I will select my Virtual Network and subnet, which the Dev Box will be placed into.
+ 8. ![Create Azure Network Connection ](/uploads/azuredevbox-createnetworkconnectionbasicspage.png "Create Azure Network Connection ")
+ 9. Click **Review + Create,** and click **Create**
+10. Now that we have created, the Network connection - it is time to link it to our Dev Center - so it can be used.
+11. **Navigate** to your **Dev Center**
+12. Under Dev Box configuration, select **Networking**

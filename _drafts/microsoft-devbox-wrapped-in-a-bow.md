@@ -157,6 +157,8 @@ It's time to create our Dev box definition. The Dev box definition is the type o
  9. ![Azure Dev Box definitions](/uploads/azuredevbox-createpdevboxdefinitions.png "Azure Dev Box definitions")
 10. Click **Create**
 
+You can edit a Dev box definition, to change the image, Compute and storage after its been created.
+
 ##### Create Project
 
 Now, that we have our Dev Center, and our Virtual Network connection - it is time to create a Project. A Project is intended to be task specific - an example being the following user story _"As a developer working on a mobile game, I need access to a Windows 11 Development workstation with Visual Studio installed"_ - so all users working on that mobile game - will get an identical virtual machine setup with all the pre-requisites that the need to start development, a project team working on another mobile game, may need different software or dependencies - so will be part of another project.

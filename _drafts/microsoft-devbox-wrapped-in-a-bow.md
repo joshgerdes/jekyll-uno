@@ -100,4 +100,4 @@ In your favorite browser, let us create a standard Dev Box environment - startin
 6. Type in the **name** of your **DevCenter **_(in my example, it is named DevCenter-Devs)_
 7. Then select the **location** _(region)_, in which you want to deploy your DevCenter into.
 8. ![Azure Portal - Create a dev center](/uploads/azuredevbox-createdevcenterbasicspage.png "Azure Portal - Create a dev center")
-9. 
+9. Click **Review + Create,** then **Create**

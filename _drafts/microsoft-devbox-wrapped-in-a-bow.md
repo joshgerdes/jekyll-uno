@@ -97,7 +97,7 @@ In your favorite browser, let us create a standard Dev Box environment - startin
 3. Search for: Dev center, select your Dev center, and click **Create**
 4. ![Microsoft Azure Portal - Dev center](/uploads/azuredevbox-createdevcentermarketplace.png "Microsoft Azure Portal - Dev center")
 5. Select the **Subscription** and **ResourceGroup** you want to deploy your Dev Center into, you can use this opportunity to create a new Resource Group.
-6. Type in the **name** of your **DevCenter **_(in my example, it is named DevCenter-Devs)_
+6. Type in the **name__ of your **DevCenter **_(in my example, it is named DevCenter-Devs)_
 7. Then select the **location** _(region)_, in which you want to deploy your DevCenter into.
 8. ![Azure Portal - Create a dev center](/uploads/azuredevbox-createdevcenterbasicspage.png "Azure Portal - Create a dev center")
 9. Click **Review + Create,** then **Create**
@@ -106,12 +106,12 @@ _Deployment of the Microsoft Dev Center will take a few minutes._
 
 ##### Create Virtual Network
 
-In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to already existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone secure connectivity through network links! In my demo, I don't currently have a Virtual Network - so I will create a Virtual Network from scratch. 
+In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network! The Dev Boxes can connect to already existing Virtual Networks, which could be peered with other VNETs, have connectivity to on-premises - or have standalone secure connectivity through network links! In my demo, I don't currently have a Virtual Network - so I will create a Virtual Network from scratch.
 
  1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
  2. Click **+ Create a resource**
  3. Search for: **Virtual Network**
- 4. **Create** a **Virtual Network** 
+ 4. **Create** a **Virtual Network**
  5. **Select** your Virtual Network **name** and **region** _(make sure the region aligns to your workloads and Azure DevCenter location)_
  6. ![Azure Portal - Create VNET](/uploads/azuredevbox-createvnetbasicspage.png "Azure Portal - Create VNET")
  7. Click **Next: IP Addresses**
@@ -201,7 +201,7 @@ Now that we have our project and dev box definitions - it's time to create our D
  9. **Select** your **Network connection**
 10. Select your **definition**
 11. Select your Creator **privileges** _(ie select whether your user will be a standard user or have Local administrator rights on their devbox)_
-12. Configure Auto-stop, or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure"). 
+12. Configure Auto-stop, or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure").
 13. Click **Create**
 
 After 1-2 minutes your Dev Box pool has been created.
@@ -238,11 +238,11 @@ Just like - Azure Virtual Desktop, you can connect to your Dev Box using the Rem
 
 #### Configuration
 
-There are a few extra things, we can configure for the Azure DevBox environment. 
+There are a few extra things, we can configure for the Azure DevBox environment.
 
 ##### Auto-Stop
 
-As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down after hours. 
+As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down after hours.
 
 1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
 2. Navigate to your **Dev center**
@@ -254,6 +254,6 @@ As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down 
 8. Select **Yes**
 9. Configure your **Stop Time** and **time zone**
 
-If a user is logged in during the Auto-stop time, they will get an option to delay or suspend the shutdown. 
+If a user is logged in during the Auto-stop time, they will get an option to delay or suspend the shutdown.
 
-You may also have multiple pools - selected with the same Dev box image definition - if your project runs across multiple timezones, so you can schedule a 7 PM Shutdown in New Zealand and a 7 PM shutdown for those developers in the United States. 
+You may also have multiple pools - selected with the same Dev box image definition - if your project runs across multiple timezones, so you can schedule a 7 PM Shutdown in New Zealand and a 7 PM shutdown for those developers in the United States.

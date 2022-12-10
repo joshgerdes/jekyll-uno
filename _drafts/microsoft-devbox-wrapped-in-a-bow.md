@@ -103,3 +103,7 @@ In your favorite browser, let us create a standard Dev Box environment - startin
 9. Click **Review + Create,** then **Create**
 
 _Deployment of the Microsoft Dev Center will take a few minutes._
+
+##### \[Optional\] - Create Virtual Network
+
+In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtual Network.

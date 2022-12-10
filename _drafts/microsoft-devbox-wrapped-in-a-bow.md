@@ -235,6 +235,8 @@ Just like - Azure Virtual Desktop, you can connect to your Dev Box using the Rem
 
 1. Download and install the [**Remote Desktop Client**](https://learn.microsoft.com/azure/virtual-desktop/users/connect-windows?tabs=subscribe&WT.mc_id=AZ-MVP-5004796 "Remote Desktop Client")
 2. [**Subscribe**](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe-with-url&WT.mc_id=AZ-MVP-5004796#subscribe-to-a-workspace "Subscribe to a workspace") to the Azure workspace
+3. As long as the Dev Box has been created, you will be able to see your Dev Box and connect to it directly.
+4. ![Remote Desktop Client - Microsoft Dev Box](/uploads/azuredevbox-remotedesktopapplication.png "Remote Desktop Client - Microsoft Dev Box")
 
 #### Configuration
 

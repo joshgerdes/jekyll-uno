@@ -119,3 +119,16 @@ In order to use Microsoft Dev Boxes - like any Virtual Machine in Azure, you nee
  9. ![Azure Portal - Create VNET](/uploads/azuredevbox-createvnetipaddressespage.png "Azure Portal - Create VNET")
 10. Click **Review + create**
 11. Click **Create**
+
+##### Create a Virtual Network Connection and link to Dev Center
+
+Now, that we have our Dev Center, and our Virtual Network - it's time to create a Network connection - this connection will be used by Dev Center - to allow our Dev Boxes to connect to the Virtual Network - and to select your Virtual Machine identification _(ie Azure Active Directory, or Hybrid Azure Active Directory)_.
+
+1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. Click **+ Create a resource**
+3. Type in: **Network Connection,** find and click **Create**
+4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
+5. As I will be using Azure Active Directory joined Virtual Machines, I will make sure that the Domain join type is: **Azure Active Directory join**.
+6. For the **Network connection name**, I will select: ProductionVNETAADJConnection
+7. I will select my Virtual Network and subnet, that the Dev Box will be placed into.
+8. 

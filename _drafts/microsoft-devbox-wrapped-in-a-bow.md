@@ -204,4 +204,15 @@ Now that we have our project and dev box definitions - it's time to create our D
 12. Configure Auto-stop, or skip and confirm [licensing](https://learn.microsoft.com/azure/virtual-machines/windows/windows-desktop-multitenant-hosting-deployment?WT.mc_id=AZ-MVP-5004796 "How to deploy Windows 11 on Azure"). 
 13. Click **Create**
 
-The creation of the Dev Box Pool can take a few minutes to create, as it goes through a validation process to confirm connectivity.
+After 1-2 minutes your Dev Box pool has been created.
+
+#### Create & Connect
+
+Now that your Dev Center, Network, and Dev Box project has been stood up - it's time to Create and connect to your new Dev box! Microsoft Dev Box - offers a few ways to connect to the DevBox, we will through a few of the options now.
+
+##### Create Dev Box
+
+Now it's time to create our Dev Box! To do this we need to go to the Dev box Developer portal _(as a Dev Center Devbox User)_
+
+1. Navigate to the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")
+2. 

@@ -157,7 +157,7 @@ It's time to create our Dev box definition. The Dev box definition is the type o
  9. ![Azure Dev Box definitions](/uploads/azuredevbox-createpdevboxdefinitions.png "Azure Dev Box definitions")
 10. Click **Create**
 
-You can edit a Dev box definition, to change the image, Compute and storage after its been created.
+You can edit a Dev box definition, change the image, Compute, and storage after it has been created, this could be useful if there are issues with the latest version of the image, you can roll back the version - so people can create their Dev Boxes while the image is worked on.
 
 ##### Create Project
 

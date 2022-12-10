@@ -266,3 +266,9 @@ As the Dev Box is Pay As You Go - you can make sure that a Dev Box is shut down 
 If a user is logged in during the Auto-stop time, they will get an option to delay or suspend the shutdown.
 
 You may also have multiple pools - selected with the same Dev box image definition - if your project runs across multiple timezones, so you can schedule a 7 PM Shutdown in New Zealand and a 7 PM shutdown for those developers in the United States.
+
+##### Delete or Stop
+
+Not as much as a Configuration item, but more of a quick - howto! As a Dev Box user, you can shut down your Dev Box or delete it, from the [**Microsoft Dev Box portal**](https://devbox.microsoft.com/ "Microsoft Dev Box")**.**
+
+![Azure Dev Box - Stop or Delete](/uploads/azuredevbox-closedelete.png "Azure Dev Box - Stop or Delete")

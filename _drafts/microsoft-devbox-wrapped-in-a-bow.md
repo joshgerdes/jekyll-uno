@@ -59,6 +59,8 @@ General scenarios at a high level are:
 
 ![Microsot Windows Experiances Strategy](/uploads/ms_microsoftwindowsexperiances_strategy.png "Microsoft Windows Experiances Strategy")
 
+Microsoft Dev box can help project and development teams get up and running quickly, independent of what hardware a developer or contractor has, whether they prefer Mac, Windows, or Linux - the Microsoft Dev box can be used to get developers and contractors up and running in a secure environment that supports Intune!
+
 ##### Concepts & Roles
 
 | Concepts | Notes |

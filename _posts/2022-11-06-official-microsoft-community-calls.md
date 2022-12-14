@@ -14,7 +14,7 @@ Here is a list of the community calls across [Microsoft Azure](https://azure.mic
 
 | Topic | Link | Notes |
 | --- | --- | --- |
-| Azure ARM/Bicep Community Calls | [https://github.com/Azure/bicep/issues?q=label%3A%22Community+Call%22+](https://github.com/Azure/bicep/issues?q=label%3A%22Community+Call%22+){:target="_blank"} |  |
+| Azure ARM/Bicep Community Calls | [https://github.com/Azure/bicep/issues?q=label%3A%22Community+Call%22+](https://github.com/Azure/bicep/issues?q=label%3A%22Community+Call%22+){:target="_blank"} | | Azure Landing Zones Community Calls | [https://github.com/Azure/bicep/issues?q=label%3A%22Community+Call%22+](https://aka.ms/ALZ/CommunityCallAgenda){:target="_blank"} |   |
 | Azure Governance & Deployments | [https://github.com/Azure/azure-policy#general-questions](https://github.com/Azure/azure-policy#general-questions){:target="_blank"} | Same as the ARM/Bicep community call. Also features Azure Policy. |
 | Cloud Security | [https://techcommunity.microsoft.com/t5/security-compliance-and-identity/join-our-security-community/ba-p/927888](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/join-our-security-community/ba-p/927888?WT.mc_id=AZ-MVP-5004796){:target="_blank"} | This is a 'Private' community. Meaning that feedback for Cloud security products (Defender, Sentinel etc) is under NDA (Non-Disclosure Agreement). A great community to get early feedback and testing, to help the products grow. |
 | Azure Arc | [https://github.com/microsoft/azure_arc_community](https://github.com/microsoft/azure_arc_community){:target="_blank"} |  |

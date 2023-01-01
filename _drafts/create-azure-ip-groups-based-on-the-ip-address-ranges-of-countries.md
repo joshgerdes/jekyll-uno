@@ -95,4 +95,8 @@ Not required - but if I rerun it, it will simply override any IP addresses that 
 
 ![Rerun New-AzCountryIPGroup](/uploads/rerun_countryipgrpfunctionnz.gif "Rerun New-AzCountryIPGroup")
 
+The Azure IP Group is visible in the Azure Portal as below:
+
+![Azure Portal - Azure IP Group ](/uploads/azureportal_ipgrpnz.png "Azure Portal - Azure IP Group ")
+
 s

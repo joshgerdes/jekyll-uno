@@ -62,7 +62,7 @@ I have received no errors or existing IP groups in my subscription, so I will co
 
 The function can be found here:
 
-GIST
+{% gist bb06967564affc81f49c5002c335240c %}
 
 **Note: Make sure your country matches the supported country shortcodes found here:** [**IPBlock Aggregated**](https://www.ipdeny.com/ipblocks/data/aggregated/ "Index of /ipblocks/data/aggregated/")**. IPDeny is the source for the IP address list.**
 

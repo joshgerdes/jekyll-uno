@@ -56,7 +56,7 @@ Before we import the function, I am going to check if any IP groups already exis
 
     Get-AzIpGroup
 
-![](/uploads/checkexistingipgroups_empty.gif)
+![Get-AzIpGroup](/uploads/checkexistingipgroups_empty.gif "Get-AzIpGroup")
 
 I have received no errors or existing IP groups in my subscription, so I will continue importing my function.
 
@@ -71,4 +71,4 @@ So I will navigate to the script and import it:
     cd D:\git
     . .\New-AzCountryIPGroup.ps1
 
-s
+![Import New-AzCountryIPGroup.ps1](/uploads/import_countryipgrpfunction.gif "Import New-AzCountryIPGroup.ps1")

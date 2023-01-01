@@ -27,7 +27,7 @@ The IP Group allows you to define an IP address that can be used in conjunction 
 > * CIDR notation: 10.1.0.0/32
 > * Address range: 10.2.0.0-10.2.0.31
 
-By default, the Azure Firewall blocks outbound and inbound traffic; however, you may want to enable _(or block)_ traffic to and from specific countries - there is no built-in geo-filtering with Azure Firewall, as you can use other services, such as the Web Application Gateway and with the [Application Gateway ](https://learn.microsoft.com/azure/application-gateway/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Application Gateway?")and [Azure Front Door](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering?WT.mc_id=AZ-MVP-5004796 "What is geo-filtering on a domain for Azure Front Door Service?") to block and allow access, and other third party services such as Cloudflare.
+By default, the Azure Firewall blocks outbound and inbound traffic; however, you may want to enable _(or block)_ traffic to and from specific countries - there is no built-in geo-filtering with Azure Firewall, as you can use other services, such as the Web Application Gateway and with the [Application Gateway ](https://learn.microsoft.com/azure/application-gateway/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Application Gateway?")and [Azure Front Door](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering?WT.mc_id=AZ-MVP-5004796 "What is geo-filtering on a domain for Azure Front Door Service?") to block and allow access, and other third party services such as Cloudflare. This script can be adapted for any list of IP ranges; it doesn't need to be country IP addresses.
 
 However, you may want to control access to and from specific countries _(or other services)_ with Azure Firewall - this is where the IP Groups can be effective, and because we won't be editing the Firewall directly - we won't run into issues with delays without having to wait for the Azure Firewall policies to be updated.
 
@@ -37,7 +37,7 @@ To solve the issue of creating the IP groups and finding and keeping the IP grou
 
 With IP Groups, there are a few things to keep in mind:
 
-* You can have 200 IP Groups per firewall with a maximum of **5000 individual IP addresses or IP prefixes per each IP Group**.
+* You can have 200 IP Groups per firewall with a maximum of **5000 individual IP addresses or prefixes per each IP Group**.
 
 For a country like New Zealand, the 5000 limit for the address ranges is acceptable - but for other countries, like the United States or United Kingdom, this can be an issue, where the total IP ranges can grow to over 20k - to deal with this, the script will create multiple IP Groups, and append a number to the end.
 
@@ -65,3 +65,10 @@ The function can be found here:
 GIST
 
 Once saved to your computer, it's time to import it into your active PowerShell terminal and run it _(after you have verified you have connected to the correct Azure subscription)_.
+
+So I will navigate to the script and import it:
+
+    cd D:\git
+    . .\New-AzCountryIPGroup.ps1
+
+s

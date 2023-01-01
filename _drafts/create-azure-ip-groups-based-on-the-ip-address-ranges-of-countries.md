@@ -64,6 +64,8 @@ The function can be found here:
 
 GIST
 
+**Note: Make sure your country matches the supported country shortcodes found here:** [**IPBlock Aggregated**](https://www.ipdeny.com/ipblocks/data/aggregated/ "Index of /ipblocks/data/aggregated/")**. IPDeny is the source for the IP address list.**
+
 Once saved to your computer, it's time to import it into your active PowerShell terminal and run it _(after you have verified you have connected to the correct Azure subscription)_.
 
 So I will navigate to the script and import it:
@@ -107,4 +109,8 @@ As New Zealand was under the 5000 limit, only one IP Group was needed, but if we
 
 ![Run New-AzCountryIPGroup - US](/uploads/run_countryipgrpfunctionus.gif "Run New-AzCountryIPGroup - US")
 
-It created 5 IP groups, each containing 5000 CIDR IP ranges, with the last one containing the remaining IP address ranges.
+It created 5 IP groups, each containing 5000 CIDR IP ranges, with the last containing the remaining IP address ranges.
+
+As you can see, it's reasonably easy to create IP Groups containing a list of IP ranges for multiple countries quickly:
+
+![Azure Portal - Azure IP Groups](/uploads/azureportal_ipgrps.png "Azure Portal - Azure IP Groups")

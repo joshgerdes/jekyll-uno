@@ -84,3 +84,9 @@ The 'New-AzCountryIPGroup' Azure function relies on 4 parameters:
 | IPGroupLocation | AustraliaEast |
 
 Make sure that the values change to your environment; in my example, I am specifying an IP Group and Resource Group that doesn't exist so that the script will create it for me - and the location I will be deploying to will be the Australia East region.
+
+    New-AzCountryIPGroup -CountryCode NZ -IPGroupName IPGrpNZ -IPGroupRGName NetworkRG -IPGroupLocation AustraliaEast
+
+![New-AzCountryIPGroup](/uploads/run_countryipgrpfunctionnz.gif "New-AzCountryIPGroup")
+
+As you can see, the script created an Azure Resource Group and imported the New Zealand IP ranges to a new IP Group.

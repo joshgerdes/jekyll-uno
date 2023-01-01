@@ -104,3 +104,7 @@ And a Tag was added to include the country:
 ![Azure IP Group - Tag](/uploads/azureportal_ipgrpnztag.png "Azure IP Group - Tag")
 
 As New Zealand was under the 5000 limit, only one IP Group was needed, but if we change the Country Code to the US...
+
+![Run New-AzCountryIPGroup - US](/uploads/run_countryipgrpfunctionus.gif "Run New-AzCountryIPGroup - US")
+
+It created 5 IP groups, each containing 5000 CIDR IP ranges, with the last one containing the remaining IP address ranges.

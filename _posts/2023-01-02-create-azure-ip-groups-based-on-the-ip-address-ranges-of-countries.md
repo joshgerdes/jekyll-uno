@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azureipgroupblog.png"
 
 ---
-An [IP Group](https://learn.microsoft.com/azure/firewall/ip-groups?WT.mc_id=AZ-MVP-5004796 "IP Groups in Azure Firewall") in Microsoft Azure is a logical container of IP address ranges for private and public addresses.![](/uploads/ip-group.svg)
+An [IP Group](https://learn.microsoft.com/azure/firewall/ip-groups?WT.mc_id=AZ-MVP-5004796 "IP Groups in Azure Firewall"){:target="_blank"} in Microsoft Azure is a logical container of IP address ranges for private and public addresses.
 
 > IP Groups allow you to group and manage IP addresses for Azure Firewall rules in the following ways:
 >
@@ -27,11 +27,11 @@ The IP Group allows you to define an IP address that can be used in conjunction 
 > * CIDR notation: 10.1.0.0/32
 > * Address range: 10.2.0.0-10.2.0.31
 
-By default, the Azure Firewall blocks outbound and inbound traffic; however, you may want to enable _(or block)_ traffic to and from specific countries - there is no built-in geo-filtering with Azure Firewall, as you can use other services, such as the Web Application Gateway and with the [Application Gateway ](https://learn.microsoft.com/azure/application-gateway/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Application Gateway?")and [Azure Front Door](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering?WT.mc_id=AZ-MVP-5004796 "What is geo-filtering on a domain for Azure Front Door Service?") to block and allow access, and other third party services such as Cloudflare. This script can be adapted for any list of IP ranges; it doesn't need to be country IP addresses.
+By default, the Azure Firewall blocks outbound and inbound traffic; however, you may want to enable _(or block)_ traffic to and from specific countries - there is no built-in geo-filtering with Azure Firewall, as you can use other services, such as the Web Application Gateway and with the [Application Gateway](https://learn.microsoft.com/azure/application-gateway/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Application Gateway?"){:target="_blank"} and [Azure Front Door](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering?WT.mc_id=AZ-MVP-5004796 "What is geo-filtering on a domain for Azure Front Door Service?"){:target="_blank"} to block and allow access, and other third party services such as Cloudflare. This script can be adapted for any list of IP ranges; it doesn't need to be country IP addresses.
 
 However, you may want to control access to and from specific countries _(or other services)_ with Azure Firewall - this is where the IP Groups can be effective, and because we won't be editing the Firewall directly - we won't run into issues with delays without having to wait for the Azure Firewall policies to be updated.
 
-To solve the issue of creating the IP groups and finding and keeping the IP groups up-to-date with various countries' IP ranges - I have created a PowerShell function to retrieve supported [countries](https://www.ipdeny.com/ipblocks/data/aggregated/ "IP Deny aggregated list")' IP CIDR ranges and create the relevant IP groups.
+To solve the issue of creating the IP groups and finding and keeping the IP groups up-to-date with various countries' IP ranges - I have created a PowerShell function to retrieve supported [countries](https://www.ipdeny.com/ipblocks/data/aggregated/ "IP Deny aggregated list"){:target="_blank"}' IP CIDR ranges and create the relevant IP groups.
 
 ![Azure IP Group - Country IP ranges](/uploads/azureipgroupscript.png "Azure IP Group - Country IP ranges")
 
@@ -47,10 +47,10 @@ _As with any script, I recommend this is tested in a test environment first._
 
 Before we run it, we need a few prerequisites.
 
-* At least [PowerShell 3.0+](https://learn.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.3&WT.mc_id=AZ-MVP-5004796 "Install PowerShell on Windows, Linux, and macOS")
-* Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") _(specifically Az.Network, Az.Resources)_
+* At least [PowerShell 3.0+](https://learn.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.3&WT.mc_id=AZ-MVP-5004796 "Install PowerShell on Windows, Linux, and macOS"){:target="_blank"}
+* Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module"){:target="_blank"} _(specifically Az.Network, Az.Resources)_
 
-The function assumes you have [connected to Microsoft Azure and your relevant subscription](https://luke.geek.nz/azure/powershell/Using-PowerShell-to-connect-to-Azure/ "Using PowerShell to connect to Microsoft Azure").
+The function assumes you have [connected to Microsoft Azure and your relevant subscription](https://luke.geek.nz/azure/powershell/Using-PowerShell-to-connect-to-Azure/ "Using PowerShell to connect to Microsoft Azure"){:target="_blank"}.
 
 Before we import the function, I am going to check if any IP groups already exist quickly _(this isn't required) -_ but it's a good opportunity to check that you are connected to your Azure subscription and that the AzIPGroup cmdlets exist -  and whether you have any IP groups already existing.
 

@@ -2,8 +2,9 @@
 date: 2023-01-02 00:00:00 +1300
 title: Create Azure IP Groups based on the IP address ranges of countries
 author: Luke
-categories: []
-toc: true
+categories:
+- Azure
+toc: false
 header:
   teaser: ''
 

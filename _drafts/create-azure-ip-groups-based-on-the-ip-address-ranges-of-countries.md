@@ -43,6 +43,11 @@ For a country like New Zealand, the 5000 limit for the address ranges is accepta
 
 Suppose IPs are manually added to the groups. In that case, they won't be added - the script will add in any different or new IP ranges, ignoring any current IP ranges (_this means it won't delete any IP ranges that are removed from the source IP list from IPDeny)_; however, I recommend that anything added outside of this script is kept in a separate IP group.
 
-**_As with any script, I recommend this is tested in a test environment first._**
+_As with any script, I recommend this is tested in a test environment first._
 
-So - lets take a look at it:
+Before we run it, we need a few prerequisites.
+
+* At least [PowerShell 3.0+](https://learn.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.3&WT.mc_id=AZ-MVP-5004796 "Install PowerShell on Windows, Linux, and macOS")
+* Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") _(specifically Az.Network, Az.Resources)_
+
+The function assumes you have [connected to Microsoft Azure and your relevant subscription](https://luke.geek.nz/azure/powershell/Using-PowerShell-to-connect-to-Azure/ "Using PowerShell to connect to Microsoft Azure").

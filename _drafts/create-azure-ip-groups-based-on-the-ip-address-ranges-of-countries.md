@@ -1,5 +1,5 @@
 ---
-date: 2023-01-01 00:00:00 +1300
+date: 2023-01-02 00:00:00 +1300
 title: Create Azure IP Groups based on the IP address ranges of countries
 author: Luke
 categories: []
@@ -28,8 +28,16 @@ The IP Group allows you to define an IP address that can be used in conjunction 
 
 By default, the Azure Firewall blocks outbound and inbound traffic; however, you may want to enable _(or block)_ traffic to and from specific countries - there is no built-in geo-filtering with Azure Firewall, as you can use other services, such as the Web Application Gateway and with the [Application Gateway ](https://learn.microsoft.com/azure/application-gateway/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Application Gateway?")and [Azure Front Door](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering?WT.mc_id=AZ-MVP-5004796 "What is geo-filtering on a domain for Azure Front Door Service?") to block and allow access, and other third party services such as Cloudflare.
 
-However, you may want to control access to and from specific countries _(or other services)_ with Azure Firewall - this is where the IP Groups can be effective.
+However, you may want to control access to and from specific countries _(or other services)_ with Azure Firewall - this is where the IP Groups can be effective, and because we won't be editing the Firewall directly - we won't run into issues with delays without having to wait for the Azure Firewall policies to be updated.
 
-To solve the issue of creating the IP groups and finding and keeping the IP groups up-to-date with various countries' IP ranges - I have created a PowerShell function to retrieve supported countries' IP CIDR ranges and create the relevant IP groups.
+To solve the issue of creating the IP groups and finding and keeping the IP groups up-to-date with various countries' IP ranges - I have created a PowerShell function to retrieve supported [countries](https://www.ipdeny.com/ipblocks/data/aggregated/ "IP Deny aggregated list")' IP CIDR ranges and create the relevant IP groups.
 
 ![Azure IP Group - Country IP ranges](/uploads/azureipgroupscript.png "Azure IP Group - Country IP ranges")
+
+With IP Groups, there are a few things to keep in mind:
+
+* You can have 200 IP Groups per firewall with a maximum of **5000 individual IP addresses or IP prefixes per each IP Group**.
+
+For a country like New Zealand, the 5000 limit for the address ranges is acceptable - but for other countries, like the United States or United Kingdom, this can be an issue, where the total IP ranges can grow to over 20k - to deal with this, the script will create multiple IP Groups, and append a number to the end. 
+
+If IPs are added 

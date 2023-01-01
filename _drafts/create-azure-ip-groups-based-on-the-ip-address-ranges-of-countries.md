@@ -99,4 +99,6 @@ The Azure IP Group is visible in the Azure Portal as below:
 
 ![Azure Portal - Azure IP Group ](/uploads/azureportal_ipgrpnz.png "Azure Portal - Azure IP Group ")
 
-s
+And a Tag was added to include the country:
+
+![Azure IP Group - Tag](/uploads/azureportal_ipgrpnztag.png "Azure IP Group - Tag")

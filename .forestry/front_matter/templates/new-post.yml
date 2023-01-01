@@ -100,6 +100,6 @@ pages:
 - _posts/2022-11-16-disable-sftp-support-on-an-azure-storage-account-on-a-schedule.md
 - _posts/2022-12-05-hosting-your-workloads-in-azure-vs-on-premises.md
 - _posts/2022-12-11-microsoft-devbox-wrapped-in-a-bow.md
+- _posts/2023-01-02-create-azure-ip-groups-based-on-the-ip-address-ranges-of-countries.md
 - _posts/active-directory-domain-controllers-in-azure.md
-- _posts/create-azure-ip-groups-based-on-the-ip-address-ranges-of-countries.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

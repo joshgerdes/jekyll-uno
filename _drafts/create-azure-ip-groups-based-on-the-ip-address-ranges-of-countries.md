@@ -39,7 +39,7 @@ With IP Groups, there are a few things to keep in mind:
 
 * You can have 200 IP Groups per firewall with a maximum of **5000 individual IP addresses or IP prefixes per each IP Group**.
 
-For a country like New Zealand, the 5000 limit for the address ranges is acceptable - but for other countries, like the United States or United Kingdom, this can be an issue, where the total IP ranges can grow to over 20k - to deal with this, the script will create multiple IP Groups, and append a number to the end. 
+For a country like New Zealand, the 5000 limit for the address ranges is acceptable - but for other countries, like the United States or United Kingdom, this can be an issue, where the total IP ranges can grow to over 20k - to deal with this, the script will create multiple IP Groups, and append a number to the end.
 
 Suppose IPs are manually added to the groups. In that case, they won't be added - the script will add in any different or new IP ranges, ignoring any current IP ranges (_this means it won't delete any IP ranges that are removed from the source IP list from IPDeny)_; however, I recommend that anything added outside of this script is kept in a separate IP group.
 
@@ -58,4 +58,10 @@ Before we import the function, I am going to check if any IP groups already exis
 
 ![](/uploads/checkexistingipgroups_empty.gif)
 
-I have received no errors or exiting IP groups in my subscription. 
+I have received no errors or existing IP groups in my subscription, so I will continue importing my function.
+
+The function can be found here:
+
+GIST
+
+Once saved to your computer, it's time to import it into your active PowerShell terminal and run it _(after you have verified you have connected to the correct Azure subscription)_.

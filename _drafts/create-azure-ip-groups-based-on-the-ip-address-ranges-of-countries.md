@@ -43,4 +43,6 @@ For a country like New Zealand, the 5000 limit for the address ranges is accepta
 
 Suppose IPs are manually added to the groups. In that case, they won't be added - the script will add in any different or new IP ranges, ignoring any current IP ranges (_this means it won't delete any IP ranges that are removed from the source IP list from IPDeny)_; however, I recommend that anything added outside of this script is kept in a separate IP group.
 
-As with any script, I recommend this is tested in a test environment first.
+**_As with any script, I recommend this is tested in a test environment first._**
+
+So - lets take a look at it:

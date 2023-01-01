@@ -9,7 +9,7 @@ header:
   teaser: ''
 
 ---
-An [IP Group](https://learn.microsoft.com/azure/firewall/ip-groups?WT.mc_id=AZ-MVP-5004796 "IP Groups in Azure Firewall") in Microsoft Azure is a logical container of IP address ranges for private and public addresses.
+An [IP Group](https://learn.microsoft.com/azure/firewall/ip-groups?WT.mc_id=AZ-MVP-5004796 "IP Groups in Azure Firewall") in Microsoft Azure is a logical container of IP address ranges for private and public addresses.![](/uploads/ip-group.svg)
 
 > IP Groups allow you to group and manage IP addresses for Azure Firewall rules in the following ways:
 >

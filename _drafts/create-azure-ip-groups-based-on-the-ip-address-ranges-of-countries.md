@@ -51,3 +51,11 @@ Before we run it, we need a few prerequisites.
 * Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") _(specifically Az.Network, Az.Resources)_
 
 The function assumes you have [connected to Microsoft Azure and your relevant subscription](https://luke.geek.nz/azure/powershell/Using-PowerShell-to-connect-to-Azure/ "Using PowerShell to connect to Microsoft Azure").
+
+Before we import the function, I am going to check if any IP groups already exist quickly _(this isn't required) -_ but it's a good opportunity to check that you are connected to your Azure subscription and that the AzIPGroup cmdlets exist -  and whether you have any IP groups already existing.
+
+    Get-AzIpGroup
+
+![](/uploads/checkexistingipgroups_empty.gif)
+
+I have received no errors or exiting IP groups in my subscription. 

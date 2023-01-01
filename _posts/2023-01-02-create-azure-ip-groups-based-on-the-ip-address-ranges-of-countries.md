@@ -64,7 +64,7 @@ The function can be found here:
 
 {% gist bb06967564affc81f49c5002c335240c %}
 
-**Note: Make sure your country matches the supported country shortcodes found here:** [**IPBlock Aggregated**](https://www.ipdeny.com/ipblocks/data/aggregated/ "Index of /ipblocks/data/aggregated/")**. IPDeny is the source for the IP address list.**
+**Note: Make sure your country matches the supported country shortcodes found here:** [**IPBlock Aggregated**](https://www.ipdeny.com/ipblocks/data/aggregated/ "Index of /ipblocks/data/aggregated/"){:target="_blank"}**. IPDeny is the source for the IP address list.**
 
 Once saved to your computer, it's time to import it into your active PowerShell terminal and run it _(after you have verified you have connected to the correct Azure subscription)_.
 
@@ -114,3 +114,5 @@ It created 5 IP groups, each containing 5000 CIDR IP ranges, with the last conta
 As you can see, it's reasonably easy to create IP Groups containing a list of IP ranges for multiple countries quickly:
 
 ![Azure Portal - Azure IP Groups](/uploads/azureportal_ipgrps.png "Azure Portal - Azure IP Groups")
+
+Note: The script can also be found in my Public Git Repo [here](https://github.com/lukemurraynz/Azure){:target="_blank"}, feel free to recommend pull requests if you have anything to add or change.

@@ -89,4 +89,10 @@ Make sure that the values change to your environment; in my example, I am specif
 
 ![New-AzCountryIPGroup](/uploads/run_countryipgrpfunctionnz.gif "New-AzCountryIPGroup")
 
-As you can see, the script created an Azure Resource Group and imported the New Zealand IP ranges to a new IP Group.
+As you can see, the script created an Azure Resource Group and imported the New Zealand IP ranges to a new IP Group...
+
+Not required - but if I rerun it, it will simply override any IP addresses that are the same and add any new addresses to the same IP Group that already exists, as below:
+
+![Rerun New-AzCountryIPGroup](/uploads/rerun_countryipgrpfunctionnz.gif "Rerun New-AzCountryIPGroup")
+
+s

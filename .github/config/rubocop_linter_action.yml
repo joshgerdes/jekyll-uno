@@ -63,4 +63,4 @@ check_scope: "modified"
 # This setting is not used if check_scope != 'modified'.
 # Valid options: 'origin/another_branch'
 # Default: 'origin/master'
-base_branch: "origin/master"
+base_branch: "origin/main"

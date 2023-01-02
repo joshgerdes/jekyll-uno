@@ -33,7 +33,7 @@ However, you may want to control access to and from specific countries _(or othe
 
 To solve the issue of creating the IP groups and finding and keeping the IP groups up-to-date with various countries' IP ranges - I have created a PowerShell function to retrieve supported [countries](https://www.ipdeny.com/ipblocks/data/aggregated/ "IP Deny aggregated list"){:target="_blank"}' IP CIDR ranges and create the relevant IP groups.
 
-![Azure IP Group - Country IP ranges](https://luke.geek.nz/uploads/azureipgroupscript.png "Azure IP Group - Country IP ranges")
+![Azure IP Group - Country IP ranges](/uploads/azureipgroupscript.png "Azure IP Group - Country IP ranges")
 
 With IP Groups, there are a few things to keep in mind:
 

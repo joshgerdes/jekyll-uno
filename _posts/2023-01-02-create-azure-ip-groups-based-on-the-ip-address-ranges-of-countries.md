@@ -48,7 +48,7 @@ _As with any script, I recommend this is tested in a test environment first._
 Before we run it, we need a few prerequisites.
 
 * At least [PowerShell 3.0+](https://learn.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-7.3&WT.mc_id=AZ-MVP-5004796 "Install PowerShell on Windows, Linux, and macOS"){:target="_blank"}
-* Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module"){:target="_blank"} _(specifically Az.Network, Az.Resources)_
+* Azure [Az PowerShell Modules](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.2.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module"){:target="_blank"}_(specifically Az.Network, Az.Resources)_
 
 The function assumes you have [connected to Microsoft Azure and your relevant subscription](https://luke.geek.nz/azure/powershell/Using-PowerShell-to-connect-to-Azure/ "Using PowerShell to connect to Microsoft Azure"){:target="_blank"}.
 

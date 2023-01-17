@@ -21,4 +21,4 @@ To avoid exceeding the deployment limit, it may be necessary to clean up old dep
 
 This can be done by using a script to remove deployments that are no longer needed. 
 
-So let's build an Azure DevOps pipeline that runs Weekly to connect to our Microsoft Azure environment and cleanup historical deployments.
+So let's build an Azure DevOps pipeline that runs Weekly to connect to our Microsoft Azure environment and clean up historical deployments.

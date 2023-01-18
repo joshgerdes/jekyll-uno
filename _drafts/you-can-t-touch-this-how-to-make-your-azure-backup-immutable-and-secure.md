@@ -44,4 +44,14 @@ There are three current states for the immutability of the Backup and Recovery S
 | Enabled | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled. |
 | Enabled and locked | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
 
-sd
+Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard") can safeguard your backups across a myriad of human and technological accidents or disruptions.
+
+Using the Azure Portal, let us configure immutability on your Azure Backup Vault.
+
+1. Navigate to your [Recovery Services Vault](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
+2. Navigate to **Properties** _(under Settings)_
+3. ![Recovery Services Vault - Immutability](/uploads/azureportal_rsv_configureimmutable.png "Recovery Services Vault - Immutability")
+4. Under Immutable vault, select **Settings**
+5. Click the **box** to enable vault immutability
+6. ![Enable vault immutability](/uploads/azureportal_rsv_configureimmutablecheck.png "Enable vault immutability")
+7. Click **Apply**

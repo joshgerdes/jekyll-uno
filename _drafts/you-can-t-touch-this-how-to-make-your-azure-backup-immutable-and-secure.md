@@ -32,8 +32,16 @@ The type of operations enabling immutability on the Azure Backup vault can preve
 | Recovery Services Vault | Modify backup policy to reduce retention | Any actions that reduce the retention period in a backup policy are disallowed on Immutable vault. However, you can make policy changes that result in the increase of retention. You can also make changes to the schedule of a backup policy. |
 | Recovery Services Vault | Change backup policy to reduce retention | Any attempt to replace a backup policy associated with a backup item with another policy with retention lower than the existing one is blocked. However, you can replace a policy with the one that has higher retention. |
 
-There is 3 current states, for immutability of the Backup and Recovery Services Vault:
+There are three current states for the immutability of the Backup and Recovery Services Vault:
 
 * Disabled
-* Enabled
-* Enabled and locked
+* Enabled _(soft immutability)_
+* Enabled and locked _(hard immutability)_
+
+| State of Immutable vault setting | Description                                                                                                                                                                                                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Disabled                         | The vault doesn't have immutability enabled and no operations are blocked.                                                                                                                                                                                                                      |
+| Enabled                          | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled.                                                                                                                                                     |
+| Enabled and locked               | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
+
+sd

@@ -9,11 +9,11 @@ header:
   teaser: "/uploads/can-ttouchthis_immutability.png"
 
 ---
-With [immutable vaults](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Immutable vault for Azure Backup"), Azure Backup ensures that recovery points that are once created cannot be deleted before their intended expiry time. Azure Backup does this by preventing any operations which could lead to the loss of backup data.
+With [immutable vaults](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Immutable vault for Azure Backup"){:target="_blank"}, Azure Backup ensures that recovery points that are once created cannot be deleted before their intended expiry time. Azure Backup does this by preventing any operations which could lead to the loss of backup data.
 
 Hence, this helps you protect your backups against ransomware attacks and malicious actors by disallowing operations such as deleting backups or reducing retention in backup policies.
 
-> [Immutable vaults are now in preview](https://azure.microsoft.com/en-us/updates/azure-backup-immutable-vaults-preview/?WT.mc_id=AZ-MVP-5004796 "Public preview: Immutable vaults for Azure Backup") _(as of this article - Jan 2023)_ in all regions.
+> [Immutable vaults are now in preview](https://azure.microsoft.com/en-us/updates/azure-backup-immutable-vaults-preview/?WT.mc_id=AZ-MVP-5004796 "Public preview: Immutable vaults for Azure Backup"){:target="_blank"} _(as of this article - Jan 2023)_ in all regions.
 
 An immutable vault can assist in safeguarding your backup data by prohibiting any actions that might result in the loss of recovery points.
 
@@ -47,13 +47,13 @@ There are three current states for the immutability of the Backup and Recovery S
 | Enabled | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled. |
 | Enabled and locked | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
 
-Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard") can safeguard your backups from various human and technological accidents or disruptions.
+Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard"){:target="_blank"} can safeguard your backups from various human and technological accidents or disruptions.
 
 Immutable vaults will not affect live or hot backups, such as snapshots.
 
 Using the Azure Portal, let us configure immutability on your Azure Backup Vault.
 
- 1. Navigate to your [**Recovery Services Vault**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
+ 1. Navigate to your [**Recovery Services Vault**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults"){:target="_blank"}
  2. Navigate to **Properties** _(under Settings)_
  3. ![Recovery Services Vault - Immutability](/uploads/azureportal_rsv_configureimmutable.png "Recovery Services Vault - Immutability")
  4. Under Immutable vault, select **Settings**

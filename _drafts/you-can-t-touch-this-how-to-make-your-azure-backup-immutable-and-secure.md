@@ -83,8 +83,10 @@ The Azure Backup vault immutability can also be adjusted using Azure Bicep, refe
 
 The immutabilitySettings states are:
 
-| State    | Actions                  |
-| -------- | ------------------------ |
+| State | Actions |
+| --- | --- |
 | Disabled | Immutability is Disabled |
-| Locked   | Enabled but locked       |
-| Unlocked | Enabled but unlocked     |
+| Locked | Enabled but locked |
+| Unlocked | Enabled but unlocked |
+
+_Note: I was able to delete a Recovery Vault, with locked Immutability successfully, that didn't have any Recovery points._

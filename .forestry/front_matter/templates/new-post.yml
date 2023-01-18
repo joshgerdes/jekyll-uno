@@ -105,3 +105,4 @@ pages:
 - _posts/active-directory-domain-controllers-in-azure.md
 - _posts/azure-deployment-cleanup-with-azure-devops.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md
+- _posts/you-can-t-touch-this-how-to-make-your-azure-backup-immutable-and-secure.md

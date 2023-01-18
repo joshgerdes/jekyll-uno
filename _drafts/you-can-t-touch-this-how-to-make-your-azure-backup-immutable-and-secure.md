@@ -2,7 +2,8 @@
 date: 2023-01-18 00:00:00 +1300
 title: 'You Can''t Touch This: How to Make Your Azure Backup Immutable and Secure'
 author: Luke
-categories: []
+categories:
+- Azure
 toc: false
 header:
   teaser: "/uploads/can-ttouchthis_immutability.png"
@@ -46,7 +47,7 @@ There are three current states for the immutability of the Backup and Recovery S
 | Enabled | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled. |
 | Enabled and locked | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
 
-Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard") can safeguard your backups across a myriad of human and technological accidents or disruptions.
+Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard") can safeguard your backups from various human and technological accidents or disruptions.
 
 Immutable vaults will not affect live or hot backups, such as snapshots.
 

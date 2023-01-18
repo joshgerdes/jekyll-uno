@@ -4,7 +4,7 @@ title: Azure Deployment cleanup with Azure DevOps
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 
@@ -22,3 +22,5 @@ To avoid exceeding the deployment limit, it may be necessary to clean up old dep
 This can be done by using a script to remove deployments that are no longer needed.
 
 So let's build an Azure DevOps pipeline that runs weekly to connect to our Microsoft Azure environment and clean up historical deployments.
+
+For this article, I will assume you have an Azure DevOps repository setup and the permissions _(Owner)_ to make the necessary privileged actions to the Microsoft Azure environment to do the setup.

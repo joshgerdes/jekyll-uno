@@ -22,7 +22,7 @@ The Immutable vault configuration supports both Recovery Services vaults and Bac
 
 > While Azure Backup stores data in isolation from production workloads, it allows performing management operations to help you manage your backups, including those operations that allow you to delete recovery points. However, in certain scenarios, you may want to make the backup data immutable by preventing any such operations that, if used by malicious actors, could lead to the loss of backups. The Immutable vault setting on your vault enables you to block such operations to ensure that your backup data is protected, even if any malicious actors try to delete them to affect the recoverability of data.
 
-Enabling immutability for the vault is a reversible operation. However, you can make it irreversible to prevent any malicious actors from disabling it _(after disabling it, they can perform destructive operations)_.
+Enabling immutability for the vault is a reversible operation. However, you can make it irreversible to prevent any malicious actors from disabling it _(after disabling it, they can perform destructive functions)_.
 
 The type of operations enabling immutability on the Azure Backup vault can prevent and safeguard from is.
 
@@ -38,10 +38,10 @@ There are three current states for the immutability of the Backup and Recovery S
 * Enabled _(soft immutability)_
 * Enabled and locked _(hard immutability)_
 
-| State of Immutable vault setting | Description                                                                                                                                                                                                                                                                                     |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Disabled                         | The vault doesn't have immutability enabled and no operations are blocked.                                                                                                                                                                                                                      |
-| Enabled                          | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled.                                                                                                                                                     |
-| Enabled and locked               | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
+| State of Immutable vault setting | Description |
+| --- | --- |
+| Disabled | The vault doesn't have immutability enabled and no operations are blocked. |
+| Enabled | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. However, the setting can be disabled. |
+| Enabled and locked | The vault has immutability enabled and doesn't allow operations that could result in loss of backups. As the Immutable vault setting is now locked, it can't be disabled. Note that immutability locking is irreversible, so ensure that you take a well-informed decision when opting to lock. |
 
 sd

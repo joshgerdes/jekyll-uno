@@ -46,9 +46,11 @@ There are three current states for the immutability of the Backup and Recovery S
 
 Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault&WT.mc_id=AZ-MVP-5004796 "Multi-user authorization using Resource Guard") can safeguard your backups across a myriad of human and technological accidents or disruptions.
 
+Immutable vaults will not affect live or hot backups, such as snapshots.
+
 Using the Azure Portal, let us configure immutability on your Azure Backup Vault.
 
- 1. Navigate to your [Recovery Services Vault](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
+ 1. Navigate to your [**Recovery Services Vault**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
  2. Navigate to **Properties** _(under Settings)_
  3. ![Recovery Services Vault - Immutability](/uploads/azureportal_rsv_configureimmutable.png "Recovery Services Vault - Immutability")
  4. Under Immutable vault, select **Settings**
@@ -57,4 +59,4 @@ Using the Azure Portal, let us configure immutability on your Azure Backup Vault
  7. Click **Apply**
  8. The Recovery Services vault will be adjusted, and the status has changed to **Enabled but not locked**; this means that your vault is now immutable and won't allow operations that will result in the loss of backups; however, you can reverse the change by unticking vault immutability.
  9. ![Immutable vault - soft](/uploads/azureportal_rsv_immutableenabledsoft.png "Immutable vault - soft")
-10. s
+10. To hard lock, your vault, navigate back into the Immutable vault settings, toggle Locked, and Apply. **This cannot be undone, so make this decision thought out, as it will stop the ability to reduce retention policies that will cause the deletion of recovery points, which could lead to increased costs in the longer term.**

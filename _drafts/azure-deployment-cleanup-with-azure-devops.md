@@ -24,3 +24,7 @@ This can be done by using a script to remove deployments that are no longer need
 So let's build an Azure DevOps pipeline that runs weekly to connect to our Microsoft Azure environment and clean up historical deployments.
 
 For this article, I will assume you have an Azure DevOps repository setup and the permissions _(Owner)_ to make the necessary privileged actions to the Microsoft Azure environment to do the setup.
+
+#### Deploy and Configure
+
+##### Create Service Prinicipal

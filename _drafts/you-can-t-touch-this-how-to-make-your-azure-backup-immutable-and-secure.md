@@ -55,3 +55,5 @@ Using the Azure Portal, let us configure immutability on your Azure Backup Vault
 5. Click the **box** to enable vault immutability
 6. ![Enable vault immutability](/uploads/azureportal_rsv_configureimmutablecheck.png "Enable vault immutability")
 7. Click **Apply**
+8. The Recovery Services vault will be adjusted, and the status has changed to **Enabled but not locked**; this means that your vault is now immutable and won't allow operations that will result in the loss of backups; however, you can reverse the change by unticking vault immutability.
+9. 

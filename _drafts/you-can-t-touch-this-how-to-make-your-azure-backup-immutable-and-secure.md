@@ -26,10 +26,14 @@ Enabling immutability for the vault is a reversible operation. However, you can 
 
 The type of operations enabling immutability on the Azure Backup vault can prevent and safeguard from is.
 
-| System                                 | Operation type                           | Description                                                                                                                                                                                                                                     |
-| -------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Recovery Services Vault & Backup Vault | Stop protection with delete data         | A protected item can't have its recovery points deleted before their respective expiry date. However, you can still stop protection of the instances while retaining data forever or until their expiry.                                        |
-| Recovery Services Vault                | Modify backup policy to reduce retention | Any actions that reduce the retention period in a backup policy are disallowed on Immutable vault. However, you can make policy changes that result in the increase of retention. You can also make changes to the schedule of a backup policy. |
-| Recovery Services Vault                | Change backup policy to reduce retention | Any attempt to replace a backup policy associated with a backup item with another policy with retention lower than the existing one is blocked. However, you can replace a policy with the one that has higher retention.                       |
+| System | Operation type | Description |
+| --- | --- | --- |
+| Recovery Services Vault & Backup Vault | Stop protection with delete data | A protected item can't have its recovery points deleted before their respective expiry date. However, you can still stop protection of the instances while retaining data forever or until their expiry. |
+| Recovery Services Vault | Modify backup policy to reduce retention | Any actions that reduce the retention period in a backup policy are disallowed on Immutable vault. However, you can make policy changes that result in the increase of retention. You can also make changes to the schedule of a backup policy. |
+| Recovery Services Vault | Change backup policy to reduce retention | Any attempt to replace a backup policy associated with a backup item with another policy with retention lower than the existing one is blocked. However, you can replace a policy with the one that has higher retention. |
 
-sd
+There is 3 current states, for immutability of the Backup and Recovery Services Vault:
+
+* Disabled
+* Enabled
+* Enabled and locked

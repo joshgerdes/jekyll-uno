@@ -48,12 +48,13 @@ Immutable vaults and [multi-user authorization](https://learn.microsoft.com/en-u
 
 Using the Azure Portal, let us configure immutability on your Azure Backup Vault.
 
-1. Navigate to your [Recovery Services Vault](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
-2. Navigate to **Properties** _(under Settings)_
-3. ![Recovery Services Vault - Immutability](/uploads/azureportal_rsv_configureimmutable.png "Recovery Services Vault - Immutability")
-4. Under Immutable vault, select **Settings**
-5. Click the **box** to enable vault immutability
-6. ![Enable vault immutability](/uploads/azureportal_rsv_configureimmutablecheck.png "Enable vault immutability")
-7. Click **Apply**
-8. The Recovery Services vault will be adjusted, and the status has changed to **Enabled but not locked**; this means that your vault is now immutable and won't allow operations that will result in the loss of backups; however, you can reverse the change by unticking vault immutability.
-9. 
+ 1. Navigate to your [Recovery Services Vault](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.RecoveryServices%2Fvaults "Recovery Services vaults")
+ 2. Navigate to **Properties** _(under Settings)_
+ 3. ![Recovery Services Vault - Immutability](/uploads/azureportal_rsv_configureimmutable.png "Recovery Services Vault - Immutability")
+ 4. Under Immutable vault, select **Settings**
+ 5. Click the **box** to enable vault immutability
+ 6. ![Enable vault immutability](/uploads/azureportal_rsv_configureimmutablecheck.png "Enable vault immutability")
+ 7. Click **Apply**
+ 8. The Recovery Services vault will be adjusted, and the status has changed to **Enabled but not locked**; this means that your vault is now immutable and won't allow operations that will result in the loss of backups; however, you can reverse the change by unticking vault immutability.
+ 9. ![Immutable vault - soft](/uploads/azureportal_rsv_immutableenabledsoft.png "Immutable vault - soft")
+10. s

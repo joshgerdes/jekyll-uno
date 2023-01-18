@@ -60,3 +60,31 @@ Using the Azure Portal, let us configure immutability on your Azure Backup Vault
  8. The Recovery Services vault will be adjusted, and the status has changed to **Enabled but not locked**; this means that your vault is now immutable and won't allow operations that will result in the loss of backups; however, you can reverse the change by unticking vault immutability.
  9. ![Immutable vault - soft](/uploads/azureportal_rsv_immutableenabledsoft.png "Immutable vault - soft")
 10. To hard lock, your vault, navigate back into the Immutable vault settings, toggle Locked, and Apply. **This cannot be undone, so make this decision thought out, as it will stop the ability to reduce retention policies that will cause the deletion of recovery points, which could lead to increased costs in the longer term.**
+
+The Azure Backup vault immutability can also be adjusted using Azure Bicep, reference below.
+
+    param vaults_name string = 'rsv'
+    
+    resource vaults_name_resource 'Microsoft.RecoveryServices/vaults@2022-09-10' = {
+      name: vaults_rsv_name
+      location: 'australiaeast'
+      sku: {
+        name: 'RS0'
+        tier: 'Standard'
+      }
+      properties: {
+        securitySettings: {
+          immutabilitySettings: {
+            state: 'Unlocked'
+          }
+        }
+      }
+    }
+
+The immutabilitySettings states are:
+
+| State    | Actions                  |
+| -------- | ------------------------ |
+| Disabled | Immutability is Disabled |
+| Locked   | Enabled but locked       |
+| Unlocked | Enabled but unlocked     |

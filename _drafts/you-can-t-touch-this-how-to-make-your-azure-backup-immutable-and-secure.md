@@ -22,4 +22,4 @@ The Immutable vault configuration supports both Recovery Services vaults and Bac
 
 > While Azure Backup stores data in isolation from production workloads, it allows performing management operations to help you manage your backups, including those operations that allow you to delete recovery points. However, in certain scenarios, you may want to make the backup data immutable by preventing any such operations that, if used by malicious actors, could lead to the loss of backups. The Immutable vault setting on your vault enables you to block such operations to ensure that your backup data is protected, even if any malicious actors try to delete them to affect the recoverability of data.
 
-Enabling immutability for the vault is a reversible operation. However, you can make it irreversible to prevent any malicious actors from disabling it (after disabling it, they can perform destructive operations).
+Enabling immutability for the vault is a reversible operation. However, you can make it irreversible to prevent any malicious actors from disabling it _(after disabling it, they can perform destructive operations)_.

@@ -1,6 +1,6 @@
 ---
-date: 2023-01-17 00:00:00 +1300
-title: Azure Deployment cleanup with Azure DevOps
+date: 2023-01-17T00:00:00.000+13:00
+title: Azure Deployment history cleanup with Azure DevOps
 author: Luke
 categories:
 - Azure

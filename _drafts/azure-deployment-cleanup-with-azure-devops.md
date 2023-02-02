@@ -116,4 +116,12 @@ Now that the Service Principal and permissions have been assigned in Azure, it's
 
 ##### Configure script and pipeline
 
-sd
+Now that we have our:
+
+* Azure Service Principal
+* Custom role and assignment
+* Service connection
+
+We now need to import the script and pipeline.
+
+If you haven't already done - [create a Repo](https://learn.microsoft.com/azure/devops/repos/git/create-new-repo?view=azure-devops&WT.mc_id=AZ-MVP-5004796 "Create a new Git repo in your project") for the AzHistoryCleanup script.

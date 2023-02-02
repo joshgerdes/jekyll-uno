@@ -75,6 +75,15 @@ In order for the deployment history to be completed, we will need the following 
 
 Now that the custom role has been created, it is time to assign the role to the service principal we created earlier.
 
-1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
-2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
-3. 
+ 1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
+ 2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
+ 3. Click on the management group you want to manage and click on **Access Control (IAM)**
+ 4. Click **Add**
+ 5. Click **Add Role Assignment**
+ 6. Select your custom role _(you can toggle the type column, so CustomRoles are first in the list)_
+ 7. Click **Members**
+ 8. Make sure '_User, group or service principal_' is selected and click **+ Select Members**
+ 9. Select your Service Principal created earlier _(i.e. SPN.AzDeploymentCleanup)_
+10. Click **Select**
+11. Click **Review + assign** to assign the role.
+12. 

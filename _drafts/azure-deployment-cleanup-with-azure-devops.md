@@ -88,11 +88,13 @@ Now that the custom role has been created, it is time to assign the role to the 
  4. Click **Add**
  5. Click **Add Role Assignment**
  6. Select your custom role _(you can toggle the type column, so CustomRoles are first in the list)_
- 7. Click **Members**
- 8. Make sure '_User, group or service principal_' is selected and click **+ Select Members**
- 9. Select your Service Principal created earlier _(i.e. SPN.AzDeploymentCleanup)_
-10. Click **Select**
-11. Click **Review + assign** to assign the role.
+ 7. ![Microsoft Azure - add role assignments](/uploads/microsoft-azure-add-roleassignments.png "Microsoft Azure - add role assignments")
+ 8. Click **Members**
+ 9. Make sure '_User, group or service principal_' is selected and click **+ Select Members**
+10. ![Microsoft Azure - Add Roles](/uploads/azdeploycleanupaddrolemembers.png "Microsoft Azure - Add Roles")
+11. Select your Service Principal created earlier _(i.e. SPN.AzDeploymentCleanup)_
+12. Click **Select**
+13. Click **Review + assign** to assign the role.
 
 Note: Copy the Management Group ID and name, as we will need the information, along with the Service Principal and tenant IDs from earlier, in the next step of setting up Azure DevOps.
 

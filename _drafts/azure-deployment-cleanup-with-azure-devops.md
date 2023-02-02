@@ -28,3 +28,35 @@ For this article, I will assume you have an Azure DevOps repository setup and th
 #### Deploy and Configure
 
 ##### Create Service Prinicipal
+
+ 1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
+ 2. Click on [**Azure Active Directory**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/\~/Overview "Azure Active Directory")
+ 3. Click on [**App Registrations**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/\~/RegisteredApps "Azure App Registrations")
+ 4. Click on: **+ New Registration**
+ 5. Enter the following information:
+    * **Name** (i.e. SPN.AzDeploymentCleanup)
+ 6. Click **Register**
+ 7. Copy the following for later when we add the SPN to Azure DevOps.
+    * Application (client) ID
+    * Directory (tenant ID)
+ 8. Click on **Certificates & Secrets**
+ 9. Press **+ New Client Secret**
+10. Enter a relevant description and expiry date and click Add
+11. **Copy** the **value** of the new secret (this is essentially your password), and you won't be able to see the value again.
+
+##### Create Custom Role & Assign permissions
+
+Now that your service principal has been created, it is time to assign permissions because this script targets all subscriptions under a management group; we are going to set the permissions to that management group so that it flows to all subscriptions underneath it - and in the view of least privileged we will create a Custom Role to apply to our Service Principal.
+
+#### Create Custom Role
+
+In order for the deployment history to be completed, we will need the following permissions:
+
+* "Microsoft.Management/managementGroups/read" for Get-AzManagementGroup
+* "Microsoft.Management/managementGroups/subscriptions/read" for Get-AzManagementGroupSubscription
+* "Microsoft.Authorization/subscriptions/read" for Select-AzSubscription
+* "Microsoft.Resources/subscriptions/resourceGroups/read" for Get-AzResourceGroup
+* "Microsoft.Resources/subscriptions/resourceGroups/deployments/read" for Get-AzResourceGroupDeployment
+* "Microsoft.Resources/subscriptions/resourceGroups/deployments/delete" for Remove-AzResourceGroupDeployment
+
+1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")

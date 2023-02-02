@@ -148,3 +148,7 @@ First, we need to copy the name of the Service Principal.
 16. Click **Save** to create the pipeline
 17. Now it's time to run the pipeline! Click **Run pipeline**
 18. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+
+![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
+
+![Azure Deployments - Cleanup - Comparison 2](/uploads/azdeploycleanupazdevopsheader_compare2.png "Azure Deployments - Cleanup - Comparison 2")

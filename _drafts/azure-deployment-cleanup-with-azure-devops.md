@@ -52,11 +52,16 @@ Now that your service principal has been created, it is time to assign permissio
 
 In order for the deployment history to be completed, we will need the following permissions:
 
-* "Microsoft.Management/managementGroups/read" for Get-AzManagementGroup
-* "Microsoft.Management/managementGroups/subscriptions/read" for Get-AzManagementGroupSubscription
-* "Microsoft.Resources/subscriptions/resourceGroups/read" for Get-AzResourceGroup
-* "Microsoft.Resources/subscriptions/resourceGroups/deployments/read" for Get-AzResourceGroupDeployment
-* "Microsoft.Resources/subscriptions/resourceGroups/deployments/delete" for Remove-AzResourceGroupDeployment
+* "Microsoft.Resources/deployments/delete",
+* "Microsoft.Resources/subscriptions/resourceGroups/read",
+* "Microsoft.Management/managementGroups/read",
+* "Microsoft.Resources/subscriptions/read",
+* "Microsoft.Management/managementGroups/descendants/read",
+* "Microsoft.Management/managementGroups/subscriptions/read",
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+* "Microsoft.Resources/deployments/read"
 
  1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
  2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
@@ -65,7 +70,7 @@ In order for the deployment history to be completed, we will need the following 
  5. Click **Add Custom Role**
  6. Type in a role name _(an example is: AzDeploymentHistoryCleanup)_
  7. Check Start from **Scratch** and next click
- 8. Click **+ Add permissions** and add the permissions below (you can search for them):
+ 8. Click **+ Add permissions** and add the permissions above _(you can search for them)_. Feel free to import the role from a JSON file "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup")".
  9. Click **Next**
 10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't assign it to the Service Principal; it will only open it up so we can assign it)_. Make sure you assign it at the management group level you are targetting.
 11. Click **Review + Create**

@@ -134,7 +134,7 @@ First, we need to copy the name of the Service Principal.
 
  1. Click **Project settings**
  2. Click **Service Connections**
- 3. Click on your **Service Connection** and copy the **name** _(ie SC.AzDeploymentCleanup)_
+ 3. Click on your **Service Connection** and copy the **name** _(i.e. SC.AzDeploymentCleanup)_
  4. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
  5. Click **Edit**
  6. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
@@ -145,12 +145,14 @@ First, we need to copy the name of the Service Principal.
 11. Click **New Pipeline**
 12. Select **Azure Repos Git (YAML)**
 13. Select your **Repo**
-14. Select **Existing Azure Pipelines YAML file**
-15. Select your Pipeline YAML file and click **Continue**
-16. Click **Save** to create the pipeline
-17. Now it's time to run the pipeline! Click **Run pipeline**
-18. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
-19. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+14. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
+15. Select **Existing Azure Pipelines YAML file**
+16. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
+17. Select your Pipeline YAML file and click **Continue**
+18. Click **Save** to create the pipeline
+19. Now it's time to run the pipeline! Click **Run pipeline**
+20. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
+21. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
 
 ![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
 

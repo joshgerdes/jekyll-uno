@@ -48,7 +48,7 @@ For this article, I will assume you have an Azure DevOps repository setup and th
 
 Now that your service principal has been created, it is time to assign permissions because this script targets all subscriptions under a management group; we are going to set the permissions to that management group so that it flows to all subscriptions underneath it - and in the view of least privileged we will create a Custom Role to apply to our Service Principal.
 
-#### Create Custom Role
+##### Create Custom Role
 
 In order for the deployment history to be completed, we will need the following permissions:
 
@@ -71,7 +71,7 @@ In order for the deployment history to be completed, we will need the following 
 11. Click **Review + Create**
 12. Click **Create**
 
-#### Assign Permissions
+##### Assign Permissions
 
 Now that the custom role has been created, it is time to assign the role to the service principal we created earlier.
 
@@ -91,7 +91,7 @@ Note: Copy the Management Group ID and name, as we will need the information, al
 
 ##### Configure Azure DevOps Service Endpoint
 
-Now that the Service Principal and permissions have been assigned in Azure, it's time to create the service connection endpoint that will allow Azure DevOps the ability to connect to Azure.
+Now that the Service Principal and permissions have been assigned in Azure, it's time to create the service connection endpoint that will allow Azure DevOps to connect to Azure.
 
  1. Navigate to your [**Azure DevOps**](http://dev.azure.com/ "Azure DevOps") organisation
  2. Create a **Project**, if you haven't already
@@ -108,3 +108,7 @@ Now that the Service Principal and permissions have been assigned in Azure, it's
 13. The Service Principal key, enter the secret client value and select the Tenant ID
 14. Click **Verify** - to verify the connectivity to the azure platform from Azure DevOps
 15. Select **Grant access permission to all pipelines** and click **Verify and save**
+
+##### Configure script and pipeline
+
+sd

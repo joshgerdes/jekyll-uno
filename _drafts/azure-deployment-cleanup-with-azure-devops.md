@@ -147,4 +147,4 @@ First, we need to copy the name of the Service Principal.
 15. Select your Pipeline YAML file and click **Continue**
 16. Click **Save** to create the pipeline
 17. Now it's time to run the pipeline! Click **Run pipeline**
-18. If successful, your script will trigger and clean up the oldest deployment history! This can take several minutes to run if you have a lot of deployments.
+18. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.

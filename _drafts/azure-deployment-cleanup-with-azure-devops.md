@@ -17,6 +17,8 @@ When deploying resources in Azure, it is essential to keep track of the number o
 
 If you have CI/CD _(Continuous Integration and Continuous Deployment)_ set up to deploy or change your infrastructure or services with code, it can be easy to reach this limit. [Azure will attempt to do this automatically](https://learn.microsoft.com/azure/azure-resource-manager/troubleshooting/deployment-quota-exceeded?tabs=azure-cli&WT.mc_id=AZ-MVP-5004796 "Resolve error when deployment count exceeds 800") when reaching your limit, but you may want to pre-empt any problems if you make a lot of deployments and the system hasn't had time to prune automatically.
 
+This came up in conversations on Microsoft Q&A, so I thought I would dig into it and a possible option.
+
 To avoid exceeding the deployment limit, it may be necessary to clean up old deployments.
 
 This can be done by using a script to remove deployments that are no longer needed.
@@ -147,7 +149,8 @@ First, we need to copy the name of the Service Principal.
 15. Select your Pipeline YAML file and click **Continue**
 16. Click **Save** to create the pipeline
 17. Now it's time to run the pipeline! Click **Run pipeline**
-18. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+18. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
+19. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
 
 ![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
 

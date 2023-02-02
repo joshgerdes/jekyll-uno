@@ -86,4 +86,7 @@ Now that the custom role has been created, it is time to assign the role to the 
  9. Select your Service Principal created earlier _(i.e. SPN.AzDeploymentCleanup)_
 10. Click **Select**
 11. Click **Review + assign** to assign the role.
-12. 
+
+##### Configure Azure DevOps Service Endpoint
+
+Now that the Service Principal and permissions have been assigned in Azure, its time to create the service connection endpoint that will allow Azure DevOps the ability to connect to Azure.

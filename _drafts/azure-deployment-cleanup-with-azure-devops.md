@@ -70,7 +70,7 @@ In order for the deployment history to be completed, we will need the following 
  5. Click **Add Custom Role**
  6. Type in a role name _(an example is: AzDeploymentHistoryCleanup)_
  7. Check Start from **Scratch** and next click
- 8. Click **+ Add permissions** and add the permissions above _(you can search for them)_. Feel free to import the role from a JSON file "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup")".
+ 8. Click **+ Add permissions** and the permissions above _(you can search for them)_. Feel free to import the role from a JSON file "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup")".
  9. Click **Next**
 10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't assign it to the Service Principal; it will only open it up so we can assign it)_. Make sure you assign it at the management group level you are targetting.
 11. Click **Review + Create**
@@ -126,4 +126,18 @@ We now need to import the script and pipeline.
 
 If you haven't already done - [create a Repo](https://learn.microsoft.com/azure/devops/repos/git/create-new-repo?view=azure-devops&WT.mc_id=AZ-MVP-5004796 "Create a new Git repo in your project") for the AzHistoryCleanup script.
 
-You can clone (or copy) the files in the [**AzDeploymentCleanup**](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup") repo to your own.
+You can clone _(or copy)_ the files in the [**AzDeploymentCleanup**](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup") repo to your own.
+
+First, we need to copy the name of the Service Principal.
+
+ 1. Click **Project settings**
+ 2. Click **Service Connections**
+ 3. Click on your **Service Connection** and copy the **name** _(ie SC.AzDeploymentCleanup)_
+ 4. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
+ 5. Click **Edit**
+ 6. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
+ 7. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
+ 8. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
+ 9. Once your changes are made, click **Commit**
+10. Now that your pipeline has been updated, its time to create it - click on **Pipelines**
+11. 

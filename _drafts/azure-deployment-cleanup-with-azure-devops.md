@@ -87,6 +87,22 @@ Now that the custom role has been created, it is time to assign the role to the 
 10. Click **Select**
 11. Click **Review + assign** to assign the role.
 
+Note: Copy the Management Group ID and name, as we will need the information, along with the Service Principal and tenant IDs from earlier, in the next step of setting up Azure DevOps.
+
 ##### Configure Azure DevOps Service Endpoint
 
-Now that the Service Principal and permissions have been assigned in Azure, its time to create the service connection endpoint that will allow Azure DevOps the ability to connect to Azure.
+Now that the Service Principal and permissions have been assigned in Azure, it's time to create the service connection endpoint that will allow Azure DevOps the ability to connect to Azure.
+
+ 1. Navigate to your [**Azure DevOps**](http://dev.azure.com/ "Azure DevOps") organisation
+ 2. Create a **Project**, if you haven't already
+ 3. Click on **Project Settings**
+ 4. Navigate to **Service Connection**
+ 5. Click on **New service connection**
+ 6. Select **Azure Resource Manager**
+ 7. Click **Next**
+ 8. Select **Service principal (manual)**
+ 9. Click **Next**
+10. For the scope, select **Management Group**
+11. Enter the **Management Group ID**, the **Management Group Name**
+12. Time to enter in the Service Principal details copied earlier, for the Service Principal Id paste in the Application ID.
+13. The Service Principal key, enter in the client secret value and select the Tenant ID

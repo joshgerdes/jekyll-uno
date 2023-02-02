@@ -70,3 +70,11 @@ In order for the deployment history to be completed, we will need the following 
 10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't assign it to the Service Principal; it will only open it up so we can assign it)_. Make sure you assign it at the management group level you are targetting.
 11. Click **Review + Create**
 12. Click **Create**
+
+#### Assign Permissions
+
+Now that the custom role has been created, it is time to assign the role to the service principal we created earlier.
+
+1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
+2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
+3. 

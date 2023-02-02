@@ -1,5 +1,5 @@
 ---
-date: 2023-01-17T00:00:00.000+13:00
+date: 2023-02-03 00:00:00 +1300
 title: Azure Deployment history cleanup with Azure DevOps
 author: Luke
 categories:
@@ -15,9 +15,9 @@ Microsoft Azure has a limit of [800 deployments per resource group](https://lear
 
 When deploying resources in Azure, it is essential to keep track of the number of [historic deployments](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796 "View deployment history with Azure Resource Manager") in a resource group to ensure that the limit is not exceeded. This is because new deployments will fail if the limit is exceeded, and creating or updating resources in that resource group will not be possible.
 
-If you have CI/CD _(Continuous Integration and Continuous Deployment)_ set up to deploy or change your infrastructure or services with code, it can be easy to reach this limit. [Azure will attempt to do this automatically](https://learn.microsoft.com/azure/azure-resource-manager/troubleshooting/deployment-quota-exceeded?tabs=azure-cli&WT.mc_id=AZ-MVP-5004796 "Resolve error when deployment count exceeds 800") when reaching your limit, but you may want to pre-empt any problems if you make a lot of deployments and the system hasn't had time to prune automatically.
+If you have CI/CD _(Continuous Integration and Continuous Deployment)_ set up to deploy or change your infrastructure or services with code, it can be easy to reach this limit. [Azure will attempt to do this automatically](https://learn.microsoft.com/azure/azure-resource-manager/troubleshooting/deployment-quota-exceeded?tabs=azure-cli&WT.mc_id=AZ-MVP-5004796 "Resolve error when deployment count exceeds 800") when reaching your limit. Still, you may want to pre-empt any problems if you make many deployments and the system hasn't had time to prune automatically.
 
-This came up in conversations on Microsoft Q&A, so I thought I would dig into it and a possible option.
+This came up in conversations on Microsoft Q&A, so I thought I would dig into it and put together a possible option.
 
 To avoid exceeding the deployment limit, it may be necessary to clean up old deployments.
 
@@ -27,7 +27,9 @@ So let's build an Azure DevOps pipeline that runs weekly to connect to our Micro
 
 ![Microsoft Azure Deployment History Cleanup with Azure DevOps](/uploads/azdeploycleanupazdevopsheader.png "Microsoft Azure Deployment History Cleanup with Azure DevOps")
 
-For this article, I will assume you have an Azure DevOps repository setup and the permissions _(Owner)_ to make the necessary privileged actions to the Microsoft Azure environment to do the setup.
+For this article, I will assume you have an Azure DevOps repository setup and the permissions _(Owner)_ to make the necessary privileged actions to the Microsoft Azure environment to do the design.
+
+> Note: Scripts and pipeline are "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "lukemurraynz / AzDeploymeantCleanup")". 
 
 #### Deploy and Configure
 
@@ -46,15 +48,15 @@ For this article, I will assume you have an Azure DevOps repository setup and th
  8. Click on **Certificates & Secrets**
  9. Press **+ New Client Secret**
 10. Enter a relevant description and expiry date and click Add
-11. **Copy** the **value** of the new secret (this is essentially your password), and you won't be able to see the value again.
+11. **Copy** the **value** of the new secret (this is essentially your password), and you won't be able to see the matter again.
 
-##### Create Custom Role & Assign permissions
+##### Create Custom Role & Assign permissions.
 
 Now that your service principal has been created, it is time to assign permissions because this script targets all subscriptions under a management group; we are going to set the permissions to that management group so that it flows to all subscriptions underneath it - and in the view of least privileged we will create a Custom Role to apply to our Service Principal.
 
 ##### Create Custom Role
 
-In order for the deployment history to be completed, we will need the following permissions:
+For the deployment history to be completed, we will need the following permissions:
 
 * "Microsoft.Resources/deployments/delete",
 * "Microsoft.Resources/subscriptions/resourceGroups/read",
@@ -76,13 +78,13 @@ In order for the deployment history to be completed, we will need the following 
  7. Check Start from **Scratch** and next click
  8. Click **+ Add permissions** and the permissions above _(you can search for them)_. Feel free to import the role from a JSON file "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup")".
  9. Click **Next**
-10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't assign it to the Service Principal; it will only open it up so we can assign it)_. Make sure you assign it at the management group level you are targetting.
+10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't give it to the Service Principal; it will only open it up so we can post it)_. Make sure you set it at the management group level you are targetting.
 11. Click **Review + Create**
 12. Click **Create**
 
 ##### Assign Permissions
 
-Now that the custom role has been created, it is time to assign the role to the service principal we created earlier.
+Now that the custom role has been created, it is time to assign it to the service principal we made earlier.
 
  1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
  2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
@@ -93,7 +95,7 @@ Now that the custom role has been created, it is time to assign the role to the 
  7. ![Microsoft Azure - add role assignments](/uploads/microsoft-azure-add-roleassignments.png "Microsoft Azure - add role assignments")
  8. Click **Members**
  9. Make sure '_User, group or service principal_' is selected and click **+ Select Members**
-10. ![Microsoft Azure - Add Roles](/uploads/azdeploycleanupaddrolemembers.png "Microsoft Azure - Add Roles")
+10. ![Microsoft Azure - Add Roles](/uploads/azdeploycleanupaddrolemembers.png "Microsoft Azure - Add Roles").
 11. Select your Service Principal created earlier _(i.e. SPN.AzDeploymentCleanup)_
 12. Click **Select**
 13. Click **Review + assign** to assign the role.
@@ -104,7 +106,7 @@ Note: Copy the Management Group ID and name, as we will need the information, al
 
 Now that the Service Principal and permissions have been assigned in Azure, it's time to create the service connection endpoint that will allow Azure DevOps to connect to Azure.
 
- 1. Navigate to your [**Azure DevOps**](http://dev.azure.com/ "Azure DevOps") organisation
+ 1. Navigate to your [**Azure DevOps**](http://dev.azure.com/ "Azure DevOps") organisation.
  2. Create a **Project**, if you haven't already
  3. Click on **Project Settings**
  4. Navigate to **Service Connection**
@@ -113,7 +115,7 @@ Now that the Service Principal and permissions have been assigned in Azure, it's
  7. Click **Next**
  8. Select **Service principal (manual)**
  9. Click **Next**
-10. For the scope, select **Management Group**
+10. For the scope, choose Group Management
 11. Enter the **Management Group ID**, the **Management Group Name**
 12. Time to enter in the Service Principal details copied earlier, for the Service Principal Id paste in the Application ID.
 13. The Service Principal key, enter the secret client value and select the Tenant ID
@@ -130,35 +132,61 @@ Now that we have our:
 
 We now need to import the script and pipeline.
 
-If you haven't already done - [create a Repo](https://learn.microsoft.com/azure/devops/repos/git/create-new-repo?view=azure-devops&WT.mc_id=AZ-MVP-5004796 "Create a new Git repo in your project") for the AzHistoryCleanup script.
+If you haven't already done - [create a Repo](https://learn.microsoft.com/azure/devops/repos/git/create-new-repo?view=azure-devops&WT.mc_id=AZ-MVP-5004796 "Create a new Git repo in your project") for the AzHistoryCleanup writing.
 
-You can clone _(or copy)_ the files in the [**AzDeploymentCleanup**](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup") repo to your own.
+You can clone _(or copy)_ the files in the [**AzDeploymentCleanup**](https://github.com/lukemurraynz/AzDeploymeantCleanup "AzDeploymeantCleanup") Repo to your own.
 
 First, we need to copy the name of the Service Principal.
 
- 1. Click **Project settings**
- 2. Click **Service Connections**
- 3. Click on your **Service Connection** and copy the **name** _(i.e. SC.AzDeploymentCleanup)_
- 4. ![Azure DevOps Service Principal](/uploads/azuredevops_spn.png "Azure DevOps Service Principal")
- 5. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
- 6. Click **Edit**
- 7. ![Edit AzDeploymentCleanup YML](/uploads/select-azure-devops-edityaml.png "Edit AzDeploymentCleanup YML")
- 8. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
- 9. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
-10. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
-11. Once your changes are made, click **Commit**
-12. Now that your pipeline has been updated, its time to create it - click on **Pipelines**
-13. Click **New Pipeline**
-14. Select **Azure Repos Git (YAML)**
-15. Select your **Repo**
-16. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
-17. Select **Existing Azure Pipelines YAML file**
-18. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
-19. Select your Pipeline YAML file and click **Continue**
-20. Click **Save** to create the pipeline
-21. Now it's time to run the pipeline! Click **Run pipeline**
-22. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
-23. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+1. Click **Project settings**
+2. Click **Service Connections**
+3. Click on your **Service Connection** and copy the **name** _(i.e. SC.AzDeploymentCleanup)_
+4. ![Azure DevOps Service Principal](/uploads/azuredevops_spn.png "Azure DevOps Service Principal")
+5. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
+6. Click **Edit**
+7. ![Edit AzDeploymentCleanup YML](/uploads/select-azure-devops-edityaml.png "Edit AzDeploymentCleanup YML")
+8. The pipeline is as follows
+
+    # Cron Schedules have been converted using UTC Time Zone and may need to be updated for your location
+    schedules:
+    - cron: 0 6 * * 0
+      branches:
+        include:
+        - refs/heads/main
+    jobs:
+    - job: Job_1
+      displayName: Agent job 1
+      pool:
+        vmImage: windows-latest
+      steps:
+      - checkout: self
+        fetchDepth: 1
+      - task: AzurePowerShell@5
+        displayName: 'Azure PowerShell script: FilePath'
+        inputs:
+          ConnectedServiceNameARM: SC.AzDeploymentCleanup
+          ScriptPath: Remove-AzDeployment.ps1
+          ScriptArguments: -ManagementGroupName  mg-landingzones  -NumberOfDeploymentsToKeep 1
+          TargetAzurePs: LatestVersion
+    ...
+    
+
+ 1. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
+ 2. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
+ 3. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
+ 4. Once your changes are made, click **Commit.**
+ 5. Now that your pipeline has been updated, its time to create it - click on **Pipelines.**
+ 6. Click **New Pipeline**
+ 7. Select **Azure Repos Git (YAML)**
+ 8. Select your **Repo**
+ 9. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
+10. Select **Existing Azure Pipelines YAML file**
+11. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
+12. Select your Pipeline YAML file and click **Continue**
+13. Click **Save** to create the pipeline
+14. Now it's time to run the pipeline! Click **Run pipeline**
+15. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
+16. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
 
 ![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
 

@@ -140,4 +140,11 @@ First, we need to copy the name of the Service Principal.
  8. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
  9. Once your changes are made, click **Commit**
 10. Now that your pipeline has been updated, its time to create it - click on **Pipelines**
-11. 
+11. Click **New Pipeline**
+12. Select **Azure Repos Git (YAML)**
+13. Select your **Repo**
+14. Select **Existing Azure Pipelines YAML file**
+15. Select your Pipeline YAML file and click **Continue**
+16. Click **Save** to create the pipeline
+17. Now it's time to run the pipeline! Click **Run pipeline**
+18. If successful, your script will trigger and clean up the oldest deployment history! This can take several minutes to run if you have a lot of deployments.

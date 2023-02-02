@@ -29,7 +29,7 @@ So let's build an Azure DevOps pipeline that runs weekly to connect to our Micro
 
 For this article, I will assume you have an Azure DevOps repository setup and the permissions _(Owner)_ to make the necessary privileged actions to the Microsoft Azure environment to do the design.
 
-> Note: Scripts and pipeline are "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "lukemurraynz / AzDeploymeantCleanup")". 
+> Note: Scripts and pipeline are "[here](https://github.com/lukemurraynz/AzDeploymeantCleanup "lukemurraynz / AzDeploymeantCleanup")".
 
 #### Deploy and Configure
 
@@ -50,7 +50,7 @@ For this article, I will assume you have an Azure DevOps repository setup and th
 10. Enter a relevant description and expiry date and click Add
 11. **Copy** the **value** of the new secret (this is essentially your password), and you won't be able to see the matter again.
 
-##### Create Custom Role & Assign permissions.
+##### Create Custom Role & Assign permissions
 
 Now that your service principal has been created, it is time to assign permissions because this script targets all subscriptions under a management group; we are going to set the permissions to that management group so that it flows to all subscriptions underneath it - and in the view of least privileged we will create a Custom Role to apply to our Service Principal.
 
@@ -58,15 +58,15 @@ Now that your service principal has been created, it is time to assign permissio
 
 For the deployment history to be completed, we will need the following permissions:
 
-* "Microsoft.Resources/deployments/delete",
-* "Microsoft.Resources/subscriptions/resourceGroups/read",
-* "Microsoft.Management/managementGroups/read",
-* "Microsoft.Resources/subscriptions/read",
-* "Microsoft.Management/managementGroups/descendants/read",
-* "Microsoft.Management/managementGroups/subscriptions/read",
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+* "Microsoft.Resources/deployments/delete"
+* "Microsoft.Resources/subscriptions/resourceGroups/read"
+* "Microsoft.Management/managementGroups/read"
+* "Microsoft.Resources/subscriptions/read"
+* "Microsoft.Management/managementGroups/descendants/read"
+* "Microsoft.Management/managementGroups/subscriptions/read"
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read"
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/read"
+* "Microsoft.Resources/subscriptions/resourcegroups/deployments/write"
 * "Microsoft.Resources/deployments/read"
 
  1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure"){:target="_blank"}
@@ -145,48 +145,22 @@ First, we need to copy the name of the Service Principal.
 5. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
 6. Click **Edit**
 7. ![Edit AzDeploymentCleanup YML](/uploads/select-azure-devops-edityaml.png "Edit AzDeploymentCleanup YML")
-8. The pipeline is as follows
-
-    # Cron Schedules have been converted using UTC Time Zone and may need to be updated for your location
-    schedules:
-    - cron: 0 6 * * 0
-      branches:
-        include:
-        - refs/heads/main
-    jobs:
-    - job: Job_1
-      displayName: Agent job 1
-      pool:
-        vmImage: windows-latest
-      steps:
-      - checkout: self
-        fetchDepth: 1
-      - task: AzurePowerShell@5
-        displayName: 'Azure PowerShell script: FilePath'
-        inputs:
-          ConnectedServiceNameARM: SC.AzDeploymentCleanup
-          ScriptPath: Remove-AzDeployment.ps1
-          ScriptArguments: -ManagementGroupName  mg-landingzones  -NumberOfDeploymentsToKeep 1
-          TargetAzurePs: LatestVersion
-    ...
-    
-
- 1. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
- 2. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
- 3. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines"){:target="_blank"} to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
- 4. Once your changes are made, click **Commit.**
- 5. Now that your pipeline has been updated, its time to create it - click on **Pipelines.**
- 6. Click **New Pipeline**
- 7. Select **Azure Repos Git (YAML)**
- 8. Select your **Repo**
- 9. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
-10. Select **Existing Azure Pipelines YAML file**
-11. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
-12. Select your Pipeline YAML file and click **Continue**
-13. Click **Save** to create the pipeline
-14. Now it's time to run the pipeline! Click **Run pipeline**
-15. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
-16. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+8. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
+9. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
+10. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines"){:target="_blank"} to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
+11. Once your changes are made, click **Commit.**
+12. Now that your pipeline has been updated, its time to create it - click on **Pipelines.**
+13. Click **New Pipeline**
+14. Select **Azure Repos Git (YAML)**
+15. Select your **Repo**
+16. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
+17. Select **Existing Azure Pipelines YAML file**
+18. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
+19. Select your Pipeline YAML file and click **Continue**
+20. Click **Save** to create the pipeline
+21. Now it's time to run the pipeline! Click **Run pipeline**
+22. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
+23. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
 
 ![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
 

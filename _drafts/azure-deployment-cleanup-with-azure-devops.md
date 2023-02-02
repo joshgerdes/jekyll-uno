@@ -135,25 +135,26 @@ First, we need to copy the name of the Service Principal.
  1. Click **Project settings**
  2. Click **Service Connections**
  3. Click on your **Service Connection** and copy the **name** _(i.e. SC.AzDeploymentCleanup)_
- 4. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
- 5. Click **Edit**
- 6. ![Edit AzDeploymentCleanup YML](/uploads/select-azure-devops-edityaml.png "Edit AzDeploymentCleanup YML")
- 7. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
- 8. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
- 9. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
-10. Once your changes are made, click **Commit**
-11. Now that your pipeline has been updated, its time to create it - click on **Pipelines**
-12. Click **New Pipeline**
-13. Select **Azure Repos Git (YAML)**
-14. Select your **Repo**
-15. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
-16. Select **Existing Azure Pipelines YAML file**
-17. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
-18. Select your Pipeline YAML file and click **Continue**
-19. Click **Save** to create the pipeline
-20. Now it's time to run the pipeline! Click **Run pipeline**
-21. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
-22. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
+ 4. ![Azure DevOps Service Principal](/uploads/azuredevops_spn.png "Azure DevOps Service Principal")
+ 5. Navigate back to your Repo, and click on **AzDeploymentCleanup.yml** (this will become your pipeline)
+ 6. Click **Edit**
+ 7. ![Edit AzDeploymentCleanup YML](/uploads/select-azure-devops-edityaml.png "Edit AzDeploymentCleanup YML")
+ 8. Update the variable for **ConnectedServiceNameARM** to the name of your service connection
+ 9. Here you can also edit the **Script Arguments** - for example, in my demo, I am targeting the **ManagementGroup** named: mg-landing zones and keeping the latest five **deployments**.
+10. By default, I also have a [cron job](https://learn.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796 "Configure schedules for pipelines") to schedule this pipeline at 6 AM UTC every Sunday, and you can remove or edit this.
+11. Once your changes are made, click **Commit**
+12. Now that your pipeline has been updated, its time to create it - click on **Pipelines**
+13. Click **New Pipeline**
+14. Select **Azure Repos Git (YAML)**
+15. Select your **Repo**
+16. ![Select Azure DevOps repo](/uploads/azdeploycleanupazdevopsselectrepo.png "Select Azure DevOps repo")
+17. Select **Existing Azure Pipelines YAML file**
+18. ![Select YAML](/uploads/azdeploycleanupazdevopsselectyaml.png "Select YAML")
+19. Select your Pipeline YAML file and click **Continue**
+20. Click **Save** to create the pipeline
+21. Now it's time to run the pipeline! Click **Run pipeline**
+22. ![Azure DevOps - Pipeline run](/uploads/azdeploycleanupazdevopsscriptrun.png "Azure DevOps - Pipeline run")
+23. If successful, **your script will trigger and clean up the oldest deployment history**! This can take several minutes to run if you have a lot of deployments.
 
 ![Azure Deployments - Cleanup - Comparison 1](/uploads/azdeploycleanupazdevopsheader_compare1.png "Azure Deployments - Cleanup - Comparison 1")
 

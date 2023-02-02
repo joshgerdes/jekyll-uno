@@ -19,8 +19,8 @@ One of the technologies that can help with this is: [Start VM on Connect](https:
 
 > **You no longer need to create a Custom Role for Start VM on Connect - a built-in role now exists named:** [**Desktop Virtualization Power On Contributor**](https://learn.microsoft.com/azure/virtual-desktop/start-virtual-machine-connect?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796#assign-the-desktop-virtualization-power-on-contributor-role-with-the-azure-portal) **- once that role is assigned to the Azure Virtual Desktop application, you can skip straight to Configure** 
 
-* Imagine a 9 AM -> 5 PM Monday to Friday business; during the day, Azure Virtual Desktop is available, however anything out of these hours (through Scheduled Shutdowns or Azure Automation Runbooks etc), the session hosts are shut down to reduce operational costs.
-* A business user get some urgent work on Saturday morning then tries to connect to Azure Virtual Desktop resources to complete the work; because they were turned off outside of business hours, they can't connect and then have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
+* Imagine a 9 AM -> 5 PM Monday to Friday business; during the day, Azure Virtual Desktop is available, however anything out of these hours (through Scheduled Shutdowns or Azure Automation Runbooks etc.), the session hosts are shut down to reduce operational costs.
+* A business user gets some urgent work on Saturday morning and then tries to connect to Azure Virtual Desktop resources to complete the work; because they were turned off outside of business hours, they can't connect and then have to ring IT support to get resources started (the alternative would be to leave Virtual Machines running, which may or may not be needed).
 * Using 'Start Virtual Machine on Connect', the moment that the user attempts to connect a Virtual Machine is started.
 * Then it allows the users to log in and do their work without a call to IT, overall saving money, as the hosts are only started when they are first needed. The feature will also only turn on additional VMs (if available) when the first VM reaches the session limit.
 
@@ -32,7 +32,7 @@ Follow the guide below to implement; the Microsoft documentation is pretty good 
 
 ### Create a Custom Role for "Windows Virtual Desktop"
 
-For the "Windows Virtual Desktop" service principal (this should already exist, it is an inbuilt SPN created by the Azure infrastructure, it currently called Windows Virtual Desktop but expect this name to be updated in the future) to have the ability to Start a Virtual Machine, we first need to give it rights. You could give it Contributor or Virtual Machine Contributor rights but want to go with the least privileged to create a custom role.
+For the "Windows Virtual Desktop" service principal (this should already exist, it is an inbuilt SPN created by the Azure infrastructure, it is currently called Windows Virtual Desktop but expect this name to be updated in the future) to have the ability to Start a Virtual Machine, we first need to give it rights. You could give it Contributor or Virtual Machine Contributor rights but want to go with the least privileged to create a custom role.
 
  1. Log in to the **Azure Portal**
  2. Navigate to the **Subscription** _(you can only currently create custom roles at a subscription level)_ that your session hosts exist in
@@ -42,7 +42,7 @@ For the "Windows Virtual Desktop" service principal (this should already exist, 
  6. **Open** up the **JSON** file _(this is the Custom Role we are creating, as you can see, we are only allowing the ability to Read a Virtual Machine and Start it)_
  7. **Replace** the: <SubscriptionID> with your **subscription ID**, created earlier and save the JSON file.
  8. ![AVD-StartVMOnConnect Custom Role](/uploads/customrolejson_subscriptionid.png "AVD-StartVMOnConnect Custom Role").
- 9. Click on **Access Control (IAM)** in the left-hand side blade
+ 9. Click on **Access Control (IAM)** on the left-hand side blade
 10. Click **Add**
 11. Click **Add Custom Role**
 12. ![AVD-StartVMOnConnect Custom Role](/uploads/azureportal_iam_customrole.png "AVD-StartVMOnConnect Custom Role")
@@ -93,4 +93,4 @@ Now that you have created your custom role for Azure Virtual Desktop, it is now 
  7. **Congratulations, you have now set up Azure Virtual Desktop - Start VM on Connect**; next time someone connects to a turned-off Azure Virtual Desktop session host, the Virtual Machines will now automatically start the users will get a prompt like below:
  8. ![Azure Virtual Desktop - Start VM on Connect](/uploads/avd_startvmconnectprogress1.png "Azure Virtual Desktop - Start VM on Connect")
  9. ![Azure Virtual Desktop - Start VM on Connect](/uploads/avd_startvmconnectprogress2.png "Azure Virtual Desktop - Start VM on Connect")
-10. Before finally, prompting for their login credentials!
+10. Before finally prompting for their login credentials!

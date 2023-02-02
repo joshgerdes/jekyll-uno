@@ -54,9 +54,19 @@ In order for the deployment history to be completed, we will need the following 
 
 * "Microsoft.Management/managementGroups/read" for Get-AzManagementGroup
 * "Microsoft.Management/managementGroups/subscriptions/read" for Get-AzManagementGroupSubscription
-* "Microsoft.Authorization/subscriptions/read" for Select-AzSubscription
 * "Microsoft.Resources/subscriptions/resourceGroups/read" for Get-AzResourceGroup
 * "Microsoft.Resources/subscriptions/resourceGroups/deployments/read" for Get-AzResourceGroupDeployment
 * "Microsoft.Resources/subscriptions/resourceGroups/deployments/delete" for Remove-AzResourceGroupDeployment
 
-1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
+ 1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
+ 2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups")
+ 3. Click a management group, click on **Access Control (IAM)**
+ 4. Click **+ Add**
+ 5. Click **Add Custom Role**
+ 6. Type in a role name _(an example is: AzDeploymentHistoryCleanup)_
+ 7. Check Start from **Scratch** and next click
+ 8. Click **+ Add permissions** and add the permissions below (you can search for them):
+ 9. Click **Next**
+10. Add **Assignable Scopes** _(this is the scope you can use to assign a role to - this won't assign it to the Service Principal; it will only open it up so we can assign it)_. Make sure you assign it at the management group level you are targetting.
+11. Click **Review + Create**
+12. Click **Create**

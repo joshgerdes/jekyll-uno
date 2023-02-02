@@ -105,4 +105,6 @@ Now that the Service Principal and permissions have been assigned in Azure, it's
 10. For the scope, select **Management Group**
 11. Enter the **Management Group ID**, the **Management Group Name**
 12. Time to enter in the Service Principal details copied earlier, for the Service Principal Id paste in the Application ID.
-13. The Service Principal key, enter in the client secret value and select the Tenant ID
+13. The Service Principal key, enter the secret client value and select the Tenant ID
+14. Click **Verify** - to verify the connectivity to the azure platform from Azure DevOps
+15. Select **Grant access permission to all pipelines** and click **Verify and save**

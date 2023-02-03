@@ -58,16 +58,16 @@ Now that your service principal has been created, it is time to assign permissio
 
 For the deployment history to be completed, we will need the following permissions:
 
-* "Microsoft.Resources/deployments/delete"
-* "Microsoft.Resources/subscriptions/resourceGroups/read"
-* "Microsoft.Management/managementGroups/read"
-* "Microsoft.Resources/subscriptions/read"
-* "Microsoft.Management/managementGroups/descendants/read"
-* "Microsoft.Management/managementGroups/subscriptions/read"
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read"
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/read"
-* "Microsoft.Resources/subscriptions/resourcegroups/deployments/write"
-* "Microsoft.Resources/deployments/read"
+* Microsoft.Resources/deployments/delete
+* Microsoft.Resources/subscriptions/resourceGroups/read
+* Microsoft.Management/managementGroups/read
+* Microsoft.Resources/subscriptions/read
+* Microsoft.Management/managementGroups/descendants/read
+* Microsoft.Management/managementGroups/subscriptions/read
+* Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read
+* Microsoft.Resources/subscriptions/resourcegroups/deployments/read
+* Microsoft.Resources/subscriptions/resourcegroups/deployments/write
+* Microsoft.Resources/deployments/read
 
  1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure"){:target="_blank"}
  2. In the search bar above, type in and navigate to [**Management Groups**](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/\~/MGBrowse_overview "Management Groups"){:target="_blank"}

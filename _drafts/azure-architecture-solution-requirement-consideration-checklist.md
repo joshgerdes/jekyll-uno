@@ -17,9 +17,9 @@ But knowing what questions to ask and data to capture to give you the bigger pic
 
 Leaning on the great frameworks already in place to assist with the Cloud Adoption and Azure Well Architecture frameworks, the solution requirements checklist is intended to act as a way of asking and capturing the requirements of your solutions. It can be a great reminder to discover some of those requirements _(whether functional or non-functional)_ that you may have forgotten about!
 
-I am using the [Azure Review Checklist](https://github.com/Azure/review-checklists "Azure/review-checklists") - as a building block! I created a custom checklist intended to work with the review checklists - but aimed more at the discovery and requirements-gathering stage to assist with designing the proper outcomes for the business.
+I am using the [Azure Review Checklist](https://github.com/Azure/review-checklists "Azure/review-checklists") - as a building block! I created a custom checklist intended to work alongside the review checklists - but aimed more at the discovery and requirements-gathering stage to assist with designing the proper outcomes for the business.
 
-![](/uploads/az_architecture_solutionchecklistheader.png)
+![Azure Architecture - Solution requirement considerations](/uploads/azurearchitecture_considerations.png "Azure Architecture - Solution requirement considerations")
 
 > The Azure Architecture - Solution Requirement Consideration checklist, is intended to be a living resource. So feel free to open a Pull Request to contribute!
 >

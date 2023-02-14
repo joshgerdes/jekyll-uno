@@ -25,8 +25,8 @@ At the time of this article, there are 8 main categories, and various sub catego
 * Business
 * Data
 * Governance
-* Infrastructure  
-  Microservices
+* Infrastructure
+* Microservices
 * Observability
 * Resiliency
 

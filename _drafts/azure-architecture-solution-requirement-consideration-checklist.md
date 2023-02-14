@@ -47,7 +47,7 @@ Using this is simple!
 
 Once imported, you can now save the excel document, and start adjusting the **Severity**, **Status** and add **Comments** - to capture the information, to then use to architect your solutions!
 
-**Note: I do not create, edit or modify the Excel spreadsheet, created by for the Azure Reviews - I simply use it to run my custom checklist.**
+> **Note: I do not create, edit or modify the Excel spreadsheet, created by for the Azure Reviews - I simply use it to run my custom checklist. Make sure to check out the** [**Azure Review Checklists**](https://github.com/Azure/review-checklists "Azure Review Checklists")**!**
 
 There are some settings that you might need to change in your system to run **macro-enabled Excel spreadsheet**s. When initially opening the file you may see the following error, which prevents Excel from loading:
 

@@ -78,7 +78,7 @@ In an example like the above, you have three separate Azure subscriptions, and y
 
 It's worth noting that **mapping the Logical to Physical Zones of the Avalibility Zones within your region is done when the subscription is created**.
 
-##### Checking your Zone Peers
+##### Checking your Zone Peers using PowerShell and the Azure API
 
 **During normal business use - you don't need to know any of this; select a zone and deploy**; if you have resources across subscriptions and run into additional latency - this may be why, although each availability zone is connected through a dedicated regional low-latency network with a round-trip latency of less than 2ms.
 

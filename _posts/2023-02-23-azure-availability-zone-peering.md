@@ -23,7 +23,7 @@ Each Azure region features data centres deployed within a latency-defined perime
 
 Today we are going to look into Availability Zone peering:
 
-> Each data centre is assigned to a physical zone. Physical zones are mapped to logical zones in your Azure subscription. Azure subscriptions are automatically assigned this mapping at the time a subscription is created.
+> Each data centre is assigned to a physical zone. Physical zones are mapped to logical zones in your Azure subscription. Azure subscriptions are automatically assigned this mapping when a subscription is created.
 
 ##### Physical Zones vs Logical Zones
 

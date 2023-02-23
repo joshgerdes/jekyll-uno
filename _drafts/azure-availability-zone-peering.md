@@ -74,6 +74,8 @@ So if you have resources deployed across multiple subscriptions, and all your re
 
 In an example like the above, you have three separate Azure subscriptions, and you have deployed your Virtual Machines and other resources across all Azure subscriptions into Zone 1, 2 of your subscriptions are using the same physical zone for zone 1, and another subscription is using a separate availability zone altogether.
 
+![AzureAvailabilityZones_Logical](/uploads/azureavailabilityzones_logical.png "AzureAvailabilityZones_Logical")
+
 **One of the reasons the logical and physical zones are different is due to capacity management**; out of habit, many people select Zone 1 - this would mean that certain zones become overpopulated while others are underutilized. The logical zones allow Microsoft some ability to spread the load.
 
 It's worth noting that **mapping the Logical to Physical Zones of the Avalibility Zones within your region is done when the subscription is created**.

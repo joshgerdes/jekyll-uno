@@ -5,7 +5,7 @@ author: Luke
 categories: []
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/availability-zones.png"
 
 ---
 In most [regions ](https://learn.microsoft.com/azure/reliability/availability-zones-service-support?WT.mc_id=AZ-MVP-5004796 "Availability zone service and regional support")_(and odds are, if your region doesn't have Avalibility Zones, it's on the roadmap to be set up)_, Microsoft Azure has [Availability Zones](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796 "What are Azure regions and availability zones?").
@@ -44,3 +44,27 @@ In fact, we can see these zones in the Azure Portal when we create resources:
 This is great for making your solutions redundant against a single data centre failure and spreading your workloads across different zones; services such as Virtual Networks are zone-redundant by default, allowing access to resources across multiple zones out of the box.
 
 One reason you may have all your resources in a single zone could be latency.
+
+Lets us go back to the paragraphs around physical and logical zones and mapping - what does this mean?
+
+What this means is that each of the three datacenters is assigned a physical **AND** logical mapping, so your Azure datacentres look like this:
+
+| Zone (Physical) | Region | Zone (Logical) |
+| --- | --- | --- |
+| 1 | Australia East | 3 |
+| 2 | Australia East | 2 |
+| 3 | Australia East | 1 |
+
+When you **deploy a resource into an Azure Avalibility Zone and select Zone 1** - you are **selecting the Logical Zone, NOT** a **physical zone**.
+
+This means that **FOR EACH** Microsoft **Azure subscription,** whether in the same Azure Active Directory tenancy or not, **Zone 1** can be a **different physical data center**.
+
+So if you have resources deployed across multiple subscriptions, and all your resources are deployed to Zone 1 - they **MAY NOT** be in the same physical datacenter.
+
+| Azure Subscriptions | Region | Zone (Logical) | Zone (Physical) |
+| --- | --- | --- | --- |
+| Sub A | Australia East | 1 | 1 |
+| Sub B | Australia East | 1 | 3 |
+| Sub B | Australia East | 1 | 1 |
+
+In an example like the above, you have three separate Azure subscriptions, and you have deployed your Virtual Machines and other resources across all Azure subscriptions into Zone 1, 2 of your subscriptions are using the same physical zone for zone 1, and another subscription is using a separate availability zone altogether. 

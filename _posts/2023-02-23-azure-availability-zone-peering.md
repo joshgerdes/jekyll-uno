@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/availability-zones.png"
 
 ---
-In most [regions ](https://learn.microsoft.com/azure/reliability/availability-zones-service-support?WT.mc_id=AZ-MVP-5004796 "Availability zone service and regional support")_(and odds are, if your area doesn't have Avalibility Zones, it's on the roadmap to be set up)_, Microsoft Azure has [Availability Zones](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796 "What are Azure regions and availability zones?").
+In most [regions ](https://learn.microsoft.com/azure/reliability/availability-zones-service-support?WT.mc_id=AZ-MVP-5004796 "Availability zone service and regional support"){:target="_blank"}_(and odds are, if your area doesn't have Avalibility Zones, it's on the roadmap to be set up)_, Microsoft Azure has [Availability Zones](https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796 "What are Azure regions and availability zones?"){:target="_blank"}.
 
 Each Azure region features data centres deployed within a latency-defined perimeter. At a high level, these zones consist of 3 separate data centres with independent cooling, power, switching etc.
 
@@ -86,7 +86,7 @@ It's worth noting that **mapping the Logical to Physical Zones of the Avalibilit
 
 But suppose you are curious or want to delve deeper into your Disaster Recovery and resiliency architecture within a single region. In that case, it can be helpful to know the mapping.
 
-This information isn't fed into the Azure Portal. To find the mapping, we need to query the Azure API directly using the [Check Zone Peers](https://learn.microsoft.com/en-us/rest/api/resources/subscriptions/check-zone-peers?tabs=HTTP&WT.mc_id=AZ-MVP-5004796 "Subscriptions - Check Zone Peers") endpoint.
+This information isn't fed into the Azure Portal. To find the mapping, we need to query the Azure API directly using the [Check Zone Peers](https://learn.microsoft.com/en-us/rest/api/resources/subscriptions/check-zone-peers?tabs=HTTP&WT.mc_id=AZ-MVP-5004796 "Subscriptions - Check Zone Peers"){:target="_blank"} endpoint.
 
 To do this, I have written a rough PowerShell script that will register the AvailabilityZonePeering Azure feature that you need to enable the lookup and query the API for the mappings.
 

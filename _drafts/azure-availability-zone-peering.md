@@ -169,3 +169,5 @@ On the right-hand side, we see the 'Zones' - these are the Physical Zones, so Zo
 For each subscription, we can see the Logical Zone mapping as well.
 
 In this example, my subscription of '3bdfd67e-6280-43af-8121-4f04dc84706c', if I were to deploy to Zone 2 in my Azure Portal, would deploy to the same physical datacenter as Zone 1 of: '8df7caa2-95cb-44d1-9ecb-e5220ec6a825'.
+
+As you can also see, my Zone 3 matches the same Zone 3 both logically and physically for all my subscriptions, but there are differences with Zone 2 and 1.

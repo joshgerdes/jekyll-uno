@@ -41,4 +41,6 @@ In fact, we can see these zones in the Azure Portal when we create resources:
 
 ![Azure Avalibility Zone - Selection](/uploads/avalibilityzone_selection_azportal.png "Azure Avalibility Zone - Selection")
 
-This is great for making your solutions redundant against a single data center failure and spreading your workloads across different zones.
+This is great for making your solutions redundant against a single data centre failure and spreading your workloads across different zones; services such as Virtual Networks are zone-redundant by default, allowing access to resources across multiple zones out of the box.
+
+One reason you may have all your resources in a single zone could be latency.

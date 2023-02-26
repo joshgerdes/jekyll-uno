@@ -9,63 +9,35 @@ updates:
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
     commit-message:
       prefix: ":rocket: gha"
 
   - package-ecosystem: "docker" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
     commit-message:
       prefix: ":rocket: docker"
 
   - package-ecosystem: "bundler" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
     commit-message:
       prefix: ":rocket: bundler"
 
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
     commit-message:
       prefix: ":rocket: npm"
 
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
     commit-message:
       prefix: ":rocket: pip"
 
-  - package-ecosystem: "pipenv" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
-      day: "friday"
-    commit-message:
-      prefix: ":rocket: pipenv"
-
-  - package-ecosystem: "poetry" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
-      day: "friday"
-    commit-message:
-      prefix: ":rocket: poetry"
-
-  - package-ecosystem: "yarn" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
-      day: "friday"
-    commit-message:
-      prefix: ":rocket: yarn"

@@ -1,5 +1,0 @@
-- name: Build TinaCMS
-  env:
-    CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-    TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-  run: ${{ steps.detect-package-manager.outputs.runner }} tinacms build

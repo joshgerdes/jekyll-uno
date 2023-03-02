@@ -57,3 +57,12 @@ _Use your university or school email to sign up and renew each year you're a stu
 ##### Education Hub
 
 Located in the Azure Portal, the Education Hub enables easy access to Azure offers and other academic benefits Microsoft provides.
+
+Using the[ Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade/\~/overview "Education Hub"), Students can:
+
+* Download free software provided by their Academic Institution
+* Sign up for academic-specific Azure offers
+* Launch self-guided role-based learning pathways
+* Deploy academic-focused ARM templates
+
+![Microsoft Azure Education Hub](/uploads/azure_educationhub.png "Microsoft Azure Education Hub")

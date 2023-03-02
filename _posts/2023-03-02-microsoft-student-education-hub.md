@@ -4,14 +4,14 @@ title: Azure for Students
 author: Luke
 categories:
 - Azure
-toc: false
+toc: true
 header:
   teaser: ''
 
 ---
 Students learn in different ways through many possible avenues and experiences. Microsoft has assets to help students navigate through their journey.
 
-This article aims to help to make the student experience clearer.
+This article aims to help to make access to student resources clearer.
 
 #### Skilling Journey
 
@@ -69,4 +69,8 @@ Using the[ Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Educati
 
 ##### FAQS
 
-Most Student FAQs (Frequently Asked Questions) can be answered on the following page: [Frequently asked questions about the Education Hub](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq?WT.mc_id=AZ-MVP-5004796 "Frequently asked questions about the Education Hub"), but there may be other questions.
+A bit of a misleading heading! But there is no need to repeat FAQS that have already been answered by Microsoft or community members; the trick is finding where to go!
+
+Most Student FAQs _(Frequently Asked Questions)_ can be answered on the following page: 
+
+[Frequently asked questions about the Education Hub](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq?WT.mc_id=AZ-MVP-5004796 "Frequently asked questions about the Education Hub"), but there may be other questions that don't fit in; if that's the case - make sure you check [Microsoft Q&A](https://learn.microsoft.com/en-us/search/?terms=students&category=QnA&WT.mc_id=AZ-MVP-5004796 '"students" in Q&A') - as most likely, what you need has been answered by Microsoft or a community member.

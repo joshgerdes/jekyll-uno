@@ -19,7 +19,7 @@ This article aims to help to make access to student resources clearer.
 
 There are 3 phases:
 
-* Discover
+* Discover 
 * Engage
 * Grow
 

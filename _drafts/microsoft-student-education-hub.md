@@ -66,3 +66,7 @@ Using the[ Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Educati
 * Deploy academic-focused ARM templates
 
 ![Microsoft Azure Education Hub](/uploads/azure_educationhub.png "Microsoft Azure Education Hub")
+
+##### FAQS
+
+Most Student FAQs (Frequently Asked Questions) can be answered on the following page: [Frequently asked questions about the Education Hub](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq?WT.mc_id=AZ-MVP-5004796 "Frequently asked questions about the Education Hub"), but there may be other questions.

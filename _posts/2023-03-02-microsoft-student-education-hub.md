@@ -15,7 +15,7 @@ This article aims to help to make access to student resources clearer.
 
 #### Skilling Journey
 
-![](/uploads/student_developer_skillingjourney.png)
+![MS Student Developer - Skilling Journey](/uploads/student_developer_skillingjourney.png)
 
 There are 3 phases:
 
@@ -29,9 +29,9 @@ Some of the resources for each phase can be found below:
 
 | Discover | Engage | Grow |
 | :--- | :--- | :--- |
-| Microsoft Learn Student Hub | Azure for Students | Imagine Cup |
-| Microsoft Reactor | Hackathons | Events: Student Summit |
-| and Microsoft Build |  |  |
+| [Microsoft Learn Student Hub](https://learn.microsoft.com/training/student-hub/?WT.mc_id=AZ-MVP-5004796) | [Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=AZ-MVP-5004796) | [Imagine Cup](https://imaginecup.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |
+| [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=AZ-MVP-5004796) | Hackathons | [Events: Student Summit](https://learn.microsoft.com/events/browse?terms=student-summit&WT.mc_id=AZ-MVP-5004796) |
+| [Microsoft Build](https://mybuild.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |  |  |
 | Curriculum on GitHub | Dev Tools for Teaching |  |
 
 ##### Independent Learner

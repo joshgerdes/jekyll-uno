@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: ''
+  teaser: '/uploads/student_developer_skillingjourney.png'
 
 ---
 Students learn in different ways through many possible avenues and experiences. Microsoft has assets to help students navigate through their journey.
@@ -32,7 +32,7 @@ Some of the resources for each phase can be found below:
 | [Microsoft Learn Student Hub](https://learn.microsoft.com/training/student-hub/?WT.mc_id=AZ-MVP-5004796) | [Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=AZ-MVP-5004796) | [Imagine Cup](https://imaginecup.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |
 | [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=AZ-MVP-5004796) | Hackathons | [Events: Student Summit](https://learn.microsoft.com/events/browse?terms=student-summit&WT.mc_id=AZ-MVP-5004796) |
 | [Microsoft Build](https://mybuild.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |  |  |
-| Curriculum on GitHub | Dev Tools for Teaching |  |
+| Curriculum on GitHub | [Dev Tools for Teaching](https://azureforeducation.microsoft.com/en-us/Institutions?WT.mc_id=AZ-MVP-5004796) |  |
 
 ##### Independent Learner
 
@@ -58,7 +58,7 @@ _Use your university or school email to sign up and renew each year you're a stu
 
 Located in the Azure Portal, the Education Hub enables easy access to Azure offers and other academic benefits Microsoft provides.
 
-Using the[ Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade/\~/overview "Education Hub"), Students can:
+Using the [Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade/\~/overview "Education Hub"), Students can:
 
 * Download free software provided by their Academic Institution
 * Sign up for academic-specific Azure offers

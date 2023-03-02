@@ -54,6 +54,10 @@ If you are an independent learner, the resources below can supplement your desir
 
 _Use your university or school email to sign up and renew each year you're a student. Your school or university doesn't need to be enrolled in a program - your university and school email address is used to validate your student status._
 
+##### Group Learner
+
+If you are a group learner, alongside the same content as the indepedant learning path, check out the [Microsoft Student Ambassador](https://studentambassadors.microsoft.com/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} program to meet likeminded people, and don't forget to check out for your local [Azure meetups](https://www.meetup.com/pro/azuretechgroups/)!
+
 ##### Education Hub
 
 Located in the Azure Portal, the Education Hub enables easy access to Azure offers and other academic benefits Microsoft provides.

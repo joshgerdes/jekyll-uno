@@ -29,10 +29,10 @@ Some of the resources for each phase can be found below:
 
 | Discover | Engage | Grow |
 | :--- | :--- | :--- |
-| [Microsoft Learn Student Hub](https://learn.microsoft.com/training/student-hub/?WT.mc_id=AZ-MVP-5004796) | [Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=AZ-MVP-5004796) | [Imagine Cup](https://imaginecup.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |
-| [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=AZ-MVP-5004796) | Hackathons | [Events: Student Summit](https://learn.microsoft.com/events/browse?terms=student-summit&WT.mc_id=AZ-MVP-5004796) |
-| [Microsoft Build](https://mybuild.microsoft.com/?WT.mc_id=AZ-MVP-5004796) |  |  |
-| [Curriculum on GitHub](https://microsoft.github.io/workshop-library/) | [Dev Tools for Teaching](https://azureforeducation.microsoft.com/en-us/Institutions?WT.mc_id=AZ-MVP-5004796) |  |
+| [Microsoft Learn Student Hub](https://learn.microsoft.com/training/student-hub/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} | [Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} | [Imagine Cup](https://imaginecup.microsoft.com/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} |
+| [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} | Hackathons | [Events: Student Summit](https://learn.microsoft.com/events/browse?terms=student-summit&WT.mc_id=AZ-MVP-5004796){:target="_blank"} |
+| [Microsoft Build](https://mybuild.microsoft.com/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} |  |  |
+| [Curriculum on GitHub](https://microsoft.github.io/workshop-library/){:target="_blank"} | [Dev Tools for Teaching](https://azureforeducation.microsoft.com/en-us/Institutions?WT.mc_id=AZ-MVP-5004796){:target="_blank"} |  |
 
 ##### Independent Learner
 

@@ -38,19 +38,19 @@ Some of the resources for each phase can be found below:
 
 If you are an independent learner, the resources below can supplement your desire to learn:
 
-* [**Learn by Doing**](https://learn.microsoft.com/training/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Training"): Students can gain the skills to  
+* [**Learn by Doing**](https://learn.microsoft.com/training/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Training"){:target="_blank"}: Students can gain the skills to  
   apply to everyday situations through hands-on  
   personalized training at their own pace or with our  
   global network of learning partner
-* [**Showcase Skills**](https://learn.microsoft.com/certifications/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Certifications"): Help advance their career by  
+* [**Showcase Skills**](https://learn.microsoft.com/certifications/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Certifications"){:target="_blank"}: Help advance their career by  
   completing challenges that demonstrate expertise.  
   Earn globally recognized and industry-endorsed  
   certifications and showcase them to their network.
-* [**Code Samples**](https://learn.microsoft.com/samples/browse/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Code Samples"): Test out new capabilities in their  
+* [**Code Samples**](https://learn.microsoft.com/samples/browse/?WT.mc_id=AZ-MVP-5004796 "Microsoft Learn - Code Samples"){:target="_blank"}: Test out new capabilities in their  
   own projects faster and easier with code samples  
   that bring Microsoft technology to life.
 
-[**Build in the cloud-free with Azure for Students ($100 Azure Credit, No credit card required)**](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=AZ-MVP-5004796 "Build in the cloud free with Azure for Students")
+[**Build in the cloud-free with Azure for Students ($100 Azure Credit, No credit card required)**](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=AZ-MVP-5004796 "Build in the cloud free with Azure for Students"){:target="_blank"}
 
 _Use your university or school email to sign up and renew each year you're a student. Your school or university doesn't need to be enrolled in a program - your university and school email address is used to validate your student status._
 
@@ -58,7 +58,7 @@ _Use your university or school email to sign up and renew each year you're a stu
 
 Located in the Azure Portal, the Education Hub enables easy access to Azure offers and other academic benefits Microsoft provides.
 
-Using the [Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade/\~/overview "Education Hub"), Students can:
+Using the [Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Education/EducationMenuBlade/\~/overview "Education Hub"){:target="_blank"}, Students can:
 
 * Download free software provided by their Academic Institution
 * Sign up for academic-specific Azure offers
@@ -71,6 +71,8 @@ Using the [Education Hub](https://portal.azure.com/#view/Microsoft_Azure_Educati
 
 A bit of a misleading heading! But there is no need to repeat FAQS that have already been answered by Microsoft or community members; the trick is finding where to go!
 
-Most Student FAQs _(Frequently Asked Questions)_ can be answered on the following page: 
+Most Student FAQs _(Frequently Asked Questions)_ can be answered on the following page:  
 
-[Frequently asked questions about the Education Hub](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq?WT.mc_id=AZ-MVP-5004796 "Frequently asked questions about the Education Hub"), but there may be other questions that don't fit in; if that's the case - make sure you check [Microsoft Q&A](https://learn.microsoft.com/en-us/search/?terms=students&category=QnA&WT.mc_id=AZ-MVP-5004796 '"students" in Q&A') - as most likely, what you need has been answered by Microsoft or a community member.
+[Frequently asked questions about the Education Hub](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq?WT.mc_id=AZ-MVP-5004796 "Frequently asked questions about the Education Hub"){:target="_blank"}, but there may be other questions that don't fit in; if that's the case - make sure you check [Microsoft Q&A](https://learn.microsoft.com/en-us/search/?terms=students&category=QnA&WT.mc_id=AZ-MVP-5004796 '"students" in Q&A'){:target="_blank"} - as most likely, what you need has been answered by Microsoft or a community member.
+
+Make sure you also check out my post on [How can I learn how to use Microsoft Azure?](https://luke.geek.nz/azure/How-can-I-learn-how-to-use-Microsoft-Azure/){:target="_blank"} and [AWESOME-Azure-Architecture](https://aka.ms/AwesomeAzureArchitecture){:target="_blank"} list.

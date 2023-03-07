@@ -21,4 +21,4 @@ You can change [your current Azure Storage account replication type](https://lea
 >
 > ![Diagram showing how object replication works](https://learn.microsoft.com/en-us/azure/storage/blobs/media/object-replication-overview/object-replication-diagram.svg)
 >
-> ![](/uploads/object-replication-diagram.svg)
+> ![](/uploads/object-replication-diagram.svg)![](/uploads/object-replication-diagram.png)

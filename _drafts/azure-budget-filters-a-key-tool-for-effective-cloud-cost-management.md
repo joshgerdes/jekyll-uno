@@ -34,3 +34,11 @@ Note: Azure Budgets are not supported on Subscriptions, where you don't have acc
 ##### A view outside the school windows, into Scopes
 
 When creating an Azure Budget, you can specify a Scope. A scope is the level of your hierarchy _(ie, if it's a Resource Group Budget, it cannot report on resources at the Subscription, you would have to create a Subscription or Management Group scoped budget)._
+
+When you create an Azure Budget, they can be created at the following Scopes:
+
+![Microsoft Azure Budget Scopes](/uploads/azurebudget_scope.png "Microsoft Azure Budget Scopes")
+
+Most people, when creating scopes, will create a Scope at the Subscription and/or Resource Group level - there is no right or wrong answer when it comes to your Azure Budget Scope - this needs to work for you and your organisation, ie if you have a Project per Resource Group - then it would make sense to create a Budget per Resource Group, the same for Subscriptions. 
+
+You can also have multiple Azure Budgets at the same or different scopes, so a combination of Budgets may be the most effective.

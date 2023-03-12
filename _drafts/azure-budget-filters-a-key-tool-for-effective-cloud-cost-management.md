@@ -46,3 +46,9 @@ Most people, when creating scopes, will create a Scope at the Subscription and/o
 ##### Pen on paper, let's start taking notes
 
 Let's go through the process of creating an Azure Budget, using the Azure Portal.
+
+1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+2. In the Search bar above, search for **Budgets**
+3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets")
+4. 
+5. 

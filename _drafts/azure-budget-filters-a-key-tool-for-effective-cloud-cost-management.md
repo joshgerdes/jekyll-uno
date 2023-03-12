@@ -23,19 +23,19 @@ header:
 
 ![Azure Back to School - Azure Budget Filters](/uploads/azurebacktoschool_azurebudgetfilters.png "Azure Back to School - Azure Budget Filters")
 
-Be aware of the delay with the Cost & Usage data, as there may be a difference between what you end up seeing in the Portal and the Budget itself - so make sure you account for this, to be advised as early as possible:
+Be aware of the delay with the Cost & Usage data, as there may be a difference between what you end up seeing in the Portal and the Budget itself - so make sure you account for this to be advised as early as possible:
 
 > Cost and usage data is typically available within 8-24 hours and budgets are evaluated against these costs every 24 hours. 
 >
 > Be sure to get familiar with [Cost and usage data update](https://learn.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data?WT.mc_id=AZ-MVP-5004796#cost-and-usage-data-updates-and-retention "Cost and usage data updates and retention") specifics. When a budget threshold is met, email notifications are normally sent within an hour of the evaluation.
 
-Note: Azure Budgets are not supported on Subscriptions, where you don't have access to Microsoft Cost Management, ie [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
+Note: Azure Budgets are not supported on Subscriptions, where you can't access Microsoft Cost Management, i.e. [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
 
 ##### A view outside the school windows, into Scopes
 
-When creating an Azure Budget, you can specify a Scope. A scope is the level of your hierarchy _(ie, if it's a Resource Group Budget, it cannot report on resources at the Subscription, you would have to create a Subscription or Management Group scoped budget)._
+When creating an Azure Budget, you can specify a Scope. A scope is the level of your hierarchy _(i.e., if it's a Resource Group Budget, it cannot report on resources at the Subscription, you would have to create a Subscription or Management Group scoped Budget)._
 
-When you create an Azure Budget, they can be created at the following Scopes:
+When you create an Azure Budget, they can be made at the following Scopes:
 
 ![Microsoft Azure Budget Scopes](/uploads/azurebudget_scope.png "Microsoft Azure Budget Scopes")
 

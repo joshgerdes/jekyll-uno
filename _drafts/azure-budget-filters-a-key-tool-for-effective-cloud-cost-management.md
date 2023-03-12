@@ -41,4 +41,4 @@ When you create an Azure Budget, they can be created at the following Scopes:
 
 Most people, when creating scopes, will create a Scope at the Subscription and/or Resource Group level - there is no right or wrong answer when it comes to your Azure Budget Scope - this needs to work for you and your organisation, ie if you have a Project per Resource Group - then it would make sense to create a Budget per Resource Group, the same for Subscriptions. 
 
-You can also have multiple Azure Budgets at the same or different scopes, so a combination of Budgets may be the most effective.
+**You can also have multiple Azure Budgets** at the same or different scopes, so a **combination of Budgets may be the most effective**. An example could be a Subscription Budget that may go to a Product Owner, but a Management Group could go to Finance or the Technology teams. 

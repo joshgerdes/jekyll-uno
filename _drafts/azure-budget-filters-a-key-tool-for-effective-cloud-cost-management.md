@@ -1,5 +1,5 @@
 ---
-date: 2023-02-20T00:00:00.000+13:00
+date: 2023-03-13 00:00:00 +1300
 title: 'Azure Budget Filters: A Key Tool for Effective Cloud Cost Management'
 author: Luke
 categories:
@@ -29,7 +29,7 @@ Be aware of the delay with the Cost & Usage data, as there may be a difference b
 >
 > Be sure to get familiar with [Cost and usage data update](https://learn.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data?WT.mc_id=AZ-MVP-5004796#cost-and-usage-data-updates-and-retention "Cost and usage data updates and retention") specifics. When a budget threshold is met, email notifications are normally sent within an hour of the evaluation.
 
-Note: Azure Budgets are not supported on Subscriptions, where you don't have access to Cost Management, ie [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
+Note: Azure Budgets are not supported on Subscriptions, where you don't have access to Microsoft Cost Management, ie [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
 
 ##### A view outside the school windows, into Scopes
 

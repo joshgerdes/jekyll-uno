@@ -52,4 +52,7 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
 3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets")
 4. **Change** the **Scope**
 5. ![Cost Management - Azure Budget](/uploads/azureportal_costmanagement_root.png "Cost Management - Azure Budget")
-6. ssd
+6. You can select a Management Group, or Subscription, or Resource Group for the Scope, by clicking on each - in my example, I have a Management Group named: mg-landingzones, which I am going to select.
+7. Click **Select**
+8. Now that the Scope has been set, we can add our Budget to the specified Scope, click **+ Add**
+9. 

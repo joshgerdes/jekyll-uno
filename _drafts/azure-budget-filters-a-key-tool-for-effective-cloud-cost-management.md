@@ -44,3 +44,5 @@ Most people, when creating scopes, will create a Scope at the Subscription and/o
 **You can also have multiple Azure Budgets** at the same or different scopes, so a **combination of Budgets may be the most effective**. An example could be a Subscription Budget that may go to a Product Owner, but a Management Group could go to Finance or the Technology teams. 
 
 ##### Pen on paper, let's start taking notes
+
+Let's go through the process of creating an Azure Budget, using the Azure Portal.

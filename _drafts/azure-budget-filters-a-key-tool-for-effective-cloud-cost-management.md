@@ -43,7 +43,7 @@ Most people, when creating scopes, will create a Scope at the Subscription and/o
 
 **You can also have multiple Azure Budgets** at the same or different scopes, so a **combination of Budgets may be the most effective**. An example could be a Subscription Budget that may go to a Product Owner, but a Management Group could go to Finance or the Technology teams.
 
-Keep in mind, that Budgets on their own are just a forecasting and alerting tool, they won't stop resources from running, if it goes over an alert threshold, you can add Logic Apps and automation for that through the Action Groups - but out of the box - the Budget doesn't touch your resources, merely gives you an opportunity to proactively react to them, before costs become a problem.
+Keep in mind, that Budgets on their own are just a forecasting and alerting tool, they won't stop resources from running, if it goes over an alert threshold, out of the box - the Budget doesn't touch your resources, merely gives you an opportunity to proactively react to them, before costs become a problem.
 
 ##### Pen on paper, let's start taking notes
 
@@ -64,4 +64,7 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
     * Expiration date _(the date that the Budget will stop)_
 10. Budget Amount _(this is the overall; amount that you are planning on your resources to spend)_
 11. ![Azure Portal - Create budget](/uploads/azureportal_createbudget_scoping.png "Azure Portal - Create budget")
-12. k
+12. Once you have entered in your Budget details, click Next to configure your Alert conditions. The alert conditions are where you can specify, what you want to alert on ie 50% or 80% of the overall budget amount. Actual - is when it financially reaches that point and Forecasted - is when current consumption is forecasted to reach that budget.
+13. Specify an email address to send the Alert to and click Create.
+14. ![Azure Budget Conditions](/uploads/azureportal_createbudget_conditions.png "Azure Budget Conditions")
+15. s

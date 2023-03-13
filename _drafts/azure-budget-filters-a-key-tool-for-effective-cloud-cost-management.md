@@ -71,3 +71,12 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
 #### Time to highlight those notes
 
 By default, Scoping the Budget to the Subscription or Resource Group is good enough for 95% of the use cases - but using Budget filters, you can enable a bit more flexibility - for scenarios such as:
+
+* Product-centric alerts
+* Service centric alerts
+
+While the scope is your level of the Azure hierarchy, your filter is your handrail to stop you from falling, currently, Microsoft offers the following filters:
+
+d
+
+ddf

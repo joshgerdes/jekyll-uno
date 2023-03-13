@@ -58,13 +58,16 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
  7. Click **Select**
  8. Now that the Scope has been set, we can add our Budget to the specified Scope, click **+ Add**
  9. We will come back to Filters, in another section - but for the Budget details you will need:
-    * Name (this is the name of your Budget, make sure its something meaningful _(ie Monthly-Budget_MG-LandingZones)_
-    * Reset period _(Monthly/Quarterly or Annual, this is the period that the Budget resets back to $0 - you can't go wrong with Monthly)_
-    * Creation date _(the date that the Budget will start)_
-    * Expiration date _(the date that the Budget will stop)_
-10. Budget Amount _(this is the overall; amount that you are planning on your resources to spend)_
+    * **Name** (this is the name of your Budget, make sure its something meaningful _(ie Monthly-Budget_MG-LandingZones)_
+    * **Reset period** _(Monthly/Quarterly or Annual, this is the period that the Budget resets back to $0 - you can't go wrong with Monthly)_
+    * **Creation date** _(the date that the Budget will start)_
+    * **Expiration date** _(the date that the Budget will stop)_
+10. **Budget Amount **_(this is the overall; amount that you are planning on your resources to spend)_
 11. ![Azure Portal - Create budget](/uploads/azureportal_createbudget_scoping.png "Azure Portal - Create budget")
 12. Once you have entered in your Budget details, click Next to configure your Alert conditions. The alert conditions are where you can specify, what you want to alert on ie 50% or 80% of the overall budget amount. Actual - is when it financially reaches that point and Forecasted - is when current consumption is forecasted to reach that budget.
-13. Specify an email address to send the Alert to and click Create.
+13. Specify an email address to send the Alert to and click **Create**.
 14. ![Azure Budget Conditions](/uploads/azureportal_createbudget_conditions.png "Azure Budget Conditions")
-15. s
+
+#### Time to highlight those notes
+
+sd

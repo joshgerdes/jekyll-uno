@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: true
 header:
-  teaser: "/uploads/azurebacktoschool_azurebudgetfilters.png"
+  teaser: "/uploads/AzureSpringClean_AzureBudgets.png"
 
 ---
 [Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets") are a vital tool that can be used to keep on top of your Cloud financial management _(FinOps)_ Microsoft Azure platform potential and actual costs.
@@ -21,7 +21,7 @@ header:
 >
 > By leveraging budgets, it becomes possible to perform detailed cost analysis and track expenses effectively.
 
-![Azure Back to School - Azure Budget Filters](/uploads/azurebacktoschool_azurebudgetfilters.png "Azure Back to School - Azure Budget Filters")
+![Azure Back to School - Azure Budget Filters](/uploads/AzureSpringClean_AzureBudgets.png "Azure Spring Clean - Azure Budget Filters")
 
 Be aware of the delay with the Cost & Usage data, as there may be a difference between what you end up seeing in the Portal and the Budget itself - so make sure you account for this to be advised as early as possible:
 
@@ -31,7 +31,7 @@ Be aware of the delay with the Cost & Usage data, as there may be a difference b
 
 Note: Azure Budgets are not supported on Subscriptions, where you can't access Microsoft Cost Management, i.e. [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
 
-##### A view outside the school windows, into Scopes
+##### A time to clean the windows - Budget Scopes
 
 When creating an Azure Budget, you can specify a Scope. A scope is the level of your hierarchy _(i.e., if it's a Resource Group Budget, it cannot report on resources at the Subscription, you would have to create a Subscription or Management Group scoped Budget)._
 
@@ -45,7 +45,7 @@ Most people, when creating scopes, will create a Scope at the Subscription and/o
 
 Keep in mind, that Budgets on their own are just a forecasting and alerting tool, they won't stop resources from running, if it goes over an alert threshold, out of the box - the Budget doesn't touch your resources, merely gives you an opportunity to proactively react to them, before costs become a problem.
 
-##### Pen on paper, let's start taking notes
+##### Time to scrum the floor - Create an Azure Budget
 
 Let's go through the process of creating an Azure Budget, using the Azure Portal.
 
@@ -68,7 +68,7 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
 13. Specify an email address to send the Alert to and click **Create**.
 14. ![Azure Budget Conditions](/uploads/azureportal_createbudget_conditions.png "Azure Budget Conditions")
 
-#### Time to highlight those notes
+#### Time to clean the dishes - Azure Budget Filters
 
 By default, Scoping the Budget to the Subscription or Resource Group is good enough for 95% of the use cases - but using Budget filters, you can enable a bit more flexibility - for scenarios such as:
 
@@ -115,14 +115,14 @@ While the scope is your level of the Azure hierarchy, your filter is your handra
 | Tag | Break down costs by tag values for a specific tag key. | Purchases, tenant resources not associated with subscriptions, subscription resources not deployed to a resource group, and classic resources cannot be tagged and will show as Tags not supported. Services that don't include tags in usage data will show as Tags not available. Any remaining cases where tags aren't specified on a resource will show as Untagged. Learn more about tags support for each resource type. |
 | UnitOfMeasure | The billing unit of measure for the service. For example, compute services are billed per hour. |  |
 
-One or a[ combination of these filters](https://learn.microsoft.com/azure/cost-management-billing/costs/group-filter?WT.mc_id=AZ-MVP-5004796 "Group and filter options in Cost analysis and budgets") can be used to create your own meaningful Budgets! You can target specific resources, an example is if you have resources in a Shared Resource Group - for example, Networking, and you have a VPN Gateway, that is used for a Site to Site VPN, for a specific application, that is sitting in another resource group or subscription - you can add the Resource directly into the filter of your Budget for the Azure Gateway, and then include a Tag - that may reference the rest of the application dependencies.
+One or a [combination of these filters](https://learn.microsoft.com/azure/cost-management-billing/costs/group-filter?WT.mc_id=AZ-MVP-5004796 "Group and filter options in Cost analysis and budgets") can be used to create your own meaningful Budgets! You can target specific resources, an example is if you have resources in a Shared Resource Group - for example, Networking, and you have a VPN Gateway, that is used for a Site to Site VPN, for a specific application, that is sitting in another resource group or subscription - you can add the Resource directly into the filter of your Budget for the Azure Gateway, and then include a Tag - that may reference the rest of the application dependencies.
 
 Budgets can be created with all sorts of various tools, from the Azure Portal to:
 
 * [Quickstart: Create a budget with Bicep](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-create-budget-bicep?tabs=CLI&WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a budget with Bicep")
-* PowerShell ([New-AzConsumptionBudget](https://learn.microsoft.com/en-us/powershell/module/az.billing/new-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "New-AzConsumptionBudget") &[ Set-AzConsumptionBudget](https://learn.microsoft.com/powershell/module/az.billing/set-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Set-AzConsumptionBudget"))
+* PowerShell ([New-AzConsumptionBudget](https://learn.microsoft.com/en-us/powershell/module/az.billing/new-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "New-AzConsumptionBudget") & [Set-AzConsumptionBudget](https://learn.microsoft.com/powershell/module/az.billing/set-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Set-AzConsumptionBudget"))
 
-#### Homework time
+#### Relaxing beverage time - Tips & Tricks
 
 Finished the school day! But you still have your homework to finish! Your homework for today is a few tricks and tips to help!
 

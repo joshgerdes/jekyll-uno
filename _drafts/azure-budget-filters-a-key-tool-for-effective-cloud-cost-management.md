@@ -116,3 +116,15 @@ While the scope is your level of the Azure hierarchy, your filter is your handra
 | UnitOfMeasure | The billing unit of measure for the service. For example, compute services are billed per hour. |  |
 
 One or a[ combination of these filters](https://learn.microsoft.com/azure/cost-management-billing/costs/group-filter?WT.mc_id=AZ-MVP-5004796 "Group and filter options in Cost analysis and budgets") can be used to create your own meaningful Budgets! You can target specific resources, an example is if you have resources in a Shared Resource Group - for example, Networking, and you have a VPN Gateway, that is used for a Site to Site VPN, for a specific application, that is sitting in another resource group or subscription - you can add the Resource directly into the filter of your Budget for the Azure Gateway, and then include a Tag - that may reference the rest of the application dependencies.
+
+Budgets can be created with all sorts of various tools, from the Azure Portal to:
+
+* [Quickstart: Create a budget with Bicep](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-create-budget-bicep?tabs=CLI&WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a budget with Bicep")
+* PowerShell ([New-AzConsumptionBudget](https://learn.microsoft.com/en-us/powershell/module/az.billing/new-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "New-AzConsumptionBudget") &[ Set-AzConsumptionBudget](https://learn.microsoft.com/powershell/module/az.billing/set-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Set-AzConsumptionBudget"))
+
+#### Homework time
+
+Finished the school day! But you still have your homework to finish! Your homework for today is a few tricks and tips to help!
+
+* You can use the [**Azure Mobile Application**](https://azure.microsoft.com/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796 "Get the Azure mobile app") **to display your Cost and Budgets** so keep on top of your consumption on the go!
+* The Microsoft Cost Management team are working on new features all the time, including improvements to Cost Management and Budgets! If you like living on the edge - be sure to check out [the Preview porta](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#recommendationinsights "Enable preview features in Cost Management Labs")l (and add your feedback)!

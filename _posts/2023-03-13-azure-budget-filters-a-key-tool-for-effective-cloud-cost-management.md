@@ -124,7 +124,7 @@ Budgets can be created with all sorts of various tools, from the Azure Portal to
 
 #### Relaxing beverage time - Tips & Tricks
 
-Finished the school day! But you still have your homework to finish! Your homework for today is a few tricks and tips to help!
+Finished the day of cleaning! Now is the time to sit back and enjoy your favourite beverages, and read the labels on the bottles!
 
 * You can use the [**Azure Mobile Application**](https://azure.microsoft.com/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796 "Get the Azure mobile app") **to display your Cost and Budgets** so keep on top of your consumption on the go!
 * The Microsoft Cost Management team are working on new features all the time, including improvements to Cost Management and Budgets! If you like living on the edge - be sure to check out [**the Preview porta**](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#recommendationinsights "Enable preview features in Cost Management Labs")**l** (and add your feedback)!

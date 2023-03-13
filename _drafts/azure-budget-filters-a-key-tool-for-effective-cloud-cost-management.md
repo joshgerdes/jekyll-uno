@@ -17,7 +17,7 @@ header:
 
 > In the realm of Cost Management, budgets play a pivotal role in facilitating the planning and implementation of organizational accountability. These tools enable proactive communication regarding expenses and support the management of costs by closely monitoring spending trends over extended periods.
 >
-> One can set up alerts based on current or projected expenditures to maintain adherence to the established organizational spending limit. Upon surpassing the budget thresholds, notifications are promptly triggered. Such occurrences neither impact any of the available resources nor interrupt any consumption processes. 
+> One can set up alerts based on current or projected expenditures to maintain adherence to the established organizational spending limit. Upon surpassing the budget thresholds, notifications are promptly triggered. Such occurrences neither impact any of the available resources nor interrupt any consumption processes.
 >
 > By leveraging budgets, it becomes possible to perform detailed cost analysis and track expenses effectively.
 
@@ -25,7 +25,7 @@ header:
 
 Be aware of the delay with the Cost & Usage data, as there may be a difference between what you end up seeing in the Portal and the Budget itself - so make sure you account for this to be advised as early as possible:
 
-> Cost and usage data is typically available within 8-24 hours and budgets are evaluated against these costs every 24 hours. 
+> Cost and usage data is typically available within 8-24 hours and budgets are evaluated against these costs every 24 hours.
 >
 > Be sure to get familiar with [Cost and usage data update](https://learn.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data?WT.mc_id=AZ-MVP-5004796#cost-and-usage-data-updates-and-retention "Cost and usage data updates and retention") specifics. When a budget threshold is met, email notifications are normally sent within an hour of the evaluation.
 
@@ -39,20 +39,29 @@ When you create an Azure Budget, they can be made at the following Scopes:
 
 ![Microsoft Azure Budget Scopes](/uploads/azurebudget_scope.png "Microsoft Azure Budget Scopes")
 
-Most people, when creating scopes, will create a Scope at the Subscription and/or Resource Group level - there is no right or wrong answer when it comes to your Azure Budget Scope - this needs to work for you and your organisation, ie if you have a Project per Resource Group - then it would make sense to create a Budget per Resource Group, the same for Subscriptions. 
+Most people, when creating scopes, will create a Scope at the Subscription and/or Resource Group level - there is no right or wrong answer when it comes to your Azure Budget Scope - this needs to work for you and your organisation, ie if you have a Project per Resource Group - then it would make sense to create a Budget per Resource Group, the same for Subscriptions.
 
-**You can also have multiple Azure Budgets** at the same or different scopes, so a **combination of Budgets may be the most effective**. An example could be a Subscription Budget that may go to a Product Owner, but a Management Group could go to Finance or the Technology teams. 
+**You can also have multiple Azure Budgets** at the same or different scopes, so a **combination of Budgets may be the most effective**. An example could be a Subscription Budget that may go to a Product Owner, but a Management Group could go to Finance or the Technology teams.
+
+Keep in mind, that Budgets on their own are just a forecasting and alerting tool, they won't stop resources from running, if it goes over an alert threshold, you can add Logic Apps and automation for that through the Action Groups - but out of the box - the Budget doesn't touch your resources, merely gives you an opportunity to proactively react to them, before costs become a problem.
 
 ##### Pen on paper, let's start taking notes
 
 Let's go through the process of creating an Azure Budget, using the Azure Portal.
 
-1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
-2. In the Search bar above, search for **Budgets**
-3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets")
-4. **Change** the **Scope**
-5. ![Cost Management - Azure Budget](/uploads/azureportal_costmanagement_root.png "Cost Management - Azure Budget")
-6. You can select a Management Group, Subscription, or Resource Group for the Scope, by clicking on each - in my example, I have a Management Group named: _mg-landingzones_, which I am going to select.
-7. Click **Select**
-8. Now that the Scope has been set, we can add our Budget to the specified Scope, click **+ Add**
-9. 
+ 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 2. In the Search bar above, search for **Budgets**
+ 3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets")
+ 4. **Change** the **Scope**
+ 5. ![Cost Management - Azure Budget](/uploads/azureportal_costmanagement_root.png "Cost Management - Azure Budget")
+ 6. You can select a Management Group, Subscription, or Resource Group for the Scope, by clicking on each - in my example, I have a Management Group named: _mg-landingzones_, which I am going to select.
+ 7. Click **Select**
+ 8. Now that the Scope has been set, we can add our Budget to the specified Scope, click **+ Add**
+ 9. We will come back to Filters, in another section - but for the Budget details you will need:
+    * Name (this is the name of your Budget, make sure its something meaningful _(ie Monthly-Budget_MG-LandingZones)_
+    * Reset period _(Monthly/Quarterly or Annual, this is the period that the Budget resets back to $0 - you can't go wrong with Monthly)_
+    * Creation date _(the date that the Budget will start)_
+    * Expiration date _(the date that the Budget will stop)_
+10. Budget Amount _(this is the overall; amount that you are planning on your resources to spend)_
+11. ![Azure Portal - Create budget](/uploads/azureportal_createbudget_scoping.png "Azure Portal - Create budget")
+12. k

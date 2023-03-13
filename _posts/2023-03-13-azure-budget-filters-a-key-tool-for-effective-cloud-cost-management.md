@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/AzureSpringClean_AzureBudgets.png"
 
 ---
-[Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets") are a vital tool that can be used to keep on top of your Cloud financial management _(FinOps)_ Microsoft Azure platform potential and actual costs.
+[Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets"){:target="_blank"} are a vital tool that can be used to keep on top of your Cloud financial management _(FinOps)_ Microsoft Azure platform potential and actual costs.
 
 #### The most effective Azure Budgets - are the ones that you use!
 
@@ -27,9 +27,9 @@ Be aware of the delay with the Cost & Usage data, as there may be a difference b
 
 > Cost and usage data is typically available within 8-24 hours and budgets are evaluated against these costs every 24 hours.
 >
-> Be sure to get familiar with [Cost and usage data update](https://learn.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data?WT.mc_id=AZ-MVP-5004796#cost-and-usage-data-updates-and-retention "Cost and usage data updates and retention") specifics. When a budget threshold is met, email notifications are normally sent within an hour of the evaluation.
+> Be sure to get familiar with [Cost and usage data update](https://learn.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data?WT.mc_id=AZ-MVP-5004796#cost-and-usage-data-updates-and-retention "Cost and usage data updates and retention"){:target="_blank"} specifics. When a budget threshold is met, email notifications are normally sent within an hour of the evaluation.
 
-Note: Azure Budgets are not supported on Subscriptions, where you can't access Microsoft Cost Management, i.e. [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship") subscriptions.
+Note: Azure Budgets are not supported on Subscriptions, where you can't access Microsoft Cost Management, i.e. [Azure Sponsorship](https://www.microsoftazuresponsorships.com/ "Azure Sponsorship"){:target="_blank"} subscriptions.
 
 ##### A time to clean the windows - Budget Scopes
 
@@ -49,9 +49,9 @@ Keep in mind, that Budgets on their own are just a forecasting and alerting tool
 
 Let's go through the process of creating an Azure Budget, using the Azure Portal.
 
- 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal")
+ 1. Log in to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. In the Search bar above, search for **Budgets**
- 3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets")
+ 3. Click on [**Budgets**](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/\~/budgets/open/budgets/openedBy/AzurePortal "Cost Management: Tenant Root Group | Budgets"){:target="_blank"}
  4. **Change** the **Scope**
  5. ![Cost Management - Azure Budget](/uploads/azureportal_costmanagement_root.png "Cost Management - Azure Budget")
  6. You can select a Management Group, Subscription, or Resource Group for the Scope, by clicking on each - in my example, I have a Management Group named: _mg-landingzones_, which I am going to select.
@@ -62,11 +62,11 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
     * **Reset period** _(Monthly/Quarterly or Annual, this is the period that the Budget resets back to $0 - you can't go wrong with Monthly)_
     * **Creation date** _(the date that the Budget will start)_
     * **Expiration date** _(the date that the Budget will stop)_
-10. **Budget Amount **_(this is the overall; amount that you are planning on your resources to spend)_
+10. **Budget Amount**_(this is the overall; amount that you are planning on your resources to spend)_
 11. ![Azure Portal - Create budget](/uploads/azureportal_createbudget_scoping.png "Azure Portal - Create budget")
 12. Once you have entered in your Budget details, click Next to configure your Alert conditions. The alert conditions are where you can specify, what you want to alert on ie 50% or 80% of the overall budget amount. Actual - is when it financially reaches that point and Forecasted - is when current consumption is forecasted to reach that budget.
 13. Specify an email address to send the Alert to and click **Create**.
-14. ![Azure Budget Conditions](/uploads/azureportal_createbudget_conditions.png "Azure Budget Conditions")
+14. ![Azure Budget Conditions](/uploads/azureportal_createbudget_conditions.png "Azure Budget Conditions"){:target="_blank"}
 
 #### Time to clean the dishes - Azure Budget Filters
 
@@ -115,17 +115,17 @@ While the scope is your level of the Azure hierarchy, your filter is your handra
 | Tag | Break down costs by tag values for a specific tag key. | Purchases, tenant resources not associated with subscriptions, subscription resources not deployed to a resource group, and classic resources cannot be tagged and will show as Tags not supported. Services that don't include tags in usage data will show as Tags not available. Any remaining cases where tags aren't specified on a resource will show as Untagged. Learn more about tags support for each resource type. |
 | UnitOfMeasure | The billing unit of measure for the service. For example, compute services are billed per hour. |  |
 
-One or a [combination of these filters](https://learn.microsoft.com/azure/cost-management-billing/costs/group-filter?WT.mc_id=AZ-MVP-5004796 "Group and filter options in Cost analysis and budgets") can be used to create your own meaningful Budgets! You can target specific resources, an example is if you have resources in a Shared Resource Group - for example, Networking, and you have a VPN Gateway, that is used for a Site to Site VPN, for a specific application, that is sitting in another resource group or subscription - you can add the Resource directly into the filter of your Budget for the Azure Gateway, and then include a Tag - that may reference the rest of the application dependencies.
+One or a [combination of these filters](https://learn.microsoft.com/azure/cost-management-billing/costs/group-filter?WT.mc_id=AZ-MVP-5004796 "Group and filter options in Cost analysis and budgets"){:target="_blank"} can be used to create your own meaningful Budgets! You can target specific resources, an example is if you have resources in a Shared Resource Group - for example, Networking, and you have a VPN Gateway, that is used for a Site to Site VPN, for a specific application, that is sitting in another resource group or subscription - you can add the Resource directly into the filter of your Budget for the Azure Gateway, and then include a Tag - that may reference the rest of the application dependencies.
 
 Budgets can be created with all sorts of various tools, from the Azure Portal to:
 
-* [Quickstart: Create a budget with Bicep](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-create-budget-bicep?tabs=CLI&WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a budget with Bicep")
-* PowerShell ([New-AzConsumptionBudget](https://learn.microsoft.com/en-us/powershell/module/az.billing/new-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "New-AzConsumptionBudget") & [Set-AzConsumptionBudget](https://learn.microsoft.com/powershell/module/az.billing/set-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Set-AzConsumptionBudget"))
+* [Quickstart: Create a budget with Bicep](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-create-budget-bicep?tabs=CLI&WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a budget with Bicep"){:target="_blank"}
+* PowerShell ([New-AzConsumptionBudget](https://learn.microsoft.com/en-us/powershell/module/az.billing/new-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "New-AzConsumptionBudget"){:target="_blank"} & [Set-AzConsumptionBudget](https://learn.microsoft.com/powershell/module/az.billing/set-azconsumptionbudget?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Set-AzConsumptionBudget"){:target="_blank"})
 
 #### Relaxing beverage time - Tips & Tricks
 
 Finished the day of cleaning! Now is the time to sit back and enjoy your favourite beverages, and read the labels on the bottles!
 
 * You can use the [**Azure Mobile Application**](https://azure.microsoft.com/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796 "Get the Azure mobile app") **to display your Cost and Budgets** so keep on top of your consumption on the go!
-* The Microsoft Cost Management team are working on new features all the time, including improvements to Cost Management and Budgets! If you like living on the edge - be sure to check out [**the Preview porta**](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#recommendationinsights "Enable preview features in Cost Management Labs")**l** (and add your feedback)!
-* You can use an [**Action Group**](https://learn.microsoft.com/azure/azure-monitor/alerts/action-groups?WT.mc_id=AZ-MVP-5004796#configure-basic-action-group-settings "Create and manage action groups in the Azure portal")**,** to trigger a Webhook or Azure **Automation** runbook - to resize or stop resources. Action Groups are currently only supported for subscription and resource group scopes, so you may need to have one Budget for Monitoring at a higher level and one Budget for running automation at a lower level.
+* The Microsoft Cost Management team are working on new features all the time, including improvements to Cost Management and Budgets! If you like living on the edge - be sure to check out [**the Preview porta**](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-preview-features-cost-management-labs?WT.mc_id=AZ-MVP-5004796#recommendationinsights "Enable preview features in Cost Management Labs"){:target="_blank"}**l** (and add your feedback)!
+* You can use an [**Action Group**](https://learn.microsoft.com/azure/azure-monitor/alerts/action-groups?WT.mc_id=AZ-MVP-5004796#configure-basic-action-group-settings "Create and manage action groups in the Azure portal"){:target="_blank"}**,** to trigger a Webhook or Azure **Automation** runbook - to resize or stop resources. Action Groups are currently only supported for subscription and resource group scopes, so you may need to have one Budget for Monitoring at a higher level and one Budget for running automation at a lower level.

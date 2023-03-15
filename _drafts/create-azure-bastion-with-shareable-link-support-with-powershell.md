@@ -22,3 +22,5 @@ As of November 2022[,]() Microsoft introduced shareable links into public previe
 * Users without Azure subscriptions can seamlessly connect to VMs without exposing RDP/SSH ports to the public internet.
 
 > The Bastion **Shareable Link** feature lets users connect to a target resource (virtual machine or virtual machine scale set) using Azure Bastion without accessing the Azure portal. 
+
+At the time of this writing, there are some [scenarios ](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#considerations "Create a shareable link for Bastion")where shareable links, won't work - particularly across Network peering across subscriptions and regions.

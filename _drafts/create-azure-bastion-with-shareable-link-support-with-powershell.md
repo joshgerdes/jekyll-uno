@@ -254,4 +254,9 @@ The script relies on the following parameters:
 2. Open a Terminal or PowerShell prompt, and navigate to the folder containing the script.
 3. Dot source the script so that you can run it from the session: **. .\\New-AzBastionShareableLink.ps1**
 4. s
-5. s
+5. Once it's imported - we can now run it; make sure you replace your parameters that match your environment:
+
+       New-AzBastionShareableLink -BastionResourceName vnet-aue-dev-bastion -RGName BastionTest -VMRGName -BastionTest -VMname 2022ServerVM-2
+6. ![Azure Bastion - Create Shared Link](/uploads/windowsterminal_new-azbastionsharedlink.png "Azure Bastion - Create Shared Link")
+7. s
+8. 

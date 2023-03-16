@@ -2,7 +2,8 @@
 date: 2023-03-16 00:00:00 +1300
 title: Create Azure Bastion with Shareable Link support with PowerShell
 author: Luke
-categories: []
+categories:
+- Azure
 toc: true
 header:
   teaser: ''
@@ -156,3 +157,21 @@ The PowerShell function we will run will require a few parameters to create the 
  9. The script will then go and provision Azure Bastion and enable Shared Links. It will take a few minutes to run while it provisions Bastion. Then you will get JSON output, indicating it has been completed.
 10. ![Windows PowerShell - New Azure Bastion](/uploads/windowsterminal_new-azbastionsharedlinkenabledrun.png "Windows PowerShell - New Azure Bastion")
 11. ![Azure Bastion - Shareable Link](/uploads/azureportal_azurebastion_shareablelinkconfig.png "Azure Bastion - Shareable Link")
+
+#### Create Shareable Link
+
+Now that we have an Azure Bastion instance and have Shareable Links enabled - it's time to create a Shareable Link for a Virtual Machine; this triggers 2 API endpoints - creating the shareable link and then retrieving the shareable link.
+
+The same assumptions are made, so make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") installed.
+
+The script relies on the following parameters:
+
+| Parameters          | Note                                                                      |
+|---------------------|---------------------------------------------------------------------------|
+| BastionResourceName | The name of your Azure Bastion resource                                   |
+| RGName              | The Resource Group of your Bastion resource                               |
+| VMRGName            | The Resource Group of your Virtual Machine, you want a Shareable Link for |
+| Vmname              | The name of the Virtual Machine you want a shareable link for            |
+
+
+s

@@ -23,7 +23,7 @@ As of November 2022[,]() Microsoft introduced shareable links into public previe
 * Administrators will no longer have to provide full access to their Azure accounts to one-time VM users—helping to maintain their privacy and security.
 * Users without Azure subscriptions can seamlessly connect to VMs without exposing RDP/SSH ports to the public internet.
 
-> The Bastion **Shareable Link** feature lets users connect to a target resource (virtual machine or virtual machine scale set) using Azure Bastion without accessing the Azure portal. 
+> The Bastion **Shareable Link** feature lets users connect to a target resource (virtual machine or virtual machine scale set) using Azure Bastion without accessing the Azure portal.
 
 At the time of this writing, there are some [scenarios ](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#considerations "Create a shareable link for Bastion")where shareable links won't work - particularly across Network peering across subscriptions and regions.
 
@@ -35,8 +35,31 @@ To get around that, we will leverage the [Azure Rest API](https://learn.microsof
 
 I will assume there is already an Azure Virtual Network created; if not, you can follow the [Microsoft documentation](https://learn.microsoft.com/azure/virtual-network/quick-create-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a virtual network using the Azure portal") to get it up and running!
 
+Also, make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") installed.
+
 The PowerShell function we will run will require a few parameters to create the Azure Bastion resource and enable Shared Link functionality; these parameters are:
 
-sd
+|  |  |
+| --- | --- |
+| Parameters | Note |
+| RGName | The Resource Group of your Virtual Network |
+| VNetName | The Virtual Network name |
+| addressPrefix | The address prefix for your new Bastion subnet. For Azure Bastion resources deployed on or after November 2, 2021, the minimum AzureBastionSubnet size is /26 or larger (/25, /24, etc.). |
+| region | The region, that Azure Bastion is deployed into (this needs to match your Virtual Network) |
+| BastionPubIPName | The name of the Public IP, used by the Azure Bastion resource (this is the Azure resource name, it doesn't have an external DNS alias, so doesn't need to be globally unique) |
+| BastionResourceName | The name of your Azure Bastion resource |
 
-sd
+ 1. Copy the script below into a file named: New-AzBastionSharedLinkEnabled.ps1
+ 2. Open a Terminal or PowerShell prompt, navigate to the folder containing the script
+ 3. Dot source the script so that you can run it from the session: . .\\New-AzBastionSharedLinkEnabled.ps1
+ 4. ![. .\\New-AzBastionSharedLinkEnabled.ps1](/uploads/windowsterminal_new-azbastionsharedlinkenabled.png ". .\New-AzBastionSharedLinkEnabled.ps1")
+ 5. Once it's imported - we can now run it; make sure you replace your parameters that match your environment:
+
+        New-AzBastionSharedLinkEnabled -RGName BastionTest -VNetName vnet-aue-dev -addressPrefix 10.2.1.0/26 -region AustraliaEast -BastionPubIPName VNet1-ip -BastionResourceName net-aue-dev-bastion
+ 6. The script will then prompt for your credentials to authenticate
+ 7. You will then need to select the Azure subscription containing your Azure Virtual Network, then select Ok
+ 8. ![Select Azure subscription](/uploads/select-azsubscription_outgridview.png "Select Azure subscription")
+ 9. The script will then go and provision Azure Bastion and enable Shared Links. It will take a few minutes to run while it provisions Bastion. Then you will get JSON output, indicating it has been completed.
+10. ![Windows PowerShell - New Azure Bastion](/uploads/windowsterminal_new-azbastionsharedlinkenabledrun.png "Windows PowerShell - New Azure Bastion")
+11. s
+12. s

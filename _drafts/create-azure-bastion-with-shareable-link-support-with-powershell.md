@@ -263,7 +263,9 @@ The script relies on the following parameters:
  9. ![Select Azure subscription](/uploads/select-azsubscription_outgridview.png "Select Azure subscription")
 10. The script will then go and collect the ID of the Virtual Machine, pass that through to the Create a Shareable Link, then wait 10 seconds for the Bastion Resource to update properly, then collect the Shareable Link and output it to the terminal.
 11. ![Azure Bastion - Shared Link](/uploads/windowsterminal_azurebastionsharedlink.png "Azure Bastion - Shared Link")
-12. I can then copy the URL into my favourite browser and connect to your Virtual Machine securely!
-13. ![Microsoft Azure Bastion - Connect](/uploads/azurebastionshareablelink_vmconnect.gif "Microsoft Azure Bastion - Connect")
+12. You can also see the link created in the Azure Portal
+13. ![Microsoft Azure Portal - Shareable Link](/uploads/azureportal_azurebastion_shareablelinks.png "Microsoft Azure Portal - Shareable Link")
+14. I can then copy the URL into my favourite browser and connect to your Virtual Machine securely!
+15. ![Microsoft Azure Bastion - Connect](/uploads/azurebastionshareablelink_vmconnect.gif "Microsoft Azure Bastion - Connect")
 
 The scripts can also be found directly on GitHub here: [https://github.com/lukemurraynz/Azure](https://github.com/lukemurraynz/Azure "https://github.com/lukemurraynz/Azure")

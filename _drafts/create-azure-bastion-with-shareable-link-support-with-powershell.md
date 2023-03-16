@@ -27,7 +27,7 @@ As of November 2022[,]() Microsoft introduced shareable links into public previe
 
 At the time of this writing, there are some [scenarios ](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#considerations "Create a shareable link for Bastion")where shareable links won't work - particularly across Network peering across subscriptions and regions.
 
-Because the service is in Public Preview - native PowerShell cmdlet support, enabling and configuring this feature isn't available - but you can easily enable it via the [Azure Portal](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#enable-shareable-link-feature "Enable Shareable Link feature").
+Because the service is in Public Preview - native PowerShell cmdlet support, enabling and configuring this feature isn't available - but you can easily allow it via the [Azure Portal](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#enable-shareable-link-feature "Enable Shareable Link feature").
 
 To get around that, we will leverage the [Azure Rest API](https://learn.microsoft.com/rest/api/azure/?WT.mc_id=AZ-MVP-5004796 "Azure REST API reference") directly, using PowerShell to enable the Shareable Link feature and create and obtain a shareable link for a Virtual Machine.
 
@@ -144,8 +144,8 @@ The PowerShell function we will run will require a few parameters to create the 
             Invoke-RestMethod @Params
           }
           
- 2. Open a Terminal or PowerShell prompt, navigate to the folder containing the script
- 3. Dot source the script so that you can run it from the session: . .\\New-AzBastionSharedLinkEnabled.ps1
+ 2. Open a Terminal or PowerShell prompt, and navigate to the folder containing the script.
+ 3. Dot source the script so that you can run it from the session: **. .\\New-AzBastionSharedLinkEnabled.ps1**
  4. ![. .\\New-AzBastionSharedLinkEnabled.ps1](/uploads/windowsterminal_new-azbastionsharedlinkenabled.png ". .\New-AzBastionSharedLinkEnabled.ps1")
  5. Once it's imported - we can now run it; make sure you replace your parameters that match your environment:
 
@@ -156,5 +156,3 @@ The PowerShell function we will run will require a few parameters to create the 
  9. The script will then go and provision Azure Bastion and enable Shared Links. It will take a few minutes to run while it provisions Bastion. Then you will get JSON output, indicating it has been completed.
 10. ![Windows PowerShell - New Azure Bastion](/uploads/windowsterminal_new-azbastionsharedlinkenabledrun.png "Windows PowerShell - New Azure Bastion")
 11. ![Azure Bastion - Shareable Link](/uploads/azureportal_azurebastion_shareablelinkconfig.png "Azure Bastion - Shareable Link")
-12. s
-13. s

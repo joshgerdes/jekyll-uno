@@ -172,91 +172,98 @@ The script relies on the following parameters:
 | VMRGName | The Resource Group of your Virtual Machine, you want a Shareable Link for |
 | Vmname | The name of the Virtual Machine you want a shareable link for |
 
-1. Copy the script below into a file named: New-AzBastionShareableLink.ps1
+ 1. Copy the script below into a file named: New-AzBastionShareableLink.ps1
 
-       function New-AzBastionShareableLink {
-         <#
-           .SYNOPSIS
-             Creates an Azure Bastion shareable link.
-         #>
-         [CmdletBinding()]
-         param
-         (
-           [Parameter(Mandatory = $false, Position = 0)]
-           [System.String]
-           $BastionResourceName = 'vnet-aue-dev-bastion',
-           
-           [Parameter(Mandatory = $false, Position = 1)]
-           [System.String]
-           $RGName = "BastionTest",
-           
-           [Parameter(Mandatory = $false, Position = 1)]
-           [System.String]
-           $VMRGName = "BastionTest",
-       
-           [Parameter(Mandatory = $false, Position = 2)]
-           [System.String]
-           $VMname = "2022ServerVM-2"
-         )
-         
-         # Connect to Azure using Get-AzAccount
-         Connect-AzAccount
-         
-         # Get all subscriptions that the account has access to
-         Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
-         
-         $subscription = Get-AzContext | Select-Object Subscription
-         # Get the access token for the authenticated user
-         $token = (Get-AzAccessToken).Token
-         
-         $ID = Get-AzVM -ResourceGroupName $VMRGName -Name $VMName | Select-Object Id -ExpandProperty id
-         
-         $body = @{
-           
-           vms = @(
-             @{
-               vm = @{
-                 id = $ID.Id
-               }
-             }
-           )
-           
-         }  | ConvertTo-Json -Depth 3
-         
-           #creates the shareable link for the VM
+        function New-AzBastionShareableLink {
+          <#
+            .SYNOPSIS
+              Creates an Azure Bastion shareable link.
+          #>
+          [CmdletBinding()]
+          param
+          (
+            [Parameter(Mandatory = $false, Position = 0)]
+            [System.String]
+            $BastionResourceName = 'vnet-aue-dev-bastion',
+            
+            [Parameter(Mandatory = $false, Position = 1)]
+            [System.String]
+            $RGName = "BastionTest",
+            
+            [Parameter(Mandatory = $false, Position = 1)]
+            [System.String]
+            $VMRGName = "BastionTest",
+        
+            [Parameter(Mandatory = $false, Position = 2)]
+            [System.String]
+            $VMname = "2022ServerVM-2"
+          )
+          
+          # Connect to Azure using Get-AzAccount
+          Connect-AzAccount
+          
+          # Get all subscriptions that the account has access to
+          Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
+          
+          $subscription = Get-AzContext | Select-Object Subscription
+          # Get the access token for the authenticated user
+          $token = (Get-AzAccessToken).Token
+          
+          $ID = Get-AzVM -ResourceGroupName $VMRGName -Name $VMName | Select-Object Id -ExpandProperty id
+          
+          $body = @{
+            
+            vms = @(
+              @{
+                vm = @{
+                  id = $ID.Id
+                }
+              }
+            )
+            
+          }  | ConvertTo-Json -Depth 3
+          
+            #creates the shareable link for the VM
+          $params = @{
+            Uri         = "https://management.azure.com/subscriptions/" + $subscription.Subscription.Id + 
+            "/resourceGroups/$RGName/providers/Microsoft.Network/bastionHosts/$BastionResourceName/createShareableLinks?api-version=2022-07-01"
+            Headers     = @{ 'Authorization' = "Bearer $token" }
+            Method      = 'POST'
+            Body        = $body
+            ContentType = 'application/json'
+          }
+          
+          # Invoke the REST API and store the response
+          Invoke-RestMethod @Params
+          
+          #Gets the shareable link for the VM
+            
          $params = @{
-           Uri         = "https://management.azure.com/subscriptions/" + $subscription.Subscription.Id + 
-           "/resourceGroups/$RGName/providers/Microsoft.Network/bastionHosts/$BastionResourceName/createShareableLinks?api-version=2022-07-01"
-           Headers     = @{ 'Authorization' = "Bearer $token" }
-           Method      = 'POST'
-           Body        = $body
-           ContentType = 'application/json'
-         }
-         
-         # Invoke the REST API and store the response
-         Invoke-RestMethod @Params
-         
-         #Gets the shareable link for the VM
-           
-        $params = @{
-           Uri         = "https://management.azure.com/subscriptions/" + $subscription.Subscription.Id + 
-           "/resourceGroups/$($RGName)/providers/Microsoft.Network/bastionHosts/$BastionResourceName/getShareableLinks?api-version=2022-09-01"
-           Headers     = @{ 'Authorization' = "Bearer $token" }
-           Method      = 'POST'
-           # Body        = $body
-           ContentType = 'application/json'
-         }
-         
-         # Invoke the REST API and store the response
-         $ShareableLink = Invoke-RestMethod @Params
-         Write-Output $ShareableLink.value.bsl 
-       }
-2. Open a Terminal or PowerShell prompt, and navigate to the folder containing the script.
-3. Dot source the script so that you can run it from the session: **. .\\New-AzBastionShareableLink.ps1**
-4. s
-5. Once it's imported - we can now run it; make sure you replace your parameters that match your environment:
+            Uri         = "https://management.azure.com/subscriptions/" + $subscription.Subscription.Id + 
+            "/resourceGroups/$($RGName)/providers/Microsoft.Network/bastionHosts/$BastionResourceName/getShareableLinks?api-version=2022-09-01"
+            Headers     = @{ 'Authorization' = "Bearer $token" }
+            Method      = 'POST'
+            # Body        = $body
+            ContentType = 'application/json'
+          }
+          
+          # Invoke the REST API and store the response
+          $ShareableLink = Invoke-RestMethod @Params
+          Write-Output $ShareableLink.value.bsl 
+        }
+ 2. Open a Terminal or PowerShell prompt, and navigate to the folder containing the script.
+ 3. Dot source the script so that you can run it from the session: **. .\\New-AzBastionShareableLink.ps1**
+ 4. s
+ 5. Once it's imported - we can now run it; make sure you replace your parameters that match your environment:
 
-       New-AzBastionShareableLink -BastionResourceName vnet-aue-dev-bastion -RGName BastionTest -VMRGName -BastionTest -VMname 2022ServerVM-2
-6. ![Azure Bastion - Create Shared Link](/uploads/windowsterminal_new-azbastionsharedlink.png "Azure Bastion - Create Shared Link")
-7. s
-8. 
+        New-AzBastionShareableLink -BastionResourceName net-aue-dev-bastion -RGName BastionTest -VMRGName BastionTest -VMname 2022ServerVM-2
+ 6. ![Azure Bastion - Create Shared Link](/uploads/windowsterminal_new-azbastionsharedlink.png "Azure Bastion - Create Shared Link")
+ 7. The script will then prompt for your credentials to authenticate
+ 8. You will then need to select the Azure subscription containing your Azure Virtual Network, then select Ok
+ 9. ![Select Azure subscription](/uploads/select-azsubscription_outgridview.png "Select Azure subscription")
+10. The script will then go and collect the ID of the Virtual Machine, pass that through to the Create a Shareable Link, then wait 10 seconds for the Bastion Resource to update properly, then collect the Shareable Link and output it to the terminal.
+11. ![Azure Bastion - Shared Link](/uploads/windowsterminal_azurebastionsharedlink.png "Azure Bastion - Shared Link")
+12. I can then copy the URL into my favourite browser and connect to your Virtual Machine securely!
+13. ![Microsoft Azure Bastion - Connect](/uploads/azurebastionshareablelink_vmconnect.gif "Microsoft Azure Bastion - Connect")
+
+The scripts can also be found directly on GitHub here: [https://github.com/lukemurraynz/Azure](https://github.com/lukemurraynz/Azure "https://github.com/lukemurraynz/Azure")

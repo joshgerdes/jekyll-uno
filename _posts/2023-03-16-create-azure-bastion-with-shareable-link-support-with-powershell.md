@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azurebastion_shareablelinkheader.png"
 
 ---
-[Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Bastion?") is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal or via the native SSH or RDP client installed on your local computer.
+[Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Bastion?"){:target="_blank"} is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal or via the native SSH or RDP client installed on your local computer.
 
 #### Overview
 
@@ -19,26 +19,26 @@ Because of this, if you don't have line-of-sight access to your Virtual Machines
 
 There is a downside, though. To connect to a Virtual Machine secured by Bastion, you need access to the Azure Portal, or command line connectivity to Azure, to create the tunnel; this means that you may need to grant people elevated rights and access they may not need to connect.
 
-As of November 2022[,]() Microsoft introduced shareable links into public preview, solving two key pain points:
+As of November 2022, Microsoft introduced shareable links into public preview, solving two key pain points:
 
 * Administrators will no longer have to provide full access to their Azure accounts to one-time VM users—helping to maintain their privacy and security.
 * Users without Azure subscriptions can seamlessly connect to VMs without exposing RDP/SSH ports to the public internet.
 
 > The Bastion **Shareable Link** feature lets users connect to a target resource (virtual machine or virtual machine scale set) using Azure Bastion without accessing the Azure portal.
 
-At the time of this writing, there are some [scenarios ](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#considerations "Create a shareable link for Bastion")where shareable links won't work - particularly across Network peering across subscriptions and regions.
+At the time of this writing, there are some [scenarios](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#considerations "Create a shareable link for Bastion"){:target="_blank"} where shareable links won't work - particularly across Network peering across subscriptions and regions.
 
-Because the service is in Public Preview - native PowerShell cmdlet support, enabling and configuring this feature isn't available - but you can easily allow it via the [Azure Portal](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#enable-shareable-link-feature "Enable Shareable Link feature").
+Because the service is in Public Preview - native PowerShell cmdlet support, enabling and configuring this feature isn't available - but you can easily allow it via the [Azure Portal](https://learn.microsoft.com/en-us/azure/bastion/shareable-link?WT.mc_id=AZ-MVP-5004796#enable-shareable-link-feature "Enable Shareable Link feature"){:target="_blank"}.
 
 ![Create Azure Bastion with Shareable Link Support](/uploads/azurebastion_shareablelinkheader.png "Create Azure Bastion with Shareable Link Support")
 
-To get around that, we will leverage the [Azure Rest API](https://learn.microsoft.com/rest/api/azure/?WT.mc_id=AZ-MVP-5004796 "Azure REST API reference") directly, using PowerShell to enable the Shareable Link feature and create and obtain a shareable link for a Virtual Machine.
+To get around that, we will leverage the [Azure Rest API](https://learn.microsoft.com/rest/api/azure/?WT.mc_id=AZ-MVP-5004796 "Azure REST API reference"){:target="_blank"} directly, using PowerShell to enable the Shareable Link feature and create and obtain a shareable link for a Virtual Machine.
 
 #### Create Azure Bastion
 
-I will assume there is already an Azure Virtual Network created; if not, you can follow the [Microsoft documentation](https://learn.microsoft.com/azure/virtual-network/quick-create-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a virtual network using the Azure portal") to get it up and running!
+I will assume there is already an Azure Virtual Network created; if not, you can follow the [Microsoft documentation](https://learn.microsoft.com/azure/virtual-network/quick-create-portal?WT.mc_id=AZ-MVP-5004796 "Quickstart: Create a virtual network using the Azure portal"){:target="_blank"} to get it up and running!
 
-Also, make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") installed.
+Also, make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module"){:target="_blank"} installed.
 
 The PowerShell function we will run will require a few parameters to create the Azure Bastion resource and enable Shared Link functionality; these parameters are:
 
@@ -163,7 +163,7 @@ The PowerShell function we will run will require a few parameters to create the 
 
 Now that we have an Azure Bastion instance and have Shareable Links enabled - it's time to create a Shareable Link for a Virtual Machine; this triggers 2 API endpoints - creating the shareable link and then retrieving the shareable link.
 
-The same assumptions are made, so make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module") installed.
+The same assumptions are made, so make sure you have the [Az Module](https://learn.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-9.5.0&WT.mc_id=AZ-MVP-5004796 "Introducing the Azure Az PowerShell module"){:target="_blank"} installed.
 
 The script relies on the following parameters:
 
@@ -270,4 +270,4 @@ The script relies on the following parameters:
 14. I can then copy the URL into my favourite browser and connect to your Virtual Machine securely!
 15. ![Microsoft Azure Bastion - Connect](/uploads/azurebastionshareablelink_vmconnect.gif "Microsoft Azure Bastion - Connect")
 
-The scripts can also be found directly on GitHub here: [https://github.com/lukemurraynz/Azure](https://github.com/lukemurraynz/Azure "https://github.com/lukemurraynz/Azure")
+The scripts can also be found directly on GitHub here: [https://github.com/lukemurraynz/Azure](https://github.com/lukemurraynz/Azure "https://github.com/lukemurraynz/Azure"){:target="_blank"}

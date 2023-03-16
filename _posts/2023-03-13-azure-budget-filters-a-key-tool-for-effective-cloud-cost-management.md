@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/AzureSpringClean_AzureBudgets.png"
 
 ---
-[Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets"){:target="_blank"} are a vital tool that can be used to keep on top of your Cloud financial management_(FinOps)_ Microsoft Azure platform potential and actual costs.
+[Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets"){:target="_blank"} are a vital tool that can be used to keep on top of your Cloud financial management (FinOps) Microsoft Azure platform potential and actual costs.
 
 #### The most effective Azure Budgets - are the ones that you use!
 

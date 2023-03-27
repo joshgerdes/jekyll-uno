@@ -9,7 +9,7 @@ header:
   teaser: "/uploads/azurequickreview_excel_overview.png"
 
 ---
-There are a lot of workbooks that help with Microsoft Azure cost optimization, but when having discussions and looking into SLA/[SLO ](https://learn.microsoft.com/azure/cloud-adoption-framework/manage/monitor/service-level-objectives?WT.mc_id=AZ-MVP-5004796 "Cloud monitoring guide: Service Level Objectives")and availability scenarios, there are fewer options to select from - today, we are going to look at the deployment and output of Azure Quick Review.
+There are a lot of workbooks that help with Microsoft Azure cost optimization, but when having discussions and looking into SLA/[SLO](https://learn.microsoft.com/azure/cloud-adoption-framework/manage/monitor/service-level-objectives?WT.mc_id=AZ-MVP-5004796 "Cloud monitoring guide: Service Level Objectives"){:target="_blank"} and availability scenarios, there are fewer options to select from - today, we are going to look at the deployment and output of Azure Quick Review.
 
 > Azure Quick Review (azqr) goal is to produce a high level assessment of an Azure Subscription or Resource Group providing the following information for each Azure Service:
 
@@ -22,8 +22,8 @@ There are a lot of workbooks that help with Microsoft Azure cost optimization, b
 
 Using this tool is pretty simple _(and, as the name suggests, Quick)_, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
 
-* [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI")
-* [azqr - windows release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases")
+* [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI"){:target="_blank"}
+* [azqr - windows release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases"){:target="_blank"}
 
 Install the Azure CLI and make sure you have Reader rights across the subscriptions you want to review; in this demo, we will scan all subscriptions I have access to.
 

@@ -18,3 +18,7 @@ There are a lot of workbooks that help with Microsoft Azure cost optimization, b
 * What is my expected SLA?
 * Are my resources protected against zone failures?
 * Am I collecting diagnostic logs for my resources?
+
+Using this tool is pretty simple, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
+
+* [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI")

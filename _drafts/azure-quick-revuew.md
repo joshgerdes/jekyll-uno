@@ -22,4 +22,10 @@ There are a lot of workbooks that help with Microsoft Azure cost optimization, b
 Using this tool is pretty simple, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
 
 * [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI")
-* [AzQr - Windows Release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases")
+* [azqr - Windows Release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases")
+
+Install the Azure CLI and make sure you have Reader rights across the subscriptions you want to review.
+
+The Azure Quick Review (azqr) windows binary is intended to be run from the command line, so let's run it.
+
+1\.

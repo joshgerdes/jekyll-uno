@@ -22,3 +22,4 @@ There are a lot of workbooks that help with Microsoft Azure cost optimization, b
 Using this tool is pretty simple, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
 
 * [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI")
+* [AzQr - Windows Release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases")

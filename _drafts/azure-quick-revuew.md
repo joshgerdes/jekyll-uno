@@ -1,6 +1,6 @@
 ---
 date: 2023-03-27 00:00:00 +1300
-title: Azure Quick Revuew
+title: Azure Quick Review
 author: Luke
 categories:
 - Azure
@@ -19,16 +19,21 @@ There are a lot of workbooks that help with Microsoft Azure cost optimization, b
 * Are my resources protected against zone failures?
 * Am I collecting diagnostic logs for my resources?
 
-Using this tool is pretty simple, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
+Using this tool is pretty simple _(and, as the name suggests, Quick)_, and today we will look at running it from a windows endpoint, but first, we need some prerequisites.
 
 * [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796 "How to install the Azure CLI")
 * [azqr - Windows Release](https://github.com/cmendible/azqr/releases "cmendible/azqr/releases")
 
-Install the Azure CLI and make sure you have Reader rights across the subscriptions you want to review.
+Install the Azure CLI and make sure you have Reader rights across the subscriptions you want to review; in this demo, we will scan all subscriptions I have access to.
 
 The Azure Quick Review (azqr) windows binary is intended to be run from the command line, so let's run it.
 
 1. Open your Windows Terminal
 2. Navigate to the location of the azqr binary
 3. ![Azure Quick Review](/uploads/windowsterminal_azqr_binary.png "Azure Quick Review")
-4. s
+4. Login to Azure, using the Azure CLI by typing: 
+
+       az login
+5. Once you have authenticated, run the executable.
+6. ![Run azqr-windows-latest](/uploads/run_azurequickreview.gif "Run azqr-windows-latest")
+7. s

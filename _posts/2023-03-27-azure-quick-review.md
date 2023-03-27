@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/azurequickreview_excel_overview.png"
 
 ---
 There are a lot of workbooks that help with Microsoft Azure cost optimization, but when having discussions and looking into SLA/[SLO ](https://learn.microsoft.com/azure/cloud-adoption-framework/manage/monitor/service-level-objectives?WT.mc_id=AZ-MVP-5004796 "Cloud monitoring guide: Service Level Objectives")and availability scenarios, there are fewer options to select from - today, we are going to look at the deployment and output of Azure Quick Review.

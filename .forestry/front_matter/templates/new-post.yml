@@ -109,7 +109,7 @@ pages:
 - _posts/2023-03-02-microsoft-student-education-hub.md
 - _posts/2023-03-13-azure-budget-filters-a-key-tool-for-effective-cloud-cost-management.md
 - _posts/2023-03-16-create-azure-bastion-with-shareable-link-support-with-powershell.md
+- _posts/2023-04-07-failed-to-persist-terraform-state-using-an-azure-blob-storage-account.md
 - _posts/account-storage-account-replication.md
 - _posts/active-directory-domain-controllers-in-azure.md
-- _posts/failed-to-persist-terraform-state-using-an-azure-blob-storage-account.md
 - _posts/how-to-mount-an-azure-blob-container-on-your-windows-10-endpoint-device.md

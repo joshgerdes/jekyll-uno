@@ -6,7 +6,7 @@ categories:
 - Azure
 toc: false
 header:
-  teaser: ''
+  teaser: "/uploads/terraform_savestate.PNG"
 
 ---
 When attempting to make changes with Terraform, and the state changes are in an Azure storage account, you may come across: Failed to save state.

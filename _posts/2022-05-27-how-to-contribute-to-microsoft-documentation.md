@@ -19,7 +19,7 @@ Suppose you see something not quite right, technically or even if the document's
 
 See the image below for an example:
 
-![](/uploads/updatemsdocs.gif)
+![Update Microsoft documentation](/uploads/updatemsdocs.gif)
 
 Once the pull request is made, it will be reviewed by designated technical document reviewers/product owners at Microsoft. Then your changes will be merged live if successful _(and if not, the reviewers will let you know why and what changes could be made)_!
 

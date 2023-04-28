@@ -24,12 +24,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
-      - name: Install and build astro
+          cache: 'npm'
+      - name: Install and build NPM
         shell: 'bash'
         run: |
-          yarn
-          yarn build
+          npm ci
+          npm test
       # - name: Install, build, and upload your site
       #  uses: withastro/action@v0
         # with:
@@ -48,7 +48,7 @@ jobs:
         run: npx tinacms build
       - name: Copy TinaCMS artifacts
         run: |
-          cp -R ./backend/public/it-landscape/admin/ ./dist/
+          cp -R ./backend/public/lukemurraynz.github.io/admin/ ./dist/
           rm ./dist/admin/.gitignore
       - name: Create Pages Artifact
         uses: actions/upload-pages-artifact@v1

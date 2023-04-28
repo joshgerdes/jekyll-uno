@@ -1,14 +1,15 @@
 ---
-date: 2023-03-13 00:00:00 +1300
+date: '2023-03-13 00:00:00 +1300'
 title: 'Azure Budget Filters: A Key Tool for Effective Cloud Cost Management'
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/AzureSpringClean_AzureBudgets.png"
-
+  teaser: /uploads/AzureSpringClean_AzureBudgets.png
+_template: new_post
 ---
+
 [Azure Budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=AZ-MVP-5004796 "Tutorial: Create and manage Azure budgets"){:target="_blank"} are a vital tool that can be used to keep on top of your Cloud financial management (FinOps) Microsoft Azure platform potential and actual costs.
 
 #### The most effective Azure Budgets - are the ones that you use!

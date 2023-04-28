@@ -1,13 +1,15 @@
 ---
-date: 2022-01-08 00:00:00 +1300
+date: '2022-01-08 00:00:00 +1300'
 title: My Website Setup
 author: Luke
-categories: [Misc]
+categories:
+  - Misc
 toc: false
 header:
-  teaser: "images/cover.jpg"
-
+  teaser: images/cover.jpg
+_template: new_post
 ---
+
 Pretty simple article today regarding 'My website setup'.
 
 I've had a few people ask what CMS _(Content Management System)_ my website runs on - and no it's not running on an Azure App Service!  

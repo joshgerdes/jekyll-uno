@@ -1,14 +1,15 @@
 ---
-date: 2021-04-17 00:00:00 +1200
+date: '2021-04-17 00:00:00 +1200'
 title: Azure DevOps and creating your Cloud Adoption Framework
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "images/iazure-marketplace-banner.png"
-
+  teaser: images/iazure-marketplace-banner.png
+_template: new_post
 ---
+
 Do you want to make a start on Azure Adoption and Governance, Server Migration or Azure Virtual Desktop and do not know where to start, or whether you are asking the right questions?
 
 If you want to create a framework for your cloud adoption or migration plans, you can look at... using [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/ "Azure DevOps Generator"){:target="_blank"}…

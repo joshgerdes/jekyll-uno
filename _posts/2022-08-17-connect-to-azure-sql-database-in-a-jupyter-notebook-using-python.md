@@ -1,14 +1,15 @@
 ---
-date: 2022-08-17 00:00:00 +1200
+date: '2022-08-17 00:00:00 +1200'
 title: Connect to Azure SQL Database in a Jupyter Notebook using Python
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/juptyer_notebook.png"
-
+  teaser: /uploads/juptyer_notebook.png
+_template: new_post
 ---
+
 [Jupyter](https://jupyter.org/ "Jupyter"){:target="blank"} Notebooks, commonly used by Data Scientists and Students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
 
 I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.

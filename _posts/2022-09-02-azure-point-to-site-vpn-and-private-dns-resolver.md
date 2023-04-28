@@ -1,14 +1,15 @@
 ---
-date: 2022-09-02 00:00:00 +1200
+date: '2022-09-02 00:00:00 +1200'
 title: Azure Private DNS Resolver and Azure Point to Site VPN
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/azureprivatednsresolver.png"
-
+  teaser: /uploads/azureprivatednsresolver.png
+_template: new_post
 ---
+
 You might access resources such as [Azure SQL databases](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=AZ-MVP-5004796 "Azure SQL Database"){:target="_blank"} or [Azure Storage accounts](https://learn.microsoft.com/azure/storage/?WT.mc_id=AZ-MVP-5004796 "Azure Storage documentation"){:target="_blank"} if you're connecting to a Microsoft Azure network externally _(_[_from a non-Azure VM_](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances?WT.mc_id=AZ-MVP-5004796#azure-provided-name-resolution "Name resolution for resources in Azure virtual networks"){:target="_blank"} _or VPN)_; mainly if you operate Cloud-only services and don't have an external DNS provider, such as Active Directory - connecting to [private link](https://azure.microsoft.com/services/private-link/?WT.mc_id=AZ-MVP-5004796 "Private Link"){:target="_blank"} resources, you may have to edit your local host's file and override local DNS to point to the IP of the [private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} for each service.
 
 This is not sustainable, not scalable, and you might end up throwing your hands in the air and switching back to public-facing services and just whitelisting other users' Public IPs to gain access to Azure resources - which can lead to its own set of issues, such as unmanaged IPs left with access to resources after contractors or users leave or have finished their work, IP address changes if not managed correctly can allow any user or company to have a direct line of sight to your company resources.

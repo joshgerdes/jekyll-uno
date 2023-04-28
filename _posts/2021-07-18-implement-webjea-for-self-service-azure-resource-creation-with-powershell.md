@@ -1,16 +1,17 @@
 ---
-date: 2021-07-18 00:00:00 +1200
+date: '2021-07-18 00:00:00 +1200'
 title: Implement WebJEA for self-service Start/Stop of Azure Virtual Machines
 permalink: /azure/implement-webjea-for-self-service-azure-vm/
 author: Luke
 categories:
-- Azure
-- PowerShell
+  - Azure
+  - PowerShell
 toc: true
 header:
-  teaser: "/uploads/webjea_startstopazvm.png"
-
+  teaser: /uploads/webjea_startstopazvm.png
+_template: new_post
 ---
+
 WebJEA allows you to build web forms for any PowerShell script dynamically. WebJEA automatically **parses the script at page load for description, parameters and validation**, **then dynamically builds a form to take input and display formatted output!**
 
 The main goals for WebJEA:

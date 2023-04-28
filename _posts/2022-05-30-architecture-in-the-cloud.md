@@ -1,13 +1,15 @@
 ---
-date: 2022-05-30 00:00:00 +1200
+date: '2022-05-30 00:00:00 +1200'
 title: Architecture in the Cloud
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/microsoft_azure.jpg"
+  teaser: /uploads/microsoft_azure.jpg
+_template: new_post
 ---
+
 
 Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system.
 

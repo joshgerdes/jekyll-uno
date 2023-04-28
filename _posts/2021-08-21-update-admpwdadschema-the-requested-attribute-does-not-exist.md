@@ -1,14 +1,15 @@
 ---
-date: 2021-08-21 00:00:00 +1200
+date: '2021-08-21 00:00:00 +1200'
 title: Update-AdmPwdAdSchema - The requested attribute does not exist
 author: Luke
 categories:
-- PowerShell
+  - PowerShell
 toc: false
 header:
-  teaser: "images/powershell-blog-feature-banner.png"
-
+  teaser: images/powershell-blog-feature-banner.png
+_template: new_post
 ---
+
 Are you attempting to update the Active Directory Schema for LAPS (Local Administrator Password Solution) and keep getting the error below?
 
 **Update-AdmPwdAdSchema: The requested attribute does not exist**

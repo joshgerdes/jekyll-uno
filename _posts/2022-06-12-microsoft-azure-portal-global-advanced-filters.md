@@ -1,14 +1,15 @@
 ---
-date: 2022-06-12 00:00:00 +1200
+date: '2022-06-12 00:00:00 +1200'
 title: Microsoft Azure Portal - Global & Advanced Filters
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/azureportal_advanced_subscription_filter.png"
-
+  teaser: /uploads/azureportal_advanced_subscription_filter.png
+_template: new_post
 ---
+
 We've all been there! In the Azure portal, looking for a resource or subscription and cannot find it! Once permissions are ruled out, you are left with the Portal itself, and the filter.
 
 You may see a checkbox or message like the below:

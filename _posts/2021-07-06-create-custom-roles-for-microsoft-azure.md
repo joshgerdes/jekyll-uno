@@ -1,15 +1,17 @@
 ---
-date: 2021-07-06 00:00:00 +1200
+date: '2021-07-06 00:00:00 +1200'
 title: Create Custom Roles for Microsoft Azure
 permalink: /azure/create-custom-roles-for-microsoft-azure/
 author: Luke
 categories:
-- Azure
-- PowerShell
+  - Azure
+  - PowerShell
 toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
+_template: new_post
 ---
+
 Microsoft Azure uses Role's to define who can access what - Role-Based Access Control (_RBAC)_.
 
 You may be familiar with some of the more common ones, such as:

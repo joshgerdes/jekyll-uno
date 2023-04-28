@@ -1,13 +1,15 @@
 ---
-date: 2022-02-05 00:00:00 +1300
+date: '2022-02-05 00:00:00 +1300'
 title: Datto Remote Management Azure VM Application Deployment
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-   teaser: images/iazure-marketplace-banner.png
+  teaser: images/iazure-marketplace-banner.png
+_template: new_post
 ---
+
 The Azure Compute Gallery _(superseded the Shared Image Gallery)_ offers more than just Azure Image management and replication, and you can deploy Applications to your Virtual Machines.
 
 ### Overview

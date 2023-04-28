@@ -1,14 +1,15 @@
 ---
-date: 2021-05-08 00:00:00 +1200
+date: '2021-05-08 00:00:00 +1200'
 title: Full end to end encryption on an Azure WebApp using Cloudflare
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/cloudflare_azure_e2e_cert.png"
-
+  teaser: /uploads/cloudflare_azure_e2e_cert.png
+_template: new_post
 ---
+
 Cloudflare offers many capabilities; one of the capabilities it offers is SSL offloading and CNAME flattening.
 
 When setting up an Azure Web App using default settings, it is set up using HTTP, not HTTPS, so we will set the WebApp to your custom domain, then use Cloudflare to protect traffic from your user's browsers to Cloudflare, then encrypt traffic from Cloudflare to your website.

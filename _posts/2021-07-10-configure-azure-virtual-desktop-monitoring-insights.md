@@ -1,14 +1,15 @@
 ---
-date: 2021-07-10 00:00:00 +1200
+date: '2021-07-10 00:00:00 +1200'
 title: Configure Azure Virtual Desktop Monitoring Insights
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/azportal_azurevirtualdesktopinsights.png"
-
+  teaser: /uploads/azportal_azurevirtualdesktopinsights.png
+_template: new_post
 ---
+
 Microsoft has now added a built-in Monitoring workbook for Azure Virtual Desktop performance monitoring; this monitoring includes dashboards related _(but not limited to)_:
 
 * Session host diagnostics

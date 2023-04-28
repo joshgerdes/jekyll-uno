@@ -1,14 +1,15 @@
 ---
-date: 2021-04-23T00:00:00.000+12:00
+date: 2021-04-22T12:00:00.000Z
 title: Azure Blob and Azure Lifecycle Management
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/AzureBlobBanner.png"
-
+  teaser: /uploads/AzureBlobBanner.png
+_template: new_post
 ---
+
 Azure Blob storage (Platform-as-a-service (PaaS)) is used for streaming and storing documents, videos, pictures, backups, and other unstructured text or binary data… however the functionality extends beyond just a place to “store stuff”, it can save you money and time by automating the lifecycle of your data using Azure Blob Lifecycle Management and access tiers.
 
 As of January 2021, Blob storage now supports the Network File System (NFS) 3.0 protocol. This support provides Linux file system compatibility at object storage scale and prices and enables Linux clients to [mount a container](https://learn.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support?WT.mc_id=AZ-MVP-5004796 "Network File System (NFS) 3.0 protocol support in Azure Blob storage (preview)"){:target="_blank"} in Blob storage from an Azure Virtual Machine (VM) or a computer on-premises.

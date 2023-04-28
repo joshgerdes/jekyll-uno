@@ -1,14 +1,15 @@
 ---
-date: 2023-02-14 00:00:00 +1300
+date: '2023-02-14 00:00:00 +1300'
 title: Azure Architecture - Solution Requirement Consideration Checklist
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/az_architecture_solutionchecklistheader.png"
-
+  teaser: /uploads/az_architecture_solutionchecklistheader.png
+_template: new_post
 ---
+
 Building a cloud solution on Azure can be an exciting yet daunting task.
 
 The key to a successful implementation is carefully planning and considering solution requirements using the guidance of the [Microsoft Cloud Adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Cloud Adoption Framework for Azure"){:target="_blank"} and [Well Architecture frameworks](https://learn.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure Well-Architected Framework"){:target="_blank"}.

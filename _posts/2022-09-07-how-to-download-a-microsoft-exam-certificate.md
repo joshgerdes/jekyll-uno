@@ -1,14 +1,15 @@
 ---
-date: 2022-09-07 00:00:00 +1200
+date: '2022-09-07 00:00:00 +1200'
 title: How to download or print a Microsoft exam certificate
 author: Luke
 categories:
-- Misc
+  - Misc
 toc: false
 header:
   teaser: ''
-
+_template: new_post
 ---
+
 This was asked in the Microsoft forums; with the change of platform from being able to see and download certificates for the competition of your Microsoft exam with Pearsonvue to the new Microsoft Learn experience, you might find yourself lost when attempting to view _(and print)_ your hard-earned Microsoft certificate!
 
 The certificate format has also been refreshed.

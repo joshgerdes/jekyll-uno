@@ -1,14 +1,15 @@
 ---
-date: 2022-06-02 00:00:00 +1200
+date: '2022-06-02 00:00:00 +1200'
 title: Microsoft Azure Naming Conventions
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/azurenaming.png"
-
+  teaser: /uploads/azurenaming.png
+_template: new_post
 ---
+
 Accurately representing and naming your resources is essential for security purposes.
 
 In a security incident, it is critical to identify affected systems quickly, what functions those systems support, and the potential business impact.

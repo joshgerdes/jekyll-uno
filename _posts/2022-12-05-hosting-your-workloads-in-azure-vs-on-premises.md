@@ -1,14 +1,15 @@
 ---
-date: 2022-12-05 00:00:00 +1300
+date: '2022-12-05 00:00:00 +1300'
 title: Hosting your workloads in Azure vs On-premises
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/microsoft_azure.jpg"
-
+  teaser: /uploads/microsoft_azure.jpg
+_template: new_post
 ---
+
 [Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Do more with less— On Azure"){:target="_blank"} is a cloud computing platform that provides a wide range of services and capabilities for building and deploying applications and workloads in the cloud. In contrast, hosting your own datacenter involves setting up and managing a physical infrastructure, including servers, storage, networking, and other components, in a location controlled by the organization.
 
 Azure and hosting your own datacenter are two different approaches for deploying and managing applications and workloads.

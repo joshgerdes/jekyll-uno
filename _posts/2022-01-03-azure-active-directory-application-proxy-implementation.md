@@ -1,14 +1,15 @@
 ---
-date: 2022-01-03T00:00:00.000+13:00
+date: 2022-01-02T11:00:00.000Z
 title: Azure Active Directory Application Proxy Implementation
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "uploads/aadproxynetworkdiagram.png"
-
+  teaser: uploads/aadproxynetworkdiagram.png
+_template: new_post
 ---
+
 Are you running internal web-based applications that you want to give access to users working remotely securely, without the need for a VPN or firewalls? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
 
 Let me introduce the Microsoft Azure Active Directory Application Proxy...

@@ -1,14 +1,15 @@
 ---
-date: 2022-07-27 00:00:00 +1200
-title: 'Microsoft Azure - ZonalAllocationFailed'
+date: '2022-07-27 00:00:00 +1200'
+title: Microsoft Azure - ZonalAllocationFailed
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/zonalallocationfailed.png"
-
+  teaser: /uploads/zonalallocationfailed.png
+_template: new_post
 ---
+
 > **Error code**: AllocationFailed or ZonalAllocationFailed
 >
 > **Error message**: "Allocation failed. We do not have sufficient capacity for the requested VM size in this region. Read more about improving likelihood of allocation success at [https://aka.ms/allocation-guidance](https://aka.ms/allocation-guidance?WT.mc_id=AZ-MVP-5004796 "https://aka.ms/allocation-guidance"){:target="_blank"}"

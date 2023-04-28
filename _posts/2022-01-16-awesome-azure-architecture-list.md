@@ -1,14 +1,15 @@
 ---
-date: 2022-01-16 00:00:00 +1300
+date: '2022-01-16 00:00:00 +1300'
 title: AWESOME-Azure-Architecture List
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: 'images/Awesome_Azure_Architecture.png'
-
+  teaser: images/Awesome_Azure_Architecture.png
+_template: new_post
 ---
+
 A very brief Blog article today, I have created an AWESOME-Azure-Architecture list, this list is hosted in Github and located here:
 
 * [AWESOME-Azure-Architecture](https://github.com/lukemurraynz/awesome-azure-architecture/blob/main/README.md "AWESOME-Azure-Architecture"){:target="_blank"}

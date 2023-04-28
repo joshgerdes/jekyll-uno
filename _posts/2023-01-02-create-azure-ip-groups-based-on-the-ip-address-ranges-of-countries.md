@@ -1,14 +1,15 @@
 ---
-date: 2023-01-02 00:00:00 +1300
+date: '2023-01-02 00:00:00 +1300'
 title: Create Azure IP Groups based on the IP address ranges of countries
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/azureipgroupblog.png"
-
+  teaser: /uploads/azureipgroupblog.png
+_template: new_post
 ---
+
 An [IP Group](https://learn.microsoft.com/azure/firewall/ip-groups?WT.mc_id=AZ-MVP-5004796 "IP Groups in Azure Firewall"){:target="_blank"} in Microsoft Azure is a logical container of IP address ranges for private and public addresses.
 
 > IP Groups allow you to group and manage IP addresses for Azure Firewall rules in the following ways:

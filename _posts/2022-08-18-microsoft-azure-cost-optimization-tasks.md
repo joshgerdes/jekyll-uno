@@ -1,14 +1,15 @@
 ---
-date: 2022-08-18 00:00:00 +1200
+date: '2022-08-18 00:00:00 +1200'
 title: Microsoft Azure - Operational Cost Optimization Tasks
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/cost_pillar_overview.png"
-
+  teaser: /uploads/cost_pillar_overview.png
+_template: new_post
 ---
+
 The [Microsoft Azure](https://azure.microsoft.com/en-us/?WT.mc_id=AZ-MVP-5004796 "Microsoft Azure"){:target="_blank"} platform is not a set-and-forget ecosystem like doing service on your car!
 
 There are no one-size-fits when it comes to cost optimization, but some general tasks can be done or considered on a Monthly/Quarterly/Annual basis to keep on top of the resources you are running in Azure and to keep them lean.

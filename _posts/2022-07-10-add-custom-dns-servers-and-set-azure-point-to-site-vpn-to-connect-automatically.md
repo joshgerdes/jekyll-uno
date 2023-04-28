@@ -1,14 +1,17 @@
 ---
-date: 2022-07-10 00:00:00 +1200
-title: Add Custom DNS servers and set Azure Point to Site VPN to Connect automatically
+date: '2022-07-10 00:00:00 +1200'
+title: >-
+  Add Custom DNS servers and set Azure Point to Site VPN to Connect
+  automatically
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
   teaser: images/iazure-marketplace-banner.png
-
+_template: new_post
 ---
+
 The Azure Point to Site VPN will take the DNS servers from the Virtual Network, that the Gateway is peering into by default, but due to VNET Peering or custom configuration if you may want to point this to custom DNS servers.
 
 To do this, you need to edit the 'azurevpnconfig.xml' file and reimport the VPN connection.

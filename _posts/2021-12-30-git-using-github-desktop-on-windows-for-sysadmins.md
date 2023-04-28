@@ -1,14 +1,15 @@
 ---
-date: 2021-12-30 00:00:00 +1300
+date: '2021-12-30 00:00:00 +1300'
 title: Git using Github Desktop on Windows for SysAdmins
 author: Luke
 categories:
-- Windows
+  - Windows
 toc: true
 header:
-  teaser: "/uploads/githubdesktop-overview.png"
-
+  teaser: /uploads/githubdesktop-overview.png
+_template: new_post
 ---
+
 [Git](https://en.wikipedia.org/wiki/Git){:target="_blank"} (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_has been around for years_(development and the first release began in 2005 by Linus Torvolds)_.
 
 Although primary driven and consumed by software developers – it is now a staple of everyday life for an IT professional of many disciplines _(i.e. Operations, Delivery),_ even if a git repository is used to store your PowerShell scripts _(hint – it should!)_.

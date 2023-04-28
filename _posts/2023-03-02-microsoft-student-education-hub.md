@@ -1,14 +1,15 @@
 ---
-date: 2023-03-02 00:00:00 +1300
+date: '2023-03-02 00:00:00 +1300'
 title: Azure for Students
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: '/uploads/student_developer_skillingjourney.png'
-
+  teaser: /uploads/student_developer_skillingjourney.png
+_template: new_post
 ---
+
 Students learn in different ways through many possible avenues and experiences. Microsoft has assets to help students navigate through their journey.
 
 This article aims to help to make access to student resources clearer.

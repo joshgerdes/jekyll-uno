@@ -1,14 +1,15 @@
 ---
-date: 2022-01-07 00:00:00 +1300
+date: '2022-01-07 00:00:00 +1300'
 title: Azure Public DNS as Code
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "images/iazure-marketplace-banner.png"
-
+  teaser: images/iazure-marketplace-banner.png
+_template: new_post
 ---
+
 The Microsoft Azure ecosystem offers a lot of capabilities that empower individuals and businesses; one of those capabilities that are often overlooked is [DNS](https://en.wikipedia.org/wiki/Domain_Name_System){:target="_blank"}_(Domain Name System)_.
 
 > _Azure DNS allows you to host your DNS domain in Azure, so you can manage your DNS records using the same credentials, billing, and support contract as your other Azure services. Zones can be either public or private, where Private DNS Zones (in Managed Preview) are only visible to VMs that are in your virtual network._

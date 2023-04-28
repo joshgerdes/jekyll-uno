@@ -1,14 +1,15 @@
 ---
-date: 2023-03-16 00:00:00 +1300
+date: '2023-03-16 00:00:00 +1300'
 title: Create Azure Bastion with Shareable Link support with PowerShell
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
-  teaser: "/uploads/azurebastion_shareablelinkheader.png"
-
+  teaser: /uploads/azurebastion_shareablelinkheader.png
+_template: new_post
 ---
+
 [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Bastion?"){:target="_blank"} is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal or via the native SSH or RDP client installed on your local computer.
 
 #### Overview

@@ -1,13 +1,15 @@
 ---
-date: 2021-06-18 00:00:00 +1200
+date: '2021-06-18 00:00:00 +1200'
 title: Remove old PowerShell modules versions using PowerShell
 author: Luke
 categories:
-- PowerShell
+  - PowerShell
 toc: false
 header:
-  teaser: "images/powershell-blog-feature-banner.png"
+  teaser: images/powershell-blog-feature-banner.png
+_template: new_post
 ---
+
 Did you know, that if you update PowerShell modules, the old versions can sometimes get left behind?
 
 This little snippet with remove any old PowerShell modules _(that are not the latest version)_, which are installed.

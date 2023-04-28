@@ -1,14 +1,15 @@
 ---
-date: 2021-12-03 00:00:00 +1300
+date: '2021-12-03 00:00:00 +1300'
 title: Azure NAT Gateway - Implementation and Testing
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
-
+_template: new_post
 ---
+
 With most Cloud resources being accessible over the internet, each publically accessible resource has its own public IP address, this makes it a lot more challenging to administer the security and access rules to access third party services.
 
 _Think along the lines of - you or your organisation might use software-as-a-service CRM product. That product is only accessible from your organisations IP for compliance/security reasons, you might access the CRM product from various Azure Virtual Desktop hosts, each with its public IP or a random Microsoft Azure datacenter IP, or you want to control Multifactor authentication/conditional access policies for users using Azure services_.

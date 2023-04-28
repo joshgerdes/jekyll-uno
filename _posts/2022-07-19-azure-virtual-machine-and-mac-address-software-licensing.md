@@ -1,14 +1,15 @@
 ---
-date: 2022-07-19 00:00:00 +1200
+date: '2022-07-19 00:00:00 +1200'
 title: Azure Virtual Machine and a custom MAC address
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
   teaser: images/iazure-marketplace-banner.png
-
+_template: new_post
 ---
+
 You may need an Azure Virtual Machine to install or license software bound to a media access control address _(MAC address)_.
 
 In Microsoft Azure, you can make changes to the Primary Network interface; these changes include manually setting the IP settings to changing the MAC address - these settings are managed by the underlying Network Interface and Azure host.

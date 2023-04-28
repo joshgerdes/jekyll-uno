@@ -1,14 +1,15 @@
 ---
-date: 2022-10-05 00:00:00 +1300
+date: '2022-10-05 00:00:00 +1300'
 title: Application cost analysis in Microsoft Azure with cm-resource-parent tag
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/azureportal_costanalysis_aznamingtool.png"
-
+  teaser: /uploads/azureportal_costanalysis_aznamingtool.png
+_template: new_post
 ---
+
 Cost Analysis in Microsoft Azure allows you to analyse the cost of your services; these services can be scoped into Resource Groups, Resources and Services; you can also group your services by [Tags](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources?tabs=json&WT.mc_id=AZ-MVP-5004796 "Use tags to organize your Azure resources and management hierarchy"){:target="_blank"}.
 
 Azure tags are name-value pairs used to organize resources. You can apply tags for individual resources, display show back or ownership and can be used for automation - but what assigning parent/child relationships to your resources?

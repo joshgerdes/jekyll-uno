@@ -1,14 +1,15 @@
 ---
-date: 2022-09-06 00:00:00 +1200
+date: '2022-09-06 00:00:00 +1200'
 title: InternalServerError when deploying Azure Firewall
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
-  teaser: "/uploads/deploymentfailedazurefirewall.png"
-
+  teaser: /uploads/deploymentfailedazurefirewall.png
+_template: new_post
 ---
+
 When attempting to deploy an [Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Firewall?"){:target="_blank"}, you may get an error: Conflict, DeploymentFailed error. This error can occur when you have an expressroute connection, and the Firewall is not deployed in Force Tunneled mode, as the routes from the BGP link will be replacing the default Azure internet route, required for the Azure Firewall.
 
     "code": "InternalServerError",

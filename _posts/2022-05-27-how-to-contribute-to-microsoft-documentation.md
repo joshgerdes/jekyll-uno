@@ -1,16 +1,17 @@
 ---
-date: 2022-05-27 00:00:00 +1200
+date: '2022-05-27 00:00:00 +1200'
 title: How to contribute to Microsoft documentation
 author: Luke
 categories:
-- Azure
-- Misc
+  - Azure
+  - Misc
 toc: false
 permalink: /misc/how-to-contribute-to-microsoft-documentation
 header:
-  teaser: "/uploads/msdocs_contribute_issue.png"
-
+  teaser: /uploads/msdocs_contribute_issue.png
+_template: new_post
 ---
+
 Did you know you can contribute to Microsoft documentation _(ms docs)_?
 
 Suppose you see something not quite right, technically or even if the document's readability doesn't look right! Then, in true community style, you can contribute!

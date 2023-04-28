@@ -1,14 +1,15 @@
 ---
-date: 2021-12-11 00:00:00 +1300
+date: '2021-12-11 00:00:00 +1300'
 title: Cloud Adoption Framework for Azure - Tools and Templates
 author: Luke
 categories:
-- Azure
+  - Azure
 toc: false
 header:
   teaser: images/posts/Microsoft_CloudAdoptionFramework_Azure.png
-
+_template: new_post
 ---
+
 To help with your Microsoft Cloud Adoption and Azure migration, you need a few things to be successful:
 
 1. Define your **strategy**, what are your expected outcomes? Where do you start, what skills do you have or need?

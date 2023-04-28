@@ -1,16 +1,17 @@
 ---
-date: 2021-12-14 00:00:00 +1300
+date: '2021-12-14 00:00:00 +1300'
 title: Whitelisting your Public IP with Azure Bicep and PowerShell
 permalink: /azure/whitelisting-your-public-ip-with-azure-bicep/
 author: Luke
 categories:
-- Azure
-- PowerShell
+  - Azure
+  - PowerShell
 toc: false
 header:
-  teaser: "images/powershell-blog-feature-banner.png"
-
+  teaser: images/powershell-blog-feature-banner.png
+_template: new_post
 ---
+
 Allowing and restricting Azure resources by being accessible by specific Public IP _(Internet Protocol)_ addresses has been around for years; most Azure resources support it, a Storage account is no different.
 
 In this article, I will be using PowerShell to obtain my current public IP, then parse that variable into my Azure Bicep deployment to create a storage account, with the firewall rule allowing ONLY my public IP address.

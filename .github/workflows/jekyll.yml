@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v3
         
       - name: Build TinaCMS
-        run: npx tinacms build    
+        run: npm install & npx tinacms build    
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}

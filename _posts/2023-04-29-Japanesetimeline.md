@@ -1,5 +1,5 @@
 ---
-title:  "「一頁folio」創始者である範新の強制わいせつ未遂事件に関するタイムライン"
+title:  "「一頁folio」創始者の範新の強制わいせつ未遂事件に関するタイムライン"
 date:   2023-04-29
 categories: [JapaneseVersion]
 tags: [JapaneseVersion]

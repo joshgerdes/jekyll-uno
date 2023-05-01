@@ -1,5 +1,5 @@
 ---
-title:  "一頁编辑部公开声明"
+title:  "一頁编辑部公开声明注释版本"
 date:   2001-01-01 
 categories: [annotated]
 tags: [annotated]

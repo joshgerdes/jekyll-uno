@@ -84,6 +84,17 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+            templates: [
+              {
+                name: "Callout",
+                label: "Callout",
+                fields: [{
+                  name: "message",
+                  label: "Message",
+                  type: "string"
+                }
+              ]}
+            ]
           },
         ],
       },
@@ -141,6 +152,17 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+            templates: [
+              {
+                name: "Callout",
+                label: "Callout",
+                fields: [{
+                  name: "message",
+                  label: "Message",
+                  type: "string"
+                }
+              ]}
+            ]
           },
         ],
       },

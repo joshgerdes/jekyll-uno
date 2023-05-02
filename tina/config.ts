@@ -21,6 +21,7 @@ export default defineConfig({
     },
   },
   schema: {
+    
     collections: [
       {
         name: "post",
@@ -71,7 +72,15 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
- 
+            
+            fields: [
+              {
+                label: 'Tags',
+                name: 'tags',
+                type: 'string',
+                list: true,
+              },
+            ]
           },
         ],
       },

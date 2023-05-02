@@ -38,6 +38,8 @@ export default defineConfig({
             type: "string",
             name: "author",
             label: "Author",
+            options: ['Luke'],
+
           },
           {
             type: "string",

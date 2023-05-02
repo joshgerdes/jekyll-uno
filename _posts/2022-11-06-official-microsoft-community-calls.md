@@ -3,7 +3,7 @@ date: '2022-11-06 00:00:00 +1300'
 title: Official Microsoft Community Calls
 author: Luke
 categories:
-  - misc
+  - Misc
 toc: false
 header:
   teaser: images/iazure-marketplace-banner.png

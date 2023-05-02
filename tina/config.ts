@@ -2,7 +2,8 @@ import { defineConfig } from "tinacms";
 import { new_post_Fields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+const branch =
+  process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
 export default defineConfig({
   branch,
@@ -15,11 +16,63 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "images/posts",
       publicFolder: "./",
     },
   },
   schema: {
-    collections: [],
+    collections: [
+      {
+        name: "post",
+        label: "Posts",
+        path: "_posts",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author",
+          },
+          {
+            type: "string",
+            name: "categories",
+            label: "Categories",
+            options: ['Windows', 'Misc', 'Azure', 'Mac OSX', 'PowerShell', 'Mobile', 'Linux', 'Android', 'iOS', 'Service Management', 'M365', 'Windows Phone'],
+
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+          },
+          {
+            type: "image",
+            name: "Header",
+            label: "Header",
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Publish Date",
+            ui: {
+              dateFormat: "YYYY MM DD",
+            },
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+ 
+          },
+        ],
+      },
+    ],
   },
 });

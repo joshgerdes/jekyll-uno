@@ -1,14 +1,1 @@
-{
-  "version": {
-    "fullVersion": "1.4.8",
-    "major": "1",
-    "minor": "4",
-    "patch": "8"
-  },
-  "meta": { "flags": ["experimentalData"] },
-  "collections": [],
-  "config": {
-    "client": {},
-    "media": { "tina": { "publicFolder": "./", "mediaRoot": "" } }
-  }
-}
+{"version":{"fullVersion":"1.4.8","major":"1","minor":"4","patch":"8"},"meta":{"flags":["experimentalData"]},"collections":[{"name":"post","label":"Posts","path":"_posts","fields":[{"type":"string","name":"title","label":"Title","isTitle":true,"required":true,"namespace":["post","title"]},{"type":"string","name":"author","label":"Author","namespace":["post","author"]},{"type":"string","name":"categories","label":"Categories","options":["Windows","Misc","Azure","Mac OSX","PowerShell","Mobile","Linux","Android","iOS","Service Management","M365","Windows Phone"],"namespace":["post","categories"]},{"type":"string","name":"description","label":"Description","namespace":["post","description"]},{"type":"image","name":"Header","label":"Header","namespace":["post","Header"]},{"type":"datetime","name":"date","label":"Publish Date","ui":{"dateFormat":"DD MMMM YYYY"},"namespace":["post","date"]},{"type":"rich-text","name":"body","label":"Body","isBody":true,"namespace":["post","body"],"parser":{"type":"markdown"}}],"namespace":["post"]}],"config":{"client":{},"media":{"tina":{"publicFolder":"./","mediaRoot":"images"}}}}

@@ -21,12 +21,12 @@ export default defineConfig({
     },
   },
   schema: {
-    
     collections: [
       {
         name: "post",
         label: "Posts",
         path: "_posts",
+        format: "md",
         fields: [
           {
             type: "string",
@@ -39,15 +39,33 @@ export default defineConfig({
             type: "string",
             name: "author",
             label: "Author",
-            options: ['Luke'],
-
+            options: ["Luke"],
+          },
+          {
+            name: "draft",
+            label: "Draft",
+            type: "boolean",
+            required: true,
+            description: "If this is checked the post will not be published",
           },
           {
             type: "string",
             name: "categories",
             label: "Categories",
-            options: ['Windows', 'Misc', 'Azure', 'Mac OSX', 'PowerShell', 'Mobile', 'Linux', 'Android', 'iOS', 'Service Management', 'M365', 'Windows Phone'],
-
+            options: [
+              "Windows",
+              "Misc",
+              "Azure",
+              "Mac OSX",
+              "PowerShell",
+              "Mobile",
+              "Linux",
+              "Android",
+              "iOS",
+              "Service Management",
+              "M365",
+              "Windows Phone",
+            ],
           },
           {
             type: "string",
@@ -72,18 +90,12 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
-            
-            fields: [
-              {
-                label: 'Tags',
-                name: 'tags',
-                type: 'string',
-                list: true,
-              },
-            ]
+
           },
+          
         ],
       },
     ],
   },
 });
+

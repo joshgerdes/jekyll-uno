@@ -41,13 +41,7 @@ export default defineConfig({
             label: "Author",
             options: ["Luke"],
           },
-          {
-            name: "draft",
-            label: "Draft",
-            type: "boolean",
-            required: true,
-            description: "If this is checked the post will not be published",
-          },
+
           {
             type: "string",
             name: "categories",
@@ -90,12 +84,66 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
-
           },
-          
+        ],
+      },
+      {
+        name: "drfts",
+        label: "drafts",
+        path: "_drafts",
+        format: "md",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author",
+            options: ["Luke"],
+          },
+
+          {
+            type: "string",
+            name: "categories",
+            label: "Categories",
+            options: [
+              "Windows",
+              "Misc",
+              "Azure",
+              "Mac OSX",
+              "PowerShell",
+              "Mobile",
+              "Linux",
+              "Android",
+              "iOS",
+              "Service Management",
+              "M365",
+              "Windows Phone",
+            ],
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+          },
+          {
+            type: "image",
+            name: "Header",
+            label: "Header",
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
         ],
       },
     ],
   },
 });
-

@@ -48,4 +48,4 @@ $env: USERPROFILE = $OLD_USERPROFILE
 
 When the script is ran, a new profile will be created for Microsoft Teams, and then opened. You can then use that second Microsoft Teams instance, to connect to another account or tenancy.
 
-To make it easier, you could also look at turning this script into an [executable](https://github.com/MScholtes/PS2EXE "PS2EXE").
+To make it easier, you could also look at turning this script into an [executable](https://github.com/MScholtes/PS2EXE "PS2EXE"){:target="blank"}.

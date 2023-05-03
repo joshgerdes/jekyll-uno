@@ -1,7 +1,10 @@
 ---
 title: Open multiple Microsoft Teams instances using PowerShell
 author: Luke
-categories: M365
+permalink: /m365/Open-multiple-Microsoft-Teams-instances-using-PowerShell/
+categories:
+  - M365
+  - PowerShell
 description: >-
   Open multiple Microsoft Team instances, for access to multiple accounts with
   PowerShell

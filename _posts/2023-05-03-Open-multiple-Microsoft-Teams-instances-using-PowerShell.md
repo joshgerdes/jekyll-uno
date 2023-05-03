@@ -42,7 +42,7 @@ $teamsProcessStartInfo.WorkingDirectory = "$OLD_USERPROFILE\AppData\Local\Micros
 $teamsProcessStartInfo.EnvironmentVariables["USERPROFILE"] = $USERPROFILE
 $teamsProcessStartInfo.UseShellExecute = $false
 
-[System.Diagnostics.Process]::Start($teamsProcessStartInfo) | Out - Null
+[System.Diagnostics.Process]::Start($teamsProcessStartInfo) | Out-Null
 
 # Set the user profile back to the old user profile
 $env:USERPROFILE = $OLD_USERPROFILE

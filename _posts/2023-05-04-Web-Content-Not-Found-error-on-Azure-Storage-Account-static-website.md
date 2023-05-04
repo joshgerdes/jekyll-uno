@@ -41,6 +41,11 @@ If this occurs, make sure:      
 ![Azure storage account - index.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_Filenamespace.png "Azure storage account - index.html")
 
 * The Case matters, make sure if the filename is all lowercase in the container, then it’s all lowercase in the Azure storage account static website configuration.
+* Define a 404 page (the page that gets loaded) when attempting to browse paths that don’t match the index - make sure the site exists in a container and is added to the site storage account configuration,
+  like the index document name. 
+
+<!---->
+
 *
 
 

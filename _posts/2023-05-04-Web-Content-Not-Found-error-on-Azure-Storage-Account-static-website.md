@@ -46,6 +46,10 @@ If this occurs, make sure:      
 
 ![404.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_404filename.png "404.html")
 
+* If you don’t have a 404 page, you can have   index.html as both.
+
+<!---->
+
 *
 
 

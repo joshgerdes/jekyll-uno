@@ -35,4 +35,9 @@ If done incorrectly, you may get: The requested content does not exist.
 ![The requested content does not exist](/images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png "The requested content does not exist")
 
 If this occurs, make sure:      
-There is no whitespace in the index document name.
+
+* There is no whitespace in the index document name.
+
+![Azure storage account - index.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_Filenamespace.png "Azure storage account - index.html")
+
+*

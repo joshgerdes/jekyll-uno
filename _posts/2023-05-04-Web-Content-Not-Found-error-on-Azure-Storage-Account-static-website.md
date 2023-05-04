@@ -6,6 +6,7 @@ description: >-
   Web Content Not Found error when hosting a static webpage using an Azure
   Storage account
 date: 2023-05-03T12:00:00.000Z
+Header: /images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png
 ---
 
 Azure Storage accounts [can host static websites](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796) by opening up a public endpoint to an Azure storage
@@ -32,34 +33,3 @@ If done correctly, your website should now show your website.![Azure Storage acc
 If done incorrectly, you may get: The requested content does not exist.
 
 ![The requested content does not exist](/images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png "The requested content does not exist")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,9 +4,11 @@ author: Luke
 categories: Azure
 description: >-
   Web Content Not Found error when hosting a static webpage using an Azure
-  Storage account
+  Storage account.
 date: 2023-05-03T12:00:00.000Z
-Header: /images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png
+toc: false
+header:
+  teaser: /images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png
 ---
 
 Azure Storage accounts [can host static websites](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796) by opening up a public endpoint to an Azure storage
@@ -34,7 +36,7 @@ If done incorrectly, you may get: The requested content does not exist.
 
 ![The requested content does not exist](/images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png "The requested content does not exist")
 
-If this occurs, make sure:      
+If this occurs, make sure:
 
 * There is no whitespace in the index document name.
 
@@ -42,7 +44,7 @@ If this occurs, make sure:      
 
 * The Case matters, make sure if the filename is all lowercase in the container, then it’s all lowercase in the Azure storage account static website configuration.
 * Define a 404 page (the page that gets loaded) when attempting to browse paths that don’t match the index - make sure the site exists in a container and is added to the site storage account configuration,
-  like the index document name. 
+  like the index document name.
 
 ![404.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_404filename.png "404.html")
 
@@ -56,8 +58,3 @@ If this occurs, make sure:      
   You [shouldn’t have to adjust this usually](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796#impact-of-setting-the-access-level-on-the-web-container), as the Access level controls the container endpoint access – not the static website endpoint.
 
 ![Azure storage account - blob access level](/images/posts/AzureStorageAccount_Static_Site_WebContent_containeraccesslevel.png "Azure storage account - blob access level")
-
-
-
-
-

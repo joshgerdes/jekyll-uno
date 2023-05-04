@@ -44,7 +44,7 @@ If this occurs, make sure:      
 * Define a 404 page (the page that gets loaded) when attempting to browse paths that don’t match the index - make sure the site exists in a container and is added to the site storage account configuration,
   like the index document name. 
 
-<!---->
+![404.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_404filename.png "404.html")
 
 *
 

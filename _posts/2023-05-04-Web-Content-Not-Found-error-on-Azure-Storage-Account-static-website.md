@@ -11,7 +11,7 @@ header:
   teaser: /images/posts/AzureStorageAccount_Static_Site_WebContent_Error.png
 ---
 
-Azure Storage accounts [can host static websites](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796) by opening up a public endpoint to an Azure storage
+Azure Storage accounts [can host static websites](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796){:target="blank"} by opening up a public endpoint to an Azure storage
 container ($web), so anything inside of $web will be accessible publicly.
 
 This can be enabled easily by toggling the Static website to Enabled.
@@ -55,6 +55,6 @@ If this occurs, make sure:
 * If you have a CDN (Content Delivery Network)
   in front of your Azure Storage account (Azure CDN, Cloudflare), you may need to
   adjust the access level of your Container from Private to: Blob (Anonymous).
-  You [shouldn’t have to adjust this usually](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796#impact-of-setting-the-access-level-on-the-web-container), as the Access level controls the container endpoint access – not the static website endpoint.
+  You [shouldn’t have to adjust this usually](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796#impact-of-setting-the-access-level-on-the-web-container){:target="blank"}, as the Access level controls the container endpoint access – not the static website endpoint.
 
 ![Azure storage account - blob access level](/images/posts/AzureStorageAccount_Static_Site_WebContent_containeraccesslevel.png "Azure storage account - blob access level")

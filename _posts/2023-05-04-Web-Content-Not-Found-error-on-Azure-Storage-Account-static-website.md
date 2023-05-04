@@ -48,7 +48,7 @@ If this occurs, make sure:      
 
 * If you don’t have a 404 page, you can have   index.html as both.
 
-<!---->
+![Azure static web site - filenames](/images/posts/AzureStorageAccount_Static_Site_WebContent_bothfiles.png "Azure static web site - filenames")
 
 *
 

@@ -50,7 +50,12 @@ If this occurs, make sure:      
 
 ![Azure static web site - filenames](/images/posts/AzureStorageAccount_Static_Site_WebContent_bothfiles.png "Azure static web site - filenames")
 
-*
+* If you have a CDN (Content Delivery Network)
+  in front of your Azure Storage account (Azure CDN, Cloudflare), you may need to
+  adjust the access level of your Container from Private to: Blob (Anonymous).
+  You [shouldn’t have to adjust this usually](https://learn.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=AZ-MVP-5004796#impact-of-setting-the-access-level-on-the-web-container), as the Access level controls the container endpoint access – not the static website endpoint.
+
+![Azure storage account - blob access level](/images/posts/AzureStorageAccount_Static_Site_WebContent_containeraccesslevel.png "Azure storage account - blob access level")
 
 
 

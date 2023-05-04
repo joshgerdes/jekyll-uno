@@ -40,4 +40,10 @@ If this occurs, make sure:      
 
 ![Azure storage account - index.html](/images/posts/AzureStorageAccount_Static_Site_WebContent_Filenamespace.png "Azure storage account - index.html")
 
+* The Case matters, make sure if the filename is all lowercase in the container, then it’s all lowercase in the Azure storage account static website configuration.
 *
+
+
+
+
+

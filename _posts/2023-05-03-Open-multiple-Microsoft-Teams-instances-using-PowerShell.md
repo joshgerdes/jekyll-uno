@@ -35,7 +35,7 @@ $OLD_USERPROFILE = $env:USERPROFILE
 Write-Host "- Launching MS Teams with profile '$MSTEAMS_PROFILE'"
 Set-Location "$OLD_USERPROFILE\AppData\Local\Microsoft\Teams"
 
-$teamsProcessStartInfo = New - Object System.Diagnostics.ProcessStartInfo
+$teamsProcessStartInfo = New-Object System.Diagnostics.ProcessStartInfo
 $teamsProcessStartInfo.FileName = "$OLD_USERPROFILE\AppData\Local\Microsoft\Teams\Update.exe"
 $teamsProcessStartInfo.Arguments = "--processStart ""Teams.exe"""
 $teamsProcessStartInfo.WorkingDirectory = "$OLD_USERPROFILE\AppData\Local\Microsoft\Teams"

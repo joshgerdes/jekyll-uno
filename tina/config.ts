@@ -143,6 +143,12 @@ export default defineConfig({
             label: "Description",
           },
           {
+            type: "string",
+            name: "toc",
+            label: "toc",
+            options: ["True", "False"],
+          },
+          {
             type: "image",
             name: "Header",
             label: "Header",

@@ -20,7 +20,7 @@ I have assigned my Azure Policy to a Subscription, that contains my AzPolicy-Tes
 
 ![Azure Policy - Allowed locations](/images/posts/AzurePolicy-AllowedLocations-DenyAllAustraliaE.png "Azure Policy - Allowed locations")
 
-Let us do some testing, and try to deploy an Azure Resource (in my example, an Azure Storage account) into my Resource Group:
+Let us do some testing, and try to deploy an Azure Resource _(in my example, an Azure Storage account)_ into my Resource Group:
 
 | Can I deploy to Australia East? | Yes |
 | ------------------------------- | --- |
@@ -40,8 +40,7 @@ This is as expected, and even if I were to use another resource group – I stil
 
 ##### **Scenario #2 – Policy assigned to the subscription with Allow Australia East but another policy with Allow UK South only on the Resource Group**
 
-Now that we know, we can create resources in Australia East – lets assign the same ‘Allowed Locations’ policy to the Resource Group, but Denying Australia East, and Allowing UK South. The policy allowing Australia East will
-still remain assigned to the subscription.
+Now that we know, we can create resources in Australia East – lets assign the same ‘Allowed Locations’ policy to the Resource Group, but Denying Australia East, and Allowing UK South. The policy allowing Australia East will still remain assigned to the subscription.
 
 ![Azure Policy - Allowed locations - UK South](/images/posts/AzurePolicy-AllowedLocation_UkSouth.png "Azure Policy - Allowed locations - UK South")
 
@@ -55,8 +54,7 @@ Let us do some testing, and try to deploy an Azure Resource (in my example, an A
 
 ![Azure Storage account deployment - Policy validation error](/images/posts/AzurePolicy-DisableAustraliaEastDeployment.png "Azure Storage account deployment - Policy validation error")
 
-I can’t deploy to either UK South or Australia East, even though I have 2 separate policies, one policy allowing Australia East (deployed at the subscription) and one policy allowing UK South (deployed at the Resource
-Group).
+I can’t deploy to either UK South or Australia East, even though I have 2 separate policies, one policy allowing Australia East (deployed at the subscription) and one policy allowing UK South _(deployed at the Resource Group)_.
 
 In this case, the policies have worked together, with the most restrictive of them both in effect – which is Deny.
 

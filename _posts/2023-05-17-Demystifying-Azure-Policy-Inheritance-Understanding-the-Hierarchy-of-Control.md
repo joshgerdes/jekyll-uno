@@ -77,3 +77,8 @@ There are, however, various effects which are analysed first.
 After the Resource Provider returns a success code on a Resource Manager mode request, AuditIfNotExists and DeployIfNotExists evaluate to determine whether additional compliance logging or action is required.
 
 Remember that policy enforcement occurs during resource deployment or updates. Existing resources are not retroactively affected unless a manual remediation is performed.
+
+The following Microsoft Learn documents are worth a read, if interested further.
+
+* [Understand scope in Azure Policy](https://learn.microsoft.com/azure/governance/policy/concepts/scope?WT.mc_id=AZ-MVP-5004796){:target="blank"}
+* [Order of evaluation](https://learn.microsoft.com/azure/governance/policy/concepts/effects?WT.mc_id=AZ-MVP-5004796#order-of-evaluation){:target="blank"}

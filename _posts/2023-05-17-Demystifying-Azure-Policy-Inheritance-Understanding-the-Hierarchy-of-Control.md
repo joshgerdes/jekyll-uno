@@ -47,7 +47,6 @@ still remain assigned to the subscription.
 
 Let us do some testing, and try to deploy an Azure Resource (in my example, an Azure Storage account) into my Resource Group:
 
-
 | Can I deploy to Australia East? | No |
 | ------------------------------- | -- |
 | Can I deploy to UK South?       | No |

@@ -18,7 +18,7 @@ Now that we have a Resource Group to use in our testing, I need a policy – to 
 
 I have assigned my Azure Policy to a Subscription, that contains my AzPolicy-Test Resource Group. I have set the Allowed Locations to: Australia East.
 
-![Azure Policy - Allowed locations](/images/posts/AzurePolicy-AllowedLocations-DenyAll\(AustraliaE\).png "Azure Policy - Allowed locations")
+![Azure Policy - Allowed locations](/images/posts/AzurePolicy-AllowedLocations-DenyAllAustraliaE.png "Azure Policy - Allowed locations")
 
 Let us do some testing, and try to deploy an Azure Resource (in my example, an Azure Storage account) into my Resource Group:
 
@@ -62,7 +62,7 @@ In this case, the policies have worked together, with the most restrictive of th
 
 ##### **Review**
 
-So lets review, originally you might think that like Group Policy – the last policy wins – this is not always the case, when conflicting policies are assigned at different levels, the policy at the highest level in the hierarchy takes precedence over policies at lower levels. When preforming a Modify or Create on a resource – the Azure resource provider checks with the Azure Policy engine..
+So lets review, originally you might think that like Group Policy – the last policy wins – this is not always the case, when conflicting policies are assigned at different levels, the policy at the highest level in the hierarchy takes precedence over policies at lower levels. When preforming a Modify or Create on a resource – the Azure resource provider checks with the Azure Policy engine.. When deciding what policy to take the Azure Policy engine, will analyze all policies together (like the above scenarius, where both deployment to UK South and Australia East were in effect - however the most restrictive won).
 
 There are, however, various effects which are analysed first.
 

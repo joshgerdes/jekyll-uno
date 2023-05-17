@@ -38,7 +38,7 @@ As Azure Resource Manager is analysing and verifying the inputs give it – it n
 
 This is as expected, and even if I were to use another resource group – I still won’t be able to create resources in other regions.
 
-##### **Scenario #2 – Policy assigned to the subscription with Allow Australia East but another policy with Allow UK South only on the Resource Group.**
+##### **Scenario #2 – Policy assigned to the subscription with Allow Australia East but another policy with Allow UK South only on the Resource Group**
 
 Now that we know, we can create resources in Australia East – lets assign the same ‘Allowed Locations’ policy to the Resource Group, but Denying Australia East, and Allowing UK South. The policy allowing Australia East will
 still remain assigned to the subscription.
@@ -46,6 +46,7 @@ still remain assigned to the subscription.
 ![Azure Policy - Allowed locations - UK South](/images/posts/AzurePolicy-AllowedLocation_UkSouth.png "Azure Policy - Allowed locations - UK South")
 
 Let us do some testing, and try to deploy an Azure Resource (in my example, an Azure Storage account) into my Resource Group:
+
 
 | Can I deploy to Australia East? | No |
 | ------------------------------- | -- |

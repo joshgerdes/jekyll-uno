@@ -3,7 +3,8 @@ title: Demystifying Azure Policy Inheritance
 author: Luke
 categories: Azure
 description: Look into Azure Policy inheritance and how it works.
-Header: /images/posts/AzurePolicy_Effects.png
+header:
+  teaser: /images/posts/AzurePolicy_Effects.png
 date: 2023-05-16T12:00:00.000Z
 ---
 

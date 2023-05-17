@@ -14,7 +14,7 @@ In my tests – I have a single resource group named: AzPolicy-Test. This resour
 
 Now that we have a Resource Group to use in our testing, I need a policy – to keep things simple, I am going use the built-in policy of: [AllowedLocations](https://www.azadvertizer.net/azpolicyadvertizer/e56962a6-4747-49cd-b67b-bf8b01975c4c.html). This policy will allow us to control which region we can deploy our Azure resources into.
 
-##### **Scenario #1 – Policy assigned to the subscription with Allow Australia East ONLY.**
+##### **Scenario #1 – Policy assigned to the subscription with Allow Australia East ONLY**
 
 I have assigned my Azure Policy to a Subscription, that contains my AzPolicy-Test Resource Group. I have set the Allowed Locations to: Australia East.
 
@@ -60,32 +60,20 @@ Group).
 
 In this case, the policies have worked together, with the most restrictive of them both in effect – which is Deny.
 
-##### Review&#xA;So lets review, originally you might think that like Group Policy – the last policy wins – this is not always the case, when conflicting policies are assigned at different levels, the policy at the highest level in the hierarchy takes precedence over policies at lower levels. When preforming a Modify or Create on a resource – the Azure resource provider checks with the Azure Policy engine..
+##### **Review**
 
-
-
+So lets review, originally you might think that like Group Policy – the last policy wins – this is not always the case, when conflicting policies are assigned at different levels, the policy at the highest level in the hierarchy takes precedence over policies at lower levels. When preforming a Modify or Create on a resource – the Azure resource provider checks with the Azure Policy engine..
 
 There are, however, various effects which are analysed first.
 
 ![Azure Policy Effects](/images/posts/AzurePolicy_Effects.png "Azure Policy Effects")
 
-
-
-
-
-1. Disabled is checked first to determine
-   whether the policy rule should be evaluated.
-2. Append and Modify are then
-   evaluated. Since either could alter the request, a change made may prevent an
-   audit or deny effect from triggering. These effects are only available with a
-   Resource Manager mode.
-3. Deny is then evaluated. By evaluating
-   deny before audit, double logging of an undesired resource is prevented.
-4. Audit is evaluated.
-5. Manual is evaluated.
+1. **Disabled** is checked first to determine whether the policy rule should be evaluated.
+2. **Append** and **Modify** are then evaluated. Since either could alter the request, a change made may prevent an audit or deny effect from triggering. These effects are only available with a Resource Manager mode.
+3. **Deny** is then evaluated. By evaluating deny before audit, double logging of an undesired resource is prevented.
+4. **Audit** is evaluated.
+5. **Manual** is evaluated.
 
 After the Resource Provider returns a success code on a Resource Manager mode request, AuditIfNotExists and DeployIfNotExists evaluate to determine whether additional compliance logging or action is required.
 
 Remember that policy enforcement occurs during resource deployment or updates. Existing resources are not retroactively affected unless a manual remediation is performed.
-
-##### &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;

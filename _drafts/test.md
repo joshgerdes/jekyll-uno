@@ -1,8 +1,8 @@
 ---
-title: test
+title: Getting Started with Azure Elastic SAN
 author: Luke
 categories: Azure
-description: sd
+description: Deployment and look into Azure Elastic SAN
 toc: 'True'
 ---
 

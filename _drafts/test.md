@@ -206,6 +206,37 @@ In terms of Scalability, a few things to note:
 
 At the moment, Azure Elastic SAN, only supports specific regions and [configurations](https://learn.microsoft.com/azure/storage/common/storage-redundancy?WT.mc_id=AZ-MVP-5004796), for example in Australia East, the Azure Elastic SAN only supports LRS, so the volumes sit within a single datacenter, replicated across 3 storage stacks.
 
+LRSIMAGE
+
+LRS is still decent in terms of resiliency but for those who are use to cross SAN replication - I expect, we will see ZRS start to become common place, as this service is rolled out.
+
+ZRSIMAGE
+At the time of this writing, there is no Azure Backup  Support, I expect this capacity to be released closer to GA (Generally Available).
+For day to day operations, I was able to enable the [Volume Shadow Copies](https://learn.microsoft.com/windows-server/storage/file-server/volume-shadow-copy-service?WT.mc_id=AZ-MVP-5004796), which allowed me to go back to  previous versions of files and folders.
+
+#### Security and Compliance
+
+Other than the usual filesystem permissions, you can use with your filesystems across Windows and Linux on the Azure Elastic SAN, there are built-in roles that can be leveraged for Azure Elastic SAN management.
+
+Assigning least privilege operations or creating your own custom role is possible with Azure Elastic SAN, and roles such as Volume Group Owner will be key to how the SAN is architectured for an organisation. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

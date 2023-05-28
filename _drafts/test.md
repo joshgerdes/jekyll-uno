@@ -22,6 +22,21 @@ Azure Elastic SAN provides a storage solution that is highly scalable, cost-effe
 
 
 
+A Storage Area Network (SAN) typically comprises one or more
+physical appliances equipped with multiple drive bays, which are used to create
+volumes – it is considered a high-performance and low-latency connectivity
+storage solution.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

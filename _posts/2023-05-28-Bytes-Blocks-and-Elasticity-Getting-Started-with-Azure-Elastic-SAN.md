@@ -234,7 +234,7 @@ Assigning least privilege operations or creating your own custom role is possibl
 | Elastic SAN Reader             | Allows for control path read access to Azure Elastic SAN                                                                                                |
 | Elastic SAN Volume Group Owner |                 Allows for full access to a volume group in Azure Elastic SAN including changing network security policies to unblock data path access. |
 
-All data stored in an Elastic SAN is encrypted at rest using Azure storage service encryption (SSE). Storage service encryption works similarly to BitLocker on Windows: data is encrypted beneath the file system level. SSE protects your data and to help you to meet your organizational security and compliance commitments. Data stored in Elastic SAN is encrypted with Microsoft-managed keys.
+All data stored in an Elastic SAN is encrypted at rest using Azure storage service encryption (SSE). Storage service encryption works similarly to BitLocker on Windows: data is encrypted beneath the file system level. SSE protects your data and to helps you meet your organizational security and compliance commitments. Data stored in Elastic SAN is encrypted with Microsoft-managed keys, that are rotated frequently.
 
 #### Integration with Azure Services
 

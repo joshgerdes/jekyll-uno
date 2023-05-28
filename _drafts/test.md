@@ -83,13 +83,16 @@ Elastic SAN.
 1. Login to the Microsoft Azure [portal](https://portal.azure.com/)
 2. In the search box at the top of the portal, type in: Elastic SAN, navigate to the [Elastic SAN](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.ElasticSan%2Felasticsans) resource page.
 3. Click Create elastic SAN
-4.
-
-
-
-
-
-
+4. ![Create Azure Elastic SAN using the Azure Portal](/images/posts/Create-Portal-AzElasticSAN.png "Create Azure Elastic SAN using the Azure Portal")
+5. I will create a new Resource Group named: AzureElasticSAN-dev-rg
+6. I will name my Azure Elastic SAN: azelasticsan\_aue
+   (Name has to be between 3 to 24 characters in length, and may only contain
+   lowercase letters, numbers, hyphens, and underscores (hyphens and underscores
+   must be surrounded by letters or numbers).
+7. ![Create an Azure Elastic SAN](/images/posts/Create-Portal-AzElasticSAN-Redunancy.png "Create an Azure Elastic SAN")
+8. Now we need to specify the base and capacity size, the base size will determine what your iOPS and throughput your SAN will support. It’s cheaper to go with, a lower Base size, and higher additional storage – but it will affect your IOPS and bandwidth. These values can be changed later (start with a minimum and increase as needed, as you can’t downsize) – I will set my Base as the minimum of 1 TB and add an additional size of 1TB.
+9. ![Create Azure Elastic SAN - Resource Provisioning](/images/posts/Create-Portal-AzElasticSAN-ResourceProvisioning.png "Create Azure Elastic SAN - Resource Provisioning")
+10.
 
 
 

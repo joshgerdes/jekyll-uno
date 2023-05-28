@@ -38,7 +38,7 @@ Introducing [Azure Elastic SAN](https://azure.microsoft.com/products/storage/ela
 
 ![Azure Elastic SAN - Overview](/images/posts/AzureElasticSAN.PNG "Azure Elastic SAN - Overview")
 
-With the Azure Elastic SAN, we can the elasticity of the Microsoft Azure block storage systems, to supply expandable block storage capabilities to workloads via [iSCSI](https://learn.microsoft.com/en-gb/azure/storage/elastic-san/elastic-san-planning?WT.mc_id=AZ-MVP-5004796#iscsi-support){:target="blank"}(Internet Small Computer Systems Interface), or services such as Azure Kubernetes Services through [Azure Container Storage](https://techcommunity.microsoft.com/t5/azure-storage-blog/azure-container-storage-in-public-preview/ba-p/3819246?WT.mc_id=AZ-MVP-5004796){:target="blank"}.
+With the Azure Elastic SAN, we can the elasticity of the Microsoft Azure block storage systems, to supply expandable block storage capabilities to workloads via [iSCSI](https://learn.microsoft.com/en-gb/azure/storage/elastic-san/elastic-san-planning?WT.mc_id=AZ-MVP-5004796#iscsi-support){:target="blank"} (Internet Small Computer Systems Interface), or services such as Azure Kubernetes Services through [Azure Container Storage](https://techcommunity.microsoft.com/t5/azure-storage-blog/azure-container-storage-in-public-preview/ba-p/3819246?WT.mc_id=AZ-MVP-5004796){:target="blank"}.
 
 When looking at some of the [benefits](https://learn.microsoft.com/azure/storage/elastic-san/elastic-san-introduction?WT.mc_id=AZ-MVP-5004796#benefits-of-elastic-san){:target="blank"} of an Azure Elastic SAN, over a traditional SAN, we will delve into several
 common user stories around SAN provisioning and capacity management, with key differences around time to deployment and skills required.
@@ -236,7 +236,7 @@ Assigning least privilege operations or creating your own custom role is possibl
 
 All data stored in an Elastic SAN is encrypted at rest using Azure storage service encryption (SSE). Storage service encryption works similarly to BitLocker on Windows: data is encrypted beneath the file system level. SSE protects your data and to help you to meet your organizational security and compliance commitments. Data stored in Elastic SAN is encrypted with Microsoft-managed keys.
 
-##### Integration with Azure Services
+#### Integration with Azure Services
 
 At the moment, Azure Elastic SAN supports, Service Endpoints only, [Private endpoints](https://learn.microsoft.com/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796){:target="blank"} are not yet available, but enabling service endpoints on subnet/s was easily done. 
 
@@ -246,7 +246,7 @@ At the time of this writing, [Azure Container Storage](https://techcommunity.mic
 
 ![Azure Elastic SAN - Azure services integration](/images/posts/AzureElasticSAN_ComputeIntegration.PNG "Azure Elastic SAN - Azure services integration")
 
-Cost and Pricing
+#### Cost and Pricing
 
 The Azure Elastic SAN is [charged by the amount you provision based on units](https://azure.microsoft.com/en-us/pricing/details/elastic-san/?WT.mc_id=AZ-MVP-5004796){:target="blank"}:  
 
@@ -273,9 +273,9 @@ Elastic SAN will need to be provisioned with at least one base unit of 1TiB. It 
 
 I will cover a few titbits, I found in my discovery.  
 
-1. Authentication Failure – if you get ‘Authentication
+* Authentication Failure – if you get ‘Authentication
    Failure’, when attempting to connect to your iSCSI target (Azure Elastic SAN Volume), from your Windows or Linux workload, make sure that the Volume Group has had the Service Endpoint enabled for the subnet and virtual network you are connecting from, by default all traffic is denied to the Azure Elastic SAN – this includes traffic from other subnets, the storage endpoint needs to be enabled on the subnet that hosts your virtual machines.
-2. Persistent Login - When connecting to the iSCSI target (the Volume) this is a once off session, if your system is rebooted, the volume won’t automatically remap. You can set a Persistent Login, by replacing ‘LoginTarget’
+* Persistent Login - When connecting to the iSCSI target (the Volume) this is a once off session, if your system is rebooted, the volume won’t automatically remap. You can set a Persistent Login, by replacing ‘LoginTarget’
    in your iscsicli command to: PersistentLoginTarget (for example: iscsicli PersistentLoginTarget iqn.2023-05.net.windows.core.blob.ElasticSan.es-rsip05eo4sx0:vol1 t es-rsip05eo4sx0.z40.blob.storage.azure.net 3260 Root\ISCSIPRT\0000\_0 -1 \* \* \* \* \* \* \* \* \* \* \* 0), then the next time you reboot your Windows server, the volume will be automatically mounted.
 
 ##### Updates and New Features

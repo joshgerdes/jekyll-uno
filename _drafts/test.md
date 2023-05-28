@@ -17,15 +17,33 @@ Azure Elastic SAN provides a storage solution that is highly scalable, cost-effe
 
 
 
-
-
-
-
-
-A Storage Area Network (SAN) typically comprises one or more
-physical appliances equipped with multiple drive bays, which are used to create
-volumes – it is considered a high-performance and low-latency connectivity
+A Storage Area Network (SAN) typically comprises one or more physical appliances equipped with multiple drive bays, which are used to create volumes – it is considered a high-performance and low-latency connectivity
 storage solution.
+
+The benefits of a SAN are:
+
+* Grow storage footprint independent of Compute
+* Low latency and high storage throughput
+* Cost efficient with massive scale.
+* Built for databases and IOPS-intensive
+  applications.
+* Supports large virtualization deployments.
+
+Introducing [Azure Elastic SAN](https://azure.microsoft.com/products/storage/elastic-san/?WT.mc_id=AZ-MVP-5004796#overview).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

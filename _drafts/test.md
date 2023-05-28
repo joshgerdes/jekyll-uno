@@ -7,7 +7,7 @@ toc: 'True'
 Header: /images/posts/BytesBlocksAzureElasticSAN_Blog_Heading.gif
 ---
 
-Today we are going to take a look at the [Microsoft Azure Elastic SAN](https://azure.microsoft.com/products/storage/elastic-san/?WT.mc_id=AZ-MVP-5004796). 
+Today we are going to take a look at the [Microsoft Azure Elastic SAN](https://azure.microsoft.com/products/storage/elastic-san/?WT.mc_id=AZ-MVP-5004796).
 
 #### Introduction
 
@@ -34,10 +34,10 @@ Introducing [Azure Elastic SAN](https://azure.microsoft.com/products/storage/ela
 
 ![Azure Elastic SAN - Overview](/images/posts/AzureElasticSAN.PNG "Azure Elastic SAN - Overview")
 
-With the Azure Elastic SAN, we can the elasticity of the Microsoft Azure block storage systems, to supply expandable block storage capabilities to workloads via [iSCSI](https://learn.microsoft.com/en-gb/azure/storage/elastic-san/elastic-san-planning?WT.mc_id=AZ-MVP-5004796#iscsi-support)(Internet Small Computer Systems Interface), or services such as Azure Kubernetes Services through [Azure Container Storage](https://techcommunity.microsoft.com/t5/azure-storage-blog/azure-container-storage-in-public-preview/ba-p/3819246?WT.mc_id=AZ-MVP-5004796). 
+With the Azure Elastic SAN, we can the elasticity of the Microsoft Azure block storage systems, to supply expandable block storage capabilities to workloads via [iSCSI](https://learn.microsoft.com/en-gb/azure/storage/elastic-san/elastic-san-planning?WT.mc_id=AZ-MVP-5004796#iscsi-support)(Internet Small Computer Systems Interface), or services such as Azure Kubernetes Services through [Azure Container Storage](https://techcommunity.microsoft.com/t5/azure-storage-blog/azure-container-storage-in-public-preview/ba-p/3819246?WT.mc_id=AZ-MVP-5004796).
 
 When looking at some of the [benefits ](https://learn.microsoft.com/azure/storage/elastic-san/elastic-san-introduction?WT.mc_id=AZ-MVP-5004796#benefits-of-elastic-san)of an Azure Elastic SAN, over a traditional SAN, we will delve into several
-common user stories around SAN provisioning and capacity management, with key differences around time to deployment and skills required. 
+common user stories around SAN provisioning and capacity management, with key differences around time to deployment and skills required.
 ![Azure Elastic SAN - User journey](/images/posts/AzureElasticSAN_UserJourney.PNG "Azure Elastic SAN - User journey")
 
 #### Architecture and Components
@@ -123,7 +123,7 @@ The volume name is part of your volume's iSCSI Qualified Name and can't be chang
 
 ##### Connect&#xA;Now that the SAN, Volume Group, and Volume have been setup – it’s time to connect to the storage.
 
-In my demo environment, I have a Volume Group, assigned to a storage service endpoint on my devbox virtual network and subnet, so I will connect to the SAN through a Windows Server 2022 server, that is attached to the same virtual network. 
+In my demo environment, I have a Volume Group, assigned to a storage service endpoint on my devbox virtual network and subnet, so I will connect to the SAN through a Windows Server 2022 server, that is attached to the same virtual network.
 
 > Following this guide will set up a single path, for more production scenarios to achieve higher IOPS and throughput, and configure mulipathing using the Microsoft document ‘[here](https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-connect-windows?tabs=azure-portal\&WT.mc_id=AZ-MVP-5004796#connect-to-a-volume)’.
 
@@ -150,13 +150,13 @@ In my demo environment, I have a Volume Group, assigned to a storage service end
 
 Now that we have provisioned the Azure Elastic SAN, and connected to it, let’s take a high-level look at the scalability and performance.
 
-For performance, I ran a single threaded test on my 500GB iSCSI target using [Diskspd](https://learn.microsoft.com/azure-stack/hci/manage/diskspd-overview?WT.mc_id=AZ-MVP-5004796), using the following parameters: 
+For performance, I ran a single threaded test on my 500GB iSCSI target using [Diskspd](https://learn.microsoft.com/azure-stack/hci/manage/diskspd-overview?WT.mc_id=AZ-MVP-5004796), using the following parameters:
 
 ```bat
 .\diskspd.exe - d60 - W15 - C15 - c128M - t4 - o4 - b8k - L - r - Sh - w50 f: \disk - speed - test.dat
 ```
 
-The output was: 
+The output was:
 
 Total IO:
 
@@ -171,7 +171,7 @@ Read IO:
 Write IO:
 
 * I/Os: 54,994
-*  I/O per second: 916.38
+* I/O per second: 916.38
 
 The output does not directly provide the exact IOPS (Input/Output Operations Per Second) value, but we can calculate it based on the total number of I/Os and the test duration.
 
@@ -182,13 +182,13 @@ To calculate the overall IOPS, divide the total number of I/Os by the test durat
 Similarly, you can calculate the read and write IOPS:
 
 * Read
-       IOPS: 54,547 I/Os / 60 seconds = 909.12 IOPS
+  IOPS: 54,547 I/Os / 60 seconds = 909.12 IOPS
 * Write
-       IOPS: 54,994 I/Os / 60 seconds = 916.57 IOPS
+  IOPS: 54,994 I/Os / 60 seconds = 916.57 IOPS
 
 Therefore, based on the given Diskspd output, the SAN is performing approximately 1,825 IOPS in total, with 909 IOPS for reads and 917 IOPS for writes.
 
-Note: This was a very basic test, running on a Windows Server 2022 Azure Virtual Machine (Standard D4s v3 (4 vcpus, 16 GiB memory)), single threaded. 
+Note: This was a very basic test, running on a Windows Server 2022 Azure Virtual Machine (Standard D4s v3 (4 vcpus, 16 GiB memory)), single threaded.
 
 At the time I ran this test – the IOPS limit of the SAN was 5000, and bandwidth was 80. I highly encourage you to run your own tests. This was more intended as a baseline for reference.
 
@@ -196,76 +196,11 @@ Pathping, reported 0 hops for DNS resolution, this Virtual Machine is in another
 
 ![Azure Elastic SAN - Pathping](/images/posts/AzureElasticSAN_Pathping.png "Azure Elastic SAN - Pathping")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In terms of Scalability, a few things to note:
+
+* You cannot increase the volume size, while an active session (i.e., in use by a workload) is in use. 
+* You can increase the Base and Additional size of the SAN, while sessions are in use.
+* The Additional size of the Azure Elastic SAN has to be less than the Base size (for example, you cannot have an Azure Elastic SAN with a Base size of 3, and an Additional size of 4).
 
 
 

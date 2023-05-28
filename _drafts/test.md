@@ -273,9 +273,8 @@ Updates and New Features
 As this is a Private Preview service, there will be updates on functionality and features that I have gone through today and may have missed.
 
 * [aka.ms/ElasticSANOverview](https://learn.microsoft.com/en-gb/azure/storage/elastic-san/elastic-san-introduction?WT.mc_id=AZ-MVP-5004796)
-* [aka.ms/ElasticSANPlanning](https://aka.ms/ElasticSANPlanning)
-* [aka.ms/ElasticSANPricing](https://aka.ms/ElasticSANPricing)
-* [aka.ms/ElasticSANSkillingVideo](https://aka.ms/ElasticSANSkillingVideo)
+* [aka.ms/ElasticSANPlanning](https://learn.microsoft.com/azure/storage/elastic-san/elastic-san-planning?WT.mc_id=AZ-MVP-5004796)
+* [aka.ms/ElasticSANPricing](https://azure.microsoft.com/pricing/details/elastic-san/?WT.mc_id=AZ-MVP-5004796)
 * Keep an eye out on the [Azure Updates](https://azure.microsoft.com/updates/?query=SAN\&WT.mc_id=AZ-MVP-5004796) page for updates.
 * Or if you are Linkedin member, follow [Azure Feeds](https://www.linkedin.com/in/azure-feeds-709457212/recent-activity/all/ "Azure Feeds") on Linkedin.
 
@@ -295,6 +294,7 @@ As this is a Private Preview service, there will be updates on functionality and
 
 
 
+*
 
 
 

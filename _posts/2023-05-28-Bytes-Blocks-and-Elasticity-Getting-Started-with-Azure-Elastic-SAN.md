@@ -19,7 +19,7 @@ Azure Elastic SAN provides a storage solution that is highly scalable, cost-effe
 
 > As Azure Elastic SAN is still in the preview stage, as of 28/05/2023, it is important to note that its [features
 > and functionality](https://learn.microsoft.com/azure/storage/elastic-san/elastic-san-introduction?WT.mc_id=AZ-MVP-5004796#support-for-azure-storage-features){:target="blank"} may change before it reaches production. Microsoft continues to actively gather feedback from users and refine the offering to ensure a seamless experience when it finally becomes
-> generally available. Request access to the Preview by filling out this [form](https://aka.ms/AzureElasticSANPreviewAccess){:target="blank"}.
+> generally available. Request access to the Preview by filling out this [form](https://aka.ms/AzureElasticSANPreviewAccess){:target="blank"}. This feature should not be used for production workloads until General Availability (GA).
 
 ![Bytes, Blocks and Elasticity - Getting Started with Azure Elastic SAN](/images/posts/BytesBlocksAzureElasticSAN_Blog_Heading.gif "Bytes, Blocks and Elasticity - Getting Started with Azure Elastic SAN")
 

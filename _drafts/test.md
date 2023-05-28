@@ -202,6 +202,16 @@ In terms of Scalability, a few things to note:
 * You can increase the Base and Additional size of the SAN, while sessions are in use.
 * The Additional size of the Azure Elastic SAN has to be less than the Base size (for example, you cannot have an Azure Elastic SAN with a Base size of 3, and an Additional size of 4).
 
+##### Data Protection and Redundancy
+
+At the moment, Azure Elastic SAN, only supports specific regions and [configurations](https://learn.microsoft.com/azure/storage/common/storage-redundancy?WT.mc_id=AZ-MVP-5004796), for example in Australia East, the Azure Elastic SAN only supports LRS, so the volumes sit within a single datacenter, replicated across 3 storage stacks.
+
+
+
+
+
+
+
 
 
 

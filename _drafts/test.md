@@ -198,7 +198,7 @@ Pathping, reported 0 hops for DNS resolution, this Virtual Machine is in another
 
 In terms of Scalability, a few things to note:
 
-* You cannot increase the volume size, while an active session (i.e., in use by a workload) is in use. 
+* You cannot increase the volume size, while an active session (i.e., in use by a workload) is in use.
 * You can increase the Base and Additional size of the SAN, while sessions are in use.
 * The Additional size of the Azure Elastic SAN has to be less than the Base size (for example, you cannot have an Azure Elastic SAN with a Base size of 3, and an Additional size of 4).
 
@@ -218,19 +218,62 @@ For day to day operations, I was able to enable the [Volume Shadow Copies](https
 
 Other than the usual filesystem permissions, you can use with your filesystems across Windows and Linux on the Azure Elastic SAN, there are built-in roles that can be leveraged for Azure Elastic SAN management.
 
-Assigning least privilege operations or creating your own custom role is possible with Azure Elastic SAN, and roles such as Volume Group Owner will be key to how the SAN is architectured for an organisation. 
+Assigning least privilege operations or creating your own custom role is possible with Azure Elastic SAN, and roles such as Volume Group Owner will be key to how the SAN is architectured for an organisation.
 
+INSERT TABLE
 
+All data stored in an Elastic SAN is encrypted at rest using Azure storage service encryption (SSE). Storage service encryption works similarly to BitLocker on Windows: data is encrypted beneath the file system level. SSE protects your data and to help you to meet your organizational security and compliance commitments. Data stored in Elastic SAN is encrypted with Microsoft-managed keys.
 
+##### Integration with Azure Services
 
+At the moment, Azure Elastic SAN supports, Service Endpoints only, [Private endpoints](https://learn.microsoft.com/azure/private-link/private-endpoint-overview?WT.mc_id=AZ-MVP-5004796) are not yet available, but enabling service endpoints on subnet/s was easily done. 
 
+Connectivity to Windows and Linux machines, will be done through native iSCSI protocols, as the Azure Portal displayed when attempting to connect.
 
+At the time of this writing, [Azure Container Storage](https://techcommunity.microsoft.com/t5/azure-storage-blog/azure-container-storage-in-public-preview/ba-p/3819246?WT.mc_id=AZ-MVP-5004796) – connecting to Azure Kubernetes Service, can be
+leveraged by Azure Elastic SAN (Azure Container Storage is also in Public Preview).
 
+![Azure Elastic SAN - Azure services integration](/images/posts/AzureElasticSAN_ComputeIntegration.PNG "Azure Elastic SAN - Azure services integration")
 
+Cost and Pricing
 
+The Azure Elastic SAN is [charged by the amount you provision based on units](https://azure.microsoft.com/en-us/pricing/details/elastic-san/?WT.mc_id=AZ-MVP-5004796): 
 
+* Base unit
+* Capacity-only unit
 
+They are designed to offer a simple bulk provisioning experience while also providing flexibility to expand your data footprint. 
 
+The Base unit has a capacity of 5000 IOPs and a throughput of 80 MBps per TiB. 
+
+The Capacity only unit, on the other hand, allows you to provision capacity only without provisioning performance at a lower cost. 
+
+As a result, you can cost-effectively scale performance while migrating workloads from on-premises to Azure. 
+
+The total price of Azure Elastic SAN depends on the base and capacity scale unit (LRS and ZRS dependent).
+
+Elastic SAN will need to be provisioned with at least one base unit of 1TiB. It is also important to note that the SAN-provisioned resources are shared by all volume groups and volumes.
+
+![Azure Elastic SAN - Provisioning Model](/images/posts/AzureElasticSAN_ProvisioningModel.PNG "Azure Elastic SAN - Provisioning Model")
+
+![](/images/posts/AzureElasticSAN_CostManagement.PNG)
+
+##### Tips
+
+I will cover a few titbits, I found in my discovery. 
+
+1. Authentication Failure – if you get ‘Authentication
+   Failure’, when attempting to connect to your iSCSI target (Azure Elastic SAN Volume), from your Windows or Linux workload, make sure that the Volume Group has had the Service Endpoint enabled for the subnet and virtual network you are connecting from, by default all traffic is denied to the Azure Elastic SAN – this includes traffic from other subnets, the storage endpoint needs to be enabled on the subnet that hosts your virtual machines.
+2. Persistent Login - When connecting to the iSCSI target (the Volume) this is a once off session, if your system is rebooted, the volume won’t automatically remap. You can set a Persistent Login, by replacing ‘LoginTarget’
+   in your iscsicli command to: PersistentLoginTarget (for example: iscsicli PersistentLoginTarget iqn.2023-05.net.windows.core.blob.ElasticSan.es-rsip05eo4sx0:vol1 t es-rsip05eo4sx0.z40.blob.storage.azure.net 3260 Root\ISCSIPRT\0000\_0 -1 \* \* \* \* \* \* \* \* \* \* \* 0), then the next time you reboot your Windows server, the volume will be automatically mounted.
+
+Updates and New Features
+As this is a Private Preview service, there will be updates on functionality and features that I have gone through today and may have missed.
+
+* Keep an eye out on the [Azure Updates](https://azure.microsoft.com/updates/?query=SAN\&WT.mc_id=AZ-MVP-5004796) page for updates.
+* Or if you are Linkedin member, follow [Azure Feeds](https://www.linkedin.com/in/azure-feeds-709457212/recent-activity/all/ "Azure Feeds") on Linkedin.
+
+##### &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;
 
 
 

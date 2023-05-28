@@ -269,7 +269,7 @@ Elastic SAN will need to be provisioned with at least one base unit of 1TiB. It 
 
 ![Azure Elastic SAN - Cost Management](/images/posts/AzureElasticSAN_CostManagement.PNG)
 
-##### Tips
+#### Tips
 
 I will cover a few titbits, I found in my discovery.  
 
@@ -278,7 +278,7 @@ I will cover a few titbits, I found in my discovery.
 * Persistent Login - When connecting to the iSCSI target (the Volume) this is a once off session, if your system is rebooted, the volume won’t automatically remap. You can set a Persistent Login, by replacing ‘LoginTarget’
    in your iscsicli command to: PersistentLoginTarget (for example: iscsicli PersistentLoginTarget iqn.2023-05.net.windows.core.blob.ElasticSan.es-rsip05eo4sx0:vol1 t es-rsip05eo4sx0.z40.blob.storage.azure.net 3260 Root\ISCSIPRT\0000\_0 -1 \* \* \* \* \* \* \* \* \* \* \* 0), then the next time you reboot your Windows server, the volume will be automatically mounted.
 
-##### Updates and New Features
+#### Updates and New Features
 
 As this is a Private Preview service, there will be updates on functionality and features that I have gone through today and may have missed.
 

@@ -192,6 +192,8 @@ Note: This was a very basic test, running on a Windows Server 2022 Azure Virtual
 
 At the time I ran this test – the IOPS limit of the SAN was 5000, and bandwidth was 80. I highly encourage you to run your own tests. This was more intended as a baseline for reference.
 
+![Azure Elastic SAN - storage throughput](/images/posts/AzureElasticSAN_StorageThroughput.PNG "Azure Elastic SAN - storage throughput")
+
 Pathping, reported 0 hops for DNS resolution, this Virtual Machine is in another Availability Zone from the SAN.
 
 ![Azure Elastic SAN - Pathping](/images/posts/AzureElasticSAN_Pathping.png "Azure Elastic SAN - Pathping")

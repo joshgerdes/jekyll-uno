@@ -2,7 +2,9 @@
 title: Cleanup your unwanted Azure resources on a schedule
 author: Luke
 categories:
-- Azure
+  - Azure
+  - PowerShell
+permalink: /azure/Cleanup-your-unwanted-Azure-resources-on-a-schedule/
 description: >-
   Cleanup your unwanted Azure resources on a schedule using an Azure Automation
   Runbook

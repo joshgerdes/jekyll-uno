@@ -26,7 +26,7 @@ I am not going to go into setting up Azure Automation, if interested you can ref
 
 The script named: Invoke-DakaraSuperWeapon, aptly named as a reference to the Dakara weapon from the TV series Stargate SG1 - a weapon if great power.
 
-> The Dakara superweapon was a Ancient device capable of reducing all matter to its basic elemental components, and/or restructuring it. Possessing the ability to pass through the shields of known ships it also functions (and has been used) as a devastating weapon to kill the entire crew of orbiting ships or wipe out all life on the surface of hundreds of planets at a time. "It is not only capable of destroying the Replicators but all life in the galaxy."
+> The [Dakara superweapon](https://stargate.fandom.com/wiki/Dakara_superweapon){:target="blank"} was a Ancient device capable of reducing all matter to its basic elemental components, and/or restructuring it. Possessing the ability to pass through the shields of known ships it also functions (and has been used) as a devastating weapon to kill the entire crew of orbiting ships or wipe out all life on the surface of hundreds of planets at a time. "It is not only capable of destroying the Replicators but all life in the galaxy."
 
 Using the latest Windows PowerShell release - 7.2 (Preview), this script is built around the following capabilities:
 

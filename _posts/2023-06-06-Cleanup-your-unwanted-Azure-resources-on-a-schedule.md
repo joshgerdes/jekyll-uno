@@ -7,7 +7,7 @@ categories:
 permalink: /azure/Cleanup-your-unwanted-Azure-resources-on-a-schedule/
 toc: false
   teaser: /images/posts/CleanupyourUnwantedAzureResourcesonaSchedule.png
-date: 2023-06-06T12:00:00.000Z
+date: '2023-06-06 00:00:00 +1300'
 ---
 
 Cleanup your unwanted Azure resources on a schedule

@@ -35,7 +35,7 @@ The script named: Invoke-DakaraSuperWeapon, aptly named as a reference to the Da
 
 Using the latest Windows PowerShell release - 7.2 (Preview), this script is built around the following capabilities:
 
-* **Delete ALLresource groups** (without a specific Tag) **under all subscriptions**, under a specific **Management Group**
+* **Delete ALL resource groups** (without a specific Tag) **under all subscriptions**, under a specific **Management Group**
 * **Delete all resources** within those resource groups
 * **Delete** Azure **Recovery Vaults** and their backed up items
 * **Delete** any **Azure policy assignments**, assigned directly to any subscription under the Management Group

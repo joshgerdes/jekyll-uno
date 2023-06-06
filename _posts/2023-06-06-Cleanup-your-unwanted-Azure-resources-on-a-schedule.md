@@ -6,7 +6,7 @@ categories:
 description: >-
   Cleanup your unwanted Azure resources on a schedule using an Azure Automation
   Runbook
-toc: 'False'
+toc: false
   teaser: /images/posts/CleanupyourUnwantedAzureResourcesonaSchedule.png
 date: 2023-06-06T12:00:00.000Z
 ---

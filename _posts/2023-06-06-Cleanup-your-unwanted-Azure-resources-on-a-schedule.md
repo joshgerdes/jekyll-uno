@@ -6,6 +6,7 @@ categories:
   - PowerShell
 permalink: /azure/Cleanup-your-unwanted-Azure-resources-on-a-schedule/
 toc: false
+header:
   teaser: /images/posts/CleanupyourUnwantedAzureResourcesonaSchedule.png
 date: '2023-06-06 00:00:00 +1300'
 ---

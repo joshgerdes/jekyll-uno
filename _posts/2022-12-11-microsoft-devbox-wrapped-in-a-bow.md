@@ -24,7 +24,7 @@ Today, we sent our present and took a peek inside the box - at Microsoft Dev Box
 
 #### Overview
 
-[Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box"){:target="_blank"} provides self-service access for developers to high-performance, cloud-based workstations preconfigured and ready-to-code for specific projects—all while maintaining security and corporate governance. With Microsoft Dev Box, organizations can:
+[Microsoft Dev Box](https://azure.microsoft.com/products/dev-box/?WT.mc_id=AZ-MVP-5004796#overview "Microsoft Dev Box"){:target="_blank"} provides self-service access for developers to high-performance, cloud-based workstations preconfigured and ready-to-code for specific projects - all while maintaining security and corporate governance. With Microsoft Dev Box, organizations can:
 
 * Maximize dev productivity with ready-to-code, self-service Dev Boxes.
 * Central management of workstations running anywhere to maintain greater security, compliance, and cost efficiency.
@@ -66,7 +66,7 @@ Microsoft Dev box can help project and development teams get up and running quic
 
 | Concepts | Notes |
 | --- | --- |
-| Dev center | A dev center is a collection of projects that require similar settings. Dev centers enable dev infrastructure managers to manage the images and SKUs available to the projects using dev box definitions and configure the networks the development teams consume using network connections. |
+| Dev center | A dev center is a collection of projects that require similar settings. Dev centers enable dev infrastructure managers to manage the images and SKUs available to the projects using dev box definitions and configure the networks the development teams consume using network connections. |
 | Projects | A project is the point of access for the development team members. When you associate a project with a dev center, all the settings at the dev center level will be applied to the project automatically. Each project can be associated with only one dev center. |
 | Dev box definition | A dev box definition specifies a source image and size, including compute size and storage size. You can use a source image from the marketplace, or a custom image. |
 | Network connection | Network connections store configuration information like Active Directory join type and virtual network that dev boxes use to connect to network resources. |

@@ -28,11 +28,11 @@ One of the fixes (workaround) discovered, is that creating a Management Group, t
 
 You can do this using the [Azure PowerShell](https://learn.microsoft.com/powershell/azure/install-azure-powershell?view=azps-10.0.0&WT.mc_id=AZ-MVP-5004796){:target="blank"} cmdlets, by running:
 
-``New-AzManagementGroup -GroupName 'Contoso'
+         New-AzManagementGroup -GroupName 'Contoso'
 
 Once the Management Group is created, you should be able to refresh the [Azure Management Group](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/%7E/MGBrowse_overview) page in the Portal, and view your Management Groups, if that doesn't work then log out and back into the Portal.
 
 You can then use the Remove cmdlet to delete the new Management Group you created.
 
- ``Remove-AzManagementGroup -GroupName 'Contoso'
+         Remove-AzManagementGroup -GroupName 'Contoso'
 

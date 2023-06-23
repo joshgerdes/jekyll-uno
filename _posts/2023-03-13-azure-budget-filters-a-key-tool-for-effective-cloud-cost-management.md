@@ -59,7 +59,7 @@ Let's go through the process of creating an Azure Budget, using the Azure Portal
  7. Click **Select**
  8. Now that the Scope has been set, we can add our Budget to the specified Scope, click **+ Add**
  9. We will come back to Filters, in another section - but for the Budget details you will need:
-    * **Name** (this is the name of your Budget, make sure its something meaningful _(ie Monthly-Budget_MG-LandingZones)_
+    * **Name** this is the name of your Budget, make sure its something meaningful _(ie Monthly-Budget_MG-LandingZones)_
     * **Reset period** _(Monthly/Quarterly or Annual, this is the period that the Budget resets back to $0 - you can't go wrong with Monthly)_
     * **Creation date** _(the date that the Budget will start)_
     * **Expiration date** _(the date that the Budget will stop)_

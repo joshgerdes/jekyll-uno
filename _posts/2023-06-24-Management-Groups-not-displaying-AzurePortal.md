@@ -9,7 +9,7 @@ header:
 date: '2023-06-24 00:00:00 +1300'
 ---
 
-When logging into the Microsoft Azure Portal, to view your [Management Group](https://learn.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796 "What are Azure management groups?"){:target="blank"} you might have found that it is blank, or constantly attempting to load.
+When logging into the Microsoft Azure Portal, to view your [Management Group](https://learn.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796 "What are Azure management groups?"){:target="blank"} You might have found it blank or constantly attempting to load.
 
 ![Azure Management Group - Not loading](/images/posts/azure-management-group-notloading.png "Azure Management Group - Not loading")
 
@@ -17,14 +17,17 @@ It looks like a potential bug in the Portal interface, especially  if you have t
 
 ### Elevated rights - Global Administrator
 
-By default, if you are a Global Administrator, it does not give you permissions to see Azure Resources and manage Azure management groups.
-If you have Global Administrator role, then you can [elevate](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin?WT.mc_id=AZ-MVP-5004796#elevate-access-for-a-global-administrator){:target="blank"} your rights, in order to manage the Azure Management Groups.
+By default, if you are a Global Administrator, it does not allow you to see Azure Resources and manage Azure management groups.
+
+If you have a Global Administrator role, and this is the first time you are setting up Management Groups, then you can [elevate](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin?WT.mc_id=AZ-MVP-5004796#elevate-access-for-a-global-administrator){:target="blank"} your rights, to manage the Azure Management Groups.
 
 Note: Because of the elevated nature of this role, it is recommended to enable it only for the period you need to do your work, and make sure you have [specific roles assigned to](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal?WT.mc_id=AZ-MVP-5004796) manage your Azure infrastructure, as necessary.
 
+If this is not the first time you are setting up Management Groups, then ensure you have the right to see the Management Groups.
+
 ### Create an Azure Management Group using PowerShell
 
-One of the fixes (workaround) discovered, is that creating a Management Group, triggers the Azure Portal to update, allowing management.
+One of the fixes (workaround) discovered is that creating a Management Group triggers the Azure Portal to update, allowing management.
 
 You can do this using the [Azure PowerShell](https://learn.microsoft.com/powershell/azure/install-azure-powershell?view=azps-10.0.0&WT.mc_id=AZ-MVP-5004796){:target="blank"} cmdlets, by running:
 

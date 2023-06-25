@@ -23,7 +23,7 @@ If you have a Global Administrator role, and this is the first time you are sett
 
 Note: Because of the elevated nature of this role, it is recommended to enable it only for the period you need to do your work, and make sure you have [specific roles assigned to](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal?WT.mc_id=AZ-MVP-5004796) manage your Azure infrastructure, as necessary.
 
-If this is not the first time you are setting up Management Groups, then ensure you have the right to see the Management Groups.
+If this is not the first time you set up Management Groups, ensure you have the right to see the Management Groups.
 
 ### Create an Azure Management Group using PowerShell
 
@@ -33,9 +33,10 @@ You can do this using the [Azure PowerShell](https://learn.microsoft.com/powersh
 
          New-AzManagementGroup -GroupName 'Contoso'
 
-Once the Management Group is created, you should be able to refresh the [Azure Management Group](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/%7E/MGBrowse_overview){:target="blank"} page in the Portal, and view your Management Groups, if that doesn't work then log out and back into the Portal.
+Once the Management Group is created, you should be able to refresh the [Azure Management Group](https://portal.azure.com/#view/Microsoft_Azure_ManagementGroups/ManagementGroupBrowseBlade/%7E/MGBrowse_overview){:target="blank"} page in the Portal and view your Management Groups, if that doesn't work then log out and back into the Portal.
 
 You can then use the Remove cmdlet to delete the new Management Group you created.
 
          Remove-AzManagementGroup -GroupName 'Contoso'
 
+Note: This article was based on findings from the Microsoft Q&A article: [Management Groups Unavailable in Tenant: Limited Account Control and Organization](https://learn.microsoft.com/en-us/answers/questions/1315218/management-groups-unavailable-in-tenant-limited-ac?WT.mc_id=AZ-MVP-5004796){:target="blank"}

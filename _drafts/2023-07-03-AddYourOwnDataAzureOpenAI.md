@@ -114,8 +114,35 @@ Now that the cognitive search has been created, we now need to create the index,
 ### Create Azure Cognitive Search Index
 
 Now, its time to time to create the Cognitive Search Index, and indexer that will index the content.
-Note: exclude PNG
 
+To do this, we will move away from PowerShell and into the Microsoft Azure Portal.
+
+1. Navigate to the [Microsoft Azure Portal](https://portal.azure.com/#home){:target="_blank"}
+1. In the top center search bar type in: Cognitive Search
+1. Click on [Cognitive Search](https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/AppliedAIHub/~/CognitiveSearch){:target="_blank"}
+1. Click on your newly created Cognitive Search
+![Azure Portal - Cognitive Search](/images/posts/AzurePortal_CognitiveSearch_Resource.png "Azure Portal - Cognitive Search")
+1. Select Import Data
+1. Select Azure Blob Storage
+![Azure Portal - Cognitive Search - Add Azure Blob Storage](/images/posts/AzurePortal_CognitiveSearch_AddDataStorage.png "Azure Portal - Cognitive Search")
+1. Type in your data source name *(ie azuredocs)*
+1. For the Connection string, select Choose and existing connection
+1. Select your Azure Storage account and container, containing the azure document repository uploaded earlier.
+1. Click Select
+![Azure Portal - Cognitive Search - Add Azure Blob Storage](/images/posts/AzurePortal_CognitiveSearch_ConnectBlobStorage.png "Azure Portal - Cognitive Search - Add Azure Blob Storage")
+1. Click Next: Add cognitive skills (Optional)
+1. Here you can Enrich you data, such as enabling OCR (extract text from images automatically) or extracting peoples names, translating text from one lanuage to another, these enrichments are billed seperately, we won't be using any enrichments so we will select Skip to: Customize target index.
+1. Here is the index mapping that was done by Cognitive Search automatically, by scanning the schema of the documents. You can bring in additional data about your documents if you want, but I am happy with the defaults, so I click: Next: Create an indexer
+![Azure Portal - Cognitive Search - Search Index](/images/posts/AzurePortal_CognitiveSearch_SearchIndex.png "Azure Portal - Cognitive Search - Search Index")
+1. The indexer is what is going to create your index, that will be referenced by Azure Open AI later, you can schedule an indexer to run hourly, if new data is being added to the Azure blob container where your source files are sitting, for my purposes I am going leave the Schedule as: Once
+1. Uncollapse Advanced Options, and scroll down a bit
+1. Here we can select to only index certain files, for our purposes we are going to exclude png files, the Azure document repository contains png images files that aren't able to be indexed (we aren't using OCR), so I am going to optimize the indexing time slightly by excluding them. You can also exclude gif image files.
+![Azure Portal - Cognitive Search - Create Search Indexer](/images/posts/AzurePortal_CognitiveSearch_CreateIndexer.png "Azure Portal - Cognitive Search - Create Search Indexer")
+1. Finally, hit Submit to start the indexing process. *This could take a while, depending on the amount of data*
+1. You can leave this running in the background, and navigate back to the Cognitive Search resource, Overview pane to see the status.
+![Azure Portal - Cognitive Search - Indexer](/images/posts/AzurePortal_CognitiveSearch_OverviewIndexer.png.png "Azure Portal - Cognitive Search - Indexer")
+
+*Note: You can run the Import Data in Azure Open AI Studio as well, which will trigger an index - but you need to keep your browser open and responsive. Depending on the amount of data you are indexing, doing it manually through this process, could be preferred to avoid brower timeout. You also get more options around the index.*
 
 ### Create Azure Open AI
 

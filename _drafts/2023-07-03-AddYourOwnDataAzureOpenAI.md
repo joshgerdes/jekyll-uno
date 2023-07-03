@@ -15,7 +15,7 @@ The example we are going to use today, is the Microsoft Learn documentation.
 
 Our scenario is this:
 
-* We would like to use ChatGPT functionality, to query up-to-date information on Microsoft Azure, specifically Azure Elastic SAN.
+* We would like to use ChatGPT functionality, to query up-to-date information on Microsoft Azure, in this example, we will look for information on Azure Elastic SAN (which was added in late 2022).
 
 When querying ChatGPT for Azure Elastic SAN, we get:
 
@@ -27,16 +27,16 @@ So lets use the Azure Open AI, and Retrieval augment generation (RAG) by bringin
 
 To do this, we will need to provision a few Microsoft Azure services, such as:
 
-1.  Azure Storage Account *(this will hold the Azure document library (markdown files) in a blob container)*
-1.  Cognitive Search *(this search functionality, is the glue that will hold this solution together, by breaking down and indexing the documents in the Azure blob store)*
-1.  Azure Open AI *(to do this, we will need GPT3.5 turbo or GPT4 models deployed)*
-1.  Optional - Azure Web App *(this can be created by the Azure Open AI service, to give users access to your custom data)*
+1. Azure Storage Account *(this will hold the Azure document library (markdown files) in a blob container)*
+1. Cognitive Search *(this search functionality, is the glue that will hold this solution together, by breaking down and indexing the documents in the Azure blob store)*
+1. Azure Open AI *(to do this, we will need GPT3.5 turbo or GPT4 models deployed)*
+1. Optional - Azure Web App *(this can be created by the Azure Open AI service, to give users access to your custom data)*
 
 We will use the following tools to provision and configure our services:
 
 1. Azure Portal
 1. PowerShell (Az Modules)
-1. AzCopy 
+1. AzCopy
 
 ### Download Azure Documents
 
@@ -50,7 +50,6 @@ The Microsoft Learn, documentation is open sourced, and constantly kept up to da
          #Download Git repository and extract
          Invoke-WebRequest -Uri "$gitRepoUrl/archive/master.zip" -OutFile $zipPath
          Expand-Archive -Path $zipPath -DestinationPath $localPath
-
 
 ### Create Azure Storage Account
 
@@ -67,7 +66,7 @@ Now that we have a copy of the Azure document repository, its time to create an 
          # Create a new resource group
          New-AzResourceGroup -Name $resourceGroupName -Location $location
          # Create a new storage account
-         New-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName -Location $location -SkuName                   Standard_LRS -AllowBlobPublicAccess $false
+         New-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName -Location $location -SkuName Standard_LRS -AllowBlobPublicAccess $false
          # Create a new blob container
          New-AzStorageContainer -Name $containerName -Context (New-AzStorageContext -StorageAccountName $storageAccountName -StorageAccountKey (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -Name $storageAccountName).Value[0])
 
@@ -82,7 +81,7 @@ To do this, we will use PowerShell to create a SAS token (open for a day), and u
          $resourceGroupName = "azuredocs-ai-rg"
          $storageAccountName = "myaistgacc958b"
          $containerName = "azuredocs"
-         $storageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -Name                   $storageAccountName).Value[0]
+         $storageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -Name $storageAccountName).Value[0]
          $localPath = "C:\Temp\azuredocs\azure-docs-main"
          $azCopyPath = "C:\tools\azcopy_windows_amd64_10.19.0\AzCopy.exe"
          # Construct SAS URL for destination container

@@ -109,7 +109,13 @@ We will need to create a Cognitive Search, with a SKU of Standard, to support th
 
 Now that the cognitive search has been created, we now need to create the index, and indexers, which will index our azure documents to be used by Azure Open AI, by creating the index and linking it to the Azuredocs blob container, we created earlier.
 
-*Note: There is no PowerShell cmdlet support for Azure Cognitive Search indexes, you can create using the [RestAPI](https://learn.microsoft.com/azure/search/search-get-started-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"} - but we will do this in the Azure Portal as part of a later step.*
+*Note: There is no PowerShell cmdlet support for Azure Cognitive Search indexes, you can create using the [RestAPI](https://learn.microsoft.com/azure/search/search-get-started-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"} - but we will do this in the Azure Portal as part of the next step.*
+
+### Create Azure Cognitive Search Index
+
+Now, its time to time to create the Cognitive Search Index, and indexer that will index the content.
+Note: exclude PNG
+
 
 ### Create Azure Open AI
 

@@ -136,7 +136,7 @@ To do this, we will move away from PowerShell and into the Microsoft Azure Porta
 ![Azure Portal - Cognitive Search - Search Index](/images/posts/AzurePortal_CognitiveSearch_SearchIndex.png "Azure Portal - Cognitive Search - Search Index")
 1. The indexer is what is going to create your index, that will be referenced by Azure Open AI later, you can schedule an indexer to run hourly, if new data is being added to the Azure blob container where your source files are sitting, for my purposes I am going leave the Schedule as: Once
 1. Uncollapse Advanced Options, and scroll down a bit
-1. Here we can select to only index certain files, for our purposes we are going to exclude png files, the Azure document repository contains png images files that aren't able to be indexed (we aren't using OCR), so I am going to optimize the indexing time slightly by excluding them. You can also exclude gif image files.
+1. Here we can select to only index certain files, for our purposes we are going to exclude png files, the Azure document repository contains png images files that aren't able to be indexed (we aren't using OCR), so I am going to optimize the indexing time slightly by excluding them. You can also exclude gif/jpg image files.
 ![Azure Portal - Cognitive Search - Create Search Indexer](/images/posts/AzurePortal_CognitiveSearch_CreateIndexer.png "Azure Portal - Cognitive Search - Create Search Indexer")
 1. Finally, hit Submit to start the indexing process. *This could take a while, depending on the amount of data*
 1. You can leave this running in the background, and navigate back to the Cognitive Search resource, Overview pane to see the status.

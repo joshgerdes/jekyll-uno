@@ -3,7 +3,7 @@
  */
 const jekyllTabsConfiguration = {
     syncTabsWithSameLabels: false,
-    addCopyToClipboardButton: false,
+    addCopyToClipboardButton: true,
     copyToClipboardButtonHtml: '<button>Copy</button>',
 };
 

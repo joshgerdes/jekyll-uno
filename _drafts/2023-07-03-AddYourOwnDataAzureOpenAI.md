@@ -151,14 +151,12 @@ Make sure your region and subscription, has been approved for Azure Open AI.
 
 Run the following PowerShell cmdlets to create the Azure Open AI service:
 
-         # Set variables
-         $resourceGroupName = "azuredocs-ai-rg"
-         $accountName = "aidocsOpenAIAccount"
-         $location = "eastus"
-         $skuName = "S0"
-         $kind = "OpenAI"
-         # Create Cognitive Services resource
-         New-AzCognitiveServicesAccount -ResourceGroupName $resourceGroupName -Name $accountName -Location $location -SkuName $skuName -Kind $kind
+To create the Azure Open AI service, we will be using the Azure Portal.
+
+1. Navigate to the [Microsoft Azure Portal](https://portal.azure.com/#home){:target="_blank"}
+1. In the top center search bar type in: Azure Open AI
+1. 
+
 
 Now that the Azure Open AI service, has been created you should now have:
 

@@ -155,7 +155,7 @@ To create the Azure Open AI service, we will be using the Azure Portal.
 
 1. Navigate to the [Microsoft Azure Portal](https://portal.azure.com/#home){:target="_blank"}
 1. In the top center search bar type in: Azure Open AI
-1. 
+1. In the Cognative Services, [Azure OpenAI](https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/~/OpenAI){:target="_blank"} section, click + Create
 
 
 Now that the Azure Open AI service, has been created you should now have:

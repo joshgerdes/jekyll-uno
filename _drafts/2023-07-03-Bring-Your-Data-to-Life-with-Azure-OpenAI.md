@@ -171,7 +171,6 @@ To create the Azure OpenAI service, we will be using the Azure Portal.
 1. If you have any Tags, enter them, then click Next
 1. The Azure platform will now validate your deployment (an example is ensuring that the Azure OpenAI has a unique name). Review the configuration, then click Create to create your resource.
 ![Azure OpenAI - Create Resource](/images/posts/AzurePortal_AzureOpenAI_CreateReview.png "Azure OpenAI - Create Resource")
-
 Now that the Azure OpenAI service has been created, you should now have the following:
 
 * An Azure OpenAI service

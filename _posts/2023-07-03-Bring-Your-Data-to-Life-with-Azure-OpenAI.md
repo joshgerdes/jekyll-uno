@@ -6,7 +6,7 @@ categories:
 toc: true
 header:
   teaser: /images/posts/Header-BringYourDatatoLifewithAzureOpenAI.gif
-date: '2023-07-04 00:00:00 +1300'
+date: '2023-07-04 15:15:00 +1300'
 ---
 
 Today, we will look at using Azure OpenAI and 'Bring Your Data' to allow recent documentation to be referenced and bring life (and relevance) to your data.

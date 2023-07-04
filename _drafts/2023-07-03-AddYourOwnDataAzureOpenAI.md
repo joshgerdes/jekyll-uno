@@ -156,6 +156,13 @@ To create the Azure Open AI service, we will be using the Azure Portal.
 1. Navigate to the [Microsoft Azure Portal](https://portal.azure.com/#home){:target="_blank"}
 1. In the top center search bar type in: Azure Open AI
 1. In the Cognative Services, [Azure OpenAI](https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/~/OpenAI){:target="_blank"} section, click + Create
+1. Select your subscription, region, name and pricing tier of your Azure OpenAI service (remember certain [models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models?WT.mc_id=AZ-MVP-5004796#model-summary-table-and-region-availability){:target="_blank"} are only avaliable in specific regions - we need GPT 3.5+), then select Next
+![Azure Open AI - Create Resource](/images/posts/AzurePortal_AzureOpenAI_Create.png "Azure Open AI - Create Resource")
+1. Update your Network Configuration, for the purpose of this demo, we will be just selecting 'All Networks' - but best practice is to restrict it. Click Next
+![Azure Open AI - Create Resource](/images/posts/AzurePortal_AzureOpenAI_CreateSelectNetwork.png "Azure Open AI - Create Resource")
+1. If you have any Tags, enter them, then click Next
+1. The Azure platform will now validate your deployment (an example is making sure that the Azure OpenAI has a uniqiue name). Review the configuration then click Create to create your resource.
+![Azure Open AI - Create Resource](/images/posts/AzurePortal_AzureOpenAI_CreateReview.png "Azure Open AI - Create Resource")
 
 
 Now that the Azure Open AI service, has been created you should now have:

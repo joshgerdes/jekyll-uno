@@ -23,9 +23,11 @@ When querying ChatGPT for Azure Elastic SAN, we get the following:
 
 Just like the prompt states, ChatGPT only has data up to September 2021 and isn't aware of Elastic SAN *(or any other changes/updates or new (or retired) services after this date)*.
 
-So let us use the Azure OpenAI and Retrieval augment generation (RAG) by bringing in outside data, in this case, the Azure document library, to overlay on top of the GPT models, giving the illusion the model is aware of the data.
+So let us use the Azure OpenAI and bring in outside data [(ground data)](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions&WT.mc_id=AZ-MVP-5004796#using-data-for-grounding){:target="_blank"}, in this case, the Azure document library, to overlay on top of the GPT models, giving the illusion the model is aware of the data.
 
 To do this, we will leverage native '[Bring Your Own Data](https://learn.microsoft.com/azure/cognitive-services/openai/use-your-data-quickstart?tabs=command-line&pivots=programming-language-studio&WT.mc_id=AZ-MVP-5004796){:target="_blank"}' functionality, now in Azure OpenAI - **this is in Public Preview as of 04/07/2023**.
+
+**Just to be clear, I don't expect you all to start downloading from GitHub; this is just an example I have used to add your data. The ability to bring in updated data on Azure, specifically, will be solved by [Plugins](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/generative-ai-for-developers-exploring-new-tools-and-apis-in/ba-p/3817003?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, such as Bing Search.**
 
 To do this, we will need to provision a few Microsoft Azure services, such as:
 

@@ -1,15 +1,15 @@
 ---
-title: Bring your own data into Azure OpenAI
+title: Bring Your Data to Life with Azure OpenAI
 author: Luke
 categories:
   - Azure
 toc: true
 header:
-  teaser: /images/posts/azure-management-group-notloading.png
-date: '2023-07-03 00:00:00 +1300'
+  teaser: /images/posts/Header-BringYourDatatoLifewithAzureOpenAI.gif
+date: '2023-07-04 00:00:00 +1300'
 ---
 
-Today, we will be looking at using Azure OpenAI, and 'Bring Your Own Data' to allow recent documentation to be referenced.
+Today, we will be looking at using Azure OpenAI, and 'Bring Your Own Data' to allow recent documentation to be referenced, and bring life (and relevance) to your data.
 
 The example we are going to use today, is the Microsoft Learn documentation for [Microsoft Azure](https://learn.microsoft.com/azure/?product=popular&WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
 

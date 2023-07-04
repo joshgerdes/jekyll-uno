@@ -47,4 +47,4 @@ This seemed to call an older API or different schema.
 
 The version that worked, I created using the Azure Portal - which was correct.
 
-**If you run into the same problem, then recreate your Azure OpenAI instance using the Azure Portal, or one of the currently supported methods: [Create a resource and deploy a model using Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal&WT.mc_id=AZ-MVP-5004796{:target="_blank"}), currently (as of the 4th of July 2023) PowerShell is not a supported method of creating an Azure OpenAI instance, until the cmdlets have been updated.**
+**If you run into the same problem, then recreate your Azure OpenAI instance using the Azure Portal, or one of the currently supported methods: [Create a resource and deploy a model using Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal&WT.mc_id=AZ-MVP-5004796){:target="_blank"}, currently (as of the 4th of July 2023) PowerShell is not a supported method of creating an Azure OpenAI instance, until the cmdlets have been updated.**

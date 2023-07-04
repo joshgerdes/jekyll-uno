@@ -164,7 +164,6 @@ To create the Azure Open AI service, we will be using the Azure Portal.
 1. The Azure platform will now validate your deployment (an example is making sure that the Azure OpenAI has a uniqiue name). Review the configuration then click Create to create your resource.
 ![Azure Open AI - Create Resource](/images/posts/AzurePortal_AzureOpenAI_CreateReview.png "Azure Open AI - Create Resource")
 
-
 Now that the Azure Open AI service, has been created you should now have:
 
 * An Azure Open AI service
@@ -172,3 +171,5 @@ Now that the Azure Open AI service, has been created you should now have:
 * A Cognitive Search service
 
 ![Azure Open AI - RAG Deployed Resources](/images/posts/AzurePortal_AzureOpenAI_BYOD_Resources.png "Azure Open AI - RAG Deployed Resources")
+
+

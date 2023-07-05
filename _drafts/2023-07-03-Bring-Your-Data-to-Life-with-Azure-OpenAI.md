@@ -33,10 +33,10 @@ To do this, we will leverage native '[Bring Your Own Data](https://learn.microso
 
 To do this, we will need to provision a few Microsoft Azure services, such as:
 
-1. Azure Storage Account *(this will hold the Azure document library (markdown files) in a blob container)*
-1. Cognitive Search *(this search functionality, is the glue that will hold this solution together, by breaking down and indexing the documents in the Azure blob store)*
-1. Azure OpenAI *(to do this, we will need GPT3.5 turbo or GPT4 models deployed)*
-1. Optional - Azure Web App *(this can be created by the Azure OpenAI service, to give users access to your custom data)*
+1. [Azure Storage Account](https://learn.microsoft.com/azure/storage/common/storage-account-overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} *(this will hold the Azure document library (markdown files) in a blob container)*
+1. [Cognitive Search](https://learn.microsoft.com/azure/search/search-what-is-azure-search?WT.mc_id=AZ-MVP-5004796){:target="_blank"} *(this search functionality, is the glue that will hold this solution together, by breaking down and indexing the documents in the Azure blob store)*
+1. [Azure OpenAI](https://learn.microsoft.com/azure/cognitive-services/openai/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} *(to do this, we will need GPT3.5 turbo or GPT4 models deployed)*
+1. Optional - [Azure Web App](https://learn.microsoft.com/azure/app-service/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} *(this can be created by the Azure OpenAI service, to give users access to your custom data)*
 
 *[Make sure you have Azure OpenAI approved for your subscription](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/use-your-data-quickstart?tabs=command-line&pivots=programming-language-studio&WT.mc_id=AZ-MVP-5004796#prerequisites){:target="_blank"}*
 

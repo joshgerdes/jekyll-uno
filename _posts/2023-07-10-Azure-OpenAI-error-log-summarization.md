@@ -14,13 +14,13 @@ The issue itself was related to the Nested Virtualization, with the user unable 
 
 But as part of troubleshooting this issue, I recreated the Azure compute environment, this user had and started to delve into the Windows logs.
 
-However, in this case I did something a bit difference, I exported the logs as text file and opened up [Azure OpenAI](https://learn.microsoft.com/azure/cognitive-services/openai/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, then navigated to Azure OpenAI Studio, clicked on Completion and used the summarization powers of the GPT 3.5 Large lanuage model, to delve into the logs for me:
+However, in this case I did something a bit different, I exported the logs as text file and opened up [Azure OpenAI](https://learn.microsoft.com/azure/cognitive-services/openai/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, then navigated to Azure OpenAI Studio, clicked on Completion and used the summarization powers of the GPT 3.5 Large lanuage model, to delve into the logs for me:
 
 ![Azure OpenAI - Summarize Error Log](/images/posts/AzureOpenAI_Completion_ErrorLog.png "Azure OpenAI - Summarize Error Log")
 
-Copying, the Log into the Completion pane of Azure OpenA
+Copying, the Log into the Completion pane of Azure OpenAI
 
-And using sing the Prompt of:
+And using  the Prompt of:
 
     ----
     Summarize all the errors and warnings from above and sort by potential cause of the issues, with the most likely cause first. Format as a table.

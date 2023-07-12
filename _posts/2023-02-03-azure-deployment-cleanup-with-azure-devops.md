@@ -37,7 +37,7 @@ For this article, I will assume you have an Azure DevOps repository setup and th
 ##### Create Service Prinicipal
 
  1. Navigate to the [**Microsoft Azure Portal**](https://portal.azure.com/#home "Microsoft Azure")
- 2. Click on [**Azure Active Directory**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/\~/Overview "Azure Active Directory")
+ 2. Click on [**Microsoft Entra ID**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/\~/Overview "Microsoft Entra ID")
  3. Click on [**App Registrations**](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/\~/RegisteredApps "Azure App Registrations")
  4. Click on: **+ New Registration**
  5. Enter the following information:

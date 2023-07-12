@@ -12,7 +12,7 @@ _template: new_post
 
 [Jupyter](https://jupyter.org/ "Jupyter"){:target="blank"} Notebooks, commonly used by Data Scientists and Students, allow you to run code, such as Python and PowerShell, inside a Notebook format and display the output inside the notebook; this is useful for teaching a subject or displaying up-to-date information.
 
-I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Azure Active Directory authentication and run a query.
+I am not a python or Jupyter expert, so this article will be brief on how I was able to connect to an Azure SQL Database using Microsoft Entra ID authentication and run a query.
 
 To run a Jupyter Notebook, you can install [Anaconda](https://www.anaconda.com/products/distribution "Anaconda"){:target="blank"} and then use that to download Juypter to run the notebooks from a locally _(or server)_ hosted web-based interface.
 
@@ -22,7 +22,7 @@ Make sure you install:
 
 * [Python](https://www.python.org/downloads/ "Python"){:target="blank"}
 * [pyodbc](https://pypi.org/project/pyodbc/ "pyodbc "){:target="blank"} library
-* [Microsoft ODBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server"){:target="blank"} _(has to be v17 or newer to support Azure Active Directory authentication)_.
+* [Microsoft ODBC Driver for SQL Server](https://learn.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server "Microsoft ODBC Driver for SQL Server"){:target="blank"} _(has to be v17 or newer to support Microsoft Entra ID authentication)_.
 * [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") + [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks " Jupyter Notebooks in VS Code"){:target="blank"}
 
 _Note: Jupyter notebook extensions end in '*.ipynb'._
@@ -52,7 +52,7 @@ Then we need to **add the snippet to connect to the SQL database** _(this can be
     connection = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};Server='+server+',1433;Database='+database+';Uid='+username+';Pwd='+password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive')
     cursor = connection.cursor()
 
-The 'Authentication=ActiveDirectoryInteractive' parameter as part of the Connection string will prompt an interactive Azure Active Directory prompt to display and ask for credentials to be logged in; this includes MFA support. Using this method, the username and password variables are simply placeholders.
+The 'Authentication=ActiveDirectoryInteractive' parameter as part of the Connection string will prompt an interactive Microsoft Entra ID prompt to display and ask for credentials to be logged in; this includes MFA support. Using this method, the username and password variables are simply placeholders.
 
 If you want to hardcode credentials into the Notebook _(not recommended)_, you can remove the '_Authentication=ActiveDirectoryInteractive_' section and enter the credentials into the username and password field.
 

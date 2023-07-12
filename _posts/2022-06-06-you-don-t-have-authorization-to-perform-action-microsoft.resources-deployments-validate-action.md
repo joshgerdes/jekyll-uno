@@ -18,12 +18,12 @@ You may be attempting to deploy an Azure Landing Zone, such as the Enterprise Sc
 
 This is because by default, even if you have Owner right on an Azure subscription, and are a Global Administer, you are unable to assign rights at the root '/' tenant level, to be able to create new Management Groups and move subscriptions between them.
 
-However, users who have the Global Azure Active Directory role can elevate rights to do this.  There are a few steps to enabling this, including using [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/what-is-azure-powershell?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell"){:target="_blank"} to assign rights.
+However, users who have the Global Microsoft Entra ID role can elevate rights to do this.  There are a few steps to enabling this, including using [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/what-is-azure-powershell?WT.mc_id=AZ-MVP-5004796 "Azure PowerShell"){:target="_blank"} to assign rights.
 
 With an account with Global Administrator rights, do the following:
 
  1. Sign in to the **Azure Portal**
- 2. Open **Azure Active Directory**
+ 2. Open **Microsoft Entra ID**
  3. Click **Properties**
  4. Toggle the '**Access management for Azure resources**' to '**Yes**'
  5. Click **Save**
@@ -41,9 +41,9 @@ With an account with Global Administrator rights, do the following:
 11. Once the user ID has been stored in a variable, its finally time to assign the rights, **run** the following:
 
         New-AzRoleAssignment -Scope '/' -RoleDefinitionName 'Owner' -ObjectId $user.Id
-12. Give Azure Active Directory **10-15 minutes** to **replicate** the Azure AD changes, **log out** and **back in** and you should now be able to **deploy** the **Landing Zone**.
+12. Give Microsoft Entra ID **10-15 minutes** to **replicate** the Azure AD changes, **log out** and **back in** and you should now be able to **deploy** the **Landing Zone**.
 
-**Note: Remember to go back and change the toggle to 'Allow management of Azure resources' to 'No', or all Global Administrators of Azure Active Directory will be able to manage all Azure resources.**
+**Note: Remember to go back and change the toggle to 'Allow management of Azure resources' to 'No', or all Global Administrators of Microsoft Entra ID will be able to manage all Azure resources.**
 
 **Once the Landing Zone is deployed, you should also remove your role assignment at the root level by running:**
 

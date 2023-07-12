@@ -40,7 +40,7 @@ Microsoft Dev Box is available today as a [preview](https://azure.microsoft.com/
 
 Beyond that, organizations pay only for what they use with a consumption-based pricing model. With this model, organizations are charged per hour depending on the number of Compute and Storage consumed.
 
-To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterprise, Microsoft Endpoint Manager, and Azure Active Directory P1. These licenses are included in M365 F3, E3, E5, A3, A5, Microsoft Business Premium and Microsoft 365 Education benefit plans.
+To use Microsoft Dev Box, each user must be licensed for Windows 11 or 10 Enterprise, Microsoft Endpoint Manager, and Microsoft Entra ID P1. These licenses are included in M365 F3, E3, E5, A3, A5, Microsoft Business Premium and Microsoft 365 Education benefit plans.
 
 ![Microsoft Dev Box](/uploads/microsoft_devbox_selfservicedevelopment.png "Microsoft Dev Box")
 
@@ -123,13 +123,13 @@ To use Microsoft Dev Boxes - like any Virtual Machine in Azure, you need a Virtu
 
 ##### Create a Virtual Network Connection and link to Dev Center
 
-Now that we have our Dev Center and our Virtual Network - it's time to make a Network connection - this connection will be used by Dev Center - to allow our Dev Boxes to connect to the Virtual Network - and to select your Virtual Machine identification _(i.e. Azure Active Directory, or Hybrid Azure Active Directory)_.
+Now that we have our Dev Center and our Virtual Network - it's time to make a Network connection - this connection will be used by Dev Center - to allow our Dev Boxes to connect to the Virtual Network - and to select your Virtual Machine identification _(i.e. Microsoft Entra ID, or Hybrid Microsoft Entra ID)_.
 
  1. Log in to the Microsoft [**Azure Portal**](https://portal.azure.com/#home "Microsoft Azure Portal"){:target="_blank"}
  2. Click **+ Create a resource.**
  3. Type in: **Network Connection,** find and click **Create**
  4. ![Create Network Connection ](/uploads/azuredevbox-createnetworkconnectionmarketplace.png "Create Network Connection ")
- 5. As I will be using Azure Active Directory joined Virtual Machines, I will ensure that the Domain join type is: **Azure Active Directory join**.
+ 5. As I will be using Microsoft Entra ID joined Virtual Machines, I will ensure that the Domain join type is: **Microsoft Entra ID join**.
  6. For the **Network connection name**, I will select: ProductionVNETAADJConnection
  7. I will select my Virtual Network and subnet, which the Dev Box will be placed into.
  8. ![Create Azure Network Connection ](/uploads/azuredevbox-createnetworkconnectionbasicspage.png "Create Azure Network Connection ")

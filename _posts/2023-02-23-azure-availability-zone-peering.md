@@ -63,7 +63,7 @@ What this means is that each of the three data centres is assigned a physical **
 
 When you **deploy a resource into an Azure Avalibility Zone and select Zone 1**, you choose **the Logical Zone, NOT** a **physical zone**.
 
-This means that **FOR EACH** Microsoft **Azure subscription,** whether in the same Azure Active Directory tenancy or not, **Zone 1** can be a **different physical data centre**.
+This means that **FOR EACH** Microsoft **Azure subscription,** whether in the same Microsoft Entra ID tenancy or not, **Zone 1** can be a **different physical data centre**.
 
 So if you have resources deployed across multiple subscriptions, and all your resources are deployed to Zone 1 - they **MAY NOT** be in the same physical data centre.
 

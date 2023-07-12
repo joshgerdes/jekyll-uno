@@ -1,6 +1,6 @@
 ---
 date: 2021-03-29 00:00:00 +1300
-title: Azure Active Directory Recommendations
+title: Microsoft Entra ID Recommendations
 author: Luke
 categories:
 - Azure
@@ -14,18 +14,18 @@ header:
 
 
 ---
-Azure Active Directory is the foundation, which Microsoft 365 is built-on.
+Microsoft Entra ID is the foundation, which Microsoft 365 is built-on.
 
 In the words of Microsoft:
 
-> Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
+> Microsoft Entra ID (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
 >
 > * External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
 > * Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
-Azure Active Directory (AAD) is simply not set and forget, especially given the fact that AAD  services are constantly evolving in terms of features and improved security.
+Microsoft Entra ID (AAD) is simply not set and forget, especially given the fact that AAD  services are constantly evolving in terms of features and improved security.
 
-Below is a table of some Azure Active Directory and best practice recommendations.
+Below is a table of some Microsoft Entra ID and best practice recommendations.
 
 Please keep in mind that like any recommendations, do not blindly follow them, make sure to determine the impact on your users on enabling some of this functionality, there may also be recommendations that you will not be able to apply, do to business constraints.
 

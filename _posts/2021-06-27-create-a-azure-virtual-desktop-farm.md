@@ -22,7 +22,7 @@ _If you don't already have a Microsoft Azure subscription, you can sign up for a
 
 Assuming you already have an Azure subscription and the appropriate access to create resources in that subscription, gets begin!
 
-## Create Azure Active Directory Domain Services
+## Create Microsoft Entra ID Domain Services
 
  1. Log in to the **Azure Portal**
  2. Click on **Create a resource**
@@ -44,7 +44,7 @@ Assuming you already have an Azure subscription and the appropriate access to cr
 13. You can **configure Membership** of this **group** now and configure who gets alerted if there are issues with Azure AD Domain Services.
 14. When you are ready, select **Next**.
     ![Azure AD Domain Services - Administration Config](/uploads/adds_admin.png "Azure AD Domain Services - Administration Config")
-15. Depending on the amount of Azure Active Directory users you have in your organisation, and whether they will need Azure AD Domain Services, you can choose to synchronise **ALL Azure AD Groups and Users**, or specific groups of users _(this can be changed later)_, because my Azure AD Organisation is fairly low, I am going to Sync everything, click **Next**.
+15. Depending on the amount of Microsoft Entra ID users you have in your organisation, and whether they will need Azure AD Domain Services, you can choose to synchronise **ALL Azure AD Groups and Users**, or specific groups of users _(this can be changed later)_, because my Azure AD Organisation is fairly low, I am going to Sync everything, click **Next**.
 16. One thing to note here is the recommendation on the number of Objects _(Users, Groups)_ that will get synced to Azure AD Domain Services; for the Standard SKU, the suggested Object Count is 0 to 25,000 - for the Enterprise SKU, it is 25,000 to 100,000. So although there is no hard limit, it might be worth upgrading the SKU you are running for the additional backups and authentication if fit in the Enterprise space.
     ![Azure AD Domain Services - Syncronisation Config](/uploads/adds_sync.png "Azure AD Domain Services - Syncronisation Config")
 17. We can now **configure** the **Security Setting**s, the only setting I am going to change here is **TLS 1.2 Only Mode** to **Enable**
@@ -120,7 +120,7 @@ Once the VM has been created, we now need to connect to it securely, so we will 
 Now that we have a Bastion instance, it is time to connect and configure the Utility server and create a new Azure AD user for Azure Virtual Desktop configuration.
 
  1. First thing I am going to create a separate Azure AD account to manage the Utility server and join the Azure Virtual Desktop session hosts to the domain; this is to separate my own account. Azure AD Domain Services relies on password hash. So you won't be able to log in using Azure AD Domain Services unless you and the people using it have reset their passwords AFTER Azure AD Domain Services has been created.
- 2. Navigate to the Azure Portal and open **Azure Active Directory**
+ 2. Navigate to the Azure Portal and open **Microsoft Entra ID**
  3. Click on **Users**
  4. Click on **+ New User**
  5. **Type** in the **username** of a **user**, I am going to use: 'avdjoin'
@@ -130,7 +130,7 @@ Now that we have a Bastion instance, it is time to connect and configure the Uti
  9. Click **Ok** to create the user
     ![Azure AD - Users](/uploads/avdjoin.png "Azure AD - Users")
 10. Once the account has been created, make sure to **login** with it **to** the **Azure Portal** or Office portal to **force** a final **password reset**, or you won't be able to use it in the next steps as it will be waiting for a password reset.
-11. Once that account has been created, it's time to **join** your utility **server** to the Azure Active Directory **Domain**, navigate to your Utility **server** and click **Connect**.
+11. Once that account has been created, it's time to **join** your utility **server** to the Microsoft Entra ID **Domain**, navigate to your Utility **server** and click **Connect**.
 12. Select **Bastion**
 13. Select **Use Bastion**
 14. **Type** in the **username** and **password** of the **LOCAL account** created when the Virtual Machine was created and click **Connect**

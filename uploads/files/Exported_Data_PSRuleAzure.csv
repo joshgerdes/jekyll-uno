@@ -988,7 +988,7 @@ Pass,Consider using a stable IP address or configure virtual network based firew
 Pass,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
@@ -998,7 +998,7 @@ Pass,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Pass,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Pass,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
@@ -1011,7 +1011,7 @@ Pass,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
@@ -1021,7 +1021,7 @@ Pass,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
@@ -1033,7 +1033,7 @@ Pass,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Pass,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Pass,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
@@ -1138,7 +1138,7 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
@@ -1389,7 +1389,7 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Pass,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
@@ -1399,7 +1399,7 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Pass,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
@@ -1409,7 +1409,7 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
@@ -1419,34 +1419,9 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Pass,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Fail,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
-Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
-Also consider using Azure Policy to enforce mandatory tags.",Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.Resource.UseTags,Azure.Resource.UseTags
-Fail,The logical SQL Server has greater then ten (10) firewall rules. Some rules may not be needed.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallRuleCount,Azure.SQL.FirewallRuleCount
-Fail,Consider using a stable IP address or configure virtual network based firewall rules. Determine if access from Azure services is required for the services connecting to the hosted databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AllowAzureAccess,Azure.SQL.AllowAzureAccess
-Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
-Pass,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
-Pass,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
-Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
-Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
-Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
 Also consider using Azure Policy to enforce mandatory tags.",Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.Resource.UseTags,Azure.Resource.UseTags
 Fail,The logical SQL Server has greater then ten (10) firewall rules. Some rules may not be needed.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallRuleCount,Azure.SQL.FirewallRuleCount
@@ -1454,7 +1429,32 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Pass,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Pass,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
+Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
+Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.
+Also consider using Azure Policy to enforce mandatory tags.",Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.Resource.UseTags,Azure.Resource.UseTags
+Fail,The logical SQL Server has greater then ten (10) firewall rules. Some rules may not be needed.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallRuleCount,Azure.SQL.FirewallRuleCount
+Fail,Consider using a stable IP address or configure virtual network based firewall rules. Determine if access from Azure services is required for the services connecting to the hosted databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AllowAzureAccess,Azure.SQL.AllowAzureAccess
+Fail,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
+Pass,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
+Pass,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Pass,Consider enable Transparent Data Encryption (TDE) for Azure SQL Databases to perform encryption at rest.,Microsoft.Sql/servers/databases,PSRule.Rules.Azure\Azure.SQL.TDE,Azure.SQL.TDE
@@ -1496,7 +1496,7 @@ Fail,Consider using a stable IP address or configure virtual network based firew
 Pass,SQL Server has greater then ten (10) public IP addresses that are permitted network access. Some rules may not be needed or can be reduced.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.FirewallIPRange,Azure.SQL.FirewallIPRange
 Fail,Consider enabling Advanced Data Security and configuring Advanced Thread Protection for SQL logical servers.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ThreatDetection,Azure.SQL.ThreatDetection
 Pass,Consider enabling auditing for each SQL Database logical server and review reports on a regular basis.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.Auditing,Azure.SQL.Auditing
-Fail,Consider using Azure Active Directory (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
+Fail,Consider using Microsoft Entra ID (AAD) authentication with SQL databases.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.AAD,Azure.SQL.AAD
 Fail,Consider configuring the minimum supported TLS version to be 1.2.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.MinTLS,Azure.SQL.MinTLS
 Pass,Consider using names that meet Azure SQL logical server naming requirements. Additionally consider naming resources with a standard naming convention.,Microsoft.Sql/servers,PSRule.Rules.Azure\Azure.SQL.ServerName,Azure.SQL.ServerName
 Fail,"Consider tagging resources using a standard convention. Identify mandatory and optional tags then tag all resources and resource groups using this standard.

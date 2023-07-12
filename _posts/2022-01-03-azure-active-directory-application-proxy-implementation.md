@@ -1,6 +1,6 @@
 ---
 date: 2022-01-02T11:00:00.000Z
-title: Azure Active Directory Application Proxy Implementation
+title: Microsoft Entra ID Application Proxy Implementation
 author: Luke
 categories:
   - Azure
@@ -12,7 +12,7 @@ _template: new_post
 
 Are you running internal web-based applications that you want to give access to users working remotely securely, without the need for a VPN or firewalls? Do you want to enforce or use Azure Conditional Access policies to protect and manage access?
 
-Let me introduce the Microsoft Azure Active Directory Application Proxy...
+Let me introduce the Microsoft Microsoft Entra ID Application Proxy...
 
 > Application Proxy is a feature of Azure AD that enables users to access on-premises web applications from a remote client. Application Proxy includes both the Application Proxy service which runs in the cloud, and the Application Proxy connector which runs on an on-premises server. Azure AD, the Application Proxy service, and the Application Proxy connector work together to securely pass the user sign-on token from Azure AD to the web application. Application Proxy also supports single sign-on.
 >
@@ -20,7 +20,7 @@ Let me introduce the Microsoft Azure Active Directory Application Proxy...
 
 ## Overview
 
-The [Azure Active Directory Application Proxy](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy?WT.mc_id=AZ-MVP-5004796){:target="_blank"}has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users_(by using Azure Active Directory and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
+The [Microsoft Entra ID Application Proxy](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy?WT.mc_id=AZ-MVP-5004796){:target="_blank"}has been around for a few years, but appears to be a hidden gem, the Application Proxy allows users_(by using Microsoft Entra ID and an Application Proxy Connector(s))_ to connect to internally hosted web applications, by the connector relaying the traffic.
 
 ![Azure Application Proxy - Network Diagram](/uploads/aadproxynetworkdiagram.png "Azure Application Proxy - Network Diagram")
 
@@ -58,13 +58,13 @@ Although I am using my local NAS web administration page, it can be any webpage 
 
 The following resources and rights will be needed to set up Azure Application Proxy:
 
-* An Azure Active Directory tenant
+* An Microsoft Entra ID tenant
 * A minimum of Application Administrator rights is required to set up the Application and user and group assignments.
 * A server running Windows Server 2012 R2 or above to install the Application Proxy connector on (and the permissions to install)
-* If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Azure Active Directory as a custom domain in order to be used.
-* Azure Active Directory Premium P1 license or M365 Business Premium/E3 license for each user using Azure Active Directory Application Proxy.
+* If you are using a third-party domain _(you will need a public SSL certificate)_ and, of course, the ability to edit external DNS records, the domain will need to be added to Microsoft Entra ID as a custom domain in order to be used.
+* Microsoft Entra ID Premium P1 license or M365 Business Premium/E3 license for each user using Microsoft Entra ID Application Proxy.
 
-![Azure Active Directory Application Proxy Licensing](/uploads/aadproxylicensing.png "Azure Active Directory Application Proxy Licensing")
+![Microsoft Entra ID Application Proxy Licensing](/uploads/aadproxylicensing.png "Microsoft Entra ID Application Proxy Licensing")
 
 _(Note: Normal [Azure AD service limits](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions?WT.mc_id=AZ-MVP-5004796){:target="_blank"} and restrictions apply)_.
 
@@ -84,17 +84,17 @@ The Azure Application Proxy connector requires you to log in to Microsoft Azure,
 ### Install Azure Application Proxy Connector
 
  1. Login to **Azure Portal** _(on the server that you want to install the Connector on)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 2. Navigate to: [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  3. Select **Application Proxy**
  4. ![Azure Portal - Application Proxy](/uploads/azureportal-applicationproxy.png "Azure Portal - Application Proxy")
  5. Click on: **Download connector service**.
  6. Accept the system requirements and click **Accept Terms & Download**
  7. A file named: 'AADApplicationProxyConnectorInstaller.exe' should have been downloaded. **Run** it.
  8. Select: **I agree to the license terms and conditions** and select **Install**
- 9. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnector.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
-10. Wait for the Microsoft Azure Active Directory Application to display and **log in** with an Azure Active Directory account with Application Administrator rights.
-11. The Microsoft Azure Active Directory Application **Connector will now** be **registered** in your Azure Active Directory tenancy.
-12. ![Microsoft Azure Active Directory Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnectorinstalled.png "Microsoft Azure Active Directory Application Proxy Connector Installation")
+ 9. ![Microsoft Microsoft Entra ID Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnector.png "Microsoft Microsoft Entra ID Application Proxy Connector Installation")
+10. Wait for the Microsoft Microsoft Entra ID Application to display and **log in** with an Microsoft Entra ID account with Application Administrator rights.
+11. The Microsoft Microsoft Entra ID Application **Connector will now** be **registered** in your Microsoft Entra ID tenancy.
+12. ![Microsoft Microsoft Entra ID Application Proxy Connector Installation](/uploads/microsoftazureapplicationproxyconnectorinstalled.png "Microsoft Microsoft Entra ID Application Proxy Connector Installation")
 13. Click **Close**
 14. Now **re-enable IE enhanced security configuration**.
 
@@ -110,7 +110,7 @@ And the following processes running:
 
 ![ApplicationProxyConnectorService](/uploads/azureaadapplicationservices.png "ApplicationProxyConnectorService")
 
-If you are running Server Core, Microsoft Azure Active Directory Application Proxy can be installed via [PowerShell](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
+If you are running Server Core, Microsoft Microsoft Entra ID Application Proxy can be installed via [PowerShell](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-register-connector-powershell?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
 
 The Azure Application Proxy Connector agent gets [updated](https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-faq?WT.mc_id=AZ-MVP-5004796#why-is-my-connector-still-using-an-older-version-and-not-auto-upgraded-to-latest-version-){:target="_blank"} automatically when a new major version is released by Microsoft.
 
@@ -119,7 +119,7 @@ The Azure Application Proxy Connector agent gets [updated](https://learn.microso
 Now that you have created the Connector, the Application Proxy has put our Connector in a group that has defaulted to Asia; because you can have more than one Application Proxy Connector for redundancy and different applications, we will create a new Connector Group that is set to use the Australia region if Asia works for you – feel free to skip this step.
 
  1. Login to **Azure Portal** _(on any PC/server)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 2. Navigate to: [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  3. Select **Application Proxy**
  4. You should now see: Default and your Region
  5. If you **expand** the Default **Group**, will you see your Connector:
@@ -136,7 +136,7 @@ Now that you have created the Connector, the Application Proxy has put our Conne
 Now that you have your Connector setup, its time to set up your application
 
 1. Login to **Azure Portal** _(on any PC/server)_
-2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+2. Navigate to: [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
 3. Select **Application Proxy**
 4. Click on: **+ Configure an app**
 5. **Fill** in the **details** that match your **application**:
@@ -144,22 +144,22 @@ Now that you have your Connector setup, its time to set up your application
 * **Name**: This is the application that users will see _(i.e. I am going with Pizza, which is the name of my NAS)_
 * **Internal URL**: This is the internal URL used to access your application inside the network _(in my example, it is:_ [_http://pizza.corp.contoso.com/_](http://pizza.corp.contoso.com/)_)_
 * **External Url**: This is the external URL that will be created so that users can access the application form; _I will go with Pizza._ Note this URL down.
-* **Pre-Authentication**: You don't have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Azure Active Directory._
+* **Pre-Authentication**: You don't have to authenticate with Azure AD, you can use passthrough, but it is not something I would recommend without delving into requirements, testing _– I am going to select: Microsoft Entra ID._
 * **Connector Group**: Select the connector group you created earlier or that your Connector is signed to.
 * **Leave** all **Additional Settings as default** – they can be changed later if you need to.
   1. ![Azure Application Proxy](/uploads/azureportal-applicationproxynewapplication.png)
   2. **Verify** that **everything** is filled out **correctly** and, click **+ Add**
   3. Azure **Application Proxy has now created a new Enterprise Application for you**; based on the name mentioned earlier, if you navigate to the external URL mentioned earlier, you should get a prompt similar to below:
   4. ![Azure AD Login Error](/uploads/azureportal-pizzaloginerror.png "Azure AD Login Error")
-  5. It is now time to assign the permissions for users to access the Application via Azure Active Directory!
+  5. It is now time to assign the permissions for users to access the Application via Microsoft Entra ID!
 
 ### Assign rights to your Azure Application Proxy Application
 
  1. Login to **Azure Portal** _(on any PC/server)_
- 2. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 2. Navigate to: [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  3. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/){:target="_blank"}
  4. **Find** the **application** that was **created** earlier by the Azure Application Proxy service.
- 5. ![Azure Active Directory, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Azure Active Directory, Enterprise Application")
+ 5. ![Microsoft Entra ID, Enterprise Application](/uploads/azureportal-enterpriseapplicationspane.png "Microsoft Entra ID, Enterprise Application")
  6. Click on the **Application**
  7. Click on: **Users and Groups**
  8. Click **Add Assignment**
@@ -170,8 +170,8 @@ Now that you have your Connector setup, its time to set up your application
 13. Here you can see and edit the information you created earlier when you created the application, **copy** the **External URL**
 14. **Open** Microsoft **Edge** (_or another browser of your choice)_
 15. **Paste** in the External **URL**
-16. **Log in** with the Azure Active Directory **account** that was **assigned** to the Enterprise **application.**
-17. You should now have access to your on-premises web application from anywhere in the world, and because you are using Azure Active Directory, your conditional access policies and restrictions will be in effect:
+16. **Log in** with the Microsoft Entra ID **account** that was **assigned** to the Enterprise **application.**
+17. You should now have access to your on-premises web application from anywhere in the world, and because you are using Microsoft Entra ID, your conditional access policies and restrictions will be in effect:
 18. ![Synology Login](/uploads/microsoftazureapplicationproxyloginscreen.png "Synology Login")
 
 _Note: Because the Synology web interface was running on port: 5000, I had to go back and add the port to the internal URL, as the Application Proxy was attempting to route to the incorrect port._
@@ -187,7 +187,7 @@ However, my Synology NAS uses standalone accounts, so I will set Password-based 
  2. **Log** in using your Microsoft account to the MyApps **extension**
  3. ![Azure App Proxy](/uploads/myappsextensionlogo.png)
  4. **Login** to **Azure Portal** (_on any PC/server)_
- 5. Navigate to: [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
+ 5. Navigate to: [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank"}
  6. Select [**Enterprise Applications**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/){:target="_blank"}
  7. **Find** the **application** that was created earlier by the Azure Application Proxy service.
  8. Click on **Single sign-on**

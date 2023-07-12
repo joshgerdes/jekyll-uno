@@ -24,7 +24,7 @@ Let’s test the native RDP client through a secure connection using Azure Basti
 * Reader role on the Virtual Machine
 * Read role on the Network Interface Card of the Virtual Machine.
 * Reader role on the Azure Bastion resource
-* Virtual Machine Administrator _(or User)_ login role _using_ [_Azure Active Directory_](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows?WT.mc_id=AZ-MVP-5004796 "Login to Windows virtual machine in Azure using Azure Active Directory authentication"){:target="_blank"}_authentication_.
+* Virtual Machine Administrator _(or User)_ login role _using_ [_Microsoft Entra ID_](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows?WT.mc_id=AZ-MVP-5004796 "Login to Windows virtual machine in Azure using Microsoft Entra ID authentication"){:target="_blank"}_authentication_.
 
 ### Create Azure Bastion
 

@@ -57,7 +57,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
     Make sure: Selected networks are selected and the Private Endpoint connection is displaying.
  3. ![FSLogix - Azure Storage Account](/uploads/storageaccount_firewalls.png "FSLogix - Azure Storage Account")
  4. ![FSLogix - Azure Storage Account](/uploads/storageaccount_peapproved.png "FSLogix - Azure Storage Account")
- 5. Now its time to join the Storage account to Azure Active Directory Domain Services, on the left-hand side Blade, click on **Configuration** _(under Settings)_
+ 5. Now its time to join the Storage account to Microsoft Entra ID Domain Services, on the left-hand side Blade, click on **Configuration** _(under Settings)_
  6. Navigate to: **Identity-based access for file shares**
  7. Select **Enabled**
  8. Click **Save**
@@ -73,7 +73,7 @@ This article will be based on the Azure Virtual Desktop farm created in a previo
 
 ### Configure File Share
 
-Now that the Azure Active Directory rights have been assigned and the File Share has been created, we now need to set up the NTFS permissions on the FSLogix share.
+Now that the Microsoft Entra ID rights have been assigned and the File Share has been created, we now need to set up the NTFS permissions on the FSLogix share.
 
  1. Navigate to **File Shares** _(under Data Storage)_
  2. **Click** on **your** file-**share**
@@ -108,7 +108,7 @@ Now that the Azure Active Directory rights have been assigned and the File Share
 
 Now that you have successfully created a Storage Account and granted it the proper permissions, we now need to configure Group Policy for FSLogix.
 
- 1. **Connect to** your Azure Active Directory **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
+ 1. **Connect to** your Microsoft Entra ID **Utility server**, that has **Group Policy management** installed using an account in the: AAD DC Administrators group
  2. **Download** the latest **FSLogix Agent** - [https://aka.ms/fslogix_download](https://aka.ms/fslogix_download "https://aka.ms/fslogix_download?WT.mc_id=AZ-MVP-5004796"){:target="_blank"} onto the Utility server
  3. **Extract** the FSLogix agent **zip** file to a folder
  4. Now we will **create** a **Central Store** to manage the Group Policy consistently

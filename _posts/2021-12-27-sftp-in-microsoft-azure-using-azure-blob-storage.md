@@ -18,7 +18,7 @@ This support enables standard SFTP connectivity to an Azure Storage account. As 
 
 We will run through the initial setup of the Azure Storage account using the Azure Portal.
 
-SFTP using an Azure Storage account does not support shared access signature (SAS) or Azure Active Directory (Azure AD) authentication for connecting SFTP clients. Instead, SFTP clients must use a password or a Secure Shell _(SSH)_ private/public keypair.
+SFTP using an Azure Storage account does not support shared access signature (SAS) or Microsoft Entra ID (Azure AD) authentication for connecting SFTP clients. Instead, SFTP clients must use a password or a Secure Shell _(SSH)_ private/public keypair.
 
 Before we head into the implementation, just a bit of housekeeping, this is currently still in Preview at the time this post was written; the functionality MAY change by the time it becomes GA (_Generally Available)_.
 

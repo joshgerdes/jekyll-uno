@@ -18,7 +18,7 @@ This is not sustainable, not scalable, and you might end up throwing your hands 
 
 > Today we will concentrate on DNS resolution of Private Endpoints, using [Azure DNS Private Resolver](https://learn.microsoft.com/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796 "What is Azure DNS Private Resolver?"){:target="_blank"} as a DNS proxy when connecting to Azure using a [Point to Site VPN](https://learn.microsoft.com/azure/vpn-gateway/point-to-site-about?WT.mc_id=AZ-MVP-5004796 "About Point-to-Site VPN"){:target="_blank"}.
 
-For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Azure Active Directory authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication"){:target="_blank"}.
+For this article, I assume you have an Azure Point to Site already set up; if you don't, you can refer to a previous article I wrote for [Creating an Azure Point to Site VPN using Microsoft Entra ID authentication](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Microsoft Entra ID authentication"){:target="_blank"}.
 
 _Disclaimer: Azure Private DNS Resolver is still in Public Preview at the time of this article (02/09/2022). If you aim to use this in a Production scenario, functionality and services may change. This also means there are current_ [_regional restrictions_](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview?WT.mc_id=AZ-MVP-5004796#regional-availability "Regional availability"){:target="_blank"}_, and Azure Private DNS Resolver is not currently available in all regions. Also bear in mind the [cost](https://azure.microsoft.com/en-us/pricing/details/dns/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} of this service._
 
@@ -59,7 +59,7 @@ To deploy Azure Private DNS Resolver, we will need a few things.
 
 #### Deploy DNS Private Resolver
 
-_I assume you already have a Virtual Network tied to your Virtual Network gateway as part of the '_[_Point to Site VPN_](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Azure Active Directory authentication "){:target="_blank"}_' setup._
+_I assume you already have a Virtual Network tied to your Virtual Network gateway as part of the '_[_Point to Site VPN_](https://luke.geek.nz/azure/create-azure-point-to-site-vpn-using-azure-active-directory-authentication/ "Create Azure Point to Site VPN using Microsoft Entra ID authentication "){:target="_blank"}_' setup._
 
  1. Open the **Azure Portal**
  2. Click on **+ Create a resource**

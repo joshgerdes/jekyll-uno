@@ -257,7 +257,7 @@ or
 
 ##### Setup Azure AD-based recommendations by granting permissions to Managed Identity.
 
-Azure Optimization Engine, has the ability to do recommendations based on Azure Active Directory roles and permissions, but in order to do that, the System Assigned Identity of the Azure Optimization Engine account needs to be given 'Global Reader' rights. As part of the deployment, you may have gotten the following error:
+Azure Optimization Engine, has the ability to do recommendations based on Microsoft Entra ID roles and permissions, but in order to do that, the System Assigned Identity of the Azure Optimization Engine account needs to be given 'Global Reader' rights. As part of the deployment, you may have gotten the following error:
 
 _Cannot bind argument to parameter 'DirectoryRoleId' because it is an empty string._
 
@@ -271,7 +271,7 @@ We are going to grant the Azure Automation account 'Global Reader' rights manual
  4. Navigate down the navigation bar to the **Account Settings** section and select: **Identity**
  5. ![Azure Automation - Identity](/uploads/aoe-managedidentityazautomate.png "Azure Automation - Identity")
  6. **Copy** the **object ID**
- 7. Now navigate to [**Azure Active Directory**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Azure Active Directory"){:target="_blank"}
+ 7. Now navigate to [**Microsoft Entra ID**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview "Microsoft Entra ID"){:target="_blank"}
  8. Click on **Roles and Administrators**
  9. Search for: **Global Reader**
 10. Select Global Reader and select **+ Add assignments**

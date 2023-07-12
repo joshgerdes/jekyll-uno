@@ -77,7 +77,7 @@ I will also install using the Windows Admin Center default TCP port of 6516; alt
 12. **Click** on the **link** under '3' **Enter** the **Code**
 13. **Enter** in the **Code** and press **Enter**
 14. **Enter** your **Azure Credentials** to verify connectivity
-15. Finally, **make sure** that your **Azure Active Directory** Tenant **ID matches** the correct **tenancy**. You can reuse an existing Azure Application/Service Principal, but in my case, I am, going to let Windows Admin Center create it for me and select **Connect**.
+15. Finally, **make sure** that your **Microsoft Entra ID** Tenant **ID matches** the correct **tenancy**. You can reuse an existing Azure Application/Service Principal, but in my case, I am, going to let Windows Admin Center create it for me and select **Connect**.
 16. ![Windows Admin Center - Azure Application/Service Principal Setup](/uploads/select-wac_serverregisterazapp.png)
 17. Then select **Sign In**
 18. **Select Accept**.

@@ -136,7 +136,7 @@
 "288","Task",,,,"2 - Annotate your data","New","0",,,"Govern"
 "289","Task",,,,"1 - Classify data","New","0",,,"Govern"
 "139","Feature",,"Tools to govern your Azure environment",,,"New","0",,"Business","Govern"
-"356","User Story",,,"1 - Azure Active Directory Basics",,"New","0",,"Business","Govern"
+"356","User Story",,,"1 - Microsoft Entra ID Basics",,"New","0",,"Business","Govern"
 "147","Task",,,,"1 - What is AAD","New","0",,,"Govern"
 "154","Task",,,,"2 - Compare AD with AAD","New","0",,,"Govern"
 "161","Task",,,,"3 - AAD Deployment Guide","New","0",,,"Govern"

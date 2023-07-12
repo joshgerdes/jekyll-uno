@@ -1,6 +1,6 @@
 ---
 date: '2022-01-12 00:00:00 +1300'
-title: Create Azure Point to Site VPN using Azure Active Directory authentication
+title: Create Azure Point to Site VPN using Microsoft Entra ID authentication
 author: Luke
 categories:
   - Azure
@@ -14,13 +14,13 @@ You may be working remotely or only have a few devices needing access to your re
 
 This functionality allows your computer to connect privately to resources over a secure tunnel using your internet connection, using an Azure Virtual Network gateway, you can seamlessly connect to resources without the need of opening up your resources to the internet or having to whitelist your _(or third party vendor)_ IP address, which may change daily.
 
-You know only your specified users access your Azure resources using Azure Active Directory.
+You know only your specified users access your Azure resources using Microsoft Entra ID.
 
 You can have a site to site and point to site VPN running on the same Gateway today. We will set up a Point to Site VPN using Windows 11.
 
 ![Azure Point to Site](/uploads/hl_azurep2s.png)
 
-Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed; because we are using Azure Active Directory and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double the number of throughput and connections if you are running in Active/Active and have a second gateway, or select a higher SKU)_.
+Depending on the SKU of your Virtual Network Gateway, depends on the number of concurrent connections and throughput you are allowed; because we are using Microsoft Entra ID and the OpenVPN protocol, I will be selecting Generation 1, VpnGw1, supporting a max of 250 connections _(you can double the number of throughput and connections if you are running in Active/Active and have a second gateway, or select a higher SKU)_.
 
 > Azure AD authentication is supported for OpenVPN® protocol connections only and requires the Azure VPN client.
 
@@ -28,7 +28,7 @@ A note about Gateway SKUs _(apart from Basic)_ you can resize in the same genera
 
 You can read more about the Virtual Network Gateways and VPN SKUs at the official Microsoft documentation [here](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways?WT.mc_id=AZ-MVP-5004796){:target="_blank"}; your Gateway SKU may differ depending on your requirements.
 
-### Create Azure Point to Site VPN using Azure Active Directory authentication
+### Create Azure Point to Site VPN using Microsoft Entra ID authentication
 
 #### Prerequisites
 
@@ -80,16 +80,16 @@ Now that we have the foundation of our setup - an Azure Virtual Network, it is t
 18. **Verify configuration** is correct and clicks **Create**
 19. It can take up to 30-60 minutes for the Virtual Network Gateway to be created.
 
-#### Setup Azure Active Directory authentication on the Virtual Network Gateway
+#### Setup Microsoft Entra ID authentication on the Virtual Network Gateway
 
-Now that the Virtual Network has been created, we can now set up Azure Active Directory authentication.
+Now that the Virtual Network has been created, we can now set up Microsoft Entra ID authentication.
 
-##### Collect Azure Active Directory Tenant ID
+##### Collect Microsoft Entra ID Tenant ID
 
 First, we need to collect the Azure AD Tenancy ID
 
 1. Log in to the [**Azure Portal**](https://portal.azure.com/#home "Azure Portal"){:target="_blank"}
-2. Click on **Azure Active Directory**
+2. Click on **Microsoft Entra ID**
 3. In the Overview pane, **copy** the **Tenant ID** and save this for the next step.
 
 ##### Grant Azure VPN Client permisisons
@@ -103,7 +103,7 @@ Now we need to grant the Azure VPN application permissions.
  3. If you get an error about external identity, then replace /**common**/ with your tenant ID.
  4. ![Azure VPN Permissions](/uploads/azureportal_azurevpnpermissions.png "Azure VPN Permissions")
  5. Click **Accept**
- 6. Navigate back to **Azure Active Directory**
+ 6. Navigate back to **Microsoft Entra ID**
  7. Select **Enterprise Applications**
  8. Select **Azure VPN**
  9. **Copy** the **Application ID** of the Azure VPN enterprise application _(you will need both Application ID and tenant ID for the next steps)_
@@ -119,7 +119,7 @@ Now its time to configure the Virtual Network Gateway
  4. Click **Configure now**
  5. Enter in your **address pool** _(this is the address pool of the VPN clients, make sure this doesn't overlap with any other IP range you use, I will go with: 172.0.0.0/16)_
  6. Make sure the Tunnel type is: **OpenVPN (SSL)**
- 7. Select **Azure Active Directory** for the **Authentication** type
+ 7. Select **Microsoft Entra ID** for the **Authentication** type
  8. For **Tenant, ID enter** in: https://login.microsoftonline.com/**TENANTID**/ and enter in your own Tenant ID.
  9. For the Audience (this is the users and groups that are assigned to the Enterprise Azure VPN application), put in the Application ID of the Azure VPN.
 10. For the Issuer, enter in: https://sts.windows.net/**TENANTID**/
@@ -143,7 +143,7 @@ Now that the Point to Site VPN has been configured it's time to connect!
 10. Click **Save**
 11. ![Azure VPN Connection](/uploads/azurevpnclient-beforeconnection.png "Azure VPN Connection")
 12. Click **Connect**
-13. Enter in your Azure Active Directory credentials _(you may be prompted for MFA, depending on the rules - you can use Azure VPN application under conditional access)_
+13. Enter in your Microsoft Entra ID credentials _(you may be prompted for MFA, depending on the rules - you can use Azure VPN application under conditional access)_
 14. ![Azure VPN Connection](/uploads/azurevpnclient-afterconnection.png "Azure VPN Connection")
 15. **You should now be connected to the Azure network through a point to site VPN!**
 16. If I run 'ipconfig /all' on my device, I can see a PPP adapter that is connected and on the VPN address range created earlier: 172.0.0.2
@@ -155,7 +155,7 @@ Now that the Point to Site VPN has been configured it's time to connect!
 
 Note: I don't have a DNS service running in Azure, but the Azure VPN agent will take DNS from the Virtual Network if you have this configured to point towards a DNS server (Active Directory, or other DNS forwarder (pointing towards Azure DNS IP: 168.63.129.16) such as Azure Firewall DNS proxy; you can set Custom DNS servers by modifying your DNS configuration, or add entries into the host file of the computers.
 
-You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://learn.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Azure Active Directory authentication: Configure a VPN client for P2S OpenVPN protocol connections"){:target="_blank"} Client page.
+You can set your Custom DNS settings (remember to add the DNS suffix if needed) and configure the VPN to automatically connect by following the details on the [OpenVPN Azure AD](https://learn.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-client#faq "Microsoft Entra ID authentication: Configure a VPN client for P2S OpenVPN protocol connections"){:target="_blank"} Client page.
 
 Using Intune, you can also push this configuration to your Windows 10 and 11 clients
 

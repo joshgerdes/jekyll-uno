@@ -8,7 +8,7 @@ categories:
 toc: false
 
 ---
-Do you ever want to add external Azure Active Directory or other users to specific boards in a project, but not want to give them access to the entire Azure DevOps Project?
+Do you ever want to add external Microsoft Entra ID or other users to specific boards in a project, but not want to give them access to the entire Azure DevOps Project?
 
 Using the steps below, we can restrict users to a specific board.
 

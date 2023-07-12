@@ -91,7 +91,7 @@ Now that the Root CA is created and trusted, we want to create the actual self-s
 
 This is the **account** we will use to **run WebJEA under**; it **can** be a normal **Active Directory** user **account** if you feel more comfortable or want to assign permissions to.
 
-I am using a normal AD (Active Directory) service account in this guide because I am using Azure Active Directory Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
+I am using a normal AD (Active Directory) service account in this guide because I am using Microsoft Entra ID Domain Services as my Domain Controller, and GMSA is not currently supported. I have also seen some scripts require the ability to create and read user-specific files. However, it's always good to follow best practices where possible.
 
 _Note: Group Managed Services accounts automatically renew and update the passwords for the accounts; they allow for additional security. You can read more about them here:_ [_Group Managed Service Accounts Overview_](https://learn.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview?WT.mc_id=AZ-MVP-5004796 "Group Managed Service Accounts Overview"){:target="_blank"}_._
 

@@ -1,44 +1,66 @@
 ---
-title: Access denied on an Azure Virtual Machine when using aztfexport
+title: Changing the default Management Group in Azure for your new subscriptions
 author: Luke
 categories:
   - Azure
 toc: false
 header:
-  teaser: /images/posts/aztfexport_access_denied.png
-date: '2023-07-10 00:00:00 +1300'
+  teaser: /images/posts/ChangeDefaultManagementGroup.png
+date: '2023-07-13 00:00:00 +1300'
 ---
 
-When attempting to use [aztfexport](https://github.com/Azure/aztfexport){:target="_blank"}, a tool designed to export currently deployed Azure resources into HashiCorp Configuration Language (HCL) for use with Terraform, you may get: Access denied.
+By default, when a [Management Group](https://learn.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796) gets created, it goes under the Root Management Group, the same is true for [Subscriptions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions?WT.mc_id=AZ-MVP-5004796).
 
-When using aztfexport, the first thing you need to do is make sure you have the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796){:target="_blank"} installed, and run an:
+This works fine, when you have a simple Microsoft Azure environment, but as soon as you start expanding into areas such as [Subscription vending](https://learn.microsoft.com/azure/architecture/landing-zones/subscription-vending?WT.mc_id=AZ-MVP-5004796) or limited access to who can see the Root Management Group and start to look into Visual Studio Enterprise subscriptions, you may want to consider moving new subscriptions, under its own Management Group, away from any policies or RBAC controls, essentially into a Management Group that acts as a shopping cart, to then be picked up and moved later.
 
-    az login
+If we refer to a [recommendation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups?WT.mc_id=AZ-MVP-5004796#management-group-recommendations) on the Microsoft Cloud Adoption Framework:
 
-After logging in, you need to verify you are on the right subscription, by running:
+> Configure a default, dedicated management group for new subscriptions. This group ensures that no subscriptions are placed under the root management group. This group is especially important if there are users eligible for Microsoft Developer Network (MSDN) or Visual Studio benefits and subscriptions. A good candidate for this type of management group is a sandbox management group.
 
-    az account show
+So, how can we change the default Management Group, that new Subscriptions go into?
 
-If you are on the right subscription, you don't need to do anything. If you are in the wrong subscription then run:
+Lets take a look at the different ways we could use to update the default management group, that new subscriptions go into.
 
-    az account list
+{% tabs defaultmgmtgrp %}
 
-Find the susbcription ID then use:
+{% tab defaultmgmtgrp AzurePortal %}
 
-    az account set --subscription <name or id>
+1. Use the search bar to search for and select 'Management groups'.
+1. On the root management group, select details next to the name of the management group.
+1. Under Settings, select Hierarchy settings.
+1. Select the Change default management group button.
 
-**You only need Reader rights to be able to export the Terraform configuration.**
+{% endtab %}
 
-If you find you are still running into access denied issues, such as below:
+{% tab defaultmgmtgrp Terraform %}
 
-![aztfexport - Access denied](/images/posts/aztfexport_access_denied.png "aztfexport - Access denied")
+    resource "azurerm_management_group_subscription_association" "example" {
+    management_group_id = data.azurerm_management_group.example.id
+    subscription_id     = data.azurerm_subscription.example.id
+    }
 
-And you are running the aztfexport program on an Azure Virtual Machine, such as Azure Virtual Desktop or Devbox, what is happening is the [Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} permissions of your Azure Virtual Machine is overriding your own permissions you used to login to Azure using the CLI.
+{% endtab %}
 
-To get around this, you either have to run aztfexport locally, on a device thats not an Azure Virtual Machine, or supply the Managed Identity of the Virtual Machine, Reader rights to the subscription you wish to do the export from.
 
-You can do this, by navigating to your Azure Virtual Machine, in the Azure Portal, click on the Virtual Machine, select Identity, select Azure role assignments and grant it Reader rights to the Resource Group or Subscription you are targeting.
+{% tab defaultmgmtgrp PowerShell %}
 
-You could try Disabling the System Assigned Managed Identity as well, which appeared to work for me.
+```PowerShell
+$root_management_group_id = "Enter the ID of root management group"
+$default_management_group_id = "Enter the ID of default management group (or use the same ID of the root management group)"
 
-For more information about this error, please refer to the following Github issue: [Access Denied during xport on Azure Virtual Desktop](https://github.com/Azure/aztfexport/issues/380){:target="_blank"}.
+$body = '{
+     "properties": {
+          "defaultManagementGroup": "/providers/Microsoft.Management/managementGroups/' + $default_management_group_id + '",
+          "requireAuthorizationForGroupCreation": true
+     }
+}'
+
+$token = (Get-AzAccessToken).Token
+$headers = @{"Authorization"= "Bearer $token"; "Content-Type"= "application/json"}
+$uri = "https://management.azure.com/providers/Microsoft.Management/managementGroups/$root_management_group_id/settings/default?api-version=2020-05-01"
+
+Invoke-RestMethod -Method PUT -Uri $uri -Headers $headers -Body $body
+```
+{% endtab %}
+
+{% endtabs %}

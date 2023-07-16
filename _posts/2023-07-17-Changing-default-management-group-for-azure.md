@@ -21,46 +21,31 @@ So, how can we change the default Management Group, that new Subscriptions go in
 
 Lets take a look at the different ways we could use to update the default management group, that new subscriptions go into.
 
-{% tabs defaultmgmtgrp %}
-
-{% tab defaultmgmtgrp AzurePortal %}
+### Configure using Azure Portal
 
 1. Use the search bar to search for and select 'Management groups'.
 1. On the root management group, select details next to the name of the management group.
 1. Under Settings, select Hierarchy settings.
 1. Select the Change default management group button.
 
-{% endtab %}
-
-{% tab defaultmgmtgrp Terraform %}
+### Configure using Terraform
 
     resource "azurerm_management_group_subscription_association" "example" {
     management_group_id = data.azurerm_management_group.example.id
     subscription_id     = data.azurerm_subscription.example.id
     }
 
-{% endtab %}
+### Configure using REST API using PowerShell
 
-{% tab defaultmgmtgrp PowerShell %}
-
-```PowerShell
-$root_management_group_id = "Enter the ID of root management group"
-$default_management_group_id = "Enter the ID of default management group (or use the same ID of the root management group)"
-
-$body = '{
+    $root_management_group_id = "Enter the ID of root management group"
+    $default_management_group_id = "Enter the ID of default management group (or use the same ID of the root management group)"
+    $body = '{
      "properties": {
           "defaultManagementGroup": "/providers/Microsoft.Management/managementGroups/' + $default_management_group_id + '",
           "requireAuthorizationForGroupCreation": true
      }
-}'
-
-$token = (Get-AzAccessToken).Token
-$headers = @{"Authorization"= "Bearer $token"; "Content-Type"= "application/json"}
-$uri = "https://management.azure.com/providers/Microsoft.Management/managementGroups/$root_management_group_id/settings/default?api-version=2020-05-01"
-
-Invoke-RestMethod -Method PUT -Uri $uri -Headers $headers -Body $body
-```
-
-{% endtab %}
-
-{% endtabs %}
+    }'
+    $token = (Get-AzAccessToken).Token
+    $headers = @{"Authorization"= "Bearer $token"; "Content-Type"= "application/json"}
+    $uri = "https://management.azure.com/providers/Microsoft.Management/managementGroups/$root_management_group_id/settings/default?api-version=2020-05-01"
+    Invoke-RestMethod -Method PUT -Uri $uri -Headers $headers -Body $body

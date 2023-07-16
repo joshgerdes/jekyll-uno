@@ -6,7 +6,7 @@ categories:
 toc: false
 header:
   teaser: /images/posts/ChangeDefaultManagementGroup.png
-date: '2023-07-13 00:00:00 +1300'
+date: '2023-07-17 00:00:00 +1300'
 ---
 
 By default, when a [Management Group](https://learn.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"} gets created, it goes under the Root Management Group, the same is true for [Subscriptions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
@@ -41,7 +41,6 @@ Lets take a look at the different ways we could use to update the default manage
 
 {% endtab %}
 
-
 {% tab defaultmgmtgrp PowerShell %}
 
 ```PowerShell
@@ -61,6 +60,7 @@ $uri = "https://management.azure.com/providers/Microsoft.Management/managementGr
 
 Invoke-RestMethod -Method PUT -Uri $uri -Headers $headers -Body $body
 ```
+
 {% endtab %}
 
 {% endtabs %}

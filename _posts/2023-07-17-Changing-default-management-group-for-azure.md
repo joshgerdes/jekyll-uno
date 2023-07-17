@@ -28,12 +28,18 @@ Lets take a look at the different ways we could use to update the default manage
 1. Under Settings, select Hierarchy settings.
 1. Select the Change default management group button.
 
-### Configure using Terraform
+### Configuring using Bicep
 
-    resource "azurerm_management_group_subscription_association" "example" {
-    management_group_id = data.azurerm_management_group.example.id
-    subscription_id     = data.azurerm_subscription.example.id
+    resource symbolicname 'Microsoft.Management/managementGroups/settings@2021-04-01' = {
+    name: 'default'
+    parent: resourceSymbolicName
+    properties: {
+    defaultManagementGroup: 'string'
+    requireAuthorizationForGroupCreation: bool
     }
+    }
+
+Reference: [Microsoft.Management managementGroups/settings](https://learn.microsoft.com/en-us/azure/templates/microsoft.management/managementgroups/settings?pivots=deployment-language-bicep&WT.mc_id=AZ-MVP-5004796){:target="_blank"}
 
 ### Configure using REST API using PowerShell
 
@@ -47,5 +53,14 @@ Lets take a look at the different ways we could use to update the default manage
     }'
     $token = (Get-AzAccessToken).Token
     $headers = @{"Authorization"= "Bearer $token"; "Content-Type"= "application/json"}
-    $uri = "https://management.azure.com/providers/Microsoft.Management/managementGroups/$root_management_group_id/settings/default?api-version=2020-05-01"
+    $uri = "https://management.azure.com/providers/Microsoft.Management/managementGroups/$root_management_group_id/settings/default?api-version=2021-04-01"
     Invoke-RestMethod -Method PUT -Uri $uri -Headers $headers -Body $body
+
+### Configure using Terraform
+
+    resource "azurerm_management_group_subscription_association" "example" {
+    management_group_id = data.azurerm_management_group.example.id
+    subscription_id     = data.azurerm_subscription.example.id
+    }
+
+Note: Not quite the same, as configuring the default setting as above - but you can specify the Managament Group association for subscriptions using Terraform.

@@ -15,7 +15,7 @@ This works fine, when you have a simple Microsoft Azure environment, but as soon
 
 If we refer to a [recommendation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups?WT.mc_id=AZ-MVP-5004796#management-group-recommendations){:target="_blank"} on the Microsoft Cloud Adoption Framework:
 
-> Configure a default, dedicated management group for new subscriptions. This group ensures that no subscriptions are placed under the root management group. This group is especially important if there are users eligible for Microsoft Developer Network (MSDN) or Visual Studio benefits and subscriptions. A good candidate for this type of management group is a sandbox management group.
+> Configure a default, dedicated management group for new subscriptions. This group ensures that no subscriptions are placed under the root management group. This group is especially important if there are users eligible for Microsoft Developer Network (MSDN) or Visual Studio benefits and subscriptions. A good candidate for this type of management group is a [sandbox](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/considerations/sandbox-environments?WT.mc_id=AZ-MVP-5004796){:target="_blank"} management group.
 
 So, how can we change the default Management Group, that new Subscriptions go into?
 

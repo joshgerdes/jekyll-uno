@@ -40,6 +40,8 @@ So after your CIS Hardened Image, in my case I am using Ubuntu 20.04 has been de
 
 You will need to make sure you have a few prerequsites.
 
+### Prerequsites
+
 #### Network
 
 VM network configuration must permit outbound access to the following endpoints over TCP port 443.
@@ -55,6 +57,15 @@ Also make sure you have enabled TCP Port 80 for: ubuntu.com, specifically [http:
 
 The CIS hardened image, will need to have a [System Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796#managed-identity-types) setup. This can be easily enabled in the Identity blade of the Virtual Machine.
 
+The Entra ID (Azure Active Directory) users that need to login with to the Linux Virtual Machine are a member of one of the following Azure RBAC (Role Based Access Control) groups, as per their requirements:
+
+| RBAC Role                           | Notes                                                            |
+| ----------------------------------- | ---------------------------------------------------------------- |
+| Virtual Machine Administrator Login | View Virtual Machines in the portal and login as administrator   |
+| Virtual Machine User Login          | View Virtual Machines in the portal and login as a regular user. |
+
+Only one role is required. These roles are supported for both Windows and Linux.
+
 #### Client
 
 On the jumphost, client PC you will be connecting to the Linux virtual machine from, you need the latest [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796) with the Azure CLI extension 'ssh' installed.
@@ -65,6 +76,19 @@ The minimum version required for the extension is 0.1.4.
 
     az extension show --name ssh
 
-sdsd
+### Install Extension - Azure Portal
 
+Once the pre-requsites have been met, it is time to install the extension.
 
+1. Login to the [Azure Portal](https://portal.azure.com/)
+1. Navigate to your CIS Hardened Virtual Machine
+1. Click on Extensions + Applications
+1. Click + Add
+1. ![Azure Portal - Extensions](/images/posts/AzurePortal_CISHardenedVM_Extensions.png)
+1. Search for: Azure AD based SSH Login
+1. ![Azure Portal - A](/images/posts/AzurePortal_CISHardenedVM_SSH_Extension.png)
+1. Select the Azure AD base SSH Login extension
+1. Click Next
+1. Click Review and Create
+1. Click Create
+1. 

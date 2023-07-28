@@ -3,13 +3,13 @@ title: Entra ID login to a CIS Hardened Linux Azure Virtual Machine
 author: Luke
 categories:
   - Azure
-toc: false
+toc: true
 header:
   teaser: /images/posts/Blog_Headler-EntraID_login_CIS_Linux_Azure_Virtual_Machine.gif
 date: '2023-07-28 00:00:00 +1300'
 ---
 
-Currently, [CIS](https://www.cisecurity.org/) (Center for Internet Security) [Azure Marketplace images](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=CIS&page=1?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, do not support being Entra ID (Azure Active Directory) Joined.
+Currently, [CIS](https://www.cisecurity.org/){:target="_blank"} (Center for Internet Security) [Azure Marketplace images](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=CIS&page=1?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, do not support being Entra ID (Azure Active Directory) Joined.
 
 Although this article is about allowing Entra ID login to a Ubuntu machine, its worth noting the current decisions around Windows as well currently:
 

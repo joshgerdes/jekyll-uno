@@ -78,7 +78,7 @@ The minimum version required for the extension is 0.1.4.
 
     az extension show --name ssh
 
-#### Install Extension
+### Install Extension
 
 Make sure the Virtual Machine is on, for the extension to install.
 

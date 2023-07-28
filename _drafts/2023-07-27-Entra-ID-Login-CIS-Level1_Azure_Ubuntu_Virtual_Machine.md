@@ -24,7 +24,7 @@ In fact when you, attempt to create a CIS Level 1 Ubuntu image in the Azure Port
 
 However, as I go into below, we can indeed login to the CIS hardened image, using the [Microsoft Azure AD based SSH Login](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux?WT.mc_id=AZ-MVP-5004796) extension.
 
-> Be wary, that although this works, you may run into issues with operational support of this from CIS, due to the hardening.
+> Be wary, that although this works, you may run into issues with operational support of this from CIS, due to the hardening. This is also Entra ID LOGIN (not JOINED!). You won't see the device under Entra ID Devices.
 
 There are many security benefits of using Azure AD with SSH log in to Linux VMs in Azure, including:
 
@@ -76,7 +76,9 @@ The minimum version required for the extension is 0.1.4.
 
     az extension show --name ssh
 
-### Install Extension - Azure Portal
+### Install Extension
+
+## Install using the Azure Portal
 
 Once the pre-requsites have been met, it is time to install the extension.
 
@@ -86,9 +88,26 @@ Once the pre-requsites have been met, it is time to install the extension.
 1. Click + Add
 1. ![Azure Portal - Extensions](/images/posts/AzurePortal_CISHardenedVM_Extensions.png)
 1. Search for: Azure AD based SSH Login
-1. ![Azure Portal - A](/images/posts/AzurePortal_CISHardenedVM_SSH_Extension.png)
+1. ![Azure Portal - SSH Extension](/images/posts/AzurePortal_CISHardenedVM_SSH_Extension.png)
 1. Select the Azure AD base SSH Login extension
 1. Click Next
 1. Click Review and Create
 1. Click Create
-1. 
+
+After a few m oments, the extension and supporting components, will be installed.
+
+## Install using Terraform
+
+You can use the following Terraform code snippet, to install the extension to a Linux Virtual Machine:
+
+Make sure you assign the extension, to the virtual machine, using the ID.
+
+    resource "azurerm_virtual_machine_extension" "aad_login" {
+    name                 = "AADLogin"
+    virtual_machine_id   = 
+    publisher            = "Microsoft.Azure.ActiveDirectory"
+    type                 = "AADSSHLoginForLinux" # For Windows VMs: AADLoginForWindows
+    type_handler_version = "1.0"                 # There may be a more recent version
+    }
+
+sd

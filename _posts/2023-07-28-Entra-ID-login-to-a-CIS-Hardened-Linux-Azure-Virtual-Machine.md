@@ -9,7 +9,7 @@ header:
 date: '2023-07-28 00:00:00 +1300'
 ---
 
-Currently, [CIS](https://www.cisecurity.org/) (Center for Internet Security) [Azure Marketplace images](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=CIS&page=1?WT.mc_id=AZ-MVP-5004796), do not support being Entra ID (Azure Active Directory) Joined.
+Currently, [CIS](https://www.cisecurity.org/) (Center for Internet Security) [Azure Marketplace images](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=CIS&page=1?WT.mc_id=AZ-MVP-5004796){:target="_blank"}, do not support being Entra ID (Azure Active Directory) Joined.
 
 Although this article is about allowing Entra ID login to a Ubuntu machine, its worth noting the current decisions around Windows as well currently:
 
@@ -22,7 +22,7 @@ In fact when you, attempt to create a CIS Level 1 Ubuntu image in the Azure Port
 
 ![CIS Image does not support Login with Azure AD](/images/posts/AzurePortal_CIS_Level1_Ubuntu_NoEntraIDLogin.png)
 
-However, as I go into below, we can indeed login to the CIS hardened image, using the [Microsoft Azure AD based SSH Login](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux?WT.mc_id=AZ-MVP-5004796) extension.
+However, as I go into below, we can indeed login to the CIS hardened image, using the [Microsoft Azure AD based SSH Login](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux?WT.mc_id=AZ-MVP-5004796){:target="_blank"} extension.
 
 > Be wary, that although this works, you may run into issues with operational support of this from CIS, due to the hardening. This is also Entra ID LOGIN (not JOINED!). You won't see the device under Entra ID Devices.
 
@@ -57,7 +57,7 @@ Also make sure you have enabled TCP Port 80 for: ubuntu.com, specifically [http:
 
 #### Virtual Machine
 
-The CIS hardened image, will need to have a [System Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796#managed-identity-types) setup. This can be easily enabled in the Identity blade of the Virtual Machine.
+The CIS hardened image, will need to have a [System Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796#managed-identity-types){:target="_blank"} setup. This can be easily enabled in the Identity blade of the Virtual Machine.
 
 The Entra ID (Azure Active Directory) users that need to login with to the Linux Virtual Machine are a member of one of the following Azure RBAC (Role Based Access Control) groups, as per their requirements:
 
@@ -70,7 +70,7 @@ Only one role is required. These roles are supported for both Windows and Linux.
 
 #### Client
 
-On the jumphost, client PC you will be connecting to the Linux virtual machine from, you need the latest [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796) with the Azure CLI extension 'ssh' installed.
+On the jumphost, client PC you will be connecting to the Linux virtual machine from, you need the latest [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796){:target="_blank"} with the Azure CLI extension 'ssh' installed.
 
     az extension add --name ssh
 
@@ -78,15 +78,15 @@ The minimum version required for the extension is 0.1.4.
 
     az extension show --name ssh
 
-### Install Extension
+#### Install Extension
 
 Make sure the Virtual Machine is on, for the extension to install.
 
-## Install using the Azure Portal
+##### Install using the Azure Portal
 
 Once the pre-requsites have been met, it is time to install the extension.
 
-1. Login to the [Azure Portal](https://portal.azure.com/)
+1. Login to the [Azure Portal](https://portal.azure.com/){:target="_blank"}
 1. Navigate to your CIS Hardened Virtual Machine
 1. Click on Extensions + Applications
 1. Click + Add
@@ -102,7 +102,7 @@ After a few moments, the extension and supporting components, will be installed.
 
 ![Azure Virtual Machine Extension](/images/posts/AzurePortal_CIS_Level1_Ubuntu_ADSSHExtensionStatus.png)
 
-## Install using Terraform
+##### Install using Terraform
 
 You can use the following Terraform code snippet, to install the extension to a Linux Virtual Machine:
 
@@ -115,6 +115,17 @@ Make sure you assign the extension, to the virtual machine, using the ID.
     type                 = "AADSSHLoginForLinux" # For Windows VMs: AADLoginForWindows
     type_handler_version = "1.0"                 # There may be a more recent version
     }
+
+##### Install using PowerShell
+
+To install the AADLogin extension to a Linux Virtual Machine in Microsoft Azure using PowerShell, you can follow these steps:
+
+1. Open PowerShell on your local machine, or [Azure Cloud Shell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796){:target="_blank"}.
+
+    Connect-AzAccount
+    Select-AzSubscription -SubscriptionName "Your Subscription Name"
+    $vm = Get-AzVM -ResourceGroupName "Your Resource Group Name" -Name "Your VM Name"
+    Set-AzVMExtension -ResourceGroupName $vm.ResourceGroupName -VMName $vm.Name -Name "AADLoginForLinux" -Publisher "Microsoft.Azure.ActiveDirectory.LinuxSSH" -Type "AADLoginForLinux" -TypeHandlerVersion "1.0"
 
 ### Login to Virtual Machine
 
@@ -139,7 +150,7 @@ Note: -n is the VM name and -g is the Resource Group, that the VM is located ins
 
 You should now have successfully authenticated to your Linux virtual machine using Entra ID credendials.
 
-### Troubleshooting
+#### Troubleshooting
 
 If you are unable to connect, it may be due to an issue with the AADSSHLogin extension. You can troubleshoot by reviewing the extension log.
 

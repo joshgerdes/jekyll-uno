@@ -42,7 +42,7 @@ So after your CIS Hardened Image, in my case I am using Ubuntu 20.04 has been de
 
 You will need to make sure you have a few prerequsites.
 
-### Prerequsites
+### Prerequisites
 
 #### Network
 
@@ -150,7 +150,7 @@ Note: -n is the VM name and -g is the Resource Group, that the VM is located ins
 
 You should now have successfully authenticated to your Linux virtual machine using Entra ID credendials.
 
-#### Troubleshooting
+### Troubleshooting
 
 If you are unable to connect, it may be due to an issue with the AADSSHLogin extension. You can troubleshoot by reviewing the extension log.
 

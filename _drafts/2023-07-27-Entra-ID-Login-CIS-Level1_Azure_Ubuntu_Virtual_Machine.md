@@ -1,12 +1,12 @@
 ---
-title: Entra ID login to a CIS Level 1 Ubuntu Azure Virtual Machine
+title: Entra ID login to a CIS Hardened Linux Azure Virtual Machine
 author: Luke
 categories:
   - Azure
 toc: false
 header:
-  teaser: /images/posts/ChangeDefaultManagementGroup.png
-date: '2023-07-27 00:00:00 +1300'
+  teaser: /images/posts/Blog_Headler-EntraID_login_CIS_Linux_Azure_Virtual_Machine.gif
+date: '2023-07-28 00:00:00 +1300'
 ---
 
 Currently, [CIS](https://www.cisecurity.org/) (Center for Internet Security) [Azure Marketplace images](https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=CIS&page=1?WT.mc_id=AZ-MVP-5004796), do not support being Entra ID (Azure Active Directory) Joined.
@@ -25,6 +25,8 @@ In fact when you, attempt to create a CIS Level 1 Ubuntu image in the Azure Port
 However, as I go into below, we can indeed login to the CIS hardened image, using the [Microsoft Azure AD based SSH Login](https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux?WT.mc_id=AZ-MVP-5004796) extension.
 
 > Be wary, that although this works, you may run into issues with operational support of this from CIS, due to the hardening. This is also Entra ID LOGIN (not JOINED!). You won't see the device under Entra ID Devices.
+
+![Entra ID login to a CIS Hardened Linux Azure Virtual Machine](/images/posts/Blog_Headler-EntraID_login_CIS_Linux_Azure_Virtual_Machine.gif)
 
 There are many security benefits of using Azure AD with SSH log in to Linux VMs in Azure, including:
 
@@ -78,6 +80,8 @@ The minimum version required for the extension is 0.1.4.
 
 ### Install Extension
 
+Make sure the Virtual Machine is on, for the extension to install.
+
 ## Install using the Azure Portal
 
 Once the pre-requsites have been met, it is time to install the extension.
@@ -94,7 +98,9 @@ Once the pre-requsites have been met, it is time to install the extension.
 1. Click Review and Create
 1. Click Create
 
-After a few m oments, the extension and supporting components, will be installed.
+After a few moments, the extension and supporting components, will be installed. You can check the status under the Extensions + Application blade make sure that Provisioning has been succeded, before provisioning to the next step to login.
+
+![Azure Virtual Machine Extension](/images/posts/AzurePortal_CIS_Level1_Ubuntu_ADSSHExtensionStatus.png)
 
 ## Install using Terraform
 
@@ -110,4 +116,33 @@ Make sure you assign the extension, to the virtual machine, using the ID.
     type_handler_version = "1.0"                 # There may be a more recent version
     }
 
-sd
+### Login to Virtual Machine
+
+Now that the extension is stood, up its time to connect.
+
+REMEMBER to make sure that the Entra ID (AAD) accounts you want to login to the Linux image is a member of either of the following roles, directly assigned to the Virtual Machine/Resource Group, or in an Entra ID (AAD) group that has been delegated the permissions.
+
+| RBAC Role                           | Notes                                                            |
+| ----------------------------------- | ---------------------------------------------------------------- |
+| Virtual Machine Administrator Login | View Virtual Machines in the portal and login as administrator   |
+| Virtual Machine User Login          | View Virtual Machines in the portal and login as a regular user. |
+
+1. Open a Command Prompt
+1. Log in to the Azure using:
+    az login
+1. A web browser will prompt and ask you to authenticate, where you will go through the MFA (Multifactor Authentication) and complete login to your Entra ID account.
+1. Once authenicated you can run:
+    az ssh vm -n cistest -g cistest
+Note: -n is the VM name and -g is the Resource Group, that the VM is located inside.
+
+![Entra ID Login - Linux VM](/images/posts/CISHardenedImageEntraIDLogin.gif)
+
+You should now have successfully authenticated to your Linux virtual machine using Entra ID credendials.
+
+### Troubleshooting
+
+If you are unable to connect, it may be due to an issue with the AADSSHLogin extension. You can troubleshoot by reviewing the extension log.
+
+    cat /var/log/azure/Microsoft.Azure.ActiveDirectory.AADSSHLoginForLinux/CommandExecution.log
+
+The Azure directory is protected, so you will need Administrator rights to delve into the logs.

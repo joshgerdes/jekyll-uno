@@ -9,7 +9,7 @@ header:
 date: '2023-07-31 00:00:00 +1300'
 ---
 
-So you have just stood up [Entra ID Domain Services](https://learn.microsoft.com/azure/active-directory-domain-services/?WT.mc_id=AZ-MVP-5004796){:target="_blank"}_(formally - or still known as of July 2023 as: Active Directory Domain Services (AAD DS)_) and trying to login and join a computer to the AAD DS domain and you get the following error:
+So you have just stood up [Entra ID Domain Services](https://learn.microsoft.com/azure/active-directory-domain-services/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} _(formally - or still known as of July 2023 as: Active Directory Domain Services (AAD DS)_) and trying to login and join a computer to the AAD DS domain and you get the following error:
 
 > The referenced account is currently locked out and may not be logged on to.
 

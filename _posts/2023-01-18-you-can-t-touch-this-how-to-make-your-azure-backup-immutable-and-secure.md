@@ -14,11 +14,11 @@ With [immutable vaults](https://learn.microsoft.com/en-us/azure/backup/backup-az
 
 Hence, this helps you protect your backups against ransomware attacks and malicious actors by disallowing operations such as deleting backups or reducing retention in backup policies.
 
-> [Immutable vaults are now in preview](https://azure.microsoft.com/en-us/updates/azure-backup-immutable-vaults-preview/?WT.mc_id=AZ-MVP-5004796 "Public preview: Immutable vaults for Azure Backup"){:target="_blank"} _(as of this article - Jan 2023)_ in all regions.
+> [Immutable vaults is now Generally available](https://azure.microsoft.com/en-us/updates/azure-backup-immutable-vaults-ga?WT.mc_id=AZ-MVP-5004796 "Public preview: Immutable vaults for Azure Backup"){:target="_blank"} in all regions.
 
 An immutable vault can assist in safeguarding your backup data by prohibiting any actions that might result in the loss of recovery points.
 
-![](/uploads/can-ttouchthis_immutability.png)
+![Can't touch this](/uploads/can-ttouchthis_immutability.png)
 
 By securing the immutable vault setting, it can be made irreversible, which can prevent any unauthorized individuals from disabling the immutability feature and erasing the backups.
 

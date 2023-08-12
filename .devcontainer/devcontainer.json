@@ -6,7 +6,7 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {			
-			// Add the IDs of extensions you want installed when the container is created.
+			// Add the IDs of extensions you want to be installed when the container is created.
 			"extensions": [
 				"yzhang.markdown-all-in-one",
 				"streetsidesoftware.code-spell-checker",

@@ -45,11 +45,20 @@ Github Codespaces, went into [general availability](https://azure.microsoft.com/
 
 To use Github Codespaces, you need a [Github](https://github.com/) account.
 
-GitHub Codespaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. 
+GitHub Codespaces is available for developers in every organization, however organizations can choose whether codespaces created from their repositories will be user-owned or organization-owned.. All personal GitHub.com accounts include a monthly quota of free usage each month.
 
-GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core codespace, plus 15 GB of storage each month.
+GitHub will provide **users in the Free plan 120 core hours, or 60 hours of run time on a 2 core codespace, plus 15 GB of storage each month**.
 
-List the prerequisites for using GitHub Codespaces, such as a GitHub account, a supported browser, and an active repository.
+For further information on pricing, make sure you review:
+
+* [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces)
+* [Pricing calculator](https://github.com/pricing/calculator)
+
+> Pricing, features and offerings could change at any time. For the most up to date information make sure you review the documentation on github.com.
+
+To use Github Codespaces, you need an active repository, by default Github Codespaces is configured for the repository you set.
+
+You will also need a support browser, Edge, Chrome, Firefox view your IDE, in this article, we will be using Visual Studio Code.
 
 #### Setting Up GitHub Codespaces
 

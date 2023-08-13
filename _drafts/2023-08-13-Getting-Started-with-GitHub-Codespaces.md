@@ -39,11 +39,15 @@ Key features and benefits of GitHub Codespaces include:
 * Security: Codespaces offer a secure environment for development, as it doesn't store any sensitive data and is protected by GitHub's security measures.
 * Project Setup: Codespaces can be configured to automatically set up a project with required dependencies and tools, reducing the time needed to get started.
 
+Github Codespaces, went into [general availability](https://azure.microsoft.com/updates/general-availability-github-codespaces/?WT.mc_id=AZ-MVP-5004796) on August 2021.
+
 #### Prerequisites
 
 To use Github Codespaces, you need a [Github](https://github.com/) account.
 
-GitHub Codespaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core codespace, plus 15 GB of storage each month.
+GitHub Codespaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. 
+
+GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core codespace, plus 15 GB of storage each month.
 
 List the prerequisites for using GitHub Codespaces, such as a GitHub account, a supported browser, and an active repository.
 

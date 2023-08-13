@@ -62,7 +62,11 @@ You will also need a [supported browser](https://docs.github.com/en/get-started/
 
 #### Setting Up GitHub Codespaces
 
- Guide readers through accessing GitHub Codespaces
+Github Codespaces, can be accessed directly from the GitHub interface.
+
+df
+sds
+d
 
 Explain how to navigate to a repository and click on the "Code" button.
 Show how to select "Open with Codespaces" to create a new Codespace.
@@ -114,6 +118,7 @@ Explain how to manage data storage and potential limitations.
 Offer practical tips to optimize the Codespaces experience:
 Suggest keyboard shortcuts for common actions.
 Provide insights on managing multiple Codespaces.
+.Codespaces 
 
 #### Ending and Additional Resources
 

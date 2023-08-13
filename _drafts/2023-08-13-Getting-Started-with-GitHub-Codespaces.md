@@ -18,7 +18,7 @@ Github Codespaces does this, by leveraging the power of the Cloud and GitHub, to
 > A codespace is a development environment that's hosted in the cloud. You can customize your project for GitHub Codespaces by configuring dev container files to your repository (often known as Configuration-as-Code), which creates a repeatable codespace configuration for all users of your project.
 > GitHub Codespaces run on a variety of VM-based compute options hosted by GitHub.com, which you can configure from 2 core machines up to 32 core machines. You can connect to your codespaces from the browser or locally using an IDE like Visual Studio Code or IntelliJ.
 
-Let's delve into Github Codespaces a bit more!
+Let's delve into [Github Codespaces](https://github.com/features/codespaces) a bit more!
 
 #### Introduction
 

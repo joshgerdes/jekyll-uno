@@ -58,7 +58,7 @@ For further information on pricing, make sure you review:
 
 To use Github Codespaces, you need an active repository, by default Github Codespaces is configured for the repository you set.
 
-You will also need a support browser, Edge, Chrome, Firefox view your IDE, in this article, we will be using Visual Studio Code.
+You will also need a [supported browser](https://docs.github.com/en/get-started/using-github/supported-browsers) (the latest versions of Chrome, Edge, Firefox, or Safari are recommended) view your IDE, in this article, we will be using Visual Studio Code.
 
 #### Setting Up GitHub Codespaces
 

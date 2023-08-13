@@ -44,7 +44,8 @@ Key features and benefits of GitHub Codespaces include:
 List the prerequisites for using GitHub Codespaces, such as a GitHub account, a supported browser, and an active repository.
 Setting Up GitHub Codespaces:
 
-Guide readers through accessing GitHub Codespaces:
+#### Guide readers through accessing GitHub Codespaces:
+
 Explain how to navigate to a repository and click on the "Code" button.
 Show how to select "Open with Codespaces" to create a new Codespace.
 

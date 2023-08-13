@@ -64,19 +64,23 @@ You will also need a [supported browser](https://docs.github.com/en/get-started/
 
 Github Codespaces, can be accessed directly from the GitHub interface.
 
-1. Navigate to a new repository
-2. Click Code
-3. Click + in the Codespaces tab to open a new Codespace on your repo, by default a Visual Studio Code instance will open.in your browser.
+1. **Navigate** to a new **repository**
+2. Click **Code**
+3. Click **+** in the Codespaces tab to open a new **Codespace** on your repo, by default a Visual Studio Code instance will open in your browser, note the 'funky' name and URL thats create to give you a unique container.
 
-Note: Don't worry, nothing is saved to your repository unless you want to commit any changes.
+_Note: Don't worry, nothing is saved to your repository unless you want to commit any changes._
 
-Your Codespace is now started, and running in a default Github supplied development container.
+Your Codespace is now started, and running in a default GitHub supplied development container.
 
 > A development container is a running Docker container with a well-defined tool/runtime stack and its prerequisites.
 
-![Github Codespaces - Run][/images/posts/OpenCodespace.gif]
+![Github Codespaces - Run](/images/posts/OpenCodespace.gif)
 
 #### Exploring the Interface
+
+Once you have your Codespace running, you have access to most native Visual Studio Code capability's and all the files in your repository.
+
+
 
 Walk users through the Codespaces interface:
 Point out the code editor, integrated terminal, file explorer, and other key elements.

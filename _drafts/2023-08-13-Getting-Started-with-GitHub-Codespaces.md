@@ -41,10 +41,15 @@ Key features and benefits of GitHub Codespaces include:
 
 #### Prerequisites
 
-List the prerequisites for using GitHub Codespaces, such as a GitHub account, a supported browser, and an active repository.
-Setting Up GitHub Codespaces:
+To use Github Codespaces, you need a [Github](https://github.com/) account.
 
-#### Guide readers through accessing GitHub Codespaces:
+GitHub Codespaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core codespace, plus 15 GB of storage each month.
+
+List the prerequisites for using GitHub Codespaces, such as a GitHub account, a supported browser, and an active repository.
+
+#### Setting Up GitHub Codespaces
+
+ Guide readers through accessing GitHub Codespaces
 
 Explain how to navigate to a repository and click on the "Code" button.
 Show how to select "Open with Codespaces" to create a new Codespace.

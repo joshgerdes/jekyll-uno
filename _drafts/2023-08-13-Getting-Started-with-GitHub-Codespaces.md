@@ -24,6 +24,8 @@ Let's delve into [Github Codespaces](https://github.com/features/codespaces) a b
 
 GitHub Codespaces is a cloud-based development environment provided by GitHub, designed to enhance the coding experience and streamline collaboration for developers. It allows you to create, manage, and access your development environments directly from your web browser. With GitHub Codespaces, you can code, build, test, and debug your projects without the need to set up complex local development environments on your machine.
 
+![Github Codespaces](/images/posts/github_codespaces.png)
+
 Key features and benefits of GitHub Codespaces include:
 
 * Access Anywhere: You can access your coding environment from anywhere with an internet connection. This is particularly useful for remote work, collaboration, and coding on the go.
@@ -63,7 +65,8 @@ Working with Files and Code:
 
 Cover opening, editing, creating, and deleting files.
 Provide tips on utilizing shortcuts and editor features.
-#### Integrating Version Control:
+
+#### Integrating Version Control
 
 Emphasize the integration with Git and version control:
 Guide readers on how to commit, push, and pull changes within Codespaces.

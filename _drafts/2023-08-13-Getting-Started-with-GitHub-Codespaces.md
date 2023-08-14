@@ -80,7 +80,7 @@ Your Codespace is now started, and running in a default GitHub supplied developm
 
 Once you have your Codespace running, you have access to most native Visual Studio Code capability's and all the files in your repository.
 
-
+![Github Codespaces - Overview](/images/posts/Codespaces_VSCode_Overview.png)
 
 Walk users through the Codespaces interface:
 Point out the code editor, integrated terminal, file explorer, and other key elements.

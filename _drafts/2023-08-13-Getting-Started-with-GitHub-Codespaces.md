@@ -78,13 +78,23 @@ Your Codespace is now started, and running in a default GitHub supplied developm
 
 #### Exploring the Interface
 
-Once you have your Codespace running, you have access to most native Visual Studio Code capability's and all the files in your repository.
+Once you have your Codespace running, you have access to most native [Visual Studio Code](https://code.visualstudio.com/) capability's and all the files in your repository.
 
 ![Github Codespaces - Overview](/images/posts/Codespaces_VSCode_Overview.png)
 
-Walk users through the Codespaces interface:
-Point out the code editor, integrated terminal, file explorer, and other key elements.
-Highlight the accessibility of tools like debugging, extensions, and settings.
+We now have our workspace, consisting of Visual Studio code, running in your own docker container! The Host field _(lower left)_ indicates that you are running in a Codespace.
+
+Out of the box, Visual Studio code has git integration, so you can easily commit any changes to the repository as you would, if you were working from your local development workstation - this is critical to remember, when making a change to your devcontainer configuration - you have to commit it, before you can rebuild or you will lose your configuration (we will get to this further in the article).
+
+As its running in a hosted container, you can switch easily between computers and browsers, by opening the Codespace (the same way you created your Codespace, but instead selecting an already running instance), or copy the URL of your Codespace, and log back into Github on another computer to go directly to the container instance:
+
+![Github Codespaces - Run](/images/posts/Github_Codespaces_OpenRunning.png)
+
+If you leave your Codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. You can [adjust the timeout](https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-timeout-period-for-github-codespaces) of your codespace to a maximum of 240 minutes (4 hours) for new Codespaces, but keep in mind ou will be charged, unless the Codespace is stopped.
+
+> Warning: Codespaces compute usage is billed for the duration for which a codespace is active. If you're not using a codespace but it remains running, and hasn't yet timed out, you are billed for the total time that the codespace was active, irrespective of whether you were using it. For more information, see "[About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#codespaces-pricing)."
+
+As with any Visual Studio Code instance, you can also login to your Github account, to pull your settings and extensions, but to keep things clean, distraction free, you can customize your Codespace instead, for only what you or others working in the same repository need.
 
 #### Customizing Your Codespace
 

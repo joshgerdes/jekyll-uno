@@ -98,6 +98,19 @@ As with any Visual Studio Code instance, you can also login to your Github accou
 
 #### Customizing Your Codespace
 
+You can customize your Codespace, to suit the project you are working on, some examples I use personally are:
+
+* Markdown editing _(for example, my website is hosted on Github Pages, and the formatting is done using Markdown, so I have a devcontainer preconfigured to run Markdown Visual Studio Code extensions and linting, so as soon as I open it - its good to go!)_
+* Infrastructure as Code development _(I have preconfigured devcontainer, running on a container, that has the latest version of PowerShell, Terraform, Bicep installed and relevant Visual Studio extensions)_
+
+I am someone who use to install everything locally, to the point when I would be reinstalling Windows every few months. to keep my device clean, I had moved to an Azure Virtual Desktop host as my development environment, but Codespaces now give me the flexibility to install what I need (when I need it) within an Linux environment, and I know when I rebuild the Codespace, I will have the latest libraries.
+
+There are a lot of customisation you can do, we won't be able to cover all possible customisations tn this article, but I aim to cover the basics to get you up and running!
+
+##### DevContainers
+
+sd
+
 Explain how to personalize the Codespace environment:
 Describe how to add extensions for enhanced functionality.
 Show how to modify settings to align with individual preferences.

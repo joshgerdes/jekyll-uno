@@ -269,15 +269,99 @@ Now that we have Terraform installed, the Azure Terraform and HashiCorp extensio
 
 ![Github Codespaces - Install Extension](/images/posts/VisualStudioCode_Codespace_AddGitLens.gif)
 
-Explain how to personalize the Codespace environment:
-Describe how to add extensions for enhanced functionality.
-Show how to modify settings to align with individual preferences.
-Working with Files and Code:
+Now we have created our own Github Codespaces using devcontainers, using features and adding in extensions, last thing to add is a few settings to Visual Studio Code, such as Format on Save Mode.
 
-#### Detail common tasks within Codespaces
+1. Click on the **Settings** gear
+2. Click **Settings**
+3. Search for: **Format**
+4. Click on the **gear** next to: **Editor: Format On Save**
+5. Click **Copy** **Setting** **ID**
+6. **Navigate** to your **devcontainer**.json **file**
+7. **Under** vscode **customization**, **add** a new **item** called **Settings** and add:
+  
+		"settings": {
+				"editor.formatOnSave": true 
+			},
 
-Cover opening, editing, creating, and deleting files.
-Provide tips on utilizing shortcuts and editor features.
+8. Intellisense should help you, add it in and any other settings you may want configured. you may want to consider configuring a default formatter or linter for your project.
+
+![Github Codespaces - Set Setting](/images/posts/VisualStudioCode_Codespace_AddVSCodeSetting.gif)
+
+As usual, make sure you **Commit the change to the repository**, before you rebuild to confirm the settings have worked.
+
+###### dockerfile
+
+For those more complex scenarios, where there may not be a feature or shellscript that you can run as part of the launch, you may want to consider your own dockerfile.
+
+In this example, I am going to use the same scenario, but use a non devcontainer image for apache.
+
+You can create a dockerfile in the same repository.
+
+To make this work, you need an adjustment to your devcontainer.json file.
+
+1. **Create** a new **file** called: **dockerfile** - in the same location as the 'devcontainer.json' file
+2. In the dockerfile **add** the following line:
+3. 
+		FROM httpd:latest
+4. **Save**
+5. In the devcontainer.json file **replace** the image section with:
+
+		"build": {
+		// Path is relataive to the devcontainer.json file.
+		"dockerfile": "Dockerfile"
+		},
+
+6. Now start your Codespace
+7. Github will now grab the image directly from dockerhub and overly your devcontainers configuration on top of it.
+
+#### Port Forwarding
+
+Github Codespaces, can do port forwarding, that is either Private (ie visibile only to your GitHub user), or Public (open to the internet). This is useful for local development and testing.
+
+Lets take our Apache, httpd image supplied earlier.
+
+In the same directory we will create an index.html page:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Codespace Port Forwarding Test</title>
+</head>
+<body>
+    <h1>Hello, GitHub Codespaces!</h1>
+    <p>This is a test webpage for port forwarding.</p>
+</body>
+</html>
+```
+
+And adjust the dockerfile like so:
+
+```
+FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs
+EXPOSE 80
+```
+
+This will take our index.html page and feed it to the apache htdocs folder.
+
+Then we go to our devcontainer.json file and add these:
+
+```
+  "forwardPorts": ["80"],
+
+  "postStartCommand": "httpd"
+```
+
+Now save the changes and launch your Codespace.
+
+Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
+
+![Github Codespaces - Port Forwarding](/images/posts/VisualStudioCode_Codespace_PortFowarding
+.gif)
+
 
 #### Integrating Version Control
 

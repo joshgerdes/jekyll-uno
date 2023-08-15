@@ -311,7 +311,7 @@ To make this work, you need an adjustment to your devcontainer.json file.
 		"dockerfile": "Dockerfile"
 		},
 
-6. Now start your Codespace
+6. Now **start** your **Codespace**
 7. Github will now grab the image directly from dockerhub and overly your devcontainers configuration on top of it.
 
 #### Port Forwarding
@@ -320,7 +320,7 @@ Github Codespaces, can do port forwarding, that is either Private (ie visibile o
 
 Lets take our Apache, httpd image supplied earlier.
 
-In the same directory we will create an index.html page:
+In the same directory we will **create an index.html** page:
 
 ```
 <!DOCTYPE html>
@@ -337,7 +337,7 @@ In the same directory we will create an index.html page:
 </html>
 ```
 
-And adjust the dockerfile like so:
+And **adjust the dockerfile** like so:
 
 ```
 FROM httpd:latest
@@ -347,7 +347,7 @@ EXPOSE 80
 
 This will take our index.html page and feed it to the apache htdocs folder.
 
-Then we go to our devcontainer.json file and add these:
+Then we go to our **devcontainer.json** file and add these:
 
 ```
   "forwardPorts": ["80"],
@@ -355,56 +355,26 @@ Then we go to our devcontainer.json file and add these:
   "postStartCommand": "httpd"
 ```
 
-Now save the changes and launch your Codespace.
+Now **save the changes** and **launch** your Codespace.
 
 Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
 
 ![Github Codespaces - Port Forwarding](/images/posts/VisualStudioCode_Codespace_PortFowarding.gif)
 
+#### Working from your own device
 
-#### Integrating Version Control
+This is all great, but sometimes its feels more natural to work from a locally installed Visual Studio Code instance.
 
-Emphasize the integration with Git and version control:
-Guide readers on how to commit, push, and pull changes within Codespaces.
-Explain how to switch branches and handle merge conflicts.
+Using the: [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) Visual Studio Code extension, you can connect to a Codespace (or start one), directly from your own Visual Studio Code installation.
 
-#### Collaboration and Real-time Editing
+1. Install **[GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces)** extension
+2. Press **Ctrl+Shift+P** (or click View, Command Palette)
+2. Type in: **Codespaces**
+3. Click **Connect to a Codespace**
+4. Select your codespace
 
-Illustrate how Codespaces facilitates collaboration:
-Explain the process of inviting collaborators to your Codespace.
-Show how simultaneous real-time editing works.
+![Github Codespaces - Connect to Codespace](/images/posts/VisualStudioCode_Codespace_CodespaceLocally.gif)
 
-#### Building and Running Code
+As you can see you can now connect to one or multiple GitHub Codespaces, from your own locally installed Visual Studio instance!
 
-Walk users through building and executing code within Codespaces:
-Explain how to use the integrated terminal to run commands and scripts.
-Provide guidance on debugging and error handling.
-
-#### Data Persistence and Storage
-
-Discuss how data is persisted in Codespaces:
-Clarify whether data is retained between sessions.
-Explain how to manage data storage and potential limitations.
-
-#### Tips for Efficient Usage
-
-Offer practical tips to optimize the Codespaces experience:
-Suggest keyboard shortcuts for common actions.
-Provide insights on managing multiple Codespaces.
-.Codespaces
-
-#### Ending and Additional Resources
-
-Recap the main points covered in the article.
-Offer links to official documentation, tutorials, and community resources.
-Encourage readers to experiment, explore further, and provide feedback.
-
-#### Troubleshooting and FAQs (Optional)
-
-Include a section addressing common issues or questions readers might encounter.
-Provide solutions or links to resources for resolving problems.
-
-#### Conclusion
-
-Summarize the key takeaways from the article.
-Highlight the convenience and benefits of using GitHub Codespaces for development
+Hopefully this article has given you a taste of what GitHub Codespaces can do.

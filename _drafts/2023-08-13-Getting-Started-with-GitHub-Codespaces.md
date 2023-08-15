@@ -39,7 +39,7 @@ Key features and benefits of GitHub Codespaces include:
 * Security: Codespaces offer a secure environment for development, as it doesn't store any sensitive data and is protected by GitHub's security measures.
 * Project Setup: Codespaces can be configured to automatically set up a project with required dependencies and tools, reducing the time needed to get started.
 
-Github Codespaces, went into [general availability](https://azure.microsoft.com/updates/general-availability-github-codespaces/?WT.mc_id=AZ-MVP-5004796) on August 2021.
+Github Codespaces, went into [general availability](https://azure.microsoft.com/updates/general-availability-github-codespaces/?WT.mc_id=AZ-MVP-5004796) on August 2021 and is built ontop of the [devcontainers](https://containers.dev/) schema.
 
 #### Prerequisites
 
@@ -90,7 +90,7 @@ As its running in a hosted container, you can switch easily between computers an
 
 ![Github Codespaces - Run](/images/posts/Github_Codespaces_OpenRunning.png)
 
-If you leave your Codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. You can [adjust the timeout](https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-timeout-period-for-github-codespaces) of your codespace to a maximum of 240 minutes (4 hours) for new Codespaces, but keep in mind ou will be charged, unless the Codespace is stopped.
+If you leave your Codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. You can [adjust the timeout](https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-timeout-period-for-github-codespaces) of your codespace to a maximum of 240 minutes (4 hours) for new Codespaces, but keep in mind ou will be charged, unless the Codespace is stopped. If the Codespace remains inactive for a period of time, it could be deleted. You should get an email notification before this happens, but I suggust keeping an eye on your Codespace and make sure its only running when you need it.
 
 > Warning: Codespaces compute usage is billed for the duration for which a codespace is active. If you're not using a codespace but it remains running, and hasn't yet timed out, you are billed for the total time that the codespace was active, irrespective of whether you were using it. For more information, see "[About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#codespaces-pricing)."
 
@@ -107,9 +107,153 @@ I am someone who use to install everything locally, to the point when I would be
 
 There are a lot of customisation you can do, we won't be able to cover all possible customisations tn this article, but I aim to cover the basics to get you up and running!
 
-##### DevContainers
+##### Setting Sync
 
-sd
+Before, delving into some of the more customistion of the devcontainer configuration itself, lets not forget the Visual Studio Code settings sync.
+
+If your someone who works on the same products and services and has invested time in configuring Visual Studio profiles, theres nothing indicating that you can't use this in a Github Codespace, especially if its a trusted repository.
+
+You will already be logged into Visual Studio Code, with your Github account, you can turn on Setting Sync, to have your Visual Studio code settings and profiles sync straight into your devcontainer.
+
+![Github Codespaces - Setting Sync](/images/posts/VisualStudioCode_Codespace_TurnonSettingSync.gif)
+
+One of the downsides of this method, is the container can get bloated with extensions and configuration you don't need, and you will have turn on Setting Sync, each time a Codespace is launched.
+
+[Setting Sync](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#turning-on-settings-sync-in-a-codespace) is an easy way to import your configuration from your Desktop into the Cloudspace.
+
+##### Codespace templates
+
+Instead of spending the time, developing your own template, you may find a devcontainer template already exists for your use case, some examples consist of:
+
+* Ruby on Rails
+* React
+* Juypter Notebooks and more.
+
+These [Codespace Templates](https://github.com/codespaces/templates), can easily be launched from the web browser and are a great resource to test the power of Codespace, and refer to when customisting your own devcontainer.
+
+ See [devcontainers/template-starter](https://github.com/devcontainers/template-starter) and [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter) for information on creating your own!
+
+##### Devcontainers
+
+Within each customised Codespace, is a "[devcontainer.json](https://containers.dev/implementors/json_reference/)" json file, and some containers will have a [dockerfile](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile).
+
+These files will sit inside a /.devcontainer/ folder at the root of your git repository. Its worth noting that you can have multiple devcontainer files within a single repository, you will be prompted which one to be used when you start the Codespace up.
+
+These files are key to customising your own devcontainer.
+
+Although they serve different purpose they can work standalone or together to create a consistent and reproducible development environment for your project.
+
+|File | Purpose  |
+|---|---|
+|devcontainer.json|  The devcontainer.json file is used to configure how your development environment is set up within the Docker container when using the Remote - Containers extension. |
+|dockerfile| The dockerfile to define the environment you need for your project. When you create a Codespace, GitHub will use the specified Dockerfile to build a container image that includes all the tools, libraries, and configurations required to work on your project.   |
+
+When you open your project in a GitHub Codespace that uses a devcontainer.json file, Visual Studio Code will automatically detect the configuration and set up your development environment according to the specified settings.
+
+You can use a dockerfile to define the environment you need for your project. When you create a Codespace, GitHub will use the specified Dockerfile to build a container image that includes all the tools, libraries, and configurations required to work on your project.
+
+Even without using a dockerfile, you can install any dependant libraries onto your codespace, but they be lost when the container gets rebuilt, there are certain approved features you can add to your devcontainer file, that will be installed when a container is launched, which is great when making sure you are working on with the latest component.
+
+The idea with both these files, is to _keep them lean_ and make sure that you are running the components you only need, to keep launch time and performance as quick as possible, it is possible to '[prebuild](https://docs.github.com/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)' your image if it is largely complex, but we don't be covering that here.
+
+###### devcontainer.json
+
+Lets take a look at the 'devcontainer.json' file. As Codespaces uses the [devcontainer](https://containers.dev/implementors/spec/) schema, all the customisations offered such as:
+
+* entrypoint
+* onCreateCommand
+* customizations
+* features
+  
+Can be used, offering a vast range of customisation opportunities to suit your needs.
+
+For most purposes, you may be able to find you can get away with a devcontainer.json file without having to delve into building your own dockerfile.
+
+Lets look into the devcontainer.json file, I am using for this blog article:
+
+```
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/markdown
+{
+	"name": "Markdown Editing",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"yzhang.markdown-all-in-one",
+				"streetsidesoftware.code-spell-checker",
+				"DavidAnson.vscode-markdownlint",
+				"shd101wyy.markdown-preview-enhanced",
+				"bierner.github-markdown-preview"
+			]
+		}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
+
+```
+
+This was from an already existing template, that had everything I needed from: [devcontainers/templates](https://github.com/devcontainers/templates/tree/main/src).
+
+A few things stand out:
+
+* image
+* customizations
+* features
+
+1. The image is the docker image, that this Codespace is running.
+1. Customizations is my application specific customisations, in my example vscode, and the extensions that are automatically provisioned for me when I started this codespace.
+1. Features, which is currently blank, but will allow us to run scripts to install any relevant dependences when the container is started.
+
+This json file is a great reference point, as we go into creating our own. You can create your own devcontainer.json file - or we can do it within the devcontainer itself using the Codespaces extension, preinstalled into your new Codespace.
+
+In our newly created Codespace from the Setting up Codespace step earlier, its time to create our own devcontainer. The project we will be working on will be Terraform development, so we want to customise our own codespace for Infrastructure as Code development.
+
+1. Press **Ctrl+Shift+P** (or click View, Command Palette)
+2. Type in: **Codespaces** _(with the codespaces commands you can rebuild your container, resize and modify your codespace)_
+3. Select **Add Dev Container Configuration Files**
+4. Select **Create a new Configuration**
+5. Type in **Ubuntu**
+6. Select the latest version (or default)
+7. In the **[features](https://github.com/devcontainers/features)** list we have the option to install third party tools and dependencies that will be installed when we launch our Codespace, search for **Terraform**
+8. Select **Terraform, tflint, and TFGrunt**
+9. Click **Ok**
+10. Select **Configure Options**
+11. Check the **installTFsec** and **instalLTerraformDocs**
+12. Click **Ok**
+13. Select the **latest** Terraform version
+14. Select the latest **Tflint** version
+
+This will now create a devcontainer json file, using a base Ubuntu image, with the latest version of Terraform, tflint and Terragrunt installed!
+
+![Github Codespaces - Create](/images/posts/VisualStudioCode_Codespace_CreateTerraform.gif)
+
+**Make sure you save and commit the devcontainer.json file to the repository! You have now created your first custom codespace**.
+
+You can now rebuild your container, to run inside your Terraform container:
+
+1. Press **Ctrl+Shift+P** (or click View, Command Palette)
+2. Type in: **Codespaces**
+3. Select **Full Rebuild Container**
+4. Accept the prompt. that it will be rebuild with the devcontainer configuration.
+5. GitHub Codespaces will then grab the Ubuntu image, and the Terraform feature and run.
+
 
 Explain how to personalize the Codespace environment:
 Describe how to add extensions for enhanced functionality.

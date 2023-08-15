@@ -254,6 +254,20 @@ You can now rebuild your container, to run inside your Terraform container:
 4. Accept the prompt. that it will be rebuild with the devcontainer configuration.
 5. GitHub Codespaces will then grab the Ubuntu image, and the Terraform feature and run.
 
+> Note: If the build fails, at the time of writing, there looked to be an issue with the latest version of [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/supported-terraform-versions/), I pined it to this specific version: 0.48.0, and it fixed it. So edit the JSON file and update latest to the version. Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
+
+1. Once loaded, I can immediately run 'terraform init'
+
+![Github Codespaces - Terraform init](/images/posts/VisualStudioCode_Codespace_Terraforminit.gif)
+
+Now that we have Terraform installed, the Azure Terraform and HashiCorp extension - we may want the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension, to help with working with other developers, so lets add this!
+
+1. Navigate to the **Extensions**
+2. Search for **GitLens**
+3. **Right** click the **extension** button and select '**Add to devcontainer.json**'
+4. Then commit your save, you have now added the GitLens extension into your devcontainer, this will automatically be installed on your next rebuild.
+
+![Github Codespaces - Install Extension](/images/posts/VisualStudioCode_Codespace_AddGitLens.gif)
 
 Explain how to personalize the Codespace environment:
 Describe how to add extensions for enhanced functionality.

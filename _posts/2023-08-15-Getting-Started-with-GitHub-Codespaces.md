@@ -303,6 +303,7 @@ To make this work, you need an adjustment to your devcontainer.json file.
 2. In the dockerfile **add** the following line:
 3.
         FROM httpd:latest
+
 4. **Save**
 5. In the devcontainer.json file **replace** the image section with:
 

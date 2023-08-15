@@ -359,8 +359,7 @@ Now save the changes and launch your Codespace.
 
 Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
 
-![Github Codespaces - Port Forwarding](/images/posts/VisualStudioCode_Codespace_PortFowarding
-.gif)
+![Github Codespaces - Port Forwarding](/images/posts/VisualStudioCode_Codespace_PortFowarding.gif)
 
 
 #### Integrating Version Control

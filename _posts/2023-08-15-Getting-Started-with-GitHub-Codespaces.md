@@ -9,7 +9,7 @@ header:
 date: '2023-08-15 00:00:00 +1300'
 ---
 
-[Github Codespaces](https://github.com/features/codespaces) gives you the full capability of your favourite IDE (Integrated Development Environment) like Visual Studio Code, Jupyter, or JetBrains and an extension, to your web browser. With it, you can develop your applications without needing any dependant service or tool installed or configured locally, giving developers a standard way of working on applications and scripts.
+[Github Codespaces](https://github.com/features/codespaces){:target="_blank"} gives you the full capability of your favourite IDE (Integrated Development Environment) like Visual Studio Code, Jupyter, or JetBrains and an extension, to your web browser. With it, you can develop your applications without needing any dependant service or tool installed or configured locally, giving developers a standard way of working on applications and scripts.
 
 ![Github Codespaces - Getting Started](/images/posts/Header_Getting_Started_with_GitHub_Codespace.gif)
 
@@ -18,7 +18,7 @@ Github Codespaces does this by leveraging the power of the Cloud and GitHub to r
 > A codespace is a development environment that's hosted in the cloud. You can customize your project for GitHub Codespaces by configuring dev container files to your repository (often known as Configuration-as-Code), creating a repeatable codespace configuration for all project users.
 > GitHub Codespaces run on various VM-based compute options hosted by GitHub.com, which you can configure from 2-core machines up to 32-core machines. You can connect to your codespaces from the browser or locally using an IDE like Visual Studio Code or IntelliJ.
 
-Let's delve into [Github Codespaces](https://github.com/features/codespaces) a bit more!
+Let's delve into [Github Codespaces](https://github.com/features/codespaces){:target="_blank"} a bit more!
 
 #### Introduction
 
@@ -39,11 +39,11 @@ Key features and benefits of GitHub Codespaces include:
 * Security: Codespaces offer a secure environment for development, as it doesn't store sensitive data and is protected by GitHub's security measures.
 * Project Setup: Codespaces can be configured to automatically set up a project with required dependencies and tools, reducing the time needed to get started.
 
-Github Codespaces went into [general availability](https://azure.microsoft.com/updates/general-availability-github-codespaces/?WT.mc_id=AZ-MVP-5004796) on August 2021 and is built on top of the [devcontainers](https://containers.dev/) schema.
+Github Codespaces went into [general availability](https://azure.microsoft.com/updates/general-availability-github-codespaces/?WT.mc_id=AZ-MVP-5004796){:target="_blank"} on August 2021 and is built on top of the [devcontainers](https://containers.dev/){:target="_blank"} schema.
 
 #### Prerequisites
 
-You need a [Github](https://github.com/) account to use GitHub Codespaces.
+You need a [Github](https://github.com/){:target="_blank"} account to use GitHub Codespaces.
 
 GitHub Codespaces are available for developers in every organization. However, organizations can choose whether codespaces created from their repositories will be user-owned or organization-owned.. All personal GitHub.com accounts include a monthly quota of free usage each month.
 
@@ -51,14 +51,14 @@ GitHub will provide **users in the Free plan 120 core hours, or 60 hours of run 
 
 For further pricing information, make sure you review:
 
-* [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces)
-* [Pricing calculator](https://github.com/pricing/calculator)
+* [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces){:target="_blank"}
+* [Pricing calculator](https://github.com/pricing/calculator){:target="_blank"}
 
 > Pricing, features and offerings could change at any time. For the most up-to-date information, make sure you review the documentation on github.com.
 
 To use GitHub Codespaces, you need an active repository; by default, Github Codespaces is configured for the repository you set.
 
-You will also need a [supported browser](https://docs.github.com/en/get-started/using-github/supported-browsers) (the latest versions of Chrome, Edge, Firefox, or Safari are recommended) to view your IDE; in this article, we will be using Visual Studio Code.
+You will also need a [supported browser](https://docs.github.com/en/get-started/using-github/supported-browsers){:target="_blank"} (the latest versions of Chrome, Edge, Firefox, or Safari are recommended) to view your IDE; in this article, we will be using Visual Studio Code.
 
 #### Setting Up GitHub Codespaces
 
@@ -78,7 +78,7 @@ Your Codespace is now started and running in a default GitHub-supplied developme
 
 #### Exploring the Interface
 
-Once you have your Codespace running, you have access to most native [Visual Studio Code](https://code.visualstudio.com/) capability's and all the files in your repository.
+Once you have your Codespace running, you have access to most native [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} capability's and all the files in your repository.
 
 ![Github Codespaces - Overview](/images/posts/Codespaces_VSCode_Overview.png)
 
@@ -90,9 +90,9 @@ As its runs in a hosted container, you can switch easily between computers and b
 
 ![Github Codespaces - Run](/images/posts/Github_Codespaces_OpenRunning.png)
 
-If you leave your Codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. You can [adjust the timeout](https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-timeout-period-for-github-codespaces) of your codespace to a maximum of 240 minutes (4 hours) for new Codespaces, but keep in mind you will be charged unless the Codespace is stopped. If the Codespace remains inactive for some time, it could be deleted. You should get an email notification before this happens, but I suggest keeping an eye on your Codespace and ensuring it's only running when needed.
+If you leave your Codespace running without interaction, or if you exit your codespace without explicitly stopping it, the codespace will timeout after a period of inactivity and stop running. You can [adjust the timeout](https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-timeout-period-for-github-codespaces){:target="_blank"} of your codespace to a maximum of 240 minutes (4 hours) for new Codespaces, but keep in mind you will be charged unless the Codespace is stopped. If the Codespace remains inactive for some time, it could be deleted. You should get an email notification before this happens, but I suggest keeping an eye on your Codespace and ensuring it's only running when needed.
 
-> Warning: Codespaces compute usage is billed for the duration a codespace is active. If you're not using a codespace that remains running and hasn't yet timed out, you are billed for the total time that the codespace was active, irrespective of whether you were using it. For more information, see "[About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#codespaces-pricing)."
+> Warning: Codespaces compute usage is billed for the duration a codespace is active. If you're not using a codespace that remains running and hasn't yet timed out, you are billed for the total time that the codespace was active, irrespective of whether you were using it. For more information, see "[About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#codespaces-pricing){:target="_blank"}."
 
 As with any Visual Studio Code instance, you can also log in to your GitHub account to pull your settings and extensions, but to keep things clean and distraction-free, you can customize your Codespace instead for only what you or others working in the same repository need.
 
@@ -119,7 +119,7 @@ You will already be logged into Visual Studio Code with your GitHub account; you
 
 One of the downsides of this method is the container can get bloated with extensions and configurations you don't need, and you will have to turn on Setting Sync each time a Codespace is launched.
 
-[Setting Sync](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#turning-on-settings-sync-in-a-codespace) is an easy way to import your configuration from your Desktop into the Cloudspace.
+[Setting Sync](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#turning-on-settings-sync-in-a-codespace){:target="_blank"} is an easy way to import your configuration from your Desktop into the Cloudspace.
 
 ##### Codespace templates
 
@@ -131,11 +131,11 @@ Instead of spending time, developing your template, you may find a devcontainer 
 
 These [Codespace Templates](https://github.com/codespaces/templates) can easily be launched from the web browser and are a great resource to test the power of Codespace and refer to when customising your own devcontainer.
 
- See [devcontainers/template-starter](https://github.com/devcontainers/template-starter) and [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter) for information on creating your own!
+ See [devcontainers/template-starter](https://github.com/devcontainers/template-starter){:target="_blank"} and [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter){:target="_blank"} for information on creating your own!
 
 ##### Devcontainers
 
-Within each customised Codespace is a "[devcontainer.json](https://containers.dev/implementors/json_reference/)" json file, and some containers will have a [dockerfile](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile).
+Within each customised Codespace is a "[devcontainer.json](https://containers.dev/implementors/json_reference/){:target="_blank"}" json file, and some containers will have a [dockerfile](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile){:target="_blank"}.
 
 These files will sit inside a /.devcontainer/ folder at the root of your git repository. It is worth noting that you can have multiple devcontainer files within a single repository; you will be prompted which one to be used when you start the Codespace up.
 
@@ -154,11 +154,11 @@ You can use a dockerfile to define the environment you need for your project. Wh
 
 Even without using a dockerfile, you can install any dependant libraries onto your codespace, but they are lost when the container gets rebuilt; there are certain approved features you can add to your devcontainer file that will be installed when a container is launched, which is great when making sure you are working on with the latest component.
 
-The idea with both these files is to _keep them lean_ and make sure that you are running the components you only need. To keep launch time and performance as quick as possible, it is possible to '[prebuild](https://docs.github.com/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds)' your image if it is largely complex, but we won't be covering that here.
+The idea with both these files is to _keep them lean_ and make sure that you are running the components you only need. To keep launch time and performance as quick as possible, it is possible to '[prebuild](https://docs.github.com/en/codespaces/prebuilding-your-codespaces/about-github-codespaces-prebuilds){:target="_blank"}' your image if it is largely complex, but we won't be covering that here.
 
 ###### devcontainer.json
 
-Let us take a look at the 'devcontainer.json' file. As Codespaces uses the [devcontainer](https://containers.dev/implementors/spec/) schema, all the customisations offered such as:
+Let us take a look at the 'devcontainer.json' file. As Codespaces uses the [devcontainer](https://containers.dev/implementors/spec/){:target="_blank"} schema, all the customisations offered such as:
 
 * entrypoint
 * onCreateCommand
@@ -175,41 +175,41 @@ Let us look into the devcontainer.json file I am using for this blog article:
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/markdown
 {
-	"name": "Markdown Editing",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "name": "Markdown Editing",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
 
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {			
-			// Add the IDs of extensions you want to be installed when the container is created.
-			"extensions": [
-				"yzhang.markdown-all-in-one",
-				"streetsidesoftware.code-spell-checker",
-				"DavidAnson.vscode-markdownlint",
-				"shd101wyy.markdown-preview-enhanced",
-				"bierner.github-markdown-preview"
-			]
-		}
-	}
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {            
+            // Add the IDs of extensions you want to be installed when the container is created.
+            "extensions": [
+                "yzhang.markdown-all-in-one",
+                "streetsidesoftware.code-spell-checker",
+                "DavidAnson.vscode-markdownlint",
+                "shd101wyy.markdown-preview-enhanced",
+                "bierner.github-markdown-preview"
+            ]
+        }
+    }
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "uname -a",
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
 }
 
 ```
 
-This was from an already existing template, that had everything I needed from: [devcontainers/templates](https://github.com/devcontainers/templates/tree/main/src).
+This was from an already existing template, that had everything I needed from: [devcontainers/templates](https://github.com/devcontainers/templates/tree/main/src){:target="_blank"}.
 
 A few things stand out:
 
@@ -254,13 +254,13 @@ You can now rebuild your container, to run inside your Terraform container:
 4. Accept the prompt. that it will be rebuild with the devcontainer configuration.
 5. GitHub Codespaces will then grab the Ubuntu image, and the Terraform feature and run.
 
-> Note: If the build fails, at the time of writing, there looked to be an issue with the latest version of [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/supported-terraform-versions/), I pined it to this specific version: 0.48.0, and it fixed it. So edit the JSON file and update latest to the version. Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
+> Note: If the build fails, at the time of writing, there looked to be an issue with the latest version of [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/supported-terraform-versions/){:target="_blank"}, I pined it to this specific version: 0.48.0, and it fixed it. So edit the JSON file and update latest to the version. Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main){:target="_blank"}.
 
 1. Once loaded, I can immediately run 'terraform init'
 
 ![Github Codespaces - Terraform init](/images/posts/VisualStudioCode_Codespace_Terraforminit.gif)
 
-Now that we have Terraform installed, the Azure Terraform and HashiCorp extension - we may want the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension, to help with working with other developers, so let us add this!
+Now that we have Terraform installed, the Azure Terraform and HashiCorp extension - we may want the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens){:target="_blank"} extension, to help with working with other developers, so let us add this!
 
 1. Navigate to the **Extensions**
 2. Search for **GitLens**
@@ -279,9 +279,9 @@ Now we have created our own Github Codespaces using devcontainers, using feature
 6. **Navigate** to your **devcontainer**.json **file**
 7. **Under** vscode **customization**, **add** a new **item** called **Settings** and add:
   
-		"settings": {
-				"editor.formatOnSave": true 
-			},
+        "settings": {
+                "editor.formatOnSave": true 
+            },
 
 8. Intellisense should help you, add it in and any other settings you may want configured. you may want to consider configuring a default formatter or linter for your project.
 
@@ -301,15 +301,15 @@ To make this work, you need an adjustment to your devcontainer.json file.
 
 1. **Create** a new **file** called: **dockerfile** - in the same location as the 'devcontainer.json' file
 2. In the dockerfile **add** the following line:
-3. 
-		FROM httpd:latest
+3.
+        FROM httpd:latest
 4. **Save**
 5. In the devcontainer.json file **replace** the image section with:
 
-		"build": {
-		// Path is relataive to the devcontainer.json file.
-		"dockerfile": "Dockerfile"
-		},
+        "build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+        },
 
 6. Now **start** your **Codespace**
 7. Github will now grab the image directly from dockerhub and overly your devcontainers configuration on top of it.
@@ -357,7 +357,7 @@ Then we go to our **devcontainer.json** file and add these:
 
 Now **save the changes** and **launch** your Codespace.
 
-Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main).
+Feel free to review my example codespace here: [lukemurraynz/codespaces](https://github.com/lukemurraynz/codespaces/tree/main){:target="_blank"}.
 
 ![Github Codespaces - Port Forwarding](/images/posts/VisualStudioCode_Codespace_PortFowarding.gif)
 
@@ -365,16 +365,26 @@ Feel free to review my example codespace here: [lukemurraynz/codespaces](https:/
 
 This is all great, but sometimes it feels more natural to work from a locally installed Visual Studio Code instance.
 
-Using the: [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) Visual Studio Code extension, you can connect to a Codespace (or start one), directly from your own Visual Studio Code installation.
+Using the: [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces){:target="_blank"} Visual Studio Code extension, you can connect to a Codespace (or start one), directly from your own Visual Studio Code installation.
 
 1. Install **[GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces)** extension
 2. Press **Ctrl+Shift+P** (or click View, Command Palette)
-2. Type in **Codespaces**
-3. Click **Connect to a Codespace**
-4. Select your codespace
+3. Type in **Codespaces**
+4. Click **Connect to a Codespace**
+5. Select your codespace
 
 ![Github Codespaces - Connect to Codespace](/images/posts/VisualStudioCode_Codespace_CodespaceLocally.gif)
 
 As you can see you can now connect to one or multiple GitHub Codespaces, from your own locally installed Visual Studio instance!
+
+#### Additional Settings
+
+Additional settings, that can be configured are:
+
+* Setup [Prebuild](https://docs.github.com/en/codespaces/prebuilding-your-codespaces/configuring-prebuilds)
+* Codespace [Secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces){:target="_blank"} (Repo & Org Level)
+* [Dotfiles](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#dotfiles){:target="_blank"} (Org Level)
+Organisation
+* [Configuring automatic deletion of your codespaces](https://docs.github.com/en/codespaces/customizing-your-codespace/configuring-automatic-deletion-of-your-codespaces){:target="_blank"}
 
 Hopefully this article has given you a taste of what GitHub Codespaces can do.

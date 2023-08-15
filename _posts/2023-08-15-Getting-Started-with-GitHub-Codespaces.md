@@ -1,5 +1,5 @@
 ---
-title: Coding on the Cloud: Getting Started with GitHub Codespaces
+title: Coding on the Cloud - Getting Started with GitHub Codespaces
 author: Luke
 categories:
   - Azure

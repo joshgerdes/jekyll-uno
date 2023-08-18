@@ -29,10 +29,10 @@ The What-If step, will let you know what it will deploy and what changes will be
 
 To enable the new Experimental Feature, make sure you are running the latest version of both Bicep, and the Bicep Visual Studio Code extension.
 
-1. Click on Settings
-2. Expand Extensions
-3. Navigate to: Bicep
-4. Check the box labelled: Experimental: Deploy Pane
+1. Click on **Settings**
+2. Expand **Extensions**
+3. Navigate to: **Bicep**
+4. Check the box labelled: **Experimental: Deploy Pane**
 
 ![Azure Bicep - Deploy Pane](/images/posts/Bicep-DeploymentPreviewPane.gif)
 

@@ -1,11 +1,11 @@
 ---
-title: Deployment Stacks
+title: Automate your Azure Bicep deployment with ease using Deployment Stacks
 author: Luke
 categories:
   - Azure
 toc: true
 header:
-  teaser: /images/posts/Header-AzureBicepDeployPane.gif
+  teaser: /images/posts/Blog-Header-AzureDeploymentStacks.gif
 date: '2023-08-25 00:00:00 +1300'
 ---
 
@@ -16,6 +16,9 @@ Maybe you have been browsing the Microsoft Azure Portal and noticed a new sectio
 Let us take a look!
 
 > Before we get started its worth noting that as of the time of this article, this feature is under Public Preview. Features or ways of working with Deployment Stacks may change, when it becomes generally available. If you run into issues, make sure you have a look at the current [known issues](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796#known-issues).
+
+
+![Automate your Azure Bicep deployment with ease using Deployment Stacks](/images/posts/Blog-Header-AzureDeploymentStacks.gif)
 
 ##### Overview
 
@@ -66,6 +69,6 @@ Deployment stacks requires [Azure PowerShell](https://learn.microsoft.com/powers
 
 For the purposes of this article, I will be using PowerShell.
 
-
 ###### PowerShell
-sd
+
+Once you have the latest Azure PowerShell modules, its time to take a look at the cmdlets, that are offered to us for Deployment Stacks.

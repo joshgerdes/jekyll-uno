@@ -20,7 +20,7 @@ Let us take a look!
 
 ![Automate your Azure Bicep deployment with ease using Deployment Stacks](/images/posts/Blog-Header-AzureDeploymentStacks.gif)
 
-##### Overview
+#### Overview
 
 [Azure Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796) are a type of Azure resource that allows you to manage a group of Azure resources as an atomic unit.
 
@@ -32,7 +32,7 @@ Deployment stacks offer additional capabilities beyond regular deployment resour
 
 > When planning your deployment and determining which resource groups should be part of the same stack, it's important to consider the management lifecycle of those resources, which includes creation, updating, and deletion. For instance, suppose you need to provision some test VMs for various application teams across different resource group scopes.
 
-###### Comparisons
+##### Comparisons
 
 Before we dig into it further, it may help to give you a comparison between the different products and where Deployment Stacks, could be used, lets us take a look at a comparison, between similar products, that may come to mind, such as:
 
@@ -63,7 +63,7 @@ Deployment stacks provide the following benefits:
 
 > The key here is that Azure Deployment Stacks, is a native way to treat your infrastructure components as an atmonic unit or stack, so you manage the lifecycle of the resources as a whole vs every resource separately.
 
-##### Using Deployment Stacks
+#### Using Deployment Stacks
 
 Deployment stacks requires [Azure PowerShell](https://learn.microsoft.com/powershell/azure/install-azure-powershell?WT.mc_id=AZ-MVP-5004796) _(version 10.1.0 or later)_ or [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796) _(version 2.50.0 or later)_.
 
@@ -83,11 +83,26 @@ As you can see, there are a range of cmdlets we have to work with.
 For the purpose of this article, I will be using a Bicep file, I already have on hand (unmodified for Deployment Stacks). This bicep file will create:
 
 * 2 Virtual Networks
-* 4 Subnets (2 subnets in each VNET)
-* 4 NSGs (and assign to each subnet, with Deny All rules)F
-* Will peer the networks
+* 4 Subnets _(2 subnets in each Virtual Network)_
+* 4 NSGs _(and assign to each subnet, with Deny All rules)_
+* Then finally, peer the virtual networks.
 
 This is the Bicep file:
 
 {% gist ec4ae1aa83b923a8a16bdc1b5494d618 %}
+
+I have already deployed a new Resource Group to deploy our virtual network into:
+
+```
+New-AzResourceGroup -Name 'rg-network' -Location 'Australia East'
+```
+
+So let us create our first Deployment Stack!
+
+###### New-AzSubscriptionDeploymentStack
+
+The 'New-AzSubscriptionDeploymentStack' cmdlet is the first one we will look into.
+
+
+
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Bicep - Deployment Stacks
+title: Deployment Stacks
 author: Luke
 categories:
   - Azure
@@ -9,13 +9,13 @@ header:
 date: '2023-08-25 00:00:00 +1300'
 ---
 
-[Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796)! What is it?
+[Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796)! What is it? *insert confused look*
 
 Maybe you have been browsing the Microsoft Azure Portal and noticed a new section in the management blade called: Deployment stacks and wondered what it was, and how you can use it.
 
 Let us take a look!
 
-> Before we get started its worth noting that as of the time of this article, this feature is under Public Preview. Features or ways of working with Deployment Stacks may change, when it becomes generally available.
+> Before we get started its worth noting that as of the time of this article, this feature is under Public Preview. Features or ways of working with Deployment Stacks may change, when it becomes generally available. If you run into issues, make sure you have a look at the current [known issues](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796#known-issues).
 
 ##### Overview
 
@@ -47,16 +47,25 @@ Before we dig into it further, it may help to give you a comparison between the 
 | Benefits                | *  Simplified provisioning and management of resources as a cohesive entity. *  Preventing undesired modifications to managed resources. *  Efficient environment cleanup. *  Utilizing standard templates such as Bicep, ARM templates, or Template specs for your deployment stacks. | *  Rapidly build and start up new environments with organizational compliance. *  Built-in components for speeding up development and delivery. | *  Easier management and deployment of Azure resources. *  Improved readability and understanding of resource configurations. | *  Publish libraries of reusable infrastructure code. | *  Infrastructure-as-Code approach for provisioning resources across multiple cloud providers. |  
 | Deprecation              | N/A | Azure Blueprints (Preview) will be deprecated. | N/A | N/A | N/A |  
    
-_It is always recommended to refer to the official documentation for the most up-to-date and comprehensive information._
+_It is always recommended to refer to the [official documentation](https://learn.microsoft.com/?WT.mc_id=AZ-MVP-5004796) for the most up-to-date and comprehensive information. The comparison table above, was created with the help of AI._
 
 It is hard to do a complete comparison, as always 'it depends' on your use cases and requirements, but hopefully this makes it clear where Deployment Stacks come into play, with out-of-the-box benefits such as:
 
-* **Simplified Management**: Azure Deployment Stacks allow you to manage a group of Azure resources as an **atomic unit**. This simplifies the provisioning and management of resources, making it easier to deploy and maintain complex infrastructure configurations.
-* Standardization and Compliance: With Azure Deployment Stacks, you can define and deploy a repeatable set of Azure resources that adhere to organizational standards. This ensures consistency across deployments and helps maintain compliance with regulatory requirements.
-* Granular Access Control: Access to the deployment stack can be restricted using Azure role-based access control (Azure RBAC). This allows you to control who can manage and modify the stack, ensuring secure and controlled access to your infrastructure.
-* Efficient Resource Cleanup: Azure Deployment Stacks provide an efficient way to clean up resources. By deleting the stack, you can easily remove all the associated resources in a single operation, preventing undesired modifications and ensuring a clean environment.
-* Integration with Azure Services: Azure Deployment Stacks seamlessly integrate with other Azure services, such as Azure CLI, Azure PowerShell, and Azure portal. This allows you to manage and modify resources both within the stack and outside of the stack using familiar tools and interfaces.
+Deployment stacks provide the following benefits:
 
-_Note: The Benefits paragraph above, was created with the use of AI (Azure OpenAI and GPT 3.5)._
+* Simplified provisioning and management of resources across different scopes as a cohesive entity.
+* Preventing undesired modifications to managed resources through deny settings.
+* Efficient environment cleanup by employing delete flags during deployment stack updates.
+* Utilizing standard templates such as Bicep, ARM templates, or Template specs for your deployment stacks.
 
-The key here is that Azure Deployment Stacks, treats your infrastructure components as an atmonic unit or stack, so you manage the lifecycle of the resources as a whole vs every resource separately.
+> The key here is that Azure Deployment Stacks, is a native way to treat your infrastructure components as an atmonic unit or stack, so you manage the lifecycle of the resources as a whole vs every resource separately.
+
+##### Using Deployment Stacks
+
+Deployment stacks requires [Azure PowerShell](https://learn.microsoft.com/powershell/azure/install-azure-powershell?WT.mc_id=AZ-MVP-5004796) _(version 10.1.0 or later)_ or [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796) _(version 2.50.0 or later)_.
+
+For the purposes of this article, I will be using PowerShell.
+
+
+###### PowerShell
+sd

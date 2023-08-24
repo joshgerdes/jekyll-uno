@@ -103,6 +103,30 @@ So let us create our first Deployment Stack!
 
 The 'New-AzSubscriptionDeploymentStack' cmdlet is the first one we will look into.
 
+Let us look at the most common syntax that you may use:
+```
+  New-AzSubscriptionDeploymentStack -Name "<deployment-stack-name>" -Location "<location>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
+```
+   
+| Parameter                  | Description                                                                                                                                                                                                                   |  
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+| `-Name`                    | Specifies the name of the deployment stack.                                                                                                                                                                                   |  
+| `-Location`                | Specifies the Azure region where the deployment stack will be created.                                                                                                                                                        |  
+| `-TemplateFile`            | Specifies the Bicep file that defines the resources to be managed by the deployment stack.                                                                                                                                    |  
+| `-DeploymentResourceGroupName` | Specifies the name of the resource group where the managed resources will be stored.                                                                                                                                         |  
+| `-DenySettingsMode`        | Specifies the operations that are prohibited on the managed resources to safeguard against unauthorized deletion or updates. Possible values include "none", "DenyDelete", "DenyUpdate", and "DenyAll".                           |  
+| `-DeleteResources`         | Deletes the managed resources associated with the deployment stack.                                                                                                                                                            |  
+| `-DeleteAll`               | Deletes all deployment stacks and their associated resources.                                                                                                                                                                  |  
+| `-DeleteResourceGroups`    | Deletes the resource groups associated with the deployment stacks.                                                                                                                                                            |  
+   
+These parameters allow you to customize the creation and management of deployment stacks.
 
+The DenySettingsMode parameter is used in Azure Deployment Stacks to assign specific permissions to managed resources, preventing their deletion by unauthorized security principals, this is a key differentiator to some of the other solutions mentioned earlier, but it does mean you need to think about how your resources will be managed, let us take a look at the DenySettingsMode a bit deeper.
 
+The DenySettingsMode parameter accepts different values to define the level of deny settings. Some of the possible values include:
+* "none": No deny settings are applied, allowing all operations on the managed resources.
+* "DenyDelete": Denies the delete operation on the managed resources, preventing their deletion.
+* "DenyUpdate": Denies the update operation on the managed resources, preventing their modification.
+* "DenyAll": Denies all operations on the managed resources, preventing any modifications or deletions.
 
+By specifying the appropriate DenySettingsMode value, you can control the level of permissions and restrictions on the managed resources within the deployment stack.

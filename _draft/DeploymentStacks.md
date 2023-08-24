@@ -72,3 +72,22 @@ For the purposes of this article, I will be using PowerShell.
 ###### PowerShell
 
 Once you have the latest Azure PowerShell modules, its time to take a look at the cmdlets, that are offered to us for Deployment Stacks.
+
+Open your PowerShell terminal and type in: 
+```
+Get-Command -Name *DeploymentStack*
+```
+![Get-Command -Name *DeploymentStack*](/images/posts/DeploymentStacks-PowerShellCmdlets.gif)
+As you can see, there are a range of cmdlets we have to work with.
+
+For the purpose of this article, I will be using a Bicep file, I already have on hand (unmodified for Deployment Stacks). This bicep file will create:
+
+* 2 Virtual Networks
+* 4 Subnets (2 subnets in each VNET)
+* 4 NSGs (and assign to each subnet, with Deny All rules)F
+* Will peer the networks
+
+This is the Bicep file:
+
+{% gist ec4ae1aa83b923a8a16bdc1b5494d618 %}
+

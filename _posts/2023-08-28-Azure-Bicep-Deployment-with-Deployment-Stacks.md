@@ -103,7 +103,7 @@ The 'New-AzResourceGroupDeploymentStack' cmdlet is the first one we will look in
 
 Let us look at the most common syntax that you may use:
 
-```PowerShell
+```
   New-AzResourceGroupDeploymentStack -Name "<deployment-stack-name>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
 ```
 

@@ -9,11 +9,11 @@ header:
 date: '2023-08-28 00:00:00 +1300'
 ---
 
-[Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc*id=AZ-MVP-5004796){:target="*blank"}! What is it? *insert confused look*
+[Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc*id=AZ-MVP-5004796){:target="*blank"}! What is it? :confused:
 
 Maybe you have been browsing the Microsoft Azure Portal and noticed a new section in the management blade called: Deployment stacks and wondered what it was, and how you can use it.
 
-Let us take a look!
+Let us take a look! :eyeglasses:
 
 > Before we get started its worth noting that as of the time of this article, this feature is under Public Preview. Features or ways of working with Deployment Stacks may change, when it becomes generally available. If you run into issues, make sure you have a look at the current [known issues](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc*id=AZ-MVP-5004796#known-issues){:target="*blank"}.
 

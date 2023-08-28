@@ -117,6 +117,7 @@ Let us look at the most common syntax that you may use:
 | `-DeleteResources`         | Deletes the managed resources associated with the deployment stack.                                                                                                                                                            |  
 | `-DeleteAll`               | Deletes all deployment stacks and their associated resources.                                                                                                                                                                  |  
 | `-DeleteResourceGroups`    | Deletes the resource groups associated with the deployment stacks.                                                                                                                                                            |  
+
 These parameters allow you to customize the creation and management of deployment stacks.
 
 The DenySettingsMode parameter is used in Azure Deployment Stacks to assign specific permissions to managed resources, preventing their deletion by unauthorized security principals, this is a key differentiator to some of the other solutions mentioned earlier, but it does mean you need to think about how your resources will be managed, let us take a look at the DenySettingsMode a bit deeper.

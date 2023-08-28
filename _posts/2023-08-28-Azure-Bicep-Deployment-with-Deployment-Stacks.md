@@ -213,3 +213,11 @@ Note: A manually created Virtual Network in the same Resource Group (but not par
 *I forgot to update, the DenySettings variable, so once I re-deployed with the 'DenyWriteAndDelete' instead of: 'DenyDelete'. I was unable to disassociate my Network Security Group.*
 
 ![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-Portal-NSG_Modification.gif)
+
+###### Permissions
+
+I have 'Owner' rights over my own demo subscriptions, so a bit more flexibility than I would have in a Production environment.
+
+You can add [exclusions](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796#protect-managed-resources-against-deletion){:target="*blank"} to your Deployment Stack, allowing certain principals or actions to be completed.
+
+You could also create custom role (Microsoft.Resources/deploymentStacks) to be able to Read, Update or delete deployment stacks, giving you the flexibility to allow people to modify their own stacks and redeploy, without accessing to other tooling required and self-service functionality, such as being able to give someone a deployment stack, that the users can then delete the resources and redeploy later straight from the Azure Portal when required for testing.

@@ -19,7 +19,7 @@ Let us take a look!
 
 ![Automate your Azure Bicep deployment with ease using Deployment Stacks](/images/posts/Blog-Header-AzureDeploymentStacks.gif)
 
-#### Overview
+##### Overview
 
 [Azure Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc*id=AZ-MVP-5004796) are a type of Azure resource that allows you to manage a group of Azure resources as an atomic unit.
 

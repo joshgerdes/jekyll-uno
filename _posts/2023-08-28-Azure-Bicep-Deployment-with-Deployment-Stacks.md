@@ -50,9 +50,7 @@ Before we dig into it further, it may help to give you a comparison between the 
 
 *It is always recommended to refer to the [official documentation](https://learn.microsoft.com/?WT.mc*id=AZ-MVP-5004796) for the most up-to-date and comprehensive information. The comparison table above, was created with the help of AI.*
 
-It is hard to do a complete comparison, as always 'it depends' on your use cases and requirements, but hopefully this makes it clear where Deployment Stacks come into play, with out-of-the-box benefits such as:
-
-Deployment stacks provide the following benefits:
+It is hard to do a complete comparison, as always 'it depends' on your use cases and requirements, but hopefully this makes it clear where Deployment Stacks come into play (and it does not replace Bicep but works with it for better governance), with out-of-the-box benefits such as:
 
 * Simplified provisioning and management of resources across different scopes as a cohesive entity.
 * Preventing undesired modifications to managed resources through deny settings.
@@ -73,7 +71,7 @@ Once you have the latest Azure PowerShell modules, its time to take a look at th
 
 Open your PowerShell terminal and type in:
 
-```PowerShell
+```
 Get-Command -Name *DeploymentStack*
 ```
 
@@ -93,7 +91,7 @@ This is the Bicep file:
 
 I have already deployed a new Resource Group to deploy our virtual network into:
 
-```PowerShell
+```
 New-AzResourceGroup -Name 'rg-network' -Location 'Australia East'
 ```
 
@@ -133,7 +131,7 @@ By specifying the appropriate DenySettingsMode value, you can control the level 
 
 For our testing, we will deploy our Azure Virtual Networks, NSGs to a new Deployment Stack, using the DenyDelete DenySettingMode.
 
-```PowerShell
+```
 $RGName = 'rg-network'
 $DenySettings = 'DenyDelete'
 $BicepFileName = 'main.bicep'
@@ -190,7 +188,7 @@ We could use the: Save-AzResourceGroupDeploymentStackTemplate, to save the Deplo
 
 We will run the Set-AzResourceGroupDeploymentStack, pointing to the modified bicep code:
 
-```PowerShell
+```
 $RGName = 'rg-network'
 $DenySettings = 'DenyWriteAndDelete'
 $BicepFileName = 'main.bicep'

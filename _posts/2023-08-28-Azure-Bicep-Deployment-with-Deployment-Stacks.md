@@ -104,7 +104,7 @@ The 'New-AzResourceGroupDeploymentStack' cmdlet is the first one we will look in
 Let us look at the most common syntax that you may use:
 
 ```
-  New-AzResourceGroupDeploymentStack -Name "<deployment-stack-name>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
+New-AzResourceGroupDeploymentStack -Name "<deployment-stack-name>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
 ```
 
 | Parameter                  | Description                                                                                                                                                                                                                   |  

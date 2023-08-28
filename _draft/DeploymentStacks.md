@@ -63,20 +63,22 @@ Deployment stacks provide the following benefits:
 
 > The key here is that Azure Deployment Stacks, is a native way to treat your infrastructure components as an atmonic unit or stack, so you manage the lifecycle of the resources as a whole vs every resource separately.
 
-#### Using Deployment Stacks
+##### Using Deployment Stacks
 
 Deployment stacks requires [Azure PowerShell](https://learn.microsoft.com/powershell/azure/install-azure-powershell?WT.mc_id=AZ-MVP-5004796) _(version 10.1.0 or later)_ or [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=AZ-MVP-5004796) _(version 2.50.0 or later)_.
 
 For the purposes of this article, I will be using PowerShell.
 
-###### PowerShell
+####### PowerShell
 
 Once you have the latest Azure PowerShell modules, its time to take a look at the cmdlets, that are offered to us for Deployment Stacks.
 
-Open your PowerShell terminal and type in: 
-```
+Open your PowerShell terminal and type in:
+
+```PowerShell
 Get-Command -Name *DeploymentStack*
 ```
+
 ![Get-Command -Name *DeploymentStack*](/images/posts/DeploymentStacks-PowerShellCmdlets.gif)
 As you can see, there are a range of cmdlets we have to work with.
 
@@ -93,7 +95,7 @@ This is the Bicep file:
 
 I have already deployed a new Resource Group to deploy our virtual network into:
 
-```
+```PowerShell
 New-AzResourceGroup -Name 'rg-network' -Location 'Australia East'
 ```
 
@@ -104,10 +106,11 @@ So let us create our first Deployment Stack!
 The 'New-AzSubscriptionDeploymentStack' cmdlet is the first one we will look into.
 
 Let us look at the most common syntax that you may use:
-```
+
+```PowerShell
   New-AzSubscriptionDeploymentStack -Name "<deployment-stack-name>" -Location "<location>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
 ```
-   
+
 | Parameter                  | Description                                                                                                                                                                                                                   |  
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 | `-Name`                    | Specifies the name of the deployment stack.                                                                                                                                                                                   |  
@@ -118,15 +121,27 @@ Let us look at the most common syntax that you may use:
 | `-DeleteResources`         | Deletes the managed resources associated with the deployment stack.                                                                                                                                                            |  
 | `-DeleteAll`               | Deletes all deployment stacks and their associated resources.                                                                                                                                                                  |  
 | `-DeleteResourceGroups`    | Deletes the resource groups associated with the deployment stacks.                                                                                                                                                            |  
-   
 These parameters allow you to customize the creation and management of deployment stacks.
 
 The DenySettingsMode parameter is used in Azure Deployment Stacks to assign specific permissions to managed resources, preventing their deletion by unauthorized security principals, this is a key differentiator to some of the other solutions mentioned earlier, but it does mean you need to think about how your resources will be managed, let us take a look at the DenySettingsMode a bit deeper.
 
 The DenySettingsMode parameter accepts different values to define the level of deny settings. Some of the possible values include:
+
 * "none": No deny settings are applied, allowing all operations on the managed resources.
 * "DenyDelete": Denies the delete operation on the managed resources, preventing their deletion.
 * "DenyUpdate": Denies the update operation on the managed resources, preventing their modification.
 * "DenyAll": Denies all operations on the managed resources, preventing any modifications or deletions.
 
 By specifying the appropriate DenySettingsMode value, you can control the level of permissions and restrictions on the managed resources within the deployment stack.
+
+For our testing, we will deploy our Azure Virtual Networks, NSGs to a new Deployment Stack, using the DenyDelete DenySettingMode.
+
+```PowerShell
+$RGName = 'rg-network'
+$DenySettings = 'DenyDelete'
+$BicepFileName = '.\main.bicep'
+$DeploymentStackName = 'NetworkProd'
+
+New-AzSubscriptionDeploymentStack -Name $DeploymentStackName -Location 'Australia East' -TemplateFile $BicepFileName -DeploymentResourceGroupName $RGName -DenySettingsMode $DenySettings
+
+```

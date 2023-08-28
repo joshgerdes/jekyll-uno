@@ -6,7 +6,7 @@ categories:
 toc: true
 header:
   teaser: /images/posts/Blog-Header-AzureDeploymentStacks.gif
-date: '2023-08-25 00:00:00 +1300'
+date: '2023-08-28 00:00:00 +1300'
 ---
 
 [Deployment Stacks](https://learn.microsoft.com/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796)! What is it? *insert confused look*
@@ -16,7 +16,6 @@ Maybe you have been browsing the Microsoft Azure Portal and noticed a new sectio
 Let us take a look!
 
 > Before we get started its worth noting that as of the time of this article, this feature is under Public Preview. Features or ways of working with Deployment Stacks may change, when it becomes generally available. If you run into issues, make sure you have a look at the current [known issues](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks?tabs=azure-powershell&WT.mc_id=AZ-MVP-5004796#known-issues).
-
 
 ![Automate your Azure Bicep deployment with ease using Deployment Stacks](/images/posts/Blog-Header-AzureDeploymentStacks.gif)
 
@@ -40,7 +39,6 @@ Before we dig into it further, it may help to give you a comparison between the 
 * Bicep _(on its own)_
 * Template Specs
 * Terraform
-
    
 | Feature                 | Deployment Stacks | Azure Blueprints | Using Bicep | Template Specs | Terraform |  
 |-------------------------|------------------------|------------------|-------------|----------------|-----------|  
@@ -69,7 +67,7 @@ Deployment stacks requires [Azure PowerShell](https://learn.microsoft.com/powers
 
 For the purposes of this article, I will be using PowerShell.
 
-####### PowerShell
+###### PowerShell
 
 Once you have the latest Azure PowerShell modules, its time to take a look at the cmdlets, that are offered to us for Deployment Stacks.
 
@@ -101,23 +99,23 @@ New-AzResourceGroup -Name 'rg-network' -Location 'Australia East'
 
 So let us create our first Deployment Stack!
 
-###### New-AzSubscriptionDeploymentStack
+###### New-AzResourceGroupDeploymentStack
 
-The 'New-AzSubscriptionDeploymentStack' cmdlet is the first one we will look into.
+The 'New-AzResourceGroupDeploymentStack' cmdlet is the first one we will look into.
 
 Let us look at the most common syntax that you may use:
 
 ```PowerShell
-  New-AzSubscriptionDeploymentStack -Name "<deployment-stack-name>" -Location "<location>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
+  New-AzResourceGroupDeploymentStack -Name "<deployment-stack-name>" -TemplateFile "<bicep-file-name>" -DeploymentResourceGroupName "<resource-group-name>" -DenySettingsMode "none"
 ```
 
 | Parameter                  | Description                                                                                                                                                                                                                   |  
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 | `-Name`                    | Specifies the name of the deployment stack.                                                                                                                                                                                   |  
-| `-Location`                | Specifies the Azure region where the deployment stack will be created.                                                                                                                                                        |  
+| `-Location`                | Specifies the Azure region where the deployment stack will be created. This is valid for Subscription based DeploymentStacks.                                                                                                                                                        |  
 | `-TemplateFile`            | Specifies the Bicep file that defines the resources to be managed by the deployment stack.                                                                                                                                    |  
 | `-DeploymentResourceGroupName` | Specifies the name of the resource group where the managed resources will be stored.                                                                                                                                         |  
-| `-DenySettingsMode`        | Specifies the operations that are prohibited on the managed resources to safeguard against unauthorized deletion or updates. Possible values include "none", "DenyDelete", "DenyUpdate", and "DenyAll".                           |  
+| `-DenySettingsMode`        | Specifies the operations that are prohibited on the managed resources to safeguard against unauthorized deletion or updates. Possible values include "none", "DenyDelete", "DenyWriteAndDelete".                           |  
 | `-DeleteResources`         | Deletes the managed resources associated with the deployment stack.                                                                                                                                                            |  
 | `-DeleteAll`               | Deletes all deployment stacks and their associated resources.                                                                                                                                                                  |  
 | `-DeleteResourceGroups`    | Deletes the resource groups associated with the deployment stacks.                                                                                                                                                            |  
@@ -129,8 +127,7 @@ The DenySettingsMode parameter accepts different values to define the level of d
 
 * "none": No deny settings are applied, allowing all operations on the managed resources.
 * "DenyDelete": Denies the delete operation on the managed resources, preventing their deletion.
-* "DenyUpdate": Denies the update operation on the managed resources, preventing their modification.
-* "DenyAll": Denies all operations on the managed resources, preventing any modifications or deletions.
+* "DenyWriteAndDelete": Denies all operations on the managed resources, preventing any modifications or deletions.
 
 By specifying the appropriate DenySettingsMode value, you can control the level of permissions and restrictions on the managed resources within the deployment stack.
 
@@ -139,9 +136,81 @@ For our testing, we will deploy our Azure Virtual Networks, NSGs to a new Deploy
 ```PowerShell
 $RGName = 'rg-network'
 $DenySettings = 'DenyDelete'
-$BicepFileName = '.\main.bicep'
+$BicepFileName = 'main.bicep'
 $DeploymentStackName = 'NetworkProd'
 
-New-AzSubscriptionDeploymentStack -Name $DeploymentStackName -Location 'Australia East' -TemplateFile $BicepFileName -DeploymentResourceGroupName $RGName -DenySettingsMode $DenySettings
-
+New-AzResourceGroupDeploymentStack -Name $DeploymentStackName -TemplateFile $BicepFileName -ResourceGroupName $RGName -DenySettingsMode $DenySettings
 ```
+
+![New-AzResourceGroupDeploymentStack](/images/posts/DeploymentStacks-NewAzResourceGroupDeployment.gif)
+
+As you can see, creating a new Azure Deployment Stack is easy, with no adjustments to the underlying Bicep configuration needed.
+
+_Note: If you get an error, that the cmdlet is missing -Name parameter, make sure that the -ResourceGroupName parameter has been added._
+
+If we navigate to the Azure Portal, we can see the Deployment Stack natively, including the Stack properties, such as what are the actions if resources are removed, what the denyDelete mode is.
+
+![New-AzResourceGroupDeploymentStack](/images/posts/DeploymentStacks-AzurePortalOverview.gif)
+
+###### Testing Deny-Assignment
+
+As we deployed our virtual networks, using the denyDelete assignment, lets take a look and attempt to delete a Network Security Group, before we do that we need to dissociate it from the subnet.
+
+_Note: Its worth noting my permissions are: Owner._
+
+When I attempted to delete a Network Security Group I get the error below:
+
+> Failed to delete network security group 'nsg1'. Error: The client '************' with object id 'cb059544-e63c-4543-930f-4b6e6b7aece1' has permission to perform action 'Microsoft.Network/networkSecurityGroups/delete' on scope 'rg-network/providers/Microsoft.Network/networkSecurityGroups/nsg1'>nsg1'; however, the access is denied because of the deny assignment with name 'Deny assignment '55ebfe82-255d-584a-8579-0e0c9f0219ff' created by Deployment Stack '/subscriptions/f0ee3c31-ff51-4d47-beb2-b1204a511f63'.
+
+![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-AzurePortal-DenyAssignmentTest.gif)
+
+To delete the resource, I would need to, do one of the following:
+
+* Delete the Deployment Stack (and detach the resources and delete it manually)
+* Delete the Deployment Stack (and delete all the resources)
+* Remove from the bicep code and update deployment stack.
+
+Note: In our testing, we were able to disassociate the Network Security Group, from the Subnet, because when the deployment stack was deployed - it was with the: denyDelete assignment, not the:'DenyWriteAndDelete'.
+
+###### Redeploy - Deployment Stack (Portal)
+
+Using the Azure Portal, we can Edit and re-deploy our existing Deployment stack, if you have changes or resources that you may want to roll back:
+
+![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-AzurePortal-RedeployDeploymentStack.gif)
+
+###### Redeploy - Deployment Stack (Bicep)
+
+What if we want to make further changes, such as removing resources from our Deployment Stack?
+
+In this example, we will modify our bicep code to remove the second Virtual network, subnets and associated NSGs (Network Security Groups), and remove the resources from Azure completely _(we can unattach them, which will remove them from being managed by the deployment stack)_, but I want my Virtual Network resources to be managed completely by Bicep.
+
+We could use the: Save-AzResourceGroupDeploymentStackTemplate, to save the Deployment Stack to an ARM template, if we wanted to deploy it later.
+
+_Note: In the bicep code example supplied earlier I removed everything after NSG2._
+
+We will run the Set-AzResourceGroupDeploymentStack, pointing to the modified bicep code: 
+
+```PowerShell
+$RGName = 'rg-network'
+$DenySettings = 'DenyWriteAndDelete'
+$BicepFileName = 'main.bicep'
+$DeploymentStackName = 'NetworkProd'
+
+Set-AzResourceGroupDeploymentStack -Name $DeploymentStackName -ResourceGroupName $RGName -TemplateFile $BicepFileName -DenySettingsMode $DenySettings -DeleteResources -Verbose
+```
+
+In this example, we tell Deployment Stacks to Delete Resources that are no longer part of the stack, and this time we will add the Verbose flag, so we can see what it is doing.
+
+![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-PowerShell-RedeployDeploymentStack.gif)
+
+_Note: I cut the gif, thats why the timestamps don't match, or you could be spending 10 minutes staring at the verbose output._
+
+If we navigate to the Azure Portal, we can see the deleted resources listed in the Deployment stack history _(only displays the last Deployment stack changes vs keeping a history of everything)_, and the Resource un-managed state has changed to: delete.
+
+![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-PowerShell-RedeployDeploymentStackOverview.gif)
+
+Note: A manually created Virtual Network in the same Resource Group (but not part of the deployment stack) remained untouched.
+
+_I forgot to update, the DenySettings variable, so once I re-deployed with the 'DenyWriteAndDelete' instead of: 'DenyDelete'. I was unable to disassociate my Network Security Group._
+
+![Azure Deployment Stack - Delete Resource Test](/images/posts/DeploymentStacks-Portal-NSG_Modification.gif)

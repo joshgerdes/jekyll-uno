@@ -138,7 +138,7 @@ $DenySettings = 'DenyDelete'
 $BicepFileName = 'main.bicep'
 $DeploymentStackName = 'NetworkProd'
 
-New-AzResourceGroupDeploymentStack -Name $DeploymentStackName -TemplateFile $BicepFileName -ResourceGroupName $RGName -DenySettingsMode $DenySettings
+New-AzResourceGroupDeploymentStack -Name $DeploymentStackName -TemplateFile $BicepFileName -ResourceGroupName $RGName -DenySettingsMode $DenySettings -DenySettingsApplyToChildScopes
 ```
 
 ![New-AzResourceGroupDeploymentStack](/images/posts/DeploymentStacks-NewAzResourceGroupDeployment.gif)
@@ -195,7 +195,7 @@ $DenySettings = 'DenyWriteAndDelete'
 $BicepFileName = 'main.bicep'
 $DeploymentStackName = 'NetworkProd'
 
-Set-AzResourceGroupDeploymentStack -Name $DeploymentStackName -ResourceGroupName $RGName -TemplateFile $BicepFileName -DenySettingsMode $DenySettings -DeleteResources -Verbose
+Set-AzResourceGroupDeploymentStack -Name $DeploymentStackName -ResourceGroupName $RGName -TemplateFile $BicepFileName -DenySettingsMode $DenySettings -DeleteResources -Verbose -DenySettingsApplyToChildScopes
 ```
 
 In this example, we tell Deployment Stacks to Delete Resources that are no longer part of the stack, and this time we will add the Verbose flag, so we can see what it is doing.

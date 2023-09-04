@@ -99,7 +99,7 @@ In Microsoft Azure, there are 2 types of Vaults, that Backup center works with: 
 * [Recovery Services vault](https://learn.microsoft.com/azure/backup/backup-azure-recovery-services-vault-overview?WT.mc_id=AZ-MVP-5004796)
 * [Backup vault](https://learn.microsoft.com/azure/backup/backup-vault-overview?WT.mc_id=AZ-MVP-5004796)
 
-![Backup center](/images/posts/images/AzurePortal_CreateVault_VaultTypes.png)
+![Backup center](/images/posts/AzurePortal_CreateVault_VaultTypes.png)
 
 Depending on your requirements, depends on which Vault you will need to create _(for our purposes, we will need the Recovery Services vault)_, Backup Center makes it remarkably easy to configure a new vault and select the right vault type, by using the wizard.
 

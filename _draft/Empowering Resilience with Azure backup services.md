@@ -11,7 +11,7 @@ date: '2023-08-28 00:00:00 +1300'
 
 This article is part of [Azure Back to School](https://azurebacktoschool.github.io/) - 2023 event! Make sure to check out the amazing content, created from the community!
 
-![Empowering Resilience with Azure backup services](/images/posts/images/posts/Header-Blog-AzureBackup_Services_Innovations.gif)
+![Empowering Resilience with Azure backup services](/images/posts/Header-Blog-AzureBackup_Services_Innovations.gif)
 
 Along with the basics of the Azure Backup solutions, particularly on Virtual Machines running on Microsoft Azure, there have been a lot of changes in the last year, including Immutable vaults, enhanced policies, intelligence tiering, and cross-region restore.
 
@@ -76,7 +76,7 @@ When needing a single control plane for your Backups, across multiple tenancies 
 
 > "Backup center provides a single unified management experience in Azure for enterprises to govern, monitor, operate, and analyze backups at scale. It also provides at-scale monitoring and management capabilities for Azure Site Recovery. So, it's consistent with Azure's native management experiences. Backup center is designed to function well across a large and distributed Azure environment. You can use Backup center to efficiently manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants."
 
-![Backup center](/images/posts/images/posts/AzureBackupCenter_Portal_Overview.png)
+![Backup center](/images/posts/AzureBackupCenter_Portal_Overview.png)
 
 As you can see, Backup center can be used to see manage:
 
@@ -88,7 +88,7 @@ As you can see, Backup center can be used to see manage:
 
 You can find the [Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted) directly in the Azure Portal.
 
-![Backup center](/images/posts/images/posts/AzurePortal-SearchBackupCenter.png)
+![Backup center](/images/posts/AzurePortal-SearchBackupCenter.png)
 
 We can create the manage these resources by themselves, but throughout this article, we will refer back to the Backup Center, to take avantage of the single pane of glass, and integration to these resources.
 
@@ -122,7 +122,7 @@ I talked a bit about immutability, in another blog article: [You Can't Touch Thi
 1. **Enter in Tags** *(tags useful for a Recovery Service vault, could be: Application, Support Team, Environment, Cost Center, Criticality)*
 1. Click **Review + Create**
 
-![Create Azure Recovery Services Vault](/images/posts/images/posts/Create_RSV_BackupCenter_AzurePortal.gif)
+![Create Azure Recovery Services Vault](/images/posts/Create_RSV_BackupCenter_AzurePortal.gif)
 
 If we navigate back to the [Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted), and then Vaults (under Manage), we will be able to see the newly created vault.
 
@@ -150,11 +150,11 @@ There are a few things, to call out here:
 * Snapshots need to be stored for 5 days and 2 days to allow fast restore
 * Production requires a backup to be taken every 4 hours to reduce RTO *(Recovery point objective)*
 
-![Create Azure Recovery Services Vault](/images/posts/images/posts/rpo-rto-infographic.jpg)
+![Create Azure Recovery Services Vault](/images/posts/rpo-rto-infographic.jpg)
 
 If we take a look at the Snapshot retention, we can leverage [Instant restore](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability?WT.mc_id=AZ-MVP-5004796) snapshots, to restore the workloads, quickly from the previous 5 days, reducing our time RTO (recovery time objective), and overall impact of an outage or restore, by storing the snapshots locally (as close to the original disk) without putting it (waiting for it) into archive (slower disk), this will incurr more cost, but dramatically reduces restores time. I recommend always keeping a few Instant restore snapshots avaliable for all production systems.
 
-![Snapshot](/images/posts/images/posts/instant-rp-flow.png)
+![Snapshot](/images/posts/instant-rp-flow.png)
 
 Let us create the policies _(we will only create one policy, but the same process can be used to create the others)_.
 
@@ -176,7 +176,7 @@ Let us create the policies _(we will only create one policy, but the same proces
 1. You can also update the Resource Group name that is being used to store the Snapshots.
 1. Click **Create**
 
-![Snapshot](/images/posts/images/posts/Create_RSV_AzurePolicyEnhanced.gif)
+![Snapshot](/images/posts/Create_RSV_AzurePolicyEnhanced.gif)
 
 Note: If you want, you can repeat the same process, to create any others that you need. Remember with immutable vaults, you cannot reduce the retention (but you can add), so if starting for the first time, keep the retention low until you have clear direction of whats required. A workload, can use the same Policy. A Standard _(not Enchanced)_ policy, may be all you need for Development workloads.
 
@@ -193,7 +193,7 @@ Now that we have our Recovery Services Vault, and custom backup policies, its ti
 
 > Although cross region restore is now supported on a Recovery Services vault, the second region is read only (RA-GRS), so make sure you have a backup recovery vault created in the region (and subscription) of the virtual machines you are trying to protect. Backup center, can see all Recovery services vaults across multiple regions and subscriptions that you have access to.
 
-![Add Virtual Machines](/images/posts/images/posts/BackupItem_BackupCenter_RSV_AzurePolicyEnhanced.gif)
+![Add Virtual Machines](/images/posts/BackupItem_BackupCenter_RSV_AzurePolicyEnhanced.gif)
 
 Once added, the Virtual Machine will now get backed up according to the specified policy.
 
@@ -203,7 +203,7 @@ Once added, the Virtual Machine will now get backed up according to the specifie
 
 Now that we have our Recovery Services Vault, policies and protected items _(backed up Virtual Machines)_, we need to monitor to make sure that the backups are working. Backup center gives us that complete view of Failed, In Progress, Completed jobs in the overview pane, which is great for a quick view of the status across subscriptions and regions.
 
-![Azure BackupCenter](/images/posts/images/posts/Azure_BackupCenter_Overview.png)
+![Azure BackupCenter](/images/posts/Azure_BackupCenter_Overview.png)
 
 But you may want something a bit more detailed, lets look into some of the options for monitoring your backups.
 

@@ -265,4 +265,60 @@ As you can see Azure Monitor integration into backups, gives you some great opti
 
 ## Azure Site Recovery
 
-[Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796) can be used to migrate workloads, across [Availability Zones and regions](https://learn.microsoft.com/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796).
+[Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796) can be used to migrate workloads, across [Availability Zones and regions](https://learn.microsoft.com/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796), by replicating the disks of a Virtual Machine to another region (GRS) or zone (ZRS), in fact [Azure Resource Mover](https://learn.microsoft.com/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796) uses Azure Site Recovery when moving virtual machines between regions. Azure Site Recovery can also help with migrating workloads outside of Azure, to Azure, for disaster recovery.
+
+When looking at migrating workloads, to Azure from the VMWare stack, consider the [Azure Site Recovery Deployment Planner for VMware](https://learn.microsoft.com/azure/site-recovery/site-recovery-deployment-planner?WT.mc_id=AZ-MVP-5004796) to Azure to assist.
+
+For the purposes of this guide, we will achive disaster recovery of our virtual machine, by replicating to another region _(ie from Australia East, to Central India)_.
+
+> Azure Recovery Services contributes to your BCDR strategy:
+Site Recovery service: Site Recovery helps ensure business continuity by keeping business apps and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines (VMs) from a primary site to a secondary location. When an outage occurs at your primary site, you fail over to a secondary location, and access apps from there. After the primary location is running again, you can fail back to it.
+Backup service: The Azure Backup service keeps your data safe and recoverable.
+
+![Azure BackupCenter](/images/posts/CausesITDisasters.png)
+
+> Just as important (if not more) than the technology to enable this, clear business requirements and preparation is paramount for a successful disaster recovery solution, I highly recommend the [Azure Business Continuity Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/introducing-the-azure-business-continuity-guide/ba-p/3905424?WT.mc_id=AZ-MVP-5004796). Supplied by the Microsoft Fastrack team, this guide includes resources to prepare for thorough disaster recovery plan.
+
+The key to successful disaster recovery, is not only the workloads themselves, but supporting services, such as DNS, Firewall rules, connectivity etc, that need to be considered, these are out of scope of this article but the following Microsoft Azure architecture references are worth a read:
+
+* [Enterprise-scale disaster recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-enterprise-scale-dr?WT.mc_id=AZ-MVP-5004796)
+* [SMB disaster recovery with Azure Site Recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-smb-azure-site-recovery?WT.mc_id=AZ-MVP-5004796)
+* [Multi-region N-tier application](https://learn.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server?WT.mc_id=AZ-MVP-5004796)
+* [Build high availability into your BCDR strategy](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/build-high-availability-into-your-bcdr-strategy?WT.mc_id=AZ-MVP-5004796)
+* [Empowering Disaster Recovery for Azure VMs with Azure Site Recovery and Terraform](https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378?WT.mc_id=AZ-MVP-5004796)
+
+For Azure Site Recovery to work, it relies on a mobility service running within the Virtual Machine to replicate changes, the source virtual machine needs to be on to replicate the changes.
+
+> When you enable replication for a VM to set up disaster recovery, the Site Recovery Mobility service extension installs on the VM, and registers it with Azure Site Recovery. During replication, VM disk writes are sent to a cache storage account in the source region. Data is sent from there to the target region, and recovery points are generated from the data.
+
+Azure Site Recovery, does not currently support virtual machines protected with [Trusted Launch](https://learn.microsoft.com/azure/virtual-machines/trusted-launch?WT.mc_id=AZ-MVP-5004796).
+
+### Enable Azure Site Recovery
+
+For now, we have 'VM1' a Ubuntu workload, running in Australia East, with a Public IP, that we will failover to Central India. The source Virtual Machine, can be backed up normally by a vault in the source region, and replicated to another vault in the destination region.
+
+1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
+1. Click on **Vaults**
+1. **Create** a new Recovery Services **vault** in your **DR** _(Disaster Recovery **region** - ie Central India)_
+1. Click on **Site Recovery**
+1. Under Azure Virtual Machines, click on: **Enable replication**
+1. Specify the **source Virtual Machine**, you wish to migrate
+1. Click **Next**
+1. Select your **source Virtual Machine**
+1. Click **Next**
+1. Select the **target location (ie Central India)**
+1. Select the **target Resource Group**
+1. Select the **Target Virtual Network** _(create one if it doesn't exist)_
+1. Select the **target subnet**
+1. Under the Storage, you can consider changing the the replica disk to Standard, to reduce cost (this can be [changed](https://learn.microsoft.com/azure/virtual-machines/disks-convert-types?tabs=azure-portal&WT.mc_id=AZ-MVP-5004796#change-the-type-of-an-individual-managed-disk) later).
+1. Select a cache storage account _(The cache storage account is a storage account used for transferring the replication data before its written to the destination disk)_
+1. You can then adjust the availability zone of the destination virtual machine
+1. Click **Next**
+1. Here we can **define a Replication Policy** _(a replication policy in Azure Site Recovery is a set of rules and configurations that determine how data is replicated from the source environment to the target environment (Azure) in case of a disaster or planned failover, such as retentio, ie you can restore a point within the retention period)_ we will leave the default 24 hour retention policy.
+1. We can specify a Replication Group, an example of a replication group is application servers that need to be consistent with each other, in terms of data _( replication policy in Azure Site Recovery is a set of rules and configurations that determine how data is replicated from the source environment to the target environment (Azure) in case of a disaster or planned failover.)_.
+1. Specify an automation account to manage the mobility service, and we will leave the update extension to be ASR (Azure Site Recovery) managed.
+1. Click **Next**
+1. Click **Enable replication**
+1. At the Recovery Services Vault, under Site Recovery Jobs you can monitor the registration, registration and preparation can take up to 10 minutes to install the agent and register the replication.
+
+![Azure BackupCenter](/images/posts/BackupCenter_RSV_EnableAzureSiteRecovery.gif)

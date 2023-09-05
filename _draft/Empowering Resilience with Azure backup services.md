@@ -221,4 +221,48 @@ By default these type of alerts, are enabled out-of-the-box, on a recovery servi
 | Metric alerts                              | Here, Azure Backup will surface backup health related metrics for customers' Recovery Services vaults and Backup vaults. Customers can write alert rules on these metrics. | Backup health related scenarios such as backup success alerts, restore success, schedule missed, RPO missed etc. | Useful for scenarios where customers would like some control over the creation of alert rules, but without the overhead of setting up LA or any other custom data store.                                     |
 | Custom Log Alerts                          | Customers configure their vaults to send data to Log Analytics workspace and write alert rules on logs.                                                                    | 'N' consecutive failed backup jobs, Spike in storage consumed etc.                                               | Useful for scenarios where there is a relatively complex, customer-specific logic needed to generate an alert.                                                                                               |
 
-If you want to configure notifications via emails, for other types of alerts, such as Backup failures, we can use [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796) Action Groups and Alert processing rules, to let us know, without having to login to the Azure Portal directly.
+Backup alerts are suppoorted by Azure Monitor, so under [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796), and Alerts pane you can see all your other alerts, including Azure Backup alerts from a single pane.
+
+![Azure BackupCenter](/images/posts/AzureMonitor_BackupAlert_AzurePortal.png)
+
+If you want to configure notifications via emails, for other types of alerts, such as Backup failures, we can use [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796) Action Groups and Alert processing rules, to let us know, without having to login to the Azure Portal directly, so lets create an email alert.
+
+To do this, we will create an Action Group and Alert Processing rule.
+
+| Component              | Description                                                                                          |
+|------------------------|------------------------------------------------------------------------------------------------------|
+| Action Group           | An Action Group is a collection of actions or tasks that are executed automatically when an alert that matches specific criteria is triggered. Actions can include sending notifications, running scripts, triggering automation, or escalating the alert. Action Groups help streamline incident response and automate actions based on the nature and severity of an alert. |
+| Alert Processing Rule  | An Alert Processing Rule is a set of conditions and criteria used to filter, categorize, or route incoming alerts within a monitoring or alerting system. These rules enable organizations to define how alerts are processed, prioritize them, and determine the appropriate actions to take when specific conditions are met. Alert Processing Rules are crucial for managing and efficiently responding to alerts. |
+
+1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
+1. Click on **Alerts**
+1. Click on **Alert Processing rule**
+1. Click **+ Select Scope**
+1. Click **All Resource Types**, and Filter by: **Recovery Services Vault**
+1. **Select** your **Recovery Services vault**, you would like to alert on
+1. Click **Apply**
+1. Click on **Filter, and change: Alert condition = Fired**.
+1. Click Next: **Rule Settings**
+1. Click **Apply action group**
+1. Click **+ Create action group**
+1. **Select** the Subscription, **Resource Group** to store your action group (ie monitor resource group)
+1. Give the **Action Group** a **name**, and give it a Display name
+1. Specify **Notification** type _(ie Email/SMS message/push/voice)_
+1. For this article, we will add in an Email _(but you can have it ring a number, push a notification to the [Azure Mobile App](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796))_
+1. Enter in **your details**, then click **Next: Actions**
+1. In the Actions pane, is where you can trigger automation, such as Azure Logic Apps, Runbooks, ITSM connections, Webhooks etc, to help self-remediate the issues, or better notifications, such as a Logic App that posts in a Teams channel when an alert is fired, or a wehbook that triggers a webpage to update. In this example, we will leave it empty and just rely on email notifications and click Next: Tags
+1. Enter in any Tags and click **Review + create**
+1. Make note of: Suppress Notifications, this could be handy during scheduled maintenance windows where's backups may fail due to approved work.
+1. Once the Action Group has been created, click **Next: Scheduling**
+1. Select **Always**
+1. Click **Next: Details**
+1. Enter in a **Resource Group**, for the Alert processing rule to be placed
+1. Enter in **Rule name**, **description** and click **Review + Create**
+
+![Azure BackupCenter](/images/posts/BackupItem_BackupCenter_RSV_BackupAlertRuleCreation.gif)
+
+As you can see Azure Monitor integration into backups, gives you some great options to keep ontop of your backups, and integrate with other systems, like your IT Service Management toolsets.
+
+## Azure Site Recovery
+
+[Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796) can be used to migrate workloads, across [Availability Zones and regions](https://learn.microsoft.com/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796).

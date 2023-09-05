@@ -299,7 +299,7 @@ Azure Site Recovery, does not currently support virtual machines protected with 
 
 For now, we have 'VM1' a Ubuntu workload, running in Australia East, with a Public IP, that we will failover to Central India. The source Virtual Machine, can be backed up normally by a vault in the source region, and replicated to another vault in the destination region.
 
-> Azure Site Recovery has specific Operating System and Linux kernel [support](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-support-matrix?WT.mc_id=AZ-MVP-5004796#replicated-machine-operating-systems). Make sure you confirm that your workloads are supported.
+> Azure Site Recovery has specific Operating System and Linux kernel [support](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-support-matrix?WT.mc_id=AZ-MVP-5004796#replicated-machine-operating-systems){:target="*blank"}. Make sure you confirm that your workloads are supported.
 
 1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
 1. Click on **Vaults**
@@ -372,7 +372,7 @@ And more, are built-in to the Azure policy engine, and can be easily and assigne
 1. Click on **Azure policies for backup**
 1. Click on a policy and click **Assign**
 
-> You can find alist of custom and built-in policies at the [AzPolicyAdvertizerPro](https://www.azadvertizer.net/azpolicyadvertizer_all.html) website.
+> You can find alist of custom and built-in policies at the [AzPolicyAdvertizerPro](https://www.azadvertizer.net/azpolicyadvertizer_all.html){:target="*blank"} website.
 
 ![Azure AutoManage](/images/posts/azure-automanage-intelligently-onboard-services.png)
 

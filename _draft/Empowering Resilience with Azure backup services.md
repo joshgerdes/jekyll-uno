@@ -6,7 +6,7 @@ categories:
 toc: true
 header:
   teaser: /images/posts/Header-Blog-AzureBackup_Services_Innovations.gif
-date: '2023-08-28 00:00:00 +1300'
+date: '2023-09-06 00:00:00 +1300'
 ---
 
 This article is part of [Azure Back to School](https://azurebacktoschool.github.io/) - 2023 event! Make sure to check out the amazing content, created from the community!
@@ -283,8 +283,10 @@ The key to successful disaster recovery, is not only the workloads themselves, b
 
 * [Enterprise-scale disaster recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-enterprise-scale-dr?WT.mc_id=AZ-MVP-5004796)
 * [SMB disaster recovery with Azure Site Recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-smb-azure-site-recovery?WT.mc_id=AZ-MVP-5004796)
+* [Azure to Azure disaster recovery architecture](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-architecture?WT.mc_id=AZ-MVP-5004796)
 * [Multi-region N-tier application](https://learn.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server?WT.mc_id=AZ-MVP-5004796)
 * [Build high availability into your BCDR strategy](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/build-high-availability-into-your-bcdr-strategy?WT.mc_id=AZ-MVP-5004796)
+* [Retain IP addresses during failover](https://learn.microsoft.com/azure/site-recovery/site-recovery-retain-ip-azure-vm-failover?WT.mc_id=AZ-MVP-5004796)
 * [Empowering Disaster Recovery for Azure VMs with Azure Site Recovery and Terraform](https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378?WT.mc_id=AZ-MVP-5004796)
 
 For Azure Site Recovery to work, it relies on a mobility service running within the Virtual Machine to replicate changes, the source virtual machine needs to be on to replicate the changes.
@@ -296,6 +298,8 @@ Azure Site Recovery, does not currently support virtual machines protected with 
 ### Enable Azure Site Recovery
 
 For now, we have 'VM1' a Ubuntu workload, running in Australia East, with a Public IP, that we will failover to Central India. The source Virtual Machine, can be backed up normally by a vault in the source region, and replicated to another vault in the destination region.
+
+> Azure Site Recovery has specific Operating System and Linux kernel [support](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-support-matrix?WT.mc_id=AZ-MVP-5004796#replicated-machine-operating-systems). Make sure you confirm that your workloads are supported.
 
 1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
 1. Click on **Vaults**
@@ -319,6 +323,45 @@ For now, we have 'VM1' a Ubuntu workload, running in Australia East, with a Publ
 1. Specify an automation account to manage the mobility service, and we will leave the update extension to be ASR (Azure Site Recovery) managed.
 1. Click **Next**
 1. Click **Enable replication**
-1. At the Recovery Services Vault, under Site Recovery Jobs you can monitor the registration, registration and preparation can take up to 10 minutes to install the agent and register the replication.
+1. At the Recovery Services Vault, under Site Recovery Jobs you can monitor the registration, registration and initial replication can take 30-60 minutes to install the agent and start the replication.
 
 ![Azure BackupCenter](/images/posts/BackupCenter_RSV_EnableAzureSiteRecovery.gif)
+
+### Failover to secondary region using Azure Site Recovery
+
+Once your virtual machine, has been replicated to the secondary region. you can do a Failover, or Test failover. A Test failover is recommended, in your DR testing, and application testing.
+
+![Azure BackupCenter](/images/posts/ASR_AUE_to_CentralIndia.png)
+
+| Aspect               | Failover                                      | Test Failover                               |
+|----------------------|----------------------------------------------|---------------------------------------------|
+| Purpose              | To switch to a secondary site during a disaster or planned maintenance event. | To validate your disaster recovery plan without impacting production. |
+| Impact on Production | Disrupts production services as the primary site becomes unavailable during the failover process. | No impact on production services; the primary site remains operational. |
+| Data Replication     | Replicates data from primary to secondary site, making it the active site during the failover. | Uses the same replicated data but doesn't make the secondary site the active site; it's for testing purposes only. |
+| Recovery Time        | Longer recovery time, as it involves setting up and activating the secondary site. | Faster recovery time, as it doesn't require making the secondary site the active site. |
+| Data Consistency     | Ensures data consistency and integrity during the failover process. | Ensures data consistency for testing but doesn't make the secondary site the primary site. |
+| Cost                 | May incur additional costs due to the resources activated at the secondary site. | Typically incurs minimal additional costs as it's for testing purposes. |
+| Use Cases            | Actual disaster recovery scenarios or planned maintenance events. | Testing and validating disaster recovery procedures, training, and compliance. |
+| Post-Operation       | The secondary site becomes the new primary site until failback is initiated. | No change to the primary site; the secondary site remains inactive. |
+| Rollback Option      | Failback operation is required to return to the primary site once it's available. | No need for a rollback; the primary site remains unaffected. |
+
+k
+
+## Azure Policies
+
+Automatically, mapping of Virtual Machines, to backup policies can be done using [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796).
+
+Azure policies such as:
+
+* Azure Backup should be enabled for Virtual Machines
+* Configure backup on virtual machines without a given tag to an existing recovery services vault in the same location
+* Disable Cross Subscription Restore for Backup Vaults
+* Soft delete should be enabled for Backup Vaults
+
+And more, are built-in to the Azure policy engine, and can be easily and assigned, across subscriptions and management groups, found in the Backup Center.
+
+1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
+1. Click on **Azure policies for backup**
+1. Click on a policy and click **Assign**
+
+> You can find alist of custom and built-in policies at the [AzPolicyAdvertizerPro](https://www.azadvertizer.net/azpolicyadvertizer_all.html) website.

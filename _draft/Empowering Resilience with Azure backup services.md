@@ -365,3 +365,7 @@ And more, are built-in to the Azure policy engine, and can be easily and assigne
 1. Click on a policy and click **Assign**
 
 > You can find alist of custom and built-in policies at the [AzPolicyAdvertizerPro](https://www.azadvertizer.net/azpolicyadvertizer_all.html) website.
+
+![Azure AutoManage](/images/posts/azure-automanage-intelligently-onboard-services.png)
+
+[Azure Automanage](https://learn.microsoft.com/azure/automanage/overview-about?WT.mc_id=AZ-MVP-5004796) can be used alongside Azure policy, to onboard Virtual Machines, into backup, patching etc automatically, with reduced manual intervention, and although not directly part of this article, what you have learn't can be used to develop your automanage profiles.

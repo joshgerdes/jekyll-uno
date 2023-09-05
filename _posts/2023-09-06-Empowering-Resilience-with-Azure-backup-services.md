@@ -9,7 +9,7 @@ header:
 date: '2023-09-06 00:00:00 +1300'
 ---
 
-This article is part of [Azure Back to School](https://azurebacktoschool.github.io/) - 2023 event! Make sure to check out the amazing content, created from the community!
+This article is part of [Azure Back to School](https://azurebacktoschool.github.io/){:target="*blank"} - 2023 event! Make sure to check out the amazing content, created from the community!
 
 ![Empowering Resilience with Azure backup services](/images/posts/Header-Blog-AzureBackup_Services_Innovations.gif)
 
@@ -27,52 +27,52 @@ It is worth mentioning, especially around disaster recovery, that there is a lot
 
 | **Requirement**                                                     | **Azure Service(s) Used**                       |
 | ------------------------------------------------------------------- | ----------------------------------------------- |
-| Specific (S): Backup virtual machines in Azure                      | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796), [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796)
+| Specific (S): Backup virtual machines in Azure                      | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}{:target="*blank"}, [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}{:target="*blank"}
 | Measurable (M):                                                     |                                                 |
-| \- Achieve 99% backup success rate                                  | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796), [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796)                     |
-| \- Define and meet RTO _(recovery time objective)_ for critical VMs | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796), [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796)         |
-| \- Monitor and optimise storage consumption                         | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796), [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796)            |
+| \- Achieve 99% backup success rate                                  | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}{:target="*blank"}, [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                     |
+| \- Define and meet RTO _(recovery time objective)_ for critical VMs | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}{:target="*blank"}, [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}         |
+| \- Monitor and optimise storage consumption                         | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796){:target="*blank"}            |
 | Achievable (A):                                                     |                                                 |
-| \- Select and configure Azure-native backup solution                | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796)                                    |
-| \- Configure Azure permissions and access controls                  | [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796)          |
-| \- Define backup schedules and retention policies                   | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796), [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796)                      |
+| \- Select and configure Azure-native backup solution                | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                    |
+| \- Configure Azure permissions and access controls                  | [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796){:target="*blank"}          |
+| \- Define backup schedules and retention policies                   | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                      |
 | Relevant (R):                                                       |                                                 |
-| \- Align with Azure best practices                                  | [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/?WT.mc_id=AZ-MVP-5004796), [Azure Advisor](https://learn.microsoft.com/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796) |
-| \- Comply with data protection regulations                          | [Azure Compliance Center](https://learn.microsoft.com/azure/compliance/?WT.mc_id=AZ-MVP-5004796), [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796)           |
-| \- Support disaster recovery and business continuity                | [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796)                       |
+| \- Align with Azure best practices                                  | [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, [Azure Advisor](https://learn.microsoft.com/azure/advisor/advisor-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"} |
+| \- Comply with data protection regulations                          | [Azure Compliance Center](https://learn.microsoft.com/azure/compliance/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}           |
+| \- Support disaster recovery and business continuity                | [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                       |
 | Time-bound (T):                                                     |                                                 |
-| \- Implement within the next two Azure sprint cycles                | [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796)                             |
-| \- Regular progress reviews during sprint planning                  | [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796)                             |
+| \- Implement within the next two Azure sprint cycles                | [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796){:target="*blank"}                             |
+| \- Regular progress reviews during sprint planning                  | [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796){:target="*blank"}                             |
 
 | **Definition of Done (DoD):**                              |                                                          |
 | ---------------------------------------------------------- | -------------------------------------------------------- |
-| 1\. Select a cost-effective Azure-native backup solution   | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796)                                           |
-| 2\. Configure Azure permissions and access controls        | [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796)                   |
-| 3\. Define backup policies and RTOs                        | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796), [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796)                               |
-| 4\. Monitor and meet 99% backup success rate               | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796)                                            |
-| 5\. Optimize backup storage utilisation                    | [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796)                                    |
-| 6\. Create backup and recovery documentation               | [Microsoft Learn documentation](https://learn.microsoft.com/azure/backup/backup-azure-restore-files-from-vm?WT.mc_id=AZ-MVP-5004796)                             |
-| 7\. Train the team to manage and monitor the backup system | [Azure Training](https://learn.microsoft.com/training/modules/intro-to-azure-backup/?WT.mc_id=AZ-MVP-5004796)                        |
-| 8\. Integrate with Azure monitoring and alerting           | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796)                                            |
-| 9\. Conduct disaster recovery tests                        | [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796)                                |
+| 1\. Select a cost-effective Azure-native backup solution   | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                           |
+| 2\. Configure Azure permissions and access controls        | [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                   |
+| 3\. Define backup policies and RTOs                        | [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                               |
+| 4\. Monitor and meet 99% backup success rate               | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                            |
+| 5\. Optimize backup storage utilisation                    | [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                    |
+| 6\. Create backup and recovery documentation               | [Microsoft Learn documentation](https://learn.microsoft.com/azure/backup/backup-azure-restore-files-from-vm?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                             |
+| 7\. Train the team to manage and monitor the backup system | [Azure Training](https://learn.microsoft.com/training/modules/intro-to-azure-backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                        |
+| 8\. Integrate with Azure monitoring and alerting           | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                            |
+| 9\. Conduct disaster recovery tests                        | [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}                                |
 
-*Note: [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796) are outside of the scope of this article; the main reflection here is to make sure that your decisions and designs are documented in line with business requirements.*
+*Note: [Azure DevOps - Boards](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&WT.mc_id=AZ-MVP-5004796){:target="*blank"} are outside of the scope of this article; the main reflection here is to make sure that your decisions and designs are documented in line with business requirements.*
 *There are also some further assumptions we will make, particularly around security and RTO requirements for the organisation of Contoso.*
 
 We know to fulfil the requirements; we need to implement the following:
 
-* [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796)
-* [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796)
-* [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796)
-* [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796)
-* [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796)
-* [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796)
+* [Azure Backup](https://learn.microsoft.com/azure/backup/?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Microsoft Cost Management](https://learn.microsoft.com/azure/cost-management-billing/costs/reporting-get-started?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Azure Role-Based Access Control (RBAC)](https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
 
 So lets take our notebooks and take a look at the Backup sections.
 
 ## Backup Center
 
-When needing a single control plane for your Backups, across multiple tenancies _(using [Azure Lighthouse](https://learn.microsoft.com/azure/lighthouse/overview?WT.mc_id=AZ-MVP-5004796)_), Subscriptions and regions, then Backup Center is the place to start with.
+When needing a single control plane for your Backups, across multiple tenancies _(using [Azure Lighthouse](https://learn.microsoft.com/azure/lighthouse/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}_), Subscriptions and regions, then Backup Center is the place to start with.
 
 > "Backup center provides a single unified management experience in Azure for enterprises to govern, monitor, operate, and analyze backups at scale. It also provides at-scale monitoring and management capabilities for Azure Site Recovery. So, it's consistent with Azure's native management experiences. Backup center is designed to function well across a large and distributed Azure environment. You can use Backup center to efficiently manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants."
 
@@ -96,14 +96,14 @@ We can create the manage these resources by themselves, but throughout this arti
 
 In Microsoft Azure, there are 2 types of Vaults, that Backup center works with: these vaults are:
 
-* [Recovery Services vault](https://learn.microsoft.com/azure/backup/backup-azure-recovery-services-vault-overview?WT.mc_id=AZ-MVP-5004796)
-* [Backup vault](https://learn.microsoft.com/azure/backup/backup-vault-overview?WT.mc_id=AZ-MVP-5004796)
+* [Recovery Services vault](https://learn.microsoft.com/azure/backup/backup-azure-recovery-services-vault-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Backup vault](https://learn.microsoft.com/azure/backup/backup-vault-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
 
 ![Backup center](/images/posts/AzurePortal_CreateVault_VaultTypes.png)
 
 Depending on your requirements, depends on which Vault you will need to create _(for our purposes, we will need the Recovery Services vault)_, Backup Center makes it remarkably easy to configure a new vault and select the right vault type, by using the wizard.
 
-*Please refer to: [Support matrix for Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix?WT.mc_id=AZ-MVP-5004796) for further information.*
+*Please refer to: [Support matrix for Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix?WT.mc_id=AZ-MVP-5004796){:target="*blank"} for further information.*
 
 1. Navigate to **[Backup Center](https://portal.azure.com/#view/Microsoft_Azure_DataProtection/BackupCenterMenuBlade/~/gettingstarted)**
 1. Click on **Vaults**
@@ -111,14 +111,14 @@ Depending on your requirements, depends on which Vault you will need to create _
 1. Select **Recovery Services vault**
 1. Select **Continue**
 1. Specify a **location** and **Resource Group** to house your Recovery Services vault
-1. Specify your **vault name** *[(abbreviation examples for Azure resources)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations?WT.mc_id=AZ-MVP-5004796)*
+1. Specify your **vault name** *[(abbreviation examples for Azure resources)](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations?WT.mc_id=AZ-MVP-5004796){:target="*blank"}*
 1. Click **Next: Vault properties**
 
 > Immutability:
 I talked a bit about immutability, in another blog article: [You Can't Touch This: How to Make Your Azure Backup Immutable and Secure](https://luke.geek.nz/azure/you-can-t-touch-this-how-to-make-your-azure-backup-immutable-and-secure/). Essentially an immutable vault, prevents unauthorised changes and restore point deletions, for the purposes of this article, we will enable it to prevent unintended or malicious data loss (keep in mind with immutable vaults, reducing retention of recovery points is not allowed).
 
 1. Check **enabled immutability**, and click **Next: Networking**.
-1. We can join our Recovery Services vault, to our [private network using private endpoints](https://learn.microsoft.com/azure/backup/private-endpoints?WT.mc_id=AZ-MVP-5004796), forcing Azure Backup and Site Recovery to traverse a private network, for the purposes of this article, we will skip it. **Click Next: Tags**
+1. We can join our Recovery Services vault, to our [private network using private endpoints](https://learn.microsoft.com/azure/backup/private-endpoints?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, forcing Azure Backup and Site Recovery to traverse a private network, for the purposes of this article, we will skip it. **Click Next: Tags**
 1. **Enter in Tags** *(tags useful for a Recovery Service vault, could be: Application, Support Team, Environment, Cost Center, Criticality)*
 1. Click **Review + Create**
 
@@ -132,7 +132,7 @@ We now have our Backup solution provisioned for the Cloud Administrator to use, 
 
 Now that we have our Recovery Services vault, we need to create backup policies, these backup policies will help define the frequency of backups, the retention (Daily, weekly, monthly, yearly) and [vault tiering](https://learn.microsoft.com/azure/backup/use-archive-tier-support?pivots=client-portaltier&WT.mc_id=AZ-MVP-5004796#enable-smart-tiering-to-vault-archive-using-a-backup-policy-preview), which enables the Recovery Services Vault to move recovery vaults to an [archive tier](https://learn.microsoft.com/en-us/azure/backup/archive-tier-support?WT.mc_id=AZ-MVP-5004796#archive-recommendations-only-for-azure-virtual-machines) _(slower to restore, but can be cheaper overall, for those long retention policies)_.
 
-> Backup policies are very organisation specific, it can depend alot on operational and industry requirements, some industries have a legal obligation to store their backups for a certain number of years, the [Azure compliance center documentation](https://learn.microsoft.com/en-us/azure/compliance/?WT.mc_id=AZ-MVP-5004796) may help, around security and data requirements, make sure your backup policies are understood by the business you are working with.
+> Backup policies are very organisation specific, it can depend alot on operational and industry requirements, some industries have a legal obligation to store their backups for a certain number of years, the [Azure compliance center documentation](https://learn.microsoft.com/en-us/azure/compliance/?WT.mc_id=AZ-MVP-5004796){:target="*blank"} may help, around security and data requirements, make sure your backup policies are understood by the business you are working with.
 
 For Contoso, we have the following requirements:
 
@@ -152,7 +152,7 @@ There are a few things, to call out here:
 
 ![Create Azure Recovery Services Vault](/images/posts/rpo-rto-infographic.jpg)
 
-If we take a look at the Snapshot retention, we can leverage [Instant restore](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability?WT.mc_id=AZ-MVP-5004796) snapshots, to restore the workloads, quickly from the previous 5 days, reducing our time RTO (recovery time objective), and overall impact of an outage or restore, by storing the snapshots locally (as close to the original disk) without putting it (waiting for it) into archive (slower disk), this will incurr more cost, but dramatically reduces restores time. I recommend always keeping a few Instant restore snapshots avaliable for all production systems.
+If we take a look at the Snapshot retention, we can leverage [Instant restore](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability?WT.mc_id=AZ-MVP-5004796){:target="*blank"} snapshots, to restore the workloads, quickly from the previous 5 days, reducing our time RTO (recovery time objective), and overall impact of an outage or restore, by storing the snapshots locally (as close to the original disk) without putting it (waiting for it) into archive (slower disk), this will incurr more cost, but dramatically reduces restores time. I recommend always keeping a few Instant restore snapshots avaliable for all production systems.
 
 ![Snapshot](/images/posts/instant-rp-flow.png)
 
@@ -164,7 +164,7 @@ Let us create the policies _(we will only create one policy, but the same proces
 1 .Select **Azure Virtual Machines**
 1. **Select** the **Vault** created earlier
 1. Click **Continue**
-1. As this will be the policy for the Critical Application DB, wwe will specify: **Enchanced** *(due to the multiple, backups, [Zone-redundant storage (ZRS)](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy?WT.mc_id=AZ-MVP-5004796) snapshots)*
+1. As this will be the policy for the Critical Application DB, wwe will specify: **Enchanced** *(due to the multiple, backups, [Zone-redundant storage (ZRS)](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy?WT.mc_id=AZ-MVP-5004796){:target="*blank"} snapshots)*
 1. Specify a **Policy name**, ie Tier-1-Prod-AppDB
 1. Specify **Frequency**, to: Hourly, Schedule to Every 4 Hours, and Duration: 24 Hours
 1. Specify **Retain instance recovery snapshots** for '5' days
@@ -221,11 +221,11 @@ By default these type of alerts, are enabled out-of-the-box, on a recovery servi
 | Metric alerts                              | Here, Azure Backup will surface backup health related metrics for customers' Recovery Services vaults and Backup vaults. Customers can write alert rules on these metrics. | Backup health related scenarios such as backup success alerts, restore success, schedule missed, RPO missed etc. | Useful for scenarios where customers would like some control over the creation of alert rules, but without the overhead of setting up LA or any other custom data store.                                     |
 | Custom Log Alerts                          | Customers configure their vaults to send data to Log Analytics workspace and write alert rules on logs.                                                                    | 'N' consecutive failed backup jobs, Spike in storage consumed etc.                                               | Useful for scenarios where there is a relatively complex, customer-specific logic needed to generate an alert.                                                                                               |
 
-Backup alerts are suppoorted by Azure Monitor, so under [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796), and Alerts pane you can see all your other alerts, including Azure Backup alerts from a single pane.
+Backup alerts are suppoorted by Azure Monitor, so under [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, and Alerts pane you can see all your other alerts, including Azure Backup alerts from a single pane.
 
 ![Azure BackupCenter](/images/posts/AzureMonitor_BackupAlert_AzurePortal.png)
 
-If you want to configure notifications via emails, for other types of alerts, such as Backup failures, we can use [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796) Action Groups and Alert processing rules, to let us know, without having to login to the Azure Portal directly, so lets create an email alert.
+If you want to configure notifications via emails, for other types of alerts, such as Backup failures, we can use [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"} Action Groups and Alert processing rules, to let us know, without having to login to the Azure Portal directly, so lets create an email alert.
 
 To do this, we will create an Action Group and Alert Processing rule.
 
@@ -248,7 +248,7 @@ To do this, we will create an Action Group and Alert Processing rule.
 1. **Select** the Subscription, **Resource Group** to store your action group (ie monitor resource group)
 1. Give the **Action Group** a **name**, and give it a Display name
 1. Specify **Notification** type _(ie Email/SMS message/push/voice)_
-1. For this article, we will add in an Email _(but you can have it ring a number, push a notification to the [Azure Mobile App](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796))_
+1. For this article, we will add in an Email _(but you can have it ring a number, push a notification to the [Azure Mobile App](https://azure.microsoft.com/en-us/get-started/azure-portal/mobile-app?WT.mc_id=AZ-MVP-5004796){:target="*blank"})_
 1. Enter in **your details**, then click **Next: Actions**
 1. In the Actions pane, is where you can trigger automation, such as Azure Logic Apps, Runbooks, ITSM connections, Webhooks etc, to help self-remediate the issues, or better notifications, such as a Logic App that posts in a Teams channel when an alert is fired, or a wehbook that triggers a webpage to update. In this example, we will leave it empty and just rely on email notifications and click Next: Tags
 1. Enter in any Tags and click **Review + create**
@@ -265,9 +265,9 @@ As you can see Azure Monitor integration into backups, gives you some great opti
 
 ## Azure Site Recovery
 
-[Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796) can be used to migrate workloads, across [Availability Zones and regions](https://learn.microsoft.com/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796), by replicating the disks of a Virtual Machine to another region (GRS) or zone (ZRS), in fact [Azure Resource Mover](https://learn.microsoft.com/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796) uses Azure Site Recovery when moving virtual machines between regions. Azure Site Recovery can also help with migrating workloads outside of Azure, to Azure, for disaster recovery.
+[Azure Site Recovery (ASR)](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"} can be used to migrate workloads, across [Availability Zones and regions](https://learn.microsoft.com/azure/reliability/availability-zones-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, by replicating the disks of a Virtual Machine to another region (GRS) or zone (ZRS), in fact [Azure Resource Mover](https://learn.microsoft.com/azure/resource-mover/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"} uses Azure Site Recovery when moving virtual machines between regions. Azure Site Recovery can also help with migrating workloads outside of Azure, to Azure, for disaster recovery.
 
-When looking at migrating workloads, to Azure from the VMWare stack, consider the [Azure Site Recovery Deployment Planner for VMware](https://learn.microsoft.com/azure/site-recovery/site-recovery-deployment-planner?WT.mc_id=AZ-MVP-5004796) to Azure to assist.
+When looking at migrating workloads, to Azure from the VMWare stack, consider the [Azure Site Recovery Deployment Planner for VMware](https://learn.microsoft.com/azure/site-recovery/site-recovery-deployment-planner?WT.mc_id=AZ-MVP-5004796){:target="*blank"} to Azure to assist.
 
 For the purposes of this guide, we will achive disaster recovery of our virtual machine, by replicating to another region _(ie from Australia East, to Central India)_.
 
@@ -277,23 +277,23 @@ Backup service: The Azure Backup service keeps your data safe and recoverable.
 
 ![Azure BackupCenter](/images/posts/CausesITDisasters.png)
 
-> Just as important (if not more) than the technology to enable this, clear business requirements and preparation is paramount for a successful disaster recovery solution, I highly recommend the [Azure Business Continuity Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/introducing-the-azure-business-continuity-guide/ba-p/3905424?WT.mc_id=AZ-MVP-5004796). Supplied by the Microsoft Fastrack team, this guide includes resources to prepare for thorough disaster recovery plan.
+> Just as important (if not more) than the technology to enable this, clear business requirements and preparation is paramount for a successful disaster recovery solution, I highly recommend the [Azure Business Continuity Guide](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/introducing-the-azure-business-continuity-guide/ba-p/3905424?WT.mc_id=AZ-MVP-5004796){:target="*blank"}. Supplied by the Microsoft Fastrack team, this guide includes resources to prepare for thorough disaster recovery plan.
 
 The key to successful disaster recovery, is not only the workloads themselves, but supporting services, such as DNS, Firewall rules, connectivity etc, that need to be considered, these are out of scope of this article but the following Microsoft Azure architecture references are worth a read:
 
-* [Enterprise-scale disaster recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-enterprise-scale-dr?WT.mc_id=AZ-MVP-5004796)
-* [SMB disaster recovery with Azure Site Recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-smb-azure-site-recovery?WT.mc_id=AZ-MVP-5004796)
-* [Azure to Azure disaster recovery architecture](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-architecture?WT.mc_id=AZ-MVP-5004796)
-* [Multi-region N-tier application](https://learn.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server?WT.mc_id=AZ-MVP-5004796)
-* [Build high availability into your BCDR strategy](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/build-high-availability-into-your-bcdr-strategy?WT.mc_id=AZ-MVP-5004796)
-* [Retain IP addresses during failover](https://learn.microsoft.com/azure/site-recovery/site-recovery-retain-ip-azure-vm-failover?WT.mc_id=AZ-MVP-5004796)
-* [Empowering Disaster Recovery for Azure VMs with Azure Site Recovery and Terraform](https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378?WT.mc_id=AZ-MVP-5004796)
+* [Enterprise-scale disaster recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-enterprise-scale-dr?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [SMB disaster recovery with Azure Site Recovery](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/disaster-recovery-smb-azure-site-recovery?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Azure to Azure disaster recovery architecture](https://learn.microsoft.com/azure/site-recovery/azure-to-azure-architecture?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Multi-region N-tier application](https://learn.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Build high availability into your BCDR strategy](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/build-high-availability-into-your-bcdr-strategy?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Retain IP addresses during failover](https://learn.microsoft.com/azure/site-recovery/site-recovery-retain-ip-azure-vm-failover?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
+* [Empowering Disaster Recovery for Azure VMs with Azure Site Recovery and Terraform](https://techcommunity.microsoft.com/t5/azure-architecture-blog/empowering-disaster-recovery-for-azure-vms-with-azure-site/ba-p/3885378?WT.mc_id=AZ-MVP-5004796){:target="*blank"}
 
 For Azure Site Recovery to work, it relies on a mobility service running within the Virtual Machine to replicate changes, the source virtual machine needs to be on to replicate the changes.
 
 > When you enable replication for a VM to set up disaster recovery, the Site Recovery Mobility service extension installs on the VM, and registers it with Azure Site Recovery. During replication, VM disk writes are sent to a cache storage account in the source region. Data is sent from there to the target region, and recovery points are generated from the data.
 
-Azure Site Recovery, does not currently support virtual machines protected with [Trusted Launch](https://learn.microsoft.com/azure/virtual-machines/trusted-launch?WT.mc_id=AZ-MVP-5004796).
+Azure Site Recovery, does not currently support virtual machines protected with [Trusted Launch](https://learn.microsoft.com/azure/virtual-machines/trusted-launch?WT.mc_id=AZ-MVP-5004796){:target="*blank"}.
 
 ### Enable Azure Site Recovery
 
@@ -345,11 +345,19 @@ Once your virtual machine, has been replicated to the secondary region. you can 
 | Post-Operation       | The secondary site becomes the new primary site until failback is initiated. | No change to the primary site; the secondary site remains inactive. |
 | Rollback Option      | Failback operation is required to return to the primary site once it's available. | No need for a rollback; the primary site remains unaffected. |
 
-k
+1. Navigate to your destination Recovery Services Vault
+1. Click on REplicated Items
+1. Select the Virtual Machine you wish to recover in your second region
+1. Select Test Failover (or Failover, depending on your requirements)
+1. Select your Recovery point and destination Virtual network
+1. Select Failover
+1. If its a test failover, you can then Clean up your Test failover _(deleted replicated item)_ after you have tested
+
+![Azure BackupCenter](/images/posts/BackupCenter_RSV_TestFailoverAzureSiteRecovery.gif)
 
 ## Azure Policies
 
-Automatically, mapping of Virtual Machines, to backup policies can be done using [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796).
+Automatically, mapping of Virtual Machines, to backup policies can be done using [Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}.
 
 Azure policies such as:
 
@@ -368,4 +376,4 @@ And more, are built-in to the Azure policy engine, and can be easily and assigne
 
 ![Azure AutoManage](/images/posts/azure-automanage-intelligently-onboard-services.png)
 
-[Azure Automanage](https://learn.microsoft.com/azure/automanage/overview-about?WT.mc_id=AZ-MVP-5004796) can be used alongside Azure policy, to onboard Virtual Machines, into backup, patching etc automatically, with reduced manual intervention, and although not directly part of this article, what you have learn't can be used to develop your automanage profiles.
+[Azure Automanage](https://learn.microsoft.com/azure/automanage/overview-about?WT.mc_id=AZ-MVP-5004796){:target="*blank"} can be used alongside Azure policy, to onboard Virtual Machines, into backup, patching etc automatically, with reduced manual intervention, and although not directly part of this article, what you have learn't can be used to develop your automanage profiles.

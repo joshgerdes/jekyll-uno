@@ -23,7 +23,7 @@ Let us start with the basics with a user story; what do we need to achieve:
 So that I can ensure data reliability, disaster recovery, and compliance with minimal manual intervention."
 
 With some assumptions around further requirements, we can jump into solutions using native Microsoft Azure services to fulfil the Cloud Administrator's need.
-It is worth mentioning, especially around disaster recovery, that there is much more you can (and should do) do around mission-critical Azure architecture. This article will focus primarily on the data loss portion of disaster recovery with Azure Backup services.
+It is worth mentioning, especially around disaster recovery, that there is much more you can (and should do) do around [mission-critical](https://learn.microsoft.com/azure/well-architected/mission-critical/mission-critical-overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"} Azure architecture. This article will focus primarily on the data loss portion of disaster recovery with Azure Backup services.
 
 | **Requirement**                                                     | **Azure Service(s) Used**                       |
 | ------------------------------------------------------------------- | ----------------------------------------------- |

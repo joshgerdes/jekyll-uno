@@ -24,7 +24,9 @@ Here is a table that summarizes the pros and cons of self-hosted Azure DevOps ag
 |----------------|----------|----------|
 | Self-hosted    | More control over the environment, ability to install dependent software needed for builds and deployments, machine-level caches and configuration persist from run to run, which can boost speed. | Maintenance and upgrades are not taken care of for you; you must manage the agent yourself. |
 | Microsoft-hosted | Maintenance and upgrades are taken care of for you; each time you run a pipeline, you get a fresh virtual machine discarded after one use. Microsoft-hosted agents can run jobs directly on the VM or in a container. The pre-defined Azure Pipelines agent pool offers several virtual machine images, each including various tools and software. You can see the installed software for each hosted agent by choosing the Included Software link in the table. Microsoft-hosted agents run on a secure Azure platform. | You have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run. |
- 
+
+  ## Overview
+
 Self-hosted agents give you more control over your environment, allowing you to install dependent software needed for your builds and deployments.
 
 As Azure DevOps pipeline jobs come and go as they complete each task required, you want to be able to scale the agents out as required and pay for only what you use, you could consider [Azure Virtual Machine Scale Set agents](https://learn.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&WT.mc_id=AZ-MVP-5004796). Still, you have to have to maintain virtual machine images and storage, they can be slow to provision and start, and they could become inconsistent as manual changes can be easier to do.
@@ -113,7 +115,7 @@ The cost of the overall solution 'depends' on how active it is and how it is use
 
 It is recommended to do an estimate using the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?WT.mc_id=AZ-MVP-5004796) in your currency and region to work out the costs, but the true reflection will be once your Azure DevOps pipelines start consuming the infrastructure.
 
-Let us get building!
+## Let us get building!
 
 To deploy our environment:
 
@@ -129,6 +131,8 @@ We will start with a Resource Group consisting of our Managed Identity.
 
 ![Azure Container Apps - Resource Group](/images/posts/AzureContainerApps_AzurePortal_ado-containerapp-rg.png)
 
+### Prepare - Azure DevOps Agent Pool
+
 Before deploying anything into Azure, we must prepare our Azure DevOps environment.
 
 1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation
@@ -143,7 +147,7 @@ Before deploying anything into Azure, we must prepare our Azure DevOps environme
 
 Once the agent pool has been created, we need our token to allow the Agents to register to the Agent Pool we have just created.
 
-*This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to be protected from unauthorised people and allowing you to regenerate the secret when required by updating the keyvault secret without having to redeploy any of the infrastructure.*
+*This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to being protected from unauthorised people and allowing you to regenerate the secret when required by updating the key vault secret without having to redeploy any of the infrastructure.*
 
 1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation1.
 2. Click on the little User icon at the top right *(next to your initials)*
@@ -158,6 +162,23 @@ Once the agent pool has been created, we need our token to allow the Agents to r
 11. Copy the Token for later; if you lose this token before it can be uploaded to Key Vault, you will have to generate a new Token.
     
 ![Create Azure DevOps - Agent Pool](/images/posts/AzureDevOps_CreatePATToken_CAPPS.gif)
+
+### Deploy - Azure Container Apps Environment
+
+Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deploy our Container Apps infrastructure.
+
+> The [deployment scripts](https://learn.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template?WT.mc_id=AZ-MVP-5004796) used by this solution do not currently support Private Endpoints _(this is coming)_, so during the build process the Container Registry has Public endpoint enabled. This can be disabled after your initial build has been completed if required. You could add another deployment script to the Container Registry back to private at the end if needed.
+
+To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted.com](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally, or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796). The repository will have any updated code.
+
+The Bicep code will be deployed as follows:
+
+{% gist f2f2242ab8580a69db76f01b537d477c %}
+
+
+
+
+
 
 
 

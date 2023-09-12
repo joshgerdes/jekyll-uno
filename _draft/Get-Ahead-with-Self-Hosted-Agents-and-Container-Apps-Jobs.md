@@ -106,7 +106,6 @@ We will also need a [User Assigned Managed Identity](https://learn.microsoft.com
 | Contributor            | usrmi       | Contributor role on the container registry resource to push the container image and create the Container App Jobs and resources. |
 | Key Vault Secrets User | usrmi       | Secret Reader to access the Key Vault secrets.                                                                                 |
 
-
 The cost of the overall solution 'depends' on how active it is and how it is used.
 
 * Resources such as [Azure Container Apps](https://azure.microsoft.com/pricing/details/container-apps/?WT.mc_id=AZ-MVP-5004796, under Consumption, are pay-per-use and dependent on the number of requests and the length of those requests. The idea here is that they only cost something if in use.
@@ -147,7 +146,7 @@ Before deploying anything into Azure, we must prepare our Azure DevOps environme
 
 Once the agent pool has been created, we need our token to allow the Agents to register to the Agent Pool we have just created.
 
-*This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to being protected from unauthorised people and allowing you to regenerate the secret when required by updating the key vault secret without having to redeploy any of the infrastructure.*
+*This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to be protected from unauthorised people and allowing you to regenerate the secret when required by updating the key vault secret without having to redeploy any of the infrastructure.*
 
 1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation1.
 2. Click on the little User icon at the top right *(next to your initials)*
@@ -167,13 +166,25 @@ Once the agent pool has been created, we need our token to allow the Agents to r
 
 Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deploy our Container Apps infrastructure.
 
-> The [deployment scripts](https://learn.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template?WT.mc_id=AZ-MVP-5004796) used by this solution do not currently support Private Endpoints _(this is coming)_, so during the build process the Container Registry has Public endpoint enabled. This can be disabled after your initial build has been completed if required. You could add another deployment script to the Container Registry back to private at the end if needed.
+> The [deployment scripts](https://learn.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template?WT.mc_id=AZ-MVP-5004796) used by this solution do not currently support Private Endpoints _(this is coming)_, so during the build process the Container Registry has Public endpoint enabled. This can be disabled after your initial build has been completed if required. If needed, you could add another deployment script to the Container Registry back to private at the end.
 
 To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted.com](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally, or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796). The repository will have any updated code.
 
 The Bicep code will be deployed as follows:
 
 {% gist f2f2242ab8580a69db76f01b537d477c %}
+
+We will need our Azure DevOps token created earlier, the name of the Agent Pool and the Azure DevOps URL.
+
+We can adjust the parameters to suit our environment and deploy.
+
+*The token is classified as a secure value, so although it is visible in plain text here, it will not be parsed through in the deployment logs.*
+
+
+
+
+
+
 
 
 

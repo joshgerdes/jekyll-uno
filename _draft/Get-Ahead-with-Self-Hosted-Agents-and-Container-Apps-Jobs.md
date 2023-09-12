@@ -22,8 +22,8 @@ Here is a table that summarizes the pros and cons of self-hosted Azure DevOps ag
 
 | **Agent Type** | **Pros** | **Cons** |
 |----------------|----------|----------|
-| Self-hosted    | More control over the environment, ability to install dependent software needed for builds and deployments, machine-level caches and configuration persist from run to run, which can boost speed. | Maintenance and upgrades are not taken care of for you, you need to manage the agent yourself. |
-| Microsoft-hosted | Maintenance and upgrades are taken care of for you; each time you run a pipeline, you get a fresh virtual machine discarded after one use. Microsoft-hosted agents can run jobs directly on the VM or in a container. The pre-defined Azure Pipelines agent pool offers several virtual machine images to choose from, each including a broad range of tools and software. You can see the installed software for each hosted agent by choosing the Included Software link in the table. Microsoft-hosted agents run on a secure Azure platform. | You have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run. |
+| Self-hosted    | More control over the environment, ability to install dependent software needed for builds and deployments, machine-level caches and configuration persist from run to run, which can boost speed. | Maintenance and upgrades are not taken care of for you; you must manage the agent yourself. |
+| Microsoft-hosted | Maintenance and upgrades are taken care of for you; each time you run a pipeline, you get a fresh virtual machine discarded after one use. Microsoft-hosted agents can run jobs directly on the VM or in a container. The pre-defined Azure Pipelines agent pool offers several virtual machine images, each including various tools and software. You can see the installed software for each hosted agent by choosing the Included Software link in the table. Microsoft-hosted agents run on a secure Azure platform. | You have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run. |
  
 Self-hosted agents give you more control over your environment, allowing you to install dependent software needed for your builds and deployments.
 
@@ -61,9 +61,9 @@ Running self-hosted agents as event-driven jobs allows you to take advantage of 
 
 > Container apps and jobs don't support running Docker in containers. Any steps in your workflows that use Docker commands will fail when run on a self-hosted runner or agent in a Container Apps job; other [restrictions also exist](https://learn.microsoft.com/en-us/azure/container-apps/jobs?tabs=azure-cli&WT.mc_id=AZ-MVP-5004796#jobs-restrictions).
 
-For the purposes of an Azure DevOps Agent, we want to execute tasks or remove them. This is where Container Apps Jobs and [KEDA](https://keda.sh/) come in handy.
+For an Azure DevOps Agent, we want to execute tasks or remove them. This is where Container Apps Jobs and [KEDA](https://keda.sh/) come in handy.
 
-> KEDA (Kubernetes-based Event Driven Autoscaling) is an open-source project that provides event-driven autoscaling for Kubernetes workloads. KEDA can scale any container in response to events from various event sources such as Azure Service Bus, Azure Event Hubs, Azure Storage Queues, Azure Storage Blobs, RabbitMQ, Kafka, and more.
+> KEDA (Kubernetes-based Event Driven Autoscaling) is an open-source project that provides event-driven autoscaling for Kubernetes workloads. KEDA can scale any container in response to events from various sources such as Azure Service Bus, Azure Event Hubs, Azure Storage Queues, Azure Storage Blobs, RabbitMQ, Kafka, and more.
 
 One of the supported scalers is [Azure Pipelines](https://keda.sh/docs/2.11/scalers/azure-pipelines/).
 
@@ -104,4 +104,4 @@ We will also need a [User Assigned Managed Identity](https://learn.microsoft.com
 | Contributor            | usrmi       | Contributor role on the container registry resource to push the container image and create the Container App Jobs and resources. |
 | Key Vault Secrets User | usrmi       | Secret Reader to access the Key Vault secrets.                                                                                 |
 
-![Container App Jobs - High-level architecture](images/posts/privatecontainerappsjob_architecture.png)
+![Container App Jobs - High-level architecture](/images/posts/privatecontainerappsjob_architecture.png)

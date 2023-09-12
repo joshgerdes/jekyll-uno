@@ -139,5 +139,25 @@ Before deploying anything into Azure, we must prepare our Azure DevOps environme
 6. Give the Agent pool a **name** *(ie containerapp-adoagent - we will need the name later in our Bicep code)*
 7. Enter a description and click **Create**
 
-8. 
+![Create Azure DevOps - Agent Pool](/images/posts/AzureDevOps_CreateAgentPool_CAPPS.gif)
+
+Once the agent pool has been created, we need our token to allow the Agents to register to the Agent Pool we have just created.
+
+*This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to be protected from unauthorised people and allowing you to regenerate the secret when required by updating the keyvault secret without having to redeploy any of the infrastructure.*
+
+1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation1.
+2. Click on the little User icon at the top right *(next to your initials)*
+3. Click on **Personal Access Tokens**
+4. Click **+ New Token**
+5. Type in a **name** *(ie JoinADOPool)*
+6. Specify a valid **expiration date** *(for our demo purposes, we will go with 30 days)*.
+7. Click **Show all scopes*
+8. Find **Agent Pools**
+9. Click **Read & manage**
+10. Click **Create**
+11. Copy the Token for later; if you lose this token before it can be uploaded to Key Vault, you will have to generate a new Token.
+    
+![Create Azure DevOps - Agent Pool](/images/posts/AzureDevOps_CreatePATToken_CAPPS.gif)
+
+
 

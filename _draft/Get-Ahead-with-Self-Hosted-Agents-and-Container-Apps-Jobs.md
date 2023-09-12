@@ -6,7 +6,7 @@ categories:
 toc: true
 header:
   teaser: /images/posts/BlogHeader-GetAheadwithSelf-HostedAgentsandContainerAppsJobs.gif
-date: '2023-09-12 00:00:00 +1300'
+date: '2023-09-13 00:00:00 +1300'
 ---
 
 When considering [build agents](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser&WT.mc_id=AZ-MVP-5004796) to use in [Azure DevOps](https://azure.microsoft.com/products/devops?WT.mc_id=AZ-MVP-5004796) *(or [GitHub](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners))*, there are 2 main options to consider:
@@ -81,7 +81,7 @@ The **Manual** job will be run once to create a [placeholder](https://keda.sh/bl
 
 > "You cannot queue an Azure Pipelines job on an empty agent pool because Azure Pipelines cannot validate if the pool matches the requirements for the job."
 
-As our Container Jobs are temporary, a placeholder agent **needs to remain** in the Agent pool *(ie don't delete it)*, to keep it active. This agent will be offline and can be Disabled if required in Azure DevOps. The Azure resource however, then be deleted.
+As our Container Jobs are temporary, a placeholder agent **needs to remain** in the Agent pool *(i.e. don't delete it)* to keep it active. This agent will be offline and can be Disabled if required in Azure DevOps. The Azure resource, however, then be deleted.
 
 For the actual agents themselves that will run our code, they will be **event-driven**.
 
@@ -97,11 +97,47 @@ Our resources will consist of:
 * [Azure Private DNS zones](https://learn.microsoft.com/azure/dns/private-dns-privatednszone?WT.mc_id=AZ-MVP-5004796) *(the DNS zones, will allow the Container App Environment, to reach the Key vault and Container Registry over the internal network)*
 * [Deployment scripts](https://learn.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template?WT.mc_id=AZ-MVP-5004796) *(these can be deleted afterwards, but they will run the scripts to build our container image, and placeholder agent within the confines of Bicep)*
 
-We will also need a [User Assigned Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796), for the purposes of this article *(and the scope only being to the Resource Group)* I have a pre-created User Assigned Managed identity named: *usrmi*. This Managed identity has the following role assignments to the Resource Group to which the resources will be deployed.
+We will also need a [User Assigned Managed Identity](https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview?WT.mc_id=AZ-MVP-5004796) for this article *(and the scope only being to the Resource Group)* I have a pre-created User Assigned Managed identity named: *usrmi*. This Managed identity has the following role assignments to the Resource Group to which the resources will be deployed.
 
 | **Role**                   | **Assigned To** | **Notes**                                                                                                                          |
 |------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Contributor            | usrmi       | Contributor role on the container registry resource to push the container image and create the Container App Jobs and resources. |
 | Key Vault Secrets User | usrmi       | Secret Reader to access the Key Vault secrets.                                                                                 |
 
+
+The cost of the overall solution 'depends' on how active it is and how it is used.
+
+* Resources such as [Azure Container Apps](https://azure.microsoft.com/pricing/details/container-apps/?WT.mc_id=AZ-MVP-5004796, under Consumption, are pay-per-use and dependent on the number of requests and the length of those requests. The idea here is that they only cost something if in use.
+* [Container Registry](https://azure.microsoft.com/en-us/pricing/details/container-registry/?WT.mc_id=AZ-MVP-5004796 requires the Premium SKU for Private Endpoint support, but for demo environments, you could get away with a Basic.
+* [Key Vault](https://azure.microsoft.com/pricing/details/key-vault/?WT.mc_id=AZ-MVP-5004796) also depends on the number of transactions and functionality.
+
+It is recommended to do an estimate using the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?WT.mc_id=AZ-MVP-5004796) in your currency and region to work out the costs, but the true reflection will be once your Azure DevOps pipelines start consuming the infrastructure.
+
+Let us get building!
+
+To deploy our environment:
+
 ![Container App Jobs - High-level architecture](/images/posts/privatecontainerappsjob_architecture.png)
+
+We will Azure Bicep, a User Managed Identity and Resource Group.1
+
+The [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep&WT.mc_id=AZ-MVP-5004796) file I have written is scoped to a single Resource Group, but to do this in production and work with your existing resources, it may be better to move it to [modules](https://learn.microsoft.com/azure/azure-resource-manager/bicep/modules?WT.mc_id=AZ-MVP-5004796).
+
+All the code required to get this to work can be found in the following GitHub repository: [lukemurraynz/containerapps-selfhosted-agent](https://github.com/lukemurraynz/containerapps-selfhosted-agent), including the [GitHub Codespace](https://luke.geek.nz/azure/Getting-Started-with-GitHub-Codespaces/), configuration I am using to deploy.
+
+We will start with a Resource Group consisting of our Managed Identity.
+
+![Azure Container Apps - Resource Group](/images/posts/AzureContainerApps_AzurePortal_ado-containerapp-rg.png)
+
+Before deploying anything into Azure, we must prepare our Azure DevOps environment.
+
+1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation
+2. Click on **Organization Settings**
+3. Click on **Agent Pools**
+4. Click **Add Pool**
+5. Select **Self-hosted**
+6. Give the Agent pool a **name** *(ie containerapp-adoagent - we will need the name later in our Bicep code)*
+7. Enter a description and click **Create**
+
+8. 
+

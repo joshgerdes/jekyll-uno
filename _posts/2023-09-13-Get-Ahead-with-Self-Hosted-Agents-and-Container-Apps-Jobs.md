@@ -172,7 +172,7 @@ Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deplo
     Register-AzResourceProvider -ProviderNamespace Microsoft.ContainerRegistry
     Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
 
-To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally or from the [Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}. The repository will have any updated code.
+To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted](https://github.com/lukemurraynz/containerapps-selfhosted-agent){:target="*blank"} and run it locally or from the [Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}. The repository will have any updated code.
 
 The Bicep code will be deployed as follows:
 
@@ -201,7 +201,7 @@ The bicep code will now do the following:
 * Create a Container Registry and a private link to the virtual network
 * Create DNS zone for container registry
 * Places the token into a Key Vault secret
-* Run a deployment script, which will build the Azure DevOps Agent Container image from the following docker file: [containerapps-selfhosted-agent/Dockerfile.azure-pipelines](https://github.com/lukemurraynz/containerapps-selfhosted-agent/blob/main/Dockerfile.azure-pipelines)
+* Run a deployment script, which will build the Azure DevOps Agent Container image from the following docker file: [containerapps-selfhosted-agent/Dockerfile.azure-pipelines](https://github.com/lukemurraynz/containerapps-selfhosted-agent/blob/main/Dockerfile.azure-pipelines){:target="*blank"}
 * Create the Consumption Container Apps environment
 * Create a Log Analytics workspace and attach it to the Container Apps environment as a diagnostic setting
 * Run a deployment script that runs the acrbuild command to deploy the placeholder Azure DevOps agent

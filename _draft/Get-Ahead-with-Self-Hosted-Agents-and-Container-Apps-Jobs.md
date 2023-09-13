@@ -218,9 +218,25 @@ To validate it worked, you can go into the Azure DevOps and Agent Pools, and you
 
 Once deployed, you can go into the Container Registry, Networking blade and change Public network access to Disabled. You can also delete the DeploymentScript resources, as these are no longer required.
 
+## Testing
 
+To test that it is working - I have deployed a Virtual Machine into the sharedservices subnet with RDP open internally.
 
+Let's import a test Azure pipeline to test that the event scaling is working and that the Container App job can communicate with internal resources.
 
+{% gist 128e5d6ace94909436f94535d612f955 %}
 
+1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation.
+2. Navigate to a **repository** that you can test *(create one if it doesn't exist and initialize it)*.
+3. Create a new file called **azure-pipelines.yml**, and copy the pipeline into it.
+4. Note: I am not talking from experience or anything, but make sure you **update the RDP IP** to make sure it's a valid destination IP in the yml.
+5. You can then navigate to **Pipelines**
+6. **Import Pipeline**
+7. **Run**
 
+![Run Azure DevOps - Agent Pool](/images/posts/Run_AzureContainerApps_Agent)
+
+As the Container App agent runs, the Container App Job will execute (in some cases, multiple job instances will be spawned to fulfil your pipeline needs across multiple parallel jobs and tasks).
+
+### Logging
 

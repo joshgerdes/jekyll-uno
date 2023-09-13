@@ -25,7 +25,7 @@ Here is a table that summarizes the pros and cons of self-hosted Azure DevOps ag
 | Self-hosted    | More control over the environment, ability to install dependent software needed for builds and deployments, machine-level caches and configuration persist from run to run, which can boost speed. | Maintenance and upgrades are not taken care of for you; you must manage the agent yourself. |
 | Microsoft-hosted | Maintenance and upgrades are taken care of for you; each time you run a pipeline, you get a fresh virtual machine discarded after one use. Microsoft-hosted agents can run jobs directly on the VM or in a container. The pre-defined Azure Pipelines agent pool offers several virtual machine images, each including various tools and software. You can see the installed software for each hosted agent by choosing the Included Software link in the table. Microsoft-hosted agents run on a secure Azure platform. | You have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run. |
 
-  ## Overview
+## Overview
 
 Self-hosted agents give you more control over your environment, allowing you to install dependent software needed for your builds and deployments.
 
@@ -206,7 +206,7 @@ The bicep code will now do the following:
 * Create the Consumption Container Apps environment
 * Create a Log Analytics workspace and attach it to the Container Apps environment as a diagnostic setting
 * Run a deployment script that runs the acrbuild command to deploy the placeholder Azure DevOps agent
-* Creates the Azure Container Apps job, used for devops agents, with the azure-pipelines KEDA scaler configuration.
+* Creates the Azure Container Apps job, used for DevOps agents, with the azure-pipelines KEDA scaler configuration.
 
 ![Create Azure DevOps - Agent Pool](/images/posts/Create_AzureContainerApps_BicepCodeSpace.gif)
 
@@ -229,14 +229,29 @@ Let's import a test Azure pipeline to test that the event scaling is working and
 1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation.
 2. Navigate to a **repository** that you can test *(create one if it doesn't exist and initialize it)*.
 3. Create a new file called **azure-pipelines.yml**, and copy the pipeline into it.
-4. Note: I am not talking from experience or anything, but make sure you **update the RDP IP** to make sure it's a valid destination IP in the yml.
+4. Note: I am not talking from experience or anything, but make sure you **update the RDP IP** to make sure it's a valid destination IP in the YML.
 5. You can then navigate to **Pipelines**
 6. **Import Pipeline**
 7. **Run**
 
-![Run Azure DevOps - Agent Pool](/images/posts/Run_AzureContainerApps_Agent)
+![Run Azure DevOps - Agent Pool](/images/posts/Run_AzureContainerApps_Agent.gif)
 
-As the Container App agent runs, the Container App Job will execute (in some cases, multiple job instances will be spawned to fulfil your pipeline needs across multiple parallel jobs and tasks).
+As the Container App agent runs, the Container App Job will execute (in some cases, multiple job instances will be spawned to fulfil your pipeline needs across multiple parallel jobs and tasks), and the resources get spawned in Azure.
 
-### Logging
+## Logging
 
+The Container App Environment logs are stored in the Log Analytics workspace.
+
+1. Login to the **Azure Portal**
+2. Navigate to the **Log Analytics workspace** created *(i.e. law-jcdbxrheta7ug)*
+3. Navigate to **Logs**
+4. The default logs rules look for an incorrect table *(ContainerAppConsoleLogs_CL*.
+5. To retrieve the Logs, click on **Category** and uncollapse **Azure Resources**
+
+![Run Azure DevOps - Agent Pool](/images/posts/Run_AzureContainerApps_LogAnalytics.gif)
+
+## Additional Reading
+
+* A great tutorial exists to use Azure CLI to build the self-hosted Azure DevOps and GitHub Runners: [Tutorial: Deploy self-hosted CI/CD runners and agents with Azure Container Apps jobs](https://learn.microsoft.com/azure/container-apps/tutorial-ci-cd-runners-jobs?tabs=bash&pivots=container-apps-jobs-self-hosted-ci-cd-azure-pipelines&WT.mc_id=AZ-MVP-5004796)
+* [Jobs in Azure Container Apps](https://learn.microsoft.com/azure/container-apps/jobs?tabs=azure-cli&WT.mc_id=AZ-MVP-5004796#event-driven-jobs)
+* [KEDA - Kubernetes Event-driven Autoscaling](https://keda.sh/)

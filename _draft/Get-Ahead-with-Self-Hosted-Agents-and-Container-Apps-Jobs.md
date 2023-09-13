@@ -38,7 +38,7 @@ Here is a table that summarizes the comparison between Container Apps Jobs for a
 | Container Apps Jobs | Can run containerized tasks that execute for a finite duration and exit, allowing you to perform tasks such as data processing, machine learning, or any scenario requiring on-demand processing. Container apps and jobs run in the same environment, allowing them to share capabilities such as networking and logging. | You have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run. |
 | Azure Virtual Machine scale set | You have more control over the environment, allowing you to install dependent software needed for your builds and deployments. Machine-level caches and configuration persist from run to run, which can boost speed. | Maintenance and upgrades are not taken care of for you; you need to manage the agent yourself. |
 
-Container Apps Jobs allow you to run containerized tasks that execute for a finite duration and exit, performing tasks such as data processing, machine learning, or any scenario where on-demand processing is required. Container apps and jobs run in the same environment, allowing them to share capabilities such as networking and logging. However, you have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run.
+Container Apps Jobs allows you to run containerized tasks that execute for a finite duration and exit, performing tasks such as data processing, machine learning, or any scenario requiring on-demand processing. Container apps and jobs run in the same environment, allowing them to share capabilities such as networking and logging. However, you have less control over the environment, you cannot install dependent software needed for builds and deployments, and machine-level caches and configurations do not persist from run to run.
 
 *The choice between Container Apps and VM scale sets for Azure DevOps agents should consider your specific project requirements and constraints. Each option has its own set of advantages and trade-offs.*
 
@@ -83,7 +83,7 @@ The **Manual** job will be run once to create a [placeholder](https://keda.sh/bl
 
 > "You cannot queue an Azure Pipelines job on an empty agent pool because Azure Pipelines cannot validate if the pool matches the requirements for the job."
 
-As our Container Jobs are temporary, a placeholder agent **needs to remain** in the Agent pool *(i.e. don't delete it)* to keep it active. This agent will be offline and can be Disabled if required in Azure DevOps. The Azure resource, however, then be deleted.
+As our Container Jobs are temporary, a placeholder agent **needs to remain** in the Agent pool *(i.e. don't delete it)* to keep it active. This agent will be offline and can be Disabled if required in Azure DevOps. The Azure resource, however, can then be deleted.
 
 For the actual agents themselves that will run our code, they will be **event-driven**.
 
@@ -120,7 +120,7 @@ To deploy our environment:
 
 ![Container App Jobs - High-level architecture](/images/posts/privatecontainerappsjob_architecture.png)
 
-We will Azure Bicep, a User Managed Identity and Resource Group.1
+We will Azure Bicep, a User Managed Identity and Resource Group.
 
 The [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep&WT.mc_id=AZ-MVP-5004796) file I have written is scoped to a single Resource Group, but to do this in production and work with your existing resources, it may be better to move it to [modules](https://learn.microsoft.com/azure/azure-resource-manager/bicep/modules?WT.mc_id=AZ-MVP-5004796).
 
@@ -168,6 +168,11 @@ Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deplo
 
 > The [deployment scripts](https://learn.microsoft.com/azure/azure-resource-manager/templates/deployment-script-template?WT.mc_id=AZ-MVP-5004796) used by this solution do not currently support Private Endpoints _(this is coming)_, so during the build process the Container Registry has Public endpoint enabled. This can be disabled after your initial build has been completed if required. If needed, you could add another deployment script to the Container Registry back to private at the end.
 
+> If this is the first time you have deployed COntainer Apps or Container Registry, you may need to register the [providers](https://learn.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types?WT.mc_id=AZ-MVP-5004796). This can be done with the following PowerShell commands, against your target subscription, else the deployment will fail:
+
+    Register-AzResourceProvider -ProviderNamespace Microsoft.ContainerRegistry
+    Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
+
 To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted.com](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally, or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796). The repository will have any updated code.
 
 The Bicep code will be deployed as follows:
@@ -180,7 +185,10 @@ We can adjust the parameters to suit our environment and deploy.
 
 *The token is classified as a secure value, so although it is visible in plain text here, it will not be parsed through in the deployment logs.*
 
+Verify that the Resource Group and the User-Assigned managed identity exist with appropriate permissions.
 
+1. Open the Codespace
+2. 
 
 
 

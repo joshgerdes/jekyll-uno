@@ -190,7 +190,7 @@ Verify that the Resource Group and the User-Assigned managed identity exist with
 2. Navigate to the **IaC** folder and select main.bicep
 3. Select the **[Deployment Pane](https://luke.geek.nz/azure/Azure-Bicep-Deploy-Pane/)** *(top right)*
 4. Select your **Scope** - i.e. the Resource Group you will want to deploy to; you will need to log in with your Azure credentials
-5. **Update the parameters**, such as your ADO URL *(make sure it doesn't include an end '/')*, token and Agent Pool
+5. **Update the parameters**, such as your ADO URL *(make sure it doesn't include an end '/')*, token and Agent Pool, and add the name of your user assigned managed identity.
 6. Click **Validate** to validate that Bicep code syntax is correct, then click **Deploy**
 
 The bicep code will now do the following:

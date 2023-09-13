@@ -154,7 +154,7 @@ Once the agent pool has been created, we need our token to allow the Agents to r
 4. Click **+ New Token**
 5. Type in a **name** *(ie JoinADOPool)*
 6. Specify a valid **expiration date** *(for our demo purposes, we will go with 30 days)*.
-7. Click **Show all scopes*
+7. Click **Show all scopes**
 8. Find **Agent Pools**
 9. Click **Read & manage**
 10. Click **Create**

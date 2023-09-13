@@ -13,8 +13,8 @@ When considering [build agents](https://learn.microsoft.com/azure/devops/pipelin
 
 | Agent type              | Description                                              |
 | ----------------------- | -------------------------------------------------------- |
-| [Microsoft-hosted agents](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser&WT.mc_id=AZ-MVP-5004796#microsoft-hosted-agents) | Agents hosted and managed by Microsoft                   |
-| [Self-hosted agents](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser&WT.mc_id=AZ-MVP-5004796#install)      | Agents that you configure and manage, hosted on your VMs |
+| [Microsoft-hosted agents](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser&WT.mc_id=AZ-MVP-5004796#microsoft-hosted-agents){:target="*blank"} | Agents hosted and managed by Microsoft                   |
+| [Self-hosted agents](https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser&WT.mc_id=AZ-MVP-5004796#install){:target="*blank"}      | Agents that you configure and manage, hosted on your VMs |
 
 [Microsoft-hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml&WT.mc_id=AZ-MVP-5004796){:target="*blank"}, can be used for most things, but there are times where you may need to talk to internal company resources, or security is a concern, which is when you would consider self-hosting the agent yourself.
 
@@ -108,8 +108,8 @@ We will also need a [User Assigned Managed Identity](https://learn.microsoft.com
 
 The cost of the overall solution 'depends' on how active it is and how it is used.
 
-* Resources such as [Azure Container Apps](<https://azure.microsoft.com/pricing/details/container-apps/?WT.mc_id=AZ-MVP-5004796>, under Consumption, are pay-per-use and dependent on the number of requests and the length of those requests. The idea here is that they only cost something if in use.
-* [Container Registry](<https://azure.microsoft.com/en-us/pricing/details/container-registry/?WT.mc_id=AZ-MVP-5004796> requires the Premium SKU for Private Endpoint support, but for demo environments, you could get away with a Basic.
+* Resources such as [Azure Container Apps](https://azure.microsoft.com/pricing/details/container-apps/?WT.mc_id=AZ-MVP-5004796), under Consumption, are pay-per-use and dependent on the number of requests and the length of those requests. The idea here is that they only cost something if in use.
+* [Container Registry](https://azure.microsoft.com/en-us/pricing/details/container-registry/?WT.mc_id=AZ-MVP-5004796) requires the Premium SKU for Private Endpoint support, but for demo environments, you could get away with a Basic.
 * [Key Vault](https://azure.microsoft.com/pricing/details/key-vault/?WT.mc_id=AZ-MVP-5004796){:target="*blank"} also depends on the number of transactions and functionality.
 
 It is recommended to do an estimate using the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?WT.mc_id=AZ-MVP-5004796){:target="*blank"} in your currency and region to work out the costs, but the true reflection will be once your Azure DevOps pipelines start consuming the infrastructure.
@@ -148,7 +148,7 @@ Once the agent pool has been created, we need our token to allow the Agents to r
 
 *This token is a secret and will be stored in an Azure Key Vault as part of our deployment, allowing the secret to be protected from unauthorised people and allowing you to regenerate the secret when required by updating the key vault secret without having to redeploy any of the infrastructure.*
 
-1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation1.
+1. Login to your **[Azure DevOps](https://aex.dev.azure.com/)** organisation.
 2. Click on the little User icon at the top right *(next to your initials)*
 3. Click on **Personal Access Tokens**
 4. Click **+ New Token**
@@ -172,7 +172,7 @@ Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deplo
     Register-AzResourceProvider -ProviderNamespace Microsoft.ContainerRegistry
     Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
 
-To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}. The repository will have any updated code.
+To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally or from the [Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}. The repository will have any updated code.
 
 The Bicep code will be deployed as follows:
 

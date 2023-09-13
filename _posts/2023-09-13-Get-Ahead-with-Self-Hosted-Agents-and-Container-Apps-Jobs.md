@@ -124,7 +124,7 @@ We will Azure Bicep, a User Managed Identity and Resource Group.
 
 The [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep&WT.mc_id=AZ-MVP-5004796){:target="*blank"} file I have written is scoped to a single Resource Group, but to do this in production and work with your existing resources, it may be better to move it to [modules](https://learn.microsoft.com/azure/azure-resource-manager/bicep/modules?WT.mc_id=AZ-MVP-5004796){:target="*blank"}.
 
-All the code required to get this to work can be found in the following GitHub repository: [lukemurraynz/containerapps-selfhosted-agent](https://github.com/lukemurraynz/containerapps-selfhosted-agent), including the [GitHub Codespace](https://luke.geek.nz/azure/Getting-Started-with-GitHub-Codespaces/), configuration I am using to deploy.
+> All the code required to get this to work can be found in the following GitHub repository: [lukemurraynz/containerapps-selfhosted-agent](https://github.com/lukemurraynz/containerapps-selfhosted-agent){:target="*blank"}, including the [GitHub Codespace](https://luke.geek.nz/azure/Getting-Started-with-GitHub-Codespaces/){:target="*blank"}, configuration I am using to deploy.
 
 We will start with a Resource Group consisting of our Managed Identity.
 

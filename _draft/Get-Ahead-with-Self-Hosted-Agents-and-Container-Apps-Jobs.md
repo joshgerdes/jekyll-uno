@@ -173,7 +173,7 @@ Now that we have our Azure DevOps Agent Pool and PAT token - it is time to deplo
     Register-AzResourceProvider -ProviderNamespace Microsoft.ContainerRegistry
     Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
 
-To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted.com](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally, or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796). The repository will have any updated code.
+To proceed, I will use my GitHub Codespace to deploy the Bicep; you could either run your own Codespace if you need it or fork the code [lukemurraynz/containerapps-selfhosted](https://github.com/lukemurraynz/containerapps-selfhosted-agent) and run it locally or from the[Azure CloudShell](https://learn.microsoft.com/azure/cloud-shell/overview?WT.mc_id=AZ-MVP-5004796). The repository will have any updated code.
 
 The Bicep code will be deployed as follows:
 
@@ -187,13 +187,36 @@ We can adjust the parameters to suit our environment and deploy.
 
 Verify that the Resource Group and the User-Assigned managed identity exist with appropriate permissions.
 
-1. Open the Codespace
-2. 
+1. Open the **Codespace**
+2. Navigate to the **IaC** folder and select main.bicep
+3. Select the **[Deployment Pane](https://luke.geek.nz/azure/Azure-Bicep-Deploy-Pane/)** *(top right)*
+4. Select your **Scope** - i.e. the Resource Group you will want to deploy to; you will need to log in with your Azure credentials
+5. **Update the parameters**, such as your ADO URL *(make sure it doesn't include an end '/')*, token and Agent Pool
+6. Click **Validate** to validate that Bicep code syntax is correct, then click **Deploy**
 
+The bicep code will now do the following:
 
+* Create Azure Virtual Network
+* Create Azure Key Vault and private link to the virtual network
+* Create DNS zone for Key Vault
+* Create a Container Registry and a private link to the virtual network
+* Create DNS zone for container registry
+* Places the token into a Key Vault secret
+* Run a deployment script, which will build the Azure DevOps Agent Container image from the following docker file: [containerapps-selfhosted-agent/Dockerfile.azure-pipelines](https://github.com/lukemurraynz/containerapps-selfhosted-agent/blob/main/Dockerfile.azure-pipelines)
+* Create the Consumption Container Apps environment
+* Create a Log Analytics workspace and attach it to the Container Apps environment as a diagnostic setting
+* Run a deployment script that runs the acrbuild command to deploy the placeholder Azure DevOps agent
+* Creates the Azure Container Apps job, used for devops agents, with the azure-pipelines KEDA scaler configuration.
 
+![Create Azure DevOps - Agent Pool](/images/posts/Create_AzureContainerApps_BicepCodeSpace.gif)
 
+*In my testing, end-to-end deployment seemed to range between 12 to 15 minutes.*
 
+To validate it worked, you can go into the Azure DevOps and Agent Pools, and you should now have a placeholder agent. This agent needs to stay to keep the Agent pool active but can be toggled to Disabled.
+
+![Create Azure DevOps - Agent Pool](/images/posts/AzureDevOps_ContainerApp_AgentPlaceholder.png)
+
+Once deployed, you can go into the Container Registry, Networking blade and change Public network access to Disabled. You can also delete the DeploymentScript resources, as these are no longer required.
 
 
 

@@ -218,6 +218,8 @@ To validate it worked, you can go into the Azure DevOps and Agent Pools, and you
 
 Once deployed, you can go into the Container Registry, Networking blade and change Public network access to Disabled. You can also delete the DeploymentScript resources, as these are no longer required.
 
+![Public Access disabled - Container Registry](/images/posts/AzureContainerRegistry_PublicAccess_Disabled.png)
+
 ## Testing
 
 To test that it is working - I have deployed a Virtual Machine into the sharedservices subnet with RDP open internally.

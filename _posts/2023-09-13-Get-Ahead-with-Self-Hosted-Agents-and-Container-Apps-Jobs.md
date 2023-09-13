@@ -246,7 +246,7 @@ The Container App Environment logs are stored in the Log Analytics workspace.
 1. Login to the **Azure Portal**
 2. Navigate to the **Log Analytics workspace** created *(i.e. law-jcdbxrheta7ug)*
 3. Navigate to **Logs**
-4. The default logs rules look for an incorrect table *(ContainerAppConsoleLogs_CL*.
+4. The default logs rules look for an incorrect table *(ContainerAppConsoleLogs_CL)*.
 5. To retrieve the Logs, click on **Category** and uncollapse **Azure Resources**
 
 Table names are called:

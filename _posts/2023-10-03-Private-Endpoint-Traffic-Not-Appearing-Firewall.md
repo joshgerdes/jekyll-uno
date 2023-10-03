@@ -19,6 +19,8 @@ You may have a situation where you have implemented [Private endpoints](https://
 
 I had this recently with [Azure Arc](https://learn.microsoft.com/azure/azure-arc/overview?WT.mc_id=AZ-MVP-5004796){:target="*blank"}, where the endpoints failed to connect once a site-to-site VPN connection _(which was working)_ was replaced with an expressroute connection, but going through the Azure Firewall logs, was unable to see any 443 traffic for Arc, hitting the Firewall even when the connection was working.
 
+![Private Endpoint traffic not appearing in Azure Firewall](/images/posts/BlobHeading_PrivateEndpointtrafficnotappearing.gif)
+
 > Traffic flow: Onpremises -- (ER Circuit) -- ER gateway -- Secured hub Azure Firewall -- (Vnet Connection) -- PE (Private Endpoint)
 
 The issue was related to how private endpoint traffic is routed differently.

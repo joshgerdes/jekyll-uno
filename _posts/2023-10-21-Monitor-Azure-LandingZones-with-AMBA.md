@@ -181,7 +181,7 @@ All going well after a few minutes – your initiatives and policies have been d
 
 If you have already existing Azure resources, you can remediate the policies, forcing them to create the Resource Group, Alerts and action groups by running the following PowerShell commands:
 
-    Cd scripts
+    cd scripts
 
     $pseudoRootManagementGroup = "mg"
     $identityManagementGroup = "mg-landingzones"

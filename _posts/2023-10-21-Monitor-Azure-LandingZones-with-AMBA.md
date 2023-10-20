@@ -15,15 +15,15 @@ slug: private-endpoint-traffic-not-appearing-azure-firewall
 description: Monitor your Azure Landing Zone with Azure Monitor Baseline Alerts (AMBA).
 ---
 
-> When deploying Azure resources, it is crucial to configure alerts to ensure the health, performance, and security of your resources.
+> When deploying Azure resources, it is crucial to configure alerts to ensure your resources' health, performance, and security.
 
 By setting up alerts, you can proactively monitor your resources and take timely actions to address any issues that may arise.
-Here are the key reasons why configuring alerts is important:
+Here are the key reasons why configuring alerts is essential:
 
-* Early detection of issues: Alerts enable you to identify potential problems or anomalies in your Azure resources at an early stage. By monitoring key metrics and logs, you can detect issues such as high CPU usage, low memory, network connectivity problems, or security breaches. This allows you to take immediate action and prevent any negative impact on your applications or services.
-* Reduced downtime: By configuring alerts, you can minimise downtime by being notified of critical events or failures in real-time. This allows you to quickly investigate and resolve issues before they escalate, ensuring the availability and reliability of your applications.
+* Early detection of issues: Alerts enable you to identify potential problems or anomalies in your Azure resources at an early stage. By monitoring key metrics and logs, you can detect high CPU usage, low memory, network connectivity problems, or security breaches. This allows you to take immediate action and prevent any negative impact on your applications or services.
+* Reduced downtime: By configuring alerts, you can minimise downtime by being notified of critical events or failures in real time. This allows you to quickly investigate and resolve issues before they escalate, ensuring the availability and reliability of your applications.
 * Optimized resource utilisation: Alerts help you optimise resource utilization by providing insights into resource usage patterns and trends. By monitoring metrics such as CPU utilisation, memory consumption, or storage capacity, you can identify opportunities for optimisation and cost savings.
-* Compliance and security: Configuring alerts is essential for maintaining compliance with regulatory requirements and ensuring the security of your Azure resources. By monitoring security logs and detecting suspicious activities or unauthorised access attempts, you can take immediate action to mitigate potential risks and protect your data.
+* Compliance and security: Configuring alerts is essential for maintaining compliance with regulatory requirements and ensuring the security of your Azure resources. By monitoring security logs and detecting suspicious activities or unauthorised access attempts, you can immediately mitigate potential risks and protect your data.
 * Proactive capacity planning: Alerts provide valuable information for capacity planning and scaling your resources. By monitoring resource utilisation trends over time, you can identify patterns and forecast future resource requirements. This helps you avoid performance bottlenecks and ensure a smooth user experience."
 
 ## Overview
@@ -39,7 +39,7 @@ The objectives of AMBA are to:
 
 More documentation can be found on the official Microsoft Learn documentation page: [Monitor Azure platform landing zone components](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-monitor?WT.mc_id=AZ-MVP-5004796).
 
-![Monitor your Azure Landing Zone with Azure Monitor Baseline Alerts (AMBA)](images/posts/BlogHeading_AMBA.gif)
+![Monitor your Azure Landing Zone with Azure Monitor Baseline Alerts](/images/posts/BlogHeading_AMBA.gif)
 
 > "AMBA Provides best practice guidance around creating and configuring Azure Monitor Alerts for Azure services and workload pattern/scenarios)."
 
@@ -105,13 +105,13 @@ Because the Azure Monitor Baseline alerts are intended to follow the Azure Landi
 * Service Health
 * Landing Zone (i.e., Application)
 
-Or a single management group/subscription consisting of all features, with Alert processing rules sending relevant subscription alerts, to an Action group, that will notify by email if an alert is raised.
+Or a single management group/subscription consisting of all features, with Alert processing rules sending relevant subscription alerts to an Action group that will notify by email if an alert is raised.
 
 For my own Azure environment, I only have 2 Subscriptions that sit under the following Management Group hierarchy:
 
 ![Management Group structure](/images/posts/AMBA_LukeGeekNZMG.png)
 
-We will deploy these initiatives to the MG Management Group, which allows us to then Assign those initiatives to anything beneath it, in our case the mg-landingzones and trey-platform management groups.
+We will deploy these initiatives to the MG Management Group, which allows us to then Assign those initiatives to anything beneath it, in our case, the mg-landingzones and trey-platform management groups.
 
 As part of the deployment, we will adjust the following parameters to match our environment:
 
@@ -121,7 +121,7 @@ As part of the deployment, we will adjust the following parameters to match our 
 * Location
 * Action group emails
 
-We can adjust the alert rule parameters as well, such as the severity, and change their effect, whether they automitigate or adjust the MonitorDisable tag, which can be used to exclude from alert monitoring; we will leave these to the default.
+We can adjust the alert rule parameters, such as the severity, and change their effect, whether they automitigate or adjust the MonitorDisable tag, which can be used to exclude from alert monitoring; we will leave these to the default.
 
 Make sure you review and test these policies first! Before proceeding to Production.
 
@@ -157,19 +157,19 @@ I'm going to adjust the parameters to match my environment by changing the follo
 | ALZMonitorResourceGroupLocation | australiaeast                                   |
 | ALZMonitorActionGroupEmail      | <email@luke.geek.nz> |
 
-> If you want the alerts to go to more than one email address, add them as a comma-separated (i.e. "<email1@contos.com>, <email2@contoso.com>, <email3@contoso.com>")
+> If you want the alerts to go to more than one email address, add them as comma-separated (i.e. "<email1@contos.com>, <email2@contoso.com>, <email3@contoso.com>")
 
 8. Press Ctrl+X
 9. Press Y to save buffer
 10. Press Enter to overwrite the parameter json file.
 11. Before proceeding to the next step, you can cat the file *(cat ./alzArm.param.json)* to view it and make sure the parameters are correct and nothing else needs changing.
-12. Now that the parameters are sorted, its time to deploy:
+12. Now that the parameters are sorted, it is time to deploy:
 
     $location = 'AustraliaEast'
     $psedudoRootManagementGroup = "mg"
-    New-AzManagementGroupDeployment -ManagementGroupId $psedudoRootManagementGroup -Location $location -TemplateUri  '<https://raw.githubusercontent.com/Azure/azure-monitor-baseline-alerts/main/patterns/alz/alzArm.json>' -TemplateParameterFile  'alzArm.param.json'
+    New-AzManagementGroupDeployment -ManagementGroupId $psedudoRootManagementGroup -Location $location -TemplateUri  '<https://raw.githubusercontent.com/Azure/azure-monitor-baseline-    alerts/main/patterns/alz/alzArm.json>' -TemplateParameterFile  'alzArm.param.json'
 
-> The ARM template location needs to be internet accessible due to links in the ARM template, to dependent resources, although the parameter file can be sourced locally.
+> The ARM template location needs to be internet accessible due to links in the ARM template to dependent resources, although the parameter file can be sourced locally.
 > Error: Code=InvalidTemplate; Message=Deployment template validation failed: 'The template variable 'deploymentUris' is not valid: The language expression property 'templateLink' doesn't exist, available properties are 'template, templateHash, parameters, mode, provisioningState'.. Please see [https://aka.ms/arm-functions](https://learn.microsoft.com/azure/azure-resource-manager/templates/template-functions?WT.mc_id=AZ-MVP-5004796) for usage details.'
 
 All going well after a few minutes – your initiatives and policies have been deployed.
@@ -197,11 +197,11 @@ If you have already existing Azure resources, you can remediate the policies, fo
     .\Start-AMBARemediation.ps1 -managementGroupName $LZManagementGroup -policyName Alerting-LandingZone
     .\Start-AMBARemediation.ps1 -managementGroupName $pseudoRootManagementGroup -policyName Alerting-ServiceHealth
 
-You can check the Alert rules, in Azure Monitor:
+You can check the Alert rules in Azure Monitor:
 
 ![AMBA - Alert Rules](/images/posts/AMBA_AlertRules.png)
 
 > It won't deploy all alert rules unless you have the resources; an example is the Deploy VNetG Tunnel Bandwidth alert; the policy rule will only deploy if it matches:
-> The existence of a Virtual Network Gateway, with a VPN Gateway type doesn't include the MonitorDisable tag; if I were to deploy a VPN Gateway, it would create the alert rule for me.
+> The existence of a Virtual Network Gateway, with a VPN Gateway type, doesn't include the MonitorDisable tag; if I were to deploy a VPN Gateway, it would create the alert rule for me.
 
-Finally, if you want to clean up *(delete the resources)*, you can leverage the Start-AMBACleanup.ps1 script, it will leave the Resource Group, Alert processing rules and action group.
+Finally, if you want to clean up *(delete the resources)*, you can leverage the Start-AMBACleanup.ps1 script; it will leave the Resource Group, Alert processing rules and action group.

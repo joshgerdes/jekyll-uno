@@ -132,7 +132,7 @@ We will deploy the ARM template using the [Azure Cloud Shell](https://learn.micr
 4. I'm going to adjust the parameters to match my environment by changing the following (these will need to be tuned to your specific environment):.
 5. Type in:
 
-    git clone <https://github.com/Azure/azure-monitor-baseline-alerts>
+    git clone [https://github.com/Azure/azure-monitor-baseline-alerts](https://github.com/Azure/azure-monitor-baseline-alerts)
 
 Type in:
 
@@ -166,7 +166,7 @@ I'm going to adjust the parameters to match my environment by changing the follo
 
     $location = 'AustraliaEast'
     $psedudoRootManagementGroup = "mg"
-    New-AzManagementGroupDeployment -ManagementGroupId $psedudoRootManagementGroup -Location $location -TemplateUri  '<https://raw.githubusercontent.com/Azure/azure-monitor-baseline-    alerts/main/patterns/alz/alzArm.json>' -TemplateParameterFile  'alzArm.param.json'
+    New-AzManagementGroupDeployment -ManagementGroupId $psedudoRootManagementGroup -Location $location -TemplateUri  '[https://raw.githubusercontent.com/Azure/azure-monitor-baseline/alerts/main/patterns/alz/alzArm.json](https://raw.githubusercontent.com/Azure/azure-monitor-baseline/alerts/main/patterns/alz/alzArm.json)' -TemplateParameterFile  'alzArm.param.json'
 
 > The ARM template location needs to be internet accessible due to links in the ARM template to dependent resources, although the parameter file can be sourced locally.
 > Error: Code=InvalidTemplate; Message=Deployment template validation failed: 'The template variable 'deploymentUris' is not valid: The language expression property 'templateLink' doesn't exist, available properties are 'template, templateHash, parameters, mode, provisioningState'.. Please see [https://aka.ms/arm-functions](https://learn.microsoft.com/azure/azure-resource-manager/templates/template-functions?WT.mc_id=AZ-MVP-5004796) for usage details.'

@@ -11,7 +11,6 @@ keywords:
   - azure
   - monitor
   - landing zones
-slug: private-endpoint-traffic-not-appearing-azure-firewall
 description: Monitor your Azure Landing Zone with Azure Monitor Baseline Alerts (AMBA).
 ---
 

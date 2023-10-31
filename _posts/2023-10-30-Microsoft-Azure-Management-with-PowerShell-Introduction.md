@@ -18,7 +18,7 @@ slug: azure-management-powershell
 
 # Introduction to PowerShell in Azure
 
-Note: To see a video of these commands in action, take a look at the following YouTube hosted video: [Microsoft Azure Management with PowerShell - Introduction](https://youtu.be/a4gehHwlwBQ)
+> To see a video of these commands in action, take a look at the following YouTube-hosted video: [Microsoft Azure Management with PowerShell - Introduction](https://youtu.be/a4gehHwlwBQ)
 
 ## PowerShell
 
@@ -38,7 +38,7 @@ When you run a PowerShell cmdlet to, for example, create a virtual machine or re
 
 ![Microsoft Azure Management with PowerShell](/images/posts/BlogHeading-BlogHeading-Microsoft-Azure-Management-with-PowerShell.gif)
 
-First up, lets verify the version of PowerShell we have, open a powershell terminal and run:
+First up, let's verify the version of PowerShell we have, open a Powershell terminal and run:
 
 ``` powershell
 $PSVersionTable

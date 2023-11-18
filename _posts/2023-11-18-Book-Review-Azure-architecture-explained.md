@@ -179,4 +179,4 @@ The authors draw on their extensive experience and research to provide practical
 
 The book is well-structured and full of relevant examples and exercises.
 
-> **I highly recommend this book to anyone interested in architecting solutions across Microsoft Azure, and it was very easy to read and consume the content! I feel smarter, having read it. Thank you to the authors for making the effort to write and release this book. It is a good addition to my library of books that I will be referencing in the future! I read this book on a Cruise while relaxing and it didn't feel like I was doing work!**
+> **I highly recommend this book to anyone interested in architecting solutions across Microsoft Azure, and it was very easy to read and consume the content! I feel smarter, having read it. Thank you to the authors for making the effort to write and release this book. It is a good addition to my library of books that I will be referencing in the future! I read this book on a Cruise while relaxing, and it didn't feel like I was doing work!**

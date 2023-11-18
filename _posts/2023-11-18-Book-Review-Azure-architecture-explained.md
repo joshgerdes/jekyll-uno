@@ -156,7 +156,7 @@ Sample code and exercise files were also provided publically on GitHub [PacktPub
 
 ## Updates and Relevance
 
-At the time of this review (November 2023), this book (published in September 2023) is still entirely relevant; as mentioned earlier, there have been some renames of products from Microsoft, that are a 'gotcha' to know, as part of reading this book, but the theory and implementation steps are entirely relevant.
+At the time of this review (November 2023), this book (published in September 2023) is still entirely relevant; as mentioned earlier, there have been some renames of products from Microsoft that are a 'gotcha' to know, as part of reading this book, but the theory and implementation steps are entirely relevant.
 
 I came across one link to a website [cafbaseline.com](https://cafbaseline.com/) that was not available at the time of reading, but all other links I used were relevant and working!
 
@@ -169,7 +169,7 @@ I believe the authors have the correct expertise to make this book viable *(and 
 * [David Rendón](https://www.linkedin.com/in/daverndn/) is a Microsoft MVP (Most Valuable Professional) and MCT (Microsoft Certified Trainer); these awards themselves require technical validation, and the display of knowledge to help solve organisation problems, and as an MCT, David, has the experience to explain the concepts, in a way that could be easily understood as a beginner.
 * [Brett Hargreaves](https://www.linkedin.com/in/bretthargreaves/) as a current Cloud Practice Lead, with certifications, such as the Azure Solutions Architect Expert and a background in Architect, Brett has the practical know-how to help make this content relevant, to those looking to Architect solutions in Microsoft Azure.
 
-**It is my opinion that this duo is indeed suited to write this type of book, and can be seen from the actionable and valid output of the book itself.**
+**It is my opinion that this duo is indeed suited to write this type of book, and this can be seen from the actionable and valid output of the book itself.**
 
 ## Conclusion
 
@@ -179,4 +179,4 @@ The authors draw on their extensive experience and research to provide practical
 
 The book is well-structured and full of relevant examples and exercises.
 
-**I highly recommend this book to anyone interested in architecting solutions across Microsoft Azure, and it was very easy to read and consume the content! I feel smarter, having read it. Thank you to the authors for making the effort to write and release this book. a good addition to my library of books that I will be referencing in the future! I read this book on a Cruise while relaxing and it didn't feel like I was doing work!**
+> **I highly recommend this book to anyone interested in architecting solutions across Microsoft Azure, and it was very easy to read and consume the content! I feel smarter, having read it. Thank you to the authors for making the effort to write and release this book. It is a good addition to my library of books that I will be referencing in the future! I read this book on a Cruise while relaxing and it didn't feel like I was doing work!**

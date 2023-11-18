@@ -8,7 +8,6 @@ toc: true
 header:
   teaser: /images/posts/BlobHeading_Review_AzureArchitectureExplained.gif
 date: 2023-11-18 00:00:00 +1300
-description: Book review from Azure Architecture Explained: A comprehensive guide to building effective cloud solutions
 ---
 
 Book review of [Azure Architecture Explained: A comprehensive guide to building effective cloud solutions](https://www.packtpub.com/product/azure-architecture-explained/9781837634811)

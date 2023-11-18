@@ -15,59 +15,59 @@ keywords:
 description: Book review from Azure Architecture Explained: A comprehensive guide to building effective cloud solutions
 ---
 
-Book review of: [Azure Architecture Explained: A comprehensive guide to building effective cloud solutions](https://www.packtpub.com/product/azure-architecture-explained/9781837634811)
+Book review of [Azure Architecture Explained: A comprehensive guide to building effective cloud solutions](https://www.packtpub.com/product/azure-architecture-explained/9781837634811)
 
-> Disclaimer: This is the first book review, I have ever done, and this review is entirely my opinion, and may not fully reflect the value you may or not may get from this book. Everyone will have their own unique viewpoint, and priorities of what they want out of a book, so please take my review as an opinionated view from my own viewpoint, I am of course happy to discuss different point of views, and discussions in this page comments. We are all here to learn something!
+> Disclaimer: This is the first book review I have ever done, and this review is entirely my opinion and may not fully reflect the value you may or may not get from this book. Everyone will have their unique viewpoint and priorities of what they want out of a book, so please take my review as an opinionated view from my own viewpoint; I am, of course, happy to discuss different points of view and discussions on this page comments. We are all here to learn something!
 
-Book synposis:
+Book synopsis:
 
-> "Azure is a sophisticated technology that requires a detailed understanding to reap its full potential and employ its advanced features. This book provides you with a clear path to designing optimal cloud-based solutions in Azure, by delving into the platform's intricacies.
-> You’ll begin by understanding the effective and efficient security management and operation techniques in Azure to implement the appropriate configurations in Microsoft Entra ID. Next, you’ll explore how to modernize your applications for the cloud, examining the different computation and storage options, as well as using Azure data solutions to help migrate and monitor workloads. You’ll also find out how to build your solutions, including containers, networking components, security principles, governance, and advanced observability. With practical examples and step-by-step instructions, you’ll be empowered to work on infrastructure-as-code to effectively deploy and manage resources in your environment."
+> "Azure is a sophisticated technology that requires a detailed understanding to reap its full potential and employ its advanced features. This book provides you with a clear path to designing optimal cloud-based solutions in Azure by delving into the platform's intricacies.
+> You’ll begin by understanding the effective and efficient security management and operation techniques in Azure to implement the appropriate configurations in Microsoft Entra ID. Next, you’ll explore how to modernize your applications for the cloud, examining the different computation and storage options, as well as using Azure data solutions to help migrate and monitor workloads. You’ll also learn how to build your solutions, including containers, networking components, security principles, governance, and advanced observability. With practical examples and step-by-step instructions, you can work on infrastructure-as-code to deploy and manage resources in your environment effectively."
 
 ![Azure Architecture Explained](/images/posts/Review_AzureArchitectureExplained_TitleBoat.jpg)
 
 ## Introduction
 
-[Azure Architecture Explained](https://www.packtpub.com/product/azure-architecture-explained/9781837634811), is a Packtpub published (in September 2023) book, written by the following authors:
+[Azure Architecture Explained](https://www.packtpub.com/product/azure-architecture-explained/9781837634811), is a Packtpub published (in September 2023) book written by the following authors:
 
 * [David Rendón](https://www.linkedin.com/in/daverndn/)
 * [Brett Hargreaves](https://www.linkedin.com/in/bretthargreaves/)
 
 Forward by [Sarah Kong](https://www.linkedin.com/in/konger/)
 
-> Although this book was given to me to review (for free, I have no formal relationship with either Packetpub, although I thank them for giving me the opportunity to review this book or the Authors, and am reviewing this book, from an entirely indepedant view), as someone who architects and builds Azure solutions, this is the type of book, I usually would read, based on the title and synopsis, so lets take under the cover...  
+> Although this book was given to me to review (for free, I have no formal relationship with either Packetpub, although I thank them for allowing me to review this book or the Authors, and I am reviewing this book from an entirely independent view), as someone who architects and builds Azure solutions, this is the type of book, I usually would read, based on the title and synopsis, so let us take under the cover...  
 
 ## Overview of Azure Architecture
 
-The slogan of the book is "A **comprehenshive** guide to **building** effective cloud solutions".
+The slogan of the book is "A **comprehensive** guide to **building** effective cloud solutions".
 
-> Architecting solutions in Azure, is a **massive** subject, requiring knowledge about the detail of specific services, knowledge and understanding of **Cloud adoption**, **well-architected frameworks**, **patterns and practices** and **interoperability** between different services and systems, if one was to use this slogan and book title, I would expect the book to cover across all these areas.
+> Architecting solutions in Azure is a **massive** subject, requiring knowledge about the details of specific services, knowledge and understanding of **Cloud adoption**, **well-architected frameworks**, **patterns and practices** and **interoperability** between different services and systems, if one were to use this slogan and book title, I would expect the book to cover across all these areas.
 
 ![Azure Architecture Book - Courtesy of Bing Image Creator](/images/posts/AzureBook_AzureArchitectureExplained_AIGenerated.jpg)
 
-So lets take a look to see if the book meets these details..
+So let us take a look to see if the book meets these details..
 
 ### Cloud Adoption
 
-The book, includes a section on the Microsoft Cloud Adoption Framework, including links, diagrams and explainations of how the Cloud Adoption framework fits in - not only with Microsoft Azure (which is the focus of this book), but other Clouds as well!
+The book includes a section on the Microsoft Cloud Adoption Framework, including links, diagrams and explanations of how the Cloud Adoption framework fits in - not only with Microsoft Azure (which is the focus of this book), but other Clouds as well!
 
-**What I liked about the represenation of the [Cloud Adoption](https://learn.microsoft.com/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796) within this book, was - it was enough for a beginner and intermediate in Cloud adoption, to get going - without the need for third party resources (ie resources outside of this book), but for those after a bit more advanced information, or detail - supplied the relevant internet links, to the relevant Microsoft Learn resources *(in short format, ie bit.ly - so easily can be copied from a hard covered paper book into your browser)*, so the authors didn't try to shove alot of unnecessary detail into the book, but was to the point, as they started the journey into Cloud governance and covered the basics and knowledge at an intermediate level, without alot of the detail, that you don't necessarily need as part of the book.**
+**What I liked about the representation of the [Cloud Adoption](https://learn.microsoft.com/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796) within this book was - it was enough for a beginner and intermediate in Cloud adoption, to get going - without the need for third-party resources (i.e. resources outside of this book), but for those after a bit more advanced information or detail - supplied the relevant internet links, to the relevant Microsoft Learn resources *(in short format, i.e. bit.ly - so easily can be copied from a hard covered paper book into your browser)*, so the authors didn't try to shove a lot of unnecessary detail into the book, but was to the point, as they started the journey into Cloud governance and covered the basics and knowledge at an intermediate level, without a lot of the detail, that you don't necessarily need as part of the book.**
 
 ### Well-Architected Framework
 
-In terms of the Well-Architected framework however, there was little direct represenation, which surprised me, as although the Cloud Adoption Framework provides guidance for the Cloud adoption journey, the Well-Architected Framework, focusses more on helping you make informed decisions for building systems in the Cloud, and these frameworks can work side by side - HOWEVER having said that...
+In terms of the Well-Architected framework, however, there was little direct representation, which surprised me, as although the Cloud Adoption Framework guides the Cloud adoption journey, the Well-Architected Framework focuses more on helping you make informed decisions for building systems in the Cloud. These frameworks can work side by side - HOWEVER having said that...
 
-The Microsoft Well-Architected Framework, consists of 5 pillars, these are:
+The Microsoft Well-Architected Framework consists of 5 pillars, these are:
 
-* Performance Effiencey
-* Realiability
+* Performance Efficiency
+* Reliability
 * Security
 * Cost Optimization
 * Operational Excellence
 
-And underneath these pillars, are design principles, such as: Design for business requirements, design for resiliency, design for recovery etc.
+And underneath these pillars are design principles, such as: Design for business requirements, design for resiliency, design for recovery etc.
 
-These design principles were woven throughout the implementation portions of the books, and although not directly called out in some areas, had high-level representation that you can subtly pick up.
+These design principles were woven throughout the implementation portions of the books and, although not directly called out in some areas, had high-level representation that you can subtly pick up.
 
 **I believe, reading the [Cloud Adoption](https://learn.microsoft.com/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796) and [Well-Architected Frameworks](https://learn.microsoft.com/azure/well-architected/?WT.mc_id=AZ-MVP-5004796), directly on the Microsoft Learn website, can help supplement your understanding of this book, and some of the decisions made by the authors.**
 

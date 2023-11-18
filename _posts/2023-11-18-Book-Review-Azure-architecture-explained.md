@@ -8,10 +8,6 @@ toc: true
 header:
   teaser: /images/posts/BlobHeading_Review_AzureArchitectureExplained.gif
 date: 2023-11-18 00:00:00 +1300
-keywords:
-  - azure
-  - book review
-  - architecture
 description: Book review from Azure Architecture Explained: A comprehensive guide to building effective cloud solutions
 ---
 
@@ -28,7 +24,7 @@ Book synopsis:
 
 ## Introduction
 
-[Azure Architecture Explained](https://www.packtpub.com/product/azure-architecture-explained/9781837634811), is a Packtpub published (in September 2023) book written by the following authors:
+[Azure Architecture Explained](https://www.packtpub.com/product/azure-architecture-explained/9781837634811) is a Packtpub published (in September 2023) book written by the following authors:
 
 * [David Rendón](https://www.linkedin.com/in/daverndn/)
 * [Brett Hargreaves](https://www.linkedin.com/in/bretthargreaves/)

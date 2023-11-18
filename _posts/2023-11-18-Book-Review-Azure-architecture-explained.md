@@ -87,7 +87,7 @@ and Tips from the Field!
 
 Instead of jumping straight into the build, the authors take the time to explain Azure governance by following the premise of a hypothetical company and that company challenges, and then working on the previous parts of the work, where the authors had done a very prescriptive *(great)* job of the management and creation of relevant Azure resources using the Azure Portal and explain the business challenges that Infrastructure as Code helps with, before jumping into the authoring, management and implementation of Azure Bicep for Infrastructure as Code.
 
-**Patterns and practices, in my opinion, are where this build shone through and where the true value is are the Patterns and practices. Throughout this book, the authors explain the WHY and WHAT before presenting the WHAT. It was straightforward to follow and build upon what was learnt and discovered from previous chapters.**
+**Patterns and practices, in my opinion, are where this build shone through and where the true value is are the Patterns and practices. Throughout this book, the authors explain the WHY and WHAT before presenting the HOW. It was straightforward to follow and build upon what was learnt and discovered from previous chapters.**
 
 ### Interoperability
 

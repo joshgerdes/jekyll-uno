@@ -1,5 +1,5 @@
 ---
-title: Book Review - Azure Architecture Explained
+title: Book Review Azure Architecture Explained
 author: Luke
 categories:
   - Azure

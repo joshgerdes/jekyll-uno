@@ -79,7 +79,7 @@ Before we can build an image using Bicep and Azure DevOps, we need to create a p
 
 ### Initialize Repo
 
-Now that we have our project, we can initialize the repository by cloning the[lukemurraynz/AzureImageBuilder](https://github.com/lukemurraynz/AzureImageBuilder) repository, containing all the code we need.
+Now that we have our project, we can initialize the repository by cloning the [lukemurraynz/AzureImageBuilder](https://github.com/lukemurraynz/AzureImageBuilder) repository, containing all the code we need.
 
 *Note: Due to git limitations, the Azure Storage Explorer install file is unable to be stored in the GitHub repository, for my demo. I will upload it to Azure DevOps after the clone. It's not recommended to store the binary files for large installs in Git directly for production and to store them in an Azure storage account. This process can be modified to skip the copy application step and install existing files from the Azure storage account.*
 
@@ -108,7 +108,7 @@ Now that we have our repository and the base code - we need a service connection
 1. Select your **Subscription** *(after authenticating to Azure)*, and give it a **name** *(you will need the name for the Pipeline)*.
 1. Click **Save**
 
-![Azure DevOps - Create Service Connection](/images/posts/CreateAzureServiceConnectionAIBProject)
+![Azure DevOps - Create Service Connection](/images/posts/CreateAzureServiceConnectionAIBProject.gif)
 
 ### Import Pipeline
 

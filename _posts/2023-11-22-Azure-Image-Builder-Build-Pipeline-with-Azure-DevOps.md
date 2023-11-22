@@ -68,7 +68,7 @@ Within the iac folder is a customizations.bicep file. This file is intended for 
 
 ### Create Project
 
-Before we can build an image using Bicep and Azure DevOps, we need to create a project, to hold our code.
+Before we can build an image using Bicep and Azure DevOps, we need to create a project to hold our code.
 
 1. Login to your **[Azure DevOps](https://dev.azure.com/)** instance
 1. Click **+ New Project**
@@ -112,7 +112,7 @@ Now that we have our repository and the base code - we need a service connection
 
 ### Import Pipeline
 
-Now that we have our Service Connection, lets import our pipeline, which will be used to run our image build.
+Now that we have our Service Connection, let us import our pipeline, which will be used to run our image build.
 
 1. Login to your **[Azure DevOps](https://dev.azure.com/)** instance
 1. **Navigate** to your **AIB** project
@@ -129,7 +129,7 @@ Now that we have our Service Connection, lets import our pipeline, which will be
 
 ### Edit Pipeline to use service connection
 
-Now that the pipeline, has been imported, we need to edit it to use the Azure resource manager service connection, we created earlier. Make sure you know the name of your service connection *(ie ServiceConnection-AIB)*
+Now that the pipeline has been imported, we need to edit it to use the Azure resource manager service connection we created earlier. Make sure you know the name of your service connection *(ie ServiceConnection-AIB)*
 
 1. Login to your **[Azure DevOps](https://dev.azure.com/)** instance
 1. **Navigate** to your **AIB** project
@@ -145,13 +145,13 @@ To match the name of our service connection:
 
 Then click **Save**
 
-*Note: The Pipeline, by default, is set to automatically run; when it triggers a new commit to the main branch of the repo, you can adjust this to None else. It will try to run and fail *(as its missing variables, etc)*. If you do this, you can trigger the pipeline manually, but it depends on your requirements; as part of the testing - I liked that it automatically ran on every change to the code without having been manually triggered.*
+*Note: The Pipeline, by default, is set to run automatically; when it triggers a new commit to the main branch of the repo, you can adjust this to None else. It will try to run and fail *(as its missing variables, etc)*. If you do this, you can trigger the pipeline manually, but it depends on your requirements; as part of the testing - I liked that it automatically ran on every change to the code without having been manually triggered.*
 
 ![Azure DevOps - Edit Pipeline](/images/posts/Edit-AzureDevOpsPiipelineServiceConnection-AIBProject.gif)
 
 ### Edit Pipeline to add variables
 
-Here is where some of the customisation comes into play, the pipeline is looking for the following variables:
+Here is where some of the customisation comes into play. The pipeline is looking for the following variables:
 
 * imagetemplatename
 * location
@@ -193,15 +193,15 @@ You can modify the Bicep according to your own environment; items in the 'main.b
 * Paired region that the image template will be replicated to. This is set to the same region as my source.
 * Name of the User Assigned Managed Identity
 
-> To reduce build time, the build VM size I am using is custom: Standard_D4ds_v5. If you remove this, it will default to the Standard_D2ds_v4 size, as you only pay for the time that the VM is building and sys prepping; I found the extra cores were useful.
+> To reduce build time, the build VM size I am using is custom: Standard_D4ds_v5. If you remove this, it will default to the Standard_D2ds_v4 size, as you only pay for the time that the VM is building and sys prepping; I found the extra cores useful.
 
-I separated the Image Template [customization](https://learn.microsoft.com/azure/virtual-machines/linux/image-builder-json?tabs=json%2Cazure-powershell&WT.mc_id=AZ-MVP-5004796#properties-customize) components, into its own Bicep module, that gets called into the main variable, I intend the customizations.bicep to be separate from the Azure Image Builder infrastructure components, to reduce impact or data loss, and make it easier for a first timer to customize the image separately, allowing you to easily revert any changes to the image build itself.
+I separated the Image Template [customization](https://learn.microsoft.com/azure/virtual-machines/linux/image-builder-json?tabs=json%2Cazure-powershell&WT.mc_id=AZ-MVP-5004796#properties-customize) components, into its own Bicep module, that gets called into the main variable, I intend the customizations.bicep to be separate from the Azure Image Builder infrastructure components, to reduce impact or data loss, and make it easier for a first timer to customize the image separately, allowing you to revert any changes to the image build itself easily.
 
-You may also want to test [Image Optimization](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-boot-optimization?WT.mc_id=AZ-MVP-5004796); I have this enabled; however it does add time to the image build process, but could improve your Virtual Machine creation time, could be useful to use in conjunction with a service, like Azure Virtual Desktop.
+You may also want to test [Image Optimization](https://learn.microsoft.com/en-us/azure/virtual-machines/vm-boot-optimization?WT.mc_id=AZ-MVP-5004796); I have this enabled; however, it does add time to the image build process, but could improve your Virtual Machine creation time, could be useful to use in conjunction with a service, like Azure Virtual Desktop.
 
 > This is the main file you will want to start modifying for your own image customization; I recommend starting small *(i.e. create a folder)*, then adding the apps and customisations one after the other.
 
-As part of the image build I am:
+As part of the image build, I am:
 
 1. Creating a c:\Apps\ folder
 2. Setting the timezone *(although this gets overwritten by the sysprep back to UTC)*
@@ -216,45 +216,46 @@ As part of the image build I am:
 
 As you can see, everything is mostly PowerShell-driven. Be aware of the double backslashes needed as well; for directories, using a single backslash will cause issues, as it is classed as an escape character. When editing the Bicep file, make sure you make sure of the [Bicep Visual Studio code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). I have also created a base [Codespace](https://luke.geek.nz/azure/Getting-Started-with-GitHub-Codespaces/) in the GitHub repo that you could work from as well.
 
-Then ideally, you can delete your previous image template every month, then create a new one with the latest Windows Updates. Hopefully, this has given you enough of a sample to work from.
+Then, ideally, you can delete your previous image template every month and create a new one with the latest Windows Updates. Hopefully, this has given you enough of a sample to work from.
 
 ## Run image build deployment
 
-So we have modified our Bicep, and we have our pipeline, roaring to go! Its time to run the build and create our Azure resources. We do this from Azure DevOps.
+So, we have modified our Bicep and have our pipeline ready to go! It's time to run the build and create our Azure resources. We do this from Azure DevOps.
 
 1. Login to your **[Azure DevOps](https://dev.azure.com/)** instance
 1. **Navigate** to your **AIB** project
 1. Click **Pipelines**
 1. Click on your **Pipeline**
 1. Select **Run pipeline**
-1. Before the pipeline runs, we need to **verify that the Pipeline has the permission** to use the service connection
+1. Before the pipeline runs, we need to **verify that the Pipeline has permission** to use the service connection
 1. Select **Verify**
 1. Select **Approve** to allow the pipeline stages, the ability to use the service principal
 
-> If your build Build fails half way through with the following error, when attempting to create the Azure Image Builder resources:
+> If your build Build fails halfway through with the following error when attempting to create the Azure Image Builder resources:
 > ERROR: {"code": "InvalidTemplateDeployment", "message": "Deployment failed with multiple errors: 'Authorization failed for template resource 'e6eaf07c-bb64-57d4-a69a-6d1463a77bdb' of type 'Microsoft.Authorization/roleAssignments'. The client '1d06bec0-6bb8-4ba2-b33b-98a4eafd5b84' with object id '1d06bec0-6bb8-4ba2-b33b-98a4eafd5b84' does not have permission to perform action 'Microsoft.Authorization/roleAssignments/write
-> This is due to the Service Connection, not having Owner rights to the Azure subscription. Owner rights are created for the User Assigned Managed identity role assignments. You can fix this, by copying the Object ID of the error, navigate to [Entra ID Enterprise Apps](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId~/null), and search by your Object ID. This will find an Enterprise Application, that is used by Azure DevOps to talk to Azure. Copy the Name, and navigate to your Azure subscription, and Access COntrol (IAM) blade, and add in your Enterprise Application as Owner.
-> It can take 30+ minutes to build a Virtual Machine, the more customisations, the longer it will take, so please be patience, after the build has kicked off. As part of the build, you can also download and review the packer logs, directly from the Storage account thats created in the IT resource group. I highly recommend testing one customization before proceeding to the next, until you have the implementation down pack. The build step if completed, will move to Optimizing, then Distributing to the Compute Gallery, before it can be used.
+> This is due to the Service Connection not having Owner rights to the Azure subscription. Owner rights are created for the User Assigned Managed identity role assignments. You can fix this by copying the Object ID of the error, navigating to [Entra ID Enterprise Apps](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId~/null), and search by your Object ID. This will find an Enterprise Application, that is used by Azure DevOps to talk to Azure. Copy the Name, and navigate to your Azure subscription, and Access Control (IAM) blade, and add in your Enterprise Application as Owner.
+
+> It can take 30+ minutes to build a Virtual Machine; the more customisations, the longer it will take, so please be patient, after the build has kicked off. As part of the build, you can also download and review the packer logs directly from the Storage account that was created in the IT resource group. I highly recommend testing one customization before proceeding to the next until you have the implementation downpack. The build step, if completed, will move to Optimizing, then Distributing to the Compute Gallery before it can be used.
 
 ![Azure DevOps - Run Pipeline](/images/posts/Run-AzureDevOpsBuildPipeline-AIBProject.gif)
 
 ## Build Virtual Machine
 
-Now that we have successuflly built our Windows Server 2022 image, entirely automated using Bicep and Azure DevOps pipeline, lets create a Virtual Machine, using the image that now resides in our Compute Gallery. To do this, we will simply use the Azure Portal, to build and test, from the Compute Gallery.
+Now that we have successfully built our Windows Server 2022 image, entirely automated using Bicep and Azure DevOps pipeline, let us create a Virtual Machine using the image that now resides in our Compute Gallery. To do this, we will simply use the Azure Portal to build and test from the Compute Gallery.
 
 1. Login to the **[Azure Portal](https://portal.azure.com/#home)**
 1. Navigate to your **Azure Compute Gallery**
 1. Click your **Image definition**, which should now have a version associated with it *(ie 1.0.0 (latest version))*
 1. Click **+ Create VM**
-1. Navigate through the normal steps, to create your virtual machine, created by your custom template.
+1. Navigate through the normal steps to create your virtual machine using your custom template.
 
 ![Azure Portal - Create Virtual Machine](/images/posts/Create-TestVM-AIBProject.gif)
 
-As you can see, the Virtual Machine has, the Apps folder, Azure Storage Explorer installed and the bginfo executable stored, as part of the image template.
+As you can see, the Virtual Machine has the Apps folder, Azure Storage Explorer installed and the bginfo executable stored as part of the image template.
 
 ## Code
 
-All the code can be found on my public GitHub repository here: [lukemurraynz/AzureImageBuilder](https://github.com/lukemurraynz/AzureImageBuilder). This is the master *(and happy to take any contributions to it, just open a Pull Request)*, however for reference the code can be reviewed below:
+All the code can be found on my public GitHub repository here: [lukemurraynz/AzureImageBuilder](https://github.com/lukemurraynz/AzureImageBuilder). This is the master *(and happy to take any contributions to it; just open a Pull Request)*,; for reference the code can be reviewed below:
 
 ### main.bicep
 

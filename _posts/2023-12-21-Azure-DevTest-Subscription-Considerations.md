@@ -52,6 +52,7 @@ The considerations that you need to consider when selecting a Dev/Test subscript
 
 * The Dev/Test Azure Plan doesn't contain a financially backed service-level agreement *(SLA)*. The only exceptions are Azure DevOps, Azure Monitor and Visual Studio App Center. The entire purpose of this subscription is to give you the ability to trial and test services - and NOT run production workloads or services. This makes sense.
 * Only active Visual Studio subscribers with standard subscriptions can use the Azure resources running within an Enterprise Dev/Test subscription (yes, that's right, everyone who has access to modify/create/delete resources needs to be a Visual Studio subscriber). This is the one that usually catches people out; although there are no technical guardrails preventing subscription use by unlicensed users, you still need to comply with the license agreement. Although it's worth pointing out, end users can also access the applications you build on top of the platform to provide feedback or perform acceptance tests without requiring a license.
+* DevTest subscriptions are also compute quota limited, ie the compute quota restrictions are more restrictive (ie 10 cores on DevTest subscriptions vs 350 quota limit on non-devtest subscriptions).
 
 > Even though there is no SLA for any resources deployed in the subscription, Support is still available *(i.e. open support tickets for resources)* if a suitable support plan exists as part of your MCA or Enterprise Agreement or is purchased for that subscription.
 

@@ -15,6 +15,8 @@ With Copilot, gain new insights, discover more benefits of the cloud, and orches
 
 This is carried out within Azure's steadfast commitment to safeguarding your data security and privacy.
 
+> This article contains my own personal thoughts and experiences; make sure you approach this capability with an open eye; my views may not necessarily be your own.
+
 ## Overview
 
 Microsoft Copilot for Azure is designed to generate the best possible responses within the context it can access.

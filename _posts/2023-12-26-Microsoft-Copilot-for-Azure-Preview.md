@@ -40,7 +40,7 @@ Copilot for Azure can be accessed directly in the Azure Portal.
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10 questions per conversation (5 convos per day)              | Essentially, 10 prompts (and competitions) per memory-aware conversation and 5 conversations. Reducing potential hallucinations and API exhaustion. |
 | Responses that use lists are limited to the top 5 | When requesting a list of resources, the completions will be restricted to 5. The token length for hundreds of resources can be very slow           |
-| Some tasks won't accept Resource Names, Resource ID required | Resource ID of the resources may need to be specified when referencing a resource.                                                                           |
+| Some tasks won't accept Resource Names; resource ID required | Resource ID of the resources may need to be specified when referencing a resource.                                                                           |
 | Available in English only                                     | English only                                                                                                                                          |
 | Cost management scope at Subscription (not Management Group)  | Able to reference Cost analysis against Subscription and Resource Groups but not across multiple subscriptions across Management Groups            |
 | Limited number of skills                                      | Can only complete a certain amount of tasks; no doubt more will be added over time due to increasing capabilities and user feedback.                  |
@@ -149,29 +149,29 @@ To test the Troubleshoot pillar of Microsoft Copilot for Azure, I will be using 
 * What is this resource?
 * What are the open alerts?
 
-> Overall, using Microsoft Copilot for Azure, to Troubleshoot RDP to connectivity to 'VM-1' would have helped, though the scenario that Copilot had come back with was due to being unable to RDP due to a potential brute force attack, had I followed the recommendations, it would have directed me to the appropriate blades, where I saw that the Virtual Machine was turned off, however Copilot itself didn't have a status check that the Virtual Machine was even started, or triggered any alerts that the Virtual Machine was deallocated. There was a delay, when I first prompted for how I troubleshoot, enough of a delay that I cancelled it and then reprompted again, which returned a result, resulting in 2 of my 10 requests being used up. It was able to supply information on what the resource was, that I had opened in the portal, and any active alerts on that resource *(had I been at the All Resources blade, it would have viewed all alerts)*.
+> Overall, using Microsoft Copilot for Azure to Troubleshoot RDP to connectivity to 'VM-1' would have helped, though the scenario that Copilot had come back with was due to being unable to RDP due to a potential brute force attack, had I followed the recommendations, it would have directed me to the appropriate blades, where I saw that the Virtual Machine was turned off. However, Copilot itself didn't have a status check that the Virtual Machine was even started or triggered any alerts that the Virtual Machine was deallocated. There was a delay, when I first prompted for how I troubleshoot, enough of a delay that I cancelled it and then reprompted again, which returned a result resulting in 2 of my 10 requests being used up. It was able to supply information on what resource I had opened in the portal and any active alerts on that resource *(Had I been at the All Resources blade; it would have viewed all alerts)*.
 
 ![Microsoft Copilot for Azure - Troubleshoot](/images/posts/MicrosoftCopilotforAzure_PillarTest_Troubleshoot.gif)
 
 ## Conclusion
 
-Overall, I feel Copilot for Microsoft Azure, is a suitable companion to working with Microsoft Azure as a *copilot* in the Azure Portal, however, it is clear, that this is very much in Preview, and I would argue unfortunately not for Commercial or Generally available functionality yet, although I could have high standards on what this could be capable of, so make sure you draw your own conclusions and run your own tests.
+Overall, I feel Copilot for Microsoft Azure is a suitable companion to working with Microsoft Azure as a *copilot* in the Azure Portal. However, it is clear that this is very much in Preview, and I would argue, unfortunately, not for Commercial or Generally available functionality yet, although I could have high standards on what this could be capable of, so make sure you draw your own conclusions and run your own tests.
 
 As with any prompt, working with LLM *(Large Language Models)*, context is key - and having a curious mindset in your questioning can help draw out more information.
 
-If you are a beginner user of Azure, I feel that Microsoft Copilot for Azure can help point you in the right direction, and to the right information.
+If you are a beginner user of Azure, I feel that Microsoft Copilot for Azure can help point you in the right direction and to the right information.
 
-Context is key – the service, takes context on what resource you are at in the Azure Portal, so the more context it has on the resource the better outputs you will get.
+Context is key – the service takes context on what resource you are at in the Azure Portal, so the more context it has on the resource, the better outputs you will get.
 
-As with all generative AI services, clear prompts are key and don’t trust the outputs, not all Graph queries are right.
+As with all generative AI services, clear prompts are key and don’t trust the outputs; not all Graph queries are right.
 
 In terms of more intermediate and advanced services, it won’t replace full-on Azure management capabilities and troubleshooting yet, remember this is a copilot, an assistant.
 
-> The more feedback can be offered, using the built-in feedback buttons as part of the user interface, as part of its use – the better it will be, and the more skills and tasks it will be able to complete.
+> The more feedback can be offered using the built-in feedback buttons as part of the user interface, as part of its use – the better it will be, and the more skills and tasks it will be able to complete.
 
-Remember, that users can only use Microsoft Copilot for Azure, to view resource data, and make changes to areas they already have the privilege to do! So as you prepare to roll this out, use it as an opportunity to increase your security, and apply just in time and with just enough practice. If you using Infrastructure as Code, then your users may only need Reader access to view data regardless, then Copilot cannot make any changes outside of the toolsets like Terraform you may be deploying.
+Remember that users can only use Microsoft Copilot for Azure to view resource data and make changes to areas they already have the privilege to do! So as you prepare to roll this out, use it as an opportunity to increase your security and apply just in time and with just enough practice. If you using Infrastructure as Code, then your users may only need Reader access to view data regardless, then Copilot cannot make any changes outside of the toolsets like Terraform you may be deploying.
 
-Overall, this is a product, I will be following and cannot wait to see what it becomes, and where this product shines at the moment is really in the Enchanced Skills, and being able to bring the right Microsoft Learn documentation straight to you, while you are in the Azure Portal, making your learning and engagement alot more streamlined!
+Overall, this is a product I will be following and cannot wait to see what it becomes; where this product shines at the moment is really in the Enhanced Skills and being able to bring the correct Microsoft Learn documentation straight to you while you are in the Azure Portal, making your learning and engagement a lot more streamlined!
 
 ![Microsoft Copilot for Azure - Enchanced SKills](/images/posts/MicrosoftCopilotforAzure_CopilotEnchancedSkills.PNG)
 

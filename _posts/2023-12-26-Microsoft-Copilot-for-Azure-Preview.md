@@ -171,7 +171,9 @@ In terms of more intermediate and advanced services, it won’t replace full-on 
 
 Remember, that users can only use Microsoft Copilot for Azure, to view resource data, and make changes to areas they already have the privilege to do! So as you prepare to roll this out, use it as an opportunity to increase your security, and apply just in time and with just enough practice. If you using Infrastructure as Code, then your users may only need Reader access to view data regardless, then Copilot cannot make any changes outside of the toolsets like Terraform you may be deploying.
 
-Overall, this is a product, I will be following and cannot wait to see what it becomes!
+Overall, this is a product, I will be following and cannot wait to see what it becomes, and where this product shines at the moment is really in the Enchanced Skills, and being able to bring the right Microsoft Learn documentation straight to you, while you are in the Azure Portal, making your learning and engagement alot more streamlined!
+
+![Microsoft Copilot for Azure - Enchanced SKills](/images/posts/MicrosoftCopilotforAzure_CopilotEnchancedSkills.PNG)
 
 ## Reference
 

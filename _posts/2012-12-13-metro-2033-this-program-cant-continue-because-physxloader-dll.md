@@ -1,5 +1,5 @@
 ---
-title: 'Metro 2033: This program can't continue because PhysXloader.dll'
+title: Metro 2033 This program cannot continue because PhysXloader
 date: 2012-12-13 00:00:00 +1300
 author: Luke
 categories:

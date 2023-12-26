@@ -1,29 +1,7 @@
 ---
-id: 2441
 title: How to repair Minda Home/Professional
-date: 2012-10-04T09:08:56+00:00
+date: 2012-10-04 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2441
-permalink: /misc/how-to-repair-minda-homeprofessional/
-dsq_thread_id:
-  - "5193806749"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "16"
 categories:
   - Misc
 ---

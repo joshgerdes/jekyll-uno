@@ -1,39 +1,15 @@
 ---
-id: 2475
 title: How to open a Brother DP-550CJ Printer
-date: 2012-10-23T08:28:52+00:00
+date: 2012-10-23 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2475
-permalink: /misc/how-to-open-a-brother-dp-550cj-printer/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "1081881362"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "7"
 categories:
   - Misc
 ---
+
 _What you will need_
 
-  * Small Flat-Head Screwdriver
-  * Philips Screwdriver
-
-<div>
-</div>
+* Small Flat-Head Screwdriver
+* Philips Screwdriver
 
   1. Undo the clips at the front, one on each side and lift the plastic panel up slightly.
   2. Take the top plastic cover off, revealing the Ink Cartridge area using a Flat-Head Screwdriver gently lift the clips on either side up and gently lift the plastic casing up.

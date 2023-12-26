@@ -1,29 +1,7 @@
 ---
-id: 1396
-title: 'Sims Social &#8211; Practice Hammering 7 Times'
-date: 2012-09-30T22:07:39+00:00
+title: Sims Social Practice Hammering 7 Times
+date: 2012-09-30 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://techdrive.co.nz/?p=1396
-permalink: /misc/sims-social-hammering7/
-dsq_thread_id:
-  - "2529167688"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "26"
 categories:
   - Misc
 ---

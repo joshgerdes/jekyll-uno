@@ -1,29 +1,7 @@
 ---
-id: 2480
 title: Google Chrome – Your Profile Could Not Be Opened Correctly
-date: 2012-10-24T11:46:32+00:00
+date: 2012-10-24 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2480
-permalink: /win/google-chrome-your-profile-could-not-be-opened-correctly/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2444747972"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "9"
 categories:
   - Windows
 ---

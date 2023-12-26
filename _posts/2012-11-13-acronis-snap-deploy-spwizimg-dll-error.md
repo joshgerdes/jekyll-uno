@@ -1,29 +1,7 @@
 ---
-id: 2535
-title: 'Acronis Snap Deploy &#8211; spwizimg.dll error'
-date: 2012-11-13T11:01:40+00:00
+title: 'Acronis Snap Deploy spwizimg.dll error'
+date: 2012-11-13 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2535
-permalink: /misc/acronis-snap-deploy-spwizimg-dll-error/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2623037564"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
 categories:
   - Misc
   - Windows

@@ -1,17 +1,15 @@
 ---
-date: 2021-03-25T00:00:00.000+13:00
 title: Unable to start Windows Azure Guest Agent (it's in a disabled state)
 author: Luke
 categories:
 - Azure
+date: 2021-03-25 00:00:00 +1300
 toc: true
 header: 
   teaser: "images/iazure-marketplace-banner.png"
 ---
-![Azure Backup Overview](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
-* TOC
-{:toc}
+![Azure Backup Overview](https://csharpcorner.azureedge.net/article/an-overview-of-azure-backup/Images/An%20Overview%20Of%20Azure%20Backup01.png)
 
 ## Issue Description
 

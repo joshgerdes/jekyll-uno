@@ -1,39 +1,15 @@
 ---
-id: 2489
 title: Data Is Invalid fix for Windows XP
-date: 2012-10-25T10:14:08+00:00
+date: 2012-10-25 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2489
-permalink: /win/data-is-invalid-fix-for-windows-xp/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2504740771"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Windows
 ---
 Having issues trying to install device drivers in Windows XP and its stopping half way through and giving you the “Data is Invalid” error? Following the guide below to repair.
 
-&nbsp;
-
 What you need
 
-  * Windows XP Home/Professional CD
+* Windows XP Home/Professional CD
 
   1. Open My **Computer**
   2. Navigate to: **C:WINDOWSDRIVERCACHEi386**

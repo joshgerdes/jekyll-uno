@@ -1,33 +1,12 @@
 ---
-id: 2528
 title: Excel – Add a space in a column of data.
-date: 2012-11-12T08:02:48+00:00
+date: 2012-11-12 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2528
-permalink: /misc/excel-add-a-space-in-a-column-of-data/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2488336350"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "7"
 categories:
   - Misc
   - Windows
 ---
+
 Ever had a bunch of next and numbers in a column and needed to separate them with a space? Follow this guide.
 
   1. Find the column you want to add a space to and right click the column heading.

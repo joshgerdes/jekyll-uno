@@ -1,29 +1,7 @@
 ---
-id: 2493
 title: The network password needs to be 128 bits or 256 bits depending on your network configuration
-date: 2012-10-29T09:36:43+00:00
+date: 2012-10-29 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2493
-permalink: /win/the-network-password-needs-to-be-128-bits-or-256-bits-depending-on-your-network-configuration/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "4818550060"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "91"
 categories:
   - Windows
 ---

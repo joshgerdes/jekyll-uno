@@ -1,16 +1,14 @@
 ---
-date: 2021-04-09T00:00:00.000+12:00
 title: Azure Resource Graph Explorer and the PowerShell Azure Resource Graph
 author: Luke
 categories:
-- PowerShell
 - Azure
+date: 2021-04-09 00:00:00 +1300
 toc: true
-permalink: /azure-resource-graph-explorer-and-the-powershell-azure-resource-graph
 header:
   teaser: "images/powershell-blog-feature-banner.png"
-
 ---
+
 Every now and again you come across something that you pay little attention to until you actually spend the time to sit down, work through and try to break stuff! The Azure Resource Graph was that for me!
 
 The idea was to create an export of Azure Recommendations, directly from the Azure Advisor into PowerShell, Microsoft Azure has this functionality out of the box with a few tools:

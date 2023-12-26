@@ -1,8 +1,8 @@
 ---
 title: How to disable Internet Explorer Enhanced Security in Windows Server 2012 R2
-permalink: /win/disable-internet-explorer-enhanced-security-windows-server-2012-r2/
 categories:
   - Windows
+date: 2015-01-02 00:00:00 +1300
 ---
 Note: This is not best practice and is not recommended to do in a production environment.
 

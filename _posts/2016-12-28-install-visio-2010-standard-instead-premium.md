@@ -1,15 +1,13 @@
 ---
 title: Install Visio 2010 Standard instead of Premium
 author: Luke
-lpermalink: /win/install-visio-2010-standard-instead-premium/
 categories:
   - Windows
+date: 2016-12-28 00:00:00 +1300
 ---
 Unfortunately, volume license editions of Visio 2010 install Premium by default – this can then be downgraded to Visio standard by changing the Product key to Standard edition.
 
 However – come annual Microsoft True up you don't want any surprises or manual intervention! This is how you can change Visio to be installed by Standard or another SKU automatically without prompting.
-
-
 
   1. Download the latest Visio 2010 ISO from Microsoft Volume Licensing
   2. Extract the ISO using a tool such as 7-Zip
@@ -19,9 +17,7 @@ However – come annual Microsoft True up you don't want any surprises or manual
   6. Open config.xml
   7. Type in the following and save, Once saved – install Visio normally and it should install with the correct SKU ie Visio 2010 Standard.
 
-
 {% gist 8a1404a51ca472d507622a90ec9a9ec8 %}
-
 
 Note: Replace the PIDKey value with any of the Product Keys listed below to change the default install SKU:
 

@@ -1,8 +1,8 @@
 ---
 title: Upgrade MDT 2013 to MDT Current Branch
-permalink: /win/upgrade-mdt-2013-mdt-current-branch/
 categories:
   - Windows
+date: 2016-12-13 00:00:00 +1300
 ---
 Upgrading MDT _(Microsoft Deployment Toolkit)_ is generally not an issue – the main points are:
 

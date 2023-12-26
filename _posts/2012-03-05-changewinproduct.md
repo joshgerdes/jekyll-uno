@@ -1,9 +1,10 @@
 ---
 title: How to Change Windows Product Keys
-permalink: /win/changewinproduct/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
+
 **Windows XP**
 
   1. **Download** <a href="http://www.magicaljellybean.com/keyfinder.shtml" target="_blank">Jellybean Keyfinder</a>

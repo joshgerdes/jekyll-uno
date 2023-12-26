@@ -1,9 +1,8 @@
 ---
 title: Using PowerShell to set up Automatic Login on Windows Servers
-permalink: /win/using-powershell-setup-automatic-logon-windows-servers/
 categories:
   - Windows
-  - PowerShell
+date: 2016-04-30 00:00:00 +1300
 header:
   teaser: "images/powershell-blog-feature-banner.png"
 ---

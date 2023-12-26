@@ -1,14 +1,12 @@
 ---
-date: '2022-03-16 00:00:00 +1300'
 title: Azure Optimization Engine
 author: Luke
 categories:
   - Azure
-permalink: /azure/azure-optimization-engine
+date: 2022-03-16 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/azurespringclean_2022_aoe.png
-_template: new_post
 ---
 
 This post is a part of [Azure Spring Clean](https://www.azurespringclean.com/){:target="_blank"}, which is a community event focused on Azure management topics from March 14-18, 2022. 

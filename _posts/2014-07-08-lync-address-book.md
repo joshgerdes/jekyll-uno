@@ -1,9 +1,10 @@
 ---
 title: How to get the Lync client to redownload the address book
-permalink: /win/lync-address-book/
 categories:
   - Windows
+date: 2014-07-08 00:00:00 +1300 
 ---
+
 **Lync 2010**
 
 Log off of the Lync client and delete the profile from:

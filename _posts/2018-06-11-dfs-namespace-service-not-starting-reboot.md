@@ -1,23 +1,22 @@
 ---
-date: "2018-06-11"
 title: Using PowerShell to start the DFS Namespace service
-permalink: /win/dfs-namespace-service-not-starting-reboot/
 categories:
-  - Windows
   - PowerShell
+date: 2018-06-11 00:00:00 +1300
 header:
   teaser: "images/powershell-blog-feature-banner.png"
 ---
+
 Distributed File System (DFS) has some service dependencies - so if those don't start the DFS Namespace service will also not start.
 
 <img class="alignnone" src="https://i1.wp.com/luke.geek.nz/wp-content/uploads/2016/12/121316_0835_DFSNamespac1.png?resize=584%2C112" alt="DFS Namespace" width="584" height="112" data-recalc-dims="1" />
 
 The dependencies are:
 
-  * Remote Registry
-  * Security Accounts Manager
-  * Server
-  * Workstation
+ * Remote Registry
+ * Security Accounts Manager
+ * Server
+ * Workstation
 
 I have seen the Remote Registry service become the culprit of the DFS-N service not starting.
 

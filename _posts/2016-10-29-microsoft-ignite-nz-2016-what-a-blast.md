@@ -1,10 +1,10 @@
 ---
 title: Microsoft Ignite NZ 2016! What a blast!
-permalink: /misc/microsoft-ignite-nz-2016-what-a-blast/
 categories:
   - Misc
-  - Windows
+date: 2016-10-29 00:00:00 +1300
 ---
+
 Microsoft Ignite NZ 2016! What a blast! _#NinjaCat #MSIgniteNZ_
 
 [<img class="alignnone" title="image" src="https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/10/image_thumb.png?resize=714%2C37" alt="Microsoft Ignite NZ 2016" width="714" height="37" data-recalc-dims="1" />](https://i2.wp.com/luke.geek.nz/wp-content/uploads/2016/10/image.png)

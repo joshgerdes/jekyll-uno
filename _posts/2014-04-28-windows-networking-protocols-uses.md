@@ -1,8 +1,8 @@
 ---
 title: Windows Networking Protocols and their uses
-permalink: /win/windows-networking-protocols-uses/
 categories:
   - Windows
+date: 2014-04-28 00:00:00 +1300
 ---
 <p class="Style1">
   Networking is a marvel of interconnected devices and languages &#8211; Windows networking protocols help that happen by making sure 2 devices are sharing the same method of communicating. This is a quick reference guide on what each Protocol and Client on the Windows OS does.

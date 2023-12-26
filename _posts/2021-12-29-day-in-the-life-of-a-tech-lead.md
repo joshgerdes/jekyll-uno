@@ -1,13 +1,13 @@
 ---
-date: '2021-12-29 00:00:00 +1300'
 title: Day in the Life of a Technical Lead
 author: Luke
 categories:
   - Service Management
 toc: false
+date: 2021-12-29 00:00:00 +1300
 header:
   teaser: /uploads/techlead.png
-_template: new_post
+
 ---
 
 Being a 'Technical Lead' or 'Tech Lead' means different things to some people and organizations; based on definitions found online, a Technical Lead is:
@@ -20,7 +20,7 @@ Although I agree with this, I would flesh out a bit more around architectural go
 
 At a very high level, this is what a day in the life of a technical lead means to me:
 
-#### Day in the Life of a Tech Lead:
+#### Day in the Life of a Tech Lead
 
 * Work alongside: Technical Product Owners, Chapter Members, Architecture, Business stakeholders and Service Partners to develop/roadmap/architect and improve technology.
 * Manage delivery and operational risks and dependencies, and remove impediments to the achievement of the team objectives

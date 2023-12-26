@@ -1,37 +1,13 @@
 ---
-id: 2682
 title: Booting into Recovery Partition instead of Operating System
-date: 2013-02-23T21:10:43+00:00
 author: Luke
-layout: post
-guid: http://incinerate.co.nz/?p=2682
-permalink: /win/booting-into-recovery-partition-instead-of-operating-system/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "1100258346"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "13"
 categories:
   - Windows
+date: 2013-02-23 00:00:00 +1300
 ---
-&nbsp;
 
 Having issues with your computer booting into the Recovery Partition instead of the Windows operating system? Try the guide below to repair.
 
-&nbsp;
 
   1. First download <a title="GParted (Gnome Partition Manager)" href="http://gparted.sourceforge.net/download.php" target="_blank">Gparted</a> and burn it to a CD
   2. Boot from the Gparted CD _(F12 or Esc are common hotkeys to bring up the boot menu during system startup)_

@@ -3,8 +3,6 @@ title: Cleanup your unwanted Azure resources on a schedule
 author: Luke
 categories:
   - Azure
-  - PowerShell
-permalink: /azure/Cleanup-your-unwanted-Azure-resources-on-a-schedule/
 toc: false
 header:
   teaser: /images/posts/CleanupyourUnwantedAzureResourcesonaSchedule.png

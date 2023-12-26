@@ -1,13 +1,12 @@
 ---
-date: '2021-05-08 00:00:00 +1200'
 title: Full end to end encryption on an Azure WebApp using Cloudflare
 author: Luke
 categories:
   - Azure
+date: 2021-05-08 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/cloudflare_azure_e2e_cert.png
-_template: new_post
 ---
 
 Cloudflare offers many capabilities; one of the capabilities it offers is SSL offloading and CNAME flattening.

@@ -1,8 +1,8 @@
 ---
 title: What Antivirus should I get for my computer?
-permalink: /misc/what-antivirus-should-i-get-for-my-computer/
 categories:
   - Misc
+date: 2014-09-01 00:00:00 +1300
 ---
 <span lang="en-nz"><span style="color: #000000;font-size: small">Its a common question &#8211; what antivirus should I get for my computer? That&#8217;s a good question &#8211; here is my recommended list:</span></span>
 

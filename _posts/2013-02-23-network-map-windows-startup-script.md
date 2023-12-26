@@ -1,31 +1,9 @@
 ---
-id: 2689
 title: Network Map Windows startup Script
-date: 2013-02-23T21:21:11+00:00
 author: Luke
-layout: post
-guid: http://incinerate.co.nz/?p=2689
-permalink: /win/network-map-windows-startup-script/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2444566017"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "14"
 categories:
   - Windows
+date: 2013-02-23 00:00:00 +1300
 ---
 `<br />
 echo off<br />

@@ -1,10 +1,11 @@
 ---
 title: Capturing Windows boot performance with the Windows Performance Toolkit
-permalink: /win/capturing-windows-boot-performance-windows-performance-toolkit/
 image: /wp-content/uploads/2016/12/122816_0751_Howtocaptur5.png
 categories:
   - Windows
+date: 2016-12-28 00:00:00 +1300
 ---
+
 The Windows Performance Toolkit, developed by Microsoft has 3 separate tools and are key to solving a lot of boot and general performance issues:
 
 •    Windows Performance Recorder
@@ -46,10 +47,8 @@ Download and run, we only need the Windows Performance Toolkit portion of the AD
 
 Once installed navigate to: C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
 
-_Tip: You can copy the Redistributables folder if you need to install the Windows Performance Toolkit only on another computer.
+Tip: You can copy the Redistributables folder if you need to install the Windows Performance Toolkit only on another computer.
   
-_ 
-
 ### <span id="Run_Windows_Performance_Recorder">Run Windows Performance Recorder</span>
 
 We only need too: WPRUI.EXE – Windows Performance Recorder & WPA.EXE – Windows Performance Analyzer.
@@ -68,9 +67,7 @@ _Tip: You can add more: File I/O, Networking I/O, GPU usage etc if you know what
 
 Click Start to select where your boot traces will go and click Ok to start your boot traces, this will restart your computer 3 times.
 
-_Tip: If you need to login, please make sure you login quickly during each trace as the longer you leave it unattended the more data and delay it will collect.
-  
-_ 
+_Tip: If you need to login, please make sure you login quickly during each trace as the longer you leave it unattended the more data and delay it will collect._ 
 
 ### <span id="Run_Windows_Performance_Analyzer">Run Windows Performance Analyzer</span>
 

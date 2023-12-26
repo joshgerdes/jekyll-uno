@@ -1,8 +1,8 @@
 ---
 title: ESXi on an Intel NUC NUC5i7RYH
-permalink: /misc/esxi-on-an-intel-nuc-i7-5557u/
 categories:
   - Misc
+date: 2015-09-25 00:00:00 +1300
 ---
 I have just configured ESXi on my new Intel NUC &#8211; NUC5i7RYH (Intel NUC i7-5557U 3.1GHz 16GB 256GB SSD).
 

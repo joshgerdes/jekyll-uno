@@ -1,9 +1,10 @@
 ---
-title: 'Windows Antivirus – Installation &amp; Scanning Guide'
-permalink: /win/windows-antivirus-installation-scanning-guide/
+title: Windows Antivirus – Installation &amp; Scanning Guide
 categories:
   - Windows
+date: 2015-10-30 00:00:00 +1300
 ---
+
 <p style="text-align: justify;">
   <span style="color: black; font-family: Arial; font-size: 10pt;">The following procedures will outline the installation instructions of third party Antivirus and Anti-malware tools that do include Rootkit scanning and removal. The Trend Micro utilities should be run first and if possible a virus sample collected and sent to Trend Micro. The following utilities are included in this: AVG Antivirus Free, CCleaner, ClamWin Antivirus, CWShredder, HijackThis, Malwarebytes Anti-malware, Microsoft Security Essentials, Rootkit Revealer, Spybot Search & Destroy.<br /> </span>
 </p>

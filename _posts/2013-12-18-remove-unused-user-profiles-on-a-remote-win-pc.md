@@ -1,8 +1,8 @@
 ---
 title: Remove unused user profiles on a remote Windows workstation
-permalink: /win/remove-unused-user-profiles-on-a-remote-win-pc/
 categories:
   - Windows
+date: 2013-12-18 00:00:00 +1300
 ---
 Note: The intended guide for this audience is a Help Desk or Service Desk – this is intended for a domain setup with the user having local administration rights on the workstation.
 

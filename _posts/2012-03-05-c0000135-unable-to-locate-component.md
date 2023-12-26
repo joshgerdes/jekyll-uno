@@ -1,10 +1,10 @@
 ---
 title: 'c0000135 {Unable to Locate Component}'
-layout: post
-permalink: /win/c0000135-unable-to-locate-component/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
+
 The application has failed to start because CSRSRV.DLL was not found. Reinstalling the application may fix this problem.
 
 First you need to access the recovery console. Following the instructions below

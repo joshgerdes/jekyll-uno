@@ -1,23 +1,19 @@
 ---
 title: A couple of useful DISM commands for WIM management for the IT Pro
-permalink: /win/a-couple-of-useful-dism-commands-for-wim-management-for-the-it-pro-2/
 categories:
   - Windows
+date: 2015-10-31 00:00:00 +1300
 ---
+
 As part of being an IT Engineer at my place of employment &#8211; I work with operating system deployment and management &#8211; part of this is using the Windows DISM toolset for adding packages or drivers directly into a Windows OS WIM or boot WIM.
 
 Here are a few useful DISM commands I have gathered and use on a monthly basis with WIM management and updates.
-
-<!--more-->
-
 
 # <span id="Using_DISM_to_mount_a_WIM">Using DISM to mount a WIM</span>
 
 When using DISM to mount a WIM – it mounts the WIM to a folder – similar to creating a virtual drive. So before you open up that Command Prompt – create a temporary mount directory first – _for example c:\temp\mnt_
   
-_as I am using in my example.
-  
-_ 
+_as I am using in my example._
 
   1. Open an elevated Command Prompt
   2. Type in: **dism.exe /Mount-WIM /WimFile:&#8221;C:\Temp\_OS.wim_&#8221; /index:1 /MountDir:&#8221;C:\Temp\mnt&#8221;** _(Replace – OS.wim with the name of your WIM image)_

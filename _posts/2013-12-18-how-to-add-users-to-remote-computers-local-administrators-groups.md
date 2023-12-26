@@ -1,9 +1,10 @@
 ---
 title: How to add users to the Remote Computers local Administrators groups
-permalink: /win/how-to-add-users-to-remote-computers-local-administrators-groups/
 categories:
   - Windows
+date: 2013-12-18 00:00:00 +1300
 ---
+
   1. First you need to download &#8211; <a href="http://technet.microsoft.com/en-us/sysinternals/bb897553.aspx" target="_blank">PSEXEC </a> &#8211; a command line tool that will allow you to execute commands on remote workstations.
   2. Once downloaded open My Computer/Computer and navigate to: C:\Windows\System32 on your local machine.
   3. Extract the zip file contents to the System32 folder (this will allow you to run the psexec command from any folder within Command Prompt).

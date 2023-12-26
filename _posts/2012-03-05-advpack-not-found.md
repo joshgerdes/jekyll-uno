@@ -1,9 +1,8 @@
 ---
 title: Advpack.dll Not Found
-layout: post
-permalink: /win/advpack-not-found/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 Advpack.dll Not Found is only one version of the error messages that Advpack.dll can create – “&#8221;This application failed to start because advpack.dll was not found. Re-installing the application may fix this problem” is another known error.
 

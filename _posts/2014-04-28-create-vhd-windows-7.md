@@ -1,9 +1,9 @@
 ---
 title: Create VHD in Windows 7
-permalink: /win/create-vhd-windows-7/
-
   - Windows
+date: 2014-04-28 00:00:00 +1300
 ---
+
 Want to create a VHD in Windows 7? Why? You may ask&#8230; would you use a VHD?
 
 Using a VHD as a “virtual disk” you can easily use it as a self-contained “folder” or storage mechanism, you can also use it to install operating systems onto allowing to run dual booted operating systems with only one hard drive and not having to worry about partition ids. Creating VHD files in Windows 7 is remarkably easy – follow the guide below:

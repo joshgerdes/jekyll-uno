@@ -1,9 +1,10 @@
 ---
-title: 'Bitcoin mining &#8211; is it worth it?'
-permalink: /misc/bitcoin-mining-worth/
+title: Bitcoin mining is it worth it
 categories:
   - Misc
+date: 2014-05-25 00:00:00 +1300
 ---
+
 <p style="color: #445263">
   <em>Note: This is just a brief article on my personal opinions on getting into bitcoin mining.</em>
 </p>

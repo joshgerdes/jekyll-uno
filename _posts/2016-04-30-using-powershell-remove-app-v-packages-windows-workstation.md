@@ -1,9 +1,9 @@
 ---
 title: Using PowerShell to remove App-V packages from a Windows workstation
-permalink: /win/using-powershell-remove-app-v-packages-windows-workstation/
 categories:
   - Windows
   - PowerShell
+date: 2016-04-30 00:00:00 +1300
 ---
 App-V applications, usually store their data locally if they are not streamed. Sometimes an Application will have problems, either hasn't been downloaded or some other reason.
 

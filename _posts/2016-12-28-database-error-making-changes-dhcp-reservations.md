@@ -1,8 +1,8 @@
 ---
 title: Database error when making changes to DHCP reservations
-permalink: /win/database-error-making-changes-dhcp-reservations/
 categories:
   - Windows
+date: 2016-12-28 00:00:00 +1300
 ---
 'An error occurred while accessing the DHCP database.'
   

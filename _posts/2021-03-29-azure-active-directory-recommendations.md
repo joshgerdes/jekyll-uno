@@ -1,18 +1,13 @@
 ---
-date: 2021-03-29 00:00:00 +1300
 title: Microsoft Entra ID Recommendations
 author: Luke
 categories:
 - Azure
-- M365
+date: 2021-03-29 00:00:00 +1300
 toc: false
-permalink: /azure-active-directory-recommendations
-
 header: 
   teaser: "images/Office-365-Banner2.png"
   classes: wide
-
-
 ---
 Microsoft Entra ID is the foundation, which Microsoft 365 is built-on.
 

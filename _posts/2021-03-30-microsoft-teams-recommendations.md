@@ -1,17 +1,15 @@
 ---
-date: 2021-03-30 00:00:00 +1300
 title: Microsoft Teams Recommendations
 author: Luke
 categories:
 - M365
+date: 2021-03-30 00:00:00 +1300
 toc: false
-permalink: /microsoft-teams-recommendations
 header: 
   teaser: "images/Office-365-Banner2.png"
   classes: wide
-
-
 ---
+
 In the age of remote working and collaboration, Microsoft Teams is one of the most popular tools being used to increase communication and productivity.
 
 Especially those undergoing implementation and migrations from Skype for Business to Microsoft Teams - it is a good opportunity to take a step back and evaluate and clarify your implementation, the recommendations below as good as a place to start as any.

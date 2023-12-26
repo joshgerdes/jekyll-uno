@@ -1,9 +1,8 @@
 ---
 title: BearShare Opening in New Firefox Tab
-layout: post
-permalink: /win/bearshare-opening-in-new-firefox-tab/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 Having the problem where BearShare opens when you open a new Firefox tab even after removing BearShare? This is how I fixed it.
 

@@ -1,10 +1,9 @@
 ---
 title: .NET Framework not installing through SCCM
-permalink: /win/net-framework-not-installing-through-sccm/
 categories: Windows
 draft: false
 author: Luke
-date: 2014-03-27T11:00:00.000Z
+date: 2014-03-28 00:00:00 +1300
 ---
 
 1. Click **Start**

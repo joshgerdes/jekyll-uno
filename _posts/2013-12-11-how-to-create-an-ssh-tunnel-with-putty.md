@@ -1,9 +1,8 @@
 ---
 title: How to create an SSH tunnel with PuTTY
-layout: post
-permalink: /win/how-to-create-an-ssh-tunnel-with-putty/
 categories:
   - Windows
+date: 2013-12-11 00:00:00 +1300
 ---
 Open PuTTY
 

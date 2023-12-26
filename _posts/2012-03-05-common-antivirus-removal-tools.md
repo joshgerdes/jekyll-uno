@@ -1,8 +1,8 @@
 ---
 title: Common Antivirus Removal Tools
-permalink: /win/common-antivirus-removal-tools/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 Ever had problems trying to get rid of Antivirus applications and some little part that causes problems remain? Below is a list to the websites containing the Removal Tools, which can be run to remove the antivirus components that remain on your system.
 

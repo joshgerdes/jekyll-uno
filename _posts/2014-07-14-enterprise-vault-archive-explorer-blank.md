@@ -1,8 +1,8 @@
 ---
 title: Enterprise Vault Archive Explorer Blank
-permalink: /win/enterprise-vault-archive-explorer-blank/
 categories:
   - Windows
+date: 2014-07-14 00:00:00 +1300
 ---
 Note: This needs to be done from the Enterprise Vault archiving server.
 

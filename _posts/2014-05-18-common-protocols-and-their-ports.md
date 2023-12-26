@@ -1,8 +1,8 @@
 ---
 title: Common Protocols and their ports
-permalink: /misc/common-protocols-and-their-ports/
 categories:
   - Misc
+date: 2014-05-18 00:00:00 +1300
 ---
 <p class="style1">
   Networking is a marvel of interconnected devices and languages – part of that inter connectivity is allowing devices to talk to one another without getting any crosstalk or confusion this is done by separating network traffic into ports – allowing traffic to be managed easier and allows for overall greater security.

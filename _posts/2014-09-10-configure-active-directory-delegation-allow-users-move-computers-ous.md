@@ -1,9 +1,10 @@
 ---
 title: How to configure Active Directory delegation to allow users to move computers between OUs
-permalink: /win/configure-active-directory-delegation-allow-users-move-computers-ous/
 categories:
   - Windows
+date: 2014-09-10 00:00:00 +1300
 ---
+
   1. Open Active Directory Users & Computers with AD rights
   2. Right click on the organisation unit you want to give access to and click Delegate Control
   3. Add the group want to give this access to, for example “"IT HelpDesk"

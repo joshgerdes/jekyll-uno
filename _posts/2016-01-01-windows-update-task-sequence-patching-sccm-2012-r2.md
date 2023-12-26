@@ -1,10 +1,11 @@
 ---
 title: Windows Update Task Sequence (Patching) – SCCM 2012 R2
-permalink: /win/windows-update-task-sequence-patching-sccm-2012-r2/
 image: /wp-content/uploads/2016/01/123115_2137_WindowsUpda1.png
 categories:
   - Windows
+date: 2016-01-01 00:00:00 +1300
 ---
+
 With monthly server patching, the process is currently manual due to the number of clusters and very application specific servers that is patched – including an issue with failed updates caused by Trend Officescan &#8211; and an issue that has been done manually for months.
 
 It was time to automate this process – and without Orchestrator or SMA I had to use what I already had – a SCCM 2012 R2 Infrastructure, and the use of the Task Sequence and PowerShell.

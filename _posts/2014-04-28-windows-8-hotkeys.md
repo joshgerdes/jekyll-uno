@@ -1,8 +1,8 @@
 ---
 title: Windows 8 Hotkeys
-permalink: /win/windows-8-hotkeys/
 categories:
   - Windows
+date: 2014-04-28 00:00:00 +1300
 ---
 <p class="Style1">
   Navigating around Windows 8 can be a lot faster and more efficient with the use of keyboard shortcuts called Hotkeys – the below guide is a list of Windows 8 hotkeys for navigating the user interface.

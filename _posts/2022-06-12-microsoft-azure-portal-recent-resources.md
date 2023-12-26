@@ -1,13 +1,12 @@
 ---
-date: '2022-06-12 00:00:00 +1200'
 title: Microsoft Azure Portal - Recent Resources
 author: Luke
 categories:
   - Azure
+date: 2022-06-12 00:00:00 +1300
 toc: false
 header:
   teaser: images/iazure-marketplace-banner.png
-_template: new_post
 ---
 
 The Microsoft Azure Portal displays a list of Recent resources _(whether they are subscriptions or Resources)_ you have accessed, usually when you first log in to the portal itself.

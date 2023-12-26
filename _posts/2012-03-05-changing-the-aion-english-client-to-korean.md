@@ -1,9 +1,9 @@
 ---
 title: Changing the Aion English Client to Korean
-permalink: /misc/changing-the-aion-english-client-to-korean/
 categories:
   - Misc
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 Short fix:
 

@@ -1,15 +1,12 @@
 ---
-date: 2021-07-12T12:00:00.000Z
 title: Well-Architected Framework Azure infrastructure review with PSRule for Azure
-permalink: azure/WAF-Azure-infrastructure-review-with-PSRule-for-Azure/
 author: Luke
 categories:
   - Azure
-  - PowerShell
+date: 2021-07-13 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/windowsterminal_data_psrules-azure.png
-_template: new_post
 ---
 
 Imagine if you could validate that your Azure Resources are deployed per the Well-Architected Framework (WAF).. just **imagine**!

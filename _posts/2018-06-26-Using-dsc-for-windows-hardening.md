@@ -1,10 +1,9 @@
 ---
-date: "2018-06-26"
 title: Using PowerShell DSC for Windows Hardening
 author: Luke
 categories:
     - PowerShell
-permalink: /Using-dsc-for-windows-hardening
+date: 2018-06-26 00:00:00 +1300
 header:
   teaser: "images/powershell-blog-feature-banner.png"
 ---

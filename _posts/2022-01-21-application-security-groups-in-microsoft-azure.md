@@ -1,13 +1,12 @@
 ---
-date: '2022-01-21 00:00:00 +1300'
 title: Application Security Groups in Microsoft Azure
 author: Luke
 categories:
   - Azure
+date: 2022-01-21 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/highleveldiagram_asg.png
-_template: new_post
 ---
 
 Azure Application Security Groups (ASG) allow you to define what workloads _(Virtual Machines)_ you are running in Azure has access to what resource - without being tied by managing complex IP address rules inside a [Network Security Group](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview?WT.mc_id=AZ-MVP-5004796 "Network security groups"){:target="_blank"}.

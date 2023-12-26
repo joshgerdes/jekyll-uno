@@ -1,10 +1,11 @@
 ---
 title: Using PowerShell to remove Snapshots from Virtual Machines in vSphere
-permalink: /win/using-powershell-remove-snapshots-virtual-machines-vsphere/
 categories:
   - Windows
   - PowerShell
+date: 2016-04-30 00:00:00 +1300
 ---
+
 Although vSphere 5.5 has a scheduled task to create Snapshots, it appears to be missing a scheduled task to remove them.
 
 I had to find a way of automating the removal of the Snapshots for specific Virtual Machines at a specific time _(ie not during business hours)_.

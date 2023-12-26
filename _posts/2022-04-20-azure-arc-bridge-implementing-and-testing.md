@@ -1,14 +1,12 @@
 ---
-date: '2022-04-20 14:00:00 +1300'
 title: Azure Arc Bridge - Implementation and Testing
 author: Luke
 categories:
   - Azure
-permalink: /azure/azure-arc-bridge-implementing-and-testing/
+date: 2022-04-20 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/azure_arc_vmware_portal_createresourcebridge.png
-_template: new_post
 ---
 
 [Azure Arc Bridge](https://learn.microsoft.com/en-us/azure/azure-arc/resource-bridge/overview?WT.mc_id=AZ-MVP-5004796 "What is Azure Arc resource bridge "){:target="_blank"}_(currently in preview)_ is part of the core Azure Arc Hybrid Cloud platform.

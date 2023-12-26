@@ -1,11 +1,9 @@
 ---
 title: 56k Modem Strings
 post_title: '56k Modem Strings'
-published: true
-layout: post
-permalink: /win/56k-modem-strings/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 Want to lower the volume of your 56k Dialup connection when connecting? You can adjust the modem options. Follow these instructions.
 

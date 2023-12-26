@@ -1,13 +1,12 @@
 ---
-date: '2022-07-27 00:00:00 +1200'
 title: Microsoft Azure - ZonalAllocationFailed
 author: Luke
 categories:
   - Azure
+date: 2022-07-27 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/zonalallocationfailed.png
-_template: new_post
 ---
 
 > **Error code**: AllocationFailed or ZonalAllocationFailed

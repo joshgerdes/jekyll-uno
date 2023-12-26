@@ -1,38 +1,15 @@
 ---
-id: 2697
 title: Restore your iPhone/iPad/iPod Touch Firmware
-date: 2013-02-26T09:12:38+00:00
 author: Luke
-layout: post
-guid: http://incinerate.co.nz/?p=2697
-permalink: /osx/restore-your-iphoneipadipod-touch-firmware/
-mfn-post-love:
-  - "0"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "2581574314"
-post_views_count:
-  - "22"
 categories:
   - iOS
   - Mac OSX
   - Mobile
   - Windows
+date: 2013-02-26 00:00:00 +1300
 ---
-Warning: Following this method will erase all your data &#8211; including Contacts & Photos
 
-&nbsp;
+Warning: Following this method will erase all your data &#8211; including Contacts & Photos
 
   1. First you need to download your iPhone/iPod Touch firmware. Click “<a title="iPod/iPhone/iPad Firmware" href="http://www.felixbruns.de/iPod/firmware/" target="_blank">here</a>” to download the firmware.
   2. Once the download has been completed – Open iTunes

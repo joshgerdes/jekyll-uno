@@ -1,19 +1,18 @@
 ---
 title: Guide to using Hyper-V
-permalink: /win/guide-to-using-hyper-v/
 image: /wp-content/uploads/2014/02/Hyper-V-logo.png
 categories:
   - Windows
+date: 2014-02-23 00:00:00 +1300
 ---
-### <span id="Introduction_to_Hyper-V">Introduction to Hyper-V</span>
 
-&nbsp;
+### Introduction to Hyper-V
 
 Hyper-V is an emulation/hyper-visor Microsoft developed technology – similar to VMWare Workstation or ESXI that allows you to run Virtual Machines and different workloads simultaneously. Hyper-V is currently available in Windows 8, Windows Server 2008, Windows Server 2008 R2, Windows 8.1 & Windows Server 2012, Windows Server 2012 R2. The Hyper-V hypervisor allows multiple workloads to run on the same physical hardware that in the past would have otherwise only been suitable for one workload – allowing for power and resource efficiency.
 
-### <span id="Hyper-V_Specifications">Hyper-V Specifications</span>
+### Hyper-V Specifications
 
-**Host operating system:** 
+**Host operating system:**
 
 To install the Hyper-V role, Windows Server 2008, Windows Server 2008 R2 Standard, Enterprise or Datacentre edition, Windows Server 2012 Standard or Datacentre edition, or Windows 8 (or 8.1) Pro or Enterprise edition is required. Hyper-V is only supported on x86-64 variants of Windows. It can be installed regardless of whether the installation is a full or core installation. **Processor: **An x86-64 processor
 
@@ -25,7 +24,7 @@ Although this is not an official requirement, Windows Server 2008 R2 and a CPU w
 
 Second-level address translation is a mandatory requirement for Hyper-V in Windows 8
 
-**Memory** 
+**Memory**
 
 Minimum 2 GB. (Each virtual machine requires its own memory, and so realistically much more.)
 
@@ -35,7 +34,7 @@ Maximum total memory per system for Windows Server 2008 R2 hosts: 32 GB (Standar
 
 Maximum total memory per system for Windows Server 2012 hosts: 4 TB
 
-### <span id="Guest_operating_systems"><strong>Guest operating systems </strong></span>
+### Guest operating systems
 
 Hyper-V in Windows Server 2008 and 2008 R2 supports virtual machines with up to 4 processors each (1, 2, or 4 processors depending on guest OS-see below)
 
@@ -47,9 +46,7 @@ Hyper-V in Windows Server 2012 supports up to 1024 active virtual machines per s
 
 Hyper-V supports both 32-bit (x86) and 64-bit (x64) guest VMs.
 
-
-#### <span id="Improvements_of_Hyper-V_in_Windows_Server_2012">Improvements of Hyper-V in Windows Server 2012</span>
-
+#### Improvements of Hyper-V in Windows Server 2012
 
 Hyper-V Extensible Virtual Switch
 
@@ -71,17 +68,14 @@ Cross-premise connectivity
 
 Cloud backup
 
-#### <span id="Installing_Hyper-V_in_Windows_8_Windows_81">Installing Hyper-V in Windows 8 & Windows 8.1</span>
-
+#### Installing Hyper-V in Windows 8 & Windows 8.1
 
   1. Navigate to **Control Panel** & select **Uninstall a Program** underneath programs
   2. Select **Turn Windows Features On or Off**
   3. Check **Hyper-V & Hyper-V Platform** and select additional relevant features – I would HIGHLY recommend Hyper-V GUI Management Tools.
   4. Windows will go through and install the Hyper-V modules onto the Windows 8 workstation. Once completed the workstation will need a restart and you will be able to now fully utilise Hyper-V!
 
-
-#### <span id="Installing_Hyper-V_for_Windows_Server_2012">Installing Hyper-V for Windows Server 2012</span>
-
+#### Installing Hyper-V for Windows Server 2012
 
   1. Open **Server Manager**
   2. Click **Add Roles and Features** and click **Next**
@@ -90,19 +84,15 @@ Cloud backup
   5. Select the default locations for your VHD (virtual hard disks) and VM (virtual machine) configuration files to be held and select **Next**
   6. Once the Hyper-V role has been fully installed – restart the Windows Server 2012 machine. You should now have access to the Hyper-V Manager.
 
+### Hyper-V Tips and Tricks
 
-### <span id="Hyper-V_Tips_and_Tricks">Hyper-V Tips and Tricks</span>
-
-
-#### <span id="How_to_stop_and_restart_the_Hyper-V_service">How to stop and restart the Hyper-V service</span>
-
-&nbsp;
+#### How to stop and restart the Hyper-V service
 
   1. Open **Hyper-V Manager**
   2. Select the relevant Hyper-V server
   3. Select Stop Service
 
-#### <span id="How_to_create_a_new_Virtual_Machine_in_Hyper-V">How to create a new Virtual Machine in Hyper-V</span>
+#### How to create a new Virtual Machine in Hyper-V
 
   1. Open **Hyper-V Manager**
   2. Select **New** and **Virtual Machine**
@@ -118,4 +108,4 @@ Cloud backup
  12. Now you can specify the appropriate VHD (Virtual Hard Disk) for the Virtual Machine to use – you can either create a new one or use an existing VHD.
  13. This is where you **specify** the **path** to your installation media for your virtual machine – such as an OS (operating system) ISO.
  14. You have finally setup your new Virtual Machine! Verify all the settings are correct and click **Finish** to configure and generate your new Virtual Machines.
- 15. You can now **right ****click** on your **Virtual Machine** under the Hyper-V Manager and **select ****Connect…** to **start** it.
+ 15. You can now **right click** on your **Virtual Machine** under the Hyper-V Manager and **select Connect…** to **start** it.

@@ -1,13 +1,12 @@
 ---
-date: '2021-07-10 00:00:00 +1200'
 title: How to set a Log Analytics Daily Data Cap
 author: Luke
 categories:
   - Azure
+date: 2021-07-10 00:00:00 +1300
 toc: false
 header:
   teaser: /uploads/azportal_loganalyticscap.png
-_template: new_post
 ---
 
 This is just an additional configuration that may help with sizing and pricing Log Analytics, you can set a 'Daily cap' for the amount of Data you ingest **_per day_**, to help restrict cost.

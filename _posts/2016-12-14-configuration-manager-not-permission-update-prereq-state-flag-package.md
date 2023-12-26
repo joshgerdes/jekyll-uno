@@ -1,9 +1,9 @@
 ---
 
 title: Configuration Manager – Does not have permission to update the prereq or state flag of the package
-permalink: /win/configuration-manager-not-permission-update-prereq-state-flag-package/
 categories:
   - Windows
+date: 2016-12-14 00:00:00 +1300
 ---
 When attempting an upgrade of System Center Configuration Manager v1511 to 1606 I ran into issues relating to the permissions of the Security Scope in Configuration Manager under the account I was doing the upgrade under.
 

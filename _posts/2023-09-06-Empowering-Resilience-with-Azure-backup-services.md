@@ -6,7 +6,7 @@ categories:
 toc: true
 header:
   teaser: /images/posts/Header-Blog-AzureBackup_Services_Innovations.gif
-date: '2023-09-06 00:00:00 +1300'
+date: 2023-09-23 00:00:00 +1300
 ---
 
 This article is part of [Azure Back to School](https://azurebacktoschool.github.io/){:target="*blank"} - 2023 event! Make sure to check out the fantastic content created by the community!

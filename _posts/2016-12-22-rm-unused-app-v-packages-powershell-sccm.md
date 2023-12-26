@@ -1,9 +1,8 @@
 ---
 title: Using PowerShell and Configuration Manager to remove unused App-V packages automatically
-permalink: /win/rm-unused-app-v-packages-powershell-sccm/
 categories:
   - Windows
-  - PowerShell
+date: 2016-12-22 00:00:00 +1300
 ---
 <section class="av\_textblock\_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost" >
 

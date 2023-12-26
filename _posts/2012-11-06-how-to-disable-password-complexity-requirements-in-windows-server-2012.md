@@ -1,32 +1,11 @@
 ---
-id: 2513
 title: How to disable password complexity requirements in Windows Server 2012
-date: 2012-11-06T19:28:59+00:00
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2513
-permalink: /win/how-to-disable-password-complexity-requirements-in-windows-server-2012/
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-dsq_thread_id:
-  - "5044489968"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "12"
 categories:
   - Windows
+date: 2012-11-06 00:00:00 +1300
 ---
+
   1.  **Open** Server **Manager**
   2. Click **Tools** _(top right)_
   3. Click **Local Security Policy**

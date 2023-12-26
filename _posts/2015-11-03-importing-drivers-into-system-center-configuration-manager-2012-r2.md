@@ -1,8 +1,8 @@
 ---
 title: Importing drivers into System Center Configuration Manager 2012 R2
-permalink: /win/importing-drivers-into-system-center-configuration-manager-2012-r2/
 categories:
   - Windows
+date: 2015-11-03 00:00:00 +1300
 ---
 Importing drivers into System Center Configuration Manager R2 _(SCCM)_ is a task I do at least once a month as new models are introduced into my work environment.
 

@@ -1,20 +1,11 @@
 ---
-id: 2800
 title: How to delete offline file cache in Windows XP
-date: 2013-12-01T21:10:47+00:00
 author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=2800
-permalink: /win/how-to-delete-offline-file-cache-in-windows-xp/
-dsq_thread_id:
-  - "4799254772"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "10"
 categories:
   - Windows
+date: 2013-12-01 00:00:00 +1300
 ---
+
   1. <span style="font-family:Times New Roman;font-size:12pt">Open up <strong>My Computer</strong>.<br /> </span>
 
  

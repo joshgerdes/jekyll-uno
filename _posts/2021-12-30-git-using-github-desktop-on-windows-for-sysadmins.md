@@ -1,13 +1,12 @@
 ---
-date: '2021-12-30 00:00:00 +1300'
 title: Git using Github Desktop on Windows for SysAdmins
 author: Luke
 categories:
   - Windows
+date: 2021-12-30 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/githubdesktop-overview.png
-_template: new_post
 ---
 
 [Git](https://en.wikipedia.org/wiki/Git){:target="_blank"} (_Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development, allowing versioning, source control and enablement of continuous Integration and deployment)_has been around for years_(development and the first release began in 2005 by Linus Torvolds)_.

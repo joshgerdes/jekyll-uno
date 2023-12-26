@@ -1,9 +1,8 @@
 ---
 title: c000021a Fatal System Error
-layout: post
-permalink: /win/c000021a-fatal-system-error/
 categories:
   - Windows
+date: 2012-03-05 00:00:00 +1300
 ---
 &#8220;The Session Manager Initialization system process terminated unexpectedly with a status of 0xc000026c&#8221;
 

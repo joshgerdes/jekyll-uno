@@ -1,6 +1,5 @@
 ---
 title: 'Windows Server 2012 - This computer’s hardware may not support booting to this disk.'
-permalink: /win/windows-server-2012-this-computers-hardware-may-not-support-booting-to-this-disk/
 categories:
   - Windows
 ---

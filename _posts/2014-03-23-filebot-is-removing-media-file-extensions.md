@@ -1,10 +1,11 @@
 ---
 title: Filebot is removing media file extensions
-permalink: /win/filebot-is-removing-media-file-extensions/
 categories:
   - Windows
+date: 2014-03-23 00:00:00 +1300
 ---
+
 Although frustrating this fix is a simple one!
 
-  1. <span style="line-height: 1.5em">Navigate to Rename Options</span>
+  1. Navigate to Rename Options
   2. Change Extensions: Override to: Extensions: Preserve

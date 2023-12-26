@@ -1,15 +1,12 @@
 ---
-date: '2021-08-08 00:00:00 +1200'
 title: AVD-Collect - Azure Virtual Desktop Diagnostics and Logging
-permalink: powershell/avd-collect/
 author: Luke
 categories:
-  - Azure
   - PowerShell
+date: 2021-08-08 00:00:00 +1300
 toc: true
 header:
   teaser: /uploads/avd-collect-diagreport.png
-_template: new_post
 ---
 
 AVD-Collect is a handy PowerShell script created by Microsoft Customer Support Services to assist with troubleshooting and resolving issues with Azure Virtual Desktop (and Windows 365), by capturing Logs for analysis _(which could then be passed to Microsoft or allow you to delve deeper)_ and running basic Diagnostics against some common known issues.

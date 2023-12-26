@@ -1,8 +1,8 @@
 ---
 title: Enabling Disk Cleanup in Windows Server 2008 R2
-permalink: /win/enabling-disk-cleanup-windows-server-2008-r2/
 categories:
   - Windows
+date: 2016-04-30 00:00:00 +1300
 ---
 <span style="color: #000000">In Server 2008 and Server 2008 R2, Disk Cleanup is Disabled by default. This is how you can enable disk cleanup in Windows Server 2008 R2 – 64bit.</span>
 

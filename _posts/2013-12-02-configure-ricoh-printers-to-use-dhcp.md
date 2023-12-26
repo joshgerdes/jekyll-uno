@@ -1,17 +1,7 @@
 ---
-id: 2805
 title: Configure Ricoh printers to use DHCP
-date: 2013-12-02T20:31:07+00:00
 author: Luke
-layout: post
-guid: http://www.techremedy.co.nz/?p=2805
-permalink: /misc/configure-ricoh-printers-to-use-dhcp/
-dsq_thread_id:
-  - "2585940365"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "11"
+date: 2013-12-02 00:00:00 +1300
 categories:
   - Misc
 ---

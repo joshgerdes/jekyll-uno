@@ -1,9 +1,9 @@
 ---
 title: Optimal Taleo Settings
-permalink: /misc/optimal-taleo-settings/
 categories:
   - Misc
   - Windows
+date: 2014-04-27 00:00:00 +1300
 ---
 <p class="Style1">
   Taleo is used for many organisations as its tool for managing job applications. These settings are Internet Explorer recommended settings for displaying Taleo with no problems.

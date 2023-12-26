@@ -1,8 +1,8 @@
 ---
 title: Basic HTML Cheatsheet
-permalink: /misc/basic-html-cheatsheet/
 categories:
   - Misc
+date: 2012-03-05 00:00:00 +1300
 ---
 Handy little HTML cheat-sheet for use when developing your website.
 

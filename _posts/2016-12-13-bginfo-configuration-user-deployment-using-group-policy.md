@@ -1,9 +1,9 @@
 ---
 title: BgInfo Configuration &amp; User Deployment using Group Policy
-permalink: "/win/bginfo-configuration-user-deployment-using-group-policy/"
 categories:
 - Windows
 author: Luke
+date: 2016-12-13 00:00:00 +1300
 
 ---
 BgInfo is beneficial for Endpoint device support by displaying the Asset number, IP address and logged on username overlaid on top of the wallpaper, it is OS independent and can be used across other Windows Desktop and Windows Server environments.

@@ -1,11 +1,9 @@
 ---
-date: 2021-07-10 00:00:00 +1200
 title: How to create a Free Azure Log Analytics Workspace using PowerShell
-permalink: /azure/how-to-create-a-free-log-analytics-workspace/
 author: Luke
 categories:
 - Azure
-- PowerShell
+date: 2021-07-10 00:00:00 +1300
 toc: false
 header:
   teaser: "/uploads/log_analytics_free.png"

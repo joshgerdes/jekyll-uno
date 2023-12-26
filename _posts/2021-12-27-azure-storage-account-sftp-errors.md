@@ -1,13 +1,12 @@
 ---
-date: '2021-12-27 00:00:00 +1300'
 title: Azure Storage Account SFTP errors
 author: Luke
 categories:
   - Azure
+date: 2021-12-27 00:00:00 +1300
 toc: true
 header:
   teaser: images/iazure-marketplace-banner.png
-_template: new_post
 ---
 
 As part of standing up and using an Azure Storage account as an SFTP service, I ran into a few issues. This blog post is merely intended to show my findings in case others run into similar issues.

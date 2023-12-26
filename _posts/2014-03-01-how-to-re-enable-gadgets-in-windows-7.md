@@ -2,7 +2,7 @@
 title: How to re enable gadgets in Windows 7
 categories:
   - Windows
- date: 2014-03-01 00:00:00 +1300
+date: 2014-03-01 00:00:00 +1300
 ---
 
   1. Click Start

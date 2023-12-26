@@ -1,35 +1,10 @@
 ---
-id: 2659
 title: How to rip Audio from a DVD
-date: 2013-01-31T07:24:30+00:00
 author: Luke
-layout: post
-guid: http://incinerate.co.nz/?p=2659
-permalink: /win/how-to-rip-audio-from-a-dvd/
-dsq_thread_id:
-  - "2522389790"
-omc_review_enable:
-  - "0"
-omc_user_ratings_visibility:
-  - "0"
-omc_review_type:
-  - stars
-omc_criteria_display:
-  - 'n'
-omc_featured_post:
-  - "0"
-omc_comment_type:
-  - wp
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "6"
 categories:
   - Windows
+date: 2013-01-31 00:00:00 +1300
 ---
-&nbsp;
-
-&nbsp;
 
 In this guide I am using a media player called: VLC (VideoLAN) to do the conversion – it can be downloaded free “<a title="VLC Media Player" href="http://www.videolan.org/vlc/download-windows.html" target="_blank">here</a>”.
 

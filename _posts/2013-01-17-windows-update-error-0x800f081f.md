@@ -1,25 +1,12 @@
 ---
-id: 2638
 title: Windows Update Error 0x800f081f
-date: 2013-01-17T07:25:50+00:00
+date: 2013-01-17 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2634
-permalink: /win/windows-update-error-0x800f081f/
-dsq_thread_id:
-  - "2547030444"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "21"
 categories:
   - Windows
 ---
-&nbsp;
 
 This problem is generally caused by corrupted/damaged DNS Cache. Follow the instructions below to repair.
-
-&nbsp;
 
   1. Click Start
   2. Click All Programs/Programs
@@ -29,7 +16,6 @@ This problem is generally caused by corrupted/damaged DNS Cache. Follow the inst
   6. Press Enter
   7. Restart your computer and attempt Windows Update.
 
-&nbsp;
 
 If the above doesn’t work then you can bypass the problem by assigning your own DNS server , such as Google DNS.
 
@@ -46,5 +32,3 @@ If the above doesn’t work then you can bypass the problem by assigning your ow
  11. Click Ok
  12. You are now routing your computers DNS through google’s servers instead of the service offered by your Internet Service Provider. _Depending on who and where you are – you might notice a slowdown in internet browsing or a speed up – this is normal._
  13. Restart your computer and attempt Windows Update.
-
-&nbsp;

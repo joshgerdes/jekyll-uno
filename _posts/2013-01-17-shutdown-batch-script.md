@@ -1,17 +1,7 @@
 ---
-id: 2642
 title: Shutdown Batch Script
-date: 2013-01-17T15:38:04+00:00
+date: 2013-01-17 00:00:00 +1300
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2642
-permalink: /misc/shutdown-batch-script/
-dsq_thread_id:
-  - "2527421407"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Misc
   - Windows

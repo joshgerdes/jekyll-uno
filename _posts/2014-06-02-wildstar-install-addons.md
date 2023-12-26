@@ -1,5 +1,5 @@
 ---
-title: WildStar: How to install addons
+title: WildStar How to install addons
 categories:
   - Windows
 author: Luke

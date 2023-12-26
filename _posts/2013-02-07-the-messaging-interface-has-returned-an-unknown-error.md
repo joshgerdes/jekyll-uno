@@ -1,6 +1,7 @@
 ---
-title: The messaging interface has returned an unknown error.
-date: 2013-02-07 00:00:00 +1300author: Luke
+title: The messaging interface has returned an unknown error
+date: 2013-02-07 00:00:00 +1300
+author: Luke
 categories:
   - Misc
   - Windows

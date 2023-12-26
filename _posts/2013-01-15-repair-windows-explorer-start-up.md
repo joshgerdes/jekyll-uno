@@ -1,19 +1,9 @@
 ---
-id: 2637
 title: Repair Windows Explorer start-up
-date: 2013-01-15T11:13:35+00:00
 author: Luke
-layout: post
-guid: http://localhost/incinerate/?p=2630
-permalink: /win/repair-windows-explorer-start-up/
-dsq_thread_id:
-  - "1059884588"
-mfn-post-love:
-  - "0"
-post_views_count:
-  - "8"
 categories:
   - Windows
+date: 2013-01-15 00:00:00 +1300
 ---
 This usually occurs if Viruses or Spyware has infected _explorer.exe_ and changed the registry entry to stop it from starting.
 

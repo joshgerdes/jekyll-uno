@@ -1,12 +1,12 @@
 ---
 title: How to convert DMG to IMG in Windows
-date: 2013-01-18 T08:00:16 +00:00
+date: 2013-01-18 00:00:00 +1300
 author: Luke
-permalink: /osx/how-to-convert-dmg-to-img-in-windows/
 categories:
   - Mac OSX
   - Windows
 ---
+
 Downloaded that DMG and want to burn it to a CD/DVD but you’re in a Windows based system? Not a problem! Thanks to the guys at vu1tur for making a cool little utility for doing the conversion.
 
 &nbsp;
@@ -21,7 +21,5 @@ Downloaded that DMG and want to burn it to a CD/DVD but you’re in a Windows ba
   8. Copy the DMG you would like to convert to IMG into the folder or location you put DMG to IMG and make sure you copy down the name of the DMG file as you will need this in the conversion process.
   9. Back in the command prompt type: _**dmg2img <input.dmg> <output.img>**_ _(for example:  dmg2img OSX.DMG OSX.IMG)_ and press Enter
  10. The DMG will now start to convert to IMG, once completed you will be back at the blinking cursor and you can now burn the IMG file.
-
-&nbsp;
 
 Note: If the DMG was bootable it will retain the bootable partition information when converted, so you can easily boot from the IMG once burnt to a CD/DVD.

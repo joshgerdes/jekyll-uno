@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gemspec
-gem install bundler:2.3.5
+gem install bundler
 gem 'jekyll-archives'
 gem "jekyll-sitemap"
 gem "rake"
